@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceautomaticlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserPresenceAutomaticLocation
 ---
@@ -30,7 +30,6 @@ Set-MgBetaUserPresenceAutomaticLocation -UserId <string> [-ResponseHeadersVariab
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Set
@@ -41,7 +40,6 @@ Set-MgBetaUserPresenceAutomaticLocation -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -52,7 +50,6 @@ Set-MgBetaUserPresenceAutomaticLocation -InputObject <ICloudCommunicationsIdenti
  [-WorkLocationType <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -63,7 +60,6 @@ Set-MgBetaUserPresenceAutomaticLocation -InputObject <ICloudCommunicationsIdenti
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,6 +72,25 @@ This cmdlet has the following aliases,
 Update the automatic work location for a user.
 The automatic layer participates in the standard precedence model: Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps).
 It doesn't clear manual or scheduled signals.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+$params = @{
+	workLocationType = "office"
+	placeId = "eb706f15-137e-4722-b4d1-b601481d9251"
+}
+
+# A UPN can also be used as -UserId.
+Set-MgBetaUserPresenceAutomaticLocation -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaUserPresenceAutomaticLocation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -548,7 +563,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [Set-MgBetaUserPresenceAutomaticLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceautomaticlocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setautomaticlocation?view=graph-rest-beta)
-
 
 
 

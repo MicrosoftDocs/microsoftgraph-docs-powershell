@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationmessagereaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction
 ---
@@ -30,7 +30,6 @@ Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### Get
@@ -41,7 +40,7 @@ Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction
  -OnlineMeetingEngagementConversationId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -51,7 +50,7 @@ Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction
  -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -62,6 +61,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 A collection of reactions (such as like and smile) that users have applied to this message.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction -OnlineMeetingEngagementConversationId $onlineMeetingEngagementConversationId -EngagementConversationMessageId $engagementConversationMessageId
+
+```
+This example shows how to use the Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction Cmdlet.
+
 
 ## PARAMETERS
 
@@ -609,8 +621,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationmessagereaction)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/engagementconversationdiscussionmessage-list-reactions?view=graph-rest-beta)
-
-
 
 
 

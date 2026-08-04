@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingattendancereport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaCommunicationOnlineMeetingAttendanceReport
 ---
@@ -30,7 +30,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <string>
  [-MeetingEndDateTime <datetime>] [-MeetingStartDateTime <datetime>] [-TotalParticipantCount <int>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +40,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <string>
  -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -53,7 +53,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommuni
  [-MeetingEndDateTime <datetime>] [-MeetingStartDateTime <datetime>] [-TotalParticipantCount <int>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -63,7 +63,7 @@ New-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommuni
  -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -614,6 +614,10 @@ Read-only.
     [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
     [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
   [EmailAddress <String>]: Email address of the user associated with this attendance record.
+  [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+    [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+    [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+    [EngagementType <String>]: meetingEngagementType
   [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -650,6 +654,10 @@ Read-only.
       [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
       [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
     [EmailAddress <String>]: Email address of the user associated with this attendance record.
+    [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+      [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+      [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+      [EngagementType <String>]: meetingEngagementType
     [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Referrer <String>]: A URL or string that represents the location from which the registrant registered.

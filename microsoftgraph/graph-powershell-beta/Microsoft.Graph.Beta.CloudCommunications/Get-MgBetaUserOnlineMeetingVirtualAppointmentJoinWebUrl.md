@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingvirtualappointmentjoinweburl
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl
 ---
@@ -28,7 +28,7 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -OnlineMeetingId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -37,7 +37,7 @@ Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -OnlineMeetingId <string
 Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -55,7 +55,7 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | VirtualAppointment.Read, VirtualAppointment.ReadWrite, OnlineMeetings.ReadWrite, OnlineMeetings.Read,  |
+| Delegated (work or school account) | VirtualAppointment.Read, OnlineMeetings.Read, OnlineMeetings.ReadWrite, VirtualAppointment.ReadWrite,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All,  |
 

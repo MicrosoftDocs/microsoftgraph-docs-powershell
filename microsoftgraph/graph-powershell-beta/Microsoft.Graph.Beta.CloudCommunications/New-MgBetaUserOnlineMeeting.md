@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeeting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserOnlineMeeting
 ---
@@ -35,9 +35,10 @@ New-MgBetaUserOnlineMeeting -UserId <string> [-ResponseHeadersVariable <string>]
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <string>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <string[]>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
- [-CreationDateTime <datetime>] [-EndDateTime <datetime>] [-ExpiryDateTime <datetime>]
- [-ExternalId <string>] [-Id <string>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled]
- [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>] [-CreationDateTime <datetime>]
+ [-EndDateTime <datetime>] [-ExpiryDateTime <datetime>] [-ExternalId <string>] [-Id <string>]
+ [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <string>]
  [-JoinWebUrl <string>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
@@ -51,7 +52,6 @@ New-MgBetaUserOnlineMeeting -UserId <string> [-ResponseHeadersVariable <string>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -61,7 +61,6 @@ New-MgBetaUserOnlineMeeting -UserId <string> -BodyParameter <IMicrosoftGraphOnli
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -79,9 +78,10 @@ New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-BroadcastRecordingInputFile <string>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <string[]>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
- [-CreationDateTime <datetime>] [-EndDateTime <datetime>] [-ExpiryDateTime <datetime>]
- [-ExternalId <string>] [-Id <string>] [-IsBroadcast] [-IsEndToEndEncryptionEnabled]
- [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>] [-CreationDateTime <datetime>]
+ [-EndDateTime <datetime>] [-ExpiryDateTime <datetime>] [-ExternalId <string>] [-Id <string>]
+ [-IsBroadcast] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
+ [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <string>]
  [-JoinWebUrl <string>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
@@ -95,7 +95,6 @@ New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -105,7 +104,7 @@ New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IMicrosoftGraphOnlineMeeting> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -911,6 +910,34 @@ To construct, see NOTES section for CHATRESTRICTIONS properties and create a has
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatRestrictions
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CloudVideoInteropInfo
+
+cloudVideoInteropInfo
+To construct, see NOTES section for CLOUDVIDEOINTEROPINFO properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudVideoInteropInfo
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -2067,6 +2094,10 @@ Read-only.
       [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
       [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
     [EmailAddress <String>]: Email address of the user associated with this attendance record.
+    [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+      [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+      [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+      [EngagementType <String>]: meetingEngagementType
     [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -2146,6 +2177,10 @@ Read-only.
         [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
         [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
       [EmailAddress <String>]: Email address of the user associated with this attendance record.
+      [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+        [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+        [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+        [EngagementType <String>]: meetingEngagementType
       [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -2200,6 +2235,11 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+  [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [MoreInfoWebUrl <String>]: 
+    [TenantKey <String>]: 
+    [VideoTeleconferenceId <String>]: 
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2423,6 +2463,12 @@ CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
   [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
 
+CLOUDVIDEOINTEROPINFO `<IMicrosoftGraphCloudVideoInteropInfo>`: cloudVideoInteropInfo
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [MoreInfoWebUrl <String>]: 
+  [TenantKey <String>]: 
+  [VideoTeleconferenceId <String>]: 
+
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
@@ -2485,6 +2531,10 @@ Read-only.
       [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
       [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
     [EmailAddress <String>]: Email address of the user associated with this attendance record.
+    [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+      [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+      [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+      [EngagementType <String>]: meetingEngagementType
     [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Referrer <String>]: A URL or string that represents the location from which the registrant registered.

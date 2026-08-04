@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetauserpresencelocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgBetaUserPresenceLocation
 ---
@@ -27,7 +27,6 @@ Clear-MgBetaUserPresenceLocation -UserId <string> [-ResponseHeadersVariable <str
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ClearViaIdentity
@@ -37,7 +36,6 @@ Clear-MgBetaUserPresenceLocation -InputObject <ICloudCommunicationsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,6 +46,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Clear-MgBetaUserPresenceLocation -UserId $userId
+
+```
+This example shows how to use the Clear-MgBetaUserPresenceLocation Cmdlet.
+
 
 ## PARAMETERS
 
@@ -390,7 +402,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [Clear-MgBetaUserPresenceLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetauserpresencelocation)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-beta)
-
 
 
 
