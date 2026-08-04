@@ -1,68 +1,62 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofileassignment
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/publish-mgbetadevicemanagementdeponboardingsettingappledevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
+title: Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
 ---
 
-# Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
+# Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
 
 ## SYNOPSIS
 
-Update the navigation property assignments in deviceManagement
+Invoke action releaseAppleDevices
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### ReleaseExpanded (Default)
 
 ```
-Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
- -WindowsAutopilotDeploymentProfileAssignmentId <string>
- -WindowsAutopilotDeploymentProfileId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Source <DeviceAndAppManagementAssignmentSource>] [-SourceId <string>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice -DepOnboardingSettingId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DepToken <string>]
+ [-DeviceSerialNumbers <string[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Update
+### Release
 
 ```
-Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
- -WindowsAutopilotDeploymentProfileAssignmentId <string>
- -WindowsAutopilotDeploymentProfileId <string>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment>
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice -DepOnboardingSettingId <string>
+ -BodyParameter <IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### UpdateViaIdentityExpanded
+### ReleaseViaIdentityExpanded
 
 ```
-Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
  -InputObject <IDeviceManagementEnrollmentIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Source <DeviceAndAppManagementAssignmentSource>] [-SourceId <string>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-AdditionalProperties <hashtable>] [-DepToken <string>] [-DeviceSerialNumbers <string[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### UpdateViaIdentity
+### ReleaseViaIdentity
 
 ```
-Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
+Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice
  -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment>
+ -BodyParameter <IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,7 +66,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property assignments in deviceManagement
+Invoke action releaseAppleDevices
 
 ## PARAMETERS
 
@@ -86,13 +80,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: ReleaseViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: ReleaseExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -105,22 +99,22 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-An assignment of a Windows Autopilot deployment profile to an AAD group.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentity
+- Name: ReleaseViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Update
+- Name: Release
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -164,6 +158,87 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DepOnboardingSettingId
+
+The unique identifier of depOnboardingSetting
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ReleaseExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Release
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DepToken
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ReleaseViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: ReleaseExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DeviceSerialNumbers
+
+
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ReleaseViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: ReleaseExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -237,34 +312,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
-
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -276,16 +323,37 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: ReleaseViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateViaIdentity
+- Name: ReleaseViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -378,88 +446,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Source
-
-Represents source of assignment.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceAndAppManagementAssignmentSource
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -SourceId
-
-Identifier for resource used for deployment to a group
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Target
-
-Base type for assignment targets.
-To construct, see NOTES section for TARGET properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentTarget
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -482,60 +468,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WindowsAutopilotDeploymentProfileAssignmentId
-
-The unique identifier of windowsAutopilotDeploymentProfileAssignment
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -WindowsAutopilotDeploymentProfileId
-
-The unique identifier of windowsAutopilotDeploymentProfile
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -549,7 +481,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema
 
 {{ Fill in the Description }}
 
@@ -559,7 +491,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -570,16 +502,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment>`: An assignment of a Windows Autopilot deployment profile to an AAD group.
+BODYPARAMETER `<IPaths1O9Ihb6DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphReleaseappledevicesPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Source <DeviceAndAppManagementAssignmentSource?>]: Represents source of assignment.
-  [SourceId <String>]: Identifier for resource used for deployment to a group
-  [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
-    [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
+  [DepToken <String>]: 
+  [DeviceSerialNumbers <String[]>]: 
 
 INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
@@ -610,15 +536,10 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [WindowsFeatureUpdateProfileAssignmentId <String>]: The unique identifier of windowsFeatureUpdateProfileAssignment
   [WindowsFeatureUpdateProfileId <String>]: The unique identifier of windowsFeatureUpdateProfile
 
-TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for assignment targets.
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
-  [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
-
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotdeploymentprofileassignment)
+- [Publish-MgBetaDeviceManagementDepOnboardingSettingAppleDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/publish-mgbetadevicemanagementdeponboardingsettingappledevice)
 
 
 

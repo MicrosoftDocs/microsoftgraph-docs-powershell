@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagementCloudPcRoleDefinition
 ---
@@ -26,7 +26,7 @@ Get-MgBetaRoleManagementCloudPcRoleDefinition [-ExpandProperty <string[]>] [-Pro
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -36,7 +36,7 @@ Get-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgBetaRoleManagementCloudPcRoleDefinition -InputObject <IDeviceManagementEnr
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -63,9 +63,9 @@ The following RBAC providers are currently supported:\r- Cloud PC \r- device man
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementRBAC.Read.All, RoleManagement.ReadWrite.Directory, RoleManagement.Read.Directory, RoleManagement.ReadWrite.CloudPC, CloudPC.Read.All, CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.Read.CloudPC,  |
+| Delegated (work or school account) | DeviceManagementRBAC.Read.All, CloudPC.Read.All, CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.Read.CloudPC, RoleManagement.Read.Directory, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementRBAC.Read.All, CloudPC.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.Read.Directory, RoleManagement.Read.CloudPC, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory, Directory.Read.All, DeviceManagementRBAC.ReadWrite.All, Directory.ReadWrite.All, CloudPC.Read.All,  |
+| Application | DeviceManagementRBAC.Read.All, CloudPC.Read.All, CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.Read.CloudPC, RoleManagement.Read.Directory, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
 ### Example 1: Get the definition of a built-in role for a Cloud PC provider
