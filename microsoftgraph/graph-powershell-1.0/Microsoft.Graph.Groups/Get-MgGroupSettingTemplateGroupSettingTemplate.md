@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplategroupsettingtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSettingTemplateGroupSettingTemplate
 ---
@@ -26,7 +26,7 @@ Get-MgGroupSettingTemplateGroupSettingTemplate [-ExpandProperty <string[]>] [-Pr
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -36,7 +36,7 @@ Get-MgGroupSettingTemplateGroupSettingTemplate -GroupSettingTemplateId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -63,9 +63,9 @@ This operation allows retrieval of the properties of the groupSettingTemplate ob
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, GroupSettings.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.Read.All, GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Directory.Read.All,  |
+| Application | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, GroupSettings.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
