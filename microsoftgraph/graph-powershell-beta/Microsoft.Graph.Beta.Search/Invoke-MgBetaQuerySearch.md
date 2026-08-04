@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaQuerySearch
 ---
@@ -28,7 +28,6 @@ Invoke-MgBetaQuerySearch [-ResponseHeadersVariable <string>] [-AdditionalPropert
  [-Requests <IMicrosoftGraphSearchRequest[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Query
@@ -39,7 +38,6 @@ Invoke-MgBetaQuerySearch
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -56,7 +54,7 @@ Search results are provided in the response.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Read, Sites.Read.All, QnA.Read.All, Files.Read.All, ExternalItem.Read.All, Chat.Read, Calendars.Read, Bookmark.Read.All, Acronym.Read.All,  |
+| Delegated (work or school account) | Mail.Read, Acronym.Read.All, Bookmark.Read.All, Calendars.Read, Chat.Read, ExternalItem.Read.All, Files.Read.All, QnA.Read.All, Sites.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Files.Read.All, Sites.Read.All,  |
 
