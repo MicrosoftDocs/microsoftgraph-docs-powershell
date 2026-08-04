@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementAccessPackageAssignmentRequest
 ---
@@ -26,7 +26,6 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageId <
  [-Justification <string>] [-RequestType <string>] [-StartDate <string>] [-Break]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -36,7 +35,7 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest
  -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateExpanded
@@ -56,7 +55,7 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest [-ResponseHeadersV
  [-VerifiedCredentialsData <IMicrosoftGraphVerifiedCredentialData[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateRequestAdminAddExternal
@@ -67,7 +66,7 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageId <
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Justification <string>] [-RequestType <string>]
  [-StartDate <string>] [-Break] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateRequestAdminRemove
@@ -76,7 +75,7 @@ New-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageId <
 New-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentId <string>
  [-Justification <string>] [-RequestType <string>] [-Break] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

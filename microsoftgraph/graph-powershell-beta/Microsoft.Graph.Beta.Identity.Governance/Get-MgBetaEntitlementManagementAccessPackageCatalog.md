@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementAccessPackageCatalog
 ---
@@ -26,7 +26,7 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <string[]>]
  [-Property <string[]>] [-Sort <string[]>] [-Break] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-All] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-All]
 ```
 
 ### Get
@@ -36,7 +36,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <str
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGover
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### List
@@ -57,7 +57,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### ListByDisplayNameContains
@@ -66,7 +66,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <string[]>]
 Get-MgBetaEntitlementManagementAccessPackageCatalog -DisplayNameContains <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-Sort <string[]>] [-Top <int>] [-Break]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All]
 ```
 
 ### ListByDisplayNameEq
@@ -75,7 +75,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog -DisplayNameContains <string
 Get-MgBetaEntitlementManagementAccessPackageCatalog -DisplayNameEq <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-Sort <string[]>] [-Top <int>] [-Break]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-All]
 ```
 
 ## ALIASES
