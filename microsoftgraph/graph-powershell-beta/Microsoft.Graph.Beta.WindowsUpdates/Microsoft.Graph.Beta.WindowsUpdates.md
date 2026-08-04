@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-Module Guid: ad505424-3ddd-496c-9454-ba47ad1d9e1c
+Module Guid: 187275f2-43b2-47d6-ace8-6eeb19369b39
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.windowsupdates/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -75,6 +75,28 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaWindowsUpdatesPolicy](Get-MgBetaWindowsUpdatesPolicy.md)
 
+### [Get-MgBetaWindowsUpdatesPolicyApplicableContent](Get-MgBetaWindowsUpdatesPolicyApplicableContent.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApplicableContent](Get-MgBetaWindowsUpdatesPolicyApplicableContent.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApplicableContentCatalogEntry](Get-MgBetaWindowsUpdatesPolicyApplicableContentCatalogEntry.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApplicableContentCount](Get-MgBetaWindowsUpdatesPolicyApplicableContentCount.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice](Get-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice](Get-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDeviceCount](Get-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDeviceCount.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApproval](Get-MgBetaWindowsUpdatesPolicyApproval.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApproval](Get-MgBetaWindowsUpdatesPolicyApproval.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApprovalCatalogEntry](Get-MgBetaWindowsUpdatesPolicyApprovalCatalogEntry.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyApprovalCount](Get-MgBetaWindowsUpdatesPolicyApprovalCount.md)
+
 ### [Get-MgBetaWindowsUpdatesPolicyAudience](Get-MgBetaWindowsUpdatesPolicyAudience.md)
 
 ### [Get-MgBetaWindowsUpdatesPolicyAudienceApplicableContent](Get-MgBetaWindowsUpdatesPolicyAudienceApplicableContent.md)
@@ -112,6 +134,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy](Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy.md)
 
 ### [Get-MgBetaWindowsUpdatesPolicyCount](Get-MgBetaWindowsUpdatesPolicyCount.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyRing](Get-MgBetaWindowsUpdatesPolicyRing.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyRing](Get-MgBetaWindowsUpdatesPolicyRing.md)
+
+### [Get-MgBetaWindowsUpdatesPolicyRingCount](Get-MgBetaWindowsUpdatesPolicyRingCount.md)
 
 ### [Get-MgBetaWindowsUpdatesProduct](Get-MgBetaWindowsUpdatesProduct.md)
 
@@ -159,6 +187,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaWindowsUpdatesUpdatableAssetCount](Get-MgBetaWindowsUpdatesUpdatableAssetCount.md)
 
+### [Get-MgBetaWindowsUpdatesUpdatePolicy](Get-MgBetaWindowsUpdatesUpdatePolicy.md)
+
+### [Get-MgBetaWindowsUpdatesUpdatePolicy](Get-MgBetaWindowsUpdatesUpdatePolicy.md)
+
+### [Get-MgBetaWindowsUpdatesUpdatePolicyCount](Get-MgBetaWindowsUpdatesUpdatePolicyCount.md)
+
 ### [Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceExclusionAssetById](Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceExclusionAssetById.md)
 
 ### [Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById](Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById.md)
@@ -199,6 +233,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaWindowsUpdatesPolicy](New-MgBetaWindowsUpdatesPolicy.md)
 
+### [New-MgBetaWindowsUpdatesPolicyApplicableContent](New-MgBetaWindowsUpdatesPolicyApplicableContent.md)
+
+### [New-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice](New-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice.md)
+
+### [New-MgBetaWindowsUpdatesPolicyApproval](New-MgBetaWindowsUpdatesPolicyApproval.md)
+
 ### [New-MgBetaWindowsUpdatesPolicyAudienceApplicableContent](New-MgBetaWindowsUpdatesPolicyAudienceApplicableContent.md)
 
 ### [New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice](New-MgBetaWindowsUpdatesPolicyAudienceApplicableContentMatchedDevice.md)
@@ -208,6 +248,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaWindowsUpdatesPolicyAudienceMember](New-MgBetaWindowsUpdatesPolicyAudienceMember.md)
 
 ### [New-MgBetaWindowsUpdatesPolicyComplianceChange](New-MgBetaWindowsUpdatesPolicyComplianceChange.md)
+
+### [New-MgBetaWindowsUpdatesPolicyRing](New-MgBetaWindowsUpdatesPolicyRing.md)
 
 ### [New-MgBetaWindowsUpdatesProduct](New-MgBetaWindowsUpdatesProduct.md)
 
@@ -221,6 +263,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaWindowsUpdatesUpdatableAsset](New-MgBetaWindowsUpdatesUpdatableAsset.md)
 
+### [New-MgBetaWindowsUpdatesUpdatePolicy](New-MgBetaWindowsUpdatesUpdatePolicy.md)
+
 ### [Remove-MgBetaWindowsUpdatesDeployment](Remove-MgBetaWindowsUpdatesDeployment.md)
 
 ### [Remove-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent](Remove-MgBetaWindowsUpdatesDeploymentAudienceApplicableContent.md)
@@ -232,6 +276,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById](Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById.md)
 
 ### [Remove-MgBetaWindowsUpdatesPolicy](Remove-MgBetaWindowsUpdatesPolicy.md)
+
+### [Remove-MgBetaWindowsUpdatesPolicyApplicableContent](Remove-MgBetaWindowsUpdatesPolicyApplicableContent.md)
+
+### [Remove-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice](Remove-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice.md)
+
+### [Remove-MgBetaWindowsUpdatesPolicyApproval](Remove-MgBetaWindowsUpdatesPolicyApproval.md)
 
 ### [Remove-MgBetaWindowsUpdatesPolicyAudience](Remove-MgBetaWindowsUpdatesPolicyAudience.md)
 
@@ -250,6 +300,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById](Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById.md)
 
 ### [Remove-MgBetaWindowsUpdatesPolicyComplianceChange](Remove-MgBetaWindowsUpdatesPolicyComplianceChange.md)
+
+### [Remove-MgBetaWindowsUpdatesPolicyRing](Remove-MgBetaWindowsUpdatesPolicyRing.md)
 
 ### [Remove-MgBetaWindowsUpdatesProduct](Remove-MgBetaWindowsUpdatesProduct.md)
 
@@ -275,6 +327,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById](Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById.md)
 
+### [Remove-MgBetaWindowsUpdatesUpdatePolicy](Remove-MgBetaWindowsUpdatesUpdatePolicy.md)
+
 ### [Update-MgBetaWindowsUpdatesDeployment](Update-MgBetaWindowsUpdatesDeployment.md)
 
 ### [Update-MgBetaWindowsUpdatesDeploymentAudience](Update-MgBetaWindowsUpdatesDeploymentAudience.md)
@@ -286,6 +340,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaWindowsUpdatesDeploymentAudienceById](Update-MgBetaWindowsUpdatesDeploymentAudienceById.md)
 
 ### [Update-MgBetaWindowsUpdatesPolicy](Update-MgBetaWindowsUpdatesPolicy.md)
+
+### [Update-MgBetaWindowsUpdatesPolicyApplicableContent](Update-MgBetaWindowsUpdatesPolicyApplicableContent.md)
+
+### [Update-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice](Update-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice.md)
+
+### [Update-MgBetaWindowsUpdatesPolicyApproval](Update-MgBetaWindowsUpdatesPolicyApproval.md)
 
 ### [Update-MgBetaWindowsUpdatesPolicyAudience](Update-MgBetaWindowsUpdatesPolicyAudience.md)
 
@@ -300,6 +360,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaWindowsUpdatesPolicyAudienceMember](Update-MgBetaWindowsUpdatesPolicyAudienceMember.md)
 
 ### [Update-MgBetaWindowsUpdatesPolicyComplianceChange](Update-MgBetaWindowsUpdatesPolicyComplianceChange.md)
+
+### [Update-MgBetaWindowsUpdatesPolicyRing](Update-MgBetaWindowsUpdatesPolicyRing.md)
 
 ### [Update-MgBetaWindowsUpdatesProduct](Update-MgBetaWindowsUpdatesProduct.md)
 
@@ -320,6 +382,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaWindowsUpdatesResourceConnection](Update-MgBetaWindowsUpdatesResourceConnection.md)
 
 ### [Update-MgBetaWindowsUpdatesUpdatableAsset](Update-MgBetaWindowsUpdatesUpdatableAsset.md)
+
+### [Update-MgBetaWindowsUpdatesUpdatePolicy](Update-MgBetaWindowsUpdatesUpdatePolicy.md)
 
 
 

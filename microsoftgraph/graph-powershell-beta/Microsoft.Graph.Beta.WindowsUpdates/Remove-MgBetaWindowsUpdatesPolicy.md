@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaWindowsUpdatesPolicy
 ---
@@ -25,7 +25,6 @@ Remove-MgBetaWindowsUpdatesPolicy -PolicyId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -35,7 +34,6 @@ Remove-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-IfMat
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -63,7 +61,7 @@ You can use this method with the following child object type: qualityUpdatePolic
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Remove-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId
+Remove-MgBetaWindowsUpdatesPolicy -PolicyId $policyId
 
 ```
 This example shows how to use the Remove-MgBetaWindowsUpdatesPolicy Cmdlet.
