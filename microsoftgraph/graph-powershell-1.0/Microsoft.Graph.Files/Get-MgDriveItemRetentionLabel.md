@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveItemRetentionLabel
 ---
@@ -27,7 +27,7 @@ For information about retention labels from an administrator's perspective, see 
 Get-MgDriveItemRetentionLabel -DriveId <string> -DriveItemId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -36,7 +36,7 @@ Get-MgDriveItemRetentionLabel -DriveId <string> -DriveItemId <string> [-ExpandPr
 Get-MgDriveItemRetentionLabel -InputObject <IFilesIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -48,6 +48,19 @@ This cmdlet has the following aliases,
 
 Get metadata information for a retention label applied on a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+Get-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Get-MgDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
@@ -389,7 +402,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [Get-MgDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemretentionlabel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-getretentionlabel?view=graph-rest-1.0)
-
 
 
 
