@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/invoke-mgpreviewgrouponenotenotebooksectiongroupsectionpage
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgPreviewGroupOnenoteNotebookSectionGroupSectionPage
 ---
@@ -27,7 +27,7 @@ Invoke-MgPreviewGroupOnenoteNotebookSectionGroupSectionPage -GroupId <string> -N
  -OnenotePageId <string> -OnenoteSectionId <string> -SectionGroupId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### PreviewViaIdentity
@@ -36,7 +36,7 @@ Invoke-MgPreviewGroupOnenoteNotebookSectionGroupSectionPage -GroupId <string> -N
 Invoke-MgPreviewGroupOnenoteNotebookSectionGroupSectionPage -InputObject <INotesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
