@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlanner
 ---
@@ -28,7 +28,6 @@ Update-MgPlanner [-ResponseHeadersVariable <string>] [-AdditionalProperties <has
  [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -37,7 +36,7 @@ Update-MgPlanner [-ResponseHeadersVariable <string>] [-AdditionalProperties <has
 Update-MgPlanner -BodyParameter <IMicrosoftGraphPlanner> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

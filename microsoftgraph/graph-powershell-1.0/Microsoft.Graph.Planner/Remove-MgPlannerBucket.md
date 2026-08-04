@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPlannerBucket
 ---
@@ -27,7 +27,6 @@ Remove-MgPlannerBucket -PlannerBucketId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -37,7 +36,6 @@ Remove-MgPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

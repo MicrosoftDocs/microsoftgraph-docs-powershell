@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskprogresstaskboardformat
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlannerTaskProgressTaskBoardFormat
 ---
@@ -27,7 +27,7 @@ Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId <string> -IfMatch <st
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-OrderHint <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,6 @@ Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId <string> -IfMatch <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,7 +47,7 @@ Update-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> -IfM
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-OrderHint <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -59,7 +58,6 @@ Update-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> -IfM
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

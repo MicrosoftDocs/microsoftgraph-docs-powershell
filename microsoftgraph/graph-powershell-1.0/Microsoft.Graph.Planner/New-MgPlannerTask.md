@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlannerTask
 ---
@@ -38,7 +38,7 @@ New-MgPlannerTask [-ResponseHeadersVariable <string>] [-ActiveChecklistItemCount
  [-ReferenceCount <int>] [-StartDateTime <datetime>] [-Title <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -47,7 +47,7 @@ New-MgPlannerTask [-ResponseHeadersVariable <string>] [-ActiveChecklistItemCount
 New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

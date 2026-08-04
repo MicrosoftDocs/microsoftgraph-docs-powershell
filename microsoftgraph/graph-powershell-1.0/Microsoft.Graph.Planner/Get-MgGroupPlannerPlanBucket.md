@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupPlannerPlanBucket
 ---
@@ -30,7 +30,7 @@ Get-MgGroupPlannerPlanBucket -GroupId <string> -PlannerPlanId <string> [-ExpandP
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ## ALIASES
