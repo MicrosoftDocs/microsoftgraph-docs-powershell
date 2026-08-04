@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mginvokesecurityidentityaccountaction
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgInvokeSecurityIdentityAccountAction
 ---
@@ -29,7 +29,6 @@ Invoke-MgInvokeSecurityIdentityAccountAction -IdentityAccountsId <string>
  [-AdditionalProperties <hashtable>] [-IdentityProvider <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Invoke
@@ -40,7 +39,6 @@ Invoke-MgInvokeSecurityIdentityAccountAction -IdentityAccountsId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### InvokeViaIdentityExpanded
@@ -51,7 +49,6 @@ Invoke-MgInvokeSecurityIdentityAccountAction -InputObject <ISecurityIdentity>
  [-AdditionalProperties <hashtable>] [-IdentityProvider <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### InvokeViaIdentity
@@ -62,7 +59,6 @@ Invoke-MgInvokeSecurityIdentityAccountAction -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,6 +70,25 @@ This cmdlet has the following aliases,
 
 Perform actions such as revoking accounts and forcing password reset for identity accounts that are observed in Microsoft Defender for Identity.
 This action allows reading and performing identity security actions on behalf of the signed-in identity.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	accountId = "256db173-930a-4991-9061-0d51a9a93ba5"
+	action = "disable"
+	identityProvider = "activeDirectory"
+}
+
+Invoke-MgInvokeSecurityIdentityAccountAction -IdentityAccountsId $identityAccountsId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgInvokeSecurityIdentityAccountAction Cmdlet.
+
 
 ## PARAMETERS
 
@@ -621,7 +636,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [Invoke-MgInvokeSecurityIdentityAccountAction](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mginvokesecurityidentityaccountaction)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-identityaccounts-invokeaction?view=graph-rest-1.0)
-
 
 
 

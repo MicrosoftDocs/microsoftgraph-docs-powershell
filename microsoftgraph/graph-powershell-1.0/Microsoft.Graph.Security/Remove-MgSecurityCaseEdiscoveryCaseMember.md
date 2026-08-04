@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasemember
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSecurityCaseEdiscoveryCaseMember
 ---
@@ -28,7 +28,6 @@ Remove-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +37,6 @@ Remove-MgSecurityCaseEdiscoveryCaseMember -InputObject <ISecurityIdentity> [-IfM
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,6 +47,19 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Remove an ediscoveryCaseMember from an ediscoveryCase.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Remove-MgSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCaseMemberId $ediscoveryCaseMemberId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseMember Cmdlet.
+
 
 ## PARAMETERS
 
@@ -479,7 +490,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [Remove-MgSecurityCaseEdiscoveryCaseMember](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasemember)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-delete?view=graph-rest-1.0)
-
 
 
 

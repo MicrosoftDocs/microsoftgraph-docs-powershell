@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorcandidateactivationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySensorCandidateActivationConfiguration
 ---
@@ -23,7 +23,7 @@ Read the properties and relationships of microsoft.graph.security.sensorCandidat
 Get-MgSecurityIdentitySensorCandidateActivationConfiguration [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,6 +42,19 @@ Read the properties and relationships of microsoft.graph.security.sensorCandidat
 | Delegated (work or school account) | SecurityIdentitiesSensors.Read.All, SecurityIdentitiesSensors.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.Read.All, SecurityIdentitiesSensors.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIdentitySensorCandidateActivationConfiguration
+
+```
+This example shows how to use the Get-MgSecurityIdentitySensorCandidateActivationConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
@@ -283,7 +296,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [Get-MgSecurityIdentitySensorCandidateActivationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensorcandidateactivationconfiguration)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensorcandidateactivationconfiguration-get?view=graph-rest-1.0)
-
 
 
 

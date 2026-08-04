@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 89b16703-6683-4c68-bcce-1eebe55aebb5
+Module Guid: 02a7ba7f-90cf-4b6c-8fa4-b2a1e720cd28
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -290,6 +290,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecurityIdentitySensorHealthIssue](Get-MgSecurityIdentitySensorHealthIssue.md)
 
 ### [Get-MgSecurityIdentitySensorHealthIssueCount](Get-MgSecurityIdentitySensorHealthIssueCount.md)
+
+### [Get-MgSecurityIdentitySetting](Get-MgSecurityIdentitySetting.md)
+
+### [Get-MgSecurityIdentitySettingAutoAuditingConfiguration](Get-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
 
@@ -669,6 +673,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgReopenSecurityCaseEdiscoveryCase](Invoke-MgReopenSecurityCaseEdiscoveryCase.md)
 
+### [Merge-MgSecurityIncident](Merge-MgSecurityIncident.md)
+
+### [Move-MgSecurityAlert](Move-MgSecurityAlert.md)
+
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
 
 ### [New-MgSecurityAlertV2](New-MgSecurityAlertV2.md)
@@ -887,6 +895,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSecurityIdentitySensorCandidateActivationConfiguration](Remove-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
 
+### [Remove-MgSecurityIdentitySetting](Remove-MgSecurityIdentitySetting.md)
+
+### [Remove-MgSecurityIdentitySettingAutoAuditingConfiguration](Remove-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
+
 ### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
 
 ### [Remove-MgSecurityLabel](Remove-MgSecurityLabel.md)
@@ -1052,6 +1064,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityIdentitySensorCandidate](Update-MgSecurityIdentitySensorCandidate.md)
 
 ### [Update-MgSecurityIdentitySensorCandidateActivationConfiguration](Update-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Update-MgSecurityIdentitySetting](Update-MgSecurityIdentitySetting.md)
+
+### [Update-MgSecurityIdentitySettingAutoAuditingConfiguration](Update-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
 
