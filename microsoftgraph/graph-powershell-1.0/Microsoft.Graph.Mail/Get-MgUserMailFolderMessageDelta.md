@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMailFolderMessageDelta
 ---
@@ -31,7 +31,6 @@ Get-MgUserMailFolderMessageDelta -MailFolderId <string> -UserId <string> [-Chang
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
- [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
@@ -42,7 +41,7 @@ Get-MgUserMailFolderMessageDelta -InputObject <IMailIdentity> [-ChangeType <stri
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-Count] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,9 +59,9 @@ It allows you to maintain and synchronize a local store of a user's messages wit
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.ReadWrite, Mail.Read,  |
-| Application | Mail.ReadBasic.All, Mail.ReadWrite, Mail.Read,  |
+| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

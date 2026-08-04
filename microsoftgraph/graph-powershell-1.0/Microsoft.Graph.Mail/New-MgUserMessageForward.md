@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageforward
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMessageForward
 ---
@@ -28,7 +28,6 @@ New-MgUserMessageForward -MessageId <string> -UserId <string> [-ResponseHeadersV
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -39,7 +38,6 @@ New-MgUserMessageForward -MessageId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,7 +48,6 @@ New-MgUserMessageForward -InputObject <IMailIdentity> [-ResponseHeadersVariable 
  [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -61,7 +58,6 @@ New-MgUserMessageForward -InputObject <IMailIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -88,8 +84,23 @@ Invoke action createForward
 
 Import-Module Microsoft.Graph.Mail
 
+$params = @{
+	message = @{
+		isDeliveryReceiptRequested = $true
+		toRecipients = @(
+			@{
+				emailAddress = @{
+					address = "danas@contoso.com"
+					name = "Dana Swope"
+				}
+			}
+		)
+	}
+	comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved."
+}
+
 # A UPN can also be used as -UserId.
-New-MgUserMessageForward -UserId $userId -MessageId $messageId
+New-MgUserMessageForward -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```
 This example shows how to use the New-MgUserMessageForward Cmdlet.
