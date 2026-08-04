@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem
 Locale: en-US
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserActivityHistoryItem
 ---
@@ -31,7 +31,6 @@ Update-MgUserActivityHistoryItem -ActivityHistoryItemId <string> -UserActivityId
  [-Status <string>] [-UserTimezone <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -42,7 +41,6 @@ Update-MgUserActivityHistoryItem -ActivityHistoryItemId <string> -UserActivityId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,7 +54,6 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
  [-Status <string>] [-UserTimezone <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +63,7 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
