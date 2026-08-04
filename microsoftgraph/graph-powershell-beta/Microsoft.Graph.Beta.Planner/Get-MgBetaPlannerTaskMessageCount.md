@@ -1,34 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Planner-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplantask
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskmessagecount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaPlannerPlanTask
+title: Get-MgBetaPlannerTaskMessageCount
 ---
 
-# Get-MgBetaPlannerPlanTask
+# Get-MgBetaPlannerTaskMessageCount
 
 ## SYNOPSIS
 
-Retrieve a list of plannerTask objects associated with a plannerPlan object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanTask?view=graph-powershell-1.0)
+Get the number of the resource
 
 ## SYNTAX
 
-### List (Default)
+### Get (Default)
 
 ```
-Get-MgBetaPlannerPlanTask -PlannerPlanId <string> [-ExpandProperty <string[]>] [-Filter <string>]
- [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
+Get-MgBetaPlannerTaskMessageCount -PlannerTaskId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+```
+
+### GetViaIdentity
+
+```
+Get-MgBetaPlannerTaskMessageCount -InputObject <IPlannerIdentity> [-Filter <string>]
+ [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -38,51 +42,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve a list of plannerTask objects associated with a plannerPlan object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Group.Read.All, Group.ReadWrite.All, Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Planner
-
-Get-MgBetaPlannerPlanTask -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgBetaPlannerPlanTask Cmdlet.
-
+Get the number of the resource
 
 ## PARAMETERS
-
-### -All
-
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -93,51 +55,6 @@ Type: System.Management.Automation.SwitchParameter
 DefaultValue: False
 SupportsWildcards: false
 Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -CountVariable
-
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- CV
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ExpandProperty
-
-Expand related entities
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Expand
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -234,20 +151,21 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PageSize
+### -InputObject
 
-Sets the page size of results.
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: GetViaIdentity
   Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -255,9 +173,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PlannerPlanId
+### -PlannerTaskId
 
-The unique identifier of plannerPlan
+The unique identifier of plannerTask
 
 ```yaml
 Type: System.String
@@ -265,31 +183,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: Get
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Property
-
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Select
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -404,71 +300,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Skip
-
-Skip the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Sort
-
-Order items by property values
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- OrderBy
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases:
-- Limit
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -478,22 +309,43 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
+### System.Int32
 
 {{ Fill in the Description }}
 
 ## NOTES
 
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+  [GroupId <String>]: The unique identifier of group
+  [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerDeltaId <String>]: The unique identifier of plannerDelta
+  [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerRosterId <String>]: The unique identifier of plannerRoster
+  [PlannerRosterMemberId <String>]: The unique identifier of plannerRosterMember
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
+  [PlannerTaskId <String>]: The unique identifier of plannerTask
+  [UserId <String>]: The unique identifier of user
+
+
 ## RELATED LINKS
 
-- [Get-MgBetaPlannerPlanTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplantask)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-beta)
+- [Get-MgBetaPlannerTaskMessageCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskmessagecount)
+
 
 
 
