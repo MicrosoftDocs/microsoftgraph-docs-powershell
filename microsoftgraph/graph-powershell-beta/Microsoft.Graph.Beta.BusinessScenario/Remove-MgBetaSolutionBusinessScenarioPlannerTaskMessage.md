@@ -1,36 +1,36 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskdetail
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail
+title: Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 ---
 
-# Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail
+# Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 
 ## SYNOPSIS
 
-Delete navigation property details for solutions
+Delete navigation property messages for solutions
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail -BusinessScenarioId <string>
- -BusinessScenarioTaskId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> -PlannerTaskChatMessageId <string> [-IfMatch <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessScenarioIdentity>
+Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage -InputObject <IBusinessScenarioIdentity>
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -43,7 +43,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property details for solutions
+Delete navigation property messages for solutions
 
 ## PARAMETERS
 
@@ -259,6 +259,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PlannerTaskChatMessageId
+
+The unique identifier of plannerTaskChatMessage
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -406,7 +427,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskdetail)
+- [Remove-MgBetaSolutionBusinessScenarioPlannerTaskMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskmessage)
 
 
 

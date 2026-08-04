@@ -1,68 +1,68 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskdetail
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannertaskmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail
+title: New-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 ---
 
-# Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail
+# New-MgBetaSolutionBusinessScenarioPlannerTaskMessage
 
 ## SYNOPSIS
 
-Update the navigation property details in solutions
+Create new navigation property to messages for solutions
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### CreateExpanded (Default)
 
 ```
-Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -BusinessScenarioId <string>
- -BusinessScenarioTaskId <string> -IfMatch <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>]
- [-ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>] [-Checklist <hashtable>]
- [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>]
- [-Description <string>] [-Forms <hashtable>] [-Id <string>] [-Notes <IMicrosoftGraphItemBody>]
- [-PreviewType <string>] [-References <hashtable>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### Update
-
-```
-Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -BusinessScenarioId <string>
- -BusinessScenarioTaskId <string> -IfMatch <string>
- -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-ResponseHeadersVariable <string>] [-Break]
+New-MgBetaSolutionBusinessScenarioPlannerTaskMessage -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-Content <string>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+ [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-EditedDateTime <datetime>]
+ [-Id <string>] [-Mentions <IMicrosoftGraphPlannerTaskChatMention[]>] [-MessageType <string>]
+ [-ParentEntityId <string>] [-Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### UpdateViaIdentityExpanded
+### Create
 
 ```
-Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessScenarioIdentity>
- -IfMatch <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>] [-Checklist <hashtable>]
- [-CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>]
- [-Description <string>] [-Forms <hashtable>] [-Id <string>] [-Notes <IMicrosoftGraphItemBody>]
- [-PreviewType <string>] [-References <hashtable>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### UpdateViaIdentity
-
-```
-Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessScenarioIdentity>
- -IfMatch <string> -BodyParameter <IMicrosoftGraphPlannerTaskDetails>
+New-MgBetaSolutionBusinessScenarioPlannerTaskMessage -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> -BodyParameter <IMicrosoftGraphPlannerTaskChatMessage>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### CreateViaIdentityExpanded
+
+```
+New-MgBetaSolutionBusinessScenarioPlannerTaskMessage -InputObject <IBusinessScenarioIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Content <string>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
+ [-DeletedDateTime <datetime>] [-EditedDateTime <datetime>] [-Id <string>]
+ [-Mentions <IMicrosoftGraphPlannerTaskChatMention[]>] [-MessageType <string>]
+ [-ParentEntityId <string>] [-Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### CreateViaIdentity
+
+```
+New-MgBetaSolutionBusinessScenarioPlannerTaskMessage -InputObject <IBusinessScenarioIdentity>
+ -BodyParameter <IMicrosoftGraphPlannerTaskChatMessage> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,7 +72,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property details in solutions
+Create new navigation property to messages for solutions
 
 ## PARAMETERS
 
@@ -86,41 +86,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ApprovalAttachment
-
-plannerBaseApprovalAttachment
-To construct, see NOTES section for APPROVALATTACHMENT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBaseApprovalAttachment
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -133,22 +105,22 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-plannerTaskDetails
+plannerTaskChatMessage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMessage
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentity
+- Name: CreateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Update
+- Name: Create
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -190,13 +162,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Update
+- Name: Create
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -217,70 +189,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Update
+- Name: Create
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Checklist
-
-plannerChecklistItems
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -CompletionRequirements
-
-plannerTaskCompletionRequirementDetails
-To construct, see NOTES section for COMPLETIONREQUIREMENTS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskCompletionRequirementDetails
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -311,9 +228,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Description
+### -Content
 
-Description of the task.
+The content of the chat message.
+Supports plain text and sanitized HTML.
 
 ```yaml
 Type: System.String
@@ -321,13 +239,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -338,23 +256,107 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Forms
+### -CreatedBy
 
-plannerFormsDictionary
+identitySet
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CreatedDateTime
+
+The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DeletedDateTime
+
+
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -EditedDateTime
+
+
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -439,36 +441,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -IfMatch
-
-ETag value.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -488,13 +469,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateViaIdentity
+- Name: CreateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -505,24 +486,24 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Notes
+### -Mentions
 
-itemBody
-To construct, see NOTES section for NOTES properties and create a hash table.
+The list of mentions in the message.
+To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMention[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -533,9 +514,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PreviewType
+### -MessageType
 
-plannerPreviewType
+plannerTaskChatMessageType
 
 ```yaml
 Type: System.String
@@ -543,13 +524,40 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ParentEntityId
+
+The ID of the parent plannerTask that this message belongs to.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -623,23 +631,24 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -References
+### -Reactions
 
-plannerExternalReferences
+The reactions on the message.
+To construct, see NOTES section for REACTIONS properties and create a hash table.
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatReaction[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -707,7 +716,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMessage
 
 {{ Fill in the Description }}
 
@@ -717,7 +726,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskChatMessage
 
 {{ Fill in the Description }}
 
@@ -728,56 +737,53 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVALATTACHMENT `<IMicrosoftGraphPlannerBaseApprovalAttachment>`: plannerBaseApprovalAttachment
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Status <String>]: plannerApprovalStatus
-
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+BODYPARAMETER `<IMicrosoftGraphPlannerTaskChatMessage>`: plannerTaskChatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [ApprovalAttachment <IMicrosoftGraphPlannerBaseApprovalAttachment>]: plannerBaseApprovalAttachment
+  [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+  [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Status <String>]: plannerApprovalStatus
-  [Checklist <IMicrosoftGraphPlannerChecklistItems>]: plannerChecklistItems
-    [(Any) <Object>]: This indicates any property can be added to this object.
-  [CompletionRequirements <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>]: plannerTaskCompletionRequirementDetails
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]: plannerApprovalRequirement
+    [Application <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [IsApprovalRequired <Boolean?>]: Specifies whether approval is required to complete the plannerTask.
-If set to true, the task can only be marked as complete if an approval is created for the task and approved.
-    [ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]: plannerChecklistRequirement
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [RequiredChecklistItemIds <String[]>]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
-    [FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]: plannerFormsRequirement
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [RequiredForms <String[]>]: Read-only.
-A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
-  [Description <String>]: Description of the task.
-  [Forms <IMicrosoftGraphPlannerFormsDictionary>]: plannerFormsDictionary
-    [(Any) <Object>]: This indicates any property can be added to this object.
-  [Notes <IMicrosoftGraphItemBody>]: itemBody
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Content <String>]: The content of the item.
-    [ContentType <String>]: bodyType
-  [PreviewType <String>]: plannerPreviewType
-  [References <IMicrosoftGraphPlannerExternalReferences>]: plannerExternalReferences
-    [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [DeletedDateTime <DateTime?>]: 
+  [EditedDateTime <DateTime?>]: 
+  [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+    [MentionType <String>]: plannerTaskChatMentionType
+    [Mentioned <String>]: The ID of the mentioned user.
+    [Position <Int32?>]: The zero-based position of the mention in the message content.
+  [MessageType <String>]: plannerTaskChatMessageType
+  [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+  [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+    [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
 
-COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>`: plannerTaskCompletionRequirementDetails
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]: plannerApprovalRequirement
+  [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [IsApprovalRequired <Boolean?>]: Specifies whether approval is required to complete the plannerTask.
-If set to true, the task can only be marked as complete if an approval is created for the task and approved.
-  [ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]: plannerChecklistRequirement
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [RequiredChecklistItemIds <String[]>]: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
-  [FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]: plannerFormsRequirement
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [RequiredForms <String[]>]: Read-only.
-A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
+    [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  [Device <IMicrosoftGraphIdentity>]: identity
+  [User <IMicrosoftGraphIdentity>]: identity
 
 INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
@@ -786,15 +792,33 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
   [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Content <String>]: The content of the item.
-  [ContentType <String>]: bodyType
+MENTIONS <IMicrosoftGraphPlannerTaskChatMention[]>: The list of mentions in the message.
+  [MentionType <String>]: plannerTaskChatMentionType
+  [Mentioned <String>]: The ID of the mentioned user.
+  [Position <Int32?>]: The zero-based position of the mention in the message content.
+
+REACTIONS <IMicrosoftGraphPlannerTaskChatReaction[]>: The reactions on the message.
+  [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Application <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+      [Device <IMicrosoftGraphIdentity>]: identity
+      [User <IMicrosoftGraphIdentity>]: identity
+    [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBusinessScenarioPlannerTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertaskdetail)
+- [New-MgBetaSolutionBusinessScenarioPlannerTaskMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannertaskmessage)
 
 
 

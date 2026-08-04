@@ -1,37 +1,61 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskdetail
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/clear-mgbetasolutionbusinessscenarioplannertaskmessagereaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
 ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail
+title: Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction
 ---
 
-# Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail
+# Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction
 
 ## SYNOPSIS
 
-Delete navigation property details for solutions
+Remove a reaction from a plannerTaskChatMessage for the current user.
 
 ## SYNTAX
 
-### Delete (Default)
+### UnsetExpanded (Default)
 
 ```
-Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail -BusinessScenarioId <string>
- -BusinessScenarioTaskId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> -PlannerTaskChatMessageId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-ReactionType <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### Unset
 
 ```
-Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail -InputObject <IBusinessScenarioIdentity>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction -BusinessScenarioId <string>
+ -BusinessScenarioTaskId <string> -PlannerTaskChatMessageId <string>
+ -BodyParameter <IPaths1Fbqpz5SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UnsetViaIdentityExpanded
+
+```
+Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction
+ -InputObject <IBusinessScenarioIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-ReactionType <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UnsetViaIdentity
+
+```
+Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction
+ -InputObject <IBusinessScenarioIdentity>
+ -BodyParameter <IPaths1Fbqpz5SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -43,9 +67,64 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property details for solutions
+Remove a reaction from a plannerTaskChatMessage for the current user.
 
 ## PARAMETERS
+
+### -AdditionalProperties
+
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Fbqpz5SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Unset
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -78,7 +157,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Unset
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -99,7 +184,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Unset
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -195,27 +286,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -227,7 +297,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: UnsetViaIdentityExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UnsetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -251,6 +327,33 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PlannerTaskChatMessageId
+
+The unique identifier of plannerTaskChatMessage
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Unset
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -322,6 +425,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ReactionType
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UnsetViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UnsetExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -379,6 +509,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Fbqpz5SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
@@ -396,6 +530,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER `<IPaths1Fbqpz5SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>`: .
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [ReactionType <String>]: 
+
 INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
@@ -406,7 +544,8 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSolutionBusinessScenarioPlannerTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannertaskdetail)
+- [Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/clear-mgbetasolutionbusinessscenarioplannertaskmessagereaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskchatmessage-unsetreaction?view=graph-rest-beta)
 
 
 
