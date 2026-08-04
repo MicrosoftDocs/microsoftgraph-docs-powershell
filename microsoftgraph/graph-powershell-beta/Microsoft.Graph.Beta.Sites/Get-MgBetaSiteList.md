@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteList
 ---
@@ -28,7 +28,7 @@ Get-MgBetaSiteList -SiteId <string> [-ExpandProperty <string[]>] [-Property <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgBetaSiteList -SiteId <string> [-ExpandProperty <string[]>] [-Property <str
 Get-MgBetaSiteList -ListId <string> -SiteId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgBetaSiteList -ListId <string> -SiteId <string> [-ExpandProperty <string[]>
 Get-MgBetaSiteList -InputObject <ISitesIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -67,16 +67,49 @@ Return the metadata for a list.
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get list metadata by ID
 
 ```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteList -SiteId $siteId
+Get-MgBetaSiteList -SiteId $siteId -ListId $listId
 
 ```
-This example shows how to use the Get-MgBetaSiteList Cmdlet.
+This example will get list metadata by id
+
+### Example 2: Get list metadata by title
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteList -SiteId $siteId -ListId $listId
+
+```
+This example will get list metadata by title
+
+### Example 3: Get list metadata and items with $select and $expand
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime,itemCount" -ExpandProperty "columns(select=name,description),items)" 
+
+```
+This example will get list metadata and items with $select and $expand
+
+### Example 4: Get list metadata and items with multiple $expand parameters
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime" -ExpandProperty "columns(select=name,description),items)" 
+
+```
+This example will get list metadata and items with multiple $expand parameters
 
 
 ## PARAMETERS

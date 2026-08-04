@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperationstatus
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteOperationStatus
 ---
@@ -23,7 +23,7 @@ Get the status of a SharePoint site creation operation to monitor its progress.
 Get-MgBetaSiteOperationStatus -OperationId <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -32,7 +32,7 @@ Get-MgBetaSiteOperationStatus -OperationId <string> [-ResponseHeadersVariable <s
 Get-MgBetaSiteOperationStatus -InputObject <ISitesIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,6 +51,19 @@ Get the status of a SharePoint site creation operation to monitor its progress.
 | Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteOperationStatus -OperationId $operationIdId 
+
+```
+This example shows how to use the Get-MgBetaSiteOperationStatus Cmdlet.
+
 
 ## PARAMETERS
 
@@ -363,7 +376,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [Get-MgBetaSiteOperationStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteoperationstatus)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/site-getoperationstatus?view=graph-rest-beta)
-
 
 
 
