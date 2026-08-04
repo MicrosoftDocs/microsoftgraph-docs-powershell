@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 06/05/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestoreSharePointRestoreSession
 ---
@@ -13,7 +13,7 @@ title: Update-MgSolutionBackupRestoreSharePointRestoreSession
 
 ## SYNOPSIS
 
-Update the navigation property sharePointRestoreSessions in solutions
+Update the properties of a sharePointRestoreSession object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Update-MgSolutionBackupRestoreSharePointRestoreSession -SharePointRestoreSession
  [-SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest[]>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -45,7 +45,7 @@ Update-MgSolutionBackupRestoreSharePointRestoreSession -SharePointRestoreSession
  -BodyParameter <IMicrosoftGraphSharePointRestoreSession> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -63,7 +63,7 @@ Update-MgSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackupRest
  [-SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest[]>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -73,7 +73,7 @@ Update-MgSolutionBackupRestoreSharePointRestoreSession -InputObject <IBackupRest
  -BodyParameter <IMicrosoftGraphSharePointRestoreSession> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -83,7 +83,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property sharePointRestoreSessions in solutions
+Update the properties of a sharePointRestoreSession object.
 
 ## PARAMETERS
 
@@ -297,7 +297,7 @@ HelpMessage: ''
 
 ### -GranularSiteRestoreArtifacts
 
-
+A collection of browse session ID and item key details that can be used to restore SharePoint files and folders.
 To construct, see NOTES section for GRANULARSITERESTOREARTIFACTS properties and create a hash table.
 
 ```yaml
@@ -844,19 +844,20 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
-    [BrowseSessionId <String>]: 
-    [CompletionDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
-    [RestoredItemKey <String>]: 
-    [RestoredItemPath <String>]: 
-    [RestoredItemWebUrl <String>]: 
-    [StartDateTime <DateTime?>]: 
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: A collection of browse session ID and item key details that can be used to restore SharePoint files and folders.
+    [BrowseSessionId <String>]: The unique identifier of the browseSession
+    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+    [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+    [RestoredItemWebUrl <String>]: The web url of the restored artifact.
+    [StartDateTime <DateTime?>]: The start time of the restoration.
     [Status <String>]: artifactRestoreStatus
-    [WebUrl <String>]: 
+    [WebUrl <String>]: The original web url of the artifact being restored.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: 
+    [SiteId <String>]: Id of the site in which artifact is present.
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -942,19 +943,20 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: .
-  [BrowseSessionId <String>]: 
-  [CompletionDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
-  [RestoredItemKey <String>]: 
-  [RestoredItemPath <String>]: 
-  [RestoredItemWebUrl <String>]: 
-  [StartDateTime <DateTime?>]: 
+GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: A collection of browse session ID and item key details that can be used to restore SharePoint files and folders.
+  [BrowseSessionId <String>]: The unique identifier of the browseSession
+  [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+  [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+  [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+  [RestoredItemWebUrl <String>]: The web url of the restored artifact.
+  [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
-  [WebUrl <String>]: 
+  [WebUrl <String>]: The original web url of the artifact being restored.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: 
+  [SiteId <String>]: Id of the site in which artifact is present.
 
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
@@ -1118,6 +1120,7 @@ Read-only.
 ## RELATED LINKS
 
 - [Update-MgSolutionBackupRestoreSharePointRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointrestoresession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointrestoresession-update?view=graph-rest-1.0)
 
 
 
