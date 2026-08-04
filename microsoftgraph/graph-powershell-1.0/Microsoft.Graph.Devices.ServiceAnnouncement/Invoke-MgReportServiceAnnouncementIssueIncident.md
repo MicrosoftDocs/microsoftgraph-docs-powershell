@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReportServiceAnnouncementIssueIncident
 ---
@@ -28,7 +28,7 @@ The operation returns an error if the specified issue doesn't exist for the tena
 Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ReportViaIdentity
@@ -37,7 +37,7 @@ Invoke-MgReportServiceAnnouncementIssueIncident -ServiceHealthIssueId <string> -
 Invoke-MgReportServiceAnnouncementIssueIncident -InputObject <IDevicesServiceAnnouncementIdentity>
  -OutFile <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

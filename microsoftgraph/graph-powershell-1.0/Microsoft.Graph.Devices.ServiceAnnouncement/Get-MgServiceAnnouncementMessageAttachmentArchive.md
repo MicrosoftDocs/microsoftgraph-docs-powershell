@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 06/05/2026
+ms.date: 08/01/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServiceAnnouncementMessageAttachmentArchive
 ---
@@ -26,7 +26,7 @@ Get the list of attachments associated with a service message.
 Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -35,7 +35,7 @@ Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <strin
 Get-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceAnnouncementIdentity>
  -OutFile <string> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
