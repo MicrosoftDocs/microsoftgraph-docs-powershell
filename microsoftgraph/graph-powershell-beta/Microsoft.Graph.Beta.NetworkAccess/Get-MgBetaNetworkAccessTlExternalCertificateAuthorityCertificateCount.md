@@ -279,7 +279,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlexternalcertificateauthoritycertificatecount)
+- [Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificateCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstlexternalcertificateauthoritycertificatecount)
 
 
 
