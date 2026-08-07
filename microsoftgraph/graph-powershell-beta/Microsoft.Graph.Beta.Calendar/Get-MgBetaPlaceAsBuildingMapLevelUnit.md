@@ -62,12 +62,17 @@ Collection of units (such as rooms or offices) on this level.
 Supports upsert.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId
+
+```
+This example shows how to use the Get-MgBetaPlaceAsBuildingMapLevelUnit Cmdlet.
+
 
 ## PARAMETERS
 
