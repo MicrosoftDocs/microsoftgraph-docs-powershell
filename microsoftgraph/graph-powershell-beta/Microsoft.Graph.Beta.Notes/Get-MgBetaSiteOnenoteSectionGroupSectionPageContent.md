@@ -15,6 +15,9 @@ title: Get-MgBetaSiteOnenoteSectionGroupSectionPageContent
 
 The page's HTML content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroupSectionPageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
