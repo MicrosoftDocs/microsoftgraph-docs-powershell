@@ -77,18 +77,28 @@ You can find the log in Microsoft Entra audit logs under the KeyManagement categ
 | Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get the BitLocker key by specifying the key **id**
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId
 
-### EXAMPLE 2
+```
+This example will get the bitlocker key by specifying the key **id**
+
+### Example 2: Get the BitLocker key with the **key** property by specifying the key **id**
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key"
+Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key" 
+
+```
+This example will get the bitlocker key with the **key** property by specifying the key **id**
+
 
 ## PARAMETERS
 

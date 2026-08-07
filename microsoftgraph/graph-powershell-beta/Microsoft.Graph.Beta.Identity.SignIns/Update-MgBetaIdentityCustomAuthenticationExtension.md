@@ -85,48 +85,6 @@ The following derived types are currently supported.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomAuthenticationExtension.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
-	displayName = "onTokenIssuanceStartCustomExtension"
-	description = "Fetch additional claims from custom user store"
-	endpointConfiguration = @{
-		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
-		targetUrl = "https://authenticationeventsAPI.contoso.com"
-	}
-	authenticationConfiguration = @{
-		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
-		resourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
-	}
-	claimsForTokenConfiguration = @(
-		@{
-			claimIdInApiResponse = "DateOfBirth"
-		}
-		@{
-			claimIdInApiResponse = "CustomRoles"
-		}
-	)
-}
-
-Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
-
-### EXAMPLE 2
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension"
-	displayName = "Verified ID Claim Validation (updated)"
-	description = "Updated description for Verified ID claim validation"
-}
-
-Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -810,6 +768,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycustomauthenticationextension)
 - [](https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-beta)
+
 
 
 

@@ -67,8 +67,9 @@ This cmdlet has the following aliases,
 Add groups to be included in a mobile app management policy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -77,6 +78,10 @@ $params = @{
 }
 
 New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobileAppManagementPolicyId $mobileAppManagementPolicyId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,12 +60,17 @@ Self-service operations aren't supported.
 | Application | UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Invoke-MgBetaCreationUserAuthenticationFido2MethodOption -UserId $userId
+
+```
+This example shows how to use the Invoke-MgBetaCreationUserAuthenticationFido2MethodOption Cmdlet.
+
 
 ## PARAMETERS
 

@@ -59,12 +59,17 @@ If a configuration includes a user synchronization policy, you must first delete
 | Application | Policy.ReadWrite.CrossTenantAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
+
+```
+This example shows how to use the Remove-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
+
 
 ## PARAMETERS
 
