@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaboration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityCollaboration
 ---
@@ -44,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property collaboration in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -506,7 +516,7 @@ The possible values are: unknown, spam, malware, phish, none, unknownFutureValue
     [Url <String>]: The URL that is found in the email.
 This is full URL string, including query parameters.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCollaborationRoot>`: collaborationRoot
+BODYPARAMETER <IMicrosoftGraphSecurityCollaborationRoot>: collaborationRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -642,27 +652,4 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityCollaboration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaboration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaboration)

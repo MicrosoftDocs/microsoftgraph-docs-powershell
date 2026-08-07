@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityDataDiscovery
 ---
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property dataDiscovery in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -378,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityDataDiscoveryRoot>`: dataDiscoveryRoot
+BODYPARAMETER <IMicrosoftGraphSecurityDataDiscoveryRoot>: dataDiscoveryRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -411,7 +421,7 @@ Possible values are: userName, ipAddress, machineName, other, unknown, unknownFu
       [SupportedTrafficTypes <String[]>]: The supported traffic type.
 Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
 
-CLOUDAPPDISCOVERY `<IMicrosoftGraphSecurityDataDiscoveryReport>`: dataDiscoveryReport
+CLOUDAPPDISCOVERY <IMicrosoftGraphSecurityDataDiscoveryReport>: dataDiscoveryReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -443,27 +453,4 @@ Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityDataDiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery)

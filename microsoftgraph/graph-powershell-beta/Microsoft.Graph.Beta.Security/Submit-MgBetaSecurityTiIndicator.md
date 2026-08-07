@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Submit-MgBetaSecurityTiIndicator
 ---
@@ -46,18 +46,9 @@ This cmdlet has the following aliases,
 
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ThreatIndicators.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -67,7 +58,8 @@ $params = @{
 			activityGroupNames = @(
 			)
 			confidence = 0
-			description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
+			description = "This is a canary indicator for demo purpose.
+Take no action on any observables set in this indicator."
 			expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:44:03.1668987+00:00")
 			externalId = "Test--8586509942423126760MS164-0"
 			fileHashType = "sha256"
@@ -87,7 +79,8 @@ $params = @{
 			activityGroupNames = @(
 			)
 			confidence = 0
-			description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
+			description = "This is a canary indicator for demo purpose.
+Take no action on any observables set in this indicator."
 			expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:44:03.1748779+00:00")
 			externalId = "Test--8586509942423126760MS164-1"
 			fileHashType = "sha256"
@@ -107,10 +100,6 @@ $params = @{
 }
 
 Submit-MgBetaSecurityTiIndicator -BodyParameter $params
-
-```
-This example shows how to use the Submit-MgBetaSecurityTiIndicator Cmdlet.
-
 
 ## PARAMETERS
 
@@ -137,7 +126,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -350,7 +339,7 @@ HelpMessage: ''
 
 ### -Value
 
-
+.
 To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
@@ -422,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Value <IMicrosoftGraphTiIndicator[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -605,27 +594,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Submit-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator)
+- [](https://learn.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-beta)

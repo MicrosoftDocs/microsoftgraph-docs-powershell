@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail
 ---
@@ -59,9 +59,8 @@ For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -84,10 +83,6 @@ $params = @{
 }
 
 Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -135,7 +130,7 @@ HelpMessage: ''
 
 ### -AnalyzedEmails
 
-
+.
 To construct, see NOTES section for ANALYZEDEMAILS properties and create a hash table.
 
 ```yaml
@@ -157,7 +152,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -222,7 +217,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -243,7 +238,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -411,7 +406,7 @@ HelpMessage: ''
 
 ### -RemediateSendersCopy
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -654,7 +649,7 @@ The possible values are: unknown, spam, malware, phish, none, unknownFutureValue
     [Url <String>]: The URL that is found in the email.
 This is full URL string, including query parameters.
 
-BODY `<IPaths12L9AgpSecurityCollaborationAnalyzedemailsMicrosoftGraphSecurityRemediatePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths12L9AgpSecurityCollaborationAnalyzedemailsMicrosoftGraphSecurityRemediatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: remediationAction
   [AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail[]>]: 
@@ -793,27 +788,5 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
+- [](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)
