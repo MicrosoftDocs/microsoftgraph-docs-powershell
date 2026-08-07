@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserTeamworkInstalledApp
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserTeamworkInstalledApp
 ## SYNOPSIS
 
 Retrieve the app installed in the personal scope of the specified user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,48 +56,25 @@ This cmdlet has the following aliases,
 
 Retrieve the app installed in the personal scope of the specified user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ManageSelectedForUser, TeamsAppInstallation.ReadWriteAndConsentForUser, TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteSelectedForUser, TeamsAppInstallation.ReadWriteSelfForUser,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ManageSelectedForUser.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.Read.User, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteSelectedForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All,  |
-
 ## EXAMPLES
-### Example 1: List apps installed for the specified user
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaUserTeamworkInstalledApp -UserId $userId
 
-```
-This example will list apps installed for the specified user
-
-### Example 2: Get the names and other details of apps installed for the user
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsAppDefinition(`$expand=bot)" 
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsAppDefinition(`$expand=bot)"
 
-```
-This example will get the names and other details of apps installed for the user
-
-### Example 3: Get the app installation resource based on the manifest ID of the associated app
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'" 
-
-```
-This example will get the app installation resource based on the manifest id of the associated app
-
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
 ## PARAMETERS
 
@@ -589,7 +563,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -639,28 +613,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserTeamworkInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp)
+- [](https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-beta)

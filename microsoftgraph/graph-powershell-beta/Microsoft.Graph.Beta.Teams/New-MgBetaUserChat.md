@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserChat
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserChat
 ## SYNOPSIS
 
 Create new navigation property to chats for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserChat](/powershell/module/Microsoft.Graph.Teams/New-MgUserChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -84,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to chats for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1037,7 +1044,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphChat>`: chat
+BODYPARAMETER <IMicrosoftGraphChat>: chat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1224,7 +1231,7 @@ Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1374,7 +1381,7 @@ Only available for group chats.
 The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1386,7 +1393,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1523,7 +1530,7 @@ Required.
     [ExternalId <String>]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   [TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]: teamsAppDefinition
 
-LASTMESSAGEPREVIEW `<IMicrosoftGraphChatMessageInfo>`: chatMessageInfo
+LASTMESSAGEPREVIEW <IMicrosoftGraphChatMessageInfo>: chatMessageInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1631,7 +1638,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1697,7 +1704,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-ONLINEMEETINGINFO `<IMicrosoftGraphTeamworkOnlineMeetingInfo>`: teamworkOnlineMeetingInfo
+ONLINEMEETINGINFO <IMicrosoftGraphTeamworkOnlineMeetingInfo>: teamworkOnlineMeetingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The identifier of the calendar event associated with the meeting.
   [JoinWebUrl <String>]: The URL which can be clicked on to join or uniquely identify the meeting.
@@ -1819,7 +1826,7 @@ Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1985,7 +1992,7 @@ Because this property is deprecated, we recommend expanding teamsApp to retrieve
   [WebUrl <String>]: Deep link URL of the tab instance.
 Read only.
 
-VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
+VIEWPOINT <IMicrosoftGraphChatViewpoint>: chatViewpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsHidden <Boolean?>]: Indicates whether the chat is hidden for the current user.
   [LastMessageReadDateTime <DateTime?>]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
@@ -1993,27 +2000,4 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [New-MgBetaUserChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchat)

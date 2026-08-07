@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamSchedule
 ---
@@ -14,13 +14,10 @@ title: Get-MgBetaTeamSchedule
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamSchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,31 +47,18 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Group.ReadWrite.All, Schedule.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamSchedule -TeamId $teamId
-
-```
-This example shows how to use the Get-MgBetaTeamSchedule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -364,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -414,27 +398,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule)
+- [](https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-beta)
