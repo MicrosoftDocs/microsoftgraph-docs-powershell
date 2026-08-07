@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminEdgeInternetExplorerModeSiteListSite
 ---
@@ -14,9 +14,6 @@ title: New-MgAdminEdgeInternetExplorerModeSiteListSite
 ## SYNOPSIS
 
 Create a new browserSite object in a browserSiteList.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -81,18 +78,9 @@ This cmdlet has the following aliases,
 
 Create a new browserSite object in a browserSiteList.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BrowserSiteLists.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BrowserSiteLists.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -107,10 +95,6 @@ $params = @{
 }
 
 New-MgAdminEdgeInternetExplorerModeSiteListSite -BrowserSiteListId $browserSiteListId -BodyParameter $params
-
-```
-This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteListSite Cmdlet.
-
 
 ## PARAMETERS
 
@@ -826,7 +810,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBrowserSite>`: Singleton entity which is used to specify IE mode site metadata
+BODYPARAMETER <IMicrosoftGraphBrowserSite>: Singleton entity which is used to specify IE mode site metadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -880,7 +864,7 @@ For example, in the access reviews decisions API, this property might record the
   [PublishedDateTime <DateTime?>]: The date and time when the site was last published.
   [TargetEnvironment <BrowserSiteTargetEnvironment?>]: browserSiteTargetEnvironment
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -915,7 +899,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionNetworkLearningSummaryId <String>]: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   [WindowsMalwareInformationId <String>]: The unique identifier of windowsMalwareInformation
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -929,27 +913,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgAdminEdgeInternetExplorerModeSiteListSite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite)
+- [](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)

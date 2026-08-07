@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/send-mgdevicemanagementnotificationmessagetemplatetestmessage
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgDeviceManagementNotificationMessageTemplateTestMessage
 ---
@@ -14,9 +14,6 @@ title: Send-MgDeviceManagementNotificationMessageTemplateTestMessage
 ## SYNOPSIS
 
 Sends test message using the specified notificationMessageTemplate in the default locale
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Sends test message using the specified notificationMessageTemplate in the default locale
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Send-MgDeviceManagementNotificationMessageTemplateTestMessage -NotificationMessageTemplateId $notificationMessageTemplateId
-
-```
-This example shows how to use the Send-MgDeviceManagementNotificationMessageTemplateTestMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -379,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -417,26 +401,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/send-mgdevicemanagementnotificationmessagetemplatetestmessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/send-mgdevicemanagementnotificationmessagetemplatetestmessage)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminEdgeInternetExplorerModeSiteList
 ---
@@ -14,9 +14,6 @@ title: New-MgAdminEdgeInternetExplorerModeSiteList
 ## SYNOPSIS
 
 Create a new browserSiteList object to support Internet Explorer mode.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create a new browserSiteList object to support Internet Explorer mode.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BrowserSiteLists.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BrowserSiteLists.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -72,10 +60,6 @@ $params = @{
 }
 
 New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter $params
-
-```
-This example shows how to use the New-MgAdminEdgeInternetExplorerModeSiteList Cmdlet.
-
 
 ## PARAMETERS
 
@@ -601,7 +585,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBrowserSiteList>`: A singleton entity which is used to specify IE mode site list metadata
+BODYPARAMETER <IMicrosoftGraphBrowserSiteList>: A singleton entity which is used to specify IE mode site list metadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -670,7 +654,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
     [WebUrl <String>]: The URL of the site.
   [Status <BrowserSiteListStatus?>]: browserSiteListStatus
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -681,7 +665,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PUBLISHEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+PUBLISHEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -762,27 +746,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgAdminEdgeInternetExplorerModeSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist)
+- [](https://learn.microsoft.com/graph/api/internetexplorermode-post-sitelists?view=graph-rest-1.0)
