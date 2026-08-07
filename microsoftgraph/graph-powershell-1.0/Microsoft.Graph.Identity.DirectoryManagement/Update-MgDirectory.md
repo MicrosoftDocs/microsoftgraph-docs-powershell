@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectory
 ---
@@ -14,9 +14,6 @@ title: Update-MgDirectory
 ## SYNOPSIS
 
 Update directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +29,7 @@ Update-MgDirectory [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <string>]
  [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
  [-PublicKeyInfrastructure <IMicrosoftGraphPublicKeyInfrastructureRoot>]
+ [-Recovery <IMicrosoftGraphEntraRecoveryServicesRecovery>]
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -54,6 +52,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -469,6 +477,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Recovery
+
+recovery
+To construct, see NOTES section for RECOVERY properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntraRecoveryServicesRecovery
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -624,7 +654,7 @@ Default value is null.
 If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
 Can be changed later.
 
-BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
+BODYPARAMETER <IMicrosoftGraphDirectory>: directory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -753,7 +783,7 @@ The threshold is either an absolute number of objects or a percentage number of 
         [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
     [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
+      [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: When true, allows on-premises directory sync clients to update the onPremisesObjectIdentifier property.
       [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
       [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -810,6 +840,49 @@ Maximum length is 256 characters.
       [LastModifiedDateTime <DateTime?>]: The date and time when the object was created or last modified.
       [Status <String>]: The status of any asynchronous jobs runs on the object which can be upload or delete.
       [StatusDetails <String>]: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
+  [Recovery <IMicrosoftGraphEntraRecoveryServicesRecovery>]: recovery
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Jobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJobBase[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [JobCompletionDateTime <DateTime?>]: 
+      [JobStartDateTime <DateTime?>]: 
+      [Status <RecoveryStatus?>]: recoveryStatus
+      [TargetStateDateTime <DateTime?>]: 
+      [TotalChangedLinksCalculated <Int32?>]: 
+      [TotalChangedObjectsCalculated <Int32?>]: 
+    [Snapshots <IMicrosoftGraphEntraRecoveryServicesSnapshot[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedDateTime <DateTime?>]: 
+      [RecoveryJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJob[]>]: 
+        [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
+        [JobCompletionDateTime <DateTime?>]: 
+        [JobStartDateTime <DateTime?>]: 
+        [Status <RecoveryStatus?>]: recoveryStatus
+        [TargetStateDateTime <DateTime?>]: 
+        [TotalChangedLinksCalculated <Int32?>]: 
+        [TotalChangedObjectsCalculated <Int32?>]: 
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [TotalFailedChanges <Int32?>]: 
+        [TotalLinksModified <Int32?>]: 
+        [TotalObjectsModified <Int32?>]: 
+      [RecoveryPreviewJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryPreviewJob[]>]: 
+        [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
+        [JobCompletionDateTime <DateTime?>]: 
+        [JobStartDateTime <DateTime?>]: 
+        [Status <RecoveryStatus?>]: recoveryStatus
+        [TargetStateDateTime <DateTime?>]: 
+        [TotalChangedLinksCalculated <Int32?>]: 
+        [TotalChangedObjectsCalculated <Int32?>]: 
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [TotalChangedObjects <Int32?>]: 
   [Subscriptions <IMicrosoftGraphCompanySubscription[]>]: List of commercial subscriptions that an organization acquired.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -914,7 +987,7 @@ The threshold is either an absolute number of objects or a percentage number of 
       [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
   [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
+    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: When true, allows on-premises directory sync clients to update the onPremisesObjectIdentifier property.
     [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
     [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -938,7 +1011,7 @@ This property isn't in use and updating it isn't supported.
     [UserForcePasswordChangeOnLogonEnabled <Boolean?>]: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     [UserWritebackEnabled <Boolean?>]: Used to indicate that user writeback is enabled.
 
-PUBLICKEYINFRASTRUCTURE `<IMicrosoftGraphPublicKeyInfrastructureRoot>`: publicKeyInfrastructureRoot
+PUBLICKEYINFRASTRUCTURE <IMicrosoftGraphPublicKeyInfrastructureRoot>: publicKeyInfrastructureRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -973,6 +1046,50 @@ Maximum length is 256 characters.
     [Status <String>]: The status of any asynchronous jobs runs on the object which can be upload or delete.
     [StatusDetails <String>]: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
 
+RECOVERY <IMicrosoftGraphEntraRecoveryServicesRecovery>: recovery
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Jobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJobBase[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [JobCompletionDateTime <DateTime?>]: 
+    [JobStartDateTime <DateTime?>]: 
+    [Status <RecoveryStatus?>]: recoveryStatus
+    [TargetStateDateTime <DateTime?>]: 
+    [TotalChangedLinksCalculated <Int32?>]: 
+    [TotalChangedObjectsCalculated <Int32?>]: 
+  [Snapshots <IMicrosoftGraphEntraRecoveryServicesSnapshot[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedDateTime <DateTime?>]: 
+    [RecoveryJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJob[]>]: 
+      [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
+      [JobCompletionDateTime <DateTime?>]: 
+      [JobStartDateTime <DateTime?>]: 
+      [Status <RecoveryStatus?>]: recoveryStatus
+      [TargetStateDateTime <DateTime?>]: 
+      [TotalChangedLinksCalculated <Int32?>]: 
+      [TotalChangedObjectsCalculated <Int32?>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [TotalFailedChanges <Int32?>]: 
+      [TotalLinksModified <Int32?>]: 
+      [TotalObjectsModified <Int32?>]: 
+    [RecoveryPreviewJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryPreviewJob[]>]: 
+      [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
+      [JobCompletionDateTime <DateTime?>]: 
+      [JobStartDateTime <DateTime?>]: 
+      [Status <RecoveryStatus?>]: recoveryStatus
+      [TargetStateDateTime <DateTime?>]: 
+      [TotalChangedLinksCalculated <Int32?>]: 
+      [TotalChangedObjectsCalculated <Int32?>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [TotalChangedObjects <Int32?>]: 
+
 SUBSCRIPTIONS <IMicrosoftGraphCompanySubscription[]>: List of commercial subscriptions that an organization acquired.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1004,27 +1121,4 @@ The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 
 ## RELATED LINKS
 
-- [Update-MgDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)

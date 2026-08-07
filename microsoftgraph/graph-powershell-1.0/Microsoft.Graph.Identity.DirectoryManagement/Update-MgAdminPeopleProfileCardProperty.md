@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgAdminPeopleProfileCardProperty
 ---
@@ -15,9 +15,6 @@ title: Update-MgAdminPeopleProfileCardProperty
 
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -26,9 +23,9 @@ Update the properties of a profileCardProperty object, identified by its directo
 Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Annotations <IMicrosoftGraphProfileCardAnnotation[]>] [-DirectoryPropertyName <string>]
- [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-Id <string>] [-IsVisible] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -47,9 +44,9 @@ Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId <string>
 Update-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Annotations <IMicrosoftGraphProfileCardAnnotation[]>] [-DirectoryPropertyName <string>]
- [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-Id <string>] [-IsVisible] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -72,9 +69,8 @@ This cmdlet has the following aliases,
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -93,10 +89,6 @@ $params = @{
 }
 
 Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgAdminPeopleProfileCardProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -375,6 +367,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IsVisible
+
+Indicates whether the given directory property should be shown on a user’s profile card.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ProfileCardPropertyId
 
 The unique identifier of profileCardProperty
@@ -550,7 +569,7 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
     [DisplayName <String>]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
     [LanguageTag <String>]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
 
-BODYPARAMETER `<IMicrosoftGraphProfileCardProperty>`: profileCardProperty
+BODYPARAMETER <IMicrosoftGraphProfileCardProperty>: profileCardProperty
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -564,8 +583,9 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
 Allows an administrator to surface hidden Microsoft Entra ID properties on the Microsoft 365 profile card within their tenant.
 When present, the Microsoft Entra ID field referenced in this property is visible to all users in your tenant on the contact pane of the profile card.
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
+  [IsVisible <Boolean?>]: Indicates whether the given directory property should be shown on a user’s profile card.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -593,8 +613,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
+  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
+  [RecoveryJobId <String>]: The unique identifier of recoveryJob
+  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
@@ -603,27 +627,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgAdminPeopleProfileCardProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty)
+- [](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0)
