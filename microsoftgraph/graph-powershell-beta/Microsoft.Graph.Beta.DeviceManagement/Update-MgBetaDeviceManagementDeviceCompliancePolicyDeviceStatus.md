@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus
 
 Update the navigation property deviceStatuses in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
