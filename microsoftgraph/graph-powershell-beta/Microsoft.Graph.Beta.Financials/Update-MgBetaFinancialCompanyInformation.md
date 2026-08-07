@@ -266,7 +266,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -293,7 +293,7 @@ HelpMessage: ''
 
 ### -CurrentFiscalYearStartDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -320,7 +320,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -347,7 +347,7 @@ HelpMessage: ''
 
 ### -Email
 
-.
+
 
 ```yaml
 Type: System.String
@@ -374,7 +374,7 @@ HelpMessage: ''
 
 ### -FaxNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -464,7 +464,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -491,7 +491,7 @@ HelpMessage: ''
 
 ### -Industry
 
-.
+
 
 ```yaml
 Type: System.String
@@ -546,7 +546,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -573,7 +573,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -712,7 +712,7 @@ HelpMessage: ''
 
 ### -TaxRegistrationNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -739,7 +739,7 @@ HelpMessage: ''
 
 ### -Website
 
-.
+
 
 ```yaml
 Type: System.String
