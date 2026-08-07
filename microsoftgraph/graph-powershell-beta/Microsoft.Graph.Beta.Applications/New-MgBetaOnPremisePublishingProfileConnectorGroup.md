@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaOnPremisePublishingProfileConnectorGroup
 ---
@@ -71,27 +71,23 @@ This cmdlet has the following aliases,
 Create new navigation property to connectorGroups for onPremisesPublishingProfiles
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	Name = "name-value"
 	IsDefault = $false
 }
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
-```powershell
+
+### EXAMPLE 2
+
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	Name = "Connector Group Demo"
 }
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -124,7 +120,7 @@ HelpMessage: ''
 
 ### -Applications
 
-
+.
 To construct, see NOTES section for APPLICATIONS properties and create a hash table.
 
 ```yaml
@@ -398,7 +394,7 @@ HelpMessage: ''
 
 ### -Members
 
-
+.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
@@ -679,8 +675,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -773,25 +769,35 @@ For existing applications, the enforcement date can be retroactively applied.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [BlockedDomains <String[]>]: 
+            [BlockedDomains <String[]>]: Collection of domain names that are blocked globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
             [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [BlockedDomains <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [BlockedDomains <String[]>]: Collection of domain names that are blocked for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
             [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
             [State <String>]: appManagementRestrictionState
             [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
           [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [BlockedSchemes <String[]>]: 
+            [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-            [ExemptFormats <String[]>]: 
+            [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
             [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [BlockedSchemes <String[]>]: 
-              [ExemptFormats <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+              [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions for this platform.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
             [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
             [State <String>]: appManagementRestrictionState
             [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
@@ -800,29 +806,43 @@ For existing applications, the enforcement date can be retroactively applied.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
             [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [ExcludeWildcardsInPath <Boolean?>]: 
-              [ExcludeWildcardsInPathWithDomains <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [ExcludeWildcardsInPath <Boolean?>]: When true, blocks the use of wildcards in the path portion of redirect URIs.
+When false, allows wildcards in paths.
+              [ExcludeWildcardsInPathWithDomains <String[]>]: Collection of domain names where wildcards in the path portion of redirect URIs are blocked.
+Accepts only valid host names (no wildcards) as defined in RFC 3986 §3.2.2.
+For example, login.microsoft.com or contoso.com.
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
             [State <String>]: appManagementRestrictionState
           [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [AllowedDomains <String[]>]: 
+            [AllowedDomains <String[]>]: Collection of domain names that are allowed globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
             [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [AllowedDomains <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [AllowedDomains <String[]>]: Collection of domain names that are allowed for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
             [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
             [State <String>]: appManagementRestrictionState
             [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
           [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [AllowedSchemes <String[]>]: 
+            [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme.
             [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
             [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [AllowedSchemes <String[]>]: 
-            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+              [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme for this platform.
+            [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
             [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
             [State <String>]: appManagementRestrictionState
             [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
@@ -846,8 +866,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
@@ -1233,6 +1253,7 @@ The sensitive properties are keyCredentials, passwordCredentials, and tokenEncry
     [CredentialsWithUsageSign <Boolean?>]: Locks the keyCredentials and passwordCredentials properties for modification where credential usage type is Sign.
     [CredentialsWithUsageVerify <Boolean?>]: Locks the keyCredentials and passwordCredentials properties for modification where credential usage type is Verify.
 This locks OAuth service principals.
+    [EnforcementScope <String>]: servicePrincipalLockScope
     [IsEnabled <Boolean?>]: Enables or disables service principal lock configuration.
 To allow the sensitive properties to be updated, update this property to false to disable the lock on the service principal.
     [TokenEncryptionKeyId <Boolean?>]: Locks the tokenEncryptionKeyId property for modification on the service principal.
@@ -1571,7 +1592,7 @@ Read-only.
     [RedirectUris <String[]>]: Specifies the URLs where user tokens are sent for sign-in or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
-BODYPARAMETER `<IMicrosoftGraphConnectorGroup>`: connectorGroup
+BODYPARAMETER <IMicrosoftGraphConnectorGroup>: connectorGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1608,8 +1629,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1702,25 +1723,35 @@ For existing applications, the enforcement date can be retroactively applied.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [BlockedDomains <String[]>]: 
+              [BlockedDomains <String[]>]: Collection of domain names that are blocked globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
               [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [BlockedDomains <String[]>]: 
-              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [BlockedDomains <String[]>]: Collection of domain names that are blocked for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
               [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
               [State <String>]: appManagementRestrictionState
               [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
             [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [BlockedSchemes <String[]>]: 
+              [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-              [ExemptFormats <String[]>]: 
+              [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
               [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [BlockedSchemes <String[]>]: 
-                [ExemptFormats <String[]>]: 
-              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions for this platform.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
               [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
               [State <String>]: appManagementRestrictionState
               [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
@@ -1729,29 +1760,43 @@ For existing applications, the enforcement date can be retroactively applied.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
               [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [ExcludeWildcardsInPath <Boolean?>]: 
-                [ExcludeWildcardsInPathWithDomains <String[]>]: 
-              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [ExcludeWildcardsInPath <Boolean?>]: When true, blocks the use of wildcards in the path portion of redirect URIs.
+When false, allows wildcards in paths.
+                [ExcludeWildcardsInPathWithDomains <String[]>]: Collection of domain names where wildcards in the path portion of redirect URIs are blocked.
+Accepts only valid host names (no wildcards) as defined in RFC 3986 §3.2.2.
+For example, login.microsoft.com or contoso.com.
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
               [State <String>]: appManagementRestrictionState
             [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [AllowedDomains <String[]>]: 
+              [AllowedDomains <String[]>]: Collection of domain names that are allowed globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
               [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [AllowedDomains <String[]>]: 
-              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [AllowedDomains <String[]>]: Collection of domain names that are allowed for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
               [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
               [State <String>]: appManagementRestrictionState
               [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
             [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [AllowedSchemes <String[]>]: 
+              [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme.
               [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
               [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [AllowedSchemes <String[]>]: 
-              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme for this platform.
+              [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
               [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
               [State <String>]: appManagementRestrictionState
               [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
@@ -1775,8 +1820,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
@@ -2141,6 +2186,7 @@ The sensitive properties are keyCredentials, passwordCredentials, and tokenEncry
       [CredentialsWithUsageSign <Boolean?>]: Locks the keyCredentials and passwordCredentials properties for modification where credential usage type is Sign.
       [CredentialsWithUsageVerify <Boolean?>]: Locks the keyCredentials and passwordCredentials properties for modification where credential usage type is Verify.
 This locks OAuth service principals.
+      [EnforcementScope <String>]: servicePrincipalLockScope
       [IsEnabled <Boolean?>]: Enables or disables service principal lock configuration.
 To allow the sensitive properties to be updated, update this property to false to disable the lock on the service principal.
       [TokenEncryptionKeyId <Boolean?>]: Locks the tokenEncryptionKeyId property for modification on the service principal.
@@ -2496,7 +2542,7 @@ Read-only.
   [Name <String>]: The name associated with the connectorGroup.
   [Region <String>]: connectorGroupRegion
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -2577,8 +2623,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -2671,25 +2717,35 @@ For existing applications, the enforcement date can be retroactively applied.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [BlockedDomains <String[]>]: 
+                [BlockedDomains <String[]>]: Collection of domain names that are blocked globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [BlockedDomains <String[]>]: 
-                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [BlockedDomains <String[]>]: Collection of domain names that are blocked for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
                 [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
                 [State <String>]: appManagementRestrictionState
                 [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
               [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [BlockedSchemes <String[]>]: 
+                [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                [ExemptFormats <String[]>]: 
+                [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
                 [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [BlockedSchemes <String[]>]: 
-                  [ExemptFormats <String[]>]: 
-                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                  [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions for this platform.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
                 [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
                 [State <String>]: appManagementRestrictionState
                 [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
@@ -2698,29 +2754,43 @@ For existing applications, the enforcement date can be retroactively applied.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [ExcludeWildcardsInPath <Boolean?>]: 
-                  [ExcludeWildcardsInPathWithDomains <String[]>]: 
-                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [ExcludeWildcardsInPath <Boolean?>]: When true, blocks the use of wildcards in the path portion of redirect URIs.
+When false, allows wildcards in paths.
+                  [ExcludeWildcardsInPathWithDomains <String[]>]: Collection of domain names where wildcards in the path portion of redirect URIs are blocked.
+Accepts only valid host names (no wildcards) as defined in RFC 3986 §3.2.2.
+For example, login.microsoft.com or contoso.com.
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
                 [State <String>]: appManagementRestrictionState
               [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [AllowedDomains <String[]>]: 
+                [AllowedDomains <String[]>]: Collection of domain names that are allowed globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [AllowedDomains <String[]>]: 
-                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [AllowedDomains <String[]>]: Collection of domain names that are allowed for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
                 [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
                 [State <String>]: appManagementRestrictionState
                 [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
               [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [AllowedSchemes <String[]>]: 
+                [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [AllowedSchemes <String[]>]: 
-                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: 
+                  [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme for this platform.
+                [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
                 [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
                 [State <String>]: appManagementRestrictionState
                 [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
@@ -2744,8 +2814,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
@@ -3110,6 +3180,7 @@ The sensitive properties are keyCredentials, passwordCredentials, and tokenEncry
         [CredentialsWithUsageSign <Boolean?>]: Locks the keyCredentials and passwordCredentials properties for modification where credential usage type is Sign.
         [CredentialsWithUsageVerify <Boolean?>]: Locks the keyCredentials and passwordCredentials properties for modification where credential usage type is Verify.
 This locks OAuth service principals.
+        [EnforcementScope <String>]: servicePrincipalLockScope
         [IsEnabled <Boolean?>]: Enables or disables service principal lock configuration.
 To allow the sensitive properties to be updated, update this property to false to disable the lock on the service principal.
         [TokenEncryptionKeyId <Boolean?>]: Locks the tokenEncryptionKeyId property for modification on the service principal.
@@ -3461,26 +3532,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaOnPremisePublishingProfileConnectorGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup)

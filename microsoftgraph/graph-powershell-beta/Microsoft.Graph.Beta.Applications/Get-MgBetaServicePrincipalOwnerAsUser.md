@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerasuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalOwnerAsUser
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaServicePrincipalOwnerAsUser
 ## SYNOPSIS
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwnerAsUser](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerAsUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -569,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -610,27 +617,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalOwnerAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerasuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerasuser)
