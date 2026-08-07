@@ -15,6 +15,9 @@ title: Get-MgBetaUserOnlineMeetingTranscriptCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
