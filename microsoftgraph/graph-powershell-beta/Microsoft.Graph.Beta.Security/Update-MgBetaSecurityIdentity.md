@@ -246,7 +246,7 @@ HelpMessage: ''
 
 ### -IdentityAccounts
 
-.
+
 To construct, see NOTES section for IDENTITYACCOUNTS properties and create a hash table.
 
 ```yaml
