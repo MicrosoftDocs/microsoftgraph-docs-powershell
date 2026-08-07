@@ -642,8 +642,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraining)
-- [](https://learn.microsoft.com/graph/api/attacksimulationroot-list-trainings?view=graph-rest-beta)
+- [Get-MgBetaSecurityAttackSimulationTraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraining)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationroot-list-trainings?view=graph-rest-beta)
 
 
 

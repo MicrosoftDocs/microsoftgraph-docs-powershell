@@ -492,8 +492,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabel)
-- [](https://learn.microsoft.com/graph/api/security-retentionlabel-delete?view=graph-rest-beta)
+- [Remove-MgBetaSecurityLabelRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionlabel-delete?view=graph-rest-beta)
 
 
 
