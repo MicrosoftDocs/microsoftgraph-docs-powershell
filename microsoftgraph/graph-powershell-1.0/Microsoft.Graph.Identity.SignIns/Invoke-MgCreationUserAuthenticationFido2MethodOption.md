@@ -18,6 +18,9 @@ This function returns WebAuthn credential creation options that include a challe
 The challenge property and credential IDs in excludeCredentials are Base64URL-encoded without padding.
 All binary data in the response follows Base64URL encoding as defined in RFC 4648 Section 5.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCreationUserAuthenticationFido2MethodOption](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaCreationUserAuthenticationFido2MethodOption?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Creation (Default)
