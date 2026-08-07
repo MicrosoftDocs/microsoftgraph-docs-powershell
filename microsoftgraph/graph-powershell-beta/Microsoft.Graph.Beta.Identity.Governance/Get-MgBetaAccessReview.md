@@ -65,6 +65,14 @@ If this is a recurring access review, no decisions will be associated with the r
 Instead, use the instances relationship of that series to retrieve an accessReview collection of the past, current, and future instances of the access review.
 Each past and current instance will have decisions.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All, AccessReview.ReadWrite.Membership,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.Membership,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
