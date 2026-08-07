@@ -536,8 +536,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannertaskmessagereaction)
-- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
+- [Set-MgBetaPlannerTaskMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannertaskmessagereaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
 
 
 
