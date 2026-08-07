@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupPermissionGrant
 
 Delete navigation property permissionGrants for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
