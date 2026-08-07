@@ -568,8 +568,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmember)
-- [](https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0)
+- [New-MgDirectoryAdministrativeUnitMember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0)
 
 
 
