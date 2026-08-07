@@ -1913,8 +1913,8 @@ For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecolumn)
-- [](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0)
+- [New-MgSiteColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0)
 
 
 
