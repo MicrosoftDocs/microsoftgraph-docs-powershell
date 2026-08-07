@@ -15,6 +15,9 @@ title: Remove-MgGroupTeamScheduleTimeOffReason
 
 Delete navigation property timeOffReasons for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

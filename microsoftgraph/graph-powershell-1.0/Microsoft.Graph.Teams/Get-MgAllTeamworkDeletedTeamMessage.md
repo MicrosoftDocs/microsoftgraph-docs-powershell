@@ -15,6 +15,9 @@ title: Get-MgAllTeamworkDeletedTeamMessage
 
 Invoke function getAllMessages
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamworkDeletedTeamMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
