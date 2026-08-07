@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote
 Locale: en-US
 Module Name: Microsoft.Graph.Compliance
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrivacySubjectRightsRequestNote
 ---
@@ -14,9 +14,6 @@ title: Get-MgPrivacySubjectRightsRequestNote
 ## SYNOPSIS
 
 List of notes associated with the request.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 List of notes associated with the request.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Compliance
 
 Get-MgPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId
-
-```
-This example shows how to use the Get-MgPrivacySubjectRightsRequestNote Cmdlet.
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [SubjectRightsRequestId <String>]: The unique identifier of subjectRightsRequest
   [UserId <String>]: The unique identifier of user
@@ -569,27 +561,5 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPrivacySubjectRightsRequestNote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestnote)
+- [](https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0)
