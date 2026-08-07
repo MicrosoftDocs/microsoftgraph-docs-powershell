@@ -148,7 +148,7 @@ HelpMessage: ''
 
 ### -Certificate
 
-.
+
 
 ```yaml
 Type: System.String
