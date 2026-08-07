@@ -591,9 +591,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyprinter)
-- [](https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-beta)
+- [Get-MgBetaReportDailyPrintUsageByPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyprinter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-beta)
 
 
 

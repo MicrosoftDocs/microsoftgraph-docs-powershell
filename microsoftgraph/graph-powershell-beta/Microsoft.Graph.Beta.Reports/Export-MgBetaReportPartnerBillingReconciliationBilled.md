@@ -413,8 +413,8 @@ BODYPARAMETER `<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftG
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingreconciliationbilled)
-- [](https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta)
+- [Export-MgBetaReportPartnerBillingReconciliationBilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingreconciliationbilled)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-beta)
 
 
 

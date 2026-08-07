@@ -509,8 +509,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforemailbymodernauthentication)
-- [](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforemailbymodernauthentication?view=graph-rest-beta)
+- [Get-MgBetaReportServiceActivityActiveUserMetricForEmailByModernAuthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforemailbymodernauthentication)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforemailbymodernauthentication?view=graph-rest-beta)
 
 
 
