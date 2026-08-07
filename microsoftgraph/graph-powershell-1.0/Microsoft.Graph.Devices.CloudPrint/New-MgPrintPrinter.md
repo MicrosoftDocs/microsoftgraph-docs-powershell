@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintPrinter
 ---
@@ -16,9 +16,6 @@ title: New-MgPrintPrinter
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,18 +51,9 @@ Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Printer.Create, Printer.FullControl.All, Printer.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -83,10 +71,6 @@ $params = @{
 }
 
 New-MgPrintPrinter -BodyParameter $params
-
-```
-This example shows how to use the New-MgPrintPrinter Cmdlet.
-
 
 ## PARAMETERS
 
@@ -113,7 +97,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -200,7 +184,7 @@ HelpMessage: ''
 
 ### -ConnectorId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -221,7 +205,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -242,7 +226,7 @@ HelpMessage: ''
 
 ### -HasPhysicalDevice
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -326,7 +310,7 @@ HelpMessage: ''
 
 ### -Manufacturer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -347,7 +331,7 @@ HelpMessage: ''
 
 ### -Model
 
-
+.
 
 ```yaml
 Type: System.String
@@ -389,7 +373,7 @@ HelpMessage: ''
 
 ### -PhysicalDeviceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -545,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths18VwyqhPrintPrintersMicrosoftGraphCreatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths18VwyqhPrintPrintersMicrosoftGraphCreatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertificateSigningRequest <IMicrosoftGraphPrintCertificateSigningRequest>]: printCertificateSigningRequest
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -560,7 +544,7 @@ Read-only.
   [Model <String>]: 
   [PhysicalDeviceId <String>]: 
 
-CERTIFICATESIGNINGREQUEST `<IMicrosoftGraphPrintCertificateSigningRequest>`: printCertificateSigningRequest
+CERTIFICATESIGNINGREQUEST <IMicrosoftGraphPrintCertificateSigningRequest>: printCertificateSigningRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: A base64-encoded pkcs10 certificate request.
 Read-only.
@@ -570,27 +554,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgPrintPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
+- [](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-1.0)

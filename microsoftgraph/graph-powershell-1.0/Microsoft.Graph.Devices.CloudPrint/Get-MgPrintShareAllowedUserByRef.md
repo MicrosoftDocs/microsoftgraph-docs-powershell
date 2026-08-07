@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintShareAllowedUserByRef
 ---
@@ -14,9 +14,6 @@ title: Get-MgPrintShareAllowedUserByRef
 ## SYNOPSIS
 
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,13 +36,15 @@ This cmdlet has the following aliases,
 
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrinterShare.Read.All, PrinterShare.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -434,28 +433,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPrintShareAllowedUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduserbyref)
+- [](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-1.0)

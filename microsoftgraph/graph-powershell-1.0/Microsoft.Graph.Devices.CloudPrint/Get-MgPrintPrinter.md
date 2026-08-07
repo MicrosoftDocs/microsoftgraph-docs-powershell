@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinter
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintPrinter
 ---
@@ -14,9 +14,6 @@ title: Get-MgPrintPrinter
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a printer object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,37 +55,19 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a printer object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Printer.Read.All, Printer.FullControl.All, Printer.ReadWrite.All, PrinterShare.Read.All, PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Printer.Read.All, Printer.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a printer
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinter -PrinterId $printerId
 
-```
-This example will get a printer
-
-### Example 2: Get a printer and its capabilities
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities" 
-
-```
-This example will get a printer and its capabilities
-
+Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities"
 
 ## PARAMETERS
 
@@ -550,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -568,28 +547,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPrintPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinter)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/print-list-printers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinter)
+- [](https://learn.microsoft.com/graph/api/printer-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/print-list-printers?view=graph-rest-1.0)

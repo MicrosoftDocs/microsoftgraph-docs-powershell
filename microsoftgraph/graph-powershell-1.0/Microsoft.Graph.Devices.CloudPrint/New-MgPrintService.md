@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintService
 ---
@@ -14,9 +14,6 @@ title: New-MgPrintService
 ## SYNOPSIS
 
 Create new navigation property to services for print
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintService?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to services for print
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -382,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintService>`: printService
+BODYPARAMETER <IMicrosoftGraphPrintService>: printService
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -405,27 +412,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgPrintService](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice)

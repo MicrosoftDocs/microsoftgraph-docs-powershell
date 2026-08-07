@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgPrintPrinterJob
 ---
@@ -15,9 +15,6 @@ title: Stop-MgPrintPrinterJob
 
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Stop-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Stop-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
-
-```
-This example shows how to use the Stop-MgPrintPrinterJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -400,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -418,27 +402,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob)
+- [](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0)

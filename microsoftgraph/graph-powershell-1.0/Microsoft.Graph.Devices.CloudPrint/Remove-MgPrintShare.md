@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshare
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPrintShare
 ---
@@ -16,9 +16,6 @@ title: Remove-MgPrintShare
 Delete a printer share (unshare the associated printer).
 This action can't be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer needs to discover and reinstall it.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShare?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,17 +49,12 @@ This action can't be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer needs to discover and reinstall it.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Remove-MgPrintShare -PrinterShareId $printerShareId
-
-```
-This example shows how to use the Remove-MgPrintShare Cmdlet.
-
 
 ## PARAMETERS
 
@@ -394,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -412,27 +404,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgPrintShare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshare)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshare)
+- [](https://learn.microsoft.com/graph/api/printershare-delete?view=graph-rest-1.0)

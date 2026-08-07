@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshareallowedgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPrintShareAllowedGroupByRef
 ---
@@ -14,9 +14,6 @@ title: Remove-MgPrintShareAllowedGroupByRef
 ## SYNOPSIS
 
 Revoke the specified group's access to submit print jobs to the associated printerShare.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,17 +63,12 @@ This cmdlet has the following aliases,
 Revoke the specified group's access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Remove-MgPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -GroupId $groupId
-
-```
-This example shows how to use the Remove-MgPrintShareAllowedGroupByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -468,7 +460,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -486,27 +478,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgPrintShareAllowedGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshareallowedgroupbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshareallowedgroupbyref)
+- [](https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-1.0)

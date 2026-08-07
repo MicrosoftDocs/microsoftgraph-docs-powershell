@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintservicecount
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintServiceCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgPrintServiceCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintServiceCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintServiceCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.ReadBasic, PrintAlertSettings.Read.All, PrintAlertSettings.ReadWrite.All, PrintConnector.Read.All, PrintConnector.ReadWrite.All, Printer.Create, Printer.Read.All, Printer.ReadWrite.All, PrinterShare.Read.All, PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All, PrintJob.Create, PrintJob.Read, PrintJob.Read.All, PrintJob.ReadBasic.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All, PrintSettings.Read.All, PrintSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -282,27 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPrintServiceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintservicecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintservicecount)
