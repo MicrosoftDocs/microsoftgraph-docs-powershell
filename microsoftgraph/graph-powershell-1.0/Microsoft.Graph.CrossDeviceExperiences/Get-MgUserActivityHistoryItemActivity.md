@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity
 Locale: en-US
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserActivityHistoryItemActivity
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserActivityHistoryItemActivity
 
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [UserActivityId <String>]: The unique identifier of userActivity
   [UserId <String>]: The unique identifier of user
@@ -389,27 +396,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserActivityHistoryItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity)
