@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceIntelProfileIndicator
 
 Includes an assemblage of high-fidelity network indicators of compromise.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
