@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAllSite
 ---
@@ -16,9 +16,6 @@ title: Get-MgAllSite
 List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAllSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAllSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,37 +40,19 @@ List sites across geographies in an organization.
 This API can also be used to enumerate all sites in a non-multi-geo tenant.
 For more information, see Best practices for discovering files and detecting changes at scale.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Initial request
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgAllSite
 
-```
-This example will initial request
-
-### Example 2: Subsequent request
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ" 
-
-```
-This example will subsequent request
-
+Get-MgAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
 
 ## PARAMETERS
 
@@ -441,27 +420,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgAllSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgallsite)
+- [](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)

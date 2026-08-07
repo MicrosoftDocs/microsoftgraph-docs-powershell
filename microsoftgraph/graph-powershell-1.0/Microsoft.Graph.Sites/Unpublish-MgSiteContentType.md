@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Unpublish-MgSiteContentType
 ---
@@ -14,9 +14,6 @@ title: Unpublish-MgSiteContentType
 ## SYNOPSIS
 
 Unpublish a contentType from a content type hub site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Unpublish a contentType from a content type hub site.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.FullControl.All,  |
-| Delegated (personal Microsoft account) | Sites.FullControl.All,  |
-| Application | Sites.FullControl.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Unpublish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-
-```
-This example shows how to use the Unpublish-MgSiteContentType Cmdlet.
-
 
 ## PARAMETERS
 
@@ -398,7 +382,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -446,27 +430,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Unpublish-MgSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype)
+- [](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)

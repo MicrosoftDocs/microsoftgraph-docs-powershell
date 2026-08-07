@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminSharepoint
 ---
@@ -14,9 +14,6 @@ title: Get-MgAdminSharepoint
 ## SYNOPSIS
 
 Get sharepoint from admin
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get sharepoint from admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -276,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgAdminSharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint)

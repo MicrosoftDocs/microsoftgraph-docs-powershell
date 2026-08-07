@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopy
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgSiteListContentTypeCopy
 ---
@@ -14,9 +14,6 @@ title: Add-MgSiteListContentTypeCopy
 ## SYNOPSIS
 
 Add a copy of a content type from a site to a list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,18 +64,9 @@ This cmdlet has the following aliases,
 
 Add a copy of a content type from a site to a list.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Manage.All, Sites.FullControl.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
@@ -87,10 +75,6 @@ $params = @{
 }
 
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -123,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -194,7 +178,7 @@ HelpMessage: ''
 
 ### -ContentType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -505,11 +489,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2Ehha4SitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2Ehha4SitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentType <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -557,27 +541,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgSiteListContentTypeCopy](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopy)
+- [](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
