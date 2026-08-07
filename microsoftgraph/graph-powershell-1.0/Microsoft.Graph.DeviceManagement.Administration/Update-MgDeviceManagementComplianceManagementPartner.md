@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementComplianceManagementPartner
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementComplianceManagementPartner
 ## SYNOPSIS
 
 Update the navigation property complianceManagementPartners in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property complianceManagementPartners in deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -136,10 +124,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId $complianceManagementPartnerId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementComplianceManagementPartner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -778,7 +762,7 @@ ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignme
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner>`: Compliance management partner for all platforms
+BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner>: Compliance management partner for all platforms
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -794,7 +778,7 @@ Read-only.
   [MacOSOnboarded <Boolean?>]: Partner onboarded for Mac devices.
   [PartnerState <DeviceManagementPartnerTenantState?>]: Partner state of this tenant.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -804,6 +788,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [CloudPcOnPremisesConnectionId <String>]: The unique identifier of cloudPcOnPremisesConnection
   [CloudPcProvisioningPolicyAssignmentId <String>]: The unique identifier of cloudPcProvisioningPolicyAssignment
   [CloudPcProvisioningPolicyId <String>]: The unique identifier of cloudPcProvisioningPolicy
+  [CloudPcServicePlanId <String>]: The unique identifier of cloudPcServicePlan
   [CloudPcUserSettingAssignmentId <String>]: The unique identifier of cloudPcUserSettingAssignment
   [CloudPcUserSettingId <String>]: The unique identifier of cloudPcUserSetting
   [ComplianceManagementPartnerId <String>]: The unique identifier of complianceManagementPartner
@@ -833,26 +818,4 @@ MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementComplianceManagementPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner)
