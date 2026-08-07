@@ -429,7 +429,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus)
+- [Get-MgUserManagedAppDiagnosticStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedappdiagnosticstatus)
 
 
 
