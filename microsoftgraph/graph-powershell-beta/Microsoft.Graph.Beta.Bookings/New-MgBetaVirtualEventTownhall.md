@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventTownhall
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaVirtualEventTownhall
 ## SYNOPSIS
 
 Create a new virtualEventTownhall object in draft mode.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,6 +54,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new virtualEventTownhall object in draft mode.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -147,7 +154,7 @@ HelpMessage: ''
 
 ### -Capacity
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -452,7 +459,7 @@ HelpMessage: ''
 
 ### -IsRegistrationEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -473,7 +480,7 @@ HelpMessage: ''
 
 ### -IsRegistrationRequired
 
-
+Indicates whether attendee registration is enabled for the virtual event.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -781,7 +788,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventTownhall>`: virtualEventTownhall
+BODYPARAMETER <IMicrosoftGraphVirtualEventTownhall>: virtualEventTownhall
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>]: communicationsIdentitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -822,7 +829,7 @@ This association bundles all the information (both supported and not supported i
 Optional.
 If set, the maximum supported length is 256 characters.
   [IsRegistrationEnabled <Boolean?>]: 
-  [IsRegistrationRequired <Boolean?>]: 
+  [IsRegistrationRequired <Boolean?>]: Indicates whether attendee registration is enabled for the virtual event.
   [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: The virtual event presenters.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -916,9 +923,11 @@ Read-only.
 Optional.
       [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [MoreInfoWebUrl <String>]: 
-        [TenantKey <String>]: 
-        [VideoTeleconferenceId <String>]: 
+        [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+        [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+        [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
       [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -945,6 +954,7 @@ Optional.
       [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
       [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+      [MeetingType <String>]: onlineMeetingType
       [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
       [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1039,7 +1049,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [TenantId <String>]: The user's tenant ID.
 
-CREATEDBY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
+CREATEDBY <IMicrosoftGraphCommunicationsIdentitySet>: communicationsIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1059,12 +1069,12 @@ For example, in the access reviews decisions API, this property might record the
   [OnPremises <IMicrosoftGraphIdentity>]: identity
   [Phone <IMicrosoftGraphIdentity>]: identity
 
-DESCRIPTION `<IMicrosoftGraphItemBody>`: itemBody
+DESCRIPTION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1196,9 +1206,11 @@ Read-only.
 Optional.
     [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [MoreInfoWebUrl <String>]: 
-      [TenantKey <String>]: 
-      [VideoTeleconferenceId <String>]: 
+      [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+      [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+      [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
     [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1225,6 +1237,7 @@ Optional.
     [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
     [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+    [MeetingType <String>]: onlineMeetingType
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1397,9 +1410,11 @@ Read-only.
 Optional.
     [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [MoreInfoWebUrl <String>]: 
-      [TenantKey <String>]: 
-      [VideoTeleconferenceId <String>]: 
+      [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+      [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+      [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
     [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1429,6 +1444,7 @@ Optional.
     [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
     [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+    [MeetingType <String>]: onlineMeetingType
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1563,9 +1579,11 @@ Read-only.
 Optional.
   [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [MoreInfoWebUrl <String>]: 
-    [TenantKey <String>]: 
-    [VideoTeleconferenceId <String>]: 
+    [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+    [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+    [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1595,6 +1613,7 @@ Optional.
   [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
   [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+  [MeetingType <String>]: onlineMeetingType
   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
   [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1664,11 +1683,11 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
+SETTINGS <IMicrosoftGraphVirtualEventSettings>: virtualEventSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAttendeeEmailNotificationEnabled <Boolean?>]: Indicates whether virtual event attendees receive email notifications.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1678,28 +1697,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [New-MgBetaVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
+- [](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)

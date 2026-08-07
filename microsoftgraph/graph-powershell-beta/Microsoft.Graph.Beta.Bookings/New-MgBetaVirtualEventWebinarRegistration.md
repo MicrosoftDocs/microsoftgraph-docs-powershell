@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventWebinarRegistration
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaVirtualEventWebinarRegistration
 
 Create a registration record for a registrant of a webinar or town hall.
 This method registers the person for the webinar or town hall.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -85,18 +82,9 @@ This cmdlet has the following aliases,
 Create a registration record for a registrant of a webinar or town hall.
 This method registers the person for the webinar or town hall.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | VirtualEvent.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualEventRegistration-Anon.ReadWrite.Chat, VirtualEventRegistration-Anon.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Creating registration record with delegated permission
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
@@ -138,12 +126,7 @@ $params = @{
 
 New-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
 
-```
-This example shows creating registration record with delegated permission
-
-### Example 2: Creating registration record with application permission
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
@@ -186,10 +169,6 @@ $params = @{
 }
 
 New-MgBetaVirtualEventWebinarRegistration -VirtualEventWebinarId $virtualEventWebinarId -BodyParameter $params
-
-```
-This example shows creating registration record with application permission
-
 
 ## PARAMETERS
 
@@ -668,7 +647,7 @@ HelpMessage: ''
 
 ### -RegistrantVideoOnDemandWebUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -938,7 +917,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventRegistration>`: virtualEventRegistration
+BODYPARAMETER <IMicrosoftGraphVirtualEventRegistration>: virtualEventRegistration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1056,9 +1035,11 @@ Read-only.
 Optional.
     [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [MoreInfoWebUrl <String>]: 
-      [TenantKey <String>]: 
-      [VideoTeleconferenceId <String>]: 
+      [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+      [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+      [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
     [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1088,6 +1069,7 @@ Optional.
     [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
     [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+    [MeetingType <String>]: onlineMeetingType
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1131,7 +1113,7 @@ Read-only.
   [UserId <String>]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-EXTERNALREGISTRATIONINFORMATION `<IMicrosoftGraphVirtualEventExternalRegistrationInformation>`: virtualEventExternalRegistrationInformation
+EXTERNALREGISTRATIONINFORMATION <IMicrosoftGraphVirtualEventExternalRegistrationInformation>: virtualEventExternalRegistrationInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
 Optional.
@@ -1139,7 +1121,7 @@ Optional.
 Optional.
 If set, the maximum supported length is 256 characters.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1262,9 +1244,11 @@ Read-only.
 Optional.
   [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [MoreInfoWebUrl <String>]: 
-    [TenantKey <String>]: 
-    [VideoTeleconferenceId <String>]: 
+    [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+    [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+    [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1294,6 +1278,7 @@ Optional.
   [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
   [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+  [MeetingType <String>]: onlineMeetingType
   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
   [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1366,27 +1351,5 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 
 ## RELATED LINKS
 
-- [New-MgBetaVirtualEventWebinarRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration)
+- [](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta)
