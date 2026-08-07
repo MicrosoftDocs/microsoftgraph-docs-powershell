@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceLifecycleWorkflowSetting
 ---
@@ -15,9 +15,6 @@ title: Update-MgIdentityGovernanceLifecycleWorkflowSetting
 
 Update the properties of a lifecycleManagementSettings object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -25,6 +22,7 @@ Update the properties of a lifecycleManagementSettings object.
 ```
 Update-MgIdentityGovernanceLifecycleWorkflowSetting [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-EmailSettings <IMicrosoftGraphEmailSettings>] [-Id <string>]
+ [-QuarantineConfiguration <IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>]
  [-WorkflowScheduleIntervalInHours <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -49,18 +47,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a lifecycleManagementSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -74,10 +63,6 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -337,6 +322,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -QuarantineConfiguration
+
+quarantineConfiguration
+To construct, see NOTES section for QUARANTINECONFIGURATION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceQuarantineConfiguration
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -434,7 +441,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>`: lifecycleManagementSettings
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>: lifecycleManagementSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -448,11 +455,16 @@ For details, see Learn more about Exchange Online Email Routing.
 The banner logo will replace the Microsoft logo at the top of the email notification.
 If true the banner logo will be taken from the tenant’s branding settings.
 This value can only be set to true if the organizationalBranding bannerLogo property is set.
+  [QuarantineConfiguration <IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>]: quarantineConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Conditions <IMicrosoftGraphIdentityGovernanceQuarantineCondition[]>]: The set of threshold conditions evaluated for the workflow.
+Each condition is either a countBasedQuarantineCondition or a percentageBasedQuarantineCondition.
+    [MatchMode <String>]: matchMode
   [WorkflowScheduleIntervalInHours <Int32?>]: The interval in hours at which all workflows running in the tenant should be scheduled for execution.
 This interval has a minimum value of 1 and a maximum value of 24.
 The default value is 3 hours.
 
-EMAILSETTINGS `<IMicrosoftGraphEmailSettings>`: emailSettings
+EMAILSETTINGS <IMicrosoftGraphEmailSettings>: emailSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SenderDomain <String>]: Specifies the domain that should be used when sending email notifications.
 This domain must be verified in order to be used.
@@ -463,30 +475,14 @@ The banner logo will replace the Microsoft logo at the top of the email notifica
 If true the banner logo will be taken from the tenant’s branding settings.
 This value can only be set to true if the organizationalBranding bannerLogo property is set.
 
+QUARANTINECONFIGURATION <IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>: quarantineConfiguration
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Conditions <IMicrosoftGraphIdentityGovernanceQuarantineCondition[]>]: The set of threshold conditions evaluated for the workflow.
+Each condition is either a countBasedQuarantineCondition or a percentageBasedQuarantineCondition.
+  [MatchMode <String>]: matchMode
+
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceLifecycleWorkflowSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0)

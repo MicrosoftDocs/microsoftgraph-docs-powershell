@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAccessReviewDefinition
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernanceAccessReviewDefinition
 ## SYNOPSIS
 
 Create a new accessReviewScheduleDefinition object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,18 +54,9 @@ This cmdlet has the following aliases,
 
 Create a new accessReviewScheduleDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an access review on a group
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -110,19 +98,15 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review on a group
-
-### Example 2: Create an access review on all teams with inactive guest users
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	displayName = "Review inactive guests on teams"
 	descriptionForAdmins = "Control guest user access to our teams."
-	descriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
+	descriptionForReviewers = "Information security is everyone's responsibility.
+Review our access policy for more."
 	instanceEnumerationScope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
 		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
@@ -171,12 +155,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review on all teams with inactive guest users
-
-### Example 3: Create an access review of all users to an application
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -245,12 +224,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review of all users to an application
-
-### Example 4: Create an access review on a group with multiple stages
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -318,10 +292,6 @@ decisionHistoriesForReviewersEnabled = $true
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-
-```
-This example will create an access review on a group with multiple stages
-
 
 ## PARAMETERS
 
@@ -992,7 +962,7 @@ ADDITIONALNOTIFICATIONRECIPIENTS <IMicrosoftGraphAccessReviewNotificationRecipie
   [NotificationTemplateType <String>]: Indicates the type of access review email to be sent.
 Supported template type is CompletedAdditionalRecipients, which sends review completion notifications to the recipients.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+BODYPARAMETER <IMicrosoftGraphAccessReviewScheduleDefinition>: accessReviewScheduleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1266,7 +1236,7 @@ The typical states include Initializing, NotStarted, Starting, InProgress, Compl
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -1427,7 +1397,7 @@ Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
 
-SETTINGS `<IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSettings
+SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>: accessReviewScheduleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]: Optional field.
 Describes the  actions to take once a review is complete.
@@ -1543,27 +1513,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernanceAccessReviewDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
+- [](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
