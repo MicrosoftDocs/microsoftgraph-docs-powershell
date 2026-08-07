@@ -906,7 +906,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitemdocumentsetversion)
+- [Update-MgUserDriveItemListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitemdocumentsetversion)
 
 
 

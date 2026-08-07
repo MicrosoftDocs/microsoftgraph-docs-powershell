@@ -879,7 +879,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitemdocumentsetversion)
+- [Update-MgDriveItemListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitemdocumentsetversion)
 
 
 

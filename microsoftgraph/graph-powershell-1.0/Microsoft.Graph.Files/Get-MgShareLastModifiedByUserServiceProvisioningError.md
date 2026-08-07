@@ -473,7 +473,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelastmodifiedbyuserserviceprovisioningerror)
+- [Get-MgShareLastModifiedByUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelastmodifiedbyuserserviceprovisioningerror)
 
 
 

@@ -592,8 +592,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mguserdrivelistcontenttypewithhubsite)
-- [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
+- [Join-MgUserDriveListContentTypeWithHubSite](https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mguserdrivelistcontenttypewithhubsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
 
 
 
