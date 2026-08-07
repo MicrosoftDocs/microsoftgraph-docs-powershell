@@ -15,6 +15,9 @@ title: Get-MgBetaReportMonthlyPrintUsageByPrinter
 
 Retrieve a list of monthly print usage summaries, grouped by printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageByPrinter?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
