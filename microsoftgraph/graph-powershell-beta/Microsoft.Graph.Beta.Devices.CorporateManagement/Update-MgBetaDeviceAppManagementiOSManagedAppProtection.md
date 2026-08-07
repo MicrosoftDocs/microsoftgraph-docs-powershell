@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementiOSManagedAppProtection
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceAppManagementiOSManagedAppProtection
 ## SYNOPSIS
 
 Update the navigation property iosManagedAppProtections in deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,8 +64,10 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtection
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <timespan>] [-PreviousPinBlockCount <int>] [-PrintBlocked]
  [-ProtectInboundDataFromUnknownSources]
- [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>] [-RoleScopeTagIds <string[]>]
- [-SaveAsBlocked] [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
+ [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
+ [-PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement>]
+ [-RoleScopeTagIds <string[]>] [-SaveAsBlocked]
+ [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
  [-SimplePinBlocked] [-TargetedAppManagementLevels <AppManagementLevel>]
  [-ThirdPartyKeyboardsBlocked] [-Version <string>]
  [-WritingToolsConfigurationState <WritingToolsIosManagedAppConfigurationState>] [-Break]
@@ -135,8 +134,10 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <timespan>] [-PreviousPinBlockCount <int>] [-PrintBlocked]
  [-ProtectInboundDataFromUnknownSources]
- [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>] [-RoleScopeTagIds <string[]>]
- [-SaveAsBlocked] [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
+ [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
+ [-PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement>]
+ [-RoleScopeTagIds <string[]>] [-SaveAsBlocked]
+ [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
  [-SimplePinBlocked] [-TargetedAppManagementLevels <AppManagementLevel>]
  [-ThirdPartyKeyboardsBlocked] [-Version <string>]
  [-WritingToolsConfigurationState <WritingToolsIosManagedAppConfigurationState>] [-Break]
@@ -165,13 +166,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property iosManagedAppProtections in deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -2494,6 +2497,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PurviewContentEvaluationRequired
+
+Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppPurviewEvaluationRequirement
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -2805,7 +2835,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphIosManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
+BODYPARAMETER <IMicrosoftGraphIosManagedAppProtection>: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppGroupType <TargetedManagedAppGroupType?>]: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
   [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
@@ -2870,6 +2900,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -2927,7 +2958,7 @@ This setting is only allowed to be True when AllowedInboundDataTransferSources i
   [ThirdPartyKeyboardsBlocked <Boolean?>]: Defines if third party keyboards are allowed while accessing a managed app
   [WritingToolsConfigurationState <WritingToolsIosManagedAppConfigurationState?>]: Configuration state set by admin for wriitng tools Apple Intelligence setting
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2944,7 +2975,7 @@ EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair[]>: Apps in this list will be 
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -3022,27 +3053,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceAppManagementiOSManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection)

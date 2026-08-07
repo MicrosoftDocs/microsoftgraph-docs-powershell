@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagement
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceAppManagement
 ## SYNOPSIS
 
 Update deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,13 +75,15 @@ This cmdlet has the following aliases,
 
 Update deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1164,6 +1163,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -1243,7 +1243,7 @@ If enabled list of approved keyboards must be provided as well.
   [WarnAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
   [WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
-BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceAppManagement>: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1311,6 +1311,7 @@ Valid values 0 to 24
     [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
     [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+    [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
     [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
     [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -1441,6 +1442,7 @@ Valid values 0 to 24
     [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
     [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+    [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
     [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
     [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -1682,6 +1684,7 @@ Valid values 0 to 24
     [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
     [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+    [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
     [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
     [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -2406,6 +2409,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -2679,6 +2683,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -3129,7 +3134,7 @@ Read-only.
   [RoleScopeTags <String[]>]: RoleScopeTags of the PolicySet
   [Status <PolicySetStatus?>]: The enum to specify the status of PolicySet.
 
-SYMANTECCODESIGNINGCERTIFICATE `<IMicrosoftGraphSymantecCodeSigningCertificate>`: symantecCodeSigningCertificate
+SYMANTECCODESIGNINGCERTIFICATE <IMicrosoftGraphSymantecCodeSigningCertificate>: symantecCodeSigningCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3511,7 +3516,7 @@ A timespan value of PT0S indicates that managed data will never be wiped when th
 When FALSE, indicates that printing is allowed from managed apps.
 Default value is FALSE.
 
-WINDOWSMANAGEMENTAPP `<IMicrosoftGraphWindowsManagementApp>`: Windows management app entity.
+WINDOWSMANAGEMENTAPP <IMicrosoftGraphWindowsManagementApp>: Windows management app entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3530,27 +3535,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceAppManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement)

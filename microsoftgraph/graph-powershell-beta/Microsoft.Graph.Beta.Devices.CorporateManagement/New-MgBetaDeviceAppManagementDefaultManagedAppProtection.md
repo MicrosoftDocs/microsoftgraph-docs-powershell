@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceAppManagementDefaultManagedAppProtection
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceAppManagementDefaultManagedAppProtection
 ## SYNOPSIS
 
 Create new navigation property to defaultManagedAppProtections for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -84,8 +81,9 @@ New-MgBetaDeviceAppManagementDefaultManagedAppProtection [-ResponseHeadersVariab
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <timespan>] [-PreviousPinBlockCount <int>] [-PrintBlocked]
  [-ProtectInboundDataFromUnknownSources]
- [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>] [-RequireClass3Biometrics]
- [-RequirePinAfterBiometricChange]
+ [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
+ [-PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement>]
+ [-RequireClass3Biometrics] [-RequirePinAfterBiometricChange]
  [-RequiredAndroidSafetyNetAppsVerificationType <AndroidManagedAppSafetyNetAppsVerificationType>]
  [-RequiredAndroidSafetyNetDeviceAttestationType <AndroidManagedAppSafetyNetDeviceAttestationType>]
  [-RequiredAndroidSafetyNetEvaluationType <AndroidManagedAppSafetyNetEvaluationType>]
@@ -116,13 +114,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to defaultManagedAppProtections for deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -2474,6 +2474,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PurviewContentEvaluationRequired
+
+Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppPurviewEvaluationRequirement
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -RequireClass3Biometrics
 
 Require user to apply Class 3 Biometrics on their Android device.
@@ -2830,7 +2851,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Version <String>]: Version of the entity.
 
-BODYPARAMETER `<IMicrosoftGraphDefaultManagedAppProtection>`: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
+BODYPARAMETER <IMicrosoftGraphDefaultManagedAppProtection>: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedDataIngestionLocations <ManagedAppDataIngestionLocation[]>]: Data storage locations where a user may store managed data.
   [AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]: Data storage locations where a user may store managed data.
@@ -2883,6 +2904,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -3000,7 +3022,7 @@ CUSTOMSETTINGS <IMicrosoftGraphKeyValuePair[]>: A set of string key and string v
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3026,27 +3048,4 @@ EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair[]>: iOS Apps in this list will
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceAppManagementDefaultManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementdefaultmanagedappprotection)
