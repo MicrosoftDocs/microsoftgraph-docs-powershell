@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySensorDeploymentPackageUri
 ---
@@ -15,9 +15,6 @@ title: Get-MgSecurityIdentitySensorDeploymentPackageUri
 
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentitySensorDeploymentPackageUri](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentitySensorDeploymentPackageUri?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,13 +37,13 @@ This cmdlet has the following aliases,
 Get the sensor deployment package URL and version.
 You can use this URL to download the installer to install the sensor on a server.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesSensors.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesSensors.Read.All,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIdentitySensorDeploymentPackageUri
 
 ## PARAMETERS
 
@@ -242,27 +239,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgSecurityIdentitySensorDeploymentPackageUri](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri)
+- [](https://learn.microsoft.com/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-1.0)

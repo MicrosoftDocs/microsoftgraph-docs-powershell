@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityAttackSimulationLoginPage
 ---
@@ -15,9 +15,6 @@ title: Get-MgSecurityAttackSimulationLoginPage
 
 Get a loginPage associated with an attack simulation campaign for a tenant.
 Login pages are shown to users in attack simulations that use credential harvest and link in attachment social engineering techniques.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLoginPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -80,26 +77,13 @@ This cmdlet has the following aliases,
 Get a loginPage associated with an attack simulation campaign for a tenant.
 Login pages are shown to users in attack simulations that use credential harvest and link in attachment social engineering techniques.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AttackSimulation.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AttackSimulation.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAttackSimulationLoginPage -Filter "source eq 'tenant'" 
-
-```
-This example shows how to use the Get-MgSecurityAttackSimulationLoginPage Cmdlet.
-
+Get-MgSecurityAttackSimulationLoginPage -Filter "source eq 'tenant'"
 
 ## PARAMETERS
 
@@ -588,11 +572,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -664,28 +651,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityAttackSimulationLoginPage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/loginpage-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage)
+- [](https://learn.microsoft.com/graph/api/loginpage-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0)

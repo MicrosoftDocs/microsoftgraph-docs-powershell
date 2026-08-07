@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentityAccount
 ---
@@ -15,9 +15,6 @@ title: Get-MgSecurityIdentityAccount
 
 Read the properties and relationships of a single identity security account object.
 This allows retrieving information about available identity accounts.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentityAccount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a single identity security account object.
 This allows retrieving information about available identity accounts.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesAccount.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesAccount.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get details of an identity account
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityIdentityAccount -IdentityAccountsId $identityAccountsId
 
-```
-This example will get details of an identity account
-
-### Example 2: Get the account details of an identity account
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityIdentityAccount -IdentityAccountsId $identityAccountsId -Property "accounts" 
-
-```
-This example will get the account details of an identity account
-
+Get-MgSecurityIdentityAccount -IdentityAccountsId $identityAccountsId -Property "accounts"
 
 ## PARAMETERS
 
@@ -552,11 +531,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -628,28 +610,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityaccount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identityaccounts-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identitycontainer-list-identityaccounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityaccount)
+- [](https://learn.microsoft.com/graph/api/security-identityaccounts-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-identityaccounts?view=graph-rest-1.0)

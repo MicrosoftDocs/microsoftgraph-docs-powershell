@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityLabelAuthority
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityLabelAuthority
 ## SYNOPSIS
 
 Create a new authorityTemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,9 +46,8 @@ This cmdlet has the following aliases,
 Create a new authorityTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -61,10 +57,6 @@ $params = @{
 }
 
 New-MgSecurityLabelAuthority -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityLabelAuthority Cmdlet.
-
 
 ## PARAMETERS
 
@@ -439,7 +431,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -453,27 +445,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgSecurityLabelAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority)
+- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0)

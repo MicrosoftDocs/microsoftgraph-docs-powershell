@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysettingautoauditingconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySettingAutoAuditingConfiguration
 ---
@@ -35,26 +35,13 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of microsoft.graph.security.autoAuditingConfiguration object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesAutoConfig.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesAutoConfig.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityIdentitySettingAutoAuditingConfiguration
-
-```
-This example shows how to use the Get-MgSecurityIdentitySettingAutoAuditingConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -294,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgSecurityIdentitySettingAutoAuditingConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysettingautoauditingconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysettingautoauditingconfiguration)
+- [](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-get?view=graph-rest-1.0)

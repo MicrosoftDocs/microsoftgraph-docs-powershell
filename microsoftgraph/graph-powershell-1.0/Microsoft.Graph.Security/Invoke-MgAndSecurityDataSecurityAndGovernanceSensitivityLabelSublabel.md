@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabelsublabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel
 ## SYNOPSIS
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -105,7 +112,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -127,7 +134,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -192,7 +199,7 @@ HelpMessage: ''
 
 ### -DelegatedUserEmail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -310,7 +317,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -337,7 +344,7 @@ HelpMessage: ''
 
 ### -ProtectedContents
 
-
+.
 To construct, see NOTES section for PROTECTEDCONTENTS properties and create a hash table.
 
 ```yaml
@@ -477,7 +484,7 @@ HelpMessage: ''
 
 ### -SupportedContentFormats
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -558,7 +565,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -568,7 +575,7 @@ BODY `<IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivity
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-BODYPARAMETER `<IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -578,11 +585,14 @@ BODYPARAMETER `<IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSe
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -659,28 +669,5 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabelsublabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabelsublabel)
+- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-1.0)
