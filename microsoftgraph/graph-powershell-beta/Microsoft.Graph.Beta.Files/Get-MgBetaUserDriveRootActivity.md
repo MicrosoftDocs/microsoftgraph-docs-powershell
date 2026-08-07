@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserDriveRootActivity
 ---
@@ -36,6 +36,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The list of recent activities that took place on this item.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -489,27 +499,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserDriveRootActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootactivity)

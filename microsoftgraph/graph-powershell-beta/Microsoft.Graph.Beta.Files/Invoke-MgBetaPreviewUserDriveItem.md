@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewuserdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaPreviewUserDriveItem
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaPreviewUserDriveItem
 ## SYNOPSIS
 
 Invoke action preview
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewUserDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgPreviewUserDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 
 Invoke action preview
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +107,7 @@ HelpMessage: ''
 
 ### -AllowEdit
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -127,7 +134,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -176,7 +183,7 @@ HelpMessage: ''
 
 ### -Chromeless
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -370,7 +377,7 @@ HelpMessage: ''
 
 ### -Page
 
-
+.
 
 ```yaml
 Type: System.String
@@ -509,7 +516,7 @@ HelpMessage: ''
 
 ### -Viewer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -558,7 +565,7 @@ HelpMessage: ''
 
 ### -Zoom
 
-
+.
 
 ```yaml
 Type: System.Double
@@ -617,7 +624,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZ9C15KUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZ9C15KUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowEdit <Boolean?>]: 
   [Chromeless <Boolean?>]: 
@@ -625,7 +632,7 @@ BODYPARAMETER `<IPathsZ9C15KUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGra
   [Viewer <String>]: 
   [Zoom <Double?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -655,27 +662,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaPreviewUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewuserdriveitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetapreviewuserdriveitem)

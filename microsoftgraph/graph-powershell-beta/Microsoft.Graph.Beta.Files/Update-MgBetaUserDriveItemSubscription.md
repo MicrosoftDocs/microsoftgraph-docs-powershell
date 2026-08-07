@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserDriveItemSubscription
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserDriveItemSubscription
 ## SYNOPSIS
 
 Update the navigation property subscriptions in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,10 +27,11 @@ Update-MgBetaUserDriveItemSubscription -DriveId <string> -DriveItemId <string>
  [-EncryptionCertificateId <string>] [-ExpirationDateTime <datetime>] [-Id <string>]
  [-IncludeResourceData] [-LatestSupportedTlsVersion <string>] [-LifecycleNotificationUrl <string>]
  [-NotificationContentType <string>] [-NotificationQueryOptions <string>]
- [-NotificationUrl <string>] [-NotificationUrlAppId <string>] [-Resource <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-NotificationUrl <string>] [-NotificationUrlAppId <string>] [-Resource <string>]
+ [-VapidPublicKey <string>] [-WebPushEncryptionP256DhPublicKey <string>]
+ [-WebPushEncryptionSecret <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -56,10 +54,11 @@ Update-MgBetaUserDriveItemSubscription -InputObject <IFilesIdentity>
  [-ExpirationDateTime <datetime>] [-Id <string>] [-IncludeResourceData]
  [-LatestSupportedTlsVersion <string>] [-LifecycleNotificationUrl <string>]
  [-NotificationContentType <string>] [-NotificationQueryOptions <string>]
- [-NotificationUrl <string>] [-NotificationUrlAppId <string>] [-Resource <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-NotificationUrl <string>] [-NotificationUrlAppId <string>] [-Resource <string>]
+ [-VapidPublicKey <string>] [-WebPushEncryptionP256DhPublicKey <string>]
+ [-WebPushEncryptionSecret <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -80,6 +79,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property subscriptions in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -948,6 +957,104 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -VapidPublicKey
+
+Optional.
+The application server's VAPID public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained by calling the getVapidPublicKey function on the subscription collection.
+The browser passes this value to PushManager.subscribe({ applicationServerKey }) to bind the push subscription to this server identity.
+Required when notificationUrl targets a known Web Push service origin (for example, *.push.apple.com, fcm.googleapis.com, updates.push.services.mozilla.com); rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8292.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -WebPushEncryptionP256DhPublicKey
+
+Optional.
+The subscriber's ECDH public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('p256dh').
+Used as the peer public key during ECDH key agreement to derive the per-message content encryption key for RFC 8291 payload encryption.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -WebPushEncryptionSecret
+
+Optional.
+The subscriber's auth secret, base64url-encoded (16 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('auth').
+Used as the HMAC-SHA-256 salt for the HKDF combine step that derives key material for RFC 8291 payload encryption.
+Write-only: this value is never returned in GET responses (returned as null).
+Treat as a secret.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -1004,7 +1111,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSubscription>`: subscription
+BODYPARAMETER <IMicrosoftGraphSubscription>: subscription
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1073,8 +1180,28 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
+  [VapidPublicKey <String>]: Optional.
+The application server's VAPID public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained by calling the getVapidPublicKey function on the subscription collection.
+The browser passes this value to PushManager.subscribe({ applicationServerKey }) to bind the push subscription to this server identity.
+Required when notificationUrl targets a known Web Push service origin (for example, *.push.apple.com, fcm.googleapis.com, updates.push.services.mozilla.com); rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8292.
+  [WebPushEncryptionP256DhPublicKey <String>]: Optional.
+The subscriber's ECDH public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('p256dh').
+Used as the peer public key during ECDH key agreement to derive the per-message content encryption key for RFC 8291 payload encryption.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
+  [WebPushEncryptionSecret <String>]: Optional.
+The subscriber's auth secret, base64url-encoded (16 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('auth').
+Used as the HMAC-SHA-256 salt for the HKDF combine step that derives key material for RFC 8291 payload encryption.
+Write-only: this value is never returned in GET responses (returned as null).
+Treat as a secret.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -1104,27 +1231,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserDriveItemSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemsubscription)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemsubscription)

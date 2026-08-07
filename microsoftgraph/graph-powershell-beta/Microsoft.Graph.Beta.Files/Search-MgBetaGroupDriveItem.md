@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetagroupdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Search-MgBetaGroupDriveItem
 ---
@@ -13,10 +13,7 @@ title: Search-MgBetaGroupDriveItem
 
 ## SYNOPSIS
 
-Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Search-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Search-MgGroupDriveItem?view=graph-powershell-1.0)
+Search the hierarchy of items for items matching a query.\r\nYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 ## SYNTAX
 
@@ -48,7 +45,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
+Search the hierarchy of items for items matching a query.\r\nYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -529,7 +536,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -559,28 +566,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Search-MgBetaGroupDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetagroupdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetagroupdriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
