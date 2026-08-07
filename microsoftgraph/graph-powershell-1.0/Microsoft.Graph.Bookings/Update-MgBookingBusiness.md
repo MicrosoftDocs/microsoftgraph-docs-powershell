@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBookingBusiness
 ---
@@ -14,9 +14,6 @@ title: Update-MgBookingBusiness
 ## SYNOPSIS
 
 Update the properties of a bookingBusiness object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -90,18 +87,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a bookingBusiness object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -117,10 +105,6 @@ $params = @{
 }
 
 Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBookingBusiness Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1051,7 +1035,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -1146,7 +1130,7 @@ Default value is false.
   [StaffMemberIds <String[]>]: The ID of each bookingStaffMember who is scheduled in this appointment.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-BODYPARAMETER `<IMicrosoftGraphBookingBusiness>`: Represents a Microsoft Bookings Business.
+BODYPARAMETER <IMicrosoftGraphBookingBusiness>: Represents a Microsoft Bookings Business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1374,7 +1358,7 @@ Read-only.
   [WebSiteUrl <String>]: The URL of the business web site.
 The webSiteUrl property, together with address, phone, appear in the footer of a business scheduling page.
 
-BOOKINGPAGESETTINGS `<IMicrosoftGraphBookingPageSettings>`: bookingPageSettings
+BOOKINGPAGESETTINGS <IMicrosoftGraphBookingPageSettings>: bookingPageSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessControl <String>]: bookingPageAccessControl
   [BookingPageColorCode <String>]: Custom color for the booking page.
@@ -1512,7 +1496,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1533,7 +1517,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowStaffSelection <Boolean?>]: True to allow customers to choose a specific person for the booking.
   [CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow[]>]: Custom availability of the service in a given time frame.
@@ -1670,27 +1654,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
+- [](https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0)
