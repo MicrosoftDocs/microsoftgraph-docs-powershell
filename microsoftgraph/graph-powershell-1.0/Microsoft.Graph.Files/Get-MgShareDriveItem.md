@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgShareDriveItem
 ---
@@ -15,9 +15,6 @@ title: Get-MgShareDriveItem
 
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,37 +46,19 @@ This cmdlet has the following aliases,
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
-```
-This example shows how to use the Get-MgShareDriveItem Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children" 
-
-```
-This example shows how to use the Get-MgShareDriveItem Cmdlet.
-
+Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 
 ## PARAMETERS
 
@@ -369,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -398,27 +377,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgShareDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitem)
+- [](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)

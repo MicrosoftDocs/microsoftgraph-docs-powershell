@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mggroupdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgGroupDriveItem
 ---
@@ -14,9 +14,6 @@ title: Copy-MgGroupDriveItem
 ## SYNOPSIS
 
 Invoke action copy
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 
 Invoke action copy
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -101,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -150,7 +157,7 @@ HelpMessage: ''
 
 ### -ChildrenOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -343,7 +350,7 @@ HelpMessage: ''
 
 ### -IncludeAllVersionHistory
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -398,7 +405,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -592,7 +599,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZsqog0GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChildrenOnly <Boolean?>]: 
   [IncludeAllVersionHistory <Boolean?>]: 
@@ -626,7 +633,7 @@ The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -652,7 +659,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -684,27 +691,4 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [Copy-MgGroupDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mggroupdriveitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mggroupdriveitem)

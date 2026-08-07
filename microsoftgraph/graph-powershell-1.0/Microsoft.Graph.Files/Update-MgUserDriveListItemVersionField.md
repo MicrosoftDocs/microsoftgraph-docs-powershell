@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemversionfield
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserDriveListItemVersionField
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserDriveListItemVersionField
 ## SYNOPSIS
 
 Update the navigation property fields in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,6 +64,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property fields in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -535,7 +542,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -564,27 +571,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgUserDriveListItemVersionField](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemversionfield)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemversionfield)

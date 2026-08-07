@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttypecolumnlink
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgShareListContentTypeColumnLink
 ---
@@ -14,9 +14,6 @@ title: Remove-MgShareListContentTypeColumnLink
 ## SYNOPSIS
 
 Delete navigation property columnLinks for shares
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property columnLinks for shares
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -420,7 +427,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -449,27 +456,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgShareListContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttypecolumnlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcontenttypecolumnlink)
