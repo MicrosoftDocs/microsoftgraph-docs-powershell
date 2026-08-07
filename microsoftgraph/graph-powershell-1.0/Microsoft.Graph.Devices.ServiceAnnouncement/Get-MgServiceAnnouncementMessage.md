@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServiceAnnouncementMessage
 ---
@@ -15,10 +15,7 @@ title: Get-MgServiceAnnouncementMessage
 
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
-The operation returns an error if the message does not exist for the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
+The operation returns an error if the message doesn't exist for the tenant.
 
 ## SYNTAX
 
@@ -61,28 +58,15 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
-The operation returns an error if the message does not exist for the tenant.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ServiceMessage.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ServiceMessage.Read.All,  |
+The operation returns an error if the message doesn't exist for the tenant.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessage
-
-```
-This example shows how to use the Get-MgServiceAnnouncementMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -544,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   [ServiceAnnouncementAttachmentId <String>]: The unique identifier of serviceAnnouncementAttachment
   [ServiceHealthId <String>]: The unique identifier of serviceHealth
   [ServiceHealthIssueId <String>]: The unique identifier of serviceHealthIssue
@@ -553,28 +537,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgServiceAnnouncementMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessage)
+- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0)
