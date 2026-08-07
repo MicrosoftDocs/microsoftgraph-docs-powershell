@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 ---
@@ -52,6 +52,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to managementTemplateStepTenantSummaries for tenantRelationships
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -77,7 +87,7 @@ HelpMessage: ''
 
 ### -AssignedTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -141,7 +151,7 @@ HelpMessage: ''
 
 ### -CompliantTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -184,7 +194,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -205,7 +215,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -226,7 +236,7 @@ HelpMessage: ''
 
 ### -DismissedTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -332,7 +342,7 @@ HelpMessage: ''
 
 ### -IneligibleTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -353,7 +363,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -374,7 +384,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -395,7 +405,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -416,7 +426,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateCollectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -437,7 +447,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -458,7 +468,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -479,7 +489,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateStepDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -500,7 +510,7 @@ HelpMessage: ''
 
 ### -ManagementTemplateStepId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -521,7 +531,7 @@ HelpMessage: ''
 
 ### -NotCompliantTenantsCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -677,7 +687,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>`: managementTemplateStepTenantSummary
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>: managementTemplateStepTenantSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -700,27 +710,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary)
