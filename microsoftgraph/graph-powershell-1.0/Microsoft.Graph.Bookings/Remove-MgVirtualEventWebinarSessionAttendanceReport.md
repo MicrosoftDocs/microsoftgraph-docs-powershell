@@ -444,7 +444,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarsessionattendancereport)
+- [Remove-MgVirtualEventWebinarSessionAttendanceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarsessionattendancereport)
 
 
 
