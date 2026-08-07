@@ -15,6 +15,9 @@ title: Get-MgUserSettingWindowsInstance
 
 A collection of setting values for a given windowsSetting.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindowsInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
