@@ -15,6 +15,9 @@ title: Remove-MgUserDriveList
 
 Delete navigation property list for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

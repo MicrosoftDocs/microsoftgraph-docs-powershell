@@ -15,6 +15,9 @@ title: New-MgUserDriveListOperation
 
 Create new navigation property to operations for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
