@@ -15,6 +15,9 @@ title: Get-MgApplicationFederatedIdentityCredential
 
 Read the properties and relationships of a federatedIdentityCredential object assigned to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
