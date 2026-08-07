@@ -727,8 +727,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage)
-- [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-put-languages?view=graph-rest-beta)
+- [Update-MgBetaIdentityB2CUserFlowLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2cidentityuserflow-put-languages?view=graph-rest-beta)
 
 
 

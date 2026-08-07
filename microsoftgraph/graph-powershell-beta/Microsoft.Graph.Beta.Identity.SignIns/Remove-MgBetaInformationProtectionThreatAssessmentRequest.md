@@ -478,7 +478,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectionthreatassessmentrequest)
+- [Remove-MgBetaInformationProtectionThreatAssessmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetainformationprotectionthreatassessmentrequest)
 
 
 

@@ -454,8 +454,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacomputeinformationprotectionsensitivitylabelsublabelinheritance)
-- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
+- [Invoke-MgBetaComputeInformationProtectionSensitivityLabelSublabelInheritance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetacomputeinformationprotectionsensitivitylabelsublabelinheritance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-beta)
 
 
 

@@ -577,7 +577,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowlanguagedefaultpagecontent)
+- [Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowlanguagedefaultpagecontent)
 
 
 

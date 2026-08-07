@@ -1047,8 +1047,8 @@ Applications created before this date are not affected.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-beta)
 
 
 

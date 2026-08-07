@@ -499,7 +499,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetariskyuserhistory)
+- [Remove-MgBetaRiskyUserHistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetariskyuserhistory)
 
 
 

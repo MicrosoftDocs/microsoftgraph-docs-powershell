@@ -651,7 +651,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferuserinformationprotectiondecrypt)
+- [Invoke-MgBetaBufferUserInformationProtectionDecrypt](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetabufferuserinformationprotectiondecrypt)
 
 
 

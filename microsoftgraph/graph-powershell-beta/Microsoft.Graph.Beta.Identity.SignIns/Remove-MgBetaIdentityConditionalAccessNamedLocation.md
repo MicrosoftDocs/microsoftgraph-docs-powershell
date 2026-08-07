@@ -497,8 +497,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation)
-- [](https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-beta)
+- [Remove-MgBetaIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccessnamedlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-beta)
 
 
 
