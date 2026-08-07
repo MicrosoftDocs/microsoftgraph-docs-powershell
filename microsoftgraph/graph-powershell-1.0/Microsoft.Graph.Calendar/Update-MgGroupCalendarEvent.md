@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupCalendarEvent
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupCalendarEvent
 ## SYNOPSIS
 
 Update an event object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -104,18 +101,9 @@ This cmdlet has the following aliases,
 
 Update an event object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -126,10 +114,6 @@ $params = @{
 }
 
 Update-MgGroupCalendarEvent -GroupId $groupId -EventId $eventId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgGroupCalendarEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1941,12 +1925,12 @@ See below for more possible values.
 It uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphEvent>`: event
+BODYPARAMETER <IMicrosoftGraphEvent>: event
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -2203,7 +2187,7 @@ Optional.
   [WebLink <String>]: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-CALENDAR `<IMicrosoftGraphCalendar>`: calendar
+CALENDAR <IMicrosoftGraphCalendar>: calendar
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2459,7 +2443,7 @@ Nullable.
 Read-only.
 Nullable.
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+END <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -2728,7 +2712,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -3008,7 +2992,7 @@ Optional.
   [WebLink <String>]: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-LOCATION `<IMicrosoftGraphLocation>`: location
+LOCATION <IMicrosoftGraphLocation>: location
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -3066,7 +3050,7 @@ Nullable.
 Read-only.
   [Value <String[]>]: A collection of property values.
 
-ONLINEMEETING `<IMicrosoftGraphOnlineMeetingInfo>`: onlineMeetingInfo
+ONLINEMEETING <IMicrosoftGraphOnlineMeetingInfo>: onlineMeetingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConferenceId <String>]: The ID of the conference.
   [JoinUrl <String>]: The external link that launches the online meeting.
@@ -3080,14 +3064,14 @@ This is a URL that clients launch into a browser and will redirect the user to j
   [TollFreeNumbers <String[]>]: The toll free numbers that can be used to join the conference.
   [TollNumber <String>]: The toll number that can be used to join the conference.
 
-ORGANIZER `<IMicrosoftGraphRecipient>`: recipient
+ORGANIZER <IMicrosoftGraphRecipient>: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
+RECURRENCE <IMicrosoftGraphPatternedRecurrence>: patternedRecurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -3120,7 +3104,7 @@ Must be the same value as the start property of the recurring event.
 Required.
     [Type <String>]: recurrenceRangeType
 
-RESPONSESTATUS `<IMicrosoftGraphResponseStatus>`: responseStatus
+RESPONSESTATUS <IMicrosoftGraphResponseStatus>: responseStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Response <String>]: responseType
   [Time <DateTime?>]: The date and time when the response was returned.
@@ -3134,7 +3118,7 @@ Nullable.
 Read-only.
   [Value <String>]: A property value.
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+START <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -3143,27 +3127,5 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [Update-MgGroupCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
+- [](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)

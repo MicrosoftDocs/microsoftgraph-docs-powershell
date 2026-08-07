@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlace
 ---
@@ -16,9 +16,6 @@ title: New-MgPlace
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlace?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,9 +25,9 @@ New-MgPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtabl
  [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
  [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
  [-IsWheelChairAccessible] [-Label <string>] [-ParentId <string>] [-Phone <string>]
- [-Tags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-PlaceId <string>] [-Tags <string[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a building
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -74,12 +62,7 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-```
-This example will create a building
-
-### Example 2: Create a floor
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -91,12 +74,7 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-```
-This example will create a floor
-
-### Example 3: Create a section
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -108,12 +86,7 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-```
-This example will create a section
-
-### Example 4: Create a desk
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -125,12 +98,7 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-```
-This example will create a desk
-
-### Example 5: Create a room
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -143,12 +111,7 @@ $params = @{
 
 New-MgPlace -BodyParameter $params
 
-```
-This example will create a room
-
-### Example 6: Create a workspace
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -162,10 +125,6 @@ $params = @{
 }
 
 New-MgPlace -BodyParameter $params
-
-```
-This example will create a workspace
-
 
 ## PARAMETERS
 
@@ -511,6 +470,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PlaceId
+
+A stable service-level identifier for the place object used by Places workloads.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -669,7 +649,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -678,7 +658,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+BODYPARAMETER <IMicrosoftGraphPlace>: place
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -710,6 +690,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
@@ -720,7 +701,7 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -732,27 +713,5 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 ## RELATED LINKS
 
-- [New-MgPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplace)
+- [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-1.0)

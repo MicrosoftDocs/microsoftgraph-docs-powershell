@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupEventDelta
 ---
@@ -17,9 +17,6 @@ Get a set of event resources that have been added, deleted, or updated in a cale
 Typically, synchronizing events in a calendarView in a local store entails a round of multiple delta function calls.
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventDelta](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,13 +54,15 @@ Typically, synchronizing events in a calendarView in a local store entails a rou
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
-| Application | Calendars.Read, Calendars.ReadBasic, Calendars.ReadWrite,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -590,7 +589,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -613,28 +612,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupEventDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventdelta)
+- [](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0)

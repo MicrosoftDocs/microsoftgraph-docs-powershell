@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistcheck
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlaceAsRoomListCheck
 ---
@@ -14,9 +14,6 @@ title: New-MgPlaceAsRoomListCheck
 ## SYNOPSIS
 
 Create new navigation property to checkIns for places
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsRoomListCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsRoomListCheck?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,6 +64,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to checkIns for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -511,7 +518,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCheckInClaim>`: checkInClaim
+BODYPARAMETER <IMicrosoftGraphCheckInClaim>: checkInClaim
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
 For more information, see the iCalUId property in event.
@@ -520,7 +527,7 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -543,27 +550,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgPlaceAsRoomListCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistcheck)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistcheck)
