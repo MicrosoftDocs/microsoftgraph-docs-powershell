@@ -621,8 +621,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref)
-- [](https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-beta)
+- [New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackage-post-incompatiblegroup?view=graph-rest-beta)
 
 
 
