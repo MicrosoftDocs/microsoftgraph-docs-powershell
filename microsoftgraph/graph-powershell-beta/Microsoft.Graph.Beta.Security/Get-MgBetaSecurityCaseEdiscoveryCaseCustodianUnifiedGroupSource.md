@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
 
 Data source entity for groups associated with the custodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

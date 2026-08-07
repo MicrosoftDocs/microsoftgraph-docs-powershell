@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentitySensorDeploymentAccessKey
 
 Get the deployment access key associated with a Microsoft Defender for Identity, needed to install sensors associated with the workspace.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
