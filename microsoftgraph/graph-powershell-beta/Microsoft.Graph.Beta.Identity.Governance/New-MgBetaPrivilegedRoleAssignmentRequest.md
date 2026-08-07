@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPrivilegedRoleAssignmentRequest
 ---
@@ -50,8 +50,9 @@ This cmdlet has the following aliases,
 Add new entity to privilegedRoleAssignmentRequests
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	Duration = "2"
@@ -66,9 +67,6 @@ $params = @{
 	RoleId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 New-MgBetaPrivilegedRoleAssignmentRequest -BodyParameter $params
-```
-This example shows how to use the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -95,7 +93,7 @@ HelpMessage: ''
 
 ### -AssignmentState
 
-
+.
 
 ```yaml
 Type: System.String
@@ -181,7 +179,7 @@ HelpMessage: ''
 
 ### -Duration
 
-
+.
 
 ```yaml
 Type: System.String
@@ -350,7 +348,7 @@ HelpMessage: ''
 
 ### -Reason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -371,7 +369,7 @@ HelpMessage: ''
 
 ### -RequestedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -414,7 +412,7 @@ HelpMessage: ''
 
 ### -RoleId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -479,7 +477,7 @@ HelpMessage: ''
 
 ### -Status
 
-
+.
 
 ```yaml
 Type: System.String
@@ -500,7 +498,7 @@ HelpMessage: ''
 
 ### -TicketNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -521,7 +519,7 @@ HelpMessage: ''
 
 ### -TicketSystem
 
-
+.
 
 ```yaml
 Type: System.String
@@ -542,7 +540,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -563,7 +561,7 @@ HelpMessage: ''
 
 ### -UserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -634,7 +632,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAssignmentRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -699,7 +697,7 @@ Only Once is supported for now.
   [Type <String>]: 
   [UserId <String>]: 
 
-ROLEINFO `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
+ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -737,7 +735,7 @@ Read-only.
     [Status <String>]: roleSummaryStatus
     [UsersCount <Int32?>]: 
 
-SCHEDULE `<IMicrosoftGraphGovernanceSchedule>`: governanceSchedule
+SCHEDULE <IMicrosoftGraphGovernanceSchedule>: governanceSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Duration <TimeSpan?>]: The duration of a role assignment.
 It is in format of a TimeSpan.
@@ -754,26 +752,4 @@ Only Once is supported for now.
 
 ## RELATED LINKS
 
-- [New-MgBetaPrivilegedRoleAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagesuggestionbycurrentuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser
 ---
@@ -53,28 +53,18 @@ This operation returns access packages that are suggested based on various crite
 The suggestions help end users discover relevant access packages they may need for their role or work context.
 
 ## EXAMPLES
-### Example 1: Get all access package suggestions with default insight types
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId 
-
-```
-This example will get all access package suggestions with default insight types
-
-### Example 2: Get access package suggestions based on assignment history
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId 
+Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId
 
-```
-This example will get access package suggestions based on assignment history
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId
 
 ## PARAMETERS
 
@@ -492,7 +482,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -606,27 +596,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagesuggestionbycurrentuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagesuggestions-filterbycurrentuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagesuggestionbycurrentuser)
+- [](https://learn.microsoft.com/graph/api/accesspackagesuggestions-filterbycurrentuser?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementEnterpriseApp
 ---
@@ -55,6 +55,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to enterpriseApps for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -294,7 +304,7 @@ HelpMessage: ''
 
 ### -ResourceNamespaces
 
-
+.
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
@@ -338,7 +348,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentApprovals
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTAPPROVALS properties and create a hash table.
 
 ```yaml
@@ -360,7 +370,7 @@ HelpMessage: ''
 
 ### -RoleAssignments
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -382,7 +392,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentScheduleInstances
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -404,7 +414,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentScheduleRequests
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -426,7 +436,7 @@ HelpMessage: ''
 
 ### -RoleAssignmentSchedules
 
-
+.
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -448,7 +458,7 @@ HelpMessage: ''
 
 ### -RoleDefinitions
 
-
+.
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
@@ -470,7 +480,7 @@ HelpMessage: ''
 
 ### -RoleEligibilityScheduleInstances
 
-
+.
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
@@ -492,7 +502,7 @@ HelpMessage: ''
 
 ### -RoleEligibilityScheduleRequests
 
-
+.
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -514,7 +524,7 @@ HelpMessage: ''
 
 ### -RoleEligibilitySchedules
 
-
+.
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULES properties and create a hash table.
 
 ```yaml
@@ -536,7 +546,7 @@ HelpMessage: ''
 
 ### -TransitiveRoleAssignments
 
-
+.
 To construct, see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -608,7 +618,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRbacApplication>`: rbacApplication
+BODYPARAMETER <IMicrosoftGraphRbacApplication>: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2191,27 +2201,4 @@ Supports $filter (eq, in).
 
 ## RELATED LINKS
 
-- [New-MgBetaRoleManagementEnterpriseApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapp)
