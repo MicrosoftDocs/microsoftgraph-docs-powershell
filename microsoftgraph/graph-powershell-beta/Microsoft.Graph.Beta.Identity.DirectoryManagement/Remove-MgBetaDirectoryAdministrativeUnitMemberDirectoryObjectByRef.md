@@ -15,6 +15,9 @@ title: Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 
 Delete ref of navigation property members for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
