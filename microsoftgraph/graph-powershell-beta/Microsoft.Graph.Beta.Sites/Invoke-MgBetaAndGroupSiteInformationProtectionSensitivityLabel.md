@@ -591,7 +591,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -601,7 +601,7 @@ BODY <IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabel
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-BODYPARAMETER <IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -611,7 +611,7 @@ BODYPARAMETER <IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensiti
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -683,3 +683,25 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabel)
 - [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
