@@ -53,16 +53,6 @@ Delete navigation property hardwareOathMethods for users
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -516,6 +506,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationhardwareoathmethod)
+
 
 
 
