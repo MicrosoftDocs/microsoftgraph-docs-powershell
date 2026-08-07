@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserTransitiveMemberOf
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserTransitiveMemberOf
 
 The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,17 +60,12 @@ The groups, including nested groups, and directory roles that a user is a member
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserTransitiveMemberOf -UserId $userId
-
-```
-This example shows how to use the Get-MgUserTransitiveMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -584,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -614,27 +606,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-transitivememberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof)
+- [](https://learn.microsoft.com/graph/api/agentuser-list-transitivememberof?view=graph-rest-1.0)

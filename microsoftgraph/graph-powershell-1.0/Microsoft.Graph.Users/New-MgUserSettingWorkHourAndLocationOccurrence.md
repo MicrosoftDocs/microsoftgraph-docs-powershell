@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingworkhourandlocationoccurrence
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserSettingWorkHourAndLocationOccurrence
 ---
@@ -14,9 +14,6 @@ title: New-MgUserSettingWorkHourAndLocationOccurrence
 ## SYNOPSIS
 
 Create new navigation property to occurrences for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to occurrences for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -627,7 +634,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWorkPlanOccurrence>`: workPlanOccurrence
+BODYPARAMETER <IMicrosoftGraphWorkPlanOccurrence>: workPlanOccurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -647,13 +654,13 @@ The value is null for time-off occurrences because they don't have a parent recu
     [Subject <String>]: The subject or reason for the time-off entry.
   [WorkLocationType <String>]: workLocationType
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+END <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -680,13 +687,13 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+START <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-TIMEOFFDETAILS `<IMicrosoftGraphTimeOffDetails>`: timeOffDetails
+TIMEOFFDETAILS <IMicrosoftGraphTimeOffDetails>: timeOffDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAllDay <Boolean?>]: Indicates whether the time-off entry spans the entire day.
   [Subject <String>]: The subject or reason for the time-off entry.
@@ -694,27 +701,4 @@ TIMEOFFDETAILS `<IMicrosoftGraphTimeOffDetails>`: timeOffDetails
 
 ## RELATED LINKS
 
-- [New-MgUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingworkhourandlocationoccurrence)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingworkhourandlocationoccurrence)
