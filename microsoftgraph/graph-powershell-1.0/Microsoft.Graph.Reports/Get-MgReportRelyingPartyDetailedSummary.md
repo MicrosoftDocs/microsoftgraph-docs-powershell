@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportRelyingPartyDetailedSummary
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportRelyingPartyDetailedSummary
 ## SYNOPSIS
 
 Get a summary of AD FS relying parties information.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportRelyingPartyDetailedSummary](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportRelyingPartyDetailedSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,26 +47,13 @@ This cmdlet has the following aliases,
 
 Get a summary of AD FS relying parties information.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Reports.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Reports.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportRelyingPartyDetailedSummary -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportRelyingPartyDetailedSummary Cmdlet.
-
+Get-MgReportRelyingPartyDetailedSummary -Period $periodId
 
 ## PARAMETERS
 
@@ -487,7 +471,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -514,27 +498,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportRelyingPartyDetailedSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary)
+- [](https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-1.0)
