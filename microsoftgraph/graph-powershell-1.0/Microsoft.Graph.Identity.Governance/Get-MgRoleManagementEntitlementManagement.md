@@ -15,6 +15,9 @@ title: Get-MgRoleManagementEntitlementManagement
 
 Container for roles and assignments for entitlement management resources.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

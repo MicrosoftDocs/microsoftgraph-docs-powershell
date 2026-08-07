@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowExecutionScopeCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

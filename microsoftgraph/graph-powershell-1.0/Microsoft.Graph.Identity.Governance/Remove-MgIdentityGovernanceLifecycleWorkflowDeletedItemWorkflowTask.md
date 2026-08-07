@@ -15,6 +15,9 @@ title: Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask
 
 Delete navigation property tasks for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
