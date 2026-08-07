@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 
 Retrieves the educationUser members of an educationClass.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
