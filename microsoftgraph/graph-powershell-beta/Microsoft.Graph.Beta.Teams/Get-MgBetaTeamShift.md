@@ -44,16 +44,6 @@ Get all shift objects across all teams to which a user is a direct member.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamSettings.Read.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, TeamSettings.ReadWrite.Group,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -422,6 +412,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift)
 - [](https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta)
+
 
 
 
