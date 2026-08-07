@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallparticipant
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationCallParticipant
 ---
@@ -14,9 +14,6 @@ title: New-MgCommunicationCallParticipant
 ## SYNOPSIS
 
 Create new navigation property to participants for communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to participants for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -710,7 +717,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphParticipant>`: participant
+BODYPARAMETER <IMicrosoftGraphParticipant>: participant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -759,7 +766,7 @@ Read-only.
     [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
   [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number in which the participant was last updated.
 
-INFO `<IMicrosoftGraphParticipantInfo>`: participantInfo
+INFO <IMicrosoftGraphParticipantInfo>: participantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CountryCode <String>]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
@@ -783,7 +790,7 @@ This can be a country, a continent, or a larger geographic region.
 This doesn't change based on the participant's current physical location.
 Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -811,7 +818,7 @@ MEDIASTREAMS <IMicrosoftGraphMediaStream[]>: The list of media streams.
   [ServerMuted <Boolean?>]: If the media is muted by the server.
   [SourceId <String>]: The source ID.
 
-RECORDINGINFO `<IMicrosoftGraphRecordingInfo>`: recordingInfo
+RECORDINGINFO <IMicrosoftGraphRecordingInfo>: recordingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Initiator <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -825,11 +832,11 @@ For example, in the access reviews decisions API, this property might record the
     [User <IMicrosoftGraphIdentity>]: identity
   [RecordingStatus <String>]: recordingStatus
 
-REMOVEDSTATE `<IMicrosoftGraphRemovedState>`: removedState
+REMOVEDSTATE <IMicrosoftGraphRemovedState>: removedState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Reason <String>]: The removal reason for the participant resource.
 
-RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
+RESTRICTEDEXPERIENCE <IMicrosoftGraphOnlineMeetingRestricted>: onlineMeetingRestricted
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
   [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
@@ -837,27 +844,4 @@ RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRe
 
 ## RELATED LINKS
 
-- [New-MgCommunicationCallParticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallparticipant)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallparticipant)

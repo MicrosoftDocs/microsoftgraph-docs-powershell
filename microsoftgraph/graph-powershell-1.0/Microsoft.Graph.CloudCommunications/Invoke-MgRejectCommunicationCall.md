@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrejectcommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgRejectCommunicationCall
 ---
@@ -18,11 +18,8 @@ The incoming call request can be an invite from a participant in a group call or
 If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
 The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
-This API does not end existing calls that have already been answered.
+This API doesn't end existing calls that have already been answered.
 Use delete call to end a call.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRejectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRejectCommunicationCall?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,13 +75,12 @@ The incoming call request can be an invite from a participant in a group call or
 If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
 The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
-This API does not end existing calls that have already been answered.
+This API doesn't end existing calls that have already been answered.
 Use delete call to end a call.
 
 ## EXAMPLES
-### Example 1: Reject an incoming call with 'Busy' reason
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -94,12 +90,7 @@ $params = @{
 
 Invoke-MgRejectCommunicationCall -CallId $callId -BodyParameter $params
 
-```
-This example will reject an incoming call with 'busy' reason
-
-### Example 2: Reject an incoming call with 'None' reason
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -108,10 +99,6 @@ $params = @{
 }
 
 Invoke-MgRejectCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example will reject an incoming call with 'none' reason
-
 
 ## PARAMETERS
 
@@ -144,7 +131,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -193,7 +180,7 @@ HelpMessage: ''
 
 ### -CallbackUri
 
-
+.
 
 ```yaml
 Type: System.String
@@ -547,12 +534,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths4QrghdCommunicationsCallsCallIdMicrosoftGraphRejectPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths4QrghdCommunicationsCallsCallIdMicrosoftGraphRejectPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CallbackUri <String>]: 
   [Reason <String>]: rejectReason
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -576,27 +563,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgRejectCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrejectcommunicationcall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-reject?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrejectcommunicationcall)
+- [](https://learn.microsoft.com/graph/api/call-reject?view=graph-rest-1.0)

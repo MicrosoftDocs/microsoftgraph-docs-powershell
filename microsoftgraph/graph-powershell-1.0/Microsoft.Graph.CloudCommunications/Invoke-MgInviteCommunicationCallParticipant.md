@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgInviteCommunicationCallParticipant
 ---
@@ -18,9 +18,6 @@ In some situations, it is appropriate for an application to remove a participant
 This action can be done before or after the participant answers the call.
 When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
 When an invited participant is removed, any outstanding add participant request is canceled.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,9 +75,8 @@ When an active caller is removed, they are immediately dropped from the call wit
 When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
-### Example 1: Invite one participant to an existing call
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -104,12 +100,7 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-```
-This example will invite one participant to an existing call
-
-### Example 2: Invite multiple participants to an existing group call
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -145,12 +136,7 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-```
-This example will invite multiple participants to an existing group call
-
-### Example 3: Invite participants to an existing group call, replacing an existing Peer-to-Peer call
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -174,12 +160,7 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-```
-This example will invite participants to an existing group call, replacing an existing peer-to-peer call
-
-### Example 4: Invite one PSTN participant to an existing call
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -201,12 +182,7 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-```
-This example will invite one pstn participant to an existing call
-
-### Example 5: Move one participant from one meeting to another
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -230,10 +206,6 @@ $params = @{
 }
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
-
-```
-This example will move one participant from one meeting to another
-
 
 ## PARAMETERS
 
@@ -266,7 +238,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -342,7 +314,7 @@ HelpMessage: ''
 
 ### -ClientContext
 
-
+.
 
 ```yaml
 Type: System.String
@@ -482,7 +454,7 @@ HelpMessage: ''
 
 ### -Participants
 
-
+.
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
@@ -649,7 +621,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientContext <String>]: 
   [Participants <IMicrosoftGraphInvitationParticipantInfo[]>]: 
@@ -673,7 +645,7 @@ Whether to remove them from the main mixer.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -718,27 +690,5 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 ## RELATED LINKS
 
-- [Invoke-MgInviteCommunicationCallParticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant)
+- [](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcalloperation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgCommunicationCallOperation
 ---
@@ -14,9 +14,6 @@ title: Get-MgCommunicationCallOperation
 ## SYNOPSIS
 
 Get the status of an operation that adds the large gallery view to a call.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallOperation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 Get the status of an operation that adds the large gallery view to a call.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallOperation -CallId $callId -CommsOperationId $commsOperationId
-
-```
-This example shows how to use the Get-MgCommunicationCallOperation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -584,27 +576,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgCommunicationCallOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcalloperation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/addlargegalleryviewoperation-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcalloperation)
+- [](https://learn.microsoft.com/graph/api/addlargegalleryviewoperation-get?view=graph-rest-1.0)
