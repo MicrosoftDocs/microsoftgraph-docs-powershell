@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgShareTeamSchedule
 ---
@@ -19,9 +19,6 @@ Each shift, openshift and timeOff instance in a schedule supports a draft versio
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaShareTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ The draft version is viewable by only managers, and the shared version is viewab
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -101,10 +89,6 @@ $params = @{
 }
 
 Invoke-MgShareTeamSchedule -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgShareTeamSchedule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -137,7 +121,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +192,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -326,7 +310,7 @@ HelpMessage: ''
 
 ### -NotifyTeam
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -459,7 +443,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -567,13 +551,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [NotifyTeam <Boolean?>]: 
   [StartDateTime <DateTime?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -614,27 +598,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgShareTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule)
+- [](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-1.0)

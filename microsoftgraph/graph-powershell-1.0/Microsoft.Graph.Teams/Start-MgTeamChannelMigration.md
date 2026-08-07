@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgTeamChannelMigration
 ---
@@ -20,9 +20,6 @@ Users are also allowed to define a minimum timestamp for content to be migrated,
 The provided timestamp must be older than the current createdDateTime for a channel.
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Start-MgBetaTeamChannelMigration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -81,6 +78,20 @@ The provided timestamp must be older than the current createdDateTime for a chan
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Teams
+
+Start-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Teams
+
+Start-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -112,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -210,7 +221,7 @@ HelpMessage: ''
 
 ### -ConversationCreationDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -515,11 +526,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1WttybcTeamsTeamIdChannelsChannelIdMicrosoftGraphStartmigrationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1WttybcTeamsTeamIdChannelsChannelIdMicrosoftGraphStartmigrationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConversationCreationDateTime <DateTime?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -560,28 +571,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Start-MgTeamChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamchannelmigration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamchannelmigration)
+- [](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-1.0)

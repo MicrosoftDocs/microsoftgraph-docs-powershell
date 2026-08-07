@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamchannelmessagedelete
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgSoftTeamChannelMessageDelete
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgSoftTeamChannelMessageDelete
 ## SYNOPSIS
 
 Delete a single chatMessage or a chat message reply in a channel or a chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftTeamChannelMessageDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftTeamChannelMessageDelete?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
-### Example 1: Soft-delete message in a channel
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgSoftTeamChannelMessageDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
-
-```
-This example will soft-delete message in a channel
-
 
 ## PARAMETERS
 
@@ -411,7 +403,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -452,27 +444,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgSoftTeamChannelMessageDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamchannelmessagedelete)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamchannelmessagedelete)
+- [](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0)

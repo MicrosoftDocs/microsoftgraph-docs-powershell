@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgChat
 ---
@@ -14,9 +14,6 @@ title: New-MgChat
 ## SYNOPSIS
 
 Create a new chat object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -56,18 +53,9 @@ This cmdlet has the following aliases,
 
 Create a new chat object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.Create, Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.Create,  |
-
 ## EXAMPLES
-### Example 1: Create a one-on-one chat
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -93,12 +81,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a one-on-one chat
-
-### Example 2: Create a group chat
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
@@ -132,12 +115,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a group chat
-
-### Example 3: Create a one-on-one chat using user principal name
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
@@ -163,12 +141,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a one-on-one chat using user principal name
-
-### Example 4: Create a group chat with tenant guest user
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Teams
 
@@ -202,12 +175,7 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-```
-This example will create a group chat with tenant guest user
-
-### Example 5: Create a one-on-one chat with a federated user (outside of own organization)
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Teams
 
@@ -233,10 +201,6 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-
-```
-This example will create a one-on-one chat with a federated user (outside of own organization)
-
 
 ## PARAMETERS
 
@@ -809,7 +773,7 @@ HelpMessage: ''
 
 ### -TargetedMessages
 
-
+.
 To construct, see NOTES section for TARGETEDMESSAGES properties and create a hash table.
 
 ```yaml
@@ -970,7 +934,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphChat>`: chat
+BODYPARAMETER <IMicrosoftGraphChat>: chat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1086,7 +1050,7 @@ When the user selects the image, the channel would open the document.
       [TeamId <String>]: The identity of the team in which the message was posted.
     [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
     [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-    [DeletedDateTime <DateTime?>]: Read only.
+    [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
     [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1101,18 +1065,18 @@ such as image/png, image/jpg.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Importance <String>]: chatMessageImportance
-    [LastEditedDateTime <DateTime?>]: Read only.
+    [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-    [LastModifiedDateTime <DateTime?>]: Read only.
+    [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1224,7 +1188,7 @@ Read-only.
     [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
     [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
     [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-    [DeletedDateTime <DateTime?>]: Read only.
+    [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
     [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1232,11 +1196,11 @@ Version number of the chat message.
     [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
     [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     [Importance <String>]: chatMessageImportance
-    [LastEditedDateTime <DateTime?>]: Read only.
+    [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-    [LastModifiedDateTime <DateTime?>]: Read only.
+    [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
@@ -1317,7 +1281,7 @@ For example, in the access reviews decisions API, this property might record the
     [ExternalId <String>]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   [TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]: teamsAppDefinition
 
-LASTMESSAGEPREVIEW `<IMicrosoftGraphChatMessageInfo>`: chatMessageInfo
+LASTMESSAGEPREVIEW <IMicrosoftGraphChatMessageInfo>: chatMessageInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1387,7 +1351,7 @@ When the user selects the image, the channel would open the document.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1412,18 +1376,18 @@ such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1480,7 +1444,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-ONLINEMEETINGINFO `<IMicrosoftGraphTeamworkOnlineMeetingInfo>`: teamworkOnlineMeetingInfo
+ONLINEMEETINGINFO <IMicrosoftGraphTeamworkOnlineMeetingInfo>: teamworkOnlineMeetingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The identifier of the calendar event associated with the meeting.
   [JoinWebUrl <String>]: The URL that users click to join or uniquely identify the meeting.
@@ -1546,7 +1510,7 @@ When the user selects the image, the channel would open the document.
       [TeamId <String>]: The identity of the team in which the message was posted.
     [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
     [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-    [DeletedDateTime <DateTime?>]: Read only.
+    [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
     [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1571,18 +1535,18 @@ such as image/png, image/jpg.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Importance <String>]: chatMessageImportance
-    [LastEditedDateTime <DateTime?>]: Read only.
+    [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-    [LastModifiedDateTime <DateTime?>]: Read only.
+    [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
     [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
       [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
       [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1723,7 +1687,7 @@ When the user selects the image, the channel would open the document.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1748,18 +1712,18 @@ such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1814,7 +1778,7 @@ Read-only.
     [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
     [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
     [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-    [DeletedDateTime <DateTime?>]: Read only.
+    [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
     [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1822,11 +1786,11 @@ Version number of the chat message.
     [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
     [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     [Importance <String>]: chatMessageImportance
-    [LastEditedDateTime <DateTime?>]: Read only.
+    [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-    [LastModifiedDateTime <DateTime?>]: Read only.
+    [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
@@ -1858,7 +1822,7 @@ Link to the message in Microsoft Teams.
 Read-only.
   [Recipient <IMicrosoftGraphIdentity>]: identity
 
-VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
+VIEWPOINT <IMicrosoftGraphChatViewpoint>: chatViewpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsHidden <Boolean?>]: Indicates whether the chat is hidden for the current user.
   [LastMessageReadDateTime <DateTime?>]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
@@ -1866,27 +1830,5 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [New-MgChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat)
+- [](https://learn.microsoft.com/graph/api/chat-post?view=graph-rest-1.0)

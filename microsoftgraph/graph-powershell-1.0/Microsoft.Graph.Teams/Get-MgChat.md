@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChat
 ---
@@ -16,9 +16,6 @@ title: Get-MgChat
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,59 +58,31 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.All, Chat.Manage.Chat, Chat.Read.All, ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat,  |
-
 ## EXAMPLES
-### Example 1: Get a group chat
 
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChat -ChatId $chatId
-
-```
-This example will get a group chat
-
-### Example 2: Get a chat and all its members
-
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChat -ChatId $chatId -ExpandProperty "members" 
-
-```
-This example will get a chat and all its members
-
-### Example 3: Get the meeting details of a chat associated with a Microsoft Teams meeting
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -ChatId $chatId
 
-```
-This example will get the meeting details of a chat associated with a microsoft teams meeting
-
-### Example 4: Get the chat along with the preview of the last message sent in the chat
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChat -ChatId $chatId -ExpandProperty "lastMessagePreview" 
+Get-MgChat -ChatId $chatId -ExpandProperty "members"
 
-```
-This example will get the chat along with the preview of the last message sent in the chat
+### EXAMPLE 3
 
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChat -ChatId $chatId
+
+### EXAMPLE 4
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChat -ChatId $chatId -ExpandProperty "lastMessagePreview"
 
 ## PARAMETERS
 
@@ -575,7 +544,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -616,28 +585,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat)
+- [](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamPrimaryChannelMessageReply
 ---
@@ -14,9 +14,6 @@ title: Update-MgTeamPrimaryChannelMessageReply
 ## SYNOPSIS
 
 Update the navigation property replies in teams
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -90,6 +87,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property replies in teams
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -385,7 +392,7 @@ HelpMessage: ''
 
 ### -DeletedDateTime
 
-Read only.
+Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
 
 ```yaml
@@ -669,7 +676,7 @@ HelpMessage: ''
 
 ### -LastEditedDateTime
 
-Read only.
+Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
@@ -699,7 +706,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-Read only.
+Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
 
 ```yaml
@@ -1222,12 +1229,12 @@ For example, if you set contentType to application/word and set contentUrl to th
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
+BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1260,7 +1267,7 @@ When the user selects the image, the channel would open the document.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1285,18 +1292,18 @@ such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1353,7 +1360,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
+CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChannelId <String>]: The identity of the channel in which the message was posted.
   [TeamId <String>]: The identity of the team in which the message was posted.
@@ -1367,7 +1374,7 @@ such as image/png, image/jpg.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1408,7 +1415,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1451,7 +1458,7 @@ For example, in the access reviews decisions API, this property might record the
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
 
-POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
+POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DlpAction <String>]: chatMessagePolicyViolationDlpActionTypes
   [JustificationText <String>]: Justification text provided by the sender of the message when overriding a policy violation.
@@ -1516,7 +1523,7 @@ When the user selects the image, the channel would open the document.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1541,18 +1548,18 @@ such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1612,27 +1619,4 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [Update-MgTeamPrimaryChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessagereply)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessagereply)

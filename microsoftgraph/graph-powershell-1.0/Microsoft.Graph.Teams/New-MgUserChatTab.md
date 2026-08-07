@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserChatTab
 ---
@@ -14,9 +14,6 @@ title: New-MgUserChatTab
 ## SYNOPSIS
 
 Create new navigation property to tabs for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to tabs for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -594,7 +601,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsTab>`: teamsTab
+BODYPARAMETER <IMicrosoftGraphTeamsTab>: teamsTab
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -648,7 +655,7 @@ For example, in the access reviews decisions API, this property might record the
   [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
 
-CONFIGURATION `<IMicrosoftGraphTeamsTabConfiguration>`: teamsTabConfiguration
+CONFIGURATION <IMicrosoftGraphTeamsTabConfiguration>: teamsTabConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentUrl <String>]: Url used for rendering tab contents in Teams.
 Required.
@@ -656,7 +663,7 @@ Required.
   [RemoveUrl <String>]: Url called by Teams client when a Tab is removed using the Teams Client.
   [WebsiteUrl <String>]: Url for showing tab contents outside of Teams.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -694,7 +701,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -737,27 +744,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgUserChatTab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab)
