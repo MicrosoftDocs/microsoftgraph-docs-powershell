@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Return all directory extension definitions that are registered in a directory, including through multitenant apps.
 The following entities support extension properties:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
