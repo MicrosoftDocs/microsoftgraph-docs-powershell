@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgEducationUserDelta
 
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 Get newly created or updated educationUser without having to perform a full read of the entire collection.
 See Use delta query for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Read, EduRoster.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All, EduRoster.WriteWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationUserDelta
-
-```
-This example shows how to use the Get-MgEducationUserDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -473,27 +457,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationUserDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta)
+- [](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-1.0)

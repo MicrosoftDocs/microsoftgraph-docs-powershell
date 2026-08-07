@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserAssignment
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationUserAssignment
 ## SYNOPSIS
 
 Assignments belonging to the user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,28 +57,18 @@ This cmdlet has the following aliases,
 Assignments belonging to the user.
 
 ## EXAMPLES
-### Example 1: Get assignments of a user
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId
 
-```
-This example will get assignments of a user
-
-### Example 2: Get user assignments with expand submissions
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions" 
-
-```
-This example will get user assignments with expand submissions
-
+Get-MgEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
 
 ## PARAMETERS
 
@@ -570,7 +557,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -595,27 +582,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationUserAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-list-assignments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignment)
+- [](https://learn.microsoft.com/graph/api/educationuser-list-assignments?view=graph-rest-1.0)

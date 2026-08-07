@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategory
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserAssignmentCategory
 ---
@@ -16,9 +16,6 @@ title: Get-MgEducationUserAssignmentCategory
 When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,6 +40,16 @@ This cmdlet has the following aliases,
 When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -496,27 +503,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationUserAssignmentCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategory)

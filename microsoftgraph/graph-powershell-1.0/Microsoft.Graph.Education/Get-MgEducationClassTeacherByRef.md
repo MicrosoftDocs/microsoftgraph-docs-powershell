@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassTeacherByRef
 ---
@@ -15,9 +15,6 @@ title: Get-MgEducationClassTeacherByRef
 
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,13 +38,15 @@ This cmdlet has the following aliases,
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -436,28 +435,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassTeacherByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref)
+- [](https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-1.0)
