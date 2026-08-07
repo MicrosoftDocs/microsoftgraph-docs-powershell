@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementMobileThreatDefenseConnector
 
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
