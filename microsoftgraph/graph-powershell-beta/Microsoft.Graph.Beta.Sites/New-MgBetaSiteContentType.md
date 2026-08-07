@@ -2339,8 +2339,8 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttype)
-- [](https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-beta)
+- [New-MgBetaSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-beta)
 
 
 
