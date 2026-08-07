@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingworkhourandlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSettingWorkHourAndLocation
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserSettingWorkHourAndLocation
 ## SYNOPSIS
 
 Update the navigation property workHoursAndLocations in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingWorkHourAndLocation](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingWorkHourAndLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,13 +68,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property workHoursAndLocations in users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite, MailboxSettings.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -549,7 +548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWorkHoursAndLocationsSetting>`: workHoursAndLocationsSetting
+BODYPARAMETER <IMicrosoftGraphWorkHoursAndLocationsSetting>: workHoursAndLocationsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -614,7 +613,7 @@ Required.
     [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [WorkLocationType <String>]: workLocationType
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -717,27 +716,4 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserSettingWorkHourAndLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingworkhourandlocation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingworkhourandlocation)

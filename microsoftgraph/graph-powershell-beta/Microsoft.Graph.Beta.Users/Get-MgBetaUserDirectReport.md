@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserDirectReport
 ---
@@ -17,9 +17,6 @@ The users and contacts that report to the user.
 (The users and contacts with their manager property set to this user.) Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,9 +64,9 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get a user's direct reports
 
-```powershell
+### EXAMPLE 1
+
 Get-MgBetaUserDirectReport -UserId '075b32dd-edb7-47cf-89ef-f3f733683a3f'
 
 Id                                   DeletedDateTime
@@ -79,9 +76,6 @@ f890ceed-822a-4647-8748-73d88013ae9d
 58fcff93-a667-4c5f-bd43-372a43f446bc
 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 68906e46-27f9-4c5e-914b-b931696088fe
-```
-
-This example gets the direct reports for the specified user.
 
 ## PARAMETERS
 
@@ -592,7 +586,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -629,27 +623,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserDirectReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-directreports?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreport)
+- [](https://learn.microsoft.com/graph/api/agentuser-list-directreports?view=graph-rest-beta)
