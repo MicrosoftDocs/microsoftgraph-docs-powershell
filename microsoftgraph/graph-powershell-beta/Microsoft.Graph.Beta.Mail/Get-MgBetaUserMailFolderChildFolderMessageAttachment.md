@@ -15,6 +15,9 @@ title: Get-MgBetaUserMailFolderChildFolderMessageAttachment
 
 The fileAttachment and itemAttachment attachments for the message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
