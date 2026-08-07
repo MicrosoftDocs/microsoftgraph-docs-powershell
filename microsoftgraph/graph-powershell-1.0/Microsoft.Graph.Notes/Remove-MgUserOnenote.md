@@ -394,7 +394,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenote)
+- [Remove-MgUserOnenote](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mguseronenote)
 
 
 
