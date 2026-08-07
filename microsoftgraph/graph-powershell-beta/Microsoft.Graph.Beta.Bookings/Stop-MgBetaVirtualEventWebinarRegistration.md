@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Cancel a registrant's registration record for a webinar or town hall.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEventRegistration-Anon.ReadWrite.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
