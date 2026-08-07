@@ -627,7 +627,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityIncidentTask>: incidentTask
+BODYPARAMETER `<IMicrosoftGraphSecurityIncidentTask>`: incidentTask
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -732,7 +732,7 @@ This value is specific to the type of action being performed.
   [Source <String>]: incidentTaskSource
   [Status <String>]: incidentTaskStatus
 
-INCIDENT <IMicrosoftGraphSecurityIncident>: incident
+INCIDENT `<IMicrosoftGraphSecurityIncident>`: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -814,7 +814,7 @@ When applicable, the summary contains details of what occurred, impacted assets,
   [SystemTags <String[]>]: The collection of system tags that are associated with the incident.
   [TenantId <String>]: The Microsoft Entra tenant in which the alert was created.
 
-RESPONSEACTION <IMicrosoftGraphSecurityIncidentTaskResponseAction>: incidentTaskResponseAction
+RESPONSEACTION `<IMicrosoftGraphSecurityIncidentTaskResponseAction>`: incidentTaskResponseAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IdentifierValue <String>]: Required.
 The identifier value for the response action.
@@ -824,3 +824,25 @@ This value is specific to the type of action being performed.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincidenttask)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
