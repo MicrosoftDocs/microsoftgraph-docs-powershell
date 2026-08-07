@@ -48941,8 +48941,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser)
-- [](https://learn.microsoft.com/graph/api/educationroot-post-users?view=graph-rest-beta)
+- [New-MgBetaEducationUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationroot-post-users?view=graph-rest-beta)
 
 
 
