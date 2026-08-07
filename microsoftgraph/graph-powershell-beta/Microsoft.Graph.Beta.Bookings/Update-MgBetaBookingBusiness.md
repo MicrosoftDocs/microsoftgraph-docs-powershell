@@ -15,6 +15,9 @@ title: Update-MgBetaBookingBusiness
 
 Update entity in bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusiness?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
