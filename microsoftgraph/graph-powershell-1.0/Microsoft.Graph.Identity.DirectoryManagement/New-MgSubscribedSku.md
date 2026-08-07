@@ -15,6 +15,9 @@ title: New-MgSubscribedSku
 
 Add new entity to subscribedSkus
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaSubscribedSku?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

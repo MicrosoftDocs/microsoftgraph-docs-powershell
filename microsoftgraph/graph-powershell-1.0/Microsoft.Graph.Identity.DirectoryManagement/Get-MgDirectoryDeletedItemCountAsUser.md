@@ -15,6 +15,9 @@ title: Get-MgDirectoryDeletedItemCountAsUser
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemCountAsUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemCountAsUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
