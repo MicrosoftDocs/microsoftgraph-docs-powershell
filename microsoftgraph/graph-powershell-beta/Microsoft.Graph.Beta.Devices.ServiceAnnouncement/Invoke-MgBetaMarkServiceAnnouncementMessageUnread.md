@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 ## SYNOPSIS
 
 Mark a list of serviceUpdateMessages as unread for the signed in user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageUnread?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,9 +46,8 @@ This cmdlet has the following aliases,
 Mark a list of serviceUpdateMessages as unread for the signed in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
@@ -63,10 +59,6 @@ $params = @{
 }
 
 Invoke-MgBetaMarkServiceAnnouncementMessageUnread -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaMarkServiceAnnouncementMessageUnread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -93,7 +85,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -221,7 +213,7 @@ HelpMessage: ''
 
 ### -MessageIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -377,34 +369,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaMarkServiceAnnouncementMessageUnread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread)
+- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-beta)
