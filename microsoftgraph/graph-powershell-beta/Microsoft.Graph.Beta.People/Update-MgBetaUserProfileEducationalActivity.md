@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileeducationalactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserProfileEducationalActivity
 ---
@@ -80,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property educationalActivities in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | User.ReadWrite,  |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -111,10 +102,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaUserProfileEducationalActivity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -556,7 +543,7 @@ HelpMessage: ''
 
 ### -IsSearchable
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -915,7 +902,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
+BODYPARAMETER <IMicrosoftGraphEducationalActivity>: educationalActivity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedAudiences <String>]: allowedAudiences
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -976,7 +963,7 @@ It's a free-format string value, for example, 'United States'.
     [WebUrl <String>]: Link to the degree or program page.
   [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -988,12 +975,12 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfidenceScore <Double?>]: Confidence score reflecting the accuracy of the data inferred about the user.
   [UserHasVerifiedAccuracy <Boolean?>]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -1017,7 +1004,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   [WebAccountId <String>]: The unique identifier of webAccount
   [WorkPositionId <String>]: The unique identifier of workPosition
 
-INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
+INSTITUTION <IMicrosoftGraphInstitutionData>: institutionData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Short description of the institution the user studied at.
   [DisplayName <String>]: Name of the institution the user studied at.
@@ -1033,7 +1020,7 @@ It's a free-format string value, for example, 'United States'.
     [Type <String>]: physicalAddressType
   [WebUrl <String>]: Link to the institution or department homepage.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1045,7 +1032,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
+PROGRAM <IMicrosoftGraphEducationalActivityDetail>: educationalActivityDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
   [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
@@ -1057,7 +1044,7 @@ PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   [Notes <String>]: More notes provided by the user.
   [WebUrl <String>]: Link to the degree or program page.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String[]>]: 
 
@@ -1069,26 +1056,4 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserProfileEducationalActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileeducationalactivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileeducationalactivity)
