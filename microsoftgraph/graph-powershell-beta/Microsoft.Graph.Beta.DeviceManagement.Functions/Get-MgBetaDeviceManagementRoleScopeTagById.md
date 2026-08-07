@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementRoleScopeTagById
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke function getRoleScopeTagsByIds
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -463,7 +473,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   [DomainName <String>]: Usage: domainName='{domainName}'
   [EnrollmentType <String>]: Usage: enrollmentType='{enrollmentType}'
   [Ids <String[]>]: Usage: ids={ids}
@@ -474,27 +484,4 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementRoleScopeTagById](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyid)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementrolescopetagbyid)

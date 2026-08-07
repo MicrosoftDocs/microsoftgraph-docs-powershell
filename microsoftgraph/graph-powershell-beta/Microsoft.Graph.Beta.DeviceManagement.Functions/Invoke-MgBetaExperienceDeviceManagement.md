@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaExperienceDeviceManagement
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaExperienceDeviceManagement
 ## SYNOPSIS
 
 Invoke function userExperienceAnalyticsSummarizedDeviceScopes
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgExperienceDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Invoke function userExperienceAnalyticsSummarizedDeviceScopes
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -244,27 +243,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaExperienceDeviceManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement)
