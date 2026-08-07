@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingforwardingoption
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessSettingForwardingOption
 ---
@@ -49,9 +49,8 @@ the forwarding options for the tenant, with a specific focus on the skipDnsLooku
 This flag determines whether DNS lookup will be skipped, allowing Microsoft 365 traffic to be forwarded directly to the Front Door using the client-resolved destination.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -60,10 +59,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessSettingForwardingOption -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessSettingForwardingOption Cmdlet.
-
 
 ## PARAMETERS
 
@@ -396,7 +391,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessForwardingOptions>`: forwardingOptions
+BODYPARAMETER <IMicrosoftGraphNetworkaccessForwardingOptions>: forwardingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -405,27 +400,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessSettingForwardingOption](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingforwardingoption)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesssettingforwardingoption)
+- [](https://learn.microsoft.com/graph/api/networkaccess-forwardingoptions-update?view=graph-rest-beta)

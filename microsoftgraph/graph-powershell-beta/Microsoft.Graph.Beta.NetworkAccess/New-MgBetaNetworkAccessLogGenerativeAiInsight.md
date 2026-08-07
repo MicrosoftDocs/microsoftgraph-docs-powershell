@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessloggenerativeaiinsight
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessLogGenerativeAiInsight
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to generativeAIInsights for networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -602,7 +612,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessGenerativeAiInsight>`: generativeAIInsight
+BODYPARAMETER <IMicrosoftGraphNetworkaccessGenerativeAiInsight>: generativeAIInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activity <String>]: applicationActivity
   [Content <String>]: The prompt text or content captured for this insight.
@@ -634,27 +644,4 @@ Supports $filter (eq) and $orderby.
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessLogGenerativeAiInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessloggenerativeaiinsight)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessloggenerativeaiinsight)
