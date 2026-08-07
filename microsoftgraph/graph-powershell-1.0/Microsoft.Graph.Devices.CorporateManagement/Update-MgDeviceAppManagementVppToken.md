@@ -83,8 +83,9 @@ Update the navigation property vppTokens in deviceAppManagement
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementVppToken -VppTokenId $vppTokenId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementVppToken Cmdlet.
+
 
 ## PARAMETERS
 
