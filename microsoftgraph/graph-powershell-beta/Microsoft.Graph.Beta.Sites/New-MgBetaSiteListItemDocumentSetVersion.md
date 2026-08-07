@@ -74,6 +74,14 @@ This cmdlet has the following aliases,
 
 Create a new version of a document set item in a list.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
