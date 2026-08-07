@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Discover the latest schema definition for provisioning to an application for the directoryDefinition.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -420,6 +410,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationtemplateschemadirectory)
 - [](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-1.0)
+
 
 
 
