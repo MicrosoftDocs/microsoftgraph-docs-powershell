@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointUserSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceManagementVirtualEndpointUserSetting
 ## SYNOPSIS
 
 Update the properties of a cloudPcUserSetting object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -82,9 +79,8 @@ This cmdlet has the following aliases,
 Update the properties of a cloudPcUserSetting object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -113,10 +109,6 @@ $params = @{
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -805,7 +797,7 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcUserSetting>`: cloudPcUserSetting
+BODYPARAMETER <IMicrosoftGraphCloudPcUserSetting>: cloudPcUserSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -863,7 +855,7 @@ Default value is false.
 To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
 The selfServiceEnabled property is deprecated and will stop returning data on December 1, 2023.
 
-CROSSREGIONDISASTERRECOVERYSETTING `<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>`: cloudPcCrossRegionDisasterRecoverySetting
+CROSSREGIONDISASTERRECOVERYSETTING <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>: cloudPcCrossRegionDisasterRecoverySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CrossRegionDisasterRecoveryEnabled <Boolean?>]: True if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, false.
 The default value is false.
@@ -875,7 +867,7 @@ If a disaster occurs, the new Cloud PC can only be provisioned using the initial
 This limitation can result in the loss of some user data on the original Cloud PC.
 The default value is false.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -933,11 +925,11 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [UserPfxCertificateId <String>]: The unique identifier of userPFXCertificate
 
-NOTIFICATIONSETTING `<IMicrosoftGraphCloudPcNotificationSetting>`: cloudPcNotificationSetting
+NOTIFICATIONSETTING <IMicrosoftGraphCloudPcNotificationSetting>: cloudPcNotificationSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RestartPromptsDisabled <Boolean?>]: 
 
-RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
+RESTOREPOINTSETTING <IMicrosoftGraphCloudPcRestorePointSetting>: cloudPcRestorePointSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FrequencyInHours <Int32?>]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
 Possible values are 4, 6, 12, 16, and 24.
@@ -951,27 +943,5 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementVirtualEndpointUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
+- [](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-beta)

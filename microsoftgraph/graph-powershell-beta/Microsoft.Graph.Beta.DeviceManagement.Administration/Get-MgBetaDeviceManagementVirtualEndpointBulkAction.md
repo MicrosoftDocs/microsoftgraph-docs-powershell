@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointbulkaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementVirtualEndpointBulkAction
 ---
@@ -58,17 +58,12 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a cloudPcBulkAction object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 Get-MgBetaDeviceManagementVirtualEndpointBulkAction
-
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointBulkAction Cmdlet.
-
 
 ## PARAMETERS
 
@@ -530,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -591,28 +586,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementVirtualEndpointBulkAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointbulkaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcbulkaction-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-bulkactions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointbulkaction)
+- [](https://learn.microsoft.com/graph/api/cloudpcbulkaction-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-bulkactions?view=graph-rest-beta)
