@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectoryObject
 ---
@@ -14,9 +14,6 @@ title: New-MgDirectoryObject
 ## SYNOPSIS
 
 Add new entity to directoryObjects
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/New-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Add new entity to directoryObjects
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryObject>`: directoryObject
+BODYPARAMETER <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -389,27 +396,4 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [New-MgDirectoryObject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject)
