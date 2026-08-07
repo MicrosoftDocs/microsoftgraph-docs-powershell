@@ -60,6 +60,14 @@ Get the properties and relationships of a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduCurricula.Read, EduCurricula.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduCurricula.Read.All, EduCurricula.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
