@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanySaleInvoice
 ---
@@ -94,6 +94,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property salesInvoices in financials
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -153,7 +163,7 @@ HelpMessage: ''
 
 ### -BillToCustomerId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -180,7 +190,7 @@ HelpMessage: ''
 
 ### -BillToCustomerNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -207,7 +217,7 @@ HelpMessage: ''
 
 ### -BillToName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -360,7 +370,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -387,7 +397,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -442,7 +452,7 @@ HelpMessage: ''
 
 ### -CustomerId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -469,7 +479,7 @@ HelpMessage: ''
 
 ### -CustomerName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -496,7 +506,7 @@ HelpMessage: ''
 
 ### -CustomerNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -523,7 +533,7 @@ HelpMessage: ''
 
 ### -CustomerPurchaseOrderReference
 
-
+.
 
 ```yaml
 Type: System.String
@@ -550,7 +560,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -577,7 +587,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -604,7 +614,7 @@ HelpMessage: ''
 
 ### -DueDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -631,7 +641,7 @@ HelpMessage: ''
 
 ### -Email
 
-
+.
 
 ```yaml
 Type: System.String
@@ -658,7 +668,7 @@ HelpMessage: ''
 
 ### -ExternalDocumentNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -748,7 +758,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -803,7 +813,7 @@ HelpMessage: ''
 
 ### -InvoiceDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -830,7 +840,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -857,7 +867,7 @@ HelpMessage: ''
 
 ### -Number
 
-
+.
 
 ```yaml
 Type: System.String
@@ -884,7 +894,7 @@ HelpMessage: ''
 
 ### -OrderId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -911,7 +921,7 @@ HelpMessage: ''
 
 ### -OrderNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -966,7 +976,7 @@ HelpMessage: ''
 
 ### -PaymentTermsId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -993,7 +1003,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1020,7 +1030,7 @@ HelpMessage: ''
 
 ### -PricesIncludeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1159,7 +1169,7 @@ HelpMessage: ''
 
 ### -SalesInvoiceLines
 
-
+.
 To construct, see NOTES section for SALESINVOICELINES properties and create a hash table.
 
 ```yaml
@@ -1187,7 +1197,7 @@ HelpMessage: ''
 
 ### -Salesperson
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1270,7 +1280,7 @@ HelpMessage: ''
 
 ### -ShipmentMethodId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1325,7 +1335,7 @@ HelpMessage: ''
 
 ### -ShipToContact
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1352,7 +1362,7 @@ HelpMessage: ''
 
 ### -ShipToName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1379,7 +1389,7 @@ HelpMessage: ''
 
 ### -Status
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1406,7 +1416,7 @@ HelpMessage: ''
 
 ### -TotalAmountExcludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1433,7 +1443,7 @@ HelpMessage: ''
 
 ### -TotalAmountIncludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1460,7 +1470,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1541,7 +1551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BILLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+BILLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1549,7 +1559,7 @@ BILLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphSalesInvoice>`: salesInvoice
+BODYPARAMETER <IMicrosoftGraphSalesInvoice>: salesInvoice
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BillToCustomerId <String>]: 
   [BillToCustomerNumber <String>]: 
@@ -1712,7 +1722,7 @@ Read-only.
   [TotalAmountIncludingTax <Decimal?>]: 
   [TotalTaxAmount <Decimal?>]: 
 
-CURRENCY `<IMicrosoftGraphCurrency>`: currency
+CURRENCY <IMicrosoftGraphCurrency>: currency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AmountDecimalPlaces <String>]: 
   [AmountRoundingPrecision <Decimal?>]: 
@@ -1722,7 +1732,7 @@ CURRENCY `<IMicrosoftGraphCurrency>`: currency
   [LastModifiedDateTime <DateTime?>]: 
   [Symbol <String>]: 
 
-CUSTOMER `<IMicrosoftGraphCustomer>`: customer
+CUSTOMER <IMicrosoftGraphCustomer>: customer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1787,7 +1797,7 @@ CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   [Type <String>]: 
   [Website <String>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1825,7 +1835,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
+PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalculateDiscountOnCreditMemos <Boolean?>]: 
   [Code <String>]: 
@@ -1901,7 +1911,7 @@ Read-only.
   [UnitOfMeasureId <String>]: 
   [UnitPrice <Decimal?>]: 
 
-SELLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+SELLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1909,14 +1919,14 @@ SELLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
+SHIPMENTMETHOD <IMicrosoftGraphShipmentMethod>: shipmentMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: 
   [DisplayName <String>]: 
   [Id <String>]: 
   [LastModifiedDateTime <DateTime?>]: 
 
-SHIPPINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+SHIPPINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1927,27 +1937,4 @@ SHIPPINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanySaleInvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoice)

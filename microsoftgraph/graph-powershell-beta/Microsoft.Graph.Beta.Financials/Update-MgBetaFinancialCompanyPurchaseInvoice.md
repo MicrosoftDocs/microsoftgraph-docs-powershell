@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanyPurchaseInvoice
 ---
@@ -87,6 +87,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property purchaseInvoices in financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -273,7 +283,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -300,7 +310,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -327,7 +337,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -354,7 +364,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +391,7 @@ HelpMessage: ''
 
 ### -DueDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -471,7 +481,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -526,7 +536,7 @@ HelpMessage: ''
 
 ### -InvoiceDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -553,7 +563,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -580,7 +590,7 @@ HelpMessage: ''
 
 ### -Number
 
-
+.
 
 ```yaml
 Type: System.String
@@ -635,7 +645,7 @@ HelpMessage: ''
 
 ### -PayToContact
 
-
+.
 
 ```yaml
 Type: System.String
@@ -662,7 +672,7 @@ HelpMessage: ''
 
 ### -PayToName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -689,7 +699,7 @@ HelpMessage: ''
 
 ### -PayToVendorId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -716,7 +726,7 @@ HelpMessage: ''
 
 ### -PayToVendorNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -743,7 +753,7 @@ HelpMessage: ''
 
 ### -PricesIncludeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -860,7 +870,7 @@ HelpMessage: ''
 
 ### -PurchaseInvoiceLines
 
-
+.
 To construct, see NOTES section for PURCHASEINVOICELINES properties and create a hash table.
 
 ```yaml
@@ -938,7 +948,7 @@ HelpMessage: ''
 
 ### -ShipToContact
 
-
+.
 
 ```yaml
 Type: System.String
@@ -965,7 +975,7 @@ HelpMessage: ''
 
 ### -ShipToName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -992,7 +1002,7 @@ HelpMessage: ''
 
 ### -Status
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1019,7 +1029,7 @@ HelpMessage: ''
 
 ### -TotalAmountExcludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1046,7 +1056,7 @@ HelpMessage: ''
 
 ### -TotalAmountIncludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1073,7 +1083,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1128,7 +1138,7 @@ HelpMessage: ''
 
 ### -VendorId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1155,7 +1165,7 @@ HelpMessage: ''
 
 ### -VendorInvoiceNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1182,7 +1192,7 @@ HelpMessage: ''
 
 ### -VendorName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1209,7 +1219,7 @@ HelpMessage: ''
 
 ### -VendorNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1290,7 +1300,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPurchaseInvoice>`: purchaseInvoice
+BODYPARAMETER <IMicrosoftGraphPurchaseInvoice>: purchaseInvoice
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BuyFromAddress <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1434,7 +1444,7 @@ Read-only.
   [VendorName <String>]: 
   [VendorNumber <String>]: 
 
-BUYFROMADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+BUYFROMADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1442,7 +1452,7 @@ BUYFROMADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-CURRENCY `<IMicrosoftGraphCurrency>`: currency
+CURRENCY <IMicrosoftGraphCurrency>: currency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AmountDecimalPlaces <String>]: 
   [AmountRoundingPrecision <Decimal?>]: 
@@ -1452,7 +1462,7 @@ CURRENCY `<IMicrosoftGraphCurrency>`: currency
   [LastModifiedDateTime <DateTime?>]: 
   [Symbol <String>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1490,7 +1500,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-PAYTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+PAYTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1562,7 +1572,7 @@ Read-only.
   [TotalTaxAmount <Decimal?>]: 
   [UnitCost <Decimal?>]: 
 
-SHIPTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+SHIPTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1570,7 +1580,7 @@ SHIPTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-VENDOR `<IMicrosoftGraphVendor>`: vendor
+VENDOR <IMicrosoftGraphVendor>: vendor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1629,27 +1639,4 @@ VENDOR `<IMicrosoftGraphVendor>`: vendor
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanyPurchaseInvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice)
