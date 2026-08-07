@@ -554,7 +554,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandingthemelocalizationsquarelogo)
+- [Set-MgBetaOrganizationBrandingThemeLocalizationSquareLogo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandingthemelocalizationsquarelogo)
 
 
 

@@ -1573,8 +1573,8 @@ Maximum length: 128.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingthemelocalization)
-- [](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-post-localizations?view=graph-rest-beta)
+- [New-MgBetaOrganizationBrandingThemeLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingthemelocalization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandingtheme-post-localizations?view=graph-rest-beta)
 
 
 

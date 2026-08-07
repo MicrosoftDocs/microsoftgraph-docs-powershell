@@ -491,8 +491,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandinglocalization)
-- [](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-beta)
+- [Remove-MgBetaOrganizationBrandingLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandinglocalization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-beta)
 
 
 

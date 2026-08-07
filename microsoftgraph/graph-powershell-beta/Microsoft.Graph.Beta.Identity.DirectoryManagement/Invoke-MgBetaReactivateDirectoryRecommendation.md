@@ -426,8 +426,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation)
-- [](https://learn.microsoft.com/graph/api/recommendation-reactivate?view=graph-rest-beta)
+- [Invoke-MgBetaReactivateDirectoryRecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/recommendation-reactivate?view=graph-rest-beta)
 
 
 

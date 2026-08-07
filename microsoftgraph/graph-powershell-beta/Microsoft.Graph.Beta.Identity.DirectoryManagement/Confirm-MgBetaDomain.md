@@ -444,8 +444,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadomain)
-- [](https://learn.microsoft.com/graph/api/domain-verify?view=graph-rest-beta)
+- [Confirm-MgBetaDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-verify?view=graph-rest-beta)
 
 
 

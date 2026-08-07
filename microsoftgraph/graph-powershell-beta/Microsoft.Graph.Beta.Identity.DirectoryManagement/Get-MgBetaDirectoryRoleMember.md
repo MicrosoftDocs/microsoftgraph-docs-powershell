@@ -526,8 +526,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolemember)
-- [](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-beta)
+- [Get-MgBetaDirectoryRoleMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolemember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-beta)
 
 
 

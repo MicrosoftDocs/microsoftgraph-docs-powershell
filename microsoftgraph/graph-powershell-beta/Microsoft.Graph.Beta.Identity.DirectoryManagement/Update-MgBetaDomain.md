@@ -1399,8 +1399,8 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
-- [](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-beta)
+- [Update-MgBetaDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-beta)
 
 
 

@@ -19145,8 +19145,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerequest)
-- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-post-governancerequests?view=graph-rest-beta)
+- [New-MgBetaDirectoryTenantGovernanceRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-post-governancerequests?view=graph-rest-beta)
 
 
 

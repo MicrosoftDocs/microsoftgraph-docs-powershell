@@ -714,8 +714,8 @@ If usage is Sign​, the type should be X509CertAndPassword​, and the password
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicefromtemplate)
-- [](https://learn.microsoft.com/graph/api/devicetemplate-createdevicefromtemplate?view=graph-rest-beta)
+- [New-MgBetaDirectoryTemplateDeviceFromTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicefromtemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/devicetemplate-createdevicefromtemplate?view=graph-rest-beta)
 
 
 

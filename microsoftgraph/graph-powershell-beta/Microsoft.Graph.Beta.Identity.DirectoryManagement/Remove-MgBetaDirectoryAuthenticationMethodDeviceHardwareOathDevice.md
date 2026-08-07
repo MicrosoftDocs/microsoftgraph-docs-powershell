@@ -460,8 +460,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
-- [](https://learn.microsoft.com/graph/api/authenticationmethoddevice-delete-hardwareoathdevices?view=graph-rest-beta)
+- [Remove-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethoddevice-delete-hardwareoathdevices?view=graph-rest-beta)
 
 
 

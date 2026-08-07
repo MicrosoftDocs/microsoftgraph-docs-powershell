@@ -496,8 +496,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolememberdirectoryobjectbyref)
-- [](https://learn.microsoft.com/graph/api/directoryrole-delete-member?view=graph-rest-beta)
+- [Remove-MgBetaDirectoryRoleMemberDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolememberdirectoryobjectbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-delete-member?view=graph-rest-beta)
 
 
 
