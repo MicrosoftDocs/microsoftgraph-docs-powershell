@@ -15,6 +15,9 @@ title: New-MgDeviceManagementDeviceConfigurationAssignment
 
 Create new navigation property to assignments for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
