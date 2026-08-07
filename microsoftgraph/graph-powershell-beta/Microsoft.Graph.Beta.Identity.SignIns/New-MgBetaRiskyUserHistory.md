@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuserhistory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRiskyUserHistory
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaRiskyUserHistory
 ## SYNOPSIS
 
 Create new navigation property to history for identityProtection
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,6 +72,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to history for identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -227,7 +234,7 @@ HelpMessage: ''
 
 ### -History
 
-
+.
 To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
@@ -792,7 +799,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITY `<IMicrosoftGraphRiskUserActivity>`: riskUserActivity
+ACTIVITY <IMicrosoftGraphRiskUserActivity>: riskUserActivity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Detail <String>]: riskDetail
   [EventTypes <String[]>]: List of risk event types.
@@ -802,7 +809,7 @@ Use riskEventType instead.
 The possible values are: anonymizedIPAddress, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel.
 For more information about each value, see Risk types and detection.
 
-BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
+BODYPARAMETER <IMicrosoftGraphRiskyUserHistoryItem>: riskyUserHistoryItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [History <IMicrosoftGraphRiskyUserHistoryItem[]>]: 
   [IsDeleted <Boolean?>]: Indicates whether the user is deleted.
@@ -857,7 +864,7 @@ For more information about each value, see Risk types and detection.
   [InitiatedBy <String>]: The ID of actor that does the operation.
   [UserId <String>]: The ID of the user.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -958,27 +965,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaRiskyUserHistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuserhistory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuserhistory)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyDeletedItem
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property deletedItems in policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -403,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPolicyDeletableRoot>`: policyDeletableRoot
+BODYPARAMETER <IMicrosoftGraphPolicyDeletableRoot>: policyDeletableRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -483,6 +493,10 @@ Key.
     [M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]: crossTenantAccessPolicyM365CollaborationOutboundSetting
       [(Any) <Object>]: This indicates any property can be added to this object.
       [UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+    [ServiceProviderConstraints <IMicrosoftGraphServiceProviderConstraints>]: serviceProviderConstraints
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
+      [Id <String>]: 
     [TenantId <String>]: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
@@ -574,6 +588,10 @@ Key.
   [M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]: crossTenantAccessPolicyM365CollaborationOutboundSetting
     [(Any) <Object>]: This indicates any property can be added to this object.
     [UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+  [ServiceProviderConstraints <IMicrosoftGraphServiceProviderConstraints>]: serviceProviderConstraints
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
+    [Id <String>]: 
   [TenantId <String>]: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
@@ -611,27 +629,4 @@ This property has no impact on existing users who have already been synchronized
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyDeletedItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditem)

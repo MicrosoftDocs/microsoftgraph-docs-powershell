@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRiskDetection
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaRiskDetection
 ## SYNOPSIS
 
 Create new navigation property to riskDetections for identityProtection
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to riskDetections for identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -423,7 +430,7 @@ HelpMessage: ''
 
 ### -MitreTechniqueId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -816,7 +823,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRiskDetection>`: riskDetection
+BODYPARAMETER <IMicrosoftGraphRiskDetection>: riskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -871,7 +878,7 @@ For example, activeDirectory.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [UserPrincipalName <String>]: The user principal name (UPN) of the user.
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
+LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: Provides the city where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
@@ -894,27 +901,4 @@ This is calculated using latitude/longitude information from the sign-in activit
 
 ## RELATED LINKS
 
-- [New-MgBetaRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection)

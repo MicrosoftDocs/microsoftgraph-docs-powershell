@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaInformationProtectionBitlockerRecoveryKey
 ---
@@ -14,13 +14,10 @@ title: Get-MgBetaInformationProtectionBitlockerRecoveryKey
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the key property that represents the actual recovery key.
+By default, this operation doesn't return the key property that represents the actual recovery key.
 To include the key property in the response, use the $select OData query parameter.
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,42 +60,24 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the key property that represents the actual recovery key.
+By default, this operation doesn't return the key property that represents the actual recovery key.
 To include the key property in the response, use the $select OData query parameter.
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get the BitLocker key by specifying the key **id**
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId
 
-```
-This example will get the bitlocker key by specifying the key **id**
-
-### Example 2: Get the BitLocker key with the **key** property by specifying the key **id**
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key" 
-
-```
-This example will get the bitlocker key with the **key** property by specifying the key **id**
-
+Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key"
 
 ## PARAMETERS
 
@@ -560,7 +539,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -661,28 +640,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaInformationProtectionBitlockerRecoveryKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey)
+- [](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-beta)

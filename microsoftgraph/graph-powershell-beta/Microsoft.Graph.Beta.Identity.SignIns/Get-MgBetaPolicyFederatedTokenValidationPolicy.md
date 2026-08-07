@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyFederatedTokenValidationPolicy
 ---
@@ -36,17 +36,12 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a federatedTokenValidationPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyFederatedTokenValidationPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyFederatedTokenValidationPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -286,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaPolicyFederatedTokenValidationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy)
+- [](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta)

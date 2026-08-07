@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyServicePrincipalCreationPolicy
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property servicePrincipalCreationPolicies in policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -258,7 +268,7 @@ HelpMessage: ''
 
 ### -Excludes
 
-
+.
 To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
@@ -377,7 +387,7 @@ HelpMessage: ''
 
 ### -Includes
 
-
+.
 To construct, see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
@@ -433,7 +443,7 @@ HelpMessage: ''
 
 ### -IsBuiltIn
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -626,7 +636,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipalCreationPolicy
+BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>: servicePrincipalCreationPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -665,7 +675,7 @@ Read-only.
   [ApplicationsFromVerifiedPublisherOnly <Boolean?>]: 
   [CertifiedApplicationsOnly <Boolean?>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -766,27 +776,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyServicePrincipalCreationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicy)

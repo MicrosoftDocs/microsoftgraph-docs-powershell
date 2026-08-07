@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalRiskDetection
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaServicePrincipalRiskDetection
 ## SYNOPSIS
 
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -468,7 +475,7 @@ HelpMessage: ''
 
 ### -MitreTechniqueId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -818,7 +825,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalRiskDetection>`: servicePrincipalRiskDetection
+BODYPARAMETER <IMicrosoftGraphServicePrincipalRiskDetection>: servicePrincipalRiskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -873,7 +880,7 @@ Supports $filter (eq).
 For example, identityProtection.
   [TokenIssuerType <String>]: tokenIssuerType
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
+LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: Provides the city where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
@@ -896,27 +903,4 @@ This is calculated using latitude/longitude information from the sign-in activit
 
 ## RELATED LINKS
 
-- [New-MgBetaServicePrincipalRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaserviceprincipalriskdetection)
