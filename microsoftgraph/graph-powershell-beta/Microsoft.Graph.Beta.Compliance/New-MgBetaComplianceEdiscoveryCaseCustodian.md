@@ -28626,8 +28626,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodian)
-- [](https://learn.microsoft.com/graph/api/ediscovery-case-post-custodians?view=graph-rest-beta)
+- [New-MgBetaComplianceEdiscoveryCaseCustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasecustodian)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-post-custodians?view=graph-rest-beta)
 
 
 
