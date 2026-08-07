@@ -465,7 +465,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostinreplytomention)
+- [Remove-MgBetaGroupThreadPostInReplyToMention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupthreadpostinreplytomention)
 
 
 

@@ -1,54 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasserviceprincipal
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaGroupTransitiveMemberAsServicePrincipal
+title: Remove-MgBetaGroupOwnerByRef
 ---
 
-# Get-MgBetaGroupTransitiveMemberAsServicePrincipal
+# Remove-MgBetaGroupOwnerByRef
 
 ## SYNOPSIS
 
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberAsServicePrincipal?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### List (Default)
+### Delete (Default)
 
 ```
-Get-MgBetaGroupTransitiveMemberAsServicePrincipal -GroupId <string> [-ExpandProperty <string[]>]
- [-Property <string[]>] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
- [-Top <int>] [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+Remove-MgBetaGroupOwnerByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Get
+### DeleteViaIdentity
 
 ```
-Get-MgBetaGroupTransitiveMemberAsServicePrincipal -DirectoryObjectId <string> -GroupId <string>
- [-ExpandProperty <string[]>] [-Property <string[]>] [-ConsistencyLevel <string>]
+Remove-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
-```
-
-### GetViaIdentity
-
-```
-Get-MgBetaGroupTransitiveMemberAsServicePrincipal -InputObject <IGroupsIdentity>
- [-ExpandProperty <string[]>] [-Property <string[]>] [-ConsistencyLevel <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -58,30 +46,31 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
-
-### -All
-
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -104,41 +93,18 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ConsistencyLevel
+### -Confirm
 
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -CountVariable
-
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.String
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- CV
+- cf
 ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -159,52 +125,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: Delete
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ExpandProperty
-
-Expand related entities
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Expand
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Filter
-
-Filter items by property values
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -223,13 +146,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Get
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -303,6 +220,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -314,7 +252,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: GetViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -325,37 +263,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PageSize
+### -PassThru
 
-Sets the page size of results.
+Returns true when the command succeeds
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Property
-
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -453,82 +369,18 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
+### -WhatIf
 
-Search items by search phrases
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Skip
-
-Skip the first n items
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Sort
-
-Order items by property values
-
-```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- OrderBy
+- wi
 ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases:
-- Limit
-ParameterSets:
-- Name: List
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -558,7 +410,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipal
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -596,8 +448,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupTransitiveMemberAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasserviceprincipal)
-
+- [Remove-MgBetaGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-beta)
 
 
 
