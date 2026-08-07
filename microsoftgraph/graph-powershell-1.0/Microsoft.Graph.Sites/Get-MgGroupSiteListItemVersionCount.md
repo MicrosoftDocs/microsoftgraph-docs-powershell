@@ -15,6 +15,9 @@ title: Get-MgGroupSiteListItemVersionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemVersionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemVersionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
