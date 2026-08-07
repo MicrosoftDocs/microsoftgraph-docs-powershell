@@ -566,8 +566,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceprivilegedaccessgroupeligibilityscheduleinstancebycurrentuser)
-- [](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser?view=graph-rest-1.0)
+- [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceprivilegedaccessgroupeligibilityscheduleinstancebycurrentuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

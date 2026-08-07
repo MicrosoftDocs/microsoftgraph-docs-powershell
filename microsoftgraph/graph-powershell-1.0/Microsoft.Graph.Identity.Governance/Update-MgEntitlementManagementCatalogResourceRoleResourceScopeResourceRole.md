@@ -932,7 +932,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceroleresourcescoperesourcerole)
+- [Update-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceroleresourcescoperesourcerole)
 
 
 

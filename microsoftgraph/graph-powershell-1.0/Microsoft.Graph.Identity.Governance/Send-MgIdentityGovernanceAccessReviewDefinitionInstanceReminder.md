@@ -478,8 +478,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0)
+- [Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0)
 
 
 

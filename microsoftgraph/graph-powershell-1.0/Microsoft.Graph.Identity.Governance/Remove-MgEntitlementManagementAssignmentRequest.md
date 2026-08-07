@@ -480,8 +480,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentrequest)
-- [](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-1.0)
+- [Remove-MgEntitlementManagementAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-1.0)
 
 
 

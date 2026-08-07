@@ -619,9 +619,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganization)
-- [](https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-1.0)
+- [Get-MgEntitlementManagementConnectedOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-1.0)
 
 
 

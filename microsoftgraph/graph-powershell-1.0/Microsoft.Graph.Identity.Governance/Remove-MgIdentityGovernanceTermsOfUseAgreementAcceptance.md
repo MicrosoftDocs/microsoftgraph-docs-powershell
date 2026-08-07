@@ -507,7 +507,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreementacceptance)
+- [Remove-MgIdentityGovernanceTermsOfUseAgreementAcceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreementacceptance)
 
 
 

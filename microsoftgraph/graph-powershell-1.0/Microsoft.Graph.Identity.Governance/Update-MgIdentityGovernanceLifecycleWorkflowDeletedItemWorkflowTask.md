@@ -11514,7 +11514,7 @@ Required.Supports $filter(eq, ne).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowdeleteditemworkflowtask)
+- [Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowdeleteditemworkflowtask)
 
 
 
