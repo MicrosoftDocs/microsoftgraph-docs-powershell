@@ -552,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalGroup>: externalGroup
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalGroup>`: externalGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -566,7 +566,7 @@ You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup a
 Read-only.
     [Type <String>]: identityType
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -588,3 +588,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup)
 - [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
