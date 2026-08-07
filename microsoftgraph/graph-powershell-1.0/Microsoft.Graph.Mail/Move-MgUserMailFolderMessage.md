@@ -535,8 +535,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermailfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
+- [Move-MgUserMailFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermailfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
 
 
 
