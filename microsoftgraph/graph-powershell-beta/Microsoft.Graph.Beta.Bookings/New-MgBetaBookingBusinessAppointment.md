@@ -174,9 +174,8 @@ Create new navigation property to appointments for bookingBusinesses
 | Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Using the New-MgBetaBookingBusinessAppointment Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
@@ -323,6 +322,9 @@ $params = @{
 	)
 }
 New-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaBookingBusinessAppointment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
