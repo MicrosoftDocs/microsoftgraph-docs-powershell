@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Read the properties of a user's authentication states.
 Use this API to retrieve the following information:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
