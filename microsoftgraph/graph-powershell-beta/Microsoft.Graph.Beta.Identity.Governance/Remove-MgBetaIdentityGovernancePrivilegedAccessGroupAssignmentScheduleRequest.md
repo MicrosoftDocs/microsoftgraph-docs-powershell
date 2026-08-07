@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleReq
 
 Delete navigation property assignmentScheduleRequests for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
