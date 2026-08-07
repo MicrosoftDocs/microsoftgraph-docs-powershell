@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 B2B sign-in activity metrics for this related tenant.
 Expanded by default.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -416,6 +406,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytenantgovernancerelatedtenantappb2bsigninactivitymetric)
+
 
 
 
