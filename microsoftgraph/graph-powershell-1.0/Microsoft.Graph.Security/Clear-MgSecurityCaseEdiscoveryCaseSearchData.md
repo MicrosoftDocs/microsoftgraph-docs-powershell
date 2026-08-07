@@ -74,6 +74,14 @@ Teams 1:1 chats are also called *conversations*.\r- Teams group chats - Chat mes
 Also called *1:N* chats or *group conversations*.\r- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\r- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\r- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
 For more information about purging Teams messages, see:\r- eDiscovery solution series: Data spillage scenario - Search and purge\r- eDiscovery (Premium) workflow for content in Microsoft Teams
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | eDiscovery.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
