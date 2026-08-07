@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get usage metrics based on the number of times users opened the Teams app without error.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityUsageMetricForTeamByLaunch
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityUsageMetricForTeamByLaunch Cmdlet.
+
 
 ## PARAMETERS
 

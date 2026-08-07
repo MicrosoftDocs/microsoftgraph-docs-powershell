@@ -48,18 +48,28 @@ This cmdlet has the following aliases,
 Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
 ## EXAMPLES
+### Example 1: CSV output
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportM365AppPlatformUserCount -Format "text/csv"  -Period $periodId
-
-### EXAMPLE 2
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportM365AppPlatformUserCount -Format "application/json"  -Period $periodId
+Get-MgBetaReportM365AppPlatformUserCount -Format "text/csv"  -Period $periodId 
+
+```
+This example will csv output
+
+### Example 2: JSON output
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportM365AppPlatformUserCount -Format "application/json"  -Period $periodId 
+
+```
+This example will json output
+
 
 ## PARAMETERS
 
