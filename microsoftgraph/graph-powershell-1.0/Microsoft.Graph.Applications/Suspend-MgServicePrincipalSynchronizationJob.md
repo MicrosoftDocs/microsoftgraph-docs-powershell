@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Suspend-MgServicePrincipalSynchronizationJob
 ---
@@ -13,11 +13,8 @@ title: Suspend-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 
-Temporarily stop a running synchronization job.
+Temporarily stop a running synchronizationJob.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Suspend-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,29 +44,16 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Temporarily stop a running synchronization job.
+Temporarily stop a running synchronizationJob.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Suspend-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
-
-```
-This example shows how to use the Suspend-MgServicePrincipalSynchronizationJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -401,7 +385,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -431,27 +415,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Suspend-MgServicePrincipalSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgserviceprincipalsynchronizationjob)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-1.0)

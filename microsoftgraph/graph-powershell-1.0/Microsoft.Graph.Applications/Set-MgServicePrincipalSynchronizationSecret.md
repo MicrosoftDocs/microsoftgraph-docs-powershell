@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgServicePrincipalSynchronizationSecret
 ---
@@ -13,10 +13,7 @@ title: Set-MgServicePrincipalSynchronizationSecret
 
 ## SYNOPSIS
 
-Provide credentials for establishing connectivity with the target system.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
+Provide credentials for establishing connectivity with the target system and store them in the synchronization resource.
 
 ## SYNTAX
 
@@ -69,20 +66,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Provide credentials for establishing connectivity with the target system.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+Provide credentials for establishing connectivity with the target system and store them in the synchronization resource.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -108,10 +96,6 @@ $params = @{
 }
 
 Set-MgServicePrincipalSynchronizationSecret -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgServicePrincipalSynchronizationSecret Cmdlet.
-
 
 ## PARAMETERS
 
@@ -144,7 +128,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -418,7 +402,7 @@ HelpMessage: ''
 
 ### -Value
 
-
+.
 To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
@@ -500,13 +484,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths3BjevjServiceprincipalsServiceprincipalIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3BjevjServiceprincipalsServiceprincipalIdSynchronizationSecretsPutRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Value <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]: 
     [Key <String>]: synchronizationSecret
     [Value <String>]: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -540,27 +524,5 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
 
 ## RELATED LINKS
 
-- [Set-MgServicePrincipalSynchronizationSecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret)
+- [](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-1.0)

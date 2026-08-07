@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationOwner
 ---
@@ -14,9 +14,6 @@ title: Get-MgApplicationOwner
 ## SYNOPSIS
 
 Retrieve a list of owners for an application that are directoryObject types.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 Retrieve a list of owners for an application that are directoryObject types.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationOwner -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationOwner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -515,27 +499,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgApplicationOwner](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner)
+- [](https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-1.0)

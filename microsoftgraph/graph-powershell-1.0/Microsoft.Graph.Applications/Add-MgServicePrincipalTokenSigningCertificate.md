@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgServicePrincipalTokenSigningCertificate
 ---
@@ -14,16 +14,13 @@ title: Add-MgServicePrincipalTokenSigningCertificate
 ## SYNOPSIS
 
 Create a self-signed signing certificate and return a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects, which are added to the servicePrincipal: \r+ The keyCredentials object with the following objects:\r    + A private key object with usage set to Sign.\r    + A public key object with usage set to Verify.\r+ The passwordCredentials object.
+The self-signed signing certificate is composed of the following objects, which are added to the servicePrincipal: \r\n+ The keyCredentials object with the following objects:\r\n    + A private key object with usage set to Sign.\r\n    + A public key object with usage set to Verify.\r\n+ The passwordCredentials object.
 All the objects have the same value of customKeyIdentifier.
 The passwordCredential is used to open the PFX file (private key).
 It and the associated private key object have the same value of keyId.
 When set during creation through the displayName property, the subject of the certificate cannot be updated.
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaServicePrincipalTokenSigningCertificate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,7 +72,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a self-signed signing certificate and return a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects, which are added to the servicePrincipal: \r+ The keyCredentials object with the following objects:\r    + A private key object with usage set to Sign.\r    + A public key object with usage set to Verify.\r+ The passwordCredentials object.
+The self-signed signing certificate is composed of the following objects, which are added to the servicePrincipal: \r\n+ The keyCredentials object with the following objects:\r\n    + A private key object with usage set to Sign.\r\n    + A public key object with usage set to Verify.\r\n+ The passwordCredentials object.
 All the objects have the same value of customKeyIdentifier.
 The passwordCredential is used to open the PFX file (private key).
 It and the associated private key object have the same value of keyId.
@@ -83,18 +80,9 @@ When set during creation through the displayName property, the subject of the ce
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -104,10 +92,6 @@ $params = @{
 }
 
 Add-MgServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgServicePrincipalTokenSigningCertificate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -140,7 +124,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -211,7 +195,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -238,7 +222,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -522,12 +506,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
   [EndDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -557,27 +541,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgServicePrincipalTokenSigningCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-1.0)
