@@ -387,7 +387,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicefilevaultkey)
+- [Get-MgBetaUserManagedDeviceFileVaultKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicefilevaultkey)
 
 
 
