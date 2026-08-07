@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgdeactivatesolutionbackuprestoreprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy
 ---
@@ -18,9 +18,6 @@ When a protection policy is deactivated, backup activity stops immediately, no n
 Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded.
 You can restore data using previous restore points even after deactivation.
 To reactivate a deactivated policy, use the activate API.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Invoke-MgBetaDeactivateSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ When a protection policy is deactivated, backup activity stops immediately, no n
 Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded.
 You can restore data using previous restore points even after deactivation.
 To reactivate a deactivated policy, use the activate API.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -343,7 +350,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -381,28 +388,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgdeactivatesolutionbackuprestoreprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgdeactivatesolutionbackuprestoreprotectionpolicy)
+- [](https://learn.microsoft.com/graph/api/protectionpolicybase-deactivate?view=graph-rest-1.0)

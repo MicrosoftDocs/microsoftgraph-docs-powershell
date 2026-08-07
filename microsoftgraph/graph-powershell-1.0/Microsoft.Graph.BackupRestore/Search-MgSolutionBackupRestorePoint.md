@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/search-mgsolutionbackuprestorepoint
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Search-MgSolutionBackupRestorePoint
 ---
@@ -14,9 +14,6 @@ title: Search-MgSolutionBackupRestorePoint
 ## SYNOPSIS
 
 Search for the restorePoint objects associated with a protectionUnit.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Search-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Search-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,13 +47,15 @@ This cmdlet has the following aliases,
 
 Search for the restorePoint objects associated with a protectionUnit.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BackupRestore-Search.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BackupRestore-Search.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -105,7 +104,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -255,7 +254,7 @@ HelpMessage: ''
 
 ### -ProtectionUnitIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -453,12 +452,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARTIFACTQUERY `<IMicrosoftGraphArtifactQuery>`: artifactQuery
+ARTIFACTQUERY <IMicrosoftGraphArtifactQuery>: artifactQuery
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArtifactType <String>]: restorableArtifact
   [QueryExpression <String>]: Specifies criteria to retrieve artifacts.
 
-BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArtifactQuery <IMicrosoftGraphArtifactQuery>]: artifactQuery
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -472,7 +471,7 @@ BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSea
   [RestorePointPreference <String>]: restorePointPreference
   [Tags <String>]: restorePointTags
 
-PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
+PROTECTIONTIMEPERIOD <IMicrosoftGraphTimePeriod>: timePeriod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: The date time of the end of the time period.
   [StartDateTime <DateTime?>]: The date time of the start of the time period.
@@ -480,28 +479,5 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 
 ## RELATED LINKS
 
-- [Search-MgSolutionBackupRestorePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/search-mgsolutionbackuprestorepoint)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/search-mgsolutionbackuprestorepoint)
+- [](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0)
