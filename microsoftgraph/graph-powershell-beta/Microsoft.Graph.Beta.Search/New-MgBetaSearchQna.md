@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSearchQna
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSearchQna
 ## SYNOPSIS
 
 Create a new qna object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSearchQna](/powershell/module/Microsoft.Graph.Search/New-MgSearchQna?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,25 +50,18 @@ This cmdlet has the following aliases,
 
 Create a new qna object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
 	displayName = "Global Country Holidays"
 	webUrl = "http://www.contoso.com/"
-	description = "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend.    <table>    <thead>    <tr>    <td><strong>2021 Dates</strong></td>    <td><strong>Holiday</strong></td>    </tr>    </thead>    <tbody>    <tr>        <td>January 1, 2021</td>        <td>New Year's Day</td>    </tr>        <tr>        <td>January 18, 2021</td>        <td>Martin Luther King Day</td>    </tr>        <tr>        <td>February 15, 2021</td>        <td>Presidents Day</td>    </tr>        <tr>        <td>May 31, 2021</td>        <td>Memorial Day</td>    </tr>        <tr>        <td>July 5, 2021</td>        <td>Independence Day</td>    </tr>        <tr>        <td>September 6, 2021</td>        <td>Labor Day</td>    </tr>        <tr>        <td>November 25, 2021 - November 26, 2021</td>        <td>Thanksgiving Day and Day after Thanksgiving</td>    </tr>    <tr>        <td>December 23, 2021 - December 24, 2021</td>        <td>Christmas Eve and Christmas Day</td>    </tr>    </tbody>    </table>"
+	description = "The dates that Contoso offices will be closed to observe holidays.
+These dates may differ from the actual date of the holiday in cases where the holiday falls on a weekend.
+   <table>    <thead>    <tr>    <td><strong>2021 Dates</strong></td>    <td><strong>Holiday</strong></td>    </tr>    </thead>    <tbody>    <tr>        <td>January 1, 2021</td>        <td>New Year's Day</td>    </tr>        <tr>        <td>January 18, 2021</td>        <td>Martin Luther King Day</td>    </tr>        <tr>        <td>February 15, 2021</td>        <td>Presidents Day</td>    </tr>        <tr>        <td>May 31, 2021</td>        <td>Memorial Day</td>    </tr>        <tr>        <td>July 5, 2021</td>        <td>Independence Day</td>    </tr>        <tr>        <td>September 6, 2021</td>        <td>Labor Day</td>    </tr>        <tr>        <td>November 25, 2021 - November 26, 2021</td>        <td>Thanksgiving Day and Day after Thanksgiving</td>    </tr>    <tr>        <td>December 23, 2021 - December 24, 2021</td>        <td>Christmas Eve and Christmas Day</td>    </tr>    </tbody>    </table>"
 	keywords = @{
 		keywords = @(
 		"new years day"
@@ -101,10 +91,6 @@ state = "published"
 }
 
 New-MgBetaSearchQna -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSearchQna Cmdlet.
-
 
 ## PARAMETERS
 
@@ -730,7 +716,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchQna>`: qna
+BODYPARAMETER <IMicrosoftGraphSearchQna>: qna
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: The search answer description that is shown on the search results page.
   [DisplayName <String>]: The search answer name that is displayed in search results.
@@ -783,13 +769,13 @@ The date and group settings apply to all variations.
     [WebUrl <String>]: The URL link for the answer variation.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
+KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>: answerKeyword
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Keywords <String[]>]: A collection of keywords used to trigger the search answer.
   [MatchSimilarKeywords <Boolean?>]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
   [ReservedKeywords <String[]>]: Unique keywords that guarantee the search answer is triggered.
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphSearchIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -811,27 +797,5 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [New-MgBetaSearchQna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna)
+- [](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-beta)
