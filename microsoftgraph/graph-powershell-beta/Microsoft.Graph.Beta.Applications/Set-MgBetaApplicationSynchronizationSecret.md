@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Update property secrets value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -521,6 +511,7 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationsynchronizationsecret)
+
 
 
 
