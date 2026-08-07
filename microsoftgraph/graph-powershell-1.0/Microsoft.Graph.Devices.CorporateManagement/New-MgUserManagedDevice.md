@@ -15,6 +15,9 @@ title: New-MgUserManagedDevice
 
 Create new navigation property to managedDevices for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
