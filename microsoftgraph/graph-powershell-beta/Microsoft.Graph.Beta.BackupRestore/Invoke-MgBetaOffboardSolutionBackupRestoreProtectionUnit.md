@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetaoffboardsolutionbackuprestoreprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit
 ## SYNOPSIS
 
 Offboard a protectionUnitBase.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgOffboardSolutionBackupRestoreProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Invoke-MgOffboardSolutionBackupRestoreProtectionUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Offboard a protectionUnitBase.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -335,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -382,28 +389,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetaoffboardsolutionbackuprestoreprotectionunit)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionunitbase-offboard?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetaoffboardsolutionbackuprestoreprotectionunit)
+- [](https://learn.microsoft.com/graph/api/protectionunitbase-offboard?view=graph-rest-beta)

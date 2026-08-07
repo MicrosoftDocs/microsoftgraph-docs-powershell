@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
 ---
@@ -23,10 +23,10 @@ Create new navigation property to granularSiteRestoreArtifacts for solutions
 New-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
  -SharePointRestoreSessionId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>] [-CompletionDateTime <datetime>]
- [-DestinationType <string>] [-Id <string>] [-RestorePointDateTime <datetime>]
- [-RestoredItemKey <string>] [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>]
- [-SiteId <string>] [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-DestinationType <string>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
+ [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>] [-RestoredItemPath <string>]
+ [-RestoredItemWebUrl <string>] [-SiteId <string>] [-StartDateTime <datetime>] [-Status <string>]
+ [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -47,10 +47,10 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifa
 New-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
  -InputObject <IBackupRestoreIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>] [-CompletionDateTime <datetime>]
- [-DestinationType <string>] [-Id <string>] [-RestorePointDateTime <datetime>]
- [-RestoredItemKey <string>] [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>]
- [-SiteId <string>] [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-DestinationType <string>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
+ [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>] [-RestoredItemPath <string>]
+ [-RestoredItemWebUrl <string>] [-SiteId <string>] [-StartDateTime <datetime>] [-Status <string>]
+ [-WebUrl <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -73,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to granularSiteRestoreArtifacts for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -234,6 +244,34 @@ destinationType
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Error
+
+publicError
+To construct, see NOTES section for ERROR properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublicError
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -759,11 +797,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGranularSiteRestoreArtifact>`: granularSiteRestoreArtifact
+BODYPARAMETER <IMicrosoftGraphGranularSiteRestoreArtifact>: granularSiteRestoreArtifact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseSessionId <String>]: The unique identifier of the browseSession
   [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
   [DestinationType <String>]: destinationType
+  [Error <IMicrosoftGraphPublicError>]: publicError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: Represents the error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+      [Code <String>]: The error code.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: The error code.
+      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [Message <String>]: A non-localized message for the developer.
+    [Target <String>]: The target of the error.
   [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
   [RestoredItemKey <String>]: The unique identifier for the restored artifact.
   [RestoredItemPath <String>]: The path of the restored artifact.
@@ -776,7 +829,23 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
   [SiteId <String>]: Id of the site in which artifact is present.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+ERROR <IMicrosoftGraphPublicError>: publicError
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Code <String>]: Represents the error code.
+  [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+    [Code <String>]: The error code.
+    [Message <String>]: The error message.
+    [Target <String>]: The target of the error.
+  [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: The error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+    [Message <String>]: The error message.
+    [Target <String>]: The target of the error.
+  [Message <String>]: A non-localized message for the developer.
+  [Target <String>]: The target of the error.
+
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -823,27 +892,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)

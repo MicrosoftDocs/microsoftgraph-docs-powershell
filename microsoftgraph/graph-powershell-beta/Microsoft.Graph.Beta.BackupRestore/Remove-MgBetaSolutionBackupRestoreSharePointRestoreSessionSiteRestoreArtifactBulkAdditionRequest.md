@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArti
 ## SYNOPSIS
 
 Delete a siteRestoreArtifactsBulkAdditionRequest object associated with a sharepointRestoreSession.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a siteRestoreArtifactsBulkAdditionRequest object associated with a sharepointRestoreSession.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -447,28 +454,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionSiteRestoreArtifactBulkAdditionRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/siterestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoresharepointrestoresessionsiterestoreartifactbulkadditionrequest)
+- [](https://learn.microsoft.com/graph/api/siterestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactrestorepoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRest
 ## SYNOPSIS
 
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Represents the date and time when an artifact is protected by a protectionPolicy and can be restored.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -359,7 +366,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -406,27 +413,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactRestorePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactrestorepoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiondriverestoreartifactrestorepoint)
