@@ -15,6 +15,9 @@ title: Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganization
 
 Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

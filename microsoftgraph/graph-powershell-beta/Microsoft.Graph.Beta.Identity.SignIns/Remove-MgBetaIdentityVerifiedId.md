@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityVerifiedId
 
 Delete navigation property verifiedId for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityVerifiedId](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityVerifiedId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

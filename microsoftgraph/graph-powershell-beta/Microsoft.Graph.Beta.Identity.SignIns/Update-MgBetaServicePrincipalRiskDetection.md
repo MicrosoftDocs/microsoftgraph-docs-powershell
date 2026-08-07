@@ -15,6 +15,9 @@ title: Update-MgBetaServicePrincipalRiskDetection
 
 Update the navigation property servicePrincipalRiskDetections in identityProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
