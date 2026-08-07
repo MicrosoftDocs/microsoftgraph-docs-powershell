@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistworkspace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlaceAsRoomListWorkspace
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPlaceAsRoomListWorkspace
 ## SYNOPSIS
 
 Create new navigation property to workspaces for places
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceAsRoomListWorkspace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to workspaces for places
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -798,8 +805,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-An alternative immutable unique identifier of the workspace.
-Read-only.
+.
 
 ```yaml
 Type: System.String
@@ -986,7 +992,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -997,7 +1003,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphWorkspace>`: workspace
+BODYPARAMETER <IMicrosoftGraphWorkspace>: workspace
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1056,8 +1062,7 @@ For example, 1 for first floor, 2 for second floor, and so on.
   [Mode <IMicrosoftGraphPlaceMode>]: placeMode
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Nickname <String>]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
-  [PlaceId <String>]: An alternative immutable unique identifier of the workspace.
-Read-only.
+  [PlaceId <String>]: 
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
@@ -1103,7 +1108,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Phone <String>]: The phone number of the place.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -1112,7 +1117,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Latitude <Double?>]: The latitude of the location.
   [Longitude <Double?>]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -1137,27 +1142,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaPlaceAsRoomListWorkspace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistworkspace)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistworkspace)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozeusereventreminder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSnoozeUserEventReminder
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaSnoozeUserEventReminder
 ## SYNOPSIS
 
 Postpone a reminder for an event in a user calendar until a new time.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Calendar/Invoke-MgSnoozeUserEventReminder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,18 +66,9 @@ This cmdlet has the following aliases,
 
 Postpone a reminder for an event in a user calendar until a new time.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -93,10 +81,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaSnoozeUserEventReminder Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -533,7 +517,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths10X81JrUsersUserIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths10X81JrUsersUserIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NewReminderTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -542,7 +526,7 @@ For example, '2019-04-16T09:00:00'.
     [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -564,7 +548,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace
 
-NEWREMINDERTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+NEWREMINDERTIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -574,27 +558,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaSnoozeUserEventReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozeusereventreminder)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozeusereventreminder)
+- [](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta)
