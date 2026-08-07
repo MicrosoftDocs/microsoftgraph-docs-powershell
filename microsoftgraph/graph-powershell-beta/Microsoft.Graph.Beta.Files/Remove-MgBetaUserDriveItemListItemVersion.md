@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveItemListItemVersion
 
 Delete navigation property versions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItemListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaDriveItemAnalytic
 
 Update the navigation property analytics in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

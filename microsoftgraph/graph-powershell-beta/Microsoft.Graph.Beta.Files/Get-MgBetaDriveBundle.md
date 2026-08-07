@@ -16,6 +16,9 @@ title: Get-MgBetaDriveBundle
 Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundle?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

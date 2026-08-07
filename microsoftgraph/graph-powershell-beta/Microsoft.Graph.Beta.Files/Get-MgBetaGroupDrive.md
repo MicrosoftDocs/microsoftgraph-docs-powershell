@@ -16,6 +16,9 @@ title: Get-MgBetaGroupDrive
 The group's drives.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDrive](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

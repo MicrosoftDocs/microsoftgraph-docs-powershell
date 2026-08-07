@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveListColumn
 
 The collection of field definitions for this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
