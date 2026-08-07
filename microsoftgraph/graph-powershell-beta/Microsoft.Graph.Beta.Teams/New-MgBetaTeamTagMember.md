@@ -639,8 +639,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember)
-- [](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-beta)
+- [New-MgBetaTeamTagMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamtagmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-beta)
 
 
 

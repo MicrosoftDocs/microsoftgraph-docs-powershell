@@ -929,8 +929,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp)
-- [](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-beta)
+- [New-MgBetaTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateaminstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-beta)
 
 
 

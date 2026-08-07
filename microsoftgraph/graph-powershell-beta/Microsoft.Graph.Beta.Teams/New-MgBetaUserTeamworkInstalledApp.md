@@ -1546,8 +1546,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworkinstalledapp)
-- [](https://learn.microsoft.com/graph/api/userteamwork-post-installedapps?view=graph-rest-beta)
+- [New-MgBetaUserTeamworkInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworkinstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-post-installedapps?view=graph-rest-beta)
 
 
 

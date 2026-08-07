@@ -839,8 +839,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagereplyhostedcontent)
-- [](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-beta)
+- [Get-MgBetaTeamChannelMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagereplyhostedcontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-beta)
 
 
 
