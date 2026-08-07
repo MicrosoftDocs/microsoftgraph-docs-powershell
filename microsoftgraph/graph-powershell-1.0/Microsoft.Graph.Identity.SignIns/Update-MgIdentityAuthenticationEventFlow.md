@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityAuthenticationEventFlow
 ---
@@ -15,10 +15,7 @@ title: Update-MgIdentityAuthenticationEventFlow
 
 Update the properties of an authenticationEventsFlow object by ID.
 You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
-The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow
 
 ## SYNTAX
 
@@ -73,20 +70,11 @@ This cmdlet has the following aliases,
 
 Update the properties of an authenticationEventsFlow object by ID.
 You must specify the @odata.type property and the value of the authenticationEventsFlow object type to update.
-The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
+The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow
 
 ## EXAMPLES
-### Example 1: Update the display name of an external identities self-service sign-up user flow
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -97,12 +85,7 @@ $params = @{
 
 Update-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
-```
-This example will update the display name of an external identities self-service sign-up user flow
-
-### Example 2: Update the page layout of a self-service sign up user flow
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -184,10 +167,6 @@ $params = @{
 }
 
 Update-MgIdentityAuthenticationEventFlow -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
-
-```
-This example will update the page layout of a self-service sign up user flow
-
 
 ## PARAMETERS
 
@@ -659,7 +638,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventsFlow>`: authenticationEventsFlow
+BODYPARAMETER <IMicrosoftGraphAuthenticationEventsFlow>: authenticationEventsFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -673,14 +652,14 @@ Read-only.
   [DisplayName <String>]: Required.
 The display name for the events policy.
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]: 
       [AppId <String>]: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -750,27 +729,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgIdentityAuthenticationEventFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow)
+- [](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0)

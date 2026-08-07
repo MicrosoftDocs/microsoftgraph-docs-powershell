@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityVerifiedIdProfile
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityVerifiedIdProfile
 ## SYNOPSIS
 
 Create a new verifiedIdProfile object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityVerifiedIdProfile?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,9 +50,8 @@ This cmdlet has the following aliases,
 Create a new verifiedIdProfile object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -100,10 +96,6 @@ $params = @{
 }
 
 New-MgIdentityVerifiedIdProfile -BodyParameter $params
-
-```
-This example shows how to use the New-MgIdentityVerifiedIdProfile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -613,7 +605,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVerifiedIdProfile>`: verifiedIdProfile
+BODYPARAMETER <IMicrosoftGraphVerifiedIdProfile>: verifiedIdProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -652,14 +644,14 @@ Required.
   [VerifierDid <String>]: Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.
 Required.
 
-FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfiguration
+FACECHECKCONFIGURATION <IMicrosoftGraphFaceCheckConfiguration>: faceCheckConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Defines if Face Check is required.
 Currently must always be true.
   [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
 Currently must always be portrait.
 
-VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`: verifiedIdProfileConfiguration
+VERIFIEDIDPROFILECONFIGURATION <IMicrosoftGraphVerifiedIdProfileConfiguration>: verifiedIdProfileConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
   [ClaimBindingSource <String>]: claimBindingSource
@@ -681,27 +673,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityverifiedidprofile)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityverifiedidprofile)
+- [](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-1.0)

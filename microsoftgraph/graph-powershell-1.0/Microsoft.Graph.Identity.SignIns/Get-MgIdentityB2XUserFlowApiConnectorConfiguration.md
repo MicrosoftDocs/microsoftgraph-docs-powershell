@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowapiconnectorconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityB2XUserFlowApiConnectorConfiguration
 ---
@@ -14,9 +14,6 @@ title: Get-MgIdentityB2XUserFlowApiConnectorConfiguration
 ## SYNOPSIS
 
 Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgIdentityB2XUserFlowApiConnectorConfiguration -B2xIdentityUserFlowId $b2xIdentityUserFlowId -ExpandProperty "postFederationSignup,postAttributeCollection" 
-
-```
-This example shows how to use the Get-MgIdentityB2XUserFlowApiConnectorConfiguration Cmdlet.
-
+Get-MgIdentityB2XUserFlowApiConnectorConfiguration -B2xIdentityUserFlowId $b2xIdentityUserFlowId -ExpandProperty "postFederationSignup,postAttributeCollection"
 
 ## PARAMETERS
 
@@ -358,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -428,27 +412,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgIdentityB2XUserFlowApiConnectorConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowapiconnectorconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/b2xidentityuserflow-get-apiconnectorconfiguration?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowapiconnectorconfiguration)
+- [](https://learn.microsoft.com/graph/api/b2xidentityuserflow-get-apiconnectorconfiguration?view=graph-rest-1.0)

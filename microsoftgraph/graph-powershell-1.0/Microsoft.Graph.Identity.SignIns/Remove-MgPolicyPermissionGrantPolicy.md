@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPolicyPermissionGrantPolicy
 ---
@@ -14,9 +14,6 @@ title: Remove-MgPolicyPermissionGrantPolicy
 ## SYNOPSIS
 
 Delete a permissionGrantPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,23 +44,12 @@ This cmdlet has the following aliases,
 
 Delete a permissionGrantPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.PermissionGrant,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.PermissionGrant,  |
-
 ## EXAMPLES
-### Example 1: Remove a permission grant policy
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 Remove-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
-```
-
-This command deletes the specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 
@@ -395,7 +381,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -465,27 +451,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgPolicyPermissionGrantPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicy)
+- [](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete?view=graph-rest-1.0)

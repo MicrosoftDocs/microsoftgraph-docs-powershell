@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessdeleteditempolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityConditionalAccessDeletedItemPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityConditionalAccessDeletedItemPolicy
 ## SYNOPSIS
 
 Update the navigation property policies in identity
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property policies in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -236,7 +243,7 @@ HelpMessage: ''
 
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
 
 ```yaml
 Type: System.DateTime
@@ -263,7 +270,7 @@ HelpMessage: ''
 
 ### -DeletedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -290,7 +297,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -493,7 +500,7 @@ HelpMessage: ''
 
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
 
 ```yaml
 Type: System.DateTime
@@ -742,7 +749,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy>`: conditionalAccessPolicy
+BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy>: conditionalAccessPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: 
   [Conditions <IMicrosoftGraphConditionalAccessConditionSet>]: conditionalAccessConditionSet
@@ -809,7 +816,7 @@ Required.
       [IncludeUsers <String[]>]: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
   [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
   [Description <String>]: 
   [DisplayName <String>]: Specifies a display name for the conditionalAccessPolicy object.
   [GrantControls <IMicrosoftGraphConditionalAccessGrantControls>]: conditionalAccessGrantControls
@@ -844,7 +851,7 @@ Possible values: AND, OR.
 Read-only.
   [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
   [SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]: conditionalAccessSessionControls
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]: applicationEnforcedRestrictionsSessionControl
@@ -873,7 +880,7 @@ Readonly.
   [TemplateId <String>]: Specifies the unique identifier of a Conditional Access template.
 Inherited from entity.
 
-CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessConditionSet
+CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet>: conditionalAccessConditionSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -936,7 +943,7 @@ Required.
     [IncludeRoles <String[]>]: Role IDs in scope of policy unless explicitly excluded.
     [IncludeUsers <String[]>]: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
 
-GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAccessGrantControls
+GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls>: conditionalAccessGrantControls
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -965,7 +972,7 @@ For more information, see Custom controls.
 Possible values: AND, OR.
   [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -1032,7 +1039,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditionalAccessSessionControls
+SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls>: conditionalAccessSessionControls
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]: applicationEnforcedRestrictionsSessionControl
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1060,27 +1067,4 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 
 ## RELATED LINKS
 
-- [Update-MgIdentityConditionalAccessDeletedItemPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessdeleteditempolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessdeleteditempolicy)

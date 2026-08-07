@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPolicyAuthenticationStrengthPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgPolicyAuthenticationStrengthPolicy
 ## SYNOPSIS
 
 Create a new custom authenticationStrengthPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 
 Create a new custom authenticationStrengthPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -90,10 +78,6 @@ combinationConfigurations = @(
 }
 
 New-MgPolicyAuthenticationStrengthPolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgPolicyAuthenticationStrengthPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -575,7 +559,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthPolicy>: authenticationStrengthPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -604,27 +588,5 @@ The only possible value for fido2combinationConfigurations is 'fido2'.
 
 ## RELATED LINKS
 
-- [New-MgPolicyAuthenticationStrengthPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy)
+- [](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0)

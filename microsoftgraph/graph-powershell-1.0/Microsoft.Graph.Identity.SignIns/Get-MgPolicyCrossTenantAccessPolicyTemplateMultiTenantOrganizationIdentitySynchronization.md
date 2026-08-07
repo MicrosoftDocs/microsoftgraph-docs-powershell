@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization
 ---
@@ -14,9 +14,6 @@ title: Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentit
 ## SYNOPSIS
 
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,17 +37,12 @@ This cmdlet has the following aliases,
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization
-
-```
-This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,27 +282,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/multitenantorganizationidentitysyncpolicytemplate-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization)
+- [](https://learn.microsoft.com/graph/api/multitenantorganizationidentitysyncpolicytemplate-get?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityAuthenticationEventFlow
 ---
@@ -14,10 +14,7 @@ title: New-MgIdentityAuthenticationEventFlow
 ## SYNOPSIS
 
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## SYNTAX
 
@@ -48,20 +45,11 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EventListener.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EventListener.ReadWrite.All,  |
+The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## EXAMPLES
-### Example 1: Create a basic External Identities sign-up and sign-in user flow in an external tenant
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -131,12 +119,7 @@ $params = @{
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
 
-```
-This example will create a basic external identities sign-up and sign-in user flow in an external tenant
-
-### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -215,12 +198,7 @@ $params = @{
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
 
-```
-This example will create a basic external identities sign-up and sign-in user flow with an attached application in an external tenant
-
-### Example 3: Create an External Identities sign-up and sign-in user flow with social providers and a custom attribute
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -312,10 +290,6 @@ $params = @{
 }
 
 New-MgIdentityAuthenticationEventFlow -BodyParameter $params
-
-```
-This example will create an external identities sign-up and sign-in user flow with social providers and a custom attribute
-
 
 ## PARAMETERS
 
@@ -692,7 +666,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventsFlow>`: authenticationEventsFlow
+BODYPARAMETER <IMicrosoftGraphAuthenticationEventsFlow>: authenticationEventsFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -706,7 +680,7 @@ Read-only.
   [DisplayName <String>]: Required.
 The display name for the events policy.
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -716,27 +690,5 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
 
 ## RELATED LINKS
 
-- [New-MgIdentityAuthenticationEventFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0)
