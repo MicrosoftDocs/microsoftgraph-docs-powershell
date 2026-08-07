@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermailfolderchildfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUnsubscribeUserMailFolderChildFolderMessage
 ---
@@ -60,6 +60,16 @@ Setting that header would also set the unsubscribeEnabled property of the messag
 If the unsubscribeEnabled property of a message is true, you can use the unsubscribe action to unsubscribe the user from similar future messages as managed by the message sender.
 A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -433,7 +443,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -449,28 +459,5 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUnsubscribeUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermailfolderchildfoldermessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermailfolderchildfoldermessage)
+- [](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)

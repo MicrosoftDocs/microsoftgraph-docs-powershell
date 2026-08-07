@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserMailFolderChildFolder
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserMailFolderChildFolder
 ## SYNOPSIS
 
 Create new navigation property to childFolders for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,18 +80,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to childFolders for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
-| Application | Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
@@ -104,11 +93,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserMailFolderChildFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -555,7 +539,7 @@ HelpMessage: ''
 
 ### -Operations
 
-
+.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -779,7 +763,7 @@ HelpMessage: ''
 
 ### -UserConfigurations
 
-
+.
 To construct, see NOTES section for USERCONFIGURATIONS properties and create a hash table.
 
 ```yaml
@@ -918,7 +902,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMailFolder>`: mailFolder
+BODYPARAMETER <IMicrosoftGraphMailFolder>: mailFolder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1357,7 +1341,7 @@ The possible values are listed above.
 This property is only set for default folders created by Outlook.
 For other folders, this property is null.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -1591,26 +1575,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserMailFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder)
