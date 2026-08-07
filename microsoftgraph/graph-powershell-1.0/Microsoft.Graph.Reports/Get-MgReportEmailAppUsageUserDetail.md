@@ -15,6 +15,9 @@ title: Get-MgReportEmailAppUsageUserDetail
 
 Get details about which activities users performed on the various email apps.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgReportPartnerBillingOperation
 
 Delete navigation property operations for reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
