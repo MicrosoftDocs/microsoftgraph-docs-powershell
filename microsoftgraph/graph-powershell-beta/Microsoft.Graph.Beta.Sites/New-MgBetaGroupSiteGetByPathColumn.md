@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSiteGetByPathColumn
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupSiteGetByPathColumn
 ## SYNOPSIS
 
 Create new navigation property to columns for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteGetByPathColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ New-MgBetaGroupSiteGetByPathColumn -GroupId <string> -Path <string> -SiteId <str
  [-DefaultValue <IMicrosoftGraphDefaultColumnValue>] [-Description <string>] [-DisplayName <string>]
  [-EnforceUniqueValues] [-Geolocation <hashtable>] [-Hidden]
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <string>] [-Indexed]
- [-IsDeletable] [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>]
+ [-IsDeletable] [-IsReorderable] [-IsSealed] [-IsSearchable] [-Lookup <IMicrosoftGraphLookupColumn>]
  [-Name <string>] [-Number <IMicrosoftGraphNumberColumn>]
  [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>] [-PropagateChanges] [-ReadOnly] [-Required]
  [-SourceColumn <IMicrosoftGraphColumnDefinition>]
@@ -63,7 +60,7 @@ New-MgBetaGroupSiteGetByPathColumn -InputObject <ISitesIdentity> [-ResponseHeade
  [-DefaultValue <IMicrosoftGraphDefaultColumnValue>] [-Description <string>] [-DisplayName <string>]
  [-EnforceUniqueValues] [-Geolocation <hashtable>] [-Hidden]
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <string>] [-Indexed]
- [-IsDeletable] [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>]
+ [-IsDeletable] [-IsReorderable] [-IsSealed] [-IsSearchable] [-Lookup <IMicrosoftGraphLookupColumn>]
  [-Name <string>] [-Number <IMicrosoftGraphNumberColumn>]
  [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>] [-PropagateChanges] [-ReadOnly] [-Required]
  [-SourceColumn <IMicrosoftGraphColumnDefinition>]
@@ -92,6 +89,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to columns for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -698,7 +705,7 @@ HelpMessage: ''
 
 ### -Indexed
 
-Specifies whether the column values can used for sorting and searching.
+Specifies whether the column values can be used for sorting and searching.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -809,6 +816,34 @@ HelpMessage: ''
 ### -IsSealed
 
 Specifies whether the column can be changed.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IsSearchable
+
+Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1415,7 +1450,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+BODYPARAMETER <IMicrosoftGraphColumnDefinition>: columnDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1462,11 +1497,13 @@ It must be either dateOnly or dateTime.
   [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-  [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+  [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
   [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
   [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
   [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+  [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
   [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -1578,7 +1615,7 @@ User will be prompted with this message if validation fails.
     [Formula <String>]: The formula to validate column value.
 For examples, see Examples of common formulas in lists
 
-CALCULATED `<IMicrosoftGraphCalculatedColumn>`: calculatedColumn
+CALCULATED <IMicrosoftGraphCalculatedColumn>: calculatedColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Format <String>]: For dateTime output types, the format of the value.
 The possible values are: dateOnly or dateTime.
@@ -1586,18 +1623,18 @@ The possible values are: dateOnly or dateTime.
   [OutputType <String>]: The output type used to format values in this column.
 The possible values are: boolean, currency, dateTime, number, or text.
 
-CHOICE `<IMicrosoftGraphChoiceColumn>`: choiceColumn
+CHOICE <IMicrosoftGraphChoiceColumn>: choiceColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
   [Choices <String[]>]: The list of values available for this column.
   [DisplayAs <String>]: How the choices are to be presented in the UX.
 Must be one of checkBoxes, dropDownMenu, or radioButtons
 
-CURRENCY `<IMicrosoftGraphCurrencyColumn>`: currencyColumn
+CURRENCY <IMicrosoftGraphCurrencyColumn>: currencyColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Locale <String>]: Specifies the locale from which to infer the currency symbol.
 
-DATETIME `<IMicrosoftGraphDateTimeColumn>`: dateTimeColumn
+DATETIME <IMicrosoftGraphDateTimeColumn>: dateTimeColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayAs <String>]: How the value should be presented in the UX.
 Must be one of default, friendly, or standard.
@@ -1606,16 +1643,16 @@ If unspecified, treated as default.
   [Format <String>]: Indicates whether the value should be presented as a date only or a date and time.
 It must be either dateOnly or dateTime.
 
-DEFAULTVALUE `<IMicrosoftGraphDefaultColumnValue>`: defaultColumnValue
+DEFAULTVALUE <IMicrosoftGraphDefaultColumnValue>: defaultColumnValue
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Formula <String>]: The formula used to compute the default value for the column.
   [Value <String>]: The direct value to use as the default value for the column.
 
-HYPERLINKORPICTURE `<IMicrosoftGraphHyperlinkOrPictureColumn>`: hyperlinkOrPictureColumn
+HYPERLINKORPICTURE <IMicrosoftGraphHyperlinkOrPictureColumn>: hyperlinkOrPictureColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -1677,7 +1714,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
+LOOKUP <IMicrosoftGraphLookupColumn>: lookupColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
   [AllowUnlimitedLength <Boolean?>]: Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
@@ -1686,7 +1723,7 @@ LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
   [PrimaryLookupColumnId <String>]: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
 
-NUMBER `<IMicrosoftGraphNumberColumn>`: numberColumn
+NUMBER <IMicrosoftGraphNumberColumn>: numberColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DecimalPlaces <String>]: How many decimal places to display.
 See below for information about the possible values.
@@ -1696,7 +1733,7 @@ If unspecified, treated as number.
   [Maximum <Double?>]: The maximum permitted value.
   [Minimum <Double?>]: The minimum permitted value.
 
-PERSONORGROUP `<IMicrosoftGraphPersonOrGroupColumn>`: personOrGroupColumn
+PERSONORGROUP <IMicrosoftGraphPersonOrGroupColumn>: personOrGroupColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleSelection <Boolean?>]: Indicates whether multiple values can be selected from the source.
   [ChooseFromType <String>]: Whether to allow selection of people only, or people and groups.
@@ -1704,7 +1741,7 @@ Must be one of peopleAndGroups or peopleOnly.
   [DisplayAs <String>]: How to display the information about the person or group chosen.
 See below.
 
-SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+SOURCECOLUMN <IMicrosoftGraphColumnDefinition>: columnDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1751,11 +1788,13 @@ It must be either dateOnly or dateTime.
   [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-  [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+  [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
   [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
   [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
   [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+  [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
   [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -1867,12 +1906,12 @@ User will be prompted with this message if validation fails.
     [Formula <String>]: The formula to validate column value.
 For examples, see Examples of common formulas in lists
 
-SOURCECONTENTTYPE `<IMicrosoftGraphContentTypeInfo>`: contentTypeInfo
+SOURCECONTENTTYPE <IMicrosoftGraphContentTypeInfo>: contentTypeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The ID of the content type.
   [Name <String>]: The name of the content type.
 
-TERM `<IMicrosoftGraphTermColumn>`: termColumn
+TERM <IMicrosoftGraphTermColumn>: termColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleValues <Boolean?>]: Specifies whether the column allows more than one value
   [ParentTerm <IMicrosoftGraphTermStoreTerm>]: term
@@ -1929,7 +1968,7 @@ Read-only.
   [ShowFullyQualifiedName <Boolean?>]: Specifies whether to display the entire term path or only the term label.
   [TermSet <IMicrosoftGraphTermStoreSet>]: set
 
-TEXT `<IMicrosoftGraphTextColumn>`: textColumn
+TEXT <IMicrosoftGraphTextColumn>: textColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleLines <Boolean?>]: Whether to allow multiple lines of text.
   [AppendChangesToExistingText <Boolean?>]: Whether updates to this column should replace existing text, or append to it.
@@ -1938,7 +1977,7 @@ TEXT `<IMicrosoftGraphTextColumn>`: textColumn
   [TextType <String>]: The type of text being stored.
 Must be one of plain or richText.
 
-VALIDATION `<IMicrosoftGraphColumnValidation>`: columnValidation
+VALIDATION <IMicrosoftGraphColumnValidation>: columnValidation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultLanguage <String>]: Default BCP 47 language tag for the description.
   [Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]: Localized messages that explain what is needed for this column's value to be considered valid.
@@ -1951,27 +1990,4 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupSiteGetByPathColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcolumn)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathcolumn)

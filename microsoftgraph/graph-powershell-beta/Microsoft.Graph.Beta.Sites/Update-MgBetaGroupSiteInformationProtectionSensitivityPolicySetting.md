@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionsensitivitypolicysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property sensitivityPolicySettings in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -197,7 +207,7 @@ HelpMessage: ''
 
 ### -DowngradeSensitivityRequiresJustification
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -272,7 +282,7 @@ HelpMessage: ''
 
 ### -HelpWebUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -397,7 +407,7 @@ HelpMessage: ''
 
 ### -IsMandatory
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -590,7 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
+BODYPARAMETER <IMicrosoftGraphSensitivityPolicySettings>: sensitivityPolicySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -599,7 +609,7 @@ Read-only.
   [HelpWebUrl <String>]: 
   [IsMandatory <Boolean?>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -664,27 +674,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionsensitivitypolicysetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionsensitivitypolicysetting)

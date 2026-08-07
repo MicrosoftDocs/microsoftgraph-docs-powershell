@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteListItemField
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSiteListItemField
 ## SYNOPSIS
 
 Update the properties on a listItem.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -66,18 +63,9 @@ This cmdlet has the following aliases,
 
 Update the properties on a listItem.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -87,10 +75,6 @@ $params = @{
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSiteListItemField Cmdlet.
-
 
 ## PARAMETERS
 
@@ -532,7 +516,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -597,27 +581,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSiteListItemField](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemfield)
+- [](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-beta)
