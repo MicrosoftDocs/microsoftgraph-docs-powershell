@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageextension
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserMailFolderMessageExtension
 ---
@@ -14,9 +14,6 @@ title: New-MgUserMailFolderMessageExtension
 ## SYNOPSIS
 
 Create new navigation property to extensions for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,6 +63,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to extensions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -507,7 +514,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -520,27 +527,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgUserMailFolderMessageExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageextension)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMessageAttachment
 ---
@@ -14,9 +14,6 @@ title: Get-MgUserMessageAttachment
 ## SYNOPSIS
 
 The fileAttachment and itemAttachment attachments for the message.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,66 +57,41 @@ This cmdlet has the following aliases,
 The fileAttachment and itemAttachment attachments for the message.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
-```
-This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
 
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
-```
-This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 3
 
-### Example 3: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
-```
-This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 4
 
-### Example 4: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
-```
-This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 5
 
-### Example 5: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
-```
-This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -635,7 +607,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -648,26 +620,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserMessageAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment)
