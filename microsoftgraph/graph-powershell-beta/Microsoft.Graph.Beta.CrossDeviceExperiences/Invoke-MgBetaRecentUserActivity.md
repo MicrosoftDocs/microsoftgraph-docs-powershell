@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/invoke-mgbetarecentuseractivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRecentUserActivity
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaRecentUserActivity
 ## SYNOPSIS
 
 Invoke function recent
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Invoke-MgRecentUserActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,13 +47,15 @@ This cmdlet has the following aliases,
 
 Invoke function recent
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp,  |
-| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -474,7 +473,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [CommandId <String>]: The unique identifier of command
   [DeviceId <String>]: The unique identifier of device
@@ -488,27 +487,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRecentUserActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/invoke-mgbetarecentuseractivity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/invoke-mgbetarecentuseractivity)
