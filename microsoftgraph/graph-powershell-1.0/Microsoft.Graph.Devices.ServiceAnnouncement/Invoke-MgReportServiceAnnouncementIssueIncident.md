@@ -17,6 +17,9 @@ Provide the Post-Incident Review (PIR) document of a specified service issue for
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
 The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document doesn't exist for the issue.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Report (Default)
