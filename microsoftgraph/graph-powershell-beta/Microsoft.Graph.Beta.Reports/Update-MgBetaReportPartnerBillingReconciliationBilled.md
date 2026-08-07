@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingreconciliationbilled
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportPartnerBillingReconciliationBilled
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaReportPartnerBillingReconciliationBilled
 ## SYNOPSIS
 
 Update the navigation property billed in reports
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property billed in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -353,27 +360,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportPartnerBillingReconciliationBilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingreconciliationbilled)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingreconciliationbilled)

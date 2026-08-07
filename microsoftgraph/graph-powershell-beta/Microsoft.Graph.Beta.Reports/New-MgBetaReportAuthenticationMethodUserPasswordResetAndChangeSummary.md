@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethoduserpasswordresetandchangesummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to userPasswordResetsAndChangesSummary for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -445,7 +455,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserPasswordResetsAndChangesSummary>`: userPasswordResetsAndChangesSummary
+BODYPARAMETER <IMicrosoftGraphUserPasswordResetsAndChangesSummary>: userPasswordResetsAndChangesSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -460,27 +470,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethoduserpasswordresetandchangesummary)

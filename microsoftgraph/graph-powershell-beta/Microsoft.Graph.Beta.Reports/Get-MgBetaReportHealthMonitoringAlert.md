@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareporthealthmonitoringalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportHealthMonitoringAlert
 ---
@@ -57,59 +57,31 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a Microsoft Entra health monitoring alert object.
 The returned alert object contains information about the state, type, date, and impact of each alert that fired within your tenant.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | HealthMonitoringAlert.Read.All, HealthMonitoringAlert.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | HealthMonitoringAlert.Read.All, HealthMonitoringAlert.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get all alerts
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportHealthMonitoringAlert
 
-```
-This example will get all alerts
-
-### Example 2: Get all active alerts
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportHealthMonitoringAlert -Filter "state eq microsoft.graph.healthmonitoring.alertState'active'" -Property "id, alertType" 
+Get-MgBetaReportHealthMonitoringAlert -Filter "state eq microsoft.graph.healthmonitoring.alertState'active'" -Property "id, alertType"
 
-```
-This example will get all active alerts
-
-### Example 3: List the state of all alerts in a specific time range
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportHealthMonitoringAlert -Filter "createdDateTime gt 2024-06-10T11:23:44Z" -Property "id, alertType, createdDateTime, state" 
+Get-MgBetaReportHealthMonitoringAlert -Filter "createdDateTime gt 2024-06-10T11:23:44Z" -Property "id, alertType, createdDateTime, state"
 
-```
-This example will list the state of all alerts in a specific time range
-
-### Example 4: Use $expand to get all alerts with directory object resource sampling
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportHealthMonitoringAlert -ExpandProperty "enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling" -Property "alertType, createdDateTime, enrichment'" 
-
-```
-This example will use $expand to get all alerts with directory object resource sampling
-
+Get-MgBetaReportHealthMonitoringAlert -ExpandProperty "enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling" -Property "alertType, createdDateTime, enrichment'"
 
 ## PARAMETERS
 
@@ -571,7 +543,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -627,28 +599,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportHealthMonitoringAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareporthealthmonitoringalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/healthmonitoring-alert-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/healthmonitoring-healthmonitoringroot-list-alerts?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareporthealthmonitoringalert)
+- [](https://learn.microsoft.com/graph/api/healthmonitoring-alert-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/healthmonitoring-healthmonitoringroot-list-alerts?view=graph-rest-beta)
