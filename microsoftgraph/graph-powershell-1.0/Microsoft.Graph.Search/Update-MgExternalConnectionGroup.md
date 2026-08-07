@@ -15,6 +15,9 @@ title: Update-MgExternalConnectionGroup
 
 Update the properties of an externalGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

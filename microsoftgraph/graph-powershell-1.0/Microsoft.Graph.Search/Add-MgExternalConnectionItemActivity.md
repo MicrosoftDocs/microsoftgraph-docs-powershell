@@ -15,6 +15,9 @@ title: Add-MgExternalConnectionItemActivity
 
 Append additional instances of externalActivity objects on an externalItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
