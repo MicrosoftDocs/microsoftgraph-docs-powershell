@@ -1967,7 +1967,7 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat)
+- [Update-MgUserChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat)
 
 
 

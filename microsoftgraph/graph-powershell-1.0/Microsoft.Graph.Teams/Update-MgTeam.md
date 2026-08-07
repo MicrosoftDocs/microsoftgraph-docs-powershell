@@ -33574,8 +33574,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam)
-- [](https://learn.microsoft.com/graph/api/team-update?view=graph-rest-1.0)
+- [Update-MgTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-update?view=graph-rest-1.0)
 
 
 

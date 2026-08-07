@@ -793,8 +793,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagehostedcontent)
-- [](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)
+- [Get-MgTeamChannelMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagehostedcontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)
 
 
 
