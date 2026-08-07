@@ -93,7 +93,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -284,7 +284,7 @@ HelpMessage: ''
 
 ### -Query
 
-.
+
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ HelpMessage: ''
 
 ### -Timespan
 
-.
+
 
 ```yaml
 Type: System.String
