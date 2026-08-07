@@ -62,6 +62,14 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.JoinGroupCalls.Chat, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
