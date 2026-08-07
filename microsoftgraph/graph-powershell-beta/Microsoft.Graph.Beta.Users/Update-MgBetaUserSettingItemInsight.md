@@ -546,8 +546,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight)
-- [](https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-beta)
+- [Update-MgBetaUserSettingItemInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-beta)
 
 
 
