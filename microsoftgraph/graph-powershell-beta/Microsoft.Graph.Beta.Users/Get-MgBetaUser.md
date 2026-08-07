@@ -21,6 +21,9 @@ To get properties that are not returned by default, do a GET operation and speci
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
