@@ -93,16 +93,6 @@ Create a new bookingService for the specified bookingBusiness.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -1316,6 +1306,7 @@ Use the email address specified in the email property of the bookingBusiness ent
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice)
 - [](https://learn.microsoft.com/graph/api/bookingbusiness-post-services?view=graph-rest-1.0)
+
 
 
 
