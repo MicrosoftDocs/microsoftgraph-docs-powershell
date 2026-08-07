@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Remove a tokenLifetimePolicy object from a service principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -452,6 +442,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaltokenlifetimepolicybyref)
 - [](https://learn.microsoft.com/graph/api/serviceprincipal-delete-tokenlifetimepolicies?view=graph-rest-beta)
+
 
 
 
