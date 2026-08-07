@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupTransitiveMemberOf
 ---
@@ -15,9 +15,6 @@ title: Get-MgGroupTransitiveMemberOf
 
 The groups that a group is a member of, either directly or through nested membership.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,17 +60,12 @@ The groups that a group is a member of, either directly or through nested member
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMemberOf -GroupId $groupId
-
-```
-This example shows how to use the Get-MgGroupTransitiveMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -584,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -608,27 +600,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof)
+- [](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-1.0)

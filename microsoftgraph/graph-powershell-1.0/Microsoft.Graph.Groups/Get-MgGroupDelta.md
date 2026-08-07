@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgGroupDelta
 
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,48 +39,25 @@ This cmdlet has the following aliases,
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupDelta
 
-```
-This example shows how to use the Get-MgGroupDelta Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupDelta -Property "displayName,description,mailNickname" 
+Get-MgGroupDelta -Property "displayName,description,mailNickname"
 
-```
-This example shows how to use the Get-MgGroupDelta Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupDelta -Property "displayName,description,mailNickname" 
-
-```
-This example shows how to use the Get-MgGroupDelta Cmdlet.
-
+Get-MgGroupDelta -Property "displayName,description,mailNickname"
 
 ## PARAMETERS
 
@@ -495,27 +469,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta)
+- [](https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-1.0)
