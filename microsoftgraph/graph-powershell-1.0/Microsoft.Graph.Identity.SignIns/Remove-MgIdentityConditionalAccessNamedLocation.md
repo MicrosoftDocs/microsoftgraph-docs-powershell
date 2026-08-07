@@ -466,8 +466,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessnamedlocation)
-- [](https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-1.0)
+- [Remove-MgIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessnamedlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-delete?view=graph-rest-1.0)
 
 
 

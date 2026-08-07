@@ -590,8 +590,8 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
-- [](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)
+- [New-MgIdentityAuthenticationEventListener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)
 
 
 
