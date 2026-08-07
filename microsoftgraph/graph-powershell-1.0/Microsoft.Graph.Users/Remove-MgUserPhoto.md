@@ -415,7 +415,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserphoto)
+- [Remove-MgUserPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserphoto)
 
 
 
