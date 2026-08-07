@@ -443,8 +443,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation)
-- [](https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-1.0)
+- [Remove-MgGroupConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-1.0)
 
 
 

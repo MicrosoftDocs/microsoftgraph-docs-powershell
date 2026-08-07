@@ -615,9 +615,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicy)
-- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0)
+- [Get-MgGroupLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0)
 
 
 
