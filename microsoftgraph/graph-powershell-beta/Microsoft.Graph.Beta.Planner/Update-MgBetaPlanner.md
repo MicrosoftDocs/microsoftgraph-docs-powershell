@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlanner
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPlanner
 ## SYNOPSIS
 
 Update planner
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update planner
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -455,7 +462,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlanner>`: planner
+BODYPARAMETER <IMicrosoftGraphPlanner>: planner
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -771,6 +778,15 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
       [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
         [(Any) <Object>]: This indicates any property can be added to this object.
+    [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+      [EntityId <String>]: 
+      [EntityType <String>]: historyEntityType
+      [EventType <String>]: historyEventType
+      [OccurredDateTime <DateTime?>]: 
+      [PlanId <String>]: 
     [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -1365,6 +1381,15 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
       [(Any) <Object>]: This indicates any property can be added to this object.
+  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+    [EntityId <String>]: 
+    [EntityType <String>]: historyEntityType
+    [EventType <String>]: historyEventType
+    [OccurredDateTime <DateTime?>]: 
+    [PlanId <String>]: 
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -1710,6 +1735,15 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
       [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
         [(Any) <Object>]: This indicates any property can be added to this object.
+    [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+      [EntityId <String>]: 
+      [EntityType <String>]: historyEntityType
+      [EventType <String>]: historyEventType
+      [OccurredDateTime <DateTime?>]: 
+      [PlanId <String>]: 
     [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -1960,27 +1994,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplanner)
