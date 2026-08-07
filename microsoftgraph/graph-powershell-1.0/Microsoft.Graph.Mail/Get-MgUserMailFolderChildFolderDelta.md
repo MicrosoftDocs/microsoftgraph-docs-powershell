@@ -54,16 +54,6 @@ Get a set of mail folders that have been added, deleted, or removed from the use
 A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls,\ryou can query for incremental changes in the mail folders.
 This allows you to maintain and synchronize\ra local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -581,6 +571,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfolderdelta)
 - [](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0)
+
 
 
 
