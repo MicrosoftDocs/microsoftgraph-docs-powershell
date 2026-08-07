@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserPlannerPlan
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserPlannerPlan
 Read-only.
 Nullable.
 Returns the plannerTasks assigned to the user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,27 +41,14 @@ Read-only.
 Nullable.
 Returns the plannerTasks assigned to the user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Group.Read.All, Group.ReadWrite.All, Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerPlan -UserId $userId
-
-```
-This example shows how to use the Get-MgUserPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -497,26 +481,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgUserPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan)
