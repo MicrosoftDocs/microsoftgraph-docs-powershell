@@ -78,7 +78,7 @@ Create new navigation property to resourceActions for roleManagement
 
 ### -ActionVerb
 
-.
+
 
 ```yaml
 Type: System.String
@@ -132,7 +132,7 @@ HelpMessage: ''
 
 ### -AuthenticationContextId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -230,7 +230,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -376,7 +376,7 @@ HelpMessage: ''
 
 ### -IsAuthenticationContextSettable
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -403,7 +403,7 @@ HelpMessage: ''
 
 ### -Name
 
-.
+
 
 ```yaml
 Type: System.String
@@ -493,7 +493,7 @@ HelpMessage: ''
 
 ### -ResourceScopeId
 
-.
+
 
 ```yaml
 Type: System.String
