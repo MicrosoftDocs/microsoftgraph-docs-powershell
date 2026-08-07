@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignmentappscope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property appScopes in roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -198,7 +208,7 @@ HelpMessage: ''
 ### -DisplayName
 
 Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -538,16 +548,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAppScope>`: appScope
+BODYPARAMETER <IMicrosoftGraphAppScope>: appScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -579,27 +589,4 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignmentappscope)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignmentappscope)

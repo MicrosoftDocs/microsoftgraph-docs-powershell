@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementCloudPcRoleAssignment
 ---
@@ -14,7 +14,7 @@ title: New-MgBetaRoleManagementCloudPcRoleAssignment
 ## SYNOPSIS
 
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## SYNTAX
 
@@ -51,20 +51,11 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
+The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## EXAMPLES
-### Example 1: Create a role assignment for a Cloud PC provider
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
@@ -80,10 +71,6 @@ $params = @{
 }
 
 New-MgBetaRoleManagementCloudPcRoleAssignment -BodyParameter $params
-
-```
-This example will create a role assignment for a cloud pc provider
-
 
 ## PARAMETERS
 
@@ -202,7 +189,7 @@ HelpMessage: ''
 
 ### -Condition
 
-
+.
 
 ```yaml
 Type: System.String
@@ -653,11 +640,11 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentMultiple>`: unifiedRoleAssignmentMultiple
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentMultiple>: unifiedRoleAssignmentMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -672,7 +659,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [Condition <String>]: 
@@ -759,7 +746,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -805,27 +792,5 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [New-MgBetaRoleManagementCloudPcRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroleassignment)
+- [](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta)
