@@ -15,6 +15,9 @@ title: Get-MgGroupOnPremiseSyncBehavior
 
 Get onPremisesSyncBehavior from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnPremiseSyncBehavior?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

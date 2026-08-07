@@ -15,6 +15,9 @@ title: New-MgGroupPermissionGrant
 
 Create new navigation property to permissionGrants for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
