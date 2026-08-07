@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete a profileSource object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Remove-MgAdminPeopleProfileSourceBySourceId -SourceId $sourceIdId
+Remove-MgAdminPeopleProfileSourceBySourceId -SourceId $sourceIdId 
+
+```
+This example shows how to use the Remove-MgAdminPeopleProfileSourceBySourceId Cmdlet.
+
 
 ## PARAMETERS
 
