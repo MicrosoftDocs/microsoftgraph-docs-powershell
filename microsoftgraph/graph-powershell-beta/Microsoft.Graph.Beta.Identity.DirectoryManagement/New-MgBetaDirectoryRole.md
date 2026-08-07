@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRole
 ---
@@ -17,9 +17,6 @@ Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
 The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,18 +52,9 @@ To read a directory role or update its members, it must first be activated in th
 The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -75,10 +63,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryRole -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDirectoryRole Cmdlet.
-
 
 ## PARAMETERS
 
@@ -436,7 +420,7 @@ HelpMessage: ''
 
 The id of the directoryRoleTemplate that this role is based on.
 The property must be specified when activating a directory role in a tenant with a POST operation.
-After the directory role has been activated, the property is read only.
+After the directory role has been activated, the property is read-only.
 Supports $filter (eq), $select.
 
 ```yaml
@@ -532,7 +516,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
+BODYPARAMETER <IMicrosoftGraphDirectoryRole>: directoryRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -555,7 +539,7 @@ Read-only.
 Always null when the object hasn't been deleted.
   [RoleTemplateId <String>]: The id of the directoryRoleTemplate that this role is based on.
 The property must be specified when activating a directory role in a tenant with a POST operation.
-After the directory role has been activated, the property is read only.
+After the directory role has been activated, the property is read-only.
 Supports $filter (eq), $select.
   [ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>]: Members of this directory role that are scoped to administrative units.
 Read-only.
@@ -600,27 +584,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole)
+- [](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta)

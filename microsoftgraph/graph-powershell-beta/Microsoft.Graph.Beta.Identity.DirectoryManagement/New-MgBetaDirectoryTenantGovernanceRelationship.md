@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerelationship
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTenantGovernanceRelationship
 ---
@@ -48,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to governanceRelationships for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -535,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>`: governanceRelationship
+BODYPARAMETER <IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>: governanceRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -555,6 +565,8 @@ Supports $filter (eq, ne) and $orderBy.
   [PolicySnapshot <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>]: relationshipPolicy
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DelegatedAdministrationRoleAssignments <IMicrosoftGraphTenantGovernanceServicesDelegatedAdministrationRoleAssignmentSnapshot[]>]: A snapshot of the delegated administration role assignments configured in this policy.
+      [GroupDisplayName <String>]: The display name of the security group identified by groupId at the time the snapshot was created.
+Read-only.
       [GroupId <String>]: The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.
       [RoleTemplates <IMicrosoftGraphTenantGovernanceServicesRoleTemplate[]>]: The collection of role templates that define the Microsoft Entra roles to be assigned.
         [Id <String>]: The template ID of the Microsoft Entra role (e.g., 62e90394-69f5-4237-9190-012177145e10 for Global Administrator).
@@ -573,9 +585,11 @@ Supports $filter (eq, ne) and $orderBy.
     [PolicyId <String>]: The identifier of the source policy template from which this snapshot was created.
   [Status <RelationshipStatus?>]: relationshipStatus
 
-POLICYSNAPSHOT `<IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>`: relationshipPolicy
+POLICYSNAPSHOT <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>: relationshipPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedAdministrationRoleAssignments <IMicrosoftGraphTenantGovernanceServicesDelegatedAdministrationRoleAssignmentSnapshot[]>]: A snapshot of the delegated administration role assignments configured in this policy.
+    [GroupDisplayName <String>]: The display name of the security group identified by groupId at the time the snapshot was created.
+Read-only.
     [GroupId <String>]: The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.
     [RoleTemplates <IMicrosoftGraphTenantGovernanceServicesRoleTemplate[]>]: The collection of role templates that define the Microsoft Entra roles to be assigned.
       [Id <String>]: The template ID of the Microsoft Entra role (e.g., 62e90394-69f5-4237-9190-012177145e10 for Global Administrator).
@@ -596,27 +610,4 @@ POLICYSNAPSHOT `<IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>`: re
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryTenantGovernanceRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerelationship)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerelationship)

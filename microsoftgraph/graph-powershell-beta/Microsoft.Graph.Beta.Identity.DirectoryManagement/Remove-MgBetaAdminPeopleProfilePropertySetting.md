@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaAdminPeopleProfilePropertySetting
 ## SYNOPSIS
 
 Delete a profilePropertySetting object.
+You shouldn't delete a profilePropertySetting that includes a source precedence configuration.
+Instead, patch it to a default state that contains only the Microsoft Entra ID source reference.
+This delete operation is supported but fails unless the prioritizedSourceUrls property contains only the Entra ID source reference.
 
 ## SYNTAX
 
@@ -43,27 +46,17 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a profilePropertySetting object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.ReadWrite.All,  |
+You shouldn't delete a profilePropertySetting that includes a source precedence configuration.
+Instead, patch it to a default state that contains only the Microsoft Entra ID source reference.
+This delete operation is supported but fails unless the prioritizedSourceUrls property contains only the Entra ID source reference.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $profilePropertySettingId
-
-```
-This example shows how to use the Remove-MgBetaAdminPeopleProfilePropertySetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -395,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -464,27 +457,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaAdminPeopleProfilePropertySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilepropertysetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/profilepropertysetting-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilepropertysetting)
+- [](https://learn.microsoft.com/graph/api/profilepropertysetting-delete?view=graph-rest-beta)

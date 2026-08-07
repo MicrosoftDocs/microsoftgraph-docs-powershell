@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetasubscribedsku
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSubscribedSku
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSubscribedSku
 ## SYNOPSIS
 
 Get a specific commercial subscription that an organization has acquired.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgSubscribedSku?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,18 +55,10 @@ This cmdlet has the following aliases,
 
 Get a specific commercial subscription that an organization has acquired.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LicenseAssignment.Read.All, Directory.Read.All, Directory.ReadWrite.All, Organization.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LicenseAssignment.Read.All, Directory.Read.All, Directory.ReadWrite.All, Organization.Read.All, Organization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get subscribed SKUs
 
-```powershell
+### EXAMPLE 1
+
 Get-MgBetaSubscribedSKU | Format-List
 
 AppliesTo            : User
@@ -83,9 +72,6 @@ SkuId                : cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46
 SkuPartNumber        : SPB
 AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/subscribedSkus/fb625e04-52a
                        a-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46]}
-```
-
-This command gets the information about the service SKU that the company has subscribed to.
 
 ## PARAMETERS
 
@@ -547,7 +533,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -616,28 +602,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSubscribedSku](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetasubscribedsku)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscribedsku-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscribedsku-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetasubscribedsku)
+- [](https://learn.microsoft.com/graph/api/subscribedsku-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/subscribedsku-list?view=graph-rest-beta)
