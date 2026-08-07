@@ -84,8 +84,9 @@ Update the navigation property windowsInformationProtectionAppLearningSummaries 
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary -WindowsInformationProtectionAppLearningSummaryId $windowsInformationProtectionAppLearningSummaryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary Cmdlet.
+
 
 ## PARAMETERS
 
