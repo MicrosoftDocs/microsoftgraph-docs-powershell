@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSitePageAsSitePageCreatedByUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

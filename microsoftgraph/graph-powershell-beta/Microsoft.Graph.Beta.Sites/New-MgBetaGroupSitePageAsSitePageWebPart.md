@@ -15,6 +15,9 @@ title: New-MgBetaGroupSitePageAsSitePageWebPart
 
 Create new navigation property to webParts for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePageAsSitePageWebPart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

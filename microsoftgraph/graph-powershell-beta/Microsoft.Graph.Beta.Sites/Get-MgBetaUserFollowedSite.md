@@ -15,6 +15,9 @@ title: Get-MgBetaUserFollowedSite
 
 Get followedSites from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Get-MgUserFollowedSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
