@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleDayNote
 
 Update the navigation property dayNotes in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleDayNote](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleDayNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
