@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudiencebyid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesDeploymentAudienceById
 ---
@@ -14,7 +14,7 @@ title: Update-MgBetaWindowsUpdatesDeploymentAudienceById
 ## SYNOPSIS
 
 Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type.
-Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it does not already exist.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it doesn't already exist.
 If the same updatableAsset gets included in the exclusions and members collections of a deploymentAudience, deployment will not apply to that asset.
 You can also use the method updateAudience to update the deploymentAudience.
 
@@ -70,22 +70,13 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type.
-Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it does not already exist.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it doesn't already exist.
 If the same updatableAsset gets included in the exclusions and members collections of a deploymentAudience, deployment will not apply to that asset.
 You can also use the method updateAudience to update the deploymentAudience.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -107,15 +98,11 @@ removeExclusions = @(
 
 Update-MgBetaWindowsUpdatesDeploymentAudienceById -DeploymentId $deploymentId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaWindowsUpdatesDeploymentAudienceById Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AddExclusions
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -169,7 +156,7 @@ HelpMessage: ''
 
 ### -AddMembers
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -196,7 +183,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -385,7 +372,7 @@ HelpMessage: ''
 
 ### -MemberEntityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -496,7 +483,7 @@ HelpMessage: ''
 
 ### -RemoveExclusions
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -523,7 +510,7 @@ HelpMessage: ''
 
 ### -RemoveMembers
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -626,7 +613,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencebyidPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddExclusions <String[]>]: 
   [AddMembers <String[]>]: 
@@ -634,7 +621,7 @@ BODYPARAMETER `<IPaths1Yczx1TAdminWindowsUpdatesDeploymentsDeploymentIdAudienceM
   [RemoveExclusions <String[]>]: 
   [RemoveMembers <String[]>]: 
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -657,27 +644,5 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaWindowsUpdatesDeploymentAudienceById](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudiencebyid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeploymentaudiencebyid)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid?view=graph-rest-beta)
