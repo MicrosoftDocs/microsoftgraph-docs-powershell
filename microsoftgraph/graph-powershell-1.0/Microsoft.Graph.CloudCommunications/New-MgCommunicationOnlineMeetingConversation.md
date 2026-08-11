@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingconversation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationOnlineMeetingConversation
 ---
@@ -293,7 +293,7 @@ HelpMessage: ''
 
 ### -OnlineMeeting
 
-Represents a Microsoft online meeting.
+onlineMeeting
 To construct, see NOTES section for ONLINEMEETING properties and create a hash table.
 
 ```yaml
@@ -581,7 +581,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [ModerationState <EngagementConversationModerationState?>]: Represents the moderation state of an Engage conversation message.
-  [OnlineMeeting <IMicrosoftGraphOnlineMeeting>]: Represents a Microsoft online meeting.
+  [OnlineMeeting <IMicrosoftGraphOnlineMeeting>]: onlineMeeting
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
     [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -821,7 +821,7 @@ Read-only.
   [ReplyTo <IMicrosoftGraphEngagementConversationMessage>]: A Viva Engage conversation message.
   [ReplyToId <String>]: The ID of the parent message to which this message is a reply, if applicable.
 
-ONLINEMEETING `<IMicrosoftGraphOnlineMeeting>`: Represents a Microsoft online meeting.
+ONLINEMEETING `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
