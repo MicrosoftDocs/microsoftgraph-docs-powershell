@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgcreationuserauthenticationfido2methodoption
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgCreationUserAuthenticationFido2MethodOption
 ---
@@ -60,6 +60,14 @@ All binary data in the response follows Base64URL encoding as defined in RFC 464
 | Delegated (work or school account) | UserAuthMethod-Passkey.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.Read.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | UserAuthMethod-Passkey.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Invoke-MgCreationUserAuthenticationFido2MethodOption -UserId $userId
 
 ## PARAMETERS
 
@@ -377,7 +385,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Invoke-MgCreationUserAuthenticationFido2MethodOption](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgcreationuserauthenticationfido2methodoption)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-1.0)
-
 
 
 

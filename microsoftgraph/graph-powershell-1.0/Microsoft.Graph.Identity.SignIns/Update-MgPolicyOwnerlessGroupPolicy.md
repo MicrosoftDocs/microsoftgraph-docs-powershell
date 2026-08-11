@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyownerlessgrouppolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyOwnerlessGroupPolicy
 ---
@@ -17,6 +17,9 @@ Create or update the ownerlessGroupPolicy for the tenant.
 If the policy doesn't exist, it creates a new one; if the policy exists, it updates the existing policy.
 To disable the policy, set isEnabled to false.
 Setting isEnabled to false clears the values of all other policy parameters.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyOwnerlessGroupPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyOwnerlessGroupPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +55,18 @@ Create or update the ownerlessGroupPolicy for the tenant.
 If the policy doesn't exist, it creates a new one; if the policy exists, it updates the existing policy.
 To disable the policy, set isEnabled to false.
 Setting isEnabled to false clears the values of all other policy parameters.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	isEnabled = $false
+}
+
+Update-MgPolicyOwnerlessGroupPolicy -BodyParameter $params
 
 ## PARAMETERS
 
@@ -567,7 +582,6 @@ When notifyMembers is blockSelected, members in these security groups are exclud
 
 - [Update-MgPolicyOwnerlessGroupPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyownerlessgrouppolicy)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-upsert?view=graph-rest-1.0)
-
 
 
 
