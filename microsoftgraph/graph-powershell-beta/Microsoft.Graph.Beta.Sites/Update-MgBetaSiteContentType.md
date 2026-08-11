@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteContentType
 ---
@@ -1145,11 +1145,13 @@ It must be either dateOnly or dateTime.
     [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-    [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+    [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
     [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
     [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
     [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+    [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
     [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -1376,11 +1378,13 @@ It must be either dateOnly or dateTime.
     [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-    [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+    [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
     [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
     [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
     [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+    [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
     [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -1608,11 +1612,13 @@ It must be either dateOnly or dateTime.
     [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-    [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+    [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
     [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
     [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
     [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+    [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
     [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -1832,11 +1838,13 @@ It must be either dateOnly or dateTime.
   [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-  [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+  [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
   [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
   [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
   [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+  [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
   [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -1994,11 +2002,13 @@ It must be either dateOnly or dateTime.
   [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-  [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+  [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
   [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
   [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
   [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+  [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
   [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -2166,11 +2176,13 @@ It must be either dateOnly or dateTime.
     [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-    [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+    [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
     [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
     [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
     [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+    [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
     [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
