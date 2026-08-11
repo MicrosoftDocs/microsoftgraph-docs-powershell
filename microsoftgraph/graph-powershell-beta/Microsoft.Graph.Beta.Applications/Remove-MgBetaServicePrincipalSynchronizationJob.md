@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipalSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: Remove-MgBetaServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 
-Stop the synchronization job, and permanently delete all the state associated with it.
+Stop the synchronizationJob, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
 > [!NOTE]
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Stop the synchronization job, and permanently delete all the state associated with it.
+Stop the synchronizationJob, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
 **Permissions**

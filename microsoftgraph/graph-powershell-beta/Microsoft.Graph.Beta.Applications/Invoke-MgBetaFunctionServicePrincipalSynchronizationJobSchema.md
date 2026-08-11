@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
 
-List all the functions currently supported in the attributeMappingSource.
+List all the functions currently supported in the attributeMappingSource for a synchronizationSchema.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List all the functions currently supported in the attributeMappingSource.
+List all the functions currently supported in the attributeMappingSource for a synchronizationSchema.
 
 **Permissions**
 

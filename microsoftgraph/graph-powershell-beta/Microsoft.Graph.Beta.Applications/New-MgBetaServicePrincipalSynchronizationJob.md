@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: New-MgBetaServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 
-Create new synchronization job with a default synchronization schema.
+Create a new synchronizationJob with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
 
@@ -75,7 +75,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new synchronization job with a default synchronization schema.
+Create a new synchronizationJob with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
 

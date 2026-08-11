@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalSynchronizationJobSchema
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
 
-Retrieve the schema for a given synchronization job or template.
+Retrieve the synchronizationSchema for a given synchronization job or template.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve the schema for a given synchronization job or template.
+Retrieve the synchronizationSchema for a given synchronization job or template.
 
 **Permissions**
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationtemplateschemadirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory
 ---
@@ -13,7 +13,7 @@ title: Find-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory
 
 ## SYNOPSIS
 
-Discover the latest schema definition for provisioning to an application.
+Discover the latest schema for a directoryDefinition to provision to an application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Discover the latest schema definition for provisioning to an application.
+Discover the latest schema for a directoryDefinition to provision to an application.
 
 ## PARAMETERS
 
