@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectoryOnPremiseSynchronization
 ---
@@ -554,7 +554,7 @@ The threshold is either an absolute number of objects or a percentage number of 
       [SynchronizationPreventionType <String>]: onPremisesDirectorySynchronizationDeletionPreventionType
   [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
+    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: When true, allows on-premises directory sync clients to update the onPremisesObjectIdentifier property.
     [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
     [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -588,7 +588,7 @@ The threshold is either an absolute number of objects or a percentage number of 
 
 FEATURES `<IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>`: onPremisesDirectorySynchronizationFeature
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
+  [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: When true, allows on-premises directory sync clients to update the onPremisesObjectIdentifier property.
   [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
   [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -640,8 +640,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
+  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
+  [RecoveryJobId <String>]: The unique identifier of recoveryJob
+  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
+  [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
   [TenantId <String>]: Usage: tenantId='{tenantId}'
