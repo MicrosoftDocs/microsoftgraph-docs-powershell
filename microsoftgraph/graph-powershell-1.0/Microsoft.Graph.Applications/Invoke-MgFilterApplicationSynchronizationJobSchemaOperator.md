@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterapplicationsynchronizationjobschemaoperator
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgFilterApplicationSynchronizationJobSchemaOperator
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgFilterApplicationSynchronizationJobSchemaOperator
 
 ## SYNOPSIS
 
-List all operators supported in the scoping filters.
+List all operators supported in the scoping filters for a synchronizationSchema.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List all operators supported in the scoping filters.
+List all operators supported in the scoping filters for a synchronizationSchema.
 
 ## PARAMETERS
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/start-mgserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgServicePrincipalSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: Start-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 
-Start an existing synchronization job.
+Start an existing synchronizationJob.
 If the job is in a paused state, it continues processing changes from the point where it was paused.
 If the job is in quarantine, the quarantine status is cleared.
 Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Start an existing synchronization job.
+Start an existing synchronizationJob.
 If the job is in a paused state, it continues processing changes from the point where it was paused.
 If the job is in quarantine, the quarantine status is cleared.
 Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgServicePrincipalSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: Remove-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 
-Stop the synchronization job, and permanently delete all the state associated with it.
+Stop the synchronizationJob, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
 > [!NOTE]
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Stop the synchronization job, and permanently delete all the state associated with it.
+Stop the synchronizationJob, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
 **Permissions**

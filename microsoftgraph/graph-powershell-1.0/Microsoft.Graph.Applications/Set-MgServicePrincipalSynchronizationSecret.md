@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationsecret
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgServicePrincipalSynchronizationSecret
 ---
@@ -13,7 +13,7 @@ title: Set-MgServicePrincipalSynchronizationSecret
 
 ## SYNOPSIS
 
-Provide credentials for establishing connectivity with the target system.
+Provide credentials for establishing connectivity with the target system and store them in the synchronization resource.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
@@ -69,7 +69,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Provide credentials for establishing connectivity with the target system.
+Provide credentials for establishing connectivity with the target system and store them in the synchronization resource.
 
 **Permissions**
 

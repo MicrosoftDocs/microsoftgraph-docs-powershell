@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationaccesstoken
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationSynchronizationAccessToken
 ---
@@ -13,7 +13,7 @@ title: Get-MgApplicationSynchronizationAccessToken
 
 ## SYNOPSIS
 
-Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
+Acquire an OAuth access token from the synchronization resource to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationAccessToken?view=graph-powershell-beta)
@@ -69,7 +69,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
+Acquire an OAuth access token from the synchronization resource to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 **Permissions**
 

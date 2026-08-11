@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgApplicationSynchronizationTemplate
 ---
@@ -13,7 +13,7 @@ title: Update-MgApplicationSynchronizationTemplate
 
 ## SYNOPSIS
 
-Update (override) the synchronization template associated with a given application.
+Update (override) the synchronizationTemplate associated with a given application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
@@ -72,7 +72,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update (override) the synchronization template associated with a given application.
+Update (override) the synchronizationTemplate associated with a given application.
 
 **Permissions**
 

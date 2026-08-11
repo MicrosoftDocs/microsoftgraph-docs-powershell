@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/suspend-mgapplicationsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Suspend-MgApplicationSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: Suspend-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
 
-Temporarily stop a running synchronization job.
+Temporarily stop a running synchronizationJob.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 > [!NOTE]
@@ -46,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Temporarily stop a running synchronization job.
+Temporarily stop a running synchronizationJob.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 ## PARAMETERS

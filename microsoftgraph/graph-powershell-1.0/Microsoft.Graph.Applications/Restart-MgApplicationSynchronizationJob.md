@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Restart-MgApplicationSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: Restart-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
 
-Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Restart a stopped synchronizationJob, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
 > [!NOTE]
@@ -68,7 +68,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Restart a stopped synchronizationJob, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
 ## PARAMETERS

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgApplicationSynchronizationJobOnDemand
 ---
@@ -13,7 +13,7 @@ title: New-MgApplicationSynchronizationJobOnDemand
 
 ## SYNOPSIS
 
-Select a user and provision the account on-demand.
+Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
 
 > [!NOTE]
@@ -70,7 +70,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Select a user and provision the account on-demand.
+Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
 
 ## PARAMETERS

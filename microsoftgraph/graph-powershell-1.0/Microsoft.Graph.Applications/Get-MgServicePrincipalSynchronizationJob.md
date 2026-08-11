@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: Get-MgServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 
-Retrieve the existing synchronization job and its properties.
+Retrieve an existing synchronizationJob and its properties.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
@@ -58,7 +58,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Retrieve the existing synchronization job and its properties.
+Retrieve an existing synchronizationJob and its properties.
 
 **Permissions**
 

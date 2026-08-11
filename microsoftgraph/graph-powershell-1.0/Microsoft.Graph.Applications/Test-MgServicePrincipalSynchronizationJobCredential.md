@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgserviceprincipalsynchronizationjobcredential
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgServicePrincipalSynchronizationJobCredential
 ---
@@ -13,7 +13,7 @@ title: Test-MgServicePrincipalSynchronizationJobCredential
 
 ## SYNOPSIS
 
-Validate that the credentials are valid in the tenant.
+Validate that the credentials are valid in the tenant for a synchronizationJob.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaServicePrincipalSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalSynchronizationJobCredential?view=graph-powershell-beta)
@@ -72,7 +72,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Validate that the credentials are valid in the tenant.
+Validate that the credentials are valid in the tenant for a synchronizationJob.
 
 **Permissions**
 
