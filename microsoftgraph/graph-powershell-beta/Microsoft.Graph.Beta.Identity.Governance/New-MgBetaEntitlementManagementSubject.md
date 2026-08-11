@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementsubject
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementSubject
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaEntitlementManagementSubject
 ## SYNOPSIS
 
 Create new navigation property to subjects for identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementSubject?view=graph-powershell-1.0)
 
 ## SYNTAX
 

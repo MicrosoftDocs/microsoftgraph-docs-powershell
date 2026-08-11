@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsubjectconnectedorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementSubjectConnectedOrganization
 ---
@@ -16,6 +16,9 @@ title: Get-MgBetaEntitlementManagementSubjectConnectedOrganization
 The connected organization of the subject.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSubjectConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSubjectConnectedOrganization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
