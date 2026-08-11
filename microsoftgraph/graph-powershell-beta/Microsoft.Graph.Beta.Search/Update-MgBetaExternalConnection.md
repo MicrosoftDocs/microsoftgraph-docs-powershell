@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaExternalConnection
 ---
@@ -1033,6 +1033,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Type <String>]: externalItemContentType
       [Value <String>]: The content for the externalItem.
 Required.
+    [InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]: externalItemInformationProtectionLabel
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SensitivityLabelId <String>]: 
     [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
       [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: The display name of the connection to be displayed in the Microsoft 365 admin center.
@@ -1208,6 +1211,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Type <String>]: externalItemContentType
     [Value <String>]: The content for the externalItem.
 Required.
+  [InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]: externalItemInformationProtectionLabel
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SensitivityLabelId <String>]: 
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
