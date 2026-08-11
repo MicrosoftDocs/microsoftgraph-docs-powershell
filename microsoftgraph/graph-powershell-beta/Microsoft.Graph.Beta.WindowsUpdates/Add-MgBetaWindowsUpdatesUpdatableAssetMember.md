@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatesupdatableassetmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaWindowsUpdatesUpdatableAssetMember
 ---
@@ -15,7 +15,7 @@ title: Add-MgBetaWindowsUpdatesUpdatableAssetMember
 
 Add members to an updatableAssetGroup.
 You can add azureADDevice resources as members, but may not add updatableAssetGroup resources as members.
-Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an azureADDevice object, if it does not already exist.
+Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an azureADDevice object, if it doesn't already exist.
 You can also use the method addMembersById to add members.
 
 ## SYNTAX
@@ -69,7 +69,7 @@ This cmdlet has the following aliases,
 
 Add members to an updatableAssetGroup.
 You can add azureADDevice resources as members, but may not add updatableAssetGroup resources as members.
-Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an azureADDevice object, if it does not already exist.
+Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an azureADDevice object, if it doesn't already exist.
 You can also use the method addMembersById to add members.
 
 **Permissions**

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
 ---
@@ -15,7 +15,7 @@ title: Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
 
 Enroll updatableAsset resources in update management by Windows Autopatch.
 You can enroll an azureADDevice resource in update management, but may not enroll an updatableAssetGroup in update management.
-Enrolling a Microsoft Entra device in update management automatically creates an azureADDevice object if it does not already exist.
+Enrolling a Microsoft Entra device in update management automatically creates an azureADDevice object if it doesn't already exist.
 You can also use the method enrollAssetsById to enroll assets.
 
 ## SYNTAX
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 Enroll updatableAsset resources in update management by Windows Autopatch.
 You can enroll an azureADDevice resource in update management, but may not enroll an updatableAssetGroup in update management.
-Enrolling a Microsoft Entra device in update management automatically creates an azureADDevice object if it does not already exist.
+Enrolling a Microsoft Entra device in update management automatically creates an azureADDevice object if it doesn't already exist.
 You can also use the method enrollAssetsById to enroll assets.
 
 **Permissions**
