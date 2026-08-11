@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSettingExchange
 ---
@@ -50,6 +50,14 @@ This cmdlet has the following aliases,
 Get a list of Exchange mailboxes that belong to a user.
 Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
 To learn how to get a list of users in a tenant, see List users.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Users
+
+Get-MgUserSettingExchange -UserId $userId
 
 ## PARAMETERS
 
@@ -371,7 +379,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [Get-MgUserSettingExchange](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-1.0)
-
 
 
 

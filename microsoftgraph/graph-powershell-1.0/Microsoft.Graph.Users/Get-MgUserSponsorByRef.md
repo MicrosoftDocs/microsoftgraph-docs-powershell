@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSponsorByRef
 ---
@@ -15,6 +15,9 @@ title: Get-MgUserSponsorByRef
 
 Get an agentUser's sponsors.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsorByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
