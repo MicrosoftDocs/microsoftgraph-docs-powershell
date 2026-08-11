@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
 ---
@@ -13,8 +13,8 @@ title: Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSumma
 
 ## SYNOPSIS
 
-Provide a summary of all workflows processed within a tenant for a specified period.
-Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+Provide a summary from the insights resource of workflow objects processed within a tenant for a specified period.
+Because the list returned by List workflows doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary?view=graph-powershell-beta)
@@ -47,8 +47,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Provide a summary of all workflows processed within a tenant for a specified period.
-Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+Provide a summary from the insights resource of workflow objects processed within a tenant for a specified period.
+Because the list returned by List workflows doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -345,6 +345,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -359,7 +360,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStageId <String>]: The unique identifier of approvalStage
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
+  [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension

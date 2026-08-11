@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowtaskprocessingresult
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 ---
@@ -13,9 +13,9 @@ title: Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 
 ## SYNOPSIS
 
-Resume a task processing result that's inProgress.
-In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information, see: Lifecycle Workflows extensibility approach.
+Resume a taskProcessingResult that's inProgress.
+In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
+For more information, see Lifecycle Workflows extensibility approach.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-beta)
@@ -75,9 +75,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Resume a task processing result that's inProgress.
-In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information, see: Lifecycle Workflows extensibility approach.
+Resume a taskProcessingResult that's inProgress.
+In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
+For more information, see Lifecycle Workflows extensibility approach.
 
 **Permissions**
 
@@ -653,6 +653,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -667,7 +668,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStageId <String>]: The unique identifier of approvalStage
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
+  [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension

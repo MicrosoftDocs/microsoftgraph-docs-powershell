@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganizationinternalsponsorbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
 ---
@@ -13,8 +13,8 @@ title: New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
 
 ## SYNOPSIS
 
-Add a user or a group to the connected organization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Add a user or a group to the internalSponsors relationship of a connectedOrganization.
+Internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
@@ -68,8 +68,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Add a user or a group to the connected organization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Add a user or a group to the internalSponsors relationship of a connectedOrganization.
+Internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 **Permissions**
 
@@ -526,6 +526,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -540,7 +541,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStageId <String>]: The unique identifier of approvalStage
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
+  [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension

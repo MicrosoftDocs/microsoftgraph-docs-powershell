@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceLifecycleWorkflowSetting
 ---
@@ -25,6 +25,7 @@ Update the properties of a lifecycleManagementSettings object.
 ```
 Update-MgIdentityGovernanceLifecycleWorkflowSetting [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-EmailSettings <IMicrosoftGraphEmailSettings>] [-Id <string>]
+ [-QuarantineConfiguration <IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>]
  [-WorkflowScheduleIntervalInHours <int>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -337,6 +338,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -QuarantineConfiguration
+
+quarantineConfiguration
+To construct, see NOTES section for QUARANTINECONFIGURATION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceQuarantineConfiguration
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -448,6 +471,11 @@ For details, see Learn more about Exchange Online Email Routing.
 The banner logo will replace the Microsoft logo at the top of the email notification.
 If true the banner logo will be taken from the tenant’s branding settings.
 This value can only be set to true if the organizationalBranding bannerLogo property is set.
+  [QuarantineConfiguration <IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>]: quarantineConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Conditions <IMicrosoftGraphIdentityGovernanceQuarantineCondition[]>]: The set of threshold conditions evaluated for the workflow.
+Each condition is either a countBasedQuarantineCondition or a percentageBasedQuarantineCondition.
+    [MatchMode <String>]: matchMode
   [WorkflowScheduleIntervalInHours <Int32?>]: The interval in hours at which all workflows running in the tenant should be scheduled for execution.
 This interval has a minimum value of 1 and a maximum value of 24.
 The default value is 3 hours.
@@ -462,6 +490,12 @@ For details, see Learn more about Exchange Online Email Routing.
 The banner logo will replace the Microsoft logo at the top of the email notification.
 If true the banner logo will be taken from the tenant’s branding settings.
 This value can only be set to true if the organizationalBranding bannerLogo property is set.
+
+QUARANTINECONFIGURATION `<IMicrosoftGraphIdentityGovernanceQuarantineConfiguration>`: quarantineConfiguration
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Conditions <IMicrosoftGraphIdentityGovernanceQuarantineCondition[]>]: The set of threshold conditions evaluated for the workflow.
+Each condition is either a countBasedQuarantineCondition or a percentageBasedQuarantineCondition.
+  [MatchMode <String>]: matchMode
 
 
 ## RELATED LINKS

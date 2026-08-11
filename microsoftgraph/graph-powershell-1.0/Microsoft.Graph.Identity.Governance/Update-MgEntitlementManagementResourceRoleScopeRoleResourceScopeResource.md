@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescoperoleresourcescoperesource
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResource
 ---
@@ -909,8 +909,9 @@ Read-only.
     [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
     [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources, or AadGroup.
     [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+    [Type <String>]: roleType
   [Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]: Read-only.
 Nullable.
 Supports $expand.
@@ -919,8 +920,11 @@ Read-only.
     [Description <String>]: The description of the scope.
     [DisplayName <String>]: The display name of the scope.
     [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-    [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-    [OriginSystem <String>]: The origin system for the scope.
+    [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
     [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
 
 ENVIRONMENT `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
@@ -977,8 +981,9 @@ Read-only.
       [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
       [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources, or AadGroup.
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+      [Type <String>]: roleType
     [Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]: Read-only.
 Nullable.
 Supports $expand.
@@ -987,8 +992,11 @@ Read-only.
       [Description <String>]: The description of the scope.
       [DisplayName <String>]: The display name of the scope.
       [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-      [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-      [OriginSystem <String>]: The origin system for the scope.
+      [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
 
 INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
@@ -1008,6 +1016,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -1022,7 +1031,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStageId <String>]: The unique identifier of approvalStage
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
+  [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
@@ -1072,7 +1083,7 @@ Read-only.
   [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
   [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources, or AadGroup.
   [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
@@ -1130,9 +1141,13 @@ Read-only.
       [Description <String>]: The description of the scope.
       [DisplayName <String>]: The display name of the scope.
       [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-      [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-      [OriginSystem <String>]: The origin system for the scope.
+      [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+  [Type <String>]: roleType
 
 SCOPES <IMicrosoftGraphAccessPackageResourceScope[]>: Read-only.
 Nullable.
@@ -1142,8 +1157,11 @@ Read-only.
   [Description <String>]: The description of the scope.
   [DisplayName <String>]: The display name of the scope.
   [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-  [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-  [OriginSystem <String>]: The origin system for the scope.
+  [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
   [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
@@ -1199,8 +1217,9 @@ Read-only.
       [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
       [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources, or AadGroup.
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+      [Type <String>]: roleType
     [Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]: Read-only.
 Nullable.
 Supports $expand.
