@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident
 ---
@@ -15,7 +15,7 @@ title: Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident
 
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
-The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document doesn't exist for the issue.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident?view=graph-powershell-1.0)
@@ -51,7 +51,7 @@ This cmdlet has the following aliases,
 
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
-The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document doesn't exist for the issue.
 
 ## PARAMETERS
 
