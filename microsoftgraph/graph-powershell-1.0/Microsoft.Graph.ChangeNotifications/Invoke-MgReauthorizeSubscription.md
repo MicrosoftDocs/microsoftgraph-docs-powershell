@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 Locale: en-US
 Module Name: Microsoft.Graph.ChangeNotifications
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReauthorizeSubscription
 ---
