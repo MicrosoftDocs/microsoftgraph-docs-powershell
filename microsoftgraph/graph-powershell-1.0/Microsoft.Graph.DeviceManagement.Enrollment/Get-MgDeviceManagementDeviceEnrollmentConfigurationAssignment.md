@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfigurationassignment
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 ---
