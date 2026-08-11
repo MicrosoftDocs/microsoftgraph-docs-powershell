@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServiceAnnouncementIssue
 ---
@@ -15,7 +15,7 @@ title: Get-MgServiceAnnouncementIssue
 
 Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
-The operation returns an error if the issue does not exist for the tenant.
+The operation returns an error if the issue doesn't exist for the tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
-The operation returns an error if the issue does not exist for the tenant.
+The operation returns an error if the issue doesn't exist for the tenant.
 
 **Permissions**
 

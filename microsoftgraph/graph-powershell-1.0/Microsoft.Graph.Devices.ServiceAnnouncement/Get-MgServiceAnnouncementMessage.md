@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServiceAnnouncementMessage
 ---
@@ -15,7 +15,7 @@ title: Get-MgServiceAnnouncementMessage
 
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
-The operation returns an error if the message does not exist for the tenant.
+The operation returns an error if the message doesn't exist for the tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
-The operation returns an error if the message does not exist for the tenant.
+The operation returns an error if the message doesn't exist for the tenant.
 
 **Permissions**
 
