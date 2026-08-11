@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSetting
 ---
@@ -822,7 +822,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
   [ShiftPreferences <IMicrosoftGraphShiftPreferences>]: shiftPreferences
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1039,7 +1039,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
 
 SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.

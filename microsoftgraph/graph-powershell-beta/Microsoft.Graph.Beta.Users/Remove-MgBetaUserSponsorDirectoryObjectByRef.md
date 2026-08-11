@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsordirectoryobjectbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserSponsorDirectoryObjectByRef
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaUserSponsorDirectoryObjectByRef
 ## SYNOPSIS
 
 Remove an agentUser's sponsor.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSponsorDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 

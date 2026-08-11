@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersponsorbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserSponsorByRef
 ---
@@ -15,6 +15,9 @@ title: New-MgBetaUserSponsorByRef
 
 Assign an agentUser a sponsor.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserSponsorByRef](/powershell/module/Microsoft.Graph.Users/New-MgUserSponsorByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
