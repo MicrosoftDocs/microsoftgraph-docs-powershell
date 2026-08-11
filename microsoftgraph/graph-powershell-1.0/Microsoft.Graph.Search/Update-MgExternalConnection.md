@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgExternalConnection
 ---
@@ -964,7 +964,7 @@ Maximum of 2 search result templates per connection.
       [Id <String>]: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-      [Layout <IMicrosoftGraphJson>]: Json
+      [Layout <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
         [(Any) <Object>]: This indicates any property can be added to this object.
       [Priority <Int32?>]: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
@@ -1111,7 +1111,7 @@ Maximum of 2 search result templates per connection.
     [Id <String>]: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-    [Layout <IMicrosoftGraphJson>]: Json
+    [Layout <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [Priority <Int32?>]: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
