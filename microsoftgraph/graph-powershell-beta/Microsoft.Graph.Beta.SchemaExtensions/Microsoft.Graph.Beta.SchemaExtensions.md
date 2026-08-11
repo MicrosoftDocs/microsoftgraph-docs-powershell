@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
-Module Guid: 02e6d535-24c9-4597-bc8a-624da6b2d4f4
+Module Guid: 0cc385c6-2978-4e2f-b5e6-8d45a34dd709
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.schemaextensions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
