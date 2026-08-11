@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaTeamChannelMigration
 ---
@@ -20,6 +20,9 @@ Users are also allowed to define a minimum timestamp for content to be migrated,
 The provided timestamp must be older than the current createdDateTime for a channel.
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamChannelMigration?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetauserchatmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaUserChatMigration
 ---
@@ -20,6 +20,9 @@ You can define a minimum timestamp for content migration that enables the import
 The specified timestamp must be earlier than the current createdDateTime of the chat.
 Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgUserChatMigration](/powershell/module/Microsoft.Graph.Teams/Start-MgUserChatMigration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
