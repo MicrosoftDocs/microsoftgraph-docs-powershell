@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRole
 ---
@@ -436,7 +436,7 @@ HelpMessage: ''
 
 The id of the directoryRoleTemplate that this role is based on.
 The property must be specified when activating a directory role in a tenant with a POST operation.
-After the directory role has been activated, the property is read only.
+After the directory role has been activated, the property is read-only.
 Supports $filter (eq), $select.
 
 ```yaml
@@ -555,7 +555,7 @@ Read-only.
 Always null when the object hasn't been deleted.
   [RoleTemplateId <String>]: The id of the directoryRoleTemplate that this role is based on.
 The property must be specified when activating a directory role in a tenant with a POST operation.
-After the directory role has been activated, the property is read only.
+After the directory role has been activated, the property is read-only.
 Supports $filter (eq), $select.
   [ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>]: Members of this directory role that are scoped to administrative units.
 Read-only.

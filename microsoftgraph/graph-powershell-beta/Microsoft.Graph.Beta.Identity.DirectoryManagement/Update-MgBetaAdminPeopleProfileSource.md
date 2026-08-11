@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilesource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeopleProfileSource
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaAdminPeopleProfileSource
 ## SYNOPSIS
 
 Update the properties of a profileSource object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminPeopleProfileSource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeopleProfileSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 

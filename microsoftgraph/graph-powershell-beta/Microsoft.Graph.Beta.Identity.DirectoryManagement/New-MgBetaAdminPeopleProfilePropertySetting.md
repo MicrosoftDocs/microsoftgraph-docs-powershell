@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaAdminPeopleProfilePropertySetting
 ## SYNOPSIS
 
 Create a new profilePropertySetting object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfilePropertySetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -165,7 +168,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-Name of the property-level setting.
+Name of the property associated with this setting.
 
 ```yaml
 Type: System.String
@@ -294,6 +297,7 @@ HelpMessage: ''
 ### -PrioritizedSourceUrls
 
 A collection of prioritized profile source URLs ordered by data precedence within an organization.
+For details, see Manage profile source precedence in Microsoft 365.
 
 ```yaml
 Type: System.String[]
@@ -453,10 +457,11 @@ BODYPARAMETER `<IMicrosoftGraphProfilePropertySetting>`: profilePropertySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DisplayName <String>]: Name of the property-level setting.
+  [DisplayName <String>]: Name of the property associated with this setting.
   [Name <String>]: Other name of the property-level setting.
 For backward compatibility.
   [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
+For details, see Manage profile source precedence in Microsoft 365.
 
 
 ## RELATED LINKS

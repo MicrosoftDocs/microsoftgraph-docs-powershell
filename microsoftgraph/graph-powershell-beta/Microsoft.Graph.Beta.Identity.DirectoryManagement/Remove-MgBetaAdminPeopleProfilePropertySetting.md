@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilepropertysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaAdminPeopleProfilePropertySetting
 ---
@@ -14,6 +14,12 @@ title: Remove-MgBetaAdminPeopleProfilePropertySetting
 ## SYNOPSIS
 
 Delete a profilePropertySetting object.
+You shouldn't delete a profilePropertySetting that includes a source precedence configuration.
+Instead, patch it to a default state that contains only the Microsoft Entra ID source reference.
+This delete operation is supported but fails unless the prioritizedSourceUrls property contains only the Entra ID source reference.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdminPeopleProfilePropertySetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,6 +49,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a profilePropertySetting object.
+You shouldn't delete a profilePropertySetting that includes a source precedence configuration.
+Instead, patch it to a default state that contains only the Microsoft Entra ID source reference.
+This delete operation is supported but fails unless the prioritizedSourceUrls property contains only the Entra ID source reference.
 
 **Permissions**
 

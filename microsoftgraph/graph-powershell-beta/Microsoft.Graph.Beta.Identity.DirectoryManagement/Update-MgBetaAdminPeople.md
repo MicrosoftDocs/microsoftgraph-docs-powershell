@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeople
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeople
 ---
@@ -557,10 +557,11 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
   [ProfilePropertySettings <IMicrosoftGraphProfilePropertySetting[]>]: A collection of profile property configuration settings defined by an administrator for an organization.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [DisplayName <String>]: Name of the property-level setting.
+    [DisplayName <String>]: Name of the property associated with this setting.
     [Name <String>]: Other name of the property-level setting.
 For backward compatibility.
     [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
+For details, see Manage profile source precedence in Microsoft 365.
   [ProfileSources <IMicrosoftGraphProfileSource[]>]: A collection of profile source settings configured by an administrator in an organization.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -622,10 +623,11 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 PROFILEPROPERTYSETTINGS <IMicrosoftGraphProfilePropertySetting[]>: A collection of profile property configuration settings defined by an administrator for an organization.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [DisplayName <String>]: Name of the property-level setting.
+  [DisplayName <String>]: Name of the property associated with this setting.
   [Name <String>]: Other name of the property-level setting.
 For backward compatibility.
   [PrioritizedSourceUrls <String[]>]: A collection of prioritized profile source URLs ordered by data precedence within an organization.
+For details, see Manage profile source precedence in Microsoft 365.
 
 PROFILESOURCES <IMicrosoftGraphProfileSource[]>: A collection of profile source settings configured by an administrator in an organization.
   [Id <String>]: The unique identifier for an entity.

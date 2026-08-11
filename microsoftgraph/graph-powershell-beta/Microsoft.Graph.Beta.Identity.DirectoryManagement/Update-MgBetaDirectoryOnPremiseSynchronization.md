@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryonpremisesynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryOnPremiseSynchronization
 ---
@@ -575,7 +575,7 @@ The threshold is either an absolute number of objects or a percentage number of 
       [UserContainer <String>]: The distinguished name of the on-premises container that the customer is using to store users which are created in the cloud.
   [Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>]: onPremisesDirectorySynchronizationFeature
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
+    [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: When true, allows clients to update the onPremisesObjectIdentifier property for on-premises Active Directory synced objects.
     [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
     [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
@@ -628,7 +628,7 @@ The threshold is either an absolute number of objects or a percentage number of 
 
 FEATURES `<IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>`: onPremisesDirectorySynchronizationFeature
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: 
+  [AllowOnPremUpdateOfOnPremisesObjectIdentifierEnabled <Boolean?>]: When true, allows clients to update the onPremisesObjectIdentifier property for on-premises Active Directory synced objects.
   [BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]: Used to block cloud object takeover via source anchor hard match if enabled.
   [BlockSoftMatchEnabled <Boolean?>]: Use to block soft match for all objects if enabled for the  tenant.
 Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy.
