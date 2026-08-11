@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentaccesskey
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySensorDeploymentAccessKey
 ---
@@ -45,6 +45,14 @@ Get the deployment access key for Microsoft Defender for Identity that is requir
 | Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIdentitySensorDeploymentAccessKey
 
 ## PARAMETERS
 
@@ -241,7 +249,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgSecurityIdentitySensorDeploymentAccessKey](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentaccesskey)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-1.0)
 
 
 
