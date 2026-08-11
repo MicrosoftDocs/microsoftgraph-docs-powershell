@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgplaceasroomlistworkspace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPlaceAsRoomListWorkspace
 ---
@@ -685,8 +685,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-An alternative immutable unique identifier of the workspace.
-Read-only.
+A stable service-level identifier for the place object used by Places workloads.
 
 ```yaml
 Type: System.String
@@ -912,6 +911,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -922,8 +922,6 @@ This email address is used for booking.
   [Mode <IMicrosoftGraphPlaceMode>]: placeMode
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Nickname <String>]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
-  [PlaceId <String>]: An alternative immutable unique identifier of the workspace.
-Read-only.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.

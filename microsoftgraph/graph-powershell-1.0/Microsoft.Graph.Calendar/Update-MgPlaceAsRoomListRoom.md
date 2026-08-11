@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlaceAsRoomListRoom
 ---
@@ -795,8 +795,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-An alternative immutable unique identifier of the room.
-Read-only.
+A stable service-level identifier for the place object used by Places workloads.
 
 ```yaml
 Type: System.String
@@ -1103,6 +1102,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1115,8 +1115,6 @@ Read-only.
   [FloorLabel <String>]: Specifies a descriptive label for the floor, for example, P.
   [FloorNumber <Int32?>]: Specifies the floor number that the room is on.
   [Nickname <String>]: Specifies a nickname for the room, for example, 'conf room'.
-  [PlaceId <String>]: An alternative immutable unique identifier of the room.
-Read-only.
   [TeamsEnabledState <String>]: placeFeatureEnablement
   [VideoDeviceName <String>]: Specifies the name of the video device in the room.
 

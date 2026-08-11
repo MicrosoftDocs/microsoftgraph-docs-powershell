@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 07/31/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlace
 ---
@@ -28,8 +28,21 @@ Update-MgPlace -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayName <string>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-PlaceId1 <string>] [-Tags <string[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentityExpanded
+
+```
+Update-MgPlace -InputObject <ICalendarIdentity> [-PlaceId <string>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
+ [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
+ [-IsWheelChairAccessible] [-Label <string>] [-ParentId <string>] [-Phone <string>]
+ [-Tags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -41,19 +54,6 @@ Update-MgPlace -PlaceId <string> -BodyParameter <IMicrosoftGraphPlace>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### UpdateViaIdentityExpanded
-
-```
-Update-MgPlace -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayName <string>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -642,6 +642,12 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
 - Name: UpdateExpanded
   Position: Named
   IsRequired: true
@@ -651,6 +657,27 @@ ParameterSets:
 - Name: Update
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PlaceId1
+
+A stable service-level identifier for the place object used by Places workloads.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -868,6 +895,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
