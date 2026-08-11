@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsender
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupAcceptedSender
 ---
@@ -13,7 +13,7 @@ title: Get-MgGroupAcceptedSender
 
 ## SYNOPSIS
 
-Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\rMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\rMake sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupAcceptedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSender?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\rMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\rMake sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 **Permissions**
 
