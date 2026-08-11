@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlaceAsRoomListRoom
 ---
@@ -854,8 +854,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-An alternative immutable unique identifier of the room.
-Read-only.
+
 
 ```yaml
 Type: System.String
@@ -1167,8 +1166,7 @@ This email address is used for booking.
 For example, 1 for first floor, 2 for second floor, and so on.
   [IsTeamsEnabled <Boolean?>]: Indicates whether the room is configured with the Microsoft Teams Rooms system.
   [Nickname <String>]: A short, friendly name for the room, often used for easier identification or display in UI.
-  [PlaceId <String>]: An alternative immutable unique identifier of the room.
-Read-only.
+  [PlaceId <String>]: 
   [TeamsEnabledState <String>]: placeFeatureEnablement
   [VideoDeviceName <String>]: The name of the video device that is available in the room.
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsRoomListWorkspace
 ---
@@ -800,8 +800,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-An alternative immutable unique identifier of the workspace.
-Read-only.
+
 
 ```yaml
 Type: System.String
@@ -1085,8 +1084,7 @@ For example, 1 for first floor, 2 for second floor, and so on.
   [Mode <IMicrosoftGraphPlaceMode>]: placeMode
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Nickname <String>]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
-  [PlaceId <String>]: An alternative immutable unique identifier of the workspace.
-Read-only.
+  [PlaceId <String>]: 
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
