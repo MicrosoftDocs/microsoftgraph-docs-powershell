@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserPlanner
 ---
@@ -1109,6 +1109,15 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
       [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
         [(Any) <Object>]: This indicates any property can be added to this object.
+    [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+      [EntityId <String>]: 
+      [EntityType <String>]: historyEntityType
+      [EventType <String>]: historyEventType
+      [OccurredDateTime <DateTime?>]: 
+      [PlanId <String>]: 
     [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -1453,6 +1462,15 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
       [(Any) <Object>]: This indicates any property can be added to this object.
+  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+    [EntityId <String>]: 
+    [EntityType <String>]: historyEntityType
+    [EventType <String>]: historyEventType
+    [OccurredDateTime <DateTime?>]: 
+    [PlanId <String>]: 
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -1477,6 +1495,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
   [PlannerRosterId <String>]: The unique identifier of plannerRoster
   [PlannerRosterMemberId <String>]: The unique identifier of plannerRosterMember
@@ -2018,6 +2037,15 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
       [(Any) <Object>]: This indicates any property can be added to this object.
+  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+    [EntityId <String>]: 
+    [EntityType <String>]: historyEntityType
+    [EventType <String>]: historyEventType
+    [OccurredDateTime <DateTime?>]: 
+    [PlanId <String>]: 
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -2347,6 +2375,15 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
       [(Any) <Object>]: This indicates any property can be added to this object.
+  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+    [EntityId <String>]: 
+    [EntityType <String>]: historyEntityType
+    [EventType <String>]: historyEventType
+    [OccurredDateTime <DateTime?>]: 
+    [PlanId <String>]: 
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -2676,6 +2713,15 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
       [(Any) <Object>]: This indicates any property can be added to this object.
+  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+    [EntityId <String>]: 
+    [EntityType <String>]: historyEntityType
+    [EventType <String>]: historyEventType
+    [OccurredDateTime <DateTime?>]: 
+    [PlanId <String>]: 
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.

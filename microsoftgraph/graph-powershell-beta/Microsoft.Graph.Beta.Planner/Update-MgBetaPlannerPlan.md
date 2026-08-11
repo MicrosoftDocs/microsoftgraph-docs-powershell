@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlannerPlan
 ---
@@ -29,8 +29,9 @@ Update-MgBetaPlannerPlan -PlannerPlanId <string> [-ResponseHeadersVariable <stri
  [-ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]
  [-Contexts <hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>]
- [-Details <IMicrosoftGraphPlannerPlanDetails>] [-Id <string>] [-IsArchived] [-Owner <string>]
- [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
+ [-Details <IMicrosoftGraphPlannerPlanDetails>]
+ [-HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>] [-Id <string>] [-IsArchived]
+ [-Owner <string>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
  [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -54,8 +55,9 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-ResponseHeadersVariab
  [-ContentSensitivityLabelAssignment <IMicrosoftGraphContentSensitivityLabelAssignment>]
  [-Contexts <hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>]
- [-Details <IMicrosoftGraphPlannerPlanDetails>] [-Id <string>] [-IsArchived] [-Owner <string>]
- [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
+ [-Details <IMicrosoftGraphPlannerPlanDetails>]
+ [-HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>] [-Id <string>] [-IsArchived]
+ [-Owner <string>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
  [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -473,6 +475,34 @@ ParameterSets:
   Position: Named
   IsRequired: false
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HistoryItems
+
+
+To construct, see NOTES section for HISTORYITEMS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerHistoryItem[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -1217,6 +1247,15 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
       [(Any) <Object>]: This indicates any property can be added to this object.
+  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+    [EntityId <String>]: 
+    [EntityType <String>]: historyEntityType
+    [EventType <String>]: historyEventType
+    [OccurredDateTime <DateTime?>]: 
+    [PlanId <String>]: 
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -1550,10 +1589,31 @@ Read-only.
   [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
     [(Any) <Object>]: This indicates any property can be added to this object.
 
+HISTORYITEMS <IMicrosoftGraphPlannerHistoryItem[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Application <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    [Device <IMicrosoftGraphIdentity>]: identity
+    [User <IMicrosoftGraphIdentity>]: identity
+  [EntityId <String>]: 
+  [EntityType <String>]: historyEntityType
+  [EventType <String>]: historyEventType
+  [OccurredDateTime <DateTime?>]: 
+  [PlanId <String>]: 
+
 INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
   [PlannerRosterId <String>]: The unique identifier of plannerRoster
   [PlannerRosterMemberId <String>]: The unique identifier of plannerRosterMember
