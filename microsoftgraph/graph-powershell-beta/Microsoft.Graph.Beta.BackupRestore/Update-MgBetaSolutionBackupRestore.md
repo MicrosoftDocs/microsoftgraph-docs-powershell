@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestore
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestore
 ---
@@ -1588,6 +1588,7 @@ Read-only.
       [BrowseSessionId <String>]: The unique identifier of the browseSession
       [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
       [DestinationType <String>]: destinationType
+      [Error <IMicrosoftGraphPublicError>]: publicError
       [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
       [RestoredItemKey <String>]: The unique identifier for the restored artifact.
       [RestoredItemPath <String>]: The path of the restored artifact.
@@ -1775,6 +1776,7 @@ Read-only.
       [BrowseSessionId <String>]: The unique identifier of the browseSession
       [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
       [DestinationType <String>]: destinationType
+      [Error <IMicrosoftGraphPublicError>]: publicError
       [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
       [RestoredItemKey <String>]: The unique identifier for the restored artifact.
       [RestoredItemPath <String>]: The path of the restored artifact.
@@ -2802,6 +2804,7 @@ Read-only.
     [BrowseSessionId <String>]: The unique identifier of the browseSession
     [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
     [DestinationType <String>]: destinationType
+    [Error <IMicrosoftGraphPublicError>]: publicError
     [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
     [RestoredItemKey <String>]: The unique identifier for the restored artifact.
     [RestoredItemPath <String>]: The path of the restored artifact.
@@ -3229,6 +3232,7 @@ Read-only.
     [BrowseSessionId <String>]: The unique identifier of the browseSession
     [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
     [DestinationType <String>]: destinationType
+    [Error <IMicrosoftGraphPublicError>]: publicError
     [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
     [RestoredItemKey <String>]: The unique identifier for the restored artifact.
     [RestoredItemPath <String>]: The path of the restored artifact.

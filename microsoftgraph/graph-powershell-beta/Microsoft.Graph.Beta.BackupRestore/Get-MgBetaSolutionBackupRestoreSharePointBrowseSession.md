@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointbrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestoreSharePointBrowseSession
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointBrowseSession
 ## SYNOPSIS
 
 Read the properties and relationships of sharePointBrowseSession object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointBrowseSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 

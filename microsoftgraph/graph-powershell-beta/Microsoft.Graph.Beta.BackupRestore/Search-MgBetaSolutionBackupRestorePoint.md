@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/search-mgbetasolutionbackuprestorepoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Search-MgBetaSolutionBackupRestorePoint
 ---
@@ -456,14 +456,42 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ARTIFACTQUERY `<IMicrosoftGraphArtifactQuery>`: artifactQuery
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArtifactType <String>]: restorableArtifact
-  [QueryExpression <String>]: Specifies criteria to retrieve artifacts.
+  [QueryExpression <String>]: Deprecated.
+Going forward, use the structuredQueryExpression property instead.
+Specifies criteria to retrieve artifacts.
+  [StructuredQueryExpression <IMicrosoftGraphRestoreSearchArtifactQueryExpression>]: restoreSearchArtifactQueryExpression
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [HasAttachment <Boolean?>]: Indicates whether the artifact has an attachment.
+Optional.
+    [Items <String[]>]: The types of items to include in the search.
+Optional.
+    [Recipients <String[]>]: The recipient email addresses to filter by.
+Optional.
+    [Senders <String[]>]: The sender email addresses to filter by.
+Optional.
+    [Subjects <String[]>]: The subject lines to filter by.
+Optional.
 
 BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArtifactQuery <IMicrosoftGraphArtifactQuery>]: artifactQuery
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ArtifactType <String>]: restorableArtifact
-    [QueryExpression <String>]: Specifies criteria to retrieve artifacts.
+    [QueryExpression <String>]: Deprecated.
+Going forward, use the structuredQueryExpression property instead.
+Specifies criteria to retrieve artifacts.
+    [StructuredQueryExpression <IMicrosoftGraphRestoreSearchArtifactQueryExpression>]: restoreSearchArtifactQueryExpression
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [HasAttachment <Boolean?>]: Indicates whether the artifact has an attachment.
+Optional.
+      [Items <String[]>]: The types of items to include in the search.
+Optional.
+      [Recipients <String[]>]: The recipient email addresses to filter by.
+Optional.
+      [Senders <String[]>]: The sender email addresses to filter by.
+Optional.
+      [Subjects <String[]>]: The subject lines to filter by.
+Optional.
   [ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]: timePeriod
     [(Any) <Object>]: This indicates any property can be added to this object.
     [EndDateTime <DateTime?>]: The date time of the end of the time period.

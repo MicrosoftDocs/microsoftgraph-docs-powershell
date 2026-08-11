@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession
 ## SYNOPSIS
 
 Update the navigation property oneDriveForBusinessBrowseSessions in solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreOneDriveForBusinessBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreOneDriveForBusinessBrowseSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 

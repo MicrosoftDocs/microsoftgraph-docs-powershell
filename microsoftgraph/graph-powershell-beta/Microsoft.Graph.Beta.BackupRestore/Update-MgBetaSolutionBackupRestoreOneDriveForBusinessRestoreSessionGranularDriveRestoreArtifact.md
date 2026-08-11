@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresessiongranulardriverestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact
 ---
@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranul
 
 Update the navigation property granularDriveRestoreArtifacts in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -24,9 +27,9 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDrive
  -GranularDriveRestoreArtifactId <string> -OneDriveForBusinessRestoreSessionId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>]
  [-CompletionDateTime <datetime>] [-DestinationType <string>] [-DirectoryObjectId <string>]
- [-Id <string>] [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>]
- [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>] [-StartDateTime <datetime>]
- [-Status <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
+ [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-RestorePointDateTime <datetime>]
+ [-RestoredItemKey <string>] [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>]
+ [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -48,12 +51,12 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDrive
 Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionGranularDriveRestoreArtifact
  -InputObject <IBackupRestoreIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-BrowseSessionId <string>] [-CompletionDateTime <datetime>]
- [-DestinationType <string>] [-DirectoryObjectId <string>] [-Id <string>]
- [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>] [-RestoredItemPath <string>]
- [-RestoredItemWebUrl <string>] [-StartDateTime <datetime>] [-Status <string>] [-WebUrl <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-DestinationType <string>] [-DirectoryObjectId <string>] [-Error <IMicrosoftGraphPublicError>]
+ [-Id <string>] [-RestorePointDateTime <datetime>] [-RestoredItemKey <string>]
+ [-RestoredItemPath <string>] [-RestoredItemWebUrl <string>] [-StartDateTime <datetime>]
+ [-Status <string>] [-WebUrl <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -262,6 +265,34 @@ Id of the drive in which artifact is present.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Error
+
+publicError
+To construct, see NOTES section for ERROR properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublicError
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -792,6 +823,21 @@ BODYPARAMETER `<IMicrosoftGraphGranularDriveRestoreArtifact>`: granularDriveRest
   [BrowseSessionId <String>]: The unique identifier of the browseSession
   [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
   [DestinationType <String>]: destinationType
+  [Error <IMicrosoftGraphPublicError>]: publicError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: Represents the error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+      [Code <String>]: The error code.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: The error code.
+      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [Message <String>]: A non-localized message for the developer.
+    [Target <String>]: The target of the error.
   [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
   [RestoredItemKey <String>]: The unique identifier for the restored artifact.
   [RestoredItemPath <String>]: The path of the restored artifact.
@@ -803,6 +849,22 @@ It's the path of the folder where all the artifacts are restored within a granul
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
+
+ERROR `<IMicrosoftGraphPublicError>`: publicError
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Code <String>]: Represents the error code.
+  [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+    [Code <String>]: The error code.
+    [Message <String>]: The error message.
+    [Target <String>]: The target of the error.
+  [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: The error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+    [Message <String>]: The error message.
+    [Target <String>]: The target of the error.
+  [Message <String>]: A non-localized message for the developer.
+  [Target <String>]: The target of the error.
 
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
