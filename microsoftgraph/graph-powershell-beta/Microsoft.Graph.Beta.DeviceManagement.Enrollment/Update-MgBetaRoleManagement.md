@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagement
 ---
@@ -568,7 +568,7 @@ Read-only.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
         [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
       [Condition <String>]: 
@@ -646,7 +646,7 @@ Read-only when isBuiltIn is true.
 Read-only.
     [CustomAppScopes <IMicrosoftGraphCustomAppScope[]>]: Represents the resources that the principal has been granted access.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
       [Id <String>]: The unique identifier for an entity.
@@ -1055,7 +1055,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [Condition <String>]: 
@@ -1187,7 +1187,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [Condition <String>]: 
@@ -1260,7 +1260,7 @@ Read-only when isBuiltIn is true.
 Read-only.
   [CustomAppScopes <IMicrosoftGraphCustomAppScope[]>]: Represents the resources that the principal has been granted access.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [Id <String>]: The unique identifier for an entity.
@@ -1332,7 +1332,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [Condition <String>]: 
@@ -1485,7 +1485,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
@@ -1908,7 +1908,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
@@ -2332,7 +2332,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
@@ -2679,7 +2679,7 @@ EXCHANGE `<IMicrosoftGraphUnifiedRbacApplication>`: unifiedRbacApplication
 Read-only.
   [CustomAppScopes <IMicrosoftGraphCustomAppScope[]>]: Workload-specific scope object that represents the resources for which the principal has been granted access.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [Id <String>]: The unique identifier for an entity.
@@ -2740,7 +2740,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [AppScopeId <String>]: Identifier of the app specific scope when the assignment scope is app specific.
