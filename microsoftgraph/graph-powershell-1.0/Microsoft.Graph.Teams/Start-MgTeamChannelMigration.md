@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgTeamChannelMigration
 ---
@@ -80,6 +80,20 @@ Users are also allowed to define a minimum timestamp for content to be migrated,
 The provided timestamp must be older than the current createdDateTime for a channel.
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Teams
+
+Start-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Teams
+
+Start-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -562,7 +576,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Start-MgTeamChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgteamchannelmigration)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-1.0)
-
 
 
 

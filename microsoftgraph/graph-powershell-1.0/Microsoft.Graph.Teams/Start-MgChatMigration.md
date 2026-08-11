@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgchatmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgChatMigration
 ---
@@ -80,6 +80,20 @@ You can define a minimum timestamp for content migration that enables the import
 The specified timestamp must be earlier than the current createdDateTime of the chat.
 Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Teams
+
+Start-MgChatMigration -ChatId $chatId
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Teams
+
+Start-MgChatMigration -ChatId $chatId
 
 ## PARAMETERS
 
@@ -535,7 +549,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [Start-MgChatMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgchatmigration)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/chat-startmigration?view=graph-rest-1.0)
-
 
 
 

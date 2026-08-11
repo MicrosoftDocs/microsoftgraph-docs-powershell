@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleschedulinggroup
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgTeamScheduleSchedulingGroup
 ---
@@ -13,7 +13,7 @@ title: Remove-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
 
-Mark a schedulingGroup as inactive by setting its isActive property.\rThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.\rThis method doesn't remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 > [!NOTE]
@@ -46,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Mark a schedulingGroup as inactive by setting its isActive property.\rThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.\rThis method doesn't remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 **Permissions**

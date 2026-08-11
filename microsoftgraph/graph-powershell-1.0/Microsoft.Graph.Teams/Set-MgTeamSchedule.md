@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgTeamSchedule
 ---
@@ -1036,7 +1036,8 @@ HelpMessage: ''
 
 ### -TimeZone
 
-Indicates the time zone of the schedule team using tz database format.
+The time zone of the schedule team as an IANA time zone database (tz database) name; for example, America/Chicago.
+For the full list of valid values, see List of tz database time zones.
 Required.
 
 ```yaml
@@ -1350,7 +1351,8 @@ Read-only.
     [StartDateTime <DateTime?>]: The date and time the time off starts in ISO 8601 format and in UTC time.
     [TimeOffReasonId <String>]: The reason for the time off.
   [TimeOffRequestsEnabled <Boolean?>]: Indicates whether time off requests are enabled for the schedule.
-  [TimeZone <String>]: Indicates the time zone of the schedule team using tz database format.
+  [TimeZone <String>]: The time zone of the schedule team as an IANA time zone database (tz database) name; for example, America/Chicago.
+For the full list of valid values, see List of tz database time zones.
 Required.
   [TimesOff <IMicrosoftGraphTimeOff[]>]: The instances of times off in the schedule.
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
