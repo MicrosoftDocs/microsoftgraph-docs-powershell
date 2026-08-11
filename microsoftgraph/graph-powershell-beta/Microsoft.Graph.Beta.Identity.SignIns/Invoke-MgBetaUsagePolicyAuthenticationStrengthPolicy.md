@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausagepolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy
 ---
@@ -14,7 +14,7 @@ title: Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy
 ## SYNOPSIS
 
 The usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 > [!NOTE]
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 **Permissions**

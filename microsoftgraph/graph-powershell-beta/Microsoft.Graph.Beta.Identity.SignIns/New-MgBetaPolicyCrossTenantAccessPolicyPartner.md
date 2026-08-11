@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyCrossTenantAccessPolicyPartner
 ---
@@ -37,7 +37,7 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner [-ResponseHeadersVariable <string
  [-IsServiceProvider] [-M365Capabilities <IMicrosoftGraphM365CapabilityBase[]>]
  [-M365CollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>]
  [-M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]
- [-TenantId <string>]
+ [-ServiceProviderConstraints <IMicrosoftGraphServiceProviderConstraints>] [-TenantId <string>]
  [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -673,6 +673,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ServiceProviderConstraints
+
+serviceProviderConstraints
+To construct, see NOTES section for SERVICEPROVIDERCONSTRAINTS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceProviderConstraints
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -TenantId
 
 The tenant identifier for the partner Microsoft Entra organization.
@@ -905,6 +927,10 @@ Key.
   [M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]: crossTenantAccessPolicyM365CollaborationOutboundSetting
     [(Any) <Object>]: This indicates any property can be added to this object.
     [UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+  [ServiceProviderConstraints <IMicrosoftGraphServiceProviderConstraints>]: serviceProviderConstraints
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
+    [Id <String>]: 
   [TenantId <String>]: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
@@ -983,6 +1009,11 @@ M365COLLABORATIONOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyM365Collaborat
       [Target <String>]: Defines the target for cross-tenant access policy settings and can have one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application.
  Office365 - Includes the applications mentioned as part of the Office 365 suite.
       [TargetType <String>]: crossTenantAccessPolicyTargetType
+
+SERVICEPROVIDERCONSTRAINTS `<IMicrosoftGraphServiceProviderConstraints>`: serviceProviderConstraints
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
+  [Id <String>]: 
 
 TENANTRESTRICTIONS `<IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>`: crossTenantAccessPolicyTenantRestrictions
   [(Any) <Object>]: This indicates any property can be added to this object.

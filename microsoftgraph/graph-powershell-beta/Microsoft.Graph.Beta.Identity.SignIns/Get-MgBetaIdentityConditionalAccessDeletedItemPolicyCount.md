@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessdeleteditempolicycount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityConditionalAccessDeletedItemPolicyCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaIdentityConditionalAccessDeletedItemPolicyCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessDeletedItemPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessDeletedItemPolicyCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 

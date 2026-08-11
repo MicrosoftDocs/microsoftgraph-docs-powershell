@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyownerlessgrouppolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyOwnerlessGroupPolicy
 ---
@@ -17,6 +17,9 @@ Create or update the ownerlessGroupPolicy for the tenant.
 If the policy doesn't exist, it creates a new one; if the policy exists, it updates the existing policy.
 To disable the policy, set isEnabled to false.
 Setting isEnabled to false clears the values of all other policy parameters.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyOwnerlessGroupPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyOwnerlessGroupPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 

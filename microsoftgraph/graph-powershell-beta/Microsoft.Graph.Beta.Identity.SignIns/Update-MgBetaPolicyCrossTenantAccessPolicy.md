@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyCrossTenantAccessPolicy
 ---
@@ -690,6 +690,10 @@ This property has no impact on existing users who have already been synchronized
     [M365Capabilities <IMicrosoftGraphM365CapabilityBase[]>]: Defines the partner-specific Microsoft 365 cross-tenant capabilities for inbound access from the partner organization.
     [M365CollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationInboundSetting>]: crossTenantAccessPolicyM365CollaborationInboundSetting
     [M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]: crossTenantAccessPolicyM365CollaborationOutboundSetting
+    [ServiceProviderConstraints <IMicrosoftGraphServiceProviderConstraints>]: serviceProviderConstraints
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
+      [Id <String>]: 
     [TenantId <String>]: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.
@@ -863,6 +867,10 @@ Key.
   [M365CollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyM365CollaborationOutboundSetting>]: crossTenantAccessPolicyM365CollaborationOutboundSetting
     [(Any) <Object>]: This indicates any property can be added to this object.
     [UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]: crossTenantAccessPolicyTargetConfiguration
+  [ServiceProviderConstraints <IMicrosoftGraphServiceProviderConstraints>]: serviceProviderConstraints
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
+    [Id <String>]: 
   [TenantId <String>]: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
 Key.

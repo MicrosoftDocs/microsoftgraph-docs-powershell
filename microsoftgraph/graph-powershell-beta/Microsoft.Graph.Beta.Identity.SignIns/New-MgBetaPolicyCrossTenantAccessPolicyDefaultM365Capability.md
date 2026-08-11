@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicydefaultm365capability
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability
 ---
@@ -56,6 +56,58 @@ The @odata.type property in the request body is required to specify which type o
 | Delegated (work or school account) | Policy.ReadWrite.CrossTenantCapability,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.CrossTenantCapability,  |
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.crossTenantOpenProfileCard"
+	inboundAccess = @{
+		isAllowed = $true
+		resourceScopes = @{
+			included = @(
+				@{
+					resourceId = "ad4fc698-74dc-4f62-9e71-ba9b591e8e74"
+					resourceType = "group"
+				}
+			)
+			excluded = @(
+				@{
+					resourceId = "ad4fc698-74dc-4f62-9e71-ba9b591e8e00"
+					resourceType = "group"
+				}
+			)
+		}
+	}
+}
+
+New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.crossTenantMigration"
+	inboundAccess = @{
+		isAllowed = $true
+		resourceScopes = @{
+			included = @(
+				@{
+					resourceId = "ad4fc698-74dc-4f62-9e71-ba9b591e8e74"
+					resourceType = "group"
+				}
+			)
+			excluded = @(
+			)
+		}
+	}
+}
+
+New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability -BodyParameter $params
 
 ## PARAMETERS
 
@@ -470,7 +522,6 @@ If a resource appears in both included and excluded, the excluded property takes
 
 - [New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicydefaultm365capability)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities?view=graph-rest-beta)
-
 
 
 

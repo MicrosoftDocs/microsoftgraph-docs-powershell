@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/01/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityVerifiedId
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaIdentityVerifiedId
 ## SYNOPSIS
 
 Update the navigation property verifiedId in identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityVerifiedId](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityVerifiedId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
