@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalTokenIssuancePolicy
 
 The tokenIssuancePolicies assigned to this service principal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenIssuancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

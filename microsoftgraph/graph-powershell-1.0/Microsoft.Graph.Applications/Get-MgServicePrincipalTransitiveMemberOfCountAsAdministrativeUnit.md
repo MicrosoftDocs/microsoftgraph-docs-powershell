@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
