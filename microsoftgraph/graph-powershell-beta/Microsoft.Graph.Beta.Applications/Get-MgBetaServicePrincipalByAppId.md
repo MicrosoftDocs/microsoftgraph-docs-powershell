@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyappid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/12/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalByAppId
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaServicePrincipalByAppId
 
 Retrieve the properties and relationships of a servicePrincipal object.
 This API can be used to get agentIdentityBlueprintPrincipal objects as well by their ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalByAppId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a servicePrincipal object.
 This API can be used to get agentIdentityBlueprintPrincipal objects as well by their ID.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, AgentIdentity.Read.All, AgentIdentityBlueprintPrincipal.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, AgentIdentity.Read.All, AgentIdentityBlueprintPrincipal.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve a service principal by its appId and only specific properties
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaServicePrincipalByAppId -Property "id,appId,displayName,appRoles,publishedPermissionScopes,resourceSpecificApplicationPermissions" 
-
-```
-This example will retrieve a service principal by its appid and only specific properties
-
+Get-MgBetaServicePrincipalByAppId -Property "id,appId,displayName,appRoles,publishedPermissionScopes,resourceSpecificApplicationPermissions"
 
 ## PARAMETERS
 
@@ -358,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -399,27 +383,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyappid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyappid)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-beta)

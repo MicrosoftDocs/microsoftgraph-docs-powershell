@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/12/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaApplicationCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All, User.Read,  |
-| Application | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -304,27 +303,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaApplicationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcount)

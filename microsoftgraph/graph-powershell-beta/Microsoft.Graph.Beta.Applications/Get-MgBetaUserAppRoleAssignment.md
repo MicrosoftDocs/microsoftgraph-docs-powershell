@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/12/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAppRoleAssignment
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserAppRoleAssignment
 
 Represents the app roles a user has been granted for an application.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgUserAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,11 +60,11 @@ Represents the app roles a user has been granted for an application.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get assigned app roles
 
-```powershell
- Get-MgBetaUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
-  Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
+### EXAMPLE 1
+
+Get-MgBetaUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
+ Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName
 
 Id                   : QQxVaKMYXkmqHc9ijBcbSFkvIqIpOSdOjXRyNBWe_zE
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -82,9 +79,6 @@ PrincipalDisplayName : MOD Administrator
 PrincipalId          : 529827aa-d058-4821-a012-4de3ce093955
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-worker-mfa
-```
-
-This command gets all the application roles that the selected user has been assigned.
 
 ## PARAMETERS
 
@@ -595,7 +589,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -636,27 +630,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-approleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetauserapproleassignment)
+- [](https://learn.microsoft.com/graph/api/agentuser-list-approleassignments?view=graph-rest-beta)

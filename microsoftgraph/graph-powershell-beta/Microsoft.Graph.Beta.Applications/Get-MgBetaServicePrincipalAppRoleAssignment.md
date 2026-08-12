@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/12/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalAppRoleAssignment
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaServicePrincipalAppRoleAssignment
 ## SYNOPSIS
 
 Read the properties and relationships of an appRoleAssignment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,9 +59,9 @@ This cmdlet has the following aliases,
 Read the properties and relationships of an appRoleAssignment object.
 
 ## EXAMPLES
-### Example 1: Get all application role assignments for a service principal
 
-```powershell
+### EXAMPLE 1
+
 Get-MgBetaServicePrincipalAppRoleAssignment -ServicePrincipalId '0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61' |  Format-List
 
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -92,9 +89,6 @@ ResourceId           : 1c48f923-4fbb-4d37-b772-4d577eefec9e
 AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/directoryObjects/$/Microsof
                        t.DirectoryServices.ServicePrincipal('0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61')/appRoleAssignments/PRLbC6e4yUyM
                        wr0XutBvYZsr7FiAW3pIqP4F9944yBc]}
-```
-
-This example gets the application role assignments that have been granted to the specified service principal.
 
 ## PARAMETERS
 
@@ -605,7 +599,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -646,28 +640,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalapproleassignment)
+- [](https://learn.microsoft.com/graph/api/approleassignment-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-approleassignments?view=graph-rest-beta)
