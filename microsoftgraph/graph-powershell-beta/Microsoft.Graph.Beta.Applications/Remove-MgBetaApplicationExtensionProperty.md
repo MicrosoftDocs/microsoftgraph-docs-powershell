@@ -463,8 +463,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationextensionproperty)
-- [](https://learn.microsoft.com/graph/api/extensionproperty-delete?view=graph-rest-beta)
+- [Remove-MgBetaApplicationExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationextensionproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/extensionproperty-delete?view=graph-rest-beta)
 
 
 
