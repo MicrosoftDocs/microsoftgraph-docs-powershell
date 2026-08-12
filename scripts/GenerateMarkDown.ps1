@@ -100,10 +100,6 @@ function Start-GraphHelp {
         }
     }
 
-    # Remove files whose only generated change is refreshed ms.date metadata before
-    # GenerateMarkDown creates its commit.
-    & (Join-Path $PSScriptRoot "StabilizeMsDate.ps1")
-
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .

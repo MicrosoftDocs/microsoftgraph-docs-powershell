@@ -157,6 +157,15 @@ steps:
       filePath: scripts/CorrectRelatedLinks-AllFiles.ps1
       arguments: -GraphProfileFilter "${{ parameters.GraphProfileFilter }}" -ModuleFilter "${{ parameters.Module }}"
 
+  - task: PowerShell@2
+    displayName: 'Remove date-only documentation changes'
+    condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: scripts/StabilizeMsDate.ps1
+      arguments: -BaseRef "$(Build.SourceVersion)"
+
   - task: AzureKeyVault@2
     displayName: "Azure Key Vault: Get GitHub App secrets"
     condition: and(succeeded(), eq(variables['ModuleGenerated'], 'true'))
