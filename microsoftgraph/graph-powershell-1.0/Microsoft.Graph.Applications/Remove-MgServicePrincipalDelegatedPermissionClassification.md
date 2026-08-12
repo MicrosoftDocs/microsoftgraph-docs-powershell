@@ -450,8 +450,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-delete-delegatedpermissionclassifications?view=graph-rest-1.0)
+- [Remove-MgServicePrincipalDelegatedPermissionClassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delete-delegatedpermissionclassifications?view=graph-rest-1.0)
 
 
 
