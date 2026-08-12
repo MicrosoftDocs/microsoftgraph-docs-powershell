@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationOwnerCountAsUser
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerCountAsUser](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerCountAsUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
