@@ -57,34 +57,31 @@ extends:
         Modules:
           - Authentication
           - Applications
-          - Bookings
-          - BusinessScenario
           - BackupRestore
+          - Bookings
           - Calendar
           - ChangeNotifications
           - CloudCommunications
           - Compliance
+          - ConfigurationManagement
           - CrossDeviceExperiences
+          - DeviceManagement.Actions
+          - DeviceManagement.Administration
+          - DeviceManagement.Enrollment
+          - DeviceManagement.Functions
+          - DeviceManagement
           - Devices.CloudPrint
           - Devices.CorporateManagement
           - Devices.ServiceAnnouncement
-          - DeviceManagement
-          - DeviceManagement.Administration
-          - DeviceManagement.Enrollment
-          - DeviceManagement.Actions
-          - DeviceManagement.Functions
           - DirectoryObjects
           - Education
           - Files
-          - Financials
           - Groups
           - Identity.DirectoryManagement
           - Identity.Governance
-          - Identity.SignIns
           - Identity.Partner
+          - Identity.SignIns
           - Mail
-          - ManagedTenants
-          - NetworkAccess
           - Notes
           - People
           - PersonalContacts
@@ -95,10 +92,9 @@ extends:
           - Security
           - Sites
           - Teams
-          - Users
           - Users.Actions
           - Users.Functions
-          - WindowsUpdates
+          - Users
     - template: common-templates/module-stages.yml@self
       parameters:
         GraphProfileFilter: "beta"
@@ -108,22 +104,23 @@ extends:
         PipelineTimeout: ${{ parameters.PipelineTimeout }}
         Modules:
           - Applications
+          - BackupRestore
           - Bookings
           - BusinessScenario
-          - BackupRestore
           - Calendar
           - ChangeNotifications
           - CloudCommunications
           - Compliance
+          - ConfigurationManagement
           - CrossDeviceExperiences
+          - DeviceManagement.Actions
+          - DeviceManagement.Administration
+          - DeviceManagement.Enrollment
+          - DeviceManagement.Functions
+          - DeviceManagement
           - Devices.CloudPrint
           - Devices.CorporateManagement
           - Devices.ServiceAnnouncement
-          - DeviceManagement
-          - DeviceManagement.Administration
-          - DeviceManagement.Enrollment
-          - DeviceManagement.Actions
-          - DeviceManagement.Functions
           - DirectoryObjects
           - Education
           - Files
@@ -131,10 +128,11 @@ extends:
           - Groups
           - Identity.DirectoryManagement
           - Identity.Governance
-          - Identity.SignIns
           - Identity.Partner
+          - Identity.SignIns
           - Mail
           - ManagedTenants
+          - Migrations
           - NetworkAccess
           - Notes
           - People
@@ -146,7 +144,7 @@ extends:
           - Security
           - Sites
           - Teams
-          - Users
           - Users.Actions
           - Users.Functions
+          - Users
           - WindowsUpdates
