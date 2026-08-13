@@ -50,12 +50,17 @@ Get the usage trends on how many users in your organization have connected using
 You'll also get a breakdown by the type of device (Windows, Windows phone, Android phone, iPhone, or iPad) on which the Skype for Business client app is installed and used across your organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessDeviceUsageUserCount -Period $periodId
+Get-MgReportSkypeForBusinessDeviceUsageUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessDeviceUsageUserCount Cmdlet.
+
 
 ## PARAMETERS
 
