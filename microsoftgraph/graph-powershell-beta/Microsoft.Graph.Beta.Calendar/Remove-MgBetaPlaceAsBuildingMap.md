@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmap
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPlaceAsBuildingMap
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaPlaceAsBuildingMap
 ## SYNOPSIS
 
 Delete the map of a specific building.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsBuildingMap](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsBuildingMap?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Delete the map of a specific building.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaPlaceAsBuildingMap -PlaceId $placeId
-
-```
-This example shows how to use the Remove-MgBetaPlaceAsBuildingMap Cmdlet.
-
 
 ## PARAMETERS
 
@@ -390,7 +382,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -415,27 +407,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaPlaceAsBuildingMap](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmap)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmap)
+- [](https://learn.microsoft.com/graph/api/buildingmap-delete?view=graph-rest-beta)

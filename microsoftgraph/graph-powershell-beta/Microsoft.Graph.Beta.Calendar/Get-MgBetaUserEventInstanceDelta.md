@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstancedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserEventInstanceDelta
 ---
@@ -21,9 +21,6 @@ Typically, synchronizing events in a calendar or calendarView in a local store e
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 Using deltas allows you to incrementally maintain and synchronize a local store of events in the specified calendar.
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstanceDelta](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstanceDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,6 +62,16 @@ Typically, synchronizing events in a calendar or calendarView in a local store e
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 Using deltas allows you to incrementally maintain and synchronize a local store of events in the specified calendar.
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -612,7 +619,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -637,28 +644,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserEventInstanceDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstancedelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstancedelta)
+- [](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-beta)
