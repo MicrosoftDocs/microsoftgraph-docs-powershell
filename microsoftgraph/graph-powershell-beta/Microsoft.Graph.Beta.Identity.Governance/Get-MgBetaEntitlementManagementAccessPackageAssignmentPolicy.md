@@ -13,7 +13,7 @@ title: Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 ## SYNOPSIS
 
-In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r\n accessPackageAssignmentPolicy object.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r accessPackageAssignmentPolicy object.
 
 ## SYNTAX
 
@@ -82,7 +82,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r\n accessPackageAssignmentPolicy object.
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r accessPackageAssignmentPolicy object.
 
 ## EXAMPLES
 
@@ -684,7 +684,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -801,3 +801,25 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
 - [](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentpolicies?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

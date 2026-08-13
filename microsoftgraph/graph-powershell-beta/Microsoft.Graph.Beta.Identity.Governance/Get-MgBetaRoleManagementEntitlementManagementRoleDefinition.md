@@ -14,7 +14,7 @@ title: Get-MgBetaRoleManagementEntitlementManagementRoleDefinition
 ## SYNOPSIS
 
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC)\r\n- directory (Microsoft Entra directory roles)\r\n- entitlement management (Microsoft Entra entitlement management)\r\n- Exchange Online (Except China operated by 21Vianet)
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra directory roles)\r- entitlement management (Microsoft Entra entitlement management)\r- Exchange Online (Except China operated by 21Vianet)
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC)\r\n- directory (Microsoft Entra directory roles)\r\n- entitlement management (Microsoft Entra entitlement management)\r\n- Exchange Online (Except China operated by 21Vianet)
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra directory roles)\r- entitlement management (Microsoft Entra entitlement management)\r- Exchange Online (Except China operated by 21Vianet)
 
 ## EXAMPLES
 
@@ -527,7 +527,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -644,3 +644,25 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroledefinition)
 - [](https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

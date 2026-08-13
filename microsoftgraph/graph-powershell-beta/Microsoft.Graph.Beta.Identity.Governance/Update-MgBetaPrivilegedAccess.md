@@ -638,7 +638,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPrivilegedAccess>: privilegedAccess
+BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -788,7 +788,7 @@ For example, for Azure resources, the type could be 'Subscription', 'ResourceGro
   [RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]: A collection of role definitions for the provider.
   [RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>]: A collection of role settings for the provider.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1609,3 +1609,25 @@ The setting is not supported for now.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccess)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
