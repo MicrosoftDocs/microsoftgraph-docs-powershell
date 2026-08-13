@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceG
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
