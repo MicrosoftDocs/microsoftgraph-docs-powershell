@@ -450,7 +450,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentroledefinition)
+- [Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectorytransitiveroleassignmentroledefinition)
 
 
 

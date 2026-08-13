@@ -655,9 +655,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions?view=graph-rest-beta)
 
 
 

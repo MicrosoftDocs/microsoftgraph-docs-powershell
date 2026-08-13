@@ -930,8 +930,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementconnectedorganization)
-- [](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-beta)
+- [Update-MgBetaEntitlementManagementConnectedOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementconnectedorganization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-beta)
 
 
 

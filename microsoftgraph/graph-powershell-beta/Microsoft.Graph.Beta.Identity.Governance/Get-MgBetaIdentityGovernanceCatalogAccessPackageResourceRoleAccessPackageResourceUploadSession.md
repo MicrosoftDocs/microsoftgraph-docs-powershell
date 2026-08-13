@@ -687,7 +687,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresourceuploadsession)
+- [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresourceuploadsession)
 
 
 
