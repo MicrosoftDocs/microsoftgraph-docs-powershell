@@ -69,21 +69,27 @@ Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Using the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"
-
-### EXAMPLE 2
-
+Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource" 
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Security
 Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"  -OutFile $outFileId
-
-### EXAMPLE 3
-
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource"
+Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource" 
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
