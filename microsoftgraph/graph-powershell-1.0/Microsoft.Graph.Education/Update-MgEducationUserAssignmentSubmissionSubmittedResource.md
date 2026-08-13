@@ -15,6 +15,9 @@ title: Update-MgEducationUserAssignmentSubmissionSubmittedResource
 
 Update the navigation property submittedResources in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
