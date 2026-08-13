@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationlandingpage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityAttackSimulationLandingPage
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityAttackSimulationLandingPage
 ## SYNOPSIS
 
 Represents an attack simulation training landing page.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLandingPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,26 +75,13 @@ This cmdlet has the following aliases,
 
 Represents an attack simulation training landing page.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AttackSimulation.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AttackSimulation.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityAttackSimulationLandingPage -Filter "source eq 'tenant'" 
-
-```
-This example shows how to use the Get-MgBetaSecurityAttackSimulationLandingPage Cmdlet.
-
+Get-MgBetaSecurityAttackSimulationLandingPage -Filter "source eq 'tenant'"
 
 ## PARAMETERS
 
@@ -586,7 +570,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -688,27 +672,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityAttackSimulationLandingPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationlandingpage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationroot-list-landingpage?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationlandingpage)
+- [](https://learn.microsoft.com/graph/api/attacksimulationroot-list-landingpage?view=graph-rest-beta)
