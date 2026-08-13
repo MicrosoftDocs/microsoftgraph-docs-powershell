@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
 
 Create new navigation property to mailboxProtectionUnitsBulkAdditionJobs for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

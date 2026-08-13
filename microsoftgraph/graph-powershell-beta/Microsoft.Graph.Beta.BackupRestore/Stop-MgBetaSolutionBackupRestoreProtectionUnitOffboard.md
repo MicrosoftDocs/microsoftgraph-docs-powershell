@@ -15,6 +15,9 @@ title: Stop-MgBetaSolutionBackupRestoreProtectionUnitOffboard
 
 Cancel the offboarding of a protectionUnitBase.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgSolutionBackupRestoreProtectionUnitOffboard](/powershell/module/Microsoft.Graph.BackupRestore/Stop-MgSolutionBackupRestoreProtectionUnitOffboard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)
