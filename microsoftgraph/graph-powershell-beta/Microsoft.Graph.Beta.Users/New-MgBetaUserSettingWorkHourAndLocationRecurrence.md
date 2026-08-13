@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingworkhourandlocationrecurrence
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserSettingWorkHourAndLocationRecurrence
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserSettingWorkHourAndLocationRecurrence
 ## SYNOPSIS
 
 Create new navigation property to recurrences for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserSettingWorkHourAndLocationRecurrence](/powershell/module/Microsoft.Graph.Users/New-MgUserSettingWorkHourAndLocationRecurrence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to recurrences for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -599,7 +606,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWorkPlanRecurrence>`: workPlanRecurrence
+BODYPARAMETER <IMicrosoftGraphWorkPlanRecurrence>: workPlanRecurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -646,14 +653,14 @@ Required.
   [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [WorkLocationType <String>]: workLocationType
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+END <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -687,7 +694,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
+RECURRENCE <IMicrosoftGraphPatternedRecurrence>: patternedRecurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -720,7 +727,7 @@ Must be the same value as the start property of the recurring event.
 Required.
     [Type <String>]: recurrenceRangeType
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+START <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -730,27 +737,4 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserSettingWorkHourAndLocationRecurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingworkhourandlocationrecurrence)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingworkhourandlocationrecurrence)

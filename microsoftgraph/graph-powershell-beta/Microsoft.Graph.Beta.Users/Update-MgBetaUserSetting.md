@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserSetting
 ## SYNOPSIS
 
 Update the navigation property settings in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,13 +80,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property settings in users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -759,7 +758,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserSettings>`: userSettings
+BODYPARAMETER <IMicrosoftGraphUserSettings>: userSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -948,21 +947,21 @@ Only applicable when workLocationType is set to office.
       [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [WorkLocationType <String>]: workLocationType
 
-CONTACTMERGESUGGESTIONS `<IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
+CONTACTMERGESUGGESTIONS <IMicrosoftGraphContactMergeSuggestions>: contactMergeSuggestions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsEnabled <Boolean?>]: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
 Default value is true.
 
-EXCHANGE `<IMicrosoftGraphExchangeSettings>`: exchangeSettings
+EXCHANGE <IMicrosoftGraphExchangeSettings>: exchangeSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [InPlaceArchiveMailboxId <String>]: The unique identifier for the user's In-Place Archive mailbox.
   [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -996,7 +995,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
+ITEMINSIGHTS <IMicrosoftGraphUserInsightsSettings>: userInsightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1004,7 +1003,7 @@ Read-only.
 The default value is true.
 Optional.
 
-REGIONALANDLANGUAGESETTINGS `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
+REGIONALANDLANGUAGESETTINGS <IMicrosoftGraphRegionalAndLanguageSettings>: regionalAndLanguageSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1041,7 +1040,7 @@ For example, it would specify 'fr' for the neutral French culture, but not 'fr-F
 Returned by default.
 Read-only.
 
-SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
+SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences>: shiftPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1095,7 +1094,7 @@ Required.
       [StartTime <String>]: Start time for the time range.
     [TimeZone <String>]: Specifies the time zone for the indicated time.
 
-STORAGE `<IMicrosoftGraphUserStorage>`: userStorage
+STORAGE <IMicrosoftGraphUserStorage>: userStorage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1135,7 +1134,7 @@ Refers to the user's Windows device that modified the object at the specified da
   [SettingType <String>]: windowsSettingType
   [WindowsDeviceId <String>]: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
-WORKHOURSANDLOCATIONS `<IMicrosoftGraphWorkHoursAndLocationsSetting>`: workHoursAndLocationsSetting
+WORKHOURSANDLOCATIONS <IMicrosoftGraphWorkHoursAndLocationsSetting>: workHoursAndLocationsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1203,27 +1202,4 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)

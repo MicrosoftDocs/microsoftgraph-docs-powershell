@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingexchange
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSettingExchange
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaUserSettingExchange
 Get a list of Exchange mailboxes that belong to a user.
 Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
 To learn how to get a list of users in a tenant, see List users.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingExchange](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingExchange?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,17 +49,12 @@ Currently, the mailbox types supported are the user's primary mailbox and shared
 To learn how to get a list of users in a tenant, see List users.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserSettingExchange -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserSettingExchange Cmdlet.
-
 
 ## PARAMETERS
 
@@ -352,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -389,27 +381,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserSettingExchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingexchange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingexchange)
+- [](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-beta)

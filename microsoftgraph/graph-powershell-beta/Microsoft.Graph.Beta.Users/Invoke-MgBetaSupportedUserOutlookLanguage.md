@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSupportedUserOutlookLanguage
 ---
@@ -15,10 +15,7 @@ title: Invoke-MgBetaSupportedUserOutlookLanguage
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language by\rgetting the user's mailbox settings.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSupportedUserOutlookLanguage](/powershell/module/Microsoft.Graph.Users/Invoke-MgSupportedUserOutlookLanguage?view=graph-powershell-1.0)
+You can subsequently get the preferred language by\r\ngetting the user's mailbox settings.
 
 ## SYNTAX
 
@@ -51,29 +48,16 @@ This cmdlet has the following aliases,
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language by\rgetting the user's mailbox settings.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, User.ReadBasic.All,  |
-| Delegated (personal Microsoft account) | User.Read,  |
-| Application | User.Read.All, User.ReadBasic.All,  |
+You can subsequently get the preferred language by\r\ngetting the user's mailbox settings.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSupportedUserOutlookLanguage -UserId $userId
-
-```
-This example shows how to use the Invoke-MgBetaSupportedUserOutlookLanguage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -425,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -462,27 +446,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaSupportedUserOutlookLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetasupporteduseroutlooklanguage)
+- [](https://learn.microsoft.com/graph/api/outlookuser-supportedlanguages?view=graph-rest-beta)

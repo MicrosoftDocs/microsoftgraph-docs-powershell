@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserInsightUsed
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserInsightUsed
 ## SYNOPSIS
 
 Create new navigation property to used for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserInsightUsed](/powershell/module/Microsoft.Graph.Users/New-MgUserInsightUsed?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to used for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -568,7 +575,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUsedInsight>`: usedInsight
+BODYPARAMETER <IMicrosoftGraphUsedInsight>: usedInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -608,7 +615,7 @@ Not all Media Mime Types are supported.
 Can be used for filtering for a specific file based on a specific type.
 See the Type property values section, for supported types.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -642,7 +649,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-LASTUSED `<IMicrosoftGraphUsageDetails>`: usageDetails
+LASTUSED <IMicrosoftGraphUsageDetails>: usageDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastAccessedDateTime <DateTime?>]: The date and time the resource was last accessed by the user.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
@@ -653,18 +660,18 @@ The timestamp represents date and time information using ISO 8601 format and is 
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-RESOURCE `<IMicrosoftGraphEntity>`: entity
+RESOURCE <IMicrosoftGraphEntity>: entity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-RESOURCEREFERENCE `<IMicrosoftGraphResourceReference>`: resourceReference
+RESOURCEREFERENCE <IMicrosoftGraphResourceReference>: resourceReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: 
   [Type <String>]: 
   [WebUrl <String>]: 
 
-RESOURCEVISUALIZATION `<IMicrosoftGraphResourceVisualization>`: resourceVisualization
+RESOURCEVISUALIZATION <IMicrosoftGraphResourceVisualization>: resourceVisualization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerDisplayName <String>]: A string describing where the item is stored.
 For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.
@@ -684,27 +691,4 @@ See the Type property values section, for supported types.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserInsightUsed](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused)
