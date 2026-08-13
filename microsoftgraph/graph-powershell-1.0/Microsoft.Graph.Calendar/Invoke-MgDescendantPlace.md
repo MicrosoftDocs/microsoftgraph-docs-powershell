@@ -496,7 +496,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdescendantplace)
+- [Invoke-MgDescendantPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdescendantplace)
 
 
 
