@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementVirtualEndpointGalleryImage
 
 Delete navigation property galleryImages for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
