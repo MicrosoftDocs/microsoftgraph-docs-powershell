@@ -15,6 +15,9 @@ title: New-MgUserActivity
 
 Create new navigation property to activities for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgBetaUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
