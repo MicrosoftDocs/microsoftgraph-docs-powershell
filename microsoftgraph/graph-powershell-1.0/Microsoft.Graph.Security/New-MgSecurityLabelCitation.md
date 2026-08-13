@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityLabelCitation
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityLabelCitation
 ## SYNOPSIS
 
 Create a new citationTemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,9 +47,8 @@ This cmdlet has the following aliases,
 Create a new citationTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -64,10 +60,6 @@ $params = @{
 }
 
 New-MgSecurityLabelCitation -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityLabelCitation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -485,7 +477,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
+BODYPARAMETER <IMicrosoftGraphSecurityCitationTemplate>: citationTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -504,7 +496,7 @@ Read-only.
   [CitationJurisdiction <String>]: Represents the jurisdiction or agency that published the citation.
   [CitationUrl <String>]: Represents the URL to the published citation.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -518,27 +510,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgSecurityLabelCitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation)
+- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgSecurityAlert
 ---
@@ -14,9 +14,6 @@ title: Set-MgSecurityAlert
 ## SYNOPSIS
 
 Create a comment for an existing alert based on the specified alert id property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,18 +45,9 @@ This cmdlet has the following aliases,
 
 Create a comment for an existing alert based on the specified alert id property.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityAlert.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityAlert.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -69,10 +57,6 @@ $params = @{
 }
 
 Set-MgSecurityAlert -AlertId $alertId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgSecurityAlert Cmdlet.
-
 
 ## PARAMETERS
 
@@ -414,7 +398,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlertComment[]>: Array of microsoft.graph.
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -493,27 +477,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityalert)
+- [](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-1.0)

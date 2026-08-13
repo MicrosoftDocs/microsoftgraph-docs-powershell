@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIncident
 ---
@@ -16,9 +16,6 @@ title: Get-MgSecurityIncident
 Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,37 +59,19 @@ Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIncident.Read.All, SecurityIncident.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIncident.Read.All, SecurityIncident.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List all incidents
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityIncident
 
-```
-This example will list all incidents
-
-### Example 2: List all incidents with their alerts
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityIncident -ExpandProperty "alerts" 
-
-```
-This example will list all incidents with their alerts
-
+Get-MgSecurityIncident -ExpandProperty "alerts"
 
 ## PARAMETERS
 
@@ -554,7 +533,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -633,28 +612,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincident)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincident)
+- [](https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-1.0)

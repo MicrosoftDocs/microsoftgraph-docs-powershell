@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityTriggerRetentionEvent
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityTriggerRetentionEvent
 ## SYNOPSIS
 
 Read the properties and relationships of a retentionEvent object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a retentionEvent object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RecordsManagement.Read.All, RecordsManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityTriggerRetentionEvent
-
-```
-This example shows how to use the Get-MgSecurityTriggerRetentionEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -539,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -618,28 +602,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityTriggerRetentionEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionevent-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionevent-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent)
+- [](https://learn.microsoft.com/graph/api/security-retentionevent-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/security-retentionevent-list?view=graph-rest-1.0)
