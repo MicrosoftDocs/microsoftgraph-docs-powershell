@@ -15,6 +15,9 @@ title: Get-MgUserOnenoteResourceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteResourceCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteResourceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
