@@ -45,6 +45,14 @@ It allows you to maintain and synchronize a local store of a user's sites withou
 After you receive all the changes, you can apply them to your local state.\rTo monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
 Any resources marked as deleted should be removed from your local state.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
