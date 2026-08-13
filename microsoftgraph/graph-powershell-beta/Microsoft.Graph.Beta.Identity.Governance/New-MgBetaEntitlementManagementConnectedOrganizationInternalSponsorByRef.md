@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Add a user or a group to the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
