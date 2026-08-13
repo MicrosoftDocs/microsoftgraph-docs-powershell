@@ -15,6 +15,9 @@ title: Get-MgGroupSiteListContentType
 
 The collection of content types present in this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

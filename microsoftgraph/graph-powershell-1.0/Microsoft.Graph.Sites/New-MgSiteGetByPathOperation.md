@@ -15,6 +15,9 @@ title: New-MgSiteGetByPathOperation
 
 Create new navigation property to operations for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

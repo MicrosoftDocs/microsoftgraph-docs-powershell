@@ -15,6 +15,9 @@ title: Get-MgGroupSitePageAsSitePage
 
 Get the item of type microsoft.graph.baseSitePage as microsoft.graph.sitePage
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

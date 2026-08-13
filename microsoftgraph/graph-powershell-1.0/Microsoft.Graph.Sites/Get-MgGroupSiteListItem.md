@@ -15,6 +15,9 @@ title: Get-MgGroupSiteListItem
 
 All items contained in the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
