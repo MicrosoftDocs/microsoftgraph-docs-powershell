@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
