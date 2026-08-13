@@ -15,6 +15,9 @@ title: New-MgSecurityCaseEdiscoveryCaseReviewSetQuery
 
 Create a new ediscoveryReviewSetQuery object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
