@@ -602,7 +602,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths13Urud7DirectoryTemplatesDevicetemplatesDevicetemplateIdMicrosoftGraphCreatedevicefromtemplatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths13Urud7DirectoryTemplatesDevicetemplatesDevicetemplateIdMicrosoftGraphCreatedevicefromtemplatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccountEnabled <Boolean?>]: 
   [AlternativeNames <String[]>]: 
@@ -632,7 +632,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 If usage is Sign​, the type should be X509CertAndPassword​, and the passwordCredentials​ for signing should be defined.
   [OperatingSystemVersion <String>]: 
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -698,7 +698,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-KEYCREDENTIAL <IMicrosoftGraphKeyCredential>: keyCredential
+KEYCREDENTIAL `<IMicrosoftGraphKeyCredential>`: keyCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomKeyIdentifier <Byte[]>]: A 40-character binary type that can be used to identify the credential.
 Optional.
@@ -726,3 +726,25 @@ If usage is Sign​, the type should be X509CertAndPassword​, and the password
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicefromtemplate)
 - [](https://learn.microsoft.com/graph/api/devicetemplate-createdevicefromtemplate?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
