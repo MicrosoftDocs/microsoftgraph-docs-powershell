@@ -55,6 +55,14 @@ The invitation adds the external user to the organization as part of B2B collabo
 B2B collaboration is supported in both Microsoft Entra External ID in workforce and external tenants.
 When creating a new invitation, you have several options available:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Invite.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Invite.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

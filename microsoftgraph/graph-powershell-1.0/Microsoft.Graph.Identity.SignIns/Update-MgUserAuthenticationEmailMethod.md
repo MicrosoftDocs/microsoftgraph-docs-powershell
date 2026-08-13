@@ -70,6 +70,14 @@ This cmdlet has the following aliases,
 Update a user's email address represented by an emailAuthenticationMethod object.
 Self-service operations aren't supported.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-Email.ReadWrite, UserAuthMethod-Email.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Email.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
