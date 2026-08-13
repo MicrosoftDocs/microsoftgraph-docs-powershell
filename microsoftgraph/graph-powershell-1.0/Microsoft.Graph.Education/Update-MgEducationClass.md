@@ -29254,8 +29254,8 @@ TERM `<IMicrosoftGraphEducationTerm>`: educationTerm
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclass)
-- [](https://learn.microsoft.com/graph/api/educationclass-update?view=graph-rest-1.0)
+- [Update-MgEducationClass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclass)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-update?view=graph-rest-1.0)
 
 
 
