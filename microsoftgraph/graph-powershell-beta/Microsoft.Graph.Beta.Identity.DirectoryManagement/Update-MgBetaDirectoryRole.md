@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryRole
 
 Update entity in directoryRoles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRole?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

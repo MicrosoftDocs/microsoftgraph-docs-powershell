@@ -15,6 +15,9 @@ title: Remove-MgBetaDirectoryRoleByRoleTemplateId
 
 Delete entity from directoryRoles by roleTemplateId
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryRoleByRoleTemplateId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
