@@ -51128,8 +51128,8 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroup)
-- [](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-beta)
+- [Update-MgBetaGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-beta)
 
 
 
