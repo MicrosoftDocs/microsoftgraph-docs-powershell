@@ -15,6 +15,9 @@ title: Get-MgReportEmailActivityUserCount
 
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

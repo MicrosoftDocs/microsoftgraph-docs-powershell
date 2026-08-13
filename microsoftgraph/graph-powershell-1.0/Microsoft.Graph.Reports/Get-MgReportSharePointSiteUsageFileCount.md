@@ -16,6 +16,9 @@ title: Get-MgReportSharePointSiteUsageFileCount
 Get the total number of files across all sites and the number of active files.
 A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
