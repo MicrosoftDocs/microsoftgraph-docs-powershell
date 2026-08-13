@@ -68,12 +68,17 @@ The returned alertConfiguration object contains the settings for the distributio
 | Application | HealthMonitoringAlertConfig.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportHealthMonitoringAlertConfiguration
+
+```
+This example shows how to use the Get-MgBetaReportHealthMonitoringAlertConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
