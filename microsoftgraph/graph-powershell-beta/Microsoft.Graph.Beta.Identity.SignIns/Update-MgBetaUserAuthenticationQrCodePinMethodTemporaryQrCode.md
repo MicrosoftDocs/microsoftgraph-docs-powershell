@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodtemporaryqrcode
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode
 ---
@@ -70,13 +70,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property temporaryQRCode in users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-QR.ReadWrite, UserAuthMethod-QR.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -603,7 +605,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphQrCode>`: qrCode
+BODYPARAMETER <IMicrosoftGraphQrCode>: qrCode
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -620,14 +622,14 @@ is 395 days (13 months) and default value is 365 days (12 months).
   [LastUsedDateTime <DateTime?>]: The date and time when the QR code was last used for a successful sign-in.
   [StartDateTime <DateTime?>]: The date and time when the QR code becomes active and available to use.
 
-IMAGE `<IMicrosoftGraphQrCodeImageDetails>`: qrCodeImageDetails
+IMAGE <IMicrosoftGraphQrCodeImageDetails>: qrCodeImageDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BinaryValue <Byte[]>]: The binary representation of the QR code.
   [ErrorCorrectionLevel <String>]: errorCorrectionLevel
   [RawContent <Byte[]>]: Base64-encoded raw content of the QR code.
   [Version <Int32?>]: Version to create QR code image.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -728,27 +730,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodtemporaryqrcode)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodtemporaryqrcode)
