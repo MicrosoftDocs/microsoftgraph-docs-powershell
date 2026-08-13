@@ -581,8 +581,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionwebapplicationfirewallprovider)
-- [](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-update?view=graph-rest-1.0)
+- [Update-MgIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionwebapplicationfirewallprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/webapplicationfirewallprovider-update?view=graph-rest-1.0)
 
 
 

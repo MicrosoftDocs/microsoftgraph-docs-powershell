@@ -714,8 +714,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationphonemethod)
-- [](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-update?view=graph-rest-1.0)
+- [Update-MgUserAuthenticationPhoneMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationphonemethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-update?view=graph-rest-1.0)
 
 
 

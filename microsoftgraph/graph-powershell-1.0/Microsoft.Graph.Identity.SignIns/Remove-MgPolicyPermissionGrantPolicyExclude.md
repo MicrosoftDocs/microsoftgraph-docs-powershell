@@ -488,8 +488,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicyexclude)
-- [](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-1.0)
+- [Remove-MgPolicyPermissionGrantPolicyExclude](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicyexclude)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-1.0)
 
 
 

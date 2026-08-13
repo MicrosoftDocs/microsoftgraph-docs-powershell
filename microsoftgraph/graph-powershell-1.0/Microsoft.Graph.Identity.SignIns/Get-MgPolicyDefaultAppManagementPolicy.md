@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-get?view=graph-rest-1.0)
+- [Get-MgPolicyDefaultAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-get?view=graph-rest-1.0)
 
 
 
