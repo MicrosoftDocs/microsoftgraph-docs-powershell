@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaDirectoryObjectProperty
 ---
@@ -16,15 +16,12 @@ title: Test-MgBetaDirectoryObjectProperty
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties:\r1.
-Validate the prefix and suffix naming policy\r2.
-Validate the custom banned words policy\r3.
+The following validations are performed for the display name and mail nickname properties:\r\n1.
+Validate the prefix and suffix naming policy\r\n2.
+Validate the custom banned words policy\r\n3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDirectoryObjectProperty](/powershell/module/Microsoft.Graph.DirectoryObjects/Test-MgDirectoryObjectProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,25 +55,16 @@ This cmdlet has the following aliases,
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties:\r1.
-Validate the prefix and suffix naming policy\r2.
-Validate the custom banned words policy\r3.
+The following validations are performed for the display name and mail nickname properties:\r\n1.
+Validate the prefix and suffix naming policy\r\n2.
+Validate the custom banned words policy\r\n3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: A successful validation request
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
@@ -89,12 +77,7 @@ $params = @{
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 
-```
-This example will a successful validation request
-
-### Example 2: An unsuccessful validation request
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
@@ -106,10 +89,6 @@ $params = @{
 }
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
-
-```
-This example will an unsuccessful validation request
-
 
 ## PARAMETERS
 
@@ -136,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -201,7 +180,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -222,7 +201,7 @@ HelpMessage: ''
 
 ### -EntityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -306,7 +285,7 @@ HelpMessage: ''
 
 ### -MailNickname
 
-
+.
 
 ```yaml
 Type: System.String
@@ -327,7 +306,7 @@ HelpMessage: ''
 
 ### -OnBehalfOfUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -504,7 +483,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
   [EntityType <String>]: 
@@ -514,27 +493,5 @@ BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPost
 
 ## RELATED LINKS
 
-- [Test-MgBetaDirectoryObjectProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty)
+- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
