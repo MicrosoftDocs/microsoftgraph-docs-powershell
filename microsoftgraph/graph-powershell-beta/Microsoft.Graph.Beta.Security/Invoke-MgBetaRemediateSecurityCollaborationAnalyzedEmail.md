@@ -59,8 +59,9 @@ For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -83,6 +84,10 @@ $params = @{
 }
 
 Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail Cmdlet.
+
 
 ## PARAMETERS
 
