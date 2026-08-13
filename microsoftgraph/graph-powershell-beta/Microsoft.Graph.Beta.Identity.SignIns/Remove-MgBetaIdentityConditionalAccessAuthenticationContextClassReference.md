@@ -58,12 +58,17 @@ Delete an authenticationContextClassReference object that's not published or use
 | Application | AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId
+
+```
+This example shows how to use the Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+
 
 ## PARAMETERS
 

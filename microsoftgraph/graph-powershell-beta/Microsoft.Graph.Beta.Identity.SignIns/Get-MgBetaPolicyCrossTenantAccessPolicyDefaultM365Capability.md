@@ -58,12 +58,17 @@ This cmdlet has the following aliases,
 Defines the default Microsoft 365 cross-tenant capabilities for inbound access from external organizations.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability
+
+```
+This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability Cmdlet.
+
 
 ## PARAMETERS
 
