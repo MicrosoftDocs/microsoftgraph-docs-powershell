@@ -28667,8 +28667,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalhold)
-- [](https://learn.microsoft.com/graph/api/ediscovery-legalhold-update?view=graph-rest-beta)
+- [Update-MgBetaComplianceEdiscoveryCaseLegalHold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalhold)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-legalhold-update?view=graph-rest-beta)
 
 
 
