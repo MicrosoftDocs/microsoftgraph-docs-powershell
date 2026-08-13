@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementimportedwindowsautopilotdeviceidentity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ## SYNOPSIS
 
 Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -654,7 +661,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity>`: Imported windows autopilot devices.
+BODYPARAMETER <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity>: Imported windows autopilot devices.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -671,7 +678,7 @@ Read-only.
     [DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]: importedWindowsAutopilotDeviceIdentityImportStatus
     [DeviceRegistrationId <String>]: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -700,7 +707,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [WindowsFeatureUpdateProfileAssignmentId <String>]: The unique identifier of windowsFeatureUpdateProfileAssignment
   [WindowsFeatureUpdateProfileId <String>]: The unique identifier of windowsFeatureUpdateProfile
 
-STATE `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>`: importedWindowsAutopilotDeviceIdentityState
+STATE <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>: importedWindowsAutopilotDeviceIdentityState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceErrorCode <Int32?>]: Device error code reported by Device Directory Service(DDS).
   [DeviceErrorName <String>]: Device error name reported by Device Directory Service(DDS).
@@ -710,27 +717,4 @@ STATE `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>`: importedWi
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementimportedwindowsautopilotdeviceidentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementimportedwindowsautopilotdeviceidentity)

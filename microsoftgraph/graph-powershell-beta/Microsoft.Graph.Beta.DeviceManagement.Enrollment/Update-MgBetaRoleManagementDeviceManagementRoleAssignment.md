@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagementDeviceManagementRoleAssignment
 ---
@@ -14,7 +14,7 @@ title: Update-MgBetaRoleManagementDeviceManagementRoleAssignment
 ## SYNOPSIS
 
 Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
+The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
 
 ## SYNTAX
 
@@ -78,12 +78,11 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
+The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
@@ -95,10 +94,6 @@ $params = @{
 }
 
 Update-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaRoleManagementDeviceManagementRoleAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -241,7 +236,7 @@ HelpMessage: ''
 
 ### -Condition
 
-
+.
 
 ```yaml
 Type: System.String
@@ -815,7 +810,7 @@ Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentMultiple>`: unifiedRoleAssignmentMultiple
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentMultiple>: unifiedRoleAssignmentMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -908,7 +903,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -946,7 +941,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -992,27 +987,5 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [Update-MgBetaRoleManagementDeviceManagementRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignment)
+- [](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementDepOnboardingSetting
 ---
@@ -86,13 +86,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property depOnboardingSettings in deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -977,7 +979,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune.
+BODYPARAMETER <IMicrosoftGraphDepOnboardingSetting>: The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune.
 The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
@@ -1180,7 +1182,7 @@ Read-only.
   [TokenName <String>]: Friendly Name for Dep Token
   [TokenType <DepTokenType?>]: depTokenType
 
-DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration.
+DEFAULTIOSENROLLMENTPROFILE <IMicrosoftGraphDepIosEnrollmentProfile>: The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration.
 This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppleIdDisabled <Boolean?>]: Indicates if Apple id setup pane is disabled
@@ -1253,7 +1255,7 @@ See https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-shared-i
   [WelcomeScreenDisabled <Boolean?>]: Indicates if Weclome screen is disabled
   [ZoomDisabled <Boolean?>]: Indicates if zoom setup pane is disabled
 
-DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration.
+DEFAULTMACOSENROLLMENTPROFILE <IMicrosoftGraphDepMacOSEnrollmentProfile>: The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration.
 This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppleIdDisabled <Boolean?>]: Indicates if Apple id setup pane is disabled
@@ -1346,7 +1348,7 @@ Read-only.
   [RequestedEnrollmentProfileId <String>]: Enrollment profile Id admin intends to apply to the device during next enrollment
   [SerialNumber <String>]: Device serial number
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -1378,27 +1380,4 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementDepOnboardingSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsetting)

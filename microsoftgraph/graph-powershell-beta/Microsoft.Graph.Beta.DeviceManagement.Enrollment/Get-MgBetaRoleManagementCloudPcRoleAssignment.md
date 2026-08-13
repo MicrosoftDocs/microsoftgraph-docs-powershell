@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagementCloudPcRoleAssignment
 ---
@@ -14,7 +14,7 @@ title: Get-MgBetaRoleManagementCloudPcRoleAssignment
 ## SYNOPSIS
 
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## SYNTAX
 
@@ -57,28 +57,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.Read.All, CloudPC.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
+The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
 ## EXAMPLES
-### Example 1: Get a roleAssignmentMultiple in a Cloud PC provider
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Get-MgBetaRoleManagementCloudPcRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
-
-```
-This example will get a roleassignmentmultiple in a cloud pc provider
-
 
 ## PARAMETERS
 
@@ -540,7 +527,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -572,27 +559,5 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaRoleManagementCloudPcRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroleassignment)
+- [](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)
