@@ -888,7 +888,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile)
+- [Update-MgAgreementFile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile)
 
 
 
