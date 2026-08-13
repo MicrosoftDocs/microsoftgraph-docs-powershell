@@ -15,6 +15,9 @@ title: Get-MgBetaSiteOnenoteResourceContent
 
 The content of the resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteResourceContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
