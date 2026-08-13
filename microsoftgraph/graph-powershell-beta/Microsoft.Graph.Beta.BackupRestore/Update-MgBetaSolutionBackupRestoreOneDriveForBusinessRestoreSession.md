@@ -1157,8 +1157,8 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession)
-- [](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta)
+- [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta)
 
 
 
