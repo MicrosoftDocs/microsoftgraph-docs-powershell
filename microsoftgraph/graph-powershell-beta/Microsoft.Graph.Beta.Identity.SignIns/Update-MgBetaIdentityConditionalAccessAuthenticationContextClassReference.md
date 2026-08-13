@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 Update the properties of an authenticationContextClassReference object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
