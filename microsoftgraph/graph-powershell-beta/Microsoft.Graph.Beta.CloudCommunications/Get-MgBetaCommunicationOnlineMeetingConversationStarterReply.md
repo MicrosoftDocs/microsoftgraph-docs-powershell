@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationOnlineMeetingConversationStarterReply
 
 A collection of messages that are replies to this message and form a threaded discussion.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingConversationStarterReply](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingConversationStarterReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

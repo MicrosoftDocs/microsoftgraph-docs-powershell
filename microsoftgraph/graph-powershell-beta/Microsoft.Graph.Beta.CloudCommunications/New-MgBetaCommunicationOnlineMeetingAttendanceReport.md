@@ -15,6 +15,9 @@ title: New-MgBetaCommunicationOnlineMeetingAttendanceReport
 
 Create new navigation property to attendanceReports for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

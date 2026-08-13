@@ -15,6 +15,9 @@ title: Update-MgBetaCommunicationAdhocCall
 
 Update the navigation property adhocCalls in communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationAdhocCall](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationAdhocCall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
