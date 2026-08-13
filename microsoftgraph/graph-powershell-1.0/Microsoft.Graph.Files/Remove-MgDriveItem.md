@@ -15,6 +15,9 @@ title: Remove-MgDriveItem
 
 Delete navigation property items for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
