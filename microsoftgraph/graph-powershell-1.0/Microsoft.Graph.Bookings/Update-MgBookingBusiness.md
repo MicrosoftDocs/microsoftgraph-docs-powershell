@@ -1670,8 +1670,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0)
+- [Update-MgBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0)
 
 
 
