@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityCustomAuthenticationExtension
 ---
@@ -15,9 +15,6 @@ title: New-MgIdentityCustomAuthenticationExtension
 
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityCustomAuthenticationExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,18 +51,9 @@ This cmdlet has the following aliases,
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomAuthenticationExtension.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an onTokenIssuanceStartCustomExtension object
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -97,12 +85,7 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
-```
-This example will create an ontokenissuancestartcustomextension object
-
-### Example 2: Create an onAttributeCollectionStartCustomExtension object
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -126,12 +109,7 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
-```
-This example will create an onattributecollectionstartcustomextension object
-
-### Example 3: Create an onAttributeCollectionSubmitCustomExtension object
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -155,12 +133,7 @@ $params = @{
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
 
-```
-This example will create an onattributecollectionsubmitcustomextension object
-
-### Example 4: Create an onOtpSendCustomExtension object
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -186,10 +159,6 @@ $params = @{
 }
 
 New-MgIdentityCustomAuthenticationExtension -BodyParameter $params
-
-```
-This example will create an onotpsendcustomextension object
-
 
 ## PARAMETERS
 
@@ -628,7 +597,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomAuthenticationExtension>`: customAuthenticationExtension
+BODYPARAMETER <IMicrosoftGraphCustomAuthenticationExtension>: customAuthenticationExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]: customExtensionAuthenticationConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -649,7 +618,7 @@ Read-only.
   [BehaviorOnError <IMicrosoftGraphCustomExtensionBehaviorOnError>]: customExtensionBehaviorOnError
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
+CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>: customExtensionClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaximumRetries <Int32?>]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
@@ -661,27 +630,5 @@ Default duration is 1000.
 
 ## RELATED LINKS
 
-- [New-MgIdentityCustomAuthenticationExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)

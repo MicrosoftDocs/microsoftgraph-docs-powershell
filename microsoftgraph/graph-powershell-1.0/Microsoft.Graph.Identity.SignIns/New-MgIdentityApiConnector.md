@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityApiConnector
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityApiConnector
 ## SYNOPSIS
 
 Create a new identityApiConnector object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,18 +45,9 @@ This cmdlet has the following aliases,
 
 Create a new identityApiConnector object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | APIConnectors.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | APIConnectors.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an API connector with basic authentication
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -75,12 +63,7 @@ $params = @{
 
 New-MgIdentityApiConnector -BodyParameter $params
 
-```
-This example will create an api connector with basic authentication
-
-### Example 2: Create an API connector with client certificate authentication
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -95,10 +78,6 @@ $params = @{
 }
 
 New-MgIdentityApiConnector -BodyParameter $params
-
-```
-This example will create an api connector with client certificate authentication
-
 
 ## PARAMETERS
 
@@ -473,7 +452,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityApiConnector>`: identityApiConnector
+BODYPARAMETER <IMicrosoftGraphIdentityApiConnector>: identityApiConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -485,27 +464,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgIdentityApiConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector)
+- [](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0)
