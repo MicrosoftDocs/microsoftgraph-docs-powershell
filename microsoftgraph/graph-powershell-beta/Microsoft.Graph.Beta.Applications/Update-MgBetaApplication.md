@@ -4947,8 +4947,8 @@ Only available for applications that support the PersonalMicrosoftAccount signIn
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplication)
-- [](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-beta)
+- [Update-MgBetaApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplication)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-beta)
 
 
 

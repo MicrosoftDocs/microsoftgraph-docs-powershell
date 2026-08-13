@@ -383,7 +383,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenlifetimepolicycount)
+- [Get-MgBetaServicePrincipalTokenLifetimePolicyCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenlifetimepolicycount)
 
 
 
