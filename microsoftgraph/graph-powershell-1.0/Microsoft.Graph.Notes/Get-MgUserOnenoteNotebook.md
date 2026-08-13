@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserOnenoteNotebook
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserOnenoteNotebook
 The collection of OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,27 +59,14 @@ The collection of OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.Read, Notes.Read.All, Notes.ReadWrite, Notes.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite,  |
-| Application | Notes.Read.All, Notes.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebook -UserId $userId
-
-```
-This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
-
 
 ## PARAMETERS
 
@@ -571,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -588,26 +572,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserOnenoteNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook)

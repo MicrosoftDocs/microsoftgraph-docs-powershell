@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsection
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserOnenoteSectionGroupSection
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserOnenoteSectionGroupSection
 The sections in the section group.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,18 +61,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId
-
-```
-This example shows how to use the Get-MgUserOnenoteSectionGroupSection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -591,7 +583,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -608,26 +600,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserOnenoteSectionGroupSection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsection)
