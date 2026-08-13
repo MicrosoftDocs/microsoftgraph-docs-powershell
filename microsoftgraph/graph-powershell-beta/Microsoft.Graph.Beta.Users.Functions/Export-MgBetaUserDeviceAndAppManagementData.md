@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users.Functions
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgBetaUserDeviceAndAppManagementData
 ---
@@ -14,9 +14,6 @@ title: Export-MgBetaUserDeviceAndAppManagementData
 ## SYNOPSIS
 
 Invoke function exportDeviceAndAppManagementData
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgUserDeviceAndAppManagementData](/powershell/module/Microsoft.Graph.Users.Functions/Export-MgUserDeviceAndAppManagementData?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,13 +62,15 @@ This cmdlet has the following aliases,
 
 Invoke function exportDeviceAndAppManagementData
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -414,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   [EndDateTime <String>]: Usage: EndDateTime='{EndDateTime}'
   [RoomList <String>]: Usage: RoomList='{RoomList}'
   [Skip <Int32?>]: Usage: skip={skip}
@@ -425,27 +424,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Export-MgBetaUserDeviceAndAppManagementData](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata)
