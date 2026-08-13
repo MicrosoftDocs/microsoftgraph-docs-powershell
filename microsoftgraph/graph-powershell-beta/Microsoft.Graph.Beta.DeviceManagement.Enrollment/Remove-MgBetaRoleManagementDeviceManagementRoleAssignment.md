@@ -58,12 +58,17 @@ The following RBAC providers are currently supported:\r- Cloud PC \r- device man
 | Application | CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Delete a unifiedRoleAssignmentMultiple in an Intune provider
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Remove-MgBetaRoleManagementDeviceManagementRoleAssignment -UnifiedRoleAssignmentMultipleId $unifiedRoleAssignmentMultipleId
+
+```
+This example will delete a unifiedroleassignmentmultiple in an intune provider
+
 
 ## PARAMETERS
 
