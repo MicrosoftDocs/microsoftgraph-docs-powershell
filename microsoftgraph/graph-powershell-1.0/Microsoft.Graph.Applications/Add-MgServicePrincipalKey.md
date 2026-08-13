@@ -683,8 +683,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-addkey?view=graph-rest-1.0)
+- [Add-MgServicePrincipalKey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-addkey?view=graph-rest-1.0)
 
 
 
