@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property pages for sites
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.ReadWrite, Notes.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Notes.ReadWrite,  |
+| Application | Notes.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
