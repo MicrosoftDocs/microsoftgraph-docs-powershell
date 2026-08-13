@@ -1225,7 +1225,7 @@ Applicable for reusable setting.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinition)
+- [Update-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplatesettingdefinition)
 
 
 
