@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractbyid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgContractById
 ---
@@ -16,9 +16,6 @@ title: Get-MgContractById
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContractById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContractById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -77,7 +84,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -205,7 +212,7 @@ HelpMessage: ''
 
 ### -Ids
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -311,7 +318,7 @@ HelpMessage: ''
 
 ### -Types
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -382,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1T6Lra6ContractsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1T6Lra6ContractsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Ids <String[]>]: 
   [Types <String[]>]:
@@ -390,28 +397,5 @@ BODYPARAMETER `<IPaths1T6Lra6ContractsMicrosoftGraphGetbyidsPostRequestbodyConte
 
 ## RELATED LINKS
 
-- [Get-MgContractById](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractbyid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractbyid)
+- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)

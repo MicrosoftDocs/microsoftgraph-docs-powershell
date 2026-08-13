@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryRoleTemplate
 ---
@@ -14,9 +14,6 @@ title: Get-MgDirectoryRoleTemplate
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a directoryroletemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,26 +56,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a directoryroletemplate object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryRoleTemplate
-
-```
-This example shows how to use the Get-MgDirectoryRoleTemplate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -540,7 +524,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -582,28 +566,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryRoleTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryroletemplate-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryroletemplate-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplate)
+- [](https://learn.microsoft.com/graph/api/directoryroletemplate-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/directoryroletemplate-list?view=graph-rest-1.0)

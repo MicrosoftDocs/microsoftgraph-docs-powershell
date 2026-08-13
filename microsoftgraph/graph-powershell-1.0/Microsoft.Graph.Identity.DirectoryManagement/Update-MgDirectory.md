@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectory
 ---
@@ -14,9 +14,6 @@ title: Update-MgDirectory
 ## SYNOPSIS
 
 Update directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,6 +52,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -647,7 +654,7 @@ Default value is null.
 If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
 Can be changed later.
 
-BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
+BODYPARAMETER <IMicrosoftGraphDirectory>: directory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1004,7 +1011,7 @@ This property isn't in use and updating it isn't supported.
     [UserForcePasswordChangeOnLogonEnabled <Boolean?>]: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     [UserWritebackEnabled <Boolean?>]: Used to indicate that user writeback is enabled.
 
-PUBLICKEYINFRASTRUCTURE `<IMicrosoftGraphPublicKeyInfrastructureRoot>`: publicKeyInfrastructureRoot
+PUBLICKEYINFRASTRUCTURE <IMicrosoftGraphPublicKeyInfrastructureRoot>: publicKeyInfrastructureRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1039,7 +1046,7 @@ Maximum length is 256 characters.
     [Status <String>]: The status of any asynchronous jobs runs on the object which can be upload or delete.
     [StatusDetails <String>]: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
 
-RECOVERY `<IMicrosoftGraphEntraRecoveryServicesRecovery>`: recovery
+RECOVERY <IMicrosoftGraphEntraRecoveryServicesRecovery>: recovery
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1114,27 +1121,4 @@ The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 
 ## RELATED LINKS
 
-- [Update-MgDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)

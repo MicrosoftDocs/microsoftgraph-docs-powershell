@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleiteminsight
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminPeopleItemInsight
 ---
@@ -15,9 +15,6 @@ title: Get-MgAdminPeopleItemInsight
 
 Get the properties of an insightsSettings object to display or return item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy in Microsoft Graph.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleItemInsight](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleItemInsight?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 Get the properties of an insightsSettings object to display or return item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy in Microsoft Graph.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, PeopleSettings.Read.All, PeopleSettings.ReadWrite.All, User.Read.All, User.ReadWrite, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgAdminPeopleItemInsight
-
-```
-This example shows how to use the Get-MgAdminPeopleItemInsight Cmdlet.
-
 
 ## PARAMETERS
 
@@ -299,27 +283,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgAdminPeopleItemInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleiteminsight)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleiteminsight)
+- [](https://learn.microsoft.com/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-1.0)

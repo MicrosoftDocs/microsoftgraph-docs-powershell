@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDomain
 ---
@@ -14,9 +14,6 @@ title: Get-MgDomain
 ## SYNOPSIS
 
 Retrieve the properties and relationships of domain object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomain?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,18 +55,10 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of domain object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a list of domain objects
 
-```powershell
+### EXAMPLE 1
+
 Get-MgDomain | Format-List
 
 AuthenticationType               : Managed
@@ -90,9 +79,6 @@ State                            : Microsoft.Graph.PowerShell.Models.MicrosoftGr
 SupportedServices                : {Email, OfficeCommunicationsOnline}
 VerificationDnsRecords           :
 AdditionalProperties             : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains/$entity]}
-```
-
-This example retrieves a list of the domain objects.
 
 ## PARAMETERS
 
@@ -554,7 +540,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -596,28 +582,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain)
+- [](https://learn.microsoft.com/graph/api/domain-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/domain-list?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/find-mgtenantrelationshiptenantinformationbytenantid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgTenantRelationshipTenantInformationByTenantId
 ---
@@ -15,9 +15,6 @@ title: Find-MgTenantRelationshipTenantInformationByTenantId
 
 Given a tenant ID, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use the tenantId to configure cross-tenant cross-tenant access settings between you and the tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaTenantRelationshipTenantInformationByTenantId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Find-MgBetaTenantRelationshipTenantInformationByTenantId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,17 +48,12 @@ Given a tenant ID, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use the tenantId to configure cross-tenant cross-tenant access settings between you and the tenant.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Find-MgTenantRelationshipTenantInformationByTenantId
-
-```
-This example shows how to use the Find-MgTenantRelationshipTenantInformationByTenantId Cmdlet.
-
 
 ## PARAMETERS
 
@@ -307,7 +299,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -349,27 +341,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Find-MgTenantRelationshipTenantInformationByTenantId](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/find-mgtenantrelationshiptenantinformationbytenantid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/find-mgtenantrelationshiptenantinformationbytenantid)
+- [](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0)
