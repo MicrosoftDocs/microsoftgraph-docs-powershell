@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportM365AppUserCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportM365AppUserCount
 ## SYNOPSIS
 
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,28 +45,18 @@ This cmdlet has the following aliases,
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 ## EXAMPLES
-### Example 1: CSV output
 
-```powershell
-
-Import-Module Microsoft.Graph.Reports
-
-Get-MgReportM365AppUserCount -Format "text/csv"  -Period $periodId 
-
-```
-This example will csv output
-
-### Example 2: JSON output
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportM365AppUserCount -Format "application/json"  -Period $periodId 
+Get-MgReportM365AppUserCount -Format "text/csv"  -Period $periodId
 
-```
-This example will json output
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportM365AppUserCount -Format "application/json"  -Period $periodId
 
 ## PARAMETERS
 
@@ -357,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -384,27 +371,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportM365AppUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-1.0)

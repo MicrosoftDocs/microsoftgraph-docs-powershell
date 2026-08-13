@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportPartnerBillingOperation
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportPartnerBillingOperation
 ## SYNOPSIS
 
 Read the properties and relationships of an operation object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,48 +55,25 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an operation object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PartnerBilling.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PartnerBilling.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get operation succeeded
 
-```powershell
-
-Import-Module Microsoft.Graph.Reports
-
-Get-MgReportPartnerBillingOperation -OperationId $operationId
-
-```
-This example will get operation succeeded
-
-### Example 2: Get operation failed
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportPartnerBillingOperation -OperationId $operationId
 
-```
-This example will get operation failed
-
-### Example 3: Get operation is still running
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportPartnerBillingOperation -OperationId $operationId
 
-```
-This example will get operation is still running
+### EXAMPLE 3
 
+Import-Module Microsoft.Graph.Reports
+
+Get-MgReportPartnerBillingOperation -OperationId $operationId
 
 ## PARAMETERS
 
@@ -561,7 +535,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -588,27 +562,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportPartnerBillingOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation)
+- [](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0)
