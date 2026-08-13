@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveItem
 ---
@@ -16,9 +16,6 @@ title: Get-MgDriveItem
 All items contained in the drive.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,26 +59,13 @@ All items contained in the drive.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All,  |
-| Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a bundle and its children in a single call
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children" 
-
-```
-This example will get a bundle and its children in a single call
-
+Get-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children"
 
 ## PARAMETERS
 
@@ -570,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -599,27 +583,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitem)
+- [](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0)

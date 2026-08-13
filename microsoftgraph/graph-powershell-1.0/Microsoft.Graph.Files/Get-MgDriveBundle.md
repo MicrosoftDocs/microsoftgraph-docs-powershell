@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundle
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveBundle
 ---
@@ -15,9 +15,6 @@ title: Get-MgDriveBundle
 
 Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundle?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
 ## EXAMPLES
-### Example 1: Get a bundle
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveBundle -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example will get a bundle
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -589,26 +581,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDriveBundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundle)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundle)
