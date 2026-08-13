@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglicenseuser
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgLicenseUser
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgLicenseUser
 Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLicenseUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
 Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Actions
 
 Invoke-MgLicenseUser -UserId $userId
-
-```
-This example shows how to use the Invoke-MgLicenseUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -360,33 +344,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Invoke-MgLicenseUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglicenseuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglicenseuser)
+- [](https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0)

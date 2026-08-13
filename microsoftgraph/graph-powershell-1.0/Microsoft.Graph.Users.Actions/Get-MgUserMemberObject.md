@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermemberobject
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMemberObject
 ---
@@ -13,11 +13,8 @@ title: Get-MgUserMemberObject
 
 ## SYNOPSIS
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,16 +63,18 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r- user\r- group\r- service principal\r- organizational contact\r- device\r- directory object This function is transitive.
+Return all IDs for the groups, administrative units, and directory roles that an object of one of the following types is a member of:\r\n- user\r\n- group\r\n- service principal\r\n- organizational contact\r\n- device\r\n- directory object This function is transitive.
 Only users and role-enabled groups can be members of directory roles.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read, User.Read.All, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All, User.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -108,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -355,7 +354,7 @@ HelpMessage: ''
 
 ### -SecurityEnabledOnly
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -463,38 +462,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SecurityEnabledOnly <Boolean?>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Get-MgUserMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermemberobject)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermemberobject)
+- [](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)

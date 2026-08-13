@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgUserMail
 ---
@@ -18,9 +18,6 @@ When using JSON format, you can include a file attachment in the same sendMail a
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.Send,  |
-| Delegated (personal Microsoft account) | Mail.Send,  |
-| Application | Mail.Send,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -120,12 +108,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Send-MgUserMail Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -159,12 +142,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Send-MgUserMail Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -195,10 +173,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Send-MgUserMail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -231,7 +205,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -527,7 +501,7 @@ HelpMessage: ''
 
 ### -SaveToSentItems
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -635,7 +609,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Message <IMicrosoftGraphMessage>]: message
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -735,10 +709,10 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
   [SaveToSentItems <Boolean?>]: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -838,27 +812,5 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 ## RELATED LINKS
 
-- [Send-MgUserMail](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
+- [](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
