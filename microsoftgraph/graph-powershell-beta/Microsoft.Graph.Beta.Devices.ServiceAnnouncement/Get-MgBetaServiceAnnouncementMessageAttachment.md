@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServiceAnnouncementMessageAttachment
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaServiceAnnouncementMessageAttachment
 ## SYNOPSIS
 
 Read the properties and relationships of a serviceAnnouncementAttachment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ServiceMessage.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ServiceMessage.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get an attachment with message ID
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
-
-```
-This example will get an attachment with message id
-
 
 ## PARAMETERS
 
@@ -568,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   [ServiceAnnouncementAttachmentId <String>]: The unique identifier of serviceAnnouncementAttachment
   [ServiceHealthId <String>]: The unique identifier of serviceHealth
   [ServiceHealthIssueId <String>]: The unique identifier of serviceHealthIssue
@@ -577,28 +561,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServiceAnnouncementMessageAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment)
+- [](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-beta)

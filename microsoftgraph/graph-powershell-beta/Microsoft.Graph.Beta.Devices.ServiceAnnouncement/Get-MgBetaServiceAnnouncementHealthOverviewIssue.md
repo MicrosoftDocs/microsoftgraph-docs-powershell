@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverviewissue
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServiceAnnouncementHealthOverviewIssue
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaServiceAnnouncementHealthOverviewIssue
 ## SYNOPSIS
 
 A collection of issues that happened on the service, with detailed information for each issue.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 A collection of issues that happened on the service, with detailed information for each issue.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -547,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   [ServiceAnnouncementAttachmentId <String>]: The unique identifier of serviceAnnouncementAttachment
   [ServiceHealthId <String>]: The unique identifier of serviceHealth
   [ServiceHealthIssueId <String>]: The unique identifier of serviceHealthIssue
@@ -556,28 +563,4 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServiceAnnouncementHealthOverviewIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverviewissue)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverviewissue)
