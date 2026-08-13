@@ -28,7 +28,7 @@ These scripts fix the empty links by adding appropriate link text:
 ### 2. CorrectRelatedLinks-AllFiles.ps1 (Enhanced)
 - **Purpose**: Batch process all Microsoft Graph PowerShell modules based on `ModulesMapping.jsonc`
 - **Features**: 
-  - ✅ Automatically discovers all 43 modules from configuration
+  - ✅ Automatically discovers all 44 modules from the SDK configuration
   - ✅ Processes both v1.0 and beta versions
   - ✅ Supports selective module processing
   - ✅ Comprehensive progress reporting

@@ -65,7 +65,6 @@ extends:
           - Compliance
           - ConfigurationManagement
           - CrossDeviceExperiences
-          - DeviceManagement.Actions
           - DeviceManagement.Administration
           - DeviceManagement.Enrollment
           - DeviceManagement.Functions
@@ -113,7 +112,6 @@ extends:
           - Compliance
           - ConfigurationManagement
           - CrossDeviceExperiences
-          - DeviceManagement.Actions
           - DeviceManagement.Administration
           - DeviceManagement.Enrollment
           - DeviceManagement.Functions

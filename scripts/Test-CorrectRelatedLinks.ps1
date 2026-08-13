@@ -5,7 +5,7 @@ Write-Host "=== Testing Updated CorrectRelatedLinks-AllFiles.ps1 ===" -Foregroun
 
 # Test 1: Show available modules from ModulesMapping.jsonc
 Write-Host "`n1. Testing module discovery..." -ForegroundColor Cyan
-$ModuleMappingPath = Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"
+$ModuleMappingPath = Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"
 
 if (Test-Path $ModuleMappingPath) {
     $ModuleMapping = Get-Content $ModuleMappingPath | ConvertFrom-Json -AsHashTable
