@@ -15,6 +15,9 @@ title: Get-MgBetaEntitlementManagementAccessPackageCatalog
 
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ListAll (Default)
