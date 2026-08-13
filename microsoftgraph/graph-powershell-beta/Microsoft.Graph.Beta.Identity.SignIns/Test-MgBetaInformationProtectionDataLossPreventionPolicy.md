@@ -489,7 +489,7 @@ NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy)
+- [Test-MgBetaInformationProtectionDataLossPreventionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy)
 
 
 

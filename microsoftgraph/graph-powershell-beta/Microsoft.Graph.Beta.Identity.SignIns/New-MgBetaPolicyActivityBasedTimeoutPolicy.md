@@ -530,8 +530,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy)
-- [](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-beta)
+- [New-MgBetaPolicyActivityBasedTimeoutPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies?view=graph-rest-beta)
 
 
 

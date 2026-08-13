@@ -609,8 +609,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguageoverridepage)
-- [](https://learn.microsoft.com/graph/api/userflowlanguagepage-put?view=graph-rest-beta)
+- [Update-MgBetaIdentityB2CUserFlowLanguageOverridePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguageoverridepage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userflowlanguagepage-put?view=graph-rest-beta)
 
 
 

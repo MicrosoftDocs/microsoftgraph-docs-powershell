@@ -766,7 +766,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicy)
+- [Update-MgBetaPolicyServicePrincipalCreationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicy)
 
 
 
