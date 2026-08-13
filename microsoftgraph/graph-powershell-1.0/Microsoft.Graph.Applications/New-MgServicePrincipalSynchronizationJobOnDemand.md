@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgServicePrincipalSynchronizationJobOnDemand
 ---
@@ -15,9 +15,6 @@ title: New-MgServicePrincipalSynchronizationJobOnDemand
 
 Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationJobOnDemand?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ This cmdlet has the following aliases,
 Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Provision users from Microsoft Entra ID to third-party applications
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -106,12 +94,7 @@ $params = @{
 
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-```
-This example will provision users from microsoft entra id to third-party applications
-
-### Example 2: Sync on-demand from Active Directory to Microsoft Entra ID (Microsoft Entra Cloud Sync)
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Applications
 
@@ -131,12 +114,7 @@ $params = @{
 
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-```
-This example will sync on-demand from active directory to microsoft entra id (microsoft entra cloud sync)
-
-### Example 3: Provision a group and two of its members on demand
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Applications
 
@@ -167,10 +145,6 @@ $params = @{
 }
 
 New-MgServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
-
-```
-This example will provision a group and two of its members on demand
-
 
 ## PARAMETERS
 
@@ -203,7 +177,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -365,7 +339,7 @@ HelpMessage: ''
 
 ### -Parameters
 
-
+.
 To construct, see NOTES section for PARAMETERS properties and create a hash table.
 
 ```yaml
@@ -586,7 +560,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]: 
     [RuleId <String>]: The identifier of the synchronizationRule to be applied.
@@ -603,7 +577,7 @@ Can be one of the following: An onPremisesDistinguishedName for synchronization 
 Can be one of the following: user for synchronizing between Active Directory and Azure AD.User for synchronizing a user between Microsoft Entra ID and a third-party application.
 Worker for synchronization a user between Workday and either Active Directory or Microsoft Entra ID.Group for synchronizing a group between Microsoft Entra ID and a third-party application.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -648,27 +622,5 @@ Worker for synchronization a user between Workday and either Active Directory or
 
 ## RELATED LINKS
 
-- [New-MgServicePrincipalSynchronizationJobOnDemand](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgApplicationFederatedIdentityCredential
 ---
@@ -16,9 +16,6 @@ title: New-MgApplicationFederatedIdentityCredential
 Create a new federatedIdentityCredential object for an application.
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ Create a new federatedIdentityCredential object for an application.
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example: Create a federated identity credential for an application
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -100,10 +88,6 @@ $params = @{
 }
 
 New-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example will### example: create a federated identity credential for an application
-
 
 ## PARAMETERS
 
@@ -649,7 +633,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFederatedIdentityCredential>`: federatedIdentityCredential
+BODYPARAMETER <IMicrosoftGraphFederatedIdentityCredential>: federatedIdentityCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -680,7 +664,7 @@ The combination of issuer and subject must be unique within the app.
 It has a limit of 600 characters.
 Supports $filter (eq).
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -710,27 +694,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential)
+- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-post?view=graph-rest-1.0)
