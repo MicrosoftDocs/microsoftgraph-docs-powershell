@@ -15,6 +15,9 @@ title: Remove-MgGroupAppRoleAssignment
 
 Deletes an appRoleAssignment that a group has been granted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

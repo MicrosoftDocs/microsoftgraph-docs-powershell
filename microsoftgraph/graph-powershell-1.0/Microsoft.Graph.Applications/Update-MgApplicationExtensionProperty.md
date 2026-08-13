@@ -15,6 +15,9 @@ title: Update-MgApplicationExtensionProperty
 
 Update the navigation property extensionProperties in applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
