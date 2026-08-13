@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationMeUser
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationMeUser
 ## SYNOPSIS
 
 Retrieve the simple directory user that corresponds to this educationUser.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,26 +35,13 @@ This cmdlet has the following aliases,
 
 Retrieve the simple directory user that corresponds to this educationUser.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, Directory.Read.All, EduRoster.Read, EduRoster.Write, User.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, Directory.Read.All, EduRoster.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeUser
-
-```
-This example shows how to use the Get-MgEducationMeUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationMeUser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuser)
+- [](https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0)
