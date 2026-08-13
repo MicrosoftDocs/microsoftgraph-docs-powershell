@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkforwardingprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy
 ---
@@ -68,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to policies for networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -565,7 +575,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessPolicyLink>`: policyLink
+BODYPARAMETER <IMicrosoftGraphNetworkaccessPolicyLink>: policyLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -583,7 +593,7 @@ Read-only.
   [State <String>]: status
   [Version <String>]: Version.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -611,7 +621,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
   [Url <String>]: Usage: url='{url}'
 
-POLICY `<IMicrosoftGraphNetworkaccessPolicy>`: policy
+POLICY <IMicrosoftGraphNetworkaccessPolicy>: policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -626,27 +636,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkforwardingprofilepolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkforwardingprofilepolicy)

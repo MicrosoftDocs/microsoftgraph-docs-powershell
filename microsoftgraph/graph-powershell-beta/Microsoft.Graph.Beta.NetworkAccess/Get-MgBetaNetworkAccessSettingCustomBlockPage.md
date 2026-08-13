@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingcustomblockpage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessSettingCustomBlockPage
 ---
@@ -35,26 +35,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of microsoft.graph.networkaccess.customBlockPage object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessSettingCustomBlockPage
-
-```
-This example shows how to use the Get-MgBetaNetworkAccessSettingCustomBlockPage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -294,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaNetworkAccessSettingCustomBlockPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingcustomblockpage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesssettingcustomblockpage)
+- [](https://learn.microsoft.com/graph/api/networkaccess-customblockpage-get?view=graph-rest-beta)

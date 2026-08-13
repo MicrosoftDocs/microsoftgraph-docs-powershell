@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration
 ---
@@ -70,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property connectivityConfiguration in networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -513,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>`: remoteNetworkConnectivityConfiguration
+BODYPARAMETER <IMicrosoftGraphNetworkaccessRemoteNetworkConnectivityConfiguration>: remoteNetworkConnectivityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Links <IMicrosoftGraphNetworkaccessConnectivityConfigurationLink[]>]: List of connectivity configurations for deviceLink objects.
     [Id <String>]: The unique identifier for an entity.
@@ -533,7 +543,7 @@ Read-only.
 Key.
   [RemoteNetworkName <String>]: Display name assigned to a branchSite.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -579,27 +589,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivityremotenetworkconnectivityconfiguration)

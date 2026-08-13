@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessTenantStatus
 ---
@@ -36,17 +36,12 @@ This cmdlet has the following aliases,
 Retrieve the onboarding status of a specific tenant.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessTenantStatus
-
-```
-This example shows how to use the Get-MgBetaNetworkAccessTenantStatus Cmdlet.
-
 
 ## PARAMETERS
 
@@ -286,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaNetworkAccessTenantStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tenantstatus-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesstenantstatus)
+- [](https://learn.microsoft.com/graph/api/networkaccess-tenantstatus-get?view=graph-rest-beta)
