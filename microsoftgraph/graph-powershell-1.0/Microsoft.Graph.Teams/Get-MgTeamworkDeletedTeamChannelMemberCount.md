@@ -15,6 +15,9 @@ title: Get-MgTeamworkDeletedTeamChannelMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMemberCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
