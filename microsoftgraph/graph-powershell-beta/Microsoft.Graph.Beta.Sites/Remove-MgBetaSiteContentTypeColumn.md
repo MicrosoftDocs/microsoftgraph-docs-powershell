@@ -15,6 +15,9 @@ title: Remove-MgBetaSiteContentTypeColumn
 
 Delete columnDefinition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
