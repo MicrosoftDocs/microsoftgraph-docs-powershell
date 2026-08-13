@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization
 
 The localized version of the terms of use agreement files attached to the agreement.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
