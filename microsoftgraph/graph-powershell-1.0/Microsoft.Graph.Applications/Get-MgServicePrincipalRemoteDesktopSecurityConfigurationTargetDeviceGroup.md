@@ -599,9 +599,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup)
-- [](https://learn.microsoft.com/graph/api/targetdevicegroup-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-targetdevicegroups?view=graph-rest-1.0)
+- [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/targetdevicegroup-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-targetdevicegroups?view=graph-rest-1.0)
 
 
 
