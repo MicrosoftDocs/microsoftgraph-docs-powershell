@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceautomaticlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserPresenceAutomaticLocation
 ---
@@ -16,9 +16,6 @@ title: Set-MgBetaUserPresenceAutomaticLocation
 Update the automatic work location for a user.
 The automatic layer participates in the standard precedence model: Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps).
 It doesn't clear manual or scheduled signals.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserPresenceAutomaticLocation](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserPresenceAutomaticLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,9 +71,8 @@ The automatic layer participates in the standard precedence model: Use this oper
 It doesn't clear manual or scheduled signals.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -87,10 +83,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgBetaUserPresenceAutomaticLocation -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaUserPresenceAutomaticLocation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -123,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -306,7 +298,7 @@ HelpMessage: ''
 
 ### -PlaceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -526,12 +518,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsPqm32RUsersUserIdPresenceMicrosoftGraphSetautomaticlocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsPqm32RUsersUserIdPresenceMicrosoftGraphSetautomaticlocationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlaceId <String>]: 
   [WorkLocationType <String>]: workLocationType
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -561,27 +553,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserPresenceAutomaticLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceautomaticlocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setautomaticlocation?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresenceautomaticlocation)
+- [](https://learn.microsoft.com/graph/api/presence-setautomaticlocation?view=graph-rest-beta)

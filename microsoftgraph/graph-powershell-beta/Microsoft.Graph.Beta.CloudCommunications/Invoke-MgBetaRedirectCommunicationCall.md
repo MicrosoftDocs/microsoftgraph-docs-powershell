@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaredirectcommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRedirectCommunicationCall
 ---
@@ -17,9 +17,6 @@ Redirect an incoming call that wasn't answered or rejected yet.
 The terms 'redirecting' and 'forwarding' a call are used interchangeably.
 The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRedirectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRedirectCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,9 +76,8 @@ The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -102,10 +98,6 @@ $params = @{
 }
 
 Invoke-MgBetaRedirectCommunicationCall -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaRedirectCommunicationCall Cmdlet.
-
 
 ## PARAMETERS
 
@@ -138,7 +130,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -187,7 +179,7 @@ HelpMessage: ''
 
 ### -CallbackUri
 
-
+.
 
 ```yaml
 Type: System.String
@@ -354,7 +346,7 @@ HelpMessage: ''
 
 ### -MaskCallee
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +373,7 @@ HelpMessage: ''
 
 ### -MaskCaller
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -541,7 +533,7 @@ HelpMessage: ''
 
 ### -Targets
 
-
+.
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
@@ -569,7 +561,7 @@ HelpMessage: ''
 
 ### -Timeout
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -650,7 +642,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CallbackUri <String>]: 
   [MaskCallee <Boolean?>]: 
@@ -680,7 +672,7 @@ The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
   [Timeout <Int32?>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -733,27 +725,5 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRedirectCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaredirectcommunicationcall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-redirect?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaredirectcommunicationcall)
+- [](https://learn.microsoft.com/graph/api/call-redirect?view=graph-rest-beta)

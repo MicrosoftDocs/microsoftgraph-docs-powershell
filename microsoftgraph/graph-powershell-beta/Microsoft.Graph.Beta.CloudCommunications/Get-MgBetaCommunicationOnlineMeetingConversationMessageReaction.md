@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationmessagereaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction
 ## SYNOPSIS
 
 A collection of reactions (such as like and smile) that users have applied to this message.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingConversationMessageReaction](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingConversationMessageReaction?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,17 +60,12 @@ This cmdlet has the following aliases,
 A collection of reactions (such as like and smile) that users have applied to this message.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction -OnlineMeetingEngagementConversationId $onlineMeetingEngagementConversationId -EngagementConversationMessageId $engagementConversationMessageId
-
-```
-This example shows how to use the Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction Cmdlet.
-
 
 ## PARAMETERS
 
@@ -589,7 +581,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -619,27 +611,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationmessagereaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/engagementconversationdiscussionmessage-list-reactions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationmessagereaction)
+- [](https://learn.microsoft.com/graph/api/engagementconversationdiscussionmessage-list-reactions?view=graph-rest-beta)
