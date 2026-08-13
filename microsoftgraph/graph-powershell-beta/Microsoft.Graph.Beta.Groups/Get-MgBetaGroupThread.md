@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupThread
 ---
@@ -14,10 +14,7 @@ title: Get-MgBetaGroupThread
 ## SYNOPSIS
 
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
+You can specify both the parent conversation and the thread, or, \r\nyou can specify the thread without referencing the parent conversation.
 
 ## SYNTAX
 
@@ -58,28 +55,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \ryou can specify the thread without referencing the parent conversation.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.Read.All, Group-Conversation.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group-Conversation.Read.All, Group-Conversation.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
+You can specify both the parent conversation and the thread, or, \r\nyou can specify the thread without referencing the parent conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupThread -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupThread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -568,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -595,28 +579,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread)
+- [](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-beta)

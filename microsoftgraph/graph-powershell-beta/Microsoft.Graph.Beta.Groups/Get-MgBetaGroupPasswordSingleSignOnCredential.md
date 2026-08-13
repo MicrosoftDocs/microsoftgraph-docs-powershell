@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppasswordsinglesignoncredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupPasswordSingleSignOnCredential
 ---
@@ -46,26 +46,13 @@ This cmdlet has the following aliases,
 Get the list of password-based single sign-on credentials for a group.
 This API returns the encrypted passwords as null.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.AccessAsUser.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupPasswordSingleSignOnCredential -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupPasswordSingleSignOnCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -355,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -382,27 +369,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupPasswordSingleSignOnCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppasswordsinglesignoncredential)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-getpasswordsinglesignoncredentials?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppasswordsinglesignoncredential)
+- [](https://learn.microsoft.com/graph/api/group-getpasswordsinglesignoncredentials?view=graph-rest-beta)

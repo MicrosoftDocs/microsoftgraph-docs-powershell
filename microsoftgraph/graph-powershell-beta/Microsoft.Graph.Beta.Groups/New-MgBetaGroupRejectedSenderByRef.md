@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouprejectedsenderbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupRejectedSenderByRef
 ---
@@ -17,9 +17,6 @@ Add a new user or group to the rejectedSender list.
 Specify the user or group in @odata.id in the request body.
 Users in the rejected senders list can't post to conversations of the group (identified in the POST request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you'll get an error.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupRejectedSenderByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,9 +71,8 @@ Users in the rejected senders list can't post to conversations of the group (ide
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you'll get an error.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -85,10 +81,6 @@ $params = @{
 }
 
 New-MgBetaGroupRejectedSenderByRef -GroupId $groupId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaGroupRejectedSenderByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -121,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -498,12 +490,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -530,27 +522,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupRejectedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouprejectedsenderbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-rejectedsenders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouprejectedsenderbyref)
+- [](https://learn.microsoft.com/graph/api/group-post-rejectedsenders?view=graph-rest-beta)

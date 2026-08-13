@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupTransitiveMemberOf
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaGroupTransitiveMemberOf
 
 The groups a group is a member of, either directly or through nested membership.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,17 +60,12 @@ The groups a group is a member of, either directly or through nested membership.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupTransitiveMemberOf -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupTransitiveMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -584,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -611,27 +603,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberof)
+- [](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-beta)

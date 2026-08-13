@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagrouptolifecyclepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaGroupToLifecyclePolicy
 ---
@@ -14,9 +14,6 @@ title: Add-MgBetaGroupToLifecyclePolicy
 ## SYNOPSIS
 
 Invoke action addGroup
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupToLifecyclePolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,13 +65,15 @@ This cmdlet has the following aliases,
 
 Invoke action addGroup
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +106,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -178,7 +177,7 @@ HelpMessage: ''
 
 ### -GroupId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -462,11 +461,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1EttbuxGrouplifecyclepoliciesGrouplifecyclepolicyIdMicrosoftGraphAddgroupPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1EttbuxGrouplifecyclepoliciesGrouplifecyclepolicyIdMicrosoftGraphAddgroupPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupId <String>]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -493,27 +492,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgBetaGroupToLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagrouptolifecyclepolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagrouptolifecyclepolicy)

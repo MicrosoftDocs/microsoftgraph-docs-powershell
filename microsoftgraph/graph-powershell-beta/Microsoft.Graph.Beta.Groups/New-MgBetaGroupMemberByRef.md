@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupMemberByRef
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaGroupMemberByRef
 Add a member to a security or Microsoft 365 group.
 When using the API to add multiple members in one request, you can add up to only 20 members.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupMemberByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,9 +68,8 @@ When using the API to add multiple members in one request, you can add up to onl
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 ## EXAMPLES
-### Example 1: Add a member to a group
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -82,10 +78,6 @@ $params = @{
 }
 
 New-MgBetaGroupMemberByRef -GroupId $groupId -BodyParameter $params
-
-```
-This example will add a member to a group
-
 
 ## PARAMETERS
 
@@ -118,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -495,12 +487,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -527,27 +519,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref)
+- [](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta)

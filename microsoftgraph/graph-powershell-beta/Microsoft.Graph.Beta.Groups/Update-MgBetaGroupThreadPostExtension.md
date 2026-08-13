@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupThreadPostExtension
 ---
@@ -13,13 +13,10 @@ title: Update-MgBetaGroupThreadPostExtension
 
 ## SYNOPSIS
 
-Update an open extension (openTypeExtension object) on a supported resource type.\r- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.\r\n- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r\n- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 The operation behaves differently for resources that are directory objects vs other resources.
 For the list of resources that support open extensions, see the table in the Permissions section.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,15 +66,14 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update an open extension (openTypeExtension object) on a supported resource type.\r- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.\r\n- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r\n- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 The operation behaves differently for resources that are directory objects vs other resources.
 For the list of resources that support open extensions, see the table in the Permissions section.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -95,10 +91,6 @@ $params = @{
 }
 
 Update-MgBetaGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaGroupThreadPostExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -567,7 +559,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -594,27 +586,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaGroupThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthreadpostextension)
+- [](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-beta)
