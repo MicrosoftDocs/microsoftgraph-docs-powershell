@@ -640,8 +640,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetagroupsitelistitempermissiongrant)
-- [](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
+- [Revoke-MgBetaGroupSiteListItemPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/revoke-mgbetagroupsitelistitempermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
 
 
 
