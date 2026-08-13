@@ -15,6 +15,9 @@ title: Remove-MgBetaTenantRelationshipDelegatedAdminCustomer
 
 Delete navigation property delegatedAdminCustomers for tenantRelationships
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
