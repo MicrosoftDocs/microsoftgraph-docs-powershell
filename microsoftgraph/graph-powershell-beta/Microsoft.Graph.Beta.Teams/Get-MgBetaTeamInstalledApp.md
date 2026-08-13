@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateaminstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamInstalledApp
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaTeamInstalledApp
 ## SYNOPSIS
 
 Retrieve the app installed in the specified team.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,59 +56,31 @@ This cmdlet has the following aliases,
 
 Retrieve the app installed in the specified team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForTeam, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteAndConsentForTeam, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteForTeam,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.Read.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteAndConsentForTeam.All, TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteSelfForTeam.All,  |
-
 ## EXAMPLES
-### Example 1: List installed apps
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamInstalledApp -TeamId $teamId
 
-```
-This example will list installed apps
-
-### Example 2: Get the names and other details of installed apps
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamInstalledApp -TeamId $teamId -ExpandProperty "teamsAppDefinition(`$expand=bot)" 
+Get-MgBetaTeamInstalledApp -TeamId $teamId -ExpandProperty "teamsAppDefinition(`$expand=bot)"
 
-```
-This example will get the names and other details of installed apps
-
-### Example 3: Get the app installation resource based on the manifest ID of the associated app
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamInstalledApp -TeamId $teamId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'" 
+Get-MgBetaTeamInstalledApp -TeamId $teamId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
-```
-This example will get the app installation resource based on the manifest id of the associated app
-
-### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified team
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamInstalledApp -TeamId $teamId -Property "consentedPermissionSet,id" 
-
-```
-This example will get the set of resource specific permissions consented for the apps installed in the specified team
-
+Get-MgBetaTeamInstalledApp -TeamId $teamId -Property "consentedPermissionSet,id"
 
 ## PARAMETERS
 
@@ -600,7 +569,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -650,28 +619,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaTeamInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateaminstalledapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-get-installedapps?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-list-installedapps?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateaminstalledapp)
+- [](https://learn.microsoft.com/graph/api/team-get-installedapps?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/team-list-installedapps?view=graph-rest-beta)

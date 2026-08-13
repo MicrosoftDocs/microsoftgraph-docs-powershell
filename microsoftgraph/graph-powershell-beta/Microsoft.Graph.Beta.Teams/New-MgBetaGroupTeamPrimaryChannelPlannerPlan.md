@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupTeamPrimaryChannelPlannerPlan
 ---
@@ -78,6 +78,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to plans for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -866,7 +876,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARCHIVALINFO `<IMicrosoftGraphPlannerArchivalInfo>`: plannerArchivalInfo
+ARCHIVALINFO <IMicrosoftGraphPlannerArchivalInfo>: plannerArchivalInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Justification <String>]: Read-only.
 Reason why the entity was archived or unarchived.
@@ -884,7 +894,7 @@ For example, in the access reviews decisions API, this property might record the
   [StatusChangedDateTime <DateTime?>]: Read-only.
 Date and time at which the entity's archive status changed.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlan>`: plannerPlan
+BODYPARAMETER <IMicrosoftGraphPlannerPlan>: plannerPlan
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1393,7 +1403,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Title <String>]: Title of the task.
 
-CONTAINER `<IMicrosoftGraphPlannerPlanContainer>`: plannerPlanContainer
+CONTAINER <IMicrosoftGraphPlannerPlanContainer>: plannerPlanContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerId <String>]: The identifier of the resource that contains the plan.
 Optional.
@@ -1401,7 +1411,7 @@ Optional.
   [Url <String>]: The full canonical URL of the container.
 Optional.
 
-CONTENTSENSITIVITYLABELASSIGNMENT `<IMicrosoftGraphContentSensitivityLabelAssignment>`: contentSensitivityLabelAssignment
+CONTENTSENSITIVITYLABELASSIGNMENT <IMicrosoftGraphContentSensitivityLabelAssignment>: contentSensitivityLabelAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [JustificationText <String>]: The justification text provided when you change the sensitivity label.
@@ -1411,7 +1421,7 @@ Optional.
 This ID corresponds to a label defined in the Microsoft Information Protection policy.
   [TenantId <String>]: The unique identifier of the tenant where the sensitivity label is defined and applied.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1423,11 +1433,11 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATIONSOURCE `<IMicrosoftGraphPlannerPlanCreation>`: plannerPlanCreation
+CREATIONSOURCE <IMicrosoftGraphPlannerPlanCreation>: plannerPlanCreation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationSourceKind <String>]: plannerCreationSourceKind
 
-DETAILS `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
+DETAILS <IMicrosoftGraphPlannerPlanDetails>: plannerPlanDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1463,7 +1473,7 @@ Read-only.
   [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1717,27 +1727,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupTeamPrimaryChannelPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelplannerplan)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelplannerplan)

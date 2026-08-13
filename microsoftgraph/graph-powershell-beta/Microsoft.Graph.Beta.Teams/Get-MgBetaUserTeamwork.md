@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamwork
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserTeamwork
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserTeamwork
 ## SYNOPSIS
 
 Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamwork?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserTeamwork.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserTeamwork.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaUserTeamwork -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserTeamwork Cmdlet.
-
 
 ## PARAMETERS
 
@@ -356,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -406,27 +390,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserTeamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamwork)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamwork)
+- [](https://learn.microsoft.com/graph/api/userteamwork-get?view=graph-rest-beta)

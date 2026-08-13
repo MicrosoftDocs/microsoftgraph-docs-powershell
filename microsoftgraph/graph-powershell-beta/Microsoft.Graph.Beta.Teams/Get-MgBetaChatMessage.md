@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaChatMessage
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaChatMessage
 ## SYNOPSIS
 
 Retrieve a single message or a message reply in a channel or a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,26 +65,13 @@ This cmdlet has the following aliases,
 
 Retrieve a single message or a message reply in a channel or a chat.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.Read, Chat.ReadWrite, Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMessage.Read.Chat, Chat.Read.All, Group.Read.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a message in a chat
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
-
-```
-This example will get a message in a chat
-
 
 ## PARAMETERS
 
@@ -648,7 +632,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -698,29 +682,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaChatMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessage)
+- [](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/chats-getallmessages?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-beta)

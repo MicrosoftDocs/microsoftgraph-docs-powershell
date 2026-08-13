@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamChannelMessage
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaTeamChannelMessage
 ## SYNOPSIS
 
 Send a new chatMessage in the specified channel.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -90,18 +87,9 @@ This cmdlet has the following aliases,
 
 Send a new chatMessage in the specified channel.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Teamwork.Migrate.All,  |
-
 ## EXAMPLES
-### Example 1: Send a Hello World message in a channel
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -113,12 +101,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will send a hello world message in a channel
-
-### Example 2: @mentions a user in a channel message
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -144,12 +127,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example @mentions a user in a channel message
-
-### Example 3: Send message that contains cards
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -167,7 +145,9 @@ $params = @{
 			content = '{
   "title": "This is an example of posting a card",
   "subtitle": "<h3>This is the subtitle</h3>",
-  "text": "Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:",
+  "text": "Here is some body text.
+<br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>.
+<br>\r\nAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -186,19 +166,15 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will send message that contains cards
-
-### Example 4: Send a message with file attachment in it
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "Here's the latest budget. <attachment id="153fa47d-18c9-4179-be08-9879815a9f90"></attachment>"
+		content = "Here's the latest budget.
+<attachment id="153fa47d-18c9-4179-be08-9879815a9f90"></attachment>"
 	}
 	attachments = @(
 		@{
@@ -212,12 +188,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will send a message with file attachment in it
-
-### Example 5: Send a card with inline images
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -332,12 +303,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will send a card with inline images
-
-### Example 6: @mention a channel in a channel message
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -363,12 +329,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will @mention a channel in a channel message
-
-### Example 7: @mention a team in a channel message
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -398,12 +359,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will @mention a team in a channel message
-
-### Example 8: @mention a tag in a channel message
-
-```powershell
+### EXAMPLE 8
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -428,12 +384,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will @mention a tag in a channel message
-
-### Example 9: Send message that contains cards that are attributed to a Teams app
-
-```powershell
+### EXAMPLE 9
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -451,7 +402,9 @@ $params = @{
 			content = '{
   "title": "This is an example of posting a card",
   "subtitle": "<h3>This is the subtitle</h3>",
-  "text": "Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:",
+  "text": "Here is some body text.
+<br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>.
+<br>\r\nAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -471,12 +424,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-```
-This example will send message that contains cards that are attributed to a teams app
-
-### Example 10: Send a message that contains an announcement
-
-```powershell
+### EXAMPLE 10
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -511,10 +459,6 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
-
-```
-This example will send a message that contains an announcement
-
 
 ## PARAMETERS
 
@@ -1648,12 +1592,12 @@ For example, if you set contentType to application/word and set contentUrl to th
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
+BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1723,7 +1667,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1789,7 +1733,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
+CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChannelId <String>]: The identity of the channel in which the message was posted.
   [TeamId <String>]: The identity of the team in which the message was posted.
@@ -1802,7 +1746,7 @@ Content type, such as image/png, image/jpg.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1852,7 +1796,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1905,7 +1849,7 @@ For example, in the access reviews decisions API, this property might record the
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
 
-POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
+POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DlpAction <String>]: chatMessagePolicyViolationDlpActionTypes
   [JustificationText <String>]: Justification text provided by the sender of the message when overriding a policy violation.
@@ -2008,7 +1952,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -2077,27 +2021,5 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [New-MgBetaTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage)
+- [](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-beta)
