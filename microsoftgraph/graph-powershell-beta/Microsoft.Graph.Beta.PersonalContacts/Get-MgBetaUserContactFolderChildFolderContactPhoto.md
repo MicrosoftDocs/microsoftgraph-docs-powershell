@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactphoto
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserContactFolderChildFolderContactPhoto
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserContactFolderChildFolderContactPhoto
 
 Optional contact picture.
 You can get or set a photo for a contact.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactPhoto?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 Optional contact picture.
 You can get or set a photo for a contact.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -402,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -412,27 +419,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserContactFolderChildFolderContactPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactphoto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactphoto)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontactextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserContactFolderChildFolderContactExtension
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserContactFolderChildFolderContactExtension
 ## SYNOPSIS
 
 Create new navigation property to extensions for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderChildFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContactExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,6 +64,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to extensions for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -535,7 +542,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -545,27 +552,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserContactFolderChildFolderContactExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontactextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfoldercontactextension)
