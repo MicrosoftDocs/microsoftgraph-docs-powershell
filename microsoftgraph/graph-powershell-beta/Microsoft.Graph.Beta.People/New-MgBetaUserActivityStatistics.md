@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauseractivitystatistics
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.People
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserActivityStatistics
 ---
@@ -66,6 +66,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to activityStatistics for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -593,7 +603,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphActivityStatistics>`: activityStatistics
+BODYPARAMETER <IMicrosoftGraphActivityStatistics>: activityStatistics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -607,7 +617,7 @@ For example, the property value could be '2019-07-04' that follows the YYYY-MM-D
   [TimeZoneUsed <String>]: The time zone that the user sets in Microsoft Outlook is used for the computation.
 For example, the property value could be 'Pacific Standard Time.'
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -634,27 +644,4 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserActivityStatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauseractivitystatistics)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauseractivitystatistics)
