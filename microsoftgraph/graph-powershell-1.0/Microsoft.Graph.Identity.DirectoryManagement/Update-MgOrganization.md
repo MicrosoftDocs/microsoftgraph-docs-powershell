@@ -1823,8 +1823,8 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
-- [](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0)
+- [Update-MgOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0)
 
 
 

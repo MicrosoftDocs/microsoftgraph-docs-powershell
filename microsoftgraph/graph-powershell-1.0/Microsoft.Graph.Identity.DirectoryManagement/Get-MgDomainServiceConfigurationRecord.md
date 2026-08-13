@@ -606,8 +606,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord)
-- [](https://learn.microsoft.com/graph/api/domain-list-serviceconfigurationrecords?view=graph-rest-1.0)
+- [Get-MgDomainServiceConfigurationRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-list-serviceconfigurationrecords?view=graph-rest-1.0)
 
 
 
