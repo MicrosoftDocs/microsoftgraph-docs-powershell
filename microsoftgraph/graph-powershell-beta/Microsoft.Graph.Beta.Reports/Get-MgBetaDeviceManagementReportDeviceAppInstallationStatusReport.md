@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceappinstallationstatusreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport
 ## SYNOPSIS
 
 Invoke action retrieveDeviceAppInstallationStatusReport
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportDeviceAppInstallationStatusReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportDeviceAppInstallationStatusReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 
 Invoke action retrieveDeviceAppInstallationStatusReport
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -76,7 +83,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -141,7 +148,7 @@ HelpMessage: ''
 
 ### -Filter
 
-
+.
 
 ```yaml
 Type: System.String
@@ -162,7 +169,7 @@ HelpMessage: ''
 
 ### -GroupBy
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -246,7 +253,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -309,7 +316,7 @@ HelpMessage: ''
 
 ### -Property
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -416,7 +423,7 @@ HelpMessage: ''
 
 ### -Search
 
-
+.
 
 ```yaml
 Type: System.String
@@ -437,7 +444,7 @@ HelpMessage: ''
 
 ### -SessionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -458,7 +465,7 @@ HelpMessage: ''
 
 ### -Skip
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -479,7 +486,7 @@ HelpMessage: ''
 
 ### -Sort
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -501,7 +508,7 @@ HelpMessage: ''
 
 ### -Top
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -573,7 +580,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstallationstatusreportPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstallationstatusreportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Filter <String>]: 
   [GroupBy <String[]>]: 
@@ -588,27 +595,4 @@ BODY `<IPaths1Bog3HuDevicemanagementReportsMicrosoftGraphRetrievedeviceappinstal
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementReportDeviceAppInstallationStatusReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceappinstallationstatusreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdeviceappinstallationstatusreport)

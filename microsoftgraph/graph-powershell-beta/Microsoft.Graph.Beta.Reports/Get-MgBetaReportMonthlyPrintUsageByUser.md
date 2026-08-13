@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportMonthlyPrintUsageByUser
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaReportMonthlyPrintUsageByUser
 ## SYNOPSIS
 
 Retrieve a list of monthly print usage summaries, grouped by user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,17 +56,12 @@ This cmdlet has the following aliases,
 Retrieve a list of monthly print usage summaries, grouped by user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportMonthlyPrintUsageByUser
-
-```
-This example shows how to use the Get-MgBetaReportMonthlyPrintUsageByUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -531,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -587,27 +579,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportMonthlyPrintUsageByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser)
+- [](https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportDailyPrintUsageByUser
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaReportDailyPrintUsageByUser
 
 Retrieve a user's usage summary for a particular time period.
 See the printUsageByUser documentation for descriptions of each of the endpoints.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ Retrieve a user's usage summary for a particular time period.
 See the printUsageByUser documentation for descriptions of each of the endpoints.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportDailyPrintUsageByUser
-
-```
-This example shows how to use the Get-MgBetaReportDailyPrintUsageByUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -533,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -589,28 +581,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportDailyPrintUsageByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printusagebyuser-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyuser)
+- [](https://learn.microsoft.com/graph/api/printusagebyuser-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyuser?view=graph-rest-beta)
