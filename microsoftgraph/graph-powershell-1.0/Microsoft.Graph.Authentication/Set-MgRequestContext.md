@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/set-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 07/31/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgRequestContext
 ---
@@ -215,11 +215,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Int32
 
+{{ Fill in the Description }}
 
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Authentication.Core.Interfaces.IRequestContext
 
+{{ Fill in the Description }}
 
 ## NOTES
 
