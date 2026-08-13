@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupCalendarSchedule
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupCalendarSchedule
 ## SYNOPSIS
 
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -102,7 +109,7 @@ HelpMessage: ''
 
 ### -AvailabilityViewInterval
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -129,7 +136,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -431,7 +438,7 @@ HelpMessage: ''
 
 ### -Schedules
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -540,7 +547,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AvailabilityViewInterval <Int32?>]: 
   [EndTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
@@ -551,13 +558,13 @@ See below for more possible values.
   [Schedules <String[]>]: 
   [StartTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-ENDTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDTIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -577,7 +584,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace
 
-STARTTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTTIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -586,28 +593,5 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [Get-MgGroupCalendarSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarschedule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarschedule)
+- [](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
