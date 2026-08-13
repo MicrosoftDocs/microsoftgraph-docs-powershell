@@ -15,6 +15,9 @@ title: Remove-MgBetaSecuritySecureScore
 
 Delete navigation property secureScores for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Remove-MgSecuritySecureScore?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
