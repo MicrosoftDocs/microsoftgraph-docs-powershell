@@ -942,8 +942,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0)
+- [New-MgExternalConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0)
 
 
 
