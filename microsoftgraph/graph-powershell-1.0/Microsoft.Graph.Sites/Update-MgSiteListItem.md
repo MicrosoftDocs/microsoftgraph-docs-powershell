@@ -816,7 +816,7 @@ HelpMessage: ''
 
 ### -Permissions
 
-.
+
 To construct, see NOTES section for PERMISSIONS properties and create a hash table.
 
 ```yaml
