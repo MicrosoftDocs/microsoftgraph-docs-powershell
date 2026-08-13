@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationtemplateschemaexpression
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression
 
 Parse a given string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,13 +74,15 @@ This cmdlet has the following aliases,
 Parse a given string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -116,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -187,7 +186,7 @@ HelpMessage: ''
 
 ### -Expression
 
-
+.
 
 ```yaml
 Type: System.String
@@ -554,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Expression <String>]: 
   [TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]: attributeDefinition
@@ -604,7 +603,7 @@ Not nullable.
     [Properties <IMicrosoftGraphStringKeyObjectValuePair[]>]: Property values of the test object.
       [Key <String>]: Key.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -631,7 +630,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [UniqueName <String>]: Alternate key of application
   [UserId <String>]: The unique identifier of user
 
-TARGETATTRIBUTEDEFINITION `<IMicrosoftGraphAttributeDefinition>`: attributeDefinition
+TARGETATTRIBUTEDEFINITION <IMicrosoftGraphAttributeDefinition>: attributeDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Anchor <Boolean?>]: true if the attribute should be used as the anchor for the object.
 Anchor attributes must have a unique value identifying an object, and must be immutable.
@@ -664,7 +663,7 @@ If during synchronization, the required attribute has no value, the default valu
 If default the value was not set, synchronization will record an error.
   [Type <String>]: attributeType
 
-TESTINPUTOBJECT `<IMicrosoftGraphExpressionInputObject>`: expressionInputObject
+TESTINPUTOBJECT <IMicrosoftGraphExpressionInputObject>: expressionInputObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Definition <IMicrosoftGraphObjectDefinition>]: objectDefinition
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -712,28 +711,5 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationtemplateschemaexpression)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationtemplateschemaexpression)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-parseexpression?view=graph-rest-1.0)
