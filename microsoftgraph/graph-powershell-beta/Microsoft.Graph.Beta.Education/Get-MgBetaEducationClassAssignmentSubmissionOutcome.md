@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmissionoutcome
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassAssignmentSubmissionOutcome
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaEducationClassAssignmentSubmissionOutcome
 ## SYNOPSIS
 
 Get outcomes from education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,28 +60,18 @@ This cmdlet has the following aliases,
 Get outcomes from education
 
 ## EXAMPLES
-### Example 1: Get all outcomes
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-```
-This example will get all outcomes
-
-### Example 2: Get outcomes filtered by outcome type
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -Filter "isof('microsoft.graph.educationFeedbackResourceOutcome')" 
-
-```
-This example will get outcomes filtered by outcome type
-
+Get-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -Filter "isof('microsoft.graph.educationFeedbackResourceOutcome')"
 
 ## PARAMETERS
 
@@ -627,7 +614,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -652,27 +639,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaEducationClassAssignmentSubmissionOutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmissionoutcome)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-list-outcomes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmissionoutcome)
+- [](https://learn.microsoft.com/graph/api/educationsubmission-list-outcomes?view=graph-rest-beta)

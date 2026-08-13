@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassMember
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaEducationClassMember
 
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassMember](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassMember -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgBetaEducationClassMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -494,27 +478,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaEducationClassMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmember)
+- [](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-beta)
