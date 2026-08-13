@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveItemItemLastModifiedByUser
 
 Get lastModifiedByUser from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemItemLastModifiedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
