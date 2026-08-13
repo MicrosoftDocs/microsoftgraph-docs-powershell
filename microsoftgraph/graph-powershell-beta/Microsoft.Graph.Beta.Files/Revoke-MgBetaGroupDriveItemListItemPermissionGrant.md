@@ -578,8 +578,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetagroupdriveitemlistitempermissiongrant)
-- [](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
+- [Revoke-MgBetaGroupDriveItemListItemPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetagroupdriveitemlistitempermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
 
 
 
