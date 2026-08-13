@@ -1,39 +1,39 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostinreplytoattachment
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgGroupThreadPostInReplyToAttachment
+title: Remove-MgGroupOwnerByRef
 ---
 
-# Remove-MgGroupThreadPostInReplyToAttachment
+# Remove-MgGroupOwnerByRef
 
 ## SYNOPSIS
 
-Delete navigation property attachments for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThreadPostInReplyToAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgGroupThreadPostInReplyToAttachment -AttachmentId <string> -ConversationThreadId <string>
- -GroupId <string> -PostId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgGroupOwnerByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DeleteViaIdentity
 
 ```
-Remove-MgGroupThreadPostInReplyToAttachment -InputObject <IGroupsIdentity> [-IfMatch <string>]
+Remove-MgGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -46,30 +46,31 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property attachments for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgGroupOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
-
-### -AttachmentId
-
-The unique identifier of attachment
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -114,9 +115,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ConversationThreadId
+### -DirectoryObjectId
 
-The unique identifier of conversationThread
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -275,27 +276,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PostId
-
-The unique identifier of post
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -465,8 +445,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupThreadPostInReplyToAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostinreplytoattachment)
-
+- [Remove-MgGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
 
 
 

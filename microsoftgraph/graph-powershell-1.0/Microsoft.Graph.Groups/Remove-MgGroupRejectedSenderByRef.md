@@ -1,39 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostinreplytoattachment
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupRejectedSenderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgGroupThreadPostInReplyToAttachment
+title: Remove-MgGroupRejectedSenderByRef
 ---
 
-# Remove-MgGroupThreadPostInReplyToAttachment
+# Remove-MgGroupRejectedSenderByRef
 
 ## SYNOPSIS
 
-Delete navigation property attachments for groups
+Remove rejectedSender
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThreadPostInReplyToAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgGroupThreadPostInReplyToAttachment -AttachmentId <string> -ConversationThreadId <string>
- -GroupId <string> -PostId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgGroupRejectedSenderByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DeleteViaIdentity
 
 ```
-Remove-MgGroupThreadPostInReplyToAttachment -InputObject <IGroupsIdentity> [-IfMatch <string>]
+Remove-MgGroupRejectedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -46,30 +45,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property attachments for groups
+Remove rejectedSender
 
 ## PARAMETERS
-
-### -AttachmentId
-
-The unique identifier of attachment
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -114,9 +92,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ConversationThreadId
+### -DirectoryObjectId
 
-The unique identifier of conversationThread
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -275,27 +253,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PostId
-
-The unique identifier of post
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -465,7 +422,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupThreadPostInReplyToAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthreadpostinreplytoattachment)
+- [Remove-MgGroupRejectedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupRejectedSenderByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0)
 
 
 

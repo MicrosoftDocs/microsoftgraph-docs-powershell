@@ -488,8 +488,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatemembergroup)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
+- [Get-MgGroupSettingTemplateMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatemembergroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
 
 
 

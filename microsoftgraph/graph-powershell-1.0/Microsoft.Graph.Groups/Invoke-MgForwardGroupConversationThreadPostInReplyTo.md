@@ -628,8 +628,8 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto)
-- [](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0)
+- [Invoke-MgForwardGroupConversationThreadPostInReplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0)
 
 
 
