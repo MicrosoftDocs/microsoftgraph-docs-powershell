@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterserviceprincipalsynchronizationtemplateschemaoperator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator
 ## SYNOPSIS
 
 List all operators supported in the scoping filters for a synchronizationSchema.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,13 +49,15 @@ This cmdlet has the following aliases,
 
 List all operators supported in the scoping filters for a synchronizationSchema.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Synchronization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -497,7 +496,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -538,28 +537,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterserviceprincipalsynchronizationtemplateschemaoperator)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterserviceprincipalsynchronizationtemplateschemaoperator)
+- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta)
