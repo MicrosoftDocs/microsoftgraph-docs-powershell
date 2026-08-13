@@ -503,7 +503,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventextension)
+- [New-MgBetaUserEventExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventextension)
 
 
 
