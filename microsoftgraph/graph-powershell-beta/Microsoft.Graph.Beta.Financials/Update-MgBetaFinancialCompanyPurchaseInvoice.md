@@ -273,7 +273,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-.
+
 
 ```yaml
 Type: System.String
@@ -300,7 +300,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -327,7 +327,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -354,7 +354,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -381,7 +381,7 @@ HelpMessage: ''
 
 ### -DueDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -471,7 +471,7 @@ HelpMessage: ''
 
 ### -Id
 
-.
+
 
 ```yaml
 Type: System.String
@@ -526,7 +526,7 @@ HelpMessage: ''
 
 ### -InvoiceDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -553,7 +553,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -580,7 +580,7 @@ HelpMessage: ''
 
 ### -Number
 
-.
+
 
 ```yaml
 Type: System.String
@@ -635,7 +635,7 @@ HelpMessage: ''
 
 ### -PayToContact
 
-.
+
 
 ```yaml
 Type: System.String
@@ -662,7 +662,7 @@ HelpMessage: ''
 
 ### -PayToName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -689,7 +689,7 @@ HelpMessage: ''
 
 ### -PayToVendorId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -716,7 +716,7 @@ HelpMessage: ''
 
 ### -PayToVendorNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -743,7 +743,7 @@ HelpMessage: ''
 
 ### -PricesIncludeTax
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -860,7 +860,7 @@ HelpMessage: ''
 
 ### -PurchaseInvoiceLines
 
-.
+
 To construct, see NOTES section for PURCHASEINVOICELINES properties and create a hash table.
 
 ```yaml
@@ -938,7 +938,7 @@ HelpMessage: ''
 
 ### -ShipToContact
 
-.
+
 
 ```yaml
 Type: System.String
@@ -965,7 +965,7 @@ HelpMessage: ''
 
 ### -ShipToName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -992,7 +992,7 @@ HelpMessage: ''
 
 ### -Status
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1019,7 +1019,7 @@ HelpMessage: ''
 
 ### -TotalAmountExcludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1046,7 +1046,7 @@ HelpMessage: ''
 
 ### -TotalAmountIncludingTax
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1073,7 +1073,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-.
+
 
 ```yaml
 Type: System.Decimal
@@ -1128,7 +1128,7 @@ HelpMessage: ''
 
 ### -VendorId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1155,7 +1155,7 @@ HelpMessage: ''
 
 ### -VendorInvoiceNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1182,7 +1182,7 @@ HelpMessage: ''
 
 ### -VendorName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -1209,7 +1209,7 @@ HelpMessage: ''
 
 ### -VendorNumber
 
-.
+
 
 ```yaml
 Type: System.String
