@@ -505,7 +505,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphHealthMonitoringAlertConfiguration>: alertConfiguration
+BODYPARAMETER `<IMicrosoftGraphHealthMonitoringAlertConfiguration>`: alertConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -521,7 +521,7 @@ Currently, only one email notification configuration is supported for an alert c
 All group types with configured email addresses are supported.
   [IsEnabled <Boolean?>]: Indicates whether email notifications are enabled on the alert type.
 
-INPUTOBJECT <IReportsIdentity>: Identity Parameter
+INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -579,3 +579,25 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareporthealthmonitoringalertconfiguration)
 - [](https://learn.microsoft.com/graph/api/healthmonitoring-alertconfiguration-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
