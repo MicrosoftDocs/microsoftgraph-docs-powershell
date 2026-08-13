@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticleindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityThreatIntelligenceArticleIndicator
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityThreatIntelligenceArticleIndicator
 ## SYNOPSIS
 
 Create new navigation property to articleIndicators for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to articleIndicators for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -396,27 +403,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityThreatIntelligenceArticleIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticleindicator)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticleindicator)

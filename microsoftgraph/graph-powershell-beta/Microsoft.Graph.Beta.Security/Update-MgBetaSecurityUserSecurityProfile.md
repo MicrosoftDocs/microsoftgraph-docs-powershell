@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityusersecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityUserSecurityProfile
 ---
@@ -74,11 +74,21 @@ This cmdlet has the following aliases,
 
 Update the navigation property userSecurityProfiles in security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -Accounts
 
-
+.
 To construct, see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
@@ -133,7 +143,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -160,7 +170,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -258,7 +268,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -285,7 +295,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -431,7 +441,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -543,7 +553,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -570,7 +580,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -597,7 +607,7 @@ HelpMessage: ''
 
 ### -UserPrincipalName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -741,7 +751,7 @@ ACCOUNTS <IMicrosoftGraphUserAccount[]>: .
   [SigninName <String>]: 
   [Status <String>]: accountStatus
 
-BODYPARAMETER `<IMicrosoftGraphUserSecurityProfile>`: userSecurityProfile
+BODYPARAMETER <IMicrosoftGraphUserSecurityProfile>: userSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -769,7 +779,7 @@ Required
     [Vendor <String>]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -868,7 +878,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -880,27 +890,4 @@ Required
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityUserSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityusersecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityusersecurityprofile)

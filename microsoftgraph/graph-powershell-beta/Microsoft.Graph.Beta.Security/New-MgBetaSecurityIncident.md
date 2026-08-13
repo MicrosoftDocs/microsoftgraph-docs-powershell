@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIncident
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityIncident
 ## SYNOPSIS
 
 Create new navigation property to incidents for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIncident?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to incidents for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -866,7 +873,7 @@ Values are free-form.
   [ThreatFamilyName <String>]: Threat family associated with this alert.
   [Title <String>]: Brief identifying string value describing the alert.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
+BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -959,27 +966,4 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>: Li
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
