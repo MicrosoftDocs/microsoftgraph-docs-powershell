@@ -19,6 +19,9 @@ After that time, they're permanently deleted.
 This doesn't apply to Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
