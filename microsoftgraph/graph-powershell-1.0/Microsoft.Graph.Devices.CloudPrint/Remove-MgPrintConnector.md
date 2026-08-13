@@ -408,8 +408,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintconnector)
-- [](https://learn.microsoft.com/graph/api/printconnector-delete?view=graph-rest-1.0)
+- [Remove-MgPrintConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printconnector-delete?view=graph-rest-1.0)
 
 
 
