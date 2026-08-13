@@ -415,8 +415,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationclassassignment)
-- [](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-beta)
+- [Invoke-MgBetaDeactivateEducationClassAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationclassassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-beta)
 
 
 
