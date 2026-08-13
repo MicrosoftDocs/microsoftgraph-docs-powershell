@@ -15,6 +15,9 @@ title: Get-MgCommunicationCallAudioRoutingGroup
 
 Retrieve the properties and relationships of an audioRoutingGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
