@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventSession
 
 The sessions for the virtual event.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

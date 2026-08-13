@@ -17,6 +17,9 @@ All the services offered by this business.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -16,6 +16,9 @@ title: Update-MgBetaVirtualEventWebinarPresenter
 Update the properties of a virtualEventPresenter object.
 Currently the supported virtual event type is virtualEventWebinar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarPresenter?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
