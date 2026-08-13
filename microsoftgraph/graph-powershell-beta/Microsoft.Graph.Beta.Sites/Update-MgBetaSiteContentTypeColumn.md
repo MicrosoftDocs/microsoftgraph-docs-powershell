@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteContentTypeColumn
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSiteContentTypeColumn
 ## SYNOPSIS
 
 Update columnDefinition
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -93,18 +90,9 @@ This cmdlet has the following aliases,
 
 Update columnDefinition
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Manage.All, Sites.FullControl.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -115,10 +103,6 @@ $params = @{
 }
 
 Update-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSiteContentTypeColumn Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1470,7 +1454,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+BODYPARAMETER <IMicrosoftGraphColumnDefinition>: columnDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1635,7 +1619,7 @@ User will be prompted with this message if validation fails.
     [Formula <String>]: The formula to validate column value.
 For examples, see Examples of common formulas in lists
 
-CALCULATED `<IMicrosoftGraphCalculatedColumn>`: calculatedColumn
+CALCULATED <IMicrosoftGraphCalculatedColumn>: calculatedColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Format <String>]: For dateTime output types, the format of the value.
 The possible values are: dateOnly or dateTime.
@@ -1643,18 +1627,18 @@ The possible values are: dateOnly or dateTime.
   [OutputType <String>]: The output type used to format values in this column.
 The possible values are: boolean, currency, dateTime, number, or text.
 
-CHOICE `<IMicrosoftGraphChoiceColumn>`: choiceColumn
+CHOICE <IMicrosoftGraphChoiceColumn>: choiceColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowTextEntry <Boolean?>]: If true, allows custom values that aren't in the configured choices.
   [Choices <String[]>]: The list of values available for this column.
   [DisplayAs <String>]: How the choices are to be presented in the UX.
 Must be one of checkBoxes, dropDownMenu, or radioButtons
 
-CURRENCY `<IMicrosoftGraphCurrencyColumn>`: currencyColumn
+CURRENCY <IMicrosoftGraphCurrencyColumn>: currencyColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Locale <String>]: Specifies the locale from which to infer the currency symbol.
 
-DATETIME `<IMicrosoftGraphDateTimeColumn>`: dateTimeColumn
+DATETIME <IMicrosoftGraphDateTimeColumn>: dateTimeColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayAs <String>]: How the value should be presented in the UX.
 Must be one of default, friendly, or standard.
@@ -1663,16 +1647,16 @@ If unspecified, treated as default.
   [Format <String>]: Indicates whether the value should be presented as a date only or a date and time.
 It must be either dateOnly or dateTime.
 
-DEFAULTVALUE `<IMicrosoftGraphDefaultColumnValue>`: defaultColumnValue
+DEFAULTVALUE <IMicrosoftGraphDefaultColumnValue>: defaultColumnValue
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Formula <String>]: The formula used to compute the default value for the column.
   [Value <String>]: The direct value to use as the default value for the column.
 
-HYPERLINKORPICTURE `<IMicrosoftGraphHyperlinkOrPictureColumn>`: hyperlinkOrPictureColumn
+HYPERLINKORPICTURE <IMicrosoftGraphHyperlinkOrPictureColumn>: hyperlinkOrPictureColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -1734,7 +1718,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
+LOOKUP <IMicrosoftGraphLookupColumn>: lookupColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
   [AllowUnlimitedLength <Boolean?>]: Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
@@ -1743,7 +1727,7 @@ LOOKUP `<IMicrosoftGraphLookupColumn>`: lookupColumn
   [PrimaryLookupColumnId <String>]: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
 
-NUMBER `<IMicrosoftGraphNumberColumn>`: numberColumn
+NUMBER <IMicrosoftGraphNumberColumn>: numberColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DecimalPlaces <String>]: How many decimal places to display.
 See below for information about the possible values.
@@ -1753,7 +1737,7 @@ If unspecified, treated as number.
   [Maximum <Double?>]: The maximum permitted value.
   [Minimum <Double?>]: The minimum permitted value.
 
-PERSONORGROUP `<IMicrosoftGraphPersonOrGroupColumn>`: personOrGroupColumn
+PERSONORGROUP <IMicrosoftGraphPersonOrGroupColumn>: personOrGroupColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleSelection <Boolean?>]: Indicates whether multiple values can be selected from the source.
   [ChooseFromType <String>]: Whether to allow selection of people only, or people and groups.
@@ -1761,7 +1745,7 @@ Must be one of peopleAndGroups or peopleOnly.
   [DisplayAs <String>]: How to display the information about the person or group chosen.
 See below.
 
-SOURCECOLUMN `<IMicrosoftGraphColumnDefinition>`: columnDefinition
+SOURCECOLUMN <IMicrosoftGraphColumnDefinition>: columnDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1926,12 +1910,12 @@ User will be prompted with this message if validation fails.
     [Formula <String>]: The formula to validate column value.
 For examples, see Examples of common formulas in lists
 
-SOURCECONTENTTYPE `<IMicrosoftGraphContentTypeInfo>`: contentTypeInfo
+SOURCECONTENTTYPE <IMicrosoftGraphContentTypeInfo>: contentTypeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The ID of the content type.
   [Name <String>]: The name of the content type.
 
-TERM `<IMicrosoftGraphTermColumn>`: termColumn
+TERM <IMicrosoftGraphTermColumn>: termColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleValues <Boolean?>]: Specifies whether the column allows more than one value
   [ParentTerm <IMicrosoftGraphTermStoreTerm>]: term
@@ -1988,7 +1972,7 @@ Read-only.
   [ShowFullyQualifiedName <Boolean?>]: Specifies whether to display the entire term path or only the term label.
   [TermSet <IMicrosoftGraphTermStoreSet>]: set
 
-TEXT `<IMicrosoftGraphTextColumn>`: textColumn
+TEXT <IMicrosoftGraphTextColumn>: textColumn
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowMultipleLines <Boolean?>]: Whether to allow multiple lines of text.
   [AppendChangesToExistingText <Boolean?>]: Whether updates to this column should replace existing text, or append to it.
@@ -1997,7 +1981,7 @@ TEXT `<IMicrosoftGraphTextColumn>`: textColumn
   [TextType <String>]: The type of text being stored.
 Must be one of plain or richText.
 
-VALIDATION `<IMicrosoftGraphColumnValidation>`: columnValidation
+VALIDATION <IMicrosoftGraphColumnValidation>: columnValidation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultLanguage <String>]: Default BCP 47 language tag for the description.
   [Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]: Localized messages that explain what is needed for this column's value to be considered valid.
@@ -2010,27 +1994,5 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [Update-MgBetaSiteContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitecontenttypecolumn)
+- [](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-beta)

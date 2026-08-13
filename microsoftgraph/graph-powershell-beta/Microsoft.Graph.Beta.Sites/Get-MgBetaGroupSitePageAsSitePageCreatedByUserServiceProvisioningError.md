@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecreatedbyuserserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningError
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningError
 ## SYNOPSIS
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,6 +37,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -514,27 +521,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecreatedbyuserserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecreatedbyuserserviceprovisioningerror)
