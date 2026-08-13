@@ -129,7 +129,11 @@ function Get-FolderByProfile {
     # below before anything is removed).
     $Scoped = -not [string]::IsNullOrWhiteSpace($ModuleFilter)
     if ($Scoped) {
-        $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+        $ScopedModules = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+        if ($ScopedModules.Count -eq 0) {
+            throw "Module '$ModuleFilter' is not present in '$ModuleMappingConfigPath'."
+        }
+        $ModulesToGenerate = $ScopedModules
     }
    
     $ModulesToGenerate | ForEach-Object {
