@@ -69,24 +69,39 @@ Retrieve the details of a role management policy.
 | Application | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Retrieve the details of a policy in PIM for Microsoft Entra roles
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
+
+```
+This example will retrieve the details of a policy in pim for microsoft entra roles
+
+### Example 2: Retrieve the details of a policy in PIM for Microsoft Entra roles and expand the relationships
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -ExpandProperty "effectiveRules,rules" 
+
+```
+This example will retrieve the details of a policy in pim for microsoft entra roles and expand the relationships
+
+### Example 3: Retrieve the details of a policy in PIM for groups
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 
-### EXAMPLE 2
+```
+This example will retrieve the details of a policy in pim for groups
 
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -ExpandProperty "effectiveRules,rules"
-
-### EXAMPLE 3
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 
 ## PARAMETERS
 
