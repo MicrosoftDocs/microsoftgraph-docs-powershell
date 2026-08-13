@@ -69,8 +69,9 @@ This cmdlet has the following aliases,
 Subscribe to DTMF (dual-tone multi-frequency signaling) which allows you to be notified when the user presses keys on a 'dialpad'.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
@@ -79,6 +80,10 @@ $params = @{
 }
 
 Invoke-MgSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgSubscribeCommunicationCallToTone Cmdlet.
+
 
 ## PARAMETERS
 
