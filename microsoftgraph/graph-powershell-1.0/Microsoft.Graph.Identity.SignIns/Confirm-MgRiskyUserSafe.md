@@ -393,7 +393,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Kyb54HIdentityprotectionRiskyusersMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Kyb54HIdentityprotectionRiskyusersMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserIds <String[]>]:
 
@@ -402,3 +402,25 @@ BODYPARAMETER <IPaths1Kyb54HIdentityprotectionRiskyusersMicrosoftGraphConfirmsaf
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusersafe)
 - [](https://learn.microsoft.com/graph/api/riskyuser-confirmsafe?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
