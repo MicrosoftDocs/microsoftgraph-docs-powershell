@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaExternalConnectionItem
 ---
@@ -16,9 +16,6 @@ title: Set-MgBetaExternalConnectionItem
 Create a new externalItem.
 This API can be used to create a custom item.
 The containing externalConnection must have a schema registered of the corresponding type.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Set-MgExternalConnectionItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -81,18 +78,9 @@ Create a new externalItem.
 This API can be used to create a custom item.
 The containing externalConnection must have a schema registered of the corresponding type.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example: Create a custom item
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -123,10 +111,6 @@ $params = @{
 }
 
 Set-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
-
-```
-This example will create a custom item
-
 
 ## PARAMETERS
 
@@ -708,7 +692,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Type <String>]: externalActivityType
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem>`: externalItem
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem>: externalItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -745,17 +729,17 @@ Required.
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
+CONTENT <IMicrosoftGraphExternalConnectorsExternalItemContent>: externalItemContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: externalItemContentType
   [Value <String>]: The content for the externalItem.
 Required.
 
-INFORMATIONPROTECTIONLABEL `<IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>`: externalItemInformationProtectionLabel
+INFORMATIONPROTECTIONLABEL <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>: externalItemInformationProtectionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SensitivityLabelId <String>]: 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -781,27 +765,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaExternalConnectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem)
+- [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta)
