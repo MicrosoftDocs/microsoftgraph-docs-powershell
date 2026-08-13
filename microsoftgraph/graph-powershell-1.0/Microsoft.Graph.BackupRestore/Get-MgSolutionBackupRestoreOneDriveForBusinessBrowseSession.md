@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreOneDriveForBusinessBrowseSession
 
 Read the properties and relationships of oneDriveForBusinessBrowseSession object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreOneDriveForBusinessBrowseSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
