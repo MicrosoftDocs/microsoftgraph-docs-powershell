@@ -714,7 +714,7 @@ See the Type property values section, for supported types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightused)
+- [Update-MgBetaUserInsightUsed](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightused)
 
 
 
