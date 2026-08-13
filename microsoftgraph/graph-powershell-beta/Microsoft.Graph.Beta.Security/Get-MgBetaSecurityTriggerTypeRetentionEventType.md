@@ -643,9 +643,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggertyperetentioneventtype)
-- [](https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-beta)
+- [Get-MgBetaSecurityTriggerTypeRetentionEventType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggertyperetentioneventtype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-beta)
 
 
 

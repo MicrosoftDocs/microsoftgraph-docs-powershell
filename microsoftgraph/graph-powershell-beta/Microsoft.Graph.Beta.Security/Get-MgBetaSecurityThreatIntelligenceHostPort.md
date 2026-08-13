@@ -752,9 +752,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostport)
-- [](https://learn.microsoft.com/graph/api/security-hostport-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/security-host-list-ports?view=graph-rest-beta)
+- [Get-MgBetaSecurityThreatIntelligenceHostPort](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-hostport-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-host-list-ports?view=graph-rest-beta)
 
 
 

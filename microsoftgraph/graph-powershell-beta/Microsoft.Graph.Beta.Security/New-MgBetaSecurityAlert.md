@@ -1633,7 +1633,7 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: Threat intelligence p
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalert)
+- [New-MgBetaSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalert)
 
 
 

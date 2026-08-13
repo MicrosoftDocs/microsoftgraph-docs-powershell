@@ -273,7 +273,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaboration)
+- [Get-MgBetaSecurityCollaboration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaboration)
 
 
 
