@@ -17,6 +17,9 @@ Update the photo for the specified contact, group, team, or user in a tenant.
 The size of the photo you can update to is limited to 4 MB.
 You can use either PATCH or PUT for this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

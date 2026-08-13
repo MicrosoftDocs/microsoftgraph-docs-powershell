@@ -15,6 +15,9 @@ title: Get-MgBetaTeamChannelTab
 
 A collection of all the tabs in the channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

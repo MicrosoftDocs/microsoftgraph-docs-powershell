@@ -15,6 +15,9 @@ title: Get-MgBetaTeamMember
 
 Get a conversationMember from a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
