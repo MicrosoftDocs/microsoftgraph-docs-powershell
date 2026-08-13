@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Delete a cloudPcProvisioningPolicy object.
 You can’t delete a policy that’s in use.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CloudPC.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
