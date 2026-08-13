@@ -468,8 +468,8 @@ BODYPARAMETER `<IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaUserProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
 
 
 
