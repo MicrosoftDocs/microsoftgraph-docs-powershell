@@ -63,12 +63,17 @@ The groups, including nested groups, and directory roles that a user is a member
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserTransitiveMemberOf -UserId $userId
+
+```
+This example shows how to use the Get-MgUserTransitiveMemberOf Cmdlet.
+
 
 ## PARAMETERS
 
