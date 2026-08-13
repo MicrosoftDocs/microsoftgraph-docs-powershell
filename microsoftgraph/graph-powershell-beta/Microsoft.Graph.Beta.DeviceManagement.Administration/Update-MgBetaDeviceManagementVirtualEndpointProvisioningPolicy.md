@@ -17429,8 +17429,8 @@ The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
-- [](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-beta)
 
 
 
