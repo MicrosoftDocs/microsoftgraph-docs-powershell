@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/publish-mgbetaadminedgeinternetexplorermodesitelist
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Publish-MgBetaAdminEdgeInternetExplorerModeSiteList
 ---
@@ -14,9 +14,6 @@ title: Publish-MgBetaAdminEdgeInternetExplorerModeSiteList
 ## SYNOPSIS
 
 Publish the specified browserSiteList for devices to download.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Publish-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Publish the specified browserSiteList for devices to download.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BrowserSiteLists.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BrowserSiteLists.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Publish all sites and shared cookies
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -92,12 +80,7 @@ $params = @{
 
 Publish-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId -BodyParameter $params
 
-```
-This example will publish all sites and shared cookies
-
-### Example 2: Publish specific sites and shared cookies
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
@@ -119,10 +102,6 @@ $params = @{
 }
 
 Publish-MgBetaAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId $browserSiteListId -BodyParameter $params
-
-```
-This example will publish specific sites and shared cookies
-
 
 ## PARAMETERS
 
@@ -155,7 +134,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -429,7 +408,7 @@ HelpMessage: ''
 
 ### -Revision
 
-
+.
 
 ```yaml
 Type: System.String
@@ -456,7 +435,7 @@ HelpMessage: ''
 
 ### -SharedCookies
 
-
+.
 To construct, see NOTES section for SHAREDCOOKIES properties and create a hash table.
 
 ```yaml
@@ -484,7 +463,7 @@ HelpMessage: ''
 
 ### -Sites
 
-
+.
 To construct, see NOTES section for SITES properties and create a hash table.
 
 ```yaml
@@ -566,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ra1QatAdminEdgeInternetexplorermodeSitelistsBrowsersitelistIdMicrosoftGraphPublishPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ra1QatAdminEdgeInternetexplorermodeSitelistsBrowsersitelistIdMicrosoftGraphPublishPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Revision <String>]: 
   [SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]: 
@@ -627,7 +606,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
     [TargetEnvironment <BrowserSiteTargetEnvironment?>]: browserSiteTargetEnvironment
     [WebUrl <String>]: The URL of the site.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -808,27 +787,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Publish-MgBetaAdminEdgeInternetExplorerModeSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/publish-mgbetaadminedgeinternetexplorermodesitelist)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersitelist-publish?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/publish-mgbetaadminedgeinternetexplorermodesitelist)
+- [](https://learn.microsoft.com/graph/api/browsersitelist-publish?view=graph-rest-beta)

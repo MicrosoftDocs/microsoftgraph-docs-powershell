@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteListCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BrowserSiteLists.Read.All, BrowserSiteLists.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BrowserSiteLists.Read.All, BrowserSiteLists.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -282,27 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistcount)
