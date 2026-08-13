@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementVirtualEndpointUserSetting
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementVirtualEndpointUserSetting
 ## SYNOPSIS
 
 Create a new cloudPcUserSetting object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,18 +51,9 @@ This cmdlet has the following aliases,
 
 Create a new cloudPcUserSetting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -93,10 +81,6 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -648,7 +632,7 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcUserSetting>`: cloudPcUserSetting
+BODYPARAMETER <IMicrosoftGraphCloudPcUserSetting>: cloudPcUserSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -706,7 +690,7 @@ Default value is false.
 To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
 The selfServiceEnabled property is deprecated and will stop returning data on December 1, 2023.
 
-CROSSREGIONDISASTERRECOVERYSETTING `<IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>`: cloudPcCrossRegionDisasterRecoverySetting
+CROSSREGIONDISASTERRECOVERYSETTING <IMicrosoftGraphCloudPcCrossRegionDisasterRecoverySetting>: cloudPcCrossRegionDisasterRecoverySetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CrossRegionDisasterRecoveryEnabled <Boolean?>]: True if an end user is allowed to set up cross-region disaster recovery for Cloud PC; otherwise, false.
 The default value is false.
@@ -718,11 +702,11 @@ If a disaster occurs, the new Cloud PC can only be provisioned using the initial
 This limitation can result in the loss of some user data on the original Cloud PC.
 The default value is false.
 
-NOTIFICATIONSETTING `<IMicrosoftGraphCloudPcNotificationSetting>`: cloudPcNotificationSetting
+NOTIFICATIONSETTING <IMicrosoftGraphCloudPcNotificationSetting>: cloudPcNotificationSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RestartPromptsDisabled <Boolean?>]: 
 
-RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
+RESTOREPOINTSETTING <IMicrosoftGraphCloudPcRestorePointSetting>: cloudPcRestorePointSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FrequencyInHours <Int32?>]: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically.
 Possible values are 4, 6, 12, 16, and 24.
@@ -736,27 +720,5 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementVirtualEndpointUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-beta)

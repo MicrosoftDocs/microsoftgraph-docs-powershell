@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicydefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementGroupPolicyDefinition
 ---
@@ -53,13 +53,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to groupPolicyDefinitions for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -736,7 +738,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyDefinition>: The entity describes all of the information about a single group policy.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -795,7 +797,7 @@ The default value is empty.
   [SupportedOn <String>]: Localized string used to specify what operating system or application version is affected by the policy.
   [Version <String>]: Setting definition version
 
-CATEGORY `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
+CATEGORY <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the category of a group policy definition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -853,7 +855,7 @@ For example: edge.admx
   [LastModifiedDateTime <DateTime?>]: The date and time the entity was last modified.
   [Parent <IMicrosoftGraphGroupPolicyCategory>]: The category entity stores the category of a group policy definition
 
-DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file.
+DEFINITIONFILE <IMicrosoftGraphGroupPolicyDefinitionFile>: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -913,7 +915,7 @@ For example: edge.admx
   [TargetNamespace <String>]: Specifies the URI used to identify the namespace within the ADMX file.
   [TargetPrefix <String>]: Specifies the logical name that refers to the namespace within the ADMX file.
 
-NEXTVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+NEXTVERSIONDEFINITION <IMicrosoftGraphGroupPolicyDefinition>: The entity describes all of the information about a single group policy.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1031,7 +1033,7 @@ The default value is empty.
 The default value is empty.
   [LastModifiedDateTime <DateTime?>]: The date and time the entity was last modified.
 
-PREVIOUSVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+PREVIOUSVERSIONDEFINITION <IMicrosoftGraphGroupPolicyDefinition>: The entity describes all of the information about a single group policy.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1093,27 +1095,4 @@ The default value is empty.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementGroupPolicyDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicydefinition)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicydefinition)
