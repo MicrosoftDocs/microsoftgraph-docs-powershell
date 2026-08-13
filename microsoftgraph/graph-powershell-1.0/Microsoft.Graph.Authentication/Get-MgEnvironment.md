@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgenvironment
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 08/13/2026
+ms.date: 07/31/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEnvironment
 ---
