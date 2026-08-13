@@ -51,12 +51,17 @@ Get metadata information for a retention label applied on a driveItem.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example shows how to use the Get-MgBetaDriveItemRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
