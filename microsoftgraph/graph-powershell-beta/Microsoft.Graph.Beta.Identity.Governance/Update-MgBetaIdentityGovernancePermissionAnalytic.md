@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalytic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernancePermissionAnalytic
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property permissionsAnalytics in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -423,7 +433,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AWS `<IMicrosoftGraphPermissionsAnalytics>`: permissionsAnalytics
+AWS <IMicrosoftGraphPermissionsAnalytics>: permissionsAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -460,7 +470,7 @@ Read-only.
     [LowRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
     [MediumRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
 
-AZURE `<IMicrosoftGraphPermissionsAnalytics>`: permissionsAnalytics
+AZURE <IMicrosoftGraphPermissionsAnalytics>: permissionsAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -497,7 +507,7 @@ Read-only.
     [LowRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
     [MediumRiskProfile <IMicrosoftGraphRiskProfile>]: riskProfile
 
-BODYPARAMETER `<IMicrosoftGraphPermissionsAnalyticsAggregation>`: permissionsAnalyticsAggregation
+BODYPARAMETER <IMicrosoftGraphPermissionsAnalyticsAggregation>: permissionsAnalyticsAggregation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -540,7 +550,7 @@ Read-only.
   [Azure <IMicrosoftGraphPermissionsAnalytics>]: permissionsAnalytics
   [Gcp <IMicrosoftGraphPermissionsAnalytics>]: permissionsAnalytics
 
-GCP `<IMicrosoftGraphPermissionsAnalytics>`: permissionsAnalytics
+GCP <IMicrosoftGraphPermissionsAnalytics>: permissionsAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -580,27 +590,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernancePermissionAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalytic)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalytic)

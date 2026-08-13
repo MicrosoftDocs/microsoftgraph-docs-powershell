@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition
 ---
@@ -77,26 +77,13 @@ This cmdlet has the following aliases,
 
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" 
-
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition Cmdlet.
-
+Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'"
 
 ## PARAMETERS
 
@@ -585,7 +572,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -699,27 +686,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rolemanagementalert-list-alertdefinitions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertdefinition)
+- [](https://learn.microsoft.com/graph/api/rolemanagementalert-list-alertdefinitions?view=graph-rest-beta)

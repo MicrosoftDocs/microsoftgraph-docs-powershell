@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceTermsOfUseAgreement
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaIdentityGovernanceTermsOfUseAgreement
 ## SYNOPSIS
 
 Retrieve the properties and relationships of an agreement object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,28 +57,18 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of an agreement object.
 
 ## EXAMPLES
-### Example 1: Retrieve an agreement
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId
 
-```
-This example will retrieve an agreement
-
-### Example 2: Retrieve an agreement and its related files
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files" 
-
-```
-This example will retrieve an agreement and its related files
-
+Get-MgBetaIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -ExpandProperty "files"
 
 ## PARAMETERS
 
@@ -543,7 +530,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -657,28 +644,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement)
+- [](https://learn.microsoft.com/graph/api/agreement-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementAccessPackageResourceRequest
 ---
@@ -51,18 +51,10 @@ This cmdlet has the following aliases,
 Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.
 A resource must be included in an access package catalog before a role of that resource can be added to an access package.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new access package resource request
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
@@ -81,10 +73,7 @@ RequestState          : Delivered
 RequestStatus         : Fulfilled
 RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
-AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                            
-```
-
-This example creates a new resource request for addition of a resource to an access package catalog.
+AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}
 
 ## PARAMETERS
 
@@ -219,7 +208,7 @@ HelpMessage: ''
 
 ### -ExecuteImmediately
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -497,7 +486,7 @@ HelpMessage: ''
 
 ### -RequestStatus
 
-
+.
 
 ```yaml
 Type: System.String
@@ -611,7 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+ACCESSPACKAGERESOURCE <IMicrosoftGraphAccessPackageResource>: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -720,7 +709,7 @@ This should be set to the customdataprovidedresource's name when creating the se
 The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageResourceRequest
+BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRequest>: accessPackageResourceRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -890,7 +879,7 @@ Alternate key.
     [SubjectLifecycle <String>]: accessPackageSubjectLifecycle
     [Type <String>]: The resource type of the subject.
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
+REQUESTOR <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -940,27 +929,5 @@ Alternate key.
 
 ## RELATED LINKS
 
-- [New-MgBetaEntitlementManagementAccessPackageResourceRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest)
+- [](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta)
