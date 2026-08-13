@@ -19,6 +19,9 @@ If the resource was copied from the assignment, a new copy of the resource will 
 This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
