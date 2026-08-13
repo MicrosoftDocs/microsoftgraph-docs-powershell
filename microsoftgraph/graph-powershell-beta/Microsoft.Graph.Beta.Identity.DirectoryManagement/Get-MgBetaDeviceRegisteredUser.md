@@ -516,8 +516,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduser)
-- [](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-beta)
+- [Get-MgBetaDeviceRegisteredUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-beta)
 
 
 
