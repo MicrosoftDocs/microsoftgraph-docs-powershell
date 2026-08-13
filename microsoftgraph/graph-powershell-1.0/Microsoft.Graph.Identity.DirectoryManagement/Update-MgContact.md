@@ -15,6 +15,9 @@ title: Update-MgContact
 
 Update entity in contacts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
