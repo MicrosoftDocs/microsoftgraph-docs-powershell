@@ -72,12 +72,17 @@ The operation returns an error if the message doesn't exist for the tenant.
 | Application | ServiceMessage.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessage
+
+```
+This example shows how to use the Get-MgServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 
