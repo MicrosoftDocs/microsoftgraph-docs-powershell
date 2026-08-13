@@ -519,7 +519,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/set-mgbetadevicemanagementappleuserinitiatedenrollmentprofilepriority)
+- [Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/set-mgbetadevicemanagementappleuserinitiatedenrollmentprofilepriority)
 
 
 
