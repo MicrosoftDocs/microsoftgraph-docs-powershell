@@ -890,7 +890,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphOnenotePage>: onenotePage
+BODYPARAMETER `<IMicrosoftGraphOnenotePage>`: onenotePage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
@@ -1024,7 +1024,7 @@ Read-only.
   [Title <String>]: The title of the page.
   [UserTags <String[]>]: 
 
-INPUTOBJECT <INotesIdentity>: Identity Parameter
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -1038,14 +1038,14 @@ INPUTOBJECT <INotesIdentity>: Identity Parameter
   [SiteId <String>]: The unique identifier of site
   [UserId <String>]: The unique identifier of user
 
-LINKS <IMicrosoftGraphPageLinks>: pageLinks
+LINKS `<IMicrosoftGraphPageLinks>`: pageLinks
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Href <String>]: The URL of the link.
   [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
 
-PARENTNOTEBOOK <IMicrosoftGraphNotebook>: notebook
+PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1178,7 +1178,7 @@ Nullable.
 Read-only.
   [UserRole <String>]: onenoteUserRole
 
-PARENTSECTION <IMicrosoftGraphOnenoteSection>: onenoteSection
+PARENTSECTION `<IMicrosoftGraphOnenoteSection>`: onenoteSection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1316,3 +1316,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksectionpage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
