@@ -386,7 +386,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamdeviceusagetotalusercount)
+- [Get-MgBetaReportTeamDeviceUsageTotalUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamdeviceusagetotalusercount)
 
 
 
