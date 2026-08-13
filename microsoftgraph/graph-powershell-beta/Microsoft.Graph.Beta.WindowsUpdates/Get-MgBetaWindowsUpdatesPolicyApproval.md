@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicyapproval
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaWindowsUpdatesPolicyApproval
 ---
@@ -57,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a policyApproval object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.Read.All, WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.Read.All, WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 Get-MgBetaWindowsUpdatesPolicyApproval -PolicyId $policyId
-
-```
-This example shows how to use the Get-MgBetaWindowsUpdatesPolicyApproval Cmdlet.
-
 
 ## PARAMETERS
 
@@ -565,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -588,28 +575,6 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaWindowsUpdatesPolicyApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicyapproval)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-policyapproval-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-policy-list-approvals?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicyapproval)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-policyapproval-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-policy-list-approvals?view=graph-rest-beta)
