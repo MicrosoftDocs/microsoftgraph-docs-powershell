@@ -468,8 +468,8 @@ BODYPARAMETER `<IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequ
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+- [Test-MgBetaApplicationProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
 
 
 
