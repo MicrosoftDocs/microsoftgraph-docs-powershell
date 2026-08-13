@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupThread
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupThread
 ## SYNOPSIS
 
 Update conversation thread
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,18 +71,9 @@ This cmdlet has the following aliases,
 
 Update conversation thread
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
@@ -102,10 +90,6 @@ $params = @{
 }
 
 Update-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgGroupThread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -495,7 +479,7 @@ HelpMessage: ''
 
 ### -Posts
 
-
+.
 To construct, see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
@@ -776,7 +760,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConversationThread>`: conversationThread
+BODYPARAMETER <IMicrosoftGraphConversationThread>: conversationThread
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -867,7 +851,7 @@ Requires $select to retrieve.
     [Address <String>]: The email address of the person or entity.
     [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -962,27 +946,5 @@ Requires $select to retrieve.
 
 ## RELATED LINKS
 
-- [Update-MgGroupThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
+- [](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0)

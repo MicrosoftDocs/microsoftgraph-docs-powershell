@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupPhoto
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupPhoto
 ## SYNOPSIS
 
 The group's profile photo
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,26 +73,13 @@ This cmdlet has the following aliases,
 
 The group's profile photo
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ProfilePhoto.Read.All, Group.Read.All, ProfilePhoto.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.Read.All, Group.Read.All, ProfilePhoto.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupPhoto -GroupId $groupId
-
-```
-This example shows how to use the Get-MgGroupPhoto Cmdlet.
-
 
 ## PARAMETERS
 
@@ -596,7 +580,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -620,27 +604,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto)
+- [](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupSetting
 ---
@@ -16,9 +16,6 @@ title: New-MgGroupSetting
 Create a new group setting based on the templates available in groupSettingTemplates.
 These settings can be at the tenant-level or at the group level.
 The following group setting templates are available for groups:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -90,18 +87,9 @@ Create a new group setting based on the templates available in groupSettingTempl
 These settings can be at the tenant-level or at the group level.
 The following group setting templates are available for groups:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
@@ -117,9 +105,21 @@ $params = @{
 
 New-MgGroupSetting -GroupId $groupId -BodyParameter $params
 
-```
-This example shows how to use the New-MgGroupSetting Cmdlet.
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	templateId = "7e0abea2-5c20-405f-9658-bfc9a523fd49"
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "false"
+		}
+	)
+}
+
+New-MgGroupSetting -GroupId $groupId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -627,7 +627,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGroupSetting>`: groupSetting
+BODYPARAMETER <IMicrosoftGraphGroupSetting>: groupSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -638,7 +638,7 @@ Read-only.
     [Name <String>]: Name of the setting (as defined by the groupSettingTemplate).
     [Value <String>]: Value of the setting.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -666,27 +666,5 @@ VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs correspon
 
 ## RELATED LINKS
 
-- [New-MgGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting)
+- [](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0)

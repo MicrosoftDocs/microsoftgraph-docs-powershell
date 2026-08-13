@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupowner
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupOwner
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupOwner
 Retrieve a list of the group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,26 +41,15 @@ Retrieve a list of the group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 Owners are currently not available in Microsoft Graph for groups that were created in Exchange, distribution groups, or groups that are synchronized from an on-premises environment.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.Read.All, Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.Read.All, Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get an owner of a group
 
-```powershell
+### EXAMPLE 1
+
 Get-MgGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
 
 Id                                   DeletedDateTime
 --                                   ---------------
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
-```
-
-This example gets the owner of the specified group.
 
 ## PARAMETERS
 
@@ -518,27 +504,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupOwner](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupowner)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupowner)
+- [](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0)
