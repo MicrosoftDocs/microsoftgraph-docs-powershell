@@ -58,12 +58,17 @@ When the allowedRegistrant value is everyone, registrants can only use the link 
 | Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Remove-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrantBaseId $meetingRegistrantBaseId
+
+```
+This example shows how to use the Remove-MgBetaUserOnlineMeetingRegistrationRegistrant Cmdlet.
+
 
 ## PARAMETERS
 
