@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdministrativeUnit
 ---
@@ -76,18 +76,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an administrativeUnit object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AdministrativeUnit.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AdministrativeUnit.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -99,10 +90,6 @@ $params = @{
 }
 
 Update-MgBetaAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaAdministrativeUnit Cmdlet.
-
 
 ## PARAMETERS
 
@@ -261,7 +248,7 @@ HelpMessage: ''
 
 ### -DeletedMembers
 
-
+.
 To construct, see NOTES section for DELETEDMEMBERS properties and create a hash table.
 
 ```yaml
@@ -289,7 +276,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -316,7 +303,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -491,7 +478,7 @@ HelpMessage: ''
 
 ### -IsMemberManagementRestricted
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -547,7 +534,7 @@ HelpMessage: ''
 
 ### -MembershipRule
 
-
+.
 
 ```yaml
 Type: System.String
@@ -574,7 +561,7 @@ HelpMessage: ''
 
 ### -MembershipRuleProcessingState
 
-
+.
 
 ```yaml
 Type: System.String
@@ -601,7 +588,7 @@ HelpMessage: ''
 
 ### -MembershipType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -741,7 +728,7 @@ HelpMessage: ''
 
 ### -Visibility
 
-
+.
 
 ```yaml
 Type: System.String
@@ -822,7 +809,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
+BODYPARAMETER <IMicrosoftGraphAdministrativeUnit>: administrativeUnit
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -870,7 +857,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -959,27 +946,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgBetaAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit)
+- [](https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-beta)

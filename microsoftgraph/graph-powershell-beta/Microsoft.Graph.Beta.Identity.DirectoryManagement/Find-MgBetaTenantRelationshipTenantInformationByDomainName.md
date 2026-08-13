@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/find-mgbetatenantrelationshiptenantinformationbydomainname
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaTenantRelationshipTenantInformationByDomainName
 ---
@@ -15,9 +15,6 @@ title: Find-MgBetaTenantRelationshipTenantInformationByDomainName
 
 Given a domain name, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use their tenantId to configure cross-tenant access settings between you and the tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Find-MgTenantRelationshipTenantInformationByDomainName](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Find-MgTenantRelationshipTenantInformationByDomainName?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 
 Given a domain name, search for a tenant and read its tenantInformation.
 You can use this API to validate tenant information and use their tenantId to configure cross-tenant access settings between you and the tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -294,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -363,28 +370,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Find-MgBetaTenantRelationshipTenantInformationByDomainName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/find-mgbetatenantrelationshiptenantinformationbydomainname)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbydomainname?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/find-mgbetatenantrelationshiptenantinformationbydomainname)
+- [](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbydomainname?view=graph-rest-beta)
