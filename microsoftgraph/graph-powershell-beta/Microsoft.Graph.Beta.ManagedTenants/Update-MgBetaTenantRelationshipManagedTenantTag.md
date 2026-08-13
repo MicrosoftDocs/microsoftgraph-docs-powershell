@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantTag
 ---
@@ -73,9 +73,8 @@ This cmdlet has the following aliases,
 Update the properties of a tenantTag object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 
@@ -85,10 +84,6 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
-
 
 ## PARAMETERS
 
@@ -709,7 +704,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantTag>`: tenantTag
+BODYPARAMETER <IMicrosoftGraphManagedTenantsTenantTag>: tenantTag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -739,7 +734,7 @@ Optional.
     [TenantId <String>]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -787,27 +782,5 @@ Optional.
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag)
+- [](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-beta)
