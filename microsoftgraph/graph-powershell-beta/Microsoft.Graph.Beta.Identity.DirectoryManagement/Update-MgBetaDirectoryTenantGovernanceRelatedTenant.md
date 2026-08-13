@@ -92,12 +92,17 @@ Manually refresh the list of related tenants.
 The list is also automatically refreshed daily.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Update-MgBetaDirectoryTenantGovernanceRelatedTenant
+
+```
+This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRelatedTenant Cmdlet.
+
 
 ## PARAMETERS
 
