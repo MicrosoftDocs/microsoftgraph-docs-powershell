@@ -494,12 +494,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSignInPreferences>: signInPreferences
+BODYPARAMETER `<IMicrosoftGraphSignInPreferences>`: signInPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]: Indicates whether the credential preferences of the system are enabled.
   [UserPreferredMethodForSecondaryAuthentication <String>]: userDefaultAuthenticationMethodType
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -602,3 +602,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationsigninpreference)
 - [](https://learn.microsoft.com/graph/api/authentication-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
