@@ -639,7 +639,7 @@ For example, in the access reviews decisions API, this property might record the
 The possible values are: None, Attendee, Presenter, and Organizer.
   [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
 
-BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
+BODYPARAMETER `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -695,7 +695,7 @@ This association bundles all the information (both supported and not supported i
 Optional.
 If set, the maximum supported length is 256 characters.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -720,3 +720,25 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingattendancereport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
