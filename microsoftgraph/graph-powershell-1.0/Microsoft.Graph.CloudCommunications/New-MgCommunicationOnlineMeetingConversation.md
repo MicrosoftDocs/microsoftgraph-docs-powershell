@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingconversation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationOnlineMeetingConversation
 ---
@@ -14,9 +14,6 @@ title: New-MgCommunicationOnlineMeetingConversation
 ## SYNOPSIS
 
 Create new navigation property to onlineMeetingConversations for communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeetingConversation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeetingConversation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to onlineMeetingConversations for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -537,7 +544,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnlineMeetingEngagementConversation>`: A conversation for Teams QA online meeting.
+BODYPARAMETER <IMicrosoftGraphOnlineMeetingEngagementConversation>: A conversation for Teams QA online meeting.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationMode <EngagementCreationMode?>]: Indicates that the resource is in migration state and is currently being used for migration purposes.
   [Messages <IMicrosoftGraphEngagementConversationMessage[]>]: The messages in a Viva Engage conversation.
@@ -821,7 +828,7 @@ Read-only.
   [ReplyTo <IMicrosoftGraphEngagementConversationMessage>]: A Viva Engage conversation message.
   [ReplyToId <String>]: The ID of the parent message to which this message is a reply, if applicable.
 
-ONLINEMEETING `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
+ONLINEMEETING <IMicrosoftGraphOnlineMeeting>: onlineMeeting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -1029,7 +1036,7 @@ Read-only.
     [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
 
-ORGANIZER `<IMicrosoftGraphEngagementIdentitySet>`: The Viva Engage identities.
+ORGANIZER <IMicrosoftGraphEngagementIdentitySet>: The Viva Engage identities.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1042,7 +1049,7 @@ For example, in the access reviews decisions API, this property might record the
   [Audience <IMicrosoftGraphIdentity>]: identity
   [Group <IMicrosoftGraphIdentity>]: identity
 
-STARTER `<IMicrosoftGraphEngagementConversationMessage>`: A Viva Engage conversation message.
+STARTER <IMicrosoftGraphEngagementConversationMessage>: A Viva Engage conversation message.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1083,27 +1090,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgCommunicationOnlineMeetingConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingconversation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingconversation)
