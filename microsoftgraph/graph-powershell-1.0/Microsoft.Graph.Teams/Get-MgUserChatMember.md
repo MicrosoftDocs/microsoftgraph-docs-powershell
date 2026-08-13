@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserChatMember
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserChatMember
 
 A collection of all the members in the chat.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,13 +58,15 @@ This cmdlet has the following aliases,
 A collection of all the members in the chat.
 Nullable.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChatMember.Read, Chat.Read, Chat.ReadBasic, Chat.ReadWrite, ChatMember.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.Read.Chat, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatMember.Read.All, ChatMember.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -583,7 +582,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -624,28 +623,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmember)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmember)

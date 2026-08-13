@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamScheduleOpenShift
 ---
@@ -14,9 +14,6 @@ title: Update-MgTeamScheduleOpenShift
 ## SYNOPSIS
 
 Update the properties of an openShift object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,9 +72,9 @@ This cmdlet has the following aliases,
 Update the properties of an openShift object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -103,11 +100,6 @@ $params = @{
 }
 
 Update-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
-```
-This example shows how to use the Update-MgTeamScheduleOpenShift Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -689,7 +681,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOpenShift>`: openShift
+BODYPARAMETER <IMicrosoftGraphOpenShift>: openShift
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -734,7 +726,7 @@ Required.
   [SchedulingGroupId <String>]: The ID of the schedulingGroup that contains the openShift.
   [SharedOpenShift <IMicrosoftGraphOpenShiftItem>]: openShiftItem
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -745,7 +737,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRAFTOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+DRAFTOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <IMicrosoftGraphShiftActivity[]>]: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -772,7 +764,7 @@ Required.
   [Theme <String>]: scheduleEntityTheme
   [OpenSlotCount <Int32?>]: Count of the number of slots for the given open shift.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -810,7 +802,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -821,7 +813,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SHAREDOPENSHIFT `<IMicrosoftGraphOpenShiftItem>`: openShiftItem
+SHAREDOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <IMicrosoftGraphShiftActivity[]>]: An incremental part of a shift which can cover details of when and where an employee is during their shift.
 For example, an assignment or a scheduled break or lunch.
@@ -851,27 +843,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgTeamScheduleOpenShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift)
+- [](https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0)

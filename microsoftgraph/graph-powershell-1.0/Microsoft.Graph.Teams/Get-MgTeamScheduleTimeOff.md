@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoff
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamScheduleTimeOff
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeamScheduleTimeOff
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a timeOff object by ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a timeOff object by ID.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Group.ReadWrite.All, Schedule.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamScheduleTimeOff -TeamId $teamId -Filter "sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z" 
-
-```
-This example shows how to use the Get-MgTeamScheduleTimeOff Cmdlet.
-
+Get-MgTeamScheduleTimeOff -TeamId $teamId -Filter "sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z"
 
 ## PARAMETERS
 
@@ -566,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -607,28 +591,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoff)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoff)
+- [](https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserTeamworkInstalledApp
 ---
@@ -14,9 +14,6 @@ title: Remove-MgUserTeamworkInstalledApp
 ## SYNOPSIS
 
 Uninstall an app from the personal scope of the specified user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Uninstall an app from the personal scope of the specified user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ManageSelectedForUser, TeamsAppInstallation.ReadWriteAndConsentForUser, TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteSelectedForUser,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ManageSelectedForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteSelectedForUser.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
-
-```
-This example shows how to use the Remove-MgUserTeamworkInstalledApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -419,7 +403,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -460,27 +444,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserTeamworkInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp)
+- [](https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-1.0)

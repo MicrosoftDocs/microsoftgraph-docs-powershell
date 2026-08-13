@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAppCatalogTeamAppDefinition
 ---
@@ -16,9 +16,6 @@ title: New-MgAppCatalogTeamAppDefinition
 Update an app previously published to the Microsoft Teams app catalog.
 To update an app, the distributionMethod property for the app must be set to organization.
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ Update an app previously published to the Microsoft Teams app catalog.
 To update an app, the distributionMethod property for the app must be set to organization.
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -99,12 +87,7 @@ $params = app.zip
 
 New-MgAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -BodyParameter $params
 
-```
-This example will update an application previously published to the microsoft teams app catalog
-
-### Example 2: Update a new version of an existing app for admin review prior to publication in the current tenant catalog
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
@@ -112,10 +95,6 @@ $params = app.zip
 
 
 New-MgAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -Requiresreview true  -BodyParameter $params
-
-```
-This example will update a new version of an existing app for admin review prior to publication in the current tenant catalog
-
 
 ## PARAMETERS
 
@@ -475,7 +454,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -776,7 +755,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
+AUTHORIZATION <IMicrosoftGraphTeamsAppAuthorization>: teamsAppAuthorization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientAppId <String>]: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
   [RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]: teamsAppPermissionSet
@@ -785,7 +764,7 @@ AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
       [PermissionType <String>]: teamsAppResourceSpecificPermissionType
       [PermissionValue <String>]: The name of the resource-specific permission.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
+BODYPARAMETER <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -819,7 +798,7 @@ For example, in the access reviews decisions API, this property might record the
   [TeamsAppId <String>]: The ID from the Teams app manifest.
   [Version <String>]: The version number of the application.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -830,7 +809,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -871,27 +850,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgAppCatalogTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition)
+- [](https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-1.0)

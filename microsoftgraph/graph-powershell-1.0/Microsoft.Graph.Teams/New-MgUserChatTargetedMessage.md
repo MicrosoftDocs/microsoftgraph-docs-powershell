@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattargetedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserChatTargetedMessage
 ---
@@ -85,6 +85,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to targetedMessages for users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1218,12 +1228,12 @@ For example, if you set contentType to application/word and set contentUrl to th
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphTargetedChatMessage>`: targetedChatMessage
+BODYPARAMETER <IMicrosoftGraphTargetedChatMessage>: targetedChatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
     [Content <String>]: The content of the attachment.
@@ -1290,7 +1300,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1389,7 +1399,7 @@ Link to the message in Microsoft Teams.
 Read-only.
   [Recipient <IMicrosoftGraphIdentity>]: identity
 
-CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
+CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChannelId <String>]: The identity of the channel in which the message was posted.
   [TeamId <String>]: The identity of the team in which the message was posted.
@@ -1403,7 +1413,7 @@ such as image/png, image/jpg.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1444,7 +1454,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1487,7 +1497,7 @@ For example, in the access reviews decisions API, this property might record the
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
 
-POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
+POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DlpAction <String>]: chatMessagePolicyViolationDlpActionTypes
   [JustificationText <String>]: Justification text provided by the sender of the message when overriding a policy violation.
@@ -1519,7 +1529,7 @@ For example, in the access reviews decisions API, this property might record the
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
 
-RECIPIENT `<IMicrosoftGraphIdentity>`: identity
+RECIPIENT <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -1595,7 +1605,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1655,27 +1665,4 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [New-MgUserChatTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattargetedmessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattargetedmessage)
