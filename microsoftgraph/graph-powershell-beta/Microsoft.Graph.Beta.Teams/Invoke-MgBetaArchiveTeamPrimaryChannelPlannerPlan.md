@@ -566,8 +566,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamprimarychannelplannerplan)
-- [](https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta)
+- [Invoke-MgBetaArchiveTeamPrimaryChannelPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamprimarychannelplannerplan)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta)
 
 
 
