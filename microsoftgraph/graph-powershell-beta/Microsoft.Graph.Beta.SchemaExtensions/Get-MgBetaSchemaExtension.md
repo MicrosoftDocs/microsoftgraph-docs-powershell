@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSchemaExtension
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSchemaExtension
 ## SYNOPSIS
 
 Get the properties of the specified schemaExtension definition.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Get the properties of the specified schemaExtension definition.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Application.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
-Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'" 
-
-```
-This example shows how to use the Get-MgBetaSchemaExtension Cmdlet.
-
+Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'"
 
 ## PARAMETERS
 
@@ -539,34 +523,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
+INPUTOBJECT <ISchemaExtensionsIdentity>: Identity Parameter
   [SchemaExtensionId <String>]: The unique identifier of schemaExtension
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
+- [](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-beta)
