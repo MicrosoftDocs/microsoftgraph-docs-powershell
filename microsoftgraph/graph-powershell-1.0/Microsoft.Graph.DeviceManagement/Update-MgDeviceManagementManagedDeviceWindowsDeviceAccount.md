@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 ## SYNOPSIS
 
 Invoke action updateWindowsDeviceAccount
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Invoke action updateWindowsDeviceAccount
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -102,10 +90,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId $managedDeviceId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -138,7 +122,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -515,7 +499,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]: updateWindowsDeviceAccountActionParameter
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -528,7 +512,7 @@ BODYPARAMETER `<IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicros
     [PasswordRotationEnabled <Boolean?>]: 
     [SessionInitiationProtocalAddress <String>]: 
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -563,7 +547,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionNetworkLearningSummaryId <String>]: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   [WindowsMalwareInformationId <String>]: The unique identifier of windowsMalwareInformation
 
-UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>`: updateWindowsDeviceAccountActionParameter
+UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>: updateWindowsDeviceAccountActionParameter
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarSyncEnabled <Boolean?>]: 
   [DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]: windowsDeviceAccount
@@ -577,26 +561,4 @@ UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAc
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsdeviceaccount)

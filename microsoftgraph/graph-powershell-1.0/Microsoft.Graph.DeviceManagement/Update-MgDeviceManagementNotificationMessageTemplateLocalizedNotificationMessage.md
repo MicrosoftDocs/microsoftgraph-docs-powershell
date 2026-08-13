@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotification
 ## SYNOPSIS
 
 Update the navigation property localizedNotificationMessages in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property localizedNotificationMessages in deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -99,10 +87,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage -NotificationMessageTemplateId $notificationMessageTemplateId -LocalizedNotificationMessageId $localizedNotificationMessageId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -655,7 +639,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphLocalizedNotificationMessage>`: The text content of a Notification Message Template for the specified locale.
+BODYPARAMETER <IMicrosoftGraphLocalizedNotificationMessage>: The text content of a Notification Message Template for the specified locale.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -667,7 +651,7 @@ To unset, set this property to true on another Localized Notification Message.
   [MessageTemplate <String>]: The Message Template content.
   [Subject <String>]: The Message Template Subject.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -705,26 +689,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)

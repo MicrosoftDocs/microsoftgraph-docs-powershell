@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementmanageddevicecategorybyref
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgDeviceManagementManagedDeviceCategoryByRef
 ---
@@ -14,9 +14,6 @@ title: Set-MgDeviceManagementManagedDeviceCategoryByRef
 ## SYNOPSIS
 
 Update the ref of navigation property deviceCategory in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementManagedDeviceCategoryByRef](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Set-MgBetaDeviceManagementManagedDeviceCategoryByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 
 Update the ref of navigation property deviceCategory in deviceManagement
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -317,7 +324,7 @@ HelpMessage: ''
 
 ### -OdataType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -504,13 +511,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceUpdate>`: .
+BODYPARAMETER <IReferenceUpdate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
   [OdataType <String>]: 
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -548,27 +555,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgDeviceManagementManagedDeviceCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementmanageddevicecategorybyref)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementmanageddevicecategorybyref)
