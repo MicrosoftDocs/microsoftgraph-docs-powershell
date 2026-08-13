@@ -66,12 +66,17 @@ Read the properties and relationships of an emailThreatSubmission object.
 | Application | ThreatSubmission.Read.All, ThreatSubmission.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityThreatSubmissionEmailThreat
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet.
+
 
 ## PARAMETERS
 
