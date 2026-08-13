@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreEmailNotificationSetting
 ---
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of an emailNotificationsSetting object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -420,7 +430,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEmailNotificationsSetting>`: emailNotificationsSetting
+BODYPARAMETER <IMicrosoftGraphEmailNotificationsSetting>: emailNotificationsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -438,7 +448,7 @@ For example, in the access reviews decisions API, this property might record the
       [Email <String>]: Email address of the user.
     [Role <String>]: notificationRecipientsType
 
-RECIPIENTS `<IMicrosoftGraphNotificationRecipients>`: notificationRecipients
+RECIPIENTS <IMicrosoftGraphNotificationRecipients>: notificationRecipients
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomRecipients <IMicrosoftGraphEmailIdentity[]>]: A list of users or groups that receive notifications.
 Only specify this property when role is set to custom.
@@ -453,28 +463,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreEmailNotificationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting)
+- [](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-beta)

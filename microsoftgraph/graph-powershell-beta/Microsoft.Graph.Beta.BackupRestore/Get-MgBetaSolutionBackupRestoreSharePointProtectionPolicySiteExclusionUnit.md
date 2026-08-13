@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointprotectionpolicysiteexclusionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnit
 ---
@@ -57,6 +57,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a site exclusion unit associated with a SharePoint protection policy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -545,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -592,29 +602,6 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteExclusionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointprotectionpolicysiteexclusionunit)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/siteexclusionunit-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteexclusionunits?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoresharepointprotectionpolicysiteexclusionunit)
+- [](https://learn.microsoft.com/graph/api/siteexclusionunit-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/sharepointprotectionpolicy-list-siteexclusionunits?view=graph-rest-beta)
