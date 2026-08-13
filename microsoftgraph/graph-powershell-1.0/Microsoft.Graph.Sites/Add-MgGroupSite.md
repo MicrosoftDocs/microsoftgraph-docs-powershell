@@ -11118,8 +11118,8 @@ This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsite)
-- [](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
+- [Add-MgGroupSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
 
 
 

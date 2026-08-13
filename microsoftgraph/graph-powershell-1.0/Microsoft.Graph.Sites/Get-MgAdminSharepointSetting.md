@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting)
-- [](https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0)
+- [Get-MgAdminSharepointSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0)
 
 
 

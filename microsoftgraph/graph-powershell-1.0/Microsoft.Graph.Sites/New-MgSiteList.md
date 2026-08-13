@@ -28360,8 +28360,8 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist)
-- [](https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0)
+- [New-MgSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0)
 
 
 
