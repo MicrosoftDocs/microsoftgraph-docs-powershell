@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserPhotoContent
 ---
@@ -15,9 +15,6 @@ title: Set-MgUserPhotoContent
 
 The user's profile photo.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserPhotoContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,23 +64,11 @@ This cmdlet has the following aliases,
 The user's profile photo.
 Read-only.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite, ProfilePhoto.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ProfilePhoto.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Set a user's photo properties
 
-```powershell
+### EXAMPLE 1
+
 Set-MgUserPhotoContent -UserId f38d9efd-2743-42c9-b1a8-3623c5aba666 -InFile "C:\Pictures\MyProfile.png"
-
-```
-
-This example sets the profile photo properties for the specified user.
 
 ## PARAMETERS
 
@@ -153,7 +138,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -500,7 +485,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -530,26 +515,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgUserPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mguserphotocontent)

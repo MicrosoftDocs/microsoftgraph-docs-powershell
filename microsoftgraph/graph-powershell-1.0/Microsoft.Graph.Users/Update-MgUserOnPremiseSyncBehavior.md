@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseronpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserOnPremiseSyncBehavior
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserOnPremiseSyncBehavior
 ## SYNOPSIS
 
 Update the navigation property onPremisesSyncBehavior in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOnPremiseSyncBehavior?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,13 +66,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property onPremisesSyncBehavior in users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User-OnPremisesSyncBehavior.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User-OnPremisesSyncBehavior.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -298,7 +297,7 @@ HelpMessage: ''
 
 ### -IsCloudManaged
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -491,13 +490,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesSyncBehavior>`: onPremisesSyncBehavior
+BODYPARAMETER <IMicrosoftGraphOnPremisesSyncBehavior>: onPremisesSyncBehavior
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsCloudManaged <Boolean?>]: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -527,27 +526,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgUserOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseronpremisesyncbehavior)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseronpremisesyncbehavior)

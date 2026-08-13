@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttask
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserTodoListTask
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserTodoListTask
 ## SYNOPSIS
 
 Update the navigation property tasks in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTask](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -87,18 +84,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property tasks in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Users
 
 $params = @{
@@ -110,11 +99,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserTodoListTask Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -175,7 +159,7 @@ HelpMessage: ''
 
 ### -AttachmentSessions
 
-
+.
 To construct, see NOTES section for ATTACHMENTSESSIONS properties and create a hash table.
 
 ```yaml
@@ -1140,12 +1124,12 @@ Read-only.
 The complete file must be uploaded before this expiration time is reached.
   [NextExpectedRanges <String[]>]: Indicates a single value {start} that represents the location in the file where the next upload should begin.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphTodoTask>`: todoTask
+BODYPARAMETER <IMicrosoftGraphTodoTask>: todoTask
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1258,13 +1242,13 @@ Read-only.
   [DisplayName <String>]: Indicates the title of the checklistItem.
   [IsChecked <Boolean?>]: State that indicates whether the item is checked off or not.
 
-COMPLETEDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+COMPLETEDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-DUEDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+DUEDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -1275,7 +1259,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -1310,7 +1294,7 @@ Read-only.
   [ExternalId <String>]: ID of the object that is associated with this task on the third-party/partner system.
   [WebUrl <String>]: Deep link to the linkedResource.
 
-RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
+RECURRENCE <IMicrosoftGraphPatternedRecurrence>: patternedRecurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1343,13 +1327,13 @@ Must be the same value as the start property of the recurring event.
 Required.
     [Type <String>]: recurrenceRangeType
 
-REMINDERDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+REMINDERDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -1358,26 +1342,4 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [Update-MgUserTodoListTask](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttask)
