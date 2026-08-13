@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobject
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalOwnedObject
 ---
@@ -17,9 +17,6 @@ Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwnedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,17 +64,12 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaServicePrincipalOwnedObject -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalOwnedObject Cmdlet.
-
 
 ## PARAMETERS
 
@@ -566,7 +558,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -607,27 +599,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobject)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-ownedobjects?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobject)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-ownedobjects?view=graph-rest-beta)

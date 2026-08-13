@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgrouppublishedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/13/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource
 ---
@@ -68,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to publishedResources for onPremisesPublishingProfiles
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -630,7 +640,7 @@ Nullable.
     [ResourceName <String>]: Name of the publishedResource.
   [PublishingType <String>]: onPremisesPublishingType
 
-BODYPARAMETER `<IMicrosoftGraphPublishedResource>`: publishedResource
+BODYPARAMETER <IMicrosoftGraphPublishedResource>: publishedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -665,7 +675,7 @@ Nullable.
   [PublishingType <String>]: onPremisesPublishingType
   [ResourceName <String>]: Name of the publishedResource.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -706,27 +716,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgrouppublishedresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgrouppublishedresource)
