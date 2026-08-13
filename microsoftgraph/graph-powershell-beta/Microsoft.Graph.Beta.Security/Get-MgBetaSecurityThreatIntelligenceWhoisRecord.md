@@ -14,8 +14,8 @@ title: Get-MgBetaSecurityThreatIntelligenceWhoisRecord
 ## SYNOPSIS
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 
 ## SYNTAX
 
@@ -57,8 +57,8 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 
 ## EXAMPLES
 
@@ -528,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -633,3 +633,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencewhoisrecord)
 - [](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
