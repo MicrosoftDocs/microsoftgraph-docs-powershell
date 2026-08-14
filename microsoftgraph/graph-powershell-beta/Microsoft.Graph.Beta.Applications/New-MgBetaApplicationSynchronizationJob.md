@@ -15,6 +15,9 @@ title: New-MgBetaApplicationSynchronizationJob
 
 Create new navigation property to jobs for applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

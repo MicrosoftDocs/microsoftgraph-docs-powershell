@@ -16,6 +16,9 @@ title: New-MgBetaServicePrincipal
 Create a new servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
