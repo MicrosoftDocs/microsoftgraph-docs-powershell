@@ -860,8 +860,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff)
-- [](https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimeoff)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-beta)
 
 
 

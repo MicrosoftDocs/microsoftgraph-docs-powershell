@@ -426,8 +426,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/restart-mgbetateamworkdevice)
-- [](https://learn.microsoft.com/graph/api/teamworkdevice-restart?view=graph-rest-beta)
+- [Restart-MgBetaTeamworkDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/restart-mgbetateamworkdevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkdevice-restart?view=graph-rest-beta)
 
 
 

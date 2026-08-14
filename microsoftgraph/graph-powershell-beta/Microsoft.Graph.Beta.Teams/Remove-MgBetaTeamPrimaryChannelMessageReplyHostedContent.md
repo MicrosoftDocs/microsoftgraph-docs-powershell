@@ -540,7 +540,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmessagereplyhostedcontent)
+- [Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelmessagereplyhostedcontent)
 
 
 

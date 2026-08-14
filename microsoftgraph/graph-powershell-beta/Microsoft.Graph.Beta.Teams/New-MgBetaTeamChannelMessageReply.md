@@ -1731,8 +1731,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-beta)
+- [New-MgBetaTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-beta)
 
 
 

@@ -72819,8 +72819,8 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateam)
-- [](https://learn.microsoft.com/graph/api/team-update?view=graph-rest-beta)
+- [Update-MgBetaTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-update?view=graph-rest-beta)
 
 
 

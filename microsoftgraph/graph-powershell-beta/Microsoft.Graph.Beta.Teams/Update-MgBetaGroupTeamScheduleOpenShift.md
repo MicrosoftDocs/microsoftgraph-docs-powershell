@@ -911,7 +911,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleopenshift)
+- [Update-MgBetaGroupTeamScheduleOpenShift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleopenshift)
 
 
 

@@ -614,9 +614,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatoperation)
-- [](https://learn.microsoft.com/graph/api/teamsasyncoperation-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/chat-list-operations?view=graph-rest-beta)
+- [Get-MgBetaChatOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsasyncoperation-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-operations?view=graph-rest-beta)
 
 
 
