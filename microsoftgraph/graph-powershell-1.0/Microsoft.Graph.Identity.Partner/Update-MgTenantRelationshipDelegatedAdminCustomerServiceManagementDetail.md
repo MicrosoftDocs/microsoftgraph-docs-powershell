@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Partner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadmincustomerservicemanagementdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Partner
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 ---
@@ -14,9 +14,6 @@ title: Update-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 ## SYNOPSIS
 
 Update the navigation property serviceManagementDetails in tenantRelationships
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property serviceManagementDetails in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -543,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDelegatedAdminServiceManagementDetail>`: delegatedAdminServiceManagementDetail
+BODYPARAMETER <IMicrosoftGraphDelegatedAdminServiceManagementDetail>: delegatedAdminServiceManagementDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -552,7 +559,7 @@ Read-only.
   [ServiceName <String>]: The name of a managed service.
 Read-only.
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityPartnerIdentity>: Identity Parameter
   [DelegatedAdminAccessAssignmentId <String>]: The unique identifier of delegatedAdminAccessAssignment
   [DelegatedAdminCustomerId <String>]: The unique identifier of delegatedAdminCustomer
   [DelegatedAdminRelationshipId <String>]: The unique identifier of delegatedAdminRelationship
@@ -563,27 +570,4 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadmincustomerservicemanagementdetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadmincustomerservicemanagementdetail)
