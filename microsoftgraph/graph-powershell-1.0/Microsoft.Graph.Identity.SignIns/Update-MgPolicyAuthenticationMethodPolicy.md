@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAuthenticationMethodPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgPolicyAuthenticationMethodPolicy
 ## SYNOPSIS
 
 Update the properties of an authenticationMethodsPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,18 +50,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an authenticationMethodsPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.AuthenticationMethod,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -87,10 +75,6 @@ $params = @{
 }
 
 Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgPolicyAuthenticationMethodPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -462,7 +446,7 @@ HelpMessage: ''
 
 ### -ReconfirmationInDays
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -586,7 +570,7 @@ Read-only.
     [TargetType <String>]: authenticationMethodTargetType
   [State <String>]: authenticationMethodState
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodsPolicy>`: authenticationMethodsPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationMethodsPolicy>: authenticationMethodsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -624,7 +608,7 @@ Maximum: 14 days.
 If the value is '0', the user is prompted during every MFA attempt.
       [State <String>]: advancedConfigState
 
-REGISTRATIONENFORCEMENT `<IMicrosoftGraphRegistrationEnforcement>`: registrationEnforcement
+REGISTRATIONENFORCEMENT <IMicrosoftGraphRegistrationEnforcement>: registrationEnforcement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationMethodsRegistrationCampaign <IMicrosoftGraphAuthenticationMethodsRegistrationCampaign>]: authenticationMethodsRegistrationCampaign
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -645,27 +629,5 @@ If the value is '0', the user is prompted during every MFA attempt.
 
 ## RELATED LINKS
 
-- [Update-MgPolicyAuthenticationMethodPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy)
+- [](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0)
