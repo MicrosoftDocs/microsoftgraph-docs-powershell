@@ -817,8 +817,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionresource)
-- [](https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-beta)
+- [New-MgBetaEducationClassAssignmentSubmissionResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-beta)
 
 
 
