@@ -410,7 +410,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemitemlastmodifiedbyuser)
+- [Get-MgGroupDriveItemItemLastModifiedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemitemlastmodifiedbyuser)
 
 
 

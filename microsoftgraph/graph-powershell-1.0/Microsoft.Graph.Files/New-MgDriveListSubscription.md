@@ -983,7 +983,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistsubscription)
+- [New-MgDriveListSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistsubscription)
 
 
 
