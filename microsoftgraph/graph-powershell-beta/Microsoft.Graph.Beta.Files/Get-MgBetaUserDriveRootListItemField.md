@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveRootListItemField
 
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

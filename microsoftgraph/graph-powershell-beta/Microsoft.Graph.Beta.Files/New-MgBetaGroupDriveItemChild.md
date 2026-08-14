@@ -15,6 +15,9 @@ title: New-MgBetaGroupDriveItemChild
 
 Create new navigation property to children for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveItemChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

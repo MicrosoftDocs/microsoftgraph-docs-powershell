@@ -15,6 +15,9 @@ title: Get-MgBetaShareListItemCreatedByUserServiceProvisioningErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

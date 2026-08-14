@@ -15,6 +15,9 @@ title: New-MgBetaShareListContentTypeColumnLink
 
 Create new navigation property to columnLinks for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/New-MgShareListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
