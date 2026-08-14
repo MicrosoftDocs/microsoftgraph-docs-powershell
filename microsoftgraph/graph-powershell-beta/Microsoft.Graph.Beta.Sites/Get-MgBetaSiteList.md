@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteList
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSiteList
 ## SYNOPSIS
 
 Return the metadata for a list.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,59 +55,31 @@ This cmdlet has the following aliases,
 
 Return the metadata for a list.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get list metadata by ID
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteList -SiteId $siteId -ListId $listId
-
-```
-This example will get list metadata by id
-
-### Example 2: Get list metadata by title
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteList -SiteId $siteId -ListId $listId
 
-```
-This example will get list metadata by title
-
-### Example 3: Get list metadata and items with $select and $expand
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime,itemCount" -ExpandProperty "columns(select=name,description),items)" 
+Get-MgBetaSiteList -SiteId $siteId -ListId $listId
 
-```
-This example will get list metadata and items with $select and $expand
-
-### Example 4: Get list metadata and items with multiple $expand parameters
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime" -ExpandProperty "columns(select=name,description),items)" 
+Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime,itemCount" -ExpandProperty "columns(select=name,description),items)"
 
-```
-This example will get list metadata and items with multiple $expand parameters
+### EXAMPLE 4
 
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteList -SiteId $siteId -ListId $listId -Property "name,lastModifiedDateTime" -ExpandProperty "columns(select=name,description),items)"
 
 ## PARAMETERS
 
@@ -599,7 +568,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -664,28 +633,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist)
+- [](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupset
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSiteTermStoreSetParentGroupSet
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSiteTermStoreSetParentGroupSet
 ## SYNOPSIS
 
 Create new navigation property to sets for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to sets for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -714,7 +721,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTermStoreSet>`: set
+BODYPARAMETER <IMicrosoftGraphTermStoreSet>: set
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -816,7 +823,7 @@ Read-only.
     [ToTerm <IMicrosoftGraphTermStoreTerm>]: term
   [Set <IMicrosoftGraphTermStoreSet>]: set
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -882,7 +889,7 @@ LOCALIZEDNAMES <IMicrosoftGraphTermStoreLocalizedName[]>: Name of the set for ea
   [LanguageTag <String>]: The language tag for the label.
   [Name <String>]: The name in the localized language.
 
-PARENTGROUP `<IMicrosoftGraphTermStoreGroup>`: group
+PARENTGROUP <IMicrosoftGraphTermStoreGroup>: group
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1042,27 +1049,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSiteTermStoreSetParentGroupSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupset)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupset)

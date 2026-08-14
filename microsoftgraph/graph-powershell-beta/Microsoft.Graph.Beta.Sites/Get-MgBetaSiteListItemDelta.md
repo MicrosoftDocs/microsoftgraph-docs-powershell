@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteListItemDelta
 ---
@@ -14,16 +14,13 @@ title: Get-MgBetaSiteListItemDelta
 ## SYNOPSIS
 
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.\rThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.\rThe same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\r\nThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Deleted items are returned with the deleted facet.
-Deleted indicates that the item is deleted and can't be restored.\rItems with this property should be removed from your local state.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemDelta](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDelta?view=graph-powershell-1.0)
+Deleted indicates that the item is deleted and can't be restored.\r\nItems with this property should be removed from your local state.
 
 ## SYNTAX
 
@@ -77,56 +74,33 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
-Your app begins by calling delta without any parameters.\rThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\rYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
-After you received all the changes, you can apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.\r\nYour app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 The delta feed shows the latest state for each item, not each change.
-If an item was renamed twice, it only shows up once, with its latest name.\rThe same item might appear more than once in a delta feed, for various reasons.
+If an item was renamed twice, it only shows up once, with its latest name.\r\nThe same item might appear more than once in a delta feed, for various reasons.
 You should use the last occurrence you see.
 Deleted items are returned with the deleted facet.
-Deleted indicates that the item is deleted and can't be restored.\rItems with this property should be removed from your local state.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All,  |
+Deleted indicates that the item is deleted and can't be restored.\r\nItems with this property should be removed from your local state.
 
 ## EXAMPLES
-### Example 1: Initial request
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId
 
-```
-This example will initial request
-
-### Example 2: Last page request
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
 
-```
-This example will last page request
-
-### Example 3: Delta link request
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
-
-```
-This example will delta link request
-
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
 
 ## PARAMETERS
 
@@ -693,7 +667,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -758,27 +732,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSiteListItemDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta)
+- [](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)

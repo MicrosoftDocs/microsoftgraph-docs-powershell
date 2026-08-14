@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabel
 ---
@@ -70,6 +70,16 @@ This cmdlet has the following aliases,
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -101,7 +111,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -123,7 +133,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -188,7 +198,7 @@ HelpMessage: ''
 
 ### -DelegatedUserEmail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -333,7 +343,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -360,7 +370,7 @@ HelpMessage: ''
 
 ### -ProtectedContents
 
-
+.
 To construct, see NOTES section for PROTECTEDCONTENTS properties and create a hash table.
 
 ```yaml
@@ -500,7 +510,7 @@ HelpMessage: ''
 
 ### -SupportedContentFormats
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -581,7 +591,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -591,7 +601,7 @@ BODY `<IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabe
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-BODYPARAMETER `<IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -601,7 +611,7 @@ BODYPARAMETER `<IPaths16Kg95IGroupsGroupIdSitesSiteIdInformationprotectionSensit
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -671,28 +681,5 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabel)
+- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
