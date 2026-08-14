@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligencePassiveDnsRecordCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
