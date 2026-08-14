@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Functions
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserDelta
 
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,48 +39,25 @@ This cmdlet has the following aliases,
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.Read.All, Directory.ReadWrite.All, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Default properties
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Functions
 
 Get-MgUserDelta
 
-```
-This example will default properties
-
-### Example 2: Selecting three properties
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Users.Functions
 
-Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone"
 
-```
-This example shows selecting three properties
-
-### Example 3: Alternative minimal response behavior
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Users.Functions
 
-Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
-
-```
-This example will alternative minimal response behavior
-
+Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone"
 
 ## PARAMETERS
 
@@ -495,27 +469,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgUserDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
+- [](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0)
