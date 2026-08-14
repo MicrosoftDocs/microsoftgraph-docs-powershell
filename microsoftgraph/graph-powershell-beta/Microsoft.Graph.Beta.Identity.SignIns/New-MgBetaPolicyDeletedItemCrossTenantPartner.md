@@ -60,16 +60,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to crossTenantPartners for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -995,6 +985,7 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicydeleteditemcrosstenantpartner)
+
 
 
 
