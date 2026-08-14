@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyTokenLifetimePolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPolicyTokenLifetimePolicy
 ## SYNOPSIS
 
 Create a new tokenLifetimePolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,18 +46,9 @@ This cmdlet has the following aliases,
 
 Create a new tokenLifetimePolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -73,10 +61,6 @@ isOrganizationDefault = $true
 }
 
 New-MgBetaPolicyTokenLifetimePolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPolicyTokenLifetimePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -103,7 +87,7 @@ HelpMessage: ''
 
 ### -AppliesTo
 
-
+.
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
@@ -530,27 +514,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [New-MgBetaPolicyTokenLifetimePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-post-tokenlifetimepolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy)
+- [](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-post-tokenlifetimepolicies?view=graph-rest-beta)

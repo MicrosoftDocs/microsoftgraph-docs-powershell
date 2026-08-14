@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPolicyCrossTenantAccessPolicyPartner
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 Delete a partner-specific configuration in a cross-tenant access policy.
 If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,26 +47,13 @@ This cmdlet has the following aliases,
 Delete a partner-specific configuration in a cross-tenant access policy.
 If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.CrossTenantAccess,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.CrossTenantAccess,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
-
-```
-This example shows how to use the Remove-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -401,7 +385,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -502,27 +486,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaPolicyCrossTenantAccessPolicyPartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartner)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartner)
+- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-delete?view=graph-rest-beta)

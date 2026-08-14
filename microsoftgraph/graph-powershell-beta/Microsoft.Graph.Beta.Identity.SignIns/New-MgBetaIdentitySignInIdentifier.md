@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitysigninidentifier
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentitySignInIdentifier
 ---
@@ -44,13 +44,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to signInIdentifiers for identity
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SignInIdentifier.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SignInIdentifier.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -383,7 +385,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSignInIdentifierBase>`: signInIdentifierBase
+BODYPARAMETER <IMicrosoftGraphSignInIdentifierBase>: signInIdentifierBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether this sign-in identifier type is enabled for user authentication in the tenant.
   [Name <String>]: The unique name identifier for this sign-in identifier configuration.
@@ -392,27 +394,4 @@ Possible values include: Email, UPN, Username, CustomUsername1, CustomUsername2.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentitySignInIdentifier](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitysigninidentifier)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitysigninidentifier)

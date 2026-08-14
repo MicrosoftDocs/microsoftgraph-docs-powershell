@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpreapprovalpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyPermissionGrantPreApprovalPolicy
 ---
@@ -69,9 +69,8 @@ This cmdlet has the following aliases,
 Update the properties of a permissionGrantPreApprovalPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -116,10 +115,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyPermissionGrantPreApprovalPolicy -PermissionGrantPreApprovalPolicyId $permissionGrantPreApprovalPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyPermissionGrantPreApprovalPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -564,7 +559,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPermissionGrantPreApprovalPolicy>`: permissionGrantPreApprovalPolicy
+BODYPARAMETER <IMicrosoftGraphPermissionGrantPreApprovalPolicy>: permissionGrantPreApprovalPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -590,7 +585,7 @@ CONDITIONS <IMicrosoftGraphPreApprovalDetail[]>: A list of condition sets descri
     [(Any) <Object>]: This indicates any property can be added to this object.
     [LabelKind <String>]: labelKind
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -691,27 +686,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyPermissionGrantPreApprovalPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpreapprovalpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpreapprovalpolicy)
+- [](https://learn.microsoft.com/graph/api/permissiongrantpreapprovalpolicy-update?view=graph-rest-beta)

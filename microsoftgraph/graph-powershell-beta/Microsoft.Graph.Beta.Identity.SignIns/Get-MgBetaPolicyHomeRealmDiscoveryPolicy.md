@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyHomeRealmDiscoveryPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaPolicyHomeRealmDiscoveryPolicy
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyHomeRealmDiscoveryPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyHomeRealmDiscoveryPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -642,28 +626,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)
+- [](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-beta)

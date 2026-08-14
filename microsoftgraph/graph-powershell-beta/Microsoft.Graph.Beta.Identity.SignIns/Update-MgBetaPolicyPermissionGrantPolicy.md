@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyPermissionGrantPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPolicyPermissionGrantPolicy
 ## SYNOPSIS
 
 Update properties of a  permissionGrantPolicy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,24 +72,12 @@ This cmdlet has the following aliases,
 
 Update properties of a  permissionGrantPolicy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.PermissionGrant,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.PermissionGrant,  |
-
 ## EXAMPLES
-### Example 1: Update a permission grant policy
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 Update-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant with new updates" -DisplayName "Sample app permissions with new updates"
-```
-
-This command replaces the existing values with the provided new values for the specified properties in the specified permission grant policy in Azure AD.
-
 
 ## PARAMETERS
 
@@ -679,7 +664,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPermissionGrantPolicy>`: permissionGrantPolicy
+BODYPARAMETER <IMicrosoftGraphPermissionGrantPolicy>: permissionGrantPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -788,7 +773,7 @@ Default is any.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [LabelKind <String>]: labelKind
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -889,27 +874,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyPermissionGrantPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)
+- [](https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-beta)

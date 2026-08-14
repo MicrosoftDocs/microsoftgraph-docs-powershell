@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguagedefaultpage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage
 ---
@@ -61,26 +61,13 @@ This cmdlet has the following aliases,
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection doesn't allow any kind of modification.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
-
-```
-This example shows how to use the Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -600,7 +587,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -701,27 +688,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguagedefaultpage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-defaultpages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguagedefaultpage)
+- [](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-defaultpages?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 ---
@@ -67,13 +67,11 @@ This cmdlet has the following aliases,
 Delete a group from the list of groups included in a mobile device management policy.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -GroupId $groupId
-```
-This example shows how to use the Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -465,7 +463,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -566,27 +564,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-delete-includedgroups?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref)
+- [](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-delete-includedgroups?view=graph-rest-beta)

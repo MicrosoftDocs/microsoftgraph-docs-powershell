@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityriskpreventionwebapplicationfirewallverification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification
 ## SYNOPSIS
 
 Delete a webApplicationFirewallVerificationModel object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ This cmdlet has the following aliases,
 Delete a webApplicationFirewallVerificationModel object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification -WebApplicationFirewallVerificationModelId $webApplicationFirewallVerificationModelId
-
-```
-This example shows how to use the Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification Cmdlet.
-
 
 ## PARAMETERS
 
@@ -392,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -493,27 +485,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityriskpreventionwebapplicationfirewallverification)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-webapplicationfirewallverifications?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityriskpreventionwebapplicationfirewallverification)
+- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-webapplicationfirewallverifications?view=graph-rest-beta)

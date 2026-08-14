@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationflowpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAuthenticationFlowPolicy
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaPolicyAuthenticationFlowPolicy
 
 Update the Boolean selfServiceSignUp property of an authenticationFlowsPolicy object.
 The properties id, type, and description cannot be modified.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 Update the Boolean selfServiceSignUp property of an authenticationFlowsPolicy object.
 The properties id, type, and description cannot be modified.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.AuthenticationFlows,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.AuthenticationFlows,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -74,10 +62,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationFlowPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationFlowPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -461,7 +445,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationFlowsPolicy>`: authenticationFlowsPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationFlowsPolicy>: authenticationFlowsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -482,7 +466,7 @@ The default value is false.
 This property isn't a key.
 Required.
 
-SELFSERVICESIGNUP `<IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>`: selfServiceSignUpAuthenticationFlowConfiguration
+SELFSERVICESIGNUP <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>: selfServiceSignUpAuthenticationFlowConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether self-service sign-up flow is enabled or disabled.
 The default value is false.
@@ -492,27 +476,5 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyAuthenticationFlowPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationflowpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationflowpolicy)
+- [](https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-beta)
