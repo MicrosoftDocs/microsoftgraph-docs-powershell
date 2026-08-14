@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalOwnerCountAsAppRoleAssignment
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnerCountAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerCountAsAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

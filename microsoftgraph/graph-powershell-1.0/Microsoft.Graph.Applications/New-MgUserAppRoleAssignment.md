@@ -15,6 +15,9 @@ title: New-MgUserAppRoleAssignment
 
 Grant an app role assignment to an agentUser.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
