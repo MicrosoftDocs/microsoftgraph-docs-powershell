@@ -463,8 +463,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref)
-- [](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-beta)
+- [Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-beta)
 
 
 
