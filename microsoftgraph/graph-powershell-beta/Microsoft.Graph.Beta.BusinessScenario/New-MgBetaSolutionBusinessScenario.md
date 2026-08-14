@@ -1246,8 +1246,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenario)
-- [](https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-beta)
+- [New-MgBetaSolutionBusinessScenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenario)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-beta)
 
 
 
