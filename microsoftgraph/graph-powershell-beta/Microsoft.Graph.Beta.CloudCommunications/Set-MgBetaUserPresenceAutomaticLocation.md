@@ -74,8 +74,9 @@ The automatic layer participates in the standard precedence model: Use this oper
 It doesn't clear manual or scheduled signals.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -86,6 +87,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgBetaUserPresenceAutomaticLocation -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaUserPresenceAutomaticLocation Cmdlet.
+
 
 ## PARAMETERS
 
