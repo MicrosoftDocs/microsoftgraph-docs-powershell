@@ -59,12 +59,17 @@ Synchronized accounts are left as-is.
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
+
+```
+This example shows how to use the Remove-MgServicePrincipalSynchronizationJob Cmdlet.
+
 
 ## PARAMETERS
 

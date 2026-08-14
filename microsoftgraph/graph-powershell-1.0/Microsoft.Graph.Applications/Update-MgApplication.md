@@ -137,12 +137,15 @@ This API can also create an agentIdentityBlueprint object if it doesn't exist, o
 | Application | Application.ReadWrite.OwnedBy, AgentIdentityBlueprint.AddRemoveCreds.All, AgentIdentityBlueprint.ReadWrite.All, AgentIdentityBlueprint.UpdateAuthProperties.All, AgentIdentityBlueprint.UpdateBranding.All, AgentIdentityBlueprintPrincipal.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update an application
 
-### EXAMPLE 1
-
+```powershell
 Update-MgApplication `
   -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
   -DisplayName 'Testing App'
+```
+
+This example updates the specified application's display name.
 
 ## PARAMETERS
 
