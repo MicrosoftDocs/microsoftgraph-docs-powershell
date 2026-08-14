@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetagroupdriverootlistitempermissiongrant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Revoke-MgBetaGroupDriveRootListItemPermissionGrant
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 
 Revoke access to a listItem or driveItem granted via a sharing link by removing the specified recipient from the link.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -98,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -196,7 +206,7 @@ HelpMessage: ''
 
 ### -Grantees
 
-
+.
 To construct, see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
@@ -508,7 +518,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsEa9SlgGroupsGroupIdDrivesDriveIdRootListitemPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsEa9SlgGroupsGroupIdDrivesDriveIdRootListitemPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Grantees <IMicrosoftGraphDriveRecipient[]>]: 
     [Alias <String>]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
@@ -520,7 +530,7 @@ GRANTEES <IMicrosoftGraphDriveRecipient[]>: .
   [Email <String>]: The email address for the recipient, if the recipient has an associated email address.
   [ObjectId <String>]: The unique identifier for the recipient in the directory.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -550,28 +560,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Revoke-MgBetaGroupDriveRootListItemPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetagroupdriverootlistitempermissiongrant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetagroupdriverootlistitempermissiongrant)
+- [](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
