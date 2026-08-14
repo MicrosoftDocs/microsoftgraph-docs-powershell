@@ -15,6 +15,9 @@ title: Get-MgBetaReportTeamUserActivityUserCount
 
 Invoke function getTeamsUserActivityUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamUserActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamUserActivityUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

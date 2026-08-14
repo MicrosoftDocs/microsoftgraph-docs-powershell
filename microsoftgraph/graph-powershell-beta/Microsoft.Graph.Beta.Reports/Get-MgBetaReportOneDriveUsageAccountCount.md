@@ -15,6 +15,9 @@ title: Get-MgBetaReportOneDriveUsageAccountCount
 
 Invoke function getOneDriveUsageAccountCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOneDriveUsageAccountCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOneDriveUsageAccountCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
