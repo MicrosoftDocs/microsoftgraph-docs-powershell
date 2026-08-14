@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserCalendarPermanent
 ---
@@ -14,9 +14,6 @@ title: Remove-MgUserCalendarPermanent
 ## SYNOPSIS
 
 Invoke action permanentDelete
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarPermanent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,26 +62,13 @@ This cmdlet has the following aliases,
 
 Invoke action permanentDelete
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
 Remove-MgUserCalendarPermanent -UserId $userId
-
-```
-This example shows how to use the Remove-MgUserCalendarPermanent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -428,7 +412,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -451,26 +435,4 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserCalendarPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermanent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermanent)
