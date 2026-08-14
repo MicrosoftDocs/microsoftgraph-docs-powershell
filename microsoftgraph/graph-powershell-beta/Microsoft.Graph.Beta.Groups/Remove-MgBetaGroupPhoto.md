@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupPhoto
 
 Delete navigation property photo for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
