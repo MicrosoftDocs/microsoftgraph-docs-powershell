@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityGovernanceAccessReviewDefinition
 ---
@@ -15,9 +15,6 @@ title: Get-MgIdentityGovernanceAccessReviewDefinition
 
 Read the properties and relationships of an accessReviewScheduleDefinition object.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,37 +59,19 @@ This cmdlet has the following aliases,
 Read the properties and relationships of an accessReviewScheduleDefinition object.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List the first one hundred access review definitions
 
-```powershell
-
-Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgIdentityGovernanceAccessReviewDefinition -Top 100 -Skip 0 
-
-```
-This example will list the first one hundred access review definitions
-
-### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceAccessReviewDefinition -Filter "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')" 
+Get-MgIdentityGovernanceAccessReviewDefinition -Top 100 -Skip 0
 
-```
-This example will retrieve all access review definitions scoped to all microsoft 365 groups in a tenant
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgIdentityGovernanceAccessReviewDefinition -Filter "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')"
 
 ## PARAMETERS
 
@@ -554,7 +533,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -632,28 +611,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgIdentityGovernanceAccessReviewDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition)
+- [](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0)

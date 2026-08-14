@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsubjectbyobjectid
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementSubjectByObjectId
 ---
@@ -14,9 +14,6 @@ title: Update-MgEntitlementManagementSubjectByObjectId
 ## SYNOPSIS
 
 Update an external directory user represented by an existing accessPackageSubject object to change the subject lifecycle.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSubjectByObjectId](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSubjectByObjectId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -691,7 +688,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
+BODYPARAMETER <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -726,7 +723,7 @@ null if the subject isn't yet a user in the tenant.
   [SubjectLifecycle <String>]: accessPackageSubjectLifecycle
   [SubjectType <String>]: accessPackageSubjectType
 
-CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization>`: connectedOrganization
+CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization>: connectedOrganization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -749,7 +746,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   [State <String>]: connectedOrganizationState
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -827,27 +824,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgEntitlementManagementSubjectByObjectId](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsubjectbyobjectid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagesubject-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsubjectbyobjectid)
+- [](https://learn.microsoft.com/graph/api/accesspackagesubject-update?view=graph-rest-1.0)
