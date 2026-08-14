@@ -101,6 +101,14 @@ This cmdlet has the following aliases,
 The content stream of the recording of a Teams live event.
 Read-only.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
