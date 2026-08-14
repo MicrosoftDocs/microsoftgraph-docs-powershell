@@ -15,6 +15,9 @@ title: Remove-MgIdentityRiskPrevention
 
 Delete navigation property riskPrevention for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityRiskPrevention](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityRiskPrevention?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExt
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
