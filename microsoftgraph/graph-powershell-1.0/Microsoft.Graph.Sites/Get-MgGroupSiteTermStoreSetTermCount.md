@@ -15,6 +15,9 @@ title: Get-MgGroupSiteTermStoreSetTermCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetTermCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetTermCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

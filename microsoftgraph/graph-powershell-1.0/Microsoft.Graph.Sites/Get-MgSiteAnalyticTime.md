@@ -15,6 +15,9 @@ title: Get-MgSiteAnalyticTime
 
 Get allTime from sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticTime?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

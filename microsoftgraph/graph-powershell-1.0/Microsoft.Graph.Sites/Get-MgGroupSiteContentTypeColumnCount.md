@@ -15,6 +15,9 @@ title: Get-MgGroupSiteContentTypeColumnCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteContentTypeColumnCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeColumnCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

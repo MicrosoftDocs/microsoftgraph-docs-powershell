@@ -15,6 +15,9 @@ title: Get-MgSiteGetByPathSite
 
 The collection of the sub-sites under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
