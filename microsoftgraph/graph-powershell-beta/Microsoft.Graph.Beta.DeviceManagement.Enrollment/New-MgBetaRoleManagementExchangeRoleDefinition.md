@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangeroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementExchangeRoleDefinition
 ---
@@ -49,13 +49,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to roleDefinitions for roleManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.ReadWrite.Exchange,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Exchange,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -623,7 +625,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -720,27 +722,4 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [New-MgBetaRoleManagementExchangeRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangeroledefinition)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangeroledefinition)

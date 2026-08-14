@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagement
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaRoleManagement
 ## SYNOPSIS
 
 Get roleManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get roleManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -284,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaRoleManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagement)

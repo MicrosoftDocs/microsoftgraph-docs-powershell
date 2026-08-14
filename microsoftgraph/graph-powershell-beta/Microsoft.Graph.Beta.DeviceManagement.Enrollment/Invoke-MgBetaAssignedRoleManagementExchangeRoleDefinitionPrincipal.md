@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetaassignedrolemanagementexchangeroledefinitionprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAssignedRoleManagementExchangeRoleDefinitionPrincipal
 ---
@@ -54,6 +54,16 @@ Get the list of security principals (users, groups, and service principals) that
 You can use the $count query parameter to also get the count.
 This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -534,7 +544,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -566,28 +576,5 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAssignedRoleManagementExchangeRoleDefinitionPrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetaassignedrolemanagementexchangeroledefinitionprincipal)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetaassignedrolemanagementexchangeroledefinitionprincipal)
+- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementDeviceEnrollmentConfiguration
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementDeviceEnrollmentConfiguration
 ## SYNOPSIS
 
 Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,13 +49,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -571,7 +570,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceEnrollmentConfiguration>`: The Base Class of Device Enrollment Configuration
+BODYPARAMETER <IMicrosoftGraphDeviceEnrollmentConfiguration>: The Base Class of Device Enrollment Configuration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -597,27 +596,4 @@ Users are subject only to the configuration with the lowest priority value.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementDeviceEnrollmentConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfiguration)

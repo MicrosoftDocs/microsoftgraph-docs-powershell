@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaRoleManagementExchangeCustomAppScope
 ---
@@ -46,26 +46,13 @@ This cmdlet has the following aliases,
 Delete a customAppScope object of an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.ReadWrite.Exchange,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Exchange,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Remove-MgBetaRoleManagementExchangeCustomAppScope -CustomAppScopeId $customAppScopeId
-
-```
-This example shows how to use the Remove-MgBetaRoleManagementExchangeCustomAppScope Cmdlet.
-
 
 ## PARAMETERS
 
@@ -397,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -429,27 +416,5 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaRoleManagementExchangeCustomAppScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/customappscope-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope)
+- [](https://learn.microsoft.com/graph/api/customappscope-delete?view=graph-rest-beta)

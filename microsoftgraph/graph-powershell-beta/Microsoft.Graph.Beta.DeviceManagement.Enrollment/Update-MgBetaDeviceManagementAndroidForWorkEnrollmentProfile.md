@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile
 ---
@@ -76,13 +76,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property androidForWorkEnrollmentProfiles in deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -742,7 +744,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAndroidForWorkEnrollmentProfile>`: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
+BODYPARAMETER <IMicrosoftGraphAndroidForWorkEnrollmentProfile>: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -760,7 +762,7 @@ Read-only.
   [TokenExpirationDateTime <DateTime?>]: Date time the most recently created token will expire.
   [TokenValue <String>]: Value of the most recently created token for this enrollment profile.
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -789,7 +791,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [WindowsFeatureUpdateProfileAssignmentId <String>]: The unique identifier of windowsFeatureUpdateProfileAssignment
   [WindowsFeatureUpdateProfileId <String>]: The unique identifier of windowsFeatureUpdateProfile
 
-QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
@@ -797,27 +799,4 @@ QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mi
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile)

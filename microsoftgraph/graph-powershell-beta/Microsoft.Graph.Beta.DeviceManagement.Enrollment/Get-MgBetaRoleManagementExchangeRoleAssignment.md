@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagementExchangeRoleAssignment
 ---
@@ -57,26 +57,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Exchange, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Exchange, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange,  |
-
 ## EXAMPLES
-### Example 1: Get details of a role assignment from Exchange Online Provider
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Get-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
-
-```
-This example will get details of a role assignment from exchange online provider
-
 
 ## PARAMETERS
 
@@ -538,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -570,28 +557,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaRoleManagementExchangeRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroleassignment)
+- [](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta)
