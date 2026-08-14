@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrintConnector
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPrintConnector
 ## SYNOPSIS
 
 Update the properties of a printConnector object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a printConnector object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -433,7 +444,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -680,7 +691,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -719,11 +730,11 @@ The elements should be in hierarchical order.
   [OperatingSystem <String>]: The connector machine's operating system version.
   [RegisteredDateTime <DateTime?>]: The DateTimeOffset when the connector was registered.
 
-DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
+DEVICEHEALTH <IMicrosoftGraphDeviceHealth>: deviceHealth
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastConnectionTime <DateTime?>]: The last time the device was connected.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -738,7 +749,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AltitudeInMeters <Int32?>]: The altitude, in meters, that the printer is located at.
   [Building <String>]: The building that the printer is located in.
@@ -767,28 +778,5 @@ The elements should be in hierarchical order.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPrintConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintconnector)
+- [](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-beta)
