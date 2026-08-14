@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityPartnerSecurityAlert
 ---
@@ -80,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a partnerSecurityAlert object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PartnerSecurity.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PartnerSecurity.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -101,10 +92,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityPartnerSecurityAlert -PartnerSecurityAlertId $partnerSecurityAlertId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSecurityPartnerSecurityAlert Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1058,7 +1045,7 @@ AFFECTEDRESOURCES <IMicrosoftGraphPartnerSecurityAffectedResource[]>: Contains d
   [ResourceId <String>]: The resource path of the resource affected by the security alert.
   [ResourceType <String>]: The type of resource.
 
-BODYPARAMETER `<IMicrosoftGraphPartnerSecurityAlert>`: partnerSecurityAlert
+BODYPARAMETER <IMicrosoftGraphPartnerSecurityAlert>: partnerSecurityAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1103,7 +1090,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [SubscriptionId <String>]: The subscription associated with the alert for the customer.
   [ValueAddedResellerTenantId <String>]: The value-added reseller tenant associated with the partner tenant and customer tenant.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1205,27 +1192,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityPartnerSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityalert)
+- [](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-update?view=graph-rest-beta)

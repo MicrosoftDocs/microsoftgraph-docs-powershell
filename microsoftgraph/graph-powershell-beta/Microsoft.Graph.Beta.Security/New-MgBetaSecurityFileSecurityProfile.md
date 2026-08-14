@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityFileSecurityProfile
 ---
@@ -50,11 +50,21 @@ This cmdlet has the following aliases,
 
 Create new navigation property to fileSecurityProfiles for security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -96,7 +106,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -117,7 +127,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -181,7 +191,7 @@ HelpMessage: ''
 
 ### -CertificateThumbprint
 
-
+.
 
 ```yaml
 Type: System.String
@@ -224,7 +234,7 @@ HelpMessage: ''
 
 ### -Extensions
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -245,7 +255,7 @@ HelpMessage: ''
 
 ### -FileType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -266,7 +276,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -287,7 +297,7 @@ HelpMessage: ''
 
 ### -Hashes
 
-
+.
 To construct, see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
@@ -394,7 +404,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -415,7 +425,7 @@ HelpMessage: ''
 
 ### -MalwareStates
 
-
+.
 To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
@@ -437,7 +447,7 @@ HelpMessage: ''
 
 ### -Names
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -543,7 +553,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -564,7 +574,7 @@ HelpMessage: ''
 
 ### -Size
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -585,7 +595,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -628,7 +638,7 @@ HelpMessage: ''
 
 ### -VulnerabilityStates
 
-
+.
 To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
@@ -700,7 +710,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
+BODYPARAMETER <IMicrosoftGraphFileSecurityProfile>: fileSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -749,7 +759,7 @@ MALWARESTATES <IMicrosoftGraphMalwareState[]>: .
   [Severity <String>]: Provider-determined severity of this malware.
   [WasRunning <Boolean?>]: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -766,27 +776,4 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: .
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityFileSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)

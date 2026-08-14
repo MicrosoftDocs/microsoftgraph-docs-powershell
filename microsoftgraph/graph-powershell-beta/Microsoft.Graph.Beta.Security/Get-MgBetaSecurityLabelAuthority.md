@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityLabelAuthority
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityLabelAuthority
 ## SYNOPSIS
 
 Read the properties and relationships of a authorityTemplate object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelAuthority?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,17 +56,12 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a authorityTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityLabelAuthority
-
-```
-This example shows how to use the Get-MgBetaSecurityLabelAuthority Cmdlet.
-
 
 ## PARAMETERS
 
@@ -531,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -633,28 +625,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityLabelAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority)
+- [](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-beta)

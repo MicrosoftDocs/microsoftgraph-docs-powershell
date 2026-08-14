@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityThreatIntelligenceIntelProfile
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityThreatIntelligenceIntelProfile
 ## SYNOPSIS
 
 Update the navigation property intelProfiles in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property intelProfiles in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -743,7 +750,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfile
+BODYPARAMETER <IMicrosoftGraphSecurityIntelligenceProfile>: intelligenceProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -778,7 +785,7 @@ COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrR
   [Code <String>]: A codified representation for this country/region of origin.
   [Label <String>]: A display label for this ountry/region of origin.
 
-DESCRIPTION `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+DESCRIPTION <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
@@ -794,7 +801,7 @@ Read-only.
   [FirstSeenDateTime <DateTime?>]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   [LastSeenDateTime <DateTime?>]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -893,12 +900,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
 
-TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+TRADECRAFT <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
@@ -906,27 +913,4 @@ TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityThreatIntelligenceIntelProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceintelprofile)

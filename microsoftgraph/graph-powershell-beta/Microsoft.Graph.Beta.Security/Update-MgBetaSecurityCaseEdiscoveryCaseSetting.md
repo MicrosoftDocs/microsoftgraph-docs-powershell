@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityCaseEdiscoveryCaseSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityCaseEdiscoveryCaseSetting
 ## SYNOPSIS
 
 Update the properties of an ediscoveryCaseSettings object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an ediscoveryCaseSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -112,10 +100,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -588,7 +572,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseSettings>`: ediscoveryCaseSettings
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCaseSettings>: ediscoveryCaseSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -617,7 +601,7 @@ To learn more, see Include numbers in themes.
     [TopicCount <Int32?>]: The total number of topics that the themes model will generate for a review set.
 To learn more, see Maximum number of themes.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -716,14 +700,14 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-OCR `<IMicrosoftGraphSecurityOcrSettings>`: ocrSettings
+OCR <IMicrosoftGraphSecurityOcrSettings>: ocrSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether or not OCR is enabled for the case.
   [MaxImageSize <Int32?>]: Maximum image size that will be processed in KB).
   [Timeout <TimeSpan?>]: The timeout duration for the OCR engine.
 A longer timeout might increase success of OCR, but might add to the total processing time.
 
-REDUNDANCYDETECTION `<IMicrosoftGraphSecurityRedundancyDetectionSettings>`: redundancyDetectionSettings
+REDUNDANCYDETECTION <IMicrosoftGraphSecurityRedundancyDetectionSettings>: redundancyDetectionSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether email threading and near duplicate detection are enabled.
   [MaxWords <Int32?>]: Specifies the maximum number of words used for email threading and near duplicate detection.
@@ -733,7 +717,7 @@ To learn more, see Minimum/maximum number of words.
   [SimilarityThreshold <Int32?>]: Specifies the similarity level for documents to be put in the same near duplicate set.
 To learn more, see Document and email similarity threshold.
 
-TOPICMODELING `<IMicrosoftGraphSecurityTopicModelingSettings>`: topicModelingSettings
+TOPICMODELING <IMicrosoftGraphSecurityTopicModelingSettings>: topicModelingSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DynamicallyAdjustTopicCount <Boolean?>]: Indicates whether the themes model should dynamically optimize the number of generated topics.
 To learn more, see Adjust maximum number of themes dynamically.
@@ -746,27 +730,5 @@ To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityCaseEdiscoveryCaseSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesetting)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-update?view=graph-rest-beta)

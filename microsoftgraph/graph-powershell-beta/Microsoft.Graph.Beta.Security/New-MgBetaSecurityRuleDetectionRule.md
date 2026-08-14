@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityruledetectionrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityRuleDetectionRule
 ---
@@ -49,13 +49,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to detectionRules for security
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomDetection.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomDetection.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -603,7 +605,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityDetectionRule>`: detectionRule
+BODYPARAMETER <IMicrosoftGraphSecurityDetectionRule>: detectionRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <String>]: Name of the user or application that created the rule.
   [CreatedDateTime <DateTime?>]: Timestamp of rule creation.
@@ -649,7 +651,7 @@ See the table below.
 The allowed values are: 0, 1H, 3H, 12H, or 24H.
 '0' signifies the rule is run continuously.
 
-DETECTIONACTION `<IMicrosoftGraphSecurityDetectionAction>`: detectionAction
+DETECTIONACTION <IMicrosoftGraphSecurityDetectionAction>: detectionAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AlertTemplate <IMicrosoftGraphSecurityAlertTemplate>]: alertTemplate
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -666,7 +668,7 @@ DETECTIONACTION `<IMicrosoftGraphSecurityDetectionAction>`: detectionAction
     [ScopeType <String>]: scopeType
   [ResponseActions <IMicrosoftGraphSecurityResponseAction[]>]: Actions taken on impacted assets as set in the custom detection rule.
 
-LASTRUNDETAILS `<IMicrosoftGraphSecurityRunDetails>`: runDetails
+LASTRUNDETAILS <IMicrosoftGraphSecurityRunDetails>: runDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ErrorCode <String>]: huntingRuleErrorCode
   [FailureReason <String>]: Reason for failure when the custom detection last ran and failed.
@@ -674,12 +676,12 @@ See the table below.
   [LastRunDateTime <DateTime?>]: Timestamp when the custom detection was last run.
   [Status <String>]: huntingRuleRunStatus
 
-QUERYCONDITION `<IMicrosoftGraphSecurityQueryCondition>`: queryCondition
+QUERYCONDITION <IMicrosoftGraphSecurityQueryCondition>: queryCondition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastModifiedDateTime <DateTime?>]: Timestamp of when the query in the custom detection rule was last updated.
   [QueryText <String>]: Contents of the query.
 
-SCHEDULE `<IMicrosoftGraphSecurityRuleSchedule>`: ruleSchedule
+SCHEDULE <IMicrosoftGraphSecurityRuleSchedule>: ruleSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NextRunDateTime <DateTime?>]: Timestamp of the custom detection rule's next scheduled run.
   [Period <String>]: How often the detection rule is set to run.
@@ -689,27 +691,4 @@ The allowed values are: 0, 1H, 3H, 12H, or 24H.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityRuleDetectionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityruledetectionrule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityruledetectionrule)

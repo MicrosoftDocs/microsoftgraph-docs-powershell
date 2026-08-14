@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityThreatIntelligenceSslCertificate
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityThreatIntelligenceSslCertificate
 ## SYNOPSIS
 
 Get the properties and relationships of an sslCertificate object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 Get the properties and relationships of an sslCertificate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityThreatIntelligenceSslCertificate -Search '"subject/commonName:microsoft.com"' -CountVariable CountVar -Top 1 
-
-```
-This example shows how to use the Get-MgBetaSecurityThreatIntelligenceSslCertificate Cmdlet.
-
+Get-MgBetaSecurityThreatIntelligenceSslCertificate -Search '"subject/commonName:microsoft.com"' -CountVariable CountVar -Top 1
 
 ## PARAMETERS
 
@@ -533,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -635,28 +627,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityThreatIntelligenceSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificate)
+- [](https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-beta)
