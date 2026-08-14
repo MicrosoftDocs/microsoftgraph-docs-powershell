@@ -87,16 +87,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property list in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -57203,6 +57193,7 @@ For more information, see RFC 8291 Section 3.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelist)
+
 
 
 
