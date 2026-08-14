@@ -577,7 +577,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalappmanagementpolicy)
+- [Get-MgServicePrincipalAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalappmanagementpolicy)
 
 
 
