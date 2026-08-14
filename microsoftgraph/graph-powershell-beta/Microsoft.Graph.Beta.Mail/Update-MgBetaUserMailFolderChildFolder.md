@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserMailFolderChildFolder
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserMailFolderChildFolder
 ## SYNOPSIS
 
 Update the navigation property childFolders in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -83,6 +80,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property childFolders in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -556,7 +563,7 @@ HelpMessage: ''
 
 ### -Operations
 
-
+.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -780,7 +787,7 @@ HelpMessage: ''
 
 ### -UserConfigurations
 
-
+.
 To construct, see NOTES section for USERCONFIGURATIONS properties and create a hash table.
 
 ```yaml
@@ -919,7 +926,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMailFolder>`: mailFolder
+BODYPARAMETER <IMicrosoftGraphMailFolder>: mailFolder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1358,7 +1365,7 @@ The possible values are listed above.
 This property is only set for default folders created by Outlook.
 For other folders, this property is null.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -1592,27 +1599,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserMailFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfolder)
