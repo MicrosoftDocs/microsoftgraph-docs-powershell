@@ -15,6 +15,9 @@ title: New-MgBetaUserInsightUsed
 
 Create new navigation property to used for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserInsightUsed](/powershell/module/Microsoft.Graph.Users/New-MgUserInsightUsed?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
