@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlannerTaskDetail
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPlannerTaskDetail
 ## SYNOPSIS
 
 Update the properties of plannerTaskDetails object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update the properties of plannerTaskDetails object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -122,12 +110,7 @@ Updated checklist:Sub items
 Updated references:Related links"
 }
 
-Update-MgBetaPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
-
-
-```
-This example shows how to use the Update-MgBetaPlannerTaskDetail Cmdlet.
-
+Update-MgBetaPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -756,11 +739,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPROVALATTACHMENT `<IMicrosoftGraphPlannerBaseApprovalAttachment>`: plannerBaseApprovalAttachment
+APPROVALATTACHMENT <IMicrosoftGraphPlannerBaseApprovalAttachment>: plannerBaseApprovalAttachment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Status <String>]: plannerApprovalStatus
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+BODYPARAMETER <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -793,7 +776,7 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [References <IMicrosoftGraphPlannerExternalReferences>]: plannerExternalReferences
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>`: plannerTaskCompletionRequirementDetails
+COMPLETIONREQUIREMENTS <IMicrosoftGraphPlannerTaskCompletionRequirementDetails>: plannerTaskCompletionRequirementDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]: plannerApprovalRequirement
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -807,7 +790,7 @@ If set to true, the task can only be marked as complete if an approval is create
     [RequiredForms <String[]>]: Read-only.
 A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -819,7 +802,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [UserId <String>]: The unique identifier of user
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -827,27 +810,5 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlannerTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
+- [](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlannerRoster
 ---
@@ -46,18 +46,9 @@ This cmdlet has the following aliases,
 
 Create a new plannerRoster object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -66,10 +57,6 @@ $params = @{
 }
 
 New-MgBetaPlannerRoster -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlannerRoster Cmdlet.
-
 
 ## PARAMETERS
 
@@ -447,13 +434,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNEDSENSITIVITYLABEL `<IMicrosoftGraphSensitivityLabelAssignment>`: sensitivityLabelAssignment
+ASSIGNEDSENSITIVITYLABEL <IMicrosoftGraphSensitivityLabelAssignment>: sensitivityLabelAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [SensitivityLabelId <String>]: The unique identifier for the sensitivity label assigned to the file.
   [TenantId <String>]: The unique identifier for the tenant that hosts the file when this label is applied.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
+BODYPARAMETER <IMicrosoftGraphPlannerRoster>: plannerRoster
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1154,27 +1141,5 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [New-MgBetaPlannerRoster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/planner-post-rosters?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster)
+- [](https://learn.microsoft.com/graph/api/planner-post-rosters?view=graph-rest-beta)

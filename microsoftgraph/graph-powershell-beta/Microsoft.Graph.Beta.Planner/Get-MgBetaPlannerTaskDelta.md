@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlannerTaskDelta
 ---
@@ -39,26 +39,13 @@ This cmdlet has the following aliases,
 Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get delta on tasks in a plannerPlan
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerTaskDelta
-
-```
-This example will get delta on tasks in a plannerplan
-
 
 ## PARAMETERS
 
@@ -470,27 +457,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaPlannerTaskDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta)
+- [](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
