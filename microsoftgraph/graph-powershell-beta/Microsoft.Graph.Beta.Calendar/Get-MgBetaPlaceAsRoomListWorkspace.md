@@ -15,6 +15,9 @@ title: Get-MgBetaPlaceAsRoomListWorkspace
 
 Get workspaces from places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomListWorkspace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
