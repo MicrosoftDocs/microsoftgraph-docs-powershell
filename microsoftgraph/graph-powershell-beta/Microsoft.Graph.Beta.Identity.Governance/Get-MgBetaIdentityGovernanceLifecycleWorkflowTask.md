@@ -69,12 +69,17 @@ The tasks in the workflow.
 | Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTask -WorkflowId $workflowId
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTask Cmdlet.
+
 
 ## PARAMETERS
 
