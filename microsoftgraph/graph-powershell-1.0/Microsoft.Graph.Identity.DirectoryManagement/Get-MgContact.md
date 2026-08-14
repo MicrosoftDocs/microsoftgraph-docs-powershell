@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgContact
 ---
@@ -14,9 +14,6 @@ title: Get-MgContact
 ## SYNOPSIS
 
 Get the properties and relationships of an organizational contact.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,27 +55,16 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of an organizational contact.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve contact objects in the directory 
 
-```powershell
+### EXAMPLE 1
+
 Get-MgContact | Format-List Id, DisplayName, Mail, MailNickname
 
 Id           : 5d58402b-3cb2-4b17-b913-299a72c84204
 DisplayName  : Bob Kelly (TAILSPIN)
 Mail         : bobk@tailspintoys.com
 MailNickname : BobKTAILSPIN
-```
-
-This example retrieves all contact objects in the directory.
 
 ## PARAMETERS
 
@@ -562,7 +548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -604,28 +590,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgContact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact)
+- [](https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-1.0)

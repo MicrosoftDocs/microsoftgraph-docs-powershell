@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDevice
 ---
@@ -15,9 +15,6 @@ title: Update-MgDevice
 
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -98,18 +95,9 @@ This cmdlet has the following aliases,
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.AccessAsUser.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Device.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update the accountEnabled property of a device
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -119,12 +107,7 @@ $params = @{
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 
-```
-This example will update the accountenabled property of a device
-
-### Example 2:  Write extensionAttributes on a device
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -134,10 +117,6 @@ $params = @{
 }
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
-
-```
-This example will  write extensionattributes on a device
-
 
 ## PARAMETERS
 
@@ -1591,7 +1570,7 @@ Supports $filter (eq, not, ge, le).
   [Key <Byte[]>]: For internal use only.
   [Type <Int32?>]: For internal use only.
 
-BODYPARAMETER `<IMicrosoftGraphDevice>`: device
+BODYPARAMETER <IMicrosoftGraphDevice>: device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1727,7 +1706,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1806,27 +1785,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [Update-MgDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)
+- [](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)

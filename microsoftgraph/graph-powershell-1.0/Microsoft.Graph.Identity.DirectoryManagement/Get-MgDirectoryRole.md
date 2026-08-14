@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrole
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryRole
 ---
@@ -18,9 +18,6 @@ The role must be activated in tenant for a successful response.
 You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRole?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,22 +63,15 @@ You can use both the object ID and template ID of the directoryRole with this AP
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Get all directory roles
 
-```powershell
+### EXAMPLE 1
+
 Get-MgDirectoryRole | Format-List
 
 DeletedDateTime      :
-Description          : Can read basic directory information. Commonly used to grant directory read access to
+Description          : Can read basic directory information.
+Commonly used to grant directory read access to
                        applications and guests.
 DisplayName          : Directory Readers
 Id                   : 86596a70-0099-457d-8c89-1f5085b395ca
@@ -89,18 +79,15 @@ Members              :
 RoleTemplateId       : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 ScopedMembers        :
 AdditionalProperties : {}
-```
 
-This examples gets all the available directory roles.
+### EXAMPLE 2
 
-### Example 2: Get a directory role by Id
-
-```powershell
 Get-MgDirectoryRole -DirectoryRoleId '86596a70-0099-457d-8c89-1f5085b395ca' |
   Format-List
 
 DeletedDateTime      :
-Description          : Can read basic directory information. Commonly used to grant directory read access to
+Description          : Can read basic directory information.
+Commonly used to grant directory read access to
                        applications and guests.
 DisplayName          : Directory Readers
 Id                   : 86596a70-0099-457d-8c89-1f5085b395ca
@@ -108,9 +95,6 @@ Members              :
 RoleTemplateId       : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 ScopedMembers        :
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity]}
-```
-
-This example gets the directory role based on the specified Id.
 
 ## PARAMETERS
 
@@ -572,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -614,28 +598,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrole)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrole)
+- [](https://learn.microsoft.com/graph/api/directoryrole-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/directoryrole-list?view=graph-rest-1.0)
