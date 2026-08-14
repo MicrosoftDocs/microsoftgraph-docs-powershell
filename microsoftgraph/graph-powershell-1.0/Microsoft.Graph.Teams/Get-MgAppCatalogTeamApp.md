@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAppCatalogTeamApp
 ---
@@ -14,9 +14,6 @@ title: Get-MgAppCatalogTeamApp
 ## SYNOPSIS
 
 Get teamsApps from appCatalogs
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,72 +56,42 @@ This cmdlet has the following aliases,
 Get teamsApps from appCatalogs
 
 ## EXAMPLES
-### Example 1: List all applications specific to the tenant
 
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'" 
-
-```
-This example will list all applications specific to the tenant
-
-### Example 2: List applications with a given ID
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamApp -Filter "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'" 
+Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'"
 
-```
-This example will list applications with a given id
-
-### Example 3: Find application based on the Teams app manifest ID
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamApp -Filter "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'" 
+Get-MgAppCatalogTeamApp -Filter "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'"
 
-```
-This example will find application based on the teams app manifest id
-
-### Example 4: List applications with a given ID, and return the submission review state
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamApp -Filter "id eq '876df28f-2e78-423b-94a5-44181bd0e225'" -ExpandProperty "appDefinitions" 
+Get-MgAppCatalogTeamApp -Filter "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
 
-```
-This example will list applications with a given id, and return the submission review state
-
-### Example 5: List the details of only those apps in the catalog that contain a bot
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)" 
+Get-MgAppCatalogTeamApp -Filter "id eq '876df28f-2e78-423b-94a5-44181bd0e225'" -ExpandProperty "appDefinitions"
 
-```
-This example will list the details of only those apps in the catalog that contain a bot
-
-### Example 6: List applications with a given ID and return only the resource specific permissions required by the app
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgAppCatalogTeamApp -Filter "id eq 'a5228c26-a9ae-4702-90e0-79a5246d2f7d'" -ExpandProperty "appDefinitions(`$select=id,authorization)" 
+Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)"
 
-```
-This example will list applications with a given id and return only the resource specific permissions required by the app
+### EXAMPLE 6
 
+Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -Filter "id eq 'a5228c26-a9ae-4702-90e0-79a5246d2f7d'" -ExpandProperty "appDefinitions(`$select=id,authorization)"
 
 ## PARAMETERS
 
@@ -586,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -627,27 +594,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appcatalogs-list-teamsapps?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamapp)
+- [](https://learn.microsoft.com/graph/api/appcatalogs-list-teamsapps?view=graph-rest-1.0)

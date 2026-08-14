@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgchatmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Complete-MgChatMigration
 ---
@@ -18,9 +18,6 @@ Complete migration operations were initially restricted to newly created standar
 For more information, see Import third-party platform messages to Teams using Microsoft Graph.
 After a completeMigration request is made for an existing or new chat, you can start a migration session by calling chat: startMigration.
 This API supportes the following channel types.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Complete-MgBetaChatMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaChatMigration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -56,28 +53,18 @@ After a completeMigration request is made for an existing or new chat, you can s
 This API supportes the following channel types.
 
 ## EXAMPLES
-### Example 1: Complete the migration of external messages in a chat
 
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Complete-MgChatMigration -ChatId $chatId
-
-```
-This example will complete the migration of external messages in a chat
-
-### Example 2: Complete the migration when a chat is already in migration mode
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgChatMigration -ChatId $chatId
 
-```
-This example will complete the migration when a chat is already in migration mode
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Teams
+
+Complete-MgChatMigration -ChatId $chatId
 
 ## PARAMETERS
 
@@ -388,7 +375,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -429,27 +416,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Complete-MgChatMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgchatmigration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-completemigration?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgchatmigration)
+- [](https://learn.microsoft.com/graph/api/chat-completemigration?view=graph-rest-1.0)

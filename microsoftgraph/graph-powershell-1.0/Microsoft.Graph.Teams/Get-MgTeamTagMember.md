@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamTagMember
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeamTagMember
 ## SYNOPSIS
 
 Get the properties and relationships of a member of a standard tag in a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,26 +56,13 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of a member of a standard tag in a team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkTag.Read, TeamworkTag.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkTag.Read.All, TeamworkTag.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId
-
-```
-This example shows how to use the Get-MgTeamTagMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -594,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -635,28 +619,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamTagMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktagmember-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktagmember-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmember)
+- [](https://learn.microsoft.com/graph/api/teamworktagmember-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/teamworktagmember-list?view=graph-rest-1.0)

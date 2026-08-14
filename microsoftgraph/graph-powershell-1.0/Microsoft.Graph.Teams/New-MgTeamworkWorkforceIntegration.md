@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamworkWorkforceIntegration
 ---
@@ -14,9 +14,6 @@ title: New-MgTeamworkWorkforceIntegration
 ## SYNOPSIS
 
 Create a new workforceIntegration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create a new workforceIntegration object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WorkforceIntegration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WorkforceIntegration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -80,10 +68,6 @@ $params = @{
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params
-
-```
-This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -588,7 +572,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
+BODYPARAMETER <IMicrosoftGraphWorkforceIntegration>: workforceIntegration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -615,7 +599,7 @@ Start with 1.
   [SupportedEntities <String>]: workforceIntegrationSupportedEntities
   [Url <String>]: Workforce Integration URL for callbacks from the Shifts service.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -626,12 +610,12 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
+ENCRYPTION <IMicrosoftGraphWorkforceIntegrationEncryption>: workforceIntegrationEncryption
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Protocol <String>]: workforceIntegrationEncryptionProtocol
   [Secret <String>]: Encryption shared secret.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -645,27 +629,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration)
+- [](https://learn.microsoft.com/graph/api/workforceintegration-post?view=graph-rest-1.0)
