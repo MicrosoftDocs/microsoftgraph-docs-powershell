@@ -748,7 +748,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCE <IMicrosoftGraphAccessPackageResource>: accessPackageResource
+ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -857,7 +857,7 @@ This should be set to the customdataprovidedresource's name when creating the se
 The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRequest>: accessPackageResourceRequest
+BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRequest>`: accessPackageResourceRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1027,7 +1027,7 @@ Alternate key.
     [SubjectLifecycle <String>]: accessPackageSubjectLifecycle
     [Type <String>]: The resource type of the subject.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1138,7 +1138,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-REQUESTOR <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
+REQUESTOR `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1189,3 +1189,25 @@ Alternate key.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackageresourcerequest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
