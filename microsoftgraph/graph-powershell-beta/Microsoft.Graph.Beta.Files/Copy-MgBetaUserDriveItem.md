@@ -695,8 +695,8 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetauserdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+- [Copy-MgBetaUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetauserdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
 
 
 

@@ -93488,7 +93488,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrive)
+- [Update-MgBetaGroupDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrive)
 
 
 

@@ -1893,7 +1893,7 @@ For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcolumn)
+- [New-MgBetaDriveListColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcolumn)
 
 
 
