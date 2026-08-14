@@ -82,8 +82,9 @@ Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create unifiedGroupSource with group SMTP address
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -96,7 +97,12 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create unifiedgroupsource with group smtp address
+
+### Example 2: Create unifiedGroupSource with group@odata.bind
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -106,6 +112,10 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
+
+```
+This example will create unifiedgroupsource with group@odata.bind
+
 
 ## PARAMETERS
 
