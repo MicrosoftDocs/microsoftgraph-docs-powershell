@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a printer object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Printer.Read.All, Printer.FullControl.All, Printer.ReadWrite.All, PrinterShare.Read.All, PrinterShare.ReadBasic.All, PrinterShare.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Printer.Read.All, Printer.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
