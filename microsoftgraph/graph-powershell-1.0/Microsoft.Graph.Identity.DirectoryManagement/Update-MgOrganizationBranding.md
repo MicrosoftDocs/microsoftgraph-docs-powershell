@@ -1401,7 +1401,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphOrganizationalBranding>: organizationalBranding
+BODYPARAMETER `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackgroundColor <String>]: Color that appears in place of the background image in low-bandwidth connections.
 We recommend that you use the primary color of your banner logo or your organization color.
@@ -1563,7 +1563,7 @@ This text must be a Unicode, without links or code, and can't exceed 64 characte
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CONTENTCUSTOMIZATION <IMicrosoftGraphContentCustomization>: contentCustomization
+CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttributeCollection <IMicrosoftGraphKeyValue[]>]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
     [Key <String>]: Key for the key-value pair.
@@ -1572,7 +1572,7 @@ CONTENTCUSTOMIZATION <IMicrosoftGraphContentCustomization>: contentCustomization
   [RegistrationCampaign <IMicrosoftGraphKeyValue[]>]: Represents content options to customize during MFA proofup interruptions.
   [RegistrationCampaignRelativeUrl <String>]: The relative URL of the content options to customize during MFA proofup interruptions.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1701,13 +1701,13 @@ This text must be a Unicode, without links or code, and can't exceed 64 characte
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>: loginPageLayoutConfiguration
+LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsFooterShown <Boolean?>]: Option to show the footer on the sign-in page.
   [IsHeaderShown <Boolean?>]: Option to show the header on the sign-in page.
   [LayoutTemplateType <String>]: layoutTemplateType
 
-LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>: loginPageTextVisibilitySettings
+LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HideAccountResetCredentials <Boolean?>]: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
   [HideCannotAccessYourAccount <Boolean?>]: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
@@ -1721,3 +1721,25 @@ LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding)
 - [](https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
