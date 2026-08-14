@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplandetail
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlannerPlanDetail
 ---
@@ -14,9 +14,6 @@ title: Update-MgPlannerPlanDetail
 ## SYNOPSIS
 
 Update the properties of plannerplandetails object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Update the properties of plannerplandetails object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
@@ -97,12 +85,7 @@ $params = @{
 	}
 }
 
-Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
-
-
-```
-This example shows how to use the Update-MgPlannerPlanDetail Cmdlet.
-
+Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -567,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
+BODYPARAMETER <IMicrosoftGraphPlannerPlanDetails>: plannerPlanDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -601,7 +584,7 @@ Read-only.
   [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCategoryDescriptions
+CATEGORYDESCRIPTIONS <IMicrosoftGraphPlannerCategoryDescriptions>: plannerCategoryDescriptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Category1 <String>]: The label associated with Category 1
   [Category10 <String>]: The label associated with Category 10
@@ -629,7 +612,7 @@ CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCate
   [Category8 <String>]: The label associated with Category 8
   [Category9 <String>]: The label associated with Category 9
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
@@ -639,27 +622,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPlannerPlanDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplandetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplandetail)
+- [](https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-1.0)

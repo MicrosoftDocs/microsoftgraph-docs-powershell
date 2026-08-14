@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserPlanner
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserPlanner
 ## SYNOPSIS
 
 Update the navigation property planner in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaUserPlanner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,13 +66,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property planner in users
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -545,7 +544,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
+BODYPARAMETER <IMicrosoftGraphPlannerUser>: plannerUser
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -709,7 +708,7 @@ Title of the plan.
 Nullable.
 Returns the plannerPlans shared with the user.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
@@ -965,27 +964,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [Update-MgUserPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner)
