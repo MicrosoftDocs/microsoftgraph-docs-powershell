@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationTemplate
 ---
@@ -15,9 +15,6 @@ title: Get-MgApplicationTemplate
 
 Retrieve the properties of an applicationTemplate object.
 Details about optional risk properties such as riskScore and riskFactors are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,28 +58,18 @@ Retrieve the properties of an applicationTemplate object.
 Details about optional risk properties such as riskScore and riskFactors are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
 ## EXAMPLES
-### Example 1: Get application template
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId
 
-```
-This example will get application template
-
-### Example 2: Get application template with optional properties
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId -Property "id,displayName,riskScore,riskFactors" 
-
-```
-This example will get application template with optional properties
-
+Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId -Property "id,displayName,riskScore,riskFactors"
 
 ## PARAMETERS
 
@@ -544,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -574,28 +561,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgApplicationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/applicationtemplate-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)
+- [](https://learn.microsoft.com/graph/api/applicationtemplate-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-1.0)
