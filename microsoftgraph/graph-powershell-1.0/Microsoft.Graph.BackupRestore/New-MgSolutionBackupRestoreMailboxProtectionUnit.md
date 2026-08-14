@@ -15,6 +15,9 @@ title: New-MgSolutionBackupRestoreMailboxProtectionUnit
 
 Create new navigation property to mailboxProtectionUnits for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreMailboxProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreMailboxProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
