@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+
+```
+This example shows how to use the Remove-MgAdminPeopleProfileCardProperty Cmdlet.
+
 
 ## PARAMETERS
 
