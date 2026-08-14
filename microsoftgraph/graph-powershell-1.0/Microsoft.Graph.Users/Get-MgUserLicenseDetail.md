@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserLicenseDetail
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserLicenseDetail
 
 A collection of this user's license details.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,9 +58,9 @@ A collection of this user's license details.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Get a user's license details
 
-```powershell
+### EXAMPLE 1
+
 Get-MgUserLicenseDetail -UserId '0ec3a5e8-b4b6-4678-90ff-ce786055065f' | Format-List
 
 Id                   : BF5i-6pS2kKxDRTxGV1mX6sU3Mts2TBMufRq2nzcHUY
@@ -71,9 +68,6 @@ ServicePlans         : {WINDOWSUPDATEFORBUSINESS_DEPLOYMENTSERVICE, UNIVERSAL_PR
 SkuId                : ae5a2394-6002-4128-80c0-d27fe0d823a3
 SkuPartNumber        : SPB
 AdditionalProperties : {}
-```
-
-This example retrieves the license details of the specified user.
 
 ## PARAMETERS
 
@@ -562,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -592,26 +586,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserLicenseDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserlicensedetail)

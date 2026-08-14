@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevice
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserRegisteredDevice
 ---
@@ -17,9 +17,6 @@ Devices that are registered for the user.
 Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserRegisteredDevice](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserRegisteredDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,18 +64,13 @@ Nullable.
 Supports $expand and returns up to 100 objects.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Get-MgUserRegisteredDevice -UserId $userId
-
-```
-This example shows how to use the Get-MgUserRegisteredDevice Cmdlet.
-
 
 ## PARAMETERS
 
@@ -589,7 +581,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -619,26 +611,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserRegisteredDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevice)

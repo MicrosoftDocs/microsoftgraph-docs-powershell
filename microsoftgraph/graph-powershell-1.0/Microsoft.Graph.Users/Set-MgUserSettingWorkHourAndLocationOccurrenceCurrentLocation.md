@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrencecurrentlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation
 ---
@@ -15,9 +15,6 @@ title: Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation
 
 Update your work location for the current day or current active segment.
 This action allows you to quickly update your work location without modifying individual occurrences.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,9 +69,8 @@ Update your work location for the current day or current active segment.
 This action allows you to quickly update your work location without modifying individual occurrences.
 
 ## EXAMPLES
-### Example 1: Set the current location to office
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users
 
@@ -87,12 +83,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
 
-```
-This example will set the current location to office
-
-### Example 2: Set current location to remote
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Users
 
@@ -103,10 +94,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
-
-```
-This example will set current location to remote
-
 
 ## PARAMETERS
 
@@ -139,7 +126,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -322,7 +309,7 @@ HelpMessage: ''
 
 ### -PlaceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -569,13 +556,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1WzueyiUsersUserIdSettingsWorkhoursandlocationsOccurrencesMicrosoftGraphSetcurrentlocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1WzueyiUsersUserIdSettingsWorkhoursandlocationsOccurrencesMicrosoftGraphSetcurrentlocationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlaceId <String>]: 
   [UpdateScope <String>]: workLocationUpdateScope
   [WorkLocationType <String>]: workLocationType
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -605,27 +592,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgUserSettingWorkHourAndLocationOccurrenceCurrentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrencecurrentlocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrencecurrentlocation)
+- [](https://learn.microsoft.com/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0)
