@@ -56,12 +56,17 @@ Delete an activityBasedTimeoutPolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId
+
+```
+This example shows how to use the Remove-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
+
 
 ## PARAMETERS
 
