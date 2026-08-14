@@ -63,12 +63,17 @@ The groups a group is a member of, either directly or through nested membership.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupTransitiveMemberOf -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupTransitiveMemberOf Cmdlet.
+
 
 ## PARAMETERS
 
