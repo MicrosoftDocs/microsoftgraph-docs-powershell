@@ -421,8 +421,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatecomplianceediscoverycasesourcecollectionstatistics)
-- [](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-estimatestatistics?view=graph-rest-beta)
+- [Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaestimatecomplianceediscoverycasesourcecollectionstatistics)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-estimatestatistics?view=graph-rest-beta)
 
 
 

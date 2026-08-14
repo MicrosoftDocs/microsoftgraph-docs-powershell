@@ -377,8 +377,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesetting)
-- [](https://learn.microsoft.com/graph/api/ediscovery-casesettings-get?view=graph-rest-beta)
+- [Get-MgBetaComplianceEdiscoveryCaseSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-casesettings-get?view=graph-rest-beta)
 
 
 
