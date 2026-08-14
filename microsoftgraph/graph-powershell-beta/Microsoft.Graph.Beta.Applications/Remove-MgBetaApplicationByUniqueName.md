@@ -53,16 +53,6 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 This API can also delete an agentIdentityBlueprint object by its ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -436,6 +426,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyuniquename)
 - [](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-beta)
+
 
 
 
