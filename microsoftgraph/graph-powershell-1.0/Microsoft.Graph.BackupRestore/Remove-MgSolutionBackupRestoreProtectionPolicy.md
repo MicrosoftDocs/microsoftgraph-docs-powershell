@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSolutionBackupRestoreProtectionPolicy
 ---
@@ -18,9 +18,6 @@ A protection policy can be deleted only after it was deactivated.
 When you delete a policy, all associated protection units are removed, and backup protection stops for the resources previously covered by the policy.
 Existing backup data is retained according to the retention policy before it's offboarded.
 You can restore data using previous restore points even after deletion.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ A protection policy can be deleted only after it was deactivated.
 When you delete a policy, all associated protection units are removed, and backup protection stops for the resources previously covered by the policy.
 Existing backup data is retained according to the retention policy before it's offboarded.
 You can restore data using previous restore points even after deletion.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -385,7 +392,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -423,28 +430,5 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSolutionBackupRestoreProtectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionpolicybase-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreprotectionpolicy)
+- [](https://learn.microsoft.com/graph/api/protectionpolicybase-delete?view=graph-rest-1.0)
