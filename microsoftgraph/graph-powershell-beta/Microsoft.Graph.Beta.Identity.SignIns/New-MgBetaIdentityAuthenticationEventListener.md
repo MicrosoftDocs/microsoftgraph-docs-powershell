@@ -528,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAuthenticationEventListener>: authenticationEventListener
+BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -545,7 +545,7 @@ This property must be set to false for listener of type onTokenIssuanceStartList
   [Priority <Int32?>]: The priority of this handler.
 Between 0 (lower priority) and 1000 (higher priority).
 
-CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
+CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -559,3 +559,25 @@ This property must be set to false for listener of type onTokenIssuanceStartList
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
 - [](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
