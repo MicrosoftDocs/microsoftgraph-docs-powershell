@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserContact
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserContact
 The user's contacts.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,27 +59,14 @@ The user's contacts.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Contacts.Read, Contacts.ReadWrite,  |
-| Delegated (personal Microsoft account) | Contacts.Read, Contacts.ReadWrite,  |
-| Application | Contacts.Read, Contacts.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.PersonalContacts
 
 # A UPN can also be used as -UserId.
 Get-MgUserContact -UserId $userId
-
-```
-This example shows how to use the Get-MgUserContact Cmdlet.
-
 
 ## PARAMETERS
 
@@ -571,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -581,26 +565,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserContact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact)
