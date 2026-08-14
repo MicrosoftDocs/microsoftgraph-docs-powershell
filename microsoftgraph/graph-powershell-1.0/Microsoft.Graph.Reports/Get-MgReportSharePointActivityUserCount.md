@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportSharePointActivityUserCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportSharePointActivityUserCount
 
 Get the trend in the number of active users.
 A user is considered active if they have executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ Get the trend in the number of active users.
 A user is considered active if they have executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSharePointActivityUserCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportSharePointActivityUserCount Cmdlet.
-
+Get-MgReportSharePointActivityUserCount -Period $periodId
 
 ## PARAMETERS
 
@@ -348,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -375,27 +367,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportSharePointActivityUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityusercount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityusercount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0)
