@@ -394,8 +394,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolebyroletemplateid)
-- [](https://learn.microsoft.com/graph/api/directoryrole-get?view=graph-rest-1.0)
+- [Get-MgDirectoryRoleByRoleTemplateId](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolebyroletemplateid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-get?view=graph-rest-1.0)
 
 
 

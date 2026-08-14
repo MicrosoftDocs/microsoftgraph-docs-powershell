@@ -400,8 +400,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain)
-- [](https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-1.0)
+- [Invoke-MgPromoteDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-1.0)
 
 
 
