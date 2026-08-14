@@ -30366,8 +30366,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup)
-- [](https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0)
+- [New-MgGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-groups?view=graph-rest-1.0)
 
 
 
