@@ -15,6 +15,9 @@ title: Get-MgBetaServiceAnnouncementIssueCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementIssueCount](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementIssueCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
