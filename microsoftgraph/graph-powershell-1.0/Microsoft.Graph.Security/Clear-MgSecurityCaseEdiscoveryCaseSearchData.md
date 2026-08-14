@@ -14,10 +14,10 @@ title: Clear-MgSecurityCaseEdiscoveryCaseSearchData
 ## SYNOPSIS
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:\r\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.\r\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.\r\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\r\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\r\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:\r\n- eDiscovery solution series: Data spillage scenario - Search and purge\r\n- eDiscovery (Premium) workflow for content in Microsoft Teams
+You can collect and purge the following categories of Teams content:\r- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\r- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\r- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\r- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\r- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:\r- eDiscovery solution series: Data spillage scenario - Search and purge\r- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## SYNTAX
 
@@ -69,10 +69,10 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:\r\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.\r\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.\r\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\r\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\r\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:\r\n- eDiscovery solution series: Data spillage scenario - Search and purge\r\n- eDiscovery (Premium) workflow for content in Microsoft Teams
+You can collect and purge the following categories of Teams content:\r- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\r- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\r- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\r- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\r- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:\r- eDiscovery solution series: Data spillage scenario - Search and purge\r- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## EXAMPLES
 
@@ -548,12 +548,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PurgeAreas <String>]: purgeAreas
   [PurgeType <String>]: purgeType
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -634,3 +634,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata)
 - [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
