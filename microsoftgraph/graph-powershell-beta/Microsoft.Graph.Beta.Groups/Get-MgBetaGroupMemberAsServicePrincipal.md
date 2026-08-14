@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupMemberAsServicePrincipal
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaGroupMemberAsServicePrincipal
 Get a list of the group's direct members.
 A group can have users, contacts, devices, service principals, and other groups as members.
 This operation isn't transitive.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberAsServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -65,17 +62,12 @@ A group can have users, contacts, devices, service principals, and other groups 
 This operation isn't transitive.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupMemberAsServicePrincipal -GroupId $groupId
-
-```
-This example shows how to use the Get-MgBetaGroupMemberAsServicePrincipal Cmdlet.
-
 
 ## PARAMETERS
 
@@ -586,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -613,27 +605,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupMemberAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasserviceprincipal)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberasserviceprincipal)
+- [](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)
