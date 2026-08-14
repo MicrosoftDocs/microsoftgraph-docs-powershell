@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgSiteListItemDocumentSetVersion
 ---
@@ -14,9 +14,6 @@ title: Restore-MgSiteListItemDocumentSetVersion
 ## SYNOPSIS
 
 Restore a document set version.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,26 +45,13 @@ This cmdlet has the following aliases,
 
 Restore a document set version.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
-
-```
-This example shows how to use the Restore-MgSiteListItemDocumentSetVersion Cmdlet.
-
 
 ## PARAMETERS
 
@@ -441,7 +425,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -489,27 +473,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Restore-MgSiteListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemdocumentsetversion)
+- [](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)

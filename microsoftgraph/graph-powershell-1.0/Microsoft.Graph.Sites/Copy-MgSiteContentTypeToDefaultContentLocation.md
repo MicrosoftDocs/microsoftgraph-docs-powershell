@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgSiteContentTypeToDefaultContentLocation
 ---
@@ -15,9 +15,6 @@ title: Copy-MgSiteContentTypeToDefaultContentLocation
 
 Copy a file to a default content location in a content type.
 The file can then be added as a default file or template via a POST operation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 Copy a file to a default content location in a content type.
 The file can then be added as a default file or template via a POST operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
@@ -99,10 +87,6 @@ $params = @{
 }
 
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-
-```
-This example shows how to use the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -135,7 +119,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -233,7 +217,7 @@ HelpMessage: ''
 
 ### -DestinationFileName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -566,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DestinationFileName <String>]: 
   [SourceFile <IMicrosoftGraphItemReference>]: itemReference
@@ -598,7 +582,7 @@ The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -643,7 +627,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-SOURCEFILE `<IMicrosoftGraphItemReference>`: itemReference
+SOURCEFILE <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -675,27 +659,5 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [Copy-MgSiteContentTypeToDefaultContentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation)
+- [](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
