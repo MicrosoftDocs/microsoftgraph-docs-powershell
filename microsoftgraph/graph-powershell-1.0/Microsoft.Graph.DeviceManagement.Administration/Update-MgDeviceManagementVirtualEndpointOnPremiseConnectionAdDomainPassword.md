@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnectionaddomainpassword
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword
 ---
@@ -70,18 +70,9 @@ This cmdlet has the following aliases,
 Update the Active Directory domain password for a successful cloudPcOnPremisesConnection.
 This API is supported when the type of the cloudPcOnPremisesConnection object is hybridAzureADJoin.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -90,10 +81,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword Cmdlet.
-
 
 ## PARAMETERS
 
@@ -126,7 +113,7 @@ HelpMessage: ''
 
 ### -AdDomainPassword
 
-
+.
 
 ```yaml
 Type: System.String
@@ -153,7 +140,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -502,11 +489,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdDomainPassword <String>]: 
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -538,27 +525,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnectionaddomainpassword)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremiseconnectionaddomainpassword)
+- [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-1.0)

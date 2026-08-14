@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementAuditEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementAuditEvent
 ## SYNOPSIS
 
 Create new navigation property to auditEvents for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to auditEvents for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -110,10 +98,6 @@ category = "Category value"
 }
 
 New-MgDeviceManagementAuditEvent -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementAuditEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -658,7 +642,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
+ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit Actor.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationDisplayName <String>]: Name of the Application.
   [ApplicationId <String>]: AAD Application Id.
@@ -669,7 +653,7 @@ ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit
   [UserPermissions <String[]>]: List of user permissions when the audit was performed.
   [UserPrincipalName <String>]: User Principal Name (UPN).
 
-BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
+BODYPARAMETER <IMicrosoftGraphAuditEvent>: A class containing the properties for Audit Event.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -713,26 +697,4 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementAuditEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent)
