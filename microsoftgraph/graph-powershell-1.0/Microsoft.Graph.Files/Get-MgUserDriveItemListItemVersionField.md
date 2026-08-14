@@ -15,6 +15,9 @@ title: Get-MgUserDriveItemListItemVersionField
 
 A collection of the fields and values for this version of the list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
