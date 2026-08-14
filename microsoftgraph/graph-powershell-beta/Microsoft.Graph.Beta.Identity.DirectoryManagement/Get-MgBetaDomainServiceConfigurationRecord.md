@@ -633,8 +633,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainserviceconfigurationrecord)
-- [](https://learn.microsoft.com/graph/api/domain-list-serviceconfigurationrecords?view=graph-rest-beta)
+- [Get-MgBetaDomainServiceConfigurationRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainserviceconfigurationrecord)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-list-serviceconfigurationrecords?view=graph-rest-beta)
 
 
 

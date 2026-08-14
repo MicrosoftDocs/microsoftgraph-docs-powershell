@@ -1101,8 +1101,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainfederationconfiguration)
-- [](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-beta)
+- [Update-MgBetaDomainFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainfederationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-beta)
 
 
 

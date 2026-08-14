@@ -604,9 +604,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardproperty)
-- [](https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta)
+- [Get-MgBetaAdminPeopleProfileCardProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleprofilecardproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-beta)
 
 
 

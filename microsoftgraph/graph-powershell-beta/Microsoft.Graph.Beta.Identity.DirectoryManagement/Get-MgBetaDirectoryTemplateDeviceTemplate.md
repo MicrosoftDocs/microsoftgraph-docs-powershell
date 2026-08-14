@@ -606,9 +606,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytemplatedevicetemplate)
-- [](https://learn.microsoft.com/graph/api/devicetemplate-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/template-list-devicetemplates?view=graph-rest-beta)
+- [Get-MgBetaDirectoryTemplateDeviceTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytemplatedevicetemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/devicetemplate-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/template-list-devicetemplates?view=graph-rest-beta)
 
 
 

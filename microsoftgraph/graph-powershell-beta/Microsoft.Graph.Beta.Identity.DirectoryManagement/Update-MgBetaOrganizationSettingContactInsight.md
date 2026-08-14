@@ -623,8 +623,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingcontactinsight)
-- [](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-beta)
+- [Update-MgBetaOrganizationSettingContactInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingcontactinsight)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-beta)
 
 
 

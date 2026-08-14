@@ -723,8 +723,8 @@ LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localize
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilesourcebysourceid)
-- [](https://learn.microsoft.com/graph/api/profilesource-update?view=graph-rest-beta)
+- [Update-MgBetaAdminPeopleProfileSourceBySourceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilesourcebysourceid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilesource-update?view=graph-rest-beta)
 
 
 
