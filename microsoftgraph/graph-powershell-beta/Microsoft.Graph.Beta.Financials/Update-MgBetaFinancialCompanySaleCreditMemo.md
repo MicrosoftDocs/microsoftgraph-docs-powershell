@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemo
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanySaleCreditMemo
 ---
@@ -90,6 +90,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property salesCreditMemos in financials
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -149,7 +159,7 @@ HelpMessage: ''
 
 ### -BillToCustomerId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -176,7 +186,7 @@ HelpMessage: ''
 
 ### -BillToCustomerNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -203,7 +213,7 @@ HelpMessage: ''
 
 ### -BillToName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -328,7 +338,7 @@ HelpMessage: ''
 
 ### -CreditMemoDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -383,7 +393,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -410,7 +420,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -465,7 +475,7 @@ HelpMessage: ''
 
 ### -CustomerId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -492,7 +502,7 @@ HelpMessage: ''
 
 ### -CustomerName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -519,7 +529,7 @@ HelpMessage: ''
 
 ### -CustomerNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -546,7 +556,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -573,7 +583,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -600,7 +610,7 @@ HelpMessage: ''
 
 ### -DueDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -627,7 +637,7 @@ HelpMessage: ''
 
 ### -Email
 
-
+.
 
 ```yaml
 Type: System.String
@@ -654,7 +664,7 @@ HelpMessage: ''
 
 ### -ExternalDocumentNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -744,7 +754,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -799,7 +809,7 @@ HelpMessage: ''
 
 ### -InvoiceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -826,7 +836,7 @@ HelpMessage: ''
 
 ### -InvoiceNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -853,7 +863,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -880,7 +890,7 @@ HelpMessage: ''
 
 ### -Number
 
-
+.
 
 ```yaml
 Type: System.String
@@ -935,7 +945,7 @@ HelpMessage: ''
 
 ### -PaymentTermsId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -962,7 +972,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -989,7 +999,7 @@ HelpMessage: ''
 
 ### -PricesIncludeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1128,7 +1138,7 @@ HelpMessage: ''
 
 ### -SalesCreditMemoLines
 
-
+.
 To construct, see NOTES section for SALESCREDITMEMOLINES properties and create a hash table.
 
 ```yaml
@@ -1156,7 +1166,7 @@ HelpMessage: ''
 
 ### -Salesperson
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1211,7 +1221,7 @@ HelpMessage: ''
 
 ### -Status
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1238,7 +1248,7 @@ HelpMessage: ''
 
 ### -TotalAmountExcludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1265,7 +1275,7 @@ HelpMessage: ''
 
 ### -TotalAmountIncludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1292,7 +1302,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1373,7 +1383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BILLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+BILLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1381,7 +1391,7 @@ BILLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphSalesCreditMemo>`: salesCreditMemo
+BODYPARAMETER <IMicrosoftGraphSalesCreditMemo>: salesCreditMemo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BillToCustomerId <String>]: 
   [BillToCustomerNumber <String>]: 
@@ -1538,7 +1548,7 @@ Read-only.
   [TotalAmountIncludingTax <Decimal?>]: 
   [TotalTaxAmount <Decimal?>]: 
 
-CURRENCY `<IMicrosoftGraphCurrency>`: currency
+CURRENCY <IMicrosoftGraphCurrency>: currency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AmountDecimalPlaces <String>]: 
   [AmountRoundingPrecision <Decimal?>]: 
@@ -1548,7 +1558,7 @@ CURRENCY `<IMicrosoftGraphCurrency>`: currency
   [LastModifiedDateTime <DateTime?>]: 
   [Symbol <String>]: 
 
-CUSTOMER `<IMicrosoftGraphCustomer>`: customer
+CUSTOMER <IMicrosoftGraphCustomer>: customer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1613,7 +1623,7 @@ CUSTOMER `<IMicrosoftGraphCustomer>`: customer
   [Type <String>]: 
   [Website <String>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1651,7 +1661,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
+PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalculateDiscountOnCreditMemos <Boolean?>]: 
   [Code <String>]: 
@@ -1727,7 +1737,7 @@ Read-only.
   [UnitOfMeasureId <String>]: 
   [UnitPrice <Decimal?>]: 
 
-SELLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+SELLINGPOSTALADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1738,27 +1748,4 @@ SELLINGPOSTALADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanySaleCreditMemo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemo)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemo)

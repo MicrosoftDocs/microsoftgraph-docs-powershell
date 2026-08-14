@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemosalecreditmemolineitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItem
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property item in financials
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -108,7 +118,7 @@ HelpMessage: ''
 
 ### -BaseUnitOfMeasureId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -135,7 +145,7 @@ HelpMessage: ''
 
 ### -Blocked
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -260,7 +270,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -287,7 +297,7 @@ HelpMessage: ''
 
 ### -Gtin
 
-
+.
 
 ```yaml
 Type: System.String
@@ -377,7 +387,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -432,7 +442,7 @@ HelpMessage: ''
 
 ### -Inventory
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -487,7 +497,7 @@ HelpMessage: ''
 
 ### -ItemCategoryCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -514,7 +524,7 @@ HelpMessage: ''
 
 ### -ItemCategoryId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -541,7 +551,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -568,7 +578,7 @@ HelpMessage: ''
 
 ### -Number
 
-
+.
 
 ```yaml
 Type: System.String
@@ -595,7 +605,7 @@ HelpMessage: ''
 
 ### -Picture
 
-
+.
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -623,7 +633,7 @@ HelpMessage: ''
 
 ### -PriceIncludesTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -789,7 +799,7 @@ HelpMessage: ''
 
 ### -TaxGroupCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -816,7 +826,7 @@ HelpMessage: ''
 
 ### -TaxGroupId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -843,7 +853,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -870,7 +880,7 @@ HelpMessage: ''
 
 ### -UnitCost
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -897,7 +907,7 @@ HelpMessage: ''
 
 ### -UnitPrice
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -978,7 +988,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphItem>`: item
+BODYPARAMETER <IMicrosoftGraphItem>: item
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BaseUnitOfMeasureId <String>]: 
   [Blocked <Boolean?>]: 
@@ -1009,7 +1019,7 @@ BODYPARAMETER `<IMicrosoftGraphItem>`: item
   [UnitCost <Decimal?>]: 
   [UnitPrice <Decimal?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1047,7 +1057,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-ITEMCATEGORY `<IMicrosoftGraphItemCategory>`: itemCategory
+ITEMCATEGORY <IMicrosoftGraphItemCategory>: itemCategory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: 
   [DisplayName <String>]: 
@@ -1064,27 +1074,4 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemosalecreditmemolineitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemosalecreditmemolineitem)
