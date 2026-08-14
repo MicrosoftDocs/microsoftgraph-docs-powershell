@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-WindowsHello.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-WindowsHello.Read.All, UserAuthMethod-WindowsHello.ReadWrite, UserAuthMethod-WindowsHello.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-WindowsHello.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-WindowsHello.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
