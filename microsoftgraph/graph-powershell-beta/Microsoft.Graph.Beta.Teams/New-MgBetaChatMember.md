@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaChatMember
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaChatMember
 ## SYNOPSIS
 
 Add a conversationMember to a chat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgChatMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,18 +65,9 @@ This cmdlet has the following aliases,
 
 Add a conversationMember to a chat.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChatMember.ReadWrite, Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.Manage.Chat, Chat.ReadWrite.All, ChatMember.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add a single member to a chat and specify the timespan for the conversation history
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -94,12 +82,7 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
-```
-This example will add a single member to a chat and specify the timespan for the conversation history
-
-### Example 2: Add a single member to a Microsoft Teams chat, sharing no chat history
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -113,12 +96,7 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
-```
-This example will add a single member to a microsoft teams chat, sharing no chat history
-
-### Example 3: Add a single member to a Microsoft Teams chat, sharing the whole history of the chat
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -133,12 +111,7 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
-```
-This example will add a single member to a microsoft teams chat, sharing the whole history of the chat
-
-### Example 4: Add a single member to a chat using user principal name
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -153,12 +126,7 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
-```
-This example will add a single member to a chat using user principal name
-
-### Example 5: Add an in-tenant guest user to a chat, sharing no chat history
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -172,12 +140,7 @@ $params = @{
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
-```
-This example will add an in-tenant guest user to a chat, sharing no chat history
-
-### Example 6: Add a out-of-tenant external user to a chat, sharing no chat history
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -191,10 +154,6 @@ $params = @{
 }
 
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
-
-```
-This example will add a out-of-tenant external user to a chat, sharing no chat history
-
 
 ## PARAMETERS
 
@@ -669,7 +628,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConversationMember>`: conversationMember
+BODYPARAMETER <IMicrosoftGraphConversationMember>: conversationMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -682,7 +641,7 @@ An Out-of-tenant external member is assigned the owner role.
   [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -732,27 +691,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-members?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmember)
+- [](https://learn.microsoft.com/graph/api/chat-post-members?view=graph-rest-beta)

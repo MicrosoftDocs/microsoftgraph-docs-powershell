@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaTeamworkDeviceDiagnostic
 ---
@@ -46,26 +46,13 @@ This cmdlet has the following aliases,
 Run and generate diagnostic logs for the specified Microsoft Teams-enabled device.
 This API triggers a long-running operation used to generate logs for a device.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkDevice.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkDevice.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Start-MgBetaTeamworkDeviceDiagnostic -TeamworkDeviceId $teamworkDeviceId
-
-```
-This example shows how to use the Start-MgBetaTeamworkDeviceDiagnostic Cmdlet.
-
 
 ## PARAMETERS
 
@@ -376,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -426,27 +413,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Start-MgBetaTeamworkDeviceDiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkdevice-rundiagnostics?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamworkdevicediagnostic)
+- [](https://learn.microsoft.com/graph/api/teamworkdevice-rundiagnostics?view=graph-rest-beta)
