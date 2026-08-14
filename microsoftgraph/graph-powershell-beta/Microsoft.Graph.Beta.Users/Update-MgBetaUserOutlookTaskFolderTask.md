@@ -85,16 +85,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property tasks in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1375,6 +1365,7 @@ See below for possible values.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfoldertask)
+
 
 
 
