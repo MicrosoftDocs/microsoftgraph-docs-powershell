@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Retrieve a specific Microsoft Entra External ID user selfServiceSignUp event for your tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AuditLog.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuditLog.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
