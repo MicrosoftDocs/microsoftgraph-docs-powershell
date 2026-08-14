@@ -19,6 +19,9 @@ For more information about supported member types for different groups, see Grou
 This operation is transitive and returns a flat list of all nested members.
 An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
