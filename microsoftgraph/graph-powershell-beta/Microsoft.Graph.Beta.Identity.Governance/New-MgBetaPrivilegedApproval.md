@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedapproval
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPrivilegedApproval
 ---
@@ -49,8 +49,9 @@ This cmdlet has the following aliases,
 Add new entity to privilegedApproval
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPrivilegedApproval Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	UserId = "userId-value"
@@ -60,9 +61,6 @@ $params = @{
 	ApprovalDuration = "datetime-value"
 }
 New-MgBetaPrivilegedApproval -BodyParameter $params
-```
-This example shows how to use the New-MgBetaPrivilegedApproval Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -89,7 +87,7 @@ HelpMessage: ''
 
 ### -ApprovalDuration
 
-
+.
 
 ```yaml
 Type: System.TimeSpan
@@ -131,7 +129,7 @@ HelpMessage: ''
 
 ### -ApprovalType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -152,7 +150,7 @@ HelpMessage: ''
 
 ### -ApproverReason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -238,7 +236,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -429,7 +427,7 @@ HelpMessage: ''
 
 ### -RequestorReason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -472,7 +470,7 @@ HelpMessage: ''
 
 ### -RoleId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -515,7 +513,7 @@ HelpMessage: ''
 
 ### -StartDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -536,7 +534,7 @@ HelpMessage: ''
 
 ### -UserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -607,7 +605,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedApproval>`: privilegedApproval
+BODYPARAMETER <IMicrosoftGraphPrivilegedApproval>: privilegedApproval
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -686,7 +684,7 @@ Only Once is supported for now.
   [StartDateTime <DateTime?>]: 
   [UserId <String>]: 
 
-REQUEST `<IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
+REQUEST <IMicrosoftGraphPrivilegedRoleAssignmentRequest>: privilegedRoleAssignmentRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -751,7 +749,7 @@ Only Once is supported for now.
   [Type <String>]: 
   [UserId <String>]: 
 
-ROLEINFO `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
+ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -792,26 +790,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaPrivilegedApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedapproval)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedapproval)

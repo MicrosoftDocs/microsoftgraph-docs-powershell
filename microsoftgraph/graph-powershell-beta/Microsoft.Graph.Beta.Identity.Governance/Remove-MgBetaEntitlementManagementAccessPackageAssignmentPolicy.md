@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ## SYNOPSIS
 
 In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,23 +46,12 @@ This cmdlet has the following aliases,
 
 In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Remove an access package assignment policy
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId 'f134999f-8a59-49bb-b3a9-e8365d6fff94
-```
-
-This example removes the specified assignment policy.
 
 ## PARAMETERS
 
@@ -397,7 +383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -511,27 +497,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+- [](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-delete?view=graph-rest-beta)

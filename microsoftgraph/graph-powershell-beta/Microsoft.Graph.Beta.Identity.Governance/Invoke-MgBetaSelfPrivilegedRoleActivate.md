@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroleactivate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSelfPrivilegedRoleActivate
 ---
@@ -69,8 +69,9 @@ This cmdlet has the following aliases,
 Invoke action selfActivate
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaSelfPrivilegedRoleActivate Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	Reason = "reason-value"
@@ -79,9 +80,6 @@ $params = @{
 	TicketSystem = "ticketSystem-value"
 }
 Invoke-MgBetaSelfPrivilegedRoleActivate -PrivilegedRoleId $privilegedRoleId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaSelfPrivilegedRoleActivate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -114,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -185,7 +183,7 @@ HelpMessage: ''
 
 ### -Duration
 
-
+.
 
 ```yaml
 Type: System.String
@@ -393,7 +391,7 @@ HelpMessage: ''
 
 ### -Reason
 
-
+.
 
 ```yaml
 Type: System.String
@@ -442,7 +440,7 @@ HelpMessage: ''
 
 ### -TicketNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -469,7 +467,7 @@ HelpMessage: ''
 
 ### -TicketSystem
 
-
+.
 
 ```yaml
 Type: System.String
@@ -550,14 +548,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsFneytmPrivilegedrolesPrivilegedroleIdMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsFneytmPrivilegedrolesPrivilegedroleIdMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Duration <String>]: 
   [Reason <String>]: 
   [TicketNumber <String>]: 
   [TicketSystem <String>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -671,26 +669,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaSelfPrivilegedRoleActivate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroleactivate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedroleactivate)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowrun
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun
 
 Get a summary of runs for a specified time period.
 Because the amount of runs returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,13 +48,15 @@ This cmdlet has the following aliases,
 Get a summary of runs for a specified time period.
 Because the amount of runs returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -345,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -459,27 +458,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowrun)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetasummaryidentitygovernancelifecycleworkflowrun)

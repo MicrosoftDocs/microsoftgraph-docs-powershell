@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementAccessPackageCatalog
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaEntitlementManagementAccessPackageCatalog
 ## SYNOPSIS
 
 Retrieve the properties and relationships of an accessPackageCatalog object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -87,18 +84,10 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a list of all access package catalogs
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog | Format-list
 
@@ -117,13 +106,9 @@ IsExternallyVisible         : True
 ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
-```
 
-This command returns a list of all the access package catalogs.
+### EXAMPLE 2
 
-### Example 2: Filter the access package catalogs by the display name
-
-```powershell
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" | Format-List
 
@@ -142,9 +127,6 @@ IsExternallyVisible         : True
 ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
-```
-
-This command returns the access package catalogs that meet the defined filter.
 
 ## PARAMETERS
 
@@ -720,7 +702,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -834,28 +816,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaEntitlementManagementAccessPackageCatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog)
+- [](https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-beta)
