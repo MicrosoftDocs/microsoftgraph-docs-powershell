@@ -576,8 +576,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrejectcommunicationcall)
-- [](https://learn.microsoft.com/graph/api/call-reject?view=graph-rest-1.0)
+- [Invoke-MgRejectCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrejectcommunicationcall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-reject?view=graph-rest-1.0)
 
 
 
