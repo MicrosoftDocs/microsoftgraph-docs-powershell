@@ -15,6 +15,9 @@ title: New-MgBetaSecurityIdentitySensor
 
 Create new navigation property to sensors for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIdentitySensor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

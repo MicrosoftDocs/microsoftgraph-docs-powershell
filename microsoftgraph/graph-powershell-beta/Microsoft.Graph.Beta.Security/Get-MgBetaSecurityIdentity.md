@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentity
 
 A container for security identities APIs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentity](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
