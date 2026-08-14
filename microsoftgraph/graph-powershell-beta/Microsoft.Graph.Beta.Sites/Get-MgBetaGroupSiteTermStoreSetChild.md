@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteTermStoreSetChild
 
 Children terms of set in term [store].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
