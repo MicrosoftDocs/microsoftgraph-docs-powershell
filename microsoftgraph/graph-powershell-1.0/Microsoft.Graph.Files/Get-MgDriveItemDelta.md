@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveItemDelta
 ---
@@ -14,12 +14,9 @@ title: Get-MgDriveItemDelta
 ## SYNOPSIS
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you have finished receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemDelta?view=graph-powershell-beta)
+Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.\r\nYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you have finished receiving all the changes, you may apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\r\nItems with this property set should be removed from your local state.
 
 ## SYNTAX
 
@@ -73,44 +70,29 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Track changes in a driveItem and its children over time.
-Your app begins by calling delta without any parameters.\rThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.\rYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
-After you have finished receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
-Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
+Your app begins by calling delta without any parameters.\r\nThe service starts enumerating the drive's hierarchy, returning pages of items and either an @odata.nextLink or an @odata.deltaLink, as described below.\r\nYour app should continue calling with the @odata.nextLink until you no longer see an @odata.nextLink returned, or you see a response with an empty set of changes.
+After you have finished receiving all the changes, you may apply them to your local state.\r\nTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+Deleted items are returned with the deleted facet.\r\nItems with this property set should be removed from your local state.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId
 
-```
-This example shows how to use the Get-MgDriveItemDelta Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "latest" 
+Get-MgDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "latest"
 
-```
-This example shows how to use the Get-MgDriveItemDelta Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Files
 
-Get-MgDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "2021-09-29T20:00:00Z" 
-
-```
-This example shows how to use the Get-MgDriveItemDelta Cmdlet.
-
+Get-MgDriveItemDelta -DriveId $driveId -DriveItemId $driveItemId -Token "2021-09-29T20:00:00Z"
 
 ## PARAMETERS
 
@@ -677,7 +659,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -706,27 +688,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDriveItemDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemdelta)
+- [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)

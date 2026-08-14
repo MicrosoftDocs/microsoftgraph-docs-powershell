@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgUnfollowDriveItem
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgUnfollowDriveItem
 ## SYNOPSIS
 
 Unfollow a driveItem.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Unfollow a driveItem.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Invoke-MgUnfollowDriveItem -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Invoke-MgUnfollowDriveItem Cmdlet.
-
 
 ## PARAMETERS
 
@@ -390,7 +382,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -419,27 +411,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgUnfollowDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
