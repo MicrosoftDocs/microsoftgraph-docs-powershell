@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointbulkaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointBulkAction
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property bulkActions in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -207,7 +217,7 @@ HelpMessage: ''
 
 ### -CloudPcIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -654,7 +664,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONSUMMARY `<IMicrosoftGraphCloudPcBulkActionSummary>`: cloudPcBulkActionSummary
+ACTIONSUMMARY <IMicrosoftGraphCloudPcBulkActionSummary>: cloudPcBulkActionSummary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FailedCount <Int32?>]: The number of Cloud PCs where the action failed.
   [InProgressCount <Int32?>]: The number of Cloud PCs where the action is in progress.
@@ -662,7 +672,7 @@ ACTIONSUMMARY `<IMicrosoftGraphCloudPcBulkActionSummary>`: cloudPcBulkActionSumm
   [PendingCount <Int32?>]: The number of Cloud PCs where the action is pending.
   [SuccessfulCount <Int32?>]: The number of Cloud PCs where the action is successful.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcBulkAction>`: cloudPcBulkAction
+BODYPARAMETER <IMicrosoftGraphCloudPcBulkAction>: cloudPcBulkAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -685,7 +695,7 @@ When true, the bulk action uses the maintenance window to schedule the action; f
 The default value is false.
   [Status <String>]: cloudPcBulkActionStatus
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -746,27 +756,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementVirtualEndpointBulkAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointbulkaction)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointbulkaction)

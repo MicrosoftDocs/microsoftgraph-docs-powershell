@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ---
@@ -37,26 +37,13 @@ This cmdlet has the following aliases,
 Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
 A tenant has only one cloudPcOrganizationSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
-
-```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -296,27 +283,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting)
+- [](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-beta)

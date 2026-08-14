@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementVirtualEndpointReportExportJob
 ---
@@ -63,37 +63,19 @@ You can download a report by first creating a new cloudPcExportJob resource to i
 Use this GET operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get an export job for the TotalAggregatedRemoteConnectionReports report
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-
-Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
-
-```
-This example will get an export job for the totalaggregatedremoteconnectionreports report
-
-### Example 2: Get an export job for the RemoteConnectionQualityReports report
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
 
-```
-This example will get an export job for the remoteconnectionqualityreports report
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
+
+Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId $cloudPcExportJobId
 
 ## PARAMETERS
 
@@ -555,7 +537,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -616,27 +598,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementVirtualEndpointReportExportJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointreportexportjob)
+- [](https://learn.microsoft.com/graph/api/cloudpcexportjob-get?view=graph-rest-beta)

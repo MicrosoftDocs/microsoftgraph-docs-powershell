@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ## SYNOPSIS
 
 Update the properties of a cloudPcOnPremisesConnection object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -87,9 +84,8 @@ This cmdlet has the following aliases,
 Update the properties of a cloudPcOnPremisesConnection object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -107,10 +103,6 @@ $params = @{
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -810,7 +802,7 @@ HelpMessage: ''
 
 ### -ScopeIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -1057,7 +1049,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcOnPremisesConnection>`: cloudPcOnPremisesConnection
+BODYPARAMETER <IMicrosoftGraphCloudPcOnPremisesConnection>: cloudPcOnPremisesConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1130,7 +1122,7 @@ Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupN
   [VirtualNetworkLocation <String>]: Indicates the resource location of the virtual target network.
 Read-only, computed value.
 
-HEALTHCHECKSTATUSDETAIL `<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>`: cloudPcOnPremisesConnectionStatusDetail
+HEALTHCHECKSTATUSDETAIL <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetail>: cloudPcOnPremisesConnectionStatusDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: The end time of the connection health check.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -1156,7 +1148,7 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-HEALTHCHECKSTATUSDETAILS `<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>`: cloudPcOnPremisesConnectionStatusDetails
+HEALTHCHECKSTATUSDETAILS <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>: cloudPcOnPremisesConnectionStatusDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: The end time of the connection health check.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -1182,7 +1174,7 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [CartToClassAssociationId <String>]: The unique identifier of cartToClassAssociation
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -1243,27 +1235,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection)
+- [](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta)

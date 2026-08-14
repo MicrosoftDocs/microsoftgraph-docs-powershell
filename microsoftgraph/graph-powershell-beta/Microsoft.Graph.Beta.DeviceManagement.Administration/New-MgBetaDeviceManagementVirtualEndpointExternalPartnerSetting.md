@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ---
@@ -47,18 +47,9 @@ This cmdlet has the following aliases,
 
 Create a new cloudPcExternalPartnerSetting object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -69,10 +60,6 @@ $params = @{
 }
 
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -494,7 +481,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcExternalPartnerSetting>`: cloudPcExternalPartnerSetting
+BODYPARAMETER <IMicrosoftGraphCloudPcExternalPartnerSetting>: cloudPcExternalPartnerSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -512,27 +499,5 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-beta)
