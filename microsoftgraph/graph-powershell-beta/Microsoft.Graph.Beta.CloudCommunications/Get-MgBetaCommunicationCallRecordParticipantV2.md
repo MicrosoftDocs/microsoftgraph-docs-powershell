@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationCallRecordParticipantV2
 
 List of distinct participants in the call.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordParticipantV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
