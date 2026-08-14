@@ -567,7 +567,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageResourceEnvironment>: accessPackageResourceEnvironment
+BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -639,7 +639,7 @@ Supports $filter (eq).
 Supports $filter (eq).
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
 
-CONNECTIONINFO <IMicrosoftGraphConnectionInfo>: connectionInfo
+CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
 
@@ -720,3 +720,25 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
