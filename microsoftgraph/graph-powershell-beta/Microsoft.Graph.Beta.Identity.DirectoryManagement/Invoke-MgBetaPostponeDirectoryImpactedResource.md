@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
 On the specified date and time, Microsoft Entra ID will automatically mark the status of the impactedResource object to active.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -539,6 +529,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryimpactedresource)
 - [](https://learn.microsoft.com/graph/api/impactedresource-postpone?view=graph-rest-beta)
+
 
 
 
