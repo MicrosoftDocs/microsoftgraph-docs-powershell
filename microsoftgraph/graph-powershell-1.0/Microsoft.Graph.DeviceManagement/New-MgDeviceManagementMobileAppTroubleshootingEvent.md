@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementMobileAppTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementMobileAppTroubleshootingEvent
 ## SYNOPSIS
 
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -70,10 +58,6 @@ $params = @{
 }
 
 New-MgDeviceManagementMobileAppTroubleshootingEvent -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -415,7 +399,7 @@ Read-only.
   [ErrorMessage <String>]: Indicates error message if any during the upload process.
   [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: mobileAppTroubleshootingEvent
+BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: mobileAppTroubleshootingEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -430,26 +414,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementMobileAppTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent)

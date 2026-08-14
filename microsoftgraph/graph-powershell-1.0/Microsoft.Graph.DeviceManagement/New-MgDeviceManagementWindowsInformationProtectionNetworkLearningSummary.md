@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 ## SYNOPSIS
 
 Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,18 +46,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -71,10 +59,6 @@ $params = @{
 }
 
 New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary Cmdlet.
-
 
 ## PARAMETERS
 
@@ -428,7 +412,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary>`: Windows Information Protection Network learning Summary entity.
+BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary>: Windows Information Protection Network learning Summary entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -438,26 +422,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary)

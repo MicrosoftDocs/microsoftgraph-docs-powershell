@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/find-mgdevicemanagementmanageddevice
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgDeviceManagementManagedDevice
 ---
@@ -14,9 +14,6 @@ title: Find-MgDeviceManagementManagedDevice
 ## SYNOPSIS
 
 Locate a device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Locate a device
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Find-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
-
-```
-This example shows how to use the Find-MgDeviceManagementManagedDevice Cmdlet.
-
 
 ## PARAMETERS
 
@@ -377,7 +361,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -415,26 +399,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Find-MgDeviceManagementManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/find-mgdevicemanagementmanageddevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/find-mgdevicemanagementmanageddevice)
