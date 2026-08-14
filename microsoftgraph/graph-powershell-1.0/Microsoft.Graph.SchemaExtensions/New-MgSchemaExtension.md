@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.SchemaExtensions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension
 Locale: en-US
 Module Name: Microsoft.Graph.SchemaExtensions
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSchemaExtension
 ---
@@ -16,11 +16,8 @@ title: New-MgSchemaExtension
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
-Depending on the \rstate of the extension, the owner app, and only the owner app, may update or delete the extension.
-See examples of how to define a schema extension that describes a training course, \ruse the schema extension definition to create a new group with training course data, and \radd training course data to an existing group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
+Depending on the \r\nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
+See examples of how to define a schema extension that describes a training course, \r\nuse the schema extension definition to create a new group with training course data, and \r\nadd training course data to an existing group.
 
 ## SYNTAX
 
@@ -54,21 +51,12 @@ This cmdlet has the following aliases,
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
-Depending on the \rstate of the extension, the owner app, and only the owner app, may update or delete the extension.
-See examples of how to define a schema extension that describes a training course, \ruse the schema extension definition to create a new group with training course data, and \radd training course data to an existing group.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
+Depending on the \r\nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
+See examples of how to define a schema extension that describes a training course, \r\nuse the schema extension definition to create a new group with training course data, and \r\nadd training course data to an existing group.
 
 ## EXAMPLES
-### Example 1: Creating a schema extension using a verified domain
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -96,12 +84,7 @@ properties = @(
 
 New-MgSchemaExtension -BodyParameter $params
 
-```
-This example shows creating a schema extension using a verified domain
-
-### Example 2: Creating a schema extension using just a name
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -129,12 +112,7 @@ properties = @(
 
 New-MgSchemaExtension -BodyParameter $params
 
-```
-This example shows creating a schema extension using just a name
-
-### Example 3: Creating a schema extension setting the owner
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -162,10 +140,6 @@ properties = @(
 }
 
 New-MgSchemaExtension -BodyParameter $params
-
-```
-This example shows creating a schema extension setting the owner
-
 
 ## PARAMETERS
 
@@ -595,7 +569,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSchemaExtension>`: schemaExtension
+BODYPARAMETER <IMicrosoftGraphSchemaExtension>: schemaExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -630,27 +604,5 @@ For more information, see Supported property data types.
 
 ## RELATED LINKS
 
-- [New-MgSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension)
+- [](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
