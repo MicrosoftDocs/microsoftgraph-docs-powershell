@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -14,7 +14,7 @@ title: Remove-MgBetaNetworkAccessFilteringProfilePolicy
 ## SYNOPSIS
 
 Delete a filteringPolicyLink object.
-Use this operation to delete any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
+Use this operation to delete any derived type, including:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
 
 ## SYNTAX
 
@@ -44,39 +44,21 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete a filteringPolicyLink object.
-Use this operation to delete any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
+Use this operation to delete any derived type, including:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
 
 ## EXAMPLES
-### Example 1: Delete a filteringPolicyLink
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.NetworkAccess
-
-Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
-
-```
-This example will delete a filteringpolicylink
-
-### Example 2: Delete a tlsInspectionPolicyLink
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
 
-```
-This example will delete a tlsinspectionpolicylink
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.NetworkAccess
+
+Remove-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
 
 ## PARAMETERS
 
@@ -429,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -460,27 +442,5 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/remove-mgbetanetworkaccessfilteringprofilepolicy)
+- [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-delete?view=graph-rest-beta)
