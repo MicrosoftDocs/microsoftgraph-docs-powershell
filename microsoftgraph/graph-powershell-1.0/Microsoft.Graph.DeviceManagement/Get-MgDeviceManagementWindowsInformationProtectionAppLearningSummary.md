@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 The windows information protection app learning summaries.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
