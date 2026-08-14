@@ -440,7 +440,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessage)
+- [Remove-MgUserMailFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessage)
 
 
 
