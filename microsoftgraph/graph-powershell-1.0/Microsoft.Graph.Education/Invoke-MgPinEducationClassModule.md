@@ -17,6 +17,9 @@ Pin an educationModule in the class work list.
 This action sets the isPinned property to true for an educationModule.
 Only teachers can perform this action and only one module at a time can be pinned in the class work list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaPinEducationClassModule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Pin (Default)
