@@ -721,7 +721,7 @@ TIMEOFFDETAILS `<IMicrosoftGraphTimeOffDetails>`: timeOffDetails
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrence)
+- [Set-MgUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusersettingworkhourandlocationoccurrence)
 
 
 
