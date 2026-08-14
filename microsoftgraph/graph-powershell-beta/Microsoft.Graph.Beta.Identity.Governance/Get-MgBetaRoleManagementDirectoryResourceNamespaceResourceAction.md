@@ -706,9 +706,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction)
-- [](https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-beta)
+- [Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespaceresourceaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-beta)
 
 
 

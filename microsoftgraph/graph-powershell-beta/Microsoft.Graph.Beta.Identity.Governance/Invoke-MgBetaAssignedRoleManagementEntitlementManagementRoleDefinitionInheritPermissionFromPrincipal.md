@@ -670,8 +670,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagemententitlementmanagementroledefinitioninheritpermissionfromprincipal)
-- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta)
+- [Invoke-MgBetaAssignedRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromPrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagemententitlementmanagementroledefinitioninheritpermissionfromprincipal)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta)
 
 
 
