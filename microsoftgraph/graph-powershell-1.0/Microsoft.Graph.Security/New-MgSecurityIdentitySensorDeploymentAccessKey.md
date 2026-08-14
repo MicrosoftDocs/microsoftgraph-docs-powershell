@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIdentitiesSensors.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
