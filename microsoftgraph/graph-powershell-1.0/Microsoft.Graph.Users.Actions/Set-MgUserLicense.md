@@ -18,6 +18,9 @@ For example, an organization can have a Microsoft 365 Enterprise E3 subscription
 You can also enable and disable specific plans associated with a subscription.
 Direct user licensing method is an alternative to group-based licensing.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
