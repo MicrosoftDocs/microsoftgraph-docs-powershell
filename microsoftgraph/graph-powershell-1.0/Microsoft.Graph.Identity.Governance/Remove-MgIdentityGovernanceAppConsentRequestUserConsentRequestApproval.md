@@ -478,7 +478,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceappconsentrequestuserconsentrequestapproval)
+- [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceappconsentrequestuserconsentrequestapproval)
 
 
 

@@ -468,8 +468,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement)
-- [](https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0)
+- [Remove-MgIdentityGovernanceTermsOfUseAgreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancetermsofuseagreement)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agreement-delete?view=graph-rest-1.0)
 
 
 
