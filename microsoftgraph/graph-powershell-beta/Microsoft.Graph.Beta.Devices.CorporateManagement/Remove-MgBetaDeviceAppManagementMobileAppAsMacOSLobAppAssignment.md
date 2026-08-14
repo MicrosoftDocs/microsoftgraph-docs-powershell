@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment
 
 Delete navigation property assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

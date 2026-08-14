@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementMobileApp
 
 Update the navigation property mobileApps in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

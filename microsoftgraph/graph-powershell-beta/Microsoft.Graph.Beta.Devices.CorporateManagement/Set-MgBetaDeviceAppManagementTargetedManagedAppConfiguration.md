@@ -15,6 +15,9 @@ title: Set-MgBetaDeviceAppManagementTargetedManagedAppConfiguration
 
 Invoke action assign
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
