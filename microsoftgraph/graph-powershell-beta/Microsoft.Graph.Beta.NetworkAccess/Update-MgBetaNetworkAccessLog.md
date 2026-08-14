@@ -19299,7 +19299,7 @@ Supports $filter (eq) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesslog)
+- [Update-MgBetaNetworkAccessLog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesslog)
 
 
 
