@@ -112,6 +112,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property customQuestions in bookingBusinesses
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
