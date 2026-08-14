@@ -15,6 +15,9 @@ title: Update-MgBetaEducationClassAssignmentCategory
 
 Update the navigation property assignmentCategories in education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

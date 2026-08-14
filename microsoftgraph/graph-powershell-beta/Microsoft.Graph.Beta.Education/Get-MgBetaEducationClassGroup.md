@@ -15,6 +15,9 @@ title: Get-MgBetaEducationClassGroup
 
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassGroup](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
