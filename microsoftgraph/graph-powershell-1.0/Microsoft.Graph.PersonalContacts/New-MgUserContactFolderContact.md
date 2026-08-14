@@ -1937,7 +1937,7 @@ TERTIARYEMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact)
+- [New-MgUserContactFolderContact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact)
 
 
 
