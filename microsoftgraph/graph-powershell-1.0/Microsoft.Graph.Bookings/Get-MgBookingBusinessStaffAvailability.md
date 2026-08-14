@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Get the availability information of staff members of a Microsoft Bookings calendar.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, Calendars.Read, Calendars.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
