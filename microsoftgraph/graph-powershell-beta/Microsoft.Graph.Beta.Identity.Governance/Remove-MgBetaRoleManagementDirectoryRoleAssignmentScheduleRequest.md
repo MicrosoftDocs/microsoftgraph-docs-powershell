@@ -15,6 +15,9 @@ title: Remove-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
 
 Delete navigation property roleAssignmentScheduleRequests for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
