@@ -545,8 +545,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicedelta)
-- [](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta)
+- [Get-MgBetaUserDeviceDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta)
 
 
 
