@@ -36,6 +36,14 @@ This cmdlet has the following aliases,
 
 Get a list of all notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
