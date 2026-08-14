@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/start-mgbetaexternalindustrydatarun
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaExternalIndustryDataRun
 ---
@@ -41,13 +41,15 @@ Industry data automates a run every 12 hours; however, users can use the start a
 The industry data service throttles the start of runs, allowing up to five successful runs every 12 hours.
 An on-demand run causes the next system-scheduled run to be skipped if it is set to run within the next 10 hours.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-Run.Start,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-Run.Start,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -308,27 +310,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Start-MgBetaExternalIndustryDataRun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/start-mgbetaexternalindustrydatarun)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/start-mgbetaexternalindustrydatarun)
