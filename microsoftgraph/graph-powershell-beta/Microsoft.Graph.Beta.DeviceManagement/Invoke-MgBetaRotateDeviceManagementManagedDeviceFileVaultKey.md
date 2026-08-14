@@ -474,7 +474,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetarotatedevicemanagementmanageddevicefilevaultkey)
+- [Invoke-MgBetaRotateDeviceManagementManagedDeviceFileVaultKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetarotatedevicemanagementmanageddevicefilevaultkey)
 
 
 

@@ -517,7 +517,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
+- [Remove-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
 
 
 
