@@ -444,7 +444,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilelanguage)
+- [Remove-MgBetaUserProfileLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilelanguage)
 
 
 
