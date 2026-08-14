@@ -17995,8 +17995,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalhold)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-legalholds?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseLegalHold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalhold)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-legalholds?view=graph-rest-beta)
 
 
 

@@ -812,8 +812,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewsetquery)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-export?view=graph-rest-beta)
+- [Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewsetquery)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-export?view=graph-rest-beta)
 
 
 

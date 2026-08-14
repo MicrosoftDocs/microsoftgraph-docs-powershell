@@ -2150,8 +2150,8 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: Threat intelligence p
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert)
-- [](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-beta)
 
 
 
