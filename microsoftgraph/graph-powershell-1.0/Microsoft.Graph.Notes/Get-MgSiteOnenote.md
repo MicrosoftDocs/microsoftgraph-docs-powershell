@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenote
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteOnenote
 ---
@@ -14,9 +14,6 @@ title: Get-MgSiteOnenote
 ## SYNOPSIS
 
 Calls the OneNote service for notebook related operations.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenote?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Calls the OneNote service for notebook related operations.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -335,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -352,27 +359,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSiteOnenote](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenote)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenote)
