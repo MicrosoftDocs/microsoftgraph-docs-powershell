@@ -65,12 +65,17 @@ Get the details of an async, long-running operation on a Microsoft Teams-enabled
 | Application | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId
+
+```
+This example shows how to use the Get-MgBetaTeamworkDeviceOperation Cmdlet.
+
 
 ## PARAMETERS
 
