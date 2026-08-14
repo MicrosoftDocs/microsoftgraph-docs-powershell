@@ -52,16 +52,6 @@ Retrieve a list of trustFrameworkPolicies in the tenant/directory.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Policy.ReadWrite.TrustFramework,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -451,6 +441,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkpolicycontent)
 - [](https://learn.microsoft.com/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)
+
 
 
 
