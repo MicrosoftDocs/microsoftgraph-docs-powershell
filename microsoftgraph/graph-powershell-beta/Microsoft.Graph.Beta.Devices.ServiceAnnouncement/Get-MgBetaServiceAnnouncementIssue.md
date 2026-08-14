@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementissue
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServiceAnnouncementIssue
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaServiceAnnouncementIssue
 Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue doesn't exist for the tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementIssue?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,26 +60,13 @@ Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue doesn't exist for the tenant.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ServiceHealth.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ServiceHealth.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementIssue
-
-```
-This example shows how to use the Get-MgBetaServiceAnnouncementIssue Cmdlet.
-
 
 ## PARAMETERS
 
@@ -544,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   [ServiceAnnouncementAttachmentId <String>]: The unique identifier of serviceAnnouncementAttachment
   [ServiceHealthId <String>]: The unique identifier of serviceHealth
   [ServiceHealthIssueId <String>]: The unique identifier of serviceHealthIssue
@@ -553,28 +537,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaServiceAnnouncementIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementissue)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/servicehealthissue-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceannouncement-list-issues?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementissue)
+- [](https://learn.microsoft.com/graph/api/servicehealthissue-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/serviceannouncement-list-issues?view=graph-rest-beta)
