@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization
 ---
@@ -46,13 +46,15 @@ This cmdlet has the following aliases,
 
 Delete navigation property localizations for solutions
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioConfig.ReadWrite.OwnedBy, BusinessScenarioConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioConfig.ReadWrite.OwnedBy,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -405,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
@@ -415,27 +417,4 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/remove-mgbetasolutionbusinessscenarioplannerplanconfigurationlocalization)
