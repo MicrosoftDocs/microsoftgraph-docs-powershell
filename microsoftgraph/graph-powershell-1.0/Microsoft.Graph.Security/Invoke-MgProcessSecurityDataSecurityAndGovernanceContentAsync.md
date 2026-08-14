@@ -473,7 +473,7 @@ Location value is specific for concretetype of the  policyLocation - policyLocat
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgprocesssecuritydatasecurityandgovernancecontentasync)
+- [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgprocesssecuritydatasecurityandgovernancecontentasync)
 
 
 

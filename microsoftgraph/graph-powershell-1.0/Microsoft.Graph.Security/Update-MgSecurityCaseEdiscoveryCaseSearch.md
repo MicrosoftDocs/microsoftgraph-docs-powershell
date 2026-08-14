@@ -1410,8 +1410,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearch)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-update?view=graph-rest-1.0)
+- [Update-MgSecurityCaseEdiscoveryCaseSearch](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearch)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverysearch-update?view=graph-rest-1.0)
 
 
 
