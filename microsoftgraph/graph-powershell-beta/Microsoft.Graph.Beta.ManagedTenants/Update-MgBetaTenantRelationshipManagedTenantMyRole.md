@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmyrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantMyRole
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property myRoles in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -491,7 +501,7 @@ ASSIGNMENTS <IMicrosoftGraphManagedTenantsRoleAssignment[]>: A collection of rol
     [DisplayName <String>]: The display name for the role assignment.
     [TemplateId <String>]: The unique identifier for the template.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsMyRole>`: myRole
+BODYPARAMETER <IMicrosoftGraphManagedTenantsMyRole>: myRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>]: A collection of role assignments for the managed tenant.
     [AssignmentType <String>]: delegatedPrivilegeStatus
@@ -503,7 +513,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedTenantsMyRole>`: myRole
 Optional.
 Read-only.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -546,27 +556,4 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantMyRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmyrole)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmyrole)

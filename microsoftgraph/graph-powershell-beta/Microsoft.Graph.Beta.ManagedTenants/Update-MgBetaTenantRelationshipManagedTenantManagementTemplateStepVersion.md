@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
 ---
@@ -79,6 +79,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property managementTemplateStepVersions in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -210,7 +220,7 @@ HelpMessage: ''
 
 ### -ContentMarkdown
 
-
+.
 
 ```yaml
 Type: System.String
@@ -237,7 +247,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -264,7 +274,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -291,7 +301,7 @@ HelpMessage: ''
 
 ### -Deployments
 
-
+.
 To construct, see NOTES section for DEPLOYMENTS properties and create a hash table.
 
 ```yaml
@@ -438,7 +448,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -465,7 +475,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -519,7 +529,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -659,7 +669,7 @@ HelpMessage: ''
 
 ### -Version
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -686,7 +696,7 @@ HelpMessage: ''
 
 ### -VersionInformation
 
-
+.
 
 ```yaml
 Type: System.String
@@ -767,7 +777,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCEPTEDFOR `<IMicrosoftGraphManagedTenantsManagementTemplateStep>`: managementTemplateStep
+ACCEPTEDFOR <IMicrosoftGraphManagedTenantsManagementTemplateStep>: managementTemplateStep
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -892,7 +902,7 @@ Read-only.
   [UserImpact <String>]: 
   [Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>]: 
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>`: managementTemplateStepVersion
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>: managementTemplateStepVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1142,7 +1152,7 @@ Read-only.
     [VersionInformation <String>]: 
   [TenantId <String>]: 
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -1182,7 +1192,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
   [WindowsDeviceMalwareStateId <String>]: The unique identifier of windowsDeviceMalwareState
   [WindowsProtectionStateId <String>]: The unique identifier of windowsProtectionState
 
-TEMPLATESTEP `<IMicrosoftGraphManagedTenantsManagementTemplateStep>`: managementTemplateStep
+TEMPLATESTEP <IMicrosoftGraphManagedTenantsManagementTemplateStep>: managementTemplateStep
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1310,27 +1320,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion)

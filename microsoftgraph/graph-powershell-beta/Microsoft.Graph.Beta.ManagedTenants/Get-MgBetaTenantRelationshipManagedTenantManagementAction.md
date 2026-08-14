@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTenantRelationshipManagedTenantManagementAction
 ---
@@ -57,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a managementAction object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ManagedTenants.Read.All, ManagedTenants.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 
 Get-MgBetaTenantRelationshipManagedTenantManagementAction
-
-```
-This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementAction Cmdlet.
-
 
 ## PARAMETERS
 
@@ -538,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -581,28 +568,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaTenantRelationshipManagedTenantManagementAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/managedtenants-managementaction-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementaction)
+- [](https://learn.microsoft.com/graph/api/managedtenants-managementaction-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactions?view=graph-rest-beta)

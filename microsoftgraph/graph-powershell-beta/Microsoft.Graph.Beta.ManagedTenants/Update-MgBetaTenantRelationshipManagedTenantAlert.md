@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantAlert
 ---
@@ -86,6 +86,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property managedTenantAlerts in tenantRelationships
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -145,7 +155,7 @@ HelpMessage: ''
 
 ### -AlertDataReferenceStrings
 
-
+.
 To construct, see NOTES section for ALERTDATAREFERENCESTRINGS properties and create a hash table.
 
 ```yaml
@@ -173,7 +183,7 @@ HelpMessage: ''
 
 ### -AlertLogs
 
-
+.
 To construct, see NOTES section for ALERTLOGS properties and create a hash table.
 
 ```yaml
@@ -229,7 +239,7 @@ HelpMessage: ''
 
 ### -AlertRuleDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -256,7 +266,7 @@ HelpMessage: ''
 
 ### -ApiNotifications
 
-
+.
 To construct, see NOTES section for APINOTIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -284,7 +294,7 @@ HelpMessage: ''
 
 ### -AssignedToUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -382,7 +392,7 @@ HelpMessage: ''
 
 ### -CorrelationCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -409,7 +419,7 @@ HelpMessage: ''
 
 ### -CorrelationId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -436,7 +446,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -463,7 +473,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -490,7 +500,7 @@ HelpMessage: ''
 
 ### -EmailNotifications
 
-
+.
 To construct, see NOTES section for EMAILNOTIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -637,7 +647,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -664,7 +674,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -718,7 +728,7 @@ HelpMessage: ''
 
 ### -Message
 
-
+.
 
 ```yaml
 Type: System.String
@@ -884,7 +894,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -911,7 +921,7 @@ HelpMessage: ''
 
 ### -Title
 
-
+.
 
 ```yaml
 Type: System.String
@@ -992,7 +1002,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERTDATA `<IMicrosoftGraphManagedTenantsAlertData>`: alertData
+ALERTDATA <IMicrosoftGraphManagedTenantsAlertData>: alertData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
 
@@ -1091,7 +1101,7 @@ Read-only.
   [LastActionByUserId <String>]: 
   [LastActionDateTime <DateTime?>]: 
 
-ALERTRULE `<IMicrosoftGraphManagedTenantsManagedTenantAlertRule>`: managedTenantAlertRule
+ALERTRULE <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>: managedTenantAlertRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1274,7 +1284,7 @@ Read-only.
   [Title <String>]: 
   [UserId <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlert>`: managedTenantAlert
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlert>: managedTenantAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1458,7 +1468,7 @@ Read-only.
   [LastActionDateTime <DateTime?>]: 
   [Subject <String>]: 
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -1501,27 +1511,4 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalert)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalert)

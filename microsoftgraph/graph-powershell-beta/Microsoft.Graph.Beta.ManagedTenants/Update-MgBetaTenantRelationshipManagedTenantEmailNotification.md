@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantemailnotification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipManagedTenantEmailNotification
 ---
@@ -73,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property managedTenantEmailNotifications in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -204,7 +214,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -231,7 +241,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -258,7 +268,7 @@ HelpMessage: ''
 
 ### -EmailAddresses
 
-
+.
 To construct, see NOTES section for EMAILADDRESSES properties and create a hash table.
 
 ```yaml
@@ -286,7 +296,7 @@ HelpMessage: ''
 
 ### -EmailBody
 
-
+.
 
 ```yaml
 Type: System.String
@@ -432,7 +442,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -459,7 +469,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -598,7 +608,7 @@ HelpMessage: ''
 
 ### -Subject
 
-
+.
 
 ```yaml
 Type: System.String
@@ -679,7 +689,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERT `<IMicrosoftGraphManagedTenantsManagedTenantAlert>`: managedTenantAlert
+ALERT <IMicrosoftGraphManagedTenantsManagedTenantAlert>: managedTenantAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -771,7 +781,7 @@ Read-only.
   [TenantId <String>]: 
   [Title <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantEmailNotification>`: managedTenantEmailNotification
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantEmailNotification>: managedTenantEmailNotification
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -867,7 +877,7 @@ Read-only.
 EMAILADDRESSES <IMicrosoftGraphManagedTenantsEmail[]>: .
   [EmailAddress <String>]: 
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+INPUTOBJECT <IManagedTenantsIdentity>: Identity Parameter
   [AggregatedPolicyComplianceId <String>]: The unique identifier of aggregatedPolicyCompliance
   [AppPerformanceId <String>]: The unique identifier of appPerformance
   [AuditEventId <String>]: The unique identifier of auditEvent
@@ -910,27 +920,4 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipManagedTenantEmailNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantemailnotification)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantemailnotification)

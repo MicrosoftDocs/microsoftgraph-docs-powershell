@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertlog
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantAlertLog
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to managedTenantAlertLogs for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -182,7 +192,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -203,7 +213,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -309,7 +319,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -330,7 +340,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -486,7 +496,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ALERT `<IMicrosoftGraphManagedTenantsManagedTenantAlert>`: managedTenantAlert
+ALERT <IMicrosoftGraphManagedTenantsManagedTenantAlert>: managedTenantAlert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -578,7 +588,7 @@ Read-only.
   [TenantId <String>]: 
   [Title <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlertLog>`: managedTenantAlertLog
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlertLog>: managedTenantAlertLog
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -671,34 +681,11 @@ Read-only.
   [LastActionByUserId <String>]: 
   [LastActionDateTime <DateTime?>]: 
 
-CONTENT `<IMicrosoftGraphManagedTenantsAlertLogContent>`: alertLogContent
+CONTENT <IMicrosoftGraphManagedTenantsAlertLogContent>: alertLogContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]:
 
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipManagedTenantAlertLog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertlog)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertlog)
