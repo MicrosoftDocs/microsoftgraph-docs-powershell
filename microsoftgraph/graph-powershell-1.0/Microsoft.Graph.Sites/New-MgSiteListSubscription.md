@@ -1030,7 +1030,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistsubscription)
+- [New-MgSiteListSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistsubscription)
 
 
 

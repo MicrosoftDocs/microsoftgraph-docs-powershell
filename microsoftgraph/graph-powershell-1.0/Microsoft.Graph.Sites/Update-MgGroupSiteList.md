@@ -28376,7 +28376,7 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist)
+- [Update-MgGroupSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist)
 
 
 
