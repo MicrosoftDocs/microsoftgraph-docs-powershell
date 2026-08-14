@@ -529,7 +529,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagecanvalayouthorizontalsectioncolumnwebpart)
+- [Remove-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepageassitepagecanvalayouthorizontalsectioncolumnwebpart)
 
 
 
