@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregisteredownerdirectoryobjectbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef
 ## SYNOPSIS
 
 Remove a user as a registered owner of the device.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ This cmdlet has the following aliases,
 Remove a user as a registered owner of the device.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -413,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -482,27 +474,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregisteredownerdirectoryobjectbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregisteredownerdirectoryobjectbyref)
+- [](https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-beta)

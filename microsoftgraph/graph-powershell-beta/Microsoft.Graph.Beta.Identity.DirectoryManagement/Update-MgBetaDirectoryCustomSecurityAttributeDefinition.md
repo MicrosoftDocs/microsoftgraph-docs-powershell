@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryCustomSecurityAttributeDefinition
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDirectoryCustomSecurityAttributeDefinition
 ## SYNOPSIS
 
 Update the properties of a customSecurityAttributeDefinition object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a customSecurityAttributeDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CustomSecAttributeDefinition.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CustomSecAttributeDefinition.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update a custom security attribute
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -98,12 +86,7 @@ $params = @{
 
 Update-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
 
-```
-This example will update a custom security attribute
-
-### Example 2: Update the predefined values for a custom security attribute
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -114,12 +97,7 @@ $params = @{
 
 Update-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
 
-```
-This example will update the predefined values for a custom security attribute
-
-### Example 3: Deactivate a custom security attribute
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -128,10 +106,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
-
-```
-This example will deactivate a custom security attribute
-
 
 ## PARAMETERS
 
@@ -792,7 +766,7 @@ Read-only.
   [IsActive <Boolean?>]: Indicates whether the predefined value is active or deactivated.
 If set to false, this predefined value can't be assigned to any more supported directory objects.
 
-BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
+BODYPARAMETER <IMicrosoftGraphCustomSecurityAttributeDefinition>: customSecurityAttributeDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -830,7 +804,7 @@ If set to false, free-form values are allowed.
 Can later be changed from true to false, but cannot be changed from false to true.
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -899,27 +873,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryCustomSecurityAttributeDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)
+- [](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-beta)
