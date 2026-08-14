@@ -584,8 +584,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprint)
-- [](https://learn.microsoft.com/graph/api/buildingmap-list-footprints?view=graph-rest-1.0)
+- [Get-MgPlaceAsBuildingMapFootprint](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmapfootprint)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/buildingmap-list-footprints?view=graph-rest-1.0)
 
 
 
