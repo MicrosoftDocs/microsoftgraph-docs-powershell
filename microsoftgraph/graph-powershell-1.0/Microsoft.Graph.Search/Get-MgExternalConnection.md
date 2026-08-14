@@ -67,12 +67,17 @@ Read the properties and relationships of an externalConnection object.
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnection
+
+```
+This example shows how to use the Get-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 
