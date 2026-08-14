@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityLabelFilePlanReference
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityLabelFilePlanReference
 ## SYNOPSIS
 
 Create a new filePlanReferenceTemplate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,9 +47,8 @@ This cmdlet has the following aliases,
 Create a new filePlanReferenceTemplate object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -62,10 +58,6 @@ $params = @{
 }
 
 New-MgSecurityLabelFilePlanReference -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityLabelFilePlanReference Cmdlet.
-
 
 ## PARAMETERS
 
@@ -440,7 +432,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -454,27 +446,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgSecurityLabelFilePlanReference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference)
+- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0)

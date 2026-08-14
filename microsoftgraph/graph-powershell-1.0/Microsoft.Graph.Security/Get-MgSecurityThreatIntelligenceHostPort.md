@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostport
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityThreatIntelligenceHostPort
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityThreatIntelligenceHostPort
 ## SYNOPSIS
 
 Read the properties and relationships of a hostPort object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPort?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -91,17 +88,12 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a hostPort object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityThreatIntelligenceHostPort -HostPortId $hostPortId
-
-```
-This example shows how to use the Get-MgSecurityThreatIntelligenceHostPort Cmdlet.
-
 
 ## PARAMETERS
 
@@ -650,7 +642,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -729,28 +721,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityThreatIntelligenceHostPort](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-hostport-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-host-list-ports?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostport)
+- [](https://learn.microsoft.com/graph/api/security-hostport-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/security-host-list-ports?view=graph-rest-1.0)

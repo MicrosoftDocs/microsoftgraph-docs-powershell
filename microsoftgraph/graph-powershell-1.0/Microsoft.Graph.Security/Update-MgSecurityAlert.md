@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityAlert
 ---
@@ -15,9 +15,6 @@ title: Update-MgSecurityAlert
 
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -109,46 +106,9 @@ This cmdlet has the following aliases,
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityEvents.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityEvents.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Request without Prefer header
 
-```powershell
-
-Import-Module Microsoft.Graph.Security
-
-$params = @{
-	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
-	comments = @(
-		"String"
-	)
-	feedback = "@odata.type: microsoft.graph.alertFeedback"
-	status = "@odata.type: microsoft.graph.alertStatus"
-	tags = @(
-		"String"
-	)
-	vendorInformation = @{
-		provider = "String"
-		vendor = "String"
-	}
-}
-
-Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
-
-```
-This example will request without prefer header
-
-### Example 2: Request with Prefer header
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -171,9 +131,28 @@ $params = @{
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
 
-```
-This example will request with prefer header
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	assignedTo = "String"
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	comments = @(
+		"String"
+	)
+	feedback = "@odata.type: microsoft.graph.alertFeedback"
+	status = "@odata.type: microsoft.graph.alertStatus"
+	tags = @(
+		"String"
+	)
+	vendorInformation = @{
+		provider = "String"
+		vendor = "String"
+	}
+}
+
+Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -233,7 +212,7 @@ HelpMessage: ''
 
 ### -AlertDetections
 
-
+.
 To construct, see NOTES section for ALERTDETECTIONS properties and create a hash table.
 
 ```yaml
@@ -769,7 +748,7 @@ HelpMessage: ''
 
 ### -HistoryStates
 
-
+.
 To construct, see NOTES section for HISTORYSTATES properties and create a hash table.
 
 ```yaml
@@ -950,7 +929,7 @@ HelpMessage: ''
 
 ### -InvestigationSecurityStates
 
-
+.
 To construct, see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -978,7 +957,7 @@ HelpMessage: ''
 
 ### -LastEventDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -1062,7 +1041,7 @@ HelpMessage: ''
 
 ### -MessageSecurityStates
 
-
+.
 To construct, see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -1481,7 +1460,7 @@ HelpMessage: ''
 
 ### -UriClickSecurityStates
 
-
+.
 To construct, see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
 
 ```yaml
@@ -1652,7 +1631,7 @@ ALERTDETECTIONS <IMicrosoftGraphAlertDetection[]>: .
   [Method <String>]: 
   [Name <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1897,7 +1876,7 @@ HOSTSTATES <IMicrosoftGraphHostSecurityState[]>: Security-related stateful infor
   [RiskScore <String>]: Provider-generated/calculated risk score of the host.
  Recommended value range of 0-1, which equates to a percentage.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -2104,7 +2083,7 @@ Recommended value range of 0-1, which equates to a percentage.
   [UserAccountType <String>]: userAccountSecurityType
   [UserPrincipalName <String>]: User sign-in name - internet format: (user account name)@(user account DNS domain name).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -2121,27 +2100,5 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: Threat intelligence p
 
 ## RELATED LINKS
 
-- [Update-MgSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
+- [](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0)

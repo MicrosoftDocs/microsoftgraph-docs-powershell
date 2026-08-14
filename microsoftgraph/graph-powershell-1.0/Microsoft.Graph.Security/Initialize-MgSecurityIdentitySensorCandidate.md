@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgSecurityIdentitySensorCandidate
 ---
@@ -45,14 +45,6 @@ This cmdlet has the following aliases,
 
 Activate Microsoft Defender for Identity sensors.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesSensors.ReadWrite.All,  |
-
 ## EXAMPLES
 
 ### EXAMPLE 1
@@ -92,7 +84,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -326,7 +318,7 @@ HelpMessage: ''
 
 ### -ServerIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -397,34 +389,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Fs10W4SecurityIdentitiesSensorcandidatesMicrosoftGraphSecurityActivatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Fs10W4SecurityIdentitiesSensorcandidatesMicrosoftGraphSecurityActivatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ServerIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Initialize-MgSecurityIdentitySensorCandidate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecurityidentitysensorcandidate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensorcandidate-activate?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecurityidentitysensorcandidate)
+- [](https://learn.microsoft.com/graph/api/security-sensorcandidate-activate?view=graph-rest-1.0)
