@@ -1119,8 +1119,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointrestoresession)
-- [](https://learn.microsoft.com/graph/api/sharepointrestoresession-update?view=graph-rest-1.0)
+- [Update-MgSolutionBackupRestoreSharePointRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointrestoresession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointrestoresession-update?view=graph-rest-1.0)
 
 
 
