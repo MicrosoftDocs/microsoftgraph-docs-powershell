@@ -961,7 +961,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphItem>: item
+BODYPARAMETER `<IMicrosoftGraphItem>`: item
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BaseUnitOfMeasureId <String>]: 
   [Blocked <Boolean?>]: 
@@ -992,7 +992,7 @@ BODYPARAMETER <IMicrosoftGraphItem>: item
   [UnitCost <Decimal?>]: 
   [UnitPrice <Decimal?>]: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1030,7 +1030,7 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-ITEMCATEGORY <IMicrosoftGraphItemCategory>: itemCategory
+ITEMCATEGORY `<IMicrosoftGraphItemCategory>`: itemCategory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: 
   [DisplayName <String>]: 
@@ -1048,3 +1048,25 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalecreditmemolineitem)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
