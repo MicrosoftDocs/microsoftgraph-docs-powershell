@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencemanuallocation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgCommunicationPresenceManualLocation
 ---
@@ -15,9 +15,6 @@ title: Set-MgCommunicationPresenceManualLocation
 
 Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationPresenceManualLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresenceManualLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 Set the manual work location signal for a user.
 The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -102,7 +109,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -285,7 +292,7 @@ HelpMessage: ''
 
 ### -PlaceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -505,12 +512,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths269QmnCommunicationsPresencesPresenceIdMicrosoftGraphSetmanuallocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths269QmnCommunicationsPresencesPresenceIdMicrosoftGraphSetmanuallocationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlaceId <String>]: 
   [WorkLocationType <String>]: workLocationType
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -534,28 +541,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgCommunicationPresenceManualLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencemanuallocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresencemanuallocation)
+- [](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-1.0)

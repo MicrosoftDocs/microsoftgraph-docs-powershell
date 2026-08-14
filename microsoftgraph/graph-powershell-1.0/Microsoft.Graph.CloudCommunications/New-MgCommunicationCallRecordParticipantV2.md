@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordparticipantv2
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgCommunicationCallRecordParticipantV2
 ---
@@ -14,9 +14,6 @@ title: New-MgCommunicationCallRecordParticipantV2
 ## SYNOPSIS
 
 Create new navigation property to participants_v2 for communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallRecordParticipantV2](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallRecordParticipantV2?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to participants_v2 for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -514,7 +521,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ADMINISTRATIVEUNITINFOS <IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]>: List of administrativeUnitInfo objects for the call participant.
   [Id <String>]: Unique identifier for the administrative unit.
 
-IDENTITY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
+IDENTITY <IMicrosoftGraphCommunicationsIdentitySet>: communicationsIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -533,7 +540,7 @@ For example, in the access reviews decisions API, this property might record the
   [OnPremises <IMicrosoftGraphIdentity>]: identity
   [Phone <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -557,27 +564,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgCommunicationCallRecordParticipantV2](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordparticipantv2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordparticipantv2)
