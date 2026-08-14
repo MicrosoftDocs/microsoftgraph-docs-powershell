@@ -19003,7 +19003,7 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobiledevicemanagementpolicy)
+- [New-MgBetaPolicyMobileDeviceManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobiledevicemanagementpolicy)
 
 
 

@@ -1223,7 +1223,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaserviceprincipalriskdetection)
+- [Update-MgBetaServicePrincipalRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaserviceprincipalriskdetection)
 
 
 

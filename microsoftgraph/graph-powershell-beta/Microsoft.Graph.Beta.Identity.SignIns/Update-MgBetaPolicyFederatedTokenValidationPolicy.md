@@ -417,8 +417,8 @@ VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
-- [](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyFederatedTokenValidationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta)
 
 
 
