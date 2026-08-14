@@ -50,6 +50,14 @@ You shouldn't delete a profilePropertySetting that includes a source precedence 
 Instead, patch it to a default state that contains only the Microsoft Entra ID source reference.
 This delete operation is supported but fails unless the prioritizedSourceUrls property contains only the Entra ID source reference.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PeopleSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

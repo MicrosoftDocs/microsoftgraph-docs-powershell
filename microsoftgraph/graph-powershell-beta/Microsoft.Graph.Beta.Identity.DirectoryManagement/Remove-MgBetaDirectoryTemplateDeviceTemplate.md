@@ -48,6 +48,14 @@ Delete a registered deviceTemplate.
 You must first delete all devices linked to the template before deleting the template itself.
 Only registered owners of the template can perform this operation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceTemplate.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceTemplate.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
