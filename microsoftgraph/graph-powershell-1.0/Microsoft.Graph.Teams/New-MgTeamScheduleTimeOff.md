@@ -80,8 +80,9 @@ Create a new timeOff instance in a schedule.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
+
 
 ## PARAMETERS
 

@@ -84,8 +84,9 @@ Create an instance of an offerShiftRequest.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -96,6 +97,10 @@ $params = @{
 }
 
 New-MgTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamScheduleOfferShiftRequest Cmdlet.
+
 
 ## PARAMETERS
 

@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 Replace an existing timeOff object.
 If the specified timeOff object doesn't exist, this method returns 404 Not found.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -773,6 +763,7 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoff)
 - [](https://learn.microsoft.com/graph/api/timeoff-put?view=graph-rest-1.0)
+
 
 
 
