@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportGroupArchivedPrintJob
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaReportGroupArchivedPrintJob
 ## SYNOPSIS
 
 Get a list of archived print jobs for a particular group.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportGroupArchivedPrintJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ This cmdlet has the following aliases,
 Get a list of archived print jobs for a particular group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportGroupArchivedPrintJob
-
-```
-This example shows how to use the Get-MgBetaReportGroupArchivedPrintJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -454,7 +446,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -510,27 +502,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportGroupArchivedPrintJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob)
+- [](https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta)

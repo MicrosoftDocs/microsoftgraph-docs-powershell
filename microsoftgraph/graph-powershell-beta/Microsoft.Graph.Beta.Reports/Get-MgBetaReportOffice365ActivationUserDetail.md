@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365activationuserdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportOffice365ActivationUserDetail
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaReportOffice365ActivationUserDetail
 ## SYNOPSIS
 
 Invoke function getOffice365ActivationsUserDetail
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActivationUserDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Invoke function getOffice365ActivationsUserDetail
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Reports.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Reports.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -282,27 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportOffice365ActivationUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365activationuserdetail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365activationuserdetail)

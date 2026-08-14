@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetadismissauditlogsignin
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDismissAuditLogSignIn
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaDismissAuditLogSignIn
 
 Mark an event in Microsoft Entra sign-in logs as dismissed.
 For details about investigating Identity Protection risks, see How to investigate risk.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Invoke-MgDismissAuditLogSignIn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 Mark an event in Microsoft Entra sign-in logs as dismissed.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskEvent.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -73,10 +61,6 @@ $params = @{
 }
 
 Invoke-MgBetaDismissAuditLogSignIn -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaDismissAuditLogSignIn Cmdlet.
-
 
 ## PARAMETERS
 
@@ -103,7 +87,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -315,7 +299,7 @@ HelpMessage: ''
 
 ### -RequestIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -408,34 +392,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1K0Im7HAuditlogsSigninsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1K0Im7HAuditlogsSigninsMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RequestIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDismissAuditLogSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetadismissauditlogsignin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-dismiss?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetadismissauditlogsignin)
+- [](https://learn.microsoft.com/graph/api/signin-dismiss?view=graph-rest-beta)
