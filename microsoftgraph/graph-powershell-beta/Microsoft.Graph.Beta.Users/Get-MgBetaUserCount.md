@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadBasic.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, User.Read.All, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadBasic.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, User.Read.All, User.ReadWrite.All, User.ReadWrite.CrossCloud,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -304,27 +303,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercount)

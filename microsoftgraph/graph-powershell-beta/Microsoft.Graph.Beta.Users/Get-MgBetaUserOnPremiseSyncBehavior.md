@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseronpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnPremiseSyncBehavior
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserOnPremiseSyncBehavior
 
 Indicates the state of synchronization for a user between the cloud and on-premises Active Directory.
 Supports $filter only with advanced query capabilities, for example, $filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Users/Get-MgUserOnPremiseSyncBehavior?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,13 +46,15 @@ This cmdlet has the following aliases,
 Indicates the state of synchronization for a user between the cloud and on-premises Active Directory.
 Supports $filter only with advanced query capabilities, for example, $filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User-OnPremisesSyncBehavior.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User-OnPremisesSyncBehavior.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -345,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -382,27 +381,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseronpremisesyncbehavior)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseronpremisesyncbehavior)

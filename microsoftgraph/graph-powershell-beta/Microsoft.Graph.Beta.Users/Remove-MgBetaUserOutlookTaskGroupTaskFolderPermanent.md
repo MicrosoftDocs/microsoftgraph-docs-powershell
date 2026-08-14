@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfolderpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserOutlookTaskGroupTaskFolderPermanent
 ---
@@ -47,13 +47,15 @@ This cmdlet has the following aliases,
 Permanently delete an outlook task folder and remove its items from the user's mailbox.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -406,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -443,28 +445,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserOutlookTaskGroupTaskFolderPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfolderpermanent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/outlooktaskfolder-permanentdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfolderpermanent)
+- [](https://learn.microsoft.com/graph/api/outlooktaskfolder-permanentdelete?view=graph-rest-beta)

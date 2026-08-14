@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetailteamlicensingdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserLicenseDetailTeamLicensingDetail
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserLicenseDetailTeamLicensingDetail
 ## SYNOPSIS
 
 Get the license status of a user in Microsoft Teams.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserLicenseDetailTeamLicensingDetail](/powershell/module/Microsoft.Graph.Users/Get-MgUserLicenseDetailTeamLicensingDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Get the license status of a user in Microsoft Teams.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserLicenseDetailTeamLicensingDetail -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserLicenseDetailTeamLicensingDetail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -312,7 +296,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -349,27 +333,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserLicenseDetailTeamLicensingDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetailteamlicensingdetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetailteamlicensingdetail)
+- [](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta)
