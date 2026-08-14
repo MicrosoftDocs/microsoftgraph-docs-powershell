@@ -386,7 +386,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowserdistributionusercount)
+- [Get-MgBetaReportBrowserDistributionUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowserdistributionusercount)
 
 
 
