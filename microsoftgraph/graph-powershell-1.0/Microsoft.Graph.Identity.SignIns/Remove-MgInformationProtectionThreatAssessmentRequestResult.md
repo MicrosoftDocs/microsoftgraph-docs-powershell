@@ -469,7 +469,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mginformationprotectionthreatassessmentrequestresult)
+- [Remove-MgInformationProtectionThreatAssessmentRequestResult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mginformationprotectionthreatassessmentrequestresult)
 
 
 

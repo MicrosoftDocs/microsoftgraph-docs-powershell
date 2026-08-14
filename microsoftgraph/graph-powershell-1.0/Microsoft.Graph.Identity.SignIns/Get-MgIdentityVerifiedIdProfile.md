@@ -609,9 +609,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityverifiedidprofile)
-- [](https://learn.microsoft.com/graph/api/verifiedidprofile-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/identityverifiedidroot-list-profiles?view=graph-rest-1.0)
+- [Get-MgIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityverifiedidprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-list-profiles?view=graph-rest-1.0)
 
 
 

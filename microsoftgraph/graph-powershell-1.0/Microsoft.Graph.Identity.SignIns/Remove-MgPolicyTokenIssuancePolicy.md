@@ -468,8 +468,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicytokenissuancepolicy)
-- [](https://learn.microsoft.com/graph/api/tokenissuancepolicy-delete?view=graph-rest-1.0)
+- [Remove-MgPolicyTokenIssuancePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicytokenissuancepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tokenissuancepolicy-delete?view=graph-rest-1.0)
 
 
 

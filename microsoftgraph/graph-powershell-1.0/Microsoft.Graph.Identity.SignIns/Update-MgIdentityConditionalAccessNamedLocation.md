@@ -684,8 +684,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation)
-- [](https://learn.microsoft.com/graph/api/countrynamedlocation-update?view=graph-rest-1.0)
+- [Update-MgIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-update?view=graph-rest-1.0)
 
 
 
