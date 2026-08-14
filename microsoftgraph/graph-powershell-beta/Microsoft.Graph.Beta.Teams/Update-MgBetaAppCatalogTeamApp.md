@@ -15,6 +15,9 @@ title: Update-MgBetaAppCatalogTeamApp
 
 Update the navigation property teamsApps in appCatalogs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

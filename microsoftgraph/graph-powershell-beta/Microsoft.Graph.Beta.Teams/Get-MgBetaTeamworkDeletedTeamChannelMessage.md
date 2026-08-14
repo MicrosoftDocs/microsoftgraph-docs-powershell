@@ -16,6 +16,9 @@ title: Get-MgBetaTeamworkDeletedTeamChannelMessage
 A collection of all the messages in the channel.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

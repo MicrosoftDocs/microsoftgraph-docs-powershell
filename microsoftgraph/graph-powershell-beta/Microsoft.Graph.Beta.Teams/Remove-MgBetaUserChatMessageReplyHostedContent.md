@@ -15,6 +15,9 @@ title: Remove-MgBetaUserChatMessageReplyHostedContent
 
 Delete navigation property hostedContents for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMessageReplyHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
