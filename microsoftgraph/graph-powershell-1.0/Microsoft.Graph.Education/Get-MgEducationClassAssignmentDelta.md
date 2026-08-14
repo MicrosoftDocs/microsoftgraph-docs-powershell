@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassAssignmentDelta
 ---
@@ -16,9 +16,6 @@ title: Get-MgEducationClassAssignmentDelta
 Get a list of newly-created or updated assignments without reading the whole collection.
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,59 +51,31 @@ Get a list of newly-created or updated assignments without reading the whole col
 A teacher or an application running with application permissions can see all assignment objects for the class.
 Students can only see assignments that are assigned to them.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.Read, EduAssignments.ReadWrite, EduAssignments.ReadWriteBasic,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
-
 ## EXAMPLES
-### Example 1: Get assignments with delta query support
 
-```powershell
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Top 2 
-
-```
-This example will get assignments with delta query support
-
-### Example 2: Get next set of assignments with delta query support
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Skiptoken "U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IdHoweKQs1czM4Ry1LVsNqwIFXftTcRHvgSCbcszvbJHEWDCO3QO7K7zwCM8DdXNepZOa1gqldecjIUM0NFRbGQoQ5yR6RmGnMgtko8TDMOyMH_yg1my82PTXA_t4Nj-DhMDZWvuNTd_lbLeTngc7mIJPMCR2gHN9CSKsW_kw850.UM9tUqwOu5Ln1pnxaP6KdMmfJHszGqY3EKPlQkOiyGs" 
+Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Top 2
 
-```
-This example will get next set of assignments with delta query support
-
-### Example 3: Get the created and modified assignments using delta token
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxROmLjac48n-iXm5j6n5aQwlsnC-2OvL3lI0Z8M4klERNmJQjnBn7MHqwXZ6L8GlI3VPnya3E-p1bisiZX97jLvQUAopseIYhvnD6v7fiYrk.fVsHempT6X2CiBh6aN9Ex5nVJ71adKdcf-mdke8OHKs" 
+Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Skiptoken "U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IdHoweKQs1czM4Ry1LVsNqwIFXftTcRHvgSCbcszvbJHEWDCO3QO7K7zwCM8DdXNepZOa1gqldecjIUM0NFRbGQoQ5yR6RmGnMgtko8TDMOyMH_yg1my82PTXA_t4Nj-DhMDZWvuNTd_lbLeTngc7mIJPMCR2gHN9CSKsW_kw850.UM9tUqwOu5Ln1pnxaP6KdMmfJHszGqY3EKPlQkOiyGs"
 
-```
-This example will get the created and modified assignments using delta token
-
-### Example 4: Using `$select` to get selected data
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Property "displayName,id" 
+Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxROmLjac48n-iXm5j6n5aQwlsnC-2OvL3lI0Z8M4klERNmJQjnBn7MHqwXZ6L8GlI3VPnya3E-p1bisiZX97jLvQUAopseIYhvnD6v7fiYrk.fVsHempT6X2CiBh6aN9Ex5nVJ71adKdcf-mdke8OHKs"
 
-```
-This example shows using `$select` to get selected data
+### EXAMPLE 4
 
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignmentDelta -EducationClassId $educationClassId -Property "displayName,id"
 
 ## PARAMETERS
 
@@ -589,7 +558,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -614,27 +583,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassAssignmentDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentdelta)
+- [](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmissioncount
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportReadingAssignmentSubmissionCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationReportReadingAssignmentSubmissionCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingAssignmentSubmissionCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingAssignmentSubmissionCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduReports-Reading.ReadAnonymous.All, EduReports-Reading.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -282,27 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationReportReadingAssignmentSubmissionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmissioncount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmissioncount)

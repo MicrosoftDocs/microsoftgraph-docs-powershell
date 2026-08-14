@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassAssignmentResource
 ---
@@ -16,9 +16,6 @@ title: New-MgEducationClassAssignmentResource
 Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an educationLinkResource
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -102,12 +90,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationlinkresource
-
-### Example 2: Create an educationWordResource
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
@@ -122,12 +105,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationwordresource
-
-### Example 3: Create an educationFileResource
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Education
 
@@ -141,12 +119,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationfileresource
-
-### Example 4: Create an educationExcelResource
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Education
 
@@ -161,12 +134,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationexcelresource
-
-### Example 5: Create an educationPowerPointResource
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Education
 
@@ -181,12 +149,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationpowerpointresource
-
-### Example 6: Create an educationMediaResource
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Education
 
@@ -201,12 +164,7 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-```
-This example will create an educationmediaresource
-
-### Example 7: Create an educationTeamsAppResource
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Education
 
@@ -223,10 +181,6 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
-```
-This example will create an educationteamsappresource
-
 
 ## PARAMETERS
 
@@ -726,7 +680,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>: educationAssignmentResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -769,7 +723,7 @@ For example, in the access reviews decisions API, this property might record the
     [DisplayName <String>]: Display name of resource.
     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -791,7 +745,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
   [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+RESOURCE <IMicrosoftGraphEducationResource>: educationResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -809,27 +763,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgEducationClassAssignmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-post-resources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource)
+- [](https://learn.microsoft.com/graph/api/educationassignment-post-resources?view=graph-rest-1.0)

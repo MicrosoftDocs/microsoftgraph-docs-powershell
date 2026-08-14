@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportReadingAssignmentSubmission
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationReportReadingAssignmentSubmission
 ## SYNOPSIS
 
 Details of submitted reading assignments.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,28 +58,18 @@ This cmdlet has the following aliases,
 Details of submitted reading assignments.
 
 ## EXAMPLES
-### Example 1: Get a list of the reading assignment submissions from the last 24 hours
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationReportReadingAssignmentSubmission
 
-```
-This example will get a list of the reading assignment submissions from the last 24 hours
-
-### Example 2: Get a list of the reading assignment submissions for a specific date using $filter
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationReportReadingAssignmentSubmission -Filter "submissionDateTime gt 2025-06-10T00:00:00.000Z and submissionDateTime lt 2025-06-11T00:00:00Z" 
-
-```
-This example will get a list of the reading assignment submissions for a specific date using $filter
-
+Get-MgEducationReportReadingAssignmentSubmission -Filter "submissionDateTime gt 2025-06-10T00:00:00.000Z and submissionDateTime lt 2025-06-11T00:00:00Z"
 
 ## PARAMETERS
 
@@ -544,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -569,27 +556,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreadingassignmentsubmission)
+- [](https://learn.microsoft.com/graph/api/reportsroot-list-readingassignmentsubmissions?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassMember
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationClassMember
 ## SYNOPSIS
 
 Retrieves the educationUser members of an educationClass.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassMember](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 Retrieves the educationUser members of an educationClass.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassMember -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgEducationClassMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -492,27 +476,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassMember](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember)
+- [](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)

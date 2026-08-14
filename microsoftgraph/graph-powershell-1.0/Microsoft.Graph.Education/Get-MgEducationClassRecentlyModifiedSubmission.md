@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassrecentlymodifiedsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassRecentlyModifiedSubmission
 ---
@@ -21,9 +21,6 @@ A teacher or application with application permissions has full access to all sub
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students can't see the grade or feedback until the assignment is released.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassRecentlyModifiedSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassRecentlyModifiedSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,103 +62,55 @@ The grade and feedback from a teacher are part of the educationOutcome associate
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students can't see the grade or feedback until the assignment is released.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.Read, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.Read.All, EduAssignments.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get recently modified submissions
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId
 
-```
-This example will get recently modified submissions
-
-### Example 2: Get recently modified submissions with `$select` and `$filter` options on assignmentId property
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'" -Property "LastModifiedDateTime,status" 
+Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "assignmentId eq 'b20d6737-f88e-4892-8174-73aa26d18784'" -Property "LastModifiedDateTime,status"
 
-```
-This example will get recently modified submissions with `$select` and `$filter` options on assignmentid property
-
-### Example 3: Get recently modified submissions with `$expand` option
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -ExpandProperty "outcomes" 
+Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -ExpandProperty "outcomes"
 
-```
-This example will get recently modified submissions with `$expand` option
-
-### Example 4: Get recently modified submissions with `$filter` option
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z" 
+Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z"
 
-```
-This example will get recently modified submissions with `$filter` option
-
-### Example 5: Get recently modified submissions with `$orderby` and `$top` options
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Sort "lastModifiedDateTime" -Top 1 
+Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Sort "lastModifiedDateTime" -Top 1
 
-```
-This example will get recently modified submissions with `$orderby` and `$top` options
-
-### Example 6: Get recently modified submissions with `$select` option
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Property "excusedDateTime" 
+Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Property "excusedDateTime"
 
-```
-This example will get recently modified submissions with `$select` option
-
-### Example 7: Get recently modified submissions with `$filter` option for a range on lastModifiedDateTime property
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z and lastModifiedDateTime lt 2025-04-14T23:02:00.8753517Z" 
+Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z and lastModifiedDateTime lt 2025-04-14T23:02:00.8753517Z"
 
-```
-This example will get recently modified submissions with `$filter` option for a range on lastmodifieddatetime property
-
-### Example 8: Get recently modified submissions with `$filter` option for lastModifiedDateTime property using less than(lt) operator
-
-```powershell
+### EXAMPLE 8
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime lt 2025-04-29T15:48:31.3785886Z" 
-
-```
-This example will get recently modified submissions with `$filter` option for lastmodifieddatetime property using less than(lt) operator
-
+Get-MgEducationClassRecentlyModifiedSubmission -EducationClassId $educationClassId -Filter "lastModifiedDateTime lt 2025-04-29T15:48:31.3785886Z"
 
 ## PARAMETERS
 
@@ -579,7 +528,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -604,27 +553,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassRecentlyModifiedSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassrecentlymodifiedsubmission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassrecentlymodifiedsubmission)
+- [](https://learn.microsoft.com/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-1.0)

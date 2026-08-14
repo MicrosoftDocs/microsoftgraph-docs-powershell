@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgexcuseeducationmeassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgExcuseEducationMeAssignmentSubmission
 ---
@@ -20,9 +20,6 @@ Only teachers can perform this action.
 If the Prefer: include-unknown-enum-members request header is provided, the excused submission shows the excused status.
 Otherwise, the submission status retains the returned status.
 For more information about how to use this header, see the Examples section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaExcuseEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaExcuseEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,6 +56,16 @@ Only teachers can perform this action.
 If the Prefer: include-unknown-enum-members request header is provided, the excused submission shows the excused status.
 Otherwise, the submission status retains the returned status.
 For more information about how to use this header, see the Examples section.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -369,7 +376,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -394,28 +401,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgExcuseEducationMeAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgexcuseeducationmeassignmentsubmission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgexcuseeducationmeassignmentsubmission)
+- [](https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-1.0)

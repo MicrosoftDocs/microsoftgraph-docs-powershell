@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingscheme
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationClassAssignmentSettingGradingScheme
 ---
@@ -14,9 +14,6 @@ title: Update-MgEducationClassAssignmentSettingGradingScheme
 ## SYNOPSIS
 
 Update the navigation property gradingSchemes in education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSettingGradingScheme](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSettingGradingScheme?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,13 +69,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property gradingSchemes in education
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -577,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationGradingScheme>`: educationGradingScheme
+BODYPARAMETER <IMicrosoftGraphEducationGradingScheme>: educationGradingScheme
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -594,7 +593,7 @@ GRADES <IMicrosoftGraphEducationGradingSchemeGrade[]>: The grades that make up t
   [DisplayName <String>]: The name of this individual grade.
   [MinPercentage <Single?>]: The minimum percentage of the total points needed to achieve this grade.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -619,27 +618,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgEducationClassAssignmentSettingGradingScheme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingscheme)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingscheme)
