@@ -420,8 +420,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelemail)
-- [](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0)
+- [Remove-MgGroupTeamChannelEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0)
 
 
 

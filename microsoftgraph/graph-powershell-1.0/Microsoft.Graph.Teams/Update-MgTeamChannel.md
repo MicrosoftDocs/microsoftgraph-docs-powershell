@@ -17319,8 +17319,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel)
-- [](https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-1.0)
+- [Update-MgTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-1.0)
 
 
 

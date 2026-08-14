@@ -472,7 +472,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelfilefoldercontent)
+- [Set-MgTeamworkDeletedTeamChannelFileFolderContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamworkdeletedteamchannelfilefoldercontent)
 
 
 

@@ -580,7 +580,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessagehostedcontent)
+- [New-MgTeamPrimaryChannelMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessagehostedcontent)
 
 
 
