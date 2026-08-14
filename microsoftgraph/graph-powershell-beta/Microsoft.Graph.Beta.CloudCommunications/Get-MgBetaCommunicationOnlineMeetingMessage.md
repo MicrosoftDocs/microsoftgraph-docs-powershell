@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaCommunicationOnlineMeetingMessage
 ---
@@ -15,10 +15,7 @@ title: Get-MgBetaCommunicationOnlineMeetingMessage
 
 Get all Teams question and answer (Q&A) conversation messages in a tenant.
 This function returns a snapshot of all Q&A activity in JSON format.
-The export includes:\r- The original question or discussion text\r- The user who posted the message\r- All replies and responders\r- Vote counts\r- Moderation status (pending or dismissed)\r- Private replies\r- The meeting ID and organizer ID that are used for mapping to meeting metadata.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingMessage](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingMessage?view=graph-powershell-1.0)
+The export includes:\r\n- The original question or discussion text\r\n- The user who posted the message\r\n- All replies and responders\r\n- Vote counts\r\n- Moderation status (pending or dismissed)\r\n- Private replies\r\n- The meeting ID and organizer ID that are used for mapping to meeting metadata.
 
 ## SYNTAX
 
@@ -41,20 +38,15 @@ This cmdlet has the following aliases,
 
 Get all Teams question and answer (Q&A) conversation messages in a tenant.
 This function returns a snapshot of all Q&A activity in JSON format.
-The export includes:\r- The original question or discussion text\r- The user who posted the message\r- All replies and responders\r- Vote counts\r- Moderation status (pending or dismissed)\r- Private replies\r- The meeting ID and organizer ID that are used for mapping to meeting metadata.
+The export includes:\r\n- The original question or discussion text\r\n- The user who posted the message\r\n- All replies and responders\r\n- Vote counts\r\n- Moderation status (pending or dismissed)\r\n- Private replies\r\n- The meeting ID and organizer ID that are used for mapping to meeting metadata.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgBetaCommunicationOnlineMeetingMessage -ExpandProperty "conversation" 
-
-```
-This example shows how to use the Get-MgBetaCommunicationOnlineMeetingMessage Cmdlet.
-
+Get-MgBetaCommunicationOnlineMeetingMessage -ExpandProperty "conversation"
 
 ## PARAMETERS
 
@@ -422,27 +414,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaCommunicationOnlineMeetingMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudcommunications-getallonlinemeetingmessages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingmessage)
+- [](https://learn.microsoft.com/graph/api/cloudcommunications-getallonlinemeetingmessages?view=graph-rest-beta)

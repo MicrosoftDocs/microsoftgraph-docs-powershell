@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcalloperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaCommunicationCallOperation
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaCommunicationCallOperation
 ## SYNOPSIS
 
 Get the status of an operation that adds the large gallery view to a call.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 Get the status of an operation that adds the large gallery view to a call.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallOperation -CallId $callId -CommsOperationId $commsOperationId
-
-```
-This example shows how to use the Get-MgBetaCommunicationCallOperation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -590,27 +582,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaCommunicationCallOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcalloperation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/addlargegalleryviewoperation-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcalloperation)
+- [](https://learn.microsoft.com/graph/api/addlargegalleryviewoperation-get?view=graph-rest-beta)

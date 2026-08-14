@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingaiinsight
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaCommunicationOnlineMeetingAiInsight
 ---
@@ -72,11 +72,21 @@ This cmdlet has the following aliases,
 
 Create new navigation property to aiInsights for communications
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActionItems
 
-
+.
 To construct, see NOTES section for ACTIONITEMS properties and create a hash table.
 
 ```yaml
@@ -180,7 +190,7 @@ HelpMessage: ''
 
 ### -CallId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -229,7 +239,7 @@ HelpMessage: ''
 
 ### -ContentCorrelationId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -256,7 +266,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -283,7 +293,7 @@ HelpMessage: ''
 
 ### -EndDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -429,7 +439,7 @@ HelpMessage: ''
 
 ### -MeetingNotes
 
-
+.
 To construct, see NOTES section for MEETINGNOTES properties and create a hash table.
 
 ```yaml
@@ -656,7 +666,7 @@ ACTIONITEMS <IMicrosoftGraphActionItem[]>: .
   [Text <String>]: 
   [Title <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphCallAiInsight>`: callAiInsight
+BODYPARAMETER <IMicrosoftGraphCallAiInsight>: callAiInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -691,7 +701,7 @@ For example, in the access reviews decisions API, this property might record the
         [User <IMicrosoftGraphIdentity>]: identity
       [TranscriptUtterance <String>]: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -725,7 +735,7 @@ MEETINGNOTES <IMicrosoftGraphMeetingNote[]>: .
   [Text <String>]: 
   [Title <String>]: 
 
-VIEWPOINT `<IMicrosoftGraphCallAiInsightViewPoint>`: callAiInsightViewPoint
+VIEWPOINT <IMicrosoftGraphCallAiInsightViewPoint>: callAiInsightViewPoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MentionEvents <IMicrosoftGraphMentionEvent[]>]: 
     [EventDateTime <DateTime?>]: 
@@ -745,27 +755,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaCommunicationOnlineMeetingAiInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingaiinsight)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingaiinsight)

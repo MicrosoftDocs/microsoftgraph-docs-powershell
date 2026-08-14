@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecordingcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/14/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnlineMeetingRecordingContent
 ---
@@ -17,9 +17,6 @@ Get a callRecording object associated with a scheduled online meeting and an ad 
 This API supports the retrieval of call recordings from all meeting types except live events.
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecordingContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,26 +51,13 @@ This API supports the retrieval of call recordings from all meeting types except
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call.
 For the content of a recording, this API returns the stream of bytes associated with the recording.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetingRecording.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaUserOnlineMeetingRecordingContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallRecordingId $callRecordingId
-
-```
-This example shows how to use the Get-MgBetaUserOnlineMeetingRecordingContent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -403,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -433,27 +417,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnlineMeetingRecordingContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecordingcontent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecordingcontent)
+- [](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-beta)
