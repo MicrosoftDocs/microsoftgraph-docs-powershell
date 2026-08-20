@@ -6,7 +6,7 @@ param(
     $ModulesToGenerate = @(),
     
     [Parameter(Mandatory = $false)]
-    [string]$ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
+    [string]$ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
     
     [Parameter(Mandatory = $false)]
     [string]$WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),

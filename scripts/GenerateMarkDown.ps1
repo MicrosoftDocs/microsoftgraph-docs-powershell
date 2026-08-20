@@ -3,7 +3,7 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config\ModulesMapping.jsonc"),
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $CmdletMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
     # Restrict generation to a single SDK profile ("v1.0" or "beta"); "both" keeps the
@@ -129,7 +129,11 @@ function Get-FolderByProfile {
     # below before anything is removed).
     $Scoped = -not [string]::IsNullOrWhiteSpace($ModuleFilter)
     if ($Scoped) {
-        $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+        $ScopedModules = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+        if ($ScopedModules.Count -eq 0) {
+            throw "Module '$ModuleFilter' is not present in '$ModuleMappingConfigPath'."
+        }
+        $ModulesToGenerate = $ScopedModules
     }
    
     $ModulesToGenerate | ForEach-Object {
