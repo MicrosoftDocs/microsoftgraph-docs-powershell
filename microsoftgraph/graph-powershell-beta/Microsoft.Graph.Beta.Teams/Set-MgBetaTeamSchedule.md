@@ -14,7 +14,7 @@ title: Set-MgBetaTeamSchedule
 ## SYNOPSIS
 
 Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -93,7 +93,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create or replace a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -1268,7 +1268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSchedule>: schedule
+BODYPARAMETER `<IMicrosoftGraphSchedule>`: schedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1556,7 +1556,7 @@ Read-only.
     [ContentType <String>]: bodyType
   [SharedDayNote <IMicrosoftGraphItemBody>]: itemBody
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1871,7 +1871,7 @@ If both are included in the request with different values, the value for isAtApp
   [State <String>]: timeCardState
   [UserId <String>]: User ID to which  the timeCard belongs.
 
-TIMECLOCKSETTINGS <IMicrosoftGraphTimeClockSettings>: timeClockSettings
+TIMECLOCKSETTINGS `<IMicrosoftGraphTimeClockSettings>`: timeClockSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovedLocation <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1975,3 +1975,25 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule)
 - [](https://learn.microsoft.com/graph/api/team-put-schedule?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
