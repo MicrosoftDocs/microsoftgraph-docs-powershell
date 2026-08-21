@@ -468,8 +468,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryexternaluserprofile)
-- [](https://learn.microsoft.com/graph/api/directory-delete-externaluserprofiles?view=graph-rest-beta)
+- [Remove-MgBetaDirectoryExternalUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryexternaluserprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-delete-externaluserprofiles?view=graph-rest-beta)
 
 
 

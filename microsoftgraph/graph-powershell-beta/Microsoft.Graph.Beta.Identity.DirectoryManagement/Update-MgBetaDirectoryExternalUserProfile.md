@@ -895,8 +895,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryexternaluserprofile)
-- [](https://learn.microsoft.com/graph/api/externaluserprofile-update?view=graph-rest-beta)
+- [Update-MgBetaDirectoryExternalUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryexternaluserprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externaluserprofile-update?view=graph-rest-beta)
 
 
 

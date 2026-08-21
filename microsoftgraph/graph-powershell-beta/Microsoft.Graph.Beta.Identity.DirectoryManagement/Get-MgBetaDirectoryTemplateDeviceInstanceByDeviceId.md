@@ -432,7 +432,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytemplatedeviceinstancebydeviceid)
+- [Get-MgBetaDirectoryTemplateDeviceInstanceByDeviceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytemplatedeviceinstancebydeviceid)
 
 
 
