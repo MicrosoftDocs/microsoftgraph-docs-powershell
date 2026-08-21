@@ -15,6 +15,9 @@ title: Remove-MgDirectoryAttributeSet
 
 Delete navigation property attributeSets for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

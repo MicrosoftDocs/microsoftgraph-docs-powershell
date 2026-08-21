@@ -15,6 +15,9 @@ title: Get-MgDirectoryRoleMemberCountAsDevice
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleMemberCountAsDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMemberCountAsDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
