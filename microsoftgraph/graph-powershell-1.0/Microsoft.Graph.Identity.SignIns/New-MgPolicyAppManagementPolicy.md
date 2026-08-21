@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPolicyAppManagementPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgPolicyAppManagementPolicy
 ## SYNOPSIS
 
 Create an appManagementPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 
 Create an appManagementPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -111,10 +99,6 @@ $params = @{
 }
 
 New-MgPolicyAppManagementPolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgPolicyAppManagementPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -563,7 +547,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphAppManagementPolicy>`: appManagementPolicy
+BODYPARAMETER <IMicrosoftGraphAppManagementPolicy>: appManagementPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -619,7 +603,7 @@ For existing applications, the enforcement date can be retroactively applied.
           [State <String>]: appManagementRestrictionState
         [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
 
-RESTRICTIONS `<IMicrosoftGraphCustomAppManagementConfiguration>`: customAppManagementConfiguration
+RESTRICTIONS <IMicrosoftGraphCustomAppManagementConfiguration>: customAppManagementConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of keyCredential restrictions settings to be applied to an application or service principal.
     [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
@@ -662,27 +646,5 @@ For existing applications, the enforcement date can be retroactively applied.
 
 ## RELATED LINKS
 
-- [New-MgPolicyAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy)
+- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-1.0)

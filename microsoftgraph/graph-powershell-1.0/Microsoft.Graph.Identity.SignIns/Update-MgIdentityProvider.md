@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityProvider
 ---
@@ -16,9 +16,6 @@ title: Update-MgIdentityProvider
 Update the properties of the specified identity provider configured in the tenant.
 Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently update a socialIdentityProvider, or an appleManagedIdentityProvider resource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ Update the properties of the specified identity provider configured in the tenan
 Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently update a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityProvider.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityProvider.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update a specific **social identity provider** (Microsoft Entra ID or Azure AD B2C)
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -95,12 +83,7 @@ $params = @{
 
 Update-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 
-```
-This example will update a specific **social identity provider** (microsoft entra id or azure ad b2c)
-
-### Example 2: Update a specific **Apple identity provider** (only for Azure AD B2C)
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -110,10 +93,6 @@ $params = @{
 }
 
 Update-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
-
-```
-This example will update a specific **apple identity provider** (only for azure ad b2c)
-
 
 ## PARAMETERS
 
@@ -529,13 +508,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
+BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>: identityProviderBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: The display name of the identity provider.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -605,27 +584,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityproviderbase-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityprovider)
+- [](https://learn.microsoft.com/graph/api/identityproviderbase-update?view=graph-rest-1.0)

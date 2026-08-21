@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgAvailableIdentityProviderType
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgAvailableIdentityProviderType
 ## SYNOPSIS
 
 Get all identity providers supported in a directory.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaAvailableIdentityProviderType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,37 +35,19 @@ This cmdlet has the following aliases,
 
 Get all identity providers supported in a directory.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List all identity providers available in a Microsoft Entra directory
 
-```powershell
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Invoke-MgAvailableIdentityProviderType
-
-```
-This example will list all identity providers available in a microsoft entra directory
-
-### Example 2: List all identity providers available in an Azure AD B2C directory
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Invoke-MgAvailableIdentityProviderType
 
-```
-This example will list all identity providers available in an azure ad b2c directory
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Invoke-MgAvailableIdentityProviderType
 
 ## PARAMETERS
 
@@ -370,27 +349,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Invoke-MgAvailableIdentityProviderType](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype)
+- [](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-1.0)

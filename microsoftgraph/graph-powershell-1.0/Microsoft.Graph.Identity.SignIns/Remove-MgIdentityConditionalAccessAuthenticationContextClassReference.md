@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessauthenticationcontextclassreference
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgIdentityConditionalAccessAuthenticationContextClassReference
 ---
@@ -14,9 +14,6 @@ title: Remove-MgIdentityConditionalAccessAuthenticationContextClassReference
 ## SYNOPSIS
 
 Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId
-
-```
-This example shows how to use the Remove-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
-
 
 ## PARAMETERS
 
@@ -400,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -470,27 +454,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessauthenticationcontextclassreference)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessauthenticationcontextclassreference)
+- [](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-delete?view=graph-rest-1.0)

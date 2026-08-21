@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAuthorizationPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgPolicyAuthorizationPolicy
 ## SYNOPSIS
 
 Update the properties of an authorizationPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an authorizationPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.Authorization,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.Authorization,  |
-
 ## EXAMPLES
-### Example 1: Update or set Guest user access level for the tenant
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -73,12 +61,7 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-```
-This example will update or set guest user access level for the tenant
-
-### Example 2: Block MSOL PowerShell in tenant
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -88,12 +71,7 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-```
-This example will block msol powershell in tenant
-
-### Example 3: Disable default user role's permission to create applications
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -105,12 +83,7 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-```
-This example will disable default user role's permission to create applications
-
-### Example 4: Enable administrators to use Self-Serve Password Reset feature
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -120,12 +93,7 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-```
-This example enables administrators to use Self-Serve Password Reset feature. To disable this feature, set `allowedToUseSSPR` to `$false`.
-
-### Example 5: Disable user consent to apps for default user role
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -138,12 +106,7 @@ $params = @{
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
 
-```
-This example will disable user consent to apps for default user role
-
-### Example 6: Enable user consent to apps, subject to app consent policy
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -156,10 +119,6 @@ $params = @{
 }
 
 Update-MgPolicyAuthorizationPolicy -BodyParameter $params
-
-```
-This example will enable user consent to apps, subject to app consent policy
-
 
 ## PARAMETERS
 
@@ -712,7 +671,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy>`: authorizationPolicy
+BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy>: authorizationPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -752,7 +711,7 @@ An empty list indicates user consent to apps is disabled.
   [GuestUserRoleId <String>]: Represents role templateId for the role that should be granted to guests.
 Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
-DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions>`: defaultUserRolePermissions
+DEFAULTUSERROLEPERMISSIONS <IMicrosoftGraphDefaultUserRolePermissions>: defaultUserRolePermissions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedToCreateApps <Boolean?>]: Indicates whether the default user role can create applications.
 This setting corresponds to the Users can register applications setting in the User settings menu in the Microsoft Entra admin center.
@@ -772,27 +731,5 @@ An empty list indicates user consent to apps is disabled.
 
 ## RELATED LINKS
 
-- [Update-MgPolicyAuthorizationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
+- [](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)

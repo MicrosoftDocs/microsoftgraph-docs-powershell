@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityProvider
 ---
@@ -16,9 +16,6 @@ title: New-MgIdentityProvider
 Create an identity provider object that is of the type specified in the request body.
 Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ Create an identity provider object that is of the type specified in the request 
 Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityProvider.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityProvider.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a specific social identity provider (Microsoft Entra ID and Azure AD B2C)
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -76,12 +64,7 @@ $params = @{
 
 New-MgIdentityProvider -BodyParameter $params
 
-```
-This example will create a specific social identity provider (microsoft entra id and azure ad b2c)
-
-### Example 2: Create Apple identity provider (only for Azure AD B2C)
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -95,10 +78,6 @@ $params = @{
 }
 
 New-MgIdentityProvider -BodyParameter $params
-
-```
-This example will create apple identity provider (only for azure ad b2c)
-
 
 ## PARAMETERS
 
@@ -431,7 +410,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
+BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>: identityProviderBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -440,27 +419,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0)

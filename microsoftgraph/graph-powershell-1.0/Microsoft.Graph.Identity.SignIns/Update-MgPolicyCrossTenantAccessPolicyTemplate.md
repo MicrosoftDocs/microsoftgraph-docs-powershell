@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyCrossTenantAccessPolicyTemplate
 ---
@@ -14,9 +14,6 @@ title: Update-MgPolicyCrossTenantAccessPolicyTemplate
 ## SYNOPSIS
 
 Update the navigation property templates in policies
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,13 +47,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property templates in policies
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | MultiTenantOrganization.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -412,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPolicyTemplate>`: policyTemplate
+BODYPARAMETER <IMicrosoftGraphPolicyTemplate>: policyTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -454,7 +453,7 @@ Read-only.
       [IsMfaAccepted <Boolean?>]: Specifies whether MFA from external Microsoft Entra organizations is trusted.
     [TemplateApplicationLevel <String>]: templateApplicationLevel
 
-MULTITENANTORGANIZATIONIDENTITYSYNCHRONIZATION `<IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>`: multiTenantOrganizationIdentitySyncPolicyTemplate
+MULTITENANTORGANIZATIONIDENTITYSYNCHRONIZATION <IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>: multiTenantOrganizationIdentitySyncPolicyTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -465,7 +464,7 @@ Read-only.
 false causes any current user synchronization from the source tenant to the target tenant to stop.
 This property has no impact on existing users who have already been synchronized.
 
-MULTITENANTORGANIZATIONPARTNERCONFIGURATION `<IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>`: multiTenantOrganizationPartnerConfigurationTemplate
+MULTITENANTORGANIZATIONPARTNERCONFIGURATION <IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>: multiTenantOrganizationPartnerConfigurationTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -496,27 +495,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgPolicyCrossTenantAccessPolicyTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplate)
