@@ -56,8 +56,9 @@ Update the properties of the cloudPcOrganizationSettings object in a tenant.
 | Application | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -72,6 +73,10 @@ $params = @{
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
+
 
 ## PARAMETERS
 
