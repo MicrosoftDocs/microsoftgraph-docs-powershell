@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharealloweduserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintShareAllowedUserByRef
 ---
@@ -14,9 +14,6 @@ title: New-MgPrintShareAllowedUserByRef
 ## SYNOPSIS
 
 Grant the specified user access to submit print jobs to the associated printerShare.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,9 +66,8 @@ This cmdlet has the following aliases,
 Grant the specified user access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -80,10 +76,6 @@ $params = @{
 }
 
 New-MgPrintShareAllowedUserByRef -PrinterShareId $printerShareId -BodyParameter $params
-
-```
-This example shows how to use the New-MgPrintShareAllowedUserByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -116,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -493,12 +485,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -516,27 +508,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgPrintShareAllowedUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharealloweduserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharealloweduserbyref)
+- [](https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-1.0)

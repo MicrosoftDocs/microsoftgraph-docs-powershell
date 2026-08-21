@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharealloweduserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPrintShareAllowedUserByRef
 ---
@@ -14,9 +14,6 @@ title: Remove-MgPrintShareAllowedUserByRef
 ## SYNOPSIS
 
 Revoke the specified user's access to submit print jobs to the associated printerShare.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,17 +63,12 @@ This cmdlet has the following aliases,
 Revoke the specified user's access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Remove-MgPrintShareAllowedUserByRef -PrinterShareId $printerShareId -UserId $userId
-
-```
-This example shows how to use the Remove-MgPrintShareAllowedUserByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -468,7 +460,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -486,27 +478,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgPrintShareAllowedUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharealloweduserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharealloweduserbyref)
+- [](https://learn.microsoft.com/graph/api/printershare-delete-alloweduser?view=graph-rest-1.0)

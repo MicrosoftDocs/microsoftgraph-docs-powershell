@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprintertasktrigger
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPrintPrinterTaskTrigger
 ---
@@ -14,9 +14,6 @@ title: Update-MgPrintPrinterTaskTrigger
 ## SYNOPSIS
 
 Update the navigation property taskTriggers in print
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property taskTriggers in print
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -540,7 +547,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
+BODYPARAMETER <IMicrosoftGraphPrintTaskTrigger>: printTaskTrigger
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -571,7 +578,7 @@ Read-only.
       [Trigger <IMicrosoftGraphPrintTaskTrigger>]: printTaskTrigger
   [Event <String>]: printEvent
 
-DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
+DEFINITION <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -602,7 +609,7 @@ Read-only.
       [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
       [Event <String>]: printEvent
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -620,27 +627,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPrintPrinterTaskTrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprintertasktrigger)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprintertasktrigger)
