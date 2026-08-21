@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotepagecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 08/21/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupOnenotePageContent
 ---
