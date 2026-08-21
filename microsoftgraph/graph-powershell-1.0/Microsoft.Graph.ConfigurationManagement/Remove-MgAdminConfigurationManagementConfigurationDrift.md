@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property configurationDrifts for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -396,6 +386,7 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagementconfigurationdrift)
+
 
 
 
