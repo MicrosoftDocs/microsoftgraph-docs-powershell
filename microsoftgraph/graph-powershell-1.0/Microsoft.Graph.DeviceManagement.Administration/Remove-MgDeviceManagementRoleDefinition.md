@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementRoleDefinition
 
 Delete navigation property roleDefinitions for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
