@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextension
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 ## SYNOPSIS
 
 Update the properties of a customTaskExtension object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -82,18 +79,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a customTaskExtension object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -121,10 +109,6 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -787,7 +771,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceCustomTaskExtension>`: customTaskExtension
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceCustomTaskExtension>: customTaskExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]: customExtensionAuthenticationConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1712,7 +1696,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6105,8 +6089,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6120,14 +6104,14 @@ NOTE: For more information about the permissions for members and guests, see Wha
   [LastModifiedBy <IMicrosoftGraphUser>]: user
   [LastModifiedDateTime <DateTime?>]: When the custom extension was last modified.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
-CALLBACKCONFIGURATION `<IMicrosoftGraphCustomExtensionCallbackConfiguration>`: customExtensionCallbackConfiguration
+CALLBACKCONFIGURATION <IMicrosoftGraphCustomExtensionCallbackConfiguration>: customExtensionCallbackConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TimeoutDuration <TimeSpan?>]: The maximum duration in ISO 8601 format that Microsoft Entra ID will wait for a resume action for the callout it sent to the logic app.
 The valid range for custom extensions in lifecycle workflows is five minutes to three hours.
 The valid range for custom extensions in entitlement management is between 5 minutes and 14 days.
 For example, PT3H refers to three hours, P3D refers to three days, PT10M refers to ten minutes.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
+CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>: customExtensionClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaximumRetries <Int32?>]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
@@ -6136,7 +6120,7 @@ If null, the default for the service applies.
 The valid range is between 200 and 2000 milliseconds.
 Default duration is 1000.
 
-CREATEDBY `<IMicrosoftGraphUser>`: user
+CREATEDBY <IMicrosoftGraphUser>: user
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -7037,7 +7021,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11430,8 +11414,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11442,7 +11426,7 @@ Requires $select to retrieve.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -11517,7 +11501,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-LASTMODIFIEDBY `<IMicrosoftGraphUser>`: user
+LASTMODIFIEDBY <IMicrosoftGraphUser>: user
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -12418,7 +12402,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -16811,8 +16795,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -16826,27 +16810,5 @@ NOTE: For more information about the permissions for members and guests, see Wha
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextension)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-update?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementConnectedOrganization
 ---
@@ -14,9 +14,6 @@ title: Update-MgEntitlementManagementConnectedOrganization
 ## SYNOPSIS
 
 Update a connectedOrganization object to change one or more of its properties.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Update a connectedOrganization object to change one or more of its properties.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -99,10 +87,6 @@ $params = @{
 }
 
 Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgEntitlementManagementConnectedOrganization Cmdlet.
-
 
 ## PARAMETERS
 
@@ -317,7 +301,7 @@ HelpMessage: ''
 
 ### -ExternalSponsors
 
-
+.
 To construct, see NOTES section for EXTERNALSPONSORS properties and create a hash table.
 
 ```yaml
@@ -492,7 +476,7 @@ HelpMessage: ''
 
 ### -InternalSponsors
 
-
+.
 To construct, see NOTES section for INTERNALSPONSORS properties and create a hash table.
 
 ```yaml
@@ -715,7 +699,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConnectedOrganization>`: connectedOrganization
+BODYPARAMETER <IMicrosoftGraphConnectedOrganization>: connectedOrganization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -744,7 +728,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -828,27 +812,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [Update-MgEntitlementManagementConnectedOrganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization)
+- [](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0)
