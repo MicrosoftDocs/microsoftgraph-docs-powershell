@@ -15,6 +15,9 @@ title: Get-MgGroupDriveListContentTypeColumnLink
 
 The collection of columns that are required by this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
