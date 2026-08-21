@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenissuancepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalTokenIssuancePolicyByRef
 ---
@@ -14,9 +14,6 @@ title: Get-MgServicePrincipalTokenIssuancePolicyByRef
 ## SYNOPSIS
 
 The tokenIssuancePolicies assigned to this service principal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenIssuancePolicyByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,6 +36,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The tokenIssuancePolicies assigned to this service principal.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -427,27 +434,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgServicePrincipalTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenissuancepolicybyref)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenissuancepolicybyref)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServicePrincipalClaimMappingPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgServicePrincipalClaimMappingPolicy
 ## SYNOPSIS
 
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalClaimMappingPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgServicePrincipalClaimMappingPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -492,27 +476,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgServicePrincipalClaimMappingPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicy)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-1.0)

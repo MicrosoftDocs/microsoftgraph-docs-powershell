@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -15,9 +15,6 @@ title: New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 
 Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
 You can configure a maximum of 20 approved client apps.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 Create a new approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
 You can configure a maximum of 20 approved client apps.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -94,10 +82,6 @@ $params = @{
 }
 
 New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
-This example shows how to use the New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -513,13 +497,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphApprovedClientApp>`: approvedClientApp
+BODYPARAMETER <IMicrosoftGraphApprovedClientApp>: approvedClientApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: The display name of the approved client application.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -549,27 +533,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-post-approvedclientapps?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-post-approvedclientapps?view=graph-rest-1.0)

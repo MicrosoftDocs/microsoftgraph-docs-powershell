@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgApplicationKey
 ---
@@ -18,9 +18,6 @@ This method, along with removeKey can be used by an application to automate roll
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ As part of the request validation for this method, a proof of possession of an e
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add a new key credential to an application
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -106,12 +94,7 @@ $params = @{
 
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 
-```
-This example will add a new key credential to an application
-
-### Example 2: Add a key credential and an associated password for the key
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Applications
 
@@ -128,10 +111,6 @@ $params = @{
 }
 
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example will add a key credential and an associated password for the key
-
 
 ## PARAMETERS
 
@@ -192,7 +171,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -408,8 +387,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Proof
 
-
+.
 
 ```yaml
 Type: System.String
@@ -575,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17CrvdcApplicationsApplicationIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17CrvdcApplicationsApplicationIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [KeyCredential <IMicrosoftGraphKeyCredential>]: keyCredential
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -617,7 +597,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
   [Proof <String>]: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -644,7 +624,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [UniqueName <String>]: Alternate key of application
   [UserId <String>]: The unique identifier of user
 
-KEYCREDENTIAL `<IMicrosoftGraphKeyCredential>`: keyCredential
+KEYCREDENTIAL <IMicrosoftGraphKeyCredential>: keyCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomKeyIdentifier <Byte[]>]: A 40-character binary type that can be used to identify the credential.
 Optional.
@@ -665,7 +645,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Type <String>]: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
   [Usage <String>]: A string that describes the purpose for which the key can be used; for example, Verify.
 
-PASSWORDCREDENTIAL `<IMicrosoftGraphPasswordCredential>`: passwordCredential
+PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential>: passwordCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomKeyIdentifier <Byte[]>]: Do not use.
   [DisplayName <String>]: Friendly name for the password.
@@ -687,27 +667,5 @@ Optional.
 
 ## RELATED LINKS
 
-- [Add-MgApplicationKey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-addkey?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey)
+- [](https://learn.microsoft.com/graph/api/application-addkey?view=graph-rest-1.0)
