@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription
 Locale: en-US
 Module Name: Microsoft.Graph.ChangeNotifications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSubscription
 ---
@@ -15,9 +15,6 @@ title: Get-MgSubscription
 
 Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Get-MgBetaSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.ChangeNotifications
 
 Get-MgSubscription
-
-```
-This example shows how to use the Get-MgSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -533,34 +525,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   [SubscriptionId <String>]: The unique identifier of subscription
 
 
 ## RELATED LINKS
 
-- [Get-MgSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription)
+- [](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0)
