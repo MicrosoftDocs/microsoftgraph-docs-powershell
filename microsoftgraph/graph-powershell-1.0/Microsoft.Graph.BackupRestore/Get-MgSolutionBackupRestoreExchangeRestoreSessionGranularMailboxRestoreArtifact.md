@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact
 ---
@@ -14,9 +14,6 @@ title: Get-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreAr
 ## SYNOPSIS
 
 Get granularMailboxRestoreArtifacts from solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,6 +58,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get granularMailboxRestoreArtifacts from solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -549,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -587,27 +594,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangerestoresessiongranularmailboxrestoreartifact)
