@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property hostSslCertificates in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1558,6 +1548,7 @@ Note: This is not the signature.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostsslcertificate)
+
 
 
 

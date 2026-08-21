@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to uploadedStreams for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -681,6 +671,7 @@ Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
+
 
 
 

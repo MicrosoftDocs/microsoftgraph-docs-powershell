@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property collaboration in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -653,6 +643,7 @@ This is full URL string, including query parameters.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycollaboration)
+
 
 
 
