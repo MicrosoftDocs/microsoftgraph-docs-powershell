@@ -16,6 +16,9 @@ title: Get-MgUserSponsor
 Get an agentUser's sponsors.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsor](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
