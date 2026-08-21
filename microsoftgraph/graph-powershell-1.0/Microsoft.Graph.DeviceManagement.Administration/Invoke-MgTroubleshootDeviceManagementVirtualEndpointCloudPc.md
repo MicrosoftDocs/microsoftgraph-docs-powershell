@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc
 ---
@@ -47,26 +47,13 @@ This cmdlet has the following aliases,
 Troubleshoot a specific cloudPC object.
 Use this API to check the health status of the Cloud PC and the session host.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId
-
-```
-This example shows how to use the Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet.
-
 
 ## PARAMETERS
 
@@ -377,7 +364,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -409,27 +396,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgtroubleshootdevicemanagementvirtualendpointcloudpc)
+- [](https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0)

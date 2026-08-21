@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementRemoteAssistancePartner
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementRemoteAssistancePartner
 ## SYNOPSIS
 
 Create a new remoteAssistancePartner object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 
 Create a new remoteAssistancePartner object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -74,10 +62,6 @@ $params = @{
 }
 
 New-MgDeviceManagementRemoteAssistancePartner -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementRemoteAssistancePartner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -473,7 +457,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRemoteAssistancePartner>`: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner>: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -485,27 +469,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementRemoteAssistancePartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-create?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner)
+- [](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-create?view=graph-rest-1.0)
