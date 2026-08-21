@@ -488,7 +488,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetabusinessflowtemplate)
+- [Remove-MgBetaBusinessFlowTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetabusinessflowtemplate)
 
 
 

@@ -1497,7 +1497,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequest)
+- [New-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequest)
 
 
 

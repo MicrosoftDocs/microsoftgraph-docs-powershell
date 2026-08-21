@@ -646,8 +646,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticawpermissioncreepindexdistribution)
-- [](https://learn.microsoft.com/graph/api/permissionsanalytics-list-permissionscreepindexdistributions?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionanalyticawpermissioncreepindexdistribution)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permissionsanalytics-list-permissionscreepindexdistributions?view=graph-rest-beta)
 
 
 

@@ -808,7 +808,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfilelocalizationversion)
+- [New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfilelocalizationversion)
 
 
 

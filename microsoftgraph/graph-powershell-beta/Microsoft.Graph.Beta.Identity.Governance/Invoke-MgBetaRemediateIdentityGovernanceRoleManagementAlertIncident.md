@@ -498,7 +498,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaremediateidentitygovernancerolemanagementalertincident)
+- [Invoke-MgBetaRemediateIdentityGovernanceRoleManagementAlertIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaremediateidentitygovernancerolemanagementalertincident)
 
 
 
