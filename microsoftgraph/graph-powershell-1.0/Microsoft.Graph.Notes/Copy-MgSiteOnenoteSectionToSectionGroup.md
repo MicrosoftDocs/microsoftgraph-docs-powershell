@@ -67,6 +67,14 @@ This cmdlet has the following aliases,
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Notes.Create, Notes.ReadWrite,  |
+| Application | Notes.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
