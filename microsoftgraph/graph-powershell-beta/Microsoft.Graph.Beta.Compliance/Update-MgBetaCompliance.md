@@ -19284,7 +19284,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance)
+- [Update-MgBetaCompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance)
 
 
 
