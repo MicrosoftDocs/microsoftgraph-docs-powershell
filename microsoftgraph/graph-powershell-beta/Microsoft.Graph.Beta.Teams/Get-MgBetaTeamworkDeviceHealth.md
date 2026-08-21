@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
