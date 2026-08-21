@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgServiceAnnouncementMessageAttachmentArchive
 ---
@@ -14,9 +14,6 @@ title: Get-MgServiceAnnouncementMessageAttachmentArchive
 ## SYNOPSIS
 
 Get the list of attachments associated with a service message.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Get the list of attachments associated with a service message.
 
 ## EXAMPLES
-### Example 1: Get a zip file of all attachments in stream for a message
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
-
-```
-This example will get a zip file of all attachments in stream for a message
-
 
 ## PARAMETERS
 
@@ -346,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   [ServiceAnnouncementAttachmentId <String>]: The unique identifier of serviceAnnouncementAttachment
   [ServiceHealthId <String>]: The unique identifier of serviceHealth
   [ServiceHealthIssueId <String>]: The unique identifier of serviceHealthIssue
@@ -355,27 +347,5 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgServiceAnnouncementMessageAttachmentArchive](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive)
+- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-list-attachments?view=graph-rest-1.0)
