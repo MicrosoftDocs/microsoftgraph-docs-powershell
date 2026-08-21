@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventpermanent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserEventPermanent
 ---
@@ -17,9 +17,6 @@ Permanently delete an event and place it in the Purges folder in the dumpster in
 Email clients such as Outlook or the Outlook on the web can't access permanently deleted items.
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserEventPermanent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventPermanent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,26 +50,13 @@ Email clients such as Outlook or the Outlook on the web can't access permanently
 Unless there's a hold set on the mailbox, the items are permanently deleted after a set period of time.
 For more information about item retention, see Configure Deleted Item retention and Recoverable Items quotas.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
-| Application | Calendars.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaUserEventPermanent -UserId $userId -EventId $eventId
-
-```
-This example shows how to use the Remove-MgBetaUserEventPermanent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -404,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -429,27 +413,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserEventPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventpermanent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventpermanent)
+- [](https://learn.microsoft.com/graph/api/event-permanentdelete?view=graph-rest-beta)

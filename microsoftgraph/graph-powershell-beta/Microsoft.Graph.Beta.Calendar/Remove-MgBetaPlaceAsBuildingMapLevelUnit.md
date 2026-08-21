@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPlaceAsBuildingMapLevelUnit
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaPlaceAsBuildingMapLevelUnit
 ## SYNOPSIS
 
 Delete a unitMap object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsBuildingMapLevelUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Delete a unitMap object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId
-
-```
-This example shows how to use the Remove-MgBetaPlaceAsBuildingMapLevelUnit Cmdlet.
-
 
 ## PARAMETERS
 
@@ -432,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -457,27 +449,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelunit)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unitmap-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelunit)
+- [](https://learn.microsoft.com/graph/api/unitmap-delete?view=graph-rest-beta)
