@@ -86,8 +86,9 @@ To learn more about the steps involved in the backend before a mail is delivered
 | Application | Mail.Send,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -119,7 +120,12 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -148,7 +154,12 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -182,7 +193,12 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
@@ -213,6 +229,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+
 
 ## PARAMETERS
 
