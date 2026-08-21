@@ -455,7 +455,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityCategoryTemplate>: categoryTemplate
+BODYPARAMETER `<IMicrosoftGraphSecurityCategoryTemplate>`: categoryTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -478,7 +478,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -510,3 +510,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
 - [](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
