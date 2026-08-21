@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstoragequota
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSettingStorageQuota
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserSettingStorageQuota
 ## SYNOPSIS
 
 Update the navigation property quota in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingStorageQuota](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingStorageQuota?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property quota in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -174,7 +181,7 @@ HelpMessage: ''
 
 ### -Deleted
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -651,7 +658,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedStorageQuota>`: unifiedStorageQuota
+BODYPARAMETER <IMicrosoftGraphUnifiedStorageQuota>: unifiedStorageQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -670,7 +677,7 @@ The possible values are: normal, nearing, critical, full, and overLimit.
   [Total <Int64?>]: Total allowed storage space in bytes.
   [Used <Int64?>]: Total space used in bytes.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -714,27 +721,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserSettingStorageQuota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstoragequota)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstoragequota)

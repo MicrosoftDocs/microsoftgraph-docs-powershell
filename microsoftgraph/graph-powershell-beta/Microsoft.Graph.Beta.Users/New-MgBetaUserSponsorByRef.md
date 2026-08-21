@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersponsorbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserSponsorByRef
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaUserSponsorByRef
 
 Assign an agentUser a sponsor.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserSponsorByRef](/powershell/module/Microsoft.Graph.Users/New-MgUserSponsorByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,18 +65,9 @@ This cmdlet has the following aliases,
 Assign an agentUser a sponsor.
 Sponsors are users and groups that are responsible for this agent user's privileges in the tenant and for keeping the agent user's information and access up to date.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
@@ -88,10 +76,6 @@ $params = @{
 }
 
 New-MgBetaUserSponsorByRef -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserSponsorByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -124,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -501,12 +485,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -543,27 +527,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersponsorbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-post-sponsors?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersponsorbyref)
+- [](https://learn.microsoft.com/graph/api/agentuser-post-sponsors?view=graph-rest-beta)

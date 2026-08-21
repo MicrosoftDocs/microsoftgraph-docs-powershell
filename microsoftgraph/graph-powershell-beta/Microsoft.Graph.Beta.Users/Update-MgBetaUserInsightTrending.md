@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsighttrending
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserInsightTrending
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserInsightTrending
 ## SYNOPSIS
 
 Update the navigation property trending in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserInsightTrending](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsightTrending?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property trending in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -629,7 +636,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTrending>`: trending
+BODYPARAMETER <IMicrosoftGraphTrending>: trending
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -664,7 +671,7 @@ See the Type property values section, for supported types.
 The larger the number, the more the document is currently trending around the user (the more relevant it is).
 Returned documents are sorted by this value.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -698,18 +705,18 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-RESOURCE `<IMicrosoftGraphEntity>`: entity
+RESOURCE <IMicrosoftGraphEntity>: entity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-RESOURCEREFERENCE `<IMicrosoftGraphResourceReference>`: resourceReference
+RESOURCEREFERENCE <IMicrosoftGraphResourceReference>: resourceReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: 
   [Type <String>]: 
   [WebUrl <String>]: 
 
-RESOURCEVISUALIZATION `<IMicrosoftGraphResourceVisualization>`: resourceVisualization
+RESOURCEVISUALIZATION <IMicrosoftGraphResourceVisualization>: resourceVisualization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerDisplayName <String>]: A string describing where the item is stored.
 For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.
@@ -729,27 +736,4 @@ See the Type property values section, for supported types.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserInsightTrending](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsighttrending)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsighttrending)
