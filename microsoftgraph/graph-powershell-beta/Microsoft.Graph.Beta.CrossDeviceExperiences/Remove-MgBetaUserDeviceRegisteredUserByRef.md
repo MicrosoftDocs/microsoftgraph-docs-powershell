@@ -1,15 +1,15 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregistereduserdirectoryobjectbyref
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/Remove-MgBetaUserDeviceRegisteredUserByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef
+title: Remove-MgBetaUserDeviceRegisteredUserByRef
 ---
 
-# Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef
+# Remove-MgBetaUserDeviceRegisteredUserByRef
 
 ## SYNOPSIS
 
@@ -20,7 +20,7 @@ Delete ref of navigation property registeredUsers for users
 ### Delete (Default)
 
 ```
-Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef -DeviceId <string>
+Remove-MgBetaUserDeviceRegisteredUserByRef -DeviceId <string>
  -DirectoryObjectId <string> -UserId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
@@ -30,7 +30,7 @@ Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef -DeviceId <string>
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef
+Remove-MgBetaUserDeviceRegisteredUserByRef
  -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
@@ -432,7 +432,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregistereduserdirectoryobjectbyref)
+- [Remove-MgBetaUserDeviceRegisteredUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/Remove-MgBetaUserDeviceRegisteredUserByRef)
 
 
 

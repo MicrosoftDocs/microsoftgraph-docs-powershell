@@ -1,26 +1,26 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregistereduserdirectoryobjectbyref
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/Remove-MgBetaUserDeviceRegisteredOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef
+title: Remove-MgBetaUserDeviceRegisteredOwnerByRef
 ---
 
-# Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef
+# Remove-MgBetaUserDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
 
-Delete ref of navigation property registeredUsers for users
+Delete ref of navigation property registeredOwners for users
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef -DeviceId <string>
+Remove-MgBetaUserDeviceRegisteredOwnerByRef -DeviceId <string>
  -DirectoryObjectId <string> -UserId <string> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
@@ -30,7 +30,7 @@ Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef -DeviceId <string>
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef
+Remove-MgBetaUserDeviceRegisteredOwnerByRef
  -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
@@ -44,7 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete ref of navigation property registeredUsers for users
+Delete ref of navigation property registeredOwners for users
 
 ## PARAMETERS
 
@@ -432,7 +432,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregistereduserdirectoryobjectbyref)
+- [Remove-MgBetaUserDeviceRegisteredOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/Remove-MgBetaUserDeviceRegisteredOwnerByRef)
 
 
 
