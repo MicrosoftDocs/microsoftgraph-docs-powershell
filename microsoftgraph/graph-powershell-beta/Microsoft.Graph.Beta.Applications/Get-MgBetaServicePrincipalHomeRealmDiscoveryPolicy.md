@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalhomerealmdiscoverypolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy
 ## SYNOPSIS
 
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -492,27 +476,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalhomerealmdiscoverypolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-homerealmdiscoverypolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalhomerealmdiscoverypolicy)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-homerealmdiscoverypolicies?view=graph-rest-beta)

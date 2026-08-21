@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetagroupapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupAppRoleAssignment
 ---
@@ -17,9 +17,6 @@ Use this API to assign an app role to a security group.
 All direct members of the group will be considered assigned.
 Security groups with dynamic memberships are supported.
 To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/New-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,18 +75,10 @@ All direct members of the group will be considered assigned.
 Security groups with dynamic memberships are supported.
 To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AppRoleAssignment.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Assign an app role to a group
 
-```powershell
+### EXAMPLE 1
+
 $appRoleAssignment = @{
   "principalId"= "f07a8d78-f18c-4c02-b339-9ebace025122"
   "resourceId"= "1c48f923-4fbb-4d37-b772-4d577eefec9e"
@@ -110,19 +99,6 @@ ResourceDisplayName  : Office 365 SharePoint Online
 ResourceId           : 1c48f923-4fbb-4d37-b772-4d577eefec9e
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#groups('f07a8d78-f18c-4c02-b339-9ebace025122')/appRoleAssignments/$entity], [@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-
                        b10d-14f1195d665f/directoryObjects/$/Microsoft.DirectoryServices.Group('f07a8d78-f18c-4c02-b339-9ebace025122')/appRoleAssignments/eI168IzxAkyzOZ66zgJRIqVVeeA1CVFKmaBn-MgBetan0Bw]}
-```
-
-In this example, the first command defines the `$appRoleAssignment` variable that defines the following:
-
--`principalId`: The id of the group to which you are assigning the app role.
-
--`resourceId`: The id of the resource servicePrincipal which has defined the app role.
-
--`appRoleId`: The id of the appRole (defined on the resource service principal) to assign to the group. 
-
-Learn more about the [AppRoleAssignment resource](/graph/api/resources/approleassignment?view=graph-rest-1.0).
-
-The second command adds the role to the specified group.
 
 ## PARAMETERS
 
@@ -744,7 +720,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAppRoleAssignment>`: appRoleAssignment
+BODYPARAMETER <IMicrosoftGraphAppRoleAssignment>: appRoleAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -774,7 +750,7 @@ Maximum length is 256 characters.
 Required on create.
 Supports $filter (eq only).
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -815,27 +791,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetagroupapproleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetagroupapproleassignment)
+- [](https://learn.microsoft.com/graph/api/group-post-approleassignments?view=graph-rest-beta)

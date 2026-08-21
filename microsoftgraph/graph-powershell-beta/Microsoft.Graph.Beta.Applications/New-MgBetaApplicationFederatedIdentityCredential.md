@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaApplicationFederatedIdentityCredential
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaApplicationFederatedIdentityCredential
 Create a new federatedIdentityCredential object for an application or an agentIdentityBlueprint.
 By configuring a trust relationship between your Microsoft Entra application registration or agent identity blueprint and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application or agent identity blueprint.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ Create a new federatedIdentityCredential object for an application or an agentId
 By configuring a trust relationship between your Microsoft Entra application registration or agent identity blueprint and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application or agent identity blueprint.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -102,10 +90,6 @@ $params = @{
 }
 
 New-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaApplicationFederatedIdentityCredential Cmdlet.
-
 
 ## PARAMETERS
 
@@ -681,7 +665,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFederatedIdentityCredential>`: federatedIdentityCredential
+BODYPARAMETER <IMicrosoftGraphFederatedIdentityCredential>: federatedIdentityCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -721,7 +705,7 @@ It has a limit of 600 characters.
 If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
 
-CLAIMSMATCHINGEXPRESSION `<IMicrosoftGraphFederatedIdentityExpression>`: federatedIdentityExpression
+CLAIMSMATCHINGEXPRESSION <IMicrosoftGraphFederatedIdentityExpression>: federatedIdentityExpression
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LanguageVersion <Int32?>]: Indicated the language version to be used.
 Should always be set to 1.
@@ -729,7 +713,7 @@ Required.
   [Value <String>]: Indicates the configured expression.
 Required.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -770,27 +754,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential)
+- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-post?view=graph-rest-beta)

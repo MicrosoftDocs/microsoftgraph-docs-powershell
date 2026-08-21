@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedCl
 ## SYNOPSIS
 
 Delete a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId -ApprovedClientAppId $approvedClientAppId
-
-```
-This example shows how to use the Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -421,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -462,27 +446,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-delete-approvedclientapps?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-delete-approvedclientapps?view=graph-rest-beta)

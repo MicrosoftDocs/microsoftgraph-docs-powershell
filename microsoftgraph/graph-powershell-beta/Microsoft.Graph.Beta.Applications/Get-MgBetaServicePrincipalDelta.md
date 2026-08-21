@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaServicePrincipalDelta
 
 Get newly created, updated, or deleted service principals, agent identities, and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 Get newly created, updated, or deleted service principals, agent identities, and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Application.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaServicePrincipalDelta
-
-```
-This example shows how to use the Get-MgBetaServicePrincipalDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -473,27 +457,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaldelta)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-delta?view=graph-rest-beta)

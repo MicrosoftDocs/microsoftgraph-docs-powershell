@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenlifetimepolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaServicePrincipalTokenLifetimePolicyByRef
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaServicePrincipalTokenLifetimePolicyByRef
 
 List the tokenLifetimePolicy objects that are assigned to a servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to a service principal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTokenLifetimePolicyByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -42,13 +39,15 @@ This cmdlet has the following aliases,
 List the tokenLifetimePolicy objects that are assigned to a servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to a service principal.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -437,28 +436,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaServicePrincipalTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenlifetimepolicybyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-tokenlifetimepolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenlifetimepolicybyref)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-tokenlifetimepolicies?view=graph-rest-beta)
