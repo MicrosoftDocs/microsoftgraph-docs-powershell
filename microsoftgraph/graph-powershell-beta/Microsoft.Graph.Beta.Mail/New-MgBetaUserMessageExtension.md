@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Mail
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserMessageExtension
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaUserMessageExtension
 ## SYNOPSIS
 
 Create new navigation property to extensions for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,9 +64,9 @@ This cmdlet has the following aliases,
 Create new navigation property to extensions for users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
@@ -82,11 +79,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaUserMessageExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -501,7 +493,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -517,26 +509,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserMessageExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension)
