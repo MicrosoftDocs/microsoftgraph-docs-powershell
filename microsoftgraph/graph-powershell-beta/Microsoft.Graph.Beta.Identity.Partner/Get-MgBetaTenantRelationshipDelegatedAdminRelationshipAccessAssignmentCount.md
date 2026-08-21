@@ -15,6 +15,9 @@ title: Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCou
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
