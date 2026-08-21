@@ -586,8 +586,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mguploaddirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-upload?view=graph-rest-1.0)
+- [Invoke-MgUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mguploaddirectorypublickeyinfrastructurecertificatebasedauthconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthpki-upload?view=graph-rest-1.0)
 
 
 

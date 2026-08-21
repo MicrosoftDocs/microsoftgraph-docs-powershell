@@ -610,8 +610,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnamereference)
-- [](https://learn.microsoft.com/graph/api/domain-list-domainnamereferences?view=graph-rest-1.0)
+- [Get-MgDomainNameReference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnamereference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-list-domainnamereferences?view=graph-rest-1.0)
 
 
 

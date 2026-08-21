@@ -402,8 +402,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain)
-- [](https://learn.microsoft.com/graph/api/domain-verify?view=graph-rest-1.0)
+- [Confirm-MgDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-verify?view=graph-rest-1.0)
 
 
 
