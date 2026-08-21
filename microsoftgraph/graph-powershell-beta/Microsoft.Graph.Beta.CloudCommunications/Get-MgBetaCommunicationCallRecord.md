@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecord
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaCommunicationCallRecord
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaCommunicationCallRecord
 
 Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,28 +48,18 @@ Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord:
 
 ## EXAMPLES
-### Example 1: Get basic details
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId
 
-```
-This example will get basic details
-
-### Example 2: Get full details
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)" 
-
-```
-This example will get full details
-
+Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
 
 ## PARAMETERS
 
@@ -362,7 +349,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -392,27 +379,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaCommunicationCallRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecord)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/callrecords-callrecord-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecord)
+- [](https://learn.microsoft.com/graph/api/callrecords-callrecord-get?view=graph-rest-beta)

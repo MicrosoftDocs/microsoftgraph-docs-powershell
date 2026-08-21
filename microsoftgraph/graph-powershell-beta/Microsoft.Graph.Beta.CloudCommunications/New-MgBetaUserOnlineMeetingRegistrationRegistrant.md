@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserOnlineMeetingRegistrationRegistrant
 ---
@@ -68,18 +68,9 @@ This cmdlet has the following aliases,
 Enroll a meeting registrant in an online meeting that has meeting registration enabled on behalf of the registrant.
 This operation has two scenarios: In either scenario, the registrant will receive an email notification that contains their registration information.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetings.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Enroll a signed-in registrant
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -102,12 +93,7 @@ $params = @{
 
 New-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 
-```
-This example will enroll a signed-in registrant
-
-### Example 2: Enroll an anonymous registrant
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -129,10 +115,6 @@ $params = @{
 }
 
 New-MgBetaUserOnlineMeetingRegistrationRegistrant -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
-
-```
-This example will enroll an anonymous registrant
-
 
 ## PARAMETERS
 
@@ -576,14 +558,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMeetingRegistrantBase>`: meetingRegistrantBase
+BODYPARAMETER <IMicrosoftGraphMeetingRegistrantBase>: meetingRegistrantBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [JoinWebUrl <String>]: A unique web URL for the registrant to join the meeting.
 Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -613,27 +595,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserOnlineMeetingRegistrationRegistrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/meetingregistration-post-registrants?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant)
+- [](https://learn.microsoft.com/graph/api/meetingregistration-post-registrants?view=graph-rest-beta)

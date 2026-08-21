@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingvirtualappointmentjoinweburl
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl
 Get a join web URL for a Teams Virtual Appointment.
 This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,27 +48,14 @@ Get a join web URL for a Teams Virtual Appointment.
 This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
 With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | VirtualAppointment.Read, OnlineMeetings.Read, OnlineMeetings.ReadWrite, VirtualAppointment.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl -UserId $userId -OnlineMeetingId $onlineMeetingId
-
-```
-This example shows how to use the Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl Cmdlet.
-
 
 ## PARAMETERS
 
@@ -338,7 +322,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -368,27 +352,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingvirtualappointmentjoinweburl)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingvirtualappointmentjoinweburl)
+- [](https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptmetadatacontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnlineMeetingTranscriptMetadataContent
 ---
@@ -18,9 +18,6 @@ This API supports the retrieval of call transcripts from private chat meetings a
 Private channel meetings are not supported.
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,26 +53,13 @@ Private channel meetings are not supported.
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetingTranscript.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat,  |
-
 ## EXAMPLES
-### Example 1: Get a callTranscript metadataContent
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaUserOnlineMeetingTranscriptMetadataContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
-
-```
-This example will get a calltranscript metadatacontent
-
 
 ## PARAMETERS
 
@@ -405,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -435,27 +419,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnlineMeetingTranscriptMetadataContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptmetadatacontent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptmetadatacontent)
+- [](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta)
