@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasfloor
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlaceAsFloor
 ---
@@ -14,10 +14,7 @@ title: Get-MgPlaceAsFloor
 ## SYNOPSIS
 
 Get a collection of the specified type of place objects defined in a tenant.
-You can do the following for a given tenant:\r- List all buildings.\r- List all floors.\r- List all sections.\r- List all desks.\r- List all rooms.\r- List all workspaces.\r- List all room lists.\r- List rooms in a specific room list.\r- List workspaces in a specific room list.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsFloor](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsFloor?view=graph-powershell-beta)
+You can do the following for a given tenant:\r\n- List all buildings.\r\n- List all floors.\r\n- List all sections.\r\n- List all desks.\r\n- List all rooms.\r\n- List all workspaces.\r\n- List all room lists.\r\n- List rooms in a specific room list.\r\n- List workspaces in a specific room list.
 
 ## SYNTAX
 
@@ -58,20 +55,15 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a collection of the specified type of place objects defined in a tenant.
-You can do the following for a given tenant:\r- List all buildings.\r- List all floors.\r- List all sections.\r- List all desks.\r- List all rooms.\r- List all workspaces.\r- List all room lists.\r- List rooms in a specific room list.\r- List workspaces in a specific room list.
+You can do the following for a given tenant:\r\n- List all buildings.\r\n- List all floors.\r\n- List all sections.\r\n- List all desks.\r\n- List all rooms.\r\n- List all workspaces.\r\n- List all room lists.\r\n- List rooms in a specific room list.\r\n- List workspaces in a specific room list.
 
 ## EXAMPLES
-### Example 1: List all floors defined in the tenant
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
 Get-MgPlaceAsFloor
-
-```
-This example will list all floors defined in the tenant
-
 
 ## PARAMETERS
 
@@ -533,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -556,27 +548,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPlaceAsFloor](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasfloor)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasfloor)
+- [](https://learn.microsoft.com/graph/api/place-list?view=graph-rest-1.0)

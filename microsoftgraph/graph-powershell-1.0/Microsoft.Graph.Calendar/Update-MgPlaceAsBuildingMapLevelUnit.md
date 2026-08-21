@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelunit
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlaceAsBuildingMapLevelUnit
 ---
@@ -14,9 +14,6 @@ title: Update-MgPlaceAsBuildingMapLevelUnit
 ## SYNOPSIS
 
 Update the properties of an existing unitMap object in IMDF format on a specified floor, or create one if it doesn't exist.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelUnit?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,9 +67,8 @@ This cmdlet has the following aliases,
 Update the properties of an existing unitMap object in IMDF format on a specified floor, or create one if it doesn't exist.
 
 ## EXAMPLES
-### Example 1: Update an existing unitMap
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -83,12 +79,7 @@ $params = @{
 
 Update-MgPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId -BodyParameter $params
 
-```
-This example will update an existing unitmap
-
-### Example 2: Create a unitMap if it doesn't exist
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -97,10 +88,6 @@ $params = @{
 }
 
 Update-MgPlaceAsBuildingMapLevelUnit -PlaceId $placeId -LevelMapId $levelMapId -UnitMapId $unitMapId -BodyParameter $params
-
-```
-This example will create a unitmap if it doesn't exist
-
 
 ## PARAMETERS
 
@@ -597,14 +584,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUnitMap>`: unitMap
+BODYPARAMETER <IMicrosoftGraphUnitMap>: unitMap
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Properties <String>]: Concatenated key-value pair of all properties of a GeoJSON file for this baseMapFeature.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [PlaceId <String>]: Identifier of the place (such as a room) to which this unitMap belongs.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -627,27 +614,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelunit)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unitmap-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasbuildingmaplevelunit)
+- [](https://learn.microsoft.com/graph/api/unitmap-update?view=graph-rest-1.0)
