@@ -18,6 +18,9 @@ Only teachers in the class can perform this operation.
 Note that you can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassModule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
