@@ -168,7 +168,7 @@ HelpMessage: ''
 
 ### -AuthenticationContextId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -413,7 +413,7 @@ HelpMessage: ''
 
 ### -IsAuthenticationContextSettable
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
