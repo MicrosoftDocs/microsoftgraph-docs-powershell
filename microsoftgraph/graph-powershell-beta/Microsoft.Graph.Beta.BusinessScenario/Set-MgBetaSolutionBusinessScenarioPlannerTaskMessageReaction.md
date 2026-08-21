@@ -540,11 +540,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsP8C2H7SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsP8C2H7SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ReactionType <String>]: 
 
-INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
+INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
@@ -556,3 +556,25 @@ INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/set-mgbetasolutionbusinessscenarioplannertaskmessagereaction)
 - [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
