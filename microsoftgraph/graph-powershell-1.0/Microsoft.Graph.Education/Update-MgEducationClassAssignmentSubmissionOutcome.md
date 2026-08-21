@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationClassAssignmentSubmissionOutcome
 ---
@@ -15,9 +15,6 @@ title: Update-MgEducationClassAssignmentSubmissionOutcome
 
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ This cmdlet has the following aliases,
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update a feedback outcome
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -96,12 +84,7 @@ $params = @{
 
 Update-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-```
-This example will update a feedback outcome
-
-### Example 2: Update a points outcome
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
@@ -115,12 +98,7 @@ $params = @{
 
 Update-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-```
-This example will update a points outcome
-
-### Example 3: Update a rubric outcome
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Education
 
@@ -133,10 +111,6 @@ $params = @{
 }
 
 Update-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
-
-```
-This example will update a rubric outcome
-
 
 ## PARAMETERS
 
@@ -663,7 +637,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationOutcome>`: educationOutcome
+BODYPARAMETER <IMicrosoftGraphEducationOutcome>: educationOutcome
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -681,7 +655,7 @@ For example, in the access reviews decisions API, this property might record the
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -703,7 +677,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
   [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -717,27 +691,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgEducationClassAssignmentSubmissionOutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome)
+- [](https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-1.0)
