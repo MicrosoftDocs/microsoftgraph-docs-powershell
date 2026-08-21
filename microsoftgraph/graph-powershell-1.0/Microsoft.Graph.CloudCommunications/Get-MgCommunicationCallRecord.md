@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgCommunicationCallRecord
 ---
@@ -14,11 +14,8 @@ title: Get-MgCommunicationCallRecord
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a callRecord object.
-You can get the id of a callRecord in two ways:\r* Subscribe to change notifications to the /communications/callRecords endpoint.\r* Use the callChainId property of a call.
+You can get the id of a callRecord in two ways:\r\n* Subscribe to change notifications to the /communications/callRecords endpoint.\r\n* Use the callChainId property of a call.
 The call record is available only after the associated call is completed.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,32 +46,22 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a callRecord object.
-You can get the id of a callRecord in two ways:\r* Subscribe to change notifications to the /communications/callRecords endpoint.\r* Use the callChainId property of a call.
+You can get the id of a callRecord in two ways:\r\n* Subscribe to change notifications to the /communications/callRecords endpoint.\r\n* Use the callChainId property of a call.
 The call record is available only after the associated call is completed.
 
 ## EXAMPLES
-### Example 1: Get basic details
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId
 
-```
-This example will get basic details
-
-### Example 2: Get full details
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)" 
-
-```
-This example will get full details
-
+Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
 
 ## PARAMETERS
 
@@ -364,7 +351,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -388,27 +375,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgCommunicationCallRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/callrecords-callrecord-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord)
+- [](https://learn.microsoft.com/graph/api/callrecords-callrecord-get?view=graph-rest-1.0)
