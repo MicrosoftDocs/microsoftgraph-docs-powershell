@@ -20,6 +20,9 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios and 5 seconds for policy-based recording scenarios.
 This API supports the following PSTN scenarios:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AnswerExpanded (Default)
