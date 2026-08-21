@@ -15,6 +15,9 @@ title: Invoke-MgTranslateUserExchangeId
 
 Translate identifiers of Outlook-related resources between formats.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTranslateUserExchangeId](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaTranslateUserExchangeId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### TranslateExpanded (Default)
