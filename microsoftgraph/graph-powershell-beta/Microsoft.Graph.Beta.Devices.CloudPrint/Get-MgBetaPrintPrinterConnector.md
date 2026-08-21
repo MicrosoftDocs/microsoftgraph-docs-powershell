@@ -15,6 +15,9 @@ title: Get-MgBetaPrintPrinterConnector
 
 The connectors that are associated with the printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
