@@ -15,6 +15,9 @@ title: Update-MgBetaGroupConversationThread
 
 Update the navigation property threads in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
