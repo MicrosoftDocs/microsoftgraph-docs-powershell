@@ -16,6 +16,9 @@ title: New-MgBetaSecurityLabelRetentionLabel
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
