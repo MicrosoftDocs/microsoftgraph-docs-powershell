@@ -393,8 +393,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference)
-- [](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-beta)
+- [Get-MgBetaUserSettingShiftPreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/shiftpreferences-get?view=graph-rest-beta)
 
 
 

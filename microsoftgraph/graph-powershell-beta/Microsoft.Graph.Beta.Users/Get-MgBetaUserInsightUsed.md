@@ -582,7 +582,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightused)
+- [Get-MgBetaUserInsightUsed](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightused)
 
 
 
