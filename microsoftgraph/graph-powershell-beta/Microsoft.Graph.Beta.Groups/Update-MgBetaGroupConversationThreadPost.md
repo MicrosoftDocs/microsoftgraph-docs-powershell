@@ -1121,12 +1121,12 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 This does not need to be the actual file name.
   [Size <Int32?>]: The length of the attachment in bytes.
 
-BODY <IMicrosoftGraphItemBody>: itemBody
+BODY `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER <IMicrosoftGraphPost>: post
+BODYPARAMETER `<IMicrosoftGraphPost>`: post
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item.
   [ChangeKey <String>]: Identifies the version of the item.
@@ -1222,14 +1222,14 @@ Supports $expand.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FROM <IMicrosoftGraphRecipient>: recipient
+FROM `<IMicrosoftGraphRecipient>`: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of an entity instance.
     [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -1253,7 +1253,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [UniqueName <String>]: Alternate key of group
   [UserId <String>]: The unique identifier of user
 
-INREPLYTO <IMicrosoftGraphPost>: post
+INREPLYTO `<IMicrosoftGraphPost>`: post
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item.
   [ChangeKey <String>]: Identifies the version of the item.
@@ -1380,7 +1380,7 @@ NEWPARTICIPANTS <IMicrosoftGraphRecipient[]>: Conversation participants that wer
     [Address <String>]: The email address of an entity instance.
     [Name <String>]: The display name of an entity instance.
 
-SENDER <IMicrosoftGraphRecipient>: recipient
+SENDER `<IMicrosoftGraphRecipient>`: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1398,3 +1398,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthreadpost)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
