@@ -1109,7 +1109,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The Id of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
+BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1170,23 +1170,23 @@ COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction[]>: Colle
   [OwnerType <OwnerType?>]: Owner type of device.
   [Platform <DevicePlatformType?>]: Supported platform types.
 
-LANDINGPAGECUSTOMIZEDIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
+LANDINGPAGECUSTOMIZEDIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
 
-LIGHTBACKGROUNDLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
+LIGHTBACKGROUNDLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
 
-THEMECOLOR <IMicrosoftGraphRgbColor>: Color in RGB.
+THEMECOLOR `<IMicrosoftGraphRgbColor>`: Color in RGB.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [B <Int32?>]: Blue value
   [G <Int32?>]: Green value
   [R <Int32?>]: Red value
 
-THEMECOLORLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
+THEMECOLORLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
@@ -1195,3 +1195,25 @@ THEMECOLORLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic m
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementintunebrandingprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
