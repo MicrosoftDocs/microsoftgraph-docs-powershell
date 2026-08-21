@@ -58,12 +58,17 @@ Read the properties and relationships of crossTenantMigrationJob object.
 Includes details of the crossTenantMigrationJob , but not details of the individual crossTenantMigrationTasks of the crossTenantMigrationJob.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Get-MgBetaCrossTenantMigrationJob
+
+```
+This example shows how to use the Get-MgBetaCrossTenantMigrationJob Cmdlet.
+
 
 ## PARAMETERS
 
