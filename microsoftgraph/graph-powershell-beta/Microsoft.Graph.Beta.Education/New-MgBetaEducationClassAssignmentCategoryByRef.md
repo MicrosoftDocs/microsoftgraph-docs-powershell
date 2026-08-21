@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategorybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationClassAssignmentCategoryByRef
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaEducationClassAssignmentCategoryByRef
 
 Add one or more existing educationCategory objects to this educationAssignment.
 Only teachers and students can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 Add one or more existing educationCategory objects to this educationAssignment.
 Only teachers and students can perform this operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -91,10 +79,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentCategoryByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaEducationClassAssignmentCategoryByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -127,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -531,12 +515,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -561,27 +545,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaEducationClassAssignmentCategoryByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategorybyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentcategorybyref)
+- [](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmoduleresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEducationClassModuleResource
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaEducationClassModuleResource
 
 Get the properties of a resource associated with a module.
 Only teachers, students, and applications with application permissions can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassModuleResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassModuleResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,103 +59,55 @@ This cmdlet has the following aliases,
 Get the properties of a resource associated with a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduCurricula.Read, EduCurricula.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduCurricula.Read.All, EduCurricula.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get an educationWordResource
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Education
-
-Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
-
-```
-This example will get an educationwordresource
-
-### Example 2: Get an educationLinkResource
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-```
-This example will get an educationlinkresource
-
-### Example 3: Get an educationExcelResource
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-```
-This example will get an educationexcelresource
-
-### Example 4: Get an educationPowerPointResource
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-```
-This example will get an educationpowerpointresource
-
-### Example 5: Get an educationFileResource
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-```
-This example will get an educationfileresource
-
-### Example 6: Get an educationMediaResource
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-```
-This example will get an educationmediaresource
-
-### Example 7: Get an educationChannelResource
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-```
-This example will get an educationchannelresource
-
-### Example 8: Get an educationLinkedAssignmentResource
-
-```powershell
+### EXAMPLE 7
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
-```
-This example will get an educationlinkedassignmentresource
+### EXAMPLE 8
 
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassModuleResource -EducationClassId $educationClassId -EducationModuleId $educationModuleId -EducationModuleResourceId $educationModuleResourceId
 
 ## PARAMETERS
 
@@ -674,7 +623,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -699,28 +648,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmoduleresource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmoduleresource)
+- [](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-beta)
