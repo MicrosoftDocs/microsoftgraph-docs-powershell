@@ -15,6 +15,9 @@ title: Update-MgSecurityIncident
 
 Update the properties of an incident object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

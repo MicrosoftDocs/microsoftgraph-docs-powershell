@@ -15,6 +15,9 @@ title: Update-MgSecurityAttackSimulationAutomationRun
 
 Update the navigation property runs in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
