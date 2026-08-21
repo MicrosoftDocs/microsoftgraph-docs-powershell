@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserActivityHistoryItem
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserActivityHistoryItem
 ## SYNOPSIS
 
 Update the navigation property historyItems in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivityHistoryItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property historyItems in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -771,7 +778,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITY `<IMicrosoftGraphUserActivity>`: userActivity
+ACTIVITY <IMicrosoftGraphUserActivity>: userActivity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -847,7 +854,7 @@ Longer text description of the user's unique activity (example: document name, f
     [DisplayText <String>]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
-BODYPARAMETER `<IMicrosoftGraphActivityHistoryItem>`: activityHistoryItem
+BODYPARAMETER <IMicrosoftGraphActivityHistoryItem>: activityHistoryItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -924,7 +931,7 @@ Required for timeline history.
 The timezone in which the user's device used to generate the activity was located at activity creation time.
 Values supplied as Olson IDs in order to support cross-platform representation.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [CommandId <String>]: The unique identifier of command
   [DeviceId <String>]: The unique identifier of device
@@ -938,27 +945,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserActivityHistoryItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem)
