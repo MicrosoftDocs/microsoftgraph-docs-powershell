@@ -17,6 +17,9 @@ Represents relationships between a user and items such as OneDrive for work or s
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

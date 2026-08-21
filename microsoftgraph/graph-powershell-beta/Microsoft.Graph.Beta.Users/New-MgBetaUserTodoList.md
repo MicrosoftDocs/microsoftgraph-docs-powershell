@@ -15,6 +15,9 @@ title: New-MgBetaUserTodoList
 
 Create new navigation property to lists for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

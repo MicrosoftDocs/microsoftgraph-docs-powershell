@@ -15,6 +15,9 @@ title: Get-MgBetaUserTodoTaskAttachmentSessionContent
 
 The content streams that are uploaded.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentSessionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
