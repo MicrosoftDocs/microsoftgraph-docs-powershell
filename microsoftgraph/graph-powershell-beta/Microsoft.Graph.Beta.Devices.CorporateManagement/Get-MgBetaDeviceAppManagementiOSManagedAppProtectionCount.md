@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementiOSManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSManagedAppProtectionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
