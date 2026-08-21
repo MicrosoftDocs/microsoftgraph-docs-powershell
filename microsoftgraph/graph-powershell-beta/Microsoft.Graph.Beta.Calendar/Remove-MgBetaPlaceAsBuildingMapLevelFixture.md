@@ -458,8 +458,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelfixture)
-- [](https://learn.microsoft.com/graph/api/fixturemap-delete?view=graph-rest-beta)
+- [Remove-MgBetaPlaceAsBuildingMapLevelFixture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelfixture)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fixturemap-delete?view=graph-rest-beta)
 
 
 
