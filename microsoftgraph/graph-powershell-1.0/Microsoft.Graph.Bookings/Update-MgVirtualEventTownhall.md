@@ -1307,8 +1307,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhall)
-- [](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-1.0)
+- [Update-MgVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-1.0)
 
 
 
