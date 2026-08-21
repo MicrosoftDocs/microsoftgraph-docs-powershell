@@ -78,6 +78,14 @@ This cmdlet has the following aliases,
 
 Update certificateAuthorityDetail
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PublicKeyInfrastructure.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
