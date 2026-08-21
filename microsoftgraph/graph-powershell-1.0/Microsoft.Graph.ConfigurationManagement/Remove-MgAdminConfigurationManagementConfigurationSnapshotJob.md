@@ -46,12 +46,17 @@ This cmdlet has the following aliases,
 Delete a configurationSnapshotJob object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
 Remove-MgAdminConfigurationManagementConfigurationSnapshotJob -ConfigurationSnapshotJobId $configurationSnapshotJobId
+
+```
+This example shows how to use the Remove-MgAdminConfigurationManagementConfigurationSnapshotJob Cmdlet.
+
 
 ## PARAMETERS
 

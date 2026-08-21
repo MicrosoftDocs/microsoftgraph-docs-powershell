@@ -82,8 +82,9 @@ Update the properties of a configurationMonitor object, including the monitor na
 | Application | ConfigurationMonitoring.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the displayName of a configurationMonitor
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
@@ -93,7 +94,12 @@ $params = @{
 
 Update-MgAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update the displayname of a configurationmonitor
+
+### Example 2: Update the baseline of a configurationMonitor
+
+```powershell
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
@@ -153,6 +159,10 @@ FQDN = "contoso.onmicrosoft.com"
 }
 
 Update-MgAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId -BodyParameter $params
+
+```
+This example will update the baseline of a configurationmonitor
+
 
 ## PARAMETERS
 

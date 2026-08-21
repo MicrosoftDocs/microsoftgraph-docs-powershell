@@ -47,12 +47,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a configurationBaseline object that is attached to a specific monitor.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
 Get-MgAdminConfigurationManagementConfigurationMonitorBaseline -ConfigurationMonitorId $configurationMonitorId
+
+```
+This example shows how to use the Get-MgAdminConfigurationManagementConfigurationMonitorBaseline Cmdlet.
+
 
 ## PARAMETERS
 
