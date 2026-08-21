@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetavirtualevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Publish-MgBetaVirtualEvent
 ---
@@ -14,9 +14,6 @@ title: Publish-MgBetaVirtualEvent
 ## SYNOPSIS
 
 Invoke action publish
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Publish-MgVirtualEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action publish
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -356,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -381,27 +388,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Publish-MgBetaVirtualEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetavirtualevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetavirtualevent)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventTownhall
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaVirtualEventTownhall
 ## SYNOPSIS
 
 Create a new virtualEventTownhall object in draft mode.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhall](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,6 +54,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new virtualEventTownhall object in draft mode.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -147,7 +154,7 @@ HelpMessage: ''
 
 ### -Capacity
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -452,7 +459,7 @@ HelpMessage: ''
 
 ### -IsRegistrationEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -781,7 +788,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventTownhall>`: virtualEventTownhall
+BODYPARAMETER <IMicrosoftGraphVirtualEventTownhall>: virtualEventTownhall
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>]: communicationsIdentitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1042,7 +1049,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [TenantId <String>]: The user's tenant ID.
 
-CREATEDBY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
+CREATEDBY <IMicrosoftGraphCommunicationsIdentitySet>: communicationsIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1062,12 +1069,12 @@ For example, in the access reviews decisions API, this property might record the
   [OnPremises <IMicrosoftGraphIdentity>]: identity
   [Phone <IMicrosoftGraphIdentity>]: identity
 
-DESCRIPTION `<IMicrosoftGraphItemBody>`: itemBody
+DESCRIPTION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1676,11 +1683,11 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
+SETTINGS <IMicrosoftGraphVirtualEventSettings>: virtualEventSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAttendeeEmailNotificationEnabled <Boolean?>]: Indicates whether virtual event attendees receive email notifications.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1690,28 +1697,5 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [New-MgBetaVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhall)
+- [](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta)
