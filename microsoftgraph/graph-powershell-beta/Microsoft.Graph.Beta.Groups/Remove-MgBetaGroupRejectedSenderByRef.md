@@ -1,29 +1,29 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppermissiongrant
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupRejectedSenderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaGroupPermissionGrant
+title: Remove-MgBetaGroupRejectedSenderByRef
 ---
 
-# Remove-MgBetaGroupPermissionGrant
+# Remove-MgBetaGroupRejectedSenderByRef
 
 ## SYNOPSIS
 
-Delete navigation property permissionGrants for groups
+Remove a user or group from the rejected-senders list of the specified group.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupPermissionGrant?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupRejectedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaGroupPermissionGrant -GroupId <string> -ResourceSpecificPermissionGrantId <string>
+Remove-MgBetaGroupRejectedSenderByRef -DirectoryObjectId <string> -GroupId <string>
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -32,8 +32,8 @@ Remove-MgBetaGroupPermissionGrant -GroupId <string> -ResourceSpecificPermissionG
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaGroupPermissionGrant -InputObject <IGroupsIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaGroupRejectedSenderByRef -InputObject <IGroupsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property permissionGrants for groups
+Remove a user or group from the rejected-senders list of the specified group.
 
 ## PARAMETERS
 
@@ -84,6 +84,27 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -303,27 +324,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ResourceSpecificPermissionGrantId
-
-The unique identifier of resourceSpecificPermissionGrant
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -425,7 +425,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppermissiongrant)
+- [Remove-MgBetaGroupRejectedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupRejectedSenderByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-beta)
 
 
 

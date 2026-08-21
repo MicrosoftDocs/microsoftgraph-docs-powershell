@@ -1,29 +1,30 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppermissiongrant
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaGroupPermissionGrant
+title: Remove-MgBetaGroupOwnerByRef
 ---
 
-# Remove-MgBetaGroupPermissionGrant
+# Remove-MgBetaGroupOwnerByRef
 
 ## SYNOPSIS
 
-Delete navigation property permissionGrants for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupPermissionGrant?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaGroupPermissionGrant -GroupId <string> -ResourceSpecificPermissionGrantId <string>
+Remove-MgBetaGroupOwnerByRef -DirectoryObjectId <string> -GroupId <string>
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -32,7 +33,7 @@ Remove-MgBetaGroupPermissionGrant -GroupId <string> -ResourceSpecificPermissionG
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaGroupPermissionGrant -InputObject <IGroupsIdentity> [-IfMatch <string>]
+Remove-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -45,7 +46,29 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property permissionGrants for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -84,6 +107,27 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -303,27 +347,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ResourceSpecificPermissionGrantId
-
-The unique identifier of resourceSpecificPermissionGrant
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -425,8 +448,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppermissiongrant)
-
+- [Remove-MgBetaGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-beta)
 
 
 
