@@ -525,8 +525,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermessage)
-- [](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
+- [Move-MgUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/move-mgusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
 
 
 
