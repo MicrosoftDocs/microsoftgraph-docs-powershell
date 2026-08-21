@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/21/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgPlannerBucket
 ---
