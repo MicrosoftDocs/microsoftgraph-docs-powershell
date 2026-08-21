@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscorecustomerinsight
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityPartnerSecurityScoreCustomerInsight
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property customerInsights in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -482,7 +492,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPartnerSecurityCustomerInsight>`: customerInsight
+BODYPARAMETER <IMicrosoftGraphPartnerSecurityCustomerInsight>: customerInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Mfa <IMicrosoftGraphPartnerSecurityCustomerMfaInsight>]: customerMfaInsight
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -494,7 +504,7 @@ BODYPARAMETER `<IMicrosoftGraphPartnerSecurityCustomerInsight>`: customerInsight
     [TotalUsersCount <Int64?>]: The total number of users in the tenant
   [TenantId <String>]: The unique identifier for the customer.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -593,7 +603,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-MFA `<IMicrosoftGraphPartnerSecurityCustomerMfaInsight>`: customerMfaInsight
+MFA <IMicrosoftGraphPartnerSecurityCustomerMfaInsight>: customerMfaInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompliantAdminsCount <Int64?>]: The number of admins that are compliant with the MFA requirements
   [CompliantNonAdminsCount <Int64?>]: The number of users that are compliant with the MFA requirements
@@ -605,27 +615,4 @@ MFA `<IMicrosoftGraphPartnerSecurityCustomerMfaInsight>`: customerMfaInsight
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityPartnerSecurityScoreCustomerInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscorecustomerinsight)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityscorecustomerinsight)

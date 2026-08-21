@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityTiIndicator
 ---
@@ -55,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a tiIndicator object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ThreatIndicators.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityTiIndicator
-
-```
-This example shows how to use the Get-MgBetaSecurityTiIndicator Cmdlet.
-
 
 ## PARAMETERS
 
@@ -536,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -638,28 +625,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicator-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicators-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator)
+- [](https://learn.microsoft.com/graph/api/tiindicator-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/tiindicators-list?view=graph-rest-beta)
