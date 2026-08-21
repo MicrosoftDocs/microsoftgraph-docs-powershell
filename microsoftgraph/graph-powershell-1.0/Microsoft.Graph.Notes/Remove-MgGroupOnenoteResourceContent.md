@@ -15,6 +15,9 @@ title: Remove-MgGroupOnenoteResourceContent
 
 The content stream
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaGroupOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
