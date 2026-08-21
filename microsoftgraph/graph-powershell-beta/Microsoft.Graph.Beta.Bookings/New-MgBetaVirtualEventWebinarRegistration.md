@@ -917,7 +917,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphVirtualEventRegistration>: virtualEventRegistration
+BODYPARAMETER `<IMicrosoftGraphVirtualEventRegistration>`: virtualEventRegistration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1113,7 +1113,7 @@ Read-only.
   [UserId <String>]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-EXTERNALREGISTRATIONINFORMATION <IMicrosoftGraphVirtualEventExternalRegistrationInformation>: virtualEventExternalRegistrationInformation
+EXTERNALREGISTRATIONINFORMATION `<IMicrosoftGraphVirtualEventExternalRegistrationInformation>`: virtualEventExternalRegistrationInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
 Optional.
@@ -1121,7 +1121,7 @@ Optional.
 Optional.
 If set, the maximum supported length is 256 characters.
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1353,3 +1353,25 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarregistration)
 - [](https://learn.microsoft.com/graph/api/virtualeventwebinar-post-registrations?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
