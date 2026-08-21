@@ -1629,7 +1629,7 @@ VENDOR `<IMicrosoftGraphVendor>`: vendor
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice)
+- [Update-MgBetaFinancialCompanyPurchaseInvoice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice)
 
 
 
