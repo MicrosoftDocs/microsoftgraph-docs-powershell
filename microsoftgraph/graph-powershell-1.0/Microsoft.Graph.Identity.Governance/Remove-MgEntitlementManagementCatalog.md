@@ -473,8 +473,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalog)
-- [](https://learn.microsoft.com/graph/api/accesspackagecatalog-delete?view=graph-rest-1.0)
+- [Remove-MgEntitlementManagementCatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalog)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagecatalog-delete?view=graph-rest-1.0)
 
 
 
