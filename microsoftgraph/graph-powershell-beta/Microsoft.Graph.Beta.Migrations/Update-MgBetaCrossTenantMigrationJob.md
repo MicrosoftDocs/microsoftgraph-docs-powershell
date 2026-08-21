@@ -987,8 +987,8 @@ Only Users are supported at this time.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/update-mgbetacrosstenantmigrationjob)
-- [](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-update?view=graph-rest-beta)
+- [Update-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/update-mgbetacrosstenantmigrationjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-update?view=graph-rest-beta)
 
 
 
