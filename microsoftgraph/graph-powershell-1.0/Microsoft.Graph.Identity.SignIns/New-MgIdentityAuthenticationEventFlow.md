@@ -14,7 +14,7 @@ title: New-MgIdentityAuthenticationEventFlow
 ## SYNOPSIS
 
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow object type.
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
-The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow object type.
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
 
 ## EXAMPLES
 
@@ -666,7 +666,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAuthenticationEventsFlow>: authenticationEventsFlow
+BODYPARAMETER `<IMicrosoftGraphAuthenticationEventsFlow>`: authenticationEventsFlow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -680,7 +680,7 @@ Read-only.
   [DisplayName <String>]: Required.
 The display name for the events policy.
 
-CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
+CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Applications <IMicrosoftGraphAuthenticationConditionsApplications>]: authenticationConditionsApplications
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -692,3 +692,25 @@ CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventflow)
 - [](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
