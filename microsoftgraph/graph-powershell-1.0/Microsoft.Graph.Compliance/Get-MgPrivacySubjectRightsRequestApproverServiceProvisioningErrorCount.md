@@ -365,7 +365,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapproverserviceprovisioningerrorcount)
+- [Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestapproverserviceprovisioningerrorcount)
 
 
 
