@@ -113589,7 +113589,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsite)
+- [Update-MgBetaGroupSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsite)
 
 
 

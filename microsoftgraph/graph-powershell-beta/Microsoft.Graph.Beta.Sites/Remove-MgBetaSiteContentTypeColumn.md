@@ -506,8 +506,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn)
-- [](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-beta)
+- [Remove-MgBetaSiteContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitecontenttypecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-beta)
 
 
 
