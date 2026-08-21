@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinviteduserserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaInvitationInvitedUserServiceProvisioningError
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaInvitationInvitedUserServiceProvisioningError
 ## SYNOPSIS
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgInvitationInvitedUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserServiceProvisioningError?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,6 +36,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -450,27 +457,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaInvitationInvitedUserServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinviteduserserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinviteduserserviceprovisioningerror)

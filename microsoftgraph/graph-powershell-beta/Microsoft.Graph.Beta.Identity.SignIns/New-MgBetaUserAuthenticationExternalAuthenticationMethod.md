@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationexternalauthenticationmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserAuthenticationExternalAuthenticationMethod
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaUserAuthenticationExternalAuthenticationMethod
 
 Create a new externalAuthenticationMethod object.
 This API doesn't support self-service operations.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 Create a new externalAuthenticationMethod object.
 This API doesn't support self-service operations.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-External.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-External.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-External.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -95,10 +83,6 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationExternalAuthenticationMethod -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserAuthenticationExternalAuthenticationMethod Cmdlet.
-
 
 ## PARAMETERS
 
@@ -605,7 +589,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExternalAuthenticationMethod>`: externalAuthenticationMethod
+BODYPARAMETER <IMicrosoftGraphExternalAuthenticationMethod>: externalAuthenticationMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -624,7 +608,7 @@ Read-only.
   [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
   [DisplayName <String>]: Custom name given to the registered external MFA.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -725,27 +709,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaUserAuthenticationExternalAuthenticationMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationexternalauthenticationmethod)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-post-externalauthenticationmethods?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationexternalauthenticationmethod)
+- [](https://learn.microsoft.com/graph/api/authentication-post-externalauthenticationmethods?view=graph-rest-beta)

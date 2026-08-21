@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAuthenticationMethodPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPolicyAuthenticationMethodPolicy
 ## SYNOPSIS
 
 Update the properties of an authenticationMethodsPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,18 +53,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an authenticationMethodsPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.AuthenticationMethod,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -99,10 +87,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -660,7 +644,7 @@ Read-only.
     [TargetType <String>]: authenticationMethodTargetType
   [State <String>]: authenticationMethodState
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodsPolicy>`: authenticationMethodsPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationMethodsPolicy>: authenticationMethodsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -716,7 +700,7 @@ If the value is 0 – The user is prompted during every MFA attempt.
     [IncludeTargets <IMicrosoftGraphIncludeTarget[]>]: Users and groups included in the preferred authentication method experience of the system.
     [State <String>]: advancedConfigState
 
-MICROSOFTAUTHENTICATORPLATFORMSETTINGS `<IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings>`: microsoftAuthenticatorPlatformSettings
+MICROSOFTAUTHENTICATORPLATFORMSETTINGS <IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings>: microsoftAuthenticatorPlatformSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EnforceAppPin <IMicrosoftGraphEnforceAppPin>]: enforceAppPIN
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -727,7 +711,7 @@ MICROSOFTAUTHENTICATORPLATFORMSETTINGS `<IMicrosoftGraphMicrosoftAuthenticatorPl
       [Id <String>]: The ID of the entity targeted.
       [TargetType <String>]: authenticationMethodTargetType
 
-REGISTRATIONENFORCEMENT `<IMicrosoftGraphRegistrationEnforcement>`: registrationEnforcement
+REGISTRATIONENFORCEMENT <IMicrosoftGraphRegistrationEnforcement>: registrationEnforcement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationMethodsRegistrationCampaign <IMicrosoftGraphAuthenticationMethodsRegistrationCampaign>]: authenticationMethodsRegistrationCampaign
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -749,7 +733,7 @@ Maximum: 14 days.
 If the value is 0 – The user is prompted during every MFA attempt.
     [State <String>]: advancedConfigState
 
-REPORTSUSPICIOUSACTIVITYSETTINGS `<IMicrosoftGraphReportSuspiciousActivitySettings>`: reportSuspiciousActivitySettings
+REPORTSUSPICIOUSACTIVITYSETTINGS <IMicrosoftGraphReportSuspiciousActivitySettings>: reportSuspiciousActivitySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IncludeTarget <IMicrosoftGraphIncludeTarget>]: includeTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -758,7 +742,7 @@ REPORTSUSPICIOUSACTIVITYSETTINGS `<IMicrosoftGraphReportSuspiciousActivitySettin
   [State <String>]: advancedConfigState
   [VoiceReportingCode <Int32?>]: Specifies the number the user enters on their phone to report the MFA prompt as suspicious.
 
-SYSTEMCREDENTIALPREFERENCES `<IMicrosoftGraphSystemCredentialPreferences>`: systemCredentialPreferences
+SYSTEMCREDENTIALPREFERENCES <IMicrosoftGraphSystemCredentialPreferences>: systemCredentialPreferences
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]: Users and groups excluded from the preferred authentication method experience of the system.
     [Id <String>]: The object identifier of a Microsoft Entra group.
@@ -771,27 +755,5 @@ SYSTEMCREDENTIALPREFERENCES `<IMicrosoftGraphSystemCredentialPreferences>`: syst
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyAuthenticationMethodPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
+- [](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta)

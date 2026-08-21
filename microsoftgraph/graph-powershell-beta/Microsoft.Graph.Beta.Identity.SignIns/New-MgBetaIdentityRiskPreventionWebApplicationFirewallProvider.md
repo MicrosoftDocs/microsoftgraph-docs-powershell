@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 
 Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,9 +49,8 @@ Create a new webApplicationFirewallProvider object.
 You can create one of the following subtypes that are derived from webApplicationFirewallProvider.
 
 ## EXAMPLES
-### Example 1: Create a new AkamaiWebApplicationFirewallProvider object
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -69,12 +65,7 @@ $params = @{
 
 New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
 
-```
-This example will create a new akamaiwebapplicationfirewallprovider object
-
-### Example 2: Create a new cloudFlareWebApplicationFirewallProvider object
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -86,10 +77,6 @@ $params = @{
 }
 
 New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -BodyParameter $params
-
-```
-This example will create a new cloudflarewebapplicationfirewallprovider object
-
 
 ## PARAMETERS
 
@@ -422,7 +409,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWebApplicationFirewallProvider>`: webApplicationFirewallProvider
+BODYPARAMETER <IMicrosoftGraphWebApplicationFirewallProvider>: webApplicationFirewallProvider
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -431,27 +418,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-webapplicationfirewallproviders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallprovider)
+- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-post-webapplicationfirewallproviders?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicyapplyto
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyTokenLifetimePolicyApplyTo
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaPolicyTokenLifetimePolicyApplyTo
 ## SYNOPSIS
 
 Get appliesTo from policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyTokenLifetimePolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenLifetimePolicyApplyTo?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 Get appliesTo from policies
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyTokenLifetimePolicyApplyTo -TokenLifetimePolicyId $tokenLifetimePolicyId
-
-```
-This example shows how to use the Get-MgBetaPolicyTokenLifetimePolicyApplyTo Cmdlet.
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -661,27 +653,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPolicyTokenLifetimePolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicyapplyto)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list-appliesto?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicyapplyto)
+- [](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list-appliesto?view=graph-rest-beta)

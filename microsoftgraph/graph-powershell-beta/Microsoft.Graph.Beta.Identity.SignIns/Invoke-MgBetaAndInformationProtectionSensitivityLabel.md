@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaandinformationprotectionsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAndInformationProtectionSensitivityLabel
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,7 +82,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -137,7 +147,7 @@ HelpMessage: ''
 
 ### -DelegatedUserEmail
 
-
+.
 
 ```yaml
 Type: System.String
@@ -221,7 +231,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -242,7 +252,7 @@ HelpMessage: ''
 
 ### -ProtectedContents
 
-
+.
 To construct, see NOTES section for PROTECTEDCONTENTS properties and create a hash table.
 
 ```yaml
@@ -349,7 +359,7 @@ HelpMessage: ''
 
 ### -SupportedContentFormats
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -420,7 +430,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsLnu6CoInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsLnu6CoInformationprotectionSensitivitylabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -438,28 +448,5 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAndInformationProtectionSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaandinformationprotectionsensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaandinformationprotectionsensitivitylabel)
+- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
