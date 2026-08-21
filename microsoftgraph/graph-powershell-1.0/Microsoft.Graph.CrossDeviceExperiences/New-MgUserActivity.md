@@ -1042,7 +1042,7 @@ Short text description of the user's unique activity (for example, document name
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivity)
+- [New-MgUserActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivity)
 
 
 
