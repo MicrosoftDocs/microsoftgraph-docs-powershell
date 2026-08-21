@@ -548,9 +548,9 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/get-mgadminconfigurationmanagementconfigurationmonitoringresult)
-- [](https://learn.microsoft.com/graph/api/configurationmonitoringresult-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/configurationmanagement-list-configurationmonitoringresults?view=graph-rest-1.0)
+- [Get-MgAdminConfigurationManagementConfigurationMonitoringResult](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/get-mgadminconfigurationmanagementconfigurationmonitoringresult)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmonitoringresult-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmanagement-list-configurationmonitoringresults?view=graph-rest-1.0)
 
 
 

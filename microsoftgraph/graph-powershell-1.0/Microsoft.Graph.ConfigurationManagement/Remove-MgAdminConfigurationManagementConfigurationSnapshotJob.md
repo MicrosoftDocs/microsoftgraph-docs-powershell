@@ -398,8 +398,8 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagementconfigurationsnapshotjob)
-- [](https://learn.microsoft.com/graph/api/configurationsnapshotjob-delete?view=graph-rest-1.0)
+- [Remove-MgAdminConfigurationManagementConfigurationSnapshotJob](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagementconfigurationsnapshotjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationsnapshotjob-delete?view=graph-rest-1.0)
 
 
 

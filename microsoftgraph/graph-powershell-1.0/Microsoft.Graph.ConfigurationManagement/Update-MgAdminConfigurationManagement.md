@@ -624,7 +624,7 @@ At least one property of one resource must be present in the baseline.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagement)
+- [Update-MgAdminConfigurationManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagement)
 
 
 
