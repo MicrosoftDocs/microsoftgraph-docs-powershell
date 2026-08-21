@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/21/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgOrganization
 ---
