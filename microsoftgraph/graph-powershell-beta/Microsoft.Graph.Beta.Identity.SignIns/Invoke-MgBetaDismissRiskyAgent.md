@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Dismiss the risk of one or more riskyAgent objects.
 This action sets the targeted agent's riskLevel to none.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityRiskyAgent.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityRiskyAgent.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
