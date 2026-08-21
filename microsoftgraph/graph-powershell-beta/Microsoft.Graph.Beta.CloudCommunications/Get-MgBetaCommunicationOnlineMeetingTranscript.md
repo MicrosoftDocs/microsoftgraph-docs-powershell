@@ -16,6 +16,9 @@ title: Get-MgBetaCommunicationOnlineMeetingTranscript
 The transcripts of an online meeting.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingTranscript?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationCallRecordSessionSegmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecordSessionSegmentCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSessionSegmentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
