@@ -15,6 +15,9 @@ title: Get-MgGroupSiteTermStoreGroupSetChildSet
 
 The [set] in which the term is created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroupSetChildSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetChildSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)
