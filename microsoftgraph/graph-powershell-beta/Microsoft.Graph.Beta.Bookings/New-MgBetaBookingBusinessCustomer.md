@@ -911,7 +911,7 @@ PHONES <IMicrosoftGraphPhone[]>: Phone numbers associated with the customer, inc
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer)
+- [New-MgBetaBookingBusinessCustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer)
 
 
 
