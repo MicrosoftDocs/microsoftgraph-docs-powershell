@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaExternalAuthorizationSystem
 ---
@@ -56,28 +56,18 @@ This cmdlet has the following aliases,
 Represents an onboarded Amazon Web Services (AWS) account, Azure subscription, or Google Cloud Platform (GCP) project that Microsoft Entra Permissions Management collects and analyzes permissions and actions on.
 
 ## EXAMPLES
-### Example 1: List authorization systems onboarded to Permissions Management
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalAuthorizationSystem
 
-```
-This example will list authorization systems onboarded to permissions management
-
-### Example 2: Identify all the authorization systems that are online and have permissions modification capability enabled
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Search
 
-Get-MgBetaExternalAuthorizationSystem -Filter "dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'" 
-
-```
-This example will identify all the authorization systems that are online and have permissions modification capability enabled
-
+Get-MgBetaExternalAuthorizationSystem -Filter "dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'"
 
 ## PARAMETERS
 
@@ -539,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -565,27 +555,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaExternalAuthorizationSystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-external-list-authorizationsystems?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalauthorizationsystem)
+- [](https://learn.microsoft.com/graph/api/externalconnectors-external-list-authorizationsystems?view=graph-rest-beta)
