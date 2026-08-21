@@ -384,7 +384,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalyticitemactivitystatcount)
+- [Get-MgDriveItemAnalyticItemActivityStatCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalyticitemactivitystatcount)
 
 
 

@@ -684,7 +684,7 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mggroupdriveitem)
+- [Copy-MgGroupDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mggroupdriveitem)
 
 
 

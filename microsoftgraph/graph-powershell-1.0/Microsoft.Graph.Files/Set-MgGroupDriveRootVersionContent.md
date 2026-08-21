@@ -480,7 +480,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriverootversioncontent)
+- [Set-MgGroupDriveRootVersionContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriverootversioncontent)
 
 
 
