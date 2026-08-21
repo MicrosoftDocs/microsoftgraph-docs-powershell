@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Delete a servicePrincipal object.
 This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
