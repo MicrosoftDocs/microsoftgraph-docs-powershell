@@ -779,14 +779,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICABILITY <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>: deviceManagementConfigurationSettingApplicability
+APPLICABILITY `<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>`: deviceManagementConfigurationSettingApplicability
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: description of the setting
   [DeviceMode <DeviceManagementConfigurationDeviceMode?>]: Describes applicability for the mode the device is in
   [Platform <DeviceManagementConfigurationPlatforms?>]: Supported platform types.
   [Technologies <DeviceManagementConfigurationTechnologies?>]: Describes which technology this setting can be deployed with
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>: deviceManagementConfigurationSettingDefinition
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition>`: deviceManagementConfigurationSettingDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -824,7 +824,7 @@ Applicable for reusable setting.
   [Version <String>]: Item Version
   [Visibility <DeviceManagementConfigurationSettingVisibility?>]: Supported setting types
 
-OCCURRENCE <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>: deviceManagementConfigurationSettingOccurrence
+OCCURRENCE `<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>`: deviceManagementConfigurationSettingOccurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaxDeviceOccurrence <Int32?>]: Maximum times setting can be set on device.
   [MinDeviceOccurrence <Int32?>]: Minimum times setting can be set on device.
@@ -838,3 +838,25 @@ Applicable for reusable setting.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancesetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
