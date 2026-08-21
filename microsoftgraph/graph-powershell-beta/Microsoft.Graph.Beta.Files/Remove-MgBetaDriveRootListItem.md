@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveRootListItem
 
 Delete navigation property listItem for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
