@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityThreatIntelligenceHost
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityThreatIntelligenceHost
 ## SYNOPSIS
 
 Create new navigation property to hosts for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,6 +54,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to hosts for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -700,7 +707,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHost>`: host
+BODYPARAMETER <IMicrosoftGraphSecurityHost>: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3184,7 +3191,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Status <String>]: hostPortStatus
   [TimesObserved <Int32?>]: The total amount of times that Microsoft Defender Threat Intelligence has observed the hostPort in all its scans.
 
-REPUTATION `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
+REPUTATION <IMicrosoftGraphSecurityHostReputation>: hostReputation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4025,7 +4032,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   [Value <String>]: The identification value for the hostTracker.
 
-WHOIS `<IMicrosoftGraphSecurityWhoisRecord>`: whoisRecord
+WHOIS <IMicrosoftGraphSecurityWhoisRecord>: whoisRecord
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Abuse <IMicrosoftGraphSecurityWhoisContact>]: whoisContact
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -4304,27 +4311,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgSecurityThreatIntelligenceHost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost)
