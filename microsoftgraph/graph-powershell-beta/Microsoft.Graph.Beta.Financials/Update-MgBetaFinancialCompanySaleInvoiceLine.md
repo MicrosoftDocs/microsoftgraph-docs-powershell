@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoiceline
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanySaleInvoiceLine
 ---
@@ -134,6 +134,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property salesInvoiceLines in financials
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -Account
@@ -178,7 +188,7 @@ HelpMessage: ''
 
 ### -AccountId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -256,7 +266,7 @@ HelpMessage: ''
 
 ### -AmountExcludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -295,7 +305,7 @@ HelpMessage: ''
 
 ### -AmountIncludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -456,7 +466,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -495,7 +505,7 @@ HelpMessage: ''
 
 ### -DiscountAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -534,7 +544,7 @@ HelpMessage: ''
 
 ### -DiscountAppliedBeforeTax
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -573,7 +583,7 @@ HelpMessage: ''
 
 ### -DiscountPercent
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -612,7 +622,7 @@ HelpMessage: ''
 
 ### -DocumentId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -794,7 +804,7 @@ HelpMessage: ''
 
 ### -InvoiceDiscountAllocation
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -873,7 +883,7 @@ HelpMessage: ''
 
 ### -ItemId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -912,7 +922,7 @@ HelpMessage: ''
 
 ### -LineType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -951,7 +961,7 @@ HelpMessage: ''
 
 ### -NetAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -990,7 +1000,7 @@ HelpMessage: ''
 
 ### -NetAmountIncludingTax
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1029,7 +1039,7 @@ HelpMessage: ''
 
 ### -NetTaxAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1131,7 +1141,7 @@ HelpMessage: ''
 
 ### -Quantity
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1258,7 +1268,7 @@ HelpMessage: ''
 
 ### -Sequence
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1297,7 +1307,7 @@ HelpMessage: ''
 
 ### -ShipmentDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -1336,7 +1346,7 @@ HelpMessage: ''
 
 ### -TaxCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1375,7 +1385,7 @@ HelpMessage: ''
 
 ### -TaxPercent
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1414,7 +1424,7 @@ HelpMessage: ''
 
 ### -TotalTaxAmount
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1453,7 +1463,7 @@ HelpMessage: ''
 
 ### -UnitOfMeasureId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1492,7 +1502,7 @@ HelpMessage: ''
 
 ### -UnitPrice
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -1585,7 +1595,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
+ACCOUNT <IMicrosoftGraphAccount>: account
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Blocked <Boolean?>]: 
   [Category <String>]: 
@@ -1595,7 +1605,7 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
   [Number <String>]: 
   [SubCategory <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphSalesInvoiceLine>`: salesInvoiceLine
+BODYPARAMETER <IMicrosoftGraphSalesInvoiceLine>: salesInvoiceLine
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1661,7 +1671,7 @@ Read-only.
   [UnitOfMeasureId <String>]: 
   [UnitPrice <Decimal?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1699,7 +1709,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-ITEM `<IMicrosoftGraphItem>`: item
+ITEM <IMicrosoftGraphItem>: item
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BaseUnitOfMeasureId <String>]: 
   [Blocked <Boolean?>]: 
@@ -1733,27 +1743,4 @@ ITEM `<IMicrosoftGraphItem>`: item
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanySaleInvoiceLine](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoiceline)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoiceline)

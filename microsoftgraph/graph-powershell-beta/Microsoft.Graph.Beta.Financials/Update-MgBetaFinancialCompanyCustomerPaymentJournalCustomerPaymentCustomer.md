@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer
 ---
@@ -85,6 +85,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property customer in financials
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -144,7 +154,7 @@ HelpMessage: ''
 
 ### -Blocked
 
-
+.
 
 ```yaml
 Type: System.String
@@ -297,7 +307,7 @@ HelpMessage: ''
 
 ### -CurrencyCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -324,7 +334,7 @@ HelpMessage: ''
 
 ### -CurrencyId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -405,7 +415,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -432,7 +442,7 @@ HelpMessage: ''
 
 ### -Email
 
-
+.
 
 ```yaml
 Type: System.String
@@ -522,7 +532,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -577,7 +587,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -604,7 +614,7 @@ HelpMessage: ''
 
 ### -Number
 
-
+.
 
 ```yaml
 Type: System.String
@@ -659,7 +669,7 @@ HelpMessage: ''
 
 ### -PaymentMethodId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -714,7 +724,7 @@ HelpMessage: ''
 
 ### -PaymentTermsId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -741,7 +751,7 @@ HelpMessage: ''
 
 ### -PhoneNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -768,7 +778,7 @@ HelpMessage: ''
 
 ### -Picture
 
-
+.
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
@@ -909,7 +919,7 @@ HelpMessage: ''
 
 ### -ShipmentMethodId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -936,7 +946,7 @@ HelpMessage: ''
 
 ### -TaxAreaDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -963,7 +973,7 @@ HelpMessage: ''
 
 ### -TaxAreaId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -990,7 +1000,7 @@ HelpMessage: ''
 
 ### -TaxLiable
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1017,7 +1027,7 @@ HelpMessage: ''
 
 ### -TaxRegistrationNumber
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1044,7 +1054,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1071,7 +1081,7 @@ HelpMessage: ''
 
 ### -Website
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1152,7 +1162,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1160,7 +1170,7 @@ ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphCustomer>`: customer
+BODYPARAMETER <IMicrosoftGraphCustomer>: customer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1225,7 +1235,7 @@ BODYPARAMETER `<IMicrosoftGraphCustomer>`: customer
   [Type <String>]: 
   [Website <String>]: 
 
-CURRENCY `<IMicrosoftGraphCurrency>`: currency
+CURRENCY <IMicrosoftGraphCurrency>: currency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AmountDecimalPlaces <String>]: 
   [AmountRoundingPrecision <Decimal?>]: 
@@ -1235,7 +1245,7 @@ CURRENCY `<IMicrosoftGraphCurrency>`: currency
   [LastModifiedDateTime <DateTime?>]: 
   [Symbol <String>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1273,14 +1283,14 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-PAYMENTMETHOD `<IMicrosoftGraphPaymentMethod>`: paymentMethod
+PAYMENTMETHOD <IMicrosoftGraphPaymentMethod>: paymentMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: 
   [DisplayName <String>]: 
   [Id <String>]: 
   [LastModifiedDateTime <DateTime?>]: 
 
-PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
+PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalculateDiscountOnCreditMemos <Boolean?>]: 
   [Code <String>]: 
@@ -1298,7 +1308,7 @@ PICTURE <IMicrosoftGraphPicture[]>: .
   [Id <String>]: 
   [Width <Int32?>]: 
 
-SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
+SHIPMENTMETHOD <IMicrosoftGraphShipmentMethod>: shipmentMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: 
   [DisplayName <String>]: 
@@ -1308,27 +1318,4 @@ SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournalcustomerpaymentcustomer)

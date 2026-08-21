@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequotepaymentterm
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaFinancialCompanySaleQuotePaymentTerm
 ---
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property paymentTerm in financials
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -150,7 +160,7 @@ HelpMessage: ''
 
 ### -CalculateDiscountOnCreditMemos
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -177,7 +187,7 @@ HelpMessage: ''
 
 ### -Code
 
-
+.
 
 ```yaml
 Type: System.String
@@ -253,7 +263,7 @@ HelpMessage: ''
 
 ### -DiscountDateCalculation
 
-
+.
 
 ```yaml
 Type: System.String
@@ -280,7 +290,7 @@ HelpMessage: ''
 
 ### -DiscountPercent
 
-
+.
 
 ```yaml
 Type: System.Decimal
@@ -307,7 +317,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -334,7 +344,7 @@ HelpMessage: ''
 
 ### -DueDateCalculation
 
-
+.
 
 ```yaml
 Type: System.String
@@ -424,7 +434,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -479,7 +489,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -672,7 +682,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPaymentTerm>`: paymentTerm
+BODYPARAMETER <IMicrosoftGraphPaymentTerm>: paymentTerm
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalculateDiscountOnCreditMemos <Boolean?>]: 
   [Code <String>]: 
@@ -683,7 +693,7 @@ BODYPARAMETER `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   [Id <String>]: 
   [LastModifiedDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -724,27 +734,4 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaFinancialCompanySaleQuotePaymentTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequotepaymentterm)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysalequotepaymentterm)
