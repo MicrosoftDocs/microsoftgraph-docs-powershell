@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernancePrivilegedAccessGroup
 
 A group that's governed through Privileged Identity Management (PIM).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
