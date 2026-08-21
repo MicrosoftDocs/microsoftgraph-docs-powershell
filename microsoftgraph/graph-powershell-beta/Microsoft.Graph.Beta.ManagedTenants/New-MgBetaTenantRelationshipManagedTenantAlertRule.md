@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ManagedTenants-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipManagedTenantAlertRule
 ---
@@ -52,6 +52,16 @@ This cmdlet has the following aliases,
 
 Create new navigation property to managedTenantAlertRules for tenantRelationships
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -77,7 +87,7 @@ HelpMessage: ''
 
 ### -AlertDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -98,7 +108,7 @@ HelpMessage: ''
 
 ### -Alerts
 
-
+.
 To construct, see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
@@ -120,7 +130,7 @@ HelpMessage: ''
 
 ### -AlertTtl
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -206,7 +216,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -227,7 +237,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -248,7 +258,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -269,7 +279,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -375,7 +385,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -396,7 +406,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -417,7 +427,7 @@ HelpMessage: ''
 
 ### -LastRunDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -587,7 +597,7 @@ HelpMessage: ''
 
 ### -Targets
 
-
+.
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
@@ -609,7 +619,7 @@ HelpMessage: ''
 
 ### -TenantIds
 
-
+.
 To construct, see NOTES section for TENANTIDS properties and create a hash table.
 
 ```yaml
@@ -772,7 +782,7 @@ Read-only.
   [TenantId <String>]: 
   [Title <String>]: 
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagedTenantAlertRule>`: managedTenantAlertRule
+BODYPARAMETER <IMicrosoftGraphManagedTenantsManagedTenantAlertRule>: managedTenantAlertRule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -863,7 +873,7 @@ Read-only.
     [TenantId <String>]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-RULEDEFINITION `<IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>`: managedTenantAlertRuleDefinition
+RULEDEFINITION <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>: managedTenantAlertRuleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -963,27 +973,4 @@ Optional.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipManagedTenantAlertRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertrule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertrule)
