@@ -797,8 +797,8 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchdevicelink)
-- [](https://learn.microsoft.com/graph/api/networkaccess-branchsite-post-devicelinks?view=graph-rest-beta)
+- [New-MgBetaNetworkAccessConnectivityBranchDeviceLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivitybranchdevicelink)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-branchsite-post-devicelinks?view=graph-rest-beta)
 
 
 

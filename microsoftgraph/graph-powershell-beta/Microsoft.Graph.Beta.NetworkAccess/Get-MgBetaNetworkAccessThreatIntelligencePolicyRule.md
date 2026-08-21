@@ -583,7 +583,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessthreatintelligencepolicyrule)
+- [Get-MgBetaNetworkAccessThreatIntelligencePolicyRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessthreatintelligencepolicyrule)
 
 
 
