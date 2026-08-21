@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAuditLogProvisioning
 ---
@@ -14,9 +14,6 @@ title: Get-MgAuditLogProvisioning
 ## SYNOPSIS
 
 Get provisioning from auditLogs
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,28 +56,18 @@ This cmdlet has the following aliases,
 Get provisioning from auditLogs
 
 ## EXAMPLES
-### Example 1: Successful request
 
-```powershell
-
-Import-Module Microsoft.Graph.Reports
-
-Get-MgAuditLogProvisioning
-
-```
-This example will successful request
-
-### Example 2: Error reponse
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogProvisioning
 
-```
-This example will error reponse
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Reports
+
+Get-MgAuditLogProvisioning
 
 ## PARAMETERS
 
@@ -542,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -569,27 +556,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgAuditLogProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning)
+- [](https://learn.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-1.0)

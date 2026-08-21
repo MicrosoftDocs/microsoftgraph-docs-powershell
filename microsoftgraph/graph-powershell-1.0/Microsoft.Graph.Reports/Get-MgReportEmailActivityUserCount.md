@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportEmailActivityUserCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportEmailActivityUserCount
 ## SYNOPSIS
 
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportEmailActivityUserCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportEmailActivityUserCount Cmdlet.
-
+Get-MgReportEmailActivityUserCount -Period $periodId
 
 ## PARAMETERS
 
@@ -346,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -373,27 +365,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportEmailActivityUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)

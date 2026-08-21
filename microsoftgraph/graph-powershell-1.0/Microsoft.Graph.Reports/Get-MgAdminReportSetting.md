@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminReportSetting
 ---
@@ -14,9 +14,6 @@ title: Get-MgAdminReportSetting
 ## SYNOPSIS
 
 Get the tenant-level settings for Microsoft 365 reports.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminReportSetting](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAdminReportSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,26 +35,13 @@ This cmdlet has the following aliases,
 
 Get the tenant-level settings for Microsoft 365 reports.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ReportSettings.Read.All, ReportSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ReportSettings.Read.All, ReportSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAdminReportSetting
-
-```
-This example shows how to use the Get-MgAdminReportSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgAdminReportSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgadminreportsetting)
+- [](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0)

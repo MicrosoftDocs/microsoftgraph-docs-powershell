@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportYammerGroupActivityDetail
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportYammerGroupActivityDetail
 ## SYNOPSIS
 
 Get details about Yammer groups activity by group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,17 +63,12 @@ This cmdlet has the following aliases,
 Get details about Yammer groups activity by group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportYammerGroupActivityDetail
-
-```
-This example shows how to use the Get-MgReportYammerGroupActivityDetail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -391,7 +383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -418,27 +410,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportYammerGroupActivityDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail)
+- [](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)
