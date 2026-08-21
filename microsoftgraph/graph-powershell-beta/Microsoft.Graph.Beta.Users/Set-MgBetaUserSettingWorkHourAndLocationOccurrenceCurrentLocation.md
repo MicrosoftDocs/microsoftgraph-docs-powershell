@@ -72,8 +72,9 @@ Update your work location for the current day or current active segment.
 This action allows you to quickly update your work location without modifying individual occurrences.
 
 ## EXAMPLES
+### Example 1: Set the current location to office
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users
 
@@ -86,7 +87,12 @@ $params = @{
 # A UPN can also be used as -UserId.
 Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will set the current location to office
+
+### Example 2: Set current location to remote
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users
 
@@ -97,6 +103,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation -UserId $userId -BodyParameter $params
+
+```
+This example will set current location to remote
+
 
 ## PARAMETERS
 
