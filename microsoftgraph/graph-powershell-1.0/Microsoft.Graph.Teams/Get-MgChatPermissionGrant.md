@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatPermissionGrant
 ---
@@ -14,9 +14,6 @@ title: Get-MgChatPermissionGrant
 ## SYNOPSIS
 
 A collection of permissions granted to apps for the chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,17 +57,12 @@ This cmdlet has the following aliases,
 A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChatPermissionGrant -ChatId $chatId
-
-```
-This example shows how to use the Get-MgChatPermissionGrant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -559,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -600,27 +592,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgChatPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-permissiongrants?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpermissiongrant)
+- [](https://learn.microsoft.com/graph/api/chat-list-permissiongrants?view=graph-rest-1.0)

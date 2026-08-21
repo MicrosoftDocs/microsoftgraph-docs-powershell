@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamMember
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeamMember
 ## SYNOPSIS
 
 Get a conversationMember from a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,48 +55,25 @@ This cmdlet has the following aliases,
 
 Get a conversationMember from a team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamMember.Read.All, TeamMember.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamMember.Read.Group, TeamMember.Read.All, TeamMember.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get list of members in team
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamMember -TeamId $teamId
 
-```
-This example will get list of members in team
-
-### Example 2: Find members of a team by their Azure AD user object ID
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')" 
+Get-MgTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')"
 
-```
-This example will find members of a team by their azure ad user object id
-
-### Example 3: Find members of a team by their names or email
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')" 
-
-```
-This example will find members of a team by their names or email
-
+Get-MgTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')"
 
 ## PARAMETERS
 
@@ -588,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -629,28 +603,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteammember)
+- [](https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-1.0)

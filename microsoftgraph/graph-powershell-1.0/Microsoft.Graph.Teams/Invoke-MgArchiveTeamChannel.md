@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamchannel
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgArchiveTeamChannel
 ---
@@ -21,9 +21,6 @@ Archiving is an asynchronous operation; a channel is archived after the asynchro
 A channel without an owner or that belongs to a group that has no owner, can't be archived.
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can’t be archived or unarchived if its team is archived.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,37 +80,19 @@ A channel without an owner or that belongs to a group that has no owner, can't b
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can’t be archived or unarchived if its team is archived.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Archive a channel
 
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
-
-```
-This example will archive a channel
-
-### Example 2: Archive a channel when the team is archived
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
-```
-This example will archive a channel when the team is archived
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Teams
+
+Invoke-MgArchiveTeamChannel -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -146,7 +125,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -441,7 +420,7 @@ HelpMessage: ''
 
 ### -ShouldSetSpoSiteReadOnlyForMembers
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -549,11 +528,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1R5Aj03TeamsTeamIdChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1R5Aj03TeamsTeamIdChannelsChannelIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -594,27 +573,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgArchiveTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamchannel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteamchannel)
+- [](https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mguserchatactivitynotification
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgUserChatActivityNotification
 ---
@@ -15,9 +15,6 @@ title: Send-MgUserChatActivityNotification
 
 Send an activity feed notification in scope of a chat.
 For more information about sending notifications and the requirements for doing so, see sending Teams activity notifications.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaUserChatActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaUserChatActivityNotification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,11 +74,21 @@ This cmdlet has the following aliases,
 Send an activity feed notification in scope of a chat.
 For more information about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -ActivityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -135,7 +142,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -184,7 +191,7 @@ HelpMessage: ''
 
 ### -ChainId
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -323,7 +330,7 @@ HelpMessage: ''
 
 ### -IconId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -539,7 +546,7 @@ HelpMessage: ''
 
 ### -TeamsAppId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -566,7 +573,7 @@ HelpMessage: ''
 
 ### -TemplateParameters
 
-
+.
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
@@ -703,7 +710,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBdscpeUsersUserIdChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityType <String>]: 
   [ChainId <Int64?>]: 
@@ -727,7 +734,7 @@ If the value is text, this must be a plain text value.
     [WebUrl <String>]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -765,7 +772,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -774,7 +781,7 @@ TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Source <String>]: teamworkActivityTopicSource
   [Value <String>]: The topic value.
@@ -786,28 +793,5 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [Send-MgUserChatActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mguserchatactivitynotification)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mguserchatactivitynotification)
+- [](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
