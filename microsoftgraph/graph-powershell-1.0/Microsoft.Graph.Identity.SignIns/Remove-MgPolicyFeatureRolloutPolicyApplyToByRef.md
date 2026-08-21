@@ -1,63 +1,43 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyeffectiverule
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
-title: New-MgPolicyRoleManagementPolicyEffectiveRule
+title: Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
 ---
 
-# New-MgPolicyRoleManagementPolicyEffectiveRule
+# Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
 
 ## SYNOPSIS
 
-Create new navigation property to effectiveRules for policies
+Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Delete (Default)
 
 ```
-New-MgPolicyRoleManagementPolicyEffectiveRule -UnifiedRoleManagementPolicyId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -DirectoryObjectId <string>
+ -FeatureRolloutPolicyId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Create
+### DeleteViaIdentity
 
 ```
-New-MgPolicyRoleManagementPolicyEffectiveRule -UnifiedRoleManagementPolicyId <string>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-ResponseHeadersVariable <string>]
+Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
+ -InputObject <IIdentitySignInsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### CreateViaIdentityExpanded
-
-```
-New-MgPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### CreateViaIdentity
-
-```
-New-MgPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -67,64 +47,30 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to effectiveRules for policies
+Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.HybridAuthentication, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgPolicyFeatureRolloutPolicyApplyToByRef Cmdlet.
+
 
 ## PARAMETERS
-
-### -AdditionalProperties
-
-Additional Parameters
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-unifiedRoleManagementPolicyRule
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -161,6 +107,48 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -FeatureRolloutPolicyId
+
+The unique identifier of featureRolloutPolicy
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -232,10 +220,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
+### -IfMatch
 
-The unique identifier for an entity.
-Read-only.
+ETag
 
 ```yaml
 Type: System.String
@@ -243,13 +230,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -271,16 +252,31 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: CreateViaIdentity
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
   Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -373,61 +369,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Target
-
-unifiedRoleManagementPolicyRuleTarget
-To construct, see NOTES section for TARGET properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UnifiedRoleManagementPolicyId
-
-The unique identifier of unifiedRoleManagementPolicy
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -463,17 +404,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -483,28 +420,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementPolicyRule>`: unifiedRoleManagementPolicyRule
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]: unifiedRoleManagementPolicyRuleTarget
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Caller <String>]: The type of caller that's the target of the policy rule.
-Allowed values are: None, Admin, EndUser.
-    [EnforcedSettings <String[]>]: The list of role settings that are enforced and cannot be overridden by child scopes.
-Use All for all settings.
-    [InheritableSettings <String[]>]: The list of role settings that can be inherited by child scopes.
-Use All for all settings.
-    [Level <String>]: The role assignment type that's the target of policy rule.
-Allowed values are: Eligibility, Assignment.
-    [Operations <String[]>]: The role management operations that are the target of the policy rule.
-Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-    [TargetObjects <IMicrosoftGraphDirectoryObject[]>]: 
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
@@ -573,29 +488,11 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-TARGET `<IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>`: unifiedRoleManagementPolicyRuleTarget
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Caller <String>]: The type of caller that's the target of the policy rule.
-Allowed values are: None, Admin, EndUser.
-  [EnforcedSettings <String[]>]: The list of role settings that are enforced and cannot be overridden by child scopes.
-Use All for all settings.
-  [InheritableSettings <String[]>]: The list of role settings that can be inherited by child scopes.
-Use All for all settings.
-  [Level <String>]: The role assignment type that's the target of policy rule.
-Allowed values are: Eligibility, Assignment.
-  [Operations <String[]>]: The role management operations that are the target of the policy rule.
-Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-  [TargetObjects <IMicrosoftGraphDirectoryObject[]>]: 
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
-
 
 ## RELATED LINKS
 
-- [New-MgPolicyRoleManagementPolicyEffectiveRule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyeffectiverule)
-
+- [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete-appliesto?view=graph-rest-1.0)
 
 
 

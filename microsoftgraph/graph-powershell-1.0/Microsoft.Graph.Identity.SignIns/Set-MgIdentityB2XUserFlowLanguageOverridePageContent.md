@@ -579,8 +579,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowlanguageoverridepagecontent)
-- [](https://learn.microsoft.com/graph/api/userflowlanguagepage-put?view=graph-rest-1.0)
+- [Set-MgIdentityB2XUserFlowLanguageOverridePageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowlanguageoverridepagecontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userflowlanguagepage-put?view=graph-rest-1.0)
 
 
 

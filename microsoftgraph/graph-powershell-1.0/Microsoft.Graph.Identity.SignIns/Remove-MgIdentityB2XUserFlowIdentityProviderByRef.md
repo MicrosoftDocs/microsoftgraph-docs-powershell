@@ -1,63 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyeffectiverule
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
-title: New-MgPolicyRoleManagementPolicyEffectiveRule
+title: Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 ---
 
-# New-MgPolicyRoleManagementPolicyEffectiveRule
+# Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
 
-Create new navigation property to effectiveRules for policies
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Delete (Default)
 
 ```
-New-MgPolicyRoleManagementPolicyEffectiveRule -UnifiedRoleManagementPolicyId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <string>
+ -IdentityProviderBaseId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Create
+### DeleteViaIdentity
 
 ```
-New-MgPolicyRoleManagementPolicyEffectiveRule -UnifiedRoleManagementPolicyId <string>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### CreateViaIdentityExpanded
-
-```
-New-MgPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### CreateViaIdentity
-
-```
-New-MgPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -67,58 +46,24 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to effectiveRules for policies
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## PARAMETERS
 
-### -AdditionalProperties
+### -B2XIdentityUserFlowId
 
-Additional Parameters
+The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-unifiedRoleManagementPolicyRule
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentity
+- Name: Delete
   Position: Named
   IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -232,10 +177,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
+### -IdentityProviderBaseId
 
-The unique identifier for an entity.
-Read-only.
+The unique identifier of identityProviderBase
 
 ```yaml
 Type: System.String
@@ -243,13 +187,28 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
+- Name: Delete
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: CreateExpanded
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -271,16 +230,31 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: CreateViaIdentity
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
   Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -373,61 +347,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Target
-
-unifiedRoleManagementPolicyRuleTarget
-To construct, see NOTES section for TARGET properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UnifiedRoleManagementPolicyId
-
-The unique identifier of unifiedRoleManagementPolicy
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -463,17 +382,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -483,28 +398,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementPolicyRule>`: unifiedRoleManagementPolicyRule
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]: unifiedRoleManagementPolicyRuleTarget
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [Caller <String>]: The type of caller that's the target of the policy rule.
-Allowed values are: None, Admin, EndUser.
-    [EnforcedSettings <String[]>]: The list of role settings that are enforced and cannot be overridden by child scopes.
-Use All for all settings.
-    [InheritableSettings <String[]>]: The list of role settings that can be inherited by child scopes.
-Use All for all settings.
-    [Level <String>]: The role assignment type that's the target of policy rule.
-Allowed values are: Eligibility, Assignment.
-    [Operations <String[]>]: The role management operations that are the target of the policy rule.
-Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-    [TargetObjects <IMicrosoftGraphDirectoryObject[]>]: 
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
@@ -573,28 +466,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-TARGET `<IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>`: unifiedRoleManagementPolicyRuleTarget
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Caller <String>]: The type of caller that's the target of the policy rule.
-Allowed values are: None, Admin, EndUser.
-  [EnforcedSettings <String[]>]: The list of role settings that are enforced and cannot be overridden by child scopes.
-Use All for all settings.
-  [InheritableSettings <String[]>]: The list of role settings that can be inherited by child scopes.
-Use All for all settings.
-  [Level <String>]: The role assignment type that's the target of policy rule.
-Allowed values are: Eligibility, Assignment.
-  [Operations <String[]>]: The role management operations that are the target of the policy rule.
-Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
-  [TargetObjects <IMicrosoftGraphDirectoryObject[]>]: 
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
-
 
 ## RELATED LINKS
 
-- [New-MgPolicyRoleManagementPolicyEffectiveRule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyeffectiverule)
+- [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef)
 
 
 
