@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplandetail
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPlannerPlanDetail
 ---
@@ -14,9 +14,6 @@ title: Get-MgPlannerPlanDetail
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a plannerPlanDetails object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a plannerPlanDetails object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Group.Read.All, Group.ReadWrite.All, Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgPlannerPlanDetail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -356,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
@@ -366,27 +350,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPlannerPlanDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplandetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplandetails-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplandetail)
+- [](https://learn.microsoft.com/graph/api/plannerplandetails-get?view=graph-rest-1.0)

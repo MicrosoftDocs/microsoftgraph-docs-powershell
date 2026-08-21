@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlannerPlan
 ---
@@ -14,9 +14,6 @@ title: Update-MgPlannerPlan
 ## SYNOPSIS
 
 Update the properties of a plannerPlan object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a plannerPlan object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
@@ -93,10 +81,6 @@ $params = @{
 }
 
 Update-MgPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -717,7 +701,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlan>`: plannerPlan
+BODYPARAMETER <IMicrosoftGraphPlannerPlan>: plannerPlan
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -971,7 +955,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Title <String>]: Title of the task.
 
-CONTAINER `<IMicrosoftGraphPlannerPlanContainer>`: plannerPlanContainer
+CONTAINER <IMicrosoftGraphPlannerPlanContainer>: plannerPlanContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerId <String>]: The identifier of the resource that contains the plan.
 Optional.
@@ -979,7 +963,7 @@ Optional.
   [Url <String>]: The full canonical URL of the container.
 Optional.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -990,7 +974,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DETAILS `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
+DETAILS <IMicrosoftGraphPlannerPlanDetails>: plannerPlanDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1024,7 +1008,7 @@ Read-only.
   [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
@@ -1123,27 +1107,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [Update-MgPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan)
+- [](https://learn.microsoft.com/graph/api/plannerplan-update?view=graph-rest-1.0)
