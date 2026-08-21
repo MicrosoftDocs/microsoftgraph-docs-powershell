@@ -61,8 +61,9 @@ To learn more about customizing insights privacy for your organization, see:\r- 
 | Application | PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update settings for item insights
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -71,6 +72,10 @@ $params = @{
 }
 
 Update-MgBetaAdminPeopleItemInsight -BodyParameter $params
+
+```
+This example will update settings for item insights
+
 
 ## PARAMETERS
 

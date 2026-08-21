@@ -59,12 +59,17 @@ To delete the organizationalBrandingLocalization object, all images (Stream type
 | Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
+
+```
+This example shows how to use the Remove-MgBetaOrganizationBrandingLocalization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -66,16 +66,6 @@ This cmdlet has the following aliases,
 
 Dismiss an impactedResources object and update its status to dismissed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -537,6 +527,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource)
 - [](https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-beta)
+
 
 
 
