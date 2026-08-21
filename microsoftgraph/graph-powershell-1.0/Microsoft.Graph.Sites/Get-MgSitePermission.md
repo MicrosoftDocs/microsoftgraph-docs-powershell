@@ -606,9 +606,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermission)
-- [](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0)
+- [Get-MgSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0)
 
 
 

@@ -446,8 +446,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
+- [Invoke-MgReauthorizeSiteListSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgreauthorizesitelistsubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
 
 
 

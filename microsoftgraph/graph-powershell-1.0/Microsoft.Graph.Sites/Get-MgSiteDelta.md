@@ -501,8 +501,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta)
-- [](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-1.0)
+- [Get-MgSiteDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-1.0)
 
 
 
