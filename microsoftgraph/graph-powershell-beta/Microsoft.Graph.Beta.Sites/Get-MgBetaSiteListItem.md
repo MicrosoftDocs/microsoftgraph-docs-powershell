@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSiteListItem
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSiteListItem
 ## SYNOPSIS
 
 Returns the metadata for an item in a list.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,37 +56,19 @@ This cmdlet has the following aliases,
 
 Returns the metadata for an item in a list.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.Manage.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get list items with specific fields
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" 
-
-```
-This example will get list items with specific fields
-
-### Example 2: Get filtered list items with specific fields
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" -Filter "fields/Quantity lt 600" 
+Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)"
 
-```
-This example will get filtered list items with specific fields
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Sites
+
+Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" -Filter "fields/Quantity lt 600"
 
 ## PARAMETERS
 
@@ -605,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -670,28 +649,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSiteListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitem)
+- [](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-beta)

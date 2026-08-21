@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroupsectionpage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage
 ## SYNOPSIS
 
 Create new navigation property to pages for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to pages for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -264,7 +271,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -773,7 +780,7 @@ HelpMessage: ''
 
 ### -Self
 
-
+.
 
 ```yaml
 Type: System.String
@@ -854,7 +861,7 @@ HelpMessage: ''
 
 ### -UserTags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -935,7 +942,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenotePage>`: onenotePage
+BODYPARAMETER <IMicrosoftGraphOnenotePage>: onenotePage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: 
   [Self <String>]: 
@@ -1045,7 +1052,7 @@ Read-only.
   [Title <String>]: The title of the page.
   [UserTags <String[]>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -1107,14 +1114,14 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-LINKS `<IMicrosoftGraphPageLinks>`: pageLinks
+LINKS <IMicrosoftGraphPageLinks>: pageLinks
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OneNoteClientUrl <IMicrosoftGraphExternalLink>]: externalLink
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Href <String>]: The URL of the link.
   [OneNoteWebUrl <IMicrosoftGraphExternalLink>]: externalLink
 
-PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
+PARENTNOTEBOOK <IMicrosoftGraphNotebook>: notebook
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1223,7 +1230,7 @@ Nullable.
 Read-only.
   [UserRole <String>]: onenoteUserRole
 
-PARENTSECTION `<IMicrosoftGraphOnenoteSection>`: onenoteSection
+PARENTSECTION <IMicrosoftGraphOnenoteSection>: onenoteSection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1336,27 +1343,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroupsectionpage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotenotebooksectiongroupsectionpage)
