@@ -2560,12 +2560,12 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-BODYPARAMETER <IMicrosoftGraphServicePrincipal>: servicePrincipal
+BODYPARAMETER `<IMicrosoftGraphServicePrincipal>`: servicePrincipal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -2799,8 +2799,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -3133,8 +3133,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -3491,7 +3491,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CLAIMSPOLICY <IMicrosoftGraphCustomClaimsPolicy>: customClaimsPolicy
+CLAIMSPOLICY `<IMicrosoftGraphCustomClaimsPolicy>`: customClaimsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3620,7 +3620,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INFO <IMicrosoftGraphInformationalUrl>: informationalUrl
+INFO `<IMicrosoftGraphInformationalUrl>`: informationalUrl
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LogoUrl <String>]: CDN URL to the application's logo, Read-only.
   [MarketingUrl <String>]: Link to the application's marketing page.
@@ -3632,7 +3632,7 @@ For example, https://www.contoso.com/app/support
   [TermsOfServiceUrl <String>]: Link to the application's terms of service statement.
 For example, https://www.contoso.com/app/termsofservice
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -3789,7 +3789,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
-PASSWORDSINGLESIGNONSETTINGS <IMicrosoftGraphPasswordSingleSignOnSettings>: passwordSingleSignOnSettings
+PASSWORDSINGLESIGNONSETTINGS `<IMicrosoftGraphPasswordSingleSignOnSettings>`: passwordSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
     [CustomizedLabel <String>]: Title/label override for customization.
@@ -3837,12 +3837,12 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - .
-/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
+ @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-REMOTEDESKTOPSECURITYCONFIGURATION <IMicrosoftGraphRemoteDesktopSecurityConfiguration>: remoteDesktopSecurityConfiguration
+REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfiguration>`: remoteDesktopSecurityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3857,11 +3857,11 @@ Read-only.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.
 
-SAMLSINGLESIGNONSETTINGS <IMicrosoftGraphSamlSingleSignOnSettings>: samlSingleSignOnSettings
+SAMLSINGLESIGNONSETTINGS `<IMicrosoftGraphSamlSingleSignOnSettings>`: samlSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RelayState <String>]: The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
-SYNCHRONIZATION <IMicrosoftGraphSynchronization>: synchronization
+SYNCHRONIZATION `<IMicrosoftGraphSynchronization>`: synchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4162,7 +4162,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-VERIFIEDPUBLISHER <IMicrosoftGraphVerifiedPublisher>: verifiedPublisher
+VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddedDateTime <DateTime?>]: The timestamp when the verified publisher was first added or most recently updated.
   [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
@@ -4173,3 +4173,25 @@ VERIFIEDPUBLISHER <IMicrosoftGraphVerifiedPublisher>: verifiedPublisher
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal)
 - [](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
