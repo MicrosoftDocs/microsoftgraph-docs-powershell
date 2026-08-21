@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupAcceptedSenderByRef
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaGroupAcceptedSenderByRef
 Get a list of users or groups that are in the accepted-senders list for this group.
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,13 +40,15 @@ Get a list of users or groups that are in the accepted-senders list for this gro
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -438,28 +437,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupAcceptedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref)
+- [](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupDynamicMembershipRule
 ---
@@ -47,9 +47,8 @@ This cmdlet has the following aliases,
 Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
-### Example 1: Evaluate if a user or device would be a member of a group based on a membership rule
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -59,10 +58,6 @@ $params = @{
 }
 
 Test-MgBetaGroupDynamicMembershipRule -BodyParameter $params
-
-```
-This example will evaluate if a user or device would be a member of a group based on a membership rule
-
 
 ## PARAMETERS
 
@@ -89,7 +84,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -217,7 +212,7 @@ HelpMessage: ''
 
 ### -MemberId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -238,7 +233,7 @@ HelpMessage: ''
 
 ### -MembershipRule
 
-
+.
 
 ```yaml
 Type: System.String
@@ -394,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MemberId <String>]: 
   [MembershipRule <String>]:
@@ -402,27 +397,5 @@ BODYPARAMETER `<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRe
 
 ## RELATED LINKS
 
-- [Test-MgBetaGroupDynamicMembershipRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
+- [](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)

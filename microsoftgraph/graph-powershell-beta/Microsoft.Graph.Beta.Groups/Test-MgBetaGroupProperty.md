@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupProperty
 ---
@@ -19,9 +19,6 @@ For validating properties before creating a group, use the validateProperties fu
 The following validations are performed for the display name and mail nickname properties: This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgGroupProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ The following validations are performed for the display name and mail nickname p
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group.Read.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -101,10 +89,6 @@ $params = @{
 }
 
 Test-MgBetaGroupProperty -GroupId $groupId -BodyParameter $params
-
-```
-This example shows how to use the Test-MgBetaGroupProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -137,7 +121,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +192,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -353,7 +337,7 @@ HelpMessage: ''
 
 ### -MailNickname
 
-
+.
 
 ```yaml
 Type: System.String
@@ -380,7 +364,7 @@ HelpMessage: ''
 
 ### -OnBehalfOfUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -567,13 +551,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2357VbGroupsGroupIdMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
   [MailNickname <String>]: 
   [OnBehalfOfUserId <String>]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -600,27 +584,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgBetaGroupProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
+- [](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-beta)
