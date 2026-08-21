@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property presence in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -688,6 +678,7 @@ WORKLOCATION `<IMicrosoftGraphUserWorkLocation>`: userWorkLocation
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence)
+
 
 
 
