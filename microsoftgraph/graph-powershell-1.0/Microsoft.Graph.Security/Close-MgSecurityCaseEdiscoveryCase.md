@@ -458,8 +458,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-1.0)
+- [Close-MgSecurityCaseEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-1.0)
 
 
 

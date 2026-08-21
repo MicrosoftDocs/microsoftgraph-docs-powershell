@@ -469,8 +469,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelfileplanreference)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-delete-fileplanreferences?view=graph-rest-1.0)
+- [Remove-MgSecurityLabelFilePlanReference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelfileplanreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-delete-fileplanreferences?view=graph-rest-1.0)
 
 
 

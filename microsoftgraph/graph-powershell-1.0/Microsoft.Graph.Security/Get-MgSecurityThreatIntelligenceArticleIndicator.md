@@ -738,9 +738,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator)
-- [](https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0)
+- [Get-MgSecurityThreatIntelligenceArticleIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0)
 
 
 
