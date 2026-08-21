@@ -15,6 +15,9 @@ title: Invoke-MgBetaDescendantPlace
 
 Invoke function descendants
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDescendantPlace](/powershell/module/Microsoft.Graph.Calendar/Invoke-MgDescendantPlace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Descendant (Default)

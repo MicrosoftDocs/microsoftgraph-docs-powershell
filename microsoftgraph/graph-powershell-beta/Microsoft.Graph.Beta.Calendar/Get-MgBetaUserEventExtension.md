@@ -16,6 +16,9 @@ title: Get-MgBetaUserEventExtension
 The collection of open extensions defined for the event.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
