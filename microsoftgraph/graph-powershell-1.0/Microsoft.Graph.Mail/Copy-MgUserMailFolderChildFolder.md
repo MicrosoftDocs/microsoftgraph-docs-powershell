@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Copy-MgUserMailFolderChildFolder
 ---
@@ -14,9 +14,6 @@ title: Copy-MgUserMailFolderChildFolder
 ## SYNOPSIS
 
 Copy a mailfolder and its contents to another mailfolder.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Copy-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 
 Copy a mailfolder and its contents to another mailfolder.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -99,7 +106,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -170,7 +177,7 @@ HelpMessage: ''
 
 ### -DestinationId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -508,11 +515,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1E02JcUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1E02JcUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DestinationId <String>]: 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -525,28 +532,5 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Copy-MgUserMailFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfolder)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfolder)
+- [](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0)

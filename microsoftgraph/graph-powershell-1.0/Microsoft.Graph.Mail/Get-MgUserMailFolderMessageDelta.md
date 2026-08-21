@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMailFolderMessageDelta
 ---
@@ -14,11 +14,8 @@ title: Get-MgUserMailFolderMessageDelta
 ## SYNOPSIS
 
 Get a set of messages added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\rthat folder](/graph/delta-query-messages).
-It allows you to maintain and synchronize a local store of a user's messages without\rhaving to fetch the entire set of messages from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageDelta?view=graph-powershell-beta)
+A delta function call for messages in a folder is similar to a GET request, except that by appropriately\r\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\r\nthat folder](/graph/delta-query-messages).
+It allows you to maintain and synchronize a local store of a user's messages without\r\nhaving to fetch the entire set of messages from the server every time.
 
 ## SYNTAX
 
@@ -52,30 +49,17 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of messages added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\rthat folder](/graph/delta-query-messages).
-It allows you to maintain and synchronize a local store of a user's messages without\rhaving to fetch the entire set of messages from the server every time.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
+A delta function call for messages in a folder is similar to a GET request, except that by appropriately\r\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\r\nthat folder](/graph/delta-query-messages).
+It allows you to maintain and synchronize a local store of a user's messages without\r\nhaving to fetch the entire set of messages from the server every time.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolderMessageDelta -UserId $userId -MailFolderId $mailFolderId
-
-```
-This example shows how to use the Get-MgUserMailFolderMessageDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -601,7 +585,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -614,27 +598,5 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserMailFolderMessageDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta)
+- [](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
