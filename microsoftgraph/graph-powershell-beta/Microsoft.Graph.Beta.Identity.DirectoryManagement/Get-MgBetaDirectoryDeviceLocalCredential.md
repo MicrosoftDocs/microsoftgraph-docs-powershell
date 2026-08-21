@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydevicelocalcredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryDeviceLocalCredential
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaDirectoryDeviceLocalCredential
 ## SYNOPSIS
 
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeviceLocalCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -520,7 +527,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -589,30 +596,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDirectoryDeviceLocalCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydevicelocalcredential)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydevicelocalcredential)
+- [](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbranding
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaOrganizationBranding
 ---
@@ -18,9 +18,6 @@ If no default organizational branding object exists, this method returns a 404 N
 If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
 This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
 To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,48 +53,25 @@ If the Accept-Language header is set to an existing locale identified by the val
 This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
 To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.Read.All, OrganizationalBranding.ReadWrite.All, User.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaOrganizationBranding -OrganizationId $organizationId
-
-```
-This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
-```
-This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
-```
-This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
+### EXAMPLE 3
 
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
 ## PARAMETERS
 
@@ -387,7 +361,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -456,27 +430,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaOrganizationBranding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbranding)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbranding)
+- [](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-beta)

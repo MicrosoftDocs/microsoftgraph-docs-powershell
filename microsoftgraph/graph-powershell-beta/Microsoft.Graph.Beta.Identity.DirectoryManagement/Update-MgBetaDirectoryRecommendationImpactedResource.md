@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendationimpactedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryRecommendationImpactedResource
 ---
@@ -75,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property impactedResources in directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -876,7 +886,7 @@ ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: Additional information unique to 
   [Key <String>]: Key.
   [Value <String>]: Value.
 
-BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
+BODYPARAMETER <IMicrosoftGraphImpactedResource>: impactedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -900,7 +910,7 @@ Examples include user, application.
   [SubjectId <String>]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -969,27 +979,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryRecommendationImpactedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendationimpactedresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendationimpactedresource)

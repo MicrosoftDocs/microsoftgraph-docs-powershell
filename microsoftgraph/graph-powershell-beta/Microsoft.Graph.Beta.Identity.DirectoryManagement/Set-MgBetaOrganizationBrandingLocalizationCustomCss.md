@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationcustomcss
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaOrganizationBrandingLocalizationCustomCss
 ---
@@ -15,9 +15,6 @@ title: Set-MgBetaOrganizationBrandingLocalizationCustomCss
 
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationCustomCss?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,13 +48,15 @@ This cmdlet has the following aliases,
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -127,7 +126,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -462,7 +461,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -531,27 +530,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaOrganizationBrandingLocalizationCustomCss](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationcustomcss)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationcustomcss)
