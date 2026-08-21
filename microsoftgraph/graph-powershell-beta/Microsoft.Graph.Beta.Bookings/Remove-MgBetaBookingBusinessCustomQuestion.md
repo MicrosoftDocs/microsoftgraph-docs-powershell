@@ -15,6 +15,9 @@ title: Remove-MgBetaBookingBusinessCustomQuestion
 
 Delete navigation property customQuestions for bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventWebinarRegistrationSession
 
 Sessions for a registration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistrationSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistrationSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
