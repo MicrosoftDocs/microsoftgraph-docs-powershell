@@ -62,16 +62,6 @@ Create new navigation property to vppTokens for deviceAppManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -782,6 +772,7 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult[]>: The collection of st
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken)
+
 
 
 
