@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberasuser
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupTransitiveMemberAsUser
 ---
@@ -18,9 +18,6 @@ A group can have different object types as members.
 For more information about supported member types for different groups, see Group membership.
 This operation is transitive and returns a flat list of all nested members.
 An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberAsUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,30 +66,18 @@ This operation is transitive and returns a flat list of all nested members.
 An attempt to filter by an OData cast that represents an unsupported member type returns a 400 Bad Request error with the Request_UnsupportedQuery code.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Groups
-
-Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:tier"' -Property "displayName,id"  -ConsistencyLevel eventual 
-
-
-```
-This example shows how to use the Get-MgGroupTransitiveMemberAsUser Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual 
+Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:tier"' -Property "displayName,id"  -ConsistencyLevel eventual
 
+### EXAMPLE 2
 
-```
-This example shows how to use the Get-MgGroupTransitiveMemberAsUser Cmdlet.
+Import-Module Microsoft.Graph.Groups
 
+Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual
 
 ## PARAMETERS
 
@@ -603,7 +588,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -627,27 +612,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupTransitiveMemberAsUser](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberasuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberasuser)
+- [](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0)

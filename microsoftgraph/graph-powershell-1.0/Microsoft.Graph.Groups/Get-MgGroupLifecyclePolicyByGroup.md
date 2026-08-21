@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicybygroup
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupLifecyclePolicyByGroup
 ---
@@ -14,9 +14,6 @@ title: Get-MgGroupLifecyclePolicyByGroup
 ## SYNOPSIS
 
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupLifecyclePolicyByGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupLifecyclePolicyByGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId
-
-```
-This example shows how to use the Get-MgGroupLifecyclePolicyByGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -492,27 +476,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupLifecyclePolicyByGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicybygroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouplifecyclepolicybygroup)
+- [](https://learn.microsoft.com/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0)

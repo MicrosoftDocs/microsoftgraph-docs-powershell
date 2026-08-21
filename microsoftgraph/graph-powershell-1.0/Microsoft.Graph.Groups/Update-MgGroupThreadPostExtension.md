@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupThreadPostExtension
 ---
@@ -13,12 +13,9 @@ title: Update-MgGroupThreadPostExtension
 
 ## SYNOPSIS
 
-Update an open extension (openTypeExtension object) on a supported resource type.\r- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.\r\n- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r\n- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,14 +64,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update an open extension (openTypeExtension object) on a supported resource type.\r- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r- Otherwise, that property and its data are added to the extension.
+Update an open extension (openTypeExtension object) on a supported resource type.\r\n- If a property in the request body matches the name of an existing property in the extension, the data in the extension is updated.\r\n- Otherwise, that property and its data are added to the extension.
 The data in an extension can be primitive types or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
@@ -92,10 +88,6 @@ $params = @{
 }
 
 Update-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgGroupThreadPostExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -564,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -588,27 +580,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgGroupThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthreadpostextension)
+- [](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0)
