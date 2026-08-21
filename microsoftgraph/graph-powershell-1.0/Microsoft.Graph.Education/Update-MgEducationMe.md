@@ -15,6 +15,9 @@ title: Update-MgEducationMe
 
 Update the navigation property me in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMe?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
