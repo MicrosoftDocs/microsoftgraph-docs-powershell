@@ -63,12 +63,17 @@ Collection of sections (such as zones or partitions) on this level.
 Supports upsert.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaPlaceAsBuildingMapLevelSection -PlaceId $placeId -LevelMapId $levelMapId
+
+```
+This example shows how to use the Get-MgBetaPlaceAsBuildingMapLevelSection Cmdlet.
+
 
 ## PARAMETERS
 
