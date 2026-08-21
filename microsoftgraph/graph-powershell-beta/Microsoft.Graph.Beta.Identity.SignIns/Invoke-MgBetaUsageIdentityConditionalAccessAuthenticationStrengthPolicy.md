@@ -430,8 +430,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausageidentityconditionalaccessauthenticationstrengthpolicy)
-- [](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-beta)
+- [Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausageidentityconditionalaccessauthenticationstrengthpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-beta)
 
 
 
