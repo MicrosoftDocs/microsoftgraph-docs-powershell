@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttypecolumnlink
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupSiteContentTypeColumnLink
 ---
@@ -14,9 +14,6 @@ title: New-MgGroupSiteContentTypeColumnLink
 ## SYNOPSIS
 
 Create new navigation property to columnLinks for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentTypeColumnLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to columnLinks for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -537,13 +544,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphColumnLink>`: columnLink
+BODYPARAMETER <IMicrosoftGraphColumnLink>: columnLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Name <String>]: The name of the column  in this content type.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -591,27 +598,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgGroupSiteContentTypeColumnLink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttypecolumnlink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttypecolumnlink)
