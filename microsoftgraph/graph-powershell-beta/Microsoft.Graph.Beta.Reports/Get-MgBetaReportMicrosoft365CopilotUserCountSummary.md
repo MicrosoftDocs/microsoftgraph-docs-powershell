@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportMicrosoft365CopilotUserCountSummary
 ---
@@ -45,28 +45,18 @@ This cmdlet has the following aliases,
 Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.
 
 ## EXAMPLES
-### Example 1: CSV output
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "text/csv"  -Period $periodId 
-
-```
-This example will csv output
-
-### Example 2: JSON output
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "application/json"  -Period $periodId 
+Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "text/csv"  -Period $periodId
 
-```
-This example will json output
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportMicrosoft365CopilotUserCountSummary -Format "application/json"  -Period $periodId
 
 ## PARAMETERS
 
@@ -354,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -410,27 +400,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportMicrosoft365CopilotUserCountSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoft365copilotusercountsummary)
+- [](https://learn.microsoft.com/graph/api/reportroot-getmicrosoft365copilotusercountsummary?view=graph-rest-beta)

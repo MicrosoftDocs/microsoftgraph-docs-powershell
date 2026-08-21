@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAuditLogSignUp
 ---
@@ -55,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve a specific Microsoft Entra External ID user selfServiceSignUp event for your tenant.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLog.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaAuditLogSignUp -Filter "createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z" 
-
-```
-This example shows how to use the Get-MgBetaAuditLogSignUp Cmdlet.
-
+Get-MgBetaAuditLogSignUp -Filter "createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z"
 
 ## PARAMETERS
 
@@ -536,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -592,28 +579,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaAuditLogSignUp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/selfservicesignup-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/auditlogroot-list-signups?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignup)
+- [](https://learn.microsoft.com/graph/api/selfservicesignup-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/auditlogroot-list-signups?view=graph-rest-beta)
