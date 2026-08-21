@@ -19151,7 +19151,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceshellscriptuserrunstate)
+- [New-MgBetaDeviceManagementDeviceShellScriptUserRunState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceshellscriptuserrunstate)
 
 
 
