@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamInstalledApp
 
 The apps installed in this team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

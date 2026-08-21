@@ -15,6 +15,9 @@ title: Update-MgBetaTeamworkDeletedTeamChannelTab
 
 Update the navigation property tabs in teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
