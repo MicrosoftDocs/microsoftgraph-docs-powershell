@@ -84,8 +84,24 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Synchronous pull
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+$params = @{
+	contentTypeId = "0x0101"
+}
+
+Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example synchronous pull
+
+### Example 2: Asynchronous pull
+
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -95,15 +111,9 @@ $params = @{
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example asynchronous pull
 
-Import-Module Microsoft.Graph.Sites
-
-$params = @{
-	contentTypeId = "0x0101"
-}
-
-Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
 ## PARAMETERS
 
