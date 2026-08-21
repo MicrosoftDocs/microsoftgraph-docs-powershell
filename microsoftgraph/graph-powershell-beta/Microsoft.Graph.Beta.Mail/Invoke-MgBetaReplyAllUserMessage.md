@@ -857,8 +857,8 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyallusermessage)
-- [](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta)
+- [Invoke-MgBetaReplyAllUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetareplyallusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-beta)
 
 
 
