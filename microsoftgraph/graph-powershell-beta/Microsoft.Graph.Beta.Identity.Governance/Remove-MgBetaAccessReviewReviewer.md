@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaAccessReviewReviewer
 ---
@@ -48,26 +48,13 @@ In the Microsoft Entra access reviews feature, update an existing accessReview o
 This operation is only permitted for an access review that isn't yet completed, and only for an access review where the reviewers are explicitly specified.
 This operation isn't permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.Membership,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Remove-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -AccessReviewReviewerId $accessReviewReviewerId
-
-```
-This example shows how to use the Remove-MgBetaAccessReviewReviewer Cmdlet.
-
 
 ## PARAMETERS
 
@@ -420,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -534,27 +521,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaAccessReviewReviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreview-removereviewer?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaaccessreviewreviewer)
+- [](https://learn.microsoft.com/graph/api/accessreview-removereviewer?view=graph-rest-beta)

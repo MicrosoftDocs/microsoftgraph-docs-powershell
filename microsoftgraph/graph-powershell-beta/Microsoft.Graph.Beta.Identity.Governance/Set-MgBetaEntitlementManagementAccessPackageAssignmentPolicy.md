@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaentitlementmanagementaccesspackageassignmentpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ---
@@ -94,18 +94,9 @@ This cmdlet has the following aliases,
 
 Update an existing accessPackageAssignmentPolicy object to change one or more of its properties, such as the display name or description.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update the details of a policy
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -207,12 +198,7 @@ $params = @{
 
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 
-```
-This example will update the details of a policy
-
-### Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -239,12 +225,7 @@ $params = @{
 
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 
-```
-This example will remove the customextensionhandlers and verifiablecredentialsettings from a policy
-
-### Example 3: Remove the customExtensionStageSettings from a policy
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -270,10 +251,6 @@ $params = @{
 }
 
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
-
-```
-This example will remove the customextensionstagesettings from a policy
-
 
 ## PARAMETERS
 
@@ -570,7 +547,7 @@ HelpMessage: ''
 
 ### -CreatedBy
 
-
+.
 
 ```yaml
 Type: System.String
@@ -913,7 +890,7 @@ HelpMessage: ''
 
 ### -ModifiedBy
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1219,7 +1196,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage>: accessPackage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1485,7 +1462,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
       [(Any) <Object>]: This indicates any property can be added to this object.
       [CredentialTypes <IMicrosoftGraphVerifiableCredentialType[]>]: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
         [CredentialType <String>]: The type of credential issued, for example, BusinessCardCredential.
-        [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
+        [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
   [AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]: accessPackageCatalog
   [AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -2470,8 +2447,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
             [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -2804,8 +2781,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
             [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
           [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -3560,7 +3537,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
             [PhoneType <String>]: authenticationPhoneType
@@ -3899,7 +3876,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -9887,8 +9864,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
         [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -10375,7 +10352,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   [UniqueName <String>]: 
 
-ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatalog
+ACCESSPACKAGECATALOG <IMicrosoftGraphAccessPackageCatalog>: accessPackageCatalog
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -10623,7 +10600,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
         [(Any) <Object>]: This indicates any property can be added to this object.
         [CredentialTypes <IMicrosoftGraphVerifiableCredentialType[]>]: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
           [CredentialType <String>]: The type of credential issued, for example, BusinessCardCredential.
-          [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
+          [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
     [AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]: accessPackageCatalog
     [AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]: 
       [Id <String>]: The unique identifier for an entity.
@@ -11608,8 +11585,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -11942,8 +11919,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -12698,7 +12675,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
               [PhoneType <String>]: authenticationPhoneType
@@ -13037,7 +13014,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -19025,8 +19002,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
           [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -19531,11 +19508,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   [UniqueName <String>]: 
 
-ACCESSPACKAGENOTIFICATIONSETTINGS `<IMicrosoftGraphAccessPackageNotificationSettings>`: accessPackageNotificationSettings
+ACCESSPACKAGENOTIFICATIONSETTINGS <IMicrosoftGraphAccessPackageNotificationSettings>: accessPackageNotificationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAssignmentNotificationDisabled <Boolean?>]: Indicates if notification emails for an access package are disabled within an access package assignment policy.
 
-ACCESSREVIEWSETTINGS `<IMicrosoftGraphAssignmentReviewSettings>`: assignmentReviewSettings
+ACCESSREVIEWSETTINGS <IMicrosoftGraphAssignmentReviewSettings>: assignmentReviewSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessReviewTimeoutBehavior <String>]: accessReviewTimeoutBehavior
   [DurationInDays <Int32?>]: The number of days within which reviewers should provide input.
@@ -19551,7 +19528,7 @@ The default value is true.
     [IsBackup <Boolean?>]: For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
   [StartDateTime <DateTime?>]: When the first review should start.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy>`: accessPackageAssignmentPolicy
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentPolicy>: accessPackageAssignmentPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -20712,8 +20689,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
               [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -21046,8 +21023,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
               [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
             [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -21802,7 +21779,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
               [PhoneType <String>]: authenticationPhoneType
@@ -22141,7 +22118,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -28129,8 +28106,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
           [UserType <String>]: A String value that can be used to classify user types in your directory.
@@ -28706,7 +28683,7 @@ One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubje
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CredentialTypes <IMicrosoftGraphVerifiableCredentialType[]>]: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
       [CredentialType <String>]: The type of credential issued, for example, BusinessCardCredential.
-      [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
+      [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
 
 CUSTOMEXTENSIONHANDLERS <IMicrosoftGraphCustomExtensionHandler[]>: The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
@@ -28762,7 +28739,7 @@ If null, the default for the service applies.
       [(Any) <Object>]: This indicates any property can be added to this object.
   [Stage <String>]: accessPackageCustomExtensionStage
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -28888,7 +28865,7 @@ Required.
       [Text <String>]: The text in the specific language.
 Required.
 
-REQUESTAPPROVALSETTINGS `<IMicrosoftGraphApprovalSettings>`: approvalSettings
+REQUESTAPPROVALSETTINGS <IMicrosoftGraphApprovalSettings>: approvalSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApprovalMode <String>]: One of SingleStage, Serial, Parallel, NoApproval (default).
 NoApproval is used when isApprovalRequired is false.
@@ -28910,7 +28887,7 @@ When creating or updating a policy, include at least one userSet in this collect
   [IsApprovalRequiredForExtension <Boolean?>]: Indicates whether approval is required for a user to extend their assignment.
   [IsRequestorJustificationRequired <Boolean?>]: Indicates whether the requestor is required to supply a justification in their request.
 
-REQUESTORSETTINGS `<IMicrosoftGraphRequestorSettings>`: requestorSettings
+REQUESTORSETTINGS <IMicrosoftGraphRequestorSettings>: requestorSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptRequests <Boolean?>]: Indicates whether new requests are accepted on this policy.
   [AllowedRequestors <IMicrosoftGraphUserSet[]>]: The users who are allowed to request on this policy, which can be singleUser, groupMembers, and connectedOrganizationMembers.
@@ -28918,36 +28895,14 @@ REQUESTORSETTINGS `<IMicrosoftGraphRequestorSettings>`: requestorSettings
   [ScopeType <String>]: Who can request.
 One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubjects, AllConfiguredConnectedOrganizationSubjects, AllExistingConnectedOrganizationSubjects, AllExistingDirectoryMemberUsers, AllExistingDirectorySubjects or AllExternalSubjects.
 
-VERIFIABLECREDENTIALSETTINGS `<IMicrosoftGraphVerifiableCredentialSettings>`: verifiableCredentialSettings
+VERIFIABLECREDENTIALSETTINGS <IMicrosoftGraphVerifiableCredentialSettings>: verifiableCredentialSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CredentialTypes <IMicrosoftGraphVerifiableCredentialType[]>]: The types of verifiable credentials that a requestor must present when requesting an access package that has the policy.
     [CredentialType <String>]: The type of credential issued, for example, BusinessCardCredential.
-    [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/`<SNIP/>`....
+    [Issuers <String[]>]: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
 
 
 ## RELATED LINKS
 
-- [Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/set-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+- [](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-update?view=graph-rest-beta)

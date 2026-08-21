@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
 ## SYNOPSIS
 
 Retrieve a deleted workflow object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 
 Retrieve a deleted workflow object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a deleted workflow
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId
 
-```
-This example will get a deleted workflow
-
-### Example 2: Get specific properties of a deleted workflow
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId -Property "id,category,displayName,description,version,executionConditions" 
-
-```
-This example will get specific properties of a deleted workflow
-
+Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId -Property "id,category,displayName,description,version,executionConditions"
 
 ## PARAMETERS
 
@@ -552,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -666,28 +645,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-deleteditemcontainer-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-deleteditemcontainer-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems?view=graph-rest-beta)

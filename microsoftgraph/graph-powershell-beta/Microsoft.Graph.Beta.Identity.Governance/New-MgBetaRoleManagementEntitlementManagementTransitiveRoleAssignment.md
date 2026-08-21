@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementtransitiveroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment
 ---
@@ -50,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to transitiveRoleAssignments for roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -168,7 +178,7 @@ HelpMessage: ''
 
 ### -Condition
 
-
+.
 
 ```yaml
 Type: System.String
@@ -612,7 +622,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+APPSCOPE <IMicrosoftGraphAppScope>: appScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -621,7 +631,7 @@ Read only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignment>`: unifiedRoleAssignment
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignment>: unifiedRoleAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -706,21 +716,21 @@ Read-only when isBuiltIn is true.
 Read-only.
 Supports $filter (eq, in).
 
-DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -766,27 +776,4 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [New-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementtransitiveroleassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementtransitiveroleassignment)

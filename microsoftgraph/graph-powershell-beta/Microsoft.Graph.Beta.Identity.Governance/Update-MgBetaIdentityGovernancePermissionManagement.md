@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernancePermissionManagement
 ---
@@ -48,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property permissionsManagement in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -331,7 +341,7 @@ HelpMessage: ''
 
 ### -ScheduledPermissionsApprovals
 
-
+.
 To construct, see NOTES section for SCHEDULEDPERMISSIONSAPPROVALS properties and create a hash table.
 
 ```yaml
@@ -426,7 +436,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPermissionsManagement>`: permissionsManagement
+BODYPARAMETER <IMicrosoftGraphPermissionsManagement>: permissionsManagement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -655,27 +665,4 @@ In PIM, when the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernancePermissionManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagement)

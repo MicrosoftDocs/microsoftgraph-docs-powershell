@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-Module Guid: 45aae33d-00db-458a-bd53-55f64601b2e6
+Module Guid: 9805dd56-4ef9-4024-8d10-a9065a7bcd17
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.governance/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -3810,23 +3810,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment](Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
 
 ### [Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

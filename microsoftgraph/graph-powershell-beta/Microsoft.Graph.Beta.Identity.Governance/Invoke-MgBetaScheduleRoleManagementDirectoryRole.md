@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectoryrole
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaScheduleRoleManagementDirectoryRole
 ---
@@ -38,26 +38,13 @@ This cmdlet has the following aliases,
 
 Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PrivilegedAccess.Read.AzureAD,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Invoke-MgBetaScheduleRoleManagementDirectoryRole
-
-```
-This example shows how to use the Invoke-MgBetaScheduleRoleManagementDirectoryRole Cmdlet.
-
 
 ## PARAMETERS
 
@@ -509,27 +496,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaScheduleRoleManagementDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectoryrole)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagementdirectoryrole)
+- [](https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta)

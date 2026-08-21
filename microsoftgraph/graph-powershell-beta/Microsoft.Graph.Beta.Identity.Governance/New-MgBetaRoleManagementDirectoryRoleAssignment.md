@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementDirectoryRoleAssignment
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaRoleManagementDirectoryRoleAssignment
 ## SYNOPSIS
 
 Create a new unifiedRoleAssignment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,18 +50,9 @@ This cmdlet has the following aliases,
 
 Create a new unifiedRoleAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Create a role assignment with tenant scope
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -77,12 +65,7 @@ $params = @{
 
 New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
-```
-This example will create a role assignment with tenant scope
-
-### Example 2: Create a role assignment with administrative unit scope
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -95,12 +78,7 @@ $params = @{
 
 New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
-```
-This example will create a role assignment with administrative unit scope
-
-### Example 3: Create a role assignment with attribute set scope
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -112,10 +90,6 @@ $params = @{
 }
 
 New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter $params
-
-```
-This example will create a role assignment with attribute set scope
-
 
 ## PARAMETERS
 
@@ -234,7 +208,7 @@ HelpMessage: ''
 
 ### -Condition
 
-
+.
 
 ```yaml
 Type: System.String
@@ -678,7 +652,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+APPSCOPE <IMicrosoftGraphAppScope>: appScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -687,7 +661,7 @@ Read only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignment>`: unifiedRoleAssignment
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignment>: unifiedRoleAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -772,21 +746,21 @@ Read-only when isBuiltIn is true.
 Read-only.
 Supports $filter (eq, in).
 
-DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -832,27 +806,5 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [New-MgBetaRoleManagementDirectoryRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignment)
+- [](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta)

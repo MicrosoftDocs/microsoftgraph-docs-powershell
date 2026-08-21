@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting
 ## SYNOPSIS
 
 Update the properties of a lifecycleManagementSettings object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,18 +46,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a lifecycleManagementSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -74,10 +62,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -434,7 +418,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>`: lifecycleManagementSettings
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings>: lifecycleManagementSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -452,7 +436,7 @@ This value can only be set to true if the organizationalBranding bannerLogo prop
 This interval has a minimum value of 1 and a maximum value of 24.
 The default value is 3 hours.
 
-EMAILSETTINGS `<IMicrosoftGraphEmailSettings>`: emailSettings
+EMAILSETTINGS <IMicrosoftGraphEmailSettings>: emailSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SenderDomain <String>]: Specifies the domain that should be used when sending email notifications.
 This domain must be verified in order to be used.
@@ -466,27 +450,5 @@ This value can only be set to true if the organizationalBranding bannerLogo prop
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowsetting)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-beta)

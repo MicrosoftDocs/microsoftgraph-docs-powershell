@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewhistorydefinitioninstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance
 ## SYNOPSIS
 
 Update the navigation property instances in identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property instances in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -685,7 +692,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewHistoryInstance>`: accessReviewHistoryInstance
+BODYPARAMETER <IMicrosoftGraphAccessReviewHistoryInstance>: accessReviewHistoryInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -702,7 +709,7 @@ Required.
   [RunDateTime <DateTime?>]: The date and time when the instance's history data is scheduled to be generated.
   [Status <String>]: accessReviewHistoryStatus
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -816,27 +823,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewhistorydefinitioninstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewhistorydefinitioninstance)

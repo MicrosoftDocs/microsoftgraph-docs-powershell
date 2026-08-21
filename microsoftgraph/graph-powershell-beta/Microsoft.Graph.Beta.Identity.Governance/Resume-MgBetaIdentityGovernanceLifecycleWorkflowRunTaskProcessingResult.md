@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowruntaskprocessingresult
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult
 ---
@@ -16,9 +16,6 @@ title: Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult
 Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,6 +76,16 @@ Resume a task processing result that's inProgress.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see: Lifecycle Workflows extensibility approach.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -110,7 +117,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -433,7 +440,7 @@ HelpMessage: ''
 
 ### -Source
 
-
+.
 
 ```yaml
 Type: System.String
@@ -487,7 +494,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -595,7 +602,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1M7T9WjIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdRunsRunIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1M7T9WjIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdRunsRunIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]: customTaskExtensionCallbackData
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -603,11 +610,11 @@ BODYPARAMETER `<IPaths1M7T9WjIdentitygovernanceLifecycleworkflowsWorkflowsWorkfl
   [Source <String>]: 
   [Type <String>]: 
 
-DATA `<IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>`: customTaskExtensionCallbackData
+DATA <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>: customTaskExtensionCallbackData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OperationStatus <String>]: customTaskExtensionOperationStatus
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -721,28 +728,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowruntaskprocessingresult)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowruntaskprocessingresult)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta)

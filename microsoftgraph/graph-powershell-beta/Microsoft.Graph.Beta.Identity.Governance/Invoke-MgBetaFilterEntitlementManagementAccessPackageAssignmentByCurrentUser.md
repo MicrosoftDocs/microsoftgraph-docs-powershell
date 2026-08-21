@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackageassignmentbycurrentuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser
 ---
@@ -49,17 +49,12 @@ This cmdlet has the following aliases,
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssignment objects filtered on the signed-in user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser -On $onId 
-
-```
-This example shows how to use the Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser Cmdlet.
-
+Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser -On $onId
 
 ## PARAMETERS
 
@@ -477,7 +472,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -591,27 +586,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackageassignmentbycurrentuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackageassignmentbycurrentuser)
+- [](https://learn.microsoft.com/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta)
