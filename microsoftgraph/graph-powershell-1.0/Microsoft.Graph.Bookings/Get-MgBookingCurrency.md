@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBookingCurrency
 ---
@@ -15,9 +15,6 @@ title: Get-MgBookingCurrency
 
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Bookings.Read.All, Bookings.Manage.All, Bookings.ReadWrite.All, BookingsAppointment.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgBookingCurrency
-
-```
-This example shows how to use the Get-MgBookingCurrency Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -565,28 +549,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBookingCurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency)
+- [](https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0)

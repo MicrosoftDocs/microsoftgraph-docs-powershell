@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBookingBusinessAppointment
 ---
@@ -14,9 +14,6 @@ title: Update-MgBookingBusinessAppointment
 ## SYNOPSIS
 
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -91,18 +88,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.Read.All, Bookings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Change the date of service
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -122,12 +110,7 @@ $params = @{
 
 Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 
-```
-This example will change the date of service
-
-### Example 2: Update the customers for an appointment
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Bookings
 
@@ -152,10 +135,6 @@ $params = @{
 }
 
 Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
-
-```
-This example will update the customers for an appointment
-
 
 ## PARAMETERS
 
@@ -1404,7 +1383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appointment of a service by a customer in a business.
+BODYPARAMETER <IMicrosoftGraphBookingAppointment>: Represents a booked appointment of a service by a customer in a business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1489,13 +1468,13 @@ Default value is false.
   [StaffMemberIds <String[]>]: The ID of each bookingStaffMember who is scheduled in this appointment.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1523,7 +1502,7 @@ The value of this property is available only when reading this bookingAppointmen
 It's denoted in ISO 8601 format.
   [Recipients <String>]: bookingReminderRecipients
 
-SERVICELOCATION `<IMicrosoftGraphLocation>`: location
+SERVICELOCATION <IMicrosoftGraphLocation>: location
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1548,7 +1527,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [UniqueId <String>]: For internal use only.
   [UniqueIdType <String>]: locationUniqueIdType
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -1557,27 +1536,5 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [Update-MgBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
+- [](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
