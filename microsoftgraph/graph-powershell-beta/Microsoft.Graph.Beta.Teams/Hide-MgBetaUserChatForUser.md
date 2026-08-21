@@ -604,8 +604,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetauserchatforuser)
-- [](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta)
+- [Hide-MgBetaUserChatForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetauserchatforuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-beta)
 
 
 

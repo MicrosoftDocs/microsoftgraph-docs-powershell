@@ -534,8 +534,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelallmember)
-- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
+- [Remove-MgBetaTeamPrimaryChannelAllMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelallmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
 
 
 
