@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSearchBookmark
 ---
@@ -14,9 +14,6 @@ title: Update-MgSearchBookmark
 ## SYNOPSIS
 
 Update the properties of a bookmark object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -80,18 +77,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a bookmark object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
@@ -100,10 +88,6 @@ $params = @{
 }
 
 Update-MgSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgSearchBookmark Cmdlet.
-
 
 ## PARAMETERS
 
@@ -946,7 +930,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
+BODYPARAMETER <IMicrosoftGraphSearchBookmark>: bookmark
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: The search answer description that is shown on the search results page.
   [DisplayName <String>]: The search answer name that is displayed in search results.
@@ -1003,7 +987,7 @@ The date and group settings apply to all variations.
     [WebUrl <String>]: The URL link for the answer variation.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -1014,13 +998,13 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [IdentityId <String>]: The unique identifier of identity
   [QnaId <String>]: The unique identifier of qna
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
+KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>: answerKeyword
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Keywords <String[]>]: A collection of keywords used to trigger the search answer.
   [MatchSimilarKeywords <Boolean?>]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
   [ReservedKeywords <String[]>]: Unique keywords that guarantee the search answer is triggered.
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphSearchIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1042,27 +1026,5 @@ When users select this answer variation from the search results, they're directe
 
 ## RELATED LINKS
 
-- [Update-MgSearchBookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
+- [](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0)
