@@ -103,7 +103,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Authentication.Core.Interfaces.IRequestContext
 
-{{ Fill in the Description }}
 
 ## NOTES
 
