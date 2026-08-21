@@ -16,6 +16,9 @@ title: Get-MgReportMailboxUsageMailboxCount
 Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.
 A mailbox is considered active if the user sent or read any email.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageMailboxCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageMailboxCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
