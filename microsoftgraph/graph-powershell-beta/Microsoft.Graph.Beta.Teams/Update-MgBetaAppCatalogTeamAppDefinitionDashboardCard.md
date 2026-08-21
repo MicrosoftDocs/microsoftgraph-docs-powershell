@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitiondashboardcard
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property dashboardCards in appCatalogs
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -680,7 +690,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppDashboardCardDefinition>`: teamsAppDashboardCardDefinition
+BODYPARAMETER <IMicrosoftGraphTeamsAppDashboardCardDefinition>: teamsAppDashboardCardDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -706,7 +716,7 @@ For example, 'officeUIFabricIconName': 'Search'.
   [PickerGroupId <String>]: ID for the group in the card picker.
 Required.
 
-CONTENTSOURCE `<IMicrosoftGraphTeamsAppDashboardCardContentSource>`: teamsAppDashboardCardContentSource
+CONTENTSOURCE <IMicrosoftGraphTeamsAppDashboardCardContentSource>: teamsAppDashboardCardContentSource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BotConfiguration <IMicrosoftGraphTeamsAppDashboardCardBotConfiguration>]: teamsAppDashboardCardBotConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -714,7 +724,7 @@ CONTENTSOURCE `<IMicrosoftGraphTeamsAppDashboardCardContentSource>`: teamsAppDas
 This is a unique app ID for the bot as registered with the Bot Framework.
   [SourceType <String>]: teamsAppDashboardCardSourceType
 
-ICON `<IMicrosoftGraphTeamsAppDashboardCardIcon>`: teamsAppDashboardCardIcon
+ICON <IMicrosoftGraphTeamsAppDashboardCardIcon>: teamsAppDashboardCardIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IconUrl <String>]: The icon for the card, displayed in the toolbox and card bar, is represented as a URL.
 The preferred size for raster images is 28x28 pixels.
@@ -722,7 +732,7 @@ If this property has a value, the officeFabricIconFontName property is ignored.
   [OfficeUiFabricIconName <String>]: The friendly name of the Office UI Fabric/Fluent UI icon for the card that is used when the iconUrl property isn't specified.
 For example, 'officeUIFabricIconName': 'Search'.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -772,27 +782,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaAppCatalogTeamAppDefinitionDashboardCard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitiondashboardcard)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitiondashboardcard)

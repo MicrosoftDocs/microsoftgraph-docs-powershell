@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamChannelMember
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaTeamChannelMember
 ## SYNOPSIS
 
 Update the navigation property allMembers in teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -112,9 +109,8 @@ This cmdlet has the following aliases,
 Update the navigation property allMembers in teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -126,10 +122,6 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTeamChannelMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -778,7 +770,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConversationMember>`: conversationMember
+BODYPARAMETER <IMicrosoftGraphConversationMember>: conversationMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -791,7 +783,7 @@ An Out-of-tenant external member is assigned the owner role.
   [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -841,27 +833,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmember)
+- [](https://learn.microsoft.com/graph/api/channel-update-members?view=graph-rest-beta)

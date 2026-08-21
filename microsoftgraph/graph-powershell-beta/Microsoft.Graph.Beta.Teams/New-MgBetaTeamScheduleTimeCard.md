@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamScheduleTimeCard
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaTeamScheduleTimeCard
 ## SYNOPSIS
 
 Create a timeCard instance in a schedule.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeCard?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,18 +73,9 @@ This cmdlet has the following aliases,
 
 Create a timeCard instance in a schedule.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -125,10 +113,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTeamScheduleTimeCard Cmdlet.
-
 
 ## PARAMETERS
 
@@ -794,7 +778,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTimeCard>`: timeCard
+BODYPARAMETER <IMicrosoftGraphTimeCard>: timeCard
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -857,7 +841,7 @@ If both are included in the request with different values, the value for isAtApp
   [Notes <IMicrosoftGraphItemBody>]: itemBody
   [Start <IMicrosoftGraphTimeCardEvent>]: timeCardEvent
 
-CLOCKINEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
+CLOCKINEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AtApprovedLocation <Boolean?>]: Indicates whether this action happens at an approved location.
 This property will be removed by November 20, 2027.
@@ -871,7 +855,7 @@ If both are included in the request with different values, the value for isAtApp
     [Content <String>]: The content of the item.
     [ContentType <String>]: bodyType
 
-CLOCKOUTEVENT `<IMicrosoftGraphTimeCardEvent>`: timeCardEvent
+CLOCKOUTEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AtApprovedLocation <Boolean?>]: Indicates whether this action happens at an approved location.
 This property will be removed by November 20, 2027.
@@ -885,7 +869,7 @@ If both are included in the request with different values, the value for isAtApp
     [Content <String>]: The content of the item.
     [ContentType <String>]: bodyType
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -897,7 +881,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -944,7 +928,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -956,12 +940,12 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
+ORIGINALENTRY <IMicrosoftGraphTimeCardEntry>: timeCardEntry
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Breaks <IMicrosoftGraphTimeCardBreak[]>]: The list of breaks associated with the timeCard.
     [BreakId <String>]: ID of the timeCardBreak.
@@ -986,27 +970,5 @@ If both are included in the request with different values, the value for isAtApp
 
 ## RELATED LINKS
 
-- [New-MgBetaTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard)
+- [](https://learn.microsoft.com/graph/api/timecard-post?view=graph-rest-beta)
