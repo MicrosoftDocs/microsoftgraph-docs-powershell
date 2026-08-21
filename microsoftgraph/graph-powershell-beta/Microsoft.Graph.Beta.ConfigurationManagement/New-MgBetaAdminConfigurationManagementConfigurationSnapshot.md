@@ -476,7 +476,7 @@ At least one property of one resource must be present in the baseline.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationsnapshot)
+- [New-MgBetaAdminConfigurationManagementConfigurationSnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationsnapshot)
 
 
 

@@ -500,7 +500,7 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationmonitoringresult)
+- [Update-MgBetaAdminConfigurationManagementConfigurationMonitoringResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationmonitoringresult)
 
 
 
