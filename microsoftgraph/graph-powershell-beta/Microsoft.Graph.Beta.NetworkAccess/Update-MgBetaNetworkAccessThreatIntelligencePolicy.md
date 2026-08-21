@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessthreatintelligencepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessThreatIntelligencePolicy
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a threatIntelligencePolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -100,10 +91,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessThreatIntelligencePolicy -ThreatIntelligencePolicyId $threatIntelligencePolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessThreatIntelligencePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -656,7 +643,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessThreatIntelligencePolicy>`: threatIntelligencePolicy
+BODYPARAMETER <IMicrosoftGraphNetworkaccessThreatIntelligencePolicy>: threatIntelligencePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description.
   [Name <String>]: Policy name.
@@ -672,7 +659,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DefaultAction <String>]: threatIntelligenceAction
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -705,34 +692,12 @@ POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule[]>: Represents the definitio
 Read-only.
   [Name <String>]: Name.
 
-SETTINGS `<IMicrosoftGraphNetworkaccessThreatIntelligencePolicySettings>`: threatIntelligencePolicySettings
+SETTINGS <IMicrosoftGraphNetworkaccessThreatIntelligencePolicySettings>: threatIntelligencePolicySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultAction <String>]: threatIntelligenceAction
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessThreatIntelligencePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessthreatintelligencepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessthreatintelligencepolicy)
+- [](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicy-update?view=graph-rest-beta)

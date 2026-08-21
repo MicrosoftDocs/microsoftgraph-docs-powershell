@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportapplicationusageanalytic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaNetworkAccessReportApplicationUsageAnalytic
 ---
@@ -47,17 +47,12 @@ This cmdlet has the following aliases,
 Get a collection of application usage analytics data points based on aggregated traffic logs for a specified time period, providing daily breakdown of usage between cloud and enterprise applications in Global Secure Access.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
-Get-MgBetaNetworkAccessReportApplicationUsageAnalytic -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -AggregatedBy $aggregatedById 
-
-```
-This example shows how to use the Get-MgBetaNetworkAccessReportApplicationUsageAnalytic Cmdlet.
-
+Get-MgBetaNetworkAccessReportApplicationUsageAnalytic -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -AggregatedBy $aggregatedById
 
 ## PARAMETERS
 
@@ -451,7 +446,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -482,27 +477,5 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaNetworkAccessReportApplicationUsageAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportapplicationusageanalytic)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-reports-getapplicationusageanalytics?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessreportapplicationusageanalytic)
+- [](https://learn.microsoft.com/graph/api/networkaccess-reports-getapplicationusageanalytics?view=graph-rest-beta)

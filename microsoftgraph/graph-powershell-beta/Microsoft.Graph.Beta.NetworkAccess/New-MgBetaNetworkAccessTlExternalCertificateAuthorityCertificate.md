@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlexternalcertificateauthoritycertificate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate
 ---
@@ -50,18 +50,9 @@ This cmdlet has the following aliases,
 Create a new externalCertificateAuthorityCertificate object.
 This request generates the Certificate Signing Request (CSR) that you download to sign and generate a certificate that you upload to the service using the Update externalCertificateAuthorityCertificate operation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -73,10 +64,6 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate Cmdlet.
-
 
 ## PARAMETERS
 
@@ -562,7 +549,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessExternalCertificateAuthorityCertificate>`: externalCertificateAuthorityCertificate
+BODYPARAMETER <IMicrosoftGraphNetworkaccessExternalCertificateAuthorityCertificate>: externalCertificateAuthorityCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -583,7 +570,7 @@ Supports $filter (eq, ne, startsWith)
     [EndDateTime <DateTime?>]: Date and time when certificate validity expires.
     [StartDateTime <DateTime?>]: Date and time when certificate validity begins.
 
-VALIDITY `<IMicrosoftGraphNetworkaccessValidityDate>`: validityDate
+VALIDITY <IMicrosoftGraphNetworkaccessValidityDate>: validityDate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: Date and time when certificate validity expires.
   [StartDateTime <DateTime?>]: Date and time when certificate validity begins.
@@ -591,27 +578,5 @@ VALIDITY `<IMicrosoftGraphNetworkaccessValidityDate>`: validityDate
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-tlstermination-post-externalcertificateauthoritycertificates?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
+- [](https://learn.microsoft.com/graph/api/networkaccess-tlstermination-post-externalcertificateauthoritycertificates?view=graph-rest-beta)

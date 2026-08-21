@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkdevicelink
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/21/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink
 ---
@@ -75,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to deviceLinks for networkAccess
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -682,14 +692,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BGPCONFIGURATION `<IMicrosoftGraphNetworkaccessBgpConfiguration>`: bgpConfiguration
+BGPCONFIGURATION <IMicrosoftGraphNetworkaccessBgpConfiguration>: bgpConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Asn <Int32?>]: Specifies the ASN of the BGP.
   [IPAddress <String>]: Specifies the BGP IP address.
   [LocalIPAddress <String>]: Specifies the BGP IP address of peer (Microsoft, in this case).
   [PeerIPAddress <String>]: Specifies the BGP IP address of customer's on-premise VPN router configuration.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessDeviceLink>`: deviceLink
+BODYPARAMETER <IMicrosoftGraphNetworkaccessDeviceLink>: deviceLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -714,7 +724,7 @@ Read-only.
     [ZoneRedundancyPreSharedKey <String>]: Another key for zone redundant tunnel.
 Required only when you select zoneRedundancy redindancyTier when creating a deviceLink.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -742,12 +752,12 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
   [Url <String>]: Usage: url='{url}'
 
-REDUNDANCYCONFIGURATION `<IMicrosoftGraphNetworkaccessRedundancyConfiguration>`: redundancyConfiguration
+REDUNDANCYCONFIGURATION <IMicrosoftGraphNetworkaccessRedundancyConfiguration>: redundancyConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RedundancyTier <String>]: redundancyTier
   [ZoneLocalIPAddress <String>]: Indicate the specific IP address used for establishing the Border Gateway Protocol (BGP) connection with Microsoft's network.
 
-TUNNELCONFIGURATION `<IMicrosoftGraphNetworkaccessTunnelConfiguration>`: tunnelConfiguration
+TUNNELCONFIGURATION <IMicrosoftGraphNetworkaccessTunnelConfiguration>: tunnelConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PreSharedKey <String>]: A key to establish secure connection between the link and VPN tunnel on the edge.
   [ZoneRedundancyPreSharedKey <String>]: Another key for zone redundant tunnel.
@@ -756,27 +766,4 @@ Required only when you select zoneRedundancy redindancyTier when creating a devi
 
 ## RELATED LINKS
 
-- [New-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkdevicelink)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessconnectivityremotenetworkdevicelink)
