@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Retrieve the IPSec tunnel configuration required to establish a bidirectional communication link between your organization's router and the Microsoft gateway.
 This information is vital for configuring your router (customer premise equipment) after creating a deviceLink.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess.Read.All, NetworkAccess.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
