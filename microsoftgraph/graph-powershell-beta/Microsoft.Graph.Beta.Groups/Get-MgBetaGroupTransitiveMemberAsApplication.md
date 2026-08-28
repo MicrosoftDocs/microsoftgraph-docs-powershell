@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTransitiveMemberAsApplication
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberAsApplication](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberAsApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
