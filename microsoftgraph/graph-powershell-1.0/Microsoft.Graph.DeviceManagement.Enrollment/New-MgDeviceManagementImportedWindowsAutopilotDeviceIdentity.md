@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementimportedwindowsautopilotdeviceidentity
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ## SYNOPSIS
 
 Create new navigation property to importedWindowsAutopilotDeviceIdentities for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create new navigation property to importedWindowsAutopilotDeviceIdentities for deviceManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
@@ -84,10 +72,6 @@ $params = @{
 }
 
 New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -BodyParameter $params
-
-```
-This example shows how to use the New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -547,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity>`: Imported windows autopilot devices.
+BODYPARAMETER <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity>: Imported windows autopilot devices.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -564,7 +548,7 @@ Read-only.
     [DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]: importedWindowsAutopilotDeviceIdentityImportStatus
     [DeviceRegistrationId <String>]: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-STATE `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>`: importedWindowsAutopilotDeviceIdentityState
+STATE <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>: importedWindowsAutopilotDeviceIdentityState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceErrorCode <Int32?>]: Device error code reported by Device Directory Service(DDS).
   [DeviceErrorName <String>]: Device error name reported by Device Directory Service(DDS).
@@ -574,26 +558,4 @@ STATE `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>`: importedWi
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
