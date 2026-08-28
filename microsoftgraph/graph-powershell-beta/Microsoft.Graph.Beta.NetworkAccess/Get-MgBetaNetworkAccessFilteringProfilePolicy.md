@@ -80,12 +80,17 @@ Get a filteringPolicyLink object.
 The returned object can be a:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
 
 ## EXAMPLES
+### Example 2: Get a tlsInspectionPolicyLink
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Get-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId
+
+```
+This example will get a tlsinspectionpolicylink
+
 
 ## PARAMETERS
 
