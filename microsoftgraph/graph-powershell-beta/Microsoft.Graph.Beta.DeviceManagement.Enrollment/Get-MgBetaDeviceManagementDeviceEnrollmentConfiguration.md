@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration
 
 The list of device enrollment configurations
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
