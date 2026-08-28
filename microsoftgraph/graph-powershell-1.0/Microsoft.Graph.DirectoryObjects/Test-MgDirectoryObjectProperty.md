@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 08/28/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgDirectoryObjectProperty
 ---
