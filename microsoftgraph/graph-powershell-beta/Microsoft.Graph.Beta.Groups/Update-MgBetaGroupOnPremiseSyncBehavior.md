@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupOnPremiseSyncBehavior
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaGroupOnPremiseSyncBehavior
 ## SYNOPSIS
 
 Update the properties of an onPremisesSyncBehavior object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupOnPremiseSyncBehavior?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,18 +66,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an onPremisesSyncBehavior object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -90,10 +78,6 @@ $params = @{
 }
 
 Update-MgBetaGroupOnPremiseSyncBehavior -GroupId $groupId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaGroupOnPremiseSyncBehavior Cmdlet.
-
 
 ## PARAMETERS
 
@@ -510,14 +494,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesSyncBehavior>`: onPremisesSyncBehavior
+BODYPARAMETER <IMicrosoftGraphOnPremisesSyncBehavior>: onPremisesSyncBehavior
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsCloudManaged <Boolean?>]: Indicates the state of synchronization for an object between the cloud and on-premises Active Directory.
 If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the on-premises Active Directory can take over the object.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -544,27 +528,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaGroupOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponpremisesyncbehavior)
+- [](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-update?view=graph-rest-beta)
