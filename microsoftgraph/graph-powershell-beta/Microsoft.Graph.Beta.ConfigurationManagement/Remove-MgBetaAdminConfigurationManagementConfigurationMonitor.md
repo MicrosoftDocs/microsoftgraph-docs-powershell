@@ -408,8 +408,8 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/remove-mgbetaadminconfigurationmanagementconfigurationmonitor)
-- [](https://learn.microsoft.com/graph/api/configurationmonitor-delete?view=graph-rest-beta)
+- [Remove-MgBetaAdminConfigurationManagementConfigurationMonitor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/remove-mgbetaadminconfigurationmanagementconfigurationmonitor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmonitor-delete?view=graph-rest-beta)
 
 
 

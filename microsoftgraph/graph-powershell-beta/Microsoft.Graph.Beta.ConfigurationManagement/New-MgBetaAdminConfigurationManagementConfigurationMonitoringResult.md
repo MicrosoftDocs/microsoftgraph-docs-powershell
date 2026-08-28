@@ -386,7 +386,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationmonitoringresult)
+- [New-MgBetaAdminConfigurationManagementConfigurationMonitoringResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationmonitoringresult)
 
 
 

@@ -608,7 +608,7 @@ At least one property of one resource must be present in the baseline.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationmonitorbaseline)
+- [Update-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationmonitorbaseline)
 
 
 
