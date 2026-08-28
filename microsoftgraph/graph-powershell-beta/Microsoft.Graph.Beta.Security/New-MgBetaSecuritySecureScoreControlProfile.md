@@ -776,7 +776,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecureScoreControlProfile>: secureScoreControlProfile
+BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -834,7 +834,7 @@ CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate[]>: Flag to in
   [UpdatedBy <String>]: ID of the user who updated tenant state
   [UpdatedDateTime <DateTime?>]: Time at which control state was updated
 
-VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -847,3 +847,25 @@ Required
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
