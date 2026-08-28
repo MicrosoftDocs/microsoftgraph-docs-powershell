@@ -576,8 +576,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractuserinformationprotectionpolicylabel)
-- [](https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta)
+- [Invoke-MgBetaExtractUserInformationProtectionPolicyLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractuserinformationprotectionpolicylabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta)
 
 
 

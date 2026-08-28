@@ -506,8 +506,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyb2bmanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/policyroot-post-b2bmanagementpolicies?view=graph-rest-beta)
+- [New-MgBetaPolicyB2BManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyb2bmanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/policyroot-post-b2bmanagementpolicies?view=graph-rest-beta)
 
 
 

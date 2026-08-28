@@ -929,8 +929,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy)
-- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyCrossTenantAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta)
 
 
 
