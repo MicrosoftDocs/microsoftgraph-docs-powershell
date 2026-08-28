@@ -636,7 +636,7 @@ Permissions that aren't in this collection are disabled.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshiftroledefinition)
+- [Update-MgBetaTeamScheduleShiftRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshiftroledefinition)
 
 
 

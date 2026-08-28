@@ -469,8 +469,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoff)
-- [](https://learn.microsoft.com/graph/api/timeoff-delete?view=graph-rest-beta)
+- [Remove-MgBetaTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoff)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timeoff-delete?view=graph-rest-beta)
 
 
 

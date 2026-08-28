@@ -408,8 +408,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelemail)
-- [](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-beta)
+- [Remove-MgBetaTeamPrimaryChannelEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-beta)
 
 
 
