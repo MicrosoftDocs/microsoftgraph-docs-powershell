@@ -15,6 +15,9 @@ title: Restore-MgPrintPrinterFactoryDefault
 
 Restore a printer's default settings to the values specified by the manufacturer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaPrintPrinterFactoryDefault](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Restore-MgBetaPrintPrinterFactoryDefault?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

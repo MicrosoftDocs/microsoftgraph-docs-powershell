@@ -15,6 +15,9 @@ title: New-MgPrintServiceEndpoint
 
 Create new navigation property to endpoints for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
