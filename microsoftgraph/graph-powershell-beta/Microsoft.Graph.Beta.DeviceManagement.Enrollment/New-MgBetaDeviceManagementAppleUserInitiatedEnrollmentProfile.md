@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
 ---
@@ -50,13 +50,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -572,7 +574,7 @@ AVAILABLEENROLLMENTTYPEOPTIONS <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>: 
   [EnrollmentType <AppleUserInitiatedEnrollmentType?>]: appleUserInitiatedEnrollmentType
   [OwnerType <ManagedDeviceOwnerType?>]: Owner type of device.
 
-BODYPARAMETER `<IMicrosoftGraphAppleUserInitiatedEnrollmentProfile>`: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
+BODYPARAMETER <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile>: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
 Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
@@ -598,27 +600,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile)

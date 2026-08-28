@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetauploaddevicemanagementdeponboardingsettingdeptoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken
 ---
@@ -68,13 +68,15 @@ This cmdlet has the following aliases,
 
 Uploads a new Device Enrollment Program token
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +109,7 @@ HelpMessage: ''
 
 ### -AppleId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -134,7 +136,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -232,7 +234,7 @@ HelpMessage: ''
 
 ### -DepToken
 
-
+.
 
 ```yaml
 Type: System.String
@@ -510,12 +512,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppleId <String>]: 
   [DepToken <String>]: 
 
-INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -547,27 +549,4 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetauploaddevicemanagementdeponboardingsettingdeptoken)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/invoke-mgbetauploaddevicemanagementdeponboardingsettingdeptoken)
