@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/set-mgbetasolutionbusinessscenarioplannertaskmessagereaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction
 ---
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 
 Set a reaction to a plannerTaskChatMessage for the current user.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -427,7 +437,7 @@ HelpMessage: ''
 
 ### -ReactionType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -530,11 +540,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsP8C2H7SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsP8C2H7SolutionsBusinessscenariosBusinessscenarioIdPlannerTasksBusinessscenariotaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ReactionType <String>]: 
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
@@ -544,28 +554,5 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/set-mgbetasolutionbusinessscenarioplannertaskmessagereaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/set-mgbetasolutionbusinessscenarioplannertaskmessagereaction)
+- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)

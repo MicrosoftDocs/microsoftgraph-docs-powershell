@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBusinessScenarioPlannerTask
 ---
@@ -104,18 +104,9 @@ This cmdlet has the following aliases,
 
 Create a new businessScenarioTask object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BusinessScenarioData.ReadWrite.OwnedBy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | BusinessScenarioData.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.BusinessScenario
 
@@ -138,10 +129,6 @@ $params = @{
 }
 
 New-MgBetaSolutionBusinessScenarioPlannerTask -BusinessScenarioId $businessScenarioId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSolutionBusinessScenarioPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1604,7 +1591,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ARCHIVALINFO `<IMicrosoftGraphPlannerArchivalInfo>`: plannerArchivalInfo
+ARCHIVALINFO <IMicrosoftGraphPlannerArchivalInfo>: plannerArchivalInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Justification <String>]: Read-only.
 Reason why the entity was archived or unarchived.
@@ -1622,7 +1609,7 @@ For example, in the access reviews decisions API, this property might record the
   [StatusChangedDateTime <DateTime?>]: Read-only.
 Date and time at which the entity's archive status changed.
 
-ASSIGNEDTOTASKBOARDFORMAT `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
+ASSIGNEDTOTASKBOARDFORMAT <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>: plannerAssignedToTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1631,7 +1618,7 @@ Read-only.
   [UnassignedOrderHint <String>]: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
 
-BODYPARAMETER `<IMicrosoftGraphBusinessScenarioTask>`: businessScenarioTask
+BODYPARAMETER <IMicrosoftGraphBusinessScenarioTask>: businessScenarioTask
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActiveChecklistItemCount <Int32?>]: The number of checklist items with value set to false, representing incomplete items.
   [AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]: plannerAppliedCategories
@@ -1875,14 +1862,14 @@ Optional.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [TaskTargetKind <String>]: plannerTaskTargetKind
 
-BUCKETTASKBOARDFORMAT `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>`: plannerBucketTaskBoardTaskFormat
+BUCKETTASKBOARDFORMAT <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>: plannerBucketTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [OrderHint <String>]: Hint used to order tasks in the bucket view of the task board.
 For details about the supported format, see Using order hints in Planner.
 
-BUSINESSSCENARIOPROPERTIES `<IMicrosoftGraphBusinessScenarioProperties>`: businessScenarioProperties
+BUSINESSSCENARIOPROPERTIES <IMicrosoftGraphBusinessScenarioProperties>: businessScenarioProperties
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalBucketId <String>]: The identifier for the bucketDefinition configured in the plannerPlanConfiguration for the scenario.
 The task will be placed in the corresponding plannerBucket in the target plan.
@@ -1898,7 +1885,7 @@ Optional.
   [WebUrl <String>]: The URL to the application-specific experience for this task.
 Optional.
 
-COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+COMPLETEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1910,7 +1897,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1922,7 +1909,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATIONSOURCE `<IMicrosoftGraphPlannerTaskCreation>`: plannerTaskCreation
+CREATIONSOURCE <IMicrosoftGraphPlannerTaskCreation>: plannerTaskCreation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreationSourceKind <String>]: plannerCreationSourceKind
   [TeamsPublicationInfo <IMicrosoftGraphPlannerTeamsPublicationInfo>]: plannerTeamsPublicationInfo
@@ -1943,7 +1930,7 @@ Read-only.
 This display name is for reference only, and might not represent the most up-to-date name of the team.
 Read-only.
 
-DETAILS `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+DETAILS <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1976,14 +1963,14 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [References <IMicrosoftGraphPlannerExternalReferences>]: plannerExternalReferences
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
   [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2032,14 +2019,14 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
 
-PROGRESSTASKBOARDFORMAT `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
+PROGRESSTASKBOARDFORMAT <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>: plannerProgressTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [OrderHint <String>]: Hint value used to order the task on the progress view of the task board.
 For details about the supported format, see Using order hints in Planner.
 
-RECURRENCE `<IMicrosoftGraphPlannerTaskRecurrence>`: plannerTaskRecurrence
+RECURRENCE <IMicrosoftGraphPlannerTaskRecurrence>: plannerTaskRecurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NextInSeriesTaskId <String>]: The taskId of the next task in this series.
 This value is assigned at the time the next task in the series is created, and is null prior to that time.
@@ -2083,34 +2070,12 @@ Required.
   [SeriesId <String>]: The recurrence series this task belongs to.
 A GUID-based value that serves as the unique identifier for a series.
 
-TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTargetBase
+TARGET <IMicrosoftGraphBusinessScenarioTaskTargetBase>: businessScenarioTaskTargetBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TaskTargetKind <String>]: plannerTaskTargetKind
 
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBusinessScenarioPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannertask)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenarioplanner-post-tasks?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/new-mgbetasolutionbusinessscenarioplannertask)
+- [](https://learn.microsoft.com/graph/api/businessscenarioplanner-post-tasks?view=graph-rest-beta)
