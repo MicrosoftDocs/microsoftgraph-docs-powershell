@@ -438,8 +438,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicybyref)
-- [](https://learn.microsoft.com/graph/api/application-list-tokenlifetimepolicies?view=graph-rest-beta)
+- [Get-MgBetaApplicationTokenLifetimePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtokenlifetimepolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-tokenlifetimepolicies?view=graph-rest-beta)
 
 
 

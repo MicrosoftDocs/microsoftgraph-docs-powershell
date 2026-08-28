@@ -442,8 +442,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaserviceprincipalsynchronizationjob)
-- [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-beta)
+- [Suspend-MgBetaServicePrincipalSynchronizationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaserviceprincipalsynchronizationjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-pause?view=graph-rest-beta)
 
 
 
