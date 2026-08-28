@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryRoleMember
 ---
@@ -17,9 +17,6 @@ Retrieve the list of principals that are assigned to the directory role.
 You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,18 +43,10 @@ You can use both the object ID and template ID of the directoryRole with this AP
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Get member from directory roles
 
-```powershell
+### EXAMPLE 1
+
 Get-MgDirectoryRoleMember -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948'
 
 Id                                   DeletedDateTime
@@ -67,9 +56,6 @@ f890ceed-822a-4647-8748-73d88013ae9d
 5d5dff7a-d9cd-4bd3-a585-3d0ebbd58b69
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
 7425a698-2aa8-4333-9352-04f52e3a4c9d
-```
-
-This example gets the members of a directory role.
 
 ## PARAMETERS
 
@@ -524,27 +510,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryRoleMember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember)
+- [](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0)

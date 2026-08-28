@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgOrganizationBrandingLocalization
 ---
@@ -14,9 +14,6 @@ title: Update-MgOrganizationBrandingLocalization
 ## SYNOPSIS
 
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -97,18 +94,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -119,12 +107,7 @@ $params = @{
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
-```
-This example will update the backgroundcolor and signinpagetext for the fr-fr localization using patch
-
-### Example 2: Override a default branding value with a blank string
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -134,10 +117,6 @@ $params = @{
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
-
-```
-This example will override a default branding value with a blank string
-
 
 ## PARAMETERS
 
@@ -1429,7 +1408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
+CONTENTCUSTOMIZATION <IMicrosoftGraphContentCustomization>: contentCustomization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttributeCollection <IMicrosoftGraphKeyValue[]>]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
     [Key <String>]: Key for the key-value pair.
@@ -1438,7 +1417,7 @@ CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomizati
   [RegistrationCampaign <IMicrosoftGraphKeyValue[]>]: Represents content options to customize during MFA proofup interruptions.
   [RegistrationCampaignRelativeUrl <String>]: The relative URL of the content options to customize during MFA proofup interruptions.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1477,13 +1456,13 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
+LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>: loginPageLayoutConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsFooterShown <Boolean?>]: Option to show the footer on the sign-in page.
   [IsHeaderShown <Boolean?>]: Option to show the header on the sign-in page.
   [LayoutTemplateType <String>]: layoutTemplateType
 
-LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
+LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>: loginPageTextVisibilitySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [HideAccountResetCredentials <Boolean?>]: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
   [HideCannotAccessYourAccount <Boolean?>]: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
@@ -1495,27 +1474,5 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
 
 ## RELATED LINKS
 
-- [Update-MgOrganizationBrandingLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization)
+- [](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)

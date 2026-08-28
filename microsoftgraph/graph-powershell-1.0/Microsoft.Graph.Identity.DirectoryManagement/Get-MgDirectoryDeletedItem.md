@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryDeletedItem
 ---
@@ -14,10 +14,7 @@ title: Get-MgDirectoryDeletedItem
 ## SYNOPSIS
 
 Retrieve the properties of a recently deleted directory object from deleted items.
-The following types are supported:\r- administrativeUnit\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user
 
 ## SYNTAX
 
@@ -48,20 +45,17 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties of a recently deleted directory object from deleted items.
-The following types are supported:\r- administrativeUnit\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- group\r- servicePrincipal\r- user
+The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- group\r\n- servicePrincipal\r\n- user
 
 ## EXAMPLES
-### Example 1: Retrieve a list of recently deleted items
 
-```powershell
+### EXAMPLE 1
+
 Get-MgDirectoryDeletedItem -DirectoryObjectId 'd4142c52-179b-4d31-b5b9-08940873507b'
 
 Id                                   DeletedDateTime
 --                                   ---------------
 d4142c52-179b-4d31-b5b9-08940873507b 8/30/2021 7:37:37 AM
-```
-
-This command returns the details of the specified directory object. The DirectoryObjectId can be an application, group or user resource.
 
 ## PARAMETERS
 
@@ -351,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -393,27 +387,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDirectoryDeletedItem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem)
+- [](https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceRegisteredUserByRef
 ---
@@ -15,9 +15,6 @@ title: Get-MgDeviceRegisteredUserByRef
 
 Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,13 +39,15 @@ This cmdlet has the following aliases,
 Retrieve a list of users that are registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -459,28 +458,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgDeviceRegisteredUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref)
+- [](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0)

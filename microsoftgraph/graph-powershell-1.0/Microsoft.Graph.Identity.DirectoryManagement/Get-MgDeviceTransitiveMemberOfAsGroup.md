@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceTransitiveMemberOfAsGroup
 ---
@@ -15,9 +15,6 @@ title: Get-MgDeviceTransitiveMemberOfAsGroup
 
 Get the groups and administrative units that the device is a member of.
 This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfAsGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,18 +60,12 @@ Get the groups and administrative units that the device is a member of.
 This API request is transitive, and will also return all groups and administrative units the device is a nested member of.
 
 ## EXAMPLES
-### Example 2: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDeviceTransitiveMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual 
-
-
-```
-This example shows how to use the Get-MgDeviceTransitiveMemberOfAsGroup Cmdlet.
-
+Get-MgDeviceTransitiveMemberOfAsGroup -DeviceId $deviceId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')"  -ConsistencyLevel eventual
 
 ## PARAMETERS
 
@@ -585,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -627,27 +618,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDeviceTransitiveMemberOfAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup)
+- [](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0)

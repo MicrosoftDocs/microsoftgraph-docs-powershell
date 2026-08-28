@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberof
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceTransitiveMemberOf
 ---
@@ -16,9 +16,6 @@ title: Get-MgDeviceTransitiveMemberOf
 Groups and administrative units that the device is a member of.
 This operation is transitive.
 Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,17 +62,12 @@ This operation is transitive.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDeviceTransitiveMemberOf -DeviceId $deviceId
-
-```
-This example shows how to use the Get-MgDeviceTransitiveMemberOf Cmdlet.
-
 
 ## PARAMETERS
 
@@ -586,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -628,27 +620,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDeviceTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberof)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberof)
+- [](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0)
