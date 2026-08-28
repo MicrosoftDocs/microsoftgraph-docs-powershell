@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mggroupteamprimarychannelallmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupTeamPrimaryChannelAllMember
 ---
@@ -15,9 +15,6 @@ title: Add-MgGroupTeamPrimaryChannelAllMember
 
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupTeamPrimaryChannelAllMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaGroupTeamPrimaryChannelAllMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -102,7 +109,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -376,7 +383,7 @@ HelpMessage: ''
 
 ### -Values
 
-
+.
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
@@ -458,7 +465,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsHvdtq4GroupsGroupIdTeamPrimarychannelAllmembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsHvdtq4GroupsGroupIdTeamPrimarychannelAllmembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Values <IMicrosoftGraphConversationMember[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -472,7 +479,7 @@ An Out-of-tenant external member is assigned the owner role.
     [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -525,28 +532,5 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [Add-MgGroupTeamPrimaryChannelAllMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mggroupteamprimarychannelallmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mggroupteamprimarychannelallmember)
+- [](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)

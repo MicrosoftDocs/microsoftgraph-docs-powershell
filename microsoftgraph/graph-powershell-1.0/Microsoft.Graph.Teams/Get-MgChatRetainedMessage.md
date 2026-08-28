@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatRetainedMessage
 ---
@@ -15,9 +15,6 @@ title: Get-MgChatRetainedMessage
 
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatRetainedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatRetainedMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,13 +38,15 @@ This cmdlet has the following aliases,
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.ReadBasic.All, Chat.Manage.Chat, Chat.Read.All, ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -415,28 +414,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgChatRetainedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage)
+- [](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgTeamworkWorkforceIntegration
 ---
@@ -14,9 +14,6 @@ title: Update-MgTeamworkWorkforceIntegration
 ## SYNOPSIS
 
 Update the properties of a workforceIntegration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a workforceIntegration object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WorkforceIntegration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WorkforceIntegration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
@@ -106,10 +94,6 @@ $params = @{
 }
 
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgTeamworkWorkforceIntegration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -745,7 +729,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWorkforceIntegration>`: workforceIntegration
+BODYPARAMETER <IMicrosoftGraphWorkforceIntegration>: workforceIntegration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -772,7 +756,7 @@ Start with 1.
   [SupportedEntities <String>]: workforceIntegrationSupportedEntities
   [Url <String>]: Workforce Integration URL for callbacks from the Shifts service.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -783,12 +767,12 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ENCRYPTION `<IMicrosoftGraphWorkforceIntegrationEncryption>`: workforceIntegrationEncryption
+ENCRYPTION <IMicrosoftGraphWorkforceIntegrationEncryption>: workforceIntegrationEncryption
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Protocol <String>]: workforceIntegrationEncryptionProtocol
   [Secret <String>]: Encryption shared secret.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -826,7 +810,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -840,27 +824,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgTeamworkWorkforceIntegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/workforceintegration-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration)
+- [](https://learn.microsoft.com/graph/api/workforceintegration-update?view=graph-rest-1.0)

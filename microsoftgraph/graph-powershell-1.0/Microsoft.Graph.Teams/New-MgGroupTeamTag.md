@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtag
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupTeamTag
 ---
@@ -14,9 +14,6 @@ title: New-MgGroupTeamTag
 ## SYNOPSIS
 
 Create new navigation property to tags for groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to tags for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -620,7 +627,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkTag>`: teamworkTag
+BODYPARAMETER <IMicrosoftGraphTeamworkTag>: teamworkTag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -637,7 +644,7 @@ Read-only.
   [TagType <String>]: teamworkTagType
   [TeamId <String>]: ID of the team in which the tag is defined.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -685,27 +692,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgGroupTeamTag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtag)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtag)

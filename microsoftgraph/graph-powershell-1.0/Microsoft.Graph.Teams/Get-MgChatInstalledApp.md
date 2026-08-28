@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatInstalledApp
 ---
@@ -14,9 +14,6 @@ title: Get-MgChatInstalledApp
 ## SYNOPSIS
 
 Get an app installed in a chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,37 +56,19 @@ This cmdlet has the following aliases,
 
 Get an app installed in a chat.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ManageSelectedForChat, TeamsAppInstallation.ReadWriteForChat, TeamsAppInstallation.ReadWriteSelfForChat,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.ReadForChat.All, Chat.Manage.Chat, TeamsAppInstallation.ManageSelectedForChat.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.Read.Chat, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All,  |
-
 ## EXAMPLES
-### Example 1 : Get the app installed in the specified chat
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
-```
-This example will get the app installed in the specified chat
-
-### Example 2: Get the set of resource-specific permissions consented for the app installed in the specified chat
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -Property "consentedPermissionSet,id" 
-
-```
-This example will get the set of resource-specific permissions consented for the app installed in the specified chat
-
+Get-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -Property "consentedPermissionSet,id"
 
 ## PARAMETERS
 
@@ -578,7 +557,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -619,28 +598,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgChatInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp)
+- [](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0)
