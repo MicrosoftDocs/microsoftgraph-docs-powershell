@@ -1375,8 +1375,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenariobyuniquename)
-- [](https://learn.microsoft.com/graph/api/businessscenario-update?view=graph-rest-beta)
+- [Update-MgBetaSolutionBusinessScenarioByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenariobyuniquename)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenario-update?view=graph-rest-beta)
 
 
 
