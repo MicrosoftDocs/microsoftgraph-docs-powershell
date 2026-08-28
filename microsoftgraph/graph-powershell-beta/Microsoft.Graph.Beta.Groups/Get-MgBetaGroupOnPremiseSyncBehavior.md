@@ -60,12 +60,17 @@ If true, updates from on-premises Active Directory are blocked in the cloud; if 
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupOnPremiseSyncBehavior -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupOnPremiseSyncBehavior Cmdlet.
+
 
 ## PARAMETERS
 

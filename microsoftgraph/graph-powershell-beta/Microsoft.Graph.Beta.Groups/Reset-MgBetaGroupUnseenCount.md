@@ -50,12 +50,17 @@ Reset the unseenCount of all the posts that the current user hasn't seen since t
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Reset-MgBetaGroupUnseenCount -GroupId $groupId
+
+```
+This example shows how to use the Reset-MgBetaGroupUnseenCount Cmdlet.
+
 
 ## PARAMETERS
 
