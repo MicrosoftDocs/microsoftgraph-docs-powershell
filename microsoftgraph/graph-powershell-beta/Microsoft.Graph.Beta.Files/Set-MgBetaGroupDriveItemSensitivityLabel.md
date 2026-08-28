@@ -622,7 +622,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriveitemsensitivitylabel)
+- [Set-MgBetaGroupDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriveitemsensitivitylabel)
 
 
 
