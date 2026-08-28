@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUnarchiveTeam
 ---
@@ -17,9 +17,6 @@ Restore an archived team and restores users' ability to send messages and edit t
 Teams are archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgUnarchiveTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,26 +50,13 @@ Teams are archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamSettings.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamSettings.ReadWrite.Group, Directory.ReadWrite.All, Group.ReadWrite.All, TeamSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Invoke-MgBetaUnarchiveTeam -TeamId $teamId
-
-```
-This example shows how to use the Invoke-MgBetaUnarchiveTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -383,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -433,27 +417,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUnarchiveTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-unarchive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchiveteam)
+- [](https://learn.microsoft.com/graph/api/team-unarchive?view=graph-rest-beta)

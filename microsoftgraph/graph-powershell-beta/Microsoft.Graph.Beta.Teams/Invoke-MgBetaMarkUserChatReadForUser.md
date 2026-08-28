@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatreadforuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaMarkUserChatReadForUser
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaMarkUserChatReadForUser
 ## SYNOPSIS
 
 Mark a chat as read for a user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkUserChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkUserChatReadForUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 
 Mark a chat as read for a user.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -395,7 +402,7 @@ HelpMessage: ''
 
 ### -TenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -531,7 +538,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TenantId <String>]: 
   [User <IMicrosoftGraphTeamworkUserIdentity>]: teamworkUserIdentity
@@ -544,7 +551,7 @@ For example, in the access reviews decisions API, this property might record the
     [UserIdentityType <String>]: teamworkUserIdentityType
     [UserPrincipalName <String>]: User principal name (UPN) of the user.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -591,7 +598,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-USER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
+USER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -604,28 +611,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaMarkUserChatReadForUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatreadforuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkuserchatreadforuser)
+- [](https://learn.microsoft.com/graph/api/chat-markchatreadforuser?view=graph-rest-beta)

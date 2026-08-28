@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelsharedwithteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaTeamChannelSharedWithTeam
 ---
@@ -15,9 +15,6 @@ title: Remove-MgBetaTeamChannelSharedWithTeam
 
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,26 +47,13 @@ This cmdlet has the following aliases,
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelMember.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.ReadWrite.Group, ChannelMember.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
-
-```
-This example shows how to use the Remove-MgBetaTeamChannelSharedWithTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -443,7 +427,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -493,27 +477,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelsharedwithteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelsharedwithteam)
+- [](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta)

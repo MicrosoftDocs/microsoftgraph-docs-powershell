@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelretainedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamChannelRetainedMessage
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaTeamChannelRetainedMessage
 
 Get all retained messages across all channels in a team.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelRetainedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelRetainedMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,17 +50,12 @@ Get all retained messages across all channels in a team.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelRetainedMessage -TeamId $teamId
-
-```
-This example shows how to use the Get-MgBetaTeamChannelRetainedMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -481,7 +473,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -531,27 +523,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaTeamChannelRetainedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelretainedmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelretainedmessage)
+- [](https://learn.microsoft.com/graph/api/channel-getallretainedmessages?view=graph-rest-beta)

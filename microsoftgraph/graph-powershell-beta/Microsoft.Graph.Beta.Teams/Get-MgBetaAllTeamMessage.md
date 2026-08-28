@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteammessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAllTeamMessage
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaAllTeamMessage
 ## SYNOPSIS
 
 Invoke function getAllMessages
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAllTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,13 +36,15 @@ This cmdlet has the following aliases,
 
 Invoke function getAllMessages
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Team.ReadBasic.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamSettings.Read.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, TeamSettings.ReadWrite.Group,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -434,27 +433,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaAllTeamMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteammessage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteammessage)

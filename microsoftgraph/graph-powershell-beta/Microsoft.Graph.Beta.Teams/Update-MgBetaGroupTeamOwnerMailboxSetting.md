@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamownermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupTeamOwnerMailboxSetting
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update property mailboxSettings value.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -732,7 +742,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
+AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>: automaticRepliesSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalAudience <String>]: externalAudienceScope
   [ExternalReplyMessage <String>]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
@@ -746,7 +756,7 @@ See below for possible values.
   [ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [Status <String>]: automaticRepliesStatus
 
-BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
+BODYPARAMETER <IMicrosoftGraphMailboxSettings>: mailboxSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArchiveFolder <String>]: Folder ID of an archive folder for the user.
 Read-only.
@@ -785,7 +795,7 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
       [Name <String>]: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -832,14 +842,14 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
+LANGUAGE <IMicrosoftGraphLocaleInfo>: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
+WORKINGHOURS <IMicrosoftGraphWorkingHours>: workingHours
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DaysOfWeek <String[]>]: The days of the week on which the user works.
   [EndTime <String>]: The time of the day that the user stops working.
@@ -852,27 +862,4 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 
 ## RELATED LINKS
 
-- [Update-MgBetaGroupTeamOwnerMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamownermailboxsetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamownermailboxsetting)

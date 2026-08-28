@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAppCatalogTeamApp
 ---
@@ -13,12 +13,9 @@ title: New-MgBetaAppCatalogTeamApp
 
 ## SYNOPSIS
 
-Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,22 +46,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -73,20 +61,11 @@ $params = [Zip file containing a Teams app package]
 
 New-MgBetaAppCatalogTeamApp -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-New-MgBetaAppCatalogTeamApp -Requiresreview true 
-
-```
-This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
-
+New-MgBetaAppCatalogTeamApp -Requiresreview true
 
 ## PARAMETERS
 
@@ -557,7 +536,7 @@ Required.
   [TeamsAppId <String>]: The ID from the Teams app manifest.
   [Version <String>]: The version number of the application.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsApp>`: teamsApp
+BODYPARAMETER <IMicrosoftGraphTeamsApp>: teamsApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -641,27 +620,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamapp)
+- [](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamworkDeviceHealth
 ---
@@ -46,26 +46,13 @@ This cmdlet has the following aliases,
 Get the health details of a Microsoft Teams-enabled device.
 Device health is calculated based on the device configuration and other device parameters.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkDevice.Read.All, TeamworkDevice.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId
-
-```
-This example shows how to use the Get-MgBetaTeamworkDeviceHealth Cmdlet.
-
 
 ## PARAMETERS
 
@@ -355,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -405,27 +392,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaTeamworkDeviceHealth](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth)
+- [](https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-beta)
