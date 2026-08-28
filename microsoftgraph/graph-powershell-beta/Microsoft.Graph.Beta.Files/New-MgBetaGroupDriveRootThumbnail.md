@@ -15,6 +15,9 @@ title: New-MgBetaGroupDriveRootThumbnail
 
 Create new navigation property to thumbnails for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

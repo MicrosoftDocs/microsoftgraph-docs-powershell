@@ -15,6 +15,9 @@ title: Get-MgBetaShareContentTypeBaseType
 
 The collection of content types that are ancestors of this content type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareContentTypeBaseType](/powershell/module/Microsoft.Graph.Files/Get-MgShareContentTypeBaseType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

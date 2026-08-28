@@ -15,6 +15,9 @@ title: New-MgBetaDriveListOperation
 
 Create new navigation property to operations for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveListOperation](/powershell/module/Microsoft.Graph.Files/New-MgDriveListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

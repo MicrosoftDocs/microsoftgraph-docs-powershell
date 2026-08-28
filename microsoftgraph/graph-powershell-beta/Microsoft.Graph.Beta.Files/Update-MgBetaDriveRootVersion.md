@@ -15,6 +15,9 @@ title: Update-MgBetaDriveRootVersion
 
 Update the navigation property versions in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
