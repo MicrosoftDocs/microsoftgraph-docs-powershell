@@ -584,8 +584,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat)
-- [](https://learn.microsoft.com/graph/api/deletedchat-get?view=graph-rest-1.0)
+- [Get-MgTeamworkDeletedChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/deletedchat-get?view=graph-rest-1.0)
 
 
 
