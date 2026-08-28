@@ -645,8 +645,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextension)
-- [](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
+- [Get-MgGroupThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 
