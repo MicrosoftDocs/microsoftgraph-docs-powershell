@@ -54,7 +54,7 @@ Create new navigation property to fileSecurityProfiles for security
 
 ### -ActivityGroupNames
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -96,7 +96,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -117,7 +117,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -181,7 +181,7 @@ HelpMessage: ''
 
 ### -CertificateThumbprint
 
-.
+
 
 ```yaml
 Type: System.String
@@ -224,7 +224,7 @@ HelpMessage: ''
 
 ### -Extensions
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -245,7 +245,7 @@ HelpMessage: ''
 
 ### -FileType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -266,7 +266,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -287,7 +287,7 @@ HelpMessage: ''
 
 ### -Hashes
 
-.
+
 To construct, see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
@@ -394,7 +394,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -415,7 +415,7 @@ HelpMessage: ''
 
 ### -MalwareStates
 
-.
+
 To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
@@ -437,7 +437,7 @@ HelpMessage: ''
 
 ### -Names
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -543,7 +543,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-.
+
 
 ```yaml
 Type: System.String
@@ -564,7 +564,7 @@ HelpMessage: ''
 
 ### -Size
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -585,7 +585,7 @@ HelpMessage: ''
 
 ### -Tags
 
-.
+
 
 ```yaml
 Type: System.String[]
@@ -628,7 +628,7 @@ HelpMessage: ''
 
 ### -VulnerabilityStates
 
-.
+
 To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
