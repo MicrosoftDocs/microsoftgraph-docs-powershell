@@ -1130,8 +1130,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0)
+- [Update-MgExternalConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0)
 
 
 
