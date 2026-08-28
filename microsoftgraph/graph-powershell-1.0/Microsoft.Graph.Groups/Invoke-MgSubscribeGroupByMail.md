@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgSubscribeGroupByMail
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgSubscribeGroupByMail
 
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ Calling this method will enable the current user to receive email notifications 
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Invoke-MgSubscribeGroupByMail -GroupId $groupId
-
-```
-This example shows how to use the Invoke-MgSubscribeGroupByMail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -371,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -395,27 +387,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgSubscribeGroupByMail](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-subscribebymail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail)
+- [](https://learn.microsoft.com/graph/api/group-subscribebymail?view=graph-rest-1.0)

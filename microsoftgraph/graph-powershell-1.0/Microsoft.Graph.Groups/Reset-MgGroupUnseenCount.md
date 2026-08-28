@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/reset-mggroupunseencount
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Reset-MgGroupUnseenCount
 ---
@@ -15,9 +15,6 @@ title: Reset-MgGroupUnseenCount
 
 Reset the unseenCount of all the posts that the current user hasn't seen since their last visit.
 Supported for Microsoft 365 groups only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Groups/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ Reset the unseenCount of all the posts that the current user hasn't seen since t
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Reset-MgGroupUnseenCount -GroupId $groupId
-
-```
-This example shows how to use the Reset-MgGroupUnseenCount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -371,7 +363,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -395,27 +387,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Reset-MgGroupUnseenCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/reset-mggroupunseencount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/reset-mggroupunseencount)
+- [](https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-1.0)
