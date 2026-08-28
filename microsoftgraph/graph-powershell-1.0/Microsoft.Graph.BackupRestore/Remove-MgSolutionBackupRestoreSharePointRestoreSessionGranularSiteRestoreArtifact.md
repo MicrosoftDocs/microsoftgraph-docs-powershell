@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact
 ---
@@ -14,9 +14,6 @@ title: Remove-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestore
 ## SYNOPSIS
 
 Delete navigation property granularSiteRestoreArtifacts for solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property granularSiteRestoreArtifacts for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -438,27 +445,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoresharepointrestoresessiongranularsiterestoreartifact)
