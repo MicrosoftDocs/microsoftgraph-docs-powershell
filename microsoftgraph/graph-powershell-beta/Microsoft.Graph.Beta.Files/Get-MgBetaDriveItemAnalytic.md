@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalytic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDriveItemAnalytic
 ---
@@ -13,10 +13,7 @@ title: Get-MgBetaDriveItemAnalytic
 
 ## SYNOPSIS
 
-Get itemAnalytics about the views that took place under this resource.\rThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\rFor a custom time range or interval, use the getActivitiesByInterval API.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalytic?view=graph-powershell-1.0)
+Get itemAnalytics about the views that took place under this resource.\r\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\r\nFor a custom time range or interval, use the getActivitiesByInterval API.
 
 ## SYNTAX
 
@@ -45,28 +42,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get itemAnalytics about the views that took place under this resource.\rThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\rFor a custom time range or interval, use the getActivitiesByInterval API.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All,  |
+Get itemAnalytics about the views that took place under this resource.\r\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\r\nFor a custom time range or interval, use the getActivitiesByInterval API.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Get-MgBetaDriveItemAnalytic Cmdlet.
-
 
 ## PARAMETERS
 
@@ -377,7 +361,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -407,27 +391,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDriveItemAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalytic)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalytic)
+- [](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-beta)

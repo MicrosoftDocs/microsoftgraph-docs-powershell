@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDriveItemRetentionLabel
 ---
@@ -16,9 +16,6 @@ title: Remove-MgBetaDriveItemRetentionLabel
 Remove the retention label from a driveItem.
 This operation clears the retention label and all associated retention settings enforced on the item.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,37 +48,19 @@ Remove the retention label from a driveItem.
 This operation clears the retention label and all associated retention settings enforced on the item.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite.All, Sites.FullControl.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Remove the retention label from a driveItem
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Files
-
-Remove-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example will remove the retention label from a driveitem
-
-### Example 2: Remove the retention label from a driveItem that fails due to insufficient permissions
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Remove-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
 
-```
-This example will remove the retention label from a driveitem that fails due to insufficient permissions
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Files
+
+Remove-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
 
 ## PARAMETERS
 
@@ -434,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -464,27 +443,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitemretentionlabel)
+- [](https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta)
