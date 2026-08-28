@@ -378,8 +378,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent)
-- [](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
+- [Get-MgBetaServiceAnnouncementMessageAttachmentContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentcontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceannouncementattachment-get?view=graph-rest-beta)
 
 
 
