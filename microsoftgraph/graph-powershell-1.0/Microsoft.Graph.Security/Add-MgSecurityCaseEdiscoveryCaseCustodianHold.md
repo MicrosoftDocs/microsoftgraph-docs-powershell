@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasecustodianhold
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/28/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgSecurityCaseEdiscoveryCaseCustodianHold
 ---
