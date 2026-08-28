@@ -66,12 +66,17 @@ Read the properties and relationships of a managedDeviceCompliance object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 
 Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance Cmdlet.
+
 
 ## PARAMETERS
 
