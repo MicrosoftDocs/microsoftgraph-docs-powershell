@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestorereport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/28/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreReport
 ---
