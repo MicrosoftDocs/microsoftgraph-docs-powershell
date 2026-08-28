@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermission
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSitePermission
 ---
@@ -14,9 +14,6 @@ title: Get-MgSitePermission
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a permission object on a site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,17 +56,12 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a permission object on a site.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSitePermission -SiteId $siteId
-
-```
-This example shows how to use the Get-MgSitePermission Cmdlet.
-
 
 ## PARAMETERS
 
@@ -558,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -606,28 +598,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermission)
+- [](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecompatiblehubcontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSiteListContentTypeCompatibleHubContentType
 ---
@@ -17,9 +17,6 @@ Get a list of compatible content types from the content type hub that can be add
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: addCopyFromContentTypeHub and the blog post Syntex Product Updates – August 2021.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,26 +54,13 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: addCopyFromContentTypeHub and the blog post Syntex Product Updates – August 2021.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Manage.All, Sites.FullControl.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId
-
-```
-This example shows how to use the Get-MgSiteListContentTypeCompatibleHubContentType Cmdlet.
-
 
 ## PARAMETERS
 
@@ -515,7 +499,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -563,27 +547,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSiteListContentTypeCompatibleHubContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecompatiblehubcontenttype)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecompatiblehubcontenttype)
+- [](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0)

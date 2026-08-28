@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsettermchildrelation
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSiteTermStoreGroupSetTermChildRelation
 ---
@@ -14,9 +14,6 @@ title: Remove-MgSiteTermStoreGroupSetTermChildRelation
 ## SYNOPSIS
 
 Delete navigation property relations for sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,6 +63,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property relations for sites
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -565,7 +572,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -613,27 +620,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSiteTermStoreGroupSetTermChildRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsettermchildrelation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsettermchildrelation)
