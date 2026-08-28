@@ -17,6 +17,9 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You need to register the calling bot and go through the list of permissions needed.
 This API supports the following PSTN scenarios:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

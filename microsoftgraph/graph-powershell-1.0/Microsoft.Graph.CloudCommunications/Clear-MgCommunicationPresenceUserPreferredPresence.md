@@ -15,6 +15,9 @@ title: Clear-MgCommunicationPresenceUserPreferredPresence
 
 Clear the preferred availability and activity status for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresenceUserPreferredPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Clear (Default)
