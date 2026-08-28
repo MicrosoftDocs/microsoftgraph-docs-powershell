@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportM365AppUserCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaReportM365AppUserCount
 ## SYNOPSIS
 
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,28 +45,18 @@ This cmdlet has the following aliases,
 Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 ## EXAMPLES
-### Example 1: CSV output
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Reports
-
-Get-MgBetaReportM365AppUserCount -Format "text/csv"  -Period $periodId 
-
-```
-This example will csv output
-
-### Example 2: JSON output
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportM365AppUserCount -Format "application/json"  -Period $periodId 
+Get-MgBetaReportM365AppUserCount -Format "text/csv"  -Period $periodId
 
-```
-This example will json output
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaReportM365AppUserCount -Format "application/json"  -Period $periodId
 
 ## PARAMETERS
 
@@ -357,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -413,27 +400,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportM365AppUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appusercount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-beta)

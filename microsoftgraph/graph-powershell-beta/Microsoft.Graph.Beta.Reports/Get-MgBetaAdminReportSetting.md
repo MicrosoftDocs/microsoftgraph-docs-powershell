@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminReportSetting
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaAdminReportSetting
 ## SYNOPSIS
 
 Get the tenant-level settings for Microsoft 365 reports.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Get-MgAdminReportSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,26 +35,13 @@ This cmdlet has the following aliases,
 
 Get the tenant-level settings for Microsoft 365 reports.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ReportSettings.Read.All, ReportSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ReportSettings.Read.All, ReportSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaAdminReportSetting
-
-```
-This example shows how to use the Get-MgBetaAdminReportSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaAdminReportSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting)
+- [](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-beta)

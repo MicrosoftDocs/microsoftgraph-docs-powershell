@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportServicePrincipalSignInActivity
 ---
@@ -62,28 +62,18 @@ You can use a service principal as a client or resource.
 A service principal supports delegated or app-only authentication context.
 
 ## EXAMPLES
-### Example 1: Get a list of servicePrincipalSignInActivity objects
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServicePrincipalSignInActivity
 
-```
-This example will get a list of serviceprincipalsigninactivity objects
-
-### Example 2: Get a servicePrincipalSignInActivity filtered by appId
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportServicePrincipalSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'" 
-
-```
-This example will get a serviceprincipalsigninactivity filtered by appid
-
+Get-MgBetaReportServicePrincipalSignInActivity -Filter "appId eq 'f4d9654f-0305-4072-878c-8bf266dfe146'"
 
 ## PARAMETERS
 
@@ -545,7 +535,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -601,28 +591,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportServicePrincipalSignInActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipalsigninactivity-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-list-serviceprincipalsigninactivities?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity)
+- [](https://learn.microsoft.com/graph/api/serviceprincipalsigninactivity-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/reportroot-list-serviceprincipalsigninactivities?view=graph-rest-beta)

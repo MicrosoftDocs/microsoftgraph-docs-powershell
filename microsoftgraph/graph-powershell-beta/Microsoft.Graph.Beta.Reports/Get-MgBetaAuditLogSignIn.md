@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAuditLogSignIn
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaAuditLogSignIn
 
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,48 +57,25 @@ This cmdlet has the following aliases,
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: List all sign-ins
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaAuditLogSignIn
 
-```
-This example will list all sign-ins
-
-### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Azure'
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaAuditLogSignIn -Filter "startsWith(appDisplayName,'Azure')" -Top 10 
+Get-MgBetaAuditLogSignIn -Filter "startsWith(appDisplayName,'Azure')" -Top 10
 
-```
-This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'azure'
-
-### Example 3: Retrieve the first 10 sign-ins where the signInEventType is not interactiveUser starting with the latest sign-in
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaAuditLogSignIn -Filter "(signInEventTypes/any(t: t ne 'interactiveUser'))" -Sort "createdDateTime DESC" -Top 10 
-
-```
-This example will retrieve the first 10 sign-ins where the signineventtype is not interactiveuser starting with the latest sign-in
-
+Get-MgBetaAuditLogSignIn -Filter "(signInEventTypes/any(t: t ne 'interactiveUser'))" -Sort "createdDateTime DESC" -Top 10
 
 ## PARAMETERS
 
@@ -563,7 +537,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
@@ -619,28 +593,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaAuditLogSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin)
+- [](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-beta)

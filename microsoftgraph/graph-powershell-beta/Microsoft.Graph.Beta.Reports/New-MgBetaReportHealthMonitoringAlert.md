@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaReportHealthMonitoringAlert
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to alerts for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -527,7 +537,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphHealthMonitoringAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphHealthMonitoringAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -554,7 +564,7 @@ Examples include user, group, application, servicePrincipal, device.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [State <String>]: alertState
 
-ENRICHMENT `<IMicrosoftGraphHealthMonitoringEnrichment>`: enrichment
+ENRICHMENT <IMicrosoftGraphHealthMonitoringEnrichment>: enrichment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Impacts <IMicrosoftGraphHealthMonitoringResourceImpactSummary[]>]: A collection of resource impact summaries that gives a high level view of the kind of resources that were impacted and to what degree.
     [ImpactedCount <String>]: The number of resources impacted.
@@ -570,27 +580,4 @@ Examples include user, group, application, servicePrincipal, device.
 
 ## RELATED LINKS
 
-- [New-MgBetaReportHealthMonitoringAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareporthealthmonitoringalert)
