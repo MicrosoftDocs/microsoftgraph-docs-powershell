@@ -16,6 +16,9 @@ title: Get-MgUserChatInstalledApp
 A collection of all the apps in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -16,6 +16,9 @@ title: Set-MgGroupTeamChannelMessageHostedContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamChannelMessageHostedContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

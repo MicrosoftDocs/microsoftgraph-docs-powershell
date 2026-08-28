@@ -15,6 +15,9 @@ title: Update-MgGroupTeamInstalledApp
 
 Upgrade an app installation within a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpgradeExpanded (Default)
