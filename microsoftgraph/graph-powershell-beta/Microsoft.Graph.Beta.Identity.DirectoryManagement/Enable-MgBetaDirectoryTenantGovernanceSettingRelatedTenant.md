@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/enable-mgbetadirectorytenantgovernancesettingrelatedtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant
 ---
@@ -38,17 +38,12 @@ Enable the related tenants feature for tenant discovery.
 After calling this action, the isRelatedTenantsEnabled property of tenantGovernanceSetting is set to true, which allows the use of related tenant APIs.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant
-
-```
-This example shows how to use the Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -309,27 +304,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/enable-mgbetadirectorytenantgovernancesettingrelatedtenant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/enable-mgbetadirectorytenantgovernancesettingrelatedtenant)
+- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants?view=graph-rest-beta)

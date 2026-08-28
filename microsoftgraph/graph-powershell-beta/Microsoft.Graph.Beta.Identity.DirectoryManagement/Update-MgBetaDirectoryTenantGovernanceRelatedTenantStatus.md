@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenantstatus
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus
 ---
@@ -35,26 +35,13 @@ This cmdlet has the following aliases,
 
 Get the status of the related tenants refresh action.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TenantGovernance-RelatedTenant.Read.All, TenantGovernance-RelatedTenant.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TenantGovernance-RelatedTenant.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus
-
-```
-This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus Cmdlet.
-
 
 ## PARAMETERS
 
@@ -250,27 +237,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenantstatus)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-relatedtenant-refreshstatus?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenantstatus)
+- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-relatedtenant-refreshstatus?view=graph-rest-beta)

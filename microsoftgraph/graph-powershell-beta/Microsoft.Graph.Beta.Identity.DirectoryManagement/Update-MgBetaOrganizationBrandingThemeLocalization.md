@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandingthemelocalization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOrganizationBrandingThemeLocalization
 ---
@@ -101,13 +101,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property localizations in organization
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrganizationalBranding.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrganizationalBranding.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1336,7 +1338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNTRESETCREDENTIALS `<IMicrosoftGraphLoginPageBrandingVisualElement>`: loginPageBrandingVisualElement
+ACCOUNTRESETCREDENTIALS <IMicrosoftGraphLoginPageBrandingVisualElement>: loginPageBrandingVisualElement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
 The text must be in Unicode format.
@@ -1346,7 +1348,7 @@ This URL must be in ASCII format or non-ASCII characters must be URL encoded.
 Maximum length: 128.
   [IsHidden <Boolean?>]: Option to hide the visual element on the login page.
 
-BODYPARAMETER `<IMicrosoftGraphOrganizationalBrandingThemeLocalization>`: organizationalBrandingThemeLocalization
+BODYPARAMETER <IMicrosoftGraphOrganizationalBrandingThemeLocalization>: organizationalBrandingThemeLocalization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccountResetCredentials <IMicrosoftGraphLoginPageBrandingVisualElement>]: loginPageBrandingVisualElement
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1446,7 +1448,7 @@ Optional.
 This text must be Unicode, contain no links or code, and can't exceed 64 characters.
 Optional.
 
-CANNOTACCESSYOURACCOUNT `<IMicrosoftGraphLoginPageBrandingVisualElement>`: loginPageBrandingVisualElement
+CANNOTACCESSYOURACCOUNT <IMicrosoftGraphLoginPageBrandingVisualElement>: loginPageBrandingVisualElement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
 The text must be in Unicode format.
@@ -1456,7 +1458,7 @@ This URL must be in ASCII format or non-ASCII characters must be URL encoded.
 Maximum length: 128.
   [IsHidden <Boolean?>]: Option to hide the visual element on the login page.
 
-CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
+CONTENTCUSTOMIZATION <IMicrosoftGraphContentCustomization>: contentCustomization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttributeCollection <IMicrosoftGraphKeyValue[]>]: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
     [Key <String>]: Key.
@@ -1465,7 +1467,7 @@ CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomizati
   [RegistrationCampaign <IMicrosoftGraphKeyValue[]>]: Represents content options to customize during MFA proofup interruptions.
   [RegistrationCampaignRelativeUrl <String>]: The relative URL of the content options to customize during MFA proofup interruptions.
 
-FORGOTMYPASSWORD `<IMicrosoftGraphLoginPageBrandingVisualElement>`: loginPageBrandingVisualElement
+FORGOTMYPASSWORD <IMicrosoftGraphLoginPageBrandingVisualElement>: loginPageBrandingVisualElement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
 The text must be in Unicode format.
@@ -1475,7 +1477,7 @@ This URL must be in ASCII format or non-ASCII characters must be URL encoded.
 Maximum length: 128.
   [IsHidden <Boolean?>]: Option to hide the visual element on the login page.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1541,13 +1543,13 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-LOGINPAGELAYOUTCONFIGURATION `<IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
+LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>: loginPageLayoutConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsFooterShown <Boolean?>]: Option to show the footer on the sign-in page.
   [IsHeaderShown <Boolean?>]: Option to show the header on the sign-in page.
   [LayoutTemplateType <String>]: layoutTemplateType
 
-PRIVACYANDCOOKIES `<IMicrosoftGraphLoginPageBrandingVisualElement>`: loginPageBrandingVisualElement
+PRIVACYANDCOOKIES <IMicrosoftGraphLoginPageBrandingVisualElement>: loginPageBrandingVisualElement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
 The text must be in Unicode format.
@@ -1557,7 +1559,7 @@ This URL must be in ASCII format or non-ASCII characters must be URL encoded.
 Maximum length: 128.
   [IsHidden <Boolean?>]: Option to hide the visual element on the login page.
 
-RESETITNOW `<IMicrosoftGraphLoginPageBrandingVisualElement>`: loginPageBrandingVisualElement
+RESETITNOW <IMicrosoftGraphLoginPageBrandingVisualElement>: loginPageBrandingVisualElement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
 The text must be in Unicode format.
@@ -1567,7 +1569,7 @@ This URL must be in ASCII format or non-ASCII characters must be URL encoded.
 Maximum length: 128.
   [IsHidden <Boolean?>]: Option to hide the visual element on the login page.
 
-TERMSOFUSE `<IMicrosoftGraphLoginPageBrandingVisualElement>`: loginPageBrandingVisualElement
+TERMSOFUSE <IMicrosoftGraphLoginPageBrandingVisualElement>: loginPageBrandingVisualElement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomText <String>]: A string to replace the default visual element text that is displayed on the login page.
 The text must be in Unicode format.
@@ -1580,27 +1582,4 @@ Maximum length: 128.
 
 ## RELATED LINKS
 
-- [Update-MgBetaOrganizationBrandingThemeLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandingthemelocalization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationbrandingthemelocalization)
