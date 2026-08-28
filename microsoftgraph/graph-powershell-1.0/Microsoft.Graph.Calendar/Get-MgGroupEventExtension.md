@@ -617,8 +617,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextension)
-- [](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
+- [Get-MgGroupEventExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 
