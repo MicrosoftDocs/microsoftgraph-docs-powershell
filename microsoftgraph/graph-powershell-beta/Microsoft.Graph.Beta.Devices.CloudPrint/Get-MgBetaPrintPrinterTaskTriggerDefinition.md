@@ -16,6 +16,9 @@ title: Get-MgBetaPrintPrinterTaskTriggerDefinition
 An abstract definition that is used to create a printTask when triggered by a print event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterTaskTriggerDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTriggerDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
