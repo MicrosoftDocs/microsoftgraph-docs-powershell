@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchild
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDriveItemChild
 ---
@@ -17,9 +17,6 @@ Collection containing Item objects for the immediate children of Item.
 Only items representing folders have children.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,28 +63,18 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Files
-
-Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
-
-```
-This example shows how to use the Get-MgDriveItemChild Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
 
-```
-This example shows how to use the Get-MgDriveItemChild Cmdlet.
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Files
+
+Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
 
 ## PARAMETERS
 
@@ -603,7 +590,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -632,27 +619,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDriveItemChild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchild)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-list-children?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchild)
+- [](https://learn.microsoft.com/graph/api/driveitem-list-children?view=graph-rest-1.0)
