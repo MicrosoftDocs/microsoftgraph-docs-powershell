@@ -15,6 +15,9 @@ title: Update-MgBetaAgreementFile
 
 Update the navigation property file in agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreementFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaRoleManagementEntitlementManagementResourceNamespace
 
 Create new navigation property to resourceNamespaces for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

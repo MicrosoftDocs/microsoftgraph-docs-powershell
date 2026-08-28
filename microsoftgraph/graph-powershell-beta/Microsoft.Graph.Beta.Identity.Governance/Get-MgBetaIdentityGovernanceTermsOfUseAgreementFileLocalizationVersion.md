@@ -16,6 +16,9 @@ title: Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
