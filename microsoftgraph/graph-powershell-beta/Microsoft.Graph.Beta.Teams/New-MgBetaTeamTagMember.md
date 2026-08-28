@@ -15,6 +15,9 @@ title: New-MgBetaTeamTagMember
 
 Create a new teamworkTagMember object in a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamTagMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

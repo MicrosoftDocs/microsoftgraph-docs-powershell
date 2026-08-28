@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleTimeOffRequest
 
 Update the navigation property timeOffRequests in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

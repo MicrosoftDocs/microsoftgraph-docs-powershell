@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamScheduleTimeOffReason
 
 Create new navigation property to timeOffReasons for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
