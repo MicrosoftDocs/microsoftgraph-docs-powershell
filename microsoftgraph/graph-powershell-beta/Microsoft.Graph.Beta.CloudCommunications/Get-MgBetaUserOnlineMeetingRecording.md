@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOnlineMeetingRecording
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserOnlineMeetingRecording
 
 The content stream of the recording of a Teams live event.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -104,23 +101,13 @@ This cmdlet has the following aliases,
 The content stream of the recording of a Teams live event.
 Read-only.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOnlineMeetingRecording Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingRecording -UserId $userId -OnlineMeetingId $onlineMeetingId
-```
-This example shows how to use the Get-MgBetaUserOnlineMeetingRecording Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -940,7 +927,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -970,28 +957,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOnlineMeetingRecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingrecording)
+- [](https://learn.microsoft.com/graph/api/callrecording-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta)

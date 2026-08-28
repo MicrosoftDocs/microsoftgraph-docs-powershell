@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingattendancereport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaCommunicationOnlineMeetingAttendanceReport
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaCommunicationOnlineMeetingAttendanceReport
 ## SYNOPSIS
 
 Create new navigation property to attendanceReports for communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to attendanceReports for communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -641,7 +648,7 @@ Presents for all participant who has registered for the virtualEventWebinar.
 The possible values are: None, Attendee, Presenter, and Organizer.
   [TotalAttendanceInSeconds <Int32?>]: Total duration of the attendances in seconds.
 
-BODYPARAMETER `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
+BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -706,7 +713,7 @@ This association bundles all the information (both supported and not supported i
 Optional.
 If set, the maximum supported length is 256 characters.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -736,27 +743,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaCommunicationOnlineMeetingAttendanceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingattendancereport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingattendancereport)

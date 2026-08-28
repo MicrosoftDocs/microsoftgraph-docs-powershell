@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaCommunicationCallAudioRoutingGroup
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaCommunicationCallAudioRoutingGroup
 ## SYNOPSIS
 
 Create a new audioRoutingGroup.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -70,18 +67,9 @@ This cmdlet has the following aliases,
 
 Create a new audioRoutingGroup.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Calls.JoinGroupCall.All, Calls.InitiateGroupCall.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -97,10 +85,6 @@ receivers = @(
 }
 
 New-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -570,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAudioRoutingGroup>`: audioRoutingGroup
+BODYPARAMETER <IMicrosoftGraphAudioRoutingGroup>: audioRoutingGroup
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -578,7 +562,7 @@ Read-only.
   [RoutingMode <String>]: routingMode
   [Sources <String[]>]: List of source participant ids.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -608,27 +592,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaCommunicationCallAudioRoutingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallaudioroutinggroup)
+- [](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-beta)

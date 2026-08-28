@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserPresence
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserPresence
 ## SYNOPSIS
 
 Update the navigation property presence in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property presence in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -599,7 +606,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPresence>`: presence
+BODYPARAMETER <IMicrosoftGraphPresence>: presence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -630,7 +637,7 @@ See below for possible values.
     [Source <String>]: workLocationSource
     [WorkLocationType <String>]: workLocationType
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -657,12 +664,12 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [ToDateTime <DateTime?>]: Usage: toDateTime={toDateTime}
   [UserId <String>]: The unique identifier of user
 
-OUTOFOFFICESETTINGS `<IMicrosoftGraphOutOfOfficeSettings>`: outOfOfficeSettings
+OUTOFOFFICESETTINGS <IMicrosoftGraphOutOfOfficeSettings>: outOfOfficeSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsOutOfOffice <Boolean?>]: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
   [Message <String>]: The out of office message that the user configured on Outlook client (Automatic Replies (Out of Office)) or the Teams client (Schedule out of office).
 
-STATUSMESSAGE `<IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
+STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>: presenceStatusMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpiryDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -676,7 +683,7 @@ See below for possible values.
     [ContentType <String>]: bodyType
   [PublishedDateTime <DateTime?>]: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
-WORKLOCATION `<IMicrosoftGraphUserWorkLocation>`: userWorkLocation
+WORKLOCATION <IMicrosoftGraphUserWorkLocation>: userWorkLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlaceId <String>]: Identifier of the place, if applicable.
   [Source <String>]: workLocationSource
@@ -685,27 +692,4 @@ WORKLOCATION `<IMicrosoftGraphUserWorkLocation>`: userWorkLocation
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserPresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence)

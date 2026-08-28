@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationadhoccall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaCommunicationAdhocCall
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaCommunicationAdhocCall
 ## SYNOPSIS
 
 Update the navigation property adhocCalls in communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationAdhocCall](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationAdhocCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property adhocCalls in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -514,7 +521,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdhocCall>`: adhocCall
+BODYPARAMETER <IMicrosoftGraphAdhocCall>: adhocCall
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -577,7 +584,7 @@ Read-only.
     [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -677,27 +684,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaCommunicationAdhocCall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationadhoccall)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationadhoccall)
