@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 Get subjects from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId
@@ -609,6 +599,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsubject)
 - [](https://learn.microsoft.com/graph/api/accesspackagesubject-get?view=graph-rest-1.0)
+
 
 
 
