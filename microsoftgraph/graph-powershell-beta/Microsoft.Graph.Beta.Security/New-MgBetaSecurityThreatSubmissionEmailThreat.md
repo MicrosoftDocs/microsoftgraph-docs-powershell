@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityThreatSubmissionEmailThreat
 ---
@@ -54,18 +54,9 @@ This cmdlet has the following aliases,
 
 Create a new emailThreatSubmission object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ThreatSubmission.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ThreatSubmission.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -77,10 +68,6 @@ $params = @{
 }
 
 New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet.
-
 
 ## PARAMETERS
 
@@ -800,21 +787,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADMINREVIEW `<IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+ADMINREVIEW <IMicrosoftGraphSecuritySubmissionAdminReview>: submissionAdminReview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ReviewBy <String>]: Specifies who reviewed the email.
 The identification is an email ID or other identity strings.
   [ReviewDateTime <DateTime?>]: Specifies the date time when the review occurred.
   [ReviewResult <String>]: submissionResultCategory
 
-ATTACKSIMULATIONINFO `<IMicrosoftGraphSecurityAttackSimulationInfo>`: attackSimulationInfo
+ATTACKSIMULATIONINFO <IMicrosoftGraphSecurityAttackSimulationInfo>: attackSimulationInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttackSimDateTime <DateTime?>]: The date and time of the attack simulation.
   [AttackSimDurationTime <TimeSpan?>]: The duration (in time) for the attack simulation.
   [AttackSimId <String>]: The activity ID for the attack simulation.
   [AttackSimUserId <String>]: The unique identifier for the user who got the attack simulation email.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmission
+BODYPARAMETER <IMicrosoftGraphSecurityEmailThreatSubmission>: emailThreatSubmission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]: submissionAdminReview
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -877,7 +864,7 @@ This information is present in the email header.
       [Status <String>]: longRunningOperationStatus
       [Value <String>]: Specifies the value of the created tenant allow block list entry.
 
-CREATEDBY `<IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>: submissionUserIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -886,7 +873,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Email <String>]: The email of user who is making the submission when logged in (delegated token case).
 
-RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+RESULT <IMicrosoftGraphSecuritySubmissionResult>: submissionResult
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Category <String>]: submissionResultCategory
   [Detail <String>]: submissionResultDetail
@@ -896,7 +883,7 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
   [DetectedUrls <String[]>]: Specifies the URLs detected by Microsoft in the submitted email.
   [UserMailboxSetting <String>]: userMailboxSetting
 
-TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListAction>`: tenantAllowOrBlockListAction
+TENANTALLOWORBLOCKLISTACTION <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>: tenantAllowOrBlockListAction
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: tenantAllowBlockListAction
   [ExpirationDateTime <DateTime?>]: Specifies when the tenant allow-block-list expires in date time.
@@ -911,27 +898,5 @@ TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListActi
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityThreatSubmissionEmailThreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-emailthreatsubmission-post-emailthreats?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat)
+- [](https://learn.microsoft.com/graph/api/security-emailthreatsubmission-post-emailthreats?view=graph-rest-beta)

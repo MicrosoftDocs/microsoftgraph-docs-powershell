@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 
 Invoke action evaluate
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,7 +82,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -159,7 +169,7 @@ HelpMessage: ''
 
 ### -DiscoveredSensitiveTypes
 
-
+.
 To construct, see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
 
 ```yaml
@@ -379,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsJ8HmxxSecurityDatasecurityandgovernanceSensitivitylabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsJ8HmxxSecurityDatasecurityandgovernanceSensitivitylabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -393,7 +403,7 @@ BODYPARAMETER `<IPathsJ8HmxxSecurityDatasecurityandgovernanceSensitivitylabelsMi
     [Count <Int32?>]: 
     [Id <String>]: 
 
-CURRENTLABEL `<IMicrosoftGraphCurrentLabel>`: currentLabel
+CURRENTLABEL <IMicrosoftGraphCurrentLabel>: currentLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationMode <String>]: applicationMode
   [Id <String>]: 
@@ -409,27 +419,4 @@ DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType[]>: .
 
 ## RELATED LINKS
 
-- [Test-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecuritydatasecurityandgovernancesensitivitylabel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecuritydatasecurityandgovernancesensitivitylabel)

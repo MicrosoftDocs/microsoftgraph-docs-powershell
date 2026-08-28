@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificaterelatedhost
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost
 ## SYNOPSIS
 
 The host resources related with this sslCertificate.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 The host resources related with this sslCertificate.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost -SslCertificateId $sslCertificateId
-
-```
-This example shows how to use the Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost Cmdlet.
-
 
 ## PARAMETERS
 
@@ -560,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -662,27 +654,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificaterelatedhost)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesslcertificaterelatedhost)
+- [](https://learn.microsoft.com/graph/api/security-sslcertificate-list-relatedhosts?view=graph-rest-beta)

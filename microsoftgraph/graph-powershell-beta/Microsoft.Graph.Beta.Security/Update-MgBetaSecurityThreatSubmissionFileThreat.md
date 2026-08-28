@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionfilethreat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityThreatSubmissionFileThreat
 ---
@@ -73,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property fileThreats in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -764,14 +774,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADMINREVIEW `<IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+ADMINREVIEW <IMicrosoftGraphSecuritySubmissionAdminReview>: submissionAdminReview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ReviewBy <String>]: Specifies who reviewed the email.
 The identification is an email ID or other identity strings.
   [ReviewDateTime <DateTime?>]: Specifies the date time when the review occurred.
   [ReviewResult <String>]: submissionResultCategory
 
-BODYPARAMETER `<IMicrosoftGraphSecurityFileThreatSubmission>`: fileThreatSubmission
+BODYPARAMETER <IMicrosoftGraphSecurityFileThreatSubmission>: fileThreatSubmission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]: submissionAdminReview
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -810,7 +820,7 @@ It's extracted from the token of the post API call.
 Read-only.
   [FileName <String>]: It specifies the file name to be submitted.
 
-CREATEDBY `<IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>: submissionUserIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -819,7 +829,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Email <String>]: The email of user who is making the submission when logged in (delegated token case).
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -918,7 +928,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
 
-RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+RESULT <IMicrosoftGraphSecuritySubmissionResult>: submissionResult
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Category <String>]: submissionResultCategory
   [Detail <String>]: submissionResultDetail
@@ -931,27 +941,4 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityThreatSubmissionFileThreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionfilethreat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionfilethreat)
