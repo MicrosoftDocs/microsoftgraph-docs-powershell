@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityConditionalAccessNamedLocation
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityConditionalAccessNamedLocation
 ## SYNOPSIS
 
 Update the properties of a countryNamedLocation object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,18 +68,10 @@ This cmdlet has the following aliases,
 
 Update the properties of a countryNamedLocation object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
-
 ## EXAMPLES
-### Example 1: Update a country named location by adding to the list of countries
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 $params = @{
@@ -98,9 +87,6 @@ IncludeUnknownCountriesAndRegions = $true
 }
 
 Update-MgIdentityConditionalAccessNamedLocation -NamedLocationId '1f0fd623-bf8f-4003-9627-32a68c3cdcc1' -BodyParameter $params
-```
-
-This example updates the details of an existing named location. Supply the values of the relevant fields that should be updated. In this example, `ID` and `CA` are added in the list of countries.
 
 ## PARAMETERS
 
@@ -233,7 +219,7 @@ HelpMessage: ''
 
 ### -DeletedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -601,7 +587,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNamedLocation>`: namedLocation
+BODYPARAMETER <IMicrosoftGraphNamedLocation>: namedLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: 
   [CreatedDateTime <DateTime?>]: The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time.
@@ -614,7 +600,7 @@ Read-only.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -684,27 +670,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessnamedlocation)
+- [](https://learn.microsoft.com/graph/api/countrynamedlocation-update?view=graph-rest-1.0)

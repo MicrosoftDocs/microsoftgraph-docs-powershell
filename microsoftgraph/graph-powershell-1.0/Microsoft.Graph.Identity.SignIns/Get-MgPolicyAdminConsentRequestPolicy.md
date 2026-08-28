@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyAdminConsentRequestPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgPolicyAdminConsentRequestPolicy
 ## SYNOPSIS
 
 Read the properties and relationships of an adminConsentRequestPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,26 +35,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All, Directory.Read.All, Directory.ReadWrite.All, Policy.ReadWrite.ConsentRequest,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Directory.Read.All, Directory.ReadWrite.All, Policy.ReadWrite.ConsentRequest,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAdminConsentRequestPolicy
-
-```
-This example shows how to use the Get-MgPolicyAdminConsentRequestPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgPolicyAdminConsentRequestPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy)
+- [](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-1.0)

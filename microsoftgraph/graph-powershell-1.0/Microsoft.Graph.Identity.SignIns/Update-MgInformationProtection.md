@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgInformationProtection
 ---
@@ -14,9 +14,6 @@ title: Update-MgInformationProtection
 ## SYNOPSIS
 
 Update informationProtection
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update informationProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -309,7 +316,7 @@ HelpMessage: ''
 
 ### -ThreatAssessmentRequests
 
-
+.
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
@@ -381,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
+BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -397,7 +404,7 @@ Requires $select to retrieve.
 Not nullable.
     [VolumeType <String>]: volumeType
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Bitlocker <IMicrosoftGraphBitlocker>]: bitlocker
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -477,27 +484,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [Update-MgInformationProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection)

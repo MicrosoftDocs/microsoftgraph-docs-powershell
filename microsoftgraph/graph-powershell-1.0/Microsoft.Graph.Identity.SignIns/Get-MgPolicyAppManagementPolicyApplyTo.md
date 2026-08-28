@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyAppManagementPolicyApplyTo
 ---
@@ -14,9 +14,6 @@ title: Get-MgPolicyAppManagementPolicyApplyTo
 ## SYNOPSIS
 
 Collection of applications and service principals to which the policy is applied.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAppManagementPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAppManagementPolicyApplyTo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,28 +58,18 @@ This cmdlet has the following aliases,
 Collection of applications and service principals to which the policy is applied.
 
 ## EXAMPLES
-### Example 1: Get applications and service principal objects applied to an app management policy
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId
 
-```
-This example will get applications and service principal objects applied to an app management policy
-
-### Example 2: Get specific properties of applications and service principal objects applied to an app management policy using $select query option
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -Property "id,appId,displayName,createdDateTime" 
-
-```
-This example will get specific properties of applications and service principal objects applied to an app management policy using $select query option
-
+Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -Property "id,appId,displayName,createdDateTime"
 
 ## PARAMETERS
 
@@ -571,7 +558,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -641,27 +628,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPolicyAppManagementPolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/appmanagementpolicy-list-appliesto?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto)
+- [](https://learn.microsoft.com/graph/api/appmanagementpolicy-list-appliesto?view=graph-rest-1.0)

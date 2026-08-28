@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgRiskyUserCompromised
 ---
@@ -15,9 +15,6 @@ title: Confirm-MgRiskyUserCompromised
 
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaRiskyUserCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyUserCompromised?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,18 +47,9 @@ This cmdlet has the following aliases,
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskyUser.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -73,10 +61,6 @@ $params = @{
 }
 
 Confirm-MgRiskyUserCompromised -BodyParameter $params
-
-```
-This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
-
 
 ## PARAMETERS
 
@@ -103,7 +87,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -337,7 +321,7 @@ HelpMessage: ''
 
 ### -UserIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -408,34 +392,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserIds <String[]>]:
 
 
 ## RELATED LINKS
 
-- [Confirm-MgRiskyUserCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-confirmcompromised?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised)
+- [](https://learn.microsoft.com/graph/api/riskyuser-confirmcompromised?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityapiconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityApiConnector
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityApiConnector
 ## SYNOPSIS
 
 Update the properties of an identityApiConnector object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,18 +67,9 @@ This cmdlet has the following aliases,
 
 Update the properties of an identityApiConnector object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | APIConnectors.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | APIConnectors.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Changing display name, targetUrl, and username & password used for basic authentication
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -97,12 +85,7 @@ $params = @{
 
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
-```
-This example shows changing display name, targeturl, and username & password used for basic authentication
-
-### Example 2: Changing API connector to use client certificate authentication
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -115,10 +98,6 @@ $params = @{
 }
 
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
-
-```
-This example shows changing api connector to use client certificate authentication
-
 
 ## PARAMETERS
 
@@ -588,7 +567,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityApiConnector>`: identityApiConnector
+BODYPARAMETER <IMicrosoftGraphIdentityApiConnector>: identityApiConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -597,7 +576,7 @@ Read-only.
   [DisplayName <String>]: The name of the API connector.
   [TargetUrl <String>]: The URL of the API endpoint to call.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -667,27 +646,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgIdentityApiConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityapiconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityapiconnector)
+- [](https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0)
