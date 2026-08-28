@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectio
 
 Delete ref of navigation property attributes for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

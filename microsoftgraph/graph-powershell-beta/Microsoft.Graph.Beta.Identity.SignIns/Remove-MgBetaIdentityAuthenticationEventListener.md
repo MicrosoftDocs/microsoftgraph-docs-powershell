@@ -16,6 +16,9 @@ title: Remove-MgBetaIdentityAuthenticationEventListener
 Delete an authenticationEventListener object.
 The following derived types are currently supported.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

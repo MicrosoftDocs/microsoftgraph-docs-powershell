@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyAuthorizationPolicy
 
 Delete navigation property authorizationPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthorizationPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
