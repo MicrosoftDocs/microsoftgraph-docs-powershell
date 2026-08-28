@@ -15,6 +15,9 @@ title: Remove-MgUserLicenseDetail
 
 Delete navigation property licenseDetails for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserLicenseDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
