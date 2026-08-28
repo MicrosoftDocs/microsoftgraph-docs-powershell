@@ -61,6 +61,14 @@ The languages supported for customization within the user flow.
 Language customization is enabled by default in self-service sign-up user flow.
 You can't create custom languages in self-service sign-up user flows.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

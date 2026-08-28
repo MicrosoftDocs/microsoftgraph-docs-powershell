@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Represents the base policy in the directory for multi-tenant organization settings.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
