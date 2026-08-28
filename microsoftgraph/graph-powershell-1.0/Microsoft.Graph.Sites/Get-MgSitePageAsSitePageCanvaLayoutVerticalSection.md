@@ -406,7 +406,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayoutverticalsection)
+- [Get-MgSitePageAsSitePageCanvaLayoutVerticalSection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayoutverticalsection)
 
 
 
