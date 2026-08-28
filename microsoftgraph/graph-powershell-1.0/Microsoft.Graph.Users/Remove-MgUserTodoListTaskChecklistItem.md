@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserTodoListTaskChecklistItem
 ---
@@ -14,9 +14,6 @@ title: Remove-MgUserTodoListTaskChecklistItem
 ## SYNOPSIS
 
 Delete navigation property checklistItems for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,27 +45,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property checklistItems for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Tasks.ReadWrite,  |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Remove-MgUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -ChecklistItemId $checklistItemId
-```
-This example shows how to use the Remove-MgUserTodoListTaskChecklistItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -463,7 +447,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -493,26 +477,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserTodoListTaskChecklistItem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem)

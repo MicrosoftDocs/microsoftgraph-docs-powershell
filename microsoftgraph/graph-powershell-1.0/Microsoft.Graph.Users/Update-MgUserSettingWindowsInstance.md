@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingwindowsinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserSettingWindowsInstance
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserSettingWindowsInstance
 ## SYNOPSIS
 
 Update the navigation property instances in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingWindowsInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property instances in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -624,7 +631,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsSettingInstance>`: windowsSettingInstance
+BODYPARAMETER <IMicrosoftGraphWindowsSettingInstance>: windowsSettingInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -636,7 +643,7 @@ The object expires at the specified dateTime in UTC, making it unavailable after
 Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
   [Payload <String>]: Base64-encoded JSON setting value.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -666,27 +673,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgUserSettingWindowsInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingwindowsinstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingwindowsinstance)

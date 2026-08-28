@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserByUserPrincipalName
 ---
@@ -18,9 +18,6 @@ Delete a user object.
 The user is also restored to any groups they were a member of.
 After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
 To manage the deleted user object, see deletedItems.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserByUserPrincipalName?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ Delete a user object.
 The user is also restored to any groups they were a member of.
 After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed.
 To manage the deleted user object, see deletedItems.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -385,7 +392,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -415,28 +422,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname)
+- [](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
