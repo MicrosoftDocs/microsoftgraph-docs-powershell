@@ -15,6 +15,9 @@ title: Get-MgRoleManagement
 
 Get roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaRoleManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
