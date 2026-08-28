@@ -15,6 +15,9 @@ title: Update-MgBetaApplicationSynchronizationJobSchemaDirectory
 
 Update the navigation property directories in applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

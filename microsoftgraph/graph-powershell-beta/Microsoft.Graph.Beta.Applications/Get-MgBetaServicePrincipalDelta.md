@@ -16,6 +16,9 @@ title: Get-MgBetaServicePrincipalDelta
 Get newly created, updated, or deleted service principals, agent identities, and agent identity blueprints without having to perform a full read of the entire resource collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
