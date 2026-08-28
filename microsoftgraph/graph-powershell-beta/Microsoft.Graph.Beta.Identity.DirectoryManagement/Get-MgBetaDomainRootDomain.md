@@ -426,8 +426,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain)
-- [](https://learn.microsoft.com/graph/api/domain-list-rootdomain?view=graph-rest-beta)
+- [Get-MgBetaDomainRootDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-list-rootdomain?view=graph-rest-beta)
 
 
 

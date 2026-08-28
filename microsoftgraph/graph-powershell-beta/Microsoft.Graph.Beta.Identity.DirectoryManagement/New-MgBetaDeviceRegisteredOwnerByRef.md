@@ -567,8 +567,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregisteredownerbyref)
-- [](https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-beta)
+- [New-MgBetaDeviceRegisteredOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregisteredownerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-beta)
 
 
 

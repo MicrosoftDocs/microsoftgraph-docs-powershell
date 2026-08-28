@@ -622,8 +622,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryattributeset)
-- [](https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-beta)
+- [Update-MgBetaDirectoryAttributeSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryattributeset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-beta)
 
 
 

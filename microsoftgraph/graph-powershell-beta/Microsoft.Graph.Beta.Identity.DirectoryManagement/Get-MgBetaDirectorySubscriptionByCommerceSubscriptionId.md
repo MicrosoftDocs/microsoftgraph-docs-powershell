@@ -406,8 +406,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid)
-- [](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
+- [Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
 
 
 
