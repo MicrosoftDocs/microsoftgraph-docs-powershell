@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAllSite
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaAllSite
 
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAllSite](/powershell/module/Microsoft.Graph.Sites/Get-MgAllSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,26 +38,13 @@ This cmdlet has the following aliases,
 List sites across geographies in an organization.
 For more details, see Best practices for discovering files and detecting changes at scale.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.Read.All, Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
-Get-MgBetaAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ" 
-
-```
-This example shows how to use the Get-MgBetaAllSite Cmdlet.
-
+Get-MgBetaAllSite -Skiptoken "U1BHZW9EYXRhTG9jYXRpb25Db2RlYU5BTQ"
 
 ## PARAMETERS
 
@@ -428,27 +412,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaAllSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite)
+- [](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
