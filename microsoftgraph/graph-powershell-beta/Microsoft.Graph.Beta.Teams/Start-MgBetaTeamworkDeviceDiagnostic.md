@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Run and generate diagnostic logs for the specified Microsoft Teams-enabled device.
 This API triggers a long-running operation used to generate logs for a device.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkDevice.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkDevice.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
