@@ -476,7 +476,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfilelocalization)
+- [Remove-MgAgreementFileLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfilelocalization)
 
 
 

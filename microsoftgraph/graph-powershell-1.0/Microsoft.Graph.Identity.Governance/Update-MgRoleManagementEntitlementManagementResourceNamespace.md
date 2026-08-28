@@ -618,7 +618,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementresourcenamespace)
+- [Update-MgRoleManagementEntitlementManagementResourceNamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementresourcenamespace)
 
 
 

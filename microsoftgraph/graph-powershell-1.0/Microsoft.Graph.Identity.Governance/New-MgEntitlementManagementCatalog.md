@@ -11961,8 +11961,8 @@ Supports $expand.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalog)
-- [](https://learn.microsoft.com/graph/api/entitlementmanagement-post-catalogs?view=graph-rest-1.0)
+- [New-MgEntitlementManagementCatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalog)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-post-catalogs?view=graph-rest-1.0)
 
 
 

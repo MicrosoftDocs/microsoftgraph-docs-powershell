@@ -447,8 +447,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgentitlementmanagementassignmentrequest)
-- [](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-1.0)
+- [Stop-MgEntitlementManagementAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgentitlementmanagementassignmentrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-1.0)
 
 
 
