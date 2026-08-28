@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewDefinition
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityGovernanceAccessReviewDefinition
 ## SYNOPSIS
 
 Create a new accessReviewScheduleDefinition object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,18 +54,9 @@ This cmdlet has the following aliases,
 
 Create a new accessReviewScheduleDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an access review on a group
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -110,19 +98,15 @@ $params = @{
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review on a group
-
-### Example 2: Create an access review on all teams with inactive guest users
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	displayName = "Review inactive guests on teams"
 	descriptionForAdmins = "Control guest user access to our teams."
-	descriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
+	descriptionForReviewers = "Information security is everyone's responsibility.
+Review our access policy for more."
 	instanceEnumerationScope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
 		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
@@ -171,12 +155,7 @@ $params = @{
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review on all teams with inactive guest users
-
-### Example 3: Create an access review of all users to an application
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -245,12 +224,7 @@ $params = @{
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review of all users to an application
-
-### Example 4: Create an access review on a group with multiple stages
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -319,12 +293,7 @@ decisionHistoriesForReviewersEnabled = $true
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review on a group with multiple stages
-
-### Example 5: Create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -369,10 +338,6 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-
-```
-This example will create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
-
 
 ## PARAMETERS
 
@@ -1083,7 +1048,7 @@ Examples include MicrosoftGraph and ARM.
   [ReviewerId <String>]: 
   [ScopeType <String>]: accessReviewReviewerScopeType
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+BODYPARAMETER <IMicrosoftGraphAccessReviewScheduleDefinition>: accessReviewScheduleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1400,7 +1365,7 @@ The typical states include Initializing, NotStarted, Starting, InProgress, Compl
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1759,7 +1724,7 @@ Examples include MicrosoftGraph and ARM.
   [ReviewerId <String>]: 
   [ScopeType <String>]: accessReviewReviewerScopeType
 
-SETTINGS `<IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSettings
+SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>: accessReviewScheduleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]: Optional field.
 Describes the  actions to take once a review is complete.
@@ -1885,27 +1850,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceAccessReviewDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinition)
+- [](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-beta)

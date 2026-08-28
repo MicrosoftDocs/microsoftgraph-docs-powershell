@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreementfile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceTermsOfUseAgreementFile
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaIdentityGovernanceTermsOfUseAgreementFile
 ## SYNOPSIS
 
 Update the navigation property file in identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property file in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -691,7 +698,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgreementFile>`: agreementFile
+BODYPARAMETER <IMicrosoftGraphAgreementFile>: agreementFile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -762,14 +769,14 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-FILEDATA `<IMicrosoftGraphAgreementFileData>`: agreementFileData
+FILEDATA <IMicrosoftGraphAgreementFileData>: agreementFileData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Data <Byte[]>]: Data that represents the terms of use PDF document.
 Read-only.
 Note: You can use the .NET Convert.ToBase64String method to convert your file to binary data for uploading using the Create agreements API.
 A sample syntax using this method in PowerShell is [convert]::ToBase64String((Get-Content -path 'yourfilepath' -Encoding byte)).
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -932,27 +939,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceTermsOfUseAgreementFile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreementfile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancetermsofuseagreementfile)
