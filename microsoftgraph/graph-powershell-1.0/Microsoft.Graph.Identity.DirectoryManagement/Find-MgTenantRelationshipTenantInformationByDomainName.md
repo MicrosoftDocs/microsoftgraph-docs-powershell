@@ -336,8 +336,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/find-mgtenantrelationshiptenantinformationbydomainname)
-- [](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbydomainname?view=graph-rest-1.0)
+- [Find-MgTenantRelationshipTenantInformationByDomainName](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/find-mgtenantrelationshiptenantinformationbydomainname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbydomainname?view=graph-rest-1.0)
 
 
 

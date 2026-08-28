@@ -401,8 +401,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainrootdomain)
-- [](https://learn.microsoft.com/graph/api/domain-get-rootdomain?view=graph-rest-1.0)
+- [Get-MgDomainRootDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainrootdomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-get-rootdomain?view=graph-rest-1.0)
 
 
 

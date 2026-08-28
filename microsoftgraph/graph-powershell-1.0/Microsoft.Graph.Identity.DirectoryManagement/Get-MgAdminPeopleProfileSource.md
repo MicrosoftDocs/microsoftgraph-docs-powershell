@@ -582,8 +582,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilesource)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilesources?view=graph-rest-1.0)
+- [Get-MgAdminPeopleProfileSource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilesource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilesources?view=graph-rest-1.0)
 
 
 
