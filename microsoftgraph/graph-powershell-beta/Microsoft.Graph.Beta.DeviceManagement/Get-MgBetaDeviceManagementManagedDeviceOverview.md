@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementManagedDeviceOverview
 
 Device overview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceOverview?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
