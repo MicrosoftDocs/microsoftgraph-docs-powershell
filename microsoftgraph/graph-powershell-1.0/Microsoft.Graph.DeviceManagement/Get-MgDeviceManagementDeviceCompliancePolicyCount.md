@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceCompliancePolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

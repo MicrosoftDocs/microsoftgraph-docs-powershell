@@ -15,6 +15,9 @@ title: Update-MgAdminEdgeInternetExplorerModeSiteListSite
 
 Update the properties of a browserSite object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
