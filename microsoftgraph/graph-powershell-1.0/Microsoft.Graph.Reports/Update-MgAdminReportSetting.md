@@ -56,8 +56,9 @@ Update tenant-level settings for Microsoft 365 reports.
 | Application | ReportSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
@@ -66,6 +67,10 @@ $params = @{
 }
 
 Update-MgAdminReportSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminReportSetting Cmdlet.
+
 
 ## PARAMETERS
 
