@@ -386,7 +386,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest)
+- [Remove-MgPrivacySubjectRightsRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest)
 
 
 
