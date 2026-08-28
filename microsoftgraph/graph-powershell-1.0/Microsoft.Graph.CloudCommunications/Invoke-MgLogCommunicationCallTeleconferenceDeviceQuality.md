@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
 ---
@@ -20,9 +20,6 @@ One media leg is between the CVI bot and Teams infrastructure, such as Teams con
 The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,8 +59,9 @@ The third-party partners own the VTC media leg and the Teams infrastructure cann
 This method is only for the CVI partners to provide their media quality data.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
 	Quality = @{
@@ -150,9 +148,6 @@ $params = @{
 	}
 }
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
-```
-This example shows how to use the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -179,7 +174,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -485,7 +480,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]: teleconferenceDeviceQuality
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -532,7 +527,7 @@ If the media enabled and disabled multiple times, MediaDuration will the summati
     [ParticipantId <String>]: A unique identifier for a specific participant in a conference.
 The CVI partner needs to copy over Call.MyParticipantId to this property.
 
-QUALITY `<IMicrosoftGraphTeleconferenceDeviceQuality>`: teleconferenceDeviceQuality
+QUALITY <IMicrosoftGraphTeleconferenceDeviceQuality>: teleconferenceDeviceQuality
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CallChainId <String>]: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call.
 This needs to be copied over from Microsoft.Graph.Call.CallChainId.
@@ -580,27 +575,5 @@ The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 ## RELATED LINKS
 
-- [Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality)
+- [](https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0)
