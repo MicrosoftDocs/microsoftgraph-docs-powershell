@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupEventExtension
 ---
@@ -16,9 +16,6 @@ title: Get-MgBetaGroupEventExtension
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -64,17 +61,12 @@ The table in the Permissions section lists the resources that support open exten
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaGroupEventExtension -GroupId $groupId -EventId $eventId -ExtensionId $extensionId
-
-```
-This example shows how to use the Get-MgBetaGroupEventExtension Cmdlet.
-
 
 ## PARAMETERS
 
@@ -594,7 +586,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -619,27 +611,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupEventExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventextension)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventextension)
+- [](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-beta)

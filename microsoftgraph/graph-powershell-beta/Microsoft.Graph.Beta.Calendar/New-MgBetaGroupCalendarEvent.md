@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupCalendarEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupCalendarEvent
 ## SYNOPSIS
 
 Create new navigation property to events for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -104,6 +101,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to events for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -520,7 +527,7 @@ HelpMessage: ''
 
 ### -ExceptionOccurrences
 
-
+.
 To construct, see NOTES section for EXCEPTIONOCCURRENCES properties and create a hash table.
 
 ```yaml
@@ -1946,12 +1953,12 @@ See below for possible values.
 It uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphEvent>`: event
+BODYPARAMETER <IMicrosoftGraphEvent>: event
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item.
   [ChangeKey <String>]: Identifies the version of the item.
@@ -2227,7 +2234,7 @@ For recurring events, the value is the same for the series master and all of its
   [WebLink <String>]: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-CALENDAR `<IMicrosoftGraphCalendar>`: calendar
+CALENDAR <IMicrosoftGraphCalendar>: calendar
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2502,7 +2509,7 @@ Nullable.
 Read-only.
 Nullable.
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+END <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -2789,7 +2796,7 @@ Nullable.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -3091,7 +3098,7 @@ For recurring events, the value is the same for the series master and all of its
   [WebLink <String>]: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you're signed in to your mailbox.
 Otherwise, Outlook on the web prompts you to sign in.This URL can't be accessed from within an iFrame.
 
-LOCATION `<IMicrosoftGraphLocation>`: location
+LOCATION <IMicrosoftGraphLocation>: location
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -3153,7 +3160,7 @@ Nullable.
 Read-only.
   [Value <String[]>]: A collection of property values.
 
-ONLINEMEETING `<IMicrosoftGraphOnlineMeetingInfo>`: onlineMeetingInfo
+ONLINEMEETING <IMicrosoftGraphOnlineMeetingInfo>: onlineMeetingInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConferenceId <String>]: The ID of the conference.
   [JoinUrl <String>]: The external link that launches the online meeting.
@@ -3165,14 +3172,14 @@ This is a URL that clients launch into a browser and will redirect the user to j
   [TollFreeNumbers <String[]>]: The toll free numbers that can be used to join the conference.
   [TollNumber <String>]: The toll number that can be used to join the conference.
 
-ORGANIZER `<IMicrosoftGraphRecipient>`: recipient
+ORGANIZER <IMicrosoftGraphRecipient>: recipient
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Address <String>]: The email address of an entity instance.
     [Name <String>]: The display name of an entity instance.
 
-RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
+RECURRENCE <IMicrosoftGraphPatternedRecurrence>: patternedRecurrence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Pattern <IMicrosoftGraphRecurrencePattern>]: recurrencePattern
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -3205,7 +3212,7 @@ Must be the same value as the start property of the recurring event.
 Required.
     [Type <String>]: recurrenceRangeType
 
-RESPONSESTATUS `<IMicrosoftGraphResponseStatus>`: responseStatus
+RESPONSESTATUS <IMicrosoftGraphResponseStatus>: responseStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Response <String>]: responseType
   [Time <DateTime?>]: The date and time that the response was returned.
@@ -3219,7 +3226,7 @@ Nullable.
 Read-only.
   [Value <String>]: A property value.
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+START <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -3229,27 +3236,4 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarevent)

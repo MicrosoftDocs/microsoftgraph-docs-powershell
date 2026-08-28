@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlaceOperation
 ---
@@ -55,37 +55,19 @@ This cmdlet has the following aliases,
 
 Get a placeOperation by ID.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.Read.All, Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.Read.All, Place.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a succeeded operation
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceOperation
-
-```
-This example will get a succeeded operation
-
-### Example 2: Get a partially succeeded operation with errors
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaPlaceOperation
 
-```
-This example will get a partially succeeded operation with errors
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Calendar
+
+Get-MgBetaPlaceOperation
 
 ## PARAMETERS
 
@@ -547,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -572,28 +554,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPlaceOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-getoperation?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-listoperations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceoperation)
+- [](https://learn.microsoft.com/graph/api/place-getoperation?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/place-listoperations?view=graph-rest-beta)

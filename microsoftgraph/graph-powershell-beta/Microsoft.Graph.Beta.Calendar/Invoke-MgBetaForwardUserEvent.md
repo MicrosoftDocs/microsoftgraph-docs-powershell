@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwarduserevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaForwardUserEvent
 ---
@@ -13,12 +13,9 @@ title: Invoke-MgBetaForwardUserEvent
 
 ## SYNOPSIS
 
-This action allows the organizer or attendee of a meeting event to forward the\rmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\ralso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\rcopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the\r\nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\r\nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\r\ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserEvent](/powershell/module/Microsoft.Graph.Calendar/Invoke-MgForwardUserEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,22 +66,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-This action allows the organizer or attendee of a meeting event to forward the\rmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\ralso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\rcopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the\r\nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\r\nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\r\ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.Read,  |
-| Delegated (personal Microsoft account) | Calendars.Read,  |
-| Application | Calendars.Read,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -102,10 +90,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaForwardUserEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -138,7 +122,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -187,7 +171,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -460,7 +444,7 @@ HelpMessage: ''
 
 ### -ToRecipients
 
-
+.
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -569,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [ToRecipients <IMicrosoftGraphRecipient[]>]: 
@@ -578,7 +562,7 @@ BODYPARAMETER `<IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostReq
       [Address <String>]: The email address of an entity instance.
       [Name <String>]: The display name of an entity instance.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -609,27 +593,5 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaForwardUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwarduserevent)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwarduserevent)
+- [](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta)
