@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessFilteringProfilePolicy
 ---
@@ -14,7 +14,7 @@ title: Update-MgBetaNetworkAccessFilteringProfilePolicy
 ## SYNOPSIS
 
 Modify the properties of an existing filteringPolicyLink object to update its traffic rules.
-Use this operation to update any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
+Use this operation to update any derived type, including:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
 
 ## SYNTAX
 
@@ -68,20 +68,11 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Modify the properties of an existing filteringPolicyLink object to update its traffic rules.
-Use this operation to update any derived type, including:\r- cloudFirewallPolicyLink\r- threatIntelligencePolicyLink\r- tlsInspectionPolicyLink
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
+Use this operation to update any derived type, including:\r\n- cloudFirewallPolicyLink\r\n- threatIntelligencePolicyLink\r\n- tlsInspectionPolicyLink
 
 ## EXAMPLES
-### Example 1: Update a filteringPolicyLink
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -92,12 +83,7 @@ $params = @{
 
 Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
 
-```
-This example will update a filteringpolicylink
-
-### Example 2: Update a tlsInspectionPolicyLink
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -106,10 +92,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
-
-```
-This example will update a tlsinspectionpolicylink
-
 
 ## PARAMETERS
 
@@ -607,7 +589,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessPolicyLink>`: policyLink
+BODYPARAMETER <IMicrosoftGraphNetworkaccessPolicyLink>: policyLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -625,7 +607,7 @@ Read-only.
   [State <String>]: status
   [Version <String>]: Version.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -653,7 +635,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [TlsInspectionPolicyId <String>]: The unique identifier of tlsInspectionPolicy
   [Url <String>]: Usage: url='{url}'
 
-POLICY `<IMicrosoftGraphNetworkaccessPolicy>`: policy
+POLICY <IMicrosoftGraphNetworkaccessPolicy>: policy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -668,27 +650,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessfilteringprofilepolicy)
+- [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-update?view=graph-rest-beta)

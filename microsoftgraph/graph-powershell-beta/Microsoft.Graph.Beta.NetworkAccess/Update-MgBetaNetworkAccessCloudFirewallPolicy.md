@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesscloudfirewallpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessCloudFirewallPolicy
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a cloudFirewallPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -92,10 +83,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessCloudFirewallPolicy -CloudFirewallPolicyId $cloudFirewallPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessCloudFirewallPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -649,7 +636,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNetworkaccessCloudFirewallPolicy>`: cloudFirewallPolicy
+BODYPARAMETER <IMicrosoftGraphNetworkaccessCloudFirewallPolicy>: cloudFirewallPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description.
   [Name <String>]: Policy name.
@@ -666,7 +653,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DefaultAction <String>]: cloudFirewallAction
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -699,34 +686,12 @@ POLICYRULES <IMicrosoftGraphNetworkaccessPolicyRule[]>: Represents the definitio
 Read-only.
   [Name <String>]: Name.
 
-SETTINGS `<IMicrosoftGraphNetworkaccessCloudFirewallPolicySettings>`: cloudFirewallPolicySettings
+SETTINGS <IMicrosoftGraphNetworkaccessCloudFirewallPolicySettings>: cloudFirewallPolicySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultAction <String>]: cloudFirewallAction
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessCloudFirewallPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesscloudfirewallpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesscloudfirewallpolicy)
+- [](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-update?view=graph-rest-beta)
