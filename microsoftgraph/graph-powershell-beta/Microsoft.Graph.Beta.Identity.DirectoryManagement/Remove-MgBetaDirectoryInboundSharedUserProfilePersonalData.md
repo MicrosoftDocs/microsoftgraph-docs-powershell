@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Create a request to remove the personal data for an inboundSharedUserProfile.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CrossTenantUserProfileSharing.ReadWrite, CrossTenantUserProfileSharing.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CrossTenantUserProfileSharing.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
