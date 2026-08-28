@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenotenotebooksectionpagecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgGroupOnenoteNotebookSectionPageContent
 ---
@@ -14,9 +14,6 @@ title: Set-MgGroupOnenoteNotebookSectionPageContent
 ## SYNOPSIS
 
 The page's HTML content.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaGroupOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The page's HTML content.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -117,7 +124,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -473,7 +480,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -490,27 +497,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgGroupOnenoteNotebookSectionPageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenotenotebooksectionpagecontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenotenotebooksectionpagecontent)
