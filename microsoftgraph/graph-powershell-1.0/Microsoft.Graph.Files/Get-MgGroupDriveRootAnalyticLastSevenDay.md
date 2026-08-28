@@ -386,7 +386,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootanalyticlastsevenday)
+- [Get-MgGroupDriveRootAnalyticLastSevenDay](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootanalyticlastsevenday)
 
 
 
