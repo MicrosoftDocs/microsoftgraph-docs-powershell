@@ -18032,8 +18032,8 @@ Supports $filter.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool)
-- [](https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0)
+- [Update-MgEducationSchool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0)
 
 
 
