@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.People-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserperson
 Locale: en-US
 Module Name: Microsoft.Graph.People
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserPerson
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserPerson
 People that are relevant to the user.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPerson](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPerson?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,18 +60,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.People
 
 # A UPN can also be used as -UserId.
 Get-MgUserPerson -UserId $userId
-
-```
-This example shows how to use the Get-MgUserPerson Cmdlet.
-
 
 ## PARAMETERS
 
@@ -563,33 +555,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [PersonId <String>]: The unique identifier of person
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Get-MgUserPerson](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserperson)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserperson)
