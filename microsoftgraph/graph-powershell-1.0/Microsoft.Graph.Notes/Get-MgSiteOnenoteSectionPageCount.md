@@ -379,7 +379,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpagecount)
+- [Get-MgSiteOnenoteSectionPageCount](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpagecount)
 
 
 
