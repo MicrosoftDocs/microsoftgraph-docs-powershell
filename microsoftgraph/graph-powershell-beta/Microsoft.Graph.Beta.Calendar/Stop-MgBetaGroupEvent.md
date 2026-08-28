@@ -72,6 +72,14 @@ The organizer can also cancel an occurrence of a recurring meeting \rby providin
 An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\rerror message: 'Your request can't be completed.
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and lets\rthe organizer send a custom message to the attendees about the cancellation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite,  |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
+| Application | Calendars.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
