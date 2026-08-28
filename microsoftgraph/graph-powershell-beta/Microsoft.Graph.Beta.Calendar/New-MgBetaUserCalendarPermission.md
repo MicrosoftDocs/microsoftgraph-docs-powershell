@@ -15,6 +15,9 @@ title: New-MgBetaUserCalendarPermission
 
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
