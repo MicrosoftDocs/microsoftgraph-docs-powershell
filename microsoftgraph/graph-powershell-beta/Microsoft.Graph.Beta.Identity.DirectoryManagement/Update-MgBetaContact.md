@@ -998,7 +998,7 @@ HelpMessage: ''
 
 ### -TransitiveMemberOf
 
-.
+
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
