@@ -451,8 +451,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicytokenissuancepolicybyref)
-- [](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0)
+- [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicytokenissuancepolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

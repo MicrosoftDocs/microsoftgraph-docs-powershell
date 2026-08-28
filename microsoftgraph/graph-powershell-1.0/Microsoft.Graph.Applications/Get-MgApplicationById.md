@@ -390,8 +390,8 @@ BODYPARAMETER `<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+- [Get-MgApplicationById](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
 
 
 

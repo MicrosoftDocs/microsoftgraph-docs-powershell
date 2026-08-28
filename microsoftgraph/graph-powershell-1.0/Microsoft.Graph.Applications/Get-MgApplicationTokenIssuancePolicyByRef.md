@@ -436,8 +436,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicybyref)
-- [](https://learn.microsoft.com/graph/api/application-list-tokenissuancepolicies?view=graph-rest-1.0)
+- [Get-MgApplicationTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

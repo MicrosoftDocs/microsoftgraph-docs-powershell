@@ -622,8 +622,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mggroupapproleassignment)
-- [](https://learn.microsoft.com/graph/api/group-list-approleassignments?view=graph-rest-1.0)
+- [Get-MgGroupAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mggroupapproleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-approleassignments?view=graph-rest-1.0)
 
 
 
