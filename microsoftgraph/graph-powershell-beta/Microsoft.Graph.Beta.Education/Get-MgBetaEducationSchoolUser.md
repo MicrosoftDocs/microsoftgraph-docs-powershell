@@ -15,6 +15,9 @@ title: Get-MgBetaEducationSchoolUser
 
 Retrieve a list of users at a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
