@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermailfolderchildfoldermessage
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgForwardUserMailFolderChildFolderMessage
 ---
@@ -14,15 +14,12 @@ title: Invoke-MgForwardUserMailFolderChildFolderMessage
 ## SYNOPSIS
 
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:\r- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+When using JSON format, you can:\r\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+When using MIME format:\r\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Invoke-MgBetaForwardUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,12 +74,22 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:\r- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\r- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+When using JSON format, you can:\r\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\r\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:\r- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r- Add any attachments and S/MIME properties to the MIME content.
+When using MIME format:\r\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\r\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -115,7 +122,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -164,7 +171,7 @@ HelpMessage: ''
 
 ### -Comment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -519,7 +526,7 @@ HelpMessage: ''
 
 ### -ToRecipients
 
-
+.
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -628,7 +635,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Wmvjo1UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Wmvjo1UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [Message <IMicrosoftGraphMessage>]: message
@@ -729,7 +736,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
   [ToRecipients <IMicrosoftGraphRecipient[]>]: 
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -739,7 +746,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [MessageRuleId <String>]: The unique identifier of messageRule
   [UserId <String>]: The unique identifier of user
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -845,28 +852,5 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgForwardUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermailfolderchildfoldermessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgforwardusermailfolderchildfoldermessage)
+- [](https://learn.microsoft.com/graph/api/message-forward?view=graph-rest-1.0)

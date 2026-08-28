@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermessagecontent
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserMessageContent
 ---
@@ -15,9 +15,6 @@ title: Set-MgUserMessageContent
 
 The unique identifier for an entity.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMessageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 
 The unique identifier for an entity.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -117,7 +124,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -452,7 +459,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -465,27 +472,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgUserMessageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermessagecontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermessagecontent)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMailFolderDelta
 ---
@@ -14,11 +14,8 @@ title: Get-MgUserMailFolderDelta
 ## SYNOPSIS
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls,\ryou can query for incremental changes in the mail folders.
-This allows you to maintain and synchronize\ra local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderDelta](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderDelta?view=graph-powershell-beta)
+A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\r\napplying state tokens in one or more of these calls,\r\nyou can query for incremental changes in the mail folders.
+This allows you to maintain and synchronize\r\na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 ## SYNTAX
 
@@ -51,16 +48,18 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls,\ryou can query for incremental changes in the mail folders.
-This allows you to maintain and synchronize\ra local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
+A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\r\napplying state tokens in one or more of these calls,\r\nyou can query for incremental changes in the mail folders.
+This allows you to maintain and synchronize\r\na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -543,7 +542,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -556,28 +555,5 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserMailFolderDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderdelta)
+- [](https://learn.microsoft.com/graph/api/mailfolder-delta?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassificationoverride
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserInferenceClassificationOverride
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserInferenceClassificationOverride
 A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,18 +61,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserInferenceClassificationOverride -UserId $userId
-
-```
-This example shows how to use the Get-MgUserInferenceClassificationOverride Cmdlet.
-
 
 ## PARAMETERS
 
@@ -564,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -577,26 +569,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserInferenceClassificationOverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassificationoverride)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassificationoverride)
