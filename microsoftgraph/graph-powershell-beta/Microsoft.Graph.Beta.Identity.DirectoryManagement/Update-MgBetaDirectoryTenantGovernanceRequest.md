@@ -79,8 +79,9 @@ Update the status property of a governanceRequest to accept or reject the govern
 Only the governed tenant can update the request status.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryTenantGovernanceRequest -GovernanceRequestId $governanceRequestId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRequest Cmdlet.
+
 
 ## PARAMETERS
 
