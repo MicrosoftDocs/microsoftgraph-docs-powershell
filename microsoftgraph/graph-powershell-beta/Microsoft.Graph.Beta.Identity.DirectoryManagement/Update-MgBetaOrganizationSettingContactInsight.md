@@ -15,7 +15,7 @@ title: Update-MgBetaOrganizationSettingContactInsight
 
 Update privacy settings to display or return the specified type of insightsSettings in an organization.
 The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:\r\n-  Customize item insights privacy \r\n-  Customize people insights privacy
+To learn more about customizing insights privacy for your organization, see:\r-  Customize item insights privacy \r-  Customize people insights privacy
 
 ## SYNTAX
 
@@ -70,7 +70,7 @@ This cmdlet has the following aliases,
 
 Update privacy settings to display or return the specified type of insightsSettings in an organization.
 The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:\r\n-  Customize item insights privacy \r\n-  Customize people insights privacy
+To learn more about customizing insights privacy for your organization, see:\r-  Customize item insights privacy \r-  Customize people insights privacy
 
 ## EXAMPLES
 
@@ -530,7 +530,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphInsightsSettings>: insightsSettings
+BODYPARAMETER `<IMicrosoftGraphInsightsSettings>`: insightsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -541,7 +541,7 @@ Optional.
 The default value is true.
 Optional.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -612,3 +612,25 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingcontactinsight)
 - [](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
