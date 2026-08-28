@@ -66,18 +66,28 @@ Get the properties and relationships of a configurationMonitor object.
 | Application | ConfigurationMonitoring.Read.All, ConfigurationMonitoring.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.ConfigurationManagement
+
+Get-MgBetaAdminConfigurationManagementConfigurationMonitor
+
+```
+This example shows how to use the Get-MgBetaAdminConfigurationManagementConfigurationMonitor Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
 Get-MgBetaAdminConfigurationManagementConfigurationMonitor
 
-### EXAMPLE 2
+```
+This example shows how to use the Get-MgBetaAdminConfigurationManagementConfigurationMonitor Cmdlet.
 
-Import-Module Microsoft.Graph.Beta.ConfigurationManagement
-
-Get-MgBetaAdminConfigurationManagementConfigurationMonitor
 
 ## PARAMETERS
 
