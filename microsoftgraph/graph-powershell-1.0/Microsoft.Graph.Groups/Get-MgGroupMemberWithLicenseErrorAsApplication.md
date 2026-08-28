@@ -15,6 +15,9 @@ title: Get-MgGroupMemberWithLicenseErrorAsApplication
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberWithLicenseErrorAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseErrorAsApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
