@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX
 
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsUniversalAppX
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
