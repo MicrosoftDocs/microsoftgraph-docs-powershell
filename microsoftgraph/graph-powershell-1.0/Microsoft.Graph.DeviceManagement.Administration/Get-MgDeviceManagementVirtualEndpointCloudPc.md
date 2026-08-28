@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointcloudpc
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementVirtualEndpointCloudPc
 ---
@@ -14,9 +14,6 @@ title: Get-MgDeviceManagementVirtualEndpointCloudPc
 ## SYNOPSIS
 
 Read the properties and relationships of a specific cloudPC object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,37 +56,19 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a specific cloudPC object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.Read.All, CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List all cloudPC devices in a tenant
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementVirtualEndpointCloudPc
 
-```
-This example will list all cloudpc devices in a tenant
-
-### Example 2: Get the top two cloudPC devices in a tenant
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
-Get-MgDeviceManagementVirtualEndpointCloudPc -Top 2 
-
-```
-This example will get the top two cloudpc devices in a tenant
-
+Get-MgDeviceManagementVirtualEndpointCloudPc -Top 2
 
 ## PARAMETERS
 
@@ -551,7 +530,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -583,28 +562,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointcloudpc)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointcloudpc)
+- [](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0)
