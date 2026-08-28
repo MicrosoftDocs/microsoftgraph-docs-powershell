@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/invoke-mgbetareauthorizesubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReauthorizeSubscription
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaReauthorizeSubscription
 ## SYNOPSIS
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Invoke-MgReauthorizeSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
 Invoke-MgBetaReauthorizeSubscription -SubscriptionId $subscriptionId
-
-```
-This example shows how to use the Invoke-MgBetaReauthorizeSubscription Cmdlet.
-
 
 ## PARAMETERS
 
@@ -369,33 +361,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
   [SubscriptionId <String>]: The unique identifier of subscription
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaReauthorizeSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/invoke-mgbetareauthorizesubscription)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/invoke-mgbetareauthorizesubscription)
+- [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)
