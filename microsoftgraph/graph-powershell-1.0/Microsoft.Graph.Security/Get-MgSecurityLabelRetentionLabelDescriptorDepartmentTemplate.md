@@ -15,6 +15,9 @@ title: Get-MgSecurityLabelRetentionLabelDescriptorDepartmentTemplate
 
 Specifies the  department or business unit of an organization to which a label belongs.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorDepartmentTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorDepartmentTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

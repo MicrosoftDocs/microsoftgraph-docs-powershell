@@ -15,6 +15,9 @@ title: Get-MgSecurityAttackSimulationTrainingLanguageDetailCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationTrainingLanguageDetailCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationTrainingLanguageDetailCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
