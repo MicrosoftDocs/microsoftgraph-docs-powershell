@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementReportExportJob
 
 Entity representing a job to export a report.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
