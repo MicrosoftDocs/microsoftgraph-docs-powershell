@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreExchangeRestoreSessionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeRestoreSessionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
