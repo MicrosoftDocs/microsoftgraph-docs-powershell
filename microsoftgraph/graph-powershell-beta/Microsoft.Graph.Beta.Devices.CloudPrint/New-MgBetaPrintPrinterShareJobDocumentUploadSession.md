@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPrintPrinterShareJobDocumentUploadSession
 ---
@@ -73,6 +73,16 @@ As part of the response, this action returns an upload URL that can be used in s
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -104,7 +114,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -514,7 +524,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ox8Y49PrintPrintersharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ox8Y49PrintPrintersharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Properties <IMicrosoftGraphPrintDocumentUploadProperties>]: printDocumentUploadProperties
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -522,7 +532,7 @@ BODYPARAMETER `<IPaths1Ox8Y49PrintPrintersharesPrintershareIdJobsPrintjobIdDocum
     [DocumentName <String>]: The document's name.
     [Size <Int64?>]: The document's size in bytes.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -537,7 +547,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUploadProperties
+PROPERTIES <IMicrosoftGraphPrintDocumentUploadProperties>: printDocumentUploadProperties
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentType <String>]: The document's content (MIME) type.
   [DocumentName <String>]: The document's name.
@@ -546,28 +556,5 @@ PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUpload
 
 ## RELATED LINKS
 
-- [New-MgBetaPrintPrinterShareJobDocumentUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession)
+- [](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-beta)
