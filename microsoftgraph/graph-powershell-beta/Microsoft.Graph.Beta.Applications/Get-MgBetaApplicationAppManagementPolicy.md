@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationAppManagementPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaApplicationAppManagementPolicy
 ## SYNOPSIS
 
 The appManagementPolicy applied to this application.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationAppManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,6 +36,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The appManagementPolicy applied to this application.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -472,27 +479,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaApplicationAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy)
