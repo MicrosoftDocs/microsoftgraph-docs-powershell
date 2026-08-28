@@ -1459,7 +1459,7 @@ Supports $filter (eq, ne).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)
+- [Update-MgRoleManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)
 
 
 
