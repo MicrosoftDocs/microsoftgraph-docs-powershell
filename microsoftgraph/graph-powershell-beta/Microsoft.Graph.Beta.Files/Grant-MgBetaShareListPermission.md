@@ -98,7 +98,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -350,7 +350,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-.
+
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -400,7 +400,7 @@ HelpMessage: ''
 
 ### -Roles
 
-.
+
 
 ```yaml
 Type: System.String[]
