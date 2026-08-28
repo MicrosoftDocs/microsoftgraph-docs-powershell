@@ -42,6 +42,14 @@ Retrieve a list of accessPackageResourceRole objects of an accessPackageResource
 The resource should have been added to the catalog by creating an accessPackageResourceRequest.
 This list of roles can then be used by the caller to select a role, which is needed when later creating an accessPackageResourceRoleScope.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
