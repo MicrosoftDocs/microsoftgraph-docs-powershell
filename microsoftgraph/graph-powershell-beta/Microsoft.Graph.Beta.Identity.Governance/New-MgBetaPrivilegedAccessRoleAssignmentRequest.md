@@ -1522,7 +1522,7 @@ The value can be User, Group, and ServicePrincipal.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroleassignmentrequest)
+- [New-MgBetaPrivilegedAccessRoleAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroleassignmentrequest)
 
 
 

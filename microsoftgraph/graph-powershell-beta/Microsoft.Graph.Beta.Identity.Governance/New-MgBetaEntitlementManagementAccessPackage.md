@@ -55519,8 +55519,8 @@ If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage)
-- [](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-beta)
+- [New-MgBetaEntitlementManagementAccessPackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackages?view=graph-rest-beta)
 
 
 

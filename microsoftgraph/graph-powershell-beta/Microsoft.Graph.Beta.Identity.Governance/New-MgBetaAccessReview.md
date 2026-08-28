@@ -1005,8 +1005,8 @@ Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreview)
-- [](https://learn.microsoft.com/graph/api/accessreview-create?view=graph-rest-beta)
+- [New-MgBetaAccessReview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreview)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreview-create?view=graph-rest-beta)
 
 
 

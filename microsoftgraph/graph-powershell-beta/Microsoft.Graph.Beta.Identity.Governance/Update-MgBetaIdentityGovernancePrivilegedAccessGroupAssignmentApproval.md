@@ -653,7 +653,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapproval)
+- [Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapproval)
 
 
 

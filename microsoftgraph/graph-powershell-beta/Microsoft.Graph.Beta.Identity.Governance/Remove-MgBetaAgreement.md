@@ -491,7 +491,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaagreement)
+- [Remove-MgBetaAgreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaagreement)
 
 
 
