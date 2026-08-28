@@ -76,8 +76,9 @@ Add a new conversationMember to a team.
 | Application | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Add a member to a team
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -91,7 +92,12 @@ $params = @{
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will add a member to a team
+
+### Example 2: Add a member to a team using user principal name
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -104,6 +110,10 @@ $params = @{
 }
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
+
+```
+This example will add a member to a team using user principal name
+
 
 ## PARAMETERS
 
