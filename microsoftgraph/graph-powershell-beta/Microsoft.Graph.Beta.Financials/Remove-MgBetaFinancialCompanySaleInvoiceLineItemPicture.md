@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Financials-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanysaleinvoicelineitempicture
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Financials
-ms.date: 08/28/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaFinancialCompanySaleInvoiceLineItemPicture
 ---
