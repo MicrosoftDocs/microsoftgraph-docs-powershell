@@ -703,8 +703,8 @@ For more information, see Supported property data types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension)
-- [](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-beta)
+- [Update-MgBetaSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-beta)
 
 
 

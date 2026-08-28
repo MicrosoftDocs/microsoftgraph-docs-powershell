@@ -412,8 +412,8 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension)
-- [](https://learn.microsoft.com/graph/api/schemaextension-delete?view=graph-rest-beta)
+- [Remove-MgBetaSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-delete?view=graph-rest-beta)
 
 
 
