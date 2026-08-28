@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property baseline in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -619,6 +609,7 @@ At least one property of one resource must be present in the baseline.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationmonitorbaseline)
+
 
 
 

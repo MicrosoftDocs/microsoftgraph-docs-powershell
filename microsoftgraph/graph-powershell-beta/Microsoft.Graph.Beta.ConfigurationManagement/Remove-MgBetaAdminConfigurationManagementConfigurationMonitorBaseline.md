@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property baseline for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -397,6 +387,7 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/remove-mgbetaadminconfigurationmanagementconfigurationmonitorbaseline)
+
 
 
 
