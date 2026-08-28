@@ -52,16 +52,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Mail.Read,  |
 | Application | Mail.Read,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -386,6 +376,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderoperationcount)
+
 
 
 
