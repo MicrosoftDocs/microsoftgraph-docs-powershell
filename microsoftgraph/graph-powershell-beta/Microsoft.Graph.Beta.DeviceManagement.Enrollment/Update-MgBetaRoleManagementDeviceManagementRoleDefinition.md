@@ -919,7 +919,7 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroledefinition)
+- [Update-MgBetaRoleManagementDeviceManagementRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroledefinition)
 
 
 
