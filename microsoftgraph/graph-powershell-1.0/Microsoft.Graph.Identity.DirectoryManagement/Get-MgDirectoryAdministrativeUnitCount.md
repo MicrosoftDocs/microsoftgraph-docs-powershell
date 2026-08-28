@@ -15,6 +15,9 @@ title: Get-MgDirectoryAdministrativeUnitCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
