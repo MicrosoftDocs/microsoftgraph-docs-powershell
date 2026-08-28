@@ -510,8 +510,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity)
-- [](https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0)
+- [Invoke-MgRecentUserActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0)
 
 
 
