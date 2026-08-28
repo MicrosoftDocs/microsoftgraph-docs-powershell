@@ -447,7 +447,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowpostattributecollectionbyref)
+- [Remove-MgIdentityB2XUserFlowPostAttributeCollectionByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowpostattributecollectionbyref)
 
 
 

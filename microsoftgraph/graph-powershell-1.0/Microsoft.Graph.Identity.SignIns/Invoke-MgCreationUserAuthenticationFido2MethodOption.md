@@ -383,8 +383,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgcreationuserauthenticationfido2methodoption)
-- [](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-1.0)
+- [Invoke-MgCreationUserAuthenticationFido2MethodOption](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgcreationuserauthenticationfido2methodoption)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-1.0)
 
 
 

@@ -642,8 +642,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperation)
-- [](https://learn.microsoft.com/graph/api/longrunningoperation-get?view=graph-rest-1.0)
+- [Get-MgUserAuthenticationOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/longrunningoperation-get?view=graph-rest-1.0)
 
 
 

@@ -489,8 +489,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationemailmethod)
-- [](https://learn.microsoft.com/graph/api/emailauthenticationmethod-delete?view=graph-rest-1.0)
+- [Remove-MgUserAuthenticationEmailMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationemailmethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/emailauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

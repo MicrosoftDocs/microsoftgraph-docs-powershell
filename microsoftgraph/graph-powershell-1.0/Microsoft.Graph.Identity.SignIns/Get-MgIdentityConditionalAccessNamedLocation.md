@@ -626,9 +626,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessnamedlocation)
-- [](https://learn.microsoft.com/graph/api/countrynamedlocation-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-1.0)
+- [Get-MgIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessnamedlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-1.0)
 
 
 
