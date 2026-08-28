@@ -69,16 +69,6 @@ This cmdlet has the following aliases,
 
 Unfollow a user's site or multiple sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -11130,6 +11120,7 @@ This relationship can only be used to load a specific term set.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsite)
 - [](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0)
+
 
 
 
