@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityConditionalAccessPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaIdentityConditionalAccessPolicy
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,18 +57,10 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get a list of all conditional access policies in Azure AD.
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessPolicy |Format-List
 
@@ -96,13 +85,9 @@ ModifiedDateTime     : 7/29/2022 9:08:39 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {}
-```
 
-This example retrieves all the conditional access policies in Azure AD.
+### EXAMPLE 2
 
-### Example 2: Get a conditional access policy by Id
-
-```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 
   Format-List
@@ -117,9 +102,6 @@ ModifiedDateTime     : 7/29/2022 9:08:10 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
-```
-
-This command retrieves the conditional access by Id.
 
 ## PARAMETERS
 
@@ -581,7 +563,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -682,28 +664,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityConditionalAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesspolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesspolicy)
+- [](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-beta)

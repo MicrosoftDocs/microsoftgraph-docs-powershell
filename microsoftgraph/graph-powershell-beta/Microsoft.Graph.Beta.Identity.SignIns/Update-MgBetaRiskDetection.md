@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRiskDetection
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaRiskDetection
 ## SYNOPSIS
 
 Update the navigation property riskDetections in identityProtection
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -79,6 +76,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property riskDetections in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -550,7 +557,7 @@ HelpMessage: ''
 
 ### -MitreTechniqueId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1046,7 +1053,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRiskDetection>`: riskDetection
+BODYPARAMETER <IMicrosoftGraphRiskDetection>: riskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1101,7 +1108,7 @@ For example, activeDirectory.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [UserPrincipalName <String>]: The user principal name (UPN) of the user.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -1199,7 +1206,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
+LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: Provides the city where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
@@ -1222,27 +1229,4 @@ This is calculated using latitude/longitude information from the sign-in activit
 
 ## RELATED LINKS
 
-- [Update-MgBetaRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodpin
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserAuthenticationQrCodePinMethodPin
 ---
@@ -68,18 +68,9 @@ This cmdlet has the following aliases,
 
 Reset a user's PIN and generate a new temporary PIN that's represented by a qrPin object and is linked to the user's QR Code authentication method object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.ReadWrite, UserAuthMethod-QR.ReadWrite, UserAuthMethod-QR.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -89,10 +80,6 @@ $params = @{
 }
 
 Update-MgBetaUserAuthenticationQrCodePinMethodPin -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaUserAuthenticationQrCodePinMethodPin Cmdlet.
-
 
 ## PARAMETERS
 
@@ -592,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphQrPin>`: qrPin
+BODYPARAMETER <IMicrosoftGraphQrPin>: qrPin
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -604,7 +591,7 @@ This PIN can be reset by the admin but not the user.
   [ForceChangePinNextSignIn <Boolean?>]: Defaults to true for a temporary PIN.
   [UpdatedDateTime <DateTime?>]: The date and time when the PIN was updated.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -705,27 +692,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserAuthenticationQrCodePinMethodPin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodpin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/qrpin-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationqrcodepinmethodpin)
+- [](https://learn.microsoft.com/graph/api/qrpin-update?view=graph-rest-beta)

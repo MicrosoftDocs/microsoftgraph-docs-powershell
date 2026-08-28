@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdeviceassigntoserviceprovisioningerror
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToServiceProvisioningError
 ---
@@ -38,6 +38,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -512,27 +522,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToServiceProvisioningError](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdeviceassigntoserviceprovisioningerror)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdeviceassigntoserviceprovisioningerror)

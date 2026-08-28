@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityB2XUserFlow
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaIdentityB2XUserFlow
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,37 +55,19 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List all b2xIdentityUserFlow objects
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2XUserFlow
 
-```
-This example will list all b2xidentityuserflow objects
-
-### Example 2: List all b2xIdentityUserFlow objects and expand identityProviders
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaIdentityB2XUserFlow -ExpandProperty "identityProviders" 
-
-```
-This example will list all b2xidentityuserflow objects and expand identityproviders
-
+Get-MgBetaIdentityB2XUserFlow -ExpandProperty "identityProviders"
 
 ## PARAMETERS
 
@@ -550,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -651,28 +630,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityB2XUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/b2xidentityuserflow-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflow)
+- [](https://learn.microsoft.com/graph/api/b2xidentityuserflow-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-beta)

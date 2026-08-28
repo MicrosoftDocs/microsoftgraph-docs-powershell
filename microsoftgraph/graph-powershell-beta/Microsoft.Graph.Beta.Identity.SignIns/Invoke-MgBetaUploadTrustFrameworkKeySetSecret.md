@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUploadTrustFrameworkKeySetSecret
 ---
@@ -70,18 +70,9 @@ Upload a plain text secret to a trustFrameworkKeyset.
 Examples of secrets are application secrets in Microsoft Entra ID, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TrustFrameworkKeySet.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TrustFrameworkKeySet.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -93,10 +84,6 @@ $params = @{
 }
 
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet.
-
 
 ## PARAMETERS
 
@@ -129,7 +116,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -200,7 +187,7 @@ HelpMessage: ''
 
 ### -Exp
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -318,7 +305,7 @@ HelpMessage: ''
 
 ### -K
 
-
+.
 
 ```yaml
 Type: System.String
@@ -345,7 +332,7 @@ HelpMessage: ''
 
 ### -Nbf
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -484,7 +471,7 @@ HelpMessage: ''
 
 ### -Use
 
-
+.
 
 ```yaml
 Type: System.String
@@ -565,14 +552,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Exp <Int64?>]: 
   [K <String>]: 
   [Nbf <Int64?>]: 
   [Use <String>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -673,27 +660,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUploadTrustFrameworkKeySetSecret](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/trustframeworkkeyset-uploadsecret?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret)
+- [](https://learn.microsoft.com/graph/api/trustframeworkkeyset-uploadsecret?view=graph-rest-beta)

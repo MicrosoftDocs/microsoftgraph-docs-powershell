@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaInformationProtectionThreatAssessmentRequest
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaInformationProtectionThreatAssessmentRequest
 
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -62,70 +59,37 @@ This cmdlet has the following aliases,
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ThreatAssessment.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ThreatAssessment.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get the properties of a mail assessment request
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
-
-```
-This example will get the properties of a mail assessment request
-
-### Example 2: Get the properties of an email file assessment request
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-```
-This example will get the properties of an email file assessment request
-
-### Example 3: Get the properties of a file assessment request
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-```
-This example will get the properties of a file assessment request
-
-### Example 4: Get the properties of an url assessment request
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-```
-This example will get the properties of an url assessment request
-
-### Example 5: Expand threat assessment results for a request
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results" 
+Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-```
-This example will expand threat assessment results for a request
+### EXAMPLE 5
 
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results"
 
 ## PARAMETERS
 
@@ -587,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -688,28 +652,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaInformationProtectionThreatAssessmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionthreatassessmentrequest)
+- [](https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta)
