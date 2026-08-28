@@ -15,6 +15,9 @@ title: Update-MgBetaCommunicationAdhocCallRecording
 
 Update the navigation property recordings in communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationAdhocCallRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationAdhocCallRecording?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

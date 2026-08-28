@@ -16,6 +16,9 @@ title: Clear-MgBetaUserPresenceAutomaticLocation
 Clear the automatic work location signal for a user.
 After clearing, the user’s final aggregated work location is recomputed according to the precedence rules: Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserPresenceAutomaticLocation](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgUserPresenceAutomaticLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Clear (Default)

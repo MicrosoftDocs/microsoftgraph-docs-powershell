@@ -15,6 +15,9 @@ title: Update-MgBetaUserOnlineMeeting
 
 Update the navigation property onlineMeetings in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
