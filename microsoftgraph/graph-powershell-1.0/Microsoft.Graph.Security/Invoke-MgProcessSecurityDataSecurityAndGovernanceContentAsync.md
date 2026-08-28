@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgprocesssecuritydatasecurityandgovernancecontentasync
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync
 ## SYNOPSIS
 
 Invoke action processContentAsync
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,13 +47,15 @@ This cmdlet has the following aliases,
 
 Invoke action processContentAsync
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Content.Process.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Content.Process.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -83,7 +82,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -211,7 +210,7 @@ HelpMessage: ''
 
 ### -ProcessContentRequests
 
-
+.
 To construct, see NOTES section for PROCESSCONTENTREQUESTS properties and create a hash table.
 
 ```yaml
@@ -368,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentasyncPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentasyncPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ProcessContentRequests <IMicrosoftGraphProcessContentBatchRequest[]>]: 
     [ContentToProcess <IMicrosoftGraphProcessContentRequest>]: processContentRequest
@@ -473,27 +472,4 @@ Location value is specific for concretetype of the  policyLocation - policyLocat
 
 ## RELATED LINKS
 
-- [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgprocesssecuritydatasecurityandgovernancecontentasync)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgprocesssecuritydatasecurityandgovernancecontentasync)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityTriggerTypeRetentionEventType
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityTriggerTypeRetentionEventType
 ## SYNOPSIS
 
 Create a new retentionEventType object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create a new retentionEventType object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RecordsManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RecordsManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -76,10 +64,6 @@ $params = @{
 }
 
 New-MgSecurityTriggerTypeRetentionEventType -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityTriggerTypeRetentionEventType Cmdlet.
-
 
 ## PARAMETERS
 
@@ -519,7 +503,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityRetentionEventType>`: retentionEventType
+BODYPARAMETER <IMicrosoftGraphSecurityRetentionEventType>: retentionEventType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -539,7 +523,7 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: The latest date time when the retentionEventType was modified.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -550,7 +534,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -564,27 +548,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgSecurityTriggerTypeRetentionEventType](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype)
+- [](https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0)

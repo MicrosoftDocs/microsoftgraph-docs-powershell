@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityCaseEdiscoveryCaseCustodianUserSource
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityCaseEdiscoveryCaseCustodianUserSource
 ## SYNOPSIS
 
 Create a new userSource object associated with an eDiscovery custodian.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 
 Create a new userSource object associated with an eDiscovery custodian.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -94,10 +82,6 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-
-```
-This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodianUserSource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -704,7 +688,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityUserSource>`: userSource
+BODYPARAMETER <IMicrosoftGraphSecurityUserSource>: userSource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -726,7 +710,7 @@ Read-only.
   [SiteWebUrl <String>]: The URL of the user's OneDrive for Business site.
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -737,7 +721,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -816,27 +800,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-usersources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodianusersource)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-usersources?view=graph-rest-1.0)

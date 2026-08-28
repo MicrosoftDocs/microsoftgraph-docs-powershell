@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityThreatIntelligenceWhoisHistoryRecord
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityThreatIntelligenceWhoisHistoryRecord
 ## SYNOPSIS
 
 Update the navigation property whoisHistoryRecords in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -84,6 +81,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property whoisHistoryRecords in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -977,7 +984,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ABUSE `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+ABUSE <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -995,7 +1002,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-ADMIN `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+ADMIN <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1013,7 +1020,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-BILLING `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+BILLING <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1031,7 +1038,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-HOST1 `<IMicrosoftGraphSecurityHost>`: host
+HOST1 <IMicrosoftGraphSecurityHost>: host
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1307,7 +1314,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -1659,7 +1666,7 @@ Read-only.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-NOC `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+NOC <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1677,7 +1684,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-REGISTRANT `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+REGISTRANT <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1695,7 +1702,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-REGISTRAR `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+REGISTRAR <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1713,7 +1720,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-TECHNICAL `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+TECHNICAL <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1731,7 +1738,7 @@ No format is guaranteed.
   [Telephone <String>]: The telephone of this WHOIS contact.
 No format is guaranteed.
 
-ZONE `<IMicrosoftGraphSecurityWhoisContact>`: whoisContact
+ZONE <IMicrosoftGraphSecurityWhoisContact>: whoisContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1752,27 +1759,4 @@ No format is guaranteed.
 
 ## RELATED LINKS
 
-- [Update-MgSecurityThreatIntelligenceWhoisHistoryRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord)

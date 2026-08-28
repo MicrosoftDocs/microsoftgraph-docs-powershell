@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianhold
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSecurityCaseEdiscoveryCaseCustodianHold
 ---
@@ -16,9 +16,6 @@ title: Remove-MgSecurityCaseEdiscoveryCaseCustodianHold
 Start the process of removing hold from eDiscovery custodians.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -92,26 +89,13 @@ Start the process of removing hold from eDiscovery custodians.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Remove-MgSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
-
-```
-This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseCustodianHold Cmdlet.
-
 
 ## PARAMETERS
 
@@ -144,7 +128,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -332,7 +316,7 @@ HelpMessage: ''
 
 ### -Ids
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -553,11 +537,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1P15Ma7SecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1P15Ma7SecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Ids <String[]>]: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -636,27 +620,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSecurityCaseEdiscoveryCaseCustodianHold](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianhold)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-removehold?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodianhold)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-removehold?view=graph-rest-1.0)

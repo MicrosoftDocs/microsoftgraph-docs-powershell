@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityThreatIntelligence
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityThreatIntelligence
 ## SYNOPSIS
 
 Update the navigation property threatIntelligence in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,6 +58,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property threatIntelligence in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -435,7 +442,7 @@ HelpMessage: ''
 
 ### -IntelligenceProfileIndicators
 
-
+.
 To construct, see NOTES section for INTELLIGENCEPROFILEINDICATORS properties and create a hash table.
 
 ```yaml
@@ -782,7 +789,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Tags <String[]>]: Tags for this article, communicating keywords, or key concepts.
   [Title <String>]: The title of this article.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityThreatIntelligence>`: threatIntelligence
+BODYPARAMETER <IMicrosoftGraphSecurityThreatIntelligence>: threatIntelligence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4559,27 +4566,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgSecurityThreatIntelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligence)

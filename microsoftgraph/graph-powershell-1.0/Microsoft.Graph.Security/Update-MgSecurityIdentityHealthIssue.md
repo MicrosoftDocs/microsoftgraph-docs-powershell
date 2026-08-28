@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentityHealthIssue
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityIdentityHealthIssue
 ## SYNOPSIS
 
 Update the properties of a healthIssue object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a healthIssue object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesHealth.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesHealth.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -97,10 +85,6 @@ $params = @{
 }
 
 Update-MgSecurityIdentityHealthIssue -HealthIssueId $healthIssueId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgSecurityIdentityHealthIssue Cmdlet.
-
 
 ## PARAMETERS
 
@@ -849,7 +833,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHealthIssue>`: healthIssue
+BODYPARAMETER <IMicrosoftGraphSecurityHealthIssue>: healthIssue
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -876,7 +860,7 @@ These commands run in sequence for the single recommended fix.
   [Severity <String>]: healthIssueSeverity
   [Status <String>]: healthIssueStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -955,27 +939,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgSecurityIdentityHealthIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentityhealthissue)
+- [](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)

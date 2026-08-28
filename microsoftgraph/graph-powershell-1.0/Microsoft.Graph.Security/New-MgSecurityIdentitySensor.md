@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensor
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIdentitySensor
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityIdentitySensor
 ## SYNOPSIS
 
 Create new navigation property to sensors for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentitySensor?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to sensors for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -596,7 +603,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecuritySensor>`: sensor
+BODYPARAMETER <IMicrosoftGraphSecuritySensor>: sensor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -673,7 +680,7 @@ These commands run in sequence for the single recommended fix.
   [Severity <String>]: healthIssueSeverity
   [Status <String>]: healthIssueStatus
 
-SETTINGS `<IMicrosoftGraphSecuritySensorSettings>`: sensorSettings
+SETTINGS <IMicrosoftGraphSecuritySensorSettings>: sensorSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description of the sensor.
   [DomainControllerDnsNames <String[]>]: DNS names for the domain controller
@@ -687,27 +694,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgSecurityIdentitySensor](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensor)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensor)

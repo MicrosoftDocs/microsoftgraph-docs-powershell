@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianusersource
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource
 ---
@@ -15,9 +15,6 @@ title: Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource
 
 Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,17 +61,12 @@ Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
-
-```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource Cmdlet.
-
 
 ## PARAMETERS
 
@@ -590,7 +582,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -669,27 +661,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianusersource)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-list-usersources?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianusersource)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-list-usersources?view=graph-rest-1.0)

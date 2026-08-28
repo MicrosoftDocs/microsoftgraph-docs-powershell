@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecuritySecureScore
 ---
@@ -14,9 +14,6 @@ title: New-MgSecuritySecureScore
 ## SYNOPSIS
 
 Create new navigation property to secureScores for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to secureScores for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -580,7 +587,7 @@ AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore[]>: Average sco
   [Basis <String>]: Scope type.
 The possible values are: AllTenants, TotalSeats, IndustryTypes.
 
-BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
+BODYPARAMETER <IMicrosoftGraphSecureScore>: secureScore
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -615,7 +622,7 @@ CONTROLSCORES <IMicrosoftGraphControlScore[]>: Contains tenant scores for a set 
   [Description <String>]: Description of the control.
   [Score <Double?>]: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -627,27 +634,4 @@ Required
 
 ## RELATED LINKS
 
-- [New-MgSecuritySecureScore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore)

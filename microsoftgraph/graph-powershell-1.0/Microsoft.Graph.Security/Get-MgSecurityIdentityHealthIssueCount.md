@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissuecount
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentityHealthIssueCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityIdentityHealthIssueCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentityHealthIssueCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentityHealthIssueCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,13 +35,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesHealth.Read.All, SecurityIdentitiesHealth.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -282,27 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgSecurityIdentityHealthIssueCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissuecount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentityhealthissuecount)

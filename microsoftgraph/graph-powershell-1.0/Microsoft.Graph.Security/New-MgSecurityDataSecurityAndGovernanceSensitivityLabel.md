@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityDataSecurityAndGovernanceSensitivityLabel
 ## SYNOPSIS
 
 Create new navigation property to sensitivityLabels for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to sensitivityLabels for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -99,7 +106,7 @@ HelpMessage: ''
 
 ### -AutoTooltip
 
-
+.
 
 ```yaml
 Type: System.String
@@ -185,7 +192,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -206,7 +213,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -227,7 +234,7 @@ HelpMessage: ''
 
 ### -HasProtection
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,7 +340,7 @@ HelpMessage: ''
 
 ### -IsDefault
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -354,7 +361,7 @@ HelpMessage: ''
 
 ### -IsEndpointProtectionEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -375,7 +382,7 @@ HelpMessage: ''
 
 ### -IsScopedToUser
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -396,7 +403,7 @@ HelpMessage: ''
 
 ### -Locale
 
-
+.
 
 ```yaml
 Type: System.String
@@ -417,7 +424,7 @@ HelpMessage: ''
 
 ### -Name
 
-
+.
 
 ```yaml
 Type: System.String
@@ -438,7 +445,7 @@ HelpMessage: ''
 
 ### -Priority
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -566,7 +573,7 @@ HelpMessage: ''
 
 ### -Sublabels
 
-
+.
 To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
@@ -588,7 +595,7 @@ HelpMessage: ''
 
 ### -ToolTip
 
-
+.
 
 ```yaml
 Type: System.String
@@ -659,7 +666,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
+BODYPARAMETER <IMicrosoftGraphSensitivityLabel>: sensitivityLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -684,7 +691,7 @@ Read-only.
   [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
   [ToolTip <String>]: 
 
-RIGHTS `<IMicrosoftGraphUsageRightsIncluded>`: usageRightsIncluded
+RIGHTS <IMicrosoftGraphUsageRightsIncluded>: usageRightsIncluded
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -719,27 +726,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgSecurityDataSecurityAndGovernanceSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabel)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritydatasecurityandgovernancesensitivitylabel)
