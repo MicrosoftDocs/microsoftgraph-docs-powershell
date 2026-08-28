@@ -17,6 +17,9 @@ DNS records that the customer adds to the DNS zone file of the domain before the
 Read-only, Nullable.
 Does not support $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainVerificationDnsRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
