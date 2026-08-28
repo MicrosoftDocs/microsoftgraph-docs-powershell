@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserCalendarPermission
 ---
@@ -14,9 +14,6 @@ title: Get-MgUserCalendarPermission
 ## SYNOPSIS
 
 Get the specified permissions object of a user or group calendar that has been shared.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -90,17 +87,12 @@ This cmdlet has the following aliases,
 Get the specified permissions object of a user or group calendar that has been shared.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
 Get-MgUserCalendarPermission -UserId $userId
-
-```
-This example shows how to use the Get-MgUserCalendarPermission Cmdlet.
-
 
 ## PARAMETERS
 
@@ -688,7 +680,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -711,28 +703,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermission)
+- [](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0)
