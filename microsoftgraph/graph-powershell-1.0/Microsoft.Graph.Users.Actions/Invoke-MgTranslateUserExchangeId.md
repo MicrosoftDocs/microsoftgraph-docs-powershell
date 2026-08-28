@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgTranslateUserExchangeId
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgTranslateUserExchangeId
 ## SYNOPSIS
 
 Translate identifiers of Outlook-related resources between formats.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaTranslateUserExchangeId](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaTranslateUserExchangeId?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,18 +66,9 @@ This cmdlet has the following aliases,
 
 Translate identifiers of Outlook-related resources between formats.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.ReadBasic.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite,  |
-| Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -95,10 +83,6 @@ targetIdType = "restImmutableEntryId"
 
 # A UPN can also be used as -UserId.
 Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgTranslateUserExchangeId Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -265,7 +249,7 @@ HelpMessage: ''
 
 ### -InputIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -540,39 +524,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [InputIds <String[]>]: 
   [SourceIdType <String>]: exchangeIdFormat
   [TargetIdType <String>]: exchangeIdFormat
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
 
 ## RELATED LINKS
 
-- [Invoke-MgTranslateUserExchangeId](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid)
+- [](https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-1.0)
