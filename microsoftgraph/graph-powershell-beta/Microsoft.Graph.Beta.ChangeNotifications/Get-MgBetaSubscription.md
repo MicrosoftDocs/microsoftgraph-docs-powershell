@@ -539,9 +539,9 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-beta)
+- [Get-MgBetaSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-beta)
 
 
 
