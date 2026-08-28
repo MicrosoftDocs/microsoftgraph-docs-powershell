@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -562,6 +552,7 @@ Worker for synchronization a user between Workday and either Active Directory or
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand)
 - [](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-1.0)
+
 
 
 
