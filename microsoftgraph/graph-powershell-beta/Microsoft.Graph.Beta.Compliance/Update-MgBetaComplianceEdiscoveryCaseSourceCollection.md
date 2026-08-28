@@ -1356,8 +1356,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollection)
-- [](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-update?view=graph-rest-beta)
+- [Update-MgBetaComplianceEdiscoveryCaseSourceCollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-update?view=graph-rest-beta)
 
 
 
