@@ -15,6 +15,9 @@ title: Remove-MgDriveItemChildContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChildContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
