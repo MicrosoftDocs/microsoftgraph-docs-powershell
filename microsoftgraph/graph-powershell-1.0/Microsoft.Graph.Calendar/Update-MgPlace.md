@@ -16,6 +16,9 @@ title: Update-MgPlace
 Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
 You can identify the place by specifying the id property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgPlaceAsBuildingMap
 
 Update the navigation property map in places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMap](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMap?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
