@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/get-mgcontext
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 07/31/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgContext
 ---
@@ -85,6 +85,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Authentication.IAuthContext
 
+{{ Fill in the Description }}
 
 ## NOTES
 

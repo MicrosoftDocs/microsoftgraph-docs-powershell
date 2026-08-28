@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Authentication.dll-Help.xml
 HelpUri: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph
 Locale: en-US
 Module Name: Microsoft.Graph.Authentication
-ms.date: 07/31/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Connect-MgGraph
 ---
@@ -21,8 +21,8 @@ Microsoft Graph PowerShell supports two types of authentication: delegated and a
 
 ```
 Connect-MgGraph [[-Scopes] <string[]>] [[-TenantId] <string>] [-ClientId <string>]
- [-ContextScope <ContextScope>] [-Environment <string>] [-UseDeviceCode] [-ClientTimeout <double>]
- [-NoWelcome] [-Break]
+ [-ContextScope <ContextScope>] [-Environment <string>] [-UseDeviceCode] [-LoginHint <string>]
+ [-ClientTimeout <double>] [-NoWelcome] [-Break]
 ```
 
 ### AppCertificateParameterSet
@@ -180,6 +180,13 @@ You only need to run `Set-MgGraphOption -DisableLoginByWAM $true` once; the sett
 PS C:\> Connect-MgGraph -ContextScope Process
 
 To connect as a different identity other than CurrentUser, specify the -ContextScope parameter with the value Process.
+
+### Delegated access: Pre-populating the account during interactive sign-in
+
+PS C:\> Connect-MgGraph -Scopes "User.Read.All" -LoginHint "user@contoso.com"
+
+Use the -LoginHint parameter to pre-populate the account (login_hint) shown in the interactive browser sign-in prompt.
+On Windows, WAM may still display the account picker on the first sign-in for an account; later sign-ins with the same -LoginHint are silent.
 
 ## PARAMETERS
 
@@ -549,6 +556,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -LoginHint
+
+The login hint (typically a username or email) used to pre-populate the account field during interactive browser authentication.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UserParameterSet
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -NoWelcome
 
 Hides the welcome message.
@@ -688,6 +716,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Object
 
+{{ Fill in the Description }}
 
 ## NOTES
 
