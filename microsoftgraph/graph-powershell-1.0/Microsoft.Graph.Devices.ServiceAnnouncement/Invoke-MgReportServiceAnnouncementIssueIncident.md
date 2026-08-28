@@ -367,8 +367,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident)
-- [](https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-1.0)
+- [Invoke-MgReportServiceAnnouncementIssueIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementissueincident)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-1.0)
 
 
 
