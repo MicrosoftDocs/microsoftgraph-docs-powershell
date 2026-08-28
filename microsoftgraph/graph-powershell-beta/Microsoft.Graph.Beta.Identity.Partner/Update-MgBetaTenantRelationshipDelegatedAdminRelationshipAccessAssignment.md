@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Partner
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ## SYNOPSIS
 
 Update the properties of a delegatedAdminAccessAssignment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,18 +75,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a delegatedAdminAccessAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DelegatedAdminRelationship.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DelegatedAdminRelationship.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Partner
 
@@ -110,10 +98,6 @@ $params = @{
 }
 
 Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -DelegatedAdminRelationshipId $delegatedAdminRelationshipId -DelegatedAdminAccessAssignmentId $delegatedAdminAccessAssignmentId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -668,19 +652,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSCONTAINER `<IMicrosoftGraphDelegatedAdminAccessContainer>`: delegatedAdminAccessContainer
+ACCESSCONTAINER <IMicrosoftGraphDelegatedAdminAccessContainer>: delegatedAdminAccessContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessContainerId <String>]: The identifier of the access container (for example, a security group).
 For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
   [AccessContainerType <String>]: delegatedAdminAccessContainerType
 
-ACCESSDETAILS `<IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
+ACCESSDETAILS <IMicrosoftGraphDelegatedAdminAccessDetails>: delegatedAdminAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]: The directory roles that the Microsoft partner is assigned in the customer tenant.
     [RoleDefinitionId <String>]: The unified role definition ID of the directory role.
 Refer to unifiedRoleDefinition resource.
 
-BODYPARAMETER `<IMicrosoftGraphDelegatedAdminAccessAssignment>`: delegatedAdminAccessAssignment
+BODYPARAMETER <IMicrosoftGraphDelegatedAdminAccessAssignment>: delegatedAdminAccessAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -700,7 +684,7 @@ Read-only.
 Read-only.
   [Status <String>]: delegatedAdminAccessAssignmentStatus
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityPartnerIdentity>: Identity Parameter
   [DelegatedAdminAccessAssignmentId <String>]: The unique identifier of delegatedAdminAccessAssignment
   [DelegatedAdminCustomerId <String>]: The unique identifier of delegatedAdminCustomer
   [DelegatedAdminRelationshipId <String>]: The unique identifier of delegatedAdminRelationship
@@ -711,27 +695,5 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
+- [](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-beta)
