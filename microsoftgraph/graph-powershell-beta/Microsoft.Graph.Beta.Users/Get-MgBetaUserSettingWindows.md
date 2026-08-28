@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindows
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSettingWindows
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserSettingWindows
 ## SYNOPSIS
 
 The Windows settings of the user stored in the cloud.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWindows?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,13 +56,15 @@ This cmdlet has the following aliases,
 
 The Windows settings of the user stored in the cloud.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserWindowsSettings.Read, UserWindowsSettings.Read.All,  |
-| Delegated (personal Microsoft account) | UserWindowsSettings.Read,  |
-| Application | Not supported |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -554,7 +553,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -591,27 +590,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserSettingWindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindows)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindows)
