@@ -15,6 +15,9 @@ title: Remove-MgPolicyAdminConsentRequestPolicy
 
 Delete navigation property adminConsentRequestPolicy for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

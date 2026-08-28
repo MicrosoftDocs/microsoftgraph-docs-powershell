@@ -15,6 +15,9 @@ title: Update-MgIdentityConditionalAccessDeletedItemNamedLocation
 
 Update the navigation property namedLocations in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessDeletedItemNamedLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

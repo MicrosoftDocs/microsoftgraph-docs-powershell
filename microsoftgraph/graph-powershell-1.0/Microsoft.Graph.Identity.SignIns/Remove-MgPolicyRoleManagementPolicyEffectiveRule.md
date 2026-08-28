@@ -15,6 +15,9 @@ title: Remove-MgPolicyRoleManagementPolicyEffectiveRule
 
 Delete navigation property effectiveRules for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
