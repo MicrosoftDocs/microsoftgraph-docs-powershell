@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSearchQna
 ---
@@ -14,9 +14,6 @@ title: Remove-MgSearchQna
 ## SYNOPSIS
 
 Delete a qna object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchQna?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,26 +44,13 @@ This cmdlet has the following aliases,
 
 Delete a qna object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
 Remove-MgSearchQna -QnaId $qnaId
-
-```
-This example shows how to use the Remove-MgSearchQna Cmdlet.
-
 
 ## PARAMETERS
 
@@ -398,7 +382,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -412,27 +396,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgSearchQna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna)
+- [](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0)

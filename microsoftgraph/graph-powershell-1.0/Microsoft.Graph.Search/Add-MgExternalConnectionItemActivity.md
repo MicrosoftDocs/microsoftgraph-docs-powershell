@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgExternalConnectionItemActivity
 ---
@@ -14,9 +14,6 @@ title: Add-MgExternalConnectionItemActivity
 ## SYNOPSIS
 
 Append additional instances of externalActivity objects on an externalItem.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,9 +69,8 @@ This cmdlet has the following aliases,
 Append additional instances of externalActivity objects on an externalItem.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
@@ -94,15 +90,11 @@ $params = @{
 
 Add-MgExternalConnectionItemActivity -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
 
-```
-This example shows how to use the Add-MgExternalConnectionItemActivity Cmdlet.
-
-
 ## PARAMETERS
 
 ### -Activities
 
-
+.
 To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
@@ -157,7 +149,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -525,7 +517,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Type <String>]: externalActivityType
 
-BODYPARAMETER `<IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths5Uv0B2ExternalConnectionsExternalconnectionIdItemsExternalitemIdMicrosoftGraphExternalconnectorsAddactivitiesPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -540,7 +532,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Type <String>]: externalActivityType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -554,27 +546,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgExternalConnectionItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity)
+- [](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-addactivities?view=graph-rest-1.0)
