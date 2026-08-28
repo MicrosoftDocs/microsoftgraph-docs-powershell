@@ -1145,8 +1145,8 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilecertification)
-- [](https://learn.microsoft.com/graph/api/personcertification-update?view=graph-rest-beta)
+- [Update-MgBetaUserProfileCertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilecertification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/personcertification-update?view=graph-rest-beta)
 
 
 
