@@ -15,6 +15,9 @@ title: Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart
 
 Update the navigation property webparts in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
