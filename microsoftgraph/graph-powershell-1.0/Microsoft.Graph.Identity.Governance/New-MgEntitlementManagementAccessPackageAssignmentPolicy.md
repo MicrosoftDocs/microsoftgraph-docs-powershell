@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementAccessPackageAssignmentPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgEntitlementManagementAccessPackageAssignmentPolicy
 ## SYNOPSIS
 
 Create new navigation property to assignmentPolicies for identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to assignmentPolicies for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -740,7 +747,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage>: accessPackage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1991,7 +1998,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5955,8 +5962,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6274,13 +6281,13 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Role <IMicrosoftGraphAccessPackageResourceRole>]: accessPackageResourceRole
     [Scope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
 
-AUTOMATICREQUESTSETTINGS `<IMicrosoftGraphAccessPackageAutomaticRequestSettings>`: accessPackageAutomaticRequestSettings
+AUTOMATICREQUESTSETTINGS <IMicrosoftGraphAccessPackageAutomaticRequestSettings>: accessPackageAutomaticRequestSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GracePeriodBeforeAccessRemoval <TimeSpan?>]: The duration for which access must be retained before the target's access is revoked once they leave the allowed target scope.
   [RemoveAccessWhenTargetLeavesAllowedTargets <Boolean?>]: Indicates whether automatic assignment must be removed for targets who move out of the allowed target scope.
   [RequestAccessForAllowedTargets <Boolean?>]: If set to true, automatic assignments will be created for targets in the allowed target scope.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentPolicy>`: accessPackageAssignmentPolicy
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentPolicy>: accessPackageAssignmentPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -7443,7 +7450,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11407,8 +11414,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11815,7 +11822,7 @@ The default value is true.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]: The principals that can be assigned access from an access package through this policy.
 
-CATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatalog
+CATALOG <IMicrosoftGraphAccessPackageCatalog>: accessPackageCatalog
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -12980,7 +12987,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -16944,8 +16951,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -17374,7 +17381,7 @@ Default duration is 1000.
       [(Any) <Object>]: This indicates any property can be added to this object.
   [Stage <String>]: accessPackageCustomExtensionStage
 
-EXPIRATION `<IMicrosoftGraphExpirationPattern>`: expirationPattern
+EXPIRATION <IMicrosoftGraphExpirationPattern>: expirationPattern
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
 For example, PT3H refers to three hours.
@@ -17383,7 +17390,7 @@ For example, PT3H refers to three hours.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Type <String>]: expirationPatternType
 
-NOTIFICATIONSETTINGS `<IMicrosoftGraphAccessPackageNotificationSettings>`: accessPackageNotificationSettings
+NOTIFICATIONSETTINGS <IMicrosoftGraphAccessPackageNotificationSettings>: accessPackageNotificationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAssignmentNotificationDisabled <Boolean?>]: Indicates if notification emails for an access package are disabled within an access package assignment policy.
 
@@ -17402,7 +17409,7 @@ Required.
   [Sequence <Int32?>]: Relative position of this question when displaying a list of questions to the requestor.
   [Text <String>]: The text of the question to show to the requestor.
 
-REQUESTAPPROVALSETTINGS `<IMicrosoftGraphAccessPackageAssignmentApprovalSettings>`: accessPackageAssignmentApprovalSettings
+REQUESTAPPROVALSETTINGS <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>: accessPackageAssignmentApprovalSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsApprovalRequiredForAdd <Boolean?>]: If false, then approval isn't required for new requests in this policy.
   [IsApprovalRequiredForUpdate <Boolean?>]: If false, then approval isn't required for updates to requests in this policy.
@@ -17420,7 +17427,7 @@ An empty array is present if no approval is required.
     [PrimaryApprovers <IMicrosoftGraphSubjectSet[]>]: The subjects, typically users, who are asked to approve requests.
 A collection of singleUser, groupMembers, requestorManager, internalSponsors, externalSponsors, or targetUserSponsors.
 
-REQUESTORSETTINGS `<IMicrosoftGraphAccessPackageAssignmentRequestorSettings>`: accessPackageAssignmentRequestorSettings
+REQUESTORSETTINGS <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>: accessPackageAssignmentRequestorSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowCustomAssignmentSchedule <Boolean?>]: False indicates that the requestor isn't permitted to include a schedule in their request.
   [EnableOnBehalfRequestorsToAddAccess <Boolean?>]: True allows on-behalf-of requestors to create a request to add access for another principal.
@@ -17431,7 +17438,7 @@ REQUESTORSETTINGS `<IMicrosoftGraphAccessPackageAssignmentRequestorSettings>`: a
   [EnableTargetsToSelfUpdateAccess <Boolean?>]: True allows requestors to create a request to update their access.
   [OnBehalfRequestors <IMicrosoftGraphSubjectSet[]>]: The principals who can request on-behalf-of others.
 
-REVIEWSETTINGS `<IMicrosoftGraphAccessPackageAssignmentReviewSettings>`: accessPackageAssignmentReviewSettings
+REVIEWSETTINGS <IMicrosoftGraphAccessPackageAssignmentReviewSettings>: accessPackageAssignmentReviewSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationBehavior <String>]: accessReviewExpirationBehavior
   [FallbackReviewers <IMicrosoftGraphSubjectSet[]>]: This collection specifies the users who will be the fallback reviewers when the primary reviewers don't respond.
@@ -17490,27 +17497,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgEntitlementManagementAccessPackageAssignmentPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentpolicy)
