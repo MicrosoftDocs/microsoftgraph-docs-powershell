@@ -428,8 +428,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermessage)
-- [](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)
+- [Invoke-MgBetaUnsubscribeUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/invoke-mgbetaunsubscribeusermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-beta)
 
 
 
