@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetabrowsesolutionbackuprestorebrowsesession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession
 ## SYNOPSIS
 
 Invoke action browse
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBrowseSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Invoke-MgBrowseSolutionBackupRestoreBrowseSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -91,6 +88,16 @@ This cmdlet has the following aliases,
 
 Invoke action browse
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -122,7 +129,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -144,7 +151,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -187,7 +194,7 @@ HelpMessage: ''
 
 ### -BrowseLocationItemKey
 
-
+.
 
 ```yaml
 Type: System.String
@@ -729,21 +736,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseLocationItemKey <String>]: 
   [BrowseResourceType <String>]: browsableResourceType
   [Filter <String>]: 
   [OrderBy <String>]: browseQueryOrder
 
-BODYPARAMETER `<IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseLocationItemKey <String>]: 
   [BrowseResourceType <String>]: browsableResourceType
   [Filter <String>]: 
   [OrderBy <String>]: browseQueryOrder
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -790,27 +797,4 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaBrowseSolutionBackupRestoreBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetabrowsesolutionbackuprestorebrowsesession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/invoke-mgbetabrowsesolutionbackuprestorebrowsesession)
