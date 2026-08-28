@@ -388,8 +388,8 @@ BODYPARAMETER `<IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyC
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword)
-- [](https://learn.microsoft.com/graph/api/user-validatepassword?view=graph-rest-beta)
+- [Test-MgBetaUserPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-validatepassword?view=graph-rest-beta)
 
 
 
