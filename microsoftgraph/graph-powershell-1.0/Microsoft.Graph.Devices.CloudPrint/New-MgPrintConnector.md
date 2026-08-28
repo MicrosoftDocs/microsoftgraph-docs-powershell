@@ -546,7 +546,7 @@ The elements should be in hierarchical order.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector)
+- [New-MgPrintConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector)
 
 
 
