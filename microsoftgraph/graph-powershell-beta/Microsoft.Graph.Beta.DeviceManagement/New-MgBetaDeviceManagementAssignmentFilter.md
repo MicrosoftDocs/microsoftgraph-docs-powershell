@@ -57,16 +57,6 @@ Create new navigation property to assignmentFilters for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -605,6 +595,7 @@ PAYLOADS <IMicrosoftGraphPayloadByFilter[]>: Indicates associated assignments fo
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementassignmentfilter)
+
 
 
 
