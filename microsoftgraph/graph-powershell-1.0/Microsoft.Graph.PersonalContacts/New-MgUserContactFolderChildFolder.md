@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfolder
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserContactFolderChildFolder
 ---
@@ -14,9 +14,6 @@ title: New-MgUserContactFolderChildFolder
 ## SYNOPSIS
 
 Create new navigation property to childFolders for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,18 +76,10 @@ This cmdlet has the following aliases,
 
 Create new navigation property to childFolders for users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Contacts.ReadWrite,  |
-| Delegated (personal Microsoft account) | Contacts.ReadWrite,  |
-| Application | Contacts.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
@@ -99,11 +88,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserContactFolderChildFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
-```
-This example shows how to use the New-MgUserContactFolderChildFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -695,7 +679,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContactFolder>`: contactFolder
+BODYPARAMETER <IMicrosoftGraphContactFolder>: contactFolder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1002,7 +986,7 @@ Read-only.
   [YomiGivenName <String>]: The phonetic Japanese given name (first name) of the contact.
   [YomiSurname <String>]: The phonetic Japanese surname (last name)  of the contact.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -1026,26 +1010,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgUserContactFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfolder)
