@@ -82,8 +82,9 @@ Create a cross-tenant user synchronization policy for a partner-specific configu
 | Application | Policy.ReadWrite.CrossTenantAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization Cmdlet.
+
 
 ## PARAMETERS
 
