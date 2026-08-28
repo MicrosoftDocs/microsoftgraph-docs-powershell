@@ -2313,8 +2313,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator)
-- [](https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta)
 
 
 

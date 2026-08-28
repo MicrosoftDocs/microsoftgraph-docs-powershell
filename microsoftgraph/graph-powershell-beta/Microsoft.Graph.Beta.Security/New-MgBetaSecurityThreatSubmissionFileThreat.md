@@ -692,8 +692,8 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionfilethreat)
-- [](https://learn.microsoft.com/graph/api/security-filethreatsubmission-post-filethreats?view=graph-rest-beta)
+- [New-MgBetaSecurityThreatSubmissionFileThreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionfilethreat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-filethreatsubmission-post-filethreats?view=graph-rest-beta)
 
 
 

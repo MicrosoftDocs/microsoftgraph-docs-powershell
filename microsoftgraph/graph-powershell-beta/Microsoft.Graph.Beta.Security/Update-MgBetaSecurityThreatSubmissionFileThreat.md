@@ -931,7 +931,7 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionfilethreat)
+- [Update-MgBetaSecurityThreatSubmissionFileThreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionfilethreat)
 
 
 

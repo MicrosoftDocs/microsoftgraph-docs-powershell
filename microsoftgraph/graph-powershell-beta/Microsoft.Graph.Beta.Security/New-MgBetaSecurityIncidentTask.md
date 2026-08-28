@@ -813,7 +813,7 @@ This value is specific to the type of action being performed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincidenttask)
+- [New-MgBetaSecurityIncidentTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincidenttask)
 
 
 
