@@ -61,16 +61,6 @@ This cmdlet has the following aliases,
 Read-only.
 Information about acceptances of this agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -637,6 +627,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptance)
+
+
 
 
 
