@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjob
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPrintPrinterJob
 ---
@@ -14,9 +14,6 @@ title: Get-MgPrintPrinterJob
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a print job.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,48 +55,25 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a print job.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrintJob.ReadBasic, PrintJob.Read, PrintJob.Read.All, PrintJob.ReadBasic.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic, PrintJob.ReadWriteBasic.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
-
 ## EXAMPLES
-### Example 1: Get print job
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
 
-```
-This example will get print job
-
-### Example 2: Get print job with task list
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "tasks" 
+Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "tasks"
 
-```
-This example will get print job with task list
-
-### Example 3: Get a print job and its associated document data
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "documents" 
-
-```
-This example will get a print job and its associated document data
-
+Get-MgPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "documents"
 
 ## PARAMETERS
 
@@ -588,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -606,28 +580,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjob)
+- [](https://learn.microsoft.com/graph/api/printjob-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/printer-list-jobs?view=graph-rest-1.0)

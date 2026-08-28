@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgPrintTaskDefinition
 ---
@@ -15,9 +15,6 @@ title: New-MgPrintTaskDefinition
 
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,9 +48,8 @@ Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -65,10 +61,6 @@ $params = @{
 }
 
 New-MgPrintTaskDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgPrintTaskDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -447,7 +439,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
+BODYPARAMETER <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -478,7 +470,7 @@ Read-only.
       [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
       [Event <String>]: printEvent
 
-CREATEDBY `<IMicrosoftGraphAppIdentity>`: appIdentity
+CREATEDBY <IMicrosoftGraphAppIdentity>: appIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppId <String>]: Refers to the unique ID representing application in Microsoft Entra ID.
   [DisplayName <String>]: Refers to the application name displayed in the Microsoft Entra admin center.
@@ -521,27 +513,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgPrintTaskDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/print-post-taskdefinitions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinition)
+- [](https://learn.microsoft.com/graph/api/print-post-taskdefinitions?view=graph-rest-1.0)
