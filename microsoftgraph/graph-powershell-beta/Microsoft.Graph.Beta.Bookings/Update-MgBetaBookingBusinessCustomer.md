@@ -857,7 +857,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER <IMicrosoftGraphBookingCustomer>: Represents a customer of the business.
+BODYPARAMETER `<IMicrosoftGraphBookingCustomer>`: Represents a customer of the business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EmailAddress <String>]: The email address of the person.
   [DisplayName <String>]: A name for the derived entity, which interfaces with customers.
@@ -878,7 +878,7 @@ It's a free-format string value, for example, 'United States'.
     [Number <String>]: The phone number.
     [Type <String>]: phoneType
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -908,3 +908,25 @@ PHONES <IMicrosoftGraphPhone[]>: Phone numbers associated with the customer, inc
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
