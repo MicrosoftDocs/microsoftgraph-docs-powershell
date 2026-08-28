@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Delete an appRoleAssignment that has been granted to a user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AppRoleAssignment.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
