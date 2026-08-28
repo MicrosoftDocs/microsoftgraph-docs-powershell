@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyapproval
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesPolicyApproval
 ---
@@ -70,18 +70,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a policyApproval object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | WindowsUpdates.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | WindowsUpdates.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -92,10 +83,6 @@ $params = @{
 }
 
 Update-MgBetaWindowsUpdatesPolicyApproval -PolicyId $policyId -PolicyApprovalId $policyApprovalId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaWindowsUpdatesPolicyApproval Cmdlet.
-
 
 ## PARAMETERS
 
@@ -653,7 +640,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesPolicyApproval>`: policyApproval
+BODYPARAMETER <IMicrosoftGraphWindowsUpdatesPolicyApproval>: policyApproval
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -682,7 +669,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   [Status <String>]: approvalStatus
 
-CATALOGENTRY `<IMicrosoftGraphWindowsUpdatesCatalogEntry>`: catalogEntry
+CATALOGENTRY <IMicrosoftGraphWindowsUpdatesCatalogEntry>: catalogEntry
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -697,7 +684,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -720,27 +707,5 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaWindowsUpdatesPolicyApproval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyapproval)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-policyapproval-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyapproval)
+- [](https://learn.microsoft.com/graph/api/windowsupdates-policyapproval-update?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductknownissue
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesProductKnownIssue
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property knownIssues in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -326,7 +336,7 @@ HelpMessage: ''
 
 ### -KnownIssueHistories
 
-
+.
 To construct, see NOTES section for KNOWNISSUEHISTORIES properties and create a hash table.
 
 ```yaml
@@ -608,7 +618,7 @@ HelpMessage: ''
 
 ### -SafeguardHoldIds
 
-
+.
 
 ```yaml
 Type: System.Int32[]
@@ -799,7 +809,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesKnownIssue>`: knownIssue
+BODYPARAMETER <IMicrosoftGraphWindowsUpdatesKnownIssue>: knownIssue
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -835,7 +845,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Title <String>]: The title of the known issue.
   [WebViewUrl <String>]: The URL to the known issue in the Windows Release Health dashboard on Microsoft 365 admin center.
 
-INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
+INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -865,14 +875,14 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
-ORIGINATINGKNOWLEDGEBASEARTICLE `<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>`: knowledgeBaseArticle
+ORIGINATINGKNOWLEDGEBASEARTICLE <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>: knowledgeBaseArticle
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Url <String>]: The URL of the knowledge base article.
 Read-only.
 
-RESOLVINGKNOWLEDGEBASEARTICLE `<IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>`: knowledgeBaseArticle
+RESOLVINGKNOWLEDGEBASEARTICLE <IMicrosoftGraphWindowsUpdatesKnowledgeBaseArticle>: knowledgeBaseArticle
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -882,27 +892,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaWindowsUpdatesProductKnownIssue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductknownissue)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesproductknownissue)
