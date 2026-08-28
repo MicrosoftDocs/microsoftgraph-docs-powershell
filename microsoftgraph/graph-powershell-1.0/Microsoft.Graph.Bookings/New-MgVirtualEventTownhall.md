@@ -1069,8 +1069,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhall)
-- [](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-1.0)
+- [New-MgVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventtownhall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-1.0)
 
 
 
