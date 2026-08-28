@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannertaskmessagereaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaPlannerTaskMessageReaction
 ---
@@ -67,9 +67,8 @@ This cmdlet has the following aliases,
 Set a reaction to a plannerTaskChatMessage for the current user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -78,10 +77,6 @@ $params = @{
 }
 
 Set-MgBetaPlannerTaskMessageReaction -PlannerTaskId $plannerTaskId -PlannerTaskChatMessageId $plannerTaskChatMessageId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaPlannerTaskMessageReaction Cmdlet.
-
 
 ## PARAMETERS
 
@@ -114,7 +109,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -414,7 +409,7 @@ HelpMessage: ''
 
 ### -ReactionType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -517,11 +512,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZqcqtxPlannerTasksPlannertaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZqcqtxPlannerTasksPlannertaskIdMessagesPlannertaskchatmessageIdMicrosoftGraphSetreactionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ReactionType <String>]: 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -536,27 +531,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaPlannerTaskMessageReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannertaskmessagereaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/set-mgbetaplannertaskmessagereaction)
+- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta)
