@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 ## SYNOPSIS
 
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,13 +51,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -620,7 +619,7 @@ Read-only.
   [ErrorMessage <String>]: Indicates error message if any during the upload process.
   [Status <AppLogUploadState?>]: AppLogUploadStatus
 
-BODYPARAMETER `<IMicrosoftGraphMobileAppTroubleshootingEvent>`: Event representing a users device application install status.
+BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: Event representing a users device application install status.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]: A set of string key and string value pairs which provides additional information on the Troubleshooting event
     [Name <String>]: Name for this key-value pair
@@ -669,7 +668,7 @@ HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>: Intune Mobile Ap
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       [Text <String>]: 
 
-TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
+TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Context <String>]: 
   [Failure <String>]: 
@@ -683,27 +682,4 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent)

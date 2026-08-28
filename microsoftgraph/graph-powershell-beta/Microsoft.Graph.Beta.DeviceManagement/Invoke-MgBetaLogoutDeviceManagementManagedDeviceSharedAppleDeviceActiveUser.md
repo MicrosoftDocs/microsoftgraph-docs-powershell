@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetalogoutdevicemanagementmanageddevicesharedappledeviceactiveuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUs
 ## SYNOPSIS
 
 Logout shared Apple device active user
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.DeviceManagement/Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,13 +45,15 @@ This cmdlet has the following aliases,
 
 Logout shared Apple device active user
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -365,7 +364,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -477,27 +476,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetalogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetalogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementTroubleshootingEvent
 ## SYNOPSIS
 
 Create new navigation property to troubleshootingEvents for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,13 +48,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to troubleshootingEvents for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -481,7 +480,7 @@ ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>: A set of string key and s
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementTroubleshootingEvent>`: Event representing an general failure.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementTroubleshootingEvent>: Event representing an general failure.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -503,7 +502,7 @@ It is an Optional field
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       [Text <String>]: 
 
-TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
+TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Context <String>]: 
   [Failure <String>]: 
@@ -517,27 +516,4 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtroubleshootingevent)

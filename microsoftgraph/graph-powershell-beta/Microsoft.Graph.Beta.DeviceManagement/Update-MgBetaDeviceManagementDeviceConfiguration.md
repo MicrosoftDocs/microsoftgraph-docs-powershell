@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementDeviceConfiguration
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceManagementDeviceConfiguration
 ## SYNOPSIS
 
 Update the navigation property deviceConfigurations in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -93,13 +90,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property deviceConfigurations in deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -940,7 +939,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
+BODYPARAMETER <IMicrosoftGraphDeviceConfiguration>: Device Configuration.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1039,19 +1038,19 @@ Read-only.
     [UserPrincipalName <String>]: UserPrincipalName.
   [Version <Int32?>]: Version of the device configuration.
 
-DEVICEMANAGEMENTAPPLICABILITYRULEDEVICEMODE `<IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>`: deviceManagementApplicabilityRuleDeviceMode
+DEVICEMANAGEMENTAPPLICABILITYRULEDEVICEMODE <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>: deviceManagementApplicabilityRuleDeviceMode
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceMode <Windows10DeviceModeType?>]: Windows 10 Device Mode type.
   [Name <String>]: Name for object.
   [RuleType <DeviceManagementApplicabilityRuleType?>]: Supported Applicability rule types for Device Configuration
 
-DEVICEMANAGEMENTAPPLICABILITYRULEOSEDITION `<IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>`: deviceManagementApplicabilityRuleOsEdition
+DEVICEMANAGEMENTAPPLICABILITYRULEOSEDITION <IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>: deviceManagementApplicabilityRuleOsEdition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: Name for object.
   [OSEditionTypes <Windows10EditionType[]>]: Applicability rule OS edition type.
   [RuleType <DeviceManagementApplicabilityRuleType?>]: Supported Applicability rule types for Device Configuration
 
-DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION `<IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>`: deviceManagementApplicabilityRuleOsVersion
+DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION <IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>: deviceManagementApplicabilityRuleOsVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaxOSVersion <String>]: Max OS version for Applicability Rule.
   [MinOSVersion <String>]: Min OS version for Applicability Rule.
@@ -1083,7 +1082,7 @@ Read-only.
   [UserName <String>]: The User Name that is being reported
   [UserPrincipalName <String>]: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
+DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationDeviceOverview>: deviceConfigurationDeviceOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1196,7 +1195,7 @@ Read-only.
 Defaults that the group should be included
   [TargetGroupId <String>]: The Id of the AAD group we are targeting the device configuration to.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -1314,7 +1313,7 @@ Read-only.
   [UserDisplayName <String>]: User name of the DevicePolicyStatus.
   [UserPrincipalName <String>]: UserPrincipalName.
 
-USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
+USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>: deviceConfigurationUserOverview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1330,27 +1329,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementDeviceConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfiguration)

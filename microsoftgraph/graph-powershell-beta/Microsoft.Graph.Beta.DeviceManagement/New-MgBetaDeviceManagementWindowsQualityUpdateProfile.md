@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementWindowsQualityUpdateProfile
 ---
@@ -51,13 +51,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to windowsQualityUpdateProfiles for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -568,7 +570,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsQualityUpdateProfile>`: Windows Quality Update Profile
+BODYPARAMETER <IMicrosoftGraphWindowsQualityUpdateProfile>: Windows Quality Update Profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -592,7 +594,7 @@ Read-only.
   [ReleaseDateDisplayName <String>]: Friendly release date to display for a Quality Update release
   [RoleScopeTagIds <String[]>]: List of Scope Tags for this Quality Update entity.
 
-EXPEDITEDUPDATESETTINGS `<IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>`: A complex type to store the expedited quality update settings such as release date and days until forced reboot.
+EXPEDITEDUPDATESETTINGS <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>: A complex type to store the expedited quality update settings such as release date and days until forced reboot.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DaysUntilForcedReboot <Int32?>]: The number of days after installation that forced reboot will happen.
   [QualityUpdateCatalogItemId <String>]: The unique identifier for the quality update catalog item targeted by the expedite.
@@ -601,27 +603,4 @@ EXPEDITEDUPDATESETTINGS `<IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>`
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementWindowsQualityUpdateProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsqualityupdateprofile)
