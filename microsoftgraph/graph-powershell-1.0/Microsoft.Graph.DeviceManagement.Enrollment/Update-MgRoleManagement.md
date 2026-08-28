@@ -387,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphRoleManagement>: roleManagement
+BODYPARAMETER `<IMicrosoftGraphRoleManagement>`: roleManagement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Directory <IMicrosoftGraphRbacApplication>]: rbacApplication
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -745,7 +745,7 @@ Supports $filter (eq, ne).
     [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: Schedules for role eligibility operations.
   [EntitlementManagement <IMicrosoftGraphRbacApplication>]: rbacApplication
 
-DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
+DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1100,7 +1100,7 @@ Supports $filter (eq, ne).
     [TicketInfo <IMicrosoftGraphTicketInfo>]: ticketInfo
   [RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]: Schedules for role eligibility operations.
 
-ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
+ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1459,3 +1459,25 @@ Supports $filter (eq, ne).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
