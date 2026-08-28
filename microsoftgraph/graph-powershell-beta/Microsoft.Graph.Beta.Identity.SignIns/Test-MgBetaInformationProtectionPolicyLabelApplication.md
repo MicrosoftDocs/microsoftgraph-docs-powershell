@@ -51,8 +51,9 @@ This API is useful when a label should be set manually or explicitly by a user o
 Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -117,6 +118,10 @@ $params = @{
 }
 
 Test-MgBetaInformationProtectionPolicyLabelApplication -BodyParameter $params
+
+```
+This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelApplication Cmdlet.
+
 
 ## PARAMETERS
 
