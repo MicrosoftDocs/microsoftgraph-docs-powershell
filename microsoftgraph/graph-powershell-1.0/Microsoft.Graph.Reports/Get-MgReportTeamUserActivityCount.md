@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivitycount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportTeamUserActivityCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportTeamUserActivityCount
 
 Get the number of Microsoft Teams activities by activity type.
 The activities are performed by Microsoft Teams licensed users.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ Get the number of Microsoft Teams activities by activity type.
 The activities are performed by Microsoft Teams licensed users.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamUserActivityCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportTeamUserActivityCount Cmdlet.
-
+Get-MgReportTeamUserActivityCount -Period $periodId
 
 ## PARAMETERS
 
@@ -348,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -375,27 +367,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportTeamUserActivityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivitycount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivitycount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-1.0)

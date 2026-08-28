@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusagedistributionusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount
 
 Get the number of users using unique devices in your organization.
 The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ Get the number of users using unique devices in your organization.
 The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount Cmdlet.
-
+Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -Period $periodId
 
 ## PARAMETERS
 
@@ -348,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -375,27 +367,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusagedistributionusercount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusagedistributionusercount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportOneDriveActivityUserDetail
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportOneDriveActivityUserDetail
 ## SYNOPSIS
 
 Get details about OneDrive activity by user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,6 +61,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get details about OneDrive activity by user.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -378,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -405,28 +416,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportOneDriveActivityUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail)
+- [](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-1.0)

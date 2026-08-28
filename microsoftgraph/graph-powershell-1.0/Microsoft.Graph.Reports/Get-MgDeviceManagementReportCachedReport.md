@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportcachedreport
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementReportCachedReport
 ---
@@ -14,9 +14,6 @@ title: Get-MgDeviceManagementReportCachedReport
 ## SYNOPSIS
 
 Invoke action getCachedReport
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportCachedReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportCachedReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,18 +46,9 @@ This cmdlet has the following aliases,
 
 Invoke action getCachedReport
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
@@ -81,10 +69,6 @@ top = 3
 }
 
 Get-MgDeviceManagementReportCachedReport -BodyParameter $params
-
-```
-This example shows how to use the Get-MgDeviceManagementReportCachedReport Cmdlet.
-
 
 ## PARAMETERS
 
@@ -111,7 +95,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -176,7 +160,7 @@ HelpMessage: ''
 
 ### -GroupBy
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -260,7 +244,7 @@ HelpMessage: ''
 
 ### -Id
 
-
+.
 
 ```yaml
 Type: System.String
@@ -323,7 +307,7 @@ HelpMessage: ''
 
 ### -Property
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -430,7 +414,7 @@ HelpMessage: ''
 
 ### -Search
 
-
+.
 
 ```yaml
 Type: System.String
@@ -451,7 +435,7 @@ HelpMessage: ''
 
 ### -Skip
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -472,7 +456,7 @@ HelpMessage: ''
 
 ### -Sort
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -494,7 +478,7 @@ HelpMessage: ''
 
 ### -Top
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -566,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [GroupBy <String[]>]: 
   [Id <String>]: 
@@ -579,26 +563,4 @@ BODYPARAMETER `<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedrepor
 
 ## RELATED LINKS
 
-- [Get-MgDeviceManagementReportCachedReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportcachedreport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportcachedreport)

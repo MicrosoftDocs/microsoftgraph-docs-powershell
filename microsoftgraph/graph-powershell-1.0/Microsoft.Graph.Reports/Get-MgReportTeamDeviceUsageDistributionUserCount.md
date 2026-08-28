@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportTeamDeviceUsageDistributionUserCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportTeamDeviceUsageDistributionUserCount
 ## SYNOPSIS
 
 Get the number of Microsoft Teams unique users by device type over the selected time period.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Get the number of Microsoft Teams unique users by device type over the selected time period.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportTeamDeviceUsageDistributionUserCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportTeamDeviceUsageDistributionUserCount Cmdlet.
-
+Get-MgReportTeamDeviceUsageDistributionUserCount -Period $periodId
 
 ## PARAMETERS
 
@@ -346,7 +338,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -373,27 +365,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportTeamDeviceUsageDistributionUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-1.0)

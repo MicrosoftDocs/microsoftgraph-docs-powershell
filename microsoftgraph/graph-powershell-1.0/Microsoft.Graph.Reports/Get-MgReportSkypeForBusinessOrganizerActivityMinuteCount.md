@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivityminutecount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount
 ---
@@ -15,9 +15,6 @@ title: Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount
 
 Get usage trends on the length in minutes and type of conference sessions held and organized by users in your organization.
 Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ Get usage trends on the length in minutes and type of conference sessions held a
 Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount -Period $periodId 
-
-```
-This example shows how to use the Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount Cmdlet.
-
+Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount -Period $periodId
 
 ## PARAMETERS
 
@@ -348,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -375,27 +367,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivityminutecount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessorganizeractivityminutecount)
+- [](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-1.0)

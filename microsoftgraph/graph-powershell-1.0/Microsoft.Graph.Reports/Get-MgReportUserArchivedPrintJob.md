@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportUserArchivedPrintJob
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportUserArchivedPrintJob
 ## SYNOPSIS
 
 Get a list of archived print jobs for a particular user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportUserArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportUserArchivedPrintJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ This cmdlet has the following aliases,
 Get a list of archived print jobs for a particular user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportUserArchivedPrintJob
-
-```
-This example shows how to use the Get-MgReportUserArchivedPrintJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -454,7 +446,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -481,27 +473,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgReportUserArchivedPrintJob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob)
+- [](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0)
