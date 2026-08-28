@@ -16,6 +16,9 @@ title: Get-MgVirtualEventWebinarSessionAttendanceReport
 Get the meetingAttendanceReport for an onlineMeeting or a virtualEvent.
 When an online meeting ends, an attendance report is generated for that session.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

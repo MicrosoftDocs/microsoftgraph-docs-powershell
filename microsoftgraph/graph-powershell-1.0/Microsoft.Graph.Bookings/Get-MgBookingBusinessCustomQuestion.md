@@ -15,6 +15,9 @@ title: Get-MgBookingBusinessCustomQuestion
 
 Read the properties and relationships of a bookingCustomQuestion object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

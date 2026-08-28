@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 
 Delete navigation property attendanceRecords for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
