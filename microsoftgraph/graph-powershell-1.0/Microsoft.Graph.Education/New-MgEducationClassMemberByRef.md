@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEducationClassMemberByRef
 ---
@@ -14,9 +14,6 @@ title: New-MgEducationClassMemberByRef
 ## SYNOPSIS
 
 Add an educationUser member to an educationClass.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,18 +64,9 @@ This cmdlet has the following aliases,
 
 Add an educationUser member to an educationClass.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadWrite.All, Member.Read.Hidden,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -87,10 +75,6 @@ $params = @{
 }
 
 New-MgEducationClassMemberByRef -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the New-MgEducationClassMemberByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -123,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -500,12 +484,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -530,27 +514,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgEducationClassMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-post-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref)
+- [](https://learn.microsoft.com/graph/api/educationclass-post-members?view=graph-rest-1.0)

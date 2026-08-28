@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassAssignmentSubmission
 ---
@@ -22,9 +22,6 @@ A teacher or application with application permissions has full access to all sub
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,37 +73,19 @@ The grade and feedback from a teacher are part of the educationOutcome associate
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.Read, EduAssignments.ReadWrite, EduAssignments.ReadWriteBasic,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
-
 ## EXAMPLES
-### Example 1: Get submissions
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-```
-This example will get submissions
-
-### Example 2: Get submissions with $expand options
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes" 
-
-```
-This example will get submissions with $expand options
-
+Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
 
 ## PARAMETERS
 
@@ -622,7 +601,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -647,28 +626,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmission)
+- [](https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationSchoolUserByRef
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationSchoolUserByRef
 ## SYNOPSIS
 
 Get the educationUser resources associated with an educationSchool.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,13 +36,15 @@ This cmdlet has the following aliases,
 
 Get the educationUser resources associated with an educationSchool.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -434,28 +433,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationSchoolUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref)
+- [](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0)

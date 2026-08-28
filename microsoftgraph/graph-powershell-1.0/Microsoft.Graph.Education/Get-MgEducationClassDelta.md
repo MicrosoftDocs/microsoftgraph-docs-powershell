@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgEducationClassDelta
 
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
 See Use delta query for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
 See Use delta query for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduRoster.ReadBasic, EduRoster.Read, EduRoster.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduRoster.ReadBasic.All, EduRoster.Read.All, EduRoster.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassDelta
-
-```
-This example shows how to use the Get-MgEducationClassDelta Cmdlet.
-
 
 ## PARAMETERS
 
@@ -473,27 +457,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassdelta)
+- [](https://learn.microsoft.com/graph/api/educationclass-delta?view=graph-rest-1.0)

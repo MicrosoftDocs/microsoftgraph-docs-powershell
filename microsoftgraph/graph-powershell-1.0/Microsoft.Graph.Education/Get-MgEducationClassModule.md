@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmodule
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationClassModule
 ---
@@ -16,9 +16,6 @@ title: Get-MgEducationClassModule
 Get the properties and relationships of a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -63,26 +60,13 @@ Get the properties and relationships of a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduCurricula.Read, EduCurricula.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduCurricula.Read.All, EduCurricula.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassModule -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgEducationClassModule Cmdlet.
-
 
 ## PARAMETERS
 
@@ -571,7 +555,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -596,28 +580,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmodule)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmodule)
+- [](https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0)

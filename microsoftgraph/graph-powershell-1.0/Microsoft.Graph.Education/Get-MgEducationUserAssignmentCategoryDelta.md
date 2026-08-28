@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorydelta
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserAssignmentCategoryDelta
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationUserAssignmentCategoryDelta
 ## SYNOPSIS
 
 Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentCategoryDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategoryDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -553,7 +560,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -578,28 +585,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationUserAssignmentCategoryDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorydelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorydelta)
+- [](https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreassigneducationclassassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 08/28/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReassignEducationClassAssignmentSubmission
 ---
@@ -19,9 +19,6 @@ Include the Prefer: include-unknown-enum-members header when you call this metho
 This means that the reassigned status is mapped to the returned status, and reassignedDateTime and reassignedBy properties are mapped to returnedDateTime and returnedBy respectively.
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReassignEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,37 +55,19 @@ This means that the reassigned status is mapped to the returned status, and reas
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadWrite.All, Notes.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Request without optional Prefer header
 
-```powershell
-
-Import-Module Microsoft.Graph.Education
-
-Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
-```
-This example will request without optional prefer header
-
-### Example 2: Request with Prefer header
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-```
-This example will request with prefer header
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Education
+
+Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ## PARAMETERS
 
@@ -420,7 +399,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -445,27 +424,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgReassignEducationClassAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreassigneducationclassassignmentsubmission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreassigneducationclassassignmentsubmission)
+- [](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-1.0)
