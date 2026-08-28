@@ -21,6 +21,9 @@ Find out more about hunting for threats across devices, emails, apps, and identi
 Learn about KQL.
 For information on using advanced hunting in the Microsoft 365 Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft 365 Defender.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RunExpanded (Default)
