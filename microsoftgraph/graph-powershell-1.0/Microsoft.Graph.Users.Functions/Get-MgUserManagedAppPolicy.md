@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Functions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Functions
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserManagedAppPolicy
 ---
@@ -14,9 +14,6 @@ title: Get-MgUserManagedAppPolicy
 ## SYNOPSIS
 
 Gets app restrictions for a given user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,26 +47,13 @@ This cmdlet has the following aliases,
 
 Gets app restrictions for a given user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Functions
 
 Get-MgUserManagedAppPolicy -UserId $userId
-
-```
-This example shows how to use the Get-MgUserManagedAppPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -487,7 +471,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   [EndDateTime <String>]: Usage: EndDateTime='{EndDateTime}'
   [Skip <Int32?>]: Usage: skip={skip}
   [StartDateTime <String>]: Usage: StartDateTime='{StartDateTime}'
@@ -497,26 +481,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserManagedAppPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy)
