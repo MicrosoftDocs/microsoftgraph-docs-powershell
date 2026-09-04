@@ -15,6 +15,9 @@ title: Get-MgGroupDriveRootAnalyticItemActivityStatActivity
 
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

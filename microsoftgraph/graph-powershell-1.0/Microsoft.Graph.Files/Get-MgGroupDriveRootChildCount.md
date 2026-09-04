@@ -15,6 +15,9 @@ title: Get-MgGroupDriveRootChildCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootChildCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootChildCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

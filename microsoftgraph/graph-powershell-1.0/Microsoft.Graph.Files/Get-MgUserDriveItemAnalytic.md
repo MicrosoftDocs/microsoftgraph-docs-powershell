@@ -15,6 +15,9 @@ title: Get-MgUserDriveItemAnalytic
 
 Analytics about the view activities that took place on this item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

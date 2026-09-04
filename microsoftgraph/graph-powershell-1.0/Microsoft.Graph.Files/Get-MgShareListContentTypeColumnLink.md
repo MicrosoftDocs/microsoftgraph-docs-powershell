@@ -15,6 +15,9 @@ title: Get-MgShareListContentTypeColumnLink
 
 The collection of columns that are required by this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

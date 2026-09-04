@@ -15,6 +15,9 @@ title: Publish-MgGroupDriveListContentType
 
 Publishes a contentType present in the content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)

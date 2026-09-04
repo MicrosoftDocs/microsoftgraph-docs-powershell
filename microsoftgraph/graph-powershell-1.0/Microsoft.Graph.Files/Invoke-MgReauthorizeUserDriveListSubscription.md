@@ -15,6 +15,9 @@ title: Invoke-MgReauthorizeUserDriveListSubscription
 
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeUserDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reauthorize (Default)
