@@ -73,16 +73,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property presenters in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1046,6 +1036,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventpresenter)
+
 
 
 
