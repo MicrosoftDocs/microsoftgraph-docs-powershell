@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mguserpresencelocation
 Locale: en-US
 Module Name: Microsoft.Graph.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgUserPresenceLocation
 ---
@@ -14,9 +14,6 @@ title: Clear-MgUserPresenceLocation
 ## SYNOPSIS
 
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Clear-MgBetaUserPresenceLocation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaUserPresenceLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,18 +45,13 @@ This cmdlet has the following aliases,
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Clear-MgUserPresenceLocation -UserId $userId
-
-```
-This example shows how to use the Clear-MgUserPresenceLocation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -370,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -394,27 +386,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Clear-MgUserPresenceLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mguserpresencelocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mguserpresencelocation)
+- [](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-1.0)
