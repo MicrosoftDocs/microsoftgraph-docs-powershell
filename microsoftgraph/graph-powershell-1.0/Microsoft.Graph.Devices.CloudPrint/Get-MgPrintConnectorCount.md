@@ -15,6 +15,9 @@ title: Get-MgPrintConnectorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintConnectorCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintConnectorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
