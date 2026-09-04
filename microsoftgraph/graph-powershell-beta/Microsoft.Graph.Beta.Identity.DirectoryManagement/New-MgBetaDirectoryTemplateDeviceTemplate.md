@@ -57,8 +57,9 @@ Create a new deviceTemplate used to identify attributes and manage a group of de
 | Application | DeviceTemplate.Create, DeviceTemplate.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a new device template
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -73,7 +74,12 @@ $params = @{
 
 New-MgBetaDirectoryTemplateDeviceTemplate -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a new device template
+
+### Example 2: Create a device template with an owner
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -90,6 +96,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryTemplateDeviceTemplate -BodyParameter $params
+
+```
+This example will create a device template with an owner
+
 
 ## PARAMETERS
 
