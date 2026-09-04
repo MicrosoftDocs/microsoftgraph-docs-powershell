@@ -860,8 +860,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitor)
-- [](https://learn.microsoft.com/graph/api/configurationmonitor-update?view=graph-rest-1.0)
+- [Update-MgAdminConfigurationManagementConfigurationMonitor](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmonitor-update?view=graph-rest-1.0)
 
 
 

@@ -385,7 +385,7 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagementconfigurationmonitorbaseline)
+- [Remove-MgAdminConfigurationManagementConfigurationMonitorBaseline](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagementconfigurationmonitorbaseline)
 
 
 
