@@ -15,6 +15,9 @@ title: New-MgBetaRiskDetection
 
 Create new navigation property to riskDetections for identityProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskDetection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
