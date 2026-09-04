@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamChannelMessageDelta
 ---
@@ -21,9 +21,6 @@ To proceed with a round of change tracking, copy and apply the @odata.nextLink o
 An @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after you acquire @odata.deltaLink).
 For more information, see the delta query documentation.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,59 +61,31 @@ An @odata.deltaLink returned in a response signifies that the current round of c
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after you acquire @odata.deltaLink).
 For more information, see the delta query documentation.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2 
-
-```
-This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58" 
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Top 2
 
-```
-This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4" 
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "-FG3FPHv7HuyuazNLuy3eXlzQGbEjYLUsW9-pYkmXgn5KGsaOwrCoor2W23dGNNM1KtAX4AyvpFQNVsBgsEwUOX9lw8x9zDumgJy-C-UbjZLlZDQACyC9FyrVelZus9n.--rshdLwy_WBFJd8anPXJPbSUtUD7r3V4neB5tcrG58"
 
-```
-This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Deltatoken "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4" 
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Skiptoken "8UusBixEHS9UUau6uGcryrA6FpnWwMJbuTYILM1PArHxnZzDVcsHQrijNzCyIVeEauMQsKUfMhNjLWFs1o4sBS_LofJ7xMftZUfec_pijuT6cAk5ugcWCca9RCjK7iVj.DKZ9w4bX9vCR7Sj9P0_qxjLAAPiEZgxlOxxmCLMzHJ4"
 
-```
-This example shows how to use the Get-MgTeamChannelMessageDelta Cmdlet.
+### EXAMPLE 4
 
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelMessageDelta -TeamId $teamId -ChannelId $channelId -Deltatoken "aQdvS1VwGCSRxVmZJqykmDik_JIC44iCZpv-GLiA2VnFuE5yG-kCEBROb2iaPT_y_eMWVQtBO_ejzzyIxl00ji-tQ3HzAbW4liZAVG88lO3nG_6-MBFoHY1n8y21YUzjocG-Cn1tCNeeLPLTzIe5Dw.EP9gLiCoF2CE_e6l_m1bTk2aokD9KcgfgfcLGqd1r_4"
 
 ## PARAMETERS
 
@@ -620,7 +589,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -661,27 +630,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamChannelMessageDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta)
+- [](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)

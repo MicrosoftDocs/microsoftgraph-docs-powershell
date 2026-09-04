@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgTeamworkDeletedChat
 ---
@@ -14,9 +14,6 @@ title: New-MgTeamworkDeletedChat
 ## SYNOPSIS
 
 Create new navigation property to deletedChats for teamwork
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to deletedChats for teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -353,27 +360,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [New-MgTeamworkDeletedChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat)

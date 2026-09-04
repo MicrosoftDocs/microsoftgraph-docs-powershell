@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgChatMember
 ---
@@ -14,9 +14,6 @@ title: Remove-MgChatMember
 ## SYNOPSIS
 
 Remove a conversationMember from a chat.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -87,26 +84,13 @@ This cmdlet has the following aliases,
 
 Remove a conversationMember from a chat.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChatMember.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChatMember.ReadWrite.All, Chat.Manage.Chat,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
-
-```
-This example shows how to use the Remove-MgChatMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -139,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -500,7 +484,7 @@ HelpMessage: ''
 
 ### -Values
 
-
+.
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
@@ -586,7 +570,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsXh2D42ChatsChatIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsXh2D42ChatsChatIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Values <IMicrosoftGraphConversationMember[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -600,7 +584,7 @@ An Out-of-tenant external member is assigned the owner role.
     [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -653,28 +637,6 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [Remove-MgChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatmember)
+- [](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelenabledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamChannelEnabledApp
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeamChannelEnabledApp
 ## SYNOPSIS
 
 Get an enabled app in the specified channel within a team.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelEnabledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelEnabledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,26 +56,13 @@ This cmdlet has the following aliases,
 
 Get an enabled app in the specified channel within a team.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForTeam,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsAppInstallation.Read.Group, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelEnabledApp -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the Get-MgTeamChannelEnabledApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -594,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -635,28 +619,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamChannelEnabledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelenabledapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-list-enabledapps?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelenabledapp)
+- [](https://learn.microsoft.com/graph/api/teamsapp-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/channel-list-enabledapps?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimecard
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgTeamScheduleTimeCard
 ---
@@ -14,9 +14,6 @@ title: Get-MgTeamScheduleTimeCard
 ## SYNOPSIS
 
 The time cards in the schedule.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 The time cards in the schedule.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Schedule.Read.All, Schedule.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleTimeCard -TeamId $teamId
-
-```
-This example shows how to use the Get-MgTeamScheduleTimeCard Cmdlet.
-
 
 ## PARAMETERS
 
@@ -566,7 +550,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -607,27 +591,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimecard)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-list-timecards?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimecard)
+- [](https://learn.microsoft.com/graph/api/schedule-list-timecards?view=graph-rest-1.0)

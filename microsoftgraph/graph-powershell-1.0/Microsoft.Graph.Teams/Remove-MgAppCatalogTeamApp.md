@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgAppCatalogTeamApp
 ---
@@ -16,9 +16,6 @@ title: Remove-MgAppCatalogTeamApp
 Delete an app from an organization's app catalog (the tenant app catalog).
 To delete an app, the distributionMethod property for the app must be set to organization.
 You can also use this API to remove a submitted app from the review process.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ Delete an app from an organization's app catalog (the tenant app catalog).
 To delete an app, the distributionMethod property for the app must be set to organization.
 You can also use this API to remove a submitted app from the review process.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgAppCatalogTeamApp -TeamsAppId $teamsAppId
-
-```
-This example shows how to use the Remove-MgAppCatalogTeamApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -402,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -443,27 +427,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp)
+- [](https://learn.microsoft.com/graph/api/teamsapp-delete?view=graph-rest-1.0)

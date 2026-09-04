@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Complete-MgTeamPrimaryChannelMigration
 ---
@@ -18,9 +18,6 @@ Complete migration operations were initially restricted to newly created standar
 For more information, see Import third-party platform messages to Teams using Microsoft Graph.
 Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
 This API supportes the following channel types.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Complete-MgBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +51,16 @@ Complete migration operations were initially restricted to newly created standar
 For more information, see Import third-party platform messages to Teams using Microsoft Graph.
 Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
 This API supportes the following channel types.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -364,7 +371,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -405,28 +412,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Complete-MgTeamPrimaryChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration)
+- [](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
