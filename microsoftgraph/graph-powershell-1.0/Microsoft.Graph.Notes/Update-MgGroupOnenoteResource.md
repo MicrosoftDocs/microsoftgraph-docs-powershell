@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteresource
 Locale: en-US
 Module Name: Microsoft.Graph.Notes
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupOnenoteResource
 ---
@@ -14,9 +14,6 @@ title: Update-MgGroupOnenoteResource
 ## SYNOPSIS
 
 Update the navigation property resources in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenoteResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property resources in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -566,7 +573,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenoteResource>`: onenoteResource
+BODYPARAMETER <IMicrosoftGraphOnenoteResource>: onenoteResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Self <String>]: The endpoint where you can get details about the page.
 Read-only.
@@ -575,7 +582,7 @@ Read-only.
   [Content <Byte[]>]: The content stream
   [ContentUrl <String>]: The URL for downloading the content
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -592,27 +599,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgGroupOnenoteResource](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenoteresource)
