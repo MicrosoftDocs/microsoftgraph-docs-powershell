@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserPlanner
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserPlanner
 
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,13 +46,15 @@ This cmdlet has the following aliases,
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read, Group.Read.All, Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -345,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
@@ -355,27 +354,4 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplanner)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat
 Locale: en-US
 Module Name: Microsoft.Graph.Planner
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlannerTaskBucketTaskBoardFormat
 ---
@@ -14,9 +14,6 @@ title: Update-MgPlannerTaskBucketTaskBoardFormat
 ## SYNOPSIS
 
 Update the properties of a plannerBucketTaskBoardTaskFormat object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,18 +66,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a plannerBucketTaskBoardTaskFormat object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Planner
 
@@ -88,12 +76,7 @@ $params = @{
 	orderHint = "A6673H Ejkl!"
 }
 
-Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
-
-
-```
-This example shows how to use the Update-MgPlannerTaskBucketTaskBoardFormat Cmdlet.
-
+Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -531,14 +514,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>`: plannerBucketTaskBoardTaskFormat
+BODYPARAMETER <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>: plannerBucketTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [OrderHint <String>]: Hint used to order tasks in the bucket view of the task board.
 For details about the supported format, see Using order hints in Planner.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
@@ -548,27 +531,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPlannerTaskBucketTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat)
+- [](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-update?view=graph-rest-1.0)
