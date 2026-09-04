@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeoplePhotoUpdateSetting
 ---
@@ -45,34 +45,19 @@ This cmdlet has the following aliases,
 
 Update the properties of a photoUpdateSettings object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PeopleSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.photoUpdateSettings"
-	source = "String"
+	source = "cloud"
 	allowedRoles = @(
-	"String"
-)
+	)
 }
 
 Update-MgBetaAdminPeoplePhotoUpdateSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaAdminPeoplePhotoUpdateSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -406,7 +391,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPhotoUpdateSettings>`: photoUpdateSettings
+BODYPARAMETER <IMicrosoftGraphPhotoUpdateSettings>: photoUpdateSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -416,27 +401,5 @@ Optional.
 
 ## RELATED LINKS
 
-- [Update-MgBetaAdminPeoplePhotoUpdateSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/photoupdatesettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting)
+- [](https://learn.microsoft.com/graph/api/photoupdatesettings-update?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice
 ---
@@ -58,39 +58,24 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a hardwareOathTokenAuthenticationMethodDevice object.
 
 ## EXAMPLES
-### Example 1: List all tokens in the inventory
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice
 
-```
-This example will list all tokens in the inventory
-
-### Example 2: List all tokens in the inventory, filtered on status
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "status eq 'activated'" 
+Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "status eq 'activated'"
 
-```
-This example will list all tokens in the inventory, filtered on status
-
-### Example 3: Find a specific token by serial number
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "serialNumber eq 'TOTP123456'" 
-
-```
-This example will find a specific token by serial number
-
+Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "serialNumber eq 'TOTP123456'"
 
 ## PARAMETERS
 
@@ -552,7 +537,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -621,28 +606,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/hardwareoathtokenauthenticationmethoddevice-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethoddevice-list-hardwareoathdevices?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryauthenticationmethoddevicehardwareoathdevice)
+- [](https://learn.microsoft.com/graph/api/hardwareoathtokenauthenticationmethoddevice-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/authenticationmethoddevice-list-hardwareoathdevices?view=graph-rest-beta)

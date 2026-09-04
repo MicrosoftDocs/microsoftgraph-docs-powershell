@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDomainRootDomain
 ---
@@ -13,10 +13,7 @@ title: Get-MgBetaDomainRootDomain
 
 ## SYNOPSIS
 
-Get the root domain of a subdomain.\rThe API returns a single object which is the root domain of the specified subdomain.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDomainRootDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainRootDomain?view=graph-powershell-1.0)
+Get the root domain of a subdomain.\r\nThe API returns a single object which is the root domain of the specified subdomain.
 
 ## SYNTAX
 
@@ -46,28 +43,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the root domain of a subdomain.\rThe API returns a single object which is the root domain of the specified subdomain.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
+Get the root domain of a subdomain.\r\nThe API returns a single object which is the root domain of the specified subdomain.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDomainRootDomain -DomainId $domainId
-
-```
-This example shows how to use the Get-MgBetaDomainRootDomain Cmdlet.
-
 
 ## PARAMETERS
 
@@ -357,7 +341,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -426,27 +410,5 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaDomainRootDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-list-rootdomain?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainrootdomain)
+- [](https://learn.microsoft.com/graph/api/domain-list-rootdomain?view=graph-rest-beta)
