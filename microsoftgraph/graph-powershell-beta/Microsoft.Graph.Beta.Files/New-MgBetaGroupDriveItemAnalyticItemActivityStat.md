@@ -15,6 +15,9 @@ title: New-MgBetaGroupDriveItemAnalyticItemActivityStat
 
 Create new navigation property to itemActivityStats for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveListItem
 
 All items contained in the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
