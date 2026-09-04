@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetauserpresencelocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgBetaUserPresenceLocation
 ---
@@ -14,9 +14,6 @@ title: Clear-MgBetaUserPresenceLocation
 ## SYNOPSIS
 
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgUserPresenceLocation](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgUserPresenceLocation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,18 +45,13 @@ This cmdlet has the following aliases,
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Clear-MgBetaUserPresenceLocation -UserId $userId
-
-```
-This example shows how to use the Clear-MgBetaUserPresenceLocation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -370,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -400,27 +392,5 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Clear-MgBetaUserPresenceLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetauserpresencelocation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetauserpresencelocation)
+- [](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-beta)

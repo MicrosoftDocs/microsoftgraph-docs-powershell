@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaCommunicationCallRecordSession
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaCommunicationCallRecordSession
 ## SYNOPSIS
 
 Update the navigation property sessions in communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property sessions in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -716,7 +723,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCallRecordsSession>`: session
+BODYPARAMETER <IMicrosoftGraphCallRecordsSession>: session
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -864,26 +871,26 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-CALLEE `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+CALLEE <IMicrosoftGraphCallRecordsEndpoint>: endpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserAgent <IMicrosoftGraphCallRecordsUserAgent>]: userAgent
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ApplicationVersion <String>]: Identifies the version of application software used by this endpoint.
     [HeaderValue <String>]: User-agent header value reported by this endpoint.
 
-CALLER `<IMicrosoftGraphCallRecordsEndpoint>`: endpoint
+CALLER <IMicrosoftGraphCallRecordsEndpoint>: endpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UserAgent <IMicrosoftGraphCallRecordsUserAgent>]: userAgent
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ApplicationVersion <String>]: Identifies the version of application software used by this endpoint.
     [HeaderValue <String>]: User-agent header value reported by this endpoint.
 
-FAILUREINFO `<IMicrosoftGraphCallRecordsFailureInfo>`: failureInfo
+FAILUREINFO <IMicrosoftGraphCallRecordsFailureInfo>: failureInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Reason <String>]: Classification of why a call or portion of a call failed.
   [Stage <String>]: failureStage
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -1045,27 +1052,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [Update-MgBetaCommunicationCallRecordSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordsession)
