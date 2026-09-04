@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshare
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPrintShare
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaPrintShare
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a printer share.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShare?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a printer share.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintShare
-
-```
-This example shows how to use the Get-MgBetaPrintShare Cmdlet.
-
 
 ## PARAMETERS
 
@@ -539,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -557,28 +541,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPrintShare](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshare)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshare)
+- [](https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-beta)

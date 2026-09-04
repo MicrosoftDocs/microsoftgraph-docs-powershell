@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinitiontask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrintTaskDefinitionTask
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaPrintTaskDefinitionTask
 
 Update a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintTaskDefinitionTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,9 +73,8 @@ Update a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -90,10 +86,6 @@ $params = @{
 }
 
 Update-MgBetaPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId -PrintTaskId $printTaskId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPrintTaskDefinitionTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -622,7 +614,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintTask>`: printTask
+BODYPARAMETER <IMicrosoftGraphPrintTask>: printTask
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -654,7 +646,7 @@ Read-only.
     [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
     [Event <String>]: printEvent
 
-DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
+DEFINITION <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -685,7 +677,7 @@ Read-only.
       [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
       [Event <String>]: printEvent
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -700,12 +692,12 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-STATUS `<IMicrosoftGraphPrintTaskStatus>`: printTaskStatus
+STATUS <IMicrosoftGraphPrintTaskStatus>: printTaskStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: A human-readable description of the current processing state of the printTask.
   [State <String>]: printTaskProcessingState
 
-TRIGGER `<IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
+TRIGGER <IMicrosoftGraphPrintTaskTrigger>: printTaskTrigger
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -739,27 +731,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPrintTaskDefinitionTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinitiontask)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinitiontask)
+- [](https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-beta)
