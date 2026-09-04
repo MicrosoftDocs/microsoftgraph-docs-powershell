@@ -587,7 +587,7 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemuploadsession)
+- [New-MgGroupDriveItemUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemuploadsession)
 
 
 

@@ -459,7 +459,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdrivefollowingcontent)
+- [Set-MgDriveFollowingContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdrivefollowingcontent)
 
 
 
