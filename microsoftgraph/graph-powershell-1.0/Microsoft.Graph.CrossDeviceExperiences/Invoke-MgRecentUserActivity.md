@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity
 Locale: en-US
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgRecentUserActivity
 ---
@@ -21,9 +21,6 @@ This means that activities without activityHistoryItems won't be included in the
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,27 +61,14 @@ The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filteri
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp,  |
-| Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.CrossDeviceExperiences
 
 # A UPN can also be used as -UserId.
 Invoke-MgRecentUserActivity -UserId $userId
-
-```
-This example shows how to use the Invoke-MgRecentUserActivity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -502,7 +486,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
   [ActivityHistoryItemId <String>]: The unique identifier of activityHistoryItem
   [UserActivityId <String>]: The unique identifier of userActivity
   [UserId <String>]: The unique identifier of user
@@ -510,27 +494,5 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgRecentUserActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/invoke-mgrecentuseractivity)
+- [](https://learn.microsoft.com/graph/api/projectrome-get-recent-activities?view=graph-rest-1.0)
