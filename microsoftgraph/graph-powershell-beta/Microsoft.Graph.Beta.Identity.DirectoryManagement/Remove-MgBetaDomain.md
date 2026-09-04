@@ -467,8 +467,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomain)
-- [](https://learn.microsoft.com/graph/api/domain-delete?view=graph-rest-beta)
+- [Remove-MgBetaDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-delete?view=graph-rest-beta)
 
 
 

@@ -847,8 +847,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingtheme)
-- [](https://learn.microsoft.com/graph/api/organizationalbranding-post-themes?view=graph-rest-beta)
+- [New-MgBetaOrganizationBrandingTheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandingtheme)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbranding-post-themes?view=graph-rest-beta)
 
 
 
