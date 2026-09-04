@@ -15,6 +15,9 @@ title: Update-MgBetaBookingBusinessCustomQuestion
 
 Update the navigation property customQuestions in bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
