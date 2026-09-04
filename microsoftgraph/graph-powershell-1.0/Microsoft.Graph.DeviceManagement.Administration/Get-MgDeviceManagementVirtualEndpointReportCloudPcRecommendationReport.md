@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport
 ---
@@ -49,18 +49,9 @@ This cmdlet has the following aliases,
 Retrieve Cloud PC recommendation reports for usage optimization and cost savings.
 The usage category report categorizes a Cloud PC as Undersized, Oversized, Rightsized, or Underutilized, and also provides the recommended SKU when the Cloud PC isn't Rightsized.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get device recommendation reports grouped by service plan and usage category
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -80,12 +71,7 @@ groupBy = @(
 
 Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
 
-```
-This example will get device recommendation reports grouped by service plan and usage category
-
-### Example 2: Get device usage category reports for Cloud PCs
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -108,10 +94,6 @@ top = 15
 }
 
 Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
-
-```
-This example will get device usage category reports for cloud pcs
-
 
 ## PARAMETERS
 
@@ -138,7 +120,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -203,7 +185,7 @@ HelpMessage: ''
 
 ### -Filter
 
-
+.
 
 ```yaml
 Type: System.String
@@ -224,7 +206,7 @@ HelpMessage: ''
 
 ### -GroupBy
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -350,7 +332,7 @@ HelpMessage: ''
 
 ### -Property
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -478,7 +460,7 @@ HelpMessage: ''
 
 ### -Search
 
-
+.
 
 ```yaml
 Type: System.String
@@ -499,7 +481,7 @@ HelpMessage: ''
 
 ### -Skip
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -520,7 +502,7 @@ HelpMessage: ''
 
 ### -Sort
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -542,7 +524,7 @@ HelpMessage: ''
 
 ### -Top
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -614,7 +596,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecloudpcrecommendationreportsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Filter <String>]: 
   [GroupBy <String[]>]: 
@@ -628,27 +610,5 @@ BODY `<IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecl
 
 ## RELATED LINKS
 
-- [Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
+- [](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)

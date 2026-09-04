@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc
 ---
@@ -68,18 +68,9 @@ This cmdlet has the following aliases,
 
 Reprovision a specific Cloud PC.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -89,10 +80,6 @@ $params = @{
 }
 
 Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet.
-
 
 ## PARAMETERS
 
@@ -125,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -528,12 +515,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OSVersion <String>]: cloudPcOperatingSystem
   [UserAccountType <String>]: cloudPcUserAccountType
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -565,27 +552,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc)
+- [](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Resize-MgDeviceManagementVirtualEndpointCloudPc
 ---
@@ -68,18 +68,9 @@ This cmdlet has the following aliases,
 
 Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -88,10 +79,6 @@ $params = @{
 }
 
 Resize-MgDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
-
-```
-This example shows how to use the Resize-MgDeviceManagementVirtualEndpointCloudPc Cmdlet.
-
 
 ## PARAMETERS
 
@@ -124,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -419,7 +406,7 @@ HelpMessage: ''
 
 ### -TargetServicePlanId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -500,11 +487,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths11UdgezDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphResizePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths11UdgezDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphResizePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TargetServicePlanId <String>]: 
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -536,27 +523,5 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Resize-MgDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/resize-mgdevicemanagementvirtualendpointcloudpc)
+- [](https://learn.microsoft.com/graph/api/cloudpc-resize?view=graph-rest-1.0)

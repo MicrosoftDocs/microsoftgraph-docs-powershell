@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointusersetting
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementVirtualEndpointUserSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementVirtualEndpointUserSetting
 ## SYNOPSIS
 
 Update the properties of a cloudPcUserSetting object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,9 +75,8 @@ This cmdlet has the following aliases,
 Update the properties of a cloudPcUserSetting object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -96,10 +92,6 @@ $params = @{
 }
 
 Update-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceManagementVirtualEndpointUserSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -702,7 +694,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcUserSetting>`: cloudPcUserSetting
+BODYPARAMETER <IMicrosoftGraphCloudPcUserSetting>: cloudPcUserSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -737,7 +729,7 @@ The default value is false.
     [UserRestoreEnabled <Boolean?>]: If true, the user has the ability to use snapshots to restore Cloud PCs.
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -766,7 +758,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [UserPrincipalName <String>]: Alternate key of user
 
-RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
+RESTOREPOINTSETTING <IMicrosoftGraphCloudPcRestorePointSetting>: cloudPcRestorePointSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FrequencyType <String>]: cloudPcRestorePointFrequencyType
   [UserRestoreEnabled <Boolean?>]: If true, the user has the ability to use snapshots to restore Cloud PCs.
@@ -775,27 +767,5 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementVirtualEndpointUserSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointusersetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointusersetting)
+- [](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-1.0)
