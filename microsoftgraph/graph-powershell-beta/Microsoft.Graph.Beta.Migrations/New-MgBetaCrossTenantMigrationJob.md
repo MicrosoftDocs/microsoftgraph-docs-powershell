@@ -725,7 +725,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCrossTenantMigrationJob>: crossTenantMigrationJob
+BODYPARAMETER `<IMicrosoftGraphCrossTenantMigrationJob>`: crossTenantMigrationJob
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -775,7 +775,7 @@ Only Users are supported at this time.
   [Workloads <String[]>]: Workloads to migrate.
 Supported workloads are Teams, Exchange, and ODSP (OneDrive/SharePoint).
 
-EXCHANGESETTINGS <IMicrosoftGraphExchangeOnlineCrossTenantMigrationSettings>: exchangeOnlineCrossTenantMigrationSettings
+EXCHANGESETTINGS `<IMicrosoftGraphExchangeOnlineCrossTenantMigrationSettings>`: exchangeOnlineCrossTenantMigrationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SourceEndpoint <String>]: Name of the Migration Endpoint in the source tenant
   [TargetDeliveryDomain <String>]: Delivery domain on the target tenant
@@ -799,3 +799,25 @@ Only Users are supported at this time.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/new-mgbetacrosstenantmigrationjob)
 - [](https://learn.microsoft.com/graph/api/migrationsroot-post-crosstenantmigrationjobs?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
