@@ -61,18 +61,28 @@ This cmdlet has the following aliases,
 Per-user workflow execution results.
 
 ## EXAMPLES
+### Example 1: List the user processing results for a workflow
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId
 
-### EXAMPLE 2
+```
+This example will list the user processing results for a workflow
+
+### Example 2: List specific properties of user processing results for a workflow
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,workflowExecutionType,subject"
+Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,workflowExecutionType,subject" 
+
+```
+This example will list specific properties of user processing results for a workflow
+
 
 ## PARAMETERS
 

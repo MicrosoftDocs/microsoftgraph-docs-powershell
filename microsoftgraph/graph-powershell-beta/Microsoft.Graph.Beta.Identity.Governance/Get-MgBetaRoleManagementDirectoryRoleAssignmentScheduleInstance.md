@@ -69,12 +69,17 @@ Get the instance of an active role assignment.
 | Application | RoleAssignmentSchedule.Read.Directory, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance
+
+```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance Cmdlet.
+
 
 ## PARAMETERS
 

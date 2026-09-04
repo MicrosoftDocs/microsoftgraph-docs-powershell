@@ -58,12 +58,17 @@ In PIM for Groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
 
 ## EXAMPLES
+### Example 1: Retrieve the approval resources in PIM for groups
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser -On $onId
+Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser -On $onId 
+
+```
+This example will retrieve the approval resources in pim for groups
+
 
 ## PARAMETERS
 
