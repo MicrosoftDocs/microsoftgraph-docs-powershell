@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootversion
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDriveRootVersion
 ---
@@ -14,9 +14,6 @@ title: New-MgDriveRootVersion
 ## SYNOPSIS
 
 Create new navigation property to versions for drives
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to versions for drives
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -595,7 +602,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDriveItemVersion>`: driveItemVersion
+BODYPARAMETER <IMicrosoftGraphDriveItemVersion>: driveItemVersion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -622,7 +629,7 @@ Read-only.
   [Content <Byte[]>]: The content stream for this version of the item.
   [Size <Int64?>]: Indicates the size of the content stream for this version of the item.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -648,7 +655,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -659,7 +666,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckedOutBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -680,27 +687,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDriveRootVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootversion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootversion)

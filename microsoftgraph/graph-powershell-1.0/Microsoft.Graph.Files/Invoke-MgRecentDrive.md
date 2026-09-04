@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgRecentDrive
 ---
@@ -13,10 +13,7 @@ title: Invoke-MgRecentDrive
 
 ## SYNOPSIS
 
-List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaRecentDrive?view=graph-powershell-beta)
+List a set of items recently used by the signed-in user.\r\nThis collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## SYNTAX
 
@@ -47,20 +44,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
+List a set of items recently used by the signed-in user.\r\nThis collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Files
 
 Invoke-MgRecentDrive -DriveId $driveId
-
-```
-This example shows how to use the Invoke-MgRecentDrive Cmdlet.
-
 
 ## PARAMETERS
 
@@ -478,7 +470,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -507,27 +499,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgRecentDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive)
+- [](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
