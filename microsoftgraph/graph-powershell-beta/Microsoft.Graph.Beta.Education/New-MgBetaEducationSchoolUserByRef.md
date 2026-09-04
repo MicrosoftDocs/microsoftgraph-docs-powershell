@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Education
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEducationSchoolUserByRef
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaEducationSchoolUserByRef
 ## SYNOPSIS
 
 Add a user to a school.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,9 +66,8 @@ This cmdlet has the following aliases,
 Add a user to a school.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -80,10 +76,6 @@ $params = @{
 }
 
 New-MgBetaEducationSchoolUserByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaEducationSchoolUserByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -116,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -493,12 +485,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -523,27 +515,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaEducationSchoolUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-post-users?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschooluserbyref)
+- [](https://learn.microsoft.com/graph/api/educationschool-post-users?view=graph-rest-beta)
