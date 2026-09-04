@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-Help.xm
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ---
@@ -47,18 +47,9 @@ This cmdlet has the following aliases,
 
 Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CloudPC.ReadWrite.All, CloudPC.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
@@ -73,10 +64,6 @@ $params = @{
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -499,7 +486,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcOrganizationSettings>`: cloudPcOrganizationSettings
+BODYPARAMETER <IMicrosoftGraphCloudPcOrganizationSettings>: cloudPcOrganizationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -517,7 +504,7 @@ Optional.
     [Language <String>]: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC.
 The default value is en-US, which corresponds to English (United States).
 
-WINDOWSSETTINGS `<IMicrosoftGraphCloudPcWindowsSettings>`: cloudPcWindowsSettings
+WINDOWSSETTINGS <IMicrosoftGraphCloudPcWindowsSettings>: cloudPcWindowsSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Language <String>]: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC.
 The default value is en-US, which corresponds to English (United States).
@@ -525,27 +512,5 @@ The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
+- [](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-beta)
