@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupByUniqueName
 ---
@@ -17,9 +17,6 @@ Get the properties and relationships of a group object.
 This operation returns by default only a subset of all the available properties, as noted in the Properties section.
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupByUniqueName?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,13 +50,15 @@ This operation returns by default only a subset of all the available properties,
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -349,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -373,28 +372,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgGroupByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename)
+- [](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0)

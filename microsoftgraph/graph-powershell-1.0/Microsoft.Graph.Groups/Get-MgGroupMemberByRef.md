@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupMemberByRef
 ---
@@ -16,9 +16,6 @@ title: Get-MgGroupMemberByRef
 Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,13 +40,15 @@ Get a list of the group's direct members.
 A group can have users, organizational contacts, devices, service principals and other groups as members.
 This operation is not transitive.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -460,28 +459,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
+- [](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)

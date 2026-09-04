@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupRejectedSender
 ---
@@ -15,9 +15,6 @@ title: Get-MgGroupRejectedSender
 
 Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSender?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,26 +39,13 @@ This cmdlet has the following aliases,
 Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupRejectedSender -GroupId $groupId
-
-```
-This example shows how to use the Get-MgGroupRejectedSender Cmdlet.
-
 
 ## PARAMETERS
 
@@ -494,27 +478,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupRejectedSender](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender)
+- [](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)

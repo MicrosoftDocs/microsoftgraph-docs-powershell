@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupLifecyclePolicy
 ---
@@ -14,9 +14,6 @@ title: Remove-MgGroupLifecyclePolicy
 ## SYNOPSIS
 
 Delete a groupLifecyclePolicy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -65,26 +62,13 @@ This cmdlet has the following aliases,
 
 Delete a groupLifecyclePolicy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Remove-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
-
-```
-This example shows how to use the Remove-MgGroupLifecyclePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -449,7 +433,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -473,27 +457,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouplifecyclepolicy)
+- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0)

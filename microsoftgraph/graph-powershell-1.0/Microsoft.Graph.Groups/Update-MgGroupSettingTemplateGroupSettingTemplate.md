@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgGroupSettingTemplateGroupSettingTemplate
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update entity in groupSettingTemplates
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -566,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGroupSettingTemplate>`: groupSettingTemplate
+BODYPARAMETER <IMicrosoftGraphGroupSettingTemplate>: groupSettingTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -581,7 +591,7 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
     [Name <String>]: Name of the setting.
     [Type <String>]: Type of the setting.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -611,27 +621,4 @@ VALUES <IMicrosoftGraphSettingTemplateValue[]>: Collection of settingTemplateVal
 
 ## RELATED LINKS
 
-- [Update-MgGroupSettingTemplateGroupSettingTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate)

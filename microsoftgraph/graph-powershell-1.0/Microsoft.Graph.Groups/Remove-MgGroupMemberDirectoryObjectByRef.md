@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupmemberdirectoryobjectbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgGroupMemberDirectoryObjectByRef
 ---
@@ -15,9 +15,6 @@ title: Remove-MgGroupMemberDirectoryObjectByRef
 
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupMemberDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Groups
 
 Remove-MgGroupMemberDirectoryObjectByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Remove-MgGroupMemberDirectoryObjectByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -421,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -445,27 +429,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgGroupMemberDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupmemberdirectoryobjectbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupmemberdirectoryobjectbyref)
+- [](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0)
