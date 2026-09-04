@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplacecheck
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlaceCheck
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaPlaceCheck
 
 Create a new checkInClaim object to record the check-in status for a specific place, such as a desk or a room, associated with a specific calendar reservation.
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlaceCheck](/powershell/module/Microsoft.Graph.Calendar/New-MgPlaceCheck?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -70,9 +67,8 @@ Create a new checkInClaim object to record the check-in status for a specific pl
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -83,10 +79,6 @@ $params = @{
 }
 
 New-MgBetaPlaceCheck -PlaceId $placeId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPlaceCheck Cmdlet.
-
 
 ## PARAMETERS
 
@@ -531,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCheckInClaim>`: checkInClaim
+BODYPARAMETER <IMicrosoftGraphCheckInClaim>: checkInClaim
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
 For more information, see the iCalUId property in event.
@@ -540,7 +532,7 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -565,27 +557,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaPlaceCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplacecheck)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplacecheck)
+- [](https://learn.microsoft.com/graph/api/place-post-checkins?view=graph-rest-beta)

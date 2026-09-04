@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaPlace
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlace](/powershell/module/Microsoft.Graph.Calendar/New-MgPlace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,18 +50,9 @@ This cmdlet has the following aliases,
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a building
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -75,12 +63,7 @@ $params = @{
 
 New-MgBetaPlace -BodyParameter $params
 
-```
-This example will create a building
-
-### Example 2: Create a floor
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -92,12 +75,7 @@ $params = @{
 
 New-MgBetaPlace -BodyParameter $params
 
-```
-This example will create a floor
-
-### Example 3: Create a section
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -109,12 +87,7 @@ $params = @{
 
 New-MgBetaPlace -BodyParameter $params
 
-```
-This example will create a section
-
-### Example 4: Create a desk
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -126,12 +99,7 @@ $params = @{
 
 New-MgBetaPlace -BodyParameter $params
 
-```
-This example will create a desk
-
-### Example 5: Create a room
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -144,12 +112,7 @@ $params = @{
 
 New-MgBetaPlace -BodyParameter $params
 
-```
-This example will create a room
-
-### Example 6: Create a workspace
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -163,10 +126,6 @@ $params = @{
 }
 
 New-MgBetaPlace -BodyParameter $params
-
-```
-This example will create a workspace
-
 
 ## PARAMETERS
 
@@ -692,7 +651,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -703,7 +662,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+BODYPARAMETER <IMicrosoftGraphPlace>: place
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -784,7 +743,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Phone <String>]: The phone number of the place.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -796,27 +755,5 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 ## RELATED LINKS
 
-- [New-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
+- [](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)

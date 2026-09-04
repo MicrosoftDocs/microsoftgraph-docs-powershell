@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelfixture
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPlaceAsBuildingMapLevelFixture
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaPlaceAsBuildingMapLevelFixture
 ## SYNOPSIS
 
 Delete a fixture on a specified floor.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsBuildingMapLevelFixture?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,17 +46,12 @@ This cmdlet has the following aliases,
 Delete a fixture on a specified floor.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaPlaceAsBuildingMapLevelFixture -PlaceId $placeId -LevelMapId $levelMapId -FixtureMapId $fixtureMapId
-
-```
-This example shows how to use the Remove-MgBetaPlaceAsBuildingMapLevelFixture Cmdlet.
-
 
 ## PARAMETERS
 
@@ -433,7 +425,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -458,27 +450,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaPlaceAsBuildingMapLevelFixture](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelfixture)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/fixturemap-delete?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelfixture)
+- [](https://learn.microsoft.com/graph/api/fixturemap-delete?view=graph-rest-beta)
