@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserOutlookTask
 ---
@@ -59,39 +59,21 @@ The user's Outlook tasks.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.Read,  |
-| Delegated (personal Microsoft account) | Tasks.Read,  |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Get an Outlook task
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Users
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
-
-```
-This example will get an outlook task
-
-### Example 2: Get Outlook task with date-time properties in Pacific Standard Time
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Users
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 
-```
-This example will get outlook task with date-time properties in pacific standard time
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Users
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 
 ## PARAMETERS
 
@@ -580,7 +562,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -617,26 +599,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserOutlookTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktask)
