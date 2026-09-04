@@ -644,7 +644,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
+- [New-MgBetaTenantRelationshipManagedTenantCustomizedInformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
 
 
 
