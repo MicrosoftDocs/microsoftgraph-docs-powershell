@@ -15,6 +15,9 @@ title: Invoke-MgFilterApplicationSynchronizationJobSchemaOperator
 
 List all operators supported in the scoping filters for a synchronizationSchema.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

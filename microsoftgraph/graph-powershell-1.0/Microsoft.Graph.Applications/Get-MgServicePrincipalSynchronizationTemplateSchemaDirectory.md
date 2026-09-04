@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory
 
 Contains the collection of directories and all of their objects.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
