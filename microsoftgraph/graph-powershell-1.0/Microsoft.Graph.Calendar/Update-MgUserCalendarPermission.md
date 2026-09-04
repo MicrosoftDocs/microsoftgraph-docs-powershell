@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserCalendarPermission
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserCalendarPermission
 ## SYNOPSIS
 
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding <b>calendarPermission</b> object for a calendar.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -114,9 +111,8 @@ This cmdlet has the following aliases,
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding <b>calendarPermission</b> object for a calendar.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -125,10 +121,6 @@ $params = @{
 }
 
 Update-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgUserCalendarPermission Cmdlet.
-
 
 ## PARAMETERS
 
@@ -842,7 +834,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCalendarPermission>`: calendarPermission
+BODYPARAMETER <IMicrosoftGraphCalendarPermission>: calendarPermission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -858,12 +850,12 @@ The 'My organization' user determines the permissions other people within your o
 You can't remove 'My organization' as a share recipient to a calendar.
   [Role <String>]: calendarRoleType
 
-EMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+EMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <String>]: The email address of the person or entity.
   [Name <String>]: The display name of the person or entity.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -886,27 +878,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgUserCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
+- [](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0)

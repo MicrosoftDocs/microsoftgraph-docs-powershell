@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlace
 ---
@@ -15,9 +15,6 @@ title: Update-MgPlace
 
 Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
 You can identify the place by specifying the id property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlace?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -75,18 +72,9 @@ This cmdlet has the following aliases,
 Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
 You can identify the place by specifying the id property.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -99,12 +87,7 @@ $params = @{
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgPlace Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -116,12 +99,7 @@ $params = @{
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgPlace Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -132,12 +110,7 @@ $params = @{
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgPlace Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -150,12 +123,7 @@ $params = @{
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgPlace Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -170,12 +138,7 @@ $params = @{
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgPlace Cmdlet.
-
-### Example 6: Code snippet
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Calendar
 
@@ -189,10 +152,6 @@ $params = @{
 }
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgPlace Cmdlet.
-
 
 ## PARAMETERS
 
@@ -854,7 +813,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -863,7 +822,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+BODYPARAMETER <IMicrosoftGraphPlace>: place
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -906,7 +865,7 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -915,7 +874,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Latitude <Double?>]: The latitude of the location.
   [Longitude <Double?>]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -938,27 +897,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace)
+- [](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-1.0)

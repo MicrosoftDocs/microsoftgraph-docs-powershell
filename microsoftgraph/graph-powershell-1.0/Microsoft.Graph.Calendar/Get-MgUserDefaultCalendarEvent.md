@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserDefaultCalendarEvent
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserDefaultCalendarEvent
 The events in the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -44,13 +41,15 @@ The events in the calendar.
 Navigation property.
 Read-only.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite,  |
-| Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite,  |
-| Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -483,27 +482,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgUserDefaultCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent)
