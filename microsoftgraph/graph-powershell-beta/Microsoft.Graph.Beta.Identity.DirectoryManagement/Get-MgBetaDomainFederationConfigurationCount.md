@@ -15,6 +15,9 @@ title: Get-MgBetaDomainFederationConfigurationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDomainFederationConfigurationCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainFederationConfigurationCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
