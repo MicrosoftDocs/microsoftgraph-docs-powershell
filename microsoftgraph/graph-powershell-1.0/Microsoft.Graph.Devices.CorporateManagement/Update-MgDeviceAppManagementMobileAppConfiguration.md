@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementMobileAppConfiguration
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceAppManagementMobileAppConfiguration
 ## SYNOPSIS
 
 Update the navigation property mobileAppConfigurations in deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -87,18 +84,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property mobileAppConfigurations in deviceAppManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -122,10 +110,6 @@ settings = @(
 }
 
 Update-MgDeviceAppManagementMobileAppConfiguration -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagementMobileAppConfiguration Cmdlet.
-
 
 ## PARAMETERS
 
@@ -822,7 +806,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceMobileAppConfiguration>`: An abstract class for Mobile app configuration for enrolled devices.
+BODYPARAMETER <IMicrosoftGraphManagedDeviceMobileAppConfiguration>: An abstract class for Mobile app configuration for enrolled devices.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -889,7 +873,7 @@ Read-only.
   [UserName <String>]: The User Name that is being reported
   [UserPrincipalName <String>]: UserPrincipalName.
 
-DEVICESTATUSSUMMARY `<IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>`: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+DEVICESTATUSSUMMARY <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -901,7 +885,7 @@ Read-only.
   [PendingCount <Int32?>]: Number of pending devices
   [SuccessCount <Int32?>]: Number of succeeded devices
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -948,7 +932,7 @@ Read-only.
   [UserDisplayName <String>]: User name of the DevicePolicyStatus.
   [UserPrincipalName <String>]: UserPrincipalName.
 
-USERSTATUSSUMMARY `<IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>`: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
+USERSTATUSSUMMARY <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -963,26 +947,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgDeviceAppManagementMobileAppConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration)

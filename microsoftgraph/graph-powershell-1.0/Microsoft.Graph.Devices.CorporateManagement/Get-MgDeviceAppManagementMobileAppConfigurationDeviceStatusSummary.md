@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationdevicestatussummary
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 ---
@@ -14,9 +14,6 @@ title: Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 ## SYNOPSIS
 
 App configuration device status summary.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 App configuration device status summary.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
-
-```
-This example shows how to use the Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary Cmdlet.
-
 
 ## PARAMETERS
 
@@ -358,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -399,26 +383,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationdevicestatussummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationdevicestatussummary)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementManagedAppRegistration
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceAppManagementManagedAppRegistration
 ## SYNOPSIS
 
 Update the navigation property managedAppRegistrations in deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,6 +80,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property managedAppRegistrations in deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -891,7 +898,7 @@ Read-only.
   [LastModifiedDateTime <DateTime?>]: Last time the policy was modified.
   [Version <String>]: Version of the entity.
 
-BODYPARAMETER `<IMicrosoftGraphManagedAppRegistration>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+BODYPARAMETER <IMicrosoftGraphManagedAppRegistration>: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -928,7 +935,7 @@ Read-only.
   [UserId <String>]: The user Id to who this app registration belongs.
   [Version <String>]: Version of the entity.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -986,27 +993,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgDeviceAppManagementManagedAppRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistration)

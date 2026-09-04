@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagementMobileApp
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceAppManagementMobileApp
 ## SYNOPSIS
 
 Update the navigation property mobileApps in deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,18 +75,9 @@ This cmdlet has the following aliases,
 
 Update the navigation property mobileApps in deviceAppManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -131,10 +119,6 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementMobileApp -MobileAppId $mobileAppId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgDeviceAppManagementMobileApp Cmdlet.
-
 
 ## PARAMETERS
 
@@ -889,7 +873,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphMobileApp>`: An abstract class containing the base properties for Intune mobile apps.
+BODYPARAMETER <IMicrosoftGraphMobileApp>: An abstract class containing the base properties for Intune mobile apps.
 Note: Listing mobile apps with `$expand=assignments` has been deprecated.
 Instead get the list of apps without the `$expand` query on `assignments`.
 Then, perform the expansion on individual applications.
@@ -928,7 +912,7 @@ CATEGORIES <IMicrosoftGraphMobileAppCategory[]>: The list of categories for this
 Read-only.
   [DisplayName <String>]: The name of the app category.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -966,7 +950,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [WindowsInformationProtectionAppLockerFileId <String>]: The unique identifier of windowsInformationProtectionAppLockerFile
   [WindowsInformationProtectionPolicyId <String>]: The unique identifier of windowsInformationProtectionPolicy
 
-LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+LARGEICON <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
@@ -974,26 +958,4 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 
 ## RELATED LINKS
 
-- [Update-MgDeviceAppManagementMobileApp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationintendedpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy
 ## SYNOPSIS
 
 Create new navigation property to intendedPolicies for deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to intendedPolicies for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -594,7 +601,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedAppPolicy>`: The ManagedAppPolicy resource represents a base type for platform specific policies.
+BODYPARAMETER <IMicrosoftGraphManagedAppPolicy>: The ManagedAppPolicy resource represents a base type for platform specific policies.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -604,7 +611,7 @@ Read-only.
   [LastModifiedDateTime <DateTime?>]: Last time the policy was modified.
   [Version <String>]: Version of the entity.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -645,27 +652,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationintendedpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationintendedpolicy)

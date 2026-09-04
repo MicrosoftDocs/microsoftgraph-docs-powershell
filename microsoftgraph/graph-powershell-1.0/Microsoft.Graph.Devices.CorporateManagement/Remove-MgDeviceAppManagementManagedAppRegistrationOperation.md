@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedappregistrationoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgDeviceAppManagementManagedAppRegistrationOperation
 ---
@@ -14,9 +14,6 @@ title: Remove-MgDeviceAppManagementManagedAppRegistrationOperation
 ## SYNOPSIS
 
 Delete navigation property operations for deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,26 +46,13 @@ This cmdlet has the following aliases,
 
 Delete navigation property operations for deviceAppManagement
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Remove-MgDeviceAppManagementManagedAppRegistrationOperation -ManagedAppRegistrationId $managedAppRegistrationId -ManagedAppOperationId $managedAppOperationId
-
-```
-This example shows how to use the Remove-MgDeviceAppManagementManagedAppRegistrationOperation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -421,7 +405,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [DefaultManagedAppProtectionId <String>]: The unique identifier of defaultManagedAppProtection
   [DeviceCompliancePolicyStateId <String>]: The unique identifier of deviceCompliancePolicyState
@@ -462,26 +446,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgDeviceAppManagementManagedAppRegistrationOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedappregistrationoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedappregistrationoperation)
