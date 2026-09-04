@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmanageddeviceassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Rename-MgBetaDeviceManagementManagedDeviceAssignment
 ---
@@ -66,6 +66,16 @@ This cmdlet has the following aliases,
 
 Invoke action changeAssignments
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -97,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -168,7 +178,7 @@ HelpMessage: ''
 
 ### -DeviceAssignmentItems
 
-
+.
 To construct, see NOTES section for DEVICEASSIGNMENTITEMS properties and create a hash table.
 
 ```yaml
@@ -474,7 +484,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsIir33MDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphChangeassignmentsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsIir33MDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphChangeassignmentsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceAssignmentItems <IMicrosoftGraphDeviceAssignmentItem[]>]: 
     [AssignmentItemActionIntent <DeviceAssignmentItemIntent?>]: A list of possible assignment item action intent values on the application or configuration when executing this action on the managed device.
@@ -504,7 +514,7 @@ Max length is 40
 Device assignment item represents existing assigned Intune resource such as application or configuration.
 Currently supported device assignment item types are Application, DeviceConfiguration, DeviceManagementConfigurationPolicy and MobileAppConfiguration
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -616,27 +626,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Rename-MgBetaDeviceManagementManagedDeviceAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmanageddeviceassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/rename-mgbetadevicemanagementmanageddeviceassignment)

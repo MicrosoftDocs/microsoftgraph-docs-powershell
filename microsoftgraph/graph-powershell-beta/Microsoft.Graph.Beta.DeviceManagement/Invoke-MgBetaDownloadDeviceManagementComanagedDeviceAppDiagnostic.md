@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementcomanageddeviceappdiagnostic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic
 ---
@@ -46,13 +46,15 @@ This cmdlet has the following aliases,
 
 Invoke action downloadAppDiagnostics
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -79,7 +81,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -406,14 +408,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1K3Iuv6DevicemanagementComanageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1K3Iuv6DevicemanagementComanageddevicesMicrosoftGraphDownloadappdiagnosticsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Request <IMicrosoftGraphPowerliftDownloadRequest>]: Request used to download app diagnostic files.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Files <String[]>]: The list of files to download
     [PowerliftId <String>]: The unique id for the request
 
-REQUEST `<IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download app diagnostic files.
+REQUEST <IMicrosoftGraphPowerliftDownloadRequest>: Request used to download app diagnostic files.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Files <String[]>]: The list of files to download
   [PowerliftId <String>]: The unique id for the request
@@ -421,27 +423,4 @@ REQUEST `<IMicrosoftGraphPowerliftDownloadRequest>`: Request used to download ap
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementcomanageddeviceappdiagnostic)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetadownloaddevicemanagementcomanageddeviceappdiagnostic)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecategory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementDeviceCategory
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaDeviceManagementDeviceCategory
 ## SYNOPSIS
 
 Create new navigation property to deviceCategories for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,13 +45,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to deviceCategories for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -432,7 +431,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCategory>`: Device categories provides a way to organize your devices.
+BODYPARAMETER <IMicrosoftGraphDeviceCategory>: Device categories provides a way to organize your devices.
 Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
 You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -445,27 +444,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementDeviceCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecategory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecategory)

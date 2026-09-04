@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema
 ---
@@ -47,13 +47,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to androidForWorkAppConfigurationSchemas for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -408,7 +410,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema describing an Android for Work application's custom configurations.
+BODYPARAMETER <IMicrosoftGraphAndroidForWorkAppConfigurationSchema>: Schema describing an Android for Work application's custom configurations.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -442,27 +444,4 @@ SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>: Collect
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema)

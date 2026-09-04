@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/test-mgbetadevicemanagementassignmentfilter
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaDeviceManagementAssignmentFilter
 ---
@@ -47,13 +47,15 @@ This cmdlet has the following aliases,
 
 Invoke action validateFilter
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -80,7 +82,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -365,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceAndAppManagementAssignmentFilter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>]: A class containing the properties used for Assignment Filter.
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -390,7 +392,7 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
     [RoleScopeTags <String[]>]: Indicates role scope tags assigned for the assignment filter.
     [Rule <String>]: Rule definition of the assignment filter.
 
-DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER `<IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>`: A class containing the properties used for Assignment Filter.
+DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>: A class containing the properties used for Assignment Filter.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -416,27 +418,4 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
 
 ## RELATED LINKS
 
-- [Test-MgBetaDeviceManagementAssignmentFilter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/test-mgbetadevicemanagementassignmentfilter)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/test-mgbetadevicemanagementassignmentfilter)
