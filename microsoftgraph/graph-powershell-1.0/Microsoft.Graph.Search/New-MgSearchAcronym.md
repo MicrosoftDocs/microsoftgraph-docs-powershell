@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSearchAcronym
 ---
@@ -14,9 +14,6 @@ title: New-MgSearchAcronym
 ## SYNOPSIS
 
 Create a new acronym object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,18 +46,9 @@ This cmdlet has the following aliases,
 
 Create a new acronym object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
@@ -73,10 +61,6 @@ $params = @{
 }
 
 New-MgSearchAcronym -BodyParameter $params
-
-```
-This example shows how to use the New-MgSearchAcronym Cmdlet.
-
 
 ## PARAMETERS
 
@@ -540,7 +524,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
+BODYPARAMETER <IMicrosoftGraphSearchAcronym>: acronym
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: The search answer description that is shown on the search results page.
   [DisplayName <String>]: The search answer name that is displayed in search results.
@@ -563,7 +547,7 @@ Read-only.
   [StandsFor <String>]: What the acronym stands for.
   [State <String>]: answerState
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphSearchIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -575,27 +559,5 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 
 ## RELATED LINKS
 
-- [New-MgSearchAcronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym)
+- [](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0)

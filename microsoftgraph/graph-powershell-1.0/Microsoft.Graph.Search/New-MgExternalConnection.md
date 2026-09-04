@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgExternalConnection
 ---
@@ -14,9 +14,6 @@ title: New-MgExternalConnection
 ## SYNOPSIS
 
 Create a new externalConnection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -56,18 +53,9 @@ This cmdlet has the following aliases,
 
 Create a new externalConnection object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
@@ -78,10 +66,6 @@ $params = @{
 }
 
 New-MgExternalConnection -BodyParameter $params
-
-```
-This example shows how to use the New-MgExternalConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -282,7 +266,7 @@ HelpMessage: ''
 
 ### -Groups
 
-
+.
 To construct, see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
@@ -389,7 +373,7 @@ HelpMessage: ''
 
 ### -Items
 
-
+.
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
@@ -434,7 +418,7 @@ HelpMessage: ''
 
 ### -Operations
 
-
+.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
@@ -656,12 +640,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITYSETTINGS `<IMicrosoftGraphExternalConnectorsActivitySettings>`: activitySettings
+ACTIVITYSETTINGS <IMicrosoftGraphExternalConnectorsActivitySettings>: activitySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]: Specifies configurations to identify an externalItem based on a shared URL.
     [Priority <Int32?>]: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -804,7 +788,7 @@ Required.
         [ValuesJoinedBy <String>]: binaryOperator
   [State <String>]: connectionState
 
-CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
+CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthorizedAppIds <String[]>]: A collection of application IDs for registered Microsoft Entra apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
@@ -873,7 +857,7 @@ Read-only.
     [Target <String>]: The target of the error.
   [Status <String>]: connectionOperationStatus
 
-SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
+SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -916,7 +900,7 @@ For example, each string may not contain control characters, whitespace, or any 
  Required.
     [Type <String>]: propertyType
 
-SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
+SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
 Maximum of 2 search result templates per connection.
@@ -942,27 +926,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgExternalConnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection)
+- [](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0)
