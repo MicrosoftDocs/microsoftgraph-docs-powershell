@@ -15,6 +15,9 @@ title: Get-MgAppCatalogTeamAppDefinition
 
 The details for each version of the app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

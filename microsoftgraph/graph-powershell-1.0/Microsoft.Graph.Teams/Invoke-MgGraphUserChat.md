@@ -15,6 +15,9 @@ title: Invoke-MgGraphUserChat
 
 Unhide a chat for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaGraphUserChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)
