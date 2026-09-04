@@ -614,8 +614,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof)
-- [](https://learn.microsoft.com/graph/api/agentuser-list-transitivememberof?view=graph-rest-1.0)
+- [Get-MgUserTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-list-transitivememberof?view=graph-rest-1.0)
 
 
 

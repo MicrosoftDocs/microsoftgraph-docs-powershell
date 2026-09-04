@@ -55452,8 +55452,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser)
-- [](https://learn.microsoft.com/graph/api/user-post-users?view=graph-rest-1.0)
+- [New-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-post-users?view=graph-rest-1.0)
 
 
 
