@@ -618,7 +618,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappasandroidstoreappassignment)
+- [Update-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappasandroidstoreappassignment)
 
 
 
