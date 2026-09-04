@@ -962,7 +962,7 @@ PENDINGRETENTIONPERIODCHANGE `<IMicrosoftGraphRetentionPeriodChange>`: retention
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoredriveprotectionunit)
+- [Update-MgBetaSolutionBackupRestoreDriveProtectionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoredriveprotectionunit)
 
 
 
