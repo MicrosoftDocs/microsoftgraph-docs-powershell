@@ -15,6 +15,9 @@ title: Get-MgBetaUserChatTabTeamApp
 
 The application that is linked to the tab.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatTabTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatTabTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

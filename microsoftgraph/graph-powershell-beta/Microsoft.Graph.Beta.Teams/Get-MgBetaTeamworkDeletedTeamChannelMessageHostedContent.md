@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent
 
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

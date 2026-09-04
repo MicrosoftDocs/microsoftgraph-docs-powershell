@@ -15,6 +15,9 @@ title: Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction
 
 Invoke action unsetReaction
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgTeamworkDeletedTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamworkDeletedTeamChannelMessageReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)

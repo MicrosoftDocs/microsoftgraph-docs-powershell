@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleOpenShift
 
 The set of open shifts in a scheduling group in the schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
