@@ -497,7 +497,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy)
+- [Get-MgUserManagedAppPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermanagedapppolicy)
 
 
 
