@@ -16,6 +16,9 @@ title: Update-MgVirtualEventTownhall
 Update the properties of a virtualEventTownhall object.
 Only the Organizer and Co-organizer can make changes to a townhall event.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhall](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

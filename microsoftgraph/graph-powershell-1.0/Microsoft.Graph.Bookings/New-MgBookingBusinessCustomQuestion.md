@@ -15,6 +15,9 @@ title: New-MgBookingBusinessCustomQuestion
 
 Create a new bookingCustomQuestion object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
