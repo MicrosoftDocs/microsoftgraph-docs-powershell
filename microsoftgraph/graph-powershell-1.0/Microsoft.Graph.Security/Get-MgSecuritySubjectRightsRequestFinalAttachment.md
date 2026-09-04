@@ -422,8 +422,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalattachment)
-- [](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-1.0)
+- [Get-MgSecuritySubjectRightsRequestFinalAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalattachment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-1.0)
 
 
 

@@ -436,8 +436,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation)
-- [](https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0)
+- [Get-MgSecurityThreatIntelligenceHostReputation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0)
 
 
 

@@ -1406,8 +1406,8 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation)
-- [](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0)
+- [New-MgSecurityAttackSimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0)
 
 
 
