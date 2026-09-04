@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/send-mgbetausermanageddevicecustomnotificationtocompanyportal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal
 ---
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 
 Invoke action sendCustomNotificationToCompanyPortal
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -289,7 +299,7 @@ HelpMessage: ''
 
 ### -NotificationBody
 
-
+.
 
 ```yaml
 Type: System.String
@@ -316,7 +326,7 @@ HelpMessage: ''
 
 ### -NotificationTitle
 
-
+.
 
 ```yaml
 Type: System.String
@@ -530,12 +540,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NotificationBody <String>]: 
   [NotificationTitle <String>]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -613,27 +623,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/send-mgbetausermanageddevicecustomnotificationtocompanyportal)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/send-mgbetausermanageddevicecustomnotificationtocompanyportal)
