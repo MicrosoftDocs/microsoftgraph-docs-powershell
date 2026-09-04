@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDriveItemRetentionLabel
 ---
@@ -16,9 +16,6 @@ title: Update-MgBetaDriveItemRetentionLabel
 Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,9 +75,8 @@ For information about retention labels from an administrator's perspective, see 
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -91,10 +87,6 @@ $params = @{
 }
 
 Update-MgBetaDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDriveItemRetentionLabel Cmdlet.
-
 
 ## PARAMETERS
 
@@ -653,7 +645,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphItemRetentionLabel>`: itemRetentionLabel
+BODYPARAMETER <IMicrosoftGraphItemRetentionLabel>: itemRetentionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -691,7 +683,7 @@ Read-only.
     [IsRecordLocked <Boolean?>]: Specifies whether the item is locked.
 Read-write.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -718,7 +710,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LABELAPPLIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LABELAPPLIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -730,7 +722,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RETENTIONSETTINGS `<IMicrosoftGraphRetentionLabelSettings>`: retentionLabelSettings
+RETENTIONSETTINGS <IMicrosoftGraphRetentionLabelSettings>: retentionLabelSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BehaviorDuringRetentionPeriod <String>]: behaviorDuringRetentionPeriod
   [IsContentUpdateAllowed <Boolean?>]: Specifies whether updates to document content are allowed.
@@ -747,27 +739,5 @@ Read-write.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
+- [](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta)
