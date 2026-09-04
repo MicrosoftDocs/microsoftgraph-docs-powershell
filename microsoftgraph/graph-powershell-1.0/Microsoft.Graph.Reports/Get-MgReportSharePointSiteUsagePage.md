@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagepage)
-- [](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0)
+- [Get-MgReportSharePointSiteUsagePage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagepage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-1.0)
 
 
 

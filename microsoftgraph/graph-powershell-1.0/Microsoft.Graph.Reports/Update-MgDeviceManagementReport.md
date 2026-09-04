@@ -456,7 +456,7 @@ The maximum length allowed for this property is 128 characters.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
+- [Update-MgDeviceManagementReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
 
 
 
