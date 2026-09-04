@@ -404,7 +404,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootlistitemdriveitemcontentstream)
+- [Remove-MgBetaDriveRootListItemDriveItemContentStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootlistitemdriveitemcontentstream)
 
 
 
