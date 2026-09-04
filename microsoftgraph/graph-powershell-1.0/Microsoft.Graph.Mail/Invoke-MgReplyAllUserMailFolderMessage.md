@@ -786,8 +786,8 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyallusermailfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-1.0)
+- [Invoke-MgReplyAllUserMailFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/invoke-mgreplyallusermailfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-1.0)
 
 
 
