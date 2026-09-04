@@ -813,7 +813,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcresourcenamespaceresourceaction)
+- [New-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcresourcenamespaceresourceaction)
 
 
 
