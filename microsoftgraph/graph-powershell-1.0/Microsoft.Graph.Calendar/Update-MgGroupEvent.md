@@ -15,6 +15,9 @@ title: Update-MgGroupEvent
 
 Update the navigation property events in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
