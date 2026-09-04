@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventSession
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaVirtualEventSession
 ## SYNOPSIS
 
 Create new navigation property to sessions for solutions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -106,6 +103,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to sessions for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1208,7 +1215,7 @@ HelpMessage: ''
 
 ### -Presenters
 
-
+.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
@@ -1326,7 +1333,7 @@ HelpMessage: ''
 
 ### -Registrations
 
-
+.
 To construct, see NOTES section for REGISTRATIONS properties and create a hash table.
 
 ```yaml
@@ -1705,7 +1712,7 @@ Read-only.
   [TotalParticipantCount <Int32?>]: Total number of participants.
 Read-only.
 
-AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
+AUDIOCONFERENCING <IMicrosoftGraphAudioConferencing>: audioConferencing
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConferenceId <String>]: The conference id of the online meeting.
   [DialinUrl <String>]: A URL to the externally-accessible web page that contains dial-in information.
@@ -1714,7 +1721,7 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   [TollNumber <String>]: The toll number that connects to the Audio Conference Provider.
   [TollNumbers <String[]>]: List of toll numbers that are displayed in the meeting invite.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventSession>`: virtualEventSession
+BODYPARAMETER <IMicrosoftGraphVirtualEventSession>: virtualEventSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -1910,18 +1917,18 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageId <String>]: The unique identifier for a message in a Microsoft Teams channel.
   [ReplyChainMessageId <String>]: The ID of the reply message.
   [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
 
-CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
+CHATRESTRICTIONS <IMicrosoftGraphChatRestrictions>: chatRestrictions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
 
-CLOUDVIDEOINTEROPINFO `<IMicrosoftGraphCloudVideoInteropInfo>`: cloudVideoInteropInfo
+CLOUDVIDEOINTEROPINFO <IMicrosoftGraphCloudVideoInteropInfo>: cloudVideoInteropInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
 Read-only.
@@ -1929,14 +1936,14 @@ Read-only.
   [VideoTeleconferenceId <String>]: The video teleconferencing ID.
 Read-only.
 
-ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1958,12 +1965,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-JOININFORMATION `<IMicrosoftGraphItemBody>`: itemBody
+JOININFORMATION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-JOINMEETINGIDSETTINGS `<IMicrosoftGraphJoinMeetingIdSettings>`: joinMeetingIdSettings
+JOINMEETINGIDSETTINGS <IMicrosoftGraphJoinMeetingIdSettings>: joinMeetingIdSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsPasscodeRequired <Boolean?>]: Indicates whether a passcode is required to join a meeting when using joinMeetingId.
 Optional.
@@ -1974,7 +1981,7 @@ Read-only.
  Optional.
 Read-only.
 
-LOBBYBYPASSSETTINGS `<IMicrosoftGraphLobbyBypassSettings>`: lobbyBypassSettings
+LOBBYBYPASSSETTINGS <IMicrosoftGraphLobbyBypassSettings>: lobbyBypassSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
@@ -2370,18 +2377,18 @@ Read-only.
   [UserId <String>]: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-SENSITIVITYLABELASSIGNMENT `<IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>`: onlineMeetingSensitivityLabelAssignment
+SENSITIVITYLABELASSIGNMENT <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>: onlineMeetingSensitivityLabelAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SensitivityLabelId <String>]: Id of the sensitivity label that is applied to the Teams meeting.
 
-STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
+WATERMARKPROTECTION <IMicrosoftGraphWatermarkProtectionValues>: watermarkProtectionValues
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabledForContentSharing <Boolean?>]: Indicates whether to apply a watermark to any shared content.
   [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
@@ -2389,27 +2396,4 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 
 ## RELATED LINKS
 
-- [New-MgBetaVirtualEventSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventsession)

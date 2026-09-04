@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaBookingBusinessService
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaBookingBusinessService
 ## SYNOPSIS
 
 Update the navigation property services in bookingBusinesses
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -145,26 +142,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property services in bookingBusinesses
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaBookingBusinessService Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingService"
 	DefaultDuration = "PT30M"
 }
 Update-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BookingServiceId $bookingServiceId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaBookingBusinessService Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -1561,7 +1548,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service offered by a booking business.
+BODYPARAMETER <IMicrosoftGraphBookingService>: Represents a particular service offered by a booking business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name for the derived entity, which interfaces with customers.
   [Id <String>]: The unique identifier for an entity.
@@ -1660,7 +1647,7 @@ CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment[]>: Contains the set o
   [IsRequired <Boolean?>]: Indicates whether it's mandatory to answer the custom question.
   [QuestionId <String>]: The ID of the custom question.
 
-DEFAULTLOCATION `<IMicrosoftGraphLocation>`: location
+DEFAULTLOCATION <IMicrosoftGraphLocation>: location
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1694,7 +1681,7 @@ The value of this property is available only when reading this bookingService by
 It's denoted in ISO 8601 format.
   [Recipients <String>]: bookingReminderRecipients
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1716,7 +1703,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowStaffSelection <Boolean?>]: True if to allow customers to choose a specific person for the booking.
   [CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow[]>]: Custom availability of the service in a given time frame of the service.
@@ -1749,26 +1736,4 @@ Use the email address specified in the email property of the bookingBusiness ent
 
 ## RELATED LINKS
 
-- [Update-MgBetaBookingBusinessService](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessservice)

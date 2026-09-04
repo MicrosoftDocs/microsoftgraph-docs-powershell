@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaBookingBusinessAppointment
 ---
@@ -14,9 +14,6 @@ title: Stop-MgBetaBookingBusinessAppointment
 ## SYNOPSIS
 
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,30 +66,18 @@ This cmdlet has the following aliases,
 
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | BookingsAppointment.ReadWrite.All, Bookings.Manage.All, Bookings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
-	cancellationMessage = "Your appointment has been successfully cancelled. Please call us again."
+	cancellationMessage = "Your appointment has been successfully cancelled.
+Please call us again."
 }
 
 Stop-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
-
-```
-This example shows how to use the Stop-MgBetaBookingBusinessAppointment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -125,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -228,7 +213,7 @@ HelpMessage: ''
 
 ### -CancellationMessage
 
-
+.
 
 ```yaml
 Type: System.String
@@ -528,11 +513,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CancellationMessage <String>]: 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -557,27 +542,5 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment)
+- [](https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-beta)
