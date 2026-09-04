@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDevice
 ---
@@ -14,9 +14,6 @@ title: Get-MgDevice
 ## SYNOPSIS
 
 Get the properties and relationships of a device object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,26 +55,13 @@ This cmdlet has the following aliases,
 
 Get the properties and relationships of a device object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a device
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDevice -DeviceId $deviceId
-
-```
-This example will get a device
-
 
 ## PARAMETERS
 
@@ -561,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -603,28 +587,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
+- [](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/device-list?view=graph-rest-1.0)

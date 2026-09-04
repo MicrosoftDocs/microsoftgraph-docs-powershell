@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminPeopleProfileCardProperty
 ---
@@ -16,9 +16,6 @@ title: New-MgAdminPeopleProfileCardProperty
 Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,14 +50,12 @@ The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	directoryPropertyName = "CustomAttribute1"
 	annotations = @(
 		@{
 			displayName = "Cost Center"
@@ -72,13 +67,11 @@ $params = @{
 			)
 		}
 	)
+	directoryPropertyName = "CustomAttribute1"
+	isVisible = $true
 }
 
 New-MgAdminPeopleProfileCardProperty -BodyParameter $params
-
-```
-This example shows how to use the New-MgAdminPeopleProfileCardProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -464,7 +457,7 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
     [DisplayName <String>]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
     [LanguageTag <String>]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
 
-BODYPARAMETER `<IMicrosoftGraphProfileCardProperty>`: profileCardProperty
+BODYPARAMETER <IMicrosoftGraphProfileCardProperty>: profileCardProperty
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -483,27 +476,5 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 
 ## RELATED LINKS
 
-- [New-MgAdminPeopleProfileCardProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
+- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-1.0)

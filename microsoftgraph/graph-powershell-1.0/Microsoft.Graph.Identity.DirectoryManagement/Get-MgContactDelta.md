@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgContactDelta
 ---
@@ -15,9 +15,6 @@ title: Get-MgContactDelta
 
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContactDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,48 +39,25 @@ This cmdlet has the following aliases,
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 For more information, see Use delta query to track changes in Microsoft Graph data for details.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Default properties
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContactDelta
 
-```
-This example will default properties
-
-### Example 2: Selecting three properties
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgContactDelta -Property "displayName,jobTitle,mail" 
+Get-MgContactDelta -Property "displayName,jobTitle,mail"
 
-```
-This example shows selecting three properties
-
-### Example 3: Alternative minimal response behavior
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgContactDelta -Property "displayName,jobTitle,mail" 
-
-```
-This example will alternative minimal response behavior
-
+Get-MgContactDelta -Property "displayName,jobTitle,mail"
 
 ## PARAMETERS
 
@@ -495,27 +469,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgContactDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta)
+- [](https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-1.0)
