@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteAnalyticItemActivityStatActivity
 
 Delete navigation property activities for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

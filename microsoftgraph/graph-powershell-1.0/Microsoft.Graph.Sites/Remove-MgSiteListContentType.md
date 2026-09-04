@@ -15,6 +15,9 @@ title: Remove-MgSiteListContentType
 
 Delete navigation property contentTypes for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

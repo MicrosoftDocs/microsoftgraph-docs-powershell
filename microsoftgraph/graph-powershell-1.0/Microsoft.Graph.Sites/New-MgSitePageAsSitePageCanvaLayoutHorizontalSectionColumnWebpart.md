@@ -15,6 +15,9 @@ title: New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart
 
 Create new navigation property to webparts for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
