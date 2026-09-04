@@ -975,8 +975,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration)
-- [](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-1.0)
+- [New-MgDomainFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-1.0)
 
 
 

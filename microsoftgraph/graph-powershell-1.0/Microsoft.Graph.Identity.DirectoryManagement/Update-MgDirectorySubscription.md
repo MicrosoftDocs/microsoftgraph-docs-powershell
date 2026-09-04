@@ -873,7 +873,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorysubscription)
+- [Update-MgDirectorySubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorysubscription)
 
 
 

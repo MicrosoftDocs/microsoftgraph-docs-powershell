@@ -620,8 +620,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilepropertysetting)
-- [](https://learn.microsoft.com/graph/api/profilepropertysetting-update?view=graph-rest-1.0)
+- [Update-MgAdminPeopleProfilePropertySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilepropertysetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilepropertysetting-update?view=graph-rest-1.0)
 
 
 

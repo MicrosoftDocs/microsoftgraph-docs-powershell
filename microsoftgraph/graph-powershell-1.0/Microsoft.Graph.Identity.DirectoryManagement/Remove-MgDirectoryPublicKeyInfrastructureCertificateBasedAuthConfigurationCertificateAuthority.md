@@ -463,8 +463,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-delete-certificateauthorities?view=graph-rest-1.0)
+- [Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthpki-delete-certificateauthorities?view=graph-rest-1.0)
 
 
 
