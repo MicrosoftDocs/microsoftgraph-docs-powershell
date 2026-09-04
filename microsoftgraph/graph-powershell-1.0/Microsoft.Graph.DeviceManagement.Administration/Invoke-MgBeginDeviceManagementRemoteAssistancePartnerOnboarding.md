@@ -409,8 +409,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgbegindevicemanagementremoteassistancepartneronboarding)
-- [](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0)
+- [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgbegindevicemanagementremoteassistancepartneronboarding)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0)
 
 
 
