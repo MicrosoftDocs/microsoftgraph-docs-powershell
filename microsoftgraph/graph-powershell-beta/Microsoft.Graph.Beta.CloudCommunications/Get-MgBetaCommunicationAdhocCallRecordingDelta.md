@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationAdhocCallRecordingDelta
 
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationAdhocCallRecordingDelta](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationAdhocCallRecordingDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaUserOnlineMeetingAttendeeReport
 The content stream of the attendee report of a Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
