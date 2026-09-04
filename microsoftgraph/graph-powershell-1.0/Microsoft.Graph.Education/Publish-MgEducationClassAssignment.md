@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Publish-MgEducationClassAssignment
 ---
@@ -21,9 +21,6 @@ When an assignment is in draft status, students will not see the assignment, nor
 Calling this API creates educationSubmission objects and displays the assignment in each student's list.
 The status of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,26 +58,13 @@ Calling this API creates educationSubmission objects and displays the assignment
 The status of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
-```
-This example shows how to use the Publish-MgEducationClassAssignment Cmdlet.
-
 
 ## PARAMETERS
 
@@ -391,7 +375,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -416,27 +400,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Publish-MgEducationClassAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment)
+- [](https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-1.0)

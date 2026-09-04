@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreflectcheck
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationReportReflectCheck
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationReportReflectCheck
 ## SYNOPSIS
 
 Details of check-in responses.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReflectCheck](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReflectCheck?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -59,28 +56,18 @@ This cmdlet has the following aliases,
 Details of check-in responses.
 
 ## EXAMPLES
-### Example 1: Get a list of the Reflect check-in responses from the last 24 hours
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationReportReflectCheck
 
-```
-This example will get a list of the reflect check-in responses from the last 24 hours
-
-### Example 2: Get a list of the Reflect check-in responses for a specific date using $filter
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationReportReflectCheck -Filter "submitDateTime gt 2025-06-11T00:00:00.000Z and submitDateTime lt 2025-06-12T00:00:00Z" 
-
-```
-This example will get a list of the reflect check-in responses for a specific date using $filter
-
+Get-MgEducationReportReflectCheck -Filter "submitDateTime gt 2025-06-11T00:00:00.000Z and submitDateTime lt 2025-06-12T00:00:00Z"
 
 ## PARAMETERS
 
@@ -542,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -567,27 +554,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationReportReflectCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreflectcheck)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportsroot-list-reflectcheckinresponses?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationreportreflectcheck)
+- [](https://learn.microsoft.com/graph/api/reportsroot-list-reflectcheckinresponses?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEducationUserTaughtClass
 ---
@@ -14,9 +14,6 @@ title: Get-MgEducationUserTaughtClass
 ## SYNOPSIS
 
 Classes for which the user is a teacher.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,17 +57,12 @@ This cmdlet has the following aliases,
 Classes for which the user is a teacher.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationUserTaughtClass -EducationUserId $educationUserId
-
-```
-This example shows how to use the Get-MgEducationUserTaughtClass Cmdlet.
-
 
 ## PARAMETERS
 
@@ -559,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -584,27 +576,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgEducationUserTaughtClass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-list-taughtclasses?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationusertaughtclass)
+- [](https://learn.microsoft.com/graph/api/educationuser-list-taughtclasses?view=graph-rest-1.0)

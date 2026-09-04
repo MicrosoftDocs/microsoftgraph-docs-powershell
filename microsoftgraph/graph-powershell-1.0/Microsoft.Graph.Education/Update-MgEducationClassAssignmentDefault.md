@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentdefault
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationClassAssignmentDefault
 ---
@@ -15,9 +15,6 @@ title: Update-MgEducationClassAssignmentDefault
 
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentDefault?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -73,18 +70,9 @@ This cmdlet has the following aliases,
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -94,10 +82,6 @@ $params = @{
 }
 
 Update-MgEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgEducationClassAssignmentDefault Cmdlet.
-
 
 ## PARAMETERS
 
@@ -596,7 +580,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentDefaults>`: educationAssignmentDefaults
+BODYPARAMETER <IMicrosoftGraphEducationAssignmentDefaults>: educationAssignmentDefaults
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -607,7 +591,7 @@ Default value is 23:59:00.
   [NotificationChannelUrl <String>]: Default Teams channel to which notifications are sent.
 Default value is null.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -632,27 +616,5 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgEducationClassAssignmentDefault](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentdefault)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentdefault)
+- [](https://learn.microsoft.com/graph/api/educationassignmentdefaults-update?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreportreadingassignmentsubmission
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationReportReadingAssignmentSubmission
 ---
@@ -14,9 +14,6 @@ title: Update-MgEducationReportReadingAssignmentSubmission
 ## SYNOPSIS
 
 Update the navigation property readingAssignmentSubmissions in education
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationReportReadingAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -82,6 +79,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property readingAssignmentSubmissions in education
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1042,7 +1049,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphReadingAssignmentSubmission>`: readingAssignmentSubmission
+BODYPARAMETER <IMicrosoftGraphReadingAssignmentSubmission>: readingAssignmentSubmission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1078,7 +1085,7 @@ CHALLENGINGWORDS <IMicrosoftGraphChallengingWord[]>: List of words that the stud
   [Count <Int64?>]: Number of times the word was found challenging by the student during the reading session.
   [Word <String>]: The specific word that the student found challenging during the reading session.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -1103,27 +1110,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgEducationReportReadingAssignmentSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreportreadingassignmentsubmission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationreportreadingassignmentsubmission)
