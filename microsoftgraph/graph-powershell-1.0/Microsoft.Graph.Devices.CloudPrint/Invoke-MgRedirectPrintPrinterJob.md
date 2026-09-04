@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintprinterjob
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CloudPrint
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgRedirectPrintPrinterJob
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgRedirectPrintPrinterJob
 Redirect a print job to a different printer.
 Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRedirectPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaRedirectPrintPrinterJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -76,9 +73,8 @@ Redirecting a print job will only succeed if there is a printTask in a processin
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -119,10 +115,6 @@ $params = @{
 
 Invoke-MgRedirectPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgRedirectPrintPrinterJob Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -154,7 +146,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -253,7 +245,7 @@ HelpMessage: ''
 
 ### -DestinationPrinterId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -564,7 +556,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsB8DgksPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsB8DgksPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Configuration <IMicrosoftGraphPrintJobConfiguration>]: printJobConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -603,7 +595,7 @@ Read-only.
     [Scaling <String>]: printScaling
   [DestinationPrinterId <String>]: 
 
-CONFIGURATION `<IMicrosoftGraphPrintJobConfiguration>`: printJobConfiguration
+CONFIGURATION <IMicrosoftGraphPrintJobConfiguration>: printJobConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Collate <Boolean?>]: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
   [ColorMode <String>]: printColorMode
@@ -639,7 +631,7 @@ Read-only.
   [Quality <String>]: printQuality
   [Scaling <String>]: printScaling
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -657,27 +649,5 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgRedirectPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintprinterjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintprinterjob)
+- [](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-1.0)
