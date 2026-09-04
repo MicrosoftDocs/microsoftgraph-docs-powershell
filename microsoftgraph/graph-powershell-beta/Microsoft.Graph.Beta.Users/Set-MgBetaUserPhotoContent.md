@@ -16,6 +16,9 @@ title: Set-MgBetaUserPhotoContent
 The user's profile photo.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserPhotoContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
