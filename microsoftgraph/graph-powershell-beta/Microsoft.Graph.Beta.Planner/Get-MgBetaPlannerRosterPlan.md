@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPlannerRosterPlan
 ---
@@ -57,17 +57,12 @@ This cmdlet has the following aliases,
 Retrieves the plans contained by the plannerRoster.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerRosterPlan -PlannerRosterId $plannerRosterId
-
-```
-This example shows how to use the Get-MgBetaPlannerRosterPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -556,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -571,27 +566,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPlannerRosterPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerroster-list-plans?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplan)
+- [](https://learn.microsoft.com/graph/api/plannerroster-list-plans?view=graph-rest-beta)

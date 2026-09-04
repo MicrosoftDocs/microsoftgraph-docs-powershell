@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaunarchiveplannerplan
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUnarchivePlannerPlan
 ---
@@ -69,18 +69,9 @@ Unarchive a plannerPlan object.
 Unarchiving a plan, also unarchives the plannerTasks and plannerBuckets in the plan.
 Only a plan that is archived can be unarchived.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -89,10 +80,6 @@ $params = @{
 }
 
 Invoke-MgBetaUnarchivePlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaUnarchivePlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -125,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -287,7 +274,7 @@ HelpMessage: ''
 
 ### -Justification
 
-
+.
 
 ```yaml
 Type: System.String
@@ -501,11 +488,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsQm9MadPlannerPlansPlannerplanIdMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQm9MadPlannerPlansPlannerplanIdMicrosoftGraphUnarchivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Justification <String>]: 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -520,27 +507,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUnarchivePlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaunarchiveplannerplan)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-unarchive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaunarchiveplannerplan)
+- [](https://learn.microsoft.com/graph/api/plannerplan-unarchive?view=graph-rest-beta)

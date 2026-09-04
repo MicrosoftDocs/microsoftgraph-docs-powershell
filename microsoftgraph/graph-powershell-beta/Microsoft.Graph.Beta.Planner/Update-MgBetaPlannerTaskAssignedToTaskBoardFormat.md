@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlannerTaskAssignedToTaskBoardFormat
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPlannerTaskAssignedToTaskBoardFormat
 ## SYNOPSIS
 
 Update the properties of plannerAssignedToTaskBoardTaskFormat object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Update the properties of plannerAssignedToTaskBoardTaskFormat object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Tasks.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -92,12 +80,7 @@ $params = @{
 	}
 }
 
-Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
-
-
-```
-This example shows how to use the Update-MgBetaPlannerTaskAssignedToTaskBoardFormat Cmdlet.
-
+Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
 
 ## PARAMETERS
 
@@ -562,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
+BODYPARAMETER <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>: plannerAssignedToTaskBoardTaskFormat
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -571,7 +554,7 @@ Read-only.
   [UnassignedOrderHint <String>]: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
@@ -586,27 +569,5 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlannerTaskAssignedToTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat)
+- [](https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-update?view=graph-rest-beta)
