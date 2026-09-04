@@ -64,8 +64,9 @@ Create new navigation property to complianceManagementPartners for deviceManagem
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -107,6 +108,10 @@ $params = @{
 }
 
 New-MgDeviceManagementComplianceManagementPartner -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementComplianceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 
