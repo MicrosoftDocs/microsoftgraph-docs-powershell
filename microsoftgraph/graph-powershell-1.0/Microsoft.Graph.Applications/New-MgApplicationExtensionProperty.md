@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgApplicationExtensionProperty
 ---
@@ -14,9 +14,6 @@ title: New-MgApplicationExtensionProperty
 ## SYNOPSIS
 
 Create a new directory extension definition, represented by an extensionProperty object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,18 +69,9 @@ This cmdlet has the following aliases,
 
 Create a new directory extension definition, represented by an extensionProperty object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Applications
 
@@ -97,10 +85,6 @@ $params = @{
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the New-MgApplicationExtensionProperty Cmdlet.
-
 
 ## PARAMETERS
 
@@ -693,7 +677,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExtensionProperty>`: extensionProperty
+BODYPARAMETER <IMicrosoftGraphExtensionProperty>: extensionProperty
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -719,7 +703,7 @@ Supports $filter (eq).
 Not nullable.
 UserGroupAdministrativeUnitApplicationDeviceOrganization
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -749,27 +733,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgApplicationExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-extensionproperty?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty)
+- [](https://learn.microsoft.com/graph/api/application-post-extensionproperty?view=graph-rest-1.0)
