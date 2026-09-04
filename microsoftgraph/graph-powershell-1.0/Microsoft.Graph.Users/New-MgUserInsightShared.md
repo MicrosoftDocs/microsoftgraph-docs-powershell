@@ -519,7 +519,7 @@ HelpMessage: ''
 
 ### -SharingHistory
 
-.
+
 To construct, see NOTES section for SHARINGHISTORY properties and create a hash table.
 
 ```yaml
