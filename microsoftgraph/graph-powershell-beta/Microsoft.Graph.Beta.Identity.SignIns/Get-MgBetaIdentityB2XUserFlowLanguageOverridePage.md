@@ -73,12 +73,17 @@ This collection only allows to modify the content of the page, any other modific
 | Application | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2XUserFlowLanguageOverridePage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
+```
+This example shows how to use the Get-MgBetaIdentityB2XUserFlowLanguageOverridePage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
