@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicehealth
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamworkDeviceHealth
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property health in teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -715,7 +725,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
+BODYPARAMETER <IMicrosoftGraphTeamworkDeviceHealth>: teamworkDeviceHealth
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -781,13 +791,13 @@ Each vendor has a unique ID.
     [PartnerAgentSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]: teamworkSoftwareUpdateStatus
     [TeamsClientSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]: teamworkSoftwareUpdateStatus
 
-CONNECTION `<IMicrosoftGraphTeamworkConnection>`: teamworkConnection
+CONNECTION <IMicrosoftGraphTeamworkConnection>: teamworkConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConnectionStatus <String>]: teamworkConnectionStatus
   [LastModifiedDateTime <DateTime?>]: Time at which the state was last changed.
 For example, indicates connected since when the state is connected and disconnected since when the state is disconnected.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -799,7 +809,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-HARDWAREHEALTH `<IMicrosoftGraphTeamworkHardwareHealth>`: teamworkHardwareHealth
+HARDWAREHEALTH <IMicrosoftGraphTeamworkHardwareHealth>: teamworkHardwareHealth
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ComputeHealth <IMicrosoftGraphTeamworkPeripheralHealth>]: teamworkPeripheralHealth
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -821,7 +831,7 @@ Each product from a vendor has its own ID.
 Each vendor has a unique ID.
   [HdmiIngestHealth <IMicrosoftGraphTeamworkPeripheralHealth>]: teamworkPeripheralHealth
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -868,7 +878,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -880,7 +890,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LOGINSTATUS `<IMicrosoftGraphTeamworkLoginStatus>`: teamworkLoginStatus
+LOGINSTATUS <IMicrosoftGraphTeamworkLoginStatus>: teamworkLoginStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExchangeConnection <IMicrosoftGraphTeamworkConnection>]: teamworkConnection
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -890,7 +900,7 @@ For example, indicates connected since when the state is connected and disconnec
   [SkypeConnection <IMicrosoftGraphTeamworkConnection>]: teamworkConnection
   [TeamsConnection <IMicrosoftGraphTeamworkConnection>]: teamworkConnection
 
-PERIPHERALSHEALTH `<IMicrosoftGraphTeamworkPeripheralsHealth>`: teamworkPeripheralsHealth
+PERIPHERALSHEALTH <IMicrosoftGraphTeamworkPeripheralsHealth>: teamworkPeripheralsHealth
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CommunicationSpeakerHealth <IMicrosoftGraphTeamworkPeripheralHealth>]: teamworkPeripheralHealth
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -916,7 +926,7 @@ Each vendor has a unique ID.
   [RoomCameraHealth <IMicrosoftGraphTeamworkPeripheralHealth>]: teamworkPeripheralHealth
   [SpeakerHealth <IMicrosoftGraphTeamworkPeripheralHealth>]: teamworkPeripheralHealth
 
-SOFTWAREUPDATEHEALTH `<IMicrosoftGraphTeamworkSoftwareUpdateHealth>`: teamworkSoftwareUpdateHealth
+SOFTWAREUPDATEHEALTH <IMicrosoftGraphTeamworkSoftwareUpdateHealth>: teamworkSoftwareUpdateHealth
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdminAgentSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]: teamworkSoftwareUpdateStatus
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -932,27 +942,4 @@ SOFTWAREUPDATEHEALTH `<IMicrosoftGraphTeamworkSoftwareUpdateHealth>`: teamworkSo
 
 ## RELATED LINKS
 
-- [Update-MgBetaTeamworkDeviceHealth](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicehealth)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicehealth)

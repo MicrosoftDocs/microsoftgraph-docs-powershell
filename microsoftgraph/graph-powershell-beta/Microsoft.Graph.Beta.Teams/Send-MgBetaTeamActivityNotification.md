@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Send-MgBetaTeamActivityNotification
 ---
@@ -15,9 +15,6 @@ title: Send-MgBetaTeamActivityNotification
 
 Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgTeamActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgTeamActivityNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -76,18 +73,9 @@ This cmdlet has the following aliases,
 Send an activity feed notification in the scope of a team.
 For more information, see sending Teams activity notifications.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsActivity.Send,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsActivity.Send.Group, TeamsActivity.Send,  |
-
 ## EXAMPLES
-### Example 1: Notify a user about pending finance approval requests
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -114,12 +102,7 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about pending finance approval requests
-
-### Example 2: Notify a user about a channel tab
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -150,12 +133,7 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about a channel tab
-
-### Example 3: Notify a user about a channel tab using the user's principal name
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -186,12 +164,7 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about a channel tab using the user's principal name
-
-### Example 4: Notify a user about an event using a custom topic
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -219,12 +192,7 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify a user about an event using a custom topic
-
-### Example 5: Notify the team members about pending finance approval requests
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -251,12 +219,7 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify the team members about pending finance approval requests
-
-### Example 6: Notify the channel members about pending finance approval requests
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -284,15 +247,11 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-```
-This example will notify the channel members about pending finance approval requests
-
-
 ## PARAMETERS
 
 ### -ActivityType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -346,7 +305,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -395,7 +354,7 @@ HelpMessage: ''
 
 ### -ChainId
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -507,7 +466,7 @@ HelpMessage: ''
 
 ### -IconId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -750,7 +709,7 @@ HelpMessage: ''
 
 ### -TeamsAppId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -777,7 +736,7 @@ HelpMessage: ''
 
 ### -TemplateParameters
 
-
+.
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
@@ -887,7 +846,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityType <String>]: 
   [ChainId <Int64?>]: 
@@ -911,7 +870,7 @@ If the value is text, this must be a plain text value.
     [WebUrl <String>]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -958,7 +917,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -967,7 +926,7 @@ TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Source <String>]: teamworkActivityTopicSource
   [Value <String>]: The topic value.
@@ -979,27 +938,5 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [Send-MgBetaTeamActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetateamactivitynotification)
+- [](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-beta)

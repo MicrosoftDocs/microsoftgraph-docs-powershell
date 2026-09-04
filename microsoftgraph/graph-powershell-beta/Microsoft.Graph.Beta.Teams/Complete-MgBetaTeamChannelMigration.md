@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Complete-MgBetaTeamChannelMigration
 ---
@@ -18,9 +18,6 @@ Complete migration operations were initially restricted to newly created standar
 For more information, see Import third-party platform messages to Teams using Microsoft Graph.
 Consider the following points when completing migration for new and existing channels: After a completeMigration request is made for existing or new channels, you can still import more messages into the team by calling channel: startMigration.
 This API supportes the following channel types.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Complete-MgTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamChannelMigration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,28 +53,18 @@ Consider the following points when completing migration for new and existing cha
 This API supportes the following channel types.
 
 ## EXAMPLES
-### Example 1: Complete the migration when a channel is in migration mode
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
-
-```
-This example will complete the migration when a channel is in migration mode
-
-### Example 2: Complete the migration when a channel isn't in migration mode
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
-```
-This example will complete the migration when a channel isn't in migration mode
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Teams
+
+Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -409,7 +396,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -459,27 +446,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Complete-MgBetaTeamChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamchannelmigration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamchannelmigration)
+- [](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-beta)

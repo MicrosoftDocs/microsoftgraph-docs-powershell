@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAppCatalogTeamApp
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaAppCatalogTeamApp
 ## SYNOPSIS
 
 Update the navigation property teamsApps in appCatalogs
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property teamsApps in appCatalogs
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -640,7 +647,7 @@ Required.
   [TeamsAppId <String>]: The ID from the Teams app manifest.
   [Version <String>]: The version number of the application.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsApp>`: teamsApp
+BODYPARAMETER <IMicrosoftGraphTeamsApp>: teamsApp
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -721,7 +728,7 @@ Required.
   [DistributionMethod <String>]: teamsAppDistributionMethod
   [ExternalId <String>]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -771,27 +778,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaAppCatalogTeamApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamapp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamapp)

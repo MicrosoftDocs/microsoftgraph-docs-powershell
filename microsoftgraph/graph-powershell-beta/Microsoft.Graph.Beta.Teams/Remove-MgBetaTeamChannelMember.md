@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelmember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaTeamChannelMember
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaTeamChannelMember
 ## SYNOPSIS
 
 Delete navigation property allMembers for teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -106,17 +103,12 @@ This cmdlet has the following aliases,
 Delete navigation property allMembers for teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId
-
-```
-This example shows how to use the Remove-MgBetaTeamChannelMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -149,7 +141,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -591,7 +583,7 @@ HelpMessage: ''
 
 ### -Values
 
-
+.
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
@@ -677,7 +669,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsCpcqklTeamsTeamIdChannelsChannelIdMembersMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Values <IMicrosoftGraphConversationMember[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -691,7 +683,7 @@ An Out-of-tenant external member is assigned the owner role.
     [VisibleHistoryStartDateTime <DateTime?>]: The timestamp denoting how far back a conversation's history is shared with the conversation member.
 This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -753,28 +745,6 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [Remove-MgBetaTeamChannelMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelmember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelmember)
+- [](https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/conversationmember-remove?view=graph-rest-beta)

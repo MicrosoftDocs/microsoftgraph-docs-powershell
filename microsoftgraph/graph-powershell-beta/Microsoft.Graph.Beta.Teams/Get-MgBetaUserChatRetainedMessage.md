@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatretainedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserChatRetainedMessage
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaUserChatRetainedMessage
 
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserChatRetainedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatRetainedMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,26 +49,13 @@ This cmdlet has the following aliases,
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Not supported |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Chat.Read.All, Chat.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaUserChatRetainedMessage -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserChatRetainedMessage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -489,7 +473,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -539,27 +523,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserChatRetainedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatretainedmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatretainedmessage)
+- [](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)

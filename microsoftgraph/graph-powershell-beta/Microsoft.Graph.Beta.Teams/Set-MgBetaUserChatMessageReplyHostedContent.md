@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetauserchatmessagereplyhostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserChatMessageReplyHostedContent
 ---
@@ -15,9 +15,6 @@ title: Set-MgBetaUserChatMessageReplyHostedContent
 
 The unique identifier for an entity.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgUserChatMessageReplyHostedContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,6 +47,16 @@ This cmdlet has the following aliases,
 
 The unique identifier for an entity.
 Read-only.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -203,7 +210,7 @@ HelpMessage: ''
 
 ### -Data
 
-
+.
 
 ```yaml
 Type: System.IO.Stream
@@ -517,7 +524,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -567,27 +574,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserChatMessageReplyHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetauserchatmessagereplyhostedcontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetauserchatmessagereplyhostedcontent)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamappdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAppCatalogTeamAppDefinition
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaAppCatalogTeamAppDefinition
 Update an app previously published to the Microsoft Teams app catalog.
 To update an app, the distributionMethod property for the app must be set to organization.
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -85,18 +82,9 @@ Update an app previously published to the Microsoft Teams app catalog.
 To update an app, the distributionMethod property for the app must be set to organization.
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -105,12 +93,7 @@ $params = app.zip
 
 New-MgBetaAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -BodyParameter $params
 
-```
-This example will update an application previously published to the microsoft teams app catalog
-
-### Example 2: Update a new version of an existing app for admin review before publication in the current tenant catalog
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -118,10 +101,6 @@ $params = app.zip
 
 
 New-MgBetaAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -Requiresreview true  -BodyParameter $params
-
-```
-This example will update a new version of an existing app for admin review before publication in the current tenant catalog
-
 
 ## PARAMETERS
 
@@ -418,7 +397,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -591,7 +570,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -758,7 +737,7 @@ HelpMessage: ''
 
 ### -Shortdescription
 
-
+.
 
 ```yaml
 Type: System.String
@@ -920,7 +899,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
+AUTHORIZATION <IMicrosoftGraphTeamsAppAuthorization>: teamsAppAuthorization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientAppId <String>]: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
   [RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]: teamsAppPermissionSet
@@ -929,7 +908,7 @@ AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
       [PermissionType <String>]: teamsAppResourceSpecificPermissionType
       [PermissionValue <String>]: The name of the resource-specific permission.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
+BODYPARAMETER <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1004,7 +983,7 @@ Required.
   [TeamsAppId <String>]: The ID from the Teams app manifest.
   [Version <String>]: The version number of the application.
 
-COLORICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
+COLORICON <IMicrosoftGraphTeamsAppIcon>: teamsAppIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1018,7 +997,7 @@ Bytes for the hosted content (such as images).
 Content type, such as image/png, image/jpg.
   [WebUrl <String>]: The web URL that can be used for downloading the image.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1055,7 +1034,7 @@ For example, 'officeUIFabricIconName': 'Search'.
   [PickerGroupId <String>]: ID for the group in the card picker.
 Required.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1102,7 +1081,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-OUTLINEICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
+OUTLINEICON <IMicrosoftGraphTeamsAppIcon>: teamsAppIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1119,27 +1098,5 @@ Content type, such as image/png, image/jpg.
 
 ## RELATED LINKS
 
-- [New-MgBetaAppCatalogTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamappdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamappdefinition)
+- [](https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-beta)

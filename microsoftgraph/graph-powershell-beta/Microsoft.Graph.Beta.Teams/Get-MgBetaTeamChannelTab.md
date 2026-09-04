@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamChannelTab
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaTeamChannelTab
 ## SYNOPSIS
 
 A collection of all the tabs in the channel.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,37 +56,19 @@ This cmdlet has the following aliases,
 
 A collection of all the tabs in the channel.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamsTab.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWriteSelfForTeam,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamsTab.Read.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Group, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWriteSelfForTeam.All,  |
-
 ## EXAMPLES
-### Example 1: List all the tabs in the channel along with associated Teams app
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" 
-
-```
-This example will list all the tabs in the channel along with associated teams app
-
-### Example 2: List all the tabs belonging to a specific app in a channel
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'" 
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
 
-```
-This example will list all the tabs belonging to a specific app in a channel
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
 
 ## PARAMETERS
 
@@ -605,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -655,27 +634,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaTeamChannelTab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchanneltab)
+- [](https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-beta)

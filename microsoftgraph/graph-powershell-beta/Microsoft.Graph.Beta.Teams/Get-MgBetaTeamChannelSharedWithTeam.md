@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaTeamChannelSharedWithTeam
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaTeamChannelSharedWithTeam
 
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -80,26 +77,13 @@ This cmdlet has the following aliases,
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelMember.Read.All, ChannelMember.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ChannelMember.Read.Group, ChannelMember.Read.All, ChannelMember.ReadWrite.All, ChannelMember.ReadWrite.Group,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the Get-MgBetaTeamChannelSharedWithTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -643,7 +627,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -693,28 +677,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam)
+- [](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta)
