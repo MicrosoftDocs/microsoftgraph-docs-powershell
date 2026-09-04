@@ -56,12 +56,17 @@ A deleted configurationMonitor can't be restored.
 | Application | ConfigurationMonitoring.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
 Remove-MgAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId
+
+```
+This example shows how to use the Remove-MgAdminConfigurationManagementConfigurationMonitor Cmdlet.
+
 
 ## PARAMETERS
 
