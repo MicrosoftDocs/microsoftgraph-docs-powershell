@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary
 
 Update the navigation property userStatusSummary in deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

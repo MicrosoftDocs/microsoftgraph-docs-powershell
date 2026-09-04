@@ -15,6 +15,9 @@ title: Get-MgBetaUserDeviceManagementTroubleshootingEvent
 
 The list of troubleshooting events for this user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
