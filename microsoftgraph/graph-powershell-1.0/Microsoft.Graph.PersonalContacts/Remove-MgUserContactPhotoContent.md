@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactphotocontent
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserContactPhotoContent
 ---
@@ -15,9 +15,6 @@ title: Remove-MgUserContactPhotoContent
 
 Optional contact picture.
 You can get or set a photo for a contact.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactPhotoContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 
 Optional contact picture.
 You can get or set a photo for a contact.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -410,27 +417,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserContactPhotoContent](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactphotocontent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactphotocontent)

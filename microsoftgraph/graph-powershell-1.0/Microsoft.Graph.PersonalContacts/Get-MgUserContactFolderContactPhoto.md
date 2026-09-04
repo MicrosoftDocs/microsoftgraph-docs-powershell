@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.PersonalContacts-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactphoto
 Locale: en-US
 Module Name: Microsoft.Graph.PersonalContacts
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserContactFolderContactPhoto
 ---
@@ -15,9 +15,6 @@ title: Get-MgUserContactFolderContactPhoto
 
 Optional contact picture.
 You can get or set a photo for a contact.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,13 +48,15 @@ This cmdlet has the following aliases,
 Optional contact picture.
 You can get or set a photo for a contact.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Contacts.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Contacts.Read,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -389,7 +388,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   [ContactFolderId <String>]: The unique identifier of contactFolder
   [ContactFolderId1 <String>]: The unique identifier of contactFolder
   [ContactId <String>]: The unique identifier of contact
@@ -399,27 +398,4 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserContactFolderContactPhoto](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactphoto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactphoto)
