@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaApplicationConnectorGroupByRef
 ---
@@ -66,9 +66,8 @@ This cmdlet has the following aliases,
 Assign a connectorGroup to an application.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -77,10 +76,6 @@ $params = @{
 }
 
 Set-MgBetaApplicationConnectorGroupByRef -ApplicationId $applicationId -BodyParameter $params
-
-```
-This example shows how to use the Set-MgBetaApplicationConnectorGroupByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -141,7 +136,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -331,7 +326,7 @@ HelpMessage: ''
 
 ### -OdataType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -518,13 +513,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceUpdate>`: .
+BODYPARAMETER <IReferenceUpdate>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
   [OdataType <String>]: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -565,27 +560,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaApplicationConnectorGroupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)
+- [](https://learn.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetauserapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserAppRoleAssignment
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaUserAppRoleAssignment
 ## SYNOPSIS
 
 Delete an appRoleAssignment that has been granted to a user.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,24 +44,13 @@ This cmdlet has the following aliases,
 
 Delete an appRoleAssignment that has been granted to a user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AppRoleAssignment.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Remove a user's application role assignment
 
-```powershell
+### EXAMPLE 1
+
 Remove-MgBetaUserAppRoleAssignment ` 
 -AppRoleAssignmentID '01B8ir38J0eoiYqyMt_qAVDX9vgSB6xDur4zn5zOluM' ` 
 -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
-```
-
-This example removes the specified application role from the specified user.
 
 ## PARAMETERS
 
@@ -417,7 +403,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -458,27 +444,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetauserapproleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delete-approleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetauserapproleassignment)
+- [](https://learn.microsoft.com/graph/api/user-delete-approleassignments?view=graph-rest-beta)

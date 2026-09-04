@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupAppRoleAssignment
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaGroupAppRoleAssignment
 
 Represents the app roles a group has been granted for an application.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,9 +60,9 @@ Represents the app roles a group has been granted for an application.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get appRoleAssignments granted to a group
 
-```powershell
+### EXAMPLE 1
+
 Get-MgBetaGroupAppRoleAssignment -GroupId '2692d278-8323-4094-b286-e0ffce5e54a5' |
   Format-List
 
@@ -79,9 +76,6 @@ PrincipalType        : Group
 ResourceDisplayName  : Common Data Service
 ResourceId           : 93af1c70-e87f-45df-8780-8af2d7afd05e
 AdditionalProperties : {}
-```
-
-This example get all app role assignments granted to the specified group.
 
 ## PARAMETERS
 
@@ -592,7 +586,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -633,27 +627,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-approleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetagroupapproleassignment)
+- [](https://learn.microsoft.com/graph/api/group-list-approleassignments?view=graph-rest-beta)

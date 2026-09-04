@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaOnPremisePublishingProfilePublishedResource
 ---
@@ -69,17 +69,15 @@ This cmdlet has the following aliases,
 Create new navigation property to publishedResources for onPremisesPublishingProfiles
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	DisplayName = "New provisioning"
 	ResourceName = "domain1.contoso.com"
 }
 New-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -615,7 +613,7 @@ Nullable.
     [ResourceName <String>]: Name of the publishedResource.
   [PublishingType <String>]: onPremisesPublishingType
 
-BODYPARAMETER `<IMicrosoftGraphPublishedResource>`: publishedResource
+BODYPARAMETER <IMicrosoftGraphPublishedResource>: publishedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -650,7 +648,7 @@ Nullable.
   [PublishingType <String>]: onPremisesPublishingType
   [ResourceName <String>]: Name of the publishedResource.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -691,26 +689,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaOnPremisePublishingProfilePublishedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource)
