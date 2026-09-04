@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicesettingstatesummary
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary
 ## SYNOPSIS
 
 Update the navigation property deviceSettingStateSummaries in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,13 +74,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property deviceSettingStateSummaries in deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -742,7 +741,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSettingStateDeviceSummary>`: Device Compilance Policy and Configuration for a Setting State summary
+BODYPARAMETER <IMicrosoftGraphSettingStateDeviceSummary>: Device Compilance Policy and Configuration for a Setting State summary
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -756,7 +755,7 @@ Read-only.
   [SettingName <String>]: Name of the setting
   [UnknownDeviceCount <Int32?>]: Device Unkown count for the setting
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -794,27 +793,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicesettingstatesummary)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicesettingstatesummary)

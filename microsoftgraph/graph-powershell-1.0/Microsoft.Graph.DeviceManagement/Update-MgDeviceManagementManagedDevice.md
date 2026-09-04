@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevice
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementManagedDevice
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementManagedDevice
 ## SYNOPSIS
 
 Update the navigation property managedDevices in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -116,13 +113,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property managedDevices in deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1084,7 +1083,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDevice>`: Devices that are managed or pre-enrolled through Intune.
+BODYPARAMETER <IMicrosoftGraphManagedDevice>: Devices that are managed or pre-enrolled through Intune.
 Limited support for $filter: Only properties whose descriptions mention support for $filter may be used, and combinations of those filtered properties must use 'and', not 'or'.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
@@ -2124,7 +2123,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6331,8 +6330,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6391,7 +6390,7 @@ Defaults to setting on client device.
     [TamperProtectionEnabled <Boolean?>]: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled.
 Defaults to setting on client device.
 
-CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerClientEnabledFeatures>`: configuration Manager client enabled features
+CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>: configuration Manager client enabled features
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompliancePolicy <Boolean?>]: Whether compliance policy is managed by Intune
   [DeviceConfiguration <Boolean?>]: Whether device configuration is managed by Intune
@@ -6400,7 +6399,7 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerC
   [ResourceAccess <Boolean?>]: Whether resource access is managed by Intune
   [WindowsUpdateForBusiness <Boolean?>]: Whether Windows Update for Business is managed by Intune
 
-DEVICECATEGORY `<IMicrosoftGraphDeviceCategory>`: Device categories provides a way to organize your devices.
+DEVICECATEGORY <IMicrosoftGraphDeviceCategory>: Device categories provides a way to organize your devices.
 Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
 You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -6459,7 +6458,7 @@ Read-only.
   [State <String>]: complianceStatus
   [Version <Int32?>]: The version of the policy
 
-DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: deviceHealthAttestationState
+DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>: deviceHealthAttestationState
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttestationIdentityKey <String>]: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
   [BitLockerStatus <String>]: On or Off of BitLocker Drive Encryption
@@ -6506,7 +6505,7 @@ Possible values are 'enabled', 'disabled' and 'notApplicable'.
 Default value is 'notApplicable'.
   [WindowsPe <String>]: Operating system running with limited services that is used to prepare a computer for Windows
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -7454,7 +7453,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11847,8 +11846,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11859,7 +11858,7 @@ Requires $select to retrieve.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-WINDOWSPROTECTIONSTATE `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+WINDOWSPROTECTIONSTATE <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -11911,27 +11910,4 @@ Defaults to setting on client device.
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementManagedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevice)

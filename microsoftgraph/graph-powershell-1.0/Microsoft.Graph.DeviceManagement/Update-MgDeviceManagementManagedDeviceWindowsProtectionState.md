@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsprotectionstate
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementManagedDeviceWindowsProtectionState
 ---
@@ -14,9 +14,6 @@ title: Update-MgDeviceManagementManagedDeviceWindowsProtectionState
 ## SYNOPSIS
 
 Update the navigation property windowsProtectionState in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -87,6 +84,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property windowsProtectionState in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1080,7 +1087,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1143,7 +1150,7 @@ Read-only.
   [State <WindowsMalwareState?>]: Malware current status
   [ThreatState <WindowsMalwareThreatState?>]: Malware threat status
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -1181,27 +1188,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgDeviceManagementManagedDeviceWindowsProtectionState](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsprotectionstate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsprotectionstate)

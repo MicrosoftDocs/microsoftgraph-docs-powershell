@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevicecompliancepolicystate
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementManagedDeviceCompliancePolicyState
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementManagedDeviceCompliancePolicyState
 ## SYNOPSIS
 
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -487,7 +494,7 @@ HelpMessage: ''
 
 ### -SettingStates
 
-
+.
 To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
@@ -623,7 +630,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicyState>`: Device Compliance Policy State for a given device.
+BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicyState>: Device Compliance Policy State for a given device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -649,7 +656,7 @@ Read-only.
   [State <String>]: complianceStatus
   [Version <Int32?>]: The version of the policy
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -704,27 +711,4 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState[]>: .
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementManagedDeviceCompliancePolicyState](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevicecompliancepolicystate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevicecompliancepolicystate)

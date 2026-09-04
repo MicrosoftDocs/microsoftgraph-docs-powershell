@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtroubleshootingevent
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDeviceManagementTroubleshootingEvent
 ---
@@ -14,9 +14,6 @@ title: New-MgDeviceManagementTroubleshootingEvent
 ## SYNOPSIS
 
 Create new navigation property to troubleshootingEvents for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,13 +46,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to troubleshootingEvents for deviceManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementManagedDevices.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementManagedDevices.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -409,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementTroubleshootingEvent>`: Event representing an general failure.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementTroubleshootingEvent>: Event representing an general failure.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -419,27 +418,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDeviceManagementTroubleshootingEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtroubleshootingevent)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtroubleshootingevent)
