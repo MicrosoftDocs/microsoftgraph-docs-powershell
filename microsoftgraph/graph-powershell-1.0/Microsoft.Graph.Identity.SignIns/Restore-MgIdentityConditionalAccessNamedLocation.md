@@ -15,6 +15,9 @@ title: Restore-MgIdentityConditionalAccessNamedLocation
 
 Invoke action restore
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Restore-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

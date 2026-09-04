@@ -15,6 +15,9 @@ title: Get-MgRiskyServicePrincipalHistoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipalHistoryCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyServicePrincipalHistoryCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

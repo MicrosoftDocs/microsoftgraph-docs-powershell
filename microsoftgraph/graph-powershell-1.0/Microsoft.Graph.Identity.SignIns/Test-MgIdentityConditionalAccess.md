@@ -15,6 +15,9 @@ title: Test-MgIdentityConditionalAccess
 
 Evaluates the applicability of Conditional Access Policies in your tenant based on the provided sign-in properties.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
