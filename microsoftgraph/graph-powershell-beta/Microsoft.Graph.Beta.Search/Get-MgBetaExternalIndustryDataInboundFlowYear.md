@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowyear
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaExternalIndustryDataInboundFlowYear
 ---
@@ -45,13 +45,15 @@ This cmdlet has the following aliases,
 
 The year associated to the data that this flow brings in.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-TimePeriod.Read.All, IndustryData-TimePeriod.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-TimePeriod.Read.All, IndustryData-TimePeriod.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +343,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -367,27 +369,4 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaExternalIndustryDataInboundFlowYear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowyear)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowyear)

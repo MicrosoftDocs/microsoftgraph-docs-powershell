@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalIndustryDataConnector
 ---
@@ -46,18 +46,9 @@ This cmdlet has the following aliases,
 
 Create a new azureDataLakeConnector object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IndustryData-DataConnector.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IndustryData-DataConnector.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -72,10 +63,6 @@ $params = @{
 }
 
 New-MgBetaExternalIndustryDataConnector -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaExternalIndustryDataConnector Cmdlet.
-
 
 ## PARAMETERS
 
@@ -431,7 +418,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
+BODYPARAMETER <IMicrosoftGraphIndustryDataConnector>: industryDataConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -473,7 +460,7 @@ Read-only.
     [Vendor <String>]: The name of the vendor who supplies the source system.
 Maximum supported length is 100 characters.
 
-SOURCESYSTEM `<IMicrosoftGraphIndustryDataSourceSystemDefinition>`: sourceSystemDefinition
+SOURCESYSTEM <IMicrosoftGraphIndustryDataSourceSystemDefinition>: sourceSystemDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -512,27 +499,5 @@ Maximum supported length is 100 characters.
 
 ## RELATED LINKS
 
-- [New-MgBetaExternalIndustryDataConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
+- [](https://learn.microsoft.com/graph/api/industrydata-azuredatalakeconnector-post?view=graph-rest-beta)
