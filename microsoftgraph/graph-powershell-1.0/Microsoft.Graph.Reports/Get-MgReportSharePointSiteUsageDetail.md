@@ -15,6 +15,9 @@ title: Get-MgReportSharePointSiteUsageDetail
 
 Get details about SharePoint site usage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
