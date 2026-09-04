@@ -597,7 +597,7 @@ BODYPARAMETER `<IPaths1Sa3Fr9DevicemanagementReportsMicrosoftGraphGetdevicemanag
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicemanagementintentpersettingcontributingprofile)
+- [Get-MgBetaDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicemanagementintentpersettingcontributingprofile)
 
 
 

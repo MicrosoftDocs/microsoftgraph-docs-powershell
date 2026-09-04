@@ -271,7 +271,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagecount)
+- [Get-MgBetaReportDailyPrintUsageCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagecount)
 
 
 

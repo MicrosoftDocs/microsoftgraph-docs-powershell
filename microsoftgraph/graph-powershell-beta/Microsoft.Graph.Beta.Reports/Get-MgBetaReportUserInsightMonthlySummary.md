@@ -585,8 +585,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlysummary)
-- [](https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-summary?view=graph-rest-beta)
+- [Get-MgBetaReportUserInsightMonthlySummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlysummary)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/monthlyuserinsightmetricsroot-list-summary?view=graph-rest-beta)
 
 
 

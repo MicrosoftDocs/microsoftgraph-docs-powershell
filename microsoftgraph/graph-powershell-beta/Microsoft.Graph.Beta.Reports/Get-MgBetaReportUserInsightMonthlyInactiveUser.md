@@ -573,7 +573,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyinactiveuser)
+- [Get-MgBetaReportUserInsightMonthlyInactiveUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyinactiveuser)
 
 
 
