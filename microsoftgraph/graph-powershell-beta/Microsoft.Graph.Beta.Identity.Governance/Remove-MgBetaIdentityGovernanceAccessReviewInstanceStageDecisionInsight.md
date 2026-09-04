@@ -554,7 +554,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewinstancestagedecisioninsight)
+- [Remove-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewinstancestagedecisioninsight)
 
 
 

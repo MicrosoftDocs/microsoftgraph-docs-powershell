@@ -1491,7 +1491,7 @@ The only possible value currently is: accessReviewDataUploadTriggerCallbackData
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancecatalogaccesspackageresource)
+- [New-MgBetaIdentityGovernanceCatalogAccessPackageResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancecatalogaccesspackageresource)
 
 
 

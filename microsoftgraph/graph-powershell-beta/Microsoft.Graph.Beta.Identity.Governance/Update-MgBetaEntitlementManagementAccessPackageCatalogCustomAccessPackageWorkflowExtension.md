@@ -833,8 +833,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
-- [](https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-beta)
+- [Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-beta)
 
 
 

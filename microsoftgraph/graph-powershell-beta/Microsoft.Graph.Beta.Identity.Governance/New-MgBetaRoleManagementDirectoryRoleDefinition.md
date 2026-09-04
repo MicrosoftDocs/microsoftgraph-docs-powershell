@@ -754,8 +754,8 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroledefinition)
-- [](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta)
+- [New-MgBetaRoleManagementDirectoryRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroledefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta)
 
 
 

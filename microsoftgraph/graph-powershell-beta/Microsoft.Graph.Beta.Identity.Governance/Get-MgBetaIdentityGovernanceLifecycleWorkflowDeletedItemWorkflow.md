@@ -666,9 +666,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-deleteditemcontainer-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-deleteditemcontainer-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems?view=graph-rest-beta)
 
 
 
