@@ -67,12 +67,17 @@ Read the properties and relationships of verifiedIdProfile object.
 | Application | VerifiedId-Profile.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityVerifiedIdProfile
+
+```
+This example shows how to use the Get-MgIdentityVerifiedIdProfile Cmdlet.
+
 
 ## PARAMETERS
 
