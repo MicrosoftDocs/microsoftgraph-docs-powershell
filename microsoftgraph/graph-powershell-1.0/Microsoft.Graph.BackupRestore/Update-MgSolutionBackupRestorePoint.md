@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestorePoint
 
 Update the navigation property restorePoints in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestorePoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
