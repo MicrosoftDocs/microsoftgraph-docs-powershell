@@ -60,12 +60,17 @@ Deleting a schema extension definition doesn't affect accessing custom data that
 | Application | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.SchemaExtensions
 
 Remove-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
+
+```
+This example shows how to use the Remove-MgSchemaExtension Cmdlet.
+
 
 ## PARAMETERS
 
