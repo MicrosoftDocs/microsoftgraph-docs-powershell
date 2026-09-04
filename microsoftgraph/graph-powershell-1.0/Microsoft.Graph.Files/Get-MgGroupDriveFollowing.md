@@ -61,16 +61,6 @@ This cmdlet has the following aliases,
 The list of items the user is following.
 Only in OneDrive for Business.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -615,6 +605,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivefollowing)
+
+
 
 
 
