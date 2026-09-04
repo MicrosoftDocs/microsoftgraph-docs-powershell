@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrunuserprocessingresult
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
 ---
@@ -14,9 +14,6 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
 ## SYNOPSIS
 
 Get a userProcessingResult for a run.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -61,37 +58,19 @@ This cmdlet has the following aliases,
 
 Get a userProcessingResult for a run.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a user processing result in a run report
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -WorkflowId $workflowId -RunId $runId -UserProcessingResultId $userProcessingResultId
 
-```
-This example will get a user processing result in a run report
-
-### Example 2: Get a user processing results for a workflow run
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -WorkflowId $workflowId -RunId $runId -UserProcessingResultId $userProcessingResultId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject" 
-
-```
-This example will get a user processing results for a workflow run
-
+Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -WorkflowId $workflowId -RunId $runId -UserProcessingResultId $userProcessingResultId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject"
 
 ## PARAMETERS
 
@@ -607,7 +586,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -685,28 +664,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrunuserprocessingresult)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-run-list-userprocessingresults?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrunuserprocessingresult)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-run-list-userprocessingresults?view=graph-rest-1.0)

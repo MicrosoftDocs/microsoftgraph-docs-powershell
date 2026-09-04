@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgRoleManagementDirectoryRoleDefinition
 ---
@@ -16,9 +16,6 @@ title: Remove-MgRoleManagementDirectoryRoleDefinition
 Delete a unifiedRoleDefinition object.
 You can't delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -51,26 +48,13 @@ Delete a unifiedRoleDefinition object.
 You can't delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
-
-```
-This example shows how to use the Remove-MgRoleManagementDirectoryRoleDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -402,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -480,27 +464,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgRoleManagementDirectoryRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition)
+- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)

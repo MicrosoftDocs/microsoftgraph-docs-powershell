@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgtopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
 ---
@@ -16,9 +16,6 @@ title: Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSu
 Provide a summary from the insights resource of the workflow objects processed the most, known as top workflows, for a specified period in a tenant.
 Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,17 +51,12 @@ Workflow basic details are given, along with run information.
 For information about tasks processed, see insights: topTasksProcessedSummary.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary
-
-```
-This example shows how to use the Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary Cmdlet.
-
 
 ## PARAMETERS
 
@@ -437,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -515,27 +507,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgTopIdentityGovernanceLifecycleWorkflowInsightWorkflowProcessedSummary](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgtopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgtopidentitygovernancelifecycleworkflowinsightworkflowprocessedsummary)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-insights-topworkflowsprocessedsummary?view=graph-rest-1.0)

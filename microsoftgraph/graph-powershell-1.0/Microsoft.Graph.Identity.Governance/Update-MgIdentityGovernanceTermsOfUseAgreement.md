@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceTermsOfUseAgreement
 ---
@@ -14,9 +14,6 @@ title: Update-MgIdentityGovernanceTermsOfUseAgreement
 ## SYNOPSIS
 
 Update the properties of an agreement object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,9 +75,8 @@ This cmdlet has the following aliases,
 Update the properties of an agreement object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -90,10 +86,6 @@ $params = @{
 }
 
 Update-MgIdentityGovernanceTermsOfUseAgreement -AgreementId $agreementId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgIdentityGovernanceTermsOfUseAgreement Cmdlet.
-
 
 ## PARAMETERS
 
@@ -737,7 +729,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq).
   [UserPrincipalName <String>]: UPN of the user when the acceptance was recorded.
 
-BODYPARAMETER `<IMicrosoftGraphAgreement>`: agreement
+BODYPARAMETER <IMicrosoftGraphAgreement>: agreement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -856,7 +848,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 The value is represented in ISO 8601 format for durations.
 Supports $filter (eq).
 
-FILE `<IMicrosoftGraphAgreementFile>`: agreementFile
+FILE <IMicrosoftGraphAgreementFile>: agreementFile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -975,7 +967,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1050,7 +1042,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-TERMSEXPIRATION `<IMicrosoftGraphTermsExpiration>`: termsExpiration
+TERMSEXPIRATION <IMicrosoftGraphTermsExpiration>: termsExpiration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Frequency <TimeSpan?>]: Represents the frequency at which the terms will expire, after its first expiration as set in startDateTime.
 The value is represented in ISO 8601 format for durations.
@@ -1062,27 +1054,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceTermsOfUseAgreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement)
+- [](https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0)
