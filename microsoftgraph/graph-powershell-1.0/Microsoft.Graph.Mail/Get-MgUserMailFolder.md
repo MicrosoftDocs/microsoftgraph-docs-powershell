@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Mail-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder
 Locale: en-US
 Module Name: Microsoft.Graph.Mail
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMailFolder
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserMailFolder
 The user's mail folders.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,39 +61,21 @@ The user's mail folders.
 Read-only.
 Nullable.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
-| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
-
 ## EXAMPLES
-### Example 1: Get a mail folder
 
-```powershell
-
-Import-Module Microsoft.Graph.Mail
-
-# A UPN can also be used as -UserId.
-Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-
-```
-This example will get a mail folder
-
-### Example 2: Get a mail sent items folder
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
-```
-This example will get a mail sent items folder
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
 ## PARAMETERS
 
@@ -606,7 +585,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -619,26 +598,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder)
