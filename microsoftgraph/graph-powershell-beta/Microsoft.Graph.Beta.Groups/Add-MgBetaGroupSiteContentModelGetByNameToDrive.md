@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontentmodelgetbynametodrive
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaGroupSiteContentModelGetByNameToDrive
 ---
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 Apply a contentModel to SharePoint document libraries.
 For an existing model that's already trained, this action automatically processes new documents that are added to the SharePoint libraries.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -171,7 +181,7 @@ HelpMessage: ''
 
 ### -DriveId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -509,11 +519,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1B32Ow4GroupsGroupIdSitesSiteIdContentmodelsMicrosoftGraphGetbynameModelnameMicrosoftGraphAddtodrivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1B32Ow4GroupsGroupIdSitesSiteIdContentmodelsMicrosoftGraphGetbynameModelnameMicrosoftGraphAddtodrivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -540,28 +550,5 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Add-MgBetaGroupSiteContentModelGetByNameToDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontentmodelgetbynametodrive)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsitecontentmodelgetbynametodrive)
+- [](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
