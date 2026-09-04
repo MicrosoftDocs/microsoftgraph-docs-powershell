@@ -395,7 +395,7 @@ ASSIGNMENTS <IMicrosoftGraphManagedTenantsRoleAssignment[]>: A collection of rol
     [DisplayName <String>]: The display name for the role assignment.
     [TemplateId <String>]: The unique identifier for the template.
 
-BODYPARAMETER <IMicrosoftGraphManagedTenantsMyRole>: myRole
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsMyRole>`: myRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>]: A collection of role assignments for the managed tenant.
     [AssignmentType <String>]: delegatedPrivilegeStatus
@@ -411,3 +411,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
