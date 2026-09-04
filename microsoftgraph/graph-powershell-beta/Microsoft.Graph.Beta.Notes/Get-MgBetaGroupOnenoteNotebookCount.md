@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Notes-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebookcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Notes
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaGroupOnenoteNotebookCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaGroupOnenoteNotebookCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteNotebookCount](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteNotebookCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,13 +44,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Notes.Create, Notes.Read, Notes.Read.All, Notes.ReadWrite, Notes.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite,  |
-| Application | Notes.Read.All, Notes.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+INPUTOBJECT <INotesIdentity>: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [IncludePersonalNotebooks <Boolean?>]: Usage: includePersonalNotebooks={includePersonalNotebooks}
   [NotebookId <String>]: The unique identifier of notebook
@@ -358,27 +357,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupOnenoteNotebookCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebookcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotenotebookcount)
