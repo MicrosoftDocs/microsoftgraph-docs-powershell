@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementDetectedApp
 
 Create new navigation property to detectedApps for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
