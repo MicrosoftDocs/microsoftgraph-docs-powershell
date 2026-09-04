@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedroleroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPrivilegedRoleRoleAssignment
 ---
@@ -89,41 +89,31 @@ This cmdlet has the following aliases,
 Get entity from privilegedRoleAssignments by key
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId
-```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 2
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleRoleAssignment
-```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 3
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true" 
-```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true"
+
+### EXAMPLE 4
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime eq null" 
-```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 5: Using the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet
-```powershell
+Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime eq null"
+
+### EXAMPLE 5
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime ne null or isElevated eq false" 
-```
-This example shows how to use the Get-MgBetaPrivilegedRoleRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaPrivilegedRoleRoleAssignment -Filter "isElevated eq true and expirationDateTime ne null or isElevated eq false"
 
 ## PARAMETERS
 
@@ -672,7 +662,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -786,26 +776,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPrivilegedRoleRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedroleroleassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedroleroleassignment)

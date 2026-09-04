@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementAccessPackageResourceRoleScope
 ---
@@ -16,9 +16,6 @@ title: New-MgBetaEntitlementManagementAccessPackageResourceRoleScope
 Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -82,18 +79,10 @@ Create a new accessPackageResourceRoleScope for adding a resource role to an acc
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new access package resource role scope
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $accessPackageResource = @{
   "id"= '4f5dac35-b025-4131-a27f-6e0e46d48dd1'
@@ -115,25 +104,6 @@ $accessPackageResourceScope = @{
   }
 
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
-```
-
-```Output
-AccessPackageResourceRole  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceRole
-AccessPackageResourceScope : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceScope
-CreatedBy                  : admin@M365x814237.onmicrosoft.com
-CreatedDateTime            : 11/5/2021 9:06:32 AM
-Id                         : 3c955d0f-f6d5-45f0-b465-e8e6375a3895_5fef70e1-b78f-4d21-a6ad-979d9f54daf1
-ModifiedBy                 : admin@M365x814237.onmicrosoft.com
-ModifiedDateTime           : 11/5/2021 9:06:32 AM
-AdditionalProperties       : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('bc041fda-b3ba-41fc-b911-ca95f7aa
-                             c656')/accessPackageResourceRoleScopes/$entity]}
-```
-
-This example, the commands;
-1. Defines a resource variable. **Id** in the $accesspackageresource variable is the identifier of the group catalog resource.
-1. Defines the resource role variable
-1. Defines the resource scope variable
-1. Create a new access package resource role scope.
 
 ## PARAMETERS
 
@@ -320,7 +290,7 @@ HelpMessage: ''
 
 ### -CreatedBy
 
-
+.
 
 ```yaml
 Type: System.String
@@ -494,7 +464,7 @@ HelpMessage: ''
 
 ### -ModifiedBy
 
-
+.
 
 ```yaml
 Type: System.String
@@ -688,7 +658,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCEROLE `<IMicrosoftGraphAccessPackageResourceRole>`: accessPackageResourceRole
+ACCESSPACKAGERESOURCEROLE <IMicrosoftGraphAccessPackageResourceRole>: accessPackageResourceRole
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -798,7 +768,7 @@ The only possible value currently is: accessReviewDataUploadTriggerCallbackData
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
   [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
-ACCESSPACKAGERESOURCESCOPE `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
+ACCESSPACKAGERESOURCESCOPE <IMicrosoftGraphAccessPackageResourceScope>: accessPackageResourceScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -908,7 +878,7 @@ The only possible value currently is: accessReviewDataUploadTriggerCallbackData
   [RoleOriginId <String>]: The origin system for the role, if different.
   [Url <String>]: A resource locator for the scope.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRoleScope>`: accessPackageResourceRoleScope
+BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRoleScope>: accessPackageResourceRoleScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1029,7 +999,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1143,27 +1113,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope)
+- [](https://learn.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta)

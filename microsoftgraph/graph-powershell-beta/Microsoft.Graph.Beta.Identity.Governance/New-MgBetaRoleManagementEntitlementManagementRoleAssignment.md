@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementEntitlementManagementRoleAssignment
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaRoleManagementEntitlementManagementRoleAssignment
 ## SYNOPSIS
 
 Create a new unifiedRoleAssignment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,18 +50,9 @@ This cmdlet has the following aliases,
 
 Create a new unifiedRoleAssignment object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Create a role assignment with access package catalog scope
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -75,10 +63,6 @@ $params = @{
 }
 
 New-MgBetaRoleManagementEntitlementManagementRoleAssignment -BodyParameter $params
-
-```
-This example will create a role assignment with access package catalog scope
-
 
 ## PARAMETERS
 
@@ -197,7 +181,7 @@ HelpMessage: ''
 
 ### -Condition
 
-
+.
 
 ```yaml
 Type: System.String
@@ -641,7 +625,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+APPSCOPE <IMicrosoftGraphAppScope>: appScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -650,7 +634,7 @@ Read only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignment>`: unifiedRoleAssignment
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignment>: unifiedRoleAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -735,21 +719,21 @@ Read-only when isBuiltIn is true.
 Read-only.
 Supports $filter (eq, in).
 
-DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -795,27 +779,5 @@ Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
-- [New-MgBetaRoleManagementEntitlementManagementRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleassignment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleassignment)
+- [](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-beta)

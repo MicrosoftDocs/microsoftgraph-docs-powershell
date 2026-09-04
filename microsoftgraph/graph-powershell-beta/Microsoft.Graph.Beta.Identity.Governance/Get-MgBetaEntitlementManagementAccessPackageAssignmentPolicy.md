@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 ---
@@ -13,10 +13,7 @@ title: Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 ## SYNOPSIS
 
-In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r accessPackageAssignmentPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r\n accessPackageAssignmentPolicy object.
 
 ## SYNTAX
 
@@ -85,20 +82,12 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r accessPackageAssignmentPolicy object.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+In Microsoft Entra entitlement management, retrieve the properties and relationships of an\r\n accessPackageAssignmentPolicy object.
 
 ## EXAMPLES
-### Example 1: Get all access package policy assignment policies
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy | Format-List
 
@@ -120,9 +109,6 @@ Questions               : {}
 RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprovalSettings
 RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
 AdditionalProperties    : {}
-```
-
-This example gets a list of all the access package assignment policies.
 
 ## PARAMETERS
 
@@ -698,7 +684,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -812,28 +798,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentpolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+- [](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentpolicies?view=graph-rest-beta)

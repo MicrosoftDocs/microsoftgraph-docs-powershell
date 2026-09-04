@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
 ## SYNOPSIS
 
 Read the properties and relationships of a workflowTemplate object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowTemplate](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a workflowTemplate object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve all Lifecycle Workflows workflow templates
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
 
-```
-This example will retrieve all lifecycle workflows workflow templates
-
-### Example 2: Retrieve workflow templates supported for "leaver" workflows
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'" 
-
-```
-This example will retrieve workflow templates supported for "leaver" workflows
-
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'"
 
 ## PARAMETERS
 
@@ -552,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -666,28 +645,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtemplate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflowtemplate-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtemplate)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflowtemplate-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRoleManagementDirectoryResourceNamespace
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaRoleManagementDirectoryResourceNamespace
 ## SYNOPSIS
 
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaRoleManagementDirectoryResourceNamespace
-
-```
-This example shows how to use the Get-MgBetaRoleManagementDirectoryResourceNamespace Cmdlet.
-
 
 ## PARAMETERS
 
@@ -541,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -655,28 +639,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaRoleManagementDirectoryResourceNamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryresourcenamespace)
+- [](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-beta)

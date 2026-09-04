@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAgreement
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaAgreement
 ## SYNOPSIS
 
 Add new entity to agreements
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Add new entity to agreements
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -568,7 +575,7 @@ Supports $filter (eq) and eq for null values.
 Supports $filter (eq).
   [UserPrincipalName <String>]: UPN of the user when the acceptance was recorded.
 
-BODYPARAMETER `<IMicrosoftGraphAgreement>`: agreement
+BODYPARAMETER <IMicrosoftGraphAgreement>: agreement
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -688,7 +695,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [UserReacceptRequiredFrequency <TimeSpan?>]: The duration after which the user must reaccept the terms of use.
 The value is represented in ISO 8601 format for durations.
 
-FILE `<IMicrosoftGraphAgreementFile>`: agreementFile
+FILE <IMicrosoftGraphAgreementFile>: agreementFile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedDateTime <DateTime?>]: The date time representing when the file was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -810,7 +817,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-TERMSEXPIRATION `<IMicrosoftGraphTermsExpiration>`: termsExpiration
+TERMSEXPIRATION <IMicrosoftGraphTermsExpiration>: termsExpiration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Frequency <TimeSpan?>]: Represents the frequency at which the terms will expire, after its first expiration as set in startDateTime.
 The value is represented in ISO 8601 format for durations.
@@ -822,27 +829,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgBetaAgreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreement)

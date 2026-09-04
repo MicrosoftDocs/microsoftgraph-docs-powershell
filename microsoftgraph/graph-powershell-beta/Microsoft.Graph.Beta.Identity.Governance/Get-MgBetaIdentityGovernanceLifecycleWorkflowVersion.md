@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion
 ## SYNOPSIS
 
 Read the properties and relationships of a workflowVersion object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a workflowVersion object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Get a workflow version
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber
 
-```
-This example will get a workflow version
-
-### Example 2: Get specific properties of a version of a workflow
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks" 
-
-```
-This example will get specific properties of a version of a workflow
-
+Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -Property "category,displayName,versionNumber,executionConditions" -ExpandProperty "tasks"
 
 ## PARAMETERS
 
@@ -579,7 +558,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -693,28 +672,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-versions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowversion)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflowversion-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-versions?view=graph-rest-beta)

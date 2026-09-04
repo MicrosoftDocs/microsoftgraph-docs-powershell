@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaMyPrivilegedRoleAssignment
 ---
@@ -37,13 +37,11 @@ This cmdlet has the following aliases,
 Invoke function my
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaMyPrivilegedRoleAssignment Cmdlet
-```powershell
+
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Invoke-MgBetaMyPrivilegedRoleAssignment
-```
-This example shows how to use the Invoke-MgBetaMyPrivilegedRoleAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -411,26 +409,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaMyPrivilegedRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment)

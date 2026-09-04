@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreviewinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAccessReviewInstance
 ---
@@ -79,6 +79,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property instances in accessReviews
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -888,7 +898,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
+BODYPARAMETER <IMicrosoftGraphAccessReview>: accessReview
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -974,7 +984,7 @@ This date can be in the future.
   [Status <String>]: This read-only field specifies the status of an accessReview.
 The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1005,7 +1015,7 @@ For example, in the access reviews decisions API, this property might record the
   [ReviewedBy <IMicrosoftGraphUserIdentity>]: userIdentity
   [ReviewedDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1222,7 +1232,7 @@ For example, in the access reviews decisions API, this property might record the
   [ReviewedBy <IMicrosoftGraphUserIdentity>]: userIdentity
   [ReviewedDateTime <DateTime?>]: 
 
-REVIEWEDENTITY `<IMicrosoftGraphIdentity>`: identity
+REVIEWEDENTITY <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1237,7 +1247,7 @@ Read-only.
   [DisplayName <String>]: Name of reviewer.
   [UserPrincipalName <String>]: User principal name of the user.
 
-SETTINGS `<IMicrosoftGraphAccessReviewSettings>`: accessReviewSettings
+SETTINGS <IMicrosoftGraphAccessReviewSettings>: accessReviewSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccessRecommendationsEnabled <Boolean?>]: Indicates whether showing recommendations to reviewers is enabled.
   [ActivityDurationInDays <Int32?>]: The number of days of user activities to show to reviewers.
@@ -1270,27 +1280,4 @@ Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
 
 ## RELATED LINKS
 
-- [Update-MgBetaAccessReviewInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreviewinstance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaaccessreviewinstance)

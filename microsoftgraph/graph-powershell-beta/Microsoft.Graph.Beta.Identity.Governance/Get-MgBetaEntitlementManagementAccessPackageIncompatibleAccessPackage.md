@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage
 ## SYNOPSIS
 
 Retrieve a list of the accessPackage objects marked as incompatible on an accessPackage.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -40,26 +37,13 @@ This cmdlet has the following aliases,
 
 Retrieve a list of the accessPackage objects marked as incompatible on an accessPackage.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -492,27 +476,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage)
+- [](https://learn.microsoft.com/graph/api/accesspackage-list-incompatibleaccesspackages?view=graph-rest-beta)

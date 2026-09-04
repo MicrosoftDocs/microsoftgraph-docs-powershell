@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 ## SYNOPSIS
 
 Create a new accessReviewHistoryDefinition object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -54,18 +51,9 @@ This cmdlet has the following aliases,
 
 Create a new accessReviewHistoryDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -97,10 +85,6 @@ queryRoot = $null
 }
 
 New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -281,7 +265,7 @@ HelpMessage: ''
 
 ### -DownloadUri
 
-
+.
 
 ```yaml
 Type: System.String
@@ -302,7 +286,7 @@ HelpMessage: ''
 
 ### -FulfilledDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -678,7 +662,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewHistoryDefinition>`: accessReviewHistoryDefinition
+BODYPARAMETER <IMicrosoftGraphAccessReviewHistoryDefinition>: accessReviewHistoryDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -766,7 +750,7 @@ Fetches reviews whose scope matches with this provided scope.
 Required.
   [Status <String>]: accessReviewHistoryStatus
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -793,7 +777,7 @@ Required.
   [RunDateTime <DateTime?>]: The date and time when the instance's history data is scheduled to be generated.
   [Status <String>]: accessReviewHistoryStatus
 
-SCHEDULESETTINGS `<IMicrosoftGraphAccessReviewHistoryScheduleSettings>`: accessReviewHistoryScheduleSettings
+SCHEDULESETTINGS <IMicrosoftGraphAccessReviewHistoryScheduleSettings>: accessReviewHistoryScheduleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -836,27 +820,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition)
+- [](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-beta)
