@@ -774,8 +774,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage)
-- [](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta)
+- [Get-MgBetaTeamworkDeletedTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta)
 
 
 
