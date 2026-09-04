@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligence
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityThreatIntelligence
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityThreatIntelligence
 ## SYNOPSIS
 
 Update the navigation property threatIntelligence in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,6 +58,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property threatIntelligence in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -435,7 +442,7 @@ HelpMessage: ''
 
 ### -IntelligenceProfileIndicators
 
-
+.
 To construct, see NOTES section for INTELLIGENCEPROFILEINDICATORS properties and create a hash table.
 
 ```yaml
@@ -782,7 +789,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Tags <String[]>]: Tags for this article, communicating keywords, or key concepts.
   [Title <String>]: The title of this article.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityThreatIntelligence>`: threatIntelligence
+BODYPARAMETER <IMicrosoftGraphSecurityThreatIntelligence>: threatIntelligence
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4585,27 +4592,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityThreatIntelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligence)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligence)

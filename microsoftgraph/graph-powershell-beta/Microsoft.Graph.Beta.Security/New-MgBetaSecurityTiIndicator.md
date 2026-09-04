@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityTiIndicator
 ---
@@ -62,18 +62,9 @@ This cmdlet has the following aliases,
 
 Create a new tiIndicator object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ThreatIndicators.ReadWrite.OwnedBy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ThreatIndicators.ReadWrite.OwnedBy,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -82,7 +73,8 @@ $params = @{
 	activityGroupNames = @(
 	)
 	confidence = 0
-	description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
+	description = "This is a canary indicator for demo purpose.
+Take no action on any observables set in this indicator."
 	expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:43:37.5031462+00:00")
 	externalId = "Test--8586509942679764298MS501"
 	fileHashType = "sha256"
@@ -100,10 +92,6 @@ $params = @{
 }
 
 New-MgBetaSecurityTiIndicator -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityTiIndicator Cmdlet.
-
 
 ## PARAMETERS
 
@@ -347,7 +335,7 @@ HelpMessage: ''
 
 ### -DomainName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -368,7 +356,7 @@ HelpMessage: ''
 
 ### -EmailEncoding
 
-
+.
 
 ```yaml
 Type: System.String
@@ -389,7 +377,7 @@ HelpMessage: ''
 
 ### -EmailLanguage
 
-
+.
 
 ```yaml
 Type: System.String
@@ -410,7 +398,7 @@ HelpMessage: ''
 
 ### -EmailRecipient
 
-
+.
 
 ```yaml
 Type: System.String
@@ -431,7 +419,7 @@ HelpMessage: ''
 
 ### -EmailSenderAddress
 
-
+.
 
 ```yaml
 Type: System.String
@@ -452,7 +440,7 @@ HelpMessage: ''
 
 ### -EmailSenderName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -473,7 +461,7 @@ HelpMessage: ''
 
 ### -EmailSourceDomain
 
-
+.
 
 ```yaml
 Type: System.String
@@ -494,7 +482,7 @@ HelpMessage: ''
 
 ### -EmailSourceIPAddress
 
-
+.
 
 ```yaml
 Type: System.String
@@ -515,7 +503,7 @@ HelpMessage: ''
 
 ### -EmailSubject
 
-
+.
 
 ```yaml
 Type: System.String
@@ -536,7 +524,7 @@ HelpMessage: ''
 
 ### -EmailXMailer
 
-
+.
 
 ```yaml
 Type: System.String
@@ -603,7 +591,7 @@ HelpMessage: ''
 
 ### -FileCompileDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -624,7 +612,7 @@ HelpMessage: ''
 
 ### -FileCreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -666,7 +654,7 @@ HelpMessage: ''
 
 ### -FileHashValue
 
-
+.
 
 ```yaml
 Type: System.String
@@ -687,7 +675,7 @@ HelpMessage: ''
 
 ### -FileMutexName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -708,7 +696,7 @@ HelpMessage: ''
 
 ### -FileName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -729,7 +717,7 @@ HelpMessage: ''
 
 ### -FilePacker
 
-
+.
 
 ```yaml
 Type: System.String
@@ -750,7 +738,7 @@ HelpMessage: ''
 
 ### -FilePath
 
-
+.
 
 ```yaml
 Type: System.String
@@ -771,7 +759,7 @@ HelpMessage: ''
 
 ### -FileSize
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -792,7 +780,7 @@ HelpMessage: ''
 
 ### -FileType
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1033,7 +1021,7 @@ HelpMessage: ''
 
 ### -NetworkCidrBlock
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1054,7 +1042,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationAsn
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -1075,7 +1063,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationCidrBlock
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1096,7 +1084,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationIPv4
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1117,7 +1105,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationIPv6
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1138,7 +1126,7 @@ HelpMessage: ''
 
 ### -NetworkDestinationPort
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1159,7 +1147,7 @@ HelpMessage: ''
 
 ### -NetworkIPv4
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1180,7 +1168,7 @@ HelpMessage: ''
 
 ### -NetworkIPv6
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1201,7 +1189,7 @@ HelpMessage: ''
 
 ### -NetworkPort
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1222,7 +1210,7 @@ HelpMessage: ''
 
 ### -NetworkProtocol
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1243,7 +1231,7 @@ HelpMessage: ''
 
 ### -NetworkSourceAsn
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -1264,7 +1252,7 @@ HelpMessage: ''
 
 ### -NetworkSourceCidrBlock
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1285,7 +1273,7 @@ HelpMessage: ''
 
 ### -NetworkSourceIPv4
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1306,7 +1294,7 @@ HelpMessage: ''
 
 ### -NetworkSourceIPv6
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1327,7 +1315,7 @@ HelpMessage: ''
 
 ### -NetworkSourcePort
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -1568,7 +1556,7 @@ HelpMessage: ''
 
 ### -Url
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1589,7 +1577,7 @@ HelpMessage: ''
 
 ### -UserAgent
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1660,7 +1648,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTiIndicator>`: tiIndicator
+BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1753,27 +1741,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
+- [](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta)
