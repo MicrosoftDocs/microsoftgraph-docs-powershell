@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingreconciliationunbilled
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgReportPartnerBillingReconciliationUnbilled
 ---
@@ -14,9 +14,6 @@ title: Get-MgReportPartnerBillingReconciliationUnbilled
 ## SYNOPSIS
 
 Represents details for unbilled invoice reconciliation data.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingReconciliationUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingReconciliationUnbilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Represents details for unbilled invoice reconciliation data.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -276,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgReportPartnerBillingReconciliationUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingreconciliationunbilled)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingreconciliationunbilled)

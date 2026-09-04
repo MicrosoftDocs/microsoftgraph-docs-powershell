@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAuditLogSignIn
 ---
@@ -15,9 +15,6 @@ title: Get-MgAuditLogSignIn
 
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All,  |
-
 ## EXAMPLES
-### Example 1: List all sign-ins
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogSignIn
 
-```
-This example will list all sign-ins
-
-### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Graph'
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10 
-
-```
-This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'graph'
-
+Get-MgAuditLogSignIn -Filter "startsWith(appDisplayName,'Graph')" -Top 10
 
 ## PARAMETERS
 
@@ -552,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [Date <DateTime?>]: Usage: date={date}
   [DeviceManagementExportJobId <String>]: The unique identifier of deviceManagementExportJob
   [DirectoryAuditId <String>]: The unique identifier of directoryAudit
@@ -579,28 +558,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgAuditLogSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin)
+- [](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0)

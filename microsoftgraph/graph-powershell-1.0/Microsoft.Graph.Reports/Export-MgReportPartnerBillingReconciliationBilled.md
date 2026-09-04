@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Export-MgReportPartnerBillingReconciliationBilled
 ---
@@ -14,9 +14,6 @@ title: Export-MgReportPartnerBillingReconciliationBilled
 ## SYNOPSIS
 
 Export the billed invoice reconciliation data.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingReconciliationBilled?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,18 +46,9 @@ This cmdlet has the following aliases,
 
 Export the billed invoice reconciliation data.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | PartnerBilling.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | PartnerBilling.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Reports
 
@@ -70,10 +58,6 @@ $params = @{
 }
 
 Export-MgReportPartnerBillingReconciliationBilled -BodyParameter $params
-
-```
-This example shows how to use the Export-MgReportPartnerBillingReconciliationBilled Cmdlet.
-
 
 ## PARAMETERS
 
@@ -121,7 +105,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -249,7 +233,7 @@ HelpMessage: ''
 
 ### -InvoiceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -405,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftGraphPartnersBillingExportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AttributeSet <String>]: attributeSet
   [InvoiceId <String>]:
@@ -413,27 +397,5 @@ BODYPARAMETER `<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftG
 
 ## RELATED LINKS
 
-- [Export-MgReportPartnerBillingReconciliationBilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled)
+- [](https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-1.0)
