@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveR
 
 Update the navigation property driveRestoreArtifactsBulkAdditionRequests in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSessionDriveRestoreArtifactBulkAdditionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
