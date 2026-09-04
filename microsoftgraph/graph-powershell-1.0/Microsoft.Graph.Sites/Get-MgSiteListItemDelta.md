@@ -92,24 +92,39 @@ Items with this property should be removed from your local state.
 | Application | Sites.Read.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Initial request
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId
 
-### EXAMPLE 2
+```
+This example will initial request
+
+### Example 2: Last page request
+
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
 
-### EXAMPLE 3
+```
+This example will last page request
+
+### Example 3: Delta link request
+
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
-Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
+Get-MgSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
+
+```
+This example will delta link request
+
 
 ## PARAMETERS
 
