@@ -63,8 +63,9 @@ Create a new customTaskExtension object.
 | Application | LifecycleWorkflows-CustomExt.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -88,11 +89,15 @@ $params = @{
 	}
 	callbackConfiguration = @{
 		"@odata.type" = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration"
-		timeoutDuration = "PT30M"
+		timeoutDuration = "PT5M"
 	}
 }
 
 New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
 
 ## PARAMETERS
 

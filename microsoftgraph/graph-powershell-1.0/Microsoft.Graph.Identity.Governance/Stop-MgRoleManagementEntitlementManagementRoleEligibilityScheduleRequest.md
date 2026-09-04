@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is Granted and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -450,6 +440,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgrolemanagemententitlementmanagementroleeligibilityschedulerequest)
 - [](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-cancel?view=graph-rest-1.0)
+
 
 
 
