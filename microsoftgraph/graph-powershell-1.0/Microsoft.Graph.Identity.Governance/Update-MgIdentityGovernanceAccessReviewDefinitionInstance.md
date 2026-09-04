@@ -1201,8 +1201,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstance)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstance-update?view=graph-rest-1.0)
+- [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-update?view=graph-rest-1.0)
 
 
 

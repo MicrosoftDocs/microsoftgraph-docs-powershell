@@ -930,8 +930,8 @@ Not yet supported.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition)
-- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0)
+- [Update-MgRoleManagementDirectoryRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0)
 
 
 

@@ -1261,7 +1261,7 @@ Supports $expand.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestresourceroleresourcescoperesource)
+- [Update-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestresourceroleresourcescoperesource)
 
 
 
