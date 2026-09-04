@@ -57,8 +57,9 @@ Create a new configurationMonitor object that runs periodically in the backgroun
 | Application | ConfigurationMonitoring.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
@@ -108,6 +109,10 @@ $params = @{
 }
 
 New-MgBetaAdminConfigurationManagementConfigurationMonitor -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAdminConfigurationManagementConfigurationMonitor Cmdlet.
+
 
 ## PARAMETERS
 

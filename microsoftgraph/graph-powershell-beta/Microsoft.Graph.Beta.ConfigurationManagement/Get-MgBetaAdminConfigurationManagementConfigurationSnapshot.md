@@ -66,12 +66,17 @@ A container for configuration snapshot baselines.
 | Application | ConfigurationMonitoring.Read.All, ConfigurationMonitoring.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
 Get-MgBetaAdminConfigurationManagementConfigurationSnapshot
+
+```
+This example shows how to use the Get-MgBetaAdminConfigurationManagementConfigurationSnapshot Cmdlet.
+
 
 ## PARAMETERS
 

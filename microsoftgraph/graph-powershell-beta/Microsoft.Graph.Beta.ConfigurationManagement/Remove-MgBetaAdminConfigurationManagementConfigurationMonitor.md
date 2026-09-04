@@ -56,12 +56,17 @@ When deleted, the configurationMonitor data can't be restored.
 | Application | ConfigurationMonitoring.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
 Remove-MgBetaAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId
+
+```
+This example shows how to use the Remove-MgBetaAdminConfigurationManagementConfigurationMonitor Cmdlet.
+
 
 ## PARAMETERS
 
