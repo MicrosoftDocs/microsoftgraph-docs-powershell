@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyAuthenticationStrengthPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaPolicyAuthenticationStrengthPolicy
 ## SYNOPSIS
 
 Create a new custom authenticationStrengthPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,18 +49,9 @@ This cmdlet has the following aliases,
 
 Create a new custom authenticationStrengthPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -90,10 +78,6 @@ combinationConfigurations = @(
 }
 
 New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -575,7 +559,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthPolicy>: authenticationStrengthPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -604,27 +588,5 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
 
 ## RELATED LINKS
 
-- [New-MgBetaPolicyAuthenticationStrengthPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy)
+- [](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-beta)

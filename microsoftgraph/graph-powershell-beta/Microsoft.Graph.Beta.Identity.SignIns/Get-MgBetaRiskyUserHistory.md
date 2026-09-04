@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaRiskyUserHistory
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaRiskyUserHistory
 ## SYNOPSIS
 
 Get a riskyUserHistoryItem object of a riskyUser.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,17 +56,10 @@ This cmdlet has the following aliases,
 
 Get a riskyUserHistoryItem object of a riskyUser.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List history of a specific user
-```powershell
+
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05 | Format-Table RiskDetail, RiskLastUpdatedDateTime, RiskState, UserDisplayName
@@ -81,12 +71,9 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM   confirmedCompromised 
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM   dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    atRisk               Jason Mayer
-```
 
-The command return all the user risk history 
+### EXAMPLE 2
 
-### Example 2: List history of a specific user with detailed risk detection
-```powershell
 Connect-MgGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05| Format-Table RiskDetail, RiskLastUpdatedDateTime, @{N="RiskDetection";E={($_). Activity.RiskEventTypes}}, RiskState, UserDisplayName
@@ -98,9 +85,6 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM                       c
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM                       dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    anomalousToken      atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    anonymizedIPAddress atRisk               Jason Mayer
-```
-
-The command return all the user risk history and expand the property of Activity
 
 ## PARAMETERS
 
@@ -589,7 +573,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -690,28 +674,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaRiskyUserHistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuserhistoryitem-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyuser-list-history?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory)
+- [](https://learn.microsoft.com/graph/api/riskyuserhistoryitem-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/riskyuser-list-history?view=graph-rest-beta)

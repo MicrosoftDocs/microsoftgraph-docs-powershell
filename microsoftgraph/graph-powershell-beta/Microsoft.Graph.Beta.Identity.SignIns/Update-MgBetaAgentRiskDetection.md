@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAgentRiskDetection
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property agentRiskDetections in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -328,7 +338,7 @@ HelpMessage: ''
 
 ### -ClientSessionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -434,7 +444,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -552,7 +562,7 @@ HelpMessage: ''
 
 ### -IdentityId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -884,7 +894,7 @@ HelpMessage: ''
 
 ### -SignInClientDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -911,7 +921,7 @@ HelpMessage: ''
 
 ### -SignInCorrelationId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -938,7 +948,7 @@ HelpMessage: ''
 
 ### -SignInRequestId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1047,7 +1057,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgentRiskDetection>`: agentRiskDetection
+BODYPARAMETER <IMicrosoftGraphAgentRiskDetection>: agentRiskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1088,7 +1098,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Source <String>]: The source system that generated the risk detection.
 Nullable.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -1189,27 +1199,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaAgentRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection)

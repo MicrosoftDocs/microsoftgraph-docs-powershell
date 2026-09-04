@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityB2CUserFlowLanguage
 ---
@@ -74,6 +74,20 @@ This cmdlet has the following aliases,
 This method is used to create or update a custom language in an Azure AD B2C user flow.
 Note: You must enable language customization in the Azure AD B2C user flow before you can create a custom language.
 For more information, see Update b2cIdentityUserFlow.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -602,7 +616,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserFlowLanguageConfiguration>`: userFlowLanguageConfiguration
+BODYPARAMETER <IMicrosoftGraphUserFlowLanguageConfiguration>: userFlowLanguageConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -621,7 +635,7 @@ This collection doesn't allow any kind of modification.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -727,28 +741,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityB2CUserFlowLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/b2cidentityuserflow-put-languages?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowlanguage)
+- [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-put-languages?view=graph-rest-beta)

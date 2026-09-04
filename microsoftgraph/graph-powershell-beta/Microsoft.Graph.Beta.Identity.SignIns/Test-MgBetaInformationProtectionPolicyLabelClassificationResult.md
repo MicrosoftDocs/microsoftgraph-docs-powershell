@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaInformationProtectionPolicyLabelClassificationResult
 ---
@@ -54,9 +54,8 @@ To evaluate based on classification results, provide contentInfo, which includes
 The API returns an informationProtectionAction that contains one of more of the following:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -79,10 +78,6 @@ $params = @{
 }
 
 Test-MgBetaInformationProtectionPolicyLabelClassificationResult -BodyParameter $params
-
-```
-This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet.
-
 
 ## PARAMETERS
 
@@ -109,7 +104,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -152,7 +147,7 @@ HelpMessage: ''
 
 ### -ClassificationResults
 
-
+.
 To construct, see NOTES section for CLASSIFICATIONRESULTS properties and create a hash table.
 
 ```yaml
@@ -416,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsLeqqhcInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClassificationResults <IMicrosoftGraphClassificationResult[]>]: 
     [ConfidenceLevel <Int32?>]: The confidence level, 0 to 100, of the result.
@@ -436,7 +431,7 @@ CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult[]>: .
   [Count <Int32?>]: The number of instances of the specific information type in the input.
   [SensitiveTypeId <String>]: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Format <String>]: contentFormat
   [Identifier <String>]: Identifier used for Azure Information Protection Analytics.
@@ -448,27 +443,5 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
 
 ## RELATED LINKS
 
-- [Test-MgBetaInformationProtectionPolicyLabelClassificationResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectionpolicylabelclassificationresult)
+- [](https://learn.microsoft.com/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta)

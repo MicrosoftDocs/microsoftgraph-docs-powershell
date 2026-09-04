@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAvailableIdentityProviderType
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaAvailableIdentityProviderType
 ## SYNOPSIS
 
 Get all identity providers supported in a directory.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgAvailableIdentityProviderType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -38,37 +35,19 @@ This cmdlet has the following aliases,
 
 Get all identity providers supported in a directory.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityProvider.Read.All, IdentityProvider.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: List all **identityProvider** available in a Microsoft Entra directory
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Invoke-MgBetaAvailableIdentityProviderType
-
-```
-This example will list all **identityprovider** available in a microsoft entra directory
-
-### Example 2: List all **identityProvider** available in an Azure AD B2C directory
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Invoke-MgBetaAvailableIdentityProviderType
 
-```
-This example will list all **identityprovider** available in an azure ad b2c directory
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Invoke-MgBetaAvailableIdentityProviderType
 
 ## PARAMETERS
 
@@ -370,27 +349,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAvailableIdentityProviderType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype)
+- [](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta)

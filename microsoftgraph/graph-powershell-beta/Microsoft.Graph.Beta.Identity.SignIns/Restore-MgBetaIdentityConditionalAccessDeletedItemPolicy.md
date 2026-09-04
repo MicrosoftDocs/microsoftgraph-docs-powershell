@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessdeleteditempolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ---
@@ -14,9 +14,6 @@ title: Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ## SYNOPSIS
 
 Restore a deleted conditionalAccessPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Restore-MgIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,17 +45,12 @@ This cmdlet has the following aliases,
 Restore a deleted conditionalAccessPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
-
-```
-This example shows how to use the Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -348,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -449,27 +441,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessdeleteditempolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-restore?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessdeleteditempolicy)
+- [](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-restore?view=graph-rest-beta)

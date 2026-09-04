@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyPermissionGrantPolicyExclude
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaPolicyPermissionGrantPolicyExclude
 
 Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -63,11 +60,11 @@ Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
-### Example 1: Get a permission grant policy exclude by ID
 
-```powershell
+### EXAMPLE 1
+
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant" 
-Get-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "microsoft-application-admin" | fl  
+Get-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "microsoft-application-admin" | fl
 
 CertifiedClientApplicationsOnly             : False
 ClientApplicationIds                        : {all}
@@ -92,10 +89,6 @@ PermissionType                              : application
 Permissions                                 : {all}
 ResourceApplication                         : 00000002-0000-0000-c000-000000000000
 AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
-```
-
-This command retrieves a specified permission grant policy exclude configuration in Azure AD.
-
 
 ## PARAMETERS
 
@@ -584,7 +577,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -685,27 +678,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPolicyPermissionGrantPolicyExclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permissiongrantpolicy-list-excludes?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyexclude)
+- [](https://learn.microsoft.com/graph/api/permissiongrantpolicy-list-excludes?view=graph-rest-beta)

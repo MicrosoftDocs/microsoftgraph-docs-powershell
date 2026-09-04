@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/initialize-mgbetauserauthenticationhardwareoathmethod
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgBetaUserAuthenticationHardwareOathMethod
 ---
@@ -69,18 +69,9 @@ This cmdlet has the following aliases,
 Activate a hardware OATH token that is already assigned to a user.
 A user can self-activate their token or an admin can activate for a user.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-HardwareOATH.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-HardwareOATH.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -91,10 +82,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Initialize-MgBetaUserAuthenticationHardwareOathMethod -UserId $userId -HardwareOathAuthenticationMethodId $hardwareOathAuthenticationMethodId -BodyParameter $params
-
-```
-This example shows how to use the Initialize-MgBetaUserAuthenticationHardwareOathMethod Cmdlet.
-
 
 ## PARAMETERS
 
@@ -127,7 +114,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -198,7 +185,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -476,7 +463,7 @@ HelpMessage: ''
 
 ### -VerificationCode
 
-
+.
 
 ```yaml
 Type: System.String
@@ -557,12 +544,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1R6Gg7SUsersUserIdAuthenticationHardwareoathmethodsHardwareoathauthenticationmethodIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1R6Gg7SUsersUserIdAuthenticationHardwareoathmethodsHardwareoathauthenticationmethodIdMicrosoftGraphActivatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: 
   [VerificationCode <String>]: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -663,27 +650,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Initialize-MgBetaUserAuthenticationHardwareOathMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/initialize-mgbetauserauthenticationhardwareoathmethod)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-activate?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/initialize-mgbetauserauthenticationhardwareoathmethod)
+- [](https://learn.microsoft.com/graph/api/hardwareoathauthenticationmethod-activate?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallverification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification
 ## SYNOPSIS
 
 Create new navigation property to webApplicationFirewallVerifications for identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to webApplicationFirewallVerifications for identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -470,7 +477,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWebApplicationFirewallVerificationModel>`: webApplicationFirewallVerificationModel
+BODYPARAMETER <IMicrosoftGraphWebApplicationFirewallVerificationModel>: webApplicationFirewallVerificationModel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -501,13 +508,13 @@ This is the host or zone name to which the configuration applies.
       [Value <String>]: The value of the DNS record.
   [VerifiedHost <String>]: The host (domain or subdomain) that was verified as part of this verification operation.
 
-PROVIDER `<IMicrosoftGraphWebApplicationFirewallProvider>`: webApplicationFirewallProvider
+PROVIDER <IMicrosoftGraphWebApplicationFirewallProvider>: webApplicationFirewallProvider
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: The display name of the WAF provider.
 
-VERIFICATIONRESULT `<IMicrosoftGraphWebApplicationFirewallVerificationResult>`: webApplicationFirewallVerificationResult
+VERIFICATIONRESULT <IMicrosoftGraphWebApplicationFirewallVerificationResult>: webApplicationFirewallVerificationResult
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Errors <IMicrosoftGraphGenericError[]>]: List of errors encountered during the verification process.
     [Code <String>]: The error code.
@@ -517,7 +524,7 @@ VERIFICATIONRESULT `<IMicrosoftGraphWebApplicationFirewallVerificationResult>`: 
 This indicates when the verification result was produced.
   [Warnings <IMicrosoftGraphGenericError[]>]: List of warnings produced during verification.
 
-VERIFIEDDETAILS `<IMicrosoftGraphWebApplicationFirewallVerifiedDetails>`: webApplicationFirewallVerifiedDetails
+VERIFIEDDETAILS <IMicrosoftGraphWebApplicationFirewallVerifiedDetails>: webApplicationFirewallVerifiedDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DnsConfiguration <IMicrosoftGraphWebApplicationFirewallDnsConfiguration>]: webApplicationFirewallDnsConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -531,27 +538,4 @@ This is the host or zone name to which the configuration applies.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallverification)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityriskpreventionwebapplicationfirewallverification)

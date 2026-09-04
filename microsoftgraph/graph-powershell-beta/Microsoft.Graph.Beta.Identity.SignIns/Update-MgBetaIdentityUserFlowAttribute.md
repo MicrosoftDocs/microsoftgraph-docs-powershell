@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityUserFlowAttribute
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaIdentityUserFlowAttribute
 ## SYNOPSIS
 
 Update the properties of a custom identityUserFlowAttribute object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a custom identityUserFlowAttribute object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | IdentityUserFlow.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | IdentityUserFlow.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -91,10 +79,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaIdentityUserFlowAttribute Cmdlet.
-
 
 ## PARAMETERS
 
@@ -592,7 +576,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttribute
+BODYPARAMETER <IMicrosoftGraphIdentityUserFlowAttribute>: identityUserFlowAttribute
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -602,7 +586,7 @@ Read-only.
  Supports $filter (eq, ne).
   [UserFlowAttributeType <String>]: identityUserFlowAttributeType
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -703,27 +687,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityUserFlowAttribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute)
+- [](https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-beta)

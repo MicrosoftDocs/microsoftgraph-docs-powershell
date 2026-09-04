@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyonpremauthenticationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyOnPremAuthenticationPolicy
 ---
@@ -57,26 +57,13 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of onPremAuthenticationPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.OnPremAuthenticationPolicy, Policy.ReadWrite.OnPremAuthenticationPolicy,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyOnPremAuthenticationPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyOnPremAuthenticationPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -538,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -639,28 +626,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaPolicyOnPremAuthenticationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyonpremauthenticationpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/policyroot-list-onpremauthenticationpolicies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyonpremauthenticationpolicy)
+- [](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/policyroot-list-onpremauthenticationpolicies?view=graph-rest-beta)
