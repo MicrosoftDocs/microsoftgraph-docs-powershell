@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathitem
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupSiteGetByPathItem
 ---
@@ -15,9 +15,6 @@ title: Get-MgGroupSiteGetByPathItem
 
 Used to address any item contained in this site.
 This collection can't be enumerated.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -41,6 +38,16 @@ This cmdlet has the following aliases,
 
 Used to address any item contained in this site.
 This collection can't be enumerated.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -515,27 +522,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgGroupSiteGetByPathItem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathitem)
