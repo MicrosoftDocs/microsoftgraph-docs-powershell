@@ -81,8 +81,9 @@ The following setting templates are available for groups:
 | Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a setting to block guests for a specific Microsoft 365 group
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 New-MgBetaGroupSetting -GroupId $groupId -BodyParameter $params
+
+```
+This example will create a setting to block guests for a specific microsoft 365 group
+
 
 ## PARAMETERS
 
