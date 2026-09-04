@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecord
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord
 ---
@@ -15,9 +15,6 @@ title: Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord
 
 List of attendance records of an attendance report.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -66,17 +63,12 @@ List of attendance records of an attendance report.
 Read-only.
 
 ## EXAMPLES
-### Example 1: List attendance records for the attendance report of a town hall session
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord -VirtualEventTownhallId $virtualEventTownhallId -VirtualEventSessionId $virtualEventSessionId -MeetingAttendanceReportId $meetingAttendanceReportId
-
-```
-This example will list attendance records for the attendance report of a town hall session
-
 
 ## PARAMETERS
 
@@ -619,7 +611,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -643,27 +635,5 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecord)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/attendancerecord-list?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecord)
+- [](https://learn.microsoft.com/graph/api/attendancerecord-list?view=graph-rest-1.0)

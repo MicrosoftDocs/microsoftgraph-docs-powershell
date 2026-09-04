@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/set-mgvirtualeventexternaleventinformation
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgVirtualEventExternalEventInformation
 ---
@@ -14,9 +14,6 @@ title: Set-MgVirtualEventExternalEventInformation
 ## SYNOPSIS
 
 Invoke action setExternalEventInformation
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaVirtualEventExternalEventInformation](/powershell/module/Microsoft.Graph.Beta.Bookings/Set-MgBetaVirtualEventExternalEventInformation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 
 Invoke action setExternalEventInformation
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -171,7 +178,7 @@ HelpMessage: ''
 
 ### -ExternalEventId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -476,11 +483,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths168Q9LmSolutionsVirtualeventsEventsVirtualeventIdMicrosoftGraphSetexternaleventinformationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths168Q9LmSolutionsVirtualeventsEventsVirtualeventIdMicrosoftGraphSetexternaleventinformationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalEventId <String>]: 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -504,27 +511,4 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgVirtualEventExternalEventInformation](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/set-mgvirtualeventexternaleventinformation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/set-mgvirtualeventexternaleventinformation)
