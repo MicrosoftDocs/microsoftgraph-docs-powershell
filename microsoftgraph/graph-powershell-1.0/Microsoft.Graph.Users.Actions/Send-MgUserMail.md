@@ -609,7 +609,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Message <IMicrosoftGraphMessage>]: message
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -709,10 +709,10 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 For example, an error is returned when a user with a mailbox in the EUR (Europe) region attempts to access messages from a mailbox in the NAM (North America) region.
   [SaveToSentItems <Boolean?>]: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-MESSAGE <IMicrosoftGraphMessage>: message
+MESSAGE `<IMicrosoftGraphMessage>`: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item
   [ChangeKey <String>]: Identifies the version of the item.
@@ -814,3 +814,25 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail)
 - [](https://learn.microsoft.com/graph/api/user-sendmail?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
