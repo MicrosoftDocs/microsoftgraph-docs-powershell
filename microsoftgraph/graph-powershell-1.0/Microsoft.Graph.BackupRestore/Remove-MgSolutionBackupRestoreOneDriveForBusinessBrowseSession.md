@@ -416,7 +416,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreonedriveforbusinessbrowsesession)
+- [Remove-MgSolutionBackupRestoreOneDriveForBusinessBrowseSession](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreonedriveforbusinessbrowsesession)
 
 
 
