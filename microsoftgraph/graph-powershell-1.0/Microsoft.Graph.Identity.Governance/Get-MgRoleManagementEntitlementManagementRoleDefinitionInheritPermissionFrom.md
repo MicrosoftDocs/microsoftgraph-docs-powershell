@@ -65,16 +65,6 @@ Read-only collection of role definitions that the given role definition inherits
 Only Microsoft Entra built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -641,6 +631,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
+
 
 
 
