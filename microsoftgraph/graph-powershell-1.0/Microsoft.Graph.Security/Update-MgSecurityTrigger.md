@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityTrigger
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityTrigger
 ## SYNOPSIS
 
 Update the navigation property triggers in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTrigger?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,6 +44,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property triggers in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -308,7 +315,7 @@ HelpMessage: ''
 
 ### -RetentionEvents
 
-
+.
 To construct, see NOTES section for RETENTIONEVENTS properties and create a hash table.
 
 ```yaml
@@ -380,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
+BODYPARAMETER <IMicrosoftGraphSecurityTriggersRoot>: triggersRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -503,27 +510,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgSecurityTrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytrigger)

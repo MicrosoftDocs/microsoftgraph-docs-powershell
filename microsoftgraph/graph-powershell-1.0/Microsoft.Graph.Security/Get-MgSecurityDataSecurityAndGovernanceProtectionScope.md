@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernanceprotectionscope
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityDataSecurityAndGovernanceProtectionScope
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityDataSecurityAndGovernanceProtectionScope
 ## SYNOPSIS
 
 Container for actions related to computing tenant-wide data protection scopes.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Container for actions related to computing tenant-wide data protection scopes.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -276,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgSecurityDataSecurityAndGovernanceProtectionScope](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernanceprotectionscope)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritydatasecurityandgovernanceprotectionscope)
