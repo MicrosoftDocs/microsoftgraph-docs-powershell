@@ -1243,7 +1243,7 @@ If enabled list of approved keyboards must be provided as well.
   [WarnAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
   [WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
-BODYPARAMETER <IMicrosoftGraphDeviceAppManagement>: Singleton entity that acts as a container for all device app management functionality.
+BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3134,7 +3134,7 @@ Read-only.
   [RoleScopeTags <String[]>]: RoleScopeTags of the PolicySet
   [Status <PolicySetStatus?>]: The enum to specify the status of PolicySet.
 
-SYMANTECCODESIGNINGCERTIFICATE <IMicrosoftGraphSymantecCodeSigningCertificate>: symantecCodeSigningCertificate
+SYMANTECCODESIGNINGCERTIFICATE `<IMicrosoftGraphSymantecCodeSigningCertificate>`: symantecCodeSigningCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3516,7 +3516,7 @@ A timespan value of PT0S indicates that managed data will never be wiped when th
 When FALSE, indicates that printing is allowed from managed apps.
 Default value is FALSE.
 
-WINDOWSMANAGEMENTAPP <IMicrosoftGraphWindowsManagementApp>: Windows management app entity.
+WINDOWSMANAGEMENTAPP `<IMicrosoftGraphWindowsManagementApp>`: Windows management app entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3536,3 +3536,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
