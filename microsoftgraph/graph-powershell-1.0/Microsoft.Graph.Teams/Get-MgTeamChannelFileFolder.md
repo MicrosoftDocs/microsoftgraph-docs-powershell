@@ -418,8 +418,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefolder)
-- [](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0)
+- [Get-MgTeamChannelFileFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefolder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0)
 
 
 
