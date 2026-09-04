@@ -57254,7 +57254,7 @@ For more information, see RFC 8291 Section 3.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelist)
+- [Update-MgBetaSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelist)
 
 
 

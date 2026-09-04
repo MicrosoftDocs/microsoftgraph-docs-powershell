@@ -18997,8 +18997,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetauserfollowedsite)
-- [](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-beta)
+- [Add-MgBetaUserFollowedSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetauserfollowedsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-beta)
 
 
 

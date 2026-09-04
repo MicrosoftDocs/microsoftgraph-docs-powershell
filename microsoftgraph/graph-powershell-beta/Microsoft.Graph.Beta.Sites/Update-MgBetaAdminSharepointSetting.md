@@ -1073,8 +1073,8 @@ IDLESESSIONSIGNOUT `<IMicrosoftGraphIdleSessionSignOut>`: idleSessionSignOut
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepointsetting)
-- [](https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-beta)
+- [Update-MgBetaAdminSharepointSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepointsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-beta)
 
 
 
