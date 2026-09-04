@@ -15,6 +15,9 @@ title: Remove-MgGroupThread
 
 Delete conversationThread.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
