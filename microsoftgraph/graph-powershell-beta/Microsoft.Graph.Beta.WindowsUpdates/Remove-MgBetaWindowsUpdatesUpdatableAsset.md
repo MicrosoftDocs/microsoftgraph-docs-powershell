@@ -420,8 +420,8 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableasset)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-azureaddevice-delete?view=graph-rest-beta)
+- [Remove-MgBetaWindowsUpdatesUpdatableAsset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableasset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-azureaddevice-delete?view=graph-rest-beta)
 
 
 
