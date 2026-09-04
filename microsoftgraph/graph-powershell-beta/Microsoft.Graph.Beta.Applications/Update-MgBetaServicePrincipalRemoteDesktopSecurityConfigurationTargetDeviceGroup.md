@@ -588,8 +588,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup)
-- [](https://learn.microsoft.com/graph/api/targetdevicegroup-update?view=graph-rest-beta)
+- [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/targetdevicegroup-update?view=graph-rest-beta)
 
 
 
