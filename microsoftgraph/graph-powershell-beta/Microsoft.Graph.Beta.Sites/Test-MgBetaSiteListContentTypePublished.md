@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitelistcontenttypepublished
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaSiteListContentTypePublished
 ---
@@ -14,9 +14,6 @@ title: Test-MgBetaSiteListContentTypePublished
 ## SYNOPSIS
 
 Invoke function isPublished
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteListContentTypePublished?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -46,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke function isPublished
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -333,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -398,28 +405,5 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Test-MgBetaSiteListContentTypePublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitelistcontenttypepublished)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitelistcontenttypepublished)
+- [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)

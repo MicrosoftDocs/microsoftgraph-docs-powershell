@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserFollowedSite
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaUserFollowedSite
 ## SYNOPSIS
 
 Get followedSites from users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Get-MgUserFollowedSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -59,18 +56,13 @@ This cmdlet has the following aliases,
 Get followedSites from users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserFollowedSite -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserFollowedSite Cmdlet.
-
 
 ## PARAMETERS
 
@@ -559,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -624,26 +616,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserFollowedSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite)

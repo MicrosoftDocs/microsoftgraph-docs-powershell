@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenoteresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupSiteOnenoteResource
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaGroupSiteOnenoteResource
 ## SYNOPSIS
 
 Update the navigation property resources in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property resources in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -485,7 +492,7 @@ HelpMessage: ''
 
 ### -Self
 
-
+.
 
 ```yaml
 Type: System.String
@@ -593,7 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenoteResource>`: onenoteResource
+BODYPARAMETER <IMicrosoftGraphOnenoteResource>: onenoteResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Self <String>]: 
   [Id <String>]: The unique identifier for an entity.
@@ -601,7 +608,7 @@ Read-only.
   [Content <Byte[]>]: The content of the resource.
   [ContentUrl <String>]: The URL for the content stream.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -666,27 +673,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaGroupSiteOnenoteResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenoteresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteonenoteresource)

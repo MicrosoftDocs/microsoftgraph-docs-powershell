@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttype
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSiteContentType
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupSiteContentType
 ## SYNOPSIS
 
 Create new navigation property to contentTypes for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -81,6 +78,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to contentTypes for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1022,7 +1029,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BASE `<IMicrosoftGraphContentType>`: contentType
+BASE <IMicrosoftGraphContentType>: contentType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1489,7 +1496,7 @@ For OneDrive, this property isn't populated.
   [Sealed <Boolean?>]: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
 
-BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
+BODYPARAMETER <IMicrosoftGraphContentType>: contentType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2056,7 +2063,7 @@ User will be prompted with this message if validation fails.
     [Formula <String>]: The formula to validate column value.
 For examples, see Examples of common formulas in lists
 
-DOCUMENTSET `<IMicrosoftGraphDocumentSet>`: documentSet
+DOCUMENTSET <IMicrosoftGraphDocumentSet>: documentSet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]: Content types allowed in document set.
     [Id <String>]: The ID of the content type.
@@ -2230,7 +2237,7 @@ For examples, see Examples of common formulas in lists
   [WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]: 
   [WelcomePageUrl <String>]: Welcome page absolute URL.
 
-DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
+DOCUMENTTEMPLATE <IMicrosoftGraphDocumentSetContent>: documentSetContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentType <IMicrosoftGraphContentTypeInfo>]: contentTypeInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2239,7 +2246,7 @@ DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
   [FileName <String>]: Name of the file in resource folder that should be added as a default content or a template in the document set
   [FolderName <String>]: Folder name in which the file will be placed when a new document set is created in the library.
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+INHERITEDFROM <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -2268,7 +2275,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -2330,7 +2337,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
+ORDER <IMicrosoftGraphContentTypeOrder>: contentTypeOrder
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Default <Boolean?>]: Indicates whether this is the default content type.
   [Position <Int32?>]: Specifies the position in which the content type appears in the selection UI.
@@ -2338,27 +2345,4 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttype)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecontenttype)
