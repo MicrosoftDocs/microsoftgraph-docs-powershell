@@ -146,7 +146,7 @@ HelpMessage: ''
 
 ### -AccessPackageResourceRoleScopes
 
-.
+
 To construct, see NOTES section for ACCESSPACKAGERESOURCEROLESCOPES properties and create a hash table.
 
 ```yaml
@@ -688,7 +688,7 @@ HelpMessage: ''
 
 ### -UniqueName
 
-.
+
 
 ```yaml
 Type: System.String
