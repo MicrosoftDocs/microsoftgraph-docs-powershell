@@ -15,6 +15,9 @@ title: Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedCl
 
 Delete a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a service principal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
