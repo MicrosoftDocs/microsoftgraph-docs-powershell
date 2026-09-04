@@ -80,6 +80,14 @@ This cmdlet has the following aliases,
 Create a registration record for a registrant of a webinar.
 This method registers the person for the webinar.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualEvent.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualEventRegistration-Anon.ReadWrite.Chat, VirtualEventRegistration-Anon.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
