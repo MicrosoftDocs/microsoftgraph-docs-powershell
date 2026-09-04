@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshipoperation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Partner
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation
 ## SYNOPSIS
 
 Create new navigation property to operations for tenantRelationships
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to operations for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -600,7 +607,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDelegatedAdminRelationshipOperation>`: delegatedAdminRelationshipOperation
+BODYPARAMETER <IMicrosoftGraphDelegatedAdminRelationshipOperation>: delegatedAdminRelationshipOperation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -613,7 +620,7 @@ Read-only.
   [OperationType <String>]: delegatedAdminRelationshipOperationType
   [Status <String>]: longRunningOperationStatus
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityPartnerIdentity>: Identity Parameter
   [DelegatedAdminAccessAssignmentId <String>]: The unique identifier of delegatedAdminAccessAssignment
   [DelegatedAdminCustomerId <String>]: The unique identifier of delegatedAdminCustomer
   [DelegatedAdminRelationshipId <String>]: The unique identifier of delegatedAdminRelationship
@@ -624,27 +631,4 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshipoperation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshipoperation)

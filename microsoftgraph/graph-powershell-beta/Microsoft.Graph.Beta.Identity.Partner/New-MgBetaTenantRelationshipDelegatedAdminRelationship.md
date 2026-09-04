@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationship
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Partner
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTenantRelationshipDelegatedAdminRelationship
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaTenantRelationshipDelegatedAdminRelationship
 ## SYNOPSIS
 
 Create a new delegatedAdminRelationship object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,18 +52,9 @@ This cmdlet has the following aliases,
 
 Create a new delegatedAdminRelationship object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DelegatedAdminRelationship.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DelegatedAdminRelationship.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Partner
 
@@ -91,10 +79,6 @@ $params = @{
 }
 
 New-MgBetaTenantRelationshipDelegatedAdminRelationship -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaTenantRelationshipDelegatedAdminRelationship Cmdlet.
-
 
 ## PARAMETERS
 
@@ -716,13 +700,13 @@ Read-only.
 Read-only.
   [Status <String>]: delegatedAdminAccessAssignmentStatus
 
-ACCESSDETAILS `<IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
+ACCESSDETAILS <IMicrosoftGraphDelegatedAdminAccessDetails>: delegatedAdminAccessDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UnifiedRoles <IMicrosoftGraphUnifiedRole[]>]: The directory roles that the Microsoft partner is assigned in the customer tenant.
     [RoleDefinitionId <String>]: The unified role definition ID of the directory role.
 Refer to unifiedRoleDefinition resource.
 
-BODYPARAMETER `<IMicrosoftGraphDelegatedAdminRelationship>`: delegatedAdminRelationship
+BODYPARAMETER <IMicrosoftGraphDelegatedAdminRelationship>: delegatedAdminRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -792,7 +776,7 @@ Read-only.
     [Status <String>]: delegatedAdminRelationshipRequestStatus
   [Status <String>]: delegatedAdminRelationshipStatus
 
-CUSTOMER `<IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>`: delegatedAdminRelationshipCustomerParticipant
+CUSTOMER <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>: delegatedAdminRelationshipCustomerParticipant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the customer tenant as set by Microsoft Entra ID.
 Read-only
@@ -823,27 +807,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaTenantRelationshipDelegatedAdminRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationship)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantrelationship-post-delegatedadminrelationships?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationship)
+- [](https://learn.microsoft.com/graph/api/tenantrelationship-post-delegatedadminrelationships?view=graph-rest-beta)
