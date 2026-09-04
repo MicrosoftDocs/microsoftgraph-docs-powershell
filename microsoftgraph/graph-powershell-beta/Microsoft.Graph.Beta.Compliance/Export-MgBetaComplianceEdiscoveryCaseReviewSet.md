@@ -701,8 +701,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
-- [](https://learn.microsoft.com/graph/api/ediscovery-reviewset-export?view=graph-rest-beta)
+- [Export-MgBetaComplianceEdiscoveryCaseReviewSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-reviewset-export?view=graph-rest-beta)
 
 
 

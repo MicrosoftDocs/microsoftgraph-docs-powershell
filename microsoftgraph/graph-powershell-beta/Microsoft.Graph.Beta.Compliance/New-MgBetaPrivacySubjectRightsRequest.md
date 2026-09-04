@@ -38098,8 +38098,8 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest)
-- [](https://learn.microsoft.com/graph/api/subjectrightsrequest-post?view=graph-rest-beta)
+- [New-MgBetaPrivacySubjectRightsRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subjectrightsrequest-post?view=graph-rest-beta)
 
 
 
