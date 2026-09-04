@@ -400,7 +400,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventpermanent)
+- [Remove-MgGroupEventPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventpermanent)
 
 
 
