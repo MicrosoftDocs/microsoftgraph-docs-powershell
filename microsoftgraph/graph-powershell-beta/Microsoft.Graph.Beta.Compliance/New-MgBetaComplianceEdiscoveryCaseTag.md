@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaComplianceEdiscoveryCaseTag
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 Create a new tag for the specified case.
 The tags are used in review sets while reviewing content.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -94,10 +85,6 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaComplianceEdiscoveryCaseTag Cmdlet.
-
 
 ## PARAMETERS
 
@@ -678,7 +665,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryTag>`: tag
+BODYPARAMETER <IMicrosoftGraphEdiscoveryTag>: tag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -721,7 +708,7 @@ For example, in the access reviews decisions API, this property might record the
   [LastModifiedDateTime <DateTime?>]: The date and time the tag was last modified.
   [Parent <IMicrosoftGraphEdiscoveryTag>]: tag
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -733,7 +720,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -753,7 +740,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   [UserPrincipalName <String>]: Alternate key of user
   [UserSourceId <String>]: The unique identifier of userSource
 
-PARENT `<IMicrosoftGraphEdiscoveryTag>`: tag
+PARENT <IMicrosoftGraphEdiscoveryTag>: tag
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -778,27 +765,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaComplianceEdiscoveryCaseTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-post-tags?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycasetag)
+- [](https://learn.microsoft.com/graph/api/ediscovery-case-post-tags?view=graph-rest-beta)
