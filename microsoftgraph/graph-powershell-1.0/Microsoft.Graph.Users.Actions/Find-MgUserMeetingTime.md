@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users.Actions-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime
 Locale: en-US
 Module Name: Microsoft.Graph.Users.Actions
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgUserMeetingTime
 ---
@@ -14,12 +14,9 @@ title: Find-MgUserMeetingTime
 ## SYNOPSIS
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\r\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,22 +74,13 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
-If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\rBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.\r\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Users.Actions
 
@@ -140,10 +128,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Find-MgUserMeetingTime -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Find-MgUserMeetingTime Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -175,7 +159,7 @@ HelpMessage: ''
 
 ### -Attendees
 
-
+.
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -203,7 +187,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -365,7 +349,7 @@ HelpMessage: ''
 
 ### -IsOrganizerOptional
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -420,7 +404,7 @@ HelpMessage: ''
 
 ### -MaxCandidates
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -447,7 +431,7 @@ HelpMessage: ''
 
 ### -MeetingDuration
 
-
+.
 
 ```yaml
 Type: System.TimeSpan
@@ -474,7 +458,7 @@ HelpMessage: ''
 
 ### -MinimumAttendeePercentage
 
-
+.
 
 ```yaml
 Type: System.Double
@@ -586,7 +570,7 @@ HelpMessage: ''
 
 ### -ReturnSuggestionReasons
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -729,7 +713,7 @@ ATTENDEES <IMicrosoftGraphAttendeeBase[]>: .
     [Name <String>]: The display name of the person or entity.
   [Type <String>]: attendeeType
 
-BODYPARAMETER `<IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents1H459T5RequestbodiesFindmeetingtimesrequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attendees <IMicrosoftGraphAttendeeBase[]>]: 
     [EmailAddress <IMicrosoftGraphEmailAddress>]: emailAddress
@@ -785,10 +769,10 @@ Default is true.
 See below for more possible values.
       [Start <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
 
-LOCATIONCONSTRAINT `<IMicrosoftGraphLocationConstraint>`: locationConstraint
+LOCATIONCONSTRAINT <IMicrosoftGraphLocationConstraint>: locationConstraint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsRequired <Boolean?>]: The client requests the service to include in the response a meeting location for the meeting.
 If this is true and all the resources are busy, findMeetingTimes won't return any meeting time suggestions.
@@ -821,7 +805,7 @@ If set to false and the specified resource is busy, findMeetingTimes returns the
 Default is true.
   [SuggestLocation <Boolean?>]: The client requests the service to suggest one or more meeting locations.
 
-TIMECONSTRAINT `<IMicrosoftGraphTimeConstraint>`: timeConstraint
+TIMECONSTRAINT <IMicrosoftGraphTimeConstraint>: timeConstraint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityDomain <String>]: activityDomain
   [TimeSlots <IMicrosoftGraphTimeSlot[]>]: 
@@ -835,27 +819,5 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [Find-MgUserMeetingTime](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime)
+- [](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-1.0)
