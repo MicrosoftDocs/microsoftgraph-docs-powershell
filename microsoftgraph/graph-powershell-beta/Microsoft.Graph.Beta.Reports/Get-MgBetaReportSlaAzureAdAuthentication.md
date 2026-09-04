@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportSlaAzureAdAuthentication
 ---
@@ -40,17 +40,12 @@ The Microsoft Entra service Level Agreement (SLA) commits to at least 99.99% aut
 This object provides you with your tenant's actual performance against this commitment.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportSlaAzureAdAuthentication
-
-```
-This example shows how to use the Get-MgBetaReportSlaAzureAdAuthentication Cmdlet.
-
 
 ## PARAMETERS
 
@@ -290,27 +285,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportSlaAzureAdAuthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication)
+- [](https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-beta)
