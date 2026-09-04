@@ -545,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Ra1QatAdminEdgeInternetexplorermodeSitelistsBrowsersitelistIdMicrosoftGraphPublishPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Ra1QatAdminEdgeInternetexplorermodeSitelistsBrowsersitelistIdMicrosoftGraphPublishPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Revision <String>]: 
   [SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]: 
@@ -606,7 +606,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
     [TargetEnvironment <BrowserSiteTargetEnvironment?>]: browserSiteTargetEnvironment
     [WebUrl <String>]: The URL of the site.
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -789,3 +789,25 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/publish-mgbetaadminedgeinternetexplorermodesitelist)
 - [](https://learn.microsoft.com/graph/api/browsersitelist-publish?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

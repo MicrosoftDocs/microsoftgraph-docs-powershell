@@ -704,7 +704,7 @@ Read-only.
     [DeviceAndAppManagementAssignmentFilterId <String>]: The ID of the filter for the target assignment.
     [DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementIntent>: Entity that represents an intent to apply settings to a device
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents an intent to apply settings to a device
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -844,7 +844,7 @@ Read-only.
   [UserName <String>]: The user name that is being reported on a device
   [UserPrincipalName <String>]: The user principal name that is being reported on a device
 
-DEVICESTATESUMMARY <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>: Entity that represents device state summary for an intent
+DEVICESTATESUMMARY `<IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>`: Entity that represents device state summary for an intent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -870,7 +870,7 @@ Read-only.
   [UserName <String>]: The user name that is being reported on a device
   [UserPrincipalName <String>]: The user principal name that is being reported on a device
 
-USERSTATESUMMARY <IMicrosoftGraphDeviceManagementIntentUserStateSummary>: Entity that represents user state summary for an intent
+USERSTATESUMMARY `<IMicrosoftGraphDeviceManagementIntentUserStateSummary>`: Entity that represents user state summary for an intent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -884,3 +884,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementintent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
