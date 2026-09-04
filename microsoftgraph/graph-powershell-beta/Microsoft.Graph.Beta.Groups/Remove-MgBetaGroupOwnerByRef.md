@@ -1,30 +1,31 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsetting
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaGroupSetting
+title: Remove-MgBetaGroupOwnerByRef
 ---
 
-# Remove-MgBetaGroupSetting
+# Remove-MgBetaGroupOwnerByRef
 
 ## SYNOPSIS
 
-Delete navigation property settings for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSetting?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaGroupSetting -DirectorySettingId <string> -GroupId <string> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaGroupOwnerByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -32,7 +33,7 @@ Remove-MgBetaGroupSetting -DirectorySettingId <string> -GroupId <string> [-IfMat
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <string>]
+Remove-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -45,15 +46,29 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property settings for groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -100,9 +115,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DirectorySettingId
+### -DirectoryObjectId
 
-The unique identifier of directorySetting
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -433,8 +448,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsetting)
-
+- [Remove-MgBetaGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-beta)
 
 
 

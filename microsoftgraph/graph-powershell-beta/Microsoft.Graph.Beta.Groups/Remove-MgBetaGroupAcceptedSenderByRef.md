@@ -1,30 +1,30 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsetting
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupAcceptedSenderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaGroupSetting
+title: Remove-MgBetaGroupAcceptedSenderByRef
 ---
 
-# Remove-MgBetaGroupSetting
+# Remove-MgBetaGroupAcceptedSenderByRef
 
 ## SYNOPSIS
 
-Delete navigation property settings for groups
+Remove a user or group from the accepted-senders list of the specified group.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSetting?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupAcceptedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupAcceptedSenderDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaGroupSetting -DirectorySettingId <string> -GroupId <string> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaGroupAcceptedSenderByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -32,8 +32,8 @@ Remove-MgBetaGroupSetting -DirectorySettingId <string> -GroupId <string> [-IfMat
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaGroupAcceptedSenderByRef -InputObject <IGroupsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -45,15 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property settings for groups
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+Remove a user or group from the accepted-senders list of the specified group.
 
 ## PARAMETERS
 
@@ -100,9 +92,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DirectorySettingId
+### -DirectoryObjectId
 
-The unique identifier of directorySetting
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -433,7 +425,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsetting)
+- [Remove-MgBetaGroupAcceptedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupAcceptedSenderByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-beta)
 
 
 
