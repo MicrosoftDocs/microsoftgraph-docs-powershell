@@ -472,8 +472,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityprovider)
-- [](https://learn.microsoft.com/graph/api/identityproviderbase-delete?view=graph-rest-1.0)
+- [Remove-MgIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityproviderbase-delete?view=graph-rest-1.0)
 
 
 

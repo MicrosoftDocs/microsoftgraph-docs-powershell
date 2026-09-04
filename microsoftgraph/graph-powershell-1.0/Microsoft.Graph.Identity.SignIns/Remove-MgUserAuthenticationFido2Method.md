@@ -489,8 +489,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationfido2method)
-- [](https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-1.0)
+- [Remove-MgUserAuthenticationFido2Method](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationfido2method)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-1.0)
 
 
 

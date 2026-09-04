@@ -609,9 +609,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityuserflowattribute)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattribute-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattribute-list?view=graph-rest-1.0)
+- [Get-MgIdentityUserFlowAttribute](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityuserflowattribute)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattribute-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattribute-list?view=graph-rest-1.0)
 
 
 

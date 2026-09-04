@@ -1,31 +1,31 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskpreventionwebapplicationfirewallprovider
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider
+title: Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 ---
 
-# Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider
+# Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
 
-Delete a webApplicationFirewallProvider object.
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider
- -WebApplicationFirewallProviderId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <string>
+ -IdentityProviderBaseId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -33,11 +33,10 @@ Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider
 ### DeleteViaIdentity
 
 ```
-Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider
- -InputObject <IIdentitySignInsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,22 +46,30 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a webApplicationFirewallProvider object.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId
-
-```
-This example shows how to use the Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider Cmdlet.
-
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## PARAMETERS
+
+### -B2XIdentityUserFlowId
+
+The unique identifier of b2xIdentityUserFlow
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -162,6 +169,27 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IdentityProviderBaseId
+
+The unique identifier of identityProviderBase
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -319,27 +347,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WebApplicationFirewallProviderId
-
-The unique identifier of webApplicationFirewallProvider
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -462,8 +469,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgIdentityRiskPreventionWebApplicationFirewallProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityriskpreventionwebapplicationfirewallprovider)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-delete-webapplicationfirewallproviders?view=graph-rest-1.0)
+- [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef)
+
 
 
 

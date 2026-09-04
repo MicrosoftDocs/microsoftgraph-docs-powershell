@@ -479,8 +479,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationexternalauthenticationmethod)
-- [](https://learn.microsoft.com/graph/api/authentication-delete-externalauthenticationmethods?view=graph-rest-1.0)
+- [Remove-MgUserAuthenticationExternalAuthenticationMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationexternalauthenticationmethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-delete-externalauthenticationmethods?view=graph-rest-1.0)
 
 
 
