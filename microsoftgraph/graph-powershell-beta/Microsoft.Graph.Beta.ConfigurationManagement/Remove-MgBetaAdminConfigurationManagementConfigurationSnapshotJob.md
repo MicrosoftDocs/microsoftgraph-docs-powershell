@@ -399,8 +399,8 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/remove-mgbetaadminconfigurationmanagementconfigurationsnapshotjob)
-- [](https://learn.microsoft.com/graph/api/configurationsnapshotjob-delete?view=graph-rest-beta)
+- [Remove-MgBetaAdminConfigurationManagementConfigurationSnapshotJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/remove-mgbetaadminconfigurationmanagementconfigurationsnapshotjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationsnapshotjob-delete?view=graph-rest-beta)
 
 
 
