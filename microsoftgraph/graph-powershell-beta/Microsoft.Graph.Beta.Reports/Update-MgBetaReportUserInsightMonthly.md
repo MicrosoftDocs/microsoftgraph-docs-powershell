@@ -605,7 +605,7 @@ Supports $filter (eq).
   [SuccessCount <Int64?>]: Number of successful authentication requests.
 Supports $filter (eq).
 
-BODYPARAMETER <IMicrosoftGraphMonthlyUserInsightMetricsRoot>: monthlyUserInsightMetricsRoot
+BODYPARAMETER `<IMicrosoftGraphMonthlyUserInsightMetricsRoot>`: monthlyUserInsightMetricsRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -825,3 +825,25 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthly)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
