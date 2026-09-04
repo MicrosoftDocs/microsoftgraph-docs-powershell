@@ -690,8 +690,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetagchildtag)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-beta)
+- [Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetagchildtag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-beta)
 
 
 
