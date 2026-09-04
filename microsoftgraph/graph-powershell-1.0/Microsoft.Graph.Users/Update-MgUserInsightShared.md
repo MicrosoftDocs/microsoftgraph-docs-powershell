@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightshared
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 09/04/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserInsightShared
 ---
@@ -14,9 +14,6 @@ title: Update-MgUserInsightShared
 ## SYNOPSIS
 
 Update the navigation property shared in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserInsightShared](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserInsightShared?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property shared in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -548,7 +555,7 @@ HelpMessage: ''
 
 ### -SharingHistory
 
-
+.
 To construct, see NOTES section for SHARINGHISTORY properties and create a hash table.
 
 ```yaml
@@ -657,7 +664,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSharedInsight>`: sharedInsight
+BODYPARAMETER <IMicrosoftGraphSharedInsight>: sharedInsight
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -704,7 +711,7 @@ Can be used for filtering for a specific file based on a specific type.
 See the section Type property values for supported types.
   [SharingHistory <IMicrosoftGraphSharingDetail[]>]: 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentSessionId <String>]: The unique identifier of attachmentSession
   [ChecklistItemId <String>]: The unique identifier of checklistItem
@@ -731,7 +738,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-LASTSHARED `<IMicrosoftGraphSharingDetail>`: sharingDetail
+LASTSHARED <IMicrosoftGraphSharingDetail>: sharingDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SharedBy <IMicrosoftGraphInsightIdentity>]: insightIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -751,23 +758,23 @@ Read-only.
   [SharingType <String>]: Determines the way the document was shared.
 Can be by a 1Link1, 1Attachment1, 1Group1, 1Site1.
 
-LASTSHAREDMETHOD `<IMicrosoftGraphEntity>`: entity
+LASTSHAREDMETHOD <IMicrosoftGraphEntity>: entity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-RESOURCE `<IMicrosoftGraphEntity>`: entity
+RESOURCE <IMicrosoftGraphEntity>: entity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-RESOURCEREFERENCE `<IMicrosoftGraphResourceReference>`: resourceReference
+RESOURCEREFERENCE <IMicrosoftGraphResourceReference>: resourceReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The item's unique identifier.
   [Type <String>]: A string value that can be used to classify the item, such as 'microsoft.graph.driveItem'
   [WebUrl <String>]: A URL leading to the referenced item.
 
-RESOURCEVISUALIZATION `<IMicrosoftGraphResourceVisualization>`: resourceVisualization
+RESOURCEVISUALIZATION <IMicrosoftGraphResourceVisualization>: resourceVisualization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContainerDisplayName <String>]: A string describing where the item is stored.
 For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.
@@ -806,27 +813,4 @@ Can be by a 1Link1, 1Attachment1, 1Group1, 1Site1.
 
 ## RELATED LINKS
 
-- [Update-MgUserInsightShared](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightshared)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsightshared)
