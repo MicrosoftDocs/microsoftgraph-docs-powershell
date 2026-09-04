@@ -15,6 +15,9 @@ title: New-MgUserSettingWorkHourAndLocationOccurrence
 
 Create new navigation property to occurrences for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
