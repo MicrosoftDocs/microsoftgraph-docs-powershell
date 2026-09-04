@@ -478,7 +478,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowpostfederationsignupbyref)
+- [Remove-MgBetaIdentityB2XUserFlowPostFederationSignupByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflowpostfederationsignupbyref)
 
 
 

@@ -488,8 +488,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-delete?view=graph-rest-beta)
+- [Remove-MgBetaPolicyMobileDeviceManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-delete?view=graph-rest-beta)
 
 
 

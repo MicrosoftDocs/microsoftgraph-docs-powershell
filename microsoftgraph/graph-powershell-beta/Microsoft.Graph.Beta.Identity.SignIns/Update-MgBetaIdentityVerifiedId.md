@@ -465,7 +465,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedid)
+- [Update-MgBetaIdentityVerifiedId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedid)
 
 
 

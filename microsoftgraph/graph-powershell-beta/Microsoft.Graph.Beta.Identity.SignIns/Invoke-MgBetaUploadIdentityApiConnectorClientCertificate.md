@@ -618,8 +618,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityapiconnectorclientcertificate)
-- [](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-beta)
+- [Invoke-MgBetaUploadIdentityApiConnectorClientCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityapiconnectorclientcertificate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-beta)
 
 
 
