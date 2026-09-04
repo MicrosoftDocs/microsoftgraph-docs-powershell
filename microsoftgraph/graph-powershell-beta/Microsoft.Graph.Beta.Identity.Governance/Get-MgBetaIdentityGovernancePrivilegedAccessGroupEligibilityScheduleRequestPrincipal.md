@@ -16,6 +16,9 @@ title: Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleReque
 References the principal that's in the scope of the membership or ownership eligibility request through the group that's governed by PIM.
 Supports $expand and $select nested in $expand for id only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
