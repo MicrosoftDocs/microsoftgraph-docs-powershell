@@ -456,13 +456,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Object
 
-{{ Fill in the Description }}
 
 ## OUTPUTS
 
 ### System.Object
 
-{{ Fill in the Description }}
 
 ## NOTES
 
