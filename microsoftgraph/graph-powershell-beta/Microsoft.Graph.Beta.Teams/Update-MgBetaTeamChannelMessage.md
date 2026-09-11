@@ -1815,12 +1815,12 @@ For example, if you set contentType to application/word and set contentUrl to th
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
 
-BODY <IMicrosoftGraphItemBody>: itemBody
+BODY `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
+BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1890,7 +1890,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1956,7 +1956,7 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
+CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChannelId <String>]: The identity of the channel in which the message was posted.
   [TeamId <String>]: The identity of the team in which the message was posted.
@@ -1969,7 +1969,7 @@ Content type, such as image/png, image/jpg.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -2019,7 +2019,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -2072,7 +2072,7 @@ For example, in the access reviews decisions API, this property might record the
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
 
-POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
+POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DlpAction <String>]: chatMessagePolicyViolationDlpActionTypes
   [JustificationText <String>]: Justification text provided by the sender of the message when overriding a policy violation.
@@ -2175,7 +2175,7 @@ Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -2246,3 +2246,25 @@ Link to the message in Microsoft Teams.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmessage)
 - [](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

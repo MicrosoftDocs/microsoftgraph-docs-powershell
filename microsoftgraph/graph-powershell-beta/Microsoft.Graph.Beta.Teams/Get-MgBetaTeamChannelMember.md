@@ -14,7 +14,7 @@ title: Get-MgBetaTeamChannelMember
 ## SYNOPSIS
 
 Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membership ID.
-This API provides access to the following member types:\r\n- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).\r\n- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
+This API provides access to the following member types:\r- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).\r- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
 When you retrieve an indirect member, the @microsoft.graph.originalSourceMembershipUrl property identifies the original source team, which indicates that the user is an indirect member of the shared channel.
 
 ## SYNTAX
@@ -87,7 +87,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membership ID.
-This API provides access to the following member types:\r\n- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).\r\n- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
+This API provides access to the following member types:\r- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).\r- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant).
 When you retrieve an indirect member, the @microsoft.graph.originalSourceMembershipUrl property identifies the original source team, which indicates that the user is an indirect member of the shared channel.
 
 ## EXAMPLES
@@ -702,7 +702,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -757,3 +757,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/channel-list-allmembers?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

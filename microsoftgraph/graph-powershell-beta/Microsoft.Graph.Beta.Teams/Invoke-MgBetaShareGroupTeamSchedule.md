@@ -547,13 +547,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1N3C8HgGroupsGroupIdTeamScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [NotifyTeam <Boolean?>]: 
   [StartDateTime <DateTime?>]: 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -605,3 +605,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasharegroupteamschedule)
 - [](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

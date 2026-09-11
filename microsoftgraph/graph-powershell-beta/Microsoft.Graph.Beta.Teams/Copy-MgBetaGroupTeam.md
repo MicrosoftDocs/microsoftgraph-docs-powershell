@@ -14,9 +14,9 @@ title: Copy-MgBetaGroupTeam
 ## SYNOPSIS
 
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\r\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\rYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-\r\nIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
+\rIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
@@ -74,9 +74,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\r\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.\rYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-\r\nIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
+\rIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
@@ -634,7 +634,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Classification <String>]: 
   [Description <String>]: 
@@ -643,7 +643,7 @@ BODYPARAMETER <IPaths1Umefn4GroupsGroupIdTeamMicrosoftGraphClonePostRequestbodyC
   [PartsToClone <String>]: clonableTeamParts
   [Visibility <String>]: teamVisibilityType
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -695,3 +695,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetagroupteam)
 - [](https://learn.microsoft.com/graph/api/team-clone?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
