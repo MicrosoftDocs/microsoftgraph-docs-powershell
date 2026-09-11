@@ -34435,7 +34435,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild)
+- [New-MgUserDriveItemChild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild)
 
 
 

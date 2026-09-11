@@ -366,7 +366,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecreatedbyuser)
+- [Get-MgShareCreatedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecreatedbyuser)
 
 
 

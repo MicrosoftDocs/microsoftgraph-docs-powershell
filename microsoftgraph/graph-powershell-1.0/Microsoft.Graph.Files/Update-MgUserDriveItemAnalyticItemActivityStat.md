@@ -11455,7 +11455,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemanalyticitemactivitystat)
+- [Update-MgUserDriveItemAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemanalyticitemactivitystat)
 
 
 

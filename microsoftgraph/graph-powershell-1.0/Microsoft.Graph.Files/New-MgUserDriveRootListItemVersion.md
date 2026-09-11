@@ -683,7 +683,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootlistitemversion)
+- [New-MgUserDriveRootListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootlistitemversion)
 
 
 

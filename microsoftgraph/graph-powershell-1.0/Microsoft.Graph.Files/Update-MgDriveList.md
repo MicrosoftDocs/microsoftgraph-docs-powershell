@@ -28043,7 +28043,7 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelist)
+- [Update-MgDriveList](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelist)
 
 
 

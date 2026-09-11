@@ -405,7 +405,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecontenttypebasetypecount)
+- [Get-MgUserDriveContentTypeBaseTypeCount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecontenttypebasetypecount)
 
 
 

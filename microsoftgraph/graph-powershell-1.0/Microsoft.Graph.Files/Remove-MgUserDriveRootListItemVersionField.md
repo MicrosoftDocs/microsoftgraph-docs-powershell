@@ -449,7 +449,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitemversionfield)
+- [Remove-MgUserDriveRootListItemVersionField](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitemversionfield)
 
 
 

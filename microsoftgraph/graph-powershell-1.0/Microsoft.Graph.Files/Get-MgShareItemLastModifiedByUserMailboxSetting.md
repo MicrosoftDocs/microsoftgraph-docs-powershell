@@ -423,7 +423,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemlastmodifiedbyusermailboxsetting)
+- [Get-MgShareItemLastModifiedByUserMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareitemlastmodifiedbyusermailboxsetting)
 
 
 

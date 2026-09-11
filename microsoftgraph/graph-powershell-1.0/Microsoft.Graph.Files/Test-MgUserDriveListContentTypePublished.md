@@ -362,8 +362,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mguserdrivelistcontenttypepublished)
-- [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
+- [Test-MgUserDriveListContentTypePublished](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mguserdrivelistcontenttypepublished)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
 
 
 

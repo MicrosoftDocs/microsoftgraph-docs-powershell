@@ -386,7 +386,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemdriveitem)
+- [Get-MgDriveItemListItemDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemdriveitem)
 
 
 
