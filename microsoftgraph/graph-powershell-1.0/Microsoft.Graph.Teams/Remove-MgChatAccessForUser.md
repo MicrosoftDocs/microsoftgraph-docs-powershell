@@ -15,6 +15,9 @@ title: Remove-MgChatAccessForUser
 
 Remove access to a chat for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChatAccessForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatAccessForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

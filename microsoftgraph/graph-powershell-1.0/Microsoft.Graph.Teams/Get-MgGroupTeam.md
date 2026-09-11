@@ -15,6 +15,9 @@ title: Get-MgGroupTeam
 
 The team associated with this group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

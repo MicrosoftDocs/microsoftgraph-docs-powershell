@@ -17,6 +17,9 @@ Preview of the last message sent in the chat.
 Null if no messages were sent in the chat.
 Currently, only the list chats operation supports this property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

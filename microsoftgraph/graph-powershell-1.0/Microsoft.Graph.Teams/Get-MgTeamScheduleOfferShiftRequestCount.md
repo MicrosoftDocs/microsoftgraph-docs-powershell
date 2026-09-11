@@ -15,6 +15,9 @@ title: Get-MgTeamScheduleOfferShiftRequestCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleOfferShiftRequestCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOfferShiftRequestCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

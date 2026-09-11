@@ -15,6 +15,9 @@ title: Hide-MgUserChatForUser
 
 Hide a chat for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Hide-MgBetaUserChatForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Hide-MgBetaUserChatForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### HideExpanded (Default)

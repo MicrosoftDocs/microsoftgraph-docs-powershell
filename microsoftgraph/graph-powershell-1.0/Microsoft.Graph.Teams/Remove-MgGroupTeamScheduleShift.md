@@ -15,6 +15,9 @@ title: Remove-MgGroupTeamScheduleShift
 
 Delete navigation property shifts for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
