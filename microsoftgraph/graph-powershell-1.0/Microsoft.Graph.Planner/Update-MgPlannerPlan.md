@@ -82,8 +82,9 @@ Update the properties of a plannerPlan object.
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Planner
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Update-MgPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 
