@@ -800,8 +800,8 @@ See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/new-mgsubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [New-MgSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/new-mgsubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 
 
 
