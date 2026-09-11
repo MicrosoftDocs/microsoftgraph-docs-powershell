@@ -58,6 +58,14 @@ This cmdlet has the following aliases,
 Read the properties and relationships of ring object.
 You can use this method with the following child object type: qualityUpdateRing.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | WindowsUpdates.Read.All, WindowsUpdates.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | WindowsUpdates.Read.All, WindowsUpdates.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
