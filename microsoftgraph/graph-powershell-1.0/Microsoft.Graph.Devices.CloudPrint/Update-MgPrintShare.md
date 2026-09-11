@@ -1929,7 +1929,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5893,8 +5893,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -7101,7 +7101,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11494,8 +11494,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11506,7 +11506,7 @@ Requires $select to retrieve.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for members and guests, see What are the default user permissions in Microsoft Entra ID?
 
-BODYPARAMETER <IMicrosoftGraphPrinterShare>: printerShare
+BODYPARAMETER `<IMicrosoftGraphPrinterShare>`: printerShare
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Capabilities <IMicrosoftGraphPrinterCapabilities>]: printerCapabilities
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -12748,7 +12748,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -16461,8 +16461,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -16812,7 +16812,7 @@ Nullable.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-CAPABILITIES <IMicrosoftGraphPrinterCapabilities>: printerCapabilities
+CAPABILITIES `<IMicrosoftGraphPrinterCapabilities>`: printerCapabilities
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BottomMargins <Int32[]>]: A list of supported bottom margins(in microns) for the printer.
   [Collation <Boolean?>]: True if the printer supports collating when printing muliple copies of a multi-page document; false otherwise.
@@ -16851,7 +16851,7 @@ Valid values are described in the following table.
   [SupportsFitPdfToPage <Boolean?>]: True if the printer supports scaling PDF pages to match the print media size; false otherwise.
   [TopMargins <Int32[]>]: A list of supported top margins(in microns) for the printer.
 
-DEFAULTS <IMicrosoftGraphPrinterDefaults>: printerDefaults
+DEFAULTS `<IMicrosoftGraphPrinterDefaults>`: printerDefaults
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ColorMode <String>]: printColorMode
   [ContentType <String>]: The default content (MIME) type to use when processing documents.
@@ -16876,7 +16876,7 @@ See the printer's capabilities for a list of supported output bins.
   [Quality <String>]: printQuality
   [Scaling <String>]: printScaling
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -17000,7 +17000,7 @@ Read-only.
       [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
       [Event <String>]: printEvent
 
-LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
+LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AltitudeInMeters <Int32?>]: The altitude, in meters, that the printer is located at.
   [Building <String>]: The building that the printer is located in.
@@ -17024,7 +17024,7 @@ Only numerical values are supported right now.
 The elements should be in hierarchical order.
   [Subunit <String[]>]: 
 
-PRINTER <IMicrosoftGraphPrinter>: printer
+PRINTER `<IMicrosoftGraphPrinter>`: printer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Capabilities <IMicrosoftGraphPrinterCapabilities>]: printerCapabilities
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -18298,7 +18298,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -22011,8 +22011,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -22329,7 +22329,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>]: A list of task triggers that are associated with the printer.
 
-STATUS <IMicrosoftGraphPrinterStatus>: printerStatus
+STATUS `<IMicrosoftGraphPrinterStatus>`: printerStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: A human-readable description of the printer's current processing state.
 Read-only.
@@ -22338,7 +22338,7 @@ Valid values are described in the following table.
 Read-only.
   [State <String>]: printerProcessingState
 
-VIEWPOINT <IMicrosoftGraphPrinterShareViewpoint>: printerShareViewpoint
+VIEWPOINT `<IMicrosoftGraphPrinterShareViewpoint>`: printerShareViewpoint
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LastUsedDateTime <DateTime?>]: Date and time when the printer was last used by the signed-in user.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -22349,3 +22349,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare)
 - [](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
