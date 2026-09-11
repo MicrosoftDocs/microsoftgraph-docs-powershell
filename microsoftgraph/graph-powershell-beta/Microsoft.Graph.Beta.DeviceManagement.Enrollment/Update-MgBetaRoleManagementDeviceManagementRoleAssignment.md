@@ -14,7 +14,7 @@ title: Update-MgBetaRoleManagementDeviceManagementRoleAssignment
 ## SYNOPSIS
 
 Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
 
 ## SYNTAX
 
@@ -78,7 +78,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune) In contrast, unifiedRoleAssignment doesn't support update.
 
 ## EXAMPLES
 
@@ -810,7 +810,7 @@ Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentMultiple>: unifiedRoleAssignmentMultiple
+BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentMultiple>`: unifiedRoleAssignmentMultiple
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -903,7 +903,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -941,7 +941,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
+ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -989,3 +989,25 @@ Read-only when isBuiltIn is true.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroleassignment)
 - [](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
