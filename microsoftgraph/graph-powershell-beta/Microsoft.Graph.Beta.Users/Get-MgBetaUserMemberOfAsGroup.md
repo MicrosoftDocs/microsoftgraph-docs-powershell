@@ -17,6 +17,9 @@ Get groups, directory roles, and administrative units that the user is a direct 
 This operation isn't transitive.
 To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the List user transitive memberOf API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOfAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

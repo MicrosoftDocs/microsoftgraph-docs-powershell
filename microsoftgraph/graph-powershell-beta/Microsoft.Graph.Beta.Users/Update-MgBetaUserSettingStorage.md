@@ -15,6 +15,9 @@ title: Update-MgBetaUserSettingStorage
 
 Update the navigation property storage in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingStorage](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingStorage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

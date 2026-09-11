@@ -15,6 +15,9 @@ title: New-MgBetaUserOutlookMasterCategory
 
 Create new navigation property to masterCategories for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

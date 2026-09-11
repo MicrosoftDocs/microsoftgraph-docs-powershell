@@ -15,6 +15,9 @@ title: Get-MgBetaUserTransitiveMemberOfAsGroup
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOfAsGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

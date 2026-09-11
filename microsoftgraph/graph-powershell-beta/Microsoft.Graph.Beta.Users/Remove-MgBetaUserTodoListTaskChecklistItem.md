@@ -15,6 +15,9 @@ title: Remove-MgBetaUserTodoListTaskChecklistItem
 
 Delete navigation property checklistItems for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
