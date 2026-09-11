@@ -74,6 +74,14 @@ Upsert one or more place objects in async mode.
 This API allows you to create and update multiple places efficiently in a single request.
 For more information on how to use this API, including scenarios, best practices, and concurrency limits, see Working with the upsert Places API in Microsoft Graph.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
