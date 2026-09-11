@@ -480,7 +480,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]: teleconferenceDeviceQuality
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -527,7 +527,7 @@ If the media enabled and disabled multiple times, MediaDuration will the summati
     [ParticipantId <String>]: A unique identifier for a specific participant in a conference.
 The CVI partner needs to copy over Call.MyParticipantId to this property.
 
-QUALITY <IMicrosoftGraphTeleconferenceDeviceQuality>: teleconferenceDeviceQuality
+QUALITY `<IMicrosoftGraphTeleconferenceDeviceQuality>`: teleconferenceDeviceQuality
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CallChainId <String>]: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call.
 This needs to be copied over from Microsoft.Graph.Call.CallChainId.
@@ -577,3 +577,25 @@ The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality)
 - [](https://learn.microsoft.com/graph/api/call-logteleconferencedevicequality?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
