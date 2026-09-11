@@ -65,6 +65,14 @@ This cmdlet has the following aliases,
 
 Invoke action addGroup
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
