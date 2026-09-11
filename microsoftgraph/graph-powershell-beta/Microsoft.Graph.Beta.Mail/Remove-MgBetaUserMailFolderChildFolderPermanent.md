@@ -416,8 +416,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolderpermanent)
-- [](https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta)
+- [Remove-MgBetaUserMailFolderChildFolderPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfolderpermanent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-permanentdelete?view=graph-rest-beta)
 
 
 
