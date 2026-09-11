@@ -2147,3 +2147,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

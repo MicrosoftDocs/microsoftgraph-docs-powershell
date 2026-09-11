@@ -836,7 +836,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphBrowserSite>: Singleton entity which is used to specify IE mode site metadata
+BODYPARAMETER `<IMicrosoftGraphBrowserSite>`: Singleton entity which is used to specify IE mode site metadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -892,7 +892,7 @@ For example, in the access reviews decisions API, this property might record the
   [PublishedDateTime <DateTime?>]: The date and time when the site was last published.
   [TargetEnvironment <BrowserSiteTargetEnvironment?>]: browserSiteTargetEnvironment
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -1001,7 +1001,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [WindowsQualityUpdateProfileAssignmentId <String>]: The unique identifier of windowsQualityUpdateProfileAssignment
   [WindowsQualityUpdateProfileId <String>]: The unique identifier of windowsQualityUpdateProfile
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1018,3 +1018,25 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelistsite)
 - [](https://learn.microsoft.com/graph/api/browsersite-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
