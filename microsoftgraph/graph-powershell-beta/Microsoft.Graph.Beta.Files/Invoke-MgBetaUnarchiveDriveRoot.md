@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Invoke action unarchive
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.Read, Files.Read.All,  |
+| Delegated (personal Microsoft account) | Files.Read, Files.Read.All,  |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
