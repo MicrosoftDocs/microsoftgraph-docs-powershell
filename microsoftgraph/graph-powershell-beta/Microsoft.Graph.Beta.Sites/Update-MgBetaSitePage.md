@@ -15,6 +15,9 @@ title: Update-MgBetaSitePage
 
 Update the navigation property pages in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

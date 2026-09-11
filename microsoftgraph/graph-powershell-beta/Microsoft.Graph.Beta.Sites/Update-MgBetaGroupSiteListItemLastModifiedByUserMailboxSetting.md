@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection
 
 Update the navigation property horizontalSections in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

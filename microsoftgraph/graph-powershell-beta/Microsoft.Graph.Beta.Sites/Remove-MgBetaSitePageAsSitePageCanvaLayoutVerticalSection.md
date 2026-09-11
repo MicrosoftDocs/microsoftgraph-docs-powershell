@@ -15,6 +15,9 @@ title: Remove-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection
 
 Delete navigation property verticalSection for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Remove-MgSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

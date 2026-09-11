@@ -15,6 +15,9 @@ title: Update-MgBetaSiteContentTypeColumnLink
 
 Update the navigation property columnLinks in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

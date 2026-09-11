@@ -15,6 +15,9 @@ title: New-MgBetaSiteListItemDocumentSetVersion
 
 Create a new version of a document set item in a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

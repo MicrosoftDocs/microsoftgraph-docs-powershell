@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteAnalyticItemActivityStatActivity
 
 Create new navigation property to activities for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

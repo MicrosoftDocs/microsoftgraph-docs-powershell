@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteTermStoreGroupSetTerm
 
 All the terms under the set.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

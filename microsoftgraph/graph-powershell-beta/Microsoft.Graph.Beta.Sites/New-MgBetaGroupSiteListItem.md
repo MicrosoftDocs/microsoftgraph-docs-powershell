@@ -15,6 +15,9 @@ title: New-MgBetaGroupSiteListItem
 
 Create new navigation property to items for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

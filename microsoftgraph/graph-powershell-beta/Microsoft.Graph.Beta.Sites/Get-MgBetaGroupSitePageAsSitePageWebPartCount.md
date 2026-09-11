@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSitePageAsSitePageWebPartCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageWebPartCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageWebPartCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
