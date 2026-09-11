@@ -88,8 +88,9 @@ To grant an app role assignment to a client service principal, you need three id
 | Application | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
@@ -100,6 +101,10 @@ $params = @{
 }
 
 New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the New-MgServicePrincipalAppRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

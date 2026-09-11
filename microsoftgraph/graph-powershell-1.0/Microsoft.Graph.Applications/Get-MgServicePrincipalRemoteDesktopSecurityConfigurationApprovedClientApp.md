@@ -70,12 +70,17 @@ Read the properties and relationships of a approvedClientApp object for the remo
 | Application | Application.Read.All, Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp Cmdlet.
+
 
 ## PARAMETERS
 
