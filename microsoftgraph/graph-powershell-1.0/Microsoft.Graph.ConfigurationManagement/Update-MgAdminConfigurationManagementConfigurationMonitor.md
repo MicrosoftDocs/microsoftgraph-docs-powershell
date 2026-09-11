@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgAdminConfigurationManagementConfigurationMonitor
 ---
@@ -73,18 +73,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a configurationMonitor object, including the monitor name, description, and baseline.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ConfigurationMonitoring.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ConfigurationMonitoring.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update the displayName of a configurationMonitor
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
@@ -94,12 +85,7 @@ $params = @{
 
 Update-MgAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId -BodyParameter $params
 
-```
-This example will update the displayname of a configurationmonitor
-
-### Example 2: Update the baseline of a configurationMonitor
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
@@ -159,10 +145,6 @@ FQDN = "contoso.onmicrosoft.com"
 }
 
 Update-MgAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId -BodyParameter $params
-
-```
-This example will update the baseline of a configurationmonitor
-
 
 ## PARAMETERS
 
@@ -772,7 +754,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BASELINE `<IMicrosoftGraphConfigurationBaseline>`: configurationBaseline
+BASELINE <IMicrosoftGraphConfigurationBaseline>: configurationBaseline
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -789,7 +771,7 @@ At least one property of one resource must be present in the baseline.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [ResourceType <String>]: Name of the resource type.
 
-BODYPARAMETER `<IMicrosoftGraphConfigurationMonitor>`: configurationMonitor
+BODYPARAMETER <IMicrosoftGraphConfigurationMonitor>: configurationMonitor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -828,7 +810,7 @@ Supports $filter (eq, ne, startsWith) and $orderby.
   [Parameters <IMicrosoftGraphOpenComplexDictionaryType>]: openComplexDictionaryType
   [Status <MonitorStatus?>]: monitorStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -839,14 +821,14 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IConfigurationManagementIdentity>: Identity Parameter
   [ConfigurationBaselineId <String>]: The unique identifier of configurationBaseline
   [ConfigurationDriftId <String>]: The unique identifier of configurationDrift
   [ConfigurationMonitorId <String>]: The unique identifier of configurationMonitor
   [ConfigurationMonitoringResultId <String>]: The unique identifier of configurationMonitoringResult
   [ConfigurationSnapshotJobId <String>]: The unique identifier of configurationSnapshotJob
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -860,27 +842,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgAdminConfigurationManagementConfigurationMonitor](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitor)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmonitor-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitor)
+- [](https://learn.microsoft.com/graph/api/configurationmonitor-update?view=graph-rest-1.0)

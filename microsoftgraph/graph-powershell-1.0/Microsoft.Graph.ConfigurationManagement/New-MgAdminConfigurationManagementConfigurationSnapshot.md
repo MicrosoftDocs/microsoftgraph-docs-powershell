@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationsnapshot
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminConfigurationManagementConfigurationSnapshot
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to configurationSnapshots for admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -444,7 +454,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConfigurationBaseline>`: configurationBaseline
+BODYPARAMETER <IMicrosoftGraphConfigurationBaseline>: configurationBaseline
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -476,27 +486,4 @@ At least one property of one resource must be present in the baseline.
 
 ## RELATED LINKS
 
-- [New-MgAdminConfigurationManagementConfigurationSnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationsnapshot)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationsnapshot)

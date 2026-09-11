@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.ConfigurationManagement
-Module Guid: 22d628c0-b700-4527-96b4-272504ecdcc5
+Module Guid: ec791261-fde5-4358-b9a2-3a42be0f6935
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.configurationmanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -82,23 +82,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgAdminConfigurationManagementConfigurationSnapshot](Update-MgAdminConfigurationManagementConfigurationSnapshot.md)
 
 ### [Update-MgAdminConfigurationManagementConfigurationSnapshotJob](Update-MgAdminConfigurationManagementConfigurationSnapshotJob.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

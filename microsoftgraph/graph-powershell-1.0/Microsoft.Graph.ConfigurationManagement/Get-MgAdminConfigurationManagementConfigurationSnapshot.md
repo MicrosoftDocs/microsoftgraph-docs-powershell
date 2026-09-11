@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/get-mgadminconfigurationmanagementconfigurationsnapshot
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminConfigurationManagementConfigurationSnapshot
 ---
@@ -57,26 +57,13 @@ This cmdlet has the following aliases,
 
 A container for configuration snapshot baselines.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ConfigurationMonitoring.Read.All, ConfigurationMonitoring.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ConfigurationMonitoring.Read.All, ConfigurationMonitoring.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
 Get-MgAdminConfigurationManagementConfigurationSnapshot
-
-```
-This example shows how to use the Get-MgAdminConfigurationManagementConfigurationSnapshot Cmdlet.
-
 
 ## PARAMETERS
 
@@ -538,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IConfigurationManagementIdentity>: Identity Parameter
   [ConfigurationBaselineId <String>]: The unique identifier of configurationBaseline
   [ConfigurationDriftId <String>]: The unique identifier of configurationDrift
   [ConfigurationMonitorId <String>]: The unique identifier of configurationMonitor
@@ -548,27 +535,5 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgAdminConfigurationManagementConfigurationSnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/get-mgadminconfigurationmanagementconfigurationsnapshot)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmanagement-list-configurationsnapshots?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/get-mgadminconfigurationmanagementconfigurationsnapshot)
+- [](https://learn.microsoft.com/graph/api/configurationmanagement-list-configurationsnapshots?view=graph-rest-1.0)

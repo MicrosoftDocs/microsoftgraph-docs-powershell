@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgAdminConfigurationManagement
 ---
@@ -34,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property configurationManagement for admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -315,27 +325,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgAdminConfigurationManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagement)

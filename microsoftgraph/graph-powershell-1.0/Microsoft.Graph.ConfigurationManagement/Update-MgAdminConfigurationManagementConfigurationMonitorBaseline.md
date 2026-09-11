@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitorbaseline
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgAdminConfigurationManagementConfigurationMonitorBaseline
 ---
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property baseline in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -568,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConfigurationBaseline>`: configurationBaseline
+BODYPARAMETER <IMicrosoftGraphConfigurationBaseline>: configurationBaseline
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -585,7 +595,7 @@ At least one property of one resource must be present in the baseline.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [ResourceType <String>]: Name of the resource type.
 
-INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IConfigurationManagementIdentity>: Identity Parameter
   [ConfigurationBaselineId <String>]: The unique identifier of configurationBaseline
   [ConfigurationDriftId <String>]: The unique identifier of configurationDrift
   [ConfigurationMonitorId <String>]: The unique identifier of configurationMonitor
@@ -607,27 +617,4 @@ At least one property of one resource must be present in the baseline.
 
 ## RELATED LINKS
 
-- [Update-MgAdminConfigurationManagementConfigurationMonitorBaseline](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitorbaseline)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitorbaseline)
