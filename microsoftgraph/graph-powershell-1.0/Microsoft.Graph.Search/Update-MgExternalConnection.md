@@ -817,12 +817,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITYSETTINGS <IMicrosoftGraphExternalConnectorsActivitySettings>: activitySettings
+ACTIVITYSETTINGS `<IMicrosoftGraphExternalConnectorsActivitySettings>`: activitySettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]: Specifies configurations to identify an externalItem based on a shared URL.
     [Priority <Int32?>]: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
 
-BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalConnection
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -965,7 +965,7 @@ Required.
         [ValuesJoinedBy <String>]: binaryOperator
   [State <String>]: connectionState
 
-CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
+CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthorizedAppIds <String[]>]: A collection of application IDs for registered Microsoft Entra apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
@@ -982,7 +982,7 @@ You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup a
 Read-only.
     [Type <String>]: identityType
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -1045,7 +1045,7 @@ Read-only.
     [Target <String>]: The target of the error.
   [Status <String>]: connectionOperationStatus
 
-SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
+SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1088,7 +1088,7 @@ For example, each string may not contain control characters, whitespace, or any 
  Required.
     [Type <String>]: propertyType
 
-SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
+SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed.
 Maximum of 2 search result templates per connection.
@@ -1116,3 +1116,25 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection)
 - [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
