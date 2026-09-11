@@ -613,8 +613,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant)
-- [](https://learn.microsoft.com/graph/api/meetingregistration-post-registrants?view=graph-rest-beta)
+- [New-MgBetaUserOnlineMeetingRegistrationRegistrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationregistrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/meetingregistration-post-registrants?view=graph-rest-beta)
 
 
 

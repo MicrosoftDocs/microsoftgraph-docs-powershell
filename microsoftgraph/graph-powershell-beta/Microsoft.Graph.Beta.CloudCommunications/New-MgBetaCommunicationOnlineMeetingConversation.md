@@ -1250,7 +1250,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversation)
+- [New-MgBetaCommunicationOnlineMeetingConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversation)
 
 
 

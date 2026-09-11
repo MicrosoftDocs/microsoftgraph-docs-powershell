@@ -392,8 +392,8 @@ BODYPARAMETER `<IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPos
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresencebyuserid)
-- [](https://learn.microsoft.com/graph/api/cloudcommunications-getpresencesbyuserid?view=graph-rest-beta)
+- [Get-MgBetaCommunicationPresenceByUserId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresencebyuserid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudcommunications-getpresencesbyuserid?view=graph-rest-beta)
 
 
 

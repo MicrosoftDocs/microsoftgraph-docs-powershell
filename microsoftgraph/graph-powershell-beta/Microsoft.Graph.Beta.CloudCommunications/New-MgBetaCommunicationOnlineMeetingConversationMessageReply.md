@@ -940,7 +940,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversationmessagereply)
+- [New-MgBetaCommunicationOnlineMeetingConversationMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingconversationmessagereply)
 
 
 

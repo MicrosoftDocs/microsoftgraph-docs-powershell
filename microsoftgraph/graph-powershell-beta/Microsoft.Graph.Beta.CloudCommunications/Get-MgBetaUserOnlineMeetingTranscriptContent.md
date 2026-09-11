@@ -446,8 +446,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent)
-- [](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta)
+- [Get-MgBetaUserOnlineMeetingTranscriptContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-beta)
 
 
 

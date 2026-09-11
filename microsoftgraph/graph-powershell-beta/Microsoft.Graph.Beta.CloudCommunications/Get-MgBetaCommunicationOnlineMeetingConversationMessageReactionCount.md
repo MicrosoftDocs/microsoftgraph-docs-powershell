@@ -387,7 +387,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationmessagereactioncount)
+- [Get-MgBetaCommunicationOnlineMeetingConversationMessageReactionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingconversationmessagereactioncount)
 
 
 

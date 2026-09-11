@@ -954,7 +954,7 @@ RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant)
+- [Update-MgBetaCommunicationCallParticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant)
 
 
 
