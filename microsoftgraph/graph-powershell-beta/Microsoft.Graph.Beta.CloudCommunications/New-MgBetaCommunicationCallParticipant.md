@@ -353,7 +353,7 @@ HelpMessage: ''
 
 ### -IsIdentityAnonymized
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
