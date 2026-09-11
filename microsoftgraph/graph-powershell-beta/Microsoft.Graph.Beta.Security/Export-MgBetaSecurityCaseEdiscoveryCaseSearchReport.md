@@ -16,6 +16,9 @@ title: Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport
 Export an item report from an estimated ediscoverySearch.
 For details, see Manage a collection estimate.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseSearchReport](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseSearchReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

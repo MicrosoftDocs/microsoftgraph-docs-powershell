@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentityAccount
 
 Get identityAccounts from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentityAccount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

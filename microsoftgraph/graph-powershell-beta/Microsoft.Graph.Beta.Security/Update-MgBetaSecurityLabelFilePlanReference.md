@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityLabelFilePlanReference
 
 Update the navigation property filePlanReferences in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

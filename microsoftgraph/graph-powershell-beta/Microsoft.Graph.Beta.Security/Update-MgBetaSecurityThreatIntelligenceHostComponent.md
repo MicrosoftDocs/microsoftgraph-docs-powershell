@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityThreatIntelligenceHostComponent
 
 Update the navigation property hostComponents in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

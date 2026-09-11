@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostPair
 
 Read the properties and relationships of a hostPair object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPair?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

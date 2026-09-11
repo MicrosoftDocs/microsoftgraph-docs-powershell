@@ -15,6 +15,9 @@ title: New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage
 
 Create new navigation property to dispositionReviewStages for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

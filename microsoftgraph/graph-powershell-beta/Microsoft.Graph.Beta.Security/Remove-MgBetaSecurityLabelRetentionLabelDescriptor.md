@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityLabelRetentionLabelDescriptor
 
 Delete navigation property descriptors for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

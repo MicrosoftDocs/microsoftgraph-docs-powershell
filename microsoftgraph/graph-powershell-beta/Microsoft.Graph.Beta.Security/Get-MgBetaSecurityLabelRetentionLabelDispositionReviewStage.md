@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage
 
 When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

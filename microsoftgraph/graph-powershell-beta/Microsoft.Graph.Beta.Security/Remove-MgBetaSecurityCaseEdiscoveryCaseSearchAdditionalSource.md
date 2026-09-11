@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource
 
 Delete navigation property additionalSources for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaSecurityCaseEdiscoveryCaseTag
 
 Create a new ediscoveryReviewTag object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

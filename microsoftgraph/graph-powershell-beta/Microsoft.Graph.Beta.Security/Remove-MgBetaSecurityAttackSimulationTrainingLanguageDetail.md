@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail
 
 Delete navigation property languageDetails for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

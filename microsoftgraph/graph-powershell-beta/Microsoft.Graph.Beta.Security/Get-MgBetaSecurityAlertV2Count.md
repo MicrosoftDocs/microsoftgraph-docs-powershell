@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAlertV2Count
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlertV2Count](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2Count?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

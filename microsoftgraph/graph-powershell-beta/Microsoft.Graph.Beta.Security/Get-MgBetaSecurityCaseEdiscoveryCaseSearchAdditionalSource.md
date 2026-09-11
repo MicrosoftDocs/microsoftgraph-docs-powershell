@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource
 
 Adds an additional source to the eDiscovery search.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
