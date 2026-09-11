@@ -284,7 +284,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgrolemanagement)
+- [Get-MgRoleManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgrolemanagement)
 
 
 
