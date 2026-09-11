@@ -77,20 +77,6 @@ This cmdlet has the following aliases,
 
 Update the properties of an existing customAccessPackageWorkflowExtension object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -849,6 +835,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
 - [](https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-beta)
+
 
 
 
