@@ -15,6 +15,9 @@ title: Set-MgBetaDeviceManagementDeviceEnrollmentConfiguration
 
 Invoke action assign
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Set-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
