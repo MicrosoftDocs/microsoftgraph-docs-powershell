@@ -56,16 +56,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.Read.All, Application.Read.All, Directory.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -454,6 +444,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicyapplytocount)
+
 
 
 
