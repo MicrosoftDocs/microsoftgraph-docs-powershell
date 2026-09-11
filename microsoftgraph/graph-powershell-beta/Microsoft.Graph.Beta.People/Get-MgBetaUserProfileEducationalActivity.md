@@ -592,7 +592,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileeducationalactivity)
+- [Get-MgBetaUserProfileEducationalActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileeducationalactivity)
 
 
 
