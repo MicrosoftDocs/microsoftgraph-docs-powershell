@@ -409,8 +409,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertask)
-- [](https://learn.microsoft.com/graph/api/plannertask-delete?view=graph-rest-1.0)
+- [Remove-MgPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertask-delete?view=graph-rest-1.0)
 
 
 
