@@ -66,16 +66,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property planner in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1174,6 +1164,7 @@ Title of the plan.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelplanner)
+
 
 
 

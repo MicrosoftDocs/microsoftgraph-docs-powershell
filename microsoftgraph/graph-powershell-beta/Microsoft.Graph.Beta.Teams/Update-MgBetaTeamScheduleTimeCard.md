@@ -78,20 +78,6 @@ This cmdlet has the following aliases,
 
 Replace an existing timeCard with updated values.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -977,6 +963,7 @@ If both are included in the request with different values, the value for isAtApp
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimecard)
 - [](https://learn.microsoft.com/graph/api/timecard-replace?view=graph-rest-beta)
+
 
 
 
