@@ -17,6 +17,9 @@ Create a new directory setting based on the templates available in directorySett
 These settings can be at the tenant-level or at the group level.
 The following setting templates are available for groups:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Confirm-MgBetaGroupGrantedPermissionForApp
 
 Invoke action checkGrantedPermissionsForApp
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Check (Default)

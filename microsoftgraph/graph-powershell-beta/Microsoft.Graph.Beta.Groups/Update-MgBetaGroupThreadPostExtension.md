@@ -18,6 +18,9 @@ The data in an extension can be primitive types or arrays of primitive types.
 The operation behaves differently for resources that are directory objects vs other resources.
 For the list of resources that support open extensions, see the table in the Permissions section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

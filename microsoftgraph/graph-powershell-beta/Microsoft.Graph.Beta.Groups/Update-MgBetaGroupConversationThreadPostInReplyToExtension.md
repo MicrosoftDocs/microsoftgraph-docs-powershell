@@ -15,6 +15,9 @@ title: Update-MgBetaGroupConversationThreadPostInReplyToExtension
 
 Update the navigation property extensions in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThreadPostInReplyToExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

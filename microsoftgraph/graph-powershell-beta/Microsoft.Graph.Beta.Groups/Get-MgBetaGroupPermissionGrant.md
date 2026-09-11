@@ -16,6 +16,9 @@ title: Get-MgBetaGroupPermissionGrant
 The permissions granted for a group to a specific application.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

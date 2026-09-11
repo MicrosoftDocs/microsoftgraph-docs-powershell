@@ -15,6 +15,9 @@ title: Get-MgBetaGroupMemberWithLicenseErrorAsUser
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberWithLicenseErrorAsUser](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberWithLicenseErrorAsUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

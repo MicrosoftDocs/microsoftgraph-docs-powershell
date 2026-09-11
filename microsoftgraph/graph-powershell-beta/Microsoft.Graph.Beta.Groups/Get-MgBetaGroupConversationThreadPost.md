@@ -15,6 +15,9 @@ title: Get-MgBetaGroupConversationThreadPost
 
 Get posts from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaGroupPermissionGrant
 
 Update the navigation property permissionGrants in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
