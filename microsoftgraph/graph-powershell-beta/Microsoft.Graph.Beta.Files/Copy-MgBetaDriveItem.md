@@ -655,7 +655,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths17Tusw5DrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths17Tusw5DrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChildrenOnly <Boolean?>]: 
   [IncludeAllVersionHistory <Boolean?>]: 
@@ -689,7 +689,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -716,7 +716,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
+PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -750,3 +750,25 @@ For OneDrive, this property isn't populated.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveitem)
 - [](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
