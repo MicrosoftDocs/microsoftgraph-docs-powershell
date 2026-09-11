@@ -16,6 +16,9 @@ title: Remove-MgUserOnlineMeetingRecordingContent
 The content of the recording.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserOnlineMeetingRecordingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

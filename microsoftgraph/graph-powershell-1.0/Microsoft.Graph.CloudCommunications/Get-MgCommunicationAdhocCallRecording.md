@@ -16,6 +16,9 @@ title: Get-MgCommunicationAdhocCallRecording
 The recordings of a call.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationAdhocCallRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationAdhocCallRecording?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

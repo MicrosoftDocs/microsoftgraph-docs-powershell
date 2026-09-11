@@ -16,6 +16,9 @@ title: Get-MgCommunicationAdhocCallTranscriptMetadataContent
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationAdhocCallTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationAdhocCallTranscriptMetadataContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
