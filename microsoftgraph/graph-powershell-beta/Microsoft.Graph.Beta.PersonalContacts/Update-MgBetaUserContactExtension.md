@@ -15,6 +15,9 @@ title: Update-MgBetaUserContactExtension
 
 Update the navigation property extensions in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
