@@ -49,8 +49,9 @@ This cmdlet has the following aliases,
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
@@ -62,6 +63,10 @@ $params = @{
 }
 
 Invoke-MgFavoriteServiceAnnouncementMessage -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgFavoriteServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 
