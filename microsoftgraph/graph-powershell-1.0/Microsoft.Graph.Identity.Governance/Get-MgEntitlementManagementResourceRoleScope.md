@@ -57,16 +57,6 @@ This cmdlet has the following aliases,
 
 Get resourceRoleScopes from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId
@@ -606,6 +596,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerolescope)
+
 
 
 

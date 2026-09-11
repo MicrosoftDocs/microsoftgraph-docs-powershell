@@ -75,16 +75,6 @@ This cmdlet has the following aliases,
 
 Update an external directory user represented by an existing accessPackageSubject object to change the subject lifecycle.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId
@@ -828,6 +818,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsubject)
 - [](https://learn.microsoft.com/graph/api/accesspackagesubject-update?view=graph-rest-1.0)
+
 
 
 

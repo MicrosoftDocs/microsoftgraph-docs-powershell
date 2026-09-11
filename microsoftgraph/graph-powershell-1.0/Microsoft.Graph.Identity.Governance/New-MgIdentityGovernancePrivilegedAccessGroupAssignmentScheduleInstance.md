@@ -53,16 +53,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to assignmentScheduleInstances for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessId
@@ -16606,6 +16596,7 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance)
+
 
 
 
