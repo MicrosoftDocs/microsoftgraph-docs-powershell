@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Restore a document set version.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.Selected,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
