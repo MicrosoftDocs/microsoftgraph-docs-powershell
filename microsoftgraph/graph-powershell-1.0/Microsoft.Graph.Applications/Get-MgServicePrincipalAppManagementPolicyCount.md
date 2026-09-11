@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalAppManagementPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppManagementPolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppManagementPolicyCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

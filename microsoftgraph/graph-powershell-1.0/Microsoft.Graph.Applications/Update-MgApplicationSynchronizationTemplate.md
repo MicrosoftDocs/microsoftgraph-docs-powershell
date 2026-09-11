@@ -15,6 +15,9 @@ title: Update-MgApplicationSynchronizationTemplate
 
 Update (override) the synchronizationTemplate associated with a given application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

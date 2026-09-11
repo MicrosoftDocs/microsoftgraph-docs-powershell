@@ -16,6 +16,9 @@ title: Get-MgServicePrincipal
 Retrieve the properties and relationships of a servicePrincipal object.
 This API can be used to get agentIdentityBlueprintPrincipal objects as well by their ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgApplicationSynchronizationTemplate
 
 Delete navigation property templates for applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

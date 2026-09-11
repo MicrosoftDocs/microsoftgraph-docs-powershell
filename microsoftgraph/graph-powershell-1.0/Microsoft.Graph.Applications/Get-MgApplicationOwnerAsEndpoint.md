@@ -15,6 +15,9 @@ title: Get-MgApplicationOwnerAsEndpoint
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

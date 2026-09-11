@@ -15,6 +15,9 @@ title: Set-MgApplicationSynchronizationJobBulkUploadContent
 
 The bulk upload operation for the job.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

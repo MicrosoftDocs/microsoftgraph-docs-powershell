@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalCreatedObjectAsServicePrincipal
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalOwnedObjectCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnedObjectCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: New-MgApplication
 Create a new application object.
 This API can also create an agentIdentityBlueprint object when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprint.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

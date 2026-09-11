@@ -15,6 +15,9 @@ title: Get-MgUserAppRoleAssignmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAppRoleAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAppRoleAssignmentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
