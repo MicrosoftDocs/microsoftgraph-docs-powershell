@@ -587,7 +587,7 @@ HelpMessage: ''
 
 ### -RegistrantVideoOnDemandWebUrl
 
-.
+
 
 ```yaml
 Type: System.String
