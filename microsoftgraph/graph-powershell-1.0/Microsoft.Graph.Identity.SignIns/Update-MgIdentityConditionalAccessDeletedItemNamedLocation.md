@@ -202,7 +202,7 @@ HelpMessage: ''
 
 ### -DeletedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
