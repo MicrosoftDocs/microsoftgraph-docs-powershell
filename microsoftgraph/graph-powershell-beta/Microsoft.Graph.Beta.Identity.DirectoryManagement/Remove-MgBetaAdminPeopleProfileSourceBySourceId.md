@@ -459,8 +459,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilesourcebysourceid)
-- [](https://learn.microsoft.com/graph/api/profilesource-delete?view=graph-rest-beta)
+- [Remove-MgBetaAdminPeopleProfileSourceBySourceId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilesourcebysourceid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilesource-delete?view=graph-rest-beta)
 
 
 

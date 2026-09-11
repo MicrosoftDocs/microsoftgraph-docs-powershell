@@ -416,8 +416,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting)
-- [](https://learn.microsoft.com/graph/api/photoupdatesettings-update?view=graph-rest-beta)
+- [Update-MgBetaAdminPeoplePhotoUpdateSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplephotoupdatesetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/photoupdatesettings-update?view=graph-rest-beta)
 
 
 

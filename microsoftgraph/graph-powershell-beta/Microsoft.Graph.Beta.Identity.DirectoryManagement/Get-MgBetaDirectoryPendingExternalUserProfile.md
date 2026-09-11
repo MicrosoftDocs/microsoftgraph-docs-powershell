@@ -607,9 +607,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile)
-- [](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-beta)
+- [Get-MgBetaDirectoryPendingExternalUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-beta)
 
 
 

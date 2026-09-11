@@ -464,8 +464,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunit)
-- [](https://learn.microsoft.com/graph/api/administrativeunit-delete?view=graph-rest-beta)
+- [Remove-MgBetaAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/administrativeunit-delete?view=graph-rest-beta)
 
 
 

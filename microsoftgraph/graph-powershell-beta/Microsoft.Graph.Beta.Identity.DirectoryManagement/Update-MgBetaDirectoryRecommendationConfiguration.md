@@ -411,8 +411,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendationconfiguration)
-- [](https://learn.microsoft.com/graph/api/recommendationconfiguration-update?view=graph-rest-beta)
+- [Update-MgBetaDirectoryRecommendationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/recommendationconfiguration-update?view=graph-rest-beta)
 
 
 

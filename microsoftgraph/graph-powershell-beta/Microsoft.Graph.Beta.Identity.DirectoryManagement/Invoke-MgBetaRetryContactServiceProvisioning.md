@@ -438,8 +438,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaretrycontactserviceprovisioning)
-- [](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-beta)
+- [Invoke-MgBetaRetryContactServiceProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaretrycontactserviceprovisioning)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-beta)
 
 
 

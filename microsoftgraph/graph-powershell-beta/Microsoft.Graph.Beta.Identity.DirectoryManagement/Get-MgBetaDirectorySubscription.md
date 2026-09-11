@@ -601,9 +601,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscription)
-- [](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/directory-list-subscriptions?view=graph-rest-beta)
+- [Get-MgBetaDirectorySubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-subscriptions?view=graph-rest-beta)
 
 
 

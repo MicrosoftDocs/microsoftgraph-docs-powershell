@@ -466,8 +466,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryoutboundshareduserprofiletenantpersonaldata)
-- [](https://learn.microsoft.com/graph/api/tenantreference-removepersonaldata?view=graph-rest-beta)
+- [Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryoutboundshareduserprofiletenantpersonaldata)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantreference-removepersonaldata?view=graph-rest-beta)
 
 
 

@@ -486,8 +486,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandingtheme)
-- [](https://learn.microsoft.com/graph/api/organizationalbranding-delete-themes?view=graph-rest-beta)
+- [Remove-MgBetaOrganizationBrandingTheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandingtheme)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbranding-delete-themes?view=graph-rest-beta)
 
 
 

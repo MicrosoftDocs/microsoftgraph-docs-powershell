@@ -609,9 +609,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplate)
-- [](https://learn.microsoft.com/graph/api/directoryroletemplate-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/directoryroletemplate-list?view=graph-rest-beta)
+- [Get-MgBetaDirectoryRoleTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryroletemplate-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryroletemplate-list?view=graph-rest-beta)
 
 
 

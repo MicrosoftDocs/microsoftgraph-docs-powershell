@@ -439,8 +439,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/stop-mgbetadirectoryrecoveryjob)
-- [](https://learn.microsoft.com/graph/api/entrarecoveryservices-recoveryjobbase-cancel?view=graph-rest-beta)
+- [Stop-MgBetaDirectoryRecoveryJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/stop-mgbetadirectoryrecoveryjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entrarecoveryservices-recoveryjobbase-cancel?view=graph-rest-beta)
 
 
 

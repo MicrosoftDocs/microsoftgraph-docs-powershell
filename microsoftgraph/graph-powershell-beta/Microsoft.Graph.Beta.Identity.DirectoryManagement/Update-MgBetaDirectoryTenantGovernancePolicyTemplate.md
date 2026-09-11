@@ -19354,8 +19354,8 @@ MULTITENANTAPPLICATIONSTOPROVISION <IMicrosoftGraphTenantGovernanceServicesMulti
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancepolicytemplate)
-- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-governancepolicytemplate-update?view=graph-rest-beta)
+- [Update-MgBetaDirectoryTenantGovernancePolicyTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancepolicytemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-governancepolicytemplate-update?view=graph-rest-beta)
 
 
 

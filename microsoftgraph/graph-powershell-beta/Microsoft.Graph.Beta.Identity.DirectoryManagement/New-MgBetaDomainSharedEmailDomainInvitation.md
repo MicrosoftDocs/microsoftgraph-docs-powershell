@@ -612,7 +612,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainsharedemaildomaininvitation)
+- [New-MgBetaDomainSharedEmailDomainInvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainsharedemaildomaininvitation)
 
 
 

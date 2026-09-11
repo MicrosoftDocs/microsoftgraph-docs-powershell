@@ -294,8 +294,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationconfiguration)
-- [](https://learn.microsoft.com/graph/api/recommendationconfiguration-get?view=graph-rest-beta)
+- [Get-MgBetaDirectoryRecommendationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/recommendationconfiguration-get?view=graph-rest-beta)
 
 
 

@@ -425,8 +425,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight)
-- [](https://learn.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-beta)
+- [Get-MgBetaOrganizationSettingPersonInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-beta)
 
 
 

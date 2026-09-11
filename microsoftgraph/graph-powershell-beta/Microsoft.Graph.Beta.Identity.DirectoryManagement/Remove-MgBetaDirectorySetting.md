@@ -464,8 +464,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting)
-- [](https://learn.microsoft.com/graph/api/directorysetting-delete?view=graph-rest-beta)
+- [Remove-MgBetaDirectorySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directorysetting-delete?view=graph-rest-beta)
 
 
 
