@@ -666,7 +666,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCustomAuthenticationExtension>: customAuthenticationExtension
+BODYPARAMETER `<IMicrosoftGraphCustomAuthenticationExtension>`: customAuthenticationExtension
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]: customExtensionAuthenticationConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -687,7 +687,7 @@ Read-only.
   [BehaviorOnError <IMicrosoftGraphCustomExtensionBehaviorOnError>]: customExtensionBehaviorOnError
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>: customExtensionClientConfiguration
+CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MaximumRetries <Int32?>]: The max number of retries that Microsoft Entra ID makes to the external API.
 Values of 0 or 1 are supported.
@@ -696,7 +696,7 @@ If null, the default for the service applies.
 The valid range is between 200 and 2000 milliseconds.
 If null, the default for the service applies.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -799,3 +799,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycustomauthenticationextension)
 - [](https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
