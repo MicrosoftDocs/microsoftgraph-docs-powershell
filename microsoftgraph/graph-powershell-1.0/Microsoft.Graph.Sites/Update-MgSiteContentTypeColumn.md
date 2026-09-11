@@ -1961,8 +1961,8 @@ For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttypecolumn)
-- [](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-1.0)
+- [Update-MgSiteContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttypecolumn)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-1.0)
 
 
 

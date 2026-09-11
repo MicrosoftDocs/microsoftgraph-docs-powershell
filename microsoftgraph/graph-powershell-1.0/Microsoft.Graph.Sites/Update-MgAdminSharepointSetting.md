@@ -1073,8 +1073,8 @@ IDLESESSIONSIGNOUT `<IMicrosoftGraphIdleSessionSignOut>`: idleSessionSignOut
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting)
-- [](https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0)
+- [Update-MgAdminSharepointSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0)
 
 
 

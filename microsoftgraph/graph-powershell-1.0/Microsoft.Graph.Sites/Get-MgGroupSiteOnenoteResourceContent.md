@@ -423,7 +423,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteresourcecontent)
+- [Get-MgGroupSiteOnenoteResourceContent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenoteresourcecontent)
 
 
 

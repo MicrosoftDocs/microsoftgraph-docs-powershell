@@ -454,7 +454,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecolumn)
+- [Remove-MgSiteColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecolumn)
 
 
 

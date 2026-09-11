@@ -11150,8 +11150,8 @@ This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mguserfollowedsite)
-- [](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0)
+- [Remove-MgUserFollowedSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mguserfollowedsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0)
 
 
 

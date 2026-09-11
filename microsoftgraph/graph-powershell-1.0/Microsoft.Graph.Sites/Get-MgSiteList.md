@@ -614,9 +614,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist)
-- [](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
+- [Get-MgSiteList](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 
 
 

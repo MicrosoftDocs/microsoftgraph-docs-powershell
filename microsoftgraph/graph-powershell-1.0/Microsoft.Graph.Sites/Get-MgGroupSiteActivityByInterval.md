@@ -639,7 +639,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteactivitybyinterval)
+- [Get-MgGroupSiteActivityByInterval](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteactivitybyinterval)
 
 
 

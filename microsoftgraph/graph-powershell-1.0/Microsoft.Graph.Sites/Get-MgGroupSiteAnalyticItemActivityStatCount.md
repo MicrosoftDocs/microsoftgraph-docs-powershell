@@ -402,7 +402,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalyticitemactivitystatcount)
+- [Get-MgGroupSiteAnalyticItemActivityStatCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalyticitemactivitystatcount)
 
 
 

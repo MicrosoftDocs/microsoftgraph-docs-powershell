@@ -21840,7 +21840,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathanalytic)
+- [Update-MgSiteGetByPathAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathanalytic)
 
 
 

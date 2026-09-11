@@ -1771,7 +1771,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetchild)
+- [Update-MgSiteTermStoreSetChild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetchild)
 
 
 

@@ -381,8 +381,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished)
-- [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
+- [Test-MgSiteContentTypePublished](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
 
 
 
