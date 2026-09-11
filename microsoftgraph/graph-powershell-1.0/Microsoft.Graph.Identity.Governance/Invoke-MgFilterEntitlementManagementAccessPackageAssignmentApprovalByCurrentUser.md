@@ -18,6 +18,9 @@ The objects returned are those that are in scope for approval by the calling use
 In PIM for Groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

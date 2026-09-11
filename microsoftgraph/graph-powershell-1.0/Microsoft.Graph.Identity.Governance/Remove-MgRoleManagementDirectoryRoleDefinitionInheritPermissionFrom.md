@@ -15,6 +15,9 @@ title: Remove-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom
 
 Delete navigation property inheritsPermissionsFrom for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

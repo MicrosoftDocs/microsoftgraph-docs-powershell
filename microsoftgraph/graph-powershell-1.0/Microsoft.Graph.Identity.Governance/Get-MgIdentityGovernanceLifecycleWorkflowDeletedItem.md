@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem
 
 Deleted workflows in your lifecycle workflows instance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

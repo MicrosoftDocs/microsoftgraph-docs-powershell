@@ -15,6 +15,9 @@ title: Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecis
 
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in a specific accessReviewInstance in batches by using principalId, resourceId, or neither.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### BatchExpanded (Default)

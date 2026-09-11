@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
