@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementManagedDevice
 
 The list of managed devices.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

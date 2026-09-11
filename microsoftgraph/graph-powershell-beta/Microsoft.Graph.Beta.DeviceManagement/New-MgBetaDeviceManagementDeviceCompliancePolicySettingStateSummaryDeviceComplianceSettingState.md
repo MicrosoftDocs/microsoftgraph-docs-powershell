@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDevice
 
 Create new navigation property to deviceComplianceSettingStates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

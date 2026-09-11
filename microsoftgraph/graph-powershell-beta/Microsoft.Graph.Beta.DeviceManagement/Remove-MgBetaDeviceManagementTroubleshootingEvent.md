@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementTroubleshootingEvent
 
 Delete navigation property troubleshootingEvents for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

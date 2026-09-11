@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSumm
 
 Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

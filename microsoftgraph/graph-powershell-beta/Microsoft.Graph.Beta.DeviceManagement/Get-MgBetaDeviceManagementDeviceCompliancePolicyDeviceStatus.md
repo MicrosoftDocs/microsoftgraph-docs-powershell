@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus
 
 List of DeviceComplianceDeviceStatus.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
