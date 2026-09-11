@@ -15,6 +15,9 @@ title: Remove-MgAdminConfigurationManagement
 
 Delete navigation property configurationManagement for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminConfigurationManagement](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Remove-MgBetaAdminConfigurationManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

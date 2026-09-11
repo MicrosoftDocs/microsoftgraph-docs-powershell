@@ -15,6 +15,9 @@ title: New-MgAdminConfigurationManagementConfigurationSnapshot
 
 Create new navigation property to configurationSnapshots for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminConfigurationManagementConfigurationSnapshot](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/New-MgBetaAdminConfigurationManagementConfigurationSnapshot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

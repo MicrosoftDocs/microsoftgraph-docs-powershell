@@ -15,6 +15,9 @@ title: New-MgAdminConfigurationManagementConfigurationMonitoringResult
 
 Create new navigation property to configurationMonitoringResults for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminConfigurationManagementConfigurationMonitoringResult](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/New-MgBetaAdminConfigurationManagementConfigurationMonitoringResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

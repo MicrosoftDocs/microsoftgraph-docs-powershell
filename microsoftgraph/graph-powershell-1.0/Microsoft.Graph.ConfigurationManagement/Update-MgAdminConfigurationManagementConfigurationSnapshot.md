@@ -15,6 +15,9 @@ title: Update-MgAdminConfigurationManagementConfigurationSnapshot
 
 Update the navigation property configurationSnapshots in admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminConfigurationManagementConfigurationSnapshot](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Update-MgBetaAdminConfigurationManagementConfigurationSnapshot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

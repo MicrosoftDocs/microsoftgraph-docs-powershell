@@ -15,6 +15,9 @@ title: New-MgAdminConfigurationManagementConfigurationSnapshotJob
 
 Create new navigation property to configurationSnapshotJobs for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminConfigurationManagementConfigurationSnapshotJob](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/New-MgBetaAdminConfigurationManagementConfigurationSnapshotJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

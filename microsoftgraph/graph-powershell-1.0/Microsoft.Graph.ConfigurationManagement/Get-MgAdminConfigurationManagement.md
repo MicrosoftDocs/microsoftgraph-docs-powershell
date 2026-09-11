@@ -16,6 +16,9 @@ title: Get-MgAdminConfigurationManagement
 A container for Tenant Configuration Management (TCM) resources.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminConfigurationManagement](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Get-MgBetaAdminConfigurationManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

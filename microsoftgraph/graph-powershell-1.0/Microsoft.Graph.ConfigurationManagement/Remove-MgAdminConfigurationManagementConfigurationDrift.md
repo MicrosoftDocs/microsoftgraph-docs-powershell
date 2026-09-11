@@ -15,6 +15,9 @@ title: Remove-MgAdminConfigurationManagementConfigurationDrift
 
 Delete navigation property configurationDrifts for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminConfigurationManagementConfigurationDrift](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Remove-MgBetaAdminConfigurationManagementConfigurationDrift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
