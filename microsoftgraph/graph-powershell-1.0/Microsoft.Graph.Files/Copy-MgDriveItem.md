@@ -66,6 +66,14 @@ This cmdlet has the following aliases,
 
 Invoke action copy
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All,  |
+| Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
