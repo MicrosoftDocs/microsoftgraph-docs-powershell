@@ -68,12 +68,17 @@ Read the properties and relationships of a documentSetVersion object.
 | Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All, Sites.Selected,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId
+
+```
+This example shows how to use the Get-MgSiteListItemDocumentSetVersion Cmdlet.
+
 
 ## PARAMETERS
 

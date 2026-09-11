@@ -58,12 +58,17 @@ This will create a new version with the contents of the previous version, but pr
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
+
+```
+This example shows how to use the Restore-MgSiteListItemVersion Cmdlet.
+
 
 ## PARAMETERS
 
