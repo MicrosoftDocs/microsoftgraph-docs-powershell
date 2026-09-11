@@ -15,6 +15,9 @@ title: Get-MgEducationClassAssignmentSettingGradingScheme
 
 Read the properties and relationships of an educationGradingScheme object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSettingGradingScheme](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSettingGradingScheme?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

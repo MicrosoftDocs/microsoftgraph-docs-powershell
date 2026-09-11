@@ -15,6 +15,9 @@ title: New-MgEducationClassTeacherByRef
 
 Add a teacher to a class.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

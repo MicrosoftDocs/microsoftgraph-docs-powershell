@@ -15,6 +15,9 @@ title: Update-MgEducationReportReadingAssignmentSubmission
 
 Update the navigation property readingAssignmentSubmissions in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationReportReadingAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationReportReadingAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgEducationUserTaughtClassCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserTaughtClassCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserTaughtClassCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

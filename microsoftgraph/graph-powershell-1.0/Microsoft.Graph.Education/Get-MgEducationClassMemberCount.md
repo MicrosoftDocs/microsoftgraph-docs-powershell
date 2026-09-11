@@ -15,6 +15,9 @@ title: Get-MgEducationClassMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassMemberCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Update-MgEducationSchoolAdministrativeUnit
 
 Update the navigation property administrativeUnit in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

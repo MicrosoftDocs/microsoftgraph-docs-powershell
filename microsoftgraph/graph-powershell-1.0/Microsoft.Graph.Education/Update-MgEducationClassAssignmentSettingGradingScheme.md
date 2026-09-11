@@ -15,6 +15,9 @@ title: Update-MgEducationClassAssignmentSettingGradingScheme
 
 Update the navigation property gradingSchemes in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSettingGradingScheme](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSettingGradingScheme?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

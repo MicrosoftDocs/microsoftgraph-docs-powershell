@@ -16,6 +16,9 @@ title: Initialize-MgEducationUserAssignment
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers or students.
 This action can only be performed by a teacher on currently inactive assignments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Initialize-MgBetaEducationUserAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Activate (Default)
