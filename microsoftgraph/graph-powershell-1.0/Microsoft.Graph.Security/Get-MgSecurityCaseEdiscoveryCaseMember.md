@@ -638,8 +638,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasemember)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-list?view=graph-rest-1.0)
+- [Get-MgSecurityCaseEdiscoveryCaseMember](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasemember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-list?view=graph-rest-1.0)
 
 
 

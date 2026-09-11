@@ -945,7 +945,7 @@ COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: Array of comments created by t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
+- [New-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
 
 
 

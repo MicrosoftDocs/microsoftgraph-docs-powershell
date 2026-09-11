@@ -435,8 +435,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgcomputesecuritydatasecurityandgovernancesensitivitylabelsublabelinheritance)
-- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-1.0)
+- [Invoke-MgComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgcomputesecuritydatasecurityandgovernancesensitivitylabelsublabelinheritance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computeinheritance?view=graph-rest-1.0)
 
 
 

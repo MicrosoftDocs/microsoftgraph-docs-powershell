@@ -1752,7 +1752,7 @@ No format is guaranteed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord)
+- [Update-MgSecurityThreatIntelligenceWhoisHistoryRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord)
 
 
 

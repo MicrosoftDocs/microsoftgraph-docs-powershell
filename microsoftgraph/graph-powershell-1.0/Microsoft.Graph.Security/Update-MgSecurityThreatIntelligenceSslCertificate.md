@@ -1413,7 +1413,7 @@ It's a free-format string value, for example, 'United States'.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesslcertificate)
+- [Update-MgSecurityThreatIntelligenceSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesslcertificate)
 
 
 

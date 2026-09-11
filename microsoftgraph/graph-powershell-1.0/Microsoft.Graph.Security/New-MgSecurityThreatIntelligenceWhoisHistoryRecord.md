@@ -1462,7 +1462,7 @@ No format is guaranteed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoishistoryrecord)
+- [New-MgSecurityThreatIntelligenceWhoisHistoryRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoishistoryrecord)
 
 
 

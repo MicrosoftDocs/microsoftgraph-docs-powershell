@@ -403,8 +403,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysettingautoauditingconfiguration)
-- [](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-update?view=graph-rest-1.0)
+- [Update-MgSecurityIdentitySettingAutoAuditingConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysettingautoauditingconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-update?view=graph-rest-1.0)
 
 
 

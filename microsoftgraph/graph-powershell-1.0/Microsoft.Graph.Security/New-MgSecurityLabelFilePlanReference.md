@@ -454,8 +454,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0)
+- [New-MgSecurityLabelFilePlanReference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0)
 
 
 

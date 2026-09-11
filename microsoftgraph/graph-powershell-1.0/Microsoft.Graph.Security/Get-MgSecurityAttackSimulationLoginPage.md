@@ -667,9 +667,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage)
-- [](https://learn.microsoft.com/graph/api/loginpage-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0)
+- [Get-MgSecurityAttackSimulationLoginPage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/loginpage-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0)
 
 
 
