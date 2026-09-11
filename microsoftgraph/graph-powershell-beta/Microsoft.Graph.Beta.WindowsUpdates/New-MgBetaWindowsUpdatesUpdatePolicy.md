@@ -509,7 +509,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUDIENCE <IMicrosoftGraphWindowsUpdatesDeploymentAudience>: deploymentAudience
+AUDIENCE `<IMicrosoftGraphWindowsUpdatesDeploymentAudience>`: deploymentAudience
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -539,7 +539,7 @@ Read-only.
 Read-only.
   [Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]: Specifies the assets to include in the audience.
 
-BODYPARAMETER <IMicrosoftGraphWindowsUpdatesUpdatePolicy>: updatePolicy
+BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesUpdatePolicy>`: updatePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -720,7 +720,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 It can only be set to true on automatic policies that target monthly security updates.
         [OfferAsOptional <Boolean?>]: Specifies whether the update is offered as Optional rather than Required.
 
-DEPLOYMENTSETTINGS <IMicrosoftGraphWindowsUpdatesDeploymentSettings>: deploymentSettings
+DEPLOYMENTSETTINGS `<IMicrosoftGraphWindowsUpdatesDeploymentSettings>`: deploymentSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentApplicability <IMicrosoftGraphWindowsUpdatesContentApplicabilitySettings>]: contentApplicabilitySettings
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -765,3 +765,25 @@ It can only be set to true on automatic policies that target monthly security up
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesupdatepolicy)
 - [](https://learn.microsoft.com/graph/api/adminwindowsupdates-post-updatepolicies?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

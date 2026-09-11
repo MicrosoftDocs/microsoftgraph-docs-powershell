@@ -593,7 +593,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphWindowsUpdatesComplianceChange>: complianceChange
+BODYPARAMETER `<IMicrosoftGraphWindowsUpdatesComplianceChange>`: complianceChange
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -682,7 +682,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 It can only be set to true on automatic policies that target monthly security updates.
         [OfferAsOptional <Boolean?>]: Specifies whether the update is offered as Optional rather than Required.
 
-INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
+INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [ApplicableContentCatalogEntryId <String>]: The unique identifier of applicableContent
   [ApplicableContentDeviceMatchDeviceId <String>]: The unique identifier of applicableContentDeviceMatch
   [CatalogEntryId <String>]: The unique identifier of catalogEntry
@@ -702,7 +702,7 @@ INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 
-UPDATEPOLICY <IMicrosoftGraphWindowsUpdatesUpdatePolicy>: updatePolicy
+UPDATEPOLICY `<IMicrosoftGraphWindowsUpdatesUpdatePolicy>`: updatePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -795,3 +795,25 @@ It can only be set to true on automatic policies that target monthly security up
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicycompliancechange)
 - [](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
