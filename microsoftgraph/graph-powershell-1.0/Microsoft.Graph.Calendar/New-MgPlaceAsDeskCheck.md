@@ -15,6 +15,9 @@ title: New-MgPlaceAsDeskCheck
 
 Create new navigation property to checkIns for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlaceAsDeskCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlaceAsDeskCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

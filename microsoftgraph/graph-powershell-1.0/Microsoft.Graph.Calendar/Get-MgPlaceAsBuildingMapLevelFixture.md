@@ -16,6 +16,9 @@ title: Get-MgPlaceAsBuildingMapLevelFixture
 Collection of fixtures (such as furniture or equipment) on this level.
 Supports upsert.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsBuildingMapLevelFixture?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

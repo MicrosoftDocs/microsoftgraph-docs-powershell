@@ -19,6 +19,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventInstance](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

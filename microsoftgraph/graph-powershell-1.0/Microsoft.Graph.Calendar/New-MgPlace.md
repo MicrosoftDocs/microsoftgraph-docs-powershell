@@ -16,6 +16,9 @@ title: New-MgPlace
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlace](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaPlace?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
