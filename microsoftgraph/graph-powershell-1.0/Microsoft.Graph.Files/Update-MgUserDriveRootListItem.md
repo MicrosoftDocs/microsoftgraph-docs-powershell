@@ -15,6 +15,9 @@ title: Update-MgUserDriveRootListItem
 
 Update the navigation property listItem in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

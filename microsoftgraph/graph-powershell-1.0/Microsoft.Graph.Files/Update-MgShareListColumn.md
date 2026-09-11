@@ -15,6 +15,9 @@ title: Update-MgShareListColumn
 
 Update the navigation property columns in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

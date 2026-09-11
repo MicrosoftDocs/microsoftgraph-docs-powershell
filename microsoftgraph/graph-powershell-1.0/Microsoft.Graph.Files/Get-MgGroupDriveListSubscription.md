@@ -15,6 +15,9 @@ title: Get-MgGroupDriveListSubscription
 
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

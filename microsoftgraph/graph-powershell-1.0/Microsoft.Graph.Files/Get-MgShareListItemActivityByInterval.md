@@ -15,6 +15,9 @@ title: Get-MgShareListItemActivityByInterval
 
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get2 (Default)

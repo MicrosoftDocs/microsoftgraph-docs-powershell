@@ -16,6 +16,9 @@ title: Get-MgGroupDriveListDrive
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

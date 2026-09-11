@@ -15,6 +15,9 @@ title: Remove-MgUserDriveListItemField
 
 Delete navigation property fields for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

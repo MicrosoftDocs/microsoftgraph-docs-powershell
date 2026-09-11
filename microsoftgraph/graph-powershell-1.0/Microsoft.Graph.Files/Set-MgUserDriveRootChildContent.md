@@ -15,6 +15,9 @@ title: Set-MgUserDriveRootChildContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveRootChildContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

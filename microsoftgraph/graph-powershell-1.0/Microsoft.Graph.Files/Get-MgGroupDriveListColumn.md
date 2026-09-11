@@ -15,6 +15,9 @@ title: Get-MgGroupDriveListColumn
 
 The collection of field definitions for this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

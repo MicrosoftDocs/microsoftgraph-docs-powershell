@@ -15,6 +15,9 @@ title: Get-MgShareListItemVersion
 
 The list of previous versions of the list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

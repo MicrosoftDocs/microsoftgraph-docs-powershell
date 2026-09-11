@@ -15,6 +15,9 @@ title: Get-MgSharePermission
 
 Used to access the permission representing the underlying sharing link
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaSharePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

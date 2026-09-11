@@ -15,6 +15,9 @@ title: Update-MgDriveListOperation
 
 Update the navigation property operations in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

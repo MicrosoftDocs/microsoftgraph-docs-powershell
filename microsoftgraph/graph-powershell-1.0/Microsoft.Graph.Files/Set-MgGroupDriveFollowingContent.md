@@ -15,6 +15,9 @@ title: Set-MgGroupDriveFollowingContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupDriveFollowingContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveFollowingContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

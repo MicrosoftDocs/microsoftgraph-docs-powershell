@@ -15,6 +15,9 @@ title: Update-MgShareListContentType
 
 Update the navigation property contentTypes in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

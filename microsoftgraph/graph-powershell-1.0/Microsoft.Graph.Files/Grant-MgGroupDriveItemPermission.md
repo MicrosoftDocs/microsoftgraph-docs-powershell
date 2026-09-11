@@ -15,6 +15,9 @@ title: Grant-MgGroupDriveItemPermission
 
 Grant users access to a link represented by a permission.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Grant-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)

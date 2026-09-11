@@ -15,6 +15,9 @@ title: Remove-MgGroupDriveRootAnalytic
 
 Delete navigation property analytics for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

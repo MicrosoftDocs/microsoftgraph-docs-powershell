@@ -15,6 +15,9 @@ title: Get-MgShareRootContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareRootContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
