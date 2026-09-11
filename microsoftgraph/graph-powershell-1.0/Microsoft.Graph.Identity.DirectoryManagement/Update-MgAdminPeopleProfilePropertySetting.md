@@ -80,8 +80,9 @@ Update the properties of a profilePropertySetting object.
 | Application | PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Update-MgAdminPeopleProfilePropertySetting -ProfilePropertySettingId $profilePropertySettingId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgAdminPeopleProfilePropertySetting Cmdlet.
+
 
 ## PARAMETERS
 
