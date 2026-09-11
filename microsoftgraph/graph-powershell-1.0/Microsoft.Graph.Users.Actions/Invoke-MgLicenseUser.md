@@ -60,12 +60,17 @@ Also see Identify and resolve license assignment problems for a group in Microso
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users.Actions
 
 Invoke-MgLicenseUser -UserId $userId
+
+```
+This example shows how to use the Invoke-MgLicenseUser Cmdlet.
+
 
 ## PARAMETERS
 
