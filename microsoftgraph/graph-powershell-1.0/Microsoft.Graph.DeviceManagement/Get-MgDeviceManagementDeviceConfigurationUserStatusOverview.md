@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceConfigurationUserStatusOverview
 
 Device Configuration users status overview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

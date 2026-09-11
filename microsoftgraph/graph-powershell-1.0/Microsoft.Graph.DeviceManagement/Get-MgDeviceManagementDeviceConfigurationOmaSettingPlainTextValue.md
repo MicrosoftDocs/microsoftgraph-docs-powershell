@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
 
 Invoke function getOmaSettingPlainTextValue
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

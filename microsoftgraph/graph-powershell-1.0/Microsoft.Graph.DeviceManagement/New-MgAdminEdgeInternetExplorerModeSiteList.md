@@ -15,6 +15,9 @@ title: New-MgAdminEdgeInternetExplorerModeSiteList
 
 Create a new browserSiteList object to support Internet Explorer mode.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
