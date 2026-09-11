@@ -58,12 +58,17 @@ Device compliance users status overview
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview -DeviceCompliancePolicyId $deviceCompliancePolicyId
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview Cmdlet.
+
 
 ## PARAMETERS
 

@@ -47,12 +47,17 @@ The device configuration device state summary for this account.
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary Cmdlet.
+
 
 ## PARAMETERS
 
