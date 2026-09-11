@@ -1314,7 +1314,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotesection)
+- [Update-MgBetaGroupOnenoteSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotesection)
 
 
 
