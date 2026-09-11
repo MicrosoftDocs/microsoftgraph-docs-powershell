@@ -72,6 +72,14 @@ This cmdlet has the following aliases,
 Create an authenticationContextClassReference object, if the ID has not been used.
 If ID has been used, this call updates the authenticationContextClassReference object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuthenticationContext.ReadWrite.All, Policy.ReadWrite.ConditionalAccess,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

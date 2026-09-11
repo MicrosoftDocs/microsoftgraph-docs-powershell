@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 
 Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:\r* fido2combinationConfiguration\r* x509certificatecombinationconfiguration
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
