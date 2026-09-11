@@ -49,12 +49,17 @@ Reset a provisioningFlow.
 This action reprovisions all current data as if it were the initial run, and clears out the existing errors associated with the flow.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -OutboundProvisioningFlowSetId $outboundProvisioningFlowSetId -ProvisioningFlowId $provisioningFlowId
+
+```
+This example shows how to use the Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,12 +56,17 @@ Delete an externalConnection.
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Search
 
 Remove-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId
+
+```
+This example shows how to use the Remove-MgBetaExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 
