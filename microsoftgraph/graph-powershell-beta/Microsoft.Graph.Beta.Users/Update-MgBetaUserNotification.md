@@ -690,7 +690,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNotification>: notification
+BODYPARAMETER `<IMicrosoftGraphNotification>`: notification
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -720,7 +720,7 @@ If targeting web endpoints (see targetPolicy.platformTypes), ensure that targetH
 Valid values are Windows, iOS, Android and WebPush.
 By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -754,7 +754,7 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-PAYLOAD <IMicrosoftGraphPayloadTypes>: payloadTypes
+PAYLOAD `<IMicrosoftGraphPayloadTypes>`: payloadTypes
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RawContent <String>]: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification.
 At least one of Payload.RawContent or Payload.VisualContent needs to be valid for a POST Notification request.
@@ -765,7 +765,7 @@ Body is optional.
     [Title <String>]: The title of a visual user notification.
 This field is required for visual notification payloads.
 
-TARGETPOLICY <IMicrosoftGraphTargetPolicyEndpoints>: targetPolicyEndpoints
+TARGETPOLICY `<IMicrosoftGraphTargetPolicyEndpoints>`: targetPolicyEndpoints
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PlatformTypes <String[]>]: Use to filter the notification distribution to a specific platform or platforms.
 Valid values are Windows, iOS, Android and WebPush.
@@ -775,3 +775,25 @@ By default, all push endpoint types (Windows, iOS, Android and WebPush) are enab
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
