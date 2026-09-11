@@ -14,8 +14,8 @@ title: Get-MgUserMailFolderChildFolderMessageDelta
 ## SYNOPSIS
 
 Get a set of messages added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\r\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\r\nthat folder](/graph/delta-query-messages).
-It allows you to maintain and synchronize a local store of a user's messages without\r\nhaving to fetch the entire set of messages from the server every time.
+A delta function call for messages in a folder is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\rthat folder](/graph/delta-query-messages).
+It allows you to maintain and synchronize a local store of a user's messages without\rhaving to fetch the entire set of messages from the server every time.
 
 ## SYNTAX
 
@@ -50,8 +50,8 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get a set of messages added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\r\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\r\nthat folder](/graph/delta-query-messages).
-It allows you to maintain and synchronize a local store of a user's messages without\r\nhaving to fetch the entire set of messages from the server every time.
+A delta function call for messages in a folder is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\rthat folder](/graph/delta-query-messages).
+It allows you to maintain and synchronize a local store of a user's messages without\rhaving to fetch the entire set of messages from the server every time.
 
 ## EXAMPLES
 
@@ -608,7 +608,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IMailIdentity>: Identity Parameter
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -623,3 +623,25 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagedelta)
 - [](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
