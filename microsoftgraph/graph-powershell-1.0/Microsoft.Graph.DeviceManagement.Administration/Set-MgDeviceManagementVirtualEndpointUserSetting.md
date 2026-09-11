@@ -505,7 +505,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IPaths7Tr5RcDevicemanagementVirtualendpointUsersettingsCloudpcusersettingIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths7Tr5RcDevicemanagementVirtualendpointUsersettingsCloudpcusersettingIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -516,7 +516,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
       [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -550,3 +550,25 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/set-mgdevicemanagementvirtualendpointusersetting)
 - [](https://learn.microsoft.com/graph/api/cloudpcusersetting-assign?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1888,7 +1888,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6281,8 +6281,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6295,14 +6295,14 @@ NOTE: For more information about the permissions for members and guests, see Wha
   [Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]: cloudPcManagementAssignmentTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-AUTOPATCH <IMicrosoftGraphCloudPcProvisioningPolicyAutopatch>: cloudPcProvisioningPolicyAutopatch
+AUTOPATCH `<IMicrosoftGraphCloudPcProvisioningPolicyAutopatch>`: cloudPcProvisioningPolicyAutopatch
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AutopatchGroupId <String>]: The unique identifier (ID) of a Windows Autopatch group.
 An Autopatch group is a logical container or unit that groups several Microsoft Entra groups and software update policies.
 Devices with the same Autopatch group ID share unified software update management.
 The default value is null that indicates that no Autopatch group is associated with the provisioning policy.
 
-BODYPARAMETER <IMicrosoftGraphCloudPcProvisioningPolicy>: cloudPcProvisioningPolicy
+BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -7217,7 +7217,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11610,8 +11610,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
-- _ ! # ^ ~.
+Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
+ 
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11689,7 +11689,7 @@ Within this region, the Windows 365 service creates and manages the underlying v
 This option is available only when the IT admin selects Microsoft Entra joined as the domain join type.
 If you enter a regionName, leave the onPremisesConnectionId property empty.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -11718,12 +11718,12 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [UserPrincipalName <String>]: Alternate key of user
 
-MICROSOFTMANAGEDDESKTOP <IMicrosoftGraphMicrosoftManagedDesktop>: microsoftManagedDesktop
+MICROSOFTMANAGEDDESKTOP `<IMicrosoftGraphMicrosoftManagedDesktop>`: microsoftManagedDesktop
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ManagedType <String>]: microsoftManagedDesktopType
   [Profile <String>]: The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.
 
-WINDOWSSETTING <IMicrosoftGraphCloudPcWindowsSetting>: cloudPcWindowsSetting
+WINDOWSSETTING `<IMicrosoftGraphCloudPcWindowsSetting>`: cloudPcWindowsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Locale <String>]: The Windows language or region tag to use for language pack configuration and localization of the Cloud PC.
 The default value is en-US, which corresponds to English (United States).
@@ -11733,3 +11733,25 @@ The default value is en-US, which corresponds to English (United States).
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicy)
 - [](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
