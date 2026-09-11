@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Get the number of users, devices, and workloads per traffic type in a specified time period as logged in Global Secure Access.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | NetworkAccess-Reports.Read.All, NetworkAccess.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | NetworkAccess-Reports.Read.All, NetworkAccess.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
