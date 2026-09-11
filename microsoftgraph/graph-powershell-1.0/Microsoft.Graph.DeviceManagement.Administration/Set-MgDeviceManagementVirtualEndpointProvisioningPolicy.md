@@ -11170,8 +11170,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/set-mgdevicemanagementvirtualendpointprovisioningpolicy)
-- [](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-1.0)
+- [Set-MgDeviceManagementVirtualEndpointProvisioningPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/set-mgdevicemanagementvirtualendpointprovisioningpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-1.0)
 
 
 
