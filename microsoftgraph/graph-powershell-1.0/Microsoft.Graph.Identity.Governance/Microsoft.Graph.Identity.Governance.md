@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 3c6d15f2-6dc6-4be2-9782-f4719f988ac8
+Module Guid: 2ec8fc51-33c2-47b8-b0e5-6d4de6769e61
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -2308,23 +2308,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
