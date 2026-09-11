@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Invoke function getEffectiveDeviceEnrollmentConfigurations
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -486,6 +476,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausereffectivedeviceenrollmentconfiguration)
+
 
 
 
