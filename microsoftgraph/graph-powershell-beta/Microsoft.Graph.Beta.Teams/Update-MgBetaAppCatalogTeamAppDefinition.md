@@ -381,7 +381,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -554,7 +554,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -721,7 +721,7 @@ HelpMessage: ''
 
 ### -Shortdescription
 
-.
+
 
 ```yaml
 Type: System.String
