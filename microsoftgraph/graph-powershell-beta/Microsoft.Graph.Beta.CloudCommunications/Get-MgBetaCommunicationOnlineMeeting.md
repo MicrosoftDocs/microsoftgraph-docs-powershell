@@ -81,12 +81,17 @@ This cmdlet has the following aliases,
 Get onlineMeetings from communications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
+Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
+
+```
+This example shows how to use the Get-MgBetaCommunicationOnlineMeeting Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,12 +60,17 @@ This cmdlet has the following aliases,
 Get a user's presence information.
 
 ## EXAMPLES
+### Example 1: Get the presence information of another user
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationPresence -PresenceId $presenceId
+
+```
+This example will get the presence information of another user
+
 
 ## PARAMETERS
 

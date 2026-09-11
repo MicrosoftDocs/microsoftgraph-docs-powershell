@@ -78,8 +78,9 @@ Put a participant on hold and play music in the background.
 | Application | Calls.JoinGroupCallasGuest.All, Calls.JoinGroupCall.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 Start-MgBetaCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
+
+```
+This example shows how to use the Start-MgBetaCommunicationCallParticipantHoldMusic Cmdlet.
+
 
 ## PARAMETERS
 

@@ -69,8 +69,9 @@ This cmdlet has the following aliases,
 Allow applications to share screen content with the participants of a group call.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -79,6 +80,10 @@ $params = @{
 }
 
 Rename-MgBetaCommunicationCallScreenSharingRole -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Rename-MgBetaCommunicationCallScreenSharingRole Cmdlet.
+
 
 ## PARAMETERS
 
