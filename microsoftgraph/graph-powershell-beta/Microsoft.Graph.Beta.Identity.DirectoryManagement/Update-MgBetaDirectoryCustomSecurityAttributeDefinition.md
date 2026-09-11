@@ -766,7 +766,7 @@ Read-only.
   [IsActive <Boolean?>]: Indicates whether the predefined value is active or deactivated.
 If set to false, this predefined value can't be assigned to any more supported directory objects.
 
-BODYPARAMETER <IMicrosoftGraphCustomSecurityAttributeDefinition>: customSecurityAttributeDefinition
+BODYPARAMETER `<IMicrosoftGraphCustomSecurityAttributeDefinition>`: customSecurityAttributeDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -804,7 +804,7 @@ If set to false, free-form values are allowed.
 Can later be changed from true to false, but cannot be changed from false to true.
 If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -875,3 +875,25 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)
 - [](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

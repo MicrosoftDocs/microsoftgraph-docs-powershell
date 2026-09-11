@@ -466,11 +466,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Bx3NjeDirectoryRecommendationsRecommendationIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PostponeUntilDateTime <DateTime?>]: 
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -541,3 +541,25 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryrecommendation)
 - [](https://learn.microsoft.com/graph/api/recommendation-postpone?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

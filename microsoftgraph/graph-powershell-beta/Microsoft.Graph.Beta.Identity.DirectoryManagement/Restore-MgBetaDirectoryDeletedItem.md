@@ -14,7 +14,7 @@ title: Restore-MgBetaDirectoryDeletedItem
 ## SYNOPSIS
 
 Restore a recently deleted directory object from deleted items.
-The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- externalUserProfile\r\n- group\r\n- pendingExternalUserProfile\r\n- servicePrincipal\r\n- user If an item is accidentally deleted, you can fully restore the item.
+The following types are supported:\r- administrativeUnit\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- externalUserProfile\r- group\r- pendingExternalUserProfile\r- servicePrincipal\r- user If an item is accidentally deleted, you can fully restore the item.
 Additionally, restoring an application doesn't automatically restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
@@ -48,7 +48,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Restore a recently deleted directory object from deleted items.
-The following types are supported:\r\n- administrativeUnit\r\n- application\r\n- agentIdentityBlueprint\r\n- agentIdentity\r\n- agentIdentityBlueprintPrincipal\r\n- agentUser\r\n- certificateBasedAuthPki\r\n- certificateAuthorityDetail\r\n- externalUserProfile\r\n- group\r\n- pendingExternalUserProfile\r\n- servicePrincipal\r\n- user If an item is accidentally deleted, you can fully restore the item.
+The following types are supported:\r- administrativeUnit\r- application\r- agentIdentityBlueprint\r- agentIdentity\r- agentIdentityBlueprintPrincipal\r- agentUser\r- certificateBasedAuthPki\r- certificateAuthorityDetail\r- externalUserProfile\r- group\r- pendingExternalUserProfile\r- servicePrincipal\r- user If an item is accidentally deleted, you can fully restore the item.
 Additionally, restoring an application doesn't automatically restore the associated service principal automatically.
 You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
@@ -370,7 +370,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -441,3 +441,25 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/restore-mgbetadirectorydeleteditem)
 - [](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
