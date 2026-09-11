@@ -429,7 +429,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksectiongroupcount)
+- [Get-MgSiteOnenoteNotebookSectionGroupCount](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksectiongroupcount)
 
 
 

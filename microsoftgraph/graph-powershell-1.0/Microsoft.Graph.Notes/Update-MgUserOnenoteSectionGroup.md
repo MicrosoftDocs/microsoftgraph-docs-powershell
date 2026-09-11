@@ -1546,7 +1546,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectiongroup)
+- [Update-MgUserOnenoteSectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotesectiongroup)
 
 
 

@@ -1386,7 +1386,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesection)
+- [New-MgSiteOnenoteSection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesection)
 
 
 
