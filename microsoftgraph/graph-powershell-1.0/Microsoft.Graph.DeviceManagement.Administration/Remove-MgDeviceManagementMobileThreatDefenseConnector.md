@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementMobileThreatDefenseConnector
 
 Delete navigation property mobileThreatDefenseConnectors for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
