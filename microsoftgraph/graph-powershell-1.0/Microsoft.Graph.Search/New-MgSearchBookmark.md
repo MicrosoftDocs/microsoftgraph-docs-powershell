@@ -15,6 +15,9 @@ title: New-MgSearchBookmark
 
 Create a new bookmark object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchBookmark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

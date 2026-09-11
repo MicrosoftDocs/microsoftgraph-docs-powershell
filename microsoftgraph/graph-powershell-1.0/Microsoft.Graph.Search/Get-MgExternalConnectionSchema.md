@@ -15,6 +15,9 @@ title: Get-MgExternalConnectionSchema
 
 Read the properties and relationships of a schema object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
