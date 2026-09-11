@@ -528,8 +528,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaabortprintprintersharejob)
-- [](https://learn.microsoft.com/graph/api/printjob-abort?view=graph-rest-beta)
+- [Invoke-MgBetaAbortPrintPrinterShareJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaabortprintprintersharejob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-abort?view=graph-rest-beta)
 
 
 

@@ -603,9 +603,9 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprinttaskdefinition)
-- [](https://learn.microsoft.com/graph/api/printtaskdefinition-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/print-list-taskdefinitions?view=graph-rest-beta)
+- [Get-MgBetaPrintTaskDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprinttaskdefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printtaskdefinition-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/print-list-taskdefinitions?view=graph-rest-beta)
 
 
 
