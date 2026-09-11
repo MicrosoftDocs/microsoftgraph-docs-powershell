@@ -62,13 +62,18 @@ You can subsequently get the preferred language by\rgetting the user's mailbox s
 | Application | User.Read.All, User.ReadBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Invoke-MgSupportedUserOutlookLanguage -UserId $userId
+
+```
+This example shows how to use the Invoke-MgSupportedUserOutlookLanguage Cmdlet.
+
 
 ## PARAMETERS
 
