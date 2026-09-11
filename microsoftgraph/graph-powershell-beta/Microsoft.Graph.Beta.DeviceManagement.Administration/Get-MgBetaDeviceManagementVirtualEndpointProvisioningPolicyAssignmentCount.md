@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentCoun
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

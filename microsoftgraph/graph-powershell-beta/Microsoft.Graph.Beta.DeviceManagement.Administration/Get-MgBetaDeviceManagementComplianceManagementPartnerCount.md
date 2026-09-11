@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementComplianceManagementPartnerCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComplianceManagementPartnerCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementComplianceManagementPartnerCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

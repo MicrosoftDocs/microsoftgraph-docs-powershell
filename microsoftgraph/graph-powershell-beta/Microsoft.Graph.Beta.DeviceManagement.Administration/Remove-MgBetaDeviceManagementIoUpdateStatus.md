@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementIoUpdateStatus
 
 Delete navigation property iosUpdateStatuses for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementIoUpdateStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

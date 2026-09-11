@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment
 
 Delete navigation property assignments for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
