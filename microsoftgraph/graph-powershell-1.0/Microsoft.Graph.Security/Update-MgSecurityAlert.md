@@ -1631,7 +1631,7 @@ ALERTDETECTIONS <IMicrosoftGraphAlertDetection[]>: .
   [Method <String>]: 
   [Name <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphAlert>: alert
+BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1876,7 +1876,7 @@ HOSTSTATES <IMicrosoftGraphHostSecurityState[]>: Security-related stateful infor
   [RiskScore <String>]: Provider-generated/calculated risk score of the host.
  Recommended value range of 0-1, which equates to a percentage.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -2083,7 +2083,7 @@ Recommended value range of 0-1, which equates to a percentage.
   [UserAccountType <String>]: userAccountSecurityType
   [UserPrincipalName <String>]: User sign-in name - internet format: (user account name)@(user account DNS domain name).
 
-VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -2102,3 +2102,25 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>: Threat intelligence p
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
 - [](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

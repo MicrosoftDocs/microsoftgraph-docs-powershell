@@ -747,7 +747,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityFilePlanDescriptor>: filePlanDescriptor
+BODYPARAMETER `<IMicrosoftGraphSecurityFilePlanDescriptor>`: filePlanDescriptor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -824,14 +824,14 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CATEGORY <IMicrosoftGraphSecurityFilePlanAppliedCategory>: filePlanAppliedCategory
+CATEGORY `<IMicrosoftGraphSecurityFilePlanAppliedCategory>`: filePlanAppliedCategory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   [Subcategory <IMicrosoftGraphSecurityFilePlanSubcategory>]: filePlanSubcategory
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
 
-CATEGORYTEMPLATE <IMicrosoftGraphSecurityCategoryTemplate>: categoryTemplate
+CATEGORYTEMPLATE `<IMicrosoftGraphSecurityCategoryTemplate>`: categoryTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -854,13 +854,13 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CITATION <IMicrosoftGraphSecurityFilePlanCitation>: filePlanCitation
+CITATION `<IMicrosoftGraphSecurityFilePlanCitation>`: filePlanCitation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   [CitationJurisdiction <String>]: Represents the jurisdiction or agency that published the filePlanCitation.
   [CitationUrl <String>]: Represents the URL to the published filePlanCitation.
 
-CITATIONTEMPLATE <IMicrosoftGraphSecurityCitationTemplate>: citationTemplate
+CITATIONTEMPLATE `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -879,7 +879,7 @@ Read-only.
   [CitationJurisdiction <String>]: Represents the jurisdiction or agency that published the citation.
   [CitationUrl <String>]: Represents the URL to the published citation.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -959,3 +959,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldescriptor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

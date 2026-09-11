@@ -565,7 +565,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -575,7 +575,7 @@ BODY <IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivityl
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-BODYPARAMETER <IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphComputerightsandinheritancePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedUserEmail <String>]: 
   [Locale <String>]: 
@@ -585,7 +585,7 @@ BODYPARAMETER <IPathsYfmputSecurityDatasecurityandgovernanceSensitivitylabelsSen
     [LabelId <String>]: The unique identifier for the sensitivity label applied to the content.
   [SupportedContentFormats <String[]>]: 
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -671,3 +671,25 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgandsecuritydatasecurityandgovernancesensitivitylabelsublabel)
 - [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
