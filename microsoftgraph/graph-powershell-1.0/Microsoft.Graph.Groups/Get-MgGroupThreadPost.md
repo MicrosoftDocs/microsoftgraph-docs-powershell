@@ -75,6 +75,14 @@ This cmdlet has the following aliases,
 
 Get posts from groups
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-Conversation.Read.All, Group-Conversation.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-Conversation.Read.All, Group-Conversation.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

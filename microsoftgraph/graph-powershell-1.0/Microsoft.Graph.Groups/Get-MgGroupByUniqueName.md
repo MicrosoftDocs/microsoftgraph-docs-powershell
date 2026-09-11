@@ -50,6 +50,14 @@ This operation returns by default only a subset of all the available properties,
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Directory.Read.All, Directory.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
