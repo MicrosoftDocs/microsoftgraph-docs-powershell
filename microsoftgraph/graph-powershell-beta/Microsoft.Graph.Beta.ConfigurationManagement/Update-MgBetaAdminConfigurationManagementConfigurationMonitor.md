@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminConfigurationManagementConfigurationMonitor
 ---
@@ -15,6 +15,9 @@ title: Update-MgBetaAdminConfigurationManagementConfigurationMonitor
 
 Update the properties of a configurationMonitor object, including the monitor name, description, and baseline.
 You must provide the full monitor body when you call this API.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-1.0)
 
 ## SYNTAX
 

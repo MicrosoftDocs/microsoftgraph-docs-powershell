@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/get-mgbetaadminconfigurationmanagementconfigurationsnapshotjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJob
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJob
 ## SYNOPSIS
 
 Read the properties and relationships of a configurationSnapshotJob object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminConfigurationManagementConfigurationSnapshotJob](/powershell/module/Microsoft.Graph.ConfigurationManagement/Get-MgAdminConfigurationManagementConfigurationSnapshotJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 

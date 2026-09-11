@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminConfigurationManagementConfigurationMonitor
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaAdminConfigurationManagementConfigurationMonitor
 ## SYNOPSIS
 
 Create a new configurationMonitor object that runs periodically in the background at a scheduled frequency.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.ConfigurationManagement/New-MgAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-1.0)
 
 ## SYNTAX
 

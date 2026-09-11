@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-Module Guid: 0555b65b-1e35-4ed5-910f-055c7cf14f79
+Module Guid: a86f2a61-6e3f-4f43-ae25-dbb0eaf3b1ae
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.configurationmanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US

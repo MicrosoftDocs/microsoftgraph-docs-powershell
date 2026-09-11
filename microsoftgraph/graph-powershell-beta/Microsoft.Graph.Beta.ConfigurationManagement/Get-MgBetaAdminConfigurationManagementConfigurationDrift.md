@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/get-mgbetaadminconfigurationmanagementconfigurationdrift
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminConfigurationManagementConfigurationDrift
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaAdminConfigurationManagementConfigurationDrift
 ## SYNOPSIS
 
 Get the properties and relationships of a configurationDrift object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminConfigurationManagementConfigurationDrift](/powershell/module/Microsoft.Graph.ConfigurationManagement/Get-MgAdminConfigurationManagementConfigurationDrift?view=graph-powershell-1.0)
 
 ## SYNTAX
 

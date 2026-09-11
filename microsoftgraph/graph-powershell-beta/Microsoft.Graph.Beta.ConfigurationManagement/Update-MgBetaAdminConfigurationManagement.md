@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminConfigurationManagement
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaAdminConfigurationManagement
 ## SYNOPSIS
 
 Update the navigation property configurationManagement in admin
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagement](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
