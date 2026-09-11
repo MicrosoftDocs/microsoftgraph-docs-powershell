@@ -15,6 +15,9 @@ title: Remove-MgDirectoryRoleScopedMember
 
 Delete navigation property scopedMembers for directoryRoles
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

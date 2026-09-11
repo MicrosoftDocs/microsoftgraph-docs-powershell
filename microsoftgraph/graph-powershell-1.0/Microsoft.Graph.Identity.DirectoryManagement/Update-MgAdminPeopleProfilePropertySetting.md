@@ -15,6 +15,9 @@ title: Update-MgAdminPeopleProfilePropertySetting
 
 Update the properties of a profilePropertySetting object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfilePropertySetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -17,6 +17,9 @@ The collection of open extensions defined for the device.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

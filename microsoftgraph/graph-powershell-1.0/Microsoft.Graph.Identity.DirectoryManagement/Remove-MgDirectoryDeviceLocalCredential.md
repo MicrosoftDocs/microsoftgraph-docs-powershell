@@ -15,6 +15,9 @@ title: Remove-MgDirectoryDeviceLocalCredential
 
 Delete navigation property deviceLocalCredentials for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
