@@ -15,6 +15,9 @@ title: Update-MgSiteListColumn
 
 Update the navigation property columns in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

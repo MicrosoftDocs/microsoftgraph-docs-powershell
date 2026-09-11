@@ -15,6 +15,9 @@ title: Get-MgSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart
 
 Invoke action getPositionOfWebPart
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

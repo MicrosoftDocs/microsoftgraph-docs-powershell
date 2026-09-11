@@ -15,6 +15,9 @@ title: Update-MgSiteTermStoreSetTerm
 
 Update the properties of a term object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

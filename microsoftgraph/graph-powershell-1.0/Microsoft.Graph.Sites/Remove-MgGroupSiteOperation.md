@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteOperation
 
 Delete navigation property operations for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

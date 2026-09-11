@@ -15,6 +15,9 @@ title: Update-MgGroupSiteTermStoreGroupSetTermChildRelation
 
 Update the navigation property relations in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
