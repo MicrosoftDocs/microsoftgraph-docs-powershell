@@ -421,7 +421,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasdeskcheck)
+- [Remove-MgPlaceAsDeskCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplaceasdeskcheck)
 
 
 

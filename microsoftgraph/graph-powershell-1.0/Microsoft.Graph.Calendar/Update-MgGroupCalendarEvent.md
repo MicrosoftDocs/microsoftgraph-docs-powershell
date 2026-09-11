@@ -3143,8 +3143,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
-- [](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
+- [Update-MgGroupCalendarEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
 
 
 
