@@ -19,6 +19,9 @@ An inclusion rule indicates that a protection policy should contain protection u
 The initial status of a protection rule upon creation is active.
 After the rule is applied, the state is either completed or completedWithErrors.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreSharePointRestoreSession
 
 Update the properties of a sharePointRestoreSession object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

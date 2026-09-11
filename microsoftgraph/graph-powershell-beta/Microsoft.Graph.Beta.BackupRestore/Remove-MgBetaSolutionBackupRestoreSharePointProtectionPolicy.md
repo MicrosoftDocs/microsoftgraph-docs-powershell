@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreSharePointProtectionPolicy
 
 Delete navigation property sharePointProtectionPolicies for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSharePointProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSharePointProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

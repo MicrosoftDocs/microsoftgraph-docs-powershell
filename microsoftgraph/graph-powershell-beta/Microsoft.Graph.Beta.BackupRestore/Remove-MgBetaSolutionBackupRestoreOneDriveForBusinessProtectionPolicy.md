@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 
 Delete navigation property oneDriveForBusinessProtectionPolicies for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
