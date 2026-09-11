@@ -514,8 +514,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata)
-- [](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-beta)
+- [Export-MgBetaUserPersonalData](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-beta)
 
 
 
