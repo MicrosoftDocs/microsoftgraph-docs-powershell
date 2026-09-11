@@ -28523,8 +28523,8 @@ Read only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel)
-- [](https://learn.microsoft.com/graph/api/channel-post?view=graph-rest-beta)
+- [New-MgBetaTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-post?view=graph-rest-beta)
 
 
 

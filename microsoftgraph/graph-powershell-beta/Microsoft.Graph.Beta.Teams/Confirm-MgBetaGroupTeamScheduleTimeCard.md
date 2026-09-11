@@ -406,8 +406,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetagroupteamscheduletimecard)
-- [](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-beta)
+- [Confirm-MgBetaGroupTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetagroupteamscheduletimecard)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-beta)
 
 
 

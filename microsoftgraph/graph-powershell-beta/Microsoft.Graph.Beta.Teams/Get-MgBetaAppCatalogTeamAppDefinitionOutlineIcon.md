@@ -437,8 +437,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon)
-- [](https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-beta)
+- [Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-beta)
 
 
 

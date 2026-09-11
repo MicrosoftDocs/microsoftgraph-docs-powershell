@@ -836,8 +836,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatpinnedmessage)
-- [](https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-beta)
+- [New-MgBetaChatPinnedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatpinnedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-beta)
 
 
 

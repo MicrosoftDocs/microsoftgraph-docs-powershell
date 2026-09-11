@@ -734,8 +734,8 @@ SHAREDDAYNOTE `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduledaynote)
-- [](https://learn.microsoft.com/graph/api/daynote-update?view=graph-rest-beta)
+- [Update-MgBetaTeamScheduleDayNote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduledaynote)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/daynote-update?view=graph-rest-beta)
 
 
 

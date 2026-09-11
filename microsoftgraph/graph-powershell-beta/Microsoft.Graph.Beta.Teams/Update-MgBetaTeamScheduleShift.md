@@ -982,8 +982,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshift)
-- [](https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-beta)
+- [Update-MgBetaTeamScheduleShift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-beta)
 
 
 

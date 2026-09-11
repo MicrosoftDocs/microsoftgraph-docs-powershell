@@ -1109,8 +1109,8 @@ Content type, such as image/png, image/jpg.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
-- [](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
+- [Update-MgBetaAppCatalogTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
 
 
 

@@ -18426,7 +18426,7 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelsharedwithteam)
+- [Update-MgBetaTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelsharedwithteam)
 
 
 

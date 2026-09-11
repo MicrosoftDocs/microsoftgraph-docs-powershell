@@ -411,7 +411,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamownerbyuserprincipalname)
+- [Get-MgBetaGroupTeamOwnerByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamownerbyuserprincipalname)
 
 
 

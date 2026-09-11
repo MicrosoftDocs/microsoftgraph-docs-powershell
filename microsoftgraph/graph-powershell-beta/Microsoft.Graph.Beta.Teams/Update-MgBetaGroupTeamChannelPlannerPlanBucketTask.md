@@ -1998,7 +1998,7 @@ A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplannerplanbuckettask)
+- [Update-MgBetaGroupTeamChannelPlannerPlanBucketTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamchannelplannerplanbuckettask)
 
 
 

@@ -2077,8 +2077,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage)
-- [](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-beta)
+- [New-MgBetaTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-post-messages?view=graph-rest-beta)
 
 
 

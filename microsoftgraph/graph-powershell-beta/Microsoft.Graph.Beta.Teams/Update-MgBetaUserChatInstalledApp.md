@@ -595,8 +595,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatinstalledapp)
-- [](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-beta)
+- [Update-MgBetaUserChatInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatinstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-beta)
 
 
 

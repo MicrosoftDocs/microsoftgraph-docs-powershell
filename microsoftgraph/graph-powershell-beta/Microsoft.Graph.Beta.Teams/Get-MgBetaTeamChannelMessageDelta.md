@@ -670,8 +670,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagedelta)
-- [](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta)
+- [Get-MgBetaTeamChannelMessageDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelmessagedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-beta)
 
 
 

@@ -804,8 +804,8 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserteamworkactivitynotification)
-- [](https://learn.microsoft.com/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta)
+- [Send-MgBetaUserTeamworkActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetauserteamworkactivitynotification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta)
 
 
 

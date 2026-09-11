@@ -618,9 +618,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleopenshiftchangerequest)
-- [](https://learn.microsoft.com/graph/api/openshiftchangerequest-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/openshiftchangerequest-list?view=graph-rest-beta)
+- [Get-MgBetaTeamScheduleOpenShiftChangeRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleopenshiftchangerequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/openshiftchangerequest-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/openshiftchangerequest-list?view=graph-rest-beta)
 
 
 

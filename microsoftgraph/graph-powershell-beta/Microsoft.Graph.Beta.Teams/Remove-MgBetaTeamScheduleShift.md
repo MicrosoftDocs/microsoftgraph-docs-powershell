@@ -469,8 +469,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleshift)
-- [](https://learn.microsoft.com/graph/api/shift-delete?view=graph-rest-beta)
+- [Remove-MgBetaTeamScheduleShift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/shift-delete?view=graph-rest-beta)
 
 
 

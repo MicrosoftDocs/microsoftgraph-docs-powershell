@@ -650,9 +650,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp)
-- [](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-beta)
+- [Get-MgBetaChatInstalledApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-beta)
 
 
 

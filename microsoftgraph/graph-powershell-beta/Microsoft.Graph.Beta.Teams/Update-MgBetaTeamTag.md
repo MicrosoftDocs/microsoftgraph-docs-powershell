@@ -748,8 +748,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag)
-- [](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-beta)
+- [Update-MgBetaTeamTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-beta)
 
 
 

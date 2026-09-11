@@ -2018,8 +2018,8 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat)
-- [](https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-beta)
+- [Update-MgBetaChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-beta)
 
 
 

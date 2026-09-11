@@ -550,8 +550,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetateamprimarychannelplannerplantocontainer)
-- [](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
+- [Move-MgBetaTeamPrimaryChannelPlannerPlanToContainer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetateamprimarychannelplannerplantocontainer)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-movetocontainer?view=graph-rest-beta)
 
 
 

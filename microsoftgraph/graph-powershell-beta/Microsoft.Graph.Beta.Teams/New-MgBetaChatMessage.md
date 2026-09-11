@@ -1683,8 +1683,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmessage)
-- [](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-beta)
+- [New-MgBetaChatMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-beta)
 
 
 

@@ -414,8 +414,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule)
-- [](https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-beta)
+- [Get-MgBetaTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-beta)
 
 
 

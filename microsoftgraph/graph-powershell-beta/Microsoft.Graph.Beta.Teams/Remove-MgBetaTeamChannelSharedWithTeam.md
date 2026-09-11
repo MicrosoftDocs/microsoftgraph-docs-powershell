@@ -493,8 +493,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelsharedwithteam)
-- [](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta)
+- [Remove-MgBetaTeamChannelSharedWithTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelsharedwithteam)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta)
 
 
 

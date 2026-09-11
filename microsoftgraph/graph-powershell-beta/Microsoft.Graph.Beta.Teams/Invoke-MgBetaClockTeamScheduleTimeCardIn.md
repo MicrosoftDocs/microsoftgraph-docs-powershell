@@ -648,8 +648,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin)
-- [](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
+- [Invoke-MgBetaClockTeamScheduleTimeCardIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
 
 
 

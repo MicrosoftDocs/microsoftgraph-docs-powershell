@@ -450,8 +450,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachat)
-- [](https://learn.microsoft.com/graph/api/chat-delete?view=graph-rest-beta)
+- [Remove-MgBetaChat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-delete?view=graph-rest-beta)
 
 
 

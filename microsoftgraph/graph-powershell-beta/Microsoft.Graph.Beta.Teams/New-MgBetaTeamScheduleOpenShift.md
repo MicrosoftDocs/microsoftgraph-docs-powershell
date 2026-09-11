@@ -938,8 +938,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift)
-- [](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-beta)
+- [New-MgBetaTeamScheduleOpenShift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-beta)
 
 
 

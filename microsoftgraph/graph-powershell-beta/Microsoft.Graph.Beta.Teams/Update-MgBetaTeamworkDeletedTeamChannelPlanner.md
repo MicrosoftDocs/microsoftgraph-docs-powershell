@@ -1163,7 +1163,7 @@ Title of the plan.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelplanner)
+- [Update-MgBetaTeamworkDeletedTeamChannelPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelplanner)
 
 
 
