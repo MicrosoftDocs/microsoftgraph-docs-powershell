@@ -647,7 +647,7 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationsnapshotjob)
+- [Update-MgBetaAdminConfigurationManagementConfigurationSnapshotJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/update-mgbetaadminconfigurationmanagementconfigurationsnapshotjob)
 
 
 

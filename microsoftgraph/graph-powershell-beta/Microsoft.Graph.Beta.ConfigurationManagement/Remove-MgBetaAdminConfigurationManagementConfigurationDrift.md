@@ -388,7 +388,7 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/remove-mgbetaadminconfigurationmanagementconfigurationdrift)
+- [Remove-MgBetaAdminConfigurationManagementConfigurationDrift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/remove-mgbetaadminconfigurationmanagementconfigurationdrift)
 
 
 
