@@ -15,6 +15,9 @@ title: Invoke-MgBetaFunctionServicePrincipalSynchronizationTemplateSchema
 
 List all the functions currently supported in the attributeMappingSource for a synchronizationSchema.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Function (Default)

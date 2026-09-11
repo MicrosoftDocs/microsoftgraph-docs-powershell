@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationAppManagementPolicy
 
 The appManagementPolicy applied to this application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

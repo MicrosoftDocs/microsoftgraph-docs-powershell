@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationSynchronizationJobSchema
 
 The synchronization schema configured for the job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
