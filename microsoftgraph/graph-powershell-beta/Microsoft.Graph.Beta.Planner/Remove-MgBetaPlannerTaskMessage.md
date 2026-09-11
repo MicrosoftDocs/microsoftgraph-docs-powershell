@@ -423,8 +423,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertaskmessage)
-- [](https://learn.microsoft.com/graph/api/plannertaskchatmessage-delete?view=graph-rest-beta)
+- [Remove-MgBetaPlannerTaskMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertaskmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskchatmessage-delete?view=graph-rest-beta)
 
 
 

@@ -527,8 +527,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaarchiveplannerplan)
-- [](https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta)
+- [Invoke-MgBetaArchivePlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/invoke-mgbetaarchiveplannerplan)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta)
 
 
 

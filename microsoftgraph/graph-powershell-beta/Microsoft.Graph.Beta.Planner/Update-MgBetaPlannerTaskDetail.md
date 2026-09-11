@@ -827,8 +827,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
-- [](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-beta)
+- [Update-MgBetaPlannerTaskDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-beta)
 
 
 

@@ -545,8 +545,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplandelta)
-- [](https://learn.microsoft.com/graph/api/plannerplan-delta?view=graph-rest-beta)
+- [Get-MgBetaUserPlannerPlanDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplandelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerplan-delta?view=graph-rest-beta)
 
 
 

@@ -372,8 +372,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskbuckettaskboardformat)
-- [](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-beta)
+- [Get-MgBetaPlannerTaskBucketTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskbuckettaskboardformat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-beta)
 
 
 
