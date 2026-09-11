@@ -393,7 +393,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentInfo <IMicrosoftGraphSecurityContentInfo>]: contentInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -415,7 +415,7 @@ The message appears in administrative logs.
     [ExtendedProperties <IMicrosoftGraphSecurityKeyValuePair[]>]: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
     [LabelId <String>]: The GUID of the label that should be applied to the information.
 
-CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
+CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentFormat <String>]: The format of the content to be labeled.
 Possible values are: file, email.
@@ -425,7 +425,7 @@ Possible values are: file, email.
     [Value <String>]: Value for this key-value pair.
   [State <String>]: contentState
 
-LABELINGOPTIONS <IMicrosoftGraphSecurityLabelingOptions>: labelingOptions
+LABELINGOPTIONS `<IMicrosoftGraphSecurityLabelingOptions>`: labelingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: assignmentMethod
   [DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>]: downgradeJustification
@@ -443,3 +443,25 @@ The message appears in administrative logs.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelapplication)
 - [](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
