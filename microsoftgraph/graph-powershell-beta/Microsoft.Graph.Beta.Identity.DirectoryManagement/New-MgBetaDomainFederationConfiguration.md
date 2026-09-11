@@ -248,7 +248,7 @@ HelpMessage: ''
 
 ### -DefaultInteractiveAuthenticationMethod
 
-.
+
 
 ```yaml
 Type: System.String
@@ -587,7 +587,7 @@ HelpMessage: ''
 
 ### -OpenIdConnectDiscoveryEndpoint
 
-.
+
 
 ```yaml
 Type: System.String
@@ -641,7 +641,7 @@ HelpMessage: ''
 
 ### -PasswordChangeUri
 
-.
+
 
 ```yaml
 Type: System.String
