@@ -436,8 +436,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessnamedlocation)
-- [](https://learn.microsoft.com/graph/api/countrynamedlocation-restore?view=graph-rest-beta)
+- [Restore-MgBetaIdentityConditionalAccessNamedLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetaidentityconditionalaccessnamedlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/countrynamedlocation-restore?view=graph-rest-beta)
 
 
 

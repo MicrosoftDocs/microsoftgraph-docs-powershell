@@ -766,8 +766,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod)
-- [](https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-beta)
+- [New-MgBetaUserAuthenticationPhoneMethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-beta)
 
 
 

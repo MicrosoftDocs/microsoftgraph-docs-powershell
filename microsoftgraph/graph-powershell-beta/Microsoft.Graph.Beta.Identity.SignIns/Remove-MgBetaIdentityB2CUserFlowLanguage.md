@@ -520,8 +520,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguage)
-- [](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-delete?view=graph-rest-beta)
+- [Remove-MgBetaIdentityB2CUserFlowLanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-delete?view=graph-rest-beta)
 
 
 

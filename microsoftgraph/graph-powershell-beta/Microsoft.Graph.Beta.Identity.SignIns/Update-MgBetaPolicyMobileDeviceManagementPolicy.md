@@ -19276,8 +19276,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicymobiledevicemanagementpolicy)
-- [](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyMobileDeviceManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicymobiledevicemanagementpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-update?view=graph-rest-beta)
 
 
 

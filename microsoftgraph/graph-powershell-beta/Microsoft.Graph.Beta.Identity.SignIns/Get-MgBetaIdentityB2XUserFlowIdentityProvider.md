@@ -730,8 +730,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowidentityprovider)
-- [](https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-identityproviders?view=graph-rest-beta)
+- [Get-MgBetaIdentityB2XUserFlowIdentityProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowidentityprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-identityproviders?view=graph-rest-beta)
 
 
 

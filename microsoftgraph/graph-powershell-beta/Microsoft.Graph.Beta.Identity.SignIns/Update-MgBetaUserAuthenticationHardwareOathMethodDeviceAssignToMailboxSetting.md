@@ -906,7 +906,7 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationhardwareoathmethoddeviceassigntomailboxsetting)
+- [Update-MgBetaUserAuthenticationHardwareOathMethodDeviceAssignToMailboxSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationhardwareoathmethoddeviceassigntomailboxsetting)
 
 
 

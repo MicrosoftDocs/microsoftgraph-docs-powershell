@@ -1003,8 +1003,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
-- [](https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-beta)
+- [Update-MgBetaIdentityB2CUserFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-beta)
 
 
 

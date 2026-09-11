@@ -558,7 +558,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy)
+- [New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicy)
 
 
 

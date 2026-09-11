@@ -703,8 +703,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute)
-- [](https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-beta)
+- [Update-MgBetaIdentityUserFlowAttribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-beta)
 
 
 

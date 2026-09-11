@@ -753,8 +753,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyonpremauthenticationpolicy)
-- [](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyOnPremAuthenticationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyonpremauthenticationpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/onpremauthenticationpolicy-update?view=graph-rest-beta)
 
 
 

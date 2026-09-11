@@ -666,8 +666,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeysetkeyv2)
-- [](https://learn.microsoft.com/graph/api/trustframeworkkey_v2-get?view=graph-rest-beta)
+- [Get-MgBetaTrustFrameworkKeySetKeyV2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeysetkeyv2)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/trustframeworkkey_v2-get?view=graph-rest-beta)
 
 
 

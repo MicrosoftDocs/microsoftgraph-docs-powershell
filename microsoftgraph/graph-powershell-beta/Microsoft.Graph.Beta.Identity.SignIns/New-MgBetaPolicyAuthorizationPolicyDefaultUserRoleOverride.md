@@ -626,7 +626,7 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicydefaultuserroleoverride)
+- [New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicydefaultuserroleoverride)
 
 
 

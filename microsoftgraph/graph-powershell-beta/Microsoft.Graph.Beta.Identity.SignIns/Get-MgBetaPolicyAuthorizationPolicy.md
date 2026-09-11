@@ -633,8 +633,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthorizationpolicy)
-- [](https://learn.microsoft.com/graph/api/authorizationpolicy-get?view=graph-rest-beta)
+- [Get-MgBetaPolicyAuthorizationPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthorizationpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authorizationpolicy-get?view=graph-rest-beta)
 
 
 

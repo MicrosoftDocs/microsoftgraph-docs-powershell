@@ -435,8 +435,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetapolicydeleteditemcrosstenantpartneridentitysynchronization)
-- [](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-restore?view=graph-rest-beta)
+- [Restore-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/restore-mgbetapolicydeleteditemcrosstenantpartneridentitysynchronization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-restore?view=graph-rest-beta)
 
 
 

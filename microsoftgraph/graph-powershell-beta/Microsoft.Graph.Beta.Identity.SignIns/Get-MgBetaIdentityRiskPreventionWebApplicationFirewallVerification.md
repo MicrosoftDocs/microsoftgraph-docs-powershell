@@ -653,9 +653,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityriskpreventionwebapplicationfirewallverification)
-- [](https://learn.microsoft.com/graph/api/webapplicationfirewallverificationmodel-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/riskpreventioncontainer-list-webapplicationfirewallverifications?view=graph-rest-beta)
+- [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityriskpreventionwebapplicationfirewallverification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/webapplicationfirewallverificationmodel-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskpreventioncontainer-list-webapplicationfirewallverifications?view=graph-rest-beta)
 
 
 

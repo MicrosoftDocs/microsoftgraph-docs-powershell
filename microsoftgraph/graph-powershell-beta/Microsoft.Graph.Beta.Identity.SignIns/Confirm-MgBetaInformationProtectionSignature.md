@@ -406,7 +406,7 @@ BODYPARAMETER `<IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetainformationprotectionsignature)
+- [Confirm-MgBetaInformationProtectionSignature](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetainformationprotectionsignature)
 
 
 

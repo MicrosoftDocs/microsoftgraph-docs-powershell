@@ -499,8 +499,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyactivitybasedtimeoutpolicy)
-- [](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-delete?view=graph-rest-beta)
+- [Remove-MgBetaPolicyActivityBasedTimeoutPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyactivitybasedtimeoutpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-delete?view=graph-rest-beta)
 
 
 

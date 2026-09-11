@@ -646,7 +646,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyserviceprincipalcreationpolicyexclude)
+- [Get-MgBetaPolicyServicePrincipalCreationPolicyExclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyserviceprincipalcreationpolicyexclude)
 
 
 

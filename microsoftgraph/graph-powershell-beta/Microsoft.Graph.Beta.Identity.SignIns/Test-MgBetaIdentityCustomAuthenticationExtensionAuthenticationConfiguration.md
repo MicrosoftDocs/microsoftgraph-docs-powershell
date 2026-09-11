@@ -576,8 +576,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentitycustomauthenticationextensionauthenticationconfiguration)
-- [](https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-beta)
+- [Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentitycustomauthenticationextensionauthenticationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-beta)
 
 
 

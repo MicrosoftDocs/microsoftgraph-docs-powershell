@@ -771,8 +771,8 @@ SYSTEMCREDENTIALPREFERENCES `<IMicrosoftGraphSystemCredentialPreferences>`: syst
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
-- [](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta)
+- [Update-MgBetaPolicyAuthenticationMethodPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-beta)
 
 
 

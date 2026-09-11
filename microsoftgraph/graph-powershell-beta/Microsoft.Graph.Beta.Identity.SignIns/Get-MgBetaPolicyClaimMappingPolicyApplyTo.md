@@ -661,8 +661,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicyapplyto)
-- [](https://learn.microsoft.com/graph/api/claimsmappingpolicy-list-appliesto?view=graph-rest-beta)
+- [Get-MgBetaPolicyClaimMappingPolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicyapplyto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/claimsmappingpolicy-list-appliesto?view=graph-rest-beta)
 
 
 

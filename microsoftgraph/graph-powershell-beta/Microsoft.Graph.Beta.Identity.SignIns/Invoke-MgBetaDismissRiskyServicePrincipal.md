@@ -417,8 +417,8 @@ BODYPARAMETER `<IPathsUc5289IdentityprotectionRiskyserviceprincipalsMicrosoftGra
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal)
-- [](https://learn.microsoft.com/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta)
+- [Invoke-MgBetaDismissRiskyServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetadismissriskyserviceprincipal)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta)
 
 
 

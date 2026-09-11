@@ -605,8 +605,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationsigninpreference)
-- [](https://learn.microsoft.com/graph/api/authentication-update?view=graph-rest-beta)
+- [Update-MgBetaUserAuthenticationSignInPreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationsigninpreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authentication-update?view=graph-rest-beta)
 
 
 
