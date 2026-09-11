@@ -611,8 +611,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclinegroupevent)
-- [](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
+- [Invoke-MgBetaDeclineGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetadeclinegroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-beta)
 
 
 

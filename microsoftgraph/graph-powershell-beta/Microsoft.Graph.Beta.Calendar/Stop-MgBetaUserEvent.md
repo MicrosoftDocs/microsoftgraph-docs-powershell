@@ -564,8 +564,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/stop-mgbetauserevent)
-- [](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-beta)
+- [Stop-MgBetaUserEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/stop-mgbetauserevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-beta)
 
 
 

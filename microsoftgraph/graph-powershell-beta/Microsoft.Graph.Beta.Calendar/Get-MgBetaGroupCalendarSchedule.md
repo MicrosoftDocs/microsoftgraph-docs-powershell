@@ -591,8 +591,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarschedule)
-- [](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta)
+- [Get-MgBetaGroupCalendarSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarschedule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta)
 
 
 
