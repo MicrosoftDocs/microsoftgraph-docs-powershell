@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365serviceusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)
+- [Get-MgReportOffice365ServiceUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365serviceusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0)
 
 
 

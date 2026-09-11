@@ -405,7 +405,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail)
+- [Get-MgReportEmailActivityUserDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail)
 
 
 

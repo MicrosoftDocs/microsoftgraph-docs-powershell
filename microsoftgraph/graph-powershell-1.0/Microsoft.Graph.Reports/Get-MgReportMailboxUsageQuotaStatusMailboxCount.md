@@ -373,8 +373,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)
+- [Get-MgReportMailboxUsageQuotaStatusMailboxCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)
 
 
 
