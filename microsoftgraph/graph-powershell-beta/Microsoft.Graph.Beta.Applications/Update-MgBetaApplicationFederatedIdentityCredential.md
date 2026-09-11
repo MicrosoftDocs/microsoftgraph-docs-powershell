@@ -694,7 +694,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphFederatedIdentityCredential>: federatedIdentityCredential
+BODYPARAMETER `<IMicrosoftGraphFederatedIdentityCredential>`: federatedIdentityCredential
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -734,7 +734,7 @@ It has a limit of 600 characters.
 If subject is defined, claimsMatchingExpression must be null.
 Supports $filter (eq).
 
-CLAIMSMATCHINGEXPRESSION <IMicrosoftGraphFederatedIdentityExpression>: federatedIdentityExpression
+CLAIMSMATCHINGEXPRESSION `<IMicrosoftGraphFederatedIdentityExpression>`: federatedIdentityExpression
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LanguageVersion <Int32?>]: Indicated the language version to be used.
 Should always be set to 1.
@@ -742,7 +742,7 @@ Required.
   [Value <String>]: Indicates the configured expression.
 Required.
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -785,3 +785,25 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationfederatedidentitycredential)
 - [](https://learn.microsoft.com/graph/api/federatedidentitycredential-upsert?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
