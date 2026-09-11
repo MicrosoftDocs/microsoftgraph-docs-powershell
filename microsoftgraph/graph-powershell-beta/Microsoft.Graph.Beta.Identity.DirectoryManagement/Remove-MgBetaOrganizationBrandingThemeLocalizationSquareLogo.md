@@ -52,16 +52,6 @@ Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than
 We recommend using a transparent image with no padding around the logo.
 Optional.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -504,6 +494,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationbrandingthemelocalizationsquarelogo)
+
 
 
 
