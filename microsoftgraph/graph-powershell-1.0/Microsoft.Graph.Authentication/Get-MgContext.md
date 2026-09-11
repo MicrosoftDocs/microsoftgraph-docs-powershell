@@ -85,7 +85,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Authentication.IAuthContext
 
-{{ Fill in the Description }}
 
 ## NOTES
 

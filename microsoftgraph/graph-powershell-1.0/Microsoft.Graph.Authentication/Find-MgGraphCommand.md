@@ -267,49 +267,38 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Pipeline input accepts API URIs as an array of strings.
 
-{{ Fill in the Description }}
 
 ### System.String[]
 
-{{ Fill in the Description }}
 
 ### System.Object[]
 
-{{ Fill in the Description }}
 
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Authentication.Models.IGraphCommand
 
-{{ Fill in the Description }}
 
 ### 1.
 
-{{ Fill in the Description }}
 
 ### 2.
 
-{{ Fill in the Description }}
 
 ### 3.
 
-{{ Fill in the Description }}
 
 ### 4.
 
-{{ Fill in the Description }}
 
 ### 5.
 
-{{ Fill in the Description }}
 
 ### 6.
 
-{{ Fill in the Description }}
 
 ### 7.
 
-{{ Fill in the Description }}
 
 ## NOTES
 
