@@ -832,7 +832,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPersonAnnotation>: personAnnotation
+BODYPARAMETER `<IMicrosoftGraphPersonAnnotation>`: personAnnotation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedAudiences <String>]: allowedAudiences
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -870,7 +870,7 @@ Read-only.
   [DisplayName <String>]: Contains a friendly name for the note.
   [ThumbnailUrl <String>]: 
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -882,17 +882,17 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DETAIL <IMicrosoftGraphItemBody>: itemBody
+DETAIL `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
+INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfidenceScore <Double?>]: Confidence score reflecting the accuracy of the data inferred about the user.
   [UserHasVerifiedAccuracy <Boolean?>]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -916,7 +916,7 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [WebAccountId <String>]: The unique identifier of webAccount
   [WorkPositionId <String>]: The unique identifier of workPosition
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -928,7 +928,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
+SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String[]>]: 
 
@@ -942,3 +942,25 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote)
 - [](https://learn.microsoft.com/graph/api/personannotation-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

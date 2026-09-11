@@ -836,7 +836,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphItemAddress>: itemAddress
+BODYPARAMETER `<IMicrosoftGraphItemAddress>`: itemAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedAudiences <String>]: allowedAudiences
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -890,7 +890,7 @@ Writable on OneDrive Personal.
 The longitude, in decimal, for the item.
 Writable on OneDrive Personal.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -902,7 +902,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DETAIL <IMicrosoftGraphPhysicalAddress>: physicalAddress
+DETAIL `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -913,7 +913,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-GEOCOORDINATES <IMicrosoftGraphGeoCoordinates>: geoCoordinates
+GEOCOORDINATES `<IMicrosoftGraphGeoCoordinates>`: geoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Altitude <Double?>]: Optional.
 The altitude (height), in feet,  above sea level for the item.
@@ -925,12 +925,12 @@ Writable on OneDrive Personal.
 The longitude, in decimal, for the item.
 Writable on OneDrive Personal.
 
-INFERENCE <IMicrosoftGraphInferenceData>: inferenceData
+INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfidenceScore <Double?>]: Confidence score reflecting the accuracy of the data inferred about the user.
   [UserHasVerifiedAccuracy <Boolean?>]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
+INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   [ActivityStatisticsId <String>]: The unique identifier of activityStatistics
   [EducationalActivityId <String>]: The unique identifier of educationalActivity
   [ItemAddressId <String>]: The unique identifier of itemAddress
@@ -954,7 +954,7 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   [WebAccountId <String>]: The unique identifier of webAccount
   [WorkPositionId <String>]: The unique identifier of workPosition
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -966,7 +966,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SOURCE <IMicrosoftGraphPersonDataSources>: personDataSources
+SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String[]>]: 
 
@@ -980,3 +980,25 @@ SOURCES <IMicrosoftGraphProfileSourceAnnotation[]>: Where the values within an e
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaddress)
 - [](https://learn.microsoft.com/graph/api/itemaddress-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
