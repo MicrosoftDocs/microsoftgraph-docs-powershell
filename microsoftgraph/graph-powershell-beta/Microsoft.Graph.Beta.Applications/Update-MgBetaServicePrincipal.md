@@ -148,15 +148,18 @@ This API can also create an agentIdentityBlueprintPrincipal object from an agent
 | Application | Application.ReadWrite.OwnedBy, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the properties of a service principal
 
-### EXAMPLE 1
-
+```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
   "appRoleAssignmentRequired" = "true"
   }
 
 Update-MgBetaServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
+```
+
+This is example, the first command defines the properties and their values in a hashtable under the variable $ServicePrincipalUpdate. The second command updates the specified service principal.
 
 ## PARAMETERS
 

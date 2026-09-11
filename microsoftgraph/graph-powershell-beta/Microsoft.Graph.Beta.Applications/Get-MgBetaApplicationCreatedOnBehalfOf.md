@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -391,6 +381,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcreatedonbehalfof)
+
 
 
 

@@ -86,8 +86,9 @@ No user or group will be provisioned on-demand that would not have been provisio
 | Application | Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Provision users from Microsoft Entra ID to third-party applications
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -107,7 +108,12 @@ $params = @{
 
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will provision users from microsoft entra id to third-party applications
+
+### Example 2: Sync on-demand from Active Directory to Microsoft Entra ID (Microsoft Entra Cloud Sync)
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -127,7 +133,12 @@ $params = @{
 
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will sync on-demand from active directory to microsoft entra id (microsoft entra cloud sync)
+
+### Example 3: Provision a group and two of its members on demand
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -158,6 +169,10 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
+
+```
+This example will provision a group and two of its members on demand
+
 
 ## PARAMETERS
 
