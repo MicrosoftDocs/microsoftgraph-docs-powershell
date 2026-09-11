@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventWebinar
 
 Read the properties and relationships of a virtualEventWebinar object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinar?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

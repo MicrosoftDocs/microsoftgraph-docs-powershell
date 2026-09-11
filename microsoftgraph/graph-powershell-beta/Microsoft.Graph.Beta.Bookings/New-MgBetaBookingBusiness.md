@@ -15,6 +15,9 @@ title: New-MgBetaBookingBusiness
 
 Add new entity to bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusiness?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

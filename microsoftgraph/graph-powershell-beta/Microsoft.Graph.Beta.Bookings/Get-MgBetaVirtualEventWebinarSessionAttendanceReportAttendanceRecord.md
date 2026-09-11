@@ -16,6 +16,9 @@ title: Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 List of attendance records of an attendance report.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
