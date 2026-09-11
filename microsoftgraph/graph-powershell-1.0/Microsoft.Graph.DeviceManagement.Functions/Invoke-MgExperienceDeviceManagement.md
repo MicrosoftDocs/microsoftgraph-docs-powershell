@@ -15,6 +15,9 @@ title: Invoke-MgExperienceDeviceManagement
 
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Experience (Default)
