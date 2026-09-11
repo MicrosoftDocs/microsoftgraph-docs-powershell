@@ -456,8 +456,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsordirectoryobjectbyref)
-- [](https://learn.microsoft.com/graph/api/agentuser-delete-sponsors?view=graph-rest-beta)
+- [Remove-MgBetaUserSponsorDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsordirectoryobjectbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agentuser-delete-sponsors?view=graph-rest-beta)
 
 
 

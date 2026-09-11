@@ -417,8 +417,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota)
-- [](https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-beta)
+- [Get-MgBetaUserSettingStorageQuota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-beta)
 
 
 
