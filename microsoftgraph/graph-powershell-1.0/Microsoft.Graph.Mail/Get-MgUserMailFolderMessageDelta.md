@@ -614,8 +614,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta)
-- [](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
+- [Get-MgUserMailFolderMessageDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
 
 
 

@@ -1359,7 +1359,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder)
+- [New-MgUserMailFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder)
 
 
 
