@@ -748,7 +748,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreadingcoachpassage)
+- [Update-MgBetaEducationReportReadingCoachPassage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationreportreadingcoachpassage)
 
 
 

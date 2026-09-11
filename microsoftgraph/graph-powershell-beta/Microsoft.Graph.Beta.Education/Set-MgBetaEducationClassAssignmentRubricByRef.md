@@ -589,8 +589,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassassignmentrubricbyref)
-- [](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta)
+- [Set-MgBetaEducationClassAssignmentRubricByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassassignmentrubricbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-beta)
 
 
 

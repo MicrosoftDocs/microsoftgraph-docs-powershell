@@ -48501,8 +48501,8 @@ TERM `<IMicrosoftGraphEducationTerm>`: educationTerm
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclass)
-- [](https://learn.microsoft.com/graph/api/educationroot-post-classes?view=graph-rest-beta)
+- [New-MgBetaEducationClass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclass)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationroot-post-classes?view=graph-rest-beta)
 
 
 

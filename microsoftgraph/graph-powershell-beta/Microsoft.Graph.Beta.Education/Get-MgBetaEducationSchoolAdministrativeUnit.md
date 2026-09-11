@@ -382,8 +382,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit)
-- [](https://learn.microsoft.com/graph/api/educationschool-get-administrativeunit?view=graph-rest-beta)
+- [Get-MgBetaEducationSchoolAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-get-administrativeunit?view=graph-rest-beta)
 
 
 
