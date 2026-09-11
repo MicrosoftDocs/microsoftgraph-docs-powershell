@@ -88,8 +88,9 @@ Modules start in the draft state, which means that students won't see the module
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -100,6 +101,10 @@ $params = @{
 }
 
 New-MgBetaEducationClassModule -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

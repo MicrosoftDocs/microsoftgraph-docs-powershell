@@ -49,16 +49,6 @@ Note that if the delegated token is used, members can only be seen by other memb
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All, Member.Read.Hidden,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -448,6 +438,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmemberbyref)
 - [](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-beta)
+
 
 
 

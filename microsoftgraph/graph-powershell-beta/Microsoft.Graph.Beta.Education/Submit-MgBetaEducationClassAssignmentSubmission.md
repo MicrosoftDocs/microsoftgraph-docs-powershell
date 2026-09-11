@@ -67,12 +67,17 @@ A teacher can also submit a student's assignment on their behalf.
 | Application | EduAssignments.ReadWrite.All, Notes.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Submit-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example shows how to use the Submit-MgBetaEducationClassAssignmentSubmission Cmdlet.
+
 
 ## PARAMETERS
 

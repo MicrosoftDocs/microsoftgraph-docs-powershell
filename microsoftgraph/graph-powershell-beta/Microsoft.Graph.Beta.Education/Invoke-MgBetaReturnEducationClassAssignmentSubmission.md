@@ -61,12 +61,17 @@ This action can only be done by the teacher.
 | Application | EduAssignments.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Invoke-MgBetaReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example shows how to use the Invoke-MgBetaReturnEducationClassAssignmentSubmission Cmdlet.
+
 
 ## PARAMETERS
 
