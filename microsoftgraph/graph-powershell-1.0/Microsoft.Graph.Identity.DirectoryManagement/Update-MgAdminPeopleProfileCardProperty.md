@@ -569,7 +569,7 @@ For example, a user with a nb-NO client gets 'Kostnadssenter' as the attribute l
     [DisplayName <String>]: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
     [LanguageTag <String>]: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
 
-BODYPARAMETER <IMicrosoftGraphProfileCardProperty>: profileCardProperty
+BODYPARAMETER `<IMicrosoftGraphProfileCardProperty>`: profileCardProperty
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -585,7 +585,7 @@ When present, the Microsoft Entra ID field referenced in this property is visibl
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
   [IsVisible <Boolean?>]: Indicates whether the given directory property should be shown on a user’s profile card.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -629,3 +629,25 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty)
 - [](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

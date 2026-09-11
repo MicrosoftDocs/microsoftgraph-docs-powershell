@@ -574,7 +574,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceLocalCredentialInfo>: deviceLocalCredentialInfo
+BODYPARAMETER `<IMicrosoftGraphDeviceLocalCredentialInfo>`: deviceLocalCredentialInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -597,7 +597,7 @@ Read-only.
   [BackupDateTime <DateTime?>]: When the local administrator account credential for the device object was backed up to Azure Active Directory.
   [PasswordBase64 <String>]: The password for the local administrator account that is backed up to Azure Active Directory and returned as a Base64 encoded value.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -640,3 +640,25 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorydevicelocalcredential)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

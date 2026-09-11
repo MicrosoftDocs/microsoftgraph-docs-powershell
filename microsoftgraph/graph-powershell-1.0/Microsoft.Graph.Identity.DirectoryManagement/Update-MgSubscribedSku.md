@@ -746,7 +746,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSubscribedSku>: subscribedSku
+BODYPARAMETER `<IMicrosoftGraphSubscribedSku>`: subscribedSku
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -780,7 +780,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 To get a list of commercial subscriptions that an organization has acquired, see List subscribedSkus.
   [SubscriptionIds <String[]>]: A list of all subscription IDs associated with this SKU.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -819,7 +819,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-PREPAIDUNITS <IMicrosoftGraphLicenseUnitsDetail>: licenseUnitsDetail
+PREPAIDUNITS `<IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Enabled <Int32?>]: The number of units that are enabled for the active subscription of the service SKU.
   [LockedOut <Int32?>]: The number of units that are locked out because the customer canceled their subscription of the service SKU.
@@ -841,3 +841,25 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgsubscribedsku)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
