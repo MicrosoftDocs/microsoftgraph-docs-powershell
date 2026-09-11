@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Update external
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -658,6 +648,7 @@ Required.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
+
 
 
 
