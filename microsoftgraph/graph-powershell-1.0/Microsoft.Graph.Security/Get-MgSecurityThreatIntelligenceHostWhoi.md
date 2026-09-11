@@ -53,12 +53,17 @@ Specify the desired whoisRecord in one of the following two ways:\r- Identify a 
 \r- Specify an id value to get the corresponding whoisRecord.
 
 ## EXAMPLES
+### Example 1: Get the whoisRecord resource for the specified host
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityThreatIntelligenceHostWhoi -HostId $hostId
+
+```
+This example will get the whoisrecord resource for the specified host
+
 
 ## PARAMETERS
 

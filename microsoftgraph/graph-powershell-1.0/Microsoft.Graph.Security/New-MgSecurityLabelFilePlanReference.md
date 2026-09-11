@@ -50,8 +50,9 @@ This cmdlet has the following aliases,
 Create a new filePlanReferenceTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -61,6 +62,10 @@ $params = @{
 }
 
 New-MgSecurityLabelFilePlanReference -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityLabelFilePlanReference Cmdlet.
+
 
 ## PARAMETERS
 

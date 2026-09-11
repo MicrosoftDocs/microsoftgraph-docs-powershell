@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Adds the results of the eDiscovery search to the specified reviewSet.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -448,6 +438,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchaddtoreviewsetoperation)
+
 
 
 

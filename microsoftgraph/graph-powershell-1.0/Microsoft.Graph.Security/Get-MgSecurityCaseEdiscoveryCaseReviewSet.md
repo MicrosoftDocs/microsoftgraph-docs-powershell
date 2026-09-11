@@ -69,12 +69,17 @@ Read the properties and relationships of an ediscoveryReviewSet object.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
+
 
 ## PARAMETERS
 
