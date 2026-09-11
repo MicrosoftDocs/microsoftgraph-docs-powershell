@@ -57,12 +57,17 @@ Delete an identityUserFlowAttributeAssignment object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
+
+```
+This example shows how to use the Remove-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
+
 
 ## PARAMETERS
 

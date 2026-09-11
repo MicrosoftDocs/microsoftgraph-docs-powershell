@@ -69,12 +69,17 @@ Read the properties and relationships of an externalAuthenticationMethodConfigur
 | Application | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
+
+```
+This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

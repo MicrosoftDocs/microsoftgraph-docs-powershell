@@ -47,12 +47,17 @@ Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 | Application | Policy.Read.All, Policy.ReadWrite.SecurityDefaults,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
+
+```
+This example shows how to use the Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

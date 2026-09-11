@@ -57,12 +57,17 @@ Deletes a windowsHelloForBusinessAuthenticationMethod object.
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-WindowsHello.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgUserAuthenticationWindowsHelloForBusinessMethod -UserId $userId -WindowsHelloForBusinessAuthenticationMethodId $windowsHelloForBusinessAuthenticationMethodId
+
+```
+This example shows how to use the Remove-MgUserAuthenticationWindowsHelloForBusinessMethod Cmdlet.
+
 
 ## PARAMETERS
 

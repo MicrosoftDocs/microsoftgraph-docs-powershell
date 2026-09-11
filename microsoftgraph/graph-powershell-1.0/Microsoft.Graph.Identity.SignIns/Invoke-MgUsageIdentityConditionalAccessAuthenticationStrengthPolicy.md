@@ -53,16 +53,6 @@ Allows the caller to see which Conditional Access policies reference a specified
 The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId
@@ -379,6 +369,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusageidentityconditionalaccessauthenticationstrengthpolicy)
 - [](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-1.0)
+
 
 
 

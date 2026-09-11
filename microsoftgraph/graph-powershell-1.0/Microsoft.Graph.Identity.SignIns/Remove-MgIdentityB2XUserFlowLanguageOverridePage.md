@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 Deletes the values in an userFlowLanguagePage object.
 You may only delete the values in an overridesPage, which is used to customize the values shown to a user during a user journey defined by a user flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -504,6 +494,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowlanguageoverridepage)
 - [](https://learn.microsoft.com/graph/api/userflowlanguagepage-delete?view=graph-rest-1.0)
+
 
 
 
