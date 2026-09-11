@@ -53,16 +53,6 @@ Teams are archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -424,6 +414,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaunarchivegroupteam)
 - [](https://learn.microsoft.com/graph/api/team-unarchive?view=graph-rest-beta)
+
 
 
 

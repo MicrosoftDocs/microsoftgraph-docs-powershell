@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 
 Update teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -27693,6 +27683,7 @@ Start with 1.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamwork)
+
 
 
 

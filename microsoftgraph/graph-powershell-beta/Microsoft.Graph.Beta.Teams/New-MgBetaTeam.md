@@ -72,8 +72,9 @@ Create a new team.
 | Application | Team.Create, Directory.ReadWrite.All, Group.ReadWrite.All, Teamwork.Migrate.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -86,7 +87,12 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -108,7 +114,12 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -122,8 +133,7 @@ $params = @{
 		@{
 			displayName = "Announcements 📢"
 			isFavoriteByDefault = $true
-			description = "This is a sample announcements channel that is favorited by default.
-Use this channel to make important team, product, and service announcements."
+			description = "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
 		}
 		@{
 			displayName = "Training 🏋️"
@@ -196,7 +206,12 @@ Use this channel to make important team, product, and service announcements."
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -207,7 +222,12 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -243,7 +263,12 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 6: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -255,7 +280,12 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 7
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 7: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -292,7 +322,12 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 8
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 8: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -306,7 +341,12 @@ $params = @{
 
 New-MgBetaTeam -BodyParameter $params
 
-### EXAMPLE 9
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
+### Example 9: Code snippet
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -326,6 +366,10 @@ $params = @{
 }
 
 New-MgBetaTeam -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeam Cmdlet.
+
 
 ## PARAMETERS
 

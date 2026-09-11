@@ -102,18 +102,28 @@ When you retrieve an indirect member, the @microsoft.graph.originalSourceMembers
 | Application | ChannelMember.Read.Group, ChannelMember.Read.All, ChannelMember.ReadWrite.All, ChannelMember.ReadWrite.Group,  |
 
 ## EXAMPLES
+### Example 1: List all members of a channel
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId
 
-### EXAMPLE 2
+```
+This example will list all members of a channel
+
+### Example 2: Find a channel member using their Microsoft Entra user object ID
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -Filter "(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')"
+Get-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -Filter "(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')" 
+
+```
+This example will find a channel member using their microsoft entra user object id
+
 
 ## PARAMETERS
 

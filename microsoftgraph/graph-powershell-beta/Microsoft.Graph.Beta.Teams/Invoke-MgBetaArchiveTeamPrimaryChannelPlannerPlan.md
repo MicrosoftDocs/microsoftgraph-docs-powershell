@@ -78,16 +78,6 @@ An archived plan can be unarchived.
 All archived entities can be deleted.
 Archived tasks are not included in the response for list of tasks assigned to a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -578,6 +568,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamprimarychannelplannerplan)
 - [](https://learn.microsoft.com/graph/api/plannerplan-archive?view=graph-rest-beta)
+
 
 
 

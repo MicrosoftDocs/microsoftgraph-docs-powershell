@@ -55,16 +55,6 @@ Delete navigation property tabs for teams
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamsTab.Delete.Group, Directory.ReadWrite.All, Group.ReadWrite.All, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Group, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWriteSelfForTeam.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -488,6 +478,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchanneltab)
+
 
 
 

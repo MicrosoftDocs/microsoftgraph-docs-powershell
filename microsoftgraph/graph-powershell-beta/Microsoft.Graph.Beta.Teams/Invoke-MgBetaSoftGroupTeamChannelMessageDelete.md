@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -460,6 +450,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftgroupteamchannelmessagedelete)
 - [](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-beta)
+
 
 
 
