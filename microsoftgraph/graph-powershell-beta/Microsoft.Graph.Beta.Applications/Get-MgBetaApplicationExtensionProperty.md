@@ -610,9 +610,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty)
-- [](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-beta)
+- [Get-MgBetaApplicationExtensionProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-beta)
 
 
 
