@@ -395,7 +395,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactpermanent)
+- [Remove-MgUserContactPermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactpermanent)
 
 
 
