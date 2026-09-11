@@ -186,7 +186,7 @@ HelpMessage: ''
 
 ### -CreatedByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -207,7 +207,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -228,7 +228,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -249,7 +249,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -355,7 +355,7 @@ HelpMessage: ''
 
 ### -InformationLinks
 
-.
+
 To construct, see NOTES section for INFORMATIONLINKS properties and create a hash table.
 
 ```yaml
@@ -377,7 +377,7 @@ HelpMessage: ''
 
 ### -LastActionByUserId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -398,7 +398,7 @@ HelpMessage: ''
 
 ### -LastActionDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -463,7 +463,7 @@ HelpMessage: ''
 
 ### -Priority
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -569,7 +569,7 @@ HelpMessage: ''
 
 ### -UserImpact
 
-.
+
 
 ```yaml
 Type: System.String
@@ -590,7 +590,7 @@ HelpMessage: ''
 
 ### -Versions
 
-.
+
 To construct, see NOTES section for VERSIONS properties and create a hash table.
 
 ```yaml
