@@ -58,8 +58,9 @@ Update the navigation property conditionalAccessSettings in deviceManagement
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
@@ -76,6 +77,10 @@ overrideDefaultRule = $true
 }
 
 Update-MgDeviceManagementConditionalAccessSetting -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementConditionalAccessSetting Cmdlet.
+
 
 ## PARAMETERS
 
