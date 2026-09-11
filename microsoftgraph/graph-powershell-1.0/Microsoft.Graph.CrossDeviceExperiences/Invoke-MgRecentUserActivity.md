@@ -73,13 +73,18 @@ To get your application's activities, use the nextLink property to paginate.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CrossDeviceExperiences
 
 # A UPN can also be used as -UserId.
 Invoke-MgRecentUserActivity -UserId $userId
+
+```
+This example shows how to use the Invoke-MgRecentUserActivity Cmdlet.
+
 
 ## PARAMETERS
 
