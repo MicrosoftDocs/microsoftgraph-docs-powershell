@@ -614,8 +614,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-beta)
+- [New-MgBetaExternalConnectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-beta)
 
 
 

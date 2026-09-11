@@ -600,8 +600,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-post-members?view=graph-rest-beta)
+- [New-MgBetaExternalConnectionGroupMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-post-members?view=graph-rest-beta)
 
 
 

@@ -839,8 +839,8 @@ Must be unique within the referenceType.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
-- [](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta)
+- [Update-MgBetaExternalIndustryDataInboundFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundapiflow-update?view=graph-rest-beta)
 
 
 
