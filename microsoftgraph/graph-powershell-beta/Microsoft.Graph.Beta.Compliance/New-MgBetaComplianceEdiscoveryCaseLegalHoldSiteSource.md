@@ -19135,8 +19135,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycaselegalholdsitesource)
-- [](https://learn.microsoft.com/graph/api/ediscovery-legalhold-post-sitesources?view=graph-rest-beta)
+- [New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycaselegalholdsitesource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-legalhold-post-sitesources?view=graph-rest-beta)
 
 
 

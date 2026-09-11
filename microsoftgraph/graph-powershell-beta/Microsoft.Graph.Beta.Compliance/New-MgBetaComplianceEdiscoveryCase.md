@@ -29070,8 +29070,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycase)
-- [](https://learn.microsoft.com/graph/api/ediscovery-case-post?view=graph-rest-beta)
+- [New-MgBetaComplianceEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-post?view=graph-rest-beta)
 
 
 
