@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Update the properties of an emailNotificationsSetting object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalEvents
@@ -465,6 +455,7 @@ For example, in the access reviews decisions API, this property might record the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting)
 - [](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-beta)
+
 
 
 
