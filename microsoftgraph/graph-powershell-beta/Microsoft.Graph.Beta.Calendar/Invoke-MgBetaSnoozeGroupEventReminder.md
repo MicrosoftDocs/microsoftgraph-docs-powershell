@@ -511,7 +511,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths608Nu3GroupsGroupIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths608Nu3GroupsGroupIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NewReminderTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -520,7 +520,7 @@ For example, '2019-04-16T09:00:00'.
     [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -542,7 +542,7 @@ INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WorkspaceId <String>]: The unique identifier of workspace
 
-NEWREMINDERTIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
+NEWREMINDERTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -554,3 +554,25 @@ See below for possible values.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetasnoozegroupeventreminder)
 - [](https://learn.microsoft.com/graph/api/event-snoozereminder?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
