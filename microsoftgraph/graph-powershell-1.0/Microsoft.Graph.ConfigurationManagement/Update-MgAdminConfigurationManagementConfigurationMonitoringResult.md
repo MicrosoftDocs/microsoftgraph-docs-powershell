@@ -503,7 +503,7 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitoringresult)
+- [Update-MgAdminConfigurationManagementConfigurationMonitoringResult](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/update-mgadminconfigurationmanagementconfigurationmonitoringresult)
 
 
 

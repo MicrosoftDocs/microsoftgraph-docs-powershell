@@ -412,7 +412,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationdrift)
+- [New-MgAdminConfigurationManagementConfigurationDrift](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationdrift)
 
 
 
