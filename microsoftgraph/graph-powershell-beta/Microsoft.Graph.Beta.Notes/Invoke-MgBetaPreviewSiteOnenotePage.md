@@ -15,6 +15,9 @@ title: Invoke-MgBetaPreviewSiteOnenotePage
 
 Invoke function preview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewSiteOnenotePage](/powershell/module/Microsoft.Graph.Notes/Invoke-MgPreviewSiteOnenotePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Preview (Default)
