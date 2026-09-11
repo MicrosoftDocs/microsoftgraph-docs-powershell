@@ -72,6 +72,14 @@ Send an SMS notification to external attendees when a Teams virtual appointment 
 This feature requires Teams premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | VirtualAppointmentNotification.Send,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | VirtualAppointmentNotification.Send,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
