@@ -28464,8 +28464,8 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyring)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-policy-post-rings?view=graph-rest-beta)
+- [New-MgBetaWindowsUpdatesPolicyRing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicyring)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-policy-post-rings?view=graph-rest-beta)
 
 
 

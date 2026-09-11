@@ -578,7 +578,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesdeploymentaudiencemember)
+- [Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesdeploymentaudiencemember)
 
 
 

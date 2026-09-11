@@ -442,7 +442,7 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyapplicablecontentmatcheddevice)
+- [Remove-MgBetaWindowsUpdatesPolicyApplicableContentMatchedDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyapplicablecontentmatcheddevice)
 
 
 

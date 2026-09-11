@@ -437,7 +437,7 @@ BODY `<IPaths4Wme8AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdates
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesupdatableasset)
+- [Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetagraphwindowsupdatesupdatableasset)
 
 
 
