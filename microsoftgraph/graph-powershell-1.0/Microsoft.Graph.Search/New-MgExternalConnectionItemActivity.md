@@ -603,7 +603,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitemactivity)
+- [New-MgExternalConnectionItemActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitemactivity)
 
 
 

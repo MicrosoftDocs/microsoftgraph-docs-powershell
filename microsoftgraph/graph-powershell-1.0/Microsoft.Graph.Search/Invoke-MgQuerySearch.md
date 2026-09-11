@@ -635,8 +635,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
-- [](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
+- [Invoke-MgQuerySearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
 
 
 

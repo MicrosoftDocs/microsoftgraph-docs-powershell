@@ -369,7 +369,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivitycount)
+- [Get-MgExternalConnectionItemActivityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivitycount)
 
 
 
