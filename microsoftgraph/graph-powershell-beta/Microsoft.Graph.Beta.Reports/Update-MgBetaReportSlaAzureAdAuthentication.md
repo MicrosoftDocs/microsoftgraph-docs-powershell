@@ -395,7 +395,7 @@ Values are truncated, not rounded, so the actual value is always equal to or hig
 Values are expressed as a percentage of availability for the tenant.
   [StartDate <DateTime?>]: The start date for the calendar month for which SLA attainment is measured.
 
-BODYPARAMETER <IMicrosoftGraphAzureAdAuthentication>: azureADAuthentication
+BODYPARAMETER `<IMicrosoftGraphAzureAdAuthentication>`: azureADAuthentication
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -410,3 +410,25 @@ Values are expressed as a percentage of availability for the tenant.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
