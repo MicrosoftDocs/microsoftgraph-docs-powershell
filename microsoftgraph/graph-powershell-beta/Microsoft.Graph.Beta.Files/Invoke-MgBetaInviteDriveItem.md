@@ -84,8 +84,9 @@ A sharing invitation provides permissions to the recipients and, optionally, sen
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Send a sharing invitation
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -107,7 +108,12 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 
 Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will send a sharing invitation
+
+### Example 2: Send sharing invitation with partial success
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -131,6 +137,10 @@ expirationDateTime = "2018-07-15T14:00:00.000Z"
 }
 
 Invoke-MgBetaInviteDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example will send sharing invitation with partial success
+
 
 ## PARAMETERS
 
