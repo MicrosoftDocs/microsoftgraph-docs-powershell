@@ -15,6 +15,9 @@ title: Test-MgBetaUserDriveListContentTypePublished
 
 Invoke function isPublished
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Files/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Is (Default)

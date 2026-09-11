@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveContentTypeBase
 
 Parent contentType from which this content type is derived.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

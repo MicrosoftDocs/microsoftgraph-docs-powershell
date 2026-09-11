@@ -15,6 +15,9 @@ title: Invoke-MgBetaCheckinUserDriveItem
 
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinUserDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)

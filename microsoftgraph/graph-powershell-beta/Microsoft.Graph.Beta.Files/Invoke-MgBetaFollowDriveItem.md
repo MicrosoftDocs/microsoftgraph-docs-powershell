@@ -15,6 +15,9 @@ title: Invoke-MgBetaFollowDriveItem
 
 Follow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Follow (Default)

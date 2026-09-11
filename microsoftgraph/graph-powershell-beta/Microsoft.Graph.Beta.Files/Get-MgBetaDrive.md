@@ -15,6 +15,9 @@ title: Get-MgBetaDrive
 
 Get entity from drives by key
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDrive](/powershell/module/Microsoft.Graph.Files/Get-MgDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

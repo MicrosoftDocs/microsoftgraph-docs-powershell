@@ -15,6 +15,9 @@ title: Update-MgBetaDrive
 
 Update entity in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDrive](/powershell/module/Microsoft.Graph.Files/Update-MgDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

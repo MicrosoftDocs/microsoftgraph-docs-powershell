@@ -15,6 +15,9 @@ title: Update-MgBetaShareSharedDriveItemSharedDriveItem
 
 Update entity in shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

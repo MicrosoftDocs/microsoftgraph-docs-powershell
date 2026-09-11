@@ -15,6 +15,9 @@ title: Update-MgBetaUserDriveItem
 
 Update the navigation property items in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

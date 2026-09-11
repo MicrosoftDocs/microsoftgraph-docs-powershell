@@ -20,6 +20,9 @@ Use the monitor URL to track progress until the operation completes.
 The copy operation is restricted to 30,000 driveItems.
 For more information, see SharePoint limits.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

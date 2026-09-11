@@ -15,6 +15,9 @@ title: Update-MgBetaShareListItemField
 
 Update the navigation property fields in shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)

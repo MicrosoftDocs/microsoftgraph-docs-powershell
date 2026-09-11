@@ -18,6 +18,9 @@ For more information, see getting thumbnails.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

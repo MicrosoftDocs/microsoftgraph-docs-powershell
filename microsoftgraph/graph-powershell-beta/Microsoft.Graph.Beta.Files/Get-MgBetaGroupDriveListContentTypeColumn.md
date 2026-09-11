@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveListContentTypeColumn
 
 The collection of column definitions for this content type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

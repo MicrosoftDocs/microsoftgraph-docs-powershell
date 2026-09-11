@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupDriveListContentTypeColumnLink
 
 Delete navigation property columnLinks for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListContentTypeColumnLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaDriveRootAnalyticItemActivityStat
 
 Update the navigation property itemActivityStats in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

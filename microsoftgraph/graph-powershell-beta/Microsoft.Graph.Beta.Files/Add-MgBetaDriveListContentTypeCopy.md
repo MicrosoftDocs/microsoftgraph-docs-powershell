@@ -15,6 +15,9 @@ title: Add-MgBetaDriveListContentTypeCopy
 
 Invoke action addCopy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Files/Add-MgDriveListContentTypeCopy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
