@@ -1119,8 +1119,8 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain)
-- [](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-1.0)
+- [New-MgDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-1.0)
 
 
 

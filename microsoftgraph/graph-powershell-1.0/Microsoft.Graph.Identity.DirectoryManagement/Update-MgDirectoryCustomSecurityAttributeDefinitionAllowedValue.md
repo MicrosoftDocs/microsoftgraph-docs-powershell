@@ -585,8 +585,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue)
-- [](https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0)
+- [Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0)
 
 
 

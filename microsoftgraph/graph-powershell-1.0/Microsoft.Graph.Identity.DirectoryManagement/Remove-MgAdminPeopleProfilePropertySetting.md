@@ -440,8 +440,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgadminpeopleprofilepropertysetting)
-- [](https://learn.microsoft.com/graph/api/profilepropertysetting-delete?view=graph-rest-1.0)
+- [Remove-MgAdminPeopleProfilePropertySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgadminpeopleprofilepropertysetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/profilepropertysetting-delete?view=graph-rest-1.0)
 
 
 

@@ -603,9 +603,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
-- [](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/device-list?view=graph-rest-1.0)
+- [Get-MgDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list?view=graph-rest-1.0)
 
 
 

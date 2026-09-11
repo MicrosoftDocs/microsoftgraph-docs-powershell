@@ -446,7 +446,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalizationsquarelogodark)
+- [Remove-MgOrganizationBrandingLocalizationSquareLogoDark](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalizationsquarelogodark)
 
 
 

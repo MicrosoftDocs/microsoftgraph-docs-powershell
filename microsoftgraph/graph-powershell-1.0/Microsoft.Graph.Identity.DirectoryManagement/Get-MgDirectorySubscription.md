@@ -574,9 +574,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorysubscription)
-- [](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/directory-list-subscriptions?view=graph-rest-1.0)
+- [Get-MgDirectorySubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorysubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-subscriptions?view=graph-rest-1.0)
 
 
 

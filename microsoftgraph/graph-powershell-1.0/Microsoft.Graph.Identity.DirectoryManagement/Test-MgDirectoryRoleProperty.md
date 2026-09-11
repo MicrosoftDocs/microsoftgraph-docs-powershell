@@ -470,8 +470,8 @@ BODYPARAMETER `<IPaths1I0TqyfDirectoryrolesMicrosoftGraphValidatepropertiesPostR
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroleproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+- [Test-MgDirectoryRoleProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroleproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

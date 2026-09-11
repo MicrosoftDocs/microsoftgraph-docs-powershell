@@ -429,8 +429,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbranding)
-- [](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
+- [Get-MgOrganizationBranding](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbranding)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
 
 
 

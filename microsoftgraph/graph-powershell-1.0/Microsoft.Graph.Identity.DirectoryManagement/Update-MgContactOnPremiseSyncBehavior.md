@@ -531,7 +531,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontactonpremisesyncbehavior)
+- [Update-MgContactOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontactonpremisesyncbehavior)
 
 
 

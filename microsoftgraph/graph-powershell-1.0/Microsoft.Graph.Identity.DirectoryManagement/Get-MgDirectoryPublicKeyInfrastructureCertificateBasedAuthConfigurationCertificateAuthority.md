@@ -612,8 +612,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthpki-list-certificateauthorities?view=graph-rest-1.0)
+- [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorypublickeyinfrastructurecertificatebasedauthconfigurationcertificateauthority)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthpki-list-certificateauthorities?view=graph-rest-1.0)
 
 
 

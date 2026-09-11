@@ -411,8 +411,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning)
-- [](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-1.0)
+- [Invoke-MgRetryContactServiceProvisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-1.0)
 
 
 

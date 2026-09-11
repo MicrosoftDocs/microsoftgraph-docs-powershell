@@ -630,8 +630,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberof)
-- [](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
+- [Get-MgDeviceMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicememberof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
 
 
 

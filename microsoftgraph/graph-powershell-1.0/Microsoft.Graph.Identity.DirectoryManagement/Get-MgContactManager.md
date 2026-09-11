@@ -399,8 +399,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager)
-- [](https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0)
+- [Get-MgContactManager](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0)
 
 
 

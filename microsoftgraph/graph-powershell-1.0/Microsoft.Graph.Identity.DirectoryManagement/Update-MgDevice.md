@@ -1806,8 +1806,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)
-- [](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)
+- [Update-MgDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)
 
 
 

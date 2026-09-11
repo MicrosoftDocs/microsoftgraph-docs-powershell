@@ -517,8 +517,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo)
-- [](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)
+- [Set-MgOrganizationBrandingLocalizationBannerLogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationbannerlogo)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-update?view=graph-rest-1.0)
 
 
 

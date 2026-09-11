@@ -393,8 +393,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0)
+- [Get-MgDirectoryDeletedItem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0)
 
 
 

@@ -611,7 +611,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerasapproleassignment)
+- [Get-MgDeviceRegisteredOwnerAsAppRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerasapproleassignment)
 
 
 

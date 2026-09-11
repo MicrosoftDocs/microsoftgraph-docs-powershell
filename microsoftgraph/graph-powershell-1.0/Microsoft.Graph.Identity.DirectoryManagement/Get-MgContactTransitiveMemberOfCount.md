@@ -407,7 +407,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontacttransitivememberofcount)
+- [Get-MgContactTransitiveMemberOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontacttransitivememberofcount)
 
 
 

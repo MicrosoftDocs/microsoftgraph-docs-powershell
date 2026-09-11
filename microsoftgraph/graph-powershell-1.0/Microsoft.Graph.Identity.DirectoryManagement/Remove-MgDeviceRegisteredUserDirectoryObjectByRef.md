@@ -454,8 +454,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserdirectoryobjectbyref)
-- [](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0)
+- [Remove-MgDeviceRegisteredUserDirectoryObjectByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserdirectoryobjectbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0)
 
 
 

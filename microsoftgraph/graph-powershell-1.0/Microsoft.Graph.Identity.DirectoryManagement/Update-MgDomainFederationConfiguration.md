@@ -986,8 +986,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)
-- [](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0)
+- [Update-MgDomainFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0)
 
 
 

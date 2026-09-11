@@ -440,8 +440,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain)
-- [](https://learn.microsoft.com/graph/api/domain-delete?view=graph-rest-1.0)
+- [Remove-MgDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-delete?view=graph-rest-1.0)
 
 
 

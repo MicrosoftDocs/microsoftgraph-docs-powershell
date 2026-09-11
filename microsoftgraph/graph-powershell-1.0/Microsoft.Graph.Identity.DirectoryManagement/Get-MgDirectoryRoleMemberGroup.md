@@ -508,8 +508,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemembergroup)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
+- [Get-MgDirectoryRoleMemberGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemembergroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
 
 
 

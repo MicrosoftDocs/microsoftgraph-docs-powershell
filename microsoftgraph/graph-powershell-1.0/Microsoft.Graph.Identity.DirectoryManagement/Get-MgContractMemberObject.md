@@ -502,8 +502,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractmemberobject)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
+- [Get-MgContractMemberObject](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractmemberobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
 
 
 

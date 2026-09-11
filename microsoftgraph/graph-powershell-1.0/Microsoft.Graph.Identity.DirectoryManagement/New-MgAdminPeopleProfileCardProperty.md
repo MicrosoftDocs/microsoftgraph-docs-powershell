@@ -483,8 +483,8 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-1.0)
+- [New-MgAdminPeopleProfileCardProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-1.0)
 
 
 

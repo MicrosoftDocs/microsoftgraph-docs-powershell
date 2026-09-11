@@ -1365,8 +1365,8 @@ Not nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain)
-- [](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-1.0)
+- [Update-MgDomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-1.0)
 
 
 
