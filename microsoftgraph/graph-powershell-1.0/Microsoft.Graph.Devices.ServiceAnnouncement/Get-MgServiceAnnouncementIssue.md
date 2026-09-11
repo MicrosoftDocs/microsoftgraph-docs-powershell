@@ -17,6 +17,9 @@ Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue doesn't exist for the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
