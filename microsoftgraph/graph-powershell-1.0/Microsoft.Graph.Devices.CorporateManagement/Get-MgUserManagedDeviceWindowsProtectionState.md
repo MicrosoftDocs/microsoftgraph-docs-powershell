@@ -401,7 +401,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicewindowsprotectionstate)
+- [Get-MgUserManagedDeviceWindowsProtectionState](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicewindowsprotectionstate)
 
 
 

@@ -590,7 +590,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmacosdmgappcontentversion)
+- [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmacosdmgappcontentversion)
 
 
 

@@ -398,7 +398,7 @@ Does not support $search, $filter, $orderBy.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapprelationship)
+- [New-MgDeviceAppManagementMobileAppRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapprelationship)
 
 
 
