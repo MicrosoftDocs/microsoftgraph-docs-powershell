@@ -372,7 +372,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcount)
+- [Get-MgPrintPrinterJobDocumentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcount)
 
 
 

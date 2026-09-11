@@ -437,8 +437,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprintertasktrigger)
-- [](https://learn.microsoft.com/graph/api/printer-delete-tasktrigger?view=graph-rest-1.0)
+- [Remove-MgPrintPrinterTaskTrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprintertasktrigger)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-delete-tasktrigger?view=graph-rest-1.0)
 
 
 

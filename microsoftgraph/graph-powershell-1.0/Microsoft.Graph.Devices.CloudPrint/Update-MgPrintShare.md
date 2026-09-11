@@ -22355,8 +22355,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare)
-- [](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-1.0)
+- [Update-MgPrintShare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintshare)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-1.0)
 
 
 
