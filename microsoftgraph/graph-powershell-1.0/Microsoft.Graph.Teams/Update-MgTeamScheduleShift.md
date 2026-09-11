@@ -75,16 +75,6 @@ Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
 The duration of a shift can't be less than one minute or longer than 24 hours.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -858,6 +848,7 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift)
 - [](https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-1.0)
+
 
 
 

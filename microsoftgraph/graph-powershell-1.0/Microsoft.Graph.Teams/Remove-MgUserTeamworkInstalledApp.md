@@ -56,12 +56,17 @@ Uninstall an app from the personal scope of the specified user.
 | Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ManageSelectedForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteSelectedForUser.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
+
+```
+This example shows how to use the Remove-MgUserTeamworkInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

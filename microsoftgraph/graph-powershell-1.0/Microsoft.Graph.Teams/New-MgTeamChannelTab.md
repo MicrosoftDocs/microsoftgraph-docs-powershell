@@ -80,8 +80,9 @@ The app must be preinstalled in the team and have the configurableTabs property 
 | Application | TeamsTab.Create.Group, Directory.ReadWrite.All, Group.ReadWrite.All, TeamsTab.Create, TeamsTab.ReadWrite.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWriteSelfForTeam.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 New-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamChannelTab Cmdlet.
+
 
 ## PARAMETERS
 

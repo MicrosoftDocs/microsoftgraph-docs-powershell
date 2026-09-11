@@ -80,8 +80,9 @@ Add (pin) a tab to the specified chat.
 | Application | TeamsTab.Create, TeamsTab.Create.Chat, TeamsTab.ReadWrite.All, TeamsTab.ReadWrite.Chat, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWriteSelfForChat.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 New-MgChatTab -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatTab Cmdlet.
+
 
 ## PARAMETERS
 
