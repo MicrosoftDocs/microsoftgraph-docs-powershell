@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Invoke function allMessages
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.ReadBasic.WhereInstalled, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatSettings.Read.Chat, ChatSettings.ReadWrite.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

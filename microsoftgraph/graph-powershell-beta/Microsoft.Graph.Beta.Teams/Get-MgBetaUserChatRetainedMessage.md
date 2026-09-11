@@ -49,6 +49,14 @@ This cmdlet has the following aliases,
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 To learn more about how to use the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Chat.Read.All, Chat.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
