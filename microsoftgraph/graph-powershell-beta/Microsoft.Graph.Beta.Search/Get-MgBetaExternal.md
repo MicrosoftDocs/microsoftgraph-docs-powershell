@@ -15,6 +15,9 @@ title: Get-MgBetaExternal
 
 Get external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternal](/powershell/module/Microsoft.Graph.Search/Get-MgExternal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

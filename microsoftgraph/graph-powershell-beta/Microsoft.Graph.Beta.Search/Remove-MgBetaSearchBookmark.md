@@ -15,6 +15,9 @@ title: Remove-MgBetaSearchBookmark
 
 Delete a bookmark object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchBookmark?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
