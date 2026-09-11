@@ -15,6 +15,9 @@ title: New-MgBetaPrintConnector
 
 Create new navigation property to connectors for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
