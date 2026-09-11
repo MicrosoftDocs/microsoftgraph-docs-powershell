@@ -17,6 +17,9 @@ The user's contacts.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
