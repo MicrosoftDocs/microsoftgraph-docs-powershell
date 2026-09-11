@@ -51,12 +51,17 @@ Get the number of user authentication requests, during a specified time period, 
 Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess Cmdlet.
+
 
 ## PARAMETERS
 

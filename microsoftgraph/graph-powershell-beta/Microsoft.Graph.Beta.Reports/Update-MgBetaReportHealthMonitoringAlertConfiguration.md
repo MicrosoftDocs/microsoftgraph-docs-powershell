@@ -73,8 +73,9 @@ You can use alertConfiguration settings to specify the distribution groups where
 This API doesn't currently support group validation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 Update-MgBetaReportHealthMonitoringAlertConfiguration -AlertConfigurationId $alertConfigurationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaReportHealthMonitoringAlertConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

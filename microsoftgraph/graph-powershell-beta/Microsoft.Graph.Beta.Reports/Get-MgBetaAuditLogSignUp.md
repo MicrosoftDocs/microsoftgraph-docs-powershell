@@ -64,12 +64,17 @@ Retrieve a specific Microsoft Entra External ID user selfServiceSignUp event for
 | Application | AuditLog.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaAuditLogSignUp -Filter "createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z"
+Get-MgBetaAuditLogSignUp -Filter "createdDateTime ge 2024-07-01T00:00:00Z and createdDateTime le 2024-07-14T23:59:59Z" 
+
+```
+This example shows how to use the Get-MgBetaAuditLogSignUp Cmdlet.
+
 
 ## PARAMETERS
 

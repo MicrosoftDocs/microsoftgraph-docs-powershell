@@ -58,12 +58,17 @@ This cmdlet has the following aliases,
 Represents the total count of MFA vs non-MFA sign-in counts for a specified period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary
+
+```
+This example shows how to use the Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary Cmdlet.
+
 
 ## PARAMETERS
 
