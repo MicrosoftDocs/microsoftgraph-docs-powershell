@@ -581,9 +581,9 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipoperation)
-- [](https://learn.microsoft.com/graph/api/delegatedadminrelationshipoperation-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-operations?view=graph-rest-beta)
+- [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminrelationshipoperation-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-operations?view=graph-rest-beta)
 
 
 
