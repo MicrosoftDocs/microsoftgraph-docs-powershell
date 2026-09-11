@@ -78,8 +78,9 @@ Apply tags to documents that match the specified reviewSetQuery.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId $caseId -ReviewSetId $reviewSetId -ReviewSetQueryId $reviewSetQueryId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag Cmdlet.
+
 
 ## PARAMETERS
 

@@ -68,12 +68,17 @@ Read the properties and relationships of a subjectRightsRequest object.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Get-MgBetaPrivacySubjectRightsRequest
+
+```
+This example shows how to use the Get-MgBetaPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 

@@ -55,12 +55,17 @@ For details, see Close a case.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Close-MgBetaComplianceEdiscoveryCase -CaseId $caseId
+
+```
+This example shows how to use the Close-MgBetaComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 
