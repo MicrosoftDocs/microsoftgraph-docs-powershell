@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyDefaultAppManagementPolicy
 
 Read the properties of a tenantAppManagementPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

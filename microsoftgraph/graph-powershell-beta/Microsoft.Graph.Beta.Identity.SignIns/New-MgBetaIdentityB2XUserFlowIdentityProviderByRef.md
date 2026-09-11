@@ -15,6 +15,9 @@ title: New-MgBetaIdentityB2XUserFlowIdentityProviderByRef
 
 Create new navigation property ref to userFlowIdentityProviders for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

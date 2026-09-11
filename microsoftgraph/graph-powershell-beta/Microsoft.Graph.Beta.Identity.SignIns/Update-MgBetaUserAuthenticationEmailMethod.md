@@ -16,6 +16,9 @@ title: Update-MgBetaUserAuthenticationEmailMethod
 Update a user's email address associated with an email Authentication Method object.
 Self-service operations aren't supported.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

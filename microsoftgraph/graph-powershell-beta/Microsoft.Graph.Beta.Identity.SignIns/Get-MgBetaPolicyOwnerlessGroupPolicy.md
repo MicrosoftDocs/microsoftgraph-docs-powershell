@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyOwnerlessGroupPolicy
 
 Read the properties of an ownerlessGroupPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyOwnerlessGroupPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyOwnerlessGroupPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

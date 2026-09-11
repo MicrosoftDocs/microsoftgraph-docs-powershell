@@ -15,6 +15,9 @@ title: Get-MgBetaPolicyFeatureRolloutPolicyCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyFeatureRolloutPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicyCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

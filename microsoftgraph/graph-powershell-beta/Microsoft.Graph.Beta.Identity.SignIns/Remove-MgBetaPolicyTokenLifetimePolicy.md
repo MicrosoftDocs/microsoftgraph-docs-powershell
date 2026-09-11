@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyTokenLifetimePolicy
 
 Delete a tokenLifetimePolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

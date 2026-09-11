@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpE
 
 The configuration for what to invoke when attributes are ready to be collected from the user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

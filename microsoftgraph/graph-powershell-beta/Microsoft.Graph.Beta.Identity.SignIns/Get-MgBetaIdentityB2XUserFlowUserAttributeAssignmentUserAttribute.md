@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute
 
 The user attribute that you want to add to your user flow.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
