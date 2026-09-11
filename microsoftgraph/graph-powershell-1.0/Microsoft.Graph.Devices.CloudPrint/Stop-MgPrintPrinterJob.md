@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
