@@ -88,6 +88,14 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in draft status, which means that students can't see the assignment until it's published.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

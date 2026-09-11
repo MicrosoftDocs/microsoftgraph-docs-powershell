@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 The underlying Microsoft 365 group object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduRoster.ReadBasic, Directory.Read.All, EduRoster.Read, EduRoster.Write,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduRoster.Read.All, Directory.Read.All, EduRoster.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
