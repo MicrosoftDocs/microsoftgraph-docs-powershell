@@ -15,6 +15,9 @@ title: Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXConte
 
 Commits a file of a given app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWindowsAppXContentVersionFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CommitExpanded (Default)

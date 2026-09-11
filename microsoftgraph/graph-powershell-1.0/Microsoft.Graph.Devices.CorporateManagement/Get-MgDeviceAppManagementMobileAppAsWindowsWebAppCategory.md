@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory
 
 The list of categories for this app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

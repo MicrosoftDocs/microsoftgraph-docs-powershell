@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementWindowsInformationProtectionPolicy
 
 Windows information protection for apps running on devices which are not MDM enrolled.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

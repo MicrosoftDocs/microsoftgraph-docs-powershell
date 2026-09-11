@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
