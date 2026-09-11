@@ -504,8 +504,8 @@ TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTa
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannerplan)
-- [](https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta)
+- [Get-MgBetaSolutionBusinessScenarioPlannerPlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenarioplannerplan)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta)
 
 
 

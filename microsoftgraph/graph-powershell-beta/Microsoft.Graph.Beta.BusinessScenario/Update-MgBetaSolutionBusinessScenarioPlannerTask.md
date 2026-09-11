@@ -2108,8 +2108,8 @@ TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTa
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertask)
-- [](https://learn.microsoft.com/graph/api/businessscenariotask-update?view=graph-rest-beta)
+- [Update-MgBetaSolutionBusinessScenarioPlannerTask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplannertask)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/businessscenariotask-update?view=graph-rest-beta)
 
 
 
