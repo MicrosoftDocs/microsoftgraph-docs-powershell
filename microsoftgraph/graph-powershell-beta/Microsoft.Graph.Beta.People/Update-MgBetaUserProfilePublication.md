@@ -87,8 +87,9 @@ Update the properties of an itemPublication object in a user's profile.
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfilePublication Cmdlet.
+
 
 ## PARAMETERS
 
