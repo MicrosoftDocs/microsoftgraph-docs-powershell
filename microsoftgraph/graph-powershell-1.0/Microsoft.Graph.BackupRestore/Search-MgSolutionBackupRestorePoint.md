@@ -480,8 +480,8 @@ PROTECTIONTIMEPERIOD `<IMicrosoftGraphTimePeriod>`: timePeriod
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/search-mgsolutionbackuprestorepoint)
-- [](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0)
+- [Search-MgSolutionBackupRestorePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/search-mgsolutionbackuprestorepoint)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/restorepoint-search?view=graph-rest-1.0)
 
 
 

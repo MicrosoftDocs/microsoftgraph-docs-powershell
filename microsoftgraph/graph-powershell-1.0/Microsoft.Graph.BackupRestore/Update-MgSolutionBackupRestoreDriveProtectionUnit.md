@@ -863,7 +863,7 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoredriveprotectionunit)
+- [Update-MgSolutionBackupRestoreDriveProtectionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoredriveprotectionunit)
 
 
 

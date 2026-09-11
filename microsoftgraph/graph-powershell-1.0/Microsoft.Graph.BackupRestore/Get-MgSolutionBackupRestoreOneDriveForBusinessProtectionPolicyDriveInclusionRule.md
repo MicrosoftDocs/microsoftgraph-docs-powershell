@@ -603,9 +603,9 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicydriveinclusionrule)
-- [](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules?view=graph-rest-1.0)
+- [Get-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicyDriveInclusionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreonedriveforbusinessprotectionpolicydriveinclusionrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/protectionrulebase-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveinclusionrules?view=graph-rest-1.0)
 
 
 
