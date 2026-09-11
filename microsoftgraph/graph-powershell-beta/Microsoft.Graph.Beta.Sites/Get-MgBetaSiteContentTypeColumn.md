@@ -68,12 +68,17 @@ Retrieve the metadata for a site, list, or contentType column.
 | Application | Sites.Read.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId
+
+```
+This example shows how to use the Get-MgBetaSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

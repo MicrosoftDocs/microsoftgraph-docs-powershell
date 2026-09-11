@@ -85,8 +85,9 @@ Create a new permission object on a list.
 | Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 New-MgBetaSiteListPermission -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSiteListPermission Cmdlet.
+
 
 ## PARAMETERS
 
