@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamMember
 
 Update the navigation property members in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

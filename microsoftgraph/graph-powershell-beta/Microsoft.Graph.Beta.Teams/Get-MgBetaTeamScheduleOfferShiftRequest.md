@@ -15,6 +15,9 @@ title: Get-MgBetaTeamScheduleOfferShiftRequest
 
 Retrieve the properties and relationships of an offerShiftRequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

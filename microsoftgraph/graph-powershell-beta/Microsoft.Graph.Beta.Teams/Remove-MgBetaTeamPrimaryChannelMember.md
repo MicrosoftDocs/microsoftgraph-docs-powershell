@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamPrimaryChannelMember
 
 Delete navigation property allMembers for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

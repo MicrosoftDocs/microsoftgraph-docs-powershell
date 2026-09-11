@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleOpenShift
 
 Update the navigation property openShifts in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

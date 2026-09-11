@@ -15,6 +15,9 @@ title: Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent
 
 Update the navigation property hostedContents in teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

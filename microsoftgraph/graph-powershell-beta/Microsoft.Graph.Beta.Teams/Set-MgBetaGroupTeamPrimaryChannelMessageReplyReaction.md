@@ -15,6 +15,9 @@ title: Set-MgBetaGroupTeamPrimaryChannelMessageReplyReaction
 
 Invoke action setReaction
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamPrimaryChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamPrimaryChannelMessageReplyReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

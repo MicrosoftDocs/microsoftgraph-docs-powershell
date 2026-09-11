@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkDeletedTeam
 
 A collection of deleted teams.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

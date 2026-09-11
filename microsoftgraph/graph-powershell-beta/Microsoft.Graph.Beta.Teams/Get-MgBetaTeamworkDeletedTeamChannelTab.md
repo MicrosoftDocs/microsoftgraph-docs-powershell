@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkDeletedTeamChannelTab
 
 A collection of all the tabs in the channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

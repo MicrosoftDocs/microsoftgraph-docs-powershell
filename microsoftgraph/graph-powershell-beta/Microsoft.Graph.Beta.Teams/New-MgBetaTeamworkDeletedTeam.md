@@ -15,6 +15,9 @@ title: New-MgBetaTeamworkDeletedTeam
 
 Create new navigation property to deletedTeams for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

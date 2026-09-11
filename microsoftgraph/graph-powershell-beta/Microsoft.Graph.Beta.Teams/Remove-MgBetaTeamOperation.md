@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamOperation
 
 Delete navigation property operations for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamOperation](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

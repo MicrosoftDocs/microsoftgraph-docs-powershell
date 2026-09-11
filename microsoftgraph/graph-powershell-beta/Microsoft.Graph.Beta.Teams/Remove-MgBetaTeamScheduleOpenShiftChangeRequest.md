@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamScheduleOpenShiftChangeRequest
 
 Delete navigation property openShiftChangeRequests for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleShift
 
 Update the navigation property shifts in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

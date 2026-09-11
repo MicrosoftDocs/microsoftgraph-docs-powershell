@@ -15,6 +15,9 @@ title: Get-MgBetaTeamScheduleSwapShiftChangeRequest
 
 Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

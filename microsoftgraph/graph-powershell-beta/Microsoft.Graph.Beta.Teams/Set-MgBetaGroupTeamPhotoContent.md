@@ -15,6 +15,9 @@ title: Set-MgBetaGroupTeamPhotoContent
 
 The team photo.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

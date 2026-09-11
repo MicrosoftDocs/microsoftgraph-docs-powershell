@@ -16,6 +16,9 @@ title: Add-MgBetaGroupTeamMember
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Add-MgGroupTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamChannelTab
 
 Create new navigation property to tabs for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

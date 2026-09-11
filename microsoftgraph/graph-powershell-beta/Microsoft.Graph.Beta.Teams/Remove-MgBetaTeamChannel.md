@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamChannel
 
 Delete the channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
