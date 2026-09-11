@@ -543,8 +543,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetquery)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-delete-queries?view=graph-rest-beta)
+- [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetquery)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-delete-queries?view=graph-rest-beta)
 
 
 

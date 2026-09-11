@@ -655,8 +655,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasenoncustodialdatasourceindex)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverynoncustodialdatasource-updateindex?view=graph-rest-beta)
+- [Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasenoncustodialdatasourceindex)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverynoncustodialdatasource-updateindex?view=graph-rest-beta)
 
 
 

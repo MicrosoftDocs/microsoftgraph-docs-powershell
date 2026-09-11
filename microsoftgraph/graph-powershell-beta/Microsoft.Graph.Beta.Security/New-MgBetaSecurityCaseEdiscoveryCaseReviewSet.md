@@ -17961,8 +17961,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewset)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-reviewsets?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseReviewSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-reviewsets?view=graph-rest-beta)
 
 
 

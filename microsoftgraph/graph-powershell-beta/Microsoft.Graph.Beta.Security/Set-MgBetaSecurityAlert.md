@@ -516,8 +516,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityalert)
-- [](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-beta)
+- [Set-MgBetaSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-post-comments?view=graph-rest-beta)
 
 
 

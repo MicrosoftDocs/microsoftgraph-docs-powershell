@@ -523,8 +523,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-beta)
+- [New-MgBetaSecurityLabelCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-beta)
 
 
 

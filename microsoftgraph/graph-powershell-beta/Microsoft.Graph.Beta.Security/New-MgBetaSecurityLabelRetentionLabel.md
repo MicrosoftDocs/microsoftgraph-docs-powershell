@@ -1037,8 +1037,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-beta)
+- [New-MgBetaSecurityLabelRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-beta)
 
 
 

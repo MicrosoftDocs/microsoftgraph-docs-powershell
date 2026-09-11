@@ -500,8 +500,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycase)
-- [](https://learn.microsoft.com/graph/api/security-casesroot-delete-ediscoverycases?view=graph-rest-beta)
+- [Remove-MgBetaSecurityCaseEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casesroot-delete-ediscoverycases?view=graph-rest-beta)
 
 
 

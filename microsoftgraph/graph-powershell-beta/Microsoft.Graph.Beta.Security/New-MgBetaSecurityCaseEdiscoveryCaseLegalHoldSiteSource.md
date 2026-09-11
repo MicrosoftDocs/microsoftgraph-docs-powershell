@@ -17758,8 +17758,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalholdsitesource)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-post-sitesources?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalholdsitesource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-post-sitesources?view=graph-rest-beta)
 
 
 

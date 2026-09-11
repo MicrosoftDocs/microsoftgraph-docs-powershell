@@ -535,8 +535,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianusersource)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-beta)
+- [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianusersource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-delete-usersources?view=graph-rest-beta)
 
 
 

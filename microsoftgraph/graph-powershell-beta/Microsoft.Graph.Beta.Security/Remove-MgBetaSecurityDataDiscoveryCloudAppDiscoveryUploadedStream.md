@@ -477,7 +477,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
+- [Remove-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
 
 
 

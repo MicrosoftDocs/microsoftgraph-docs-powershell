@@ -746,8 +746,8 @@ To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesetting)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityCaseEdiscoveryCaseSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-update?view=graph-rest-beta)
 
 
 

@@ -829,8 +829,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewsetquery)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-post-queries?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewsetquery)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-post-queries?view=graph-rest-beta)
 
 
 

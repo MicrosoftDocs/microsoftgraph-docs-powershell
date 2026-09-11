@@ -468,8 +468,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction)
-- [](https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
+- [Stop-MgBetaSecurityAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
 
 
 

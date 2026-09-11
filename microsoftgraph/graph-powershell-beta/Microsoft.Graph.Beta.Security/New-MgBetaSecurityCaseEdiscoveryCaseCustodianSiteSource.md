@@ -17761,8 +17761,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodiansitesource)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-sitesources?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodiansitesource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-sitesources?view=graph-rest-beta)
 
 
 

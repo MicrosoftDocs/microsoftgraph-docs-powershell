@@ -826,8 +826,8 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
-- [](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta)
+- [Update-MgBetaSecurityAlertMultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta)
 
 
 

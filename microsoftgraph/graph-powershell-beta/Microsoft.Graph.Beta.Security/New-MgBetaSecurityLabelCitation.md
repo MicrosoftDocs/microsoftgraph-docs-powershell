@@ -522,8 +522,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-beta)
+- [New-MgBetaSecurityLabelCitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-beta)
 
 
 

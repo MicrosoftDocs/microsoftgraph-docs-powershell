@@ -1205,8 +1205,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityalert)
-- [](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityPartnerSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritypartnersecurityalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partner-security-partnersecurityalert-update?view=graph-rest-beta)
 
 
 

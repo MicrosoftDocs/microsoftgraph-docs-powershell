@@ -911,8 +911,8 @@ TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListActi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat)
-- [](https://learn.microsoft.com/graph/api/security-emailthreatsubmission-post-emailthreats?view=graph-rest-beta)
+- [New-MgBetaSecurityThreatSubmissionEmailThreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-emailthreatsubmission-post-emailthreats?view=graph-rest-beta)
 
 
 

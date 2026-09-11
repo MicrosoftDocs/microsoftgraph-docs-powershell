@@ -17802,8 +17802,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-unifiedgroupsources?view=graph-rest-beta)
+- [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-unifiedgroupsources?view=graph-rest-beta)
 
 
 

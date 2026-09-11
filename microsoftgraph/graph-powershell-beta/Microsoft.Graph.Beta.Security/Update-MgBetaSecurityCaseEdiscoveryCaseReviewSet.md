@@ -17972,7 +17972,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewset)
+- [Update-MgBetaSecurityCaseEdiscoveryCaseReviewSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewset)
 
 
 

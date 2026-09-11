@@ -1318,8 +1318,8 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>: Li
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident)
-- [](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-beta)
 
 
 

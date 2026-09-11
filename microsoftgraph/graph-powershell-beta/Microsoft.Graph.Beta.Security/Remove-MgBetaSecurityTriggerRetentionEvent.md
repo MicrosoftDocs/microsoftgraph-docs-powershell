@@ -500,8 +500,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggerretentionevent)
-- [](https://learn.microsoft.com/graph/api/security-retentionevent-delete?view=graph-rest-beta)
+- [Remove-MgBetaSecurityTriggerRetentionEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggerretentionevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionevent-delete?view=graph-rest-beta)
 
 
 

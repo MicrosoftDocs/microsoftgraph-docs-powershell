@@ -780,8 +780,8 @@ Required
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
-- [](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta)
+- [New-MgBetaSecurityAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-beta)
 
 
 
