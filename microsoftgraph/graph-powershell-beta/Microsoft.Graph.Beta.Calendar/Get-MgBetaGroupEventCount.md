@@ -15,6 +15,9 @@ title: Get-MgBetaGroupEventCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

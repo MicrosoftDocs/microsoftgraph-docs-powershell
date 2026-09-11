@@ -15,6 +15,9 @@ title: Remove-MgBetaPlaceAsBuildingMapFootprint
 
 Delete navigation property footprints for places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsBuildingMapFootprint](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsBuildingMapFootprint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

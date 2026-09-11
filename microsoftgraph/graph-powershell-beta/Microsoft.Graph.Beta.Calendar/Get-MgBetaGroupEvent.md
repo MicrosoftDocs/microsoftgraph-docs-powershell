@@ -15,6 +15,9 @@ title: Get-MgBetaGroupEvent
 
 Get an event object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

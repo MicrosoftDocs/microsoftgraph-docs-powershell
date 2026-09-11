@@ -15,6 +15,9 @@ title: Update-MgBetaPlaceAsBuildingMapLevel
 
 Update the navigation property levels in places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlaceAsBuildingMapLevel](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsBuildingMapLevel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
