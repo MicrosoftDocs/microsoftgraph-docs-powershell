@@ -57,12 +57,17 @@ This cmdlet has the following aliases,
 An individual audit log record.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId $auditLogQueryId
+
+```
+This example shows how to use the Get-MgBetaSecurityAuditLogQueryRecord Cmdlet.
+
 
 ## PARAMETERS
 

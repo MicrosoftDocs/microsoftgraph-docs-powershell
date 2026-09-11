@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Operation entity that represents the latest indexing for the non-custodial data source.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -472,6 +462,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasenoncustodialdatasourcelastindexoperation)
+
 
 
 

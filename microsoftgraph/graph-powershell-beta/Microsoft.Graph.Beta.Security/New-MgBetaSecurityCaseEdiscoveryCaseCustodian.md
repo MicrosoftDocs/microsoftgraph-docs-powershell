@@ -88,8 +88,9 @@ Create a new ediscoveryCustodian object.After the custodian object is created, y
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

@@ -64,12 +64,17 @@ Specify the desired whoisRecord in one of the following two ways:- Identify a ho
 - Specify an id value to get the corresponding whoisRecord.
 
 ## EXAMPLES
+### Example 1: Get the whoisRecord resource using its id property
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityThreatIntelligenceWhoisRecord -WhoisRecordId $whoisRecordId
+
+```
+This example will get the whoisrecord resource using its id property
+
 
 ## PARAMETERS
 

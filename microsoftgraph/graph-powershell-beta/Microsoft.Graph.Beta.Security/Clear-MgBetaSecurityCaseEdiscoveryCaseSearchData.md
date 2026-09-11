@@ -88,8 +88,9 @@ For more information about purging Teams messages, see:- eDiscovery solution ser
 | Application | eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -99,6 +100,10 @@ $params = @{
 }
 
 Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData Cmdlet.
+
 
 ## PARAMETERS
 
