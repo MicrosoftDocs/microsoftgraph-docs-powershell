@@ -409,8 +409,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassmoduleupresourcefolder)
-- [](https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-1.0)
+- [Set-MgEducationClassModuleUpResourceFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassmoduleupresourcefolder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-1.0)
 
 
 

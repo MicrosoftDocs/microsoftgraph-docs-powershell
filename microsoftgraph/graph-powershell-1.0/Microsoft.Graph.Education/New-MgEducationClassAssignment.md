@@ -1481,8 +1481,8 @@ If the value is null, the student uploaded the resource.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment)
-- [](https://learn.microsoft.com/graph/api/educationclass-post-assignments?view=graph-rest-1.0)
+- [New-MgEducationClassAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-post-assignments?view=graph-rest-1.0)
 
 
 

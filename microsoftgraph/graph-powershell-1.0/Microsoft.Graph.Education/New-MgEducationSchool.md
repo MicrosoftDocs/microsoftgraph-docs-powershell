@@ -17817,8 +17817,8 @@ Supports $filter.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool)
-- [](https://learn.microsoft.com/graph/api/educationschool-post?view=graph-rest-1.0)
+- [New-MgEducationSchool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationschool-post?view=graph-rest-1.0)
 
 
 

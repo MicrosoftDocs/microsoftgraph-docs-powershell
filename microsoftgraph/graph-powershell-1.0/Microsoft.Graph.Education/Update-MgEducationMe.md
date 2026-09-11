@@ -29418,7 +29418,7 @@ NOTE: For more information about the permissions for members and guests, see Wha
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationme)
+- [Update-MgEducationMe](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationme)
 
 
 
