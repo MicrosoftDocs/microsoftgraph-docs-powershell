@@ -437,8 +437,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftchattargetedmessagereplydelete)
-- [](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0)
+- [Invoke-MgSoftChatTargetedMessageReplyDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftchattargetedmessagereplydelete)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0)
 
 
 

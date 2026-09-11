@@ -525,8 +525,8 @@ This property is settable only for members of a chat.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgchatmember)
-- [](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
+- [Add-MgChatMember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgchatmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
 
 
 

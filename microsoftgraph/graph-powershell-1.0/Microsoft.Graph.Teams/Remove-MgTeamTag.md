@@ -460,8 +460,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag)
-- [](https://learn.microsoft.com/graph/api/teamworktag-delete?view=graph-rest-1.0)
+- [Remove-MgTeamTag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworktag-delete?view=graph-rest-1.0)
 
 
 

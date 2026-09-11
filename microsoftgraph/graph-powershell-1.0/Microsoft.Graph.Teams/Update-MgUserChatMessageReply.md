@@ -1638,7 +1638,7 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessagereply)
+- [Update-MgUserChatMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmessagereply)
 
 
 

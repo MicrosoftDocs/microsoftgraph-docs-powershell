@@ -2211,8 +2211,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage)
-- [](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0)
+- [Update-MgTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0)
 
 
 

@@ -416,8 +416,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteammigration)
-- [](https://learn.microsoft.com/graph/api/team-completemigration?view=graph-rest-1.0)
+- [Complete-MgTeamMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteammigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-completemigration?view=graph-rest-1.0)
 
 
 

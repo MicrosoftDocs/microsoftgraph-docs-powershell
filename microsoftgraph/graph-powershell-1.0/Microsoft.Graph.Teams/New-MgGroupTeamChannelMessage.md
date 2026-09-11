@@ -1584,7 +1584,7 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessage)
+- [New-MgGroupTeamChannelMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmessage)
 
 
 

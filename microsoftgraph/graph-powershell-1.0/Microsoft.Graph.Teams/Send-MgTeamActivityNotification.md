@@ -1005,8 +1005,8 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification)
-- [](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-1.0)
+- [Send-MgTeamActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-1.0)
 
 
 

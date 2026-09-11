@@ -405,8 +405,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mggroupteamprimarychannelmigration)
-- [](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
+- [Complete-MgGroupTeamPrimaryChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mggroupteamprimarychannelmigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
 
 
 

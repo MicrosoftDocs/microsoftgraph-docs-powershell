@@ -980,8 +980,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphteamworkdeletedteamchannelmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-1.0)
+- [Invoke-MgGraphTeamworkDeletedTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphteamworkdeletedteamchannelmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-1.0)
 
 
 

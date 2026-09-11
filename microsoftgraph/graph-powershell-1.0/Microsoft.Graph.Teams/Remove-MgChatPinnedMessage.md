@@ -460,8 +460,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatpinnedmessage)
-- [](https://learn.microsoft.com/graph/api/chat-delete-pinnedmessages?view=graph-rest-1.0)
+- [Remove-MgChatPinnedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatpinnedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-delete-pinnedmessages?view=graph-rest-1.0)
 
 
 

@@ -460,8 +460,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleopenshift)
-- [](https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0)
+- [Remove-MgTeamScheduleOpenShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleopenshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0)
 
 
 

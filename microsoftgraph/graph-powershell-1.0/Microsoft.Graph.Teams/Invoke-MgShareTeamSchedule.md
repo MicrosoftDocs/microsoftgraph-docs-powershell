@@ -614,8 +614,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule)
-- [](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-1.0)
+- [Invoke-MgShareTeamSchedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-share?view=graph-rest-1.0)
 
 
 

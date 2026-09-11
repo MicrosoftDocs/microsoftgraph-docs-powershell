@@ -1965,8 +1965,8 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchat)
-- [](https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-1.0)
+- [Update-MgChat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-1.0)
 
 
 

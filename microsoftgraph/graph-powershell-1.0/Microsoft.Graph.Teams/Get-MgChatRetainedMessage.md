@@ -415,8 +415,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage)
-- [](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
+- [Get-MgChatRetainedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatretainedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-1.0)
 
 
 
