@@ -470,8 +470,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessauthenticationcontextclassreference)
-- [](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-delete?view=graph-rest-1.0)
+- [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessauthenticationcontextclassreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-delete?view=graph-rest-1.0)
 
 
 

@@ -611,9 +611,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreference)
-- [](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-authenticationcontextclassreferences?view=graph-rest-1.0)
+- [Get-MgIdentityConditionalAccessAuthenticationContextClassReference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreference)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-authenticationcontextclassreferences?view=graph-rest-1.0)
 
 
 

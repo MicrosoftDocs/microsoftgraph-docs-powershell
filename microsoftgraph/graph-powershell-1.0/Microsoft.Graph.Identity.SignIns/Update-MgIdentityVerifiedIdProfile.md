@@ -873,8 +873,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityverifiedidprofile)
-- [](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-1.0)
+- [Update-MgIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityverifiedidprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-1.0)
 
 
 

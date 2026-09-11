@@ -472,8 +472,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow)
-- [](https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0)
+- [Remove-MgIdentityAuthenticationEventFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0)
 
 
 

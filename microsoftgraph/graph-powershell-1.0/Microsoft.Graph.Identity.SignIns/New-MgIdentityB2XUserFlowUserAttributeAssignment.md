@@ -773,8 +773,8 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowuserattributeassignment)
-- [](https://learn.microsoft.com/graph/api/b2xidentityuserflow-post-userattributeassignments?view=graph-rest-1.0)
+- [New-MgIdentityB2XUserFlowUserAttributeAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowuserattributeassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/b2xidentityuserflow-post-userattributeassignments?view=graph-rest-1.0)
 
 
 

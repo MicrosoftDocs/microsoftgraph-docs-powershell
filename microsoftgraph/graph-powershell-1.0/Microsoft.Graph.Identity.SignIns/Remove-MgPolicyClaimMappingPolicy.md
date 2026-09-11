@@ -468,8 +468,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyclaimmappingpolicy)
-- [](https://learn.microsoft.com/graph/api/claimsmappingpolicy-delete?view=graph-rest-1.0)
+- [Remove-MgPolicyClaimMappingPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyclaimmappingpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/claimsmappingpolicy-delete?view=graph-rest-1.0)
 
 
 

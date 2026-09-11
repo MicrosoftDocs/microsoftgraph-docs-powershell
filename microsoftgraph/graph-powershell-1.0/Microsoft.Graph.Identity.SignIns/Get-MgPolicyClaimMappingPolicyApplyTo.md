@@ -630,8 +630,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyclaimmappingpolicyapplyto)
-- [](https://learn.microsoft.com/graph/api/claimsmappingpolicy-list-appliesto?view=graph-rest-1.0)
+- [Get-MgPolicyClaimMappingPolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyclaimmappingpolicyapplyto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/claimsmappingpolicy-list-appliesto?view=graph-rest-1.0)
 
 
 

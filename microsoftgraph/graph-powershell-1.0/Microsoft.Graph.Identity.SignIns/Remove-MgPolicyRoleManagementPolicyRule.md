@@ -469,7 +469,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyrolemanagementpolicyrule)
+- [Remove-MgPolicyRoleManagementPolicyRule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyrolemanagementpolicyrule)
 
 
 

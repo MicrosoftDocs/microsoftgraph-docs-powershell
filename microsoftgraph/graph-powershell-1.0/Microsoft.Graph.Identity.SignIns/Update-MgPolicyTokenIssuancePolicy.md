@@ -732,8 +732,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenissuancepolicy)
-- [](https://learn.microsoft.com/graph/api/tokenissuancepolicy-update?view=graph-rest-1.0)
+- [Update-MgPolicyTokenIssuancePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenissuancepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tokenissuancepolicy-update?view=graph-rest-1.0)
 
 
 

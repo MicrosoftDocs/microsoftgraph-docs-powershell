@@ -412,7 +412,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfigurationcount)
+- [Get-MgOrganizationCertificateBasedAuthConfigurationCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfigurationcount)
 
 
 

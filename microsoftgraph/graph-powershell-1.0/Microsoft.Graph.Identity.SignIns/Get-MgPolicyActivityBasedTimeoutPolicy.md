@@ -611,9 +611,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyactivitybasedtimeoutpolicy)
-- [](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-list?view=graph-rest-1.0)
+- [Get-MgPolicyActivityBasedTimeoutPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyactivitybasedtimeoutpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-list?view=graph-rest-1.0)
 
 
 

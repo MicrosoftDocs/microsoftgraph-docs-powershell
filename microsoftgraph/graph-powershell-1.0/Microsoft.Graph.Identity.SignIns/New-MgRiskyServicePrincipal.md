@@ -643,7 +643,7 @@ The possible values are: investigationsThreatIntelligence, generic, adminConfirm
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal)
+- [New-MgRiskyServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal)
 
 
 

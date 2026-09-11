@@ -1089,8 +1089,8 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy)
-- [](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0)
+- [Update-MgIdentityConditionalAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0)
 
 
 

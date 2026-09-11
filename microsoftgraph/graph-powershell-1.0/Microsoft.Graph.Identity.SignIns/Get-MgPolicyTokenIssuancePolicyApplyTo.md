@@ -630,8 +630,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenissuancepolicyapplyto)
-- [](https://learn.microsoft.com/graph/api/tokenissuancepolicy-list-appliesto?view=graph-rest-1.0)
+- [Get-MgPolicyTokenIssuancePolicyApplyTo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenissuancepolicyapplyto)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tokenissuancepolicy-list-appliesto?view=graph-rest-1.0)
 
 
 

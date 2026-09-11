@@ -579,8 +579,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionfraudprotectionprovider)
-- [](https://learn.microsoft.com/graph/api/fraudprotectionprovider-update?view=graph-rest-1.0)
+- [Update-MgIdentityRiskPreventionFraudProtectionProvider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityriskpreventionfraudprotectionprovider)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/fraudprotectionprovider-update?view=graph-rest-1.0)
 
 
 

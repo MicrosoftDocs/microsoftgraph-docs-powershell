@@ -638,9 +638,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-1.0)
+- [Get-MgOrganizationCertificateBasedAuthConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-1.0)
 
 
 

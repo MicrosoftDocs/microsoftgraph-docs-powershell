@@ -630,9 +630,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey)
-- [](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0)
+- [Get-MgInformationProtectionBitlockerRecoveryKey](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0)
 
 
 

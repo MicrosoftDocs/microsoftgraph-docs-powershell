@@ -622,9 +622,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesstemplate)
-- [](https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0)
+- [Get-MgIdentityConditionalAccessTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesstemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0)
 
 
 

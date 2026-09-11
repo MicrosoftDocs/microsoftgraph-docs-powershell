@@ -609,9 +609,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskdetection)
-- [](https://learn.microsoft.com/graph/api/riskdetection-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-1.0)
+- [Get-MgRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskdetection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskdetection-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-1.0)
 
 
 

@@ -750,8 +750,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow)
-- [](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0)
+- [Update-MgIdentityAuthenticationEventFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityauthenticationeventflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0)
 
 
 

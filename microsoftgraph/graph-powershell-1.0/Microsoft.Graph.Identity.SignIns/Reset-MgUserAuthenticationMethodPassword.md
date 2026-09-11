@@ -599,8 +599,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/reset-mguserauthenticationmethodpassword)
-- [](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0)
+- [Reset-MgUserAuthenticationMethodPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/reset-mguserauthenticationmethodpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0)
 
 
 

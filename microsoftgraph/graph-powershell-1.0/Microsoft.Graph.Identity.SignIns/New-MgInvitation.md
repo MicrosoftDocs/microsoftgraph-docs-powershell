@@ -11348,8 +11348,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation)
-- [](https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-1.0)
+- [New-MgInvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-1.0)
 
 
 

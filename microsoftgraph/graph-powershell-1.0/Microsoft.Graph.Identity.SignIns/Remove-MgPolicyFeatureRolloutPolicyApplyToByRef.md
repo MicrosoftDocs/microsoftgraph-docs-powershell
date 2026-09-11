@@ -1,43 +1,43 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusagepolicyauthenticationstrengthpolicy
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
-title: Invoke-MgUsagePolicyAuthenticationStrengthPolicy
+title: Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
 ---
 
-# Invoke-MgUsagePolicyAuthenticationStrengthPolicy
+# Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
 
 ## SYNOPSIS
 
-Allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
-Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
+Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Usage (Default)
+### Delete (Default)
 
 ```
-Invoke-MgUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId <string>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -DirectoryObjectId <string>
+ -FeatureRolloutPolicyId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### UsageViaIdentity
+### DeleteViaIdentity
 
 ```
-Invoke-MgUsagePolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
+ -InputObject <IIdentitySignInsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,17 +47,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
-Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
+Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
+| Delegated (work or school account) | Policy.ReadWrite.HybridAuthentication, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
+| Application | Not supported |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -66,34 +64,13 @@ Policies in the former category are restricted in what kinds of changes may be m
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Invoke-MgUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId
+Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
 
 ```
-This example shows how to use the Invoke-MgUsagePolicyAuthenticationStrengthPolicy Cmdlet.
+This example shows how to use the Remove-MgPolicyFeatureRolloutPolicyApplyToByRef Cmdlet.
 
 
 ## PARAMETERS
-
-### -AuthenticationStrengthPolicyId
-
-The unique identifier of authenticationStrengthPolicy
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Usage
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -108,6 +85,70 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Confirm
+
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- cf
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -FeatureRolloutPolicyId
+
+The unique identifier of featureRolloutPolicy
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -179,6 +220,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -190,10 +252,31 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UsageViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -286,6 +369,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -WhatIf
+
+Runs the command in a mode that only reports what would happen without performing the actions.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -305,7 +410,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthUsage
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -386,8 +491,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgUsagePolicyAuthenticationStrengthPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusagepolicyauthenticationstrengthpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-1.0)
+- [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete-appliesto?view=graph-rest-1.0)
 
 
 
