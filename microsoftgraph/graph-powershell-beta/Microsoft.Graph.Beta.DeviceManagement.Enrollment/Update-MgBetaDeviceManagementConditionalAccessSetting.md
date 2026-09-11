@@ -467,7 +467,7 @@ All users in these groups will be required to have mobile device managed and com
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementconditionalaccesssetting)
+- [Update-MgBetaDeviceManagementConditionalAccessSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementconditionalaccesssetting)
 
 
 

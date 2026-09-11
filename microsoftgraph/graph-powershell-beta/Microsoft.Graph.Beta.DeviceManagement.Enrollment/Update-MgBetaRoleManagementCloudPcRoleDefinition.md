@@ -949,8 +949,8 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroledefinition)
-- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta)
+- [Update-MgBetaRoleManagementCloudPcRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcroledefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-beta)
 
 
 

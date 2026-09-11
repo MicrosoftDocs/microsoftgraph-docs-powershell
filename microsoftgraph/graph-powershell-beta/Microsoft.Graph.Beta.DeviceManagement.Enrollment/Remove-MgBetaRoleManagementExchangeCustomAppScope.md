@@ -429,8 +429,8 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope)
-- [](https://learn.microsoft.com/graph/api/customappscope-delete?view=graph-rest-beta)
+- [Remove-MgBetaRoleManagementExchangeCustomAppScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customappscope-delete?view=graph-rest-beta)
 
 
 

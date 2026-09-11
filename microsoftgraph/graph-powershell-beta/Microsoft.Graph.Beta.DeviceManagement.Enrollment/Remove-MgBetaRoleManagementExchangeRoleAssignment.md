@@ -427,8 +427,8 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangeroleassignment)
-- [](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-beta)
+- [Remove-MgBetaRoleManagementExchangeRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangeroleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-beta)
 
 
 
