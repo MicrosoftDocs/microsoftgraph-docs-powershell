@@ -505,8 +505,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitem)
-- [](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-beta)
+- [Remove-MgBetaSiteListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-beta)
 
 
 

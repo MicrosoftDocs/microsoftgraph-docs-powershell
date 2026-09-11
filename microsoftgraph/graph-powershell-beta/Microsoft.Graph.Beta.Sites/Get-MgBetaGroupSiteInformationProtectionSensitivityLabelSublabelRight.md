@@ -463,7 +463,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionsensitivitylabelsublabelright)
+- [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabelRight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionsensitivitylabelsublabelright)
 
 
 

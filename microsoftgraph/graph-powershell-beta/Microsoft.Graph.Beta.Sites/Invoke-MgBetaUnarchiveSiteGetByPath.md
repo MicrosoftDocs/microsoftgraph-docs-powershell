@@ -439,8 +439,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaunarchivesitegetbypath)
-- [](https://learn.microsoft.com/graph/api/site-unarchive?view=graph-rest-beta)
+- [Invoke-MgBetaUnarchiveSiteGetByPath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaunarchivesitegetbypath)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-unarchive?view=graph-rest-beta)
 
 
 

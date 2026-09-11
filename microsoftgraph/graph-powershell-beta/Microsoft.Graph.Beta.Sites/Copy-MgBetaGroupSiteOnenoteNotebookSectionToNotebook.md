@@ -722,8 +722,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotenotebooksectiontonotebook)
-- [](https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-beta)
+- [Copy-MgBetaGroupSiteOnenoteNotebookSectionToNotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetagroupsiteonenotenotebooksectiontonotebook)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/section-copytonotebook?view=graph-rest-beta)
 
 
 

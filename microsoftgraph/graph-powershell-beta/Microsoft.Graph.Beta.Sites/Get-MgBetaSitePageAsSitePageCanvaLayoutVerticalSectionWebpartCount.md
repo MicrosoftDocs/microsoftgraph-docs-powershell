@@ -421,7 +421,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagecanvalayoutverticalsectionwebpartcount)
+- [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagecanvalayoutverticalsectionwebpartcount)
 
 
 
