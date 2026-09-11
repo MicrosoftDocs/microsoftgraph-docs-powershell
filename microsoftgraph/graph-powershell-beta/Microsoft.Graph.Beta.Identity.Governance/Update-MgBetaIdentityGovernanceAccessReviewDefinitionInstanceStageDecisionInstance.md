@@ -2306,7 +2306,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecisioninstance)
+- [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecisioninstance)
 
 
 

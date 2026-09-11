@@ -721,8 +721,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowruntaskprocessingresult)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta)
+- [Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowruntaskprocessingresult)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-beta)
 
 
 

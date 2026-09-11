@@ -81180,8 +81180,8 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflow)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta)
+- [New-MgBetaIdentityGovernanceLifecycleWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta)
 
 
 

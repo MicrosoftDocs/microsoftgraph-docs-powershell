@@ -493,8 +493,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
-- [](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-cancel?view=graph-rest-beta)
+- [Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-cancel?view=graph-rest-beta)
 
 
 

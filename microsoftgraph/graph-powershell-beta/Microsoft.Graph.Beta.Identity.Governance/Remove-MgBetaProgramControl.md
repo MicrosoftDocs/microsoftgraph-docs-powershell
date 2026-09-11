@@ -613,8 +613,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol)
-- [](https://learn.microsoft.com/graph/api/programcontrol-delete?view=graph-rest-beta)
+- [Remove-MgBetaProgramControl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/programcontrol-delete?view=graph-rest-beta)
 
 
 

@@ -490,8 +490,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewreminder)
-- [](https://learn.microsoft.com/graph/api/accessreview-sendreminder?view=graph-rest-beta)
+- [Send-MgBetaAccessReviewReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaaccessreviewreminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreview-sendreminder?view=graph-rest-beta)
 
 
 

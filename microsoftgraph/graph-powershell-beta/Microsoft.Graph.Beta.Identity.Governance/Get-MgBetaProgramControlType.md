@@ -642,8 +642,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogramcontroltype)
-- [](https://learn.microsoft.com/graph/api/programcontroltype-list?view=graph-rest-beta)
+- [Get-MgBetaProgramControlType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprogramcontroltype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/programcontroltype-list?view=graph-rest-beta)
 
 
 

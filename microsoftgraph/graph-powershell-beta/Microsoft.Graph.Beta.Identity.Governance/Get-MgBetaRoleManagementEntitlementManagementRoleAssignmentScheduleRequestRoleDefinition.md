@@ -453,7 +453,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequestroledefinition)
+- [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequestroledefinition)
 
 
 

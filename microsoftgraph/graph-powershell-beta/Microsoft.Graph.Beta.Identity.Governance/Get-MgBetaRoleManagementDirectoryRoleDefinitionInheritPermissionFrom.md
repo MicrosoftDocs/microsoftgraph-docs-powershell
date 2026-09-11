@@ -664,7 +664,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfrom)
+- [Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfrom)
 
 
 

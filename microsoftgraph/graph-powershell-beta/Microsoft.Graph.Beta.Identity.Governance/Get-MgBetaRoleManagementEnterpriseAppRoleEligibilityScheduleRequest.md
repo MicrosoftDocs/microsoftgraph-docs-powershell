@@ -658,7 +658,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleeligibilityschedulerequest)
+- [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleeligibilityschedulerequest)
 
 
 

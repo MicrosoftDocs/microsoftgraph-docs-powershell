@@ -470,7 +470,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalizationversioncount)
+- [Get-MgBetaAgreementFileLocalizationVersionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalizationversioncount)
 
 
 

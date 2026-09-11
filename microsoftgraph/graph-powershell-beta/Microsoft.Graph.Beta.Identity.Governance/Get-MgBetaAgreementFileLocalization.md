@@ -674,8 +674,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalization)
-- [](https://learn.microsoft.com/graph/api/agreementfile-list-localizations?view=graph-rest-beta)
+- [Get-MgBetaAgreementFileLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfilelocalization)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agreementfile-list-localizations?view=graph-rest-beta)
 
 
 

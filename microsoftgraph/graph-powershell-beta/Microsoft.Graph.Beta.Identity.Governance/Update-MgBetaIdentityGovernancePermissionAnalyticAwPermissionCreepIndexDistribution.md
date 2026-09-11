@@ -776,7 +776,7 @@ MEDIUMRISKPROFILE `<IMicrosoftGraphRiskProfile>`: riskProfile
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalyticawpermissioncreepindexdistribution)
+- [Update-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionanalyticawpermissioncreepindexdistribution)
 
 
 

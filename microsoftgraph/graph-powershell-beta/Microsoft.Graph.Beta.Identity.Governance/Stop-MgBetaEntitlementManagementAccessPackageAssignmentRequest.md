@@ -487,8 +487,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementaccesspackageassignmentrequest)
-- [](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-beta)
+- [Stop-MgBetaEntitlementManagementAccessPackageAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementaccesspackageassignmentrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-beta)
 
 
 

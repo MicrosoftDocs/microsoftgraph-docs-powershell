@@ -623,8 +623,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyref)
-- [](https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-beta)
+- [New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-beta)
 
 
 

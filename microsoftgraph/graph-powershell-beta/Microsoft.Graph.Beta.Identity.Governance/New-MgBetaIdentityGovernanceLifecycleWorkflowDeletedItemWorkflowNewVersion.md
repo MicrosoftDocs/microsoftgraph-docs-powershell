@@ -18572,8 +18572,8 @@ Can't be true for a disabled workflow (where isEnabled is false).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflownewversion)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-beta)
+- [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflownewversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-beta)
 
 
 
