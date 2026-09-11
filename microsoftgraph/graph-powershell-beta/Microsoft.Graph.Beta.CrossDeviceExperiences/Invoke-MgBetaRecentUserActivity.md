@@ -58,16 +58,6 @@ Invoke function recent
 | Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp,  |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -499,6 +489,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/invoke-mgbetarecentuseractivity)
+
 
 
 
