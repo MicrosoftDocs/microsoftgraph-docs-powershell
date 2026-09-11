@@ -386,7 +386,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcountasgroup)
+- [Get-MgUserOwnedObjectCountAsGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcountasgroup)
 
 
 
