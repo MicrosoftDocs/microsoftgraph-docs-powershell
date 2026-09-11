@@ -534,8 +534,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-post-owners?view=graph-rest-1.0)
+- [New-MgServicePrincipalOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-post-owners?view=graph-rest-1.0)
 
 
 

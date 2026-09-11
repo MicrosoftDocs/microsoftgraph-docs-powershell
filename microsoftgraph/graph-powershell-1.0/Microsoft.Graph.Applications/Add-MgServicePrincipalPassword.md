@@ -550,8 +550,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-addpassword?view=graph-rest-1.0)
+- [Add-MgServicePrincipalPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgserviceprincipalpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-addpassword?view=graph-rest-1.0)
 
 
 

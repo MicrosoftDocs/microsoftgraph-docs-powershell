@@ -591,8 +591,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassification)
-- [](https://learn.microsoft.com/graph/api/serviceprincipal-list-delegatedpermissionclassifications?view=graph-rest-1.0)
+- [Get-MgServicePrincipalDelegatedPermissionClassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-list-delegatedpermissionclassifications?view=graph-rest-1.0)
 
 
 
