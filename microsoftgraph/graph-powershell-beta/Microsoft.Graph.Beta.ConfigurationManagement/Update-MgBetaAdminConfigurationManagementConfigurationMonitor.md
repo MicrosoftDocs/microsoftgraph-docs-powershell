@@ -87,8 +87,9 @@ You must provide the full monitor body when you call this API.
 | Application | ConfigurationMonitoring.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the displayName of a configurationMonitor
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
@@ -98,7 +99,12 @@ $params = @{
 
 Update-MgBetaAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update the displayname of a configurationmonitor
+
+### Example 2: Update the baseline of a configurationMonitor
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
@@ -158,6 +164,10 @@ FQDN = "contoso.onmicrosoft.com"
 }
 
 Update-MgBetaAdminConfigurationManagementConfigurationMonitor -ConfigurationMonitorId $configurationMonitorId -BodyParameter $params
+
+```
+This example will update the baseline of a configurationmonitor
+
 
 ## PARAMETERS
 
