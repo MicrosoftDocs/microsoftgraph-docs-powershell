@@ -655,7 +655,7 @@ Supports $expand.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescope)
+- [New-MgEntitlementManagementResourceRoleScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescope)
 
 
 

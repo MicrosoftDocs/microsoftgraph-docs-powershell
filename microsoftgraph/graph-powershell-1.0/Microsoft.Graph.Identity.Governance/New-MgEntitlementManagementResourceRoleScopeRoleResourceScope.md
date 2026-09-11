@@ -850,7 +850,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperoleresourcescope)
+- [New-MgEntitlementManagementResourceRoleScopeRoleResourceScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperoleresourcescope)
 
 
 

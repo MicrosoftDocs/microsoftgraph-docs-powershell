@@ -765,7 +765,7 @@ Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequest)
+- [Update-MgIdentityGovernanceAppConsentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequest)
 
 
 

@@ -417,7 +417,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstanceprincipal)
+- [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstanceprincipal)
 
 
 

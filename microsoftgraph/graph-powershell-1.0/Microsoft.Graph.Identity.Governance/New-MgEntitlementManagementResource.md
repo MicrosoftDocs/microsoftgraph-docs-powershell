@@ -890,7 +890,7 @@ Supports $expand.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresource)
+- [New-MgEntitlementManagementResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresource)
 
 
 

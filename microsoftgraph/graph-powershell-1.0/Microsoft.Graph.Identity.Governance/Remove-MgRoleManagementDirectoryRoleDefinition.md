@@ -480,8 +480,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition)
-- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)
+- [Remove-MgRoleManagementDirectoryRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)
 
 
 

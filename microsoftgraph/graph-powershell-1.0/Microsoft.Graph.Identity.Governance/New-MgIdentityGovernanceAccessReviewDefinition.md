@@ -1543,8 +1543,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
-- [](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
+- [New-MgIdentityGovernanceAccessReviewDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
 
 
 

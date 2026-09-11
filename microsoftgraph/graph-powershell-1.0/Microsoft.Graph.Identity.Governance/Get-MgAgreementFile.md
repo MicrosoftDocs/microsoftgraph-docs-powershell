@@ -629,8 +629,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfile)
-- [](https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0)
+- [Get-MgAgreementFile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0)
 
 
 

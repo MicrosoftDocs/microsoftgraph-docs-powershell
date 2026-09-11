@@ -983,8 +983,8 @@ Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestage)
-- [](https://learn.microsoft.com/graph/api/accessreviewstage-update?view=graph-rest-1.0)
+- [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewstage-update?view=graph-rest-1.0)
 
 
 

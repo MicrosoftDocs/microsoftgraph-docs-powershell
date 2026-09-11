@@ -949,7 +949,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementacceptance)
+- [Update-MgAgreementAcceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementacceptance)
 
 
 

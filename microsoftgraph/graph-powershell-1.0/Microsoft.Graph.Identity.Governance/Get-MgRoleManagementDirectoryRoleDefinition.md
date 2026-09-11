@@ -632,9 +632,9 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroledefinition)
-- [](https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0)
+- [Get-MgRoleManagementDirectoryRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroledefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0)
 
 
 

@@ -17593,8 +17593,8 @@ null if the subject isn't yet a user in the tenant.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment)
-- [](https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0)
+- [Update-MgEntitlementManagementAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0)
 
 
 

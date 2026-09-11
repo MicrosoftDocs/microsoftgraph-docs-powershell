@@ -16826,8 +16826,8 @@ NOTE: For more information about the permissions for members and guests, see Wha
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextension)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-update?view=graph-rest-1.0)
+- [Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-update?view=graph-rest-1.0)
 
 
 

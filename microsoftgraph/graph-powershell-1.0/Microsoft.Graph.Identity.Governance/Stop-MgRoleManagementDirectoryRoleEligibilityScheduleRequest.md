@@ -459,8 +459,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgrolemanagementdirectoryroleeligibilityschedulerequest)
-- [](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-cancel?view=graph-rest-1.0)
+- [Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgrolemanagementdirectoryroleeligibilityschedulerequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-cancel?view=graph-rest-1.0)
 
 
 

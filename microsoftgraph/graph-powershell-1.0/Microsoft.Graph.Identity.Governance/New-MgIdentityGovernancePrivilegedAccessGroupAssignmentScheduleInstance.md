@@ -16595,7 +16595,7 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance)
+- [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance)
 
 
 

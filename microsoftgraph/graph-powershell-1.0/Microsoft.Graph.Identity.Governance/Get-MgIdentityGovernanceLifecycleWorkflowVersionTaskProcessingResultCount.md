@@ -455,7 +455,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowversiontaskprocessingresultcount)
+- [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowversiontaskprocessingresultcount)
 
 
 

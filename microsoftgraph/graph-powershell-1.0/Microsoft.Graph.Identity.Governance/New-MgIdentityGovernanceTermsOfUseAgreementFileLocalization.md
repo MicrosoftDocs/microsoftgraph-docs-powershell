@@ -850,7 +850,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfilelocalization)
+- [New-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfilelocalization)
 
 
 

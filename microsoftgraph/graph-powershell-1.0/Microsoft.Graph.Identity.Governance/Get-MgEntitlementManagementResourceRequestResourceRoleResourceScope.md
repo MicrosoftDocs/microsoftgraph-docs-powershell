@@ -655,7 +655,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestresourceroleresourcescope)
+- [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestresourceroleresourcescope)
 
 
 

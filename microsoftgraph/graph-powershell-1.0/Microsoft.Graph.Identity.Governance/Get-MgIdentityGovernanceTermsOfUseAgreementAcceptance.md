@@ -716,8 +716,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementacceptance)
-- [](https://learn.microsoft.com/graph/api/agreement-list-acceptances?view=graph-rest-1.0)
+- [Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementacceptance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agreement-list-acceptances?view=graph-rest-1.0)
 
 
 

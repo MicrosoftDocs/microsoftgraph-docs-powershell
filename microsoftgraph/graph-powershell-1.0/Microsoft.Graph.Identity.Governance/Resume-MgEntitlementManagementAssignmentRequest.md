@@ -643,8 +643,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgentitlementmanagementassignmentrequest)
-- [](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-1.0)
+- [Resume-MgEntitlementManagementAssignmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgentitlementmanagementassignmentrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-resume?view=graph-rest-1.0)
 
 
 

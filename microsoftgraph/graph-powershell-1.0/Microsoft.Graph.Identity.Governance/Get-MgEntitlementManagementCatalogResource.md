@@ -657,8 +657,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource)
-- [](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0)
+- [Get-MgEntitlementManagementCatalogResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0)
 
 
 

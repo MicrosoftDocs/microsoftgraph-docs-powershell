@@ -476,8 +476,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleassignment)
-- [](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0)
+- [Remove-MgRoleManagementDirectoryRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0)
 
 
 

@@ -873,8 +873,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfile)
-- [](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0)
+- [New-MgIdentityGovernanceTermsOfUseAgreementFile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0)
 
 
 
