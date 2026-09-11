@@ -76,6 +76,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property roleAssignments in roleManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Exchange,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Exchange,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
