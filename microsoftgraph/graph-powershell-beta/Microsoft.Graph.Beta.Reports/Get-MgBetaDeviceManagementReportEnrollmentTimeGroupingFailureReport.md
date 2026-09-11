@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Invoke action retrieveEnrollmentTimeGroupingFailureReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -596,6 +586,7 @@ BODY `<IPathsOurw91DevicemanagementReportsMicrosoftGraphRetrieveenrollmenttimegr
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportenrollmenttimegroupingfailurereport)
+
 
 
 
