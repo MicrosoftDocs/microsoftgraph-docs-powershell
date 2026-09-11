@@ -894,7 +894,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignment
+BODYPARAMETER `<IMicrosoftGraphGovernanceRoleAssignment>`: governanceRoleAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1037,7 +1037,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [SubjectId <String>]: Required.
 The ID of the subject that the role assignment is associated with.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1148,7 +1148,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-LINKEDELIGIBLEROLEASSIGNMENT <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignment
+LINKEDELIGIBLEROLEASSIGNMENT `<IMicrosoftGraphGovernanceRoleAssignment>`: governanceRoleAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1291,7 +1291,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   [SubjectId <String>]: Required.
 The ID of the subject that the role assignment is associated with.
 
-RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
+RESOURCE `<IMicrosoftGraphGovernanceResource>`: governanceResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1433,7 +1433,7 @@ Note: This property may be extended in the future to support more scenarios.
 Resource type.
 For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefinition
+ROLEDEFINITION `<IMicrosoftGraphGovernanceRoleDefinition>`: governanceRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1574,7 +1574,7 @@ The ID of the resource associated with the role definition.
   [RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]: governanceRoleSetting
   [TemplateId <String>]: The unique identifier for the template.
 
-SUBJECT <IMicrosoftGraphGovernanceSubject>: governanceSubject
+SUBJECT `<IMicrosoftGraphGovernanceSubject>`: governanceSubject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1590,3 +1590,25 @@ The value can be User, Group, and ServicePrincipal.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessresourceroleassignment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

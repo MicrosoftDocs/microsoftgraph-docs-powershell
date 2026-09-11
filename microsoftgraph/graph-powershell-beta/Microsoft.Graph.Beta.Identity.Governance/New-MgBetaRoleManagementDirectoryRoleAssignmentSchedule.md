@@ -726,7 +726,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVATEDUSING <IMicrosoftGraphUnifiedRoleEligibilitySchedule>: unifiedRoleEligibilitySchedule
+ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilitySchedule>`: unifiedRoleEligibilitySchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppScope <IMicrosoftGraphAppScope>]: appScope
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -852,7 +852,7 @@ Required.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
 
-APPSCOPE <IMicrosoftGraphAppScope>: appScope
+APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -861,7 +861,7 @@ Read only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentSchedule>: unifiedRoleAssignmentSchedule
+BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentSchedule>`: unifiedRoleAssignmentSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppScope <IMicrosoftGraphAppScope>]: appScope
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1018,21 +1018,21 @@ It can further imply whether the unifiedRoleAssignmentSchedule can be managed by
 Supports $filter (eq, ne).
   [ScheduleInfo <IMicrosoftGraphRequestSchedule>]: requestSchedule
 
-DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
+DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
+PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
+ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1075,7 +1075,7 @@ Read-only when isBuiltIn is true.
   [Version <String>]: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
-SCHEDULEINFO <IMicrosoftGraphRequestSchedule>: requestSchedule
+SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1125,3 +1125,25 @@ In PIM, when the  eligible or active assignment becomes active.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
