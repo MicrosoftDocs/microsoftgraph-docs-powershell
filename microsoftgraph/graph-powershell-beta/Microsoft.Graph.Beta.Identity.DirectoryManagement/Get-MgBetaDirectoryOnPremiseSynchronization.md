@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryOnPremiseSynchronization
 
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

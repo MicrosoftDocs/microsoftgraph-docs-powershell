@@ -15,6 +15,9 @@ title: Update-MgBetaOrganizationBranding
 
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBranding?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ You shouldn't delete a profilePropertySetting that includes a source precedence 
 Instead, patch it to a default state that contains only the Microsoft Entra ID source reference.
 This delete operation is supported but fails unless the prioritizedSourceUrls property contains only the Entra ID source reference.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminPeopleProfilePropertySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdminPeopleProfilePropertySetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -17,6 +17,9 @@ Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

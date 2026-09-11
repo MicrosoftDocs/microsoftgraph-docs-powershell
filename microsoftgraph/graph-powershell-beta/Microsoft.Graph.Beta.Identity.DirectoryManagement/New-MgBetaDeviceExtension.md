@@ -15,6 +15,9 @@ title: New-MgBetaDeviceExtension
 
 Create new navigation property to extensions for devices
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

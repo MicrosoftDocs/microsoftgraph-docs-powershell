@@ -17,6 +17,9 @@ Validate the ownership of a domain.
 This operation only applies to an unverified domain.
 For an unverified domain, the isVerified property is false.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Verify (Default)

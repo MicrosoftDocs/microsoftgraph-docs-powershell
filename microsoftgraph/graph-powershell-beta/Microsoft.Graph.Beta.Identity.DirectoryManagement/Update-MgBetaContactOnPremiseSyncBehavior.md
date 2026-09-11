@@ -15,6 +15,9 @@ title: Update-MgBetaContactOnPremiseSyncBehavior
 
 Update the navigation property onPremisesSyncBehavior in contacts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgContactOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContactOnPremiseSyncBehavior?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

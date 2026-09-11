@@ -15,6 +15,9 @@ title: Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId
 
 Get a specific commercial subscription that an organization has acquired.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

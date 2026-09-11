@@ -15,6 +15,9 @@ title: Get-MgBetaOrganizationMemberObject
 
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
