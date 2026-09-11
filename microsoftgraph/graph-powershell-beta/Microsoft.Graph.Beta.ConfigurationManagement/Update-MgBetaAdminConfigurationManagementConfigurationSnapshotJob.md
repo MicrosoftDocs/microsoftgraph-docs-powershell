@@ -15,6 +15,9 @@ title: Update-MgBetaAdminConfigurationManagementConfigurationSnapshotJob
 
 Update the navigation property configurationSnapshotJobs in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagementConfigurationSnapshotJob](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagementConfigurationSnapshotJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

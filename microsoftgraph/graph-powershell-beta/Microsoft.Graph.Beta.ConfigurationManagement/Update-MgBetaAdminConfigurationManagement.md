@@ -15,6 +15,9 @@ title: Update-MgBetaAdminConfigurationManagement
 
 Update the navigation property configurationManagement in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagement](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

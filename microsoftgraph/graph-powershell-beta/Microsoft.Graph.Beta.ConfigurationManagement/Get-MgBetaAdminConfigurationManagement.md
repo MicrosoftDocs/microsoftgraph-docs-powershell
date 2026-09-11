@@ -15,6 +15,9 @@ title: Get-MgBetaAdminConfigurationManagement
 
 Get configurationManagement from admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminConfigurationManagement](/powershell/module/Microsoft.Graph.ConfigurationManagement/Get-MgAdminConfigurationManagement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

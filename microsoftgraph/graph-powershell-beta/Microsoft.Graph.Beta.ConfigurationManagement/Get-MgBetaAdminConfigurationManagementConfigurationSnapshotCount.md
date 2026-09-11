@@ -15,6 +15,9 @@ title: Get-MgBetaAdminConfigurationManagementConfigurationSnapshotCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminConfigurationManagementConfigurationSnapshotCount](/powershell/module/Microsoft.Graph.ConfigurationManagement/Get-MgAdminConfigurationManagementConfigurationSnapshotCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminConfigurationManagementConfigurationSnapshot
 
 Delete navigation property configurationSnapshots for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminConfigurationManagementConfigurationSnapshot](/powershell/module/Microsoft.Graph.ConfigurationManagement/Remove-MgAdminConfigurationManagementConfigurationSnapshot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

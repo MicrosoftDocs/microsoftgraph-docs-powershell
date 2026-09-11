@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminConfigurationManagementConfigurationMonitoringResult
 
 Delete navigation property configurationMonitoringResults for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminConfigurationManagementConfigurationMonitoringResult](/powershell/module/Microsoft.Graph.ConfigurationManagement/Remove-MgAdminConfigurationManagementConfigurationMonitoringResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

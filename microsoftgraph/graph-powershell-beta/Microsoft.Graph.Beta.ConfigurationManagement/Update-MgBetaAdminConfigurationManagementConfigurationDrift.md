@@ -15,6 +15,9 @@ title: Update-MgBetaAdminConfigurationManagementConfigurationDrift
 
 Update the navigation property configurationDrifts in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagementConfigurationDrift](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagementConfigurationDrift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

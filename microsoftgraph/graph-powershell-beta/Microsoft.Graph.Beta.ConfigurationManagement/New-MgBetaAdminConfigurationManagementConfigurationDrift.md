@@ -15,6 +15,9 @@ title: New-MgBetaAdminConfigurationManagementConfigurationDrift
 
 Create new navigation property to configurationDrifts for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminConfigurationManagementConfigurationDrift](/powershell/module/Microsoft.Graph.ConfigurationManagement/New-MgAdminConfigurationManagementConfigurationDrift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

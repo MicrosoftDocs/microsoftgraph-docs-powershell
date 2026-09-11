@@ -15,6 +15,9 @@ title: Update-MgBetaAdminConfigurationManagementConfigurationMonitoringResult
 
 Update the navigation property configurationMonitoringResults in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagementConfigurationMonitoringResult](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagementConfigurationMonitoringResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

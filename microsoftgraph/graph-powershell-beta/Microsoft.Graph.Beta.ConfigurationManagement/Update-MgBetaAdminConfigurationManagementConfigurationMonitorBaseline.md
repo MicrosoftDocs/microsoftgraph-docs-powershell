@@ -15,6 +15,9 @@ title: Update-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline
 
 Update the navigation property baseline in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminConfigurationManagementConfigurationMonitorBaseline](/powershell/module/Microsoft.Graph.ConfigurationManagement/Update-MgAdminConfigurationManagementConfigurationMonitorBaseline?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

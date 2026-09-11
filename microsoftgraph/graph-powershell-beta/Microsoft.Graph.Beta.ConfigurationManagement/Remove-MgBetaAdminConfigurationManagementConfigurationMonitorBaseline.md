@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline
 
 Delete navigation property baseline for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminConfigurationManagementConfigurationMonitorBaseline](/powershell/module/Microsoft.Graph.ConfigurationManagement/Remove-MgAdminConfigurationManagementConfigurationMonitorBaseline?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
