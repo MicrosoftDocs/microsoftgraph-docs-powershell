@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users.Functions
-Module Guid: d4d743d1-7fcc-486d-be6a-20ac7d7be349
+Module Guid: 5c9d4f2e-e35a-4203-9ad1-b3a602cd3abe
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users.functions/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -40,23 +40,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaViewUserReminder](Invoke-MgBetaViewUserReminder.md)
 
 ### [Test-MgBetaUserManagedAppUserBlocked](Test-MgBetaUserManagedAppUserBlocked.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
