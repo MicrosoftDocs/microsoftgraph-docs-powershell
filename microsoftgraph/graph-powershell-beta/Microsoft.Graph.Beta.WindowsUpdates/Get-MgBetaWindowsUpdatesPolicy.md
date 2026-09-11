@@ -66,12 +66,17 @@ You can use this method with the following child object type: qualityUpdatePolic
 | Application | WindowsUpdates.Read.All, WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Get-MgBetaWindowsUpdatesPolicy -Filter "isof('microsoft.graph.windowsUpdates.qualityUpdatePolicy')"
+Get-MgBetaWindowsUpdatesPolicy -Filter "isof('microsoft.graph.windowsUpdates.qualityUpdatePolicy')" 
+
+```
+This example shows how to use the Get-MgBetaWindowsUpdatesPolicy Cmdlet.
+
 
 ## PARAMETERS
 
