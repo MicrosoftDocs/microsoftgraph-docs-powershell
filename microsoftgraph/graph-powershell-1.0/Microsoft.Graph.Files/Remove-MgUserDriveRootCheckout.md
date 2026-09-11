@@ -55,16 +55,6 @@ Any changes made to the item while it was checked out are discarded.
 The same user that performed the checkout must discard it.
 Another alternative is to use application permissions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -426,6 +416,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootcheckout)
 - [](https://learn.microsoft.com/graph/api/driveitem-discardcheckout?view=graph-rest-1.0)
+
 
 
 
