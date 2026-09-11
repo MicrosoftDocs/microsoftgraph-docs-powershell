@@ -53,6 +53,14 @@ This cmdlet has the following aliases,
 
 Update the properties of an authenticationMethodsPolicy object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.AuthenticationMethod,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.AuthenticationMethod,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 The hardware OATH time-based one-time password (TOTP) devices assigned to a user for authentication.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-HardwareOATH.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-HardwareOATH.Read.All, UserAuthMethod-HardwareOATH.ReadWrite, UserAuthMethod-HardwareOATH.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-HardwareOATH.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-HardwareOATH.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

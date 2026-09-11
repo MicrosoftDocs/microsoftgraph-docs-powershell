@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property signInIdentifiers for identity
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SignInIdentifier.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SignInIdentifier.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
 The caller doesn't have to provide a secret.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TrustFrameworkKeySet.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TrustFrameworkKeySet.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

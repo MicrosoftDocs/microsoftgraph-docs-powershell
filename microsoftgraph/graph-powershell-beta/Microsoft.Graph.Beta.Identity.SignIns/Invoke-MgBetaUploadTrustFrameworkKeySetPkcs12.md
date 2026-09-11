@@ -70,6 +70,14 @@ Upload a PKCS12 format key (PFX) to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the Pfx certificate contents.
 This method returns trustFrameworkKey.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TrustFrameworkKeySet.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TrustFrameworkKeySet.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

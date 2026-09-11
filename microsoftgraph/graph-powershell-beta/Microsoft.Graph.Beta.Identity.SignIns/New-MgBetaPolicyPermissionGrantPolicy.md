@@ -51,6 +51,14 @@ Creates a permissionGrantPolicy.
 A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
 After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.PermissionGrant,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.PermissionGrant,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
