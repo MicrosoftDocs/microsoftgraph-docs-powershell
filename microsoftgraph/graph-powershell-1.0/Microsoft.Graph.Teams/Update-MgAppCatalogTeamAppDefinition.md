@@ -13,7 +13,7 @@ title: Update-MgAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
 
-Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
@@ -73,7 +73,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
@@ -773,7 +773,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION <IMicrosoftGraphTeamsAppAuthorization>: teamsAppAuthorization
+AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientAppId <String>]: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
   [RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]: teamsAppPermissionSet
@@ -782,7 +782,7 @@ AUTHORIZATION <IMicrosoftGraphTeamsAppAuthorization>: teamsAppAuthorization
       [PermissionType <String>]: teamsAppResourceSpecificPermissionType
       [PermissionValue <String>]: The name of the resource-specific permission.
 
-BODYPARAMETER <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
+BODYPARAMETER `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -816,7 +816,7 @@ For example, in the access reviews decisions API, this property might record the
   [TeamsAppId <String>]: The ID from the Teams app manifest.
   [Version <String>]: The version number of the application.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -827,7 +827,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -870,3 +870,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinition)
 - [](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
