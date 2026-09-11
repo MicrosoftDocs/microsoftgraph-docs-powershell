@@ -594,8 +594,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogcustomsecurityattributeaudit)
-- [](https://learn.microsoft.com/graph/api/auditlogroot-list-customsecurityattributeaudits?view=graph-rest-beta)
+- [Get-MgBetaAuditLogCustomSecurityAttributeAudit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogcustomsecurityattributeaudit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/auditlogroot-list-customsecurityattributeaudits?view=graph-rest-beta)
 
 
 

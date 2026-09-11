@@ -430,7 +430,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightdailymfatelecomfraud)
+- [Remove-MgBetaReportUserInsightDailyMfaTelecomFraud](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportuserinsightdailymfatelecomfraud)
 
 
 

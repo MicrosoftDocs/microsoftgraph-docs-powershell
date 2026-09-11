@@ -434,7 +434,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportonedriveusageaccountdetail)
+- [Get-MgBetaReportOneDriveUsageAccountDetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportonedriveusageaccountdetail)
 
 
 
