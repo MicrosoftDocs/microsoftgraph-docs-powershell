@@ -1,27 +1,30 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupAcceptedSenderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaGroupEndpoint
+title: Remove-MgBetaGroupAcceptedSenderByRef
 ---
 
-# Remove-MgBetaGroupEndpoint
+# Remove-MgBetaGroupAcceptedSenderByRef
 
 ## SYNOPSIS
 
-Delete navigation property endpoints for groups
+Remove a user or group from the accepted-senders list of the specified group.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupAcceptedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupAcceptedSenderDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaGroupEndpoint -EndpointId <string> -GroupId <string> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaGroupAcceptedSenderByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -29,8 +32,8 @@ Remove-MgBetaGroupEndpoint -EndpointId <string> -GroupId <string> [-IfMatch <str
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaGroupAcceptedSenderByRef -InputObject <IGroupsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -42,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property endpoints for groups
+Remove a user or group from the accepted-senders list of the specified group.
 
 ## PARAMETERS
 
@@ -89,9 +92,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -EndpointId
+### -DirectoryObjectId
 
-The unique identifier of endpoint
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -422,7 +425,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint)
+- [Remove-MgBetaGroupAcceptedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupAcceptedSenderByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-beta)
 
 
 

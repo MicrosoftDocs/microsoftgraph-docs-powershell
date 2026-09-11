@@ -594,8 +594,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense)
-- [](https://learn.microsoft.com/graph/api/group-assignlicense?view=graph-rest-beta)
+- [Set-MgBetaGroupLicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-assignlicense?view=graph-rest-beta)
 
 
 

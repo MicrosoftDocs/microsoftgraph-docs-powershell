@@ -502,8 +502,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership)
-- [](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
+- [Test-MgBetaGroupDynamicMembership](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
 
 
 

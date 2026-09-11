@@ -648,8 +648,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostextension)
-- [](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-beta)
+- [Get-MgBetaGroupThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-beta)
 
 
 

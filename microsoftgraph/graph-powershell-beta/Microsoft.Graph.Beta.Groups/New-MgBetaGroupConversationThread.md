@@ -1023,8 +1023,8 @@ Returned only on $select.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthread)
-- [](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-beta)
+- [New-MgBetaGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-beta)
 
 
 

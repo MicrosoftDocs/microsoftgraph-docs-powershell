@@ -1,27 +1,31 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupMemberByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaGroupEndpoint
+title: Remove-MgBetaGroupMemberByRef
 ---
 
-# Remove-MgBetaGroupEndpoint
+# Remove-MgBetaGroupMemberByRef
 
 ## SYNOPSIS
 
-Delete navigation property endpoints for groups
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupMemberDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgBetaGroupEndpoint -EndpointId <string> -GroupId <string> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Remove-MgBetaGroupMemberByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -29,7 +33,7 @@ Remove-MgBetaGroupEndpoint -EndpointId <string> -GroupId <string> [-IfMatch <str
 ### DeleteViaIdentity
 
 ```
-Remove-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-IfMatch <string>]
+Remove-MgBetaGroupMemberByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -42,7 +46,29 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property endpoints for groups
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupMemberByRef Cmdlet.
+
 
 ## PARAMETERS
 
@@ -89,9 +115,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -EndpointId
+### -DirectoryObjectId
 
-The unique identifier of endpoint
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -422,8 +448,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaGroupEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint)
-
+- [Remove-MgBetaGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupMemberByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-beta)
 
 
 
