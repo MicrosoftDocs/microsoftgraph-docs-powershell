@@ -15,6 +15,9 @@ title: Get-MgReportOffice365ActiveUserCount
 
 Get the count of daily active users in the reporting period by product.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActiveUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActiveUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

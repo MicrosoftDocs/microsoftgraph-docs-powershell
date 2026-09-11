@@ -16,6 +16,9 @@ title: Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount
 Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization.
 Types of sessions include audio and video.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessPeerToPeerActivityMinuteCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

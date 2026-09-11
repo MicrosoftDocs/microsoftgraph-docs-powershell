@@ -15,6 +15,9 @@ title: Get-MgReportSharePointActivityFileCount
 
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
