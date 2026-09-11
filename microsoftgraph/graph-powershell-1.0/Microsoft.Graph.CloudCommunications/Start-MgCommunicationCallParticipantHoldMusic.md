@@ -571,8 +571,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic)
-- [](https://learn.microsoft.com/graph/api/participant-startholdmusic?view=graph-rest-1.0)
+- [Start-MgCommunicationCallParticipantHoldMusic](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/start-mgcommunicationcallparticipantholdmusic)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/participant-startholdmusic?view=graph-rest-1.0)
 
 
 
