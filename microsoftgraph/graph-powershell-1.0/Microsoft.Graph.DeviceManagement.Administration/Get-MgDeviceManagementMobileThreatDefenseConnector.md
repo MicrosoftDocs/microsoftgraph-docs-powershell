@@ -69,12 +69,17 @@ The list of Mobile threat Defense connectors configured by the tenant.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementMobileThreatDefenseConnector
+
+```
+This example shows how to use the Get-MgDeviceManagementMobileThreatDefenseConnector Cmdlet.
+
 
 ## PARAMETERS
 
