@@ -15,6 +15,9 @@ title: Restore-MgIdentityConditionalAccessDeletedItemPolicy
 
 Invoke action restore
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Restore-MgBetaIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

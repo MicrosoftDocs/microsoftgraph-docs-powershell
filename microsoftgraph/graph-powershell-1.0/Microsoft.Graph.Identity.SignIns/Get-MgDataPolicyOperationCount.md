@@ -15,6 +15,9 @@ title: Get-MgDataPolicyOperationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDataPolicyOperationCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaDataPolicyOperationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

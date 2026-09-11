@@ -15,6 +15,9 @@ title: Restore-MgIdentityConditionalAccessPolicy
 
 Invoke action restore
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Restore-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

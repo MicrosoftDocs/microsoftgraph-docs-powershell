@@ -15,6 +15,9 @@ title: Get-MgIdentityB2XUserFlowLanguageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguageCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: New-MgIdentityVerifiedIdProfile
 
 Create a new verifiedIdProfile object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityVerifiedIdProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

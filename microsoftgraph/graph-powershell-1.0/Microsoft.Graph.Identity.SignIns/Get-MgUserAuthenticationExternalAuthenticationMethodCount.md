@@ -15,6 +15,9 @@ title: Get-MgUserAuthenticationExternalAuthenticationMethodCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationExternalAuthenticationMethodCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationExternalAuthenticationMethodCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

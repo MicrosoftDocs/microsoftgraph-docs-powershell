@@ -15,6 +15,9 @@ title: New-MgIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEvent
 
 Create new navigation property to includeApplications for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

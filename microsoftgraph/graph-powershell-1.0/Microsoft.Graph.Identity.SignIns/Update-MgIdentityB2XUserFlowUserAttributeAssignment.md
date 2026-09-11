@@ -15,6 +15,9 @@ title: Update-MgIdentityB2XUserFlowUserAttributeAssignment
 
 Update the properties of a identityUserFlowAttributeAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

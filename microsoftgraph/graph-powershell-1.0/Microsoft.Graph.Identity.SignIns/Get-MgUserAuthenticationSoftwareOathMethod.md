@@ -15,6 +15,9 @@ title: Get-MgUserAuthenticationSoftwareOathMethod
 
 The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgIdentityRiskPreventionWebApplicationFirewallVerification
 
 Create new navigation property to webApplicationFirewallVerifications for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

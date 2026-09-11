@@ -15,6 +15,9 @@ title: Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStart
 
 Delete ref of navigation property identityProviders for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

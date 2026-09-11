@@ -15,6 +15,9 @@ title: Update-MgIdentityB2XUserFlowLanguage
 
 Update the navigation property languages in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

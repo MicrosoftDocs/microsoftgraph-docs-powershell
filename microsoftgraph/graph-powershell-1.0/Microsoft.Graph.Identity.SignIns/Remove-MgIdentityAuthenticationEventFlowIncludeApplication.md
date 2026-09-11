@@ -16,6 +16,9 @@ title: Remove-MgIdentityAuthenticationEventFlowIncludeApplication
 Remove or unlink an application from an authenticationEventsFlow object.
 This disables the customized authentication experience defined for the application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

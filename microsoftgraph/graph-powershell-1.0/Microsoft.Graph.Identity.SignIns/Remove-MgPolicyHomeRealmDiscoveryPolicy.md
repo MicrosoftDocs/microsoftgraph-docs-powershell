@@ -15,6 +15,9 @@ title: Remove-MgPolicyHomeRealmDiscoveryPolicy
 
 Delete a homeRealmDiscoveryPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

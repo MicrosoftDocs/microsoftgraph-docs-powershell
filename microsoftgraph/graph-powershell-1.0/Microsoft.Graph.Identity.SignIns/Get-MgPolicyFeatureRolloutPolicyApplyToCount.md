@@ -15,6 +15,9 @@ title: Get-MgPolicyFeatureRolloutPolicyApplyToCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyToCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

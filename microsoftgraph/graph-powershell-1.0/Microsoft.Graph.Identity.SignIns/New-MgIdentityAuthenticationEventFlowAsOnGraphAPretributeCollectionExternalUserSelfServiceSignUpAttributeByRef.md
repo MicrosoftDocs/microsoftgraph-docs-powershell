@@ -19,6 +19,9 @@ The attribute is added to both the attributeCollection> attributes and attribute
 In the views collection, the attribute is assigned the default settings.
 You can PATCH the user flow to customize the settings of the attribute on the views object, for example, marking it as required or updating the allowed input types.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

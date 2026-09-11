@@ -17,6 +17,9 @@ The conditions representing the context of the authentication request that's use
 Supports $filter (eq).
 See support for filtering on user flows for syntax information.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventFlowCondition](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventFlowCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

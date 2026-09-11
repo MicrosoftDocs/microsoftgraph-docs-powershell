@@ -15,6 +15,9 @@ title: New-MgDataPolicyOperation
 
 Add new entity to dataPolicyOperations
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
