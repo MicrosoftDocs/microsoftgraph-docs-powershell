@@ -15,6 +15,9 @@ title: New-MgBetaPlannerBucket
 
 Create a new plannerBucket object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

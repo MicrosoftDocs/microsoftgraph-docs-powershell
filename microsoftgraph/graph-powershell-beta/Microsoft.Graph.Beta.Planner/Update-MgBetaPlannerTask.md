@@ -15,6 +15,9 @@ title: Update-MgBetaPlannerTask
 
 Update the properties of plannertask object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
