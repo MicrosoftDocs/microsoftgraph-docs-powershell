@@ -15,6 +15,9 @@ title: Get-MgUserMailFolderChildFolderMessageRule
 
 The collection of rules that apply to the user's Inbox folder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

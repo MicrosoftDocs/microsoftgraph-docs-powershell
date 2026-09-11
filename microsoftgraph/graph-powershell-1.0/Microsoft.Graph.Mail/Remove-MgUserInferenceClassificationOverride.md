@@ -15,6 +15,9 @@ title: Remove-MgUserInferenceClassificationOverride
 
 Delete navigation property overrides for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

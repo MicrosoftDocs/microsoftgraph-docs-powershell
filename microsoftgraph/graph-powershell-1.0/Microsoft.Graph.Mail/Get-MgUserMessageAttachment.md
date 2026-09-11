@@ -15,6 +15,9 @@ title: Get-MgUserMessageAttachment
 
 The fileAttachment and itemAttachment attachments for the message.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
