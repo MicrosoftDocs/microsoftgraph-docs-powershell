@@ -22694,8 +22694,8 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest)
-- [](https://learn.microsoft.com/graph/api/subjectrightsrequest-update?view=graph-rest-1.0)
+- [Update-MgPrivacySubjectRightsRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subjectrightsrequest-update?view=graph-rest-1.0)
 
 
 
