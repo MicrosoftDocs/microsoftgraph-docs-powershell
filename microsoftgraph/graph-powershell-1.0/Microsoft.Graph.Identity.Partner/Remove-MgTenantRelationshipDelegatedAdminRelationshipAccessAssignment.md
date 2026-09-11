@@ -433,8 +433,8 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
-- [](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0)
+- [Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0)
 
 
 
