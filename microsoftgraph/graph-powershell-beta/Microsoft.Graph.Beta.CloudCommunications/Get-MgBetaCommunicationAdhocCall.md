@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationAdhocCall
 
 A collection of ad hoc calls in Teams.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationAdhocCall](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationAdhocCall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

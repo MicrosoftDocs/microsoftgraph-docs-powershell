@@ -15,6 +15,9 @@ title: Update-MgBetaCommunicationCallRecordOrganizerV2
 
 Update the navigation property organizer_v2 in communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallRecordOrganizerV2](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordOrganizerV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

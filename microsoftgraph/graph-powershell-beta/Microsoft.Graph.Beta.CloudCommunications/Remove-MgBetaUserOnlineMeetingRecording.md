@@ -16,6 +16,9 @@ title: Remove-MgBetaUserOnlineMeetingRecording
 The content stream of the recording of a Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingRecording?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
