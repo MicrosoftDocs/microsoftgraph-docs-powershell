@@ -15,6 +15,9 @@ title: Update-MgSecuritySecureScore
 
 Update the navigation property secureScores in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

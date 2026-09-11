@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation
 
 Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodian.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

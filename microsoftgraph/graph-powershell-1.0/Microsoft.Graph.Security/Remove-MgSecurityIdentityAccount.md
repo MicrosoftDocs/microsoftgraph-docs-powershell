@@ -15,6 +15,9 @@ title: Remove-MgSecurityIdentityAccount
 
 Delete navigation property identityAccounts for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIdentityAccount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

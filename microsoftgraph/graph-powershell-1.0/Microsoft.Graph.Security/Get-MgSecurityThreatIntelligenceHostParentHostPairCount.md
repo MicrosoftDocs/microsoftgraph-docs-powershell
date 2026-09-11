@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceHostParentHostPairCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostParentHostPairCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostParentHostPairCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

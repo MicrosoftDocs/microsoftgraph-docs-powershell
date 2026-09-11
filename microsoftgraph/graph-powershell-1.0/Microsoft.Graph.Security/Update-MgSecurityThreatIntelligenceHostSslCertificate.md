@@ -15,6 +15,9 @@ title: Update-MgSecurityThreatIntelligenceHostSslCertificate
 
 Update the navigation property hostSslCertificates in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

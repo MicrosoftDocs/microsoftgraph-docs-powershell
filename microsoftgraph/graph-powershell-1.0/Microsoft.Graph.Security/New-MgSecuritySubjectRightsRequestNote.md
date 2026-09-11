@@ -15,6 +15,9 @@ title: New-MgSecuritySubjectRightsRequestNote
 
 Create new navigation property to notes for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

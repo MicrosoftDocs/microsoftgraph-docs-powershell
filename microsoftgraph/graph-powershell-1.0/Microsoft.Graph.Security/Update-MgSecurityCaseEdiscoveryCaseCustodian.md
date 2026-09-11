@@ -15,6 +15,9 @@ title: Update-MgSecurityCaseEdiscoveryCaseCustodian
 
 Update the navigation property custodians in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

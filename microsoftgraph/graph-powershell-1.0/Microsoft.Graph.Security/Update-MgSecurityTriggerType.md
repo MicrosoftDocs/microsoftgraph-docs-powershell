@@ -15,6 +15,9 @@ title: Update-MgSecurityTriggerType
 
 Update the navigation property triggerTypes in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgSecurityThreatIntelligenceArticle
 
 Update the navigation property articles in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgSecurityAttackSimulation
 
 Delete an attack simulation campaign for a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

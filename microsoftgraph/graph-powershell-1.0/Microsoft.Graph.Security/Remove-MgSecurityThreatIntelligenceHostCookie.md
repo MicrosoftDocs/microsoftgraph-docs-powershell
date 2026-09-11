@@ -15,6 +15,9 @@ title: Remove-MgSecurityThreatIntelligenceHostCookie
 
 Delete navigation property hostCookies for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

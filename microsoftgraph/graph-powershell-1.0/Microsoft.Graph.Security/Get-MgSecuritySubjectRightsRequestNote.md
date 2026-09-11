@@ -15,6 +15,9 @@ title: Get-MgSecuritySubjectRightsRequestNote
 
 List of notes associated with the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

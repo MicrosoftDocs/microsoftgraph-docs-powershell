@@ -15,6 +15,9 @@ title: Update-MgSecurityAttackSimulationEndUserNotificationDetail
 
 Update the navigation property details in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
