@@ -407,8 +407,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizesharelistsubscription)
-- [](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)
+- [Invoke-MgBetaReauthorizeShareListSubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizesharelistsubscription)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-beta)
 
 
 

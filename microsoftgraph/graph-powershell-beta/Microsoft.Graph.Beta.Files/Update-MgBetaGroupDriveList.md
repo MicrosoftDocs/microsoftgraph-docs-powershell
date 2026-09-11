@@ -57219,7 +57219,7 @@ For more information, see RFC 8291 Section 3.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelist)
+- [Update-MgBetaGroupDriveList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelist)
 
 
 

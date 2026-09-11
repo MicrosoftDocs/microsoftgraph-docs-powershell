@@ -649,7 +649,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemdocumentsetversionfield)
+- [Update-MgBetaShareListItemDocumentSetVersionField](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemdocumentsetversionfield)
 
 
 

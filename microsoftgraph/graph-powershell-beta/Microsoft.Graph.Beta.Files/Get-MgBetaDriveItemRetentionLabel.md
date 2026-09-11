@@ -402,8 +402,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemretentionlabel)
-- [](https://learn.microsoft.com/graph/api/driveitem-getretentionlabel?view=graph-rest-beta)
+- [Get-MgBetaDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-getretentionlabel?view=graph-rest-beta)
 
 
 

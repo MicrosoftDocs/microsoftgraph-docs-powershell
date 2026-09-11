@@ -37514,7 +37514,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemanalytic)
+- [Update-MgBetaUserDriveItemAnalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemanalytic)
 
 
 

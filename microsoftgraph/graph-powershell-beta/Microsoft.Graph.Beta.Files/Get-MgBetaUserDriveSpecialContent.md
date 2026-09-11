@@ -433,7 +433,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivespecialcontent)
+- [Get-MgBetaUserDriveSpecialContent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivespecialcontent)
 
 
 

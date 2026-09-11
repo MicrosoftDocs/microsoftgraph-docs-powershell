@@ -386,7 +386,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootlastmodifiedbyuserserviceprovisioningerrorcount)
+- [Get-MgBetaUserDriveRootLastModifiedByUserServiceProvisioningErrorCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootlastmodifiedbyuserserviceprovisioningerrorcount)
 
 
 

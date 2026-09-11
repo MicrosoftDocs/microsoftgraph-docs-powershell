@@ -606,7 +606,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitem)
+- [Get-MgBetaShareListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitem)
 
 
 

@@ -67726,7 +67726,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemchild)
+- [New-MgBetaDriveItemChild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemchild)
 
 
 

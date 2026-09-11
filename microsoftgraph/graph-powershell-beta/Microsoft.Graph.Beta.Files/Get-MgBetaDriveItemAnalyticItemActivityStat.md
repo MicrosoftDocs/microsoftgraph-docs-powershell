@@ -604,7 +604,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalyticitemactivitystat)
+- [Get-MgBetaDriveItemAnalyticItemActivityStat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemanalyticitemactivitystat)
 
 
 
