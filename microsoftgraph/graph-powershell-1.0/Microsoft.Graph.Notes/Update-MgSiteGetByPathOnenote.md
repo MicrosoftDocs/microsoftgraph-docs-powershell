@@ -15,6 +15,9 @@ title: Update-MgSiteGetByPathOnenote
 
 Update the navigation property onenote in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteGetByPathOnenote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
