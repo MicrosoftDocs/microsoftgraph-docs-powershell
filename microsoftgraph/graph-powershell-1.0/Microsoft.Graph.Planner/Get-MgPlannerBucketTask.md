@@ -15,6 +15,9 @@ title: Get-MgPlannerBucketTask
 
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

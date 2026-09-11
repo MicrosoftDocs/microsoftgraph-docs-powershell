@@ -15,6 +15,9 @@ title: Update-MgPlanner
 
 Update planner
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
