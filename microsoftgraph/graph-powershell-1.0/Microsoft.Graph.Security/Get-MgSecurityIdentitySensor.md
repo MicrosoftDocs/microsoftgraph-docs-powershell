@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a sensor object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIdentitiesSensors.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIdentitiesSensors.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

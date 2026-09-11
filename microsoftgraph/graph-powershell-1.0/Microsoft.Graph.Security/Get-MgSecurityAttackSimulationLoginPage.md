@@ -77,6 +77,14 @@ This cmdlet has the following aliases,
 Get a loginPage associated with an attack simulation campaign for a tenant.
 Login pages are shown to users in attack simulations that use credential harvest and link in attachment social engineering techniques.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AttackSimulation.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AttackSimulation.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
