@@ -15,6 +15,9 @@ title: Update-MgGroupOnPremiseSyncBehavior
 
 Update the navigation property onPremisesSyncBehavior in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupOnPremiseSyncBehavior?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

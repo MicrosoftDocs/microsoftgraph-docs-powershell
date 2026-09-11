@@ -15,6 +15,9 @@ title: Get-MgGroupTransitiveMemberAsOrgContact
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberAsOrgContact](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberAsOrgContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -17,6 +17,9 @@ Add a member to a security or Microsoft 365 group.
 When using the API to add multiple members in one request, you can add up to only 20 members.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

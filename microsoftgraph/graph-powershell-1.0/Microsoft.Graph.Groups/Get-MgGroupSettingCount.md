@@ -15,6 +15,9 @@ title: Get-MgGroupSettingCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSettingCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSettingCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

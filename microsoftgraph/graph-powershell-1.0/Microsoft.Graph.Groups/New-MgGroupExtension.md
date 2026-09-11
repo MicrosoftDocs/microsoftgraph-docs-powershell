@@ -15,6 +15,9 @@ title: New-MgGroupExtension
 
 Create new navigation property to extensions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

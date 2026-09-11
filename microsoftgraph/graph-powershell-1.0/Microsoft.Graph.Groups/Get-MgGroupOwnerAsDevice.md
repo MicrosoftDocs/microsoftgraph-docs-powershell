@@ -15,6 +15,9 @@ title: Get-MgGroupOwnerAsDevice
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOwnerAsDevice](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
