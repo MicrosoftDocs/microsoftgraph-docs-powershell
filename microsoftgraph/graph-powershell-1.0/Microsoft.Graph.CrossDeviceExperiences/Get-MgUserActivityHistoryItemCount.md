@@ -15,6 +15,9 @@ title: Get-MgUserActivityHistoryItemCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItemCount](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItemCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
