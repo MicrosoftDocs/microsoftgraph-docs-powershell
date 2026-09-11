@@ -527,8 +527,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip)
-- [](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0)
+- [Get-MgUserMailTip](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0)
 
 
 
