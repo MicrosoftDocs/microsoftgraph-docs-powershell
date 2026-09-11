@@ -326,7 +326,7 @@ HelpMessage: ''
 
 ### -KnownIssueHistories
 
-.
+
 To construct, see NOTES section for KNOWNISSUEHISTORIES properties and create a hash table.
 
 ```yaml
@@ -608,7 +608,7 @@ HelpMessage: ''
 
 ### -SafeguardHoldIds
 
-.
+
 
 ```yaml
 Type: System.Int32[]
