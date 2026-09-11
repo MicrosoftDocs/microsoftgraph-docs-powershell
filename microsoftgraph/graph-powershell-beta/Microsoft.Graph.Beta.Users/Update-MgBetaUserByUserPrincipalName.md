@@ -254,16 +254,6 @@ This cmdlet has the following aliases,
 Update the properties of a user.
 To use this API to update an agentUser, specify an @odata.type property with a value of #microsoft.graph.agentUser in the request body.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AboutMe
@@ -114553,6 +114543,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserbyuserprincipalname)
 - [](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-beta)
+
 
 
 

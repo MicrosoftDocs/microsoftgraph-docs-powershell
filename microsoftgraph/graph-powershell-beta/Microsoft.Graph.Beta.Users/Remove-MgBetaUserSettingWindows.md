@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Delete all windowsSetting objects of a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -447,6 +437,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows)
 - [](https://learn.microsoft.com/graph/api/windowssetting-delete?view=graph-rest-beta)
+
 
 
 
