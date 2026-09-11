@@ -15,6 +15,9 @@ title: Get-MgBetaEducationRoot
 
 Get education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Get-MgEducationRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

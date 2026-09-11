@@ -15,6 +15,9 @@ title: Get-MgBetaEducationReportSpeakerAssignmentSubmission
 
 Details of submitted speaker assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationReportSpeakerAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationReportSpeakerAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

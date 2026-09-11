@@ -15,6 +15,9 @@ title: Get-MgBetaEducationClassAssignmentSettingDefaultGradingScheme
 
 The default grading scheme for assignments created in this class.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSettingDefaultGradingScheme](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSettingDefaultGradingScheme?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

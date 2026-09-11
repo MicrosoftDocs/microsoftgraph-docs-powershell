@@ -16,6 +16,9 @@ title: Get-MgBetaEducationUserClass
 Classes to which the user belongs.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserClass?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

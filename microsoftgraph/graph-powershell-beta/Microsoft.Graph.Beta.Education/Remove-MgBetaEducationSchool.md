@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationSchool
 
 Delete a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchool?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

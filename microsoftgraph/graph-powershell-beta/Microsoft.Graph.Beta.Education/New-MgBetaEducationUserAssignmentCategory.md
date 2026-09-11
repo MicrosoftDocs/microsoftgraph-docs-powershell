@@ -15,6 +15,9 @@ title: New-MgBetaEducationUserAssignmentCategory
 
 Create new navigation property to categories for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
