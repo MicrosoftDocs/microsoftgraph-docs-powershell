@@ -82,7 +82,7 @@ HelpMessage: ''
 
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStates
 
-.
+
 To construct, see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
 
 ```yaml
