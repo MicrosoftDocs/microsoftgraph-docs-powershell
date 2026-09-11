@@ -539,7 +539,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphOneDriveForBusinessBrowseSession>: oneDriveForBusinessBrowseSession
+BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessBrowseSession>`: oneDriveForBusinessBrowseSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BackupSizeInBytes <String>]: The size of the backup in bytes.
   [CreatedDateTime <DateTime?>]: The date and time when the browse session was created.
@@ -568,7 +568,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   [DirectoryObjectId <String>]: Id of the backed-up OneDrive.
 
-ERROR <IMicrosoftGraphPublicError>: publicError
+ERROR `<IMicrosoftGraphPublicError>`: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -589,3 +589,25 @@ ERROR <IMicrosoftGraphPublicError>: publicError
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-onedriveforbusinessbrowsesessions?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
