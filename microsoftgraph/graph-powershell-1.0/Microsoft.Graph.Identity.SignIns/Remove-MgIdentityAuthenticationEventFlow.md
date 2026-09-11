@@ -15,7 +15,7 @@ title: Remove-MgIdentityAuthenticationEventFlow
 
 Delete a specific authenticationEventsFlow resource by ID.
 This operation also removes or unlinks all applications from the flow, which disables the customized authentication experience defined for the application.
-The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ This cmdlet has the following aliases,
 
 Delete a specific authenticationEventsFlow resource by ID.
 This operation also removes or unlinks all applications from the flow, which disables the customized authentication experience defined for the application.
-The following derived subtypes are supported:\r\n- externalUsersSelfServiceSignupEventsFlow
+The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow
 
 ## EXAMPLES
 
@@ -386,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -458,3 +458,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflow)
 - [](https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

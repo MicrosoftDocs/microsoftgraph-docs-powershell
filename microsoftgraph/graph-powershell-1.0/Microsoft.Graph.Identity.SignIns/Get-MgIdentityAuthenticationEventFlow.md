@@ -14,7 +14,7 @@ title: Get-MgIdentityAuthenticationEventFlow
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
-The @odata.type property in the response object indicates the type of the object, which can be one of the following derived subtypes:\r\n- externalUsersSelfServiceSignupEventsFlow
+The @odata.type property in the response object indicates the type of the object, which can be one of the following derived subtypes:\r- externalUsersSelfServiceSignupEventsFlow
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
-The @odata.type property in the response object indicates the type of the object, which can be one of the following derived subtypes:\r\n- externalUsersSelfServiceSignupEventsFlow
+The @odata.type property in the response object indicates the type of the object, which can be one of the following derived subtypes:\r- externalUsersSelfServiceSignupEventsFlow
 
 ## EXAMPLES
 
@@ -545,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -618,3 +618,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflow)
 - [](https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

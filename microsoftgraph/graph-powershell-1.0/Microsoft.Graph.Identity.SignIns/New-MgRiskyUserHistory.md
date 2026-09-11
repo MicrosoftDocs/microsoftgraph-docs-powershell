@@ -797,12 +797,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITY <IMicrosoftGraphRiskUserActivity>: riskUserActivity
+ACTIVITY `<IMicrosoftGraphRiskUserActivity>`: riskUserActivity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Detail <String>]: riskDetail
   [RiskEventTypes <String[]>]: The type of risk event detected.
 
-BODYPARAMETER <IMicrosoftGraphRiskyUserHistoryItem>: riskyUserHistoryItem
+BODYPARAMETER `<IMicrosoftGraphRiskyUserHistoryItem>`: riskyUserHistoryItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [History <IMicrosoftGraphRiskyUserHistoryItem[]>]: The activity related to user risk level change
   [IsDeleted <Boolean?>]: Indicates whether the user is deleted.
@@ -847,7 +847,7 @@ Read-only.
   [InitiatedBy <String>]: The ID of actor that does the operation.
   [UserId <String>]: The ID of the user.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -918,3 +918,25 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyuserhistory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
