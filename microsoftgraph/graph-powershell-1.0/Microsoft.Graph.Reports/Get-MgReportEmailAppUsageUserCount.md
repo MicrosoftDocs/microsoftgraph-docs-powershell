@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the count of unique users that connected to Exchange Online using any email app.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportEmailAppUsageUserCount -Period $periodId
+Get-MgReportEmailAppUsageUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportEmailAppUsageUserCount Cmdlet.
+
 
 ## PARAMETERS
 

@@ -59,8 +59,9 @@ For details about investigating Identity Protection risks, see How to investigat
 | Application | IdentityRiskEvent.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
@@ -72,6 +73,10 @@ $params = @{
 }
 
 Invoke-MgDismissAuditLogSignIn -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgDismissAuditLogSignIn Cmdlet.
+
 
 ## PARAMETERS
 
