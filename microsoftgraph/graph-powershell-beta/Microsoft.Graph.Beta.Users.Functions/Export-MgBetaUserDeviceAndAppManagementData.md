@@ -15,6 +15,9 @@ title: Export-MgBetaUserDeviceAndAppManagementData
 
 Invoke function exportDeviceAndAppManagementData
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgUserDeviceAndAppManagementData](/powershell/module/Microsoft.Graph.Users.Functions/Export-MgUserDeviceAndAppManagementData?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Export (Default)

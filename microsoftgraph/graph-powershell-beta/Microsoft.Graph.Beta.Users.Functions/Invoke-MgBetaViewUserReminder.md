@@ -15,6 +15,9 @@ title: Invoke-MgBetaViewUserReminder
 
 Return a list of event reminders in a user calendar within the specified start and end times.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgViewUserReminder](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgViewUserReminder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### View (Default)
