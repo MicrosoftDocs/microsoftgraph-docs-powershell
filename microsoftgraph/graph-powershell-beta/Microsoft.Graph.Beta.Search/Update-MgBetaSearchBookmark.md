@@ -930,7 +930,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSearchBookmark>: bookmark
+BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: The search answer description that is shown on the search results page.
   [DisplayName <String>]: The search answer name that is displayed in search results.
@@ -987,7 +987,7 @@ The date and group settings apply to all variations.
     [WebUrl <String>]: The URL link for the answer variation.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [AuthorizationSystemId <String>]: The unique identifier of authorizationSystem
   [BookmarkId <String>]: The unique identifier of bookmark
@@ -1010,13 +1010,13 @@ INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [SourceSystemDefinitionId <String>]: The unique identifier of sourceSystemDefinition
   [YearTimePeriodDefinitionId <String>]: The unique identifier of yearTimePeriodDefinition
 
-KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>: answerKeyword
+KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Keywords <String[]>]: A collection of keywords used to trigger the search answer.
   [MatchSimilarKeywords <Boolean?>]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
   [ReservedKeywords <String[]>]: Unique keywords that guarantee the search answer is triggered.
 
-LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphSearchIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1040,3 +1040,25 @@ When users select this answer variation from the search results, they're directe
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark)
 - [](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
