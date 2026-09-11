@@ -1427,8 +1427,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness)
-- [](https://learn.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-1.0)
+- [New-MgBookingBusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-1.0)
 
 
 
