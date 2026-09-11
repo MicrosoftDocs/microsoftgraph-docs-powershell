@@ -69,16 +69,6 @@ This cmdlet has the following aliases,
 
 Copy a mail folder and its contents to another mail folder.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -541,6 +531,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/copy-mgbetausermailfolderchildfolder)
 - [](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-beta)
+
 
 
 
