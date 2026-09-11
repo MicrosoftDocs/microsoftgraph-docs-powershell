@@ -541,8 +541,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-post-tlsinspectionpolicies?view=graph-rest-beta)
+- [New-MgBetaNetworkAccessTlInspectionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccesstlinspectionpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-post-tlsinspectionpolicies?view=graph-rest-beta)
 
 
 
