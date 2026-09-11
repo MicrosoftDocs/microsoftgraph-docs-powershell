@@ -15,6 +15,9 @@ title: Update-MgUserSettingStorageQuotaService
 
 Update the navigation property services in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingStorageQuotaService](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingStorageQuotaService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

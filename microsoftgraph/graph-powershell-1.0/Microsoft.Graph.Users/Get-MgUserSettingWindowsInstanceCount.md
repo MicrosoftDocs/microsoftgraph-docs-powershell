@@ -15,6 +15,9 @@ title: Get-MgUserSettingWindowsInstanceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWindowsInstanceCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindowsInstanceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

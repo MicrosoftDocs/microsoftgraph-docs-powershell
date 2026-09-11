@@ -16,6 +16,9 @@ title: Get-MgUserTodoTaskAttachmentContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

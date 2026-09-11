@@ -15,6 +15,9 @@ title: Get-MgUserManager
 
 Returns the user or organizational contact assigned as the agentUser's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

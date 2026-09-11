@@ -15,6 +15,9 @@ title: Get-MgUserLicenseDetailTeamLicensingDetail
 
 Get the license status of a user in Microsoft Teams.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserLicenseDetailTeamLicensingDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetailTeamLicensingDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

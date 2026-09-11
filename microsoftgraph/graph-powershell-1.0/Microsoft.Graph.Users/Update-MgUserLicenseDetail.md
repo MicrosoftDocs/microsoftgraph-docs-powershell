@@ -15,6 +15,9 @@ title: Update-MgUserLicenseDetail
 
 Update the navigation property licenseDetails in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserLicenseDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

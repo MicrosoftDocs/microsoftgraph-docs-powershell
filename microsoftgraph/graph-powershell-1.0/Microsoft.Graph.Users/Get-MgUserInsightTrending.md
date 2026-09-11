@@ -17,6 +17,9 @@ Calculated relationship that identifies documents trending around a user.
 Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for work or school and SharePoint.
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInsightTrending](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserInsightTrending?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

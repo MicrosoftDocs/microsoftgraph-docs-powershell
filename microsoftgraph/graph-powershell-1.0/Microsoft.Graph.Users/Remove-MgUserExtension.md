@@ -15,6 +15,9 @@ title: Remove-MgUserExtension
 
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

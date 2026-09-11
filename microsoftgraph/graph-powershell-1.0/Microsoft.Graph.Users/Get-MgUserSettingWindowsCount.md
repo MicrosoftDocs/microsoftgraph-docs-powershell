@@ -15,6 +15,9 @@ title: Get-MgUserSettingWindowsCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWindowsCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindowsCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
