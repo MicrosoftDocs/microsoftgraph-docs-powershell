@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get settings from users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
