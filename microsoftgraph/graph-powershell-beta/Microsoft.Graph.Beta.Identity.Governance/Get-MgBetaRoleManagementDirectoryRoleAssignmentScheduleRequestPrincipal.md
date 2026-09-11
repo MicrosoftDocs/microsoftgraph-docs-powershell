@@ -16,6 +16,9 @@ title: Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal
 The principal that's getting a role assignment through the request.
 Supports $expand and $select nested in $expand for id only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

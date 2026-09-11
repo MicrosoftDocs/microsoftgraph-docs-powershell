@@ -16,6 +16,9 @@ title: Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDir
 Remove a user or a group from the connected organization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

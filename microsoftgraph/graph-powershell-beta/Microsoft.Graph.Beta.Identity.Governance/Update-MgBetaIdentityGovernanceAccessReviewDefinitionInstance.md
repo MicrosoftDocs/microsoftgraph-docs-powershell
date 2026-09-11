@@ -18,6 +18,9 @@ Only the reviewers and fallbackReviewers properties can be updated but the scope
 You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
 To update an accessReviewInstance, its status must be InProgress.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

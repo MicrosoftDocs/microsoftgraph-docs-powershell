@@ -15,6 +15,9 @@ title: Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentSched
 
 Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject
 
 The unique identifier of the user targeted for the taskProcessingResult.Supports $filter(eq, ne) and $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

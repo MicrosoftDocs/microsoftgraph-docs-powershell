@@ -15,6 +15,9 @@ title: New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance
 
 Create new navigation property to instances for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun
 
 Workflow runs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

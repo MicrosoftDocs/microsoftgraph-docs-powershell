@@ -15,6 +15,9 @@ title: Get-MgBetaRoleManagementEntitlementManagementResourceNamespace
 
 Get resourceNamespaces from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

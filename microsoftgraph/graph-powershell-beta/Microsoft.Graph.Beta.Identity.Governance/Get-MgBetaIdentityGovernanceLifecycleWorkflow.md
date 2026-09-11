@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflow
 
 Read the properties and relationships of a workflow object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

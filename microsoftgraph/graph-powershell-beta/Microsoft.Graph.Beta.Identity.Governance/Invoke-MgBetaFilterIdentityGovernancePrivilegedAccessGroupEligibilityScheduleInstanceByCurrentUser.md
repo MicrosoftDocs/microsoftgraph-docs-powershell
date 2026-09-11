@@ -15,6 +15,9 @@ title: Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupEligibilitySche
 
 Return instances of membership and ownership eligibility schedules for the calling principal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
