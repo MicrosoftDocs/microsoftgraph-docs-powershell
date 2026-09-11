@@ -22,6 +22,9 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageAttachmentUploadSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

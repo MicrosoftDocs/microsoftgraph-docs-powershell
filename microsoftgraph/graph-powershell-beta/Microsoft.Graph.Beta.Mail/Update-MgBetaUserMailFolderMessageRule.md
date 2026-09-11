@@ -15,6 +15,9 @@ title: Update-MgBetaUserMailFolderMessageRule
 
 Update the navigation property messageRules in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
