@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to assignments for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackage
@@ -17291,6 +17281,7 @@ null if the subject isn't yet a user in the tenant.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignment)
+
 
 
 

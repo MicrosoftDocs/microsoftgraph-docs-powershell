@@ -69,12 +69,17 @@ In PIM, read the details of a request for for a role eligibility request made th
 | Application | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
+
+```
+This example shows how to use the Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest Cmdlet.
+
 
 ## PARAMETERS
 

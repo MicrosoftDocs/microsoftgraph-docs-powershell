@@ -97,8 +97,9 @@ Update an existing accessPackageAssignmentPolicy object to change one or more of
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update the details of a policy
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -160,7 +161,12 @@ $params = @{
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update the details of a policy
+
+### Example 2: Remove the customExtensionStageSettings from a policy
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -187,7 +193,12 @@ $params = @{
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will remove the customextensionstagesettings from a policy
+
+### Example 3: Update the customExtensionStageSettings for a policy
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -234,6 +245,10 @@ $params = @{
 }
 
 Set-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
+
+```
+This example will update the customextensionstagesettings for a policy
+
 
 ## PARAMETERS
 
