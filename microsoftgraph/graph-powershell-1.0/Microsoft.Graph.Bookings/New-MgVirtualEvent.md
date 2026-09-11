@@ -15,6 +15,9 @@ title: New-MgVirtualEvent
 
 Create new navigation property to events for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

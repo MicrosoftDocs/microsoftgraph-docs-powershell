@@ -15,6 +15,9 @@ title: Remove-MgVirtualEventWebinar
 
 Delete navigation property webinars for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

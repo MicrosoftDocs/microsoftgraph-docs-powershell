@@ -15,6 +15,9 @@ title: Update-MgBookingBusinessStaffMember
 
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

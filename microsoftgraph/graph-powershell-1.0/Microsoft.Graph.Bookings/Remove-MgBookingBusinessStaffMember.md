@@ -15,6 +15,9 @@ title: Remove-MgBookingBusinessStaffMember
 
 Delete a bookingStaffMember in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

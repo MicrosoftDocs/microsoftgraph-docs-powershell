@@ -15,6 +15,9 @@ title: Remove-MgBookingBusinessCustomer
 
 Delete the specified bookingCustomer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

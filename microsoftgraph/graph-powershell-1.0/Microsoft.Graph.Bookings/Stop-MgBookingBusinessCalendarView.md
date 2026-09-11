@@ -15,6 +15,9 @@ title: Stop-MgBookingBusinessCalendarView
 
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
