@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property rules in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -485,6 +475,7 @@ The allowed values are: 0, 1H, 3H, 12H, or 24H.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityrule)
+
 
 
 

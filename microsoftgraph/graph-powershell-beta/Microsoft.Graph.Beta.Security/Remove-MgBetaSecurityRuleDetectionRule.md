@@ -52,16 +52,6 @@ Delete navigation property detectionRules for security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomDetection.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -495,6 +485,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityruledetectionrule)
+
 
 
 

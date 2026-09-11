@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to incidentTasks for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActionStatus
@@ -824,6 +814,7 @@ This value is specific to the type of action being performed.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincidenttask)
+
 
 
 
