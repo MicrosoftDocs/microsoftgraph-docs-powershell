@@ -77,8 +77,9 @@ The resources in the access package must be present in the target catalog.
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 Move-MgBetaEntitlementManagementAccessPackageToCatalog -AccessPackageId $accessPackageId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgBetaEntitlementManagementAccessPackageToCatalog Cmdlet.
+
 
 ## PARAMETERS
 

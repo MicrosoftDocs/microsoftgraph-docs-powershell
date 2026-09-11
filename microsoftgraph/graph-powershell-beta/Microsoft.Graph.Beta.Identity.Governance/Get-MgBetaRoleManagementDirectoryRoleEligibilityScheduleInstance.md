@@ -69,12 +69,17 @@ Read the properties and relationships of an unifiedRoleEligibilityScheduleInstan
 | Application | RoleEligibilitySchedule.Read.Directory, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance
+
+```
+This example shows how to use the Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance Cmdlet.
+
 
 ## PARAMETERS
 

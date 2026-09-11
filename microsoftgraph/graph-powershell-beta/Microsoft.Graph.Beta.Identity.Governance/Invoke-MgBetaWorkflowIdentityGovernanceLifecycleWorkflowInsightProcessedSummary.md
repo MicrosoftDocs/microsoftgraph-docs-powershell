@@ -52,12 +52,17 @@ Provide a summary of all workflows processed within a tenant for a specified per
 Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
+
+```
+This example shows how to use the Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary Cmdlet.
+
 
 ## PARAMETERS
 

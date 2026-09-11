@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -479,6 +469,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaidentitygovernanceaccessreviewinstancereminder)
 - [](https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-beta)
+
 
 
 

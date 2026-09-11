@@ -60,9 +60,9 @@ A resource must be included in an access package catalog before a role of that r
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a new access package resource request
 
-### EXAMPLE 1
-
+```powershell
 Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
@@ -81,7 +81,10 @@ RequestState          : Delivered
 RequestStatus         : Fulfilled
 RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
-AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}
+AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                            
+```
+
+This example creates a new resource request for addition of a resource to an access package catalog.
 
 ## PARAMETERS
 

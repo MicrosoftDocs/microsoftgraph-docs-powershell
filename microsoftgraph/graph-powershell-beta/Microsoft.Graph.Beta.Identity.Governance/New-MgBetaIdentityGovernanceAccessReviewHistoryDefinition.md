@@ -63,8 +63,9 @@ Create a new accessReviewHistoryDefinition object.
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -96,6 +97,10 @@ queryRoot = $null
 }
 
 New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+
 
 ## PARAMETERS
 

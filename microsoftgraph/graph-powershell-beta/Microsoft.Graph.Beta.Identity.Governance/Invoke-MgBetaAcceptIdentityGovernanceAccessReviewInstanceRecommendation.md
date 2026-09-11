@@ -50,16 +50,6 @@ Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem
 Recommendations are generated if recommendationsEnabled is true on the accessReviewScheduleDefinition object.
 If there isn't a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -485,6 +475,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewinstancerecommendation)
 - [](https://learn.microsoft.com/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-beta)
+
 
 
 

@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 
 Get a list of the unifiedRoleEligibilitySchedule objects and their properties associated with a particular principal object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -593,6 +583,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententitlementmanagementroleeligibilityschedulebycurrentuser)
 - [](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-filterbycurrentuser?view=graph-rest-beta)
+
 
 
 

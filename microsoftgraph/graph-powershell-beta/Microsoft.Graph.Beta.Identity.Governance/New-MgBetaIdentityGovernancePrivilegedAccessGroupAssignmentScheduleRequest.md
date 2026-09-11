@@ -65,16 +65,6 @@ Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessId
@@ -36450,6 +36440,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequest)
 - [](https://learn.microsoft.com/graph/api/privilegedaccessgroup-post-assignmentschedulerequests?view=graph-rest-beta)
+
 
 
 

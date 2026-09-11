@@ -70,8 +70,9 @@ You can create up to 100 workflows in a tenant.
 | Application | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a joiner workflow using the time based trigger
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -117,7 +118,12 @@ $params = @{
 
 New-MgBetaIdentityGovernanceLifecycleWorkflow -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a joiner workflow using the time based trigger
+
+### Example 2: Create a mover workflow using the attribute changes trigger
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -157,7 +163,12 @@ $params = @{
 
 New-MgBetaIdentityGovernanceLifecycleWorkflow -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a mover workflow using the attribute changes trigger
+
+### Example 3: Create a leaver workflow using the group based trigger
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -207,6 +218,10 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceLifecycleWorkflow -BodyParameter $params
+
+```
+This example will create a leaver workflow using the group based trigger
+
 
 ## PARAMETERS
 

@@ -71,12 +71,17 @@ If you want to change a group that originates on-premises, download the results 
 | Application | AccessReview.ReadWrite.Membership,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Add-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId
+
+```
+This example shows how to use the Add-MgBetaAccessReviewDecision Cmdlet.
+
 
 ## PARAMETERS
 

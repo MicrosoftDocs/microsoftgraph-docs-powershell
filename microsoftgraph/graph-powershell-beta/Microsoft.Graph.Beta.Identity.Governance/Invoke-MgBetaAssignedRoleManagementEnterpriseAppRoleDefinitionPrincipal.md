@@ -56,16 +56,6 @@ You can use the $count query parameter to also get the count.
 This API is supported for the directory (Microsoft Entra ID) provider only.
 To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -682,6 +672,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagemententerpriseapproledefinitionprincipal)
 - [](https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta)
+
 
 
 

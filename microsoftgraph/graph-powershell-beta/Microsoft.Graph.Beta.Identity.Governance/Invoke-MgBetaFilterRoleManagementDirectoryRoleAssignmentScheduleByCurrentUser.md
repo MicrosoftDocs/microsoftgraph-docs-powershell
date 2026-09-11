@@ -60,12 +60,17 @@ Retrieve the schedules for active role assignment operations for which the signe
 | Application | RoleAssignmentSchedule.Read.Directory, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser -On $onId
+Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

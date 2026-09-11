@@ -88,12 +88,17 @@ The configurations are predefined and can't be created or deleted, but some of t
 | Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition"
+Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

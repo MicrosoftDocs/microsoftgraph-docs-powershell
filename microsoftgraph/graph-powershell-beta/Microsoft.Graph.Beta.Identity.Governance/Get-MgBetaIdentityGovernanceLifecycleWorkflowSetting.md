@@ -47,12 +47,17 @@ Read the properties and relationships of a lifecycleManagementSettings object.
 | Application | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
+
 
 ## PARAMETERS
 
