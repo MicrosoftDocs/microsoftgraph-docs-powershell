@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAdminConfigurationManagementConfigurationMonitor
 ---
@@ -48,18 +48,9 @@ This cmdlet has the following aliases,
 
 Create a new configurationMonitor object that runs periodically in the background at a scheduled frequency.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ConfigurationMonitoring.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ConfigurationMonitoring.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
@@ -109,10 +100,6 @@ $params = @{
 }
 
 New-MgBetaAdminConfigurationManagementConfigurationMonitor -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaAdminConfigurationManagementConfigurationMonitor Cmdlet.
-
 
 ## PARAMETERS
 
@@ -597,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BASELINE `<IMicrosoftGraphConfigurationBaseline>`: configurationBaseline
+BASELINE <IMicrosoftGraphConfigurationBaseline>: configurationBaseline
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -614,7 +601,7 @@ At least one property of one resource must be present in the baseline.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [ResourceType <String>]: Name of the resource type.
 
-BODYPARAMETER `<IMicrosoftGraphConfigurationMonitor>`: configurationMonitor
+BODYPARAMETER <IMicrosoftGraphConfigurationMonitor>: configurationMonitor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -654,7 +641,7 @@ Supports $filter (eq, ne, startsWith) and $orderby.
   [Parameters <IMicrosoftGraphOpenComplexDictionaryType>]: openComplexDictionaryType
   [Status <MonitorStatus?>]: monitorStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -666,7 +653,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -681,27 +668,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaAdminConfigurationManagementConfigurationMonitor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationmonitor)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmanagement-post-configurationmonitors?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/new-mgbetaadminconfigurationmanagementconfigurationmonitor)
+- [](https://learn.microsoft.com/graph/api/configurationmanagement-post-configurationmonitors?view=graph-rest-beta)
