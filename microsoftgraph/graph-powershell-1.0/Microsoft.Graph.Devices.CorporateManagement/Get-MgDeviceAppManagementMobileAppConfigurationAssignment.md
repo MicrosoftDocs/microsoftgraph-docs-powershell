@@ -71,12 +71,17 @@ The list of group assignemenets for app configration.
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Get-MgDeviceAppManagementMobileAppConfigurationAssignment -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementMobileAppConfigurationAssignment Cmdlet.
+
 
 ## PARAMETERS
 

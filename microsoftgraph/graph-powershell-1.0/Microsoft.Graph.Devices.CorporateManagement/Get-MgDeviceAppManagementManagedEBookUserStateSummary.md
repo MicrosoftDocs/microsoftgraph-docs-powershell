@@ -69,12 +69,17 @@ The list of installation states for this eBook.
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Get-MgDeviceAppManagementManagedEBookUserStateSummary -ManagedEBookId $managedEBookId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementManagedEBookUserStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

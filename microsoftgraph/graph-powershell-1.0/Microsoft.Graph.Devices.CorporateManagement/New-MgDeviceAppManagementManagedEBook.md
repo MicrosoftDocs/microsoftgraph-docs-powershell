@@ -62,8 +62,9 @@ Create new navigation property to managedEBooks for deviceAppManagement
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -93,6 +94,10 @@ usedLicenseCount =
 }
 
 New-MgDeviceAppManagementManagedEBook -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementManagedEBook Cmdlet.
+
 
 ## PARAMETERS
 

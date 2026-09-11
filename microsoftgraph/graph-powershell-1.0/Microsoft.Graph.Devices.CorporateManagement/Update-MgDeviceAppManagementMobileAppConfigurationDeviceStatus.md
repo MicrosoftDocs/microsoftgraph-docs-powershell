@@ -88,8 +88,9 @@ Update the navigation property deviceStatuses in deviceAppManagement
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus -ManagedDeviceMobileAppConfigurationId $managedDeviceMobileAppConfigurationId -ManagedDeviceMobileAppConfigurationDeviceStatusId $managedDeviceMobileAppConfigurationDeviceStatusId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus Cmdlet.
+
 
 ## PARAMETERS
 
