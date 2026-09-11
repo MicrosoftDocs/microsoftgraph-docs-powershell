@@ -1028,8 +1028,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
-- [](https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-beta)
+- [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelistsharedcookie)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-beta)
 
 
 

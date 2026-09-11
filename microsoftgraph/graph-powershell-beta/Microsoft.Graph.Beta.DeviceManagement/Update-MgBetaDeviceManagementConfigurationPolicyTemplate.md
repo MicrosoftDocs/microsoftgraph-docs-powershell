@@ -989,7 +989,7 @@ Applicable for reusable setting.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplate)
+- [Update-MgBetaDeviceManagementConfigurationPolicyTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplate)
 
 
 

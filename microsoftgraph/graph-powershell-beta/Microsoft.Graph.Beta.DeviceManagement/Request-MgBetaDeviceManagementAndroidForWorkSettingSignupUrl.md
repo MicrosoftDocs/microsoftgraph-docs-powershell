@@ -369,7 +369,7 @@ BODYPARAMETER `<IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraph
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementandroidforworksettingsignupurl)
+- [Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/request-mgbetadevicemanagementandroidforworksettingsignupurl)
 
 
 

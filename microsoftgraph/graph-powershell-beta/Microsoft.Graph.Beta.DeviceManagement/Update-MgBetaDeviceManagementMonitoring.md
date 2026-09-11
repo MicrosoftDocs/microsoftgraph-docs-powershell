@@ -538,7 +538,7 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring)
+- [Update-MgBetaDeviceManagementMonitoring](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring)
 
 
 

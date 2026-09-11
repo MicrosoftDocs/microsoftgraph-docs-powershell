@@ -653,7 +653,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/enable-mgbetadevicemanagementcomanageddevicelostmode)
+- [Enable-MgBetaDeviceManagementComanagedDeviceLostMode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/enable-mgbetadevicemanagementcomanageddevicelostmode)
 
 
 

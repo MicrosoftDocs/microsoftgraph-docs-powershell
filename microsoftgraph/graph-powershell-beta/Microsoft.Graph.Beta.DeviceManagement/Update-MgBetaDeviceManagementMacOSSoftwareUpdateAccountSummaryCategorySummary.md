@@ -888,7 +888,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
+- [Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary)
 
 
 
