@@ -81,16 +81,6 @@ When using MIME format:\r- Provide the applicable Internet message headers and t
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -798,6 +788,7 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereplyall)
 - [](https://learn.microsoft.com/graph/api/message-createreplyall?view=graph-rest-1.0)
+
 
 
 
