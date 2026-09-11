@@ -79,8 +79,9 @@ The policy can be one of the following types:
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessFilteringProfilePolicy Cmdlet.
+
 
 ## PARAMETERS
 

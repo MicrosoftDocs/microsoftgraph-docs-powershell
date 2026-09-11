@@ -59,8 +59,9 @@ This request generates the Certificate Signing Request (CSR) that you download t
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -72,6 +73,10 @@ $params = @{
 }
 
 New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate Cmdlet.
+
 
 ## PARAMETERS
 
