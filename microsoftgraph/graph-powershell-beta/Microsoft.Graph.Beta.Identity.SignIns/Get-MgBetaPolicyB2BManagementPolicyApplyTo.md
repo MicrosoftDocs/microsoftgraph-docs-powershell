@@ -58,12 +58,17 @@ This cmdlet has the following aliases,
 Get appliesTo from policies
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyB2BManagementPolicyApplyTo -B2bManagementPolicyId $b2bManagementPolicyId
+
+```
+This example shows how to use the Get-MgBetaPolicyB2BManagementPolicyApplyTo Cmdlet.
+
 
 ## PARAMETERS
 

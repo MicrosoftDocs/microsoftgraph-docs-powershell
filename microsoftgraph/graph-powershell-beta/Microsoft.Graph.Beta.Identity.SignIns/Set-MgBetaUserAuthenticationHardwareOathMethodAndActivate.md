@@ -79,8 +79,9 @@ This operation requires the device ID to activate it.
 | Application | UserAuthMethod-HardwareOATH.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -94,6 +95,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Set-MgBetaUserAuthenticationHardwareOathMethodAndActivate -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaUserAuthenticationHardwareOathMethodAndActivate Cmdlet.
+
 
 ## PARAMETERS
 

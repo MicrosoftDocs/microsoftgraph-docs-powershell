@@ -69,9 +69,9 @@ Retrieve the properties and relationships of a conditionalAccessPolicy object.
 | Application | Policy.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get a list of all conditional access policies in Azure AD.
 
-### EXAMPLE 1
-
+```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessPolicy |Format-List
 
@@ -96,9 +96,13 @@ ModifiedDateTime     : 7/29/2022 9:08:39 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {}
+```
 
-### EXAMPLE 2
+This example retrieves all the conditional access policies in Azure AD.
 
+### Example 2: Get a conditional access policy by Id
+
+```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 
   Format-List
@@ -113,6 +117,9 @@ ModifiedDateTime     : 7/29/2022 9:08:10 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
+```
+
+This command retrieves the conditional access by Id.
 
 ## PARAMETERS
 

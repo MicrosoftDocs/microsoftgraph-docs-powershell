@@ -51,12 +51,17 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaOauth2PermissionGrantDelta
+
+```
+This example shows how to use the Get-MgBetaOauth2PermissionGrantDelta Cmdlet.
+
 
 ## PARAMETERS
 

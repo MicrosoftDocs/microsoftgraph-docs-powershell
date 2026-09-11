@@ -60,12 +60,17 @@ Policies in the former category are restricted in what kinds of changes may be m
 | Application | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId
+
+```
+This example shows how to use the Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy Cmdlet.
+
 
 ## PARAMETERS
 

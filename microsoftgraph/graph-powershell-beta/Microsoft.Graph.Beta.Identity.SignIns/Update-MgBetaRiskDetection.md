@@ -80,16 +80,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property riskDetections in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -1233,6 +1223,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection)
+
 
 
 

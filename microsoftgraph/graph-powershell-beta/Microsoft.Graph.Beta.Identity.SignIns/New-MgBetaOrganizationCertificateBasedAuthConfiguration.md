@@ -80,8 +80,9 @@ Create a new certificateBasedAuthConfiguration object.
 | Application | Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 New-MgBetaOrganizationCertificateBasedAuthConfiguration -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaOrganizationCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
