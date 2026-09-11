@@ -522,7 +522,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphNetworkaccessBranchConnectivityConfiguration>: branchConnectivityConfiguration
+BODYPARAMETER `<IMicrosoftGraphNetworkaccessBranchConnectivityConfiguration>`: branchConnectivityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BranchId <String>]: Unique identifier or a specific reference assigned to a branchSite.
 Key.
@@ -542,7 +542,7 @@ Read-only.
       [BgpAddress <String>]: Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).
       [Endpoint <String>]: Specifies public IPv4 address of one end of IPSec tunnel (local or peer).
 
-INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
+INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -589,3 +589,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchconnectivityconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
