@@ -15,6 +15,9 @@ title: Get-MgPrintTaskDefinitionTaskCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinitionTaskCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinitionTaskCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

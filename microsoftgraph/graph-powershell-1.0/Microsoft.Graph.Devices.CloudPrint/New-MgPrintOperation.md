@@ -15,6 +15,9 @@ title: New-MgPrintOperation
 
 Create new navigation property to operations for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
