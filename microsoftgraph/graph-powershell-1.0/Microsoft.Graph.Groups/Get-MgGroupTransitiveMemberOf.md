@@ -608,8 +608,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof)
-- [](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-1.0)
+- [Get-MgGroupTransitiveMemberOf](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-transitivememberof?view=graph-rest-1.0)
 
 
 

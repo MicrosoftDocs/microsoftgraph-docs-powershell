@@ -682,7 +682,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachment)
+- [New-MgGroupThreadPostAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachment)
 
 
 

@@ -666,8 +666,8 @@ VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs correspon
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting)
-- [](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0)
+- [New-MgGroupSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0)
 
 
 

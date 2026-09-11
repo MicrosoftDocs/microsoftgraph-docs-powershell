@@ -30996,8 +30996,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup)
-- [](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
+- [Update-MgGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
 
 
 

@@ -31025,8 +31025,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename)
-- [](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
+- [Update-MgGroupByUniqueName](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-upsert?view=graph-rest-1.0)
 
 
 

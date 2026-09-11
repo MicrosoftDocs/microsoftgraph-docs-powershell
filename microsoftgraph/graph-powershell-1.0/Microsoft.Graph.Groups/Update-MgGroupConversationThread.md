@@ -964,7 +964,7 @@ Requires $select to retrieve.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread)
+- [Update-MgGroupConversationThread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread)
 
 
 
