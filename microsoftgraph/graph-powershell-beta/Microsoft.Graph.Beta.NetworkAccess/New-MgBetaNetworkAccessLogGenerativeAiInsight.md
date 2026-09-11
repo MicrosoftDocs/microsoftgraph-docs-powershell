@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to generativeAIInsights for networkAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -645,6 +635,7 @@ Supports $filter (eq) and $orderby.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/new-mgbetanetworkaccessloggenerativeaiinsight)
+
 
 
 
