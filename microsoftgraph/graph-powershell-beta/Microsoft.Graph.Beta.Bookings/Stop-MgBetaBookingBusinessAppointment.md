@@ -78,17 +78,21 @@ Cancel the specified bookingAppointment in the specified bookingBusiness, and se
 | Application | Bookings.ReadWrite.All, Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
-	cancellationMessage = "Your appointment has been successfully cancelled.
-Please call us again."
+	cancellationMessage = "Your appointment has been successfully cancelled. Please call us again."
 }
 
 Stop-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBetaBookingBusinessAppointment Cmdlet.
+
 
 ## PARAMETERS
 

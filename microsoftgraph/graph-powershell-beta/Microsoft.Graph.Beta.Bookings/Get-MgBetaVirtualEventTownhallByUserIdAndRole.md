@@ -59,16 +59,6 @@ Get a list of virtualEventTownhall objects where the specified user is either th
 | Delegated (personal Microsoft account) | Not supported |
 | Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -533,6 +523,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallbyuseridandrole)
 - [](https://learn.microsoft.com/graph/api/virtualeventtownhall-getbyuseridandrole?view=graph-rest-beta)
+
 
 
 
