@@ -16,6 +16,9 @@ title: Get-MgBetaAuditLogSignIn
 Retrieve a specific Microsoft Entra user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

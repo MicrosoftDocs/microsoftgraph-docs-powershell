@@ -15,6 +15,9 @@ title: Get-MgBetaReportTeamActivityDistributionCount
 
 Invoke function getTeamsTeamActivityDistributionCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamActivityDistributionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

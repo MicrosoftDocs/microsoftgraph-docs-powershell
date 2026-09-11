@@ -15,6 +15,9 @@ title: New-MgBetaReportPartnerBillingManifest
 
 Create new navigation property to manifests for reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

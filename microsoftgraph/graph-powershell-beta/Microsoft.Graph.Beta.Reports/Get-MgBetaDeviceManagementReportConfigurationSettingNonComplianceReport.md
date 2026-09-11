@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementReportConfigurationSettingNonComplianceReport
 
 Invoke action getConfigurationSettingNonComplianceReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

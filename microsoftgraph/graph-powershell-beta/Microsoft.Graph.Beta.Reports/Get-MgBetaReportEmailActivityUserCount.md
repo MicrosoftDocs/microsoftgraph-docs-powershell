@@ -15,6 +15,9 @@ title: Get-MgBetaReportEmailActivityUserCount
 
 Invoke function getEmailActivityUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportEmailActivityUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

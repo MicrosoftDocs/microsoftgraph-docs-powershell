@@ -15,6 +15,9 @@ title: Get-MgBetaReportMailboxUsageDetail
 
 Invoke function getMailboxUsageDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportMailboxUsageDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMailboxUsageDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -17,6 +17,9 @@ Allow admins to mark an event in Microsoft Entra sign-in logs as safe.
 Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgAuditLogSignInSafe](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInSafe?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
