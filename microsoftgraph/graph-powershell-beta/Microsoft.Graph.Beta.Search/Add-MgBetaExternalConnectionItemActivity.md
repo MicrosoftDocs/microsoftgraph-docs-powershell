@@ -75,7 +75,7 @@ Invoke action addActivities
 
 ### -Activities
 
-.
+
 To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
@@ -130,7 +130,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
