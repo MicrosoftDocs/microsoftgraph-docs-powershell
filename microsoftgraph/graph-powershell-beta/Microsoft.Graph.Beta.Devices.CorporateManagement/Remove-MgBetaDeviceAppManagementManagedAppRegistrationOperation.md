@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation
 
 Delete navigation property operations for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

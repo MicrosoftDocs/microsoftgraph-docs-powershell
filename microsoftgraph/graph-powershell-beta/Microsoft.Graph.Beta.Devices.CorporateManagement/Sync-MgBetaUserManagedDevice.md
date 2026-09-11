@@ -15,6 +15,9 @@ title: Sync-MgBetaUserManagedDevice
 
 Invoke action syncDevice
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Sync-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Sync (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementVppToken
 
 Create new navigation property to vppTokens for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

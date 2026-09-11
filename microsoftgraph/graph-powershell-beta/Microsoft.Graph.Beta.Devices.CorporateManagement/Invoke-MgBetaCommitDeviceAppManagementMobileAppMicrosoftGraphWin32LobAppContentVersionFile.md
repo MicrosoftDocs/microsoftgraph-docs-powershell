@@ -15,6 +15,9 @@ title: Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppC
 
 Commits a file of a given app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphWin32LobAppContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CommitExpanded (Default)

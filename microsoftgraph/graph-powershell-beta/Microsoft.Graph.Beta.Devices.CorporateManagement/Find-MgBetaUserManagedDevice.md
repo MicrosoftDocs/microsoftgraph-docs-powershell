@@ -15,6 +15,9 @@ title: Find-MgBetaUserManagedDevice
 
 Locate a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Find-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Find-MgUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Locate (Default)

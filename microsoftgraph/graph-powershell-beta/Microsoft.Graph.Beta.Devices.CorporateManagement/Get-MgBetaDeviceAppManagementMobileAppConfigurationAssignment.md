@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment
 
 The list of group assignemenets for app configration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppConfigurationAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

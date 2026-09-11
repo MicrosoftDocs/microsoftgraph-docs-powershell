@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

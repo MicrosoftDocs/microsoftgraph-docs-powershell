@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementManagedAppPolicy
 
 Managed app policies.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
