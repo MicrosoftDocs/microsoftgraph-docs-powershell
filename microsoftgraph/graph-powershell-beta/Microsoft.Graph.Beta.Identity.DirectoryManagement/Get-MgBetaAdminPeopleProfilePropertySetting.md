@@ -69,12 +69,17 @@ Read the properties and relationships of a profilePropertySetting object.
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaAdminPeopleProfilePropertySetting
+
+```
+This example shows how to use the Get-MgBetaAdminPeopleProfilePropertySetting Cmdlet.
+
 
 ## PARAMETERS
 

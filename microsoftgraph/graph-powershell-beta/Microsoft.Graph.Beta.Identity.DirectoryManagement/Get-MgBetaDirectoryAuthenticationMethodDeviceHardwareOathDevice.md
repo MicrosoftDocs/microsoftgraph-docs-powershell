@@ -58,24 +58,39 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a hardwareOathTokenAuthenticationMethodDevice object.
 
 ## EXAMPLES
+### Example 1: List all tokens in the inventory
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice
 
-### EXAMPLE 2
+```
+This example will list all tokens in the inventory
+
+### Example 2: List all tokens in the inventory, filtered on status
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "status eq 'activated'"
+Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "status eq 'activated'" 
 
-### EXAMPLE 3
+```
+This example will list all tokens in the inventory, filtered on status
+
+### Example 3: Find a specific token by serial number
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "serialNumber eq 'TOTP123456'"
+Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -Filter "serialNumber eq 'TOTP123456'" 
+
+```
+This example will find a specific token by serial number
+
 
 ## PARAMETERS
 

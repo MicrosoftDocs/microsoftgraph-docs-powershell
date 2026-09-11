@@ -65,16 +65,6 @@ Validate the mail nickname is unique This API returns with the first failure enc
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -480,6 +470,7 @@ BODYPARAMETER `<IPaths12Jg47YDirectoryDeleteditemsMicrosoftGraphValidateproperti
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/test-mgbetadirectorydeleteditemproperty)
 - [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
+
 
 
 

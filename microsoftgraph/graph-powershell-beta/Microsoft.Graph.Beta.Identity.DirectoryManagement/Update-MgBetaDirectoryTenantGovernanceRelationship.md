@@ -80,8 +80,9 @@ There are two models for termination:\r1) Initiated by the governing tenant: Aft
 When the governed tenant updates the status to terminated in either model, the resources that were provisioned in the governed tenant upon relationship creation are deleted.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryTenantGovernanceRelationship -GovernanceRelationshipId $governanceRelationshipId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRelationship Cmdlet.
+
 
 ## PARAMETERS
 

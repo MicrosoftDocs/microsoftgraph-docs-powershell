@@ -60,16 +60,6 @@ This cmdlet has the following aliases,
 
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -602,6 +592,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydevicelocalcredential)
 - [](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-beta)
+
+
 
 
 

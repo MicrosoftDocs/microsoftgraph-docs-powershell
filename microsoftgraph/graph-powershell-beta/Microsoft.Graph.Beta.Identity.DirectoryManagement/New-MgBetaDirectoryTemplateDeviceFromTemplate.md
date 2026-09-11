@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 
 Create a new device from a deviceTemplate.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -726,6 +716,7 @@ If usage is Sign​, the type should be X509CertAndPassword​, and the password
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytemplatedevicefromtemplate)
 - [](https://learn.microsoft.com/graph/api/devicetemplate-createdevicefromtemplate?view=graph-rest-beta)
+
 
 
 

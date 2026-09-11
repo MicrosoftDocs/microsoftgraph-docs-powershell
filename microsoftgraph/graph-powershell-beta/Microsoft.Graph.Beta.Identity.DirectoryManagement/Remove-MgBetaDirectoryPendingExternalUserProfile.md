@@ -57,12 +57,17 @@ To restore a pendingExternalUserProfile, follow restore a deleted item.
 | Application | PendingExternalUserProfile.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDirectoryPendingExternalUserProfile -PendingExternalUserProfileId $pendingExternalUserProfileId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryPendingExternalUserProfile Cmdlet.
+
 
 ## PARAMETERS
 
