@@ -60,13 +60,18 @@ With Teams Premium, you can configure a custom lobby room experience for attende
 | Application | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl -UserId $userId -OnlineMeetingId $onlineMeetingId
+
+```
+This example shows how to use the Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl Cmdlet.
+
 
 ## PARAMETERS
 
