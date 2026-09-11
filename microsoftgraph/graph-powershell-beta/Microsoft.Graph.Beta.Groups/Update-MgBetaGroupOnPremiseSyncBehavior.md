@@ -78,8 +78,9 @@ Update the properties of an onPremisesSyncBehavior object.
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 Update-MgBetaGroupOnPremiseSyncBehavior -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaGroupOnPremiseSyncBehavior Cmdlet.
+
 
 ## PARAMETERS
 

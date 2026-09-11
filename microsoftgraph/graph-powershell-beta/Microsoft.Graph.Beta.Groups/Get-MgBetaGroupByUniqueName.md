@@ -63,16 +63,6 @@ Because the group resource supports extensions, you can also use the GET operati
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, Directory.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -390,6 +380,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyuniquename)
 - [](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-beta)
+
 
 
 
