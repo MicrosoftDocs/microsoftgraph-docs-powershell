@@ -100,6 +100,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property events in groups
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite,  |
+| Application | Calendars.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
