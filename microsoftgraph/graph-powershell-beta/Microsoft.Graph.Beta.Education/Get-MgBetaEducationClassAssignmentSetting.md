@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadBasic, EduAssignments.Read, EduAssignments.ReadWrite, EduAssignments.ReadWriteBasic,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

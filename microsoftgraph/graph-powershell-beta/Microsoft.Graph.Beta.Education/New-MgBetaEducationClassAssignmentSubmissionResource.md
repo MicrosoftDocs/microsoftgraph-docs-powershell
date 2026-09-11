@@ -79,6 +79,14 @@ The operation will not succeed if the allowStudentsToAddResources flag is not se
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

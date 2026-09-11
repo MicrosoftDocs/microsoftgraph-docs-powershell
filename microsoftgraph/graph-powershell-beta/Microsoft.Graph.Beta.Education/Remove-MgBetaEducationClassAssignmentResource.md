@@ -49,6 +49,14 @@ Delete a specific educationAssignmentResource attached to an assignment.
 Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
