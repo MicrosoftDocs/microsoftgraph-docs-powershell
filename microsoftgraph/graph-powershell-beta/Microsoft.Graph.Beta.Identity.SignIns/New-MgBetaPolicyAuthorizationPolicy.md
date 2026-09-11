@@ -272,7 +272,7 @@ HelpMessage: ''
 
 ### -DefaultUserRoleOverrides
 
-.
+
 To construct, see NOTES section for DEFAULTUSERROLEOVERRIDES properties and create a hash table.
 
 ```yaml
