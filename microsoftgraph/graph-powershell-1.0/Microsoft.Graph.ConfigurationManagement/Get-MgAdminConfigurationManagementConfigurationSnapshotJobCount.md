@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/get-mgadminconfigurationmanagementconfigurationsnapshotjobcount
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminConfigurationManagementConfigurationSnapshotJobCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgAdminConfigurationManagementConfigurationSnapshotJobCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJobCount](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJobCount?view=graph-powershell-beta)
 
 ## SYNTAX
 

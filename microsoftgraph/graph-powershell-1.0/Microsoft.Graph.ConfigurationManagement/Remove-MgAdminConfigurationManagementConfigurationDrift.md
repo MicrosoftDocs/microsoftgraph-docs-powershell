@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagementconfigurationdrift
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgAdminConfigurationManagementConfigurationDrift
 ---
@@ -14,6 +14,9 @@ title: Remove-MgAdminConfigurationManagementConfigurationDrift
 ## SYNOPSIS
 
 Delete navigation property configurationDrifts for admin
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminConfigurationManagementConfigurationDrift](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Remove-MgBetaAdminConfigurationManagementConfigurationDrift?view=graph-powershell-beta)
 
 ## SYNTAX
 

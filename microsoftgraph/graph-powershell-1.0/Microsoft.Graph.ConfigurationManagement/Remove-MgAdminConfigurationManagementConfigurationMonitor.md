@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/remove-mgadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgAdminConfigurationManagementConfigurationMonitor
 ---
@@ -15,6 +15,9 @@ title: Remove-MgAdminConfigurationManagementConfigurationMonitor
 
 Delete a configurationMonitor object permanently.
 A deleted configurationMonitor can't be restored.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Remove-MgBetaAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-beta)
 
 ## SYNTAX
 

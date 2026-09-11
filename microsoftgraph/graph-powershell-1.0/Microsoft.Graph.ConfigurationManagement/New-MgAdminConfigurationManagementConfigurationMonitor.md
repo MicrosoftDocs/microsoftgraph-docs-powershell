@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminConfigurationManagementConfigurationMonitor
 ---
@@ -17,6 +17,9 @@ Create a new configurationMonitor object that runs periodically in the backgroun
 You can create up to 30 configurationMonitor objects per tenant.
 Each monitor runs at a fixed interval of 6 hours and cannot be configured to run at any other frequency.
 An administrator can monitor up to 800 configuration resources per day per tenant across all monitors.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/New-MgBetaAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-beta)
 
 ## SYNTAX
 

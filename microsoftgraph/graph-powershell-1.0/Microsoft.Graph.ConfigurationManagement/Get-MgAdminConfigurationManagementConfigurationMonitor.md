@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/get-mgadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/04/2026
+ms.date: 09/11/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAdminConfigurationManagementConfigurationMonitor
 ---
@@ -14,6 +14,9 @@ title: Get-MgAdminConfigurationManagementConfigurationMonitor
 ## SYNOPSIS
 
 Get the properties and relationships of a configurationMonitor object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Get-MgBetaAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-beta)
 
 ## SYNTAX
 
