@@ -683,7 +683,7 @@ Since the application status is identified during device interaction with the In
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate)
+- [Update-MgBetaUserMobileAppIntentAndState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermobileappintentandstate)
 
 
 

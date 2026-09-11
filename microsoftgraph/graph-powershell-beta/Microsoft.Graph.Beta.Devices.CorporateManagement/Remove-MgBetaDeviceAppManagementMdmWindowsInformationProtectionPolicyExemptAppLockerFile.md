@@ -487,7 +487,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyexemptapplockerfile)
+- [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyexemptapplockerfile)
 
 
 

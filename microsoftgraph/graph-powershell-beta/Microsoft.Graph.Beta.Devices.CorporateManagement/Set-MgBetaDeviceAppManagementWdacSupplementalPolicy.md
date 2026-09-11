@@ -584,7 +584,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementwdacsupplementalpolicy)
+- [Set-MgBetaDeviceAppManagementWdacSupplementalPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementwdacsupplementalpolicy)
 
 
 

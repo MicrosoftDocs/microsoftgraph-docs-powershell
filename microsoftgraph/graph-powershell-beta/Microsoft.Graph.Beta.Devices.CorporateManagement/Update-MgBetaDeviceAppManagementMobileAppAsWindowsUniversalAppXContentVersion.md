@@ -707,7 +707,7 @@ The content has a maximum size limit of 100KB.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswindowsuniversalappxcontentversion)
+- [Update-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappaswindowsuniversalappxcontentversion)
 
 
 
