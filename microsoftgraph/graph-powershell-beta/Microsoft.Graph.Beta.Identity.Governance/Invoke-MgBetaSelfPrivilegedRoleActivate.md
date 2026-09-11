@@ -114,7 +114,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -185,7 +185,7 @@ HelpMessage: ''
 
 ### -Duration
 
-.
+
 
 ```yaml
 Type: System.String
@@ -393,7 +393,7 @@ HelpMessage: ''
 
 ### -Reason
 
-.
+
 
 ```yaml
 Type: System.String
@@ -442,7 +442,7 @@ HelpMessage: ''
 
 ### -TicketNumber
 
-.
+
 
 ```yaml
 Type: System.String
@@ -469,7 +469,7 @@ HelpMessage: ''
 
 ### -TicketSystem
 
-.
+
 
 ```yaml
 Type: System.String
