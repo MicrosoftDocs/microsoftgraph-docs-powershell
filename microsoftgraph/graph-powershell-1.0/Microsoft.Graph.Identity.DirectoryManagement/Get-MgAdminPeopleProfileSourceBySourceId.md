@@ -56,16 +56,6 @@ A collection of profile source settings configured by an administrator in an org
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -397,6 +387,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilesourcebysourceid)
+
 
 
 
