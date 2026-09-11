@@ -67,24 +67,39 @@ Retrieve the properties and relationships of a print job.
 | Application | PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWrite.All, PrintJob.ReadWriteBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Get print job
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId
 
-### EXAMPLE 2
+```
+This example will get print job
+
+### Example 2: Get print job with task list
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
-Get-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "tasks"
+Get-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "tasks" 
 
-### EXAMPLE 3
+```
+This example will get print job with task list
+
+### Example 3: Get a print job and its associated document data
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
-Get-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "documents"
+Get-MgBetaPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -ExpandProperty "documents" 
+
+```
+This example will get a print job and its associated document data
+
 
 ## PARAMETERS
 

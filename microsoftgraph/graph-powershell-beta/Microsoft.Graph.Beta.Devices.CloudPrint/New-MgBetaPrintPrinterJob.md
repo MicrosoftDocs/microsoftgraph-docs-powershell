@@ -86,8 +86,9 @@ Create a new printJob for a printer.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -127,6 +128,10 @@ $params = @{
 }
 
 New-MgBetaPrintPrinterJob -PrinterId $printerId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 

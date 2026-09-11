@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete (unregister) a printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Remove-MgBetaPrintPrinter -PrinterId $printerId
+
+```
+This example shows how to use the Remove-MgBetaPrintPrinter Cmdlet.
+
 
 ## PARAMETERS
 
