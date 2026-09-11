@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob
 
 Get driveProtectionUnitsBulkAdditionJobs from solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

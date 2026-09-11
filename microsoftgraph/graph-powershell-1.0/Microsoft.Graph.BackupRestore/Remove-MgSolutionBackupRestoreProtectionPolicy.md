@@ -19,6 +19,9 @@ When you delete a policy, all associated protection units are removed, and backu
 Existing backup data is retained according to the retention policy before it's offboarded.
 You can restore data using previous restore points even after deletion.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

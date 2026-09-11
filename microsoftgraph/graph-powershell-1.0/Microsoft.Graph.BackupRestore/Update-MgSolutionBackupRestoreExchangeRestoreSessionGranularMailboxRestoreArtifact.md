@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestor
 
 Update the navigation property granularMailboxRestoreArtifacts in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreExchangeRestoreSessionGranularMailboxRestoreArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

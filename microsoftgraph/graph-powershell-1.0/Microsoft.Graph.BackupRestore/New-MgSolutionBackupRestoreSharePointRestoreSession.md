@@ -18,6 +18,9 @@ To create a granular restore session, granular site restore artifacts must be pr
 A request can't include both granularSiteRestoreArtifact and siteRestoreArtifact in the same create or update request.
 If no payload is provided when you create the restore session, the request creates an empty standard restore session by default.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

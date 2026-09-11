@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitB
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJobCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnitBulkAdditionJobCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
