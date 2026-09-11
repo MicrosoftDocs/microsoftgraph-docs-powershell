@@ -484,7 +484,7 @@ HelpMessage: ''
 
 ### -HistoryItems
 
-.
+
 To construct, see NOTES section for HISTORYITEMS properties and create a hash table.
 
 ```yaml
