@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
 
 Updates properties on Autopilot devices.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
