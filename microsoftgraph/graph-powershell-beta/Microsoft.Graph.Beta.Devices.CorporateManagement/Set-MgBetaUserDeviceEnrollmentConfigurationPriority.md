@@ -584,7 +584,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetauserdeviceenrollmentconfigurationpriority)
+- [Set-MgBetaUserDeviceEnrollmentConfigurationPriority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetauserdeviceenrollmentconfigurationpriority)
 
 
 
