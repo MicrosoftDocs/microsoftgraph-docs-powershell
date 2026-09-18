@@ -15,6 +15,9 @@ title: Update-MgEducationUserRubric
 
 Update the navigation property rubrics in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
