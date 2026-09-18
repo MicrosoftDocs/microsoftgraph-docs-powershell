@@ -69,8 +69,9 @@ Mark a message as not junk.
 This API removes the sender from the list of blocked senders and moves the message to the Inbox folder, when moveToInbox is true.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Mail
 
@@ -80,6 +81,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaMarkUserMessageAsNotJunk -UserId $userId -MessageId $messageId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaMarkUserMessageAsNotJunk Cmdlet.
+
 
 ## PARAMETERS
 
