@@ -1323,7 +1323,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotesectiongroupsection)
+- [New-MgBetaSiteOnenoteSectionGroupSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotesectiongroupsection)
 
 
 
