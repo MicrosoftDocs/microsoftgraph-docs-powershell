@@ -17,6 +17,9 @@ Delegated permission grants authorizing this service principal to access an API 
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOauth2PermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

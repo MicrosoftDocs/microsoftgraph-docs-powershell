@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory
 
 Contains the collection of directories and all of their objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

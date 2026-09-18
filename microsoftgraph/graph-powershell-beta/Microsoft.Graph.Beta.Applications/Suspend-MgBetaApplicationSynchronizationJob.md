@@ -16,6 +16,9 @@ title: Suspend-MgBetaApplicationSynchronizationJob
 Temporarily stop a running synchronizationJob.
 All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Suspend-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Pause (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaServicePrincipalSynchronizationJobSchema
 
 Delete navigation property schema for servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
