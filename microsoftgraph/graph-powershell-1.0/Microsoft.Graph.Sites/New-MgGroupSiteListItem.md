@@ -28013,7 +28013,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitem)
+- [New-MgGroupSiteListItem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitem)
 
 
 
