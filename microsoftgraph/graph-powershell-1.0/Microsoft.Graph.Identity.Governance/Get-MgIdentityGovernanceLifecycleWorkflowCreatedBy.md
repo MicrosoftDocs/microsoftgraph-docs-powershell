@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowCreatedBy
 
 The user who created the workflow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedBy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgRoleManagementDirectoryRoleDefinitionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleDefinitionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleDefinitionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

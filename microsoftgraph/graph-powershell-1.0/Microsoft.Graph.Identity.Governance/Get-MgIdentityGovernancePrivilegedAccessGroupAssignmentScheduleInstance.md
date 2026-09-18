@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 
 Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

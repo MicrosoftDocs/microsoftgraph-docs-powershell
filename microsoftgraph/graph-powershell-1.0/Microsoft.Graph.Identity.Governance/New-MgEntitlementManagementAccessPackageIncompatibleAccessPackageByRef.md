@@ -15,6 +15,9 @@ title: New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

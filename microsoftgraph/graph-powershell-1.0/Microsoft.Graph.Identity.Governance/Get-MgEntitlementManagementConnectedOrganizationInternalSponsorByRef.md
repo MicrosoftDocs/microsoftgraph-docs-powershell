@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
 
 Get ref of internalSponsors from identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
