@@ -63,12 +63,17 @@ This cmdlet has the following aliases,
 A collection of assignment resources that depend on the parent educationAssignmentResource.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResourceDependentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentResourceDependentResource Cmdlet.
+
 
 ## PARAMETERS
 

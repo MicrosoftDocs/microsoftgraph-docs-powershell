@@ -74,18 +74,28 @@ You can use the Prefer header in your request to get the inactive status in case
 | Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Get assignments
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignment -EducationClassId $educationClassId
 
-### EXAMPLE 2
+```
+This example will get assignments
+
+### Example 2: Get assignments using $expand options
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources"
+Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources" 
+
+```
+This example will get assignments using $expand options
+
 
 ## PARAMETERS
 
