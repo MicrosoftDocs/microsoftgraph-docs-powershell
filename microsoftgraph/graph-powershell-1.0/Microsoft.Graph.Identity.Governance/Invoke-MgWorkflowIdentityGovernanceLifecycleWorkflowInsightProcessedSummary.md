@@ -51,12 +51,17 @@ Provide a summary from the insights resource of workflow objects processed withi
 Because the list returned by List workflows doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
+
+```
+This example shows how to use the Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary Cmdlet.
+
 
 ## PARAMETERS
 
