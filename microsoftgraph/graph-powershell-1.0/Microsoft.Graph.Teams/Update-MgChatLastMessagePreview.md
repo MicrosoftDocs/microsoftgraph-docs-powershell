@@ -690,7 +690,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatlastmessagepreview)
+- [Update-MgChatLastMessagePreview](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatlastmessagepreview)
 
 
 

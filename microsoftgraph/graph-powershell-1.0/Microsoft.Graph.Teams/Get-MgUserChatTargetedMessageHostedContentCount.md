@@ -414,7 +414,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattargetedmessagehostedcontentcount)
+- [Get-MgUserChatTargetedMessageHostedContentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattargetedmessagehostedcontentcount)
 
 
 
