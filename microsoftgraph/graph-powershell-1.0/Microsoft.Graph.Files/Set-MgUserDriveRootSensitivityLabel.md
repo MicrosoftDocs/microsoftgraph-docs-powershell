@@ -83,16 +83,6 @@ This API applies sensitivity labels to files at rest.
 Office clients don't apply watermarks, headers, or footers to files that contain the label information.
 For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -618,6 +608,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootsensitivitylabel)
 - [](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0)
+
 
 
 
