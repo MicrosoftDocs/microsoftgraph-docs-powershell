@@ -16,6 +16,9 @@ title: Remove-MgBetaUserOnlineMeetingAttendeeReport
 The content stream of the attendee report of a Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

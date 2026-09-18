@@ -15,6 +15,9 @@ title: New-MgBetaCommunicationCallOperation
 
 Create new navigation property to operations for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaCommunicationOnlineMeetingConversationStarterReplyReaction
 
 Delete navigation property reactions for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationOnlineMeetingConversationStarterReplyReaction](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeetingConversationStarterReplyReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
