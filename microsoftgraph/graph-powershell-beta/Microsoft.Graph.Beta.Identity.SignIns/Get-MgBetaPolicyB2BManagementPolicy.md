@@ -65,12 +65,17 @@ Read the properties and relationships of b2bManagementPolicy object.
 | Application | Policy.Read.B2BManagementPolicy, Policy.ReadWrite.B2BManagementPolicy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyB2BManagementPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyB2BManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,8 +60,9 @@ Create a new b2cIdentityUserFlow object.
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Create a user flow with the default values
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -73,7 +74,12 @@ $params = @{
 
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a user flow with the default values
+
+### Example 2: Create a user flow with the default values and an identity provider
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -90,7 +96,12 @@ $params = @{
 
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a user flow with the default values and an identity provider
+
+### Example 3: Create a user flow with the default values and configuration for API connectors
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -109,6 +120,10 @@ $params = @{
 }
 
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
+
+```
+This example will create a user flow with the default values and configuration for api connectors
+
 
 ## PARAMETERS
 
