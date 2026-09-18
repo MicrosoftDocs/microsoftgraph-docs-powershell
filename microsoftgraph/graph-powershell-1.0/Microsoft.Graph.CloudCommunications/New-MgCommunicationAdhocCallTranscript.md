@@ -15,6 +15,9 @@ title: New-MgCommunicationAdhocCallTranscript
 
 Create new navigation property to transcripts for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationAdhocCallTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationAdhocCallTranscript?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

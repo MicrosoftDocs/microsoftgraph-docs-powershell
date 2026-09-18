@@ -18,6 +18,9 @@ This API supports the retrieval of call transcripts from all meeting types excep
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingTranscript?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

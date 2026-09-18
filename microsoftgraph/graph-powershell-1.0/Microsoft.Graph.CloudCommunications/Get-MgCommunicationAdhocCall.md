@@ -15,6 +15,9 @@ title: Get-MgCommunicationAdhocCall
 
 Get adhocCalls from communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationAdhocCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationAdhocCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgCommunicationCallParticipant
 
 Retrieve the properties and relationships of a participant object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
