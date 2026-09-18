@@ -15,6 +15,9 @@ title: Get-MgVirtualEventPresenter
 
 The virtual event presenters.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventPresenter](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventPresenter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
