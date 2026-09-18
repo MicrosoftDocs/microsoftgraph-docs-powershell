@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Archive an active SharePoint site.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Sites.Archive.All, Sites.FullControl.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Sites.Archive.All, Sites.FullControl.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
