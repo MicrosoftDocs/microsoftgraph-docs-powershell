@@ -15,6 +15,9 @@ title: Remove-MgPlaceAsFloorCheck
 
 Delete navigation property checkIns for places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlaceAsFloorCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaPlaceAsFloorCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
