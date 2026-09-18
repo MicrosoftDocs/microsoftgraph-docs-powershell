@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelationship
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceRelationship
 ---
@@ -14,7 +14,7 @@ title: Update-MgBetaDirectoryTenantGovernanceRelationship
 ## SYNOPSIS
 
 Update the status property of a governanceRelationship to initiate the termination process.
-There are two models for termination:\r1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
+There are two models for termination:\r\n1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r\n1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
 When the governed tenant updates the status to terminated in either model, the resources that were provisioned in the governed tenant upon relationship creation are deleted.
 
 ## SYNTAX
@@ -27,20 +27,20 @@ Update-MgBetaDirectoryTenantGovernanceRelationship -GovernanceRelationshipId <st
  [-CreatedType <RelationshipCreationType>] [-CreationDateTime <datetime>]
  [-GovernedTenantId <string>] [-GovernedTenantName <string>] [-GoverningTenantId <string>]
  [-GoverningTenantName <string>] [-Id <string>]
- [-PolicySnapshot <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>]
- [-Status <RelationshipStatus>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-PolicySnapshot <IMicrosoftGraphRelationshipPolicy>] [-Status <RelationshipStatus>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
 
 ```
 Update-MgBetaDirectoryTenantGovernanceRelationship -GovernanceRelationshipId <string>
- -BodyParameter <IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphGovernanceRelationship> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,10 +51,10 @@ Update-MgBetaDirectoryTenantGovernanceRelationship
  [-AdditionalProperties <hashtable>] [-CreatedType <RelationshipCreationType>]
  [-CreationDateTime <datetime>] [-GovernedTenantId <string>] [-GovernedTenantName <string>]
  [-GoverningTenantId <string>] [-GoverningTenantName <string>] [-Id <string>]
- [-PolicySnapshot <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>]
- [-Status <RelationshipStatus>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-PolicySnapshot <IMicrosoftGraphRelationshipPolicy>] [-Status <RelationshipStatus>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -62,10 +62,10 @@ Update-MgBetaDirectoryTenantGovernanceRelationship
 ```
 Update-MgBetaDirectoryTenantGovernanceRelationship
  -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphGovernanceRelationship> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -76,13 +76,12 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the status property of a governanceRelationship to initiate the termination process.
-There are two models for termination:\r1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
+There are two models for termination:\r\n1) Initiated by the governing tenant: After the governing tenant updates the status to terminationRequestedByGoverningTenant, the governed tenant may subsequently update the status to terminated.\r\n1) Directly terminated by the governed tenant: The governed tenant updates the status to terminated to immediately terminate the relationship.
 When the governed tenant updates the status to terminated in either model, the resources that were provisioned in the governed tenant upon relationship creation are deleted.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -91,10 +90,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryTenantGovernanceRelationship -GovernanceRelationshipId $governanceRelationshipId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRelationship Cmdlet.
-
 
 ## PARAMETERS
 
@@ -131,7 +126,7 @@ governanceRelationship
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRelationship
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -225,10 +220,7 @@ HelpMessage: ''
 
 ### -CreationDateTime
 
-The date and time when the relationship was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
-Supports $filter (lt, le, gt, ge, eq, ne) and $orderBy.
+.
 
 ```yaml
 Type: System.DateTime
@@ -282,8 +274,7 @@ HelpMessage: ''
 
 ### -GovernedTenantId
 
-The Microsoft Entra tenant ID of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
+.
 
 ```yaml
 Type: System.String
@@ -310,8 +301,7 @@ HelpMessage: ''
 
 ### -GovernedTenantName
 
-The display name of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
+.
 
 ```yaml
 Type: System.String
@@ -338,8 +328,7 @@ HelpMessage: ''
 
 ### -GoverningTenantId
 
-The Microsoft Entra tenant ID of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
+.
 
 ```yaml
 Type: System.String
@@ -366,8 +355,7 @@ HelpMessage: ''
 
 ### -GoverningTenantName
 
-The display name of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
+.
 
 ```yaml
 Type: System.String
@@ -517,7 +505,7 @@ relationshipPolicy
 To construct, see NOTES section for POLICYSNAPSHOT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRelationshipPolicy
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -686,7 +674,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRelationship
 
 {{ Fill in the Description }}
 
@@ -696,7 +684,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRelationship
 
 {{ Fill in the Description }}
 
@@ -707,47 +695,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesGovernanceRelationship>`: governanceRelationship
+BODYPARAMETER <IMicrosoftGraphGovernanceRelationship>: governanceRelationship
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CreatedType <RelationshipCreationType?>]: relationshipCreationType
-  [CreationDateTime <DateTime?>]: The date and time when the relationship was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
-Supports $filter (lt, le, gt, ge, eq, ne) and $orderBy.
-  [GovernedTenantId <String>]: The Microsoft Entra tenant ID of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
-  [GovernedTenantName <String>]: The display name of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
-  [GoverningTenantId <String>]: The Microsoft Entra tenant ID of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
-  [GoverningTenantName <String>]: The display name of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
-  [PolicySnapshot <IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>]: relationshipPolicy
+  [CreationDateTime <DateTime?>]: 
+  [GovernedTenantId <String>]: 
+  [GovernedTenantName <String>]: 
+  [GoverningTenantId <String>]: 
+  [GoverningTenantName <String>]: 
+  [PolicySnapshot <IMicrosoftGraphRelationshipPolicy>]: relationshipPolicy
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [DelegatedAdministrationRoleAssignments <IMicrosoftGraphTenantGovernanceServicesDelegatedAdministrationRoleAssignmentSnapshot[]>]: A snapshot of the delegated administration role assignments configured in this policy.
-      [GroupDisplayName <String>]: The display name of the security group identified by groupId at the time the snapshot was created.
-Read-only.
-      [GroupId <String>]: The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.
-      [RoleTemplates <IMicrosoftGraphTenantGovernanceServicesRoleTemplate[]>]: The collection of role templates that define the Microsoft Entra roles to be assigned.
-        [Id <String>]: The template ID of the Microsoft Entra role (e.g., 62e90394-69f5-4237-9190-012177145e10 for Global Administrator).
-        [Name <String>]: The display name of the role (e.g., 'Global Administrator', 'Helpdesk Administrator').
-    [GovernedTenantCanTerminate <Boolean?>]: Indicates whether the governed tenant can terminate the relationship.
-    [MultiTenantApplicationsToProvision <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationsToProvisionSnapshot[]>]: A snapshot of the multi-tenant applications to be provisioned in the governed tenant.
-      [AppId <String>]: The appId (client ID) of the multi-tenant application.
-      [DisplayName <String>]: The display name of the application.
-      [ObjectId <String>]: The object ID of the service principal in the governing tenant.
-      [RequiredResourceAccesses <IMicrosoftGraphTenantGovernanceServicesRequiredResourceAccess[]>]: The collection of resource accesses (permissions) required by the application.
-        [Permissions <IMicrosoftGraphTenantGovernanceServicesResourcePermission[]>]: The collection of resource permissions required by the application.
-          [Id <String>]: The unique identifier of the permission.
-          [Name <String>]: The name of the permission.
-          [Type <PermissionType?>]: permissionType
-        [ResourceAppId <String>]: The appId (client ID) of the resource that the application needs to access.
-    [PolicyId <String>]: The identifier of the source policy template from which this snapshot was created.
+    [DelegatedAdministrationRoleAssignments <IMicrosoftGraphDelegatedAdministrationRoleAssignmentSnapshot[]>]: 
+      [GroupDisplayName <String>]: 
+      [GroupId <String>]: 
+      [RoleTemplates <IMicrosoftGraphRoleTemplate[]>]: 
+        [Id <String>]: 
+        [Name <String>]: 
+    [GovernedTenantCanTerminate <Boolean?>]: 
+    [MultiTenantApplicationsToProvision <IMicrosoftGraphMultiTenantApplicationsToProvisionSnapshot[]>]: 
+      [AppId <String>]: 
+      [DisplayName <String>]: 
+      [ObjectId <String>]: 
+      [RequiredResourceAccesses <IMicrosoftGraphApplicationsRequiredResourceAccess[]>]: 
+        [Permissions <IMicrosoftGraphApplicationResourcePermission[]>]: 
+          [Id <String>]: 
+          [Name <String>]: 
+          [Type <ApplicationPermissionType?>]: applicationPermissionType
+        [ResourceAppId <String>]: 
+    [PolicyId <String>]: 
   [Status <RelationshipStatus?>]: relationshipStatus
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -775,7 +755,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
-  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
   [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
   [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -797,10 +776,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
@@ -808,57 +789,35 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-POLICYSNAPSHOT `<IMicrosoftGraphTenantGovernanceServicesRelationshipPolicy>`: relationshipPolicy
+POLICYSNAPSHOT <IMicrosoftGraphRelationshipPolicy>: relationshipPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [DelegatedAdministrationRoleAssignments <IMicrosoftGraphTenantGovernanceServicesDelegatedAdministrationRoleAssignmentSnapshot[]>]: A snapshot of the delegated administration role assignments configured in this policy.
-    [GroupDisplayName <String>]: The display name of the security group identified by groupId at the time the snapshot was created.
-Read-only.
-    [GroupId <String>]: The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.
-    [RoleTemplates <IMicrosoftGraphTenantGovernanceServicesRoleTemplate[]>]: The collection of role templates that define the Microsoft Entra roles to be assigned.
-      [Id <String>]: The template ID of the Microsoft Entra role (e.g., 62e90394-69f5-4237-9190-012177145e10 for Global Administrator).
-      [Name <String>]: The display name of the role (e.g., 'Global Administrator', 'Helpdesk Administrator').
-  [GovernedTenantCanTerminate <Boolean?>]: Indicates whether the governed tenant can terminate the relationship.
-  [MultiTenantApplicationsToProvision <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationsToProvisionSnapshot[]>]: A snapshot of the multi-tenant applications to be provisioned in the governed tenant.
-    [AppId <String>]: The appId (client ID) of the multi-tenant application.
-    [DisplayName <String>]: The display name of the application.
-    [ObjectId <String>]: The object ID of the service principal in the governing tenant.
-    [RequiredResourceAccesses <IMicrosoftGraphTenantGovernanceServicesRequiredResourceAccess[]>]: The collection of resource accesses (permissions) required by the application.
-      [Permissions <IMicrosoftGraphTenantGovernanceServicesResourcePermission[]>]: The collection of resource permissions required by the application.
-        [Id <String>]: The unique identifier of the permission.
-        [Name <String>]: The name of the permission.
-        [Type <PermissionType?>]: permissionType
-      [ResourceAppId <String>]: The appId (client ID) of the resource that the application needs to access.
-  [PolicyId <String>]: The identifier of the source policy template from which this snapshot was created.
+  [DelegatedAdministrationRoleAssignments <IMicrosoftGraphDelegatedAdministrationRoleAssignmentSnapshot[]>]: 
+    [GroupDisplayName <String>]: 
+    [GroupId <String>]: 
+    [RoleTemplates <IMicrosoftGraphRoleTemplate[]>]: 
+      [Id <String>]: 
+      [Name <String>]: 
+  [GovernedTenantCanTerminate <Boolean?>]: 
+  [MultiTenantApplicationsToProvision <IMicrosoftGraphMultiTenantApplicationsToProvisionSnapshot[]>]: 
+    [AppId <String>]: 
+    [DisplayName <String>]: 
+    [ObjectId <String>]: 
+    [RequiredResourceAccesses <IMicrosoftGraphApplicationsRequiredResourceAccess[]>]: 
+      [Permissions <IMicrosoftGraphApplicationResourcePermission[]>]: 
+        [Id <String>]: 
+        [Name <String>]: 
+        [Type <ApplicationPermissionType?>]: applicationPermissionType
+      [ResourceAppId <String>]: 
+  [PolicyId <String>]:
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryTenantGovernanceRelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelationship)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-governancerelationship-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelationship)
+- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-governancerelationship-update?view=graph-rest-beta)

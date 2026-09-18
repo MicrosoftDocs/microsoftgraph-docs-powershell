@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceRelatedTenant
 ---
@@ -32,13 +32,12 @@ Update-MgBetaDirectoryTenantGovernanceRelatedTenant [-ResponseHeadersVariable <s
 ```
 Update-MgBetaDirectoryTenantGovernanceRelatedTenant -RelatedTenantId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AppB2BSignInActivityMetrics <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>]
- [-B2BRegistrationMetrics <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetrics>]
- [-B2BSignInActivityMetrics <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>]
- [-BillingMetrics <IMicrosoftGraphTenantGovernanceServicesBillingMetrics>]
- [-CreatedDateTime <datetime>] [-Id <string>]
- [-MultiTenantApplicationMetrics <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetrics>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AppB2BSignInActivityMetrics <IMicrosoftGraphB2BSignInActivityMetrics>]
+ [-B2BRegistrationMetrics <IMicrosoftGraphB2BRegistrationMetrics>]
+ [-B2BSignInActivityMetrics <IMicrosoftGraphB2BSignInActivityMetrics>]
+ [-BillingMetrics <IMicrosoftGraphBillingMetrics>] [-CreatedDateTime <datetime>] [-Id <string>]
+ [-MultiTenantApplicationMetrics <IMicrosoftGraphMultiTenantApplicationMetrics>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -47,10 +46,10 @@ Update-MgBetaDirectoryTenantGovernanceRelatedTenant -RelatedTenantId <string>
 
 ```
 Update-MgBetaDirectoryTenantGovernanceRelatedTenant -RelatedTenantId <string>
- -BodyParameter <IMicrosoftGraphTenantGovernanceServicesRelatedTenant>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphRelatedTenant> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -59,13 +58,12 @@ Update-MgBetaDirectoryTenantGovernanceRelatedTenant -RelatedTenantId <string>
 Update-MgBetaDirectoryTenantGovernanceRelatedTenant
  -InputObject <IIdentityDirectoryManagementIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>]
- [-AppB2BSignInActivityMetrics <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>]
- [-B2BRegistrationMetrics <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetrics>]
- [-B2BSignInActivityMetrics <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>]
- [-BillingMetrics <IMicrosoftGraphTenantGovernanceServicesBillingMetrics>]
- [-CreatedDateTime <datetime>] [-Id <string>]
- [-MultiTenantApplicationMetrics <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetrics>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AppB2BSignInActivityMetrics <IMicrosoftGraphB2BSignInActivityMetrics>]
+ [-B2BRegistrationMetrics <IMicrosoftGraphB2BRegistrationMetrics>]
+ [-B2BSignInActivityMetrics <IMicrosoftGraphB2BSignInActivityMetrics>]
+ [-BillingMetrics <IMicrosoftGraphBillingMetrics>] [-CreatedDateTime <datetime>] [-Id <string>]
+ [-MultiTenantApplicationMetrics <IMicrosoftGraphMultiTenantApplicationMetrics>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -74,8 +72,7 @@ Update-MgBetaDirectoryTenantGovernanceRelatedTenant
 
 ```
 Update-MgBetaDirectoryTenantGovernanceRelatedTenant
- -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphTenantGovernanceServicesRelatedTenant>
+ -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphRelatedTenant>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -92,17 +89,12 @@ Manually refresh the list of related tenants.
 The list is also automatically refreshed daily.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Update-MgBetaDirectoryTenantGovernanceRelatedTenant
-
-```
-This example shows how to use the Update-MgBetaDirectoryTenantGovernanceRelatedTenant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -139,7 +131,7 @@ b2BSignInActivityMetrics
 To construct, see NOTES section for APPB2BSIGNINACTIVITYMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2BSignInActivityMetrics
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -167,7 +159,7 @@ b2bRegistrationMetrics
 To construct, see NOTES section for B2BREGISTRATIONMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetrics
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2BRegistrationMetrics
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -195,7 +187,7 @@ b2BSignInActivityMetrics
 To construct, see NOTES section for B2BSIGNINACTIVITYMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2BSignInActivityMetrics
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -223,7 +215,7 @@ billingMetrics
 To construct, see NOTES section for BILLINGMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesBillingMetrics
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBillingMetrics
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -251,7 +243,7 @@ relatedTenant
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesRelatedTenant
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRelatedTenant
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -318,8 +310,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-The date and time when the related tenant was discovered.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+.
 
 ```yaml
 Type: System.DateTime
@@ -469,7 +460,7 @@ multiTenantApplicationMetrics
 To construct, see NOTES section for MULTITENANTAPPLICATIONMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetrics
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantApplicationMetrics
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -659,7 +650,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesRelatedTenant
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRelatedTenant
 
 {{ Fill in the Description }}
 
@@ -669,7 +660,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesRelatedTenant
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRelatedTenant
 
 {{ Fill in the Description }}
 
@@ -684,211 +675,248 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPB2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
+APPB2BSIGNINACTIVITYMETRICS <IMicrosoftGraphB2BSignInActivityMetrics>: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Initial <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetricsInitial>]: b2BSignInActivityMetricsInitial
+  [Initial <IMicrosoftGraphB2BSignInActivityMetricsInitial>]: b2BSignInActivityMetricsInitial
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by inbound users in the last month.
-    [InboundMonthlyTotalUsers <Decimal?>]: The total number of unique inbound users with sign-in activity in the last month.
-    [OutboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by outbound users in the last month.
-    [OutboundMonthlyTotalUsers <Decimal?>]: The total number of unique outbound users with sign-in activity in the last month.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundMonthlyTotalApplications <Decimal?>]: 
+    [InboundMonthlyTotalUsers <Decimal?>]: 
+    [OutboundMonthlyTotalApplications <Decimal?>]: 
+    [OutboundMonthlyTotalUsers <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [CreatedDateTime <DateTime?>]: Timestamp that represents when the time B2B sign-in activity content was initially aggregated for the related tenant.
-  [Recent <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetricsRecent>]: b2BSignInActivityMetricsRecent
+    [CreatedDateTime <DateTime?>]: 
+  [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [ActionUrl <IMicrosoftGraphInvestigationActionUrl>]: investigationActionUrl
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: 
+      [Url <String>]: 
+    [StepNumber <String>]: 
+    [Text <String>]: 
+  [Recent <IMicrosoftGraphB2BSignInActivityMetricsRecent>]: b2BSignInActivityMetricsRecent
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by inbound users in the last month.
-    [InboundMonthlyTotalUsers <Decimal?>]: The total number of unique inbound users with sign-in activity in the last month.
-    [OutboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by outbound users in the last month.
-    [OutboundMonthlyTotalUsers <Decimal?>]: The total number of unique outbound users with sign-in activity in the last month.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundMonthlyTotalApplications <Decimal?>]: 
+    [InboundMonthlyTotalUsers <Decimal?>]: 
+    [OutboundMonthlyTotalApplications <Decimal?>]: 
+    [OutboundMonthlyTotalUsers <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
+    [UpdateDateTime <DateTime?>]: 
 
-B2BREGISTRATIONMETRICS `<IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetrics>`: b2bRegistrationMetrics
+B2BREGISTRATIONMETRICS <IMicrosoftGraphB2BRegistrationMetrics>: b2bRegistrationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Initial <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetricsInitial>]: b2BRegistrationMetricsInitial
+  [Initial <IMicrosoftGraphB2BRegistrationMetricsInitial>]: b2BRegistrationMetricsInitial
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundTotalUsers <Decimal?>]: The total number of inbound B2B guest users registered.
-    [OutboundTotalUsers <Decimal?>]: The total number of outbound B2B users from this tenant registered in other tenants.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundTotalUsers <Decimal?>]: 
+    [OutboundTotalUsers <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [CreatedDateTime <DateTime?>]: Timestamp that represents the date time that B2B registration data was initially aggregated.
-  [Recent <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetricsRecent>]: b2BRegistrationMetricsRecent
+    [CreatedDateTime <DateTime?>]: 
+  [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [ActionUrl <IMicrosoftGraphInvestigationActionUrl>]: investigationActionUrl
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: 
+      [Url <String>]: 
+    [StepNumber <String>]: 
+    [Text <String>]: 
+  [Recent <IMicrosoftGraphB2BRegistrationMetricsRecent>]: b2BRegistrationMetricsRecent
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundTotalUsers <Decimal?>]: The total number of inbound B2B guest users registered.
-    [OutboundTotalUsers <Decimal?>]: The total number of outbound B2B users from this tenant registered in other tenants.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundTotalUsers <Decimal?>]: 
+    [OutboundTotalUsers <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
+    [UpdateDateTime <DateTime?>]: 
 
-B2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
+B2BSIGNINACTIVITYMETRICS <IMicrosoftGraphB2BSignInActivityMetrics>: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Initial <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetricsInitial>]: b2BSignInActivityMetricsInitial
+  [Initial <IMicrosoftGraphB2BSignInActivityMetricsInitial>]: b2BSignInActivityMetricsInitial
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by inbound users in the last month.
-    [InboundMonthlyTotalUsers <Decimal?>]: The total number of unique inbound users with sign-in activity in the last month.
-    [OutboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by outbound users in the last month.
-    [OutboundMonthlyTotalUsers <Decimal?>]: The total number of unique outbound users with sign-in activity in the last month.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundMonthlyTotalApplications <Decimal?>]: 
+    [InboundMonthlyTotalUsers <Decimal?>]: 
+    [OutboundMonthlyTotalApplications <Decimal?>]: 
+    [OutboundMonthlyTotalUsers <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [CreatedDateTime <DateTime?>]: Timestamp that represents when the time B2B sign-in activity content was initially aggregated for the related tenant.
-  [Recent <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetricsRecent>]: b2BSignInActivityMetricsRecent
+    [CreatedDateTime <DateTime?>]: 
+  [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [ActionUrl <IMicrosoftGraphInvestigationActionUrl>]: investigationActionUrl
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: 
+      [Url <String>]: 
+    [StepNumber <String>]: 
+    [Text <String>]: 
+  [Recent <IMicrosoftGraphB2BSignInActivityMetricsRecent>]: b2BSignInActivityMetricsRecent
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by inbound users in the last month.
-    [InboundMonthlyTotalUsers <Decimal?>]: The total number of unique inbound users with sign-in activity in the last month.
-    [OutboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by outbound users in the last month.
-    [OutboundMonthlyTotalUsers <Decimal?>]: The total number of unique outbound users with sign-in activity in the last month.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundMonthlyTotalApplications <Decimal?>]: 
+    [InboundMonthlyTotalUsers <Decimal?>]: 
+    [OutboundMonthlyTotalApplications <Decimal?>]: 
+    [OutboundMonthlyTotalUsers <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
+    [UpdateDateTime <DateTime?>]: 
 
-BILLINGMETRICS `<IMicrosoftGraphTenantGovernanceServicesBillingMetrics>`: billingMetrics
+BILLINGMETRICS <IMicrosoftGraphBillingMetrics>: billingMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Initial <IMicrosoftGraphTenantGovernanceServicesBillingMetricsInitial>]: billingMetricsInitial
+  [Initial <IMicrosoftGraphBillingMetricsInitial>]: billingMetricsInitial
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of foreign associated tenants with active billing management.
-    [ForeignAssociatedTenantCount <Decimal?>]: The total number of foreign associated tenants.
-    [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of foreign associated tenants with active provisioning.
-    [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of local associated tenants with active billing management.
-    [LocalAssociatedTenantCount <Decimal?>]: The total number of local associated tenants.
-    [LocalAssociatedTenantIds <String[]>]: The list of local associated tenant IDs.
-    [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of local associated tenants with active provisioning.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+    [ForeignAssociatedTenantCount <Decimal?>]: 
+    [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+    [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+    [LocalAssociatedTenantCount <Decimal?>]: 
+    [LocalAssociatedTenantIds <String[]>]: 
+    [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [CreatedDateTime <DateTime?>]: Timestamp that represents when billing metrics are initially aggregated for the related tenant.
-  [Recent <IMicrosoftGraphTenantGovernanceServicesBillingMetricsRecent>]: billingMetricsRecent
+    [CreatedDateTime <DateTime?>]: 
+  [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [ActionUrl <IMicrosoftGraphInvestigationActionUrl>]: investigationActionUrl
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: 
+      [Url <String>]: 
+    [StepNumber <String>]: 
+    [Text <String>]: 
+  [Recent <IMicrosoftGraphBillingMetricsRecent>]: billingMetricsRecent
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of foreign associated tenants with active billing management.
-    [ForeignAssociatedTenantCount <Decimal?>]: The total number of foreign associated tenants.
-    [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of foreign associated tenants with active provisioning.
-    [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of local associated tenants with active billing management.
-    [LocalAssociatedTenantCount <Decimal?>]: The total number of local associated tenants.
-    [LocalAssociatedTenantIds <String[]>]: The list of local associated tenant IDs.
-    [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of local associated tenants with active provisioning.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+    [ForeignAssociatedTenantCount <Decimal?>]: 
+    [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+    [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+    [LocalAssociatedTenantCount <Decimal?>]: 
+    [LocalAssociatedTenantIds <String[]>]: 
+    [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [UpdateDateTime <DateTime?>]: Timestamp that represents when billing metrics are aggregated and have sufficiently changed for the related tenant.
+    [UpdateDateTime <DateTime?>]: 
 
-BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesRelatedTenant>`: relatedTenant
+BODYPARAMETER <IMicrosoftGraphRelatedTenant>: relatedTenant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AppB2BSignInActivityMetrics <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>]: b2BSignInActivityMetrics
+  [AppB2BSignInActivityMetrics <IMicrosoftGraphB2BSignInActivityMetrics>]: b2BSignInActivityMetrics
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Initial <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetricsInitial>]: b2BSignInActivityMetricsInitial
+    [Initial <IMicrosoftGraphB2BSignInActivityMetricsInitial>]: b2BSignInActivityMetricsInitial
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [InboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by inbound users in the last month.
-      [InboundMonthlyTotalUsers <Decimal?>]: The total number of unique inbound users with sign-in activity in the last month.
-      [OutboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by outbound users in the last month.
-      [OutboundMonthlyTotalUsers <Decimal?>]: The total number of unique outbound users with sign-in activity in the last month.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [InboundMonthlyTotalApplications <Decimal?>]: 
+      [InboundMonthlyTotalUsers <Decimal?>]: 
+      [OutboundMonthlyTotalApplications <Decimal?>]: 
+      [OutboundMonthlyTotalUsers <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [CreatedDateTime <DateTime?>]: Timestamp that represents when the time B2B sign-in activity content was initially aggregated for the related tenant.
-    [Recent <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetricsRecent>]: b2BSignInActivityMetricsRecent
+      [CreatedDateTime <DateTime?>]: 
+    [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+      [ActionUrl <IMicrosoftGraphInvestigationActionUrl>]: investigationActionUrl
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: 
+        [Url <String>]: 
+      [StepNumber <String>]: 
+      [Text <String>]: 
+    [Recent <IMicrosoftGraphB2BSignInActivityMetricsRecent>]: b2BSignInActivityMetricsRecent
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [InboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by inbound users in the last month.
-      [InboundMonthlyTotalUsers <Decimal?>]: The total number of unique inbound users with sign-in activity in the last month.
-      [OutboundMonthlyTotalApplications <Decimal?>]: The total number of applications accessed by outbound users in the last month.
-      [OutboundMonthlyTotalUsers <Decimal?>]: The total number of unique outbound users with sign-in activity in the last month.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [InboundMonthlyTotalApplications <Decimal?>]: 
+      [InboundMonthlyTotalUsers <Decimal?>]: 
+      [OutboundMonthlyTotalApplications <Decimal?>]: 
+      [OutboundMonthlyTotalUsers <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
-  [B2BRegistrationMetrics <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetrics>]: b2bRegistrationMetrics
+      [UpdateDateTime <DateTime?>]: 
+  [B2BRegistrationMetrics <IMicrosoftGraphB2BRegistrationMetrics>]: b2bRegistrationMetrics
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Initial <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetricsInitial>]: b2BRegistrationMetricsInitial
+    [Initial <IMicrosoftGraphB2BRegistrationMetricsInitial>]: b2BRegistrationMetricsInitial
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [InboundTotalUsers <Decimal?>]: The total number of inbound B2B guest users registered.
-      [OutboundTotalUsers <Decimal?>]: The total number of outbound B2B users from this tenant registered in other tenants.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [InboundTotalUsers <Decimal?>]: 
+      [OutboundTotalUsers <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [CreatedDateTime <DateTime?>]: Timestamp that represents the date time that B2B registration data was initially aggregated.
-    [Recent <IMicrosoftGraphTenantGovernanceServicesB2BRegistrationMetricsRecent>]: b2BRegistrationMetricsRecent
+      [CreatedDateTime <DateTime?>]: 
+    [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [Recent <IMicrosoftGraphB2BRegistrationMetricsRecent>]: b2BRegistrationMetricsRecent
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [InboundTotalUsers <Decimal?>]: The total number of inbound B2B guest users registered.
-      [OutboundTotalUsers <Decimal?>]: The total number of outbound B2B users from this tenant registered in other tenants.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [InboundTotalUsers <Decimal?>]: 
+      [OutboundTotalUsers <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [UpdateDateTime <DateTime?>]: Timestamp that represents the most recent time B2B registration data was aggregated and have sufficiently changed for the related tenant.
-  [B2BSignInActivityMetrics <IMicrosoftGraphTenantGovernanceServicesB2BSignInActivityMetrics>]: b2BSignInActivityMetrics
-  [BillingMetrics <IMicrosoftGraphTenantGovernanceServicesBillingMetrics>]: billingMetrics
+      [UpdateDateTime <DateTime?>]: 
+  [B2BSignInActivityMetrics <IMicrosoftGraphB2BSignInActivityMetrics>]: b2BSignInActivityMetrics
+  [BillingMetrics <IMicrosoftGraphBillingMetrics>]: billingMetrics
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Initial <IMicrosoftGraphTenantGovernanceServicesBillingMetricsInitial>]: billingMetricsInitial
+    [Initial <IMicrosoftGraphBillingMetricsInitial>]: billingMetricsInitial
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of foreign associated tenants with active billing management.
-      [ForeignAssociatedTenantCount <Decimal?>]: The total number of foreign associated tenants.
-      [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of foreign associated tenants with active provisioning.
-      [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of local associated tenants with active billing management.
-      [LocalAssociatedTenantCount <Decimal?>]: The total number of local associated tenants.
-      [LocalAssociatedTenantIds <String[]>]: The list of local associated tenant IDs.
-      [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of local associated tenants with active provisioning.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+      [ForeignAssociatedTenantCount <Decimal?>]: 
+      [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+      [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+      [LocalAssociatedTenantCount <Decimal?>]: 
+      [LocalAssociatedTenantIds <String[]>]: 
+      [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [CreatedDateTime <DateTime?>]: Timestamp that represents when billing metrics are initially aggregated for the related tenant.
-    [Recent <IMicrosoftGraphTenantGovernanceServicesBillingMetricsRecent>]: billingMetricsRecent
+      [CreatedDateTime <DateTime?>]: 
+    [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [Recent <IMicrosoftGraphBillingMetricsRecent>]: billingMetricsRecent
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of foreign associated tenants with active billing management.
-      [ForeignAssociatedTenantCount <Decimal?>]: The total number of foreign associated tenants.
-      [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of foreign associated tenants with active provisioning.
-      [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: The number of local associated tenants with active billing management.
-      [LocalAssociatedTenantCount <Decimal?>]: The total number of local associated tenants.
-      [LocalAssociatedTenantIds <String[]>]: The list of local associated tenant IDs.
-      [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: The number of local associated tenants with active provisioning.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [ForeignAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+      [ForeignAssociatedTenantCount <Decimal?>]: 
+      [ForeignAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+      [LocalAssociatedTenantBillingManagementActiveCount <Decimal?>]: 
+      [LocalAssociatedTenantCount <Decimal?>]: 
+      [LocalAssociatedTenantIds <String[]>]: 
+      [LocalAssociatedTenantProvisioningActiveCount <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [UpdateDateTime <DateTime?>]: Timestamp that represents when billing metrics are aggregated and have sufficiently changed for the related tenant.
-  [CreatedDateTime <DateTime?>]: The date and time when the related tenant was discovered.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-  [MultiTenantApplicationMetrics <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetrics>]: multiTenantApplicationMetrics
+      [UpdateDateTime <DateTime?>]: 
+  [CreatedDateTime <DateTime?>]: 
+  [MultiTenantApplicationMetrics <IMicrosoftGraphMultiTenantApplicationMetrics>]: multiTenantApplicationMetrics
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Initial <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetricsInitial>]: multiTenantApplicationMetricsInitial
+    [Initial <IMicrosoftGraphMultiTenantApplicationMetricsInitial>]: multiTenantApplicationMetricsInitial
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [InboundMonthlyTotalApplications <Decimal?>]: The total number of inbound multi-tenant applications in the last month.
-      [OutboundMonthlyTotalApplications <Decimal?>]: The total number of outbound multi-tenant applications in the last month.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [InboundMonthlyTotalApplications <Decimal?>]: 
+      [OutboundMonthlyTotalApplications <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [CreatedDateTime <DateTime?>]: Timestamp that represents when multitenant application metrics are initially aggregated for the related tenant.
-    [Recent <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetricsRecent>]: multiTenantApplicationMetricsRecent
+      [CreatedDateTime <DateTime?>]: 
+    [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [Recent <IMicrosoftGraphMultiTenantApplicationMetricsRecent>]: multiTenantApplicationMetricsRecent
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [InboundMonthlyTotalApplications <Decimal?>]: The total number of inbound multi-tenant applications in the last month.
-      [OutboundMonthlyTotalApplications <Decimal?>]: The total number of outbound multi-tenant applications in the last month.
-      [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+      [InboundMonthlyTotalApplications <Decimal?>]: 
+      [OutboundMonthlyTotalApplications <Decimal?>]: 
+      [WatermarkDateTime <DateTime?>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [UpdateDateTime <DateTime?>]: Timestamp that represents when multitenant application metrics are aggregated and have sufficiently changed for the related tenant.
+      [UpdateDateTime <DateTime?>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -916,7 +944,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
-  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
   [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
   [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -938,10 +965,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
@@ -949,56 +978,42 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-MULTITENANTAPPLICATIONMETRICS `<IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetrics>`: multiTenantApplicationMetrics
+MULTITENANTAPPLICATIONMETRICS <IMicrosoftGraphMultiTenantApplicationMetrics>: multiTenantApplicationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Initial <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetricsInitial>]: multiTenantApplicationMetricsInitial
+  [Initial <IMicrosoftGraphMultiTenantApplicationMetricsInitial>]: multiTenantApplicationMetricsInitial
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundMonthlyTotalApplications <Decimal?>]: The total number of inbound multi-tenant applications in the last month.
-    [OutboundMonthlyTotalApplications <Decimal?>]: The total number of outbound multi-tenant applications in the last month.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundMonthlyTotalApplications <Decimal?>]: 
+    [OutboundMonthlyTotalApplications <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [CreatedDateTime <DateTime?>]: Timestamp that represents when multitenant application metrics are initially aggregated for the related tenant.
-  [Recent <IMicrosoftGraphTenantGovernanceServicesMultiTenantApplicationMetricsRecent>]: multiTenantApplicationMetricsRecent
+    [CreatedDateTime <DateTime?>]: 
+  [InvestigationHints <IMicrosoftGraphInvestigationActionStep[]>]: 
+    [ActionUrl <IMicrosoftGraphInvestigationActionUrl>]: investigationActionUrl
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: 
+      [Url <String>]: 
+    [StepNumber <String>]: 
+    [Text <String>]: 
+  [Recent <IMicrosoftGraphMultiTenantApplicationMetricsRecent>]: multiTenantApplicationMetricsRecent
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [InboundMonthlyTotalApplications <Decimal?>]: The total number of inbound multi-tenant applications in the last month.
-    [OutboundMonthlyTotalApplications <Decimal?>]: The total number of outbound multi-tenant applications in the last month.
-    [WatermarkDateTime <DateTime?>]: The date and time when the metrics snapshot was taken.
+    [InboundMonthlyTotalApplications <Decimal?>]: 
+    [OutboundMonthlyTotalApplications <Decimal?>]: 
+    [WatermarkDateTime <DateTime?>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [UpdateDateTime <DateTime?>]: Timestamp that represents when multitenant application metrics are aggregated and have sufficiently changed for the related tenant.
+    [UpdateDateTime <DateTime?>]:
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryTenantGovernanceRelatedTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenant)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-relatedtenant-refresh?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenant)
+- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-relatedtenant-refresh?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRecommendation
 ---
@@ -22,16 +22,21 @@ Create new navigation property to recommendations for directory
 ```
 New-MgBetaDirectoryRecommendation [-ResponseHeadersVariable <string>]
  [-ActionSteps <IMicrosoftGraphActionStep[]>] [-AdditionalProperties <hashtable>]
- [-Benefits <string>] [-Category <string>] [-CreatedDateTime <datetime>] [-CurrentScore <double>]
- [-DisplayName <string>] [-FeatureAreas <string[]>] [-Id <string>] [-ImpactStartDateTime <datetime>]
- [-ImpactType <string>] [-ImpactedResources <IMicrosoftGraphImpactedResource[]>]
- [-Insights <string>] [-LastCheckedDateTime <datetime>] [-LastModifiedBy <string>]
- [-LastModifiedDateTime <datetime>] [-MaxScore <double>] [-PostponeUntilDateTime <datetime>]
+ [-Benefits <string>] [-Category <string>] [-CategoryGroup <string>]
+ [-CompletedBySystemDateTime <datetime>] [-CompletedByUserDateTime <datetime>]
+ [-CreatedDateTime <datetime>] [-CurrentScore <double>] [-DisplayName <string>]
+ [-FailedReviewDateTime <datetime>] [-FeatureAreas <string[]>] [-Id <string>]
+ [-ImpactStartDateTime <datetime>] [-ImpactType <string>]
+ [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <string>]
+ [-LastCheckedDateTime <datetime>] [-LastModifiedBy <string>] [-LastModifiedDateTime <datetime>]
+ [-MaxScore <double>] [-NeedsMoreActionResourceCount <int>]
+ [-NistClassifications <IMicrosoftGraphNistClassification[]>] [-PostponeUntilDateTime <datetime>]
  [-Priority <string>] [-RecommendationType <string>] [-ReleaseType <string>]
- [-RemediationImpact <string>] [-RequiredLicenses <string>] [-Status <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-RemediatedDateTime <datetime>] [-RemediationImpact <string>] [-RequiredLicenses <string>]
+ [-Status <string>] [-StatusModifiedDateTime <datetime>]
+ [-Tags <IMicrosoftGraphRecommendationTag[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -51,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to recommendations for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -182,6 +197,69 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CategoryGroup
+
+recommendationCategoryGroup
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CompletedBySystemDateTime
+
+.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CompletedByUserDateTime
+
+.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Confirm
 
 Prompts you for confirmation before running the cmdlet.
@@ -253,6 +331,27 @@ The title of the recommendation.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -FailedReviewDateTime
+
+.
+
+```yaml
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -547,6 +646,49 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -NeedsMoreActionResourceCount
+
+.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -NistClassifications
+
+.
+To construct, see NOTES section for NISTCLASSIFICATIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNistClassification[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -PostponeUntilDateTime
 
 The future date and time when the status of a postponed recommendation will be active again.
@@ -695,6 +837,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RemediatedDateTime
+
+.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -RemediationImpact
 
 Description of the impact on users of the remediation.
@@ -766,6 +929,49 @@ recommendationStatus
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -StatusModifiedDateTime
+
+.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Tags
+
+.
+To construct, see NOTES section for TAGS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -863,31 +1069,23 @@ Examples include user, application.
   [Status <String>]: recommendationStatus
   [SubjectId <String>]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
+  [Tags <IMicrosoftGraphRecommendationTag[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DisplayName <String>]: 
+
+NISTCLASSIFICATIONS <IMicrosoftGraphNistClassification[]>: .
+  [Category <String>]: 
+  [Description <String>]: 
+  [Function <String>]: 
+  [Name <String>]: 
+
+TAGS <IMicrosoftGraphRecommendationTag[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]:
 
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryRecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation)
