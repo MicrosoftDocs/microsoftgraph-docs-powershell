@@ -15,6 +15,9 @@ title: Get-MgBetaExternalConnectionGroup
 
 Get groups from external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

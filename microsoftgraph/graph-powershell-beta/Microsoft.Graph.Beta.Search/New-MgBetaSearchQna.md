@@ -15,6 +15,9 @@ title: New-MgBetaSearchQna
 
 Create a new qna object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSearchQna](/powershell/module/Microsoft.Graph.Search/New-MgSearchQna?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
