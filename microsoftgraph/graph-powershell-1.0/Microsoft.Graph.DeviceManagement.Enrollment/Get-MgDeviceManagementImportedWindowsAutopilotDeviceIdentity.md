@@ -69,12 +69,17 @@ Collection of imported Windows autopilot devices.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
 Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+
+```
+This example shows how to use the Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 
