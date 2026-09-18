@@ -16,6 +16,9 @@ title: Get-MgBetaPrintPrinterJobTaskDefinition
 The printTaskDefinition that was used to create this task.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterJobTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobTaskDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

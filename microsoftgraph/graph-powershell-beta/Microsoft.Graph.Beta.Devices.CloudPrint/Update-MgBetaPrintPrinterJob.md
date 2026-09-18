@@ -18,6 +18,9 @@ Only the configuration property can be updated.
 Updating a print job will only succeed if a printTask in a processing state, started by a trigger that the requesting app created, is associated with the print job.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
