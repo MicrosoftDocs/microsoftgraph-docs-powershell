@@ -897,7 +897,7 @@ Not yet supported.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroledefinition)
+- [Update-MgRoleManagementEntitlementManagementRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroledefinition)
 
 
 

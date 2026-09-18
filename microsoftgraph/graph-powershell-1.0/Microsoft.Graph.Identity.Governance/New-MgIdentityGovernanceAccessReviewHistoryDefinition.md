@@ -787,8 +787,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition)
-- [](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0)
+- [New-MgIdentityGovernanceAccessReviewHistoryDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0)
 
 
 

@@ -988,7 +988,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcescoperesourcerole)
+- [Update-MgEntitlementManagementResourceScopeResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcescoperesourcerole)
 
 
 
