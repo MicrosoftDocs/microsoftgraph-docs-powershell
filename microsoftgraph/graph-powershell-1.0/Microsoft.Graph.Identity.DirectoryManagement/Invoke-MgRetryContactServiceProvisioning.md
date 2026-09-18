@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Retry the orgContact service provisioning.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Invoke-MgRetryContactServiceProvisioning -OrgContactId $orgContactId
+
+```
+This example shows how to use the Invoke-MgRetryContactServiceProvisioning Cmdlet.
+
 
 ## PARAMETERS
 
