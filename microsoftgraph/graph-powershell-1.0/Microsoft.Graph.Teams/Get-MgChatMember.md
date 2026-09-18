@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Retrieve a conversationMember from a chat.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite, ChatMember.Read, ChatMember.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatMember.Read.All, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatMember.Read.Chat, ChatMember.ReadWrite.All, TeamMember.Read.Group,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
