@@ -54,13 +54,18 @@ Get work plan occurrences from your own work plan within a specified date range.
 This function requires the startDateTime and endDateTime parameters.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Invoke-MgViewUserSettingWorkHourAndLocationOccurrence -UserId $userId
+
+```
+This example shows how to use the Invoke-MgViewUserSettingWorkHourAndLocationOccurrence Cmdlet.
+
 
 ## PARAMETERS
 
