@@ -62,8 +62,9 @@ You can dismiss up to 60 service principal accounts in one request.
 | Application | IdentityRiskyServicePrincipal.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -74,6 +75,10 @@ $params = @{
 }
 
 Invoke-MgDismissRiskyServicePrincipal -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgDismissRiskyServicePrincipal Cmdlet.
+
 
 ## PARAMETERS
 

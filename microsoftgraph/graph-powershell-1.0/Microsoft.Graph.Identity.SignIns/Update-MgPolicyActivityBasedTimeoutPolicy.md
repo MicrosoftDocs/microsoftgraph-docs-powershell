@@ -80,8 +80,9 @@ Update the properties of an activityBasedTimeoutPolicy object.
 | Application | Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -90,6 +91,10 @@ $params = @{
 }
 
 Update-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
+
 
 ## PARAMETERS
 
