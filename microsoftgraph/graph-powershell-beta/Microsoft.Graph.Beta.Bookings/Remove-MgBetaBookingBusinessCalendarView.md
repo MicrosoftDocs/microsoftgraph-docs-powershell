@@ -15,6 +15,9 @@ title: Remove-MgBetaBookingBusinessCalendarView
 
 Delete navigation property calendarView for bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
