@@ -467,7 +467,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationonlinemeetingconversationmessagereplyreaction)
+- [Remove-MgCommunicationOnlineMeetingConversationMessageReplyReaction](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationonlinemeetingconversationmessagereplyreaction)
 
 
 
