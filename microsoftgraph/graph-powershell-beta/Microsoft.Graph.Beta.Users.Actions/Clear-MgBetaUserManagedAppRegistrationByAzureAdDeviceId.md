@@ -66,6 +66,14 @@ This cmdlet has the following aliases,
 
 Issues a wipe operation on an app registration with specified aad device Id.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
