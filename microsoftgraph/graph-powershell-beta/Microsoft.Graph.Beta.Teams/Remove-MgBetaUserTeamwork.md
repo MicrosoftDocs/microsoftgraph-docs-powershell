@@ -15,6 +15,9 @@ title: Remove-MgBetaUserTeamwork
 
 Delete navigation property teamwork for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserTeamwork?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

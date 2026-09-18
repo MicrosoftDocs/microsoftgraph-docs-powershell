@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamScheduleSwapShiftChangeRequest
 
 Create new navigation property to swapShiftsChangeRequests for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

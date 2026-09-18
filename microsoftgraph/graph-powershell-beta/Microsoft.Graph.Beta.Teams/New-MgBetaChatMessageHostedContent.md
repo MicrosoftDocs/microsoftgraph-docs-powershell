@@ -15,6 +15,9 @@ title: New-MgBetaChatMessageHostedContent
 
 Create new navigation property to hostedContents for chats
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgChatMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

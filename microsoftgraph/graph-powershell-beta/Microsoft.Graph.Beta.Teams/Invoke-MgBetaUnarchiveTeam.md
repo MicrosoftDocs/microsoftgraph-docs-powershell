@@ -18,6 +18,9 @@ Teams are archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgUnarchiveTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unarchive (Default)
