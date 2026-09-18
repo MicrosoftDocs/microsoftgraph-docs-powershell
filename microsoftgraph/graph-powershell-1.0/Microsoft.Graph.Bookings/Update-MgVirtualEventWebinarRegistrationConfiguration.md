@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgVirtualEventWebinarRegistrationConfiguration
 ---
@@ -14,9 +14,6 @@ title: Update-MgVirtualEventWebinarRegistrationConfiguration
 ## SYNOPSIS
 
 Update the navigation property registrationConfiguration in solutions
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarRegistrationConfiguration](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarRegistrationConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,8 +33,7 @@ Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <st
 
 ```
 Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <string>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -58,8 +54,7 @@ Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIde
 
 ```
 Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -72,6 +67,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property registrationConfiguration in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -105,10 +110,9 @@ HelpMessage: ''
 ### -BodyParameter
 
 virtualEventWebinarRegistrationConfiguration
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration
+Type: System.Collections.Hashtable
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -321,7 +325,7 @@ HelpMessage: ''
 
 ### -IsManualApprovalEnabled
 
-
+Indicates whether registrations require organizer approval before a participant is confirmed.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -348,7 +352,7 @@ HelpMessage: ''
 
 ### -IsWaitlistEnabled
 
-
+Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -575,7 +579,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration
+### System.Collections.Hashtable
 
 {{ Fill in the Description }}
 
@@ -596,22 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>`: virtualEventWebinarRegistrationConfiguration
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Capacity <Int32?>]: Total capacity of the virtual event.
-  [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
-    [DisplayName <String>]: Display name of the registration question.
-    [IsRequired <Boolean?>]: Indicates whether an answer to the question is required.
-The default value is false.
-  [RegistrationWebUrl <String>]: Registration URL of the virtual event.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [IsManualApprovalEnabled <Boolean?>]: 
-  [IsWaitlistEnabled <Boolean?>]: 
-
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -642,27 +631,4 @@ The default value is false.
 
 ## RELATED LINKS
 
-- [Update-MgVirtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration)
