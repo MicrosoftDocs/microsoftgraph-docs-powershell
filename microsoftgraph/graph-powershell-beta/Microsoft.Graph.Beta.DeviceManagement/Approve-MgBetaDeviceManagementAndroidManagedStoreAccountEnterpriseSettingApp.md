@@ -413,7 +413,7 @@ BODYPARAMETER `<IPathsQ0Me7IDevicemanagementAndroidmanagedstoreaccountenterprise
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/approve-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp)
+- [Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/approve-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp)
 
 
 
