@@ -1116,7 +1116,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphBookingService>: Represents a particular service offered by a booking business.
+BODYPARAMETER `<IMicrosoftGraphBookingService>`: Represents a particular service offered by a booking business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1217,7 +1217,7 @@ CUSTOMQUESTIONS <IMicrosoftGraphBookingQuestionAssignment[]>: Contains the set o
   [IsRequired <Boolean?>]: Indicates whether it's mandatory to answer the custom question.
   [QuestionId <String>]: The ID of the custom question.
 
-DEFAULTLOCATION <IMicrosoftGraphLocation>: location
+DEFAULTLOCATION `<IMicrosoftGraphLocation>`: location
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1249,7 +1249,7 @@ The value of this property is available only when reading this bookingService by
 It's denoted in ISO 8601 format.
   [Recipients <String>]: bookingReminderRecipients
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1270,7 +1270,7 @@ INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
+SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowStaffSelection <Boolean?>]: True to allow customers to choose a specific person for the booking.
   [CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow[]>]: Custom availability of the service in a given time frame.
@@ -1305,3 +1305,25 @@ Use the email address specified in the email property of the bookingBusiness ent
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice)
 - [](https://learn.microsoft.com/graph/api/bookingbusiness-post-services?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
