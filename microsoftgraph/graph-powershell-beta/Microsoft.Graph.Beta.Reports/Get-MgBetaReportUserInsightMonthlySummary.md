@@ -57,12 +57,17 @@ This cmdlet has the following aliases,
 Summary of all usage insights on apps registered in the tenant for a specified period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportUserInsightMonthlySummary
+
+```
+This example shows how to use the Get-MgBetaReportUserInsightMonthlySummary Cmdlet.
+
 
 ## PARAMETERS
 

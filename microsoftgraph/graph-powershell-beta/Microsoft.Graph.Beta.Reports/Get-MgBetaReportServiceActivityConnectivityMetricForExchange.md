@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get estimated connectivity metrics based on the percentage of successful synthetic connections between organization devices and Exchange Online that might include issues outside the control of Microsoft.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityConnectivityMetricForExchange
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityConnectivityMetricForExchange Cmdlet.
+
 
 ## PARAMETERS
 
