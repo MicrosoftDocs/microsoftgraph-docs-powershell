@@ -16,6 +16,9 @@ title: Get-MgBetaRoleManagementDirectoryRoleDefinition
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
 The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra directory roles)\r- entitlement management (Microsoft Entra entitlement management)\r- Exchange Online (Except China operated by 21Vianet)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

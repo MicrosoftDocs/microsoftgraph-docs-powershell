@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 
 Delete navigation property eligibilitySchedules for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

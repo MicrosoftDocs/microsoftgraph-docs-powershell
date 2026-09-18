@@ -16,6 +16,9 @@ title: Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedS
 Provide a summary from the insights resource of workflow objects processed within a tenant for a specified period.
 Because the list returned by List workflows doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Workflows (Default)

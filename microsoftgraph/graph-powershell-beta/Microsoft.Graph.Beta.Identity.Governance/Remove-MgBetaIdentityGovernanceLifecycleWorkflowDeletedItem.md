@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem
 
 Delete navigation property deletedItems for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

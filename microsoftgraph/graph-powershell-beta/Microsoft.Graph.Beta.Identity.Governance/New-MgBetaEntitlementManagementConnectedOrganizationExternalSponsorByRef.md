@@ -16,6 +16,9 @@ title: New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef
 Add a user or a group to the externalSponsors relationship of a connectedOrganization.
 External sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
