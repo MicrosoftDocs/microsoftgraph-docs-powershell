@@ -466,7 +466,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementintunebrandingprofileassignment)
+- [Remove-MgBetaDeviceManagementIntuneBrandingProfileAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementintunebrandingprofileassignment)
 
 
 

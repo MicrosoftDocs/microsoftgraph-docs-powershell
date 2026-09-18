@@ -454,7 +454,7 @@ For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan)
+- [New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan)
 
 
 

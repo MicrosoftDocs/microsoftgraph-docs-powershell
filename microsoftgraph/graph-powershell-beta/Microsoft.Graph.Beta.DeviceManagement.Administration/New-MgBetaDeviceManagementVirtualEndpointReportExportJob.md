@@ -609,8 +609,8 @@ It can be used to download the file.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob)
-- [](https://learn.microsoft.com/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta)
+- [New-MgBetaDeviceManagementVirtualEndpointReportExportJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta)
 
 
 
