@@ -49,12 +49,17 @@ You can use this URL to download the installer to install the sensor on a server
 | Application | SecurityIdentitiesSensors.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityIdentitySensorDeploymentPackageUri
+
+```
+This example shows how to use the Get-MgBetaSecurityIdentitySensorDeploymentPackageUri Cmdlet.
+
 
 ## PARAMETERS
 

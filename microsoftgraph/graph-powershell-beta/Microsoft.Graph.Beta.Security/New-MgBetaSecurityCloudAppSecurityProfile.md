@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to cloudAppSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -769,6 +759,7 @@ Required
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycloudappsecurityprofile)
+
 
 
 

@@ -59,12 +59,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a departmentTemplate object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityLabelDepartment
+
+```
+This example shows how to use the Get-MgBetaSecurityLabelDepartment Cmdlet.
+
 
 ## PARAMETERS
 

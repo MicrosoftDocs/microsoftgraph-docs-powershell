@@ -64,12 +64,17 @@ The custom detection rules configured for the tenant.
 | Application | CustomDetection.Read.All, CustomDetection.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityRuleDetectionRule
+Get-MgBetaSecurityRuleDetectionRule -Top 3 
+
+```
+This example shows how to use the Get-MgBetaSecurityRuleDetectionRule Cmdlet.
+
 
 ## PARAMETERS
 
