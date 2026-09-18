@@ -17,6 +17,9 @@ A set of overrides for a user to always classify messages from specific senders 
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
