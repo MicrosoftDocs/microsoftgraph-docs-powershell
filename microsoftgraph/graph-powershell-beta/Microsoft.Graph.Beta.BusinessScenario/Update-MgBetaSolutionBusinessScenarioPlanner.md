@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BusinessScenario-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplanner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBusinessScenarioPlanner
 ---
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property planner in solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -541,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanner
+BODYPARAMETER <IMicrosoftGraphBusinessScenarioPlanner>: businessScenarioPlanner
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -729,6 +739,8 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
     [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
     [HasChat <Boolean?>]: Read-only.
 This value is true if the task has chat messages associated with it.
 Otherwise, false.
@@ -861,14 +873,14 @@ Optional.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [TaskTargetKind <String>]: plannerTaskTargetKind
 
-INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
+INPUTOBJECT <IBusinessScenarioIdentity>: Identity Parameter
   [BusinessScenarioId <String>]: The unique identifier of businessScenario
   [BusinessScenarioTaskId <String>]: The unique identifier of businessScenarioTask
   [PlannerPlanConfigurationLocalizationId <String>]: The unique identifier of plannerPlanConfigurationLocalization
   [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [UniqueName <String>]: Alternate key of businessScenario
 
-PLANCONFIGURATION `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
+PLANCONFIGURATION <IMicrosoftGraphPlannerPlanConfiguration>: plannerPlanConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -902,7 +914,7 @@ Read-only.
     [LanguageTag <String>]: The language code associated with the localized names in this object.
     [PlanTitle <String>]: Localized title of the plan.
 
-TASKCONFIGURATION `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
+TASKCONFIGURATION <IMicrosoftGraphPlannerTaskConfiguration>: plannerTaskConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1064,6 +1076,8 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
   [HasChat <Boolean?>]: Read-only.
 This value is true if the task has chat messages associated with it.
 Otherwise, false.
@@ -1199,27 +1213,4 @@ Optional.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBusinessScenarioPlanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplanner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/update-mgbetasolutionbusinessscenarioplanner)
