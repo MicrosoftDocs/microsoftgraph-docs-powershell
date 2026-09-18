@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgExternalConnectionItem
 ---
@@ -14,9 +14,6 @@ title: New-MgExternalConnectionItem
 ## SYNOPSIS
 
 Create new navigation property to items for external
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,7 @@ New-MgExternalConnectionItem -ExternalConnectionId <string> [-ResponseHeadersVar
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]
  [-AdditionalProperties <hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <string>]
+ [-InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]
  [-Properties <hashtable>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -51,6 +49,7 @@ New-MgExternalConnectionItem -InputObject <ISearchIdentity> [-ResponseHeadersVar
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]
  [-AdditionalProperties <hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <string>]
+ [-InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]
  [-Properties <hashtable>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -74,6 +73,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to items for external
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -380,6 +389,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -InformationProtectionLabel
+
+externalItemInformationProtectionLabel
+To construct, see NOTES section for INFORMATIONPROTECTIONLABEL properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -599,7 +636,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Type <String>]: externalActivityType
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem>`: externalItem
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem>: externalItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -629,16 +666,23 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Type <String>]: externalItemContentType
     [Value <String>]: The content for the externalItem.
 Required.
+  [InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]: externalItemInformationProtectionLabel
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SensitivityLabelId <String>]: 
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
+CONTENT <IMicrosoftGraphExternalConnectorsExternalItemContent>: externalItemContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: externalItemContentType
   [Value <String>]: The content for the externalItem.
 Required.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INFORMATIONPROTECTIONLABEL <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>: externalItemInformationProtectionLabel
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [SensitivityLabelId <String>]: 
+
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -652,27 +696,4 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgExternalConnectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem)
