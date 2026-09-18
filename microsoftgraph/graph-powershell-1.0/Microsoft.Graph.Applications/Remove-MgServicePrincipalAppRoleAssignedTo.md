@@ -57,12 +57,17 @@ Deletes an appRoleAssignment that a user, group, or client service principal has
 | Application | AppRoleAssignment.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -AppRoleAssignmentId $appRoleAssignmentId
+
+```
+This example shows how to use the Remove-MgServicePrincipalAppRoleAssignedTo Cmdlet.
+
 
 ## PARAMETERS
 
