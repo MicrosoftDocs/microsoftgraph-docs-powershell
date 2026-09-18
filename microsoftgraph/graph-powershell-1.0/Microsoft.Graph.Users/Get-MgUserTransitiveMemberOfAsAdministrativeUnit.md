@@ -599,7 +599,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasadministrativeunit)
+- [Get-MgUserTransitiveMemberOfAsAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasadministrativeunit)
 
 
 

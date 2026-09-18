@@ -407,7 +407,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingiteminsight)
+- [Remove-MgUserSettingItemInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingiteminsight)
 
 
 
