@@ -18,6 +18,9 @@ For more info, see getting previous versions.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: New-MgGroupDriveListSubscription
 
 Create new navigation property to subscriptions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

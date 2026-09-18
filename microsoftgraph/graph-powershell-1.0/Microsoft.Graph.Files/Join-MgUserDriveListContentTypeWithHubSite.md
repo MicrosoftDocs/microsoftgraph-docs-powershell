@@ -15,6 +15,9 @@ title: Join-MgUserDriveListContentTypeWithHubSite
 
 Associate a published content type present in a content type hub with a list of hub sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Join-MgBetaUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Files/Join-MgBetaUserDriveListContentTypeWithHubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)

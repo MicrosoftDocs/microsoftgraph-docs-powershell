@@ -15,6 +15,9 @@ title: New-MgDriveListItem
 
 Create new navigation property to items for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgGroupDriveRootListItemDriveItem
 
 For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
