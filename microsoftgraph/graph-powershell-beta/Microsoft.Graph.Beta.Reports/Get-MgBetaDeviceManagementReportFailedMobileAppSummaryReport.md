@@ -585,7 +585,7 @@ BODYPARAMETER `<IPathsLsdaarDevicemanagementReportsMicrosoftGraphGetfailedmobile
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportfailedmobileappsummaryreport)
+- [Get-MgBetaDeviceManagementReportFailedMobileAppSummaryReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportfailedmobileappsummaryreport)
 
 
 

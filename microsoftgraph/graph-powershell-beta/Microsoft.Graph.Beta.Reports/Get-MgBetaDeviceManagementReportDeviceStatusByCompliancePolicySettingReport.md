@@ -570,7 +570,7 @@ BODYPARAMETER `<IPathsZc4O44DevicemanagementReportsMicrosoftGraphGetdevicestatus
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicestatusbycompliancepolicysettingreport)
+- [Get-MgBetaDeviceManagementReportDeviceStatusByCompliancePolicySettingReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportdevicestatusbycompliancepolicysettingreport)
 
 
 
