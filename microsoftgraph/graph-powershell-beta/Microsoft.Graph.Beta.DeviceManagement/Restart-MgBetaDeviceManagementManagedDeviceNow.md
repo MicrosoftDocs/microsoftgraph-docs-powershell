@@ -15,6 +15,9 @@ title: Restart-MgBetaDeviceManagementManagedDeviceNow
 
 Reboot device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restart-MgDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.DeviceManagement/Restart-MgDeviceManagementManagedDeviceNow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reboot (Default)

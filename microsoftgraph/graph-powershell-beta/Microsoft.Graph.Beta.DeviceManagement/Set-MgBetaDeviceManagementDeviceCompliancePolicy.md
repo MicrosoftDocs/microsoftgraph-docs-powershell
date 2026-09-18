@@ -15,6 +15,9 @@ title: Set-MgBetaDeviceManagementDeviceCompliancePolicy
 
 Invoke action assign
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.DeviceManagement/Set-MgDeviceManagementDeviceCompliancePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
