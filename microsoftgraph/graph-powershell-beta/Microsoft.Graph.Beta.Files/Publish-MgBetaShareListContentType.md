@@ -15,6 +15,9 @@ title: Publish-MgBetaShareListContentType
 
 Invoke action publish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgShareListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)

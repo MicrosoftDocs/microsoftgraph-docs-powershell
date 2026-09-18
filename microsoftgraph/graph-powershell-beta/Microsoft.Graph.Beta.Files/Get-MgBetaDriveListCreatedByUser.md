@@ -15,6 +15,9 @@ title: Get-MgBetaDriveListCreatedByUser
 
 Get createdByUser from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

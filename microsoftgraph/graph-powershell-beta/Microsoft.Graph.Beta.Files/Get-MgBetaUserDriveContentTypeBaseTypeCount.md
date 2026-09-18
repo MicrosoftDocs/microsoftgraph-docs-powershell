@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveContentTypeBaseTypeCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveContentTypeBaseTypeCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBaseTypeCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

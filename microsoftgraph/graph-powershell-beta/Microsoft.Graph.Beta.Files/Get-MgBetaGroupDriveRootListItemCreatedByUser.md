@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveRootListItemCreatedByUser
 
 Get createdByUser from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootListItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootListItemCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

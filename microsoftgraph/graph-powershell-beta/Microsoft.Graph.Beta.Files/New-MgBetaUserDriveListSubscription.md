@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveListSubscription
 
 Create new navigation property to subscriptions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveListSubscription](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
