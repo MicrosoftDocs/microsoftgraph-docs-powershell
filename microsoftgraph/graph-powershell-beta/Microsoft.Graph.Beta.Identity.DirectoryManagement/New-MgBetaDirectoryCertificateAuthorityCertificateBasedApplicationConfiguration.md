@@ -505,8 +505,8 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
-- [](https://learn.microsoft.com/graph/api/certificateauthoritypath-post-certificatebasedapplicationconfigurations?view=graph-rest-beta)
+- [New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/certificateauthoritypath-post-certificatebasedapplicationconfigurations?view=graph-rest-beta)
 
 
 
