@@ -99,8 +99,9 @@ The following group setting templates are available for groups:
 | Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
@@ -116,21 +117,9 @@ $params = @{
 
 New-MgGroupSetting -GroupId $groupId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example shows how to use the New-MgGroupSetting Cmdlet.
 
-Import-Module Microsoft.Graph.Groups
-
-$params = @{
-	templateId = "7e0abea2-5c20-405f-9658-bfc9a523fd49"
-	values = @(
-		@{
-			name = "AllowToAddGuests"
-			value = "false"
-		}
-	)
-}
-
-New-MgGroupSetting -GroupId $groupId -BodyParameter $params
 
 ## PARAMETERS
 

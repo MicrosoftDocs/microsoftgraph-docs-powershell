@@ -74,12 +74,17 @@ Nullable.
 | Application | Group-Conversation.Read.All, Group-Conversation.ReadWrite.All, Group.Read.All, Group.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId
+
+```
+This example shows how to use the Get-MgGroupConversationThread Cmdlet.
+
 
 ## PARAMETERS
 
