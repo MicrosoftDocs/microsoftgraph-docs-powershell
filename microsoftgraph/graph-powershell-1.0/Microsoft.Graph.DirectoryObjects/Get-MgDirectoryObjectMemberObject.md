@@ -79,8 +79,9 @@ Only users and role-enabled groups can be members of directory roles.
 | Application | Application.Read.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All, User.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDirectoryObjectMemberObject Cmdlet.
+
 
 ## PARAMETERS
 
