@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetausagenetworkaccessreportprofiling
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUsageNetworkAccessReportProfiling
 ---
@@ -21,7 +21,8 @@ Returns an object containing count tables for the traffic types in Global Secure
 
 ```
 Invoke-MgBetaUsageNetworkAccessReportProfiling -AggregatedBy <string> -EndDateTime <datetime>
- -StartDateTime <datetime> [-ApplicationId <string>] [-Count]
+ -StartDateTime <datetime> [-AgentTypeId <string>] [-AgentVirtualId <string>] [-AiAgentId <string>]
+ [-AiAgentName <string>] [-ApplicationId <string>] [-Count] [-DestinationUrl <string>]
  [-DiscoveredApplicationSegmentId <string>] [-Filter <string>] [-Search <string>] [-Skip <int>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -32,11 +33,12 @@ Invoke-MgBetaUsageNetworkAccessReportProfiling -AggregatedBy <string> -EndDateTi
 
 ```
 Invoke-MgBetaUsageNetworkAccessReportProfiling -InputObject <INetworkAccessIdentity>
- [-ApplicationId <string>] [-Count] [-DiscoveredApplicationSegmentId <string>] [-Filter <string>]
- [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-AgentTypeId <string>] [-AgentVirtualId <string>] [-AiAgentId <string>] [-AiAgentName <string>]
+ [-ApplicationId <string>] [-Count] [-DestinationUrl <string>]
+ [-DiscoveredApplicationSegmentId <string>] [-Filter <string>] [-Search <string>] [-Skip <int>]
+ [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,19 +51,56 @@ This cmdlet has the following aliases,
 Returns an object containing count tables for the traffic types in Global Secure Access, aggregated by the time period specified.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
 Invoke-MgBetaUsageNetworkAccessReportProfiling
 
-```
-This example shows how to use the Invoke-MgBetaUsageNetworkAccessReportProfiling Cmdlet.
-
-
 ## PARAMETERS
+
+### -AgentTypeId
+
+Usage: agentTypeId='@agentTypeId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AgentVirtualId
+
+Usage: agentVirtualId='@agentVirtualId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -AggregatedBy
 
@@ -76,6 +115,48 @@ ParameterSets:
 - Name: Usage
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AiAgentId
+
+Usage: aiAgentId='@aiAgentId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AiAgentName
+
+Usage: aiAgentName='@aiAgentName'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -133,6 +214,27 @@ Include count of items
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DestinationUrl
+
+Usage: destinationUrl='@destinationUrl'
+
+```yaml
+Type: System.String
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -495,7 +597,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -526,27 +628,5 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaUsageNetworkAccessReportProfiling](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetausagenetworkaccessreportprofiling)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-reports-usageprofiling?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetausagenetworkaccessreportprofiling)
+- [](https://learn.microsoft.com/graph/api/networkaccess-reports-usageprofiling?view=graph-rest-beta)
