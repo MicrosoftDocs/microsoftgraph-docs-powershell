@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyCrossTenantAccessPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPolicyCrossTenantAccessPolicy
 ## SYNOPSIS
 
 Update the properties of a cross-tenant access policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a cross-tenant access policy.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.CrossTenantAccess,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.CrossTenantAccess,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -74,10 +62,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -567,7 +551,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy>`: crossTenantAccessPolicy
+BODYPARAMETER <IMicrosoftGraphCrossTenantAccessPolicy>: crossTenantAccessPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Definition <String[]>]: The raw JSON definition of the cross-tenant access policy.
 Deprecated.
@@ -631,7 +615,8 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
 If a resource appears in both included and excluded, the excluded property takes precedence.
-            [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+            [ResourceId <String>]: The ID of the resource to modify.
+The value is either All, to apply the capability to all resources of the type specified by resourceType (all users or all groups), or the GUID of a specific user or group.
             [ResourceType <String>]: m365ResourceType
           [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
       [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
@@ -676,6 +661,9 @@ Optional.
         [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
 false stops any current group synchronization from the source tenant to the target tenant.
 This property has no impact on existing groups that were synchronized.
+      [RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]: crossTenantRoleEnabledGroupSyncInbound
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [IsSyncAllowed <Boolean?>]: 
       [TenantId <String>]: Tenant identifier for the partner Microsoft Entra organization.
 Key.
 Read-only.
@@ -720,7 +708,7 @@ Read-only.
       [InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]: crossTenantAccessPolicyInboundTrust
       [TemplateApplicationLevel <String>]: templateApplicationLevel
 
-DEFAULT `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>`: crossTenantAccessPolicyConfigurationDefault
+DEFAULT <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>: crossTenantAccessPolicyConfigurationDefault
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -768,7 +756,8 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
 If a resource appears in both included and excluded, the excluded property takes precedence.
-          [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+          [ResourceId <String>]: The ID of the resource to modify.
+The value is either All, to apply the capability to all resources of the type specified by resourceType (all users or all groups), or the GUID of a specific user or group.
           [ResourceType <String>]: m365ResourceType
         [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
     [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
@@ -828,6 +817,9 @@ Optional.
       [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
 false stops any current group synchronization from the source tenant to the target tenant.
 This property has no impact on existing groups that were synchronized.
+    [RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]: crossTenantRoleEnabledGroupSyncInbound
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsSyncAllowed <Boolean?>]: 
     [TenantId <String>]: Tenant identifier for the partner Microsoft Entra organization.
 Key.
 Read-only.
@@ -853,7 +845,8 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
 If a resource appears in both included and excluded, the excluded property takes precedence.
-          [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+          [ResourceId <String>]: The ID of the resource to modify.
+The value is either All, to apply the capability to all resources of the type specified by resourceType (all users or all groups), or the GUID of a specific user or group.
           [ResourceType <String>]: m365ResourceType
         [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
     [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
@@ -884,7 +877,7 @@ Key.
       [Rule <String>]: Defines the rule to filter the devices.
 For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 
-TEMPLATES `<IMicrosoftGraphPolicyTemplate>`: policyTemplate
+TEMPLATES <IMicrosoftGraphPolicyTemplate>: policyTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -929,27 +922,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyCrossTenantAccessPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy)
+- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-beta)
