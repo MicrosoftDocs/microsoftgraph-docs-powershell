@@ -429,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcertificatesummaryreportPostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcertificatesummaryreportPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertificationAuthorityId <String>]: 
   [Select <String[]>]:
@@ -438,3 +438,25 @@ BODY <IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcerti
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcloudpkileafcertificatesummaryreport)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
