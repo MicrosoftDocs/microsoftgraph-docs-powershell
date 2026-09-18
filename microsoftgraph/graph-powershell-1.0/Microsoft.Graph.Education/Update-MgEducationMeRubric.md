@@ -799,8 +799,8 @@ QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making u
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmerubric)
-- [](https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-1.0)
+- [Update-MgEducationMeRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmerubric)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-1.0)
 
 
 

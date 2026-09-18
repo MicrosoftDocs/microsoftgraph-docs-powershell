@@ -803,8 +803,8 @@ QUALITIES <IMicrosoftGraphRubricQuality[]>: The collection of qualities making u
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentrubric)
-- [](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0)
+- [Update-MgEducationClassAssignmentRubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentrubric)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0)
 
 
 

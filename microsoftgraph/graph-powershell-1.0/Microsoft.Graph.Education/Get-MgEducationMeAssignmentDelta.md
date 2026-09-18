@@ -454,8 +454,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta)
-- [](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
+- [Get-MgEducationMeAssignmentDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-1.0)
 
 
 

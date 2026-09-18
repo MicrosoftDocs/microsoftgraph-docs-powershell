@@ -468,8 +468,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource)
-- [](https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0)
+- [Remove-MgEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmoduleresource-delete?view=graph-rest-1.0)
 
 
 
