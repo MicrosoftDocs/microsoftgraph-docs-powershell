@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryDeletedItemMemberObject
 
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeletedItemMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

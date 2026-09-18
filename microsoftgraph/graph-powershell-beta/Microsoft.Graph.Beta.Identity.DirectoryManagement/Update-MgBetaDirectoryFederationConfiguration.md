@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryFederationConfiguration
 
 Update the navigation property federationConfigurations in directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryFederationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -19,6 +19,9 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgOrganizationMemberGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

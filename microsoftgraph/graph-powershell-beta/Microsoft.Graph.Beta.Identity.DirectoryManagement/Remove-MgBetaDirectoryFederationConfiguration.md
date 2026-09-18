@@ -15,6 +15,9 @@ title: Remove-MgBetaDirectoryFederationConfiguration
 
 Delete a samlOrWsFedExternalDomainFederation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFederationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

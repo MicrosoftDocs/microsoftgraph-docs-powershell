@@ -15,6 +15,9 @@ title: Update-MgBetaDirectorySubscriptionByCommerceSubscriptionId
 
 Update the navigation property subscriptions in directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectorySubscriptionByCommerceSubscriptionId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySubscriptionByCommerceSubscriptionId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -18,6 +18,9 @@ The contact's direct reports.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactDirectReport](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDirectReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
