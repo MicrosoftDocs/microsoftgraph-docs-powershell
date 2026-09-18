@@ -15,6 +15,9 @@ title: New-MgGroupOnenoteOperation
 
 Create new navigation property to operations for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
