@@ -115,7 +115,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -186,7 +186,7 @@ HelpMessage: ''
 
 ### -GroupIds
 
-.
+
 
 ```yaml
 Type: System.String[]
