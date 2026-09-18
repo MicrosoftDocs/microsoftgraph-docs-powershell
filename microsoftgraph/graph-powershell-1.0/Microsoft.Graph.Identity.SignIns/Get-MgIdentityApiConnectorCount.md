@@ -15,6 +15,9 @@ title: Get-MgIdentityApiConnectorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityApiConnectorCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityApiConnectorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

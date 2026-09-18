@@ -16,6 +16,9 @@ title: Get-MgPolicyDeviceRegistrationPolicy
 Read the properties and relationships of a deviceRegistrationPolicy object.
 Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyDeviceRegistrationPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgIdentityConditionalAccessDeletedItemNamedLocation
 
 Get namedLocations from identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
