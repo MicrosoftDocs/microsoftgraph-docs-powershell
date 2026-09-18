@@ -15,6 +15,9 @@ title: Invoke-MgOffboardSolutionBackupRestoreProtectionUnit
 
 Offboard a protectionUnitBase.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Invoke-MgBetaOffboardSolutionBackupRestoreProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Offboard (Default)
