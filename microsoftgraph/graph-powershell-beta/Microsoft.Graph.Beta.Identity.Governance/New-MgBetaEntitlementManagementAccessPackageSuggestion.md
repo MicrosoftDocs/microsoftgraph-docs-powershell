@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagesuggestion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementAccessPackageSuggestion
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to accessPackageSuggestions for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -400,7 +410,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGE `<IMicrosoftGraphAvailableAccessPackage>`: availableAccessPackage
+ACCESSPACKAGE <IMicrosoftGraphAvailableAccessPackage>: availableAccessPackage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -453,8 +463,11 @@ Read-only.
           [Description <String>]: The description of the scope.
           [DisplayName <String>]: The display name of the scope.
           [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-          [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-          [OriginSystem <String>]: The origin system for the scope.
+          [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+          [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
           [RoleOriginId <String>]: The origin system for the role, if different.
           [Url <String>]: A resource locator for the scope.
         [AddedBy <String>]: The name of the user or application that first added this resource.
@@ -481,43 +494,56 @@ Read-only.
 Read-only.
           [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
           [ConnectorType <String>]: connectorType
-          [CreatedBy <String>]: 
-          [CreatedDateTime <DateTime?>]: 
-          [Description <String>]: 
-          [DisplayName <String>]: 
-          [ModifiedBy <String>]: 
-          [ModifiedDateTime <DateTime?>]: 
+          [CreatedBy <String>]: The identifier of the user or application that created the connector.
+          [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+          [Description <String>]: A description of the connector.
+          [DisplayName <String>]: The display name of the connector.
+          [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+          [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
         [IsPendingOnboarding <Boolean?>]: True if the resource is not yet available for assignment.
 Read-only.
         [OriginId <String>]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
 Supports $filter (eq).
         [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup or CustomDataProvidedResource.
-Supports $filter (eq).
+Supports $filter and $expand (eq).
         [ResourceType <String>]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
         [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
 Read-only.
-          [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
+Supports $orderby.
+          [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
             [(Any) <Object>]: This indicates any property can be added to this object.
+          [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+            [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+            [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
           [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
-          [Source <String>]: The source of the access data.
-This should be set to the customdataprovidedresource's name when creating the session.
+          [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
           [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
             [(Any) <Object>]: This indicates any property can be added to this object.
             [FilesUploaded <Int32?>]: Number of files uploaded in this session.
             [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
           [Status <String>]: customDataProvidedResourceUploadStatus
-          [Type <String>]: Schematized form of the expected CSV columns in the uploaded file.
-The only possible value currently is: accessReviewDataUploadTriggerCallbackData
         [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
       [Description <String>]: A description for the resource role.
       [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
       [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources or AadGroup.
+      [Type <String>]: roleType
     [AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
     [CreatedBy <String>]: 
     [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -526,7 +552,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageSuggestion>`: accessPackageSuggestion
+BODYPARAMETER <IMicrosoftGraphAccessPackageSuggestion>: accessPackageSuggestion
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -583,8 +609,11 @@ Read-only.
             [Description <String>]: The description of the scope.
             [DisplayName <String>]: The display name of the scope.
             [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-            [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-            [OriginSystem <String>]: The origin system for the scope.
+            [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+            [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
             [RoleOriginId <String>]: The origin system for the role, if different.
             [Url <String>]: A resource locator for the scope.
           [AddedBy <String>]: The name of the user or application that first added this resource.
@@ -611,43 +640,56 @@ Read-only.
 Read-only.
             [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
             [ConnectorType <String>]: connectorType
-            [CreatedBy <String>]: 
-            [CreatedDateTime <DateTime?>]: 
-            [Description <String>]: 
-            [DisplayName <String>]: 
-            [ModifiedBy <String>]: 
-            [ModifiedDateTime <DateTime?>]: 
+            [CreatedBy <String>]: The identifier of the user or application that created the connector.
+            [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+            [Description <String>]: A description of the connector.
+            [DisplayName <String>]: The display name of the connector.
+            [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+            [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
           [IsPendingOnboarding <Boolean?>]: True if the resource is not yet available for assignment.
 Read-only.
           [OriginId <String>]: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
 Supports $filter (eq).
           [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup or CustomDataProvidedResource.
-Supports $filter (eq).
+Supports $filter and $expand (eq).
           [ResourceType <String>]: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
           [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
 Read-only.
-            [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
+Supports $orderby.
+            [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
               [(Any) <Object>]: This indicates any property can be added to this object.
+            [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+              [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+              [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
             [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
-            [Source <String>]: The source of the access data.
-This should be set to the customdataprovidedresource's name when creating the session.
+            [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
             [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
               [(Any) <Object>]: This indicates any property can be added to this object.
               [FilesUploaded <Int32?>]: Number of files uploaded in this session.
               [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
             [Status <String>]: customDataProvidedResourceUploadStatus
-            [Type <String>]: Schematized form of the expected CSV columns in the uploaded file.
-The only possible value currently is: accessReviewDataUploadTriggerCallbackData
           [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
         [Description <String>]: A description for the resource role.
         [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
         [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-        [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+        [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources or AadGroup.
+        [Type <String>]: roleType
       [AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
       [CreatedBy <String>]: 
       [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -660,27 +702,4 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
 
-- [New-MgBetaEntitlementManagementAccessPackageSuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagesuggestion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagesuggestion)
