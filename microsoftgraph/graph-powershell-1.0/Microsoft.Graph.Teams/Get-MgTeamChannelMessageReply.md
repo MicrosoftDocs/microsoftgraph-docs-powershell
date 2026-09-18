@@ -605,7 +605,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -649,3 +649,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagereply)
 - [](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/chatmessage-list-replies?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
