@@ -14,10 +14,10 @@ title: New-MgBetaUserMailFolderMessageForward
 ## SYNOPSIS
 
 Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the body or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.- Update the draft later to add content to the body or change other message properties.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
@@ -73,10 +73,10 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the body or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.- Update the draft later to add content to the body or change other message properties.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
@@ -586,7 +586,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths29L6IuUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreateforwardPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths29L6IuUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreateforwardPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Comment <String>]: 
   [Message <IMicrosoftGraphMessage>]: message
@@ -721,7 +721,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
   [ToRecipients <IMicrosoftGraphRecipient[]>]: 
 
-INPUTOBJECT <IMailIdentity>: Identity Parameter
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ExtensionId <String>]: The unique identifier of extension
   [InferenceClassificationOverrideId <String>]: The unique identifier of inferenceClassificationOverride
@@ -734,7 +734,7 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   [UserConfigurationId <String>]: The unique identifier of userConfiguration
   [UserId <String>]: The unique identifier of user
 
-MESSAGE <IMicrosoftGraphMessage>: message
+MESSAGE `<IMicrosoftGraphMessage>`: message
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Categories <String[]>]: The categories associated with the item.
   [ChangeKey <String>]: Identifies the version of the item.
@@ -876,3 +876,25 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessageforward)
 - [](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
