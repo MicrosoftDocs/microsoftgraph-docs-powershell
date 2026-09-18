@@ -15,6 +15,9 @@ title: Get-MgGroupSiteGetByPathApplicableContentTypeForList
 
 Get site contentTypes that can be added to a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: New-MgGroupThreadPostInReplyToAttachment
 
 Create new navigation property to attachments for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostInReplyToAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

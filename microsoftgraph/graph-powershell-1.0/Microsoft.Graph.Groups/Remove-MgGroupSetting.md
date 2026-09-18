@@ -15,6 +15,9 @@ title: Remove-MgGroupSetting
 
 Delete navigation property settings for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)
