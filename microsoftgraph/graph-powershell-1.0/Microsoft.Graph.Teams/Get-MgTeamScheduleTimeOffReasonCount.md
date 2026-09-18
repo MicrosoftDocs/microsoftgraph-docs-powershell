@@ -15,6 +15,9 @@ title: Get-MgTeamScheduleTimeOffReasonCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeOffReasonCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOffReasonCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Start-MgTeamScheduleTimeCardBreak
 
 Invoke action startBreak
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Beta.Teams/Start-MgBetaTeamScheduleTimeCardBreak?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### StartExpanded (Default)

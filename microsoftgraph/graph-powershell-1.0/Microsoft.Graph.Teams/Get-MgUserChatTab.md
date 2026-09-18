@@ -16,6 +16,9 @@ title: Get-MgUserChatTab
 A collection of all the tabs in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
