@@ -446,8 +446,8 @@ BODYPARAMETER `<IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPos
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/move-mgsecurityalert)
-- [](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-1.0)
+- [Move-MgSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/move-mgsecurityalert)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-1.0)
 
 
 

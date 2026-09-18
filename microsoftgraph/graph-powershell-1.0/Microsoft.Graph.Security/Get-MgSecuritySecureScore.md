@@ -618,9 +618,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore)
-- [](https://learn.microsoft.com/graph/api/securescore-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-1.0)
+- [Get-MgSecuritySecureScore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/securescore-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-1.0)
 
 
 

@@ -618,9 +618,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensor)
-- [](https://learn.microsoft.com/graph/api/security-sensor-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensors?view=graph-rest-1.0)
+- [Get-MgSecurityIdentitySensor](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensor)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensors?view=graph-rest-1.0)
 
 
 
