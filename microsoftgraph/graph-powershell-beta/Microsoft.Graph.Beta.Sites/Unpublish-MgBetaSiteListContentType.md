@@ -463,8 +463,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitelistcontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
+- [Unpublish-MgBetaSiteListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitelistcontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
 
 
 

@@ -397,8 +397,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontentmodelbyname)
-- [](https://learn.microsoft.com/graph/api/contentmodel-getbyname?view=graph-rest-beta)
+- [Get-MgBetaGroupSiteContentModelByName](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontentmodelbyname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-getbyname?view=graph-rest-beta)
 
 
 
