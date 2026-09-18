@@ -513,8 +513,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata)
-- [](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)
+- [Export-MgUserPersonalData](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)
 
 
 
