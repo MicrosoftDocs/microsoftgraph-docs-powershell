@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointBrowseSession
 
 Read the properties and relationships of sharePointBrowseSession object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

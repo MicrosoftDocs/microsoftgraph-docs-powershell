@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit
 
 Get a list of the siteProtectionUnit objects that are associated with a sharePointProtectionPolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreProtectionUnitAsSiteProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
