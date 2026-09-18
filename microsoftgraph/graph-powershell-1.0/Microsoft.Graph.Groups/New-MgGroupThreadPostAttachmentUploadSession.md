@@ -581,8 +581,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachmentuploadsession)
-- [](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-1.0)
+- [New-MgGroupThreadPostAttachmentUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachmentuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-1.0)
 
 
 

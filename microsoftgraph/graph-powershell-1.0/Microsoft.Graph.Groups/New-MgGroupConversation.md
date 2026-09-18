@@ -887,8 +887,8 @@ Returned by default.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
-- [](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
+- [New-MgGroupConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
 
 
 

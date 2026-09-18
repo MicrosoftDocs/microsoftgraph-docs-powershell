@@ -380,7 +380,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercountasapplication)
+- [Get-MgGroupOwnerCountAsApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownercountasapplication)
 
 
 

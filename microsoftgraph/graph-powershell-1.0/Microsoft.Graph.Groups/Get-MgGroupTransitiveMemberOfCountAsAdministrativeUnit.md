@@ -381,7 +381,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberofcountasadministrativeunit)
+- [Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberofcountasadministrativeunit)
 
 
 
