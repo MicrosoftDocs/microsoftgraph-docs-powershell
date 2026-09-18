@@ -76,6 +76,14 @@ App roles that are assigned to service principals are also known as application 
 Application permissions can be granted directly with app role assignments, or through a consent experience.
 To grant an app role assignment to a client service principal, you need three identifiers:
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

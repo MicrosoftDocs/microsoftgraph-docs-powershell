@@ -128,6 +128,14 @@ This cmdlet has the following aliases,
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Directory.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Application.ReadWrite.OwnedBy, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
