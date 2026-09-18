@@ -530,7 +530,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphOwnerlessGroupPolicy>: ownerlessGroupPolicy
+BODYPARAMETER `<IMicrosoftGraphOwnerlessGroupPolicy>`: ownerlessGroupPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -559,14 +559,14 @@ When notifyMembers is all, all members are eligible for ownership and this colle
 When notifyMembers is allowSelected, only members in these security groups are eligible.
 When notifyMembers is blockSelected, members in these security groups are excluded.
 
-EMAILINFO <IMicrosoftGraphEmailDetails>: emailDetails
+EMAILINFO `<IMicrosoftGraphEmailDetails>`: emailDetails
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Body <String>]: The body content of the notification email in plain text format.
   [SenderEmailAddress <String>]: The email address of the sender for notification emails.
 Shared mailboxes aren't supported.
   [Subject <String>]: The subject line of the notification email.
 
-TARGETOWNERS <IMicrosoftGraphTargetOwners>: targetOwners
+TARGETOWNERS `<IMicrosoftGraphTargetOwners>`: targetOwners
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NotifyMembers <String>]: notifyMembers
   [SecurityGroups <String[]>]: The collection of IDs for security groups used for allowing or blocking filtering.
@@ -579,3 +579,25 @@ When notifyMembers is blockSelected, members in these security groups are exclud
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyownerlessgrouppolicy)
 - [](https://learn.microsoft.com/graph/api/ownerlessgrouppolicy-upsert?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -794,7 +794,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphVerifiedIdProfile>: verifiedIdProfile
+BODYPARAMETER `<IMicrosoftGraphVerifiedIdProfile>`: verifiedIdProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -851,14 +851,14 @@ Required.
   [VerifierDid <String>]: Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.
 Required.
 
-FACECHECKCONFIGURATION <IMicrosoftGraphFaceCheckConfiguration>: faceCheckConfiguration
+FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether Face Check is required.
 Currently must be true.
   [SourcePhotoClaimName <String>]: The source claim name for the photo used to validate Face Check.
 Currently must be portrait.
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -957,18 +957,18 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-MOBILEDRIVERSLICENSECONFIGURATION <IMicrosoftGraphMobileDriversLicenseConfiguration>: mobileDriversLicenseConfiguration
+MOBILEDRIVERSLICENSECONFIGURATION `<IMicrosoftGraphMobileDriversLicenseConfiguration>`: mobileDriversLicenseConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedRegions <String[]>]: The ISO 3166-2 region codes accepted for mobile driver's licenses.
 An empty collection indicates all regions are accepted.
   [DocumentStandard <String>]: The document standard that accepted mobile driver's licenses must use, such as ISO18013-5.
 
-SELFSERVICEISSUANCE <IMicrosoftGraphVerifiedIdSelfServiceIssuance>: verifiedIdSelfServiceIssuance
+SELFSERVICEISSUANCE `<IMicrosoftGraphVerifiedIdSelfServiceIssuance>`: verifiedIdSelfServiceIssuance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether self-service issuance is enabled.
   [IssuanceUrl <String>]: The HTTPS URL where users can start self-service issuance to obtain the credential when required by the credential type.
 
-VERIFIEDIDPROFILECONFIGURATION <IMicrosoftGraphVerifiedIdProfileConfiguration>: verifiedIdProfileConfiguration
+VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`: verifiedIdProfileConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
 Required.
@@ -1001,3 +1001,25 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
 - [](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

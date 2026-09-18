@@ -459,3 +459,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaoauth2permissiongrantdelta)
 - [](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
