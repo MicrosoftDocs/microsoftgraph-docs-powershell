@@ -15,6 +15,9 @@ title: Update-MgSecurityLabelDepartment
 
 Update the navigation property departments in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

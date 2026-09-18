@@ -15,6 +15,9 @@ title: Remove-MgSecurityDataSecurityAndGovernance
 
 Delete navigation property dataSecurityAndGovernance for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityDataSecurityAndGovernance](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityDataSecurityAndGovernance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
