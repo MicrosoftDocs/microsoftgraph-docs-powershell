@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOnPremisePublishingProfileConnector
 ---
@@ -68,6 +68,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property connectors in onPremisesPublishingProfiles
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -622,7 +632,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConnector>`: connector
+BODYPARAMETER <IMicrosoftGraphConnector>: connector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -666,8 +676,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
           [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
         [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -857,14 +867,17 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
         [(Any) <Object>]: This indicates any property can be added to this object.
         [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
 For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
+        [CoopEnforcement <Boolean?>]: Indicates whether Cross-Origin-Opener-Policy (COOP) headers are enforced on browser-based authentication responses for the application.
+Set to true to enable enforcement, false to temporarily suppress enforcement, or null to use the service default.
+For how-to guidance, see Control Cross-Origin-Opener-Policy enforcement.
         [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
         [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 This property is only modifiable for multitenant resource applications that rely on access from clients without a service principal and had this behavior as set to false by Microsoft.
@@ -1065,6 +1078,7 @@ For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
         [IsContinuousAccessEvaluationEnabled <Boolean?>]: Indicates whether continuous access evaluation is enabled for Application Proxy application.
 For all Application Proxy apps, the property is set to true by default.
+        [IsDeviceAccessEnabled <Boolean?>]: 
         [IsDnsResolutionEnabled <Boolean?>]: Indicates Microsoft Entra Private Access should handle DNS resolution.
 false by default.
         [IsHttpOnlyCookieEnabled <Boolean?>]: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
@@ -1572,7 +1586,7 @@ Read-only.
   [Version <String>]: The version of the connector.
 Read-only.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -1580,6 +1594,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
   [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ComplianceIssueId <String>]: The unique identifier of complianceIssue
   [ConnectorGroupId <String>]: The unique identifier of connectorGroup
   [ConnectorId <String>]: The unique identifier of connector
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
@@ -1647,8 +1662,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PreAuthorizedApplications <IMicrosoftGraphPreAuthorizedApplication[]>]: Lists the client applications that are preauthorized with the specified delegated permissions to access this application's APIs.
@@ -1838,14 +1853,17 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
       [(Any) <Object>]: This indicates any property can be added to this object.
       [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
 For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
+      [CoopEnforcement <Boolean?>]: Indicates whether Cross-Origin-Opener-Policy (COOP) headers are enforced on browser-based authentication responses for the application.
+Set to true to enable enforcement, false to temporarily suppress enforcement, or null to use the service default.
+For how-to guidance, see Control Cross-Origin-Opener-Policy enforcement.
       [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
       [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 This property is only modifiable for multitenant resource applications that rely on access from clients without a service principal and had this behavior as set to false by Microsoft.
@@ -2046,6 +2064,7 @@ For all new Application Proxy apps, the property is set to true by default.
 For all existing apps, the property is set to false.
       [IsContinuousAccessEvaluationEnabled <Boolean?>]: Indicates whether continuous access evaluation is enabled for Application Proxy application.
 For all Application Proxy apps, the property is set to true by default.
+      [IsDeviceAccessEnabled <Boolean?>]: 
       [IsDnsResolutionEnabled <Boolean?>]: Indicates Microsoft Entra Private Access should handle DNS resolution.
 false by default.
       [IsHttpOnlyCookieEnabled <Boolean?>]: Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers.
@@ -2563,27 +2582,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaOnPremisePublishingProfileConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector)
