@@ -58,12 +58,17 @@ This API can be used to get agentIdentityBlueprint objects as well by their ID.
 | Application | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve an application by its appId and only specific properties
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess"
+Get-MgBetaApplicationByAppId -Property "id,appId,displayName,requiredResourceAccess" 
+
+```
+This example will retrieve an application by its appid and only specific properties
+
 
 ## PARAMETERS
 

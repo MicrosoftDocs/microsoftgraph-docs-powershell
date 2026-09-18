@@ -58,12 +58,17 @@ This API can be used to get agentIdentityBlueprintPrincipal objects as well by t
 | Application | Application.Read.All, AgentIdentity.Read.All, AgentIdentityBlueprintPrincipal.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Retrieve a service principal by its appId and only specific properties
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaServicePrincipalByAppId -Property "id,appId,displayName,appRoles,publishedPermissionScopes,resourceSpecificApplicationPermissions"
+Get-MgBetaServicePrincipalByAppId -Property "id,appId,displayName,appRoles,publishedPermissionScopes,resourceSpecificApplicationPermissions" 
+
+```
+This example will retrieve a service principal by its appid and only specific properties
+
 
 ## PARAMETERS
 
