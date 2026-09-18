@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of domain object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
