@@ -15,6 +15,9 @@ title: New-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 
 Create new navigation property to serviceManagementDetails for tenantRelationships
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
