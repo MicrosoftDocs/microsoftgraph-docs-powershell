@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteList
 
 The collection of lists under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

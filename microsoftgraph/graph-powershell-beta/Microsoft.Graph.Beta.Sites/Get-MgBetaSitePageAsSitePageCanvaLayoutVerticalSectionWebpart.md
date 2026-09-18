@@ -15,6 +15,9 @@ title: Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart
 
 The set of web parts in this section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

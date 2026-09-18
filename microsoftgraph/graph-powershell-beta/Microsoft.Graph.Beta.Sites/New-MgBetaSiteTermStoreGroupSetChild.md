@@ -15,6 +15,9 @@ title: New-MgBetaSiteTermStoreGroupSetChild
 
 Create new navigation property to children for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreGroupSetChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

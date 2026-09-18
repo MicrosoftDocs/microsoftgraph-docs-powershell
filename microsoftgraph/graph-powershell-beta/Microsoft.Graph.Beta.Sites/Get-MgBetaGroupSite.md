@@ -16,6 +16,9 @@ title: Get-MgBetaGroupSite
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get2 (Default)

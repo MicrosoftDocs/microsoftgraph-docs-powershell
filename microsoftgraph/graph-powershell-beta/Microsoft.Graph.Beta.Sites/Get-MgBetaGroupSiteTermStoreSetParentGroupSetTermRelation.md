@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation
 
 To indicate which terms are related to the current term as either pinned or reused.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

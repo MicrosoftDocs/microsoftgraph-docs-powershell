@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteDriveCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteDriveCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteDriveCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

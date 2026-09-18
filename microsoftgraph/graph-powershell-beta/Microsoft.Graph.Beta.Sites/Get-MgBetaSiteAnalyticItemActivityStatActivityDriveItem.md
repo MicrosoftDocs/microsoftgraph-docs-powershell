@@ -15,6 +15,9 @@ title: Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem
 
 Exposes the driveItem that was the target of this activity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
