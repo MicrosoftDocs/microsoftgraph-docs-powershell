@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSourceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSourceCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSourceCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

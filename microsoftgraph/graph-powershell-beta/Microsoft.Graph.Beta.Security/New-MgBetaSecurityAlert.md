@@ -15,6 +15,9 @@ title: New-MgBetaSecurityAlert
 
 Create new navigation property to alerts for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlert?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

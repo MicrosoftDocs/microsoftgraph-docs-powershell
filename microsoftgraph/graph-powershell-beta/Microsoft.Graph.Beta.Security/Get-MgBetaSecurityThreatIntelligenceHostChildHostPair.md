@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligenceHostChildHostPair
 
 The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostChildHostPair](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostChildHostPair?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

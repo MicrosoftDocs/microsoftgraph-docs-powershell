@@ -15,6 +15,9 @@ title: New-MgBetaSecurityThreatIntelligenceHostComponent
 
 Create new navigation property to hostComponents for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
