@@ -419,8 +419,8 @@ BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPost
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/confirm-mgauditlogsignincompromised)
-- [](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-1.0)
+- [Confirm-MgAuditLogSignInCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/confirm-mgauditlogsignincompromised)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-1.0)
 
 
 
