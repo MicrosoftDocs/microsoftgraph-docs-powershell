@@ -460,8 +460,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref)
-- [](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta)
+- [Get-MgBetaGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-beta)
 
 
 
