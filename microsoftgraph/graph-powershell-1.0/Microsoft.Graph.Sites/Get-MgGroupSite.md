@@ -80,16 +80,6 @@ This cmdlet has the following aliases,
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -726,6 +716,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsite)
 - [](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
+
+
 
 
 
