@@ -587,7 +587,7 @@ AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore[]>: Average sco
   [Basis <String>]: Scope type.
 The possible values are: AllTenants, TotalSeats, IndustryTypes.
 
-BODYPARAMETER <IMicrosoftGraphSecureScore>: secureScore
+BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -622,7 +622,7 @@ CONTROLSCORES <IMicrosoftGraphControlScore[]>: Contains tenant scores for a set 
   [Description <String>]: Description of the control.
   [Score <Double?>]: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -635,3 +635,25 @@ Required
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
