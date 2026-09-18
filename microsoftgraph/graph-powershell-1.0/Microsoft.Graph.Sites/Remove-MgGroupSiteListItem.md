@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteListItem
 
 Delete navigation property items for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

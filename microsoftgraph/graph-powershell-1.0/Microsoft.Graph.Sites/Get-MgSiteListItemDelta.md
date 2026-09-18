@@ -21,6 +21,9 @@ If an item was renamed twice, it only shows up once, with its latest name.\rThe 
 You should use the last occurrence you see.
 Items with this property should be removed from your local state.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemDelta](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

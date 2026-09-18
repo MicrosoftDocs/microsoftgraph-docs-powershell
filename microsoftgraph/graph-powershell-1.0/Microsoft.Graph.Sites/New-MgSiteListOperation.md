@@ -15,6 +15,9 @@ title: New-MgSiteListOperation
 
 Create new navigation property to operations for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
