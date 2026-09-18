@@ -15,6 +15,9 @@ title: Get-MgBetaUserMailFolderChildFolder
 
 The collection of child folders in the mailFolder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

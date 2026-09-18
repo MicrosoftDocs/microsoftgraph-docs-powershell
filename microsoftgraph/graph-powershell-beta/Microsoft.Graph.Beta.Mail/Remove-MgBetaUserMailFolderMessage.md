@@ -15,6 +15,9 @@ title: Remove-MgBetaUserMailFolderMessage
 
 Delete navigation property messages for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
