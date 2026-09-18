@@ -1517,3 +1517,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
