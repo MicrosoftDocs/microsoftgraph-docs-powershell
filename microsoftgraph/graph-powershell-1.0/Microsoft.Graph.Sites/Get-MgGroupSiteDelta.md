@@ -14,9 +14,9 @@ title: Get-MgGroupSiteDelta
 ## SYNOPSIS
 
 Get newly created, updated, or deleted sites without having to perform a full read of the entire sites collection.
-A delta function call for sites is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls,\r\nyou can query for incremental changes in the sites.
-It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.\r\nThe application calls the API without specifying any parameters.\r\nThe service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.\r\nYour application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
-After you receive all the changes, you can apply them to your local state.\r\nTo monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
+A delta function call for sites is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls,\ryou can query for incremental changes in the sites.
+It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.\rThe application calls the API without specifying any parameters.\rThe service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.\rYour application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
+After you receive all the changes, you can apply them to your local state.\rTo monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
 Any resources marked as deleted should be removed from your local state.
 
 ## SYNTAX
@@ -50,9 +50,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get newly created, updated, or deleted sites without having to perform a full read of the entire sites collection.
-A delta function call for sites is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls,\r\nyou can query for incremental changes in the sites.
-It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.\r\nThe application calls the API without specifying any parameters.\r\nThe service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.\r\nYour application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
-After you receive all the changes, you can apply them to your local state.\r\nTo monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
+A delta function call for sites is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls,\ryou can query for incremental changes in the sites.
+It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.\rThe application calls the API without specifying any parameters.\rThe service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.\rYour application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
+After you receive all the changes, you can apply them to your local state.\rTo monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
 Any resources marked as deleted should be removed from your local state.
 
 ## EXAMPLES
@@ -546,7 +546,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -596,3 +596,25 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitedelta)
 - [](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
