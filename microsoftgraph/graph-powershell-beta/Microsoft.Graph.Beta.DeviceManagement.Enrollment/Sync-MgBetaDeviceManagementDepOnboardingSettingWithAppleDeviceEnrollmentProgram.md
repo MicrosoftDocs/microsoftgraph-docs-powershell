@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 
 Synchronizes between Apple Device Enrollment Program and Intune
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementServiceConfig.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
