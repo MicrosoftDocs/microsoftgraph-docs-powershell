@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimeoffreason
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaGroupTeamScheduleTimeOffReason
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaGroupTeamScheduleTimeOffReason
 ## SYNOPSIS
 
 Update the navigation property timeOffReasons in groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property timeOffReasons in groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -654,7 +661,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTimeOffReason>`: timeOffReason
+BODYPARAMETER <IMicrosoftGraphTimeOffReason>: timeOffReason
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -678,7 +685,7 @@ Required.
   [IsActive <Boolean?>]: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones.
 Required.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -690,7 +697,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -707,7 +714,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -715,6 +725,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -724,8 +735,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -737,7 +751,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -752,27 +766,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgBetaGroupTeamScheduleTimeOffReason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimeoffreason)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduletimeoffreason)

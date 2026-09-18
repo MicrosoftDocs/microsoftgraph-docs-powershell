@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchivegroupteam
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaArchiveGroupTeam
 ---
@@ -14,16 +14,13 @@ title: Invoke-MgBetaArchiveGroupTeam
 ## SYNOPSIS
 
 Archive the specified team.
-\rWhen a team is archived, users can no longer make most changes to the team.
+\r\nWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team continue to be allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which can occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgArchiveGroupTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgArchiveGroupTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -75,13 +72,23 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Archive the specified team.
-\rWhen a team is archived, users can no longer make most changes to the team.
+\r\nWhen a team is archived, users can no longer make most changes to the team.
 For example, users can no longer: send or like messages on any channel in the team; edit the team's name or description; nor edit other settings.
 However, membership changes to the team continue to be allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which can occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -114,7 +121,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -409,7 +416,7 @@ HelpMessage: ''
 
 ### -ShouldSetSpoSiteReadOnlyForMembers
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -490,11 +497,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17M4RvgGroupsGroupIdTeamMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17M4RvgGroupsGroupIdTeamMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -511,7 +518,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -519,6 +529,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -528,8 +539,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -544,28 +558,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaArchiveGroupTeam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchivegroupteam)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchivegroupteam)
+- [](https://learn.microsoft.com/graph/api/team-archive?view=graph-rest-beta)

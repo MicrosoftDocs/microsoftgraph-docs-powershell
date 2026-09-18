@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardin
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaClockGroupTeamScheduleTimeCardIn
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaClockGroupTeamScheduleTimeCardIn
 ## SYNOPSIS
 
 Clock in to start a timeCard.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgClockGroupTeamScheduleTimeCardIn](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockGroupTeamScheduleTimeCardIn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 
 Clock in to start a timeCard.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -101,7 +108,7 @@ HelpMessage: ''
 
 ### -AtApprovedLocation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -128,7 +135,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -317,7 +324,7 @@ HelpMessage: ''
 
 ### -IsAtApprovedLocation
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -372,7 +379,7 @@ HelpMessage: ''
 
 ### -OnBehalfOfUserId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -538,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AtApprovedLocation <Boolean?>]: 
   [IsAtApprovedLocation <Boolean?>]: 
@@ -548,7 +555,7 @@ BODYPARAMETER `<IPaths13Pwpp3GroupsGroupIdTeamScheduleTimecardsMicrosoftGraphClo
     [ContentType <String>]: bodyType
   [OnBehalfOfUserId <String>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -565,7 +572,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -573,6 +583,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -582,8 +593,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -595,7 +609,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -603,28 +617,5 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaClockGroupTeamScheduleTimeCardIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardin)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockgroupteamscheduletimecardin)
+- [](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-beta)

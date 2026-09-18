@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupTeamScheduleTimeOff
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaGroupTeamScheduleTimeOff
 ## SYNOPSIS
 
 Create new navigation property to timesOff for groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -73,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to timesOff for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -684,7 +691,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTimeOff>`: timeOff
+BODYPARAMETER <IMicrosoftGraphTimeOff>: timeOff
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -722,7 +729,7 @@ Required.
 Required.
     [UserId <String>]: ID of the user.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -734,7 +741,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DRAFTTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
+DRAFTTIMEOFF <IMicrosoftGraphTimeOffItem>: timeOffItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -742,7 +749,7 @@ DRAFTTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
   [TimeOffReasonId <String>]: ID of the timeOffReason for this timeOffItem.
 Required.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -759,7 +766,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -767,6 +777,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -776,8 +787,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -789,7 +803,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -801,7 +815,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-SHAREDTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
+SHAREDTIMEOFF <IMicrosoftGraphTimeOffItem>: timeOffItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [EndDateTime <DateTime?>]: 
   [StartDateTime <DateTime?>]: 
@@ -809,13 +823,13 @@ SHAREDTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
   [TimeOffReasonId <String>]: ID of the timeOffReason for this timeOffItem.
 Required.
 
-TEAMINFO `<IMicrosoftGraphShiftsTeamInfo>`: shiftsTeamInfo
+TEAMINFO <IMicrosoftGraphShiftsTeamInfo>: shiftsTeamInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name for the team.
 Required.
   [TeamId <String>]: ID of the team.
 
-USERINFO `<IMicrosoftGraphShiftsUserInfo>`: shiftsUserInfo
+USERINFO <IMicrosoftGraphShiftsUserInfo>: shiftsUserInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name for the user.
 Required.
@@ -824,27 +838,4 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupTeamScheduleTimeOff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff)

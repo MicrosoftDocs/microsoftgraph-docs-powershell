@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaTeamworkDeviceConfiguration
 ---
@@ -85,6 +85,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property configuration in teamwork
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -807,7 +817,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConfiguration
+BODYPARAMETER <IMicrosoftGraphTeamworkDeviceConfiguration>: teamworkDeviceConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -947,7 +957,7 @@ This is a common scenario in a hybrid environment where an on-premises Exchange 
       [IsHideMeetingNamesEnabled <Boolean?>]: True if hiding meeting names is enabled.
       [IsSendLogsAndFeedbackEnabled <Boolean?>]: True if sending logs and feedback is enabled.
 
-CAMERACONFIGURATION `<IMicrosoftGraphTeamworkCameraConfiguration>`: teamworkCameraConfiguration
+CAMERACONFIGURATION <IMicrosoftGraphTeamworkCameraConfiguration>: teamworkCameraConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Cameras <IMicrosoftGraphTeamworkPeripheral[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -964,7 +974,7 @@ Each vendor has a unique ID.
     [IsContentEnhancementEnabled <Boolean?>]: True if the content enhancement is enabled.
   [DefaultContentCamera <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -976,7 +986,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-DISPLAYCONFIGURATION `<IMicrosoftGraphTeamworkDisplayConfiguration>`: teamworkDisplayConfiguration
+DISPLAYCONFIGURATION <IMicrosoftGraphTeamworkDisplayConfiguration>: teamworkDisplayConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConfiguredDisplays <IMicrosoftGraphTeamworkConfiguredPeripheral[]>]: The list of configured displays.
 Applicable only for Microsoft Teams Rooms devices.
@@ -1011,7 +1021,7 @@ Applicable only for Teams Rooms devices.
 If isDualDisplayModeEnabled is true, then the content will be displayed on both front of room screens instead of just the one screen, when it is shared via the HDMI ingest module on the Microsoft Teams Rooms device.
 Applicable only for Teams Rooms devices.
 
-HARDWARECONFIGURATION `<IMicrosoftGraphTeamworkHardwareConfiguration>`: teamworkHardwareConfiguration
+HARDWARECONFIGURATION <IMicrosoftGraphTeamworkHardwareConfiguration>: teamworkHardwareConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Compute <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1025,7 +1035,7 @@ Each vendor has a unique ID.
   [HdmiIngest <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
   [ProcessorModel <String>]: The CPU model on the device.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1042,7 +1052,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -1050,6 +1063,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -1059,8 +1073,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -1072,7 +1089,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1084,7 +1101,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-MICROPHONECONFIGURATION `<IMicrosoftGraphTeamworkMicrophoneConfiguration>`: teamworkMicrophoneConfiguration
+MICROPHONECONFIGURATION <IMicrosoftGraphTeamworkMicrophoneConfiguration>: teamworkMicrophoneConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultMicrophone <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1099,7 +1116,7 @@ Each vendor has a unique ID.
 False if the microphone is not optional and the health state of the device should be computed.
   [Microphones <IMicrosoftGraphTeamworkPeripheral[]>]: 
 
-SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDeviceSoftwareVersions
+SOFTWAREVERSIONS <IMicrosoftGraphTeamworkDeviceSoftwareVersions>: teamworkDeviceSoftwareVersions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdminAgentSoftwareVersion <String>]: The software version for the admin agent running on the device.
   [FirmwareSoftwareVersion <String>]: The software version for the firmware running on the device.
@@ -1107,7 +1124,7 @@ SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDevi
   [PartnerAgentSoftwareVersion <String>]: The software version for the partner agent running on the device.
   [TeamsClientSoftwareVersion <String>]: The software version for the Teams client running on the device.
 
-SPEAKERCONFIGURATION `<IMicrosoftGraphTeamworkSpeakerConfiguration>`: teamworkSpeakerConfiguration
+SPEAKERCONFIGURATION <IMicrosoftGraphTeamworkSpeakerConfiguration>: teamworkSpeakerConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DefaultCommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]: teamworkPeripheral
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1125,7 +1142,7 @@ Used to compute the health state if the communication speaker is not optional.
 Used to compute the health state if the speaker is not optional.
   [Speakers <IMicrosoftGraphTeamworkPeripheral[]>]: 
 
-SYSTEMCONFIGURATION `<IMicrosoftGraphTeamworkSystemConfiguration>`: teamworkSystemConfiguration
+SYSTEMCONFIGURATION <IMicrosoftGraphTeamworkSystemConfiguration>: teamworkSystemConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTimeConfiguration <IMicrosoftGraphTeamworkDateTimeConfiguration>]: teamworkDateTimeConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1158,7 +1175,7 @@ Write-Only.
     [SecondaryDns <String>]: A secondary DNS is used when the primary DNS is not available.
     [SubnetMask <String>]: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
 
-TEAMSCLIENTCONFIGURATION `<IMicrosoftGraphTeamworkTeamsClientConfiguration>`: teamworkTeamsClientConfiguration
+TEAMSCLIENTCONFIGURATION <IMicrosoftGraphTeamworkTeamsClientConfiguration>: teamworkTeamsClientConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccountConfiguration <IMicrosoftGraphTeamworkAccountConfiguration>]: teamworkAccountConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1182,27 +1199,4 @@ This is a common scenario in a hybrid environment where an on-premises Exchange 
 
 ## RELATED LINKS
 
-- [Update-MgBetaTeamworkDeviceConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration)

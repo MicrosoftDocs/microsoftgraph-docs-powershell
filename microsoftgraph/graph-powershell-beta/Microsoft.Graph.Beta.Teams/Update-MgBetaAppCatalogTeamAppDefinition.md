@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAppCatalogTeamAppDefinition
 ---
@@ -13,12 +13,9 @@ title: Update-MgBetaAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
 
-Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -82,9 +79,19 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Publish an app to the Microsoft Teams app catalog.\rSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\rthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.\r\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\r\nthe created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,7 +388,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -554,7 +561,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -721,7 +728,7 @@ HelpMessage: ''
 
 ### -Shortdescription
 
-
+.
 
 ```yaml
 Type: System.String
@@ -910,7 +917,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
+AUTHORIZATION <IMicrosoftGraphTeamsAppAuthorization>: teamsAppAuthorization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClientAppId <String>]: The registration ID of the Microsoft Entra app ID associated with the teamsApp.
   [RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]: teamsAppPermissionSet
@@ -919,7 +926,7 @@ AUTHORIZATION `<IMicrosoftGraphTeamsAppAuthorization>`: teamsAppAuthorization
       [PermissionType <String>]: teamsAppResourceSpecificPermissionType
       [PermissionValue <String>]: The name of the resource-specific permission.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
+BODYPARAMETER <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -994,7 +1001,7 @@ Required.
   [TeamsAppId <String>]: The ID from the Teams app manifest.
   [Version <String>]: The version number of the application.
 
-COLORICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
+COLORICON <IMicrosoftGraphTeamsAppIcon>: teamsAppIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1008,7 +1015,7 @@ Bytes for the hosted content (such as images).
 Content type, such as image/png, image/jpg.
   [WebUrl <String>]: The web URL that can be used for downloading the image.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1045,7 +1052,7 @@ For example, 'officeUIFabricIconName': 'Search'.
   [PickerGroupId <String>]: ID for the group in the card picker.
 Required.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1062,7 +1069,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -1070,6 +1080,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -1079,8 +1090,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -1092,7 +1106,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-OUTLINEICON `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
+OUTLINEICON <IMicrosoftGraphTeamsAppIcon>: teamsAppIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1109,28 +1123,5 @@ Content type, such as image/png, image/jpg.
 
 ## RELATED LINKS
 
-- [Update-MgBetaAppCatalogTeamAppDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
+- [](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta)
