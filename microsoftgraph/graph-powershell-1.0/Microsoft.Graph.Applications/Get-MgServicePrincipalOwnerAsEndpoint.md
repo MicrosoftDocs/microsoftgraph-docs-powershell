@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalOwnerAsEndpoint
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnerAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerAsEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

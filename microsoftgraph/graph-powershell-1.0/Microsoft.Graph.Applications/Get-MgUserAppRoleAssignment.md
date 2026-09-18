@@ -16,6 +16,9 @@ title: Get-MgUserAppRoleAssignment
 Represents the app roles a user is granted for an application.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
