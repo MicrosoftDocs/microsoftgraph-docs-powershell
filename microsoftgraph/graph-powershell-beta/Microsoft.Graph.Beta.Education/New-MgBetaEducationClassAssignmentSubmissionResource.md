@@ -91,8 +91,9 @@ If the file doesn't exist or is not in that folder, the POST request will fail.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Create an educationWordResource
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -106,7 +107,12 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an educationwordresource
+
+### Example 2: Create an educationLinkResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -120,7 +126,12 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create an educationlinkresource
+
+### Example 3: Create an educationFileResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -134,7 +145,12 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will create an educationfileresource
+
+### Example 4: Create an educationExcelResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -148,7 +164,12 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will create an educationexcelresource
+
+### Example 5: Create an educationPowerPointResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -162,7 +183,12 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will create an educationpowerpointresource
+
+### Example 6: Create an educationMediaResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -175,6 +201,10 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
+```
+This example will create an educationmediaresource
+
 
 ## PARAMETERS
 

@@ -65,12 +65,17 @@ If the resource wasn't copied from the assignment but was added from the student
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Remove-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
+
 
 ## PARAMETERS
 
