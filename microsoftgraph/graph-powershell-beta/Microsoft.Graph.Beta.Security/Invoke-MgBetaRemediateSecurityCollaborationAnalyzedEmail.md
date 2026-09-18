@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail
 ---
@@ -59,9 +59,8 @@ For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -84,10 +83,6 @@ $params = @{
 }
 
 Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -135,7 +130,7 @@ HelpMessage: ''
 
 ### -AnalyzedEmails
 
-
+.
 To construct, see NOTES section for ANALYZEDEMAILS properties and create a hash table.
 
 ```yaml
@@ -157,7 +152,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -222,7 +217,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -243,7 +238,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -411,7 +406,7 @@ HelpMessage: ''
 
 ### -RemediateSendersCopy
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -547,6 +542,7 @@ Read-only.
         [ProcessId <String>]: The unique identifier of the process involved in the behavior.
         [ProcessName <String>]: The name of the process that performed or was involved in the behavior.
         [Target <String>]: The target of the operation.
+      [DetonationBehaviourDetailsV2 <String>]: Shows the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation in a JSON format.
       [DetonationChain <IMicrosoftGraphSecurityDetonationChain>]: detonationChain
         [(Any) <Object>]: This indicates any property can be added to this object.
         [ChildNodes <IMicrosoftGraphSecurityDetonationChain[]>]: A list of all child nodes in the chain.
@@ -561,6 +557,10 @@ No screenshots are captured if the URL opens into a link that directly downloads
 However, you see the downloaded file in the detonation chain.
       [DetonationVerdict <String>]: The verdict of the detonation.
       [DetonationVerdictReason <String>]: The reason for the verdict of the detonation.
+      [EntityMetadata <String>]: Additional metadata about the entity in JSON format.
+      [MitreTechniques <String>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
+      [StaticAnalysis <String>]: The results of static analysis performed on the file or URL.
+      [SubmissionSource <String>]: The source of the submission.
     [FileExtension <String>]: Extension of the file.
     [FileName <String>]: The name of the attachment in the email.
     [FileSize <Int32?>]: Size of the file.
@@ -654,7 +654,7 @@ The possible values are: unknown, spam, malware, phish, none, unknownFutureValue
     [Url <String>]: The URL that is found in the email.
 This is full URL string, including query parameters.
 
-BODY `<IPaths12L9AgpSecurityCollaborationAnalyzedemailsMicrosoftGraphSecurityRemediatePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths12L9AgpSecurityCollaborationAnalyzedemailsMicrosoftGraphSecurityRemediatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Action <String>]: remediationAction
   [AnalyzedEmails <IMicrosoftGraphSecurityAnalyzedEmail[]>]: 
@@ -679,6 +679,7 @@ Read-only.
           [ProcessId <String>]: The unique identifier of the process involved in the behavior.
           [ProcessName <String>]: The name of the process that performed or was involved in the behavior.
           [Target <String>]: The target of the operation.
+        [DetonationBehaviourDetailsV2 <String>]: Shows the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation in a JSON format.
         [DetonationChain <IMicrosoftGraphSecurityDetonationChain>]: detonationChain
           [(Any) <Object>]: This indicates any property can be added to this object.
           [ChildNodes <IMicrosoftGraphSecurityDetonationChain[]>]: A list of all child nodes in the chain.
@@ -693,6 +694,10 @@ No screenshots are captured if the URL opens into a link that directly downloads
 However, you see the downloaded file in the detonation chain.
         [DetonationVerdict <String>]: The verdict of the detonation.
         [DetonationVerdictReason <String>]: The reason for the verdict of the detonation.
+        [EntityMetadata <String>]: Additional metadata about the entity in JSON format.
+        [MitreTechniques <String>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
+        [StaticAnalysis <String>]: The results of static analysis performed on the file or URL.
+        [SubmissionSource <String>]: The source of the submission.
       [FileExtension <String>]: Extension of the file.
       [FileName <String>]: The name of the attachment in the email.
       [FileSize <Int32?>]: Size of the file.
@@ -793,27 +798,5 @@ This is full URL string, including query parameters.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
+- [](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIdentitySensor
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSecurityIdentitySensor
 
 Create new navigation property to sensors for security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIdentitySensor?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,9 +24,9 @@ New-MgBetaSecurityIdentitySensor [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-DeploymentStatus <string>]
  [-DisplayName <string>] [-DomainName <string>]
  [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>] [-HealthStatus <string>] [-Id <string>]
- [-OpenHealthIssuesCount <long>] [-SensorType <string>]
- [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-MigrationState <string>] [-OpenHealthIssuesCount <long>] [-SensorType <string>]
+ [-ServiceStatus <string>] [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to sensors for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -354,6 +361,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -MigrationState
+
+migrationState
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OpenHealthIssuesCount
 
 This field displays the count of health issues related to this sensor.
@@ -481,6 +509,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ServiceStatus
+
+serviceStatus
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Settings
 
 sensorSettings
@@ -576,7 +625,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecuritySensor>`: sensor
+BODYPARAMETER <IMicrosoftGraphSecuritySensor>: sensor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -612,8 +661,10 @@ These commands run in sequence for the single recommended fix.
     [Severity <String>]: healthIssueSeverity
     [Status <String>]: healthIssueStatus
   [HealthStatus <String>]: sensorHealthStatus
+  [MigrationState <String>]: migrationState
   [OpenHealthIssuesCount <Int64?>]: This field displays the count of health issues related to this sensor.
   [SensorType <String>]: sensorType
+  [ServiceStatus <String>]: serviceStatus
   [Settings <IMicrosoftGraphSecuritySensorSettings>]: sensorSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Description <String>]: Description of the sensor.
@@ -652,7 +703,7 @@ These commands run in sequence for the single recommended fix.
   [Severity <String>]: healthIssueSeverity
   [Status <String>]: healthIssueStatus
 
-SETTINGS `<IMicrosoftGraphSecuritySensorSettings>`: sensorSettings
+SETTINGS <IMicrosoftGraphSecuritySensorSettings>: sensorSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description of the sensor.
   [DomainControllerDnsNames <String[]>]: DNS names for the domain controller
@@ -666,27 +717,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityIdentitySensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensor)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensor)

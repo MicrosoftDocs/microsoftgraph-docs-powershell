@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityAlertV2
 ---
@@ -13,10 +13,8 @@ title: New-MgBetaSecurityAlertV2
 
 ## SYNOPSIS
 
-Create new navigation property to alerts_v2 for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlertV2?view=graph-powershell-1.0)
+Create a manual security alert in Microsoft 365 Defender with specified entities and metadata.
+When the alert is created, the backend automatically creates a new incident to contain the alert, or links the alert to an existing incident if linkToIncident is specified.
 
 ## SYNTAX
 
@@ -25,19 +23,19 @@ Create new navigation property to alerts_v2 for security
 ```
 New-MgBetaSecurityAlertV2 [-ResponseHeadersVariable <string>] [-ActorDisplayName <string>]
  [-AdditionalData <hashtable>] [-AdditionalProperties <hashtable>] [-AlertPolicyId <string>]
- [-AlertWebUrl <string>] [-AssignedTo <string>] [-Category <string>] [-Classification <string>]
- [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <datetime>]
- [-CustomDetails <hashtable>] [-Description <string>] [-DetectionSource <string>]
- [-DetectorId <string>] [-Determination <string>]
+ [-AlertWebUrl <string>] [-AssignedTo <string>] [-Categories <string[]>] [-Category <string>]
+ [-Classification <string>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-CreatedDateTime <datetime>] [-CustomDetails <hashtable>] [-Description <string>]
+ [-DetectionSource <string>] [-DetectorId <string>] [-Determination <string>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <datetime>]
- [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-LastActivityDateTime <datetime>]
- [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>] [-ProductName <string>]
- [-ProviderAlertId <string>] [-RecommendedActions <string>] [-ResolvedDateTime <datetime>]
- [-ServiceSource <string>] [-Severity <string>] [-Status <string>] [-SystemTags <string[]>]
- [-TenantId <string>] [-ThreatDisplayName <string>] [-ThreatFamilyName <string>] [-Title <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-Id <string>] [-IncidentId <string>] [-IncidentWebUrl <string>] [-InvestigationState <string>]
+ [-LastActivityDateTime <datetime>] [-LastUpdateDateTime <datetime>] [-MitreTechniques <string[]>]
+ [-ProductName <string>] [-ProviderAlertId <string>] [-RecommendedActions <string>]
+ [-ResolvedDateTime <datetime>] [-ServiceSource <string>] [-Severity <string>] [-Status <string>]
+ [-SystemTags <string[]>] [-TenantId <string>] [-ThreatDisplayName <string>]
+ [-ThreatFamilyName <string>] [-Title <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -56,7 +54,73 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to alerts_v2 for security
+Create a manual security alert in Microsoft 365 Defender with specified entities and metadata.
+When the alert is created, the backend automatically creates a new incident to contain the alert, or links the alert to an existing incident if linkToIncident is specified.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.manualAlert"
+	title = "Suspicious login from TOR exit node"
+	description = "User account showed login activity from known TOR exit node.
+Manual investigation revealed potential account compromise."
+	category = "InitialAccess"
+	severity = "high"
+	recommendedActions = "Reset user credentials, enable MFA, review recent user activity"
+	mitreTechniques = @(
+	"T1078"
+)
+entityDefinitions = @(
+	@{
+		entityType = "user"
+		entityIdentifier = "userPrincipalName"
+		identifierValue = "john.doe@contoso.com"
+		role = "impacted"
+	}
+	@{
+		entityType = "ip"
+		entityIdentifier = "address"
+		identifierValue = "185.220.101.50"
+		role = "related"
+	}
+)
+}
+
+New-MgBetaSecurityAlertV2 -BodyParameter $params
+
+### EXAMPLE 2
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.manualAlert"
+	title = "Malicious file detected on device"
+	description = "Sandbox analysis revealed malicious behavior in downloaded file."
+	category = "Execution"
+	severity = "high"
+	recommendedActions = "Isolate device, remove file, scan for additional IOCs"
+	linkToIncident = 
+	entityDefinitions = @(
+		@{
+			entityType = "file"
+			entityIdentifier = "sha256"
+			identifierValue = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+			role = "related"
+		}
+		@{
+			entityType = "device"
+			entityIdentifier = "deviceName"
+			identifierValue = "DESKTOP-VICTIM01"
+			role = "impacted"
+		}
+	)
+}
+
+New-MgBetaSecurityAlertV2 -BodyParameter $params
 
 ## PARAMETERS
 
@@ -229,10 +293,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Categories
+
+The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Category
 
 The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
 
 ```yaml
 Type: System.String
@@ -594,6 +682,27 @@ HelpMessage: ''
 ### -IncidentWebUrl
 
 URL for the incident page in the Microsoft 365 Defender portal.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -InvestigationState
+
+investigationState
 
 ```yaml
 Type: System.String
@@ -1064,7 +1173,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphSecurityAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1074,8 +1183,12 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+  [Categories <String[]>]: The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
   [Classification <String>]: alertClassification
   [Comments <IMicrosoftGraphSecurityAlertComment[]>]: Array of comments created by the Security Operations (SecOps) team during the alert management process.
     [Comment <String>]: The comment text.
@@ -1101,6 +1214,7 @@ Values are free-form.
   [FirstActivityDateTime <DateTime?>]: The earliest activity associated with the alert.
   [IncidentId <String>]: Unique identifier to represent the incident this alert resource is associated with.
   [IncidentWebUrl <String>]: URL for the incident page in the Microsoft 365 Defender portal.
+  [InvestigationState <String>]: investigationState
   [LastActivityDateTime <DateTime?>]: The oldest activity associated with the alert.
   [LastUpdateDateTime <DateTime?>]: Time when the alert was last updated at Microsoft 365 Defender.
   [MitreTechniques <String[]>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
@@ -1137,27 +1251,5 @@ Values are free-form.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityAlertV2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2)
+- [](https://learn.microsoft.com/graph/api/security-alert-post-manualalert?view=graph-rest-beta)

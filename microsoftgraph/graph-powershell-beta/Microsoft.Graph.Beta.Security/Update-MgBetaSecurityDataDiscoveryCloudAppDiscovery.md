@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscoverycloudappdiscovery
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityDataDiscoveryCloudAppDiscovery
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property cloudAppDiscovery in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -379,7 +389,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityDataDiscoveryReport>`: dataDiscoveryReport
+BODYPARAMETER <IMicrosoftGraphSecurityDataDiscoveryReport>: dataDiscoveryReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -404,9 +414,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LogFileCount <Int32?>]: The count of log files history.
     [ReceiverProtocol <String>]: receiverProtocol
     [SupportedEntityTypes <String[]>]: The supported entity type.
-Possible values are: userName, ipAddress, machineName, other, unknown, unknownFutureValue.
+The possible values are: userName, ipAddress, machineName, other, unknown, unknownFutureValue.
     [SupportedTrafficTypes <String[]>]: The supported traffic type.
-Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
+The possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
 
 UPLOADEDSTREAMS <IMicrosoftGraphSecurityCloudAppDiscoveryReport[]>: A collection of streams available for generating cloud discovery report.
   [Id <String>]: The unique identifier for an entity.
@@ -429,34 +439,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LogFileCount <Int32?>]: The count of log files history.
   [ReceiverProtocol <String>]: receiverProtocol
   [SupportedEntityTypes <String[]>]: The supported entity type.
-Possible values are: userName, ipAddress, machineName, other, unknown, unknownFutureValue.
+The possible values are: userName, ipAddress, machineName, other, unknown, unknownFutureValue.
   [SupportedTrafficTypes <String[]>]: The supported traffic type.
-Possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
+The possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureValue.
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityDataDiscoveryCloudAppDiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscoverycloudappdiscovery)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscoverycloudappdiscovery)
