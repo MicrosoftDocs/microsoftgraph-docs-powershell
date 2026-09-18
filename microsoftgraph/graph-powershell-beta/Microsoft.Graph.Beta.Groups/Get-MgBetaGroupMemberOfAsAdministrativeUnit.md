@@ -15,6 +15,9 @@ title: Get-MgBetaGroupMemberOfAsAdministrativeUnit
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberOfAsAdministrativeUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
