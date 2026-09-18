@@ -15,6 +15,9 @@ title: Get-MgBetaReportTeamCount
 
 Invoke function getTeamsTeamCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

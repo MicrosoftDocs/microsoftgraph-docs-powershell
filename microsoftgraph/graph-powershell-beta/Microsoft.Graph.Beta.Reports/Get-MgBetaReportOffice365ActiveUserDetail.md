@@ -15,6 +15,9 @@ title: Get-MgBetaReportOffice365ActiveUserDetail
 
 Invoke function getOffice365ActiveUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365ActiveUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActiveUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
