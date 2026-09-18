@@ -664,7 +664,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewinstancedecisioninsight)
+- [Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewinstancedecisioninsight)
 
 
 

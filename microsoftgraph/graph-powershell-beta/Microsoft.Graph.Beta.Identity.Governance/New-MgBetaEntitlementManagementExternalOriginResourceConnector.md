@@ -582,8 +582,8 @@ CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
-- [](https://learn.microsoft.com/graph/api/entitlementmanagement-post-externaloriginresourceconnectors?view=graph-rest-beta)
+- [New-MgBetaEntitlementManagementExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-post-externaloriginresourceconnectors?view=graph-rest-beta)
 
 
 

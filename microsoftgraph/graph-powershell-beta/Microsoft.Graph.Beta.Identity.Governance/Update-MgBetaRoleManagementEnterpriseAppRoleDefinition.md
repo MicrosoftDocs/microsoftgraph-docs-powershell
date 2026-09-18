@@ -1025,7 +1025,7 @@ Not supported for custom roles.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapproledefinition)
+- [Update-MgBetaRoleManagementEnterpriseAppRoleDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapproledefinition)
 
 
 

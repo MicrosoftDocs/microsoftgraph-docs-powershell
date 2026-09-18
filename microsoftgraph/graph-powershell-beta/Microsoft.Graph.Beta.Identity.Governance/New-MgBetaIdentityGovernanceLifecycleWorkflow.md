@@ -95476,8 +95476,8 @@ Each condition is either a countBasedQuarantineCondition or a percentageBasedQua
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflow)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta)
+- [New-MgBetaIdentityGovernanceLifecycleWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-post-workflows?view=graph-rest-beta)
 
 
 

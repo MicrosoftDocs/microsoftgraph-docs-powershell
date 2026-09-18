@@ -539,7 +539,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresourceaccesspackageresourcescope)
+- [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresourceaccesspackageresourcescope)
 
 
 
