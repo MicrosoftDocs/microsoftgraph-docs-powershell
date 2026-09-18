@@ -57,12 +57,17 @@ Get the root domain of a subdomain.\rThe API returns a single object which is th
 | Application | Domain.Read.All, Directory.Read.All, Domain.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDomainRootDomain -DomainId $domainId
+
+```
+This example shows how to use the Get-MgBetaDomainRootDomain Cmdlet.
+
 
 ## PARAMETERS
 

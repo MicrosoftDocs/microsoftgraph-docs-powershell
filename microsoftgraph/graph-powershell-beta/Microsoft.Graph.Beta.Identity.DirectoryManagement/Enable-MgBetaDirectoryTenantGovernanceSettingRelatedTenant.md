@@ -38,12 +38,17 @@ Enable the related tenants feature for tenant discovery.
 After calling this action, the isRelatedTenantsEnabled property of tenantGovernanceSetting is set to true, which allows the use of related tenant APIs.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant
+
+```
+This example shows how to use the Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant Cmdlet.
+
 
 ## PARAMETERS
 
