@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementRoleDefinitionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRoleDefinitionCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleDefinitionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
