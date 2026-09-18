@@ -568,8 +568,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinter)
-- [](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-beta)
+- [New-MgBetaPrintPrinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinter)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printer-create?view=graph-rest-beta)
 
 
 
