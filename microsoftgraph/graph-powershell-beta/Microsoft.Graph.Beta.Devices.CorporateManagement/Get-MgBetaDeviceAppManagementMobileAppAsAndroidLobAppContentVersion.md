@@ -16,6 +16,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion
 The list of content versions for this app.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

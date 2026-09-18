@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment
 
 Create new navigation property to assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

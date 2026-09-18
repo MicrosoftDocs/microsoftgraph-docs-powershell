@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementManagedEBook
 
 The Managed eBook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

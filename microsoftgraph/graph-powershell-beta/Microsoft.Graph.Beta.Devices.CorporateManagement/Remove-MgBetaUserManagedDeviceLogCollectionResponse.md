@@ -15,6 +15,9 @@ title: Remove-MgBetaUserManagedDeviceLogCollectionResponse
 
 Delete navigation property logCollectionRequests for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
