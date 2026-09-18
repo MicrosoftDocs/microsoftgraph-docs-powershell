@@ -872,7 +872,7 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessdeleteditempolicy)
+- [New-MgBetaIdentityConditionalAccessDeletedItemPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessdeleteditempolicy)
 
 
 

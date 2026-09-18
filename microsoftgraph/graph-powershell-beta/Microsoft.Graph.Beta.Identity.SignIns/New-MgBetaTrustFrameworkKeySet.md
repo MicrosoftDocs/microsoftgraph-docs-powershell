@@ -590,8 +590,8 @@ For more information, see RFC 5280.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset)
-- [](https://learn.microsoft.com/graph/api/trustframework-post-keysets?view=graph-rest-beta)
+- [New-MgBetaTrustFrameworkKeySet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/trustframework-post-keysets?view=graph-rest-beta)
 
 
 

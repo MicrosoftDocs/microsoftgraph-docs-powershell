@@ -442,7 +442,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartnerm365capabilitycount)
+- [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartnerm365capabilitycount)
 
 
 

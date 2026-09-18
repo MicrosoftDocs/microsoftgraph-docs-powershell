@@ -485,8 +485,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
-- [](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-beta)
+- [New-MgBetaIdentityApiConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-beta)
 
 
 

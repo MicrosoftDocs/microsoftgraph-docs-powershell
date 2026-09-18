@@ -521,7 +521,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdevice)
+- [Remove-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationhardwareoathmethoddevicehardwareoathdevice)
 
 
 
