@@ -15,6 +15,9 @@ title: Get-MgBetaUserTodoListDelta
 
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoListDelta](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoListDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

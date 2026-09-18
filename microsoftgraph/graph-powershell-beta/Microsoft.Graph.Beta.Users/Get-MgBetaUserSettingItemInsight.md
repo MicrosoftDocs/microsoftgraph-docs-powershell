@@ -16,6 +16,9 @@ title: Get-MgBetaUserSettingItemInsight
 The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
 Get userInsightsSettings through this navigation property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingItemInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingItemInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
