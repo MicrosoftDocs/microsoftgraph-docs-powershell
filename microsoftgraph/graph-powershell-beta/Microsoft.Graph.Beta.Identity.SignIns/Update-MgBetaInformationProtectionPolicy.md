@@ -220,7 +220,7 @@ HelpMessage: ''
 
 ### -Labels
 
-.
+
 To construct, see NOTES section for LABELS properties and create a hash table.
 
 ```yaml
