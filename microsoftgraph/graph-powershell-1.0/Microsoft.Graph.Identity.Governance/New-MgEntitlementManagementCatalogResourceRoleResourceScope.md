@@ -878,7 +878,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageResourceScope>: accessPackageResourceScope
+BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -993,7 +993,7 @@ Supports $filter (eq).
         [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
       [Status <String>]: customDataProvidedResourceUploadStatus
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1072,7 +1072,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-RESOURCE <IMicrosoftGraphAccessPackageResource>: accessPackageResource
+RESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1190,3 +1190,25 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogresourceroleresourcescope)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
