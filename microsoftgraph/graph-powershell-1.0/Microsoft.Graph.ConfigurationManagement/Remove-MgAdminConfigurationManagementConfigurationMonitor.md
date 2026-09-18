@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Delete a configurationMonitor object permanently.
 A deleted configurationMonitor can't be restored.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ConfigurationMonitoring.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConfigurationMonitoring.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
