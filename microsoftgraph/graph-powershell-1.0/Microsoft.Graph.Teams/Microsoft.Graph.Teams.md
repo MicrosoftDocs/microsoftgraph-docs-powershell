@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: ede7bde2-d646-4e6b-97ff-1eb01800356a
+Module Guid: 78677b12-3970-4a68-9357-ca336ccac063
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.teams/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1988,23 +1988,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
 
 ### [Update-MgUserTeamworkAssociatedTeam](Update-MgUserTeamworkAssociatedTeam.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
