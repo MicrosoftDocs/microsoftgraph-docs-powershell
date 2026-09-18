@@ -60,24 +60,17 @@ Returns all accessReviewInstance objects on a given accessReviewScheduleDefiniti
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -On $onId
-
-### EXAMPLE 2
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -Property "id,displayName,status,delegatedBy"
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -On $onId 
 
-### EXAMPLE 3
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser Cmdlet.
 
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -Property "id,displayName,status"
 
 ## PARAMETERS
 

@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Update entity in privilegedRoleAssignmentRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1033,6 +1023,7 @@ Only Once is supported for now.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequest)
+
 
 
 
