@@ -399,7 +399,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallregistrationconfiguration)
+- [Remove-MgBetaVirtualEventTownhallRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventtownhallregistrationconfiguration)
 
 
 

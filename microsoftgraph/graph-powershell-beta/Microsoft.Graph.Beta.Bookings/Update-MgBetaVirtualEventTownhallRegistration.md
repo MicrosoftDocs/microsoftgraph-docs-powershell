@@ -1288,7 +1288,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallregistration)
+- [Update-MgBetaVirtualEventTownhallRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallregistration)
 
 
 
