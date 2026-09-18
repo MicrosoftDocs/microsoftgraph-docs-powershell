@@ -630,7 +630,7 @@ PEERCONFIGURATION `<IMicrosoftGraphNetworkaccessPeerConnectivityConfiguration>`:
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlink)
+- [Update-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranchconnectivityconfigurationlink)
 
 
 
