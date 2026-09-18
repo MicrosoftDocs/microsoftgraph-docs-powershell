@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityB2XUserFlowPostFederationSignup
 
 Delete navigation property postFederationSignup for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2XUserFlowPostFederationSignup](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowPostFederationSignup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

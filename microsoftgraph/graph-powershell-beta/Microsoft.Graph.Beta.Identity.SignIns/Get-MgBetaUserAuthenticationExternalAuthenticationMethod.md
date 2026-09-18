@@ -15,6 +15,9 @@ title: Get-MgBetaUserAuthenticationExternalAuthenticationMethod
 
 Represents the external MFA registered to a user for authentication.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationExternalAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationExternalAuthenticationMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
