@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthlymfaregistereduser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportUserInsightMonthlyMfaRegisteredUser
 ---
@@ -65,6 +65,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property mfaRegisteredUsers in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -168,7 +178,7 @@ HelpMessage: ''
 
 ### -Count
 
-
+.
 
 ```yaml
 Type: System.Int64
@@ -195,7 +205,7 @@ HelpMessage: ''
 
 ### -FactDate
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -534,7 +544,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMfaUserCountMetric>`: mfaUserCountMetric
+BODYPARAMETER <IMicrosoftGraphMfaUserCountMetric>: mfaUserCountMetric
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -542,13 +552,18 @@ Read-only.
   [FactDate <DateTime?>]: 
   [MfaType <String>]: mfaType
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
+  [AggregationWindow <String>]: Usage: aggregationWindow='{aggregationWindow}'
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
+  [ApiUsageReportEnablementStatusMetric <String>]: The unique identifier of apiUsageReportEnablementStatus
   [AppCredentialSignInActivityId <String>]: The unique identifier of appCredentialSignInActivity
+  [AppId <String>]: Usage: appId='{appId}'
   [ApplicationSignInDetailedSummaryId <String>]: The unique identifier of applicationSignInDetailedSummary
+  [AuditActivityTypeId <String>]: The unique identifier of auditActivityType
   [AuthenticationsMetricId <String>]: The unique identifier of authenticationsMetric
+  [CorrelatedIdentityId <String>]: The unique identifier of correlatedIdentity
   [CredentialUserRegistrationDetailsId <String>]: The unique identifier of credentialUserRegistrationDetails
   [CustomSecurityAttributeAuditId <String>]: The unique identifier of customSecurityAttributeAudit
   [DailyInactiveUsersByApplicationMetricId <String>]: The unique identifier of dailyInactiveUsersByApplicationMetric
@@ -560,7 +575,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExclusiveIntervalEndDateTime <DateTime?>]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   [Filter <String>]: Usage: filter='{filter}'
+  [GroupAnalyticsId <String>]: The unique identifier of groupAnalytics
   [GroupId <String>]: Usage: groupId='{groupId}'
+  [IdentityCorrelationId <String>]: The unique identifier of identityCorrelation
   [IncludedUserRoles <String>]: Usage: includedUserRoles='{includedUserRoles}'
   [IncludedUserTypes <String>]: Usage: includedUserTypes='{includedUserTypes}'
   [InclusiveIntervalStartDateTime <DateTime?>]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
@@ -569,6 +586,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [MfaCompletionMetricId <String>]: The unique identifier of mfaCompletionMetric
   [MfaTelecomFraudMetricId <String>]: The unique identifier of mfaTelecomFraudMetric
   [MfaUserCountMetricId <String>]: The unique identifier of mfaUserCountMetric
+  [MicrosoftAppsFileStorageContainerAppUsageAppId <String>]: The unique identifier of microsoftAppsFileStorageContainerAppUsage
+  [MicrosoftAppsFileStorageContainerGeoUsageDataLocationCode <String>]: The unique identifier of microsoftAppsFileStorageContainerGeoUsage
   [MonthlyInactiveUsersByApplicationMetricId <String>]: The unique identifier of monthlyInactiveUsersByApplicationMetric
   [MonthlyInactiveUsersMetricId <String>]: The unique identifier of monthlyInactiveUsersMetric
   [OperationId <String>]: The unique identifier of operation
@@ -580,6 +599,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [ProvisioningObjectSummaryId <String>]: The unique identifier of provisioningObjectSummary
   [SelfServiceSignUpId <String>]: The unique identifier of selfServiceSignUp
   [ServicePrincipalSignInActivityId <String>]: The unique identifier of servicePrincipalSignInActivity
+  [SignInEventsActivityId <String>]: The unique identifier of signInEventsActivity
+  [SignInEventsAppActivityAppId <String>]: The unique identifier of signInEventsAppActivity
   [SignInId <String>]: The unique identifier of signIn
   [Skip <Int32?>]: Usage: skip={skip}
   [SkipToken <String>]: Usage: skipToken='{skipToken}'
@@ -598,27 +619,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportUserInsightMonthlyMfaRegisteredUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthlymfaregistereduser)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightmonthlymfaregistereduser)
