@@ -80,7 +80,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -208,7 +208,7 @@ HelpMessage: ''
 
 ### -ImportedDeviceIdentities
 
-.
+
 To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
@@ -230,7 +230,7 @@ HelpMessage: ''
 
 ### -OverwriteImportedDeviceIdentities
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
