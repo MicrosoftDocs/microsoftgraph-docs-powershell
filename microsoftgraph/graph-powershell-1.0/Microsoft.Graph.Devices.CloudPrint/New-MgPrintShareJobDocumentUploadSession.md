@@ -84,16 +84,6 @@ This allows transfer to be resumed, in case the network connection is dropped du
 | Delegated (personal Microsoft account) | Not supported |
 | Application | PrintJob.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -569,6 +559,7 @@ PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUpload
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession)
 - [](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0)
+
 
 
 
