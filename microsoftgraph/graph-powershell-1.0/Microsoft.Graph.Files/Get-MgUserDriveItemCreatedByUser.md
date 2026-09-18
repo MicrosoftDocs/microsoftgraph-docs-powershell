@@ -409,7 +409,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemcreatedbyuser)
+- [Get-MgUserDriveItemCreatedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemcreatedbyuser)
 
 
 

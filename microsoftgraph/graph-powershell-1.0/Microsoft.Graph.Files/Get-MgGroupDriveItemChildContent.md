@@ -447,7 +447,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemchildcontent)
+- [Get-MgGroupDriveItemChildContent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemchildcontent)
 
 
 

@@ -34694,7 +34694,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivebundle)
+- [New-MgUserDriveBundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivebundle)
 
 
 
