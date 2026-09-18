@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectory
 ---
@@ -14,9 +14,6 @@ title: Update-MgDirectory
 ## SYNOPSIS
 
 Update directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,7 @@ Update-MgDirectory [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
  [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
  [-PublicKeyInfrastructure <IMicrosoftGraphPublicKeyInfrastructureRoot>]
  [-Recovery <IMicrosoftGraphEntraRecoveryServicesRecovery>]
+ [-RemoteTenantGroups <IMicrosoftGraphRemoteTenantGroup[]>]
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -55,6 +53,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -492,6 +500,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RemoteTenantGroups
+
+Collection of groups in remote Microsoft Entra tenants that are available in the directory.
+To construct, see NOTES section for REMOTETENANTGROUPS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteTenantGroup[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -647,7 +677,7 @@ Default value is null.
 If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
 Can be changed later.
 
-BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
+BODYPARAMETER <IMicrosoftGraphDirectory>: directory
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -837,45 +867,75 @@ Maximum length is 256 characters.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [Jobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJobBase[]>]: 
+    [Jobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJobBase[]>]: Collection of all recovery jobs (both preview and recovery) for the tenant.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
         [(Any) <Object>]: This indicates any property can be added to this object.
-      [JobCompletionDateTime <DateTime?>]: 
-      [JobStartDateTime <DateTime?>]: 
+      [JobCompletionDateTime <DateTime?>]: The date and time when the job completed.
+Null if the job is still running.
+      [JobStartDateTime <DateTime?>]: The date and time when the job started.
       [Status <RecoveryStatus?>]: recoveryStatus
-      [TargetStateDateTime <DateTime?>]: 
-      [TotalChangedLinksCalculated <Int32?>]: 
-      [TotalChangedObjectsCalculated <Int32?>]: 
-    [Snapshots <IMicrosoftGraphEntraRecoveryServicesSnapshot[]>]: 
+      [TargetStateDateTime <DateTime?>]: The target snapshot timestamp to which the tenant is being restored.
+Supports $filter (eq, ne).
+      [TotalChangedLinksCalculated <Int32?>]: The total count of changed directory object links (relationships) calculated by the job.
+null until the job completes calculation.
+Not all calculated link changes may be successfully applied; see totalLinksModified on derived types for the count of links that were actually modified.
+      [TotalChangedObjectsCalculated <Int32?>]: The total count of changed directory objects calculated by the job.
+null until the job completes calculation.
+Not all calculated object changes may be successfully applied; see totalObjectsModified on derived types for the count of objects that were actually modified.
+    [Snapshots <IMicrosoftGraphEntraRecoveryServicesSnapshot[]>]: Collection of backup snapshots available for the tenant.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [CreatedDateTime <DateTime?>]: 
-      [RecoveryJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJob[]>]: 
+      [CreatedDateTime <DateTime?>]: The date and time when the snapshot was created.
+      [RecoveryJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJob[]>]: Collection of recovery jobs created for this snapshot.
         [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
-        [JobCompletionDateTime <DateTime?>]: 
-        [JobStartDateTime <DateTime?>]: 
+        [JobCompletionDateTime <DateTime?>]: The date and time when the job completed.
+Null if the job is still running.
+        [JobStartDateTime <DateTime?>]: The date and time when the job started.
         [Status <RecoveryStatus?>]: recoveryStatus
-        [TargetStateDateTime <DateTime?>]: 
-        [TotalChangedLinksCalculated <Int32?>]: 
-        [TotalChangedObjectsCalculated <Int32?>]: 
+        [TargetStateDateTime <DateTime?>]: The target snapshot timestamp to which the tenant is being restored.
+Supports $filter (eq, ne).
+        [TotalChangedLinksCalculated <Int32?>]: The total count of changed directory object links (relationships) calculated by the job.
+null until the job completes calculation.
+Not all calculated link changes may be successfully applied; see totalLinksModified on derived types for the count of links that were actually modified.
+        [TotalChangedObjectsCalculated <Int32?>]: The total count of changed directory objects calculated by the job.
+null until the job completes calculation.
+Not all calculated object changes may be successfully applied; see totalObjectsModified on derived types for the count of objects that were actually modified.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-        [TotalFailedChanges <Int32?>]: 
-        [TotalLinksModified <Int32?>]: 
-        [TotalObjectsModified <Int32?>]: 
-      [RecoveryPreviewJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryPreviewJob[]>]: 
+        [TotalFailedChanges <Int32?>]: The count of changes (including both objects and links) that failed to apply during recovery.
+        [TotalLinksModified <Int32?>]: The count of directory object links (relationships) that were successfully modified during recovery.
+This value may be less than totalChangedLinksCalculated if some link changes failed.
+        [TotalObjectsModified <Int32?>]: The count of directory objects that were successfully modified during recovery.
+This value may be less than totalChangedObjectsCalculated if some object changes failed.
+      [RecoveryPreviewJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryPreviewJob[]>]: Collection of preview jobs created for this snapshot.
         [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
-        [JobCompletionDateTime <DateTime?>]: 
-        [JobStartDateTime <DateTime?>]: 
+        [JobCompletionDateTime <DateTime?>]: The date and time when the job completed.
+Null if the job is still running.
+        [JobStartDateTime <DateTime?>]: The date and time when the job started.
         [Status <RecoveryStatus?>]: recoveryStatus
-        [TargetStateDateTime <DateTime?>]: 
-        [TotalChangedLinksCalculated <Int32?>]: 
-        [TotalChangedObjectsCalculated <Int32?>]: 
+        [TargetStateDateTime <DateTime?>]: The target snapshot timestamp to which the tenant is being restored.
+Supports $filter (eq, ne).
+        [TotalChangedLinksCalculated <Int32?>]: The total count of changed directory object links (relationships) calculated by the job.
+null until the job completes calculation.
+Not all calculated link changes may be successfully applied; see totalLinksModified on derived types for the count of links that were actually modified.
+        [TotalChangedObjectsCalculated <Int32?>]: The total count of changed directory objects calculated by the job.
+null until the job completes calculation.
+Not all calculated object changes may be successfully applied; see totalObjectsModified on derived types for the count of objects that were actually modified.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [TotalChangedObjects <Int32?>]: 
+      [TotalChangedObjects <Int32?>]: The total number of changed objects identified in this snapshot.
+  [RemoteTenantGroups <IMicrosoftGraphRemoteTenantGroup[]>]: Collection of groups in remote Microsoft Entra tenants that are available in the directory.
+    [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [RemoteGroupDisplayName <String>]: Display name of the group in the remote tenant.
+    [RemoteGroupId <String>]: Unique identifier of the group in the remote tenant.
+    [RemoteTenantDisplayName <String>]: Display name of the remote tenant.
+    [RemoteTenantId <String>]: Unique identifier of the remote tenant.
+    [RemoteTenantPrimaryDomain <String>]: Primary domain name of the remote tenant.
   [Subscriptions <IMicrosoftGraphCompanySubscription[]>]: List of commercial subscriptions that an organization acquired.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1004,7 +1064,7 @@ This property isn't in use and updating it isn't supported.
     [UserForcePasswordChangeOnLogonEnabled <Boolean?>]: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     [UserWritebackEnabled <Boolean?>]: Used to indicate that user writeback is enabled.
 
-PUBLICKEYINFRASTRUCTURE `<IMicrosoftGraphPublicKeyInfrastructureRoot>`: publicKeyInfrastructureRoot
+PUBLICKEYINFRASTRUCTURE <IMicrosoftGraphPublicKeyInfrastructureRoot>: publicKeyInfrastructureRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1039,49 +1099,80 @@ Maximum length is 256 characters.
     [Status <String>]: The status of any asynchronous jobs runs on the object which can be upload or delete.
     [StatusDetails <String>]: The status details of the upload/deleted operation of PKI (Public Key Infrastructure).
 
-RECOVERY `<IMicrosoftGraphEntraRecoveryServicesRecovery>`: recovery
+RECOVERY <IMicrosoftGraphEntraRecoveryServicesRecovery>: recovery
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Jobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJobBase[]>]: 
+  [Jobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJobBase[]>]: Collection of all recovery jobs (both preview and recovery) for the tenant.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
       [(Any) <Object>]: This indicates any property can be added to this object.
-    [JobCompletionDateTime <DateTime?>]: 
-    [JobStartDateTime <DateTime?>]: 
+    [JobCompletionDateTime <DateTime?>]: The date and time when the job completed.
+Null if the job is still running.
+    [JobStartDateTime <DateTime?>]: The date and time when the job started.
     [Status <RecoveryStatus?>]: recoveryStatus
-    [TargetStateDateTime <DateTime?>]: 
-    [TotalChangedLinksCalculated <Int32?>]: 
-    [TotalChangedObjectsCalculated <Int32?>]: 
-  [Snapshots <IMicrosoftGraphEntraRecoveryServicesSnapshot[]>]: 
+    [TargetStateDateTime <DateTime?>]: The target snapshot timestamp to which the tenant is being restored.
+Supports $filter (eq, ne).
+    [TotalChangedLinksCalculated <Int32?>]: The total count of changed directory object links (relationships) calculated by the job.
+null until the job completes calculation.
+Not all calculated link changes may be successfully applied; see totalLinksModified on derived types for the count of links that were actually modified.
+    [TotalChangedObjectsCalculated <Int32?>]: The total count of changed directory objects calculated by the job.
+null until the job completes calculation.
+Not all calculated object changes may be successfully applied; see totalObjectsModified on derived types for the count of objects that were actually modified.
+  [Snapshots <IMicrosoftGraphEntraRecoveryServicesSnapshot[]>]: Collection of backup snapshots available for the tenant.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [CreatedDateTime <DateTime?>]: 
-    [RecoveryJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJob[]>]: 
+    [CreatedDateTime <DateTime?>]: The date and time when the snapshot was created.
+    [RecoveryJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryJob[]>]: Collection of recovery jobs created for this snapshot.
       [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
-      [JobCompletionDateTime <DateTime?>]: 
-      [JobStartDateTime <DateTime?>]: 
+      [JobCompletionDateTime <DateTime?>]: The date and time when the job completed.
+Null if the job is still running.
+      [JobStartDateTime <DateTime?>]: The date and time when the job started.
       [Status <RecoveryStatus?>]: recoveryStatus
-      [TargetStateDateTime <DateTime?>]: 
-      [TotalChangedLinksCalculated <Int32?>]: 
-      [TotalChangedObjectsCalculated <Int32?>]: 
+      [TargetStateDateTime <DateTime?>]: The target snapshot timestamp to which the tenant is being restored.
+Supports $filter (eq, ne).
+      [TotalChangedLinksCalculated <Int32?>]: The total count of changed directory object links (relationships) calculated by the job.
+null until the job completes calculation.
+Not all calculated link changes may be successfully applied; see totalLinksModified on derived types for the count of links that were actually modified.
+      [TotalChangedObjectsCalculated <Int32?>]: The total count of changed directory objects calculated by the job.
+null until the job completes calculation.
+Not all calculated object changes may be successfully applied; see totalObjectsModified on derived types for the count of objects that were actually modified.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-      [TotalFailedChanges <Int32?>]: 
-      [TotalLinksModified <Int32?>]: 
-      [TotalObjectsModified <Int32?>]: 
-    [RecoveryPreviewJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryPreviewJob[]>]: 
+      [TotalFailedChanges <Int32?>]: The count of changes (including both objects and links) that failed to apply during recovery.
+      [TotalLinksModified <Int32?>]: The count of directory object links (relationships) that were successfully modified during recovery.
+This value may be less than totalChangedLinksCalculated if some link changes failed.
+      [TotalObjectsModified <Int32?>]: The count of directory objects that were successfully modified during recovery.
+This value may be less than totalChangedObjectsCalculated if some object changes failed.
+    [RecoveryPreviewJobs <IMicrosoftGraphEntraRecoveryServicesRecoveryPreviewJob[]>]: Collection of preview jobs created for this snapshot.
       [FilteringCriteria <IMicrosoftGraphEntraRecoveryServicesRecoveryJobFilteringCriteriaBase>]: recoveryJobFilteringCriteriaBase
-      [JobCompletionDateTime <DateTime?>]: 
-      [JobStartDateTime <DateTime?>]: 
+      [JobCompletionDateTime <DateTime?>]: The date and time when the job completed.
+Null if the job is still running.
+      [JobStartDateTime <DateTime?>]: The date and time when the job started.
       [Status <RecoveryStatus?>]: recoveryStatus
-      [TargetStateDateTime <DateTime?>]: 
-      [TotalChangedLinksCalculated <Int32?>]: 
-      [TotalChangedObjectsCalculated <Int32?>]: 
+      [TargetStateDateTime <DateTime?>]: The target snapshot timestamp to which the tenant is being restored.
+Supports $filter (eq, ne).
+      [TotalChangedLinksCalculated <Int32?>]: The total count of changed directory object links (relationships) calculated by the job.
+null until the job completes calculation.
+Not all calculated link changes may be successfully applied; see totalLinksModified on derived types for the count of links that were actually modified.
+      [TotalChangedObjectsCalculated <Int32?>]: The total count of changed directory objects calculated by the job.
+null until the job completes calculation.
+Not all calculated object changes may be successfully applied; see totalObjectsModified on derived types for the count of objects that were actually modified.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [TotalChangedObjects <Int32?>]: 
+    [TotalChangedObjects <Int32?>]: The total number of changed objects identified in this snapshot.
+
+REMOTETENANTGROUPS <IMicrosoftGraphRemoteTenantGroup[]>: Collection of groups in remote Microsoft Entra tenants that are available in the directory.
+  [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [RemoteGroupDisplayName <String>]: Display name of the group in the remote tenant.
+  [RemoteGroupId <String>]: Unique identifier of the group in the remote tenant.
+  [RemoteTenantDisplayName <String>]: Display name of the remote tenant.
+  [RemoteTenantId <String>]: Unique identifier of the remote tenant.
+  [RemoteTenantPrimaryDomain <String>]: Primary domain name of the remote tenant.
 
 SUBSCRIPTIONS <IMicrosoftGraphCompanySubscription[]>: List of commercial subscriptions that an organization acquired.
   [Id <String>]: The unique identifier for an entity.
@@ -1114,27 +1205,4 @@ The possible values are: Enabled, Deleted, Suspended, Warning, LockedOut.
 
 ## RELATED LINKS
 
-- [Update-MgDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory)
