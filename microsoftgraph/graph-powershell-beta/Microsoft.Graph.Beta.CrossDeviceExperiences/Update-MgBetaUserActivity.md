@@ -1077,7 +1077,7 @@ Short text description of the user's unique activity (for example, document name
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity)
+- [Update-MgBetaUserActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity)
 
 
 
