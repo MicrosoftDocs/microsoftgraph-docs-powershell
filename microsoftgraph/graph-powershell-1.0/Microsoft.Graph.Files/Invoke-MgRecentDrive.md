@@ -50,12 +50,17 @@ This cmdlet has the following aliases,
 List a set of items recently used by the signed-in user.\rThis collection includes items that are in the user's drive and items they have access to from other drives.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
 Invoke-MgRecentDrive -DriveId $driveId
+
+```
+This example shows how to use the Invoke-MgRecentDrive Cmdlet.
+
 
 ## PARAMETERS
 
