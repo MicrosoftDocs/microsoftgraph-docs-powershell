@@ -15,6 +15,9 @@ title: Get-MgDeviceTransitiveMemberOfAsAdministrativeUnit
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
