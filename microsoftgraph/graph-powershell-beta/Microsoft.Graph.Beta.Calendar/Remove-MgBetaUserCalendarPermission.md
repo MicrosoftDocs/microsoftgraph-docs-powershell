@@ -502,8 +502,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermission)
-- [](https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserCalendarPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-beta)
 
 
 
