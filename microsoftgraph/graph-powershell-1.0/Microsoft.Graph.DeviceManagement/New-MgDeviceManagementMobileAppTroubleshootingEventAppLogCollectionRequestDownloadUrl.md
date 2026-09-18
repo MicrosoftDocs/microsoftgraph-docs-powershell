@@ -15,6 +15,9 @@ title: New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionReques
 
 Invoke action createDownloadUrl
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Create (Default)
