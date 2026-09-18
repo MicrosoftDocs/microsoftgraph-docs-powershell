@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementVppToken
 ---
@@ -15,19 +15,17 @@ title: Update-MgBetaDeviceAppManagementVppToken
 
 Update the navigation property vppTokens in deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 
 ```
 Update-MgBetaDeviceAppManagementVppToken -VppTokenId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AppleId <string>] [-AutomaticallyUpdateApps]
- [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <string>] [-DataSharingConsentGranted]
- [-DisplayName <string>] [-ExpirationDateTime <datetime>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-LastSyncDateTime <datetime>]
+ [-AdditionalProperties <hashtable>]
+ [-AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol>] [-AppleId <string>]
+ [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <string>]
+ [-DataSharingConsentGranted] [-DisplayName <string>] [-ExpirationDateTime <datetime>]
+ [-Id <string>] [-LastModifiedDateTime <datetime>] [-LastSyncDateTime <datetime>]
  [-LastSyncStatus <VppTokenSyncStatus>] [-LocationName <string>] [-OrganizationName <string>]
  [-RoleScopeTagIds <string[]>] [-State <VppTokenState>] [-Token <string>]
  [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>]
@@ -50,7 +48,8 @@ Update-MgBetaDeviceAppManagementVppToken -VppTokenId <string>
 
 ```
 Update-MgBetaDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-AppleId <string>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol>] [-AppleId <string>]
  [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <string>]
  [-DataSharingConsentGranted] [-DisplayName <string>] [-ExpirationDateTime <datetime>]
  [-Id <string>] [-LastModifiedDateTime <datetime>] [-LastSyncDateTime <datetime>]
@@ -81,13 +80,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property vppTokens in deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -97,6 +98,33 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AppleDeviceAppDeliveryProtocolType
+
+Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.AppleDeviceDeliveryProtocol
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -939,13 +967,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVppToken>`: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
+BODYPARAMETER <IMicrosoftGraphVppToken>: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
 This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune.
 You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 You can upload multiple Apple VPP Business or Education tokens.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol?>]: Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
   [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
   [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
   [ClaimTokenManagementFromExternalMdm <Boolean?>]: Admin consent to allow claiming token management from external MDM.
@@ -968,7 +997,7 @@ Read-only.
     [StartDateTime <DateTime?>]: Time the action was initiated
   [VppTokenAccountType <VppTokenAccountType?>]: Possible types of an Apple Volume Purchase Program token.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -1052,27 +1081,4 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult[]>: The collection of st
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceAppManagementVppToken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementvpptoken)
