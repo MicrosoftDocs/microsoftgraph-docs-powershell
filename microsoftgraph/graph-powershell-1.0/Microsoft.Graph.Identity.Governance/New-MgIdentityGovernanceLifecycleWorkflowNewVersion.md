@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceLifecycleWorkflowNewVersion
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernanceLifecycleWorkflowNewVersion
 ## SYNOPSIS
 
 Create a new version of the workflow object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,18 +66,9 @@ This cmdlet has the following aliases,
 
 Create a new version of the workflow object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a new version of a workflow
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -128,12 +116,7 @@ $params = @{
 
 New-MgIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 
-```
-This example will create a new version of a workflow
-
-### Example 2: Create a new version of a task with customized email
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -195,10 +178,6 @@ $params = @{
 
 New-MgIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 
-```
-This example will create a new version of a task with customized email
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -230,7 +209,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -586,7 +565,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Fqilt9IdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCreatenewversionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Fqilt9IdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCreatenewversionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Workflow <IMicrosoftGraphIdentityGovernanceWorkflow>]: workflow
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1495,7 +1474,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1601,7 +1580,10 @@ Required.
           [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
           [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-        [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+        [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
           [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
           [Body <IMicrosoftGraphItemBody>]: itemBody
           [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -1895,6 +1877,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                 [Content <IMicrosoftGraphContentBase>]: contentBase
                   [(Any) <Object>]: This indicates any property can be added to this object.
+                [ContentCategory <String>]: contentCategory
                 [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                 [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -2195,7 +2178,9 @@ Read-only.
 The default value is false.
             [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
             [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-            [Permissions <IMicrosoftGraphPermission[]>]: 
+            [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -3082,7 +3067,9 @@ Read-only.
             [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
             [ResourceId <String>]: The unique identifier for the result.
             [Type <String>]: The type of the operation.
-          [Permissions <IMicrosoftGraphPermission[]>]: 
+          [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
           [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
           [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
           [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -3950,6 +3937,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
           [Onenote <IMicrosoftGraphOnenote>]: onenote
+          [OrganizationId <String>]: 
           [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -5100,6 +5088,13 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+        [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+          [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+          [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
         [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -5126,6 +5121,7 @@ Optional.
         [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
         [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+        [MeetingType <String>]: onlineMeetingType
         [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
         [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
           [(Any) <Object>]: This indicates any property can be added to this object.
@@ -5756,6 +5752,11 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
       [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -5888,8 +5889,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5910,6 +5911,7 @@ If this setting is true, the workflow can be run on demand or on schedule when i
 Can't be true for a disabled workflow (where isEnabled is false).
     [LastModifiedBy <IMicrosoftGraphUser>]: user
     [LastModifiedDateTime <DateTime?>]: When the workflow was last modified.
+    [TargetSubjectType <String>]: subjectType
     [Tasks <IMicrosoftGraphIdentityGovernanceTask[]>]: The tasks in the workflow.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -5947,6 +5949,8 @@ Nullable.
 Value is null if task execution hasn't started yet.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
         [Subject <IMicrosoftGraphUser>]: user
         [Task <IMicrosoftGraphIdentityGovernanceTask>]: task
+        [WorkflowSubject <IMicrosoftGraphIdentityGovernanceWorkflowSubject>]: workflowSubject
+          [(Any) <Object>]: This indicates any property can be added to this object.
     [DeletedDateTime <DateTime?>]: When the workflow was deleted.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
     [ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The list of users that meet the workflowExecutionConditions of a workflow.
       [Id <String>]: The unique identifier for an entity.
@@ -5969,6 +5973,30 @@ Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, 
         [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The related reprocessed workflow run.
         [ScheduledDateTime <DateTime?>]: The date time that the run is scheduled to be executed for a workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
         [StartedDateTime <DateTime?>]: The date time that the run execution started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+        [SubjectProcessingResults <IMicrosoftGraphIdentityGovernanceSubjectProcessingResult[]>]: The processing results for each subject in this workflow run.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [CompletedDateTime <DateTime?>]: The date and time when the subject processing completed.
+Read-only.
+          [FailedTasksCount <Int32?>]: The count of tasks that failed for the subject.
+Read-only.
+          [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
+          [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The reprocessed runs associated with this subject processing result.
+          [ScheduledDateTime <DateTime?>]: The date and time when processing was scheduled.
+Read-only.
+          [StartedDateTime <DateTime?>]: The date and time when processing started.
+Read-only.
+          [Subject <IMicrosoftGraphIdentityGovernanceWorkflowSubject>]: workflowSubject
+          [SubjectType <String>]: subjectType
+          [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The task-level processing results for this subject.
+Read-only.
+          [TotalTasksCount <Int32?>]: The total number of tasks in the workflow.
+Read-only.
+          [TotalUnprocessedTasksCount <Int32?>]: The count of tasks that have not yet been processed.
+Read-only.
+          [WorkflowExecutionType <String>]: workflowExecutionType
+          [WorkflowVersion <Int32?>]: The version of the workflow at the time of execution.
+Read-only.
         [SuccessfulUsersCount <Int32?>]: The number of successfully completed users in the run.
         [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The related taskProcessingResults.
         [TotalTasksCount <Int32?>]: 
@@ -6002,6 +6030,7 @@ Supports $filter(lt,gt) and $orderby.
         [Conditions <IMicrosoftGraphIdentityGovernanceQuarantineCondition[]>]: The set of threshold conditions evaluated for the workflow.
 Each condition is either a countBasedQuarantineCondition or a percentageBasedQuarantineCondition.
         [MatchMode <String>]: matchMode
+    [SubjectProcessingResults <IMicrosoftGraphIdentityGovernanceSubjectProcessingResult[]>]: Per-subject workflow execution results.
     [TaskReports <IMicrosoftGraphIdentityGovernanceTaskReport[]>]: Represents the aggregation of task execution data for tasks within a workflow object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6051,11 +6080,12 @@ If this setting is true, the workflow can be run on demand or on schedule when i
 Can't be true for a disabled workflow (where isEnabled is false).
       [LastModifiedBy <IMicrosoftGraphUser>]: user
       [LastModifiedDateTime <DateTime?>]: When the workflow was last modified.
+      [TargetSubjectType <String>]: subjectType
       [Tasks <IMicrosoftGraphIdentityGovernanceTask[]>]: The tasks in the workflow.
       [Settings <IMicrosoftGraphIdentityGovernanceWorkflowSetting>]: workflowSetting
       [VersionNumber <Int32?>]: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -6091,10 +6121,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -6108,6 +6141,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -6130,7 +6164,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-WORKFLOW `<IMicrosoftGraphIdentityGovernanceWorkflow>`: workflow
+WORKFLOW <IMicrosoftGraphIdentityGovernanceWorkflow>: workflow
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdministrationScopeTargets <IMicrosoftGraphDirectoryObject[]>]: The administrative units in the scope of the workflow.
 Optional.
@@ -7037,7 +7071,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -7143,7 +7177,10 @@ Required.
         [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
         [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-      [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+      [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
         [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
         [Body <IMicrosoftGraphItemBody>]: itemBody
         [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -7437,6 +7474,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
               [Content <IMicrosoftGraphContentBase>]: contentBase
                 [(Any) <Object>]: This indicates any property can be added to this object.
+              [ContentCategory <String>]: contentCategory
               [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
               [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -7737,7 +7775,9 @@ Read-only.
 The default value is false.
           [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
           [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-          [Permissions <IMicrosoftGraphPermission[]>]: 
+          [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -8624,7 +8664,9 @@ Read-only.
           [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
           [ResourceId <String>]: The unique identifier for the result.
           [Type <String>]: The type of the operation.
-        [Permissions <IMicrosoftGraphPermission[]>]: 
+        [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
         [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
         [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
         [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -9492,6 +9534,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
         [Onenote <IMicrosoftGraphOnenote>]: onenote
+        [OrganizationId <String>]: 
         [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -10642,6 +10685,13 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+      [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+        [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+        [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
       [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -10668,6 +10718,7 @@ Optional.
       [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
       [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+      [MeetingType <String>]: onlineMeetingType
       [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
       [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -11298,6 +11349,11 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
     [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -11430,8 +11486,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11452,6 +11508,7 @@ If this setting is true, the workflow can be run on demand or on schedule when i
 Can't be true for a disabled workflow (where isEnabled is false).
   [LastModifiedBy <IMicrosoftGraphUser>]: user
   [LastModifiedDateTime <DateTime?>]: When the workflow was last modified.
+  [TargetSubjectType <String>]: subjectType
   [Tasks <IMicrosoftGraphIdentityGovernanceTask[]>]: The tasks in the workflow.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -11489,6 +11546,8 @@ Nullable.
 Value is null if task execution hasn't started yet.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
       [Subject <IMicrosoftGraphUser>]: user
       [Task <IMicrosoftGraphIdentityGovernanceTask>]: task
+      [WorkflowSubject <IMicrosoftGraphIdentityGovernanceWorkflowSubject>]: workflowSubject
+        [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: When the workflow was deleted.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
   [ExecutionScope <IMicrosoftGraphIdentityGovernanceUserProcessingResult[]>]: The list of users that meet the workflowExecutionConditions of a workflow.
     [Id <String>]: The unique identifier for an entity.
@@ -11511,6 +11570,30 @@ Value is null if the workflow hasn't completed.Supports $filter(lt, le, gt, ge, 
       [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The related reprocessed workflow run.
       [ScheduledDateTime <DateTime?>]: The date time that the run is scheduled to be executed for a workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
       [StartedDateTime <DateTime?>]: The date time that the run execution started.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
+      [SubjectProcessingResults <IMicrosoftGraphIdentityGovernanceSubjectProcessingResult[]>]: The processing results for each subject in this workflow run.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CompletedDateTime <DateTime?>]: The date and time when the subject processing completed.
+Read-only.
+        [FailedTasksCount <Int32?>]: The count of tasks that failed for the subject.
+Read-only.
+        [ProcessingStatus <String>]: lifecycleWorkflowProcessingStatus
+        [ReprocessedRuns <IMicrosoftGraphIdentityGovernanceRun[]>]: The reprocessed runs associated with this subject processing result.
+        [ScheduledDateTime <DateTime?>]: The date and time when processing was scheduled.
+Read-only.
+        [StartedDateTime <DateTime?>]: The date and time when processing started.
+Read-only.
+        [Subject <IMicrosoftGraphIdentityGovernanceWorkflowSubject>]: workflowSubject
+        [SubjectType <String>]: subjectType
+        [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The task-level processing results for this subject.
+Read-only.
+        [TotalTasksCount <Int32?>]: The total number of tasks in the workflow.
+Read-only.
+        [TotalUnprocessedTasksCount <Int32?>]: The count of tasks that have not yet been processed.
+Read-only.
+        [WorkflowExecutionType <String>]: workflowExecutionType
+        [WorkflowVersion <Int32?>]: The version of the workflow at the time of execution.
+Read-only.
       [SuccessfulUsersCount <Int32?>]: The number of successfully completed users in the run.
       [TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]: The related taskProcessingResults.
       [TotalTasksCount <Int32?>]: 
@@ -11544,6 +11627,7 @@ Supports $filter(lt,gt) and $orderby.
       [Conditions <IMicrosoftGraphIdentityGovernanceQuarantineCondition[]>]: The set of threshold conditions evaluated for the workflow.
 Each condition is either a countBasedQuarantineCondition or a percentageBasedQuarantineCondition.
       [MatchMode <String>]: matchMode
+  [SubjectProcessingResults <IMicrosoftGraphIdentityGovernanceSubjectProcessingResult[]>]: Per-subject workflow execution results.
   [TaskReports <IMicrosoftGraphIdentityGovernanceTaskReport[]>]: Represents the aggregation of task execution data for tasks within a workflow object.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -11593,6 +11677,7 @@ If this setting is true, the workflow can be run on demand or on schedule when i
 Can't be true for a disabled workflow (where isEnabled is false).
     [LastModifiedBy <IMicrosoftGraphUser>]: user
     [LastModifiedDateTime <DateTime?>]: When the workflow was last modified.
+    [TargetSubjectType <String>]: subjectType
     [Tasks <IMicrosoftGraphIdentityGovernanceTask[]>]: The tasks in the workflow.
     [Settings <IMicrosoftGraphIdentityGovernanceWorkflowSetting>]: workflowSetting
     [VersionNumber <Int32?>]: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
@@ -11600,27 +11685,5 @@ Can't be true for a disabled workflow (where isEnabled is false).
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernanceLifecycleWorkflowNewVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflownewversion)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-createnewversion?view=graph-rest-1.0)

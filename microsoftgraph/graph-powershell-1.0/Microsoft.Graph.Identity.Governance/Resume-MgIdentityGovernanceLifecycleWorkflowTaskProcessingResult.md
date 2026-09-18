@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowtaskprocessingresult
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/18/2026
 PlatyPS schema version: 2024-05-01
 title: Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 ---
@@ -16,9 +16,6 @@ title: Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 Resume a taskProcessingResult that's inProgress.
 In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see Lifecycle Workflows extensibility approach.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -79,18 +76,9 @@ Resume a taskProcessingResult that's inProgress.
 In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see Lifecycle Workflows extensibility approach.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -103,10 +91,6 @@ $params = @{
 }
 
 Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult -WorkflowId $workflowId -TaskId $taskId -TaskProcessingResultId $taskProcessingResultId -BodyParameter $params
-
-```
-This example shows how to use the Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult Cmdlet.
-
 
 ## PARAMETERS
 
@@ -139,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -435,7 +419,7 @@ HelpMessage: ''
 
 ### -Source
 
-
+.
 
 ```yaml
 Type: System.String
@@ -516,7 +500,7 @@ HelpMessage: ''
 
 ### -Type
 
-
+.
 
 ```yaml
 Type: System.String
@@ -624,7 +608,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsO6Ec5IIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsO6Ec5IIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]: customTaskExtensionCallbackData
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -632,11 +616,11 @@ BODYPARAMETER `<IPathsO6Ec5IIdentitygovernanceLifecycleworkflowsWorkflowsWorkflo
   [Source <String>]: 
   [Type <String>]: 
 
-DATA `<IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>`: customTaskExtensionCallbackData
+DATA <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>: customTaskExtensionCallbackData
   [(Any) <Object>]: This indicates any property can be added to this object.
   [OperationStatus <String>]: customTaskExtensionOperationStatus
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -672,10 +656,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -689,6 +676,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -714,27 +702,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowtaskprocessingresult)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowtaskprocessingresult)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-1.0)
