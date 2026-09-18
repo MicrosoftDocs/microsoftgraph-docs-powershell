@@ -37,6 +37,14 @@ This cmdlet has the following aliases,
 
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\rMake sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
