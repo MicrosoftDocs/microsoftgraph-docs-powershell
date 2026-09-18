@@ -51,16 +51,6 @@ This operation isn't transitive.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Directory.Read.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -472,6 +462,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref)
 - [](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-beta)
+
 
 
 
