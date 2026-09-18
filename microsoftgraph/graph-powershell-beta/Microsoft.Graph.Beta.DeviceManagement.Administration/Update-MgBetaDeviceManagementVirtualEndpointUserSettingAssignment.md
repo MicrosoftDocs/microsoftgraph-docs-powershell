@@ -15,6 +15,9 @@ title: Update-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment
 
 Update the navigation property assignments in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointUserSettingAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointUserSettingAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
