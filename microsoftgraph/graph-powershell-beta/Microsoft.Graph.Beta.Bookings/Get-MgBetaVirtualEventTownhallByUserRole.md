@@ -59,12 +59,17 @@ Get a list of virtualEventTownhall objects where the signed-in user is either th
 | Application | VirtualEvent.Read.Chat, VirtualEvent.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
-Get-MgBetaVirtualEventTownhallByUserRole -Role $roleId
+Get-MgBetaVirtualEventTownhallByUserRole -Role $roleId 
+
+```
+This example shows how to use the Get-MgBetaVirtualEventTownhallByUserRole Cmdlet.
+
 
 ## PARAMETERS
 
