@@ -45,12 +45,17 @@ This cmdlet has the following aliases,
 Delete a plannerTaskChatMessage object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
 Remove-MgBetaPlannerTaskMessage -PlannerTaskId $plannerTaskId -PlannerTaskChatMessageId $plannerTaskChatMessageId
+
+```
+This example shows how to use the Remove-MgBetaPlannerTaskMessage Cmdlet.
+
 
 ## PARAMETERS
 
