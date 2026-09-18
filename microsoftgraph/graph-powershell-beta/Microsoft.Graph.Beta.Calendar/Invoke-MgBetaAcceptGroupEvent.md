@@ -15,6 +15,9 @@ title: Invoke-MgBetaAcceptGroupEvent
 
 Accept the specified event in a user calendar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Invoke-MgAcceptGroupEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)
