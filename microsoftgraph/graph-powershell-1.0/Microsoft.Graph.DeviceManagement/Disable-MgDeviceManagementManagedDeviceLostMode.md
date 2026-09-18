@@ -56,12 +56,17 @@ Disable lost mode
 | Application | DeviceManagementManagedDevices.PrivilegedOperations.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Disable-MgDeviceManagementManagedDeviceLostMode -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Disable-MgDeviceManagementManagedDeviceLostMode Cmdlet.
+
 
 ## PARAMETERS
 
