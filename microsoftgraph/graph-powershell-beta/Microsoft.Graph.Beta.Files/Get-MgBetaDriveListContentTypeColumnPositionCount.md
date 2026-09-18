@@ -385,7 +385,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnpositioncount)
+- [Get-MgBetaDriveListContentTypeColumnPositionCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnpositioncount)
 
 
 

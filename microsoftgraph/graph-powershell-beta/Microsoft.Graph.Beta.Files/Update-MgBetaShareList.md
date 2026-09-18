@@ -58032,7 +58032,7 @@ For more information, see RFC 8291 Section 3.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelist)
+- [Update-MgBetaShareList](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelist)
 
 
 

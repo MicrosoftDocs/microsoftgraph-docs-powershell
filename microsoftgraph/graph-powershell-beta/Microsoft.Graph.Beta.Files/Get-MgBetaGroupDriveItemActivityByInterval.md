@@ -605,8 +605,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemactivitybyinterval)
-- [](https://learn.microsoft.com/graph/api/itemactivity-getbyinterval?view=graph-rest-beta)
+- [Get-MgBetaGroupDriveItemActivityByInterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemactivitybyinterval)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itemactivity-getbyinterval?view=graph-rest-beta)
 
 
 

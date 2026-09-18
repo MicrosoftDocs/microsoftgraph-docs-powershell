@@ -607,8 +607,8 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetauserdriveitemlistitempermission)
-- [](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
+- [Grant-MgBetaUserDriveItemListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetauserdriveitemlistitempermission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
 
 
 

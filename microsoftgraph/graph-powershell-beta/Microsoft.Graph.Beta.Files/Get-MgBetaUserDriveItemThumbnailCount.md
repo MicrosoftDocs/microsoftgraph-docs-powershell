@@ -406,7 +406,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemthumbnailcount)
+- [Get-MgBetaUserDriveItemThumbnailCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemthumbnailcount)
 
 
 

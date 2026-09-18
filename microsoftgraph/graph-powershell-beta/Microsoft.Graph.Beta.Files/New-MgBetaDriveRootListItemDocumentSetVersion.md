@@ -829,7 +829,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion)
+- [New-MgBetaDriveRootListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion)
 
 
 

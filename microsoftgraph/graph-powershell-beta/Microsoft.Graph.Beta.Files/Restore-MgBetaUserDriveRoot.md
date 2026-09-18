@@ -601,8 +601,8 @@ For OneDrive, this property isn't populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveroot)
-- [](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
+- [Restore-MgBetaUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetauserdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-beta)
 
 
 
