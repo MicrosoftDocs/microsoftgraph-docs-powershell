@@ -15,6 +15,9 @@ title: Invoke-MgBetaPreviewSiteOnenoteSectionGroupSectionPage
 
 Invoke function preview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Notes/Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Preview (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaSiteOnenoteNotebook
 
 Create new navigation property to notebooks for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
