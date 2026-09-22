@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDomainFederationConfiguration
 ---
@@ -14,9 +14,6 @@ title: Update-MgDomainFederationConfiguration
 ## SYNOPSIS
 
 Update the properties of an internalDomainFederation object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,10 +27,10 @@ Update-MgDomainFederationConfiguration -DomainId <string> -InternalDomainFederat
  [-NextSigningCertificate <string>] [-PassiveSignInUri <string>] [-PasswordResetUri <string>]
  [-PreferredAuthenticationProtocol <string>] [-PromptLoginBehavior <string>] [-SignOutUri <string>]
  [-SigningCertificate <string>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]
+ [-SystemBrowserEnabledOn <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -56,10 +53,10 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
  [-NextSigningCertificate <string>] [-PassiveSignInUri <string>] [-PasswordResetUri <string>]
  [-PreferredAuthenticationProtocol <string>] [-PromptLoginBehavior <string>] [-SignOutUri <string>]
  [-SigningCertificate <string>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]
+ [-SystemBrowserEnabledOn <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -81,22 +78,11 @@ This cmdlet has the following aliases,
 
 Update the properties of an internalDomainFederation object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Domain-InternalFederation.ReadWrite.All, Domain.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Update the federation settings for a federated domain
 
-```powershell
-Update-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change" 
-```
+### EXAMPLE 1
 
-This example updates the DisplayName setting.
+Update-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change"
 
 ## PARAMETERS
 
@@ -594,7 +580,7 @@ HelpMessage: ''
 
 ### -PasswordResetUri
 
-
+.
 
 ```yaml
 Type: System.String
@@ -845,6 +831,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SystemBrowserEnabledOn
+
+systemBrowserEnabledOn
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -901,7 +914,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederation
+BODYPARAMETER <IMicrosoftGraphInternalDomainFederation>: internalDomainFederation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IssuerUri <String>]: Issuer URI of the federation server.
   [MetadataExchangeUri <String>]: URI of the metadata exchange endpoint used for authentication from rich client applications.
@@ -935,8 +948,9 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+  [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -967,6 +981,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SnapshotId <String>]: The unique identifier of snapshot
@@ -975,7 +990,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-SIGNINGCERTIFICATEUPDATESTATUS `<IMicrosoftGraphSigningCertificateUpdateStatus>`: signingCertificateUpdateStatus
+SIGNINGCERTIFICATEUPDATESTATUS <IMicrosoftGraphSigningCertificateUpdateStatus>: signingCertificateUpdateStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertificateUpdateResult <String>]: Status of the last certificate update.
 Read-only.
@@ -986,27 +1001,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgDomainFederationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)
+- [](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0)

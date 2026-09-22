@@ -1,42 +1,40 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/Remove-MgDeviceRegisteredUserByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryremotetenantgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgDeviceRegisteredUserByRef
+title: New-MgDirectoryRemoteTenantGroup
 ---
 
-# Remove-MgDeviceRegisteredUserByRef
+# New-MgDirectoryRemoteTenantGroup
 
 ## SYNOPSIS
 
-Remove a user as a registered user of the device.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef?view=graph-powershell-beta)
+Create new navigation property to remoteTenantGroups for directory
 
 ## SYNTAX
 
-### Delete (Default)
+### CreateExpanded (Default)
 
 ```
-Remove-MgDeviceRegisteredUserByRef -DeviceId <string> -DirectoryObjectId <string>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+New-MgDirectoryRemoteTenantGroup [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-Id <string>]
+ [-RemoteGroupDisplayName <string>] [-RemoteGroupId <string>] [-RemoteTenantDisplayName <string>]
+ [-RemoteTenantId <string>] [-RemoteTenantPrimaryDomain <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### Create
 
 ```
-Remove-MgDeviceRegisteredUserByRef
- -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <string>]
+New-MgDirectoryRemoteTenantGroup -BodyParameter <IMicrosoftGraphRemoteTenantGroup>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,22 +44,62 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a user as a registered user of the device.
+Create new navigation property to remoteTenantGroups for directory
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+{{ Add code here }}
 
-Remove-MgDeviceRegisteredUserByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+### EXAMPLE 2
 
-```
-This example shows how to use the Remove-MgDeviceRegisteredUserByRef Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
+
+### -AdditionalProperties
+
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+remoteTenantGroup
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteTenantGroup
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -106,40 +144,20 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DeviceId
+### -DeletedDateTime
 
-The unique identifier of device
+Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.String
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: CreateExpanded
   Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -211,9 +229,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
+### -Id
 
-ETag
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -221,50 +240,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -InputObject
-
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: DeleteViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -338,6 +314,111 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RemoteGroupDisplayName
+
+Display name of the group in the remote tenant.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -RemoteGroupId
+
+Unique identifier of the group in the remote tenant.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -RemoteTenantDisplayName
+
+Display name of the remote tenant.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -RemoteTenantId
+
+Unique identifier of the remote tenant.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -RemoteTenantPrimaryDomain
+
+Primary domain name of the remote tenant.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -391,7 +472,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteTenantGroup
 
 {{ Fill in the Description }}
 
@@ -401,7 +482,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteTenantGroup
 
 {{ Fill in the Description }}
 
@@ -412,69 +493,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
-  [AllowedValueId <String>]: The unique identifier of allowedValue
-  [AttributeSetId <String>]: The unique identifier of attributeSet
-  [CertificateAuthorityDetailId <String>]: The unique identifier of certificateAuthorityDetail
-  [CertificateBasedAuthPkiId <String>]: The unique identifier of certificateBasedAuthPki
-  [CommerceSubscriptionId <String>]: Alternate key of companySubscription
-  [CompanySubscriptionId <String>]: The unique identifier of companySubscription
-  [ContractId <String>]: The unique identifier of contract
-  [CustomSecurityAttributeDefinitionId <String>]: The unique identifier of customSecurityAttributeDefinition
-  [DeviceId <String>]: The unique identifier of device
-  [DeviceLocalCredentialInfoId <String>]: The unique identifier of deviceLocalCredentialInfo
-  [DirectoryObjectId <String>]: The unique identifier of directoryObject
-  [DirectoryRoleId <String>]: The unique identifier of directoryRole
-  [DirectoryRoleTemplateId <String>]: The unique identifier of directoryRoleTemplate
-  [DomainDnsRecordId <String>]: The unique identifier of domainDnsRecord
-  [DomainId <String>]: The unique identifier of domain
-  [DomainName <String>]: Usage: domainName='{domainName}'
-  [ExtensionId <String>]: The unique identifier of extension
-  [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
-  [InternalDomainFederationId <String>]: The unique identifier of internalDomainFederation
-  [OnPremisesDirectorySynchronizationId <String>]: The unique identifier of onPremisesDirectorySynchronization
-  [OrgContactId <String>]: The unique identifier of orgContact
-  [OrganizationId <String>]: The unique identifier of organization
-  [OrganizationalBrandingLocalizationId <String>]: The unique identifier of organizationalBrandingLocalization
-  [ProfileCardPropertyId <String>]: The unique identifier of profileCardProperty
-  [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
-  [ProfileSourceId <String>]: The unique identifier of profileSource
-  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
-  [RecoveryJobId <String>]: The unique identifier of recoveryJob
-  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
-  [RoleTemplateId <String>]: Alternate key of directoryRole
-  [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
-  [SnapshotId <String>]: The unique identifier of snapshot
-  [SourceId <String>]: Alternate key of profileSource
-  [SubscribedSkuId <String>]: The unique identifier of subscribedSku
-  [TenantId <String>]: Usage: tenantId='{tenantId}'
-  [UserId <String>]: The unique identifier of user
+BODYPARAMETER <IMicrosoftGraphRemoteTenantGroup>: remoteTenantGroup
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [RemoteGroupDisplayName <String>]: Display name of the group in the remote tenant.
+  [RemoteGroupId <String>]: Unique identifier of the group in the remote tenant.
+  [RemoteTenantDisplayName <String>]: Display name of the remote tenant.
+  [RemoteTenantId <String>]: Unique identifier of the remote tenant.
+  [RemoteTenantPrimaryDomain <String>]: Primary domain name of the remote tenant.
 
 
 ## RELATED LINKS
 
-- [Remove-MgDeviceRegisteredUserByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/Remove-MgDeviceRegisteredUserByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryremotetenantgroup)
