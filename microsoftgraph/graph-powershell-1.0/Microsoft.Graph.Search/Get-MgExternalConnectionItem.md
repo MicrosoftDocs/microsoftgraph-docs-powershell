@@ -15,6 +15,9 @@ title: Get-MgExternalConnectionItem
 
 Read the properties and relationships of an externalItem object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
