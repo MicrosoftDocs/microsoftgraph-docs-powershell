@@ -15,6 +15,9 @@ title: Update-MgSiteOnenoteNotebookSectionContent
 
 Update the navigation property sections in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteOnenoteNotebookSectionContent](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteNotebookSectionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
