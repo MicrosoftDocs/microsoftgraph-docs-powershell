@@ -15,6 +15,9 @@ title: Get-MgPolicyPermissionGrantPolicyExcludeCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicyExcludeCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExcludeCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 
 Read the properties and relationships of an externalAuthenticationMethodConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

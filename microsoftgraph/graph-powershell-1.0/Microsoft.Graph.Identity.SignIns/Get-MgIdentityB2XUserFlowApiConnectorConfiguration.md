@@ -15,6 +15,9 @@ title: Get-MgIdentityB2XUserFlowApiConnectorConfiguration
 
 Get the apiConnectorConfiguration property in a b2xIdentityUserFlow to detail the API connectors enabled for the user flow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

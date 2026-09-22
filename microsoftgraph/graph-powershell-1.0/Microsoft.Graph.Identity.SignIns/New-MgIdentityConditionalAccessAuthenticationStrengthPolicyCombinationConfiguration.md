@@ -15,6 +15,9 @@ title: New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationCon
 
 Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:\r* fido2combinationConfiguration\r* x509certificatecombinationconfiguration
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateViaIdentityExpanded (Default)
