@@ -455,7 +455,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/request-mgbetausermanageddeviceremoteassistance)
+- [Request-MgBetaUserManagedDeviceRemoteAssistance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/request-mgbetausermanageddeviceremoteassistance)
 
 
 
