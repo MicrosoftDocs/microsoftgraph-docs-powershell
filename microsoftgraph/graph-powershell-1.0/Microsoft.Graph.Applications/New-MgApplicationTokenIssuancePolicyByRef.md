@@ -537,8 +537,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref)
-- [](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0)
+- [New-MgApplicationTokenIssuancePolicyByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

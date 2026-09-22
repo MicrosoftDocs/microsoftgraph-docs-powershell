@@ -599,9 +599,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
-- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/federatedidentitycredential-list?view=graph-rest-1.0)
+- [Get-MgApplicationFederatedIdentityCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/federatedidentitycredential-list?view=graph-rest-1.0)
 
 
 
