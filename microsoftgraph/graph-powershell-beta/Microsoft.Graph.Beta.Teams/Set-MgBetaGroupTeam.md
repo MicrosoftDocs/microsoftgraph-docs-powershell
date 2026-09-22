@@ -17,6 +17,9 @@ Create a new team from a group.
 In order to create a team, the group must have at least one owner.
 If the group was created less than 15 minutes ago, calls to create a team might fail with a 404 Not Found error because the group information didn't fully replicate.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeam](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

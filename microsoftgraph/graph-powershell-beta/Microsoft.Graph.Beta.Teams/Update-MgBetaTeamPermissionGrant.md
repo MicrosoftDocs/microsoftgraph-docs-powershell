@@ -15,6 +15,9 @@ title: Update-MgBetaTeamPermissionGrant
 
 Update the navigation property permissionGrants in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaChatLastMessagePreview
 
 Update the navigation property lastMessagePreview in chats
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgChatLastMessagePreview](/powershell/module/Microsoft.Graph.Teams/Update-MgChatLastMessagePreview?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaChatTargetedMessageHostedContent
 
 Delete navigation property hostedContents for chats
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgChatTargetedMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatTargetedMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
