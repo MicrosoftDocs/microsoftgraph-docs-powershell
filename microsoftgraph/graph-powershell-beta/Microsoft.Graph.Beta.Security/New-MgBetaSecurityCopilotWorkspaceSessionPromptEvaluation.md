@@ -882,7 +882,7 @@ RESULT `<IMicrosoftGraphSecurityCopilotEvaluationResult>`: evaluationResult
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspacesessionpromptevaluation)
+- [New-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspacesessionpromptevaluation)
 
 
 
