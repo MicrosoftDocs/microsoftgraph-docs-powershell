@@ -41,16 +41,6 @@ The response follows a hierarchical structure: Tenant > Geo > App.
 Use $expand to include nested levels.
 This method is available in the global service only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -291,6 +281,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoftappfilestoragecontainerusagesummary)
 - [](https://learn.microsoft.com/graph/api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary?view=graph-rest-beta)
+
 
 
 
