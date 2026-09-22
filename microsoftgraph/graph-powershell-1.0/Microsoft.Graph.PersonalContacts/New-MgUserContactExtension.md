@@ -15,6 +15,9 @@ title: New-MgUserContactExtension
 
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
