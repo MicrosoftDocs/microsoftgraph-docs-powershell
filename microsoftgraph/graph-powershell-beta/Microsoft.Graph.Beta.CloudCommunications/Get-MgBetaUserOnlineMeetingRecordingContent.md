@@ -63,12 +63,17 @@ For the content of a recording, this API returns the stream of bytes associated 
 | Application | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaUserOnlineMeetingRecordingContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallRecordingId $callRecordingId
+
+```
+This example shows how to use the Get-MgBetaUserOnlineMeetingRecordingContent Cmdlet.
+
 
 ## PARAMETERS
 
