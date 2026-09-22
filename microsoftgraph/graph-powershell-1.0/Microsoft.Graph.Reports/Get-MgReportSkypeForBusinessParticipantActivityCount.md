@@ -16,6 +16,9 @@ title: Get-MgReportSkypeForBusinessParticipantActivityCount
 Get usage trends on the number and type of conference sessions that users from your organization participated in.
 Types of conference sessions include IM, audio/video, application sharing, web, and dial-in/out - third party.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessParticipantActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessParticipantActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

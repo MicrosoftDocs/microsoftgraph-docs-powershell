@@ -16,6 +16,9 @@ title: Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount
 Get the number of users using unique devices in your organization.
 The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
