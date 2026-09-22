@@ -65,16 +65,6 @@ Read the properties and relationships of a task object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -686,6 +676,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcasetask)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-task-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-list-tasks?view=graph-rest-beta)
+
+
 
 
 

@@ -63,16 +63,6 @@ Read the properties and relationships of a microsoft.graph.security.caseManageme
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -657,6 +647,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcase)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/security-casemanagementroot-list-cases?view=graph-rest-beta)
+
+
 
 
 
