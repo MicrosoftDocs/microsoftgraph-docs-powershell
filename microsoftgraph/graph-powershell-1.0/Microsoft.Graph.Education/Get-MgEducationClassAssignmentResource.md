@@ -71,36 +71,61 @@ Only teachers, students, and applications with application permissions can perfo
 | Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Get an educationLinkResource
 
-### EXAMPLE 1
-
-Import-Module Microsoft.Graph.Education
-
-Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
-
-### EXAMPLE 2
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 3
+```
+This example will get an educationlinkresource
+
+### Example 2: Get an educationExcelResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 4
+```
+This example will get an educationexcelresource
+
+### Example 3: Get an educationPowerPointResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 5
+```
+This example will get an educationpowerpointresource
+
+### Example 4: Get an educationFileResource
+
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example will get an educationfileresource
+
+### Example 5: Get an educationMediaResource
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example will get an educationmediaresource
+
 
 ## PARAMETERS
 
