@@ -54,8 +54,9 @@ Activate Microsoft Defender for Identity sensors.
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -66,6 +67,10 @@ $params = @{
 }
 
 Initialize-MgSecurityIdentitySensorCandidate -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgSecurityIdentitySensorCandidate Cmdlet.
+
 
 ## PARAMETERS
 

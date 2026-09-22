@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 Get the language details about an attack simulation training for a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAttackSimulationTrainingLanguageDetail -TrainingId $trainingId -TrainingLanguageDetailId $trainingLanguageDetailId -Filter "locale eq 'en'"
+Get-MgSecurityAttackSimulationTrainingLanguageDetail -TrainingId $trainingId -TrainingLanguageDetailId $trainingLanguageDetailId -Filter "locale eq 'en'" 
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationTrainingLanguageDetail Cmdlet.
+
 
 ## PARAMETERS
 

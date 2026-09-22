@@ -74,16 +74,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property siteSources in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -11419,6 +11409,7 @@ This relationship can only be used to load a specific term set.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodiansitesource)
+
 
 
 

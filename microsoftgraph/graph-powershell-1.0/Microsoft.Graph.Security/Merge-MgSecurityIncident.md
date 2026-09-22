@@ -47,8 +47,9 @@ This cmdlet has the following aliases,
 Merge multiple incident resources into a single incident.
 
 ## EXAMPLES
+### Example 1: Merge incidents
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -62,6 +63,10 @@ mergeReasons = "sameCampaign, sameActor"
 }
 
 Merge-MgSecurityIncident -BodyParameter $params
+
+```
+This example will merge incidents
+
 
 ## PARAMETERS
 

@@ -44,12 +44,17 @@ Get the properties and relationships of microsoft.graph.security.autoAuditingCon
 | Application | SecurityIdentitiesAutoConfig.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityIdentitySettingAutoAuditingConfiguration
+
+```
+This example shows how to use the Get-MgSecurityIdentitySettingAutoAuditingConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
