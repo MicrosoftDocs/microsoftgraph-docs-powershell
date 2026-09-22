@@ -76,16 +76,6 @@ Copy a message to a folder within the user's mailbox.
 | Delegated (personal Microsoft account) | Mail.ReadWrite,  |
 | Application | Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -545,6 +535,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfoldermessage)
 - [](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0)
+
 
 
 
