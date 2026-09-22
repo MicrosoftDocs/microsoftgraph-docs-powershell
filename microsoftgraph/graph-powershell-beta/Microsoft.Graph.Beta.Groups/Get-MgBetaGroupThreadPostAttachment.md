@@ -18,6 +18,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
