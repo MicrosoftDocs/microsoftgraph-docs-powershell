@@ -482,7 +482,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteinformationprotectionthreatassessmentrequest)
+- [Remove-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteinformationprotectionthreatassessmentrequest)
 
 
 

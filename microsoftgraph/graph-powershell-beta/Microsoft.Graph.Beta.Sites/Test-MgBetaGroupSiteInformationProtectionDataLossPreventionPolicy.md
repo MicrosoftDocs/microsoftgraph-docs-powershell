@@ -709,7 +709,7 @@ NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy)
+- [Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy)
 
 
 
