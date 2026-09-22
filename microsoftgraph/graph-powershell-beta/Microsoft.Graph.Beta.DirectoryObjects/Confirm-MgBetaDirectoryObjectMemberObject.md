@@ -15,6 +15,9 @@ title: Confirm-MgBetaDirectoryObjectMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Confirm-MgDirectoryObjectMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
