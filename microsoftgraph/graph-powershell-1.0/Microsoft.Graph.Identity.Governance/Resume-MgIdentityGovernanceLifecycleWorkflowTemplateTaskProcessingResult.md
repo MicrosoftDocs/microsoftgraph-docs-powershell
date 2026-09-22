@@ -17,6 +17,9 @@ Resume a taskProcessingResult that's inProgress.
 In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
 For more information, see Lifecycle Workflows extensibility approach.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ResumeExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernancePrivilegedAccess
 
 Get privilegedAccess from identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccess?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

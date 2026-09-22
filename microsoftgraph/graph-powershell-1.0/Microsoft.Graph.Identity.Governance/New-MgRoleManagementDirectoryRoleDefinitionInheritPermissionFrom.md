@@ -15,6 +15,9 @@ title: New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom
 
 Create new navigation property to inheritsPermissionsFrom for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgUserAgreementAcceptanceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAgreementAcceptanceCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaUserAgreementAcceptanceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
