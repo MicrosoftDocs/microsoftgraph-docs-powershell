@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestore
 
 Update the navigation property backupRestore in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestore](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

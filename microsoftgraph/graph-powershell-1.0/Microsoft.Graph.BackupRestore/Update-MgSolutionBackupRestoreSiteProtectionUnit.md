@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreSiteProtectionUnit
 
 Update the navigation property siteProtectionUnits in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreSiteProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreSiteProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
