@@ -16,6 +16,9 @@ title: New-MgGroupOwnerByRef
 Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

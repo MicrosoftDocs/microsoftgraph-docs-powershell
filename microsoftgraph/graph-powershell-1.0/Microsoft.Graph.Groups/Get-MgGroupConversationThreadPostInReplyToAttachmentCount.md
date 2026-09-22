@@ -15,6 +15,9 @@ title: Get-MgGroupConversationThreadPostInReplyToAttachmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThreadPostInReplyToAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPostInReplyToAttachmentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
