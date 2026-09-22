@@ -81,8 +81,9 @@ The @odata.type property in the request body is required to specify which type o
 | Application | Policy.ReadWrite.CrossTenantCapability,  |
 
 ## EXAMPLES
+### Example 1: Create a cross-tenant mail tips capability
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -105,7 +106,12 @@ $params = @{
 
 New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a cross-tenant mail tips capability
+
+### Example 2: Create a cross-tenant places room booking capability
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -127,6 +133,10 @@ $params = @{
 }
 
 New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+
+```
+This example will create a cross-tenant places room booking capability
+
 
 ## PARAMETERS
 

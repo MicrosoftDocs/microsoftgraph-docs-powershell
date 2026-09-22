@@ -86,8 +86,9 @@ The following derived types are currently supported.
 | Application | CustomAuthenticationExtension.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update an onTokenIssuanceStartCustomExtension object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -115,7 +116,12 @@ $params = @{
 
 Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update an ontokenissuancestartcustomextension object
+
+### Example 2: Update an onVerifiedIdClaimValidationCustomExtension object
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -126,6 +132,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+
+```
+This example will update an onverifiedidclaimvalidationcustomextension object
+
 
 ## PARAMETERS
 

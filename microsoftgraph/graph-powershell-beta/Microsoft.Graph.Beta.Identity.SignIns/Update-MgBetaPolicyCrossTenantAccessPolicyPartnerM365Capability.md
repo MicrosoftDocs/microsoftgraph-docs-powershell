@@ -72,8 +72,9 @@ This cmdlet has the following aliases,
 Update an existing Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -98,6 +99,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -M365CapabilityBaseName $m365CapabilityBaseName -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability Cmdlet.
+
 
 ## PARAMETERS
 

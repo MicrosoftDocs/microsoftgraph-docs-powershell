@@ -47,12 +47,17 @@ Read the properties and relationships of an adminConsentRequestPolicy object.
 | Application | Policy.Read.All, Directory.Read.All, Directory.ReadWrite.All, Policy.ReadWrite.ConsentRequest,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyAdminConsentRequestPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyAdminConsentRequestPolicy Cmdlet.
+
 
 ## PARAMETERS
 

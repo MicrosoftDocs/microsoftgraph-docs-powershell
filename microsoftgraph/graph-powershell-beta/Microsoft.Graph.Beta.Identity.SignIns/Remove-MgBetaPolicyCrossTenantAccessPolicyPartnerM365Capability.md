@@ -47,12 +47,17 @@ This cmdlet has the following aliases,
 Delete a Microsoft 365 cross-tenant capability from a partner organization in the cross-tenant access policy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -M365CapabilityBaseName $m365CapabilityBaseName
+
+```
+This example shows how to use the Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability Cmdlet.
+
 
 ## PARAMETERS
 
