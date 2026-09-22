@@ -885,7 +885,7 @@ HelpMessage: ''
 
 ### -UserTags
 
-.
+
 
 ```yaml
 Type: System.String[]
