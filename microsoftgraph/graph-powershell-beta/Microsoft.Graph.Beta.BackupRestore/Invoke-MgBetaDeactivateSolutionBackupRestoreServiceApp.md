@@ -15,6 +15,9 @@ title: Invoke-MgBetaDeactivateSolutionBackupRestoreServiceApp
 
 Deactivate a serviceApp.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeactivateSolutionBackupRestoreServiceApp](/powershell/module/Microsoft.Graph.BackupRestore/Invoke-MgDeactivateSolutionBackupRestoreServiceApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Deactivate (Default)

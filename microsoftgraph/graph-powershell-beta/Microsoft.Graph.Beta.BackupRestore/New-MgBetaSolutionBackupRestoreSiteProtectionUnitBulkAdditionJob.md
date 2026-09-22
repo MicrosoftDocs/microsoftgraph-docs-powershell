@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob
 
 Create new navigation property to siteProtectionUnitsBulkAdditionJobs for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreBrowseSession
 
 Create new navigation property to browseSessions for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
