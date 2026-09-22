@@ -806,8 +806,8 @@ It can only be set to true on automatic policies that target monthly security up
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicycompliancechange)
-- [](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval?view=graph-rest-beta)
+- [New-MgBetaWindowsUpdatesPolicyComplianceChange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicycompliancechange)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowsupdates-updatepolicy-post-compliancechanges-contentapproval?view=graph-rest-beta)
 
 
 
