@@ -69,8 +69,9 @@ This cmdlet has the following aliases,
 Grant the specified user access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -79,6 +80,10 @@ $params = @{
 }
 
 New-MgBetaPrintShareAllowedUserByRef -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintShareAllowedUserByRef Cmdlet.
+
 
 ## PARAMETERS
 
