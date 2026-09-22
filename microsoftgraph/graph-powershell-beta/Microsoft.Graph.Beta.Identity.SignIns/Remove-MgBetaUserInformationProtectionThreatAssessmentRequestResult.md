@@ -520,7 +520,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserinformationprotectionthreatassessmentrequestresult)
+- [Remove-MgBetaUserInformationProtectionThreatAssessmentRequestResult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserinformationprotectionthreatassessmentrequestresult)
 
 
 
