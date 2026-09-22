@@ -643,7 +643,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessagereply)
+- [Get-MgUserChatMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessagereply)
 
 
 

@@ -608,7 +608,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessagehostedcontent)
+- [Update-MgGroupTeamPrimaryChannelMessageHostedContent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessagehostedcontent)
 
 
 

@@ -948,8 +948,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchattargetedmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-1.0)
+- [Invoke-MgGraphChatTargetedMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphchattargetedmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-1.0)
 
 
 
