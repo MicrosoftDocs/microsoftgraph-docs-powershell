@@ -386,7 +386,7 @@ Nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript)
+- [Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript)
 
 
 

@@ -837,7 +837,7 @@ SETTINGSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicemobileappconfigurationstate)
+- [New-MgBetaDeviceManagementManagedDeviceMobileAppConfigurationState](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicemobileappconfigurationstate)
 
 
 
