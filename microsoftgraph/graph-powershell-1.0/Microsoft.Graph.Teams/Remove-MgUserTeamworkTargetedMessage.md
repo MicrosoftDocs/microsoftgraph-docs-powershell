@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 Delete a specific targeted message from a channel context.
 Teams administrators can use this API to remove targeted messages by providing the message ID, team ID, and channel ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -588,6 +578,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworktargetedmessage)
 - [](https://learn.microsoft.com/graph/api/userteamwork-deletetargetedmessage?view=graph-rest-1.0)
+
 
 
 
