@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryImpactedResource
 ---
@@ -25,7 +25,8 @@ New-MgBetaDirectoryImpactedResource [-ResponseHeadersVariable <string>] [-AddedD
  [-ApiUrl <string>] [-DisplayName <string>] [-Id <string>] [-LastModifiedBy <string>]
  [-LastModifiedDateTime <datetime>] [-Owner <string>] [-PortalUrl <string>]
  [-PostponeUntilDateTime <datetime>] [-Rank <int>] [-RecommendationId <string>]
- [-ResourceType <string>] [-Status <string>] [-SubjectId <string>] [-Break] [-Headers <IDictionary>]
+ [-ResourceType <string>] [-Status <string>] [-SubjectId <string>]
+ [-Tags <IMicrosoftGraphRecommendationTag[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -47,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to impactedResources for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -604,6 +615,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Tags
+
+.
+To construct, see NOTES section for TAGS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -660,7 +693,7 @@ ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: Additional information unique to 
   [Key <String>]: Key.
   [Value <String>]: Value.
 
-BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
+BODYPARAMETER <IMicrosoftGraphImpactedResource>: impactedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -683,31 +716,17 @@ Examples include user, application.
   [Status <String>]: recommendationStatus
   [SubjectId <String>]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
+  [Tags <IMicrosoftGraphRecommendationTag[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DisplayName <String>]: 
+
+TAGS <IMicrosoftGraphRecommendationTag[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]:
 
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryImpactedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource)

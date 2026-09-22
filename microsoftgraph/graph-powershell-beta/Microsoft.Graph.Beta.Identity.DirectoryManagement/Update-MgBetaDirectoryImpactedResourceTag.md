@@ -1,43 +1,60 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/Remove-MgBetaDeviceRegisteredOwnerByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryimpactedresourcetag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaDeviceRegisteredOwnerByRef
+title: Update-MgBetaDirectoryImpactedResourceTag
 ---
 
-# Remove-MgBetaDeviceRegisteredOwnerByRef
+# Update-MgBetaDirectoryImpactedResourceTag
 
 ## SYNOPSIS
 
-Remove a user as a registered owner of the device.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
+Update the navigation property tags in directory
 
 ## SYNTAX
 
-### Delete (Default)
+### UpdateExpanded (Default)
 
 ```
-Remove-MgBetaDeviceRegisteredOwnerByRef -DeviceId <string>
- -DirectoryObjectId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+Update-MgBetaDirectoryImpactedResourceTag -ImpactedResourceId <string> -RecommendationTagId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
+ [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Update
+
+```
+Update-MgBetaDirectoryImpactedResourceTag -ImpactedResourceId <string> -RecommendationTagId <string>
+ -BodyParameter <IMicrosoftGraphRecommendationTag> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### DeleteViaIdentity
+### UpdateViaIdentityExpanded
 
 ```
-Remove-MgBetaDeviceRegisteredOwnerByRef
- -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Update-MgBetaDirectoryImpactedResourceTag -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
+ [-Id <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentity
+
+```
+Update-MgBetaDirectoryImpactedResourceTag -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphRecommendationTag> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,22 +64,74 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove a user as a registered owner of the device.
+Update the navigation property tags in directory
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+{{ Add code here }}
 
-Remove-MgBetaDeviceRegisteredOwnerByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+### EXAMPLE 2
 
-```
-This example shows how to use the Remove-MgBetaDeviceRegisteredOwnerByRef Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
+
+### -AdditionalProperties
+
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+recommendationTag
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -107,9 +176,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DeviceId
+### -DisplayName
 
-The unique identifier of device
+.
 
 ```yaml
 Type: System.String
@@ -117,30 +186,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UpdateViaIdentityExpanded
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
+- Name: UpdateExpanded
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -212,9 +266,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
+### -Id
 
-ETag
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -222,9 +277,42 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ImpactedResourceId
+
+The unique identifier of impactedResource
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -244,31 +332,16 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentity
   Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -339,6 +412,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RecommendationTagId
+
+The unique identifier of recommendationTag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -396,13 +496,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag
 
 {{ Fill in the Description }}
 
@@ -413,7 +517,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphRecommendationTag>: recommendationTag
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]: 
+
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -441,7 +551,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
-  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
   [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
   [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -463,10 +572,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
@@ -474,6 +585,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight
@@ -482,27 +594,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDeviceRegisteredOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/Remove-MgBetaDeviceRegisteredOwnerByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryimpactedresourcetag)

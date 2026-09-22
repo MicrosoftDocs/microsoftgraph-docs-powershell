@@ -1,40 +1,51 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationtag
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef
+title: Get-MgBetaDirectoryRecommendationTag
 ---
 
-# Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef
+# Get-MgBetaDirectoryRecommendationTag
 
 ## SYNOPSIS
 
-Delete ref of navigation property appliesTo for directory
+Get tags from directory
 
 ## SYNTAX
 
-### Delete (Default)
+### List (Default)
 
 ```
-Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -DirectoryObjectId <string>
- -FeatureRolloutPolicyId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+Get-MgBetaDirectoryRecommendationTag -RecommendationId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
+ [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
+ [-CountVariable <string>]
+```
+
+### Get
+
+```
+Get-MgBetaDirectoryRecommendationTag -RecommendationId <string> -RecommendationTagId <string>
+ [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 
 ```
-Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef
- -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Get-MgBetaDirectoryRecommendationTag -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -44,9 +55,40 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete ref of navigation property appliesTo for directory
+Get tags from directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
+
+### -All
+
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -69,16 +111,39 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -CountVariable
 
-Prompts you for confirmation before running the cmdlet.
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- cf
+- CV
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ExpandProperty
+
+Expand related entities
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Expand
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -91,30 +156,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DirectoryObjectId
+### -Filter
 
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -FeatureRolloutPolicyId
-
-The unique identifier of featureRolloutPolicy
+Filter items by property values
 
 ```yaml
 Type: System.String
@@ -122,9 +166,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: List
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -196,27 +240,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -228,7 +251,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -239,15 +262,37 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -PageSize
 
-Returns true when the command succeeds
+Sets the page size of results.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.Int32
+DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Property
+
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -323,6 +368,54 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RecommendationId
+
+The unique identifier of recommendation
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -RecommendationTagId
+
+The unique identifier of recommendationTag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -345,18 +438,82 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WhatIf
+### -Search
 
-Runs the command in a mode that only reports what would happen without performing the actions.
+Search items by search phrases
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Skip
+
+Skip the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Sort
+
+Order items by property values
+
+```yaml
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- wi
+- OrderBy
 ParameterSets:
-- Name: (All)
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Top
+
+Show only the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases:
+- Limit
+ParameterSets:
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -386,7 +543,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag
 
 {{ Fill in the Description }}
 
@@ -397,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -425,7 +582,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
-  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
   [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
   [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -447,10 +603,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
@@ -458,6 +616,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight
@@ -466,27 +625,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecommendationtag)

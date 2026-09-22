@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryimpactedresource
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryImpactedResource
 ---
@@ -26,7 +26,8 @@ Update-MgBetaDirectoryImpactedResource -ImpactedResourceId <string>
  [-ApiUrl <string>] [-DisplayName <string>] [-Id <string>] [-LastModifiedBy <string>]
  [-LastModifiedDateTime <datetime>] [-Owner <string>] [-PortalUrl <string>]
  [-PostponeUntilDateTime <datetime>] [-Rank <int>] [-RecommendationId <string>]
- [-ResourceType <string>] [-Status <string>] [-SubjectId <string>] [-Break] [-Headers <IDictionary>]
+ [-ResourceType <string>] [-Status <string>] [-SubjectId <string>]
+ [-Tags <IMicrosoftGraphRecommendationTag[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -50,7 +51,8 @@ Update-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagemen
  [-ApiUrl <string>] [-DisplayName <string>] [-Id <string>] [-LastModifiedBy <string>]
  [-LastModifiedDateTime <datetime>] [-Owner <string>] [-PortalUrl <string>]
  [-PostponeUntilDateTime <datetime>] [-Rank <int>] [-RecommendationId <string>]
- [-ResourceType <string>] [-Status <string>] [-SubjectId <string>] [-Break] [-Headers <IDictionary>]
+ [-ResourceType <string>] [-Status <string>] [-SubjectId <string>]
+ [-Tags <IMicrosoftGraphRecommendationTag[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -73,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property impactedResources in directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -787,6 +799,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Tags
+
+.
+To construct, see NOTES section for TAGS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -847,7 +887,7 @@ ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: Additional information unique to 
   [Key <String>]: Key.
   [Value <String>]: Value.
 
-BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
+BODYPARAMETER <IMicrosoftGraphImpactedResource>: impactedResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -870,8 +910,12 @@ Examples include user, application.
   [Status <String>]: recommendationStatus
   [SubjectId <String>]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
+  [Tags <IMicrosoftGraphRecommendationTag[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DisplayName <String>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -899,7 +943,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
-  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
   [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
   [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -921,10 +964,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
@@ -932,35 +977,18 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
+TAGS <IMicrosoftGraphRecommendationTag[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]:
+
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryImpactedResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryimpactedresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryimpactedresource)
