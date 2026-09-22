@@ -554,7 +554,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCustomAppScope>: customAppScope
+BODYPARAMETER `<IMicrosoftGraphCustomAppScope>`: customAppScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
 Read-only.
@@ -565,7 +565,7 @@ Read-only.
   [CustomAttributes <IMicrosoftGraphCustomAppScopeAttributesDictionary>]: customAppScopeAttributesDictionary
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -599,3 +599,25 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangecustomappscope)
 - [](https://learn.microsoft.com/graph/api/customappscope-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
