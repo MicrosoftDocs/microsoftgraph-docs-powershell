@@ -516,7 +516,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolistextension)
+- [New-MgBetaUserTodoListExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolistextension)
 
 
 
