@@ -77,16 +77,6 @@ Update the navigation property onPremisesSyncBehavior in groups
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -532,6 +522,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouponpremisesyncbehavior)
+
 
 
 
