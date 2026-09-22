@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 The main logo for the application.
 Not nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -454,6 +444,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetaauditlogsignineventappsummaryapplicationlogo)
+
 
 
 
