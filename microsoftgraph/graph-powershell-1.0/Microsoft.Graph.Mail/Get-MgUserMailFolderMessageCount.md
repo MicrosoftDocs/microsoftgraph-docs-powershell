@@ -375,7 +375,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagecount)
+- [Get-MgUserMailFolderMessageCount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagecount)
 
 
 
