@@ -710,8 +710,8 @@ MEDIACONFIG `<IMicrosoftGraphMediaConfig>`: mediaConfig
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall)
-- [](https://learn.microsoft.com/graph/api/call-answer?view=graph-rest-beta)
+- [Invoke-MgBetaAnswerCommunicationCall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-answer?view=graph-rest-beta)
 
 
 
