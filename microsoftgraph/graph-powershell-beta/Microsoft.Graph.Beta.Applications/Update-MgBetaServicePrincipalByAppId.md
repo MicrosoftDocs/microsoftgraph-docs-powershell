@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipalByAppId
 ---
@@ -15,9 +15,6 @@ title: Update-MgBetaServicePrincipalByAppId
 
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalByAppId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,8 +38,9 @@ Update-MgBetaServicePrincipalByAppId -AppId <string> [-ResponseHeadersVariable <
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <string>]
  [-Id <string>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDisabled]
  [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>] [-LoginUrl <string>] [-LogoutUrl <string>]
- [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
+ [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>]
+ [-Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>] [-LoginUrl <string>]
+ [-LogoutUrl <string>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
  [-NotificationEmailAddresses <string[]>]
  [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
  [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
@@ -85,8 +83,9 @@ Update-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-AppI
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <string>]
  [-Id <string>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDisabled]
  [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>] [-LoginUrl <string>] [-LogoutUrl <string>]
- [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
+ [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>]
+ [-Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>] [-LoginUrl <string>]
+ [-LogoutUrl <string>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
  [-NotificationEmailAddresses <string[]>]
  [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
  [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
@@ -140,24 +139,8 @@ Create a new servicePrincipal object if it doesn't exist, or update the properti
 This API can also create an agentIdentityBlueprintPrincipal object from an agentIdentityBlueprint if it doesn't exist, or update properties of an existing agentIdentityBlueprintPrincipal, when the @odata.type property is set to #microsoft.graph.agentIdentityBlueprintPrincipal.
 
 ## EXAMPLES
-### Example 1: Create a new servicePrincipal if it doesn't exist
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Applications
-
-$params = @{
-	displayName = "My app instance"
-}
-
-Update-MgBetaServicePrincipalByAppId -BodyParameter $params
-
-```
-This example will create a new serviceprincipal if it doesn't exist
-
-### Example 2: Update an existing servicePrincipal
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -167,9 +150,15 @@ $params = @{
 
 Update-MgBetaServicePrincipalByAppId -BodyParameter $params
 
-```
-This example will update an existing serviceprincipal
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Applications
+
+$params = @{
+	displayName = "My app instance"
+}
+
+Update-MgBetaServicePrincipalByAppId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -1019,7 +1008,7 @@ HelpMessage: ''
 
 ### -FederatedIdentityCredentials
 
-
+.
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
@@ -1308,11 +1297,39 @@ HelpMessage: ''
 
 ### -LicenseDetails
 
-
+.
 To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLicenseDetails[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Lifecycle
+
+identityLifecycle
+To construct, see NOTES section for LIFECYCLE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceIdentityLifecycle
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1628,7 +1645,7 @@ HelpMessage: ''
 
 ### -PermissionGrantPreApprovalPolicies
 
-
+.
 To construct, see NOTES section for PERMISSIONGRANTPREAPPROVALPOLICIES properties and create a hash table.
 
 ```yaml
@@ -2233,7 +2250,7 @@ HelpMessage: ''
 
 ### -TransitiveMemberOf
 
-
+.
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
@@ -2584,12 +2601,12 @@ Must not be included in any POST or PATCH requests.
 Read-only.
   [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipal>`: servicePrincipal
+BODYPARAMETER <IMicrosoftGraphServicePrincipal>: servicePrincipal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -2823,8 +2840,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -3034,6 +3051,46 @@ Read-only.
     [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
+  [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Description <String>]: 
+      [GoverningPolicyReferenceId <String>]: 
+      [IssueCode <String>]: 
+      [RuleType <String>]: 
+    [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [CreatedDateTime <DateTime?>]: 
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [GracePeriodInDays <Int32?>]: 
+      [IsEnabled <Boolean?>]: 
+      [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [LastModifiedDateTime <DateTime?>]: 
+      [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [AdditionalRecipients <String[]>]: 
+        [IsEnabled <Boolean?>]: 
+        [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+      [PolicySource <String>]: lifecyclePolicySource
+      [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [IsEnabled <Boolean?>]: 
+      [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [VersionNumber <Int32?>]: 
+      [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+    [LastAttestationDateTime <DateTime?>]: 
   [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -3157,8 +3214,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -3515,7 +3572,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-CLAIMSPOLICY `<IMicrosoftGraphCustomClaimsPolicy>`: customClaimsPolicy
+CLAIMSPOLICY <IMicrosoftGraphCustomClaimsPolicy>: customClaimsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3644,7 +3701,7 @@ Always null when the object hasn't been deleted.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INFO `<IMicrosoftGraphInformationalUrl>`: informationalUrl
+INFO <IMicrosoftGraphInformationalUrl>: informationalUrl
   [(Any) <Object>]: This indicates any property can be added to this object.
   [LogoUrl <String>]: CDN URL to the application's logo, Read-only.
   [MarketingUrl <String>]: Link to the application's marketing page.
@@ -3656,7 +3713,7 @@ For example, https://www.contoso.com/app/support
   [TermsOfServiceUrl <String>]: Link to the application's terms of service statement.
 For example, https://www.contoso.com/app/termsofservice
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
@@ -3664,6 +3721,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
   [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ComplianceIssueId <String>]: The unique identifier of complianceIssue
   [ConnectorGroupId <String>]: The unique identifier of connectorGroup
   [ConnectorId <String>]: The unique identifier of connector
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
@@ -3736,6 +3794,52 @@ Read-only.
   [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
+
+LIFECYCLE <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>: identityLifecycle
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Description <String>]: 
+    [GoverningPolicyReferenceId <String>]: 
+    [IssueCode <String>]: 
+    [RuleType <String>]: 
+  [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [GracePeriodInDays <Int32?>]: 
+    [IsEnabled <Boolean?>]: 
+    [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [LastModifiedDateTime <DateTime?>]: 
+    [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AdditionalRecipients <String[]>]: 
+      [IsEnabled <Boolean?>]: 
+      [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+    [PolicySource <String>]: lifecyclePolicySource
+    [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [IsEnabled <Boolean?>]: 
+    [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [VersionNumber <Int32?>]: 
+    [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+  [LastAttestationDateTime <DateTime?>]: 
 
 MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.
@@ -3813,7 +3917,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
-PASSWORDSINGLESIGNONSETTINGS `<IMicrosoftGraphPasswordSingleSignOnSettings>`: passwordSingleSignOnSettings
+PASSWORDSINGLESIGNONSETTINGS <IMicrosoftGraphPasswordSingleSignOnSettings>: passwordSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
     [CustomizedLabel <String>]: Title/label override for customization.
@@ -3861,12 +3965,12 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
   [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
 
-REMOTEDESKTOPSECURITYCONFIGURATION `<IMicrosoftGraphRemoteDesktopSecurityConfiguration>`: remoteDesktopSecurityConfiguration
+REMOTEDESKTOPSECURITYCONFIGURATION <IMicrosoftGraphRemoteDesktopSecurityConfiguration>: remoteDesktopSecurityConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3881,11 +3985,11 @@ Read-only.
 Read-only.
     [DisplayName <String>]: Display name for the target device group.
 
-SAMLSINGLESIGNONSETTINGS `<IMicrosoftGraphSamlSingleSignOnSettings>`: samlSingleSignOnSettings
+SAMLSINGLESIGNONSETTINGS <IMicrosoftGraphSamlSingleSignOnSettings>: samlSingleSignOnSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [RelayState <String>]: The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
-SYNCHRONIZATION `<IMicrosoftGraphSynchronization>`: synchronization
+SYNCHRONIZATION <IMicrosoftGraphSynchronization>: synchronization
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -4186,7 +4290,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
+VERIFIEDPUBLISHER <IMicrosoftGraphVerifiedPublisher>: verifiedPublisher
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AddedDateTime <DateTime?>]: The timestamp when the verified publisher was first added or most recently updated.
   [DisplayName <String>]: The verified publisher name from the app publisher's Microsoft Partner Network (MPN) account.
@@ -4195,27 +4299,5 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 
 ## RELATED LINKS
 
-- [Update-MgBetaServicePrincipalByAppId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid)
+- [](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-beta)

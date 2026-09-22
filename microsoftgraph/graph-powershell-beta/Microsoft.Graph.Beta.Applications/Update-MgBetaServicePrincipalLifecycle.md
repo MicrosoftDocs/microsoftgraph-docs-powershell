@@ -1,58 +1,61 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetainstantiateapplicationtemplate
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipallifecycle
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Invoke-MgBetaInstantiateApplicationTemplate
+title: Update-MgBetaServicePrincipalLifecycle
 ---
 
-# Invoke-MgBetaInstantiateApplicationTemplate
+# Update-MgBetaServicePrincipalLifecycle
 
 ## SYNOPSIS
 
-Add an instance of an application from the Microsoft Entra application gallery into your directory.
-For non-gallery apps, use an application template with one of the following IDs to configure different single sign-on (SSO) modes like SAML SSO and password-based SSO.
+Update the navigation property lifecycle in servicePrincipals
 
 ## SYNTAX
 
-### InstantiateExpanded (Default)
+### UpdateExpanded (Default)
 
 ```
-Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
- [-ServiceManagementReference <string>] [-Break] [-Headers <IDictionary>]
+Update-MgBetaServicePrincipalLifecycle -ServicePrincipalId <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]
+ [-EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>] [-Id <string>]
+ [-LastAttestationDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Instantiate
+### Update
 
 ```
-Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId <string>
- -BodyParameter <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>
+Update-MgBetaServicePrincipalLifecycle -ServicePrincipalId <string>
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### InstantiateViaIdentityExpanded
+### UpdateViaIdentityExpanded
 
 ```
-Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-DisplayName <string>]
- [-ServiceManagementReference <string>] [-Break] [-Headers <IDictionary>]
+Update-MgBetaServicePrincipalLifecycle -InputObject <IApplicationsIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]
+ [-EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>] [-Id <string>]
+ [-LastAttestationDateTime <datetime>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### InstantiateViaIdentity
+### UpdateViaIdentity
 
 ```
-Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
- -BodyParameter <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>
+Update-MgBetaServicePrincipalLifecycle -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -65,20 +68,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Add an instance of an application from the Microsoft Entra application gallery into your directory.
-For non-gallery apps, use an application template with one of the following IDs to configure different single sign-on (SSO) modes like SAML SSO and password-based SSO.
+Update the navigation property lifecycle in servicePrincipals
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.Applications
+{{ Add code here }}
 
-$params = @{
-	displayName = "testProperties"
-}
+### EXAMPLE 2
 
-Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -92,42 +92,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: InstantiateViaIdentityExpanded
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: InstantiateExpanded
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ApplicationTemplateId
-
-The unique identifier of applicationTemplate
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: InstantiateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Instantiate
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -138,22 +111,22 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+identityLifecycle
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceIdentityLifecycle
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: InstantiateViaIdentity
+- Name: UpdateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Instantiate
+- Name: Update
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -175,6 +148,34 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ComplianceIssues
+
+.
+To construct, see NOTES section for COMPLIANCEISSUES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceComplianceIssue[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -207,23 +208,24 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -DisplayName
+### -EffectiveGoverningPolicy
 
-.
+lifecyclePolicy
+To construct, see NOTES section for EFFECTIVEGOVERNINGPOLICY properties and create a hash table.
 
 ```yaml
-Type: System.String
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceLifecyclePolicy
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: InstantiateViaIdentityExpanded
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: InstantiateExpanded
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -297,6 +299,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Id
+
+The unique identifier for an entity.
+Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -308,16 +338,43 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: InstantiateViaIdentityExpanded
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: InstantiateViaIdentity
+- Name: UpdateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -LastAttestationDateTime
+
+.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -410,9 +467,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ServiceManagementReference
+### -ServicePrincipalId
 
-.
+The unique identifier of servicePrincipal
 
 ```yaml
 Type: System.String
@@ -420,15 +477,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: InstantiateViaIdentityExpanded
+- Name: UpdateExpanded
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: InstantiateExpanded
+- Name: Update
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -472,7 +529,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceIdentityLifecycle
 
 {{ Fill in the Description }}
 
@@ -482,7 +539,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplicationServicePrincipal
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceIdentityLifecycle
 
 {{ Fill in the Description }}
 
@@ -493,10 +550,93 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>: identityLifecycle
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Description <String>]: 
+    [GoverningPolicyReferenceId <String>]: 
+    [IssueCode <String>]: 
+    [RuleType <String>]: 
+  [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [GracePeriodInDays <Int32?>]: 
+    [IsEnabled <Boolean?>]: 
+    [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [LastModifiedDateTime <DateTime?>]: 
+    [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AdditionalRecipients <String[]>]: 
+      [IsEnabled <Boolean?>]: 
+      [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+    [PolicySource <String>]: lifecyclePolicySource
+    [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [IsEnabled <Boolean?>]: 
+    [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [VersionNumber <Int32?>]: 
+    [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+  [LastAttestationDateTime <DateTime?>]: 
+
+COMPLIANCEISSUES <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Description <String>]: 
+  [GoverningPolicyReferenceId <String>]: 
+  [IssueCode <String>]: 
+  [RuleType <String>]: 
+
+EFFECTIVEGOVERNINGPOLICY <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>: lifecyclePolicy
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  [CreatedDateTime <DateTime?>]: 
+  [Description <String>]: 
   [DisplayName <String>]: 
-  [ServiceManagementReference <String>]: 
+  [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [GracePeriodInDays <Int32?>]: 
+  [IsEnabled <Boolean?>]: 
+  [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+  [LastModifiedDateTime <DateTime?>]: 
+  [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AdditionalRecipients <String[]>]: 
+    [IsEnabled <Boolean?>]: 
+    [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+  [PolicySource <String>]: lifecyclePolicySource
+  [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [IsEnabled <Boolean?>]: 
+  [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [VersionNumber <Int32?>]: 
+  [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
 
 INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of application
@@ -540,5 +680,4 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetainstantiateapplicationtemplate)
-- [](https://learn.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipallifecycle)

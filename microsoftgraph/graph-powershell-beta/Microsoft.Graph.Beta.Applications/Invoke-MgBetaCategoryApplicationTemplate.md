@@ -1,38 +1,27 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofcountasgroup
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetacategoryapplicationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup
+title: Invoke-MgBetaCategoryApplicationTemplate
 ---
 
-# Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup
+# Invoke-MgBetaCategoryApplicationTemplate
 
 ## SYNOPSIS
 
-Get the number of the resource
+Invoke function categories
 
 ## SYNTAX
 
-### Get (Default)
+### Category (Default)
 
 ```
-Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup -ServicePrincipalId <string>
- -ConsistencyLevel <string> [-Filter <string>] [-Search <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
-```
-
-### GetViaIdentity
-
-```
-Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup -InputObject <IApplicationsIdentity>
- -ConsistencyLevel <string> [-Filter <string>] [-Search <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Invoke-MgBetaCategoryApplicationTemplate [-Count] [-Filter <string>] [-Search <string>]
+ [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -44,7 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the number of the resource
+Invoke function categories
 
 ## EXAMPLES
 
@@ -79,20 +68,19 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ConsistencyLevel
+### -Count
 
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+Include count of items
 
 ```yaml
-Type: System.String
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -178,28 +166,6 @@ ParameterSets:
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -InputObject
-
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -313,19 +279,41 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ServicePrincipalId
+### -Skip
 
-The unique identifier of servicePrincipal
+Skip the first n items
 
 ```yaml
-Type: System.String
-DefaultValue: ''
+Type: System.Int32
+DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: (All)
   Position: Named
-  IsRequired: true
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Top
+
+Show only the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases:
+- Limit
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -343,67 +331,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplicationTemplateCategory
 
 {{ Fill in the Description }}
 
 ## NOTES
 
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
-
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
-  [AppId <String>]: Alternate key of application
-  [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
-  [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
-  [ApplicationId <String>]: The unique identifier of application
-  [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
-  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
-  [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
-  [ComplianceIssueId <String>]: The unique identifier of complianceIssue
-  [ConnectorGroupId <String>]: The unique identifier of connectorGroup
-  [ConnectorId <String>]: The unique identifier of connector
-  [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
-  [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition
-  [DirectoryObjectId <String>]: The unique identifier of directoryObject
-  [EndpointId <String>]: The unique identifier of endpoint
-  [ExtensionPropertyId <String>]: The unique identifier of extensionProperty
-  [FederatedIdentityCredentialId <String>]: The unique identifier of federatedIdentityCredential
-  [GroupId <String>]: The unique identifier of group
-  [HomeRealmDiscoveryPolicyId <String>]: The unique identifier of homeRealmDiscoveryPolicy
-  [IPApplicationSegmentId <String>]: The unique identifier of ipApplicationSegment
-  [LicenseDetailsId <String>]: The unique identifier of licenseDetails
-  [Name <String>]: Alternate key of federatedIdentityCredential
-  [OAuth2PermissionGrantId <String>]: The unique identifier of oAuth2PermissionGrant
-  [OnPremisesAgentGroupId <String>]: The unique identifier of onPremisesAgentGroup
-  [OnPremisesAgentGroupId1 <String>]: The unique identifier of onPremisesAgentGroup
-  [OnPremisesAgentId <String>]: The unique identifier of onPremisesAgent
-  [OnPremisesPublishingProfileId <String>]: The unique identifier of onPremisesPublishingProfile
-  [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
-  [PrivateAccessSensorId <String>]: The unique identifier of privateAccessSensor
-  [PublishedResourceId <String>]: The unique identifier of publishedResource
-  [ServicePrincipalId <String>]: The unique identifier of servicePrincipal
-  [SynchronizationJobId <String>]: The unique identifier of synchronizationJob
-  [SynchronizationTemplateId <String>]: The unique identifier of synchronizationTemplate
-  [TargetDeviceGroupId <String>]: The unique identifier of targetDeviceGroup
-  [TokenIssuancePolicyId <String>]: The unique identifier of tokenIssuancePolicy
-  [TokenLifetimePolicyId <String>]: The unique identifier of tokenLifetimePolicy
-  [UniqueName <String>]: Alternate key of application
-  [UserId <String>]: The unique identifier of user
-
-
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofcountasgroup)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetacategoryapplicationtemplate)
