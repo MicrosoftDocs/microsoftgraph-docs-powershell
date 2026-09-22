@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to mobileAppRelationships for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -409,6 +399,7 @@ Does not support $search, $filter, $orderBy.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapprelationship)
+
 
 
 
