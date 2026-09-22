@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property roleDefinitions for roleManagement
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
