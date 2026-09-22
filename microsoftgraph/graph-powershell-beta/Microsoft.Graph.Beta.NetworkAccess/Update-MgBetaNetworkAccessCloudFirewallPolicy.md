@@ -81,8 +81,9 @@ Update the properties of a cloudFirewallPolicy object.
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -91,6 +92,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessCloudFirewallPolicy -CloudFirewallPolicyId $cloudFirewallPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaNetworkAccessCloudFirewallPolicy Cmdlet.
+
 
 ## PARAMETERS
 
