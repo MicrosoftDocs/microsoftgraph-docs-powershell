@@ -698,7 +698,7 @@ See the section Type property values for supported types.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsight)
+- [Update-MgUserInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserinsight)
 
 
 
