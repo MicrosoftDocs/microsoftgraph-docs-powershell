@@ -62,12 +62,17 @@ Read the properties and relationships of a checkInClaim object.
 This API provides the check-in status for a specific place, such as a desk, room, or workspace, associated with a particular reservation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaPlaceCheck -PlaceId $placeId -CheckInClaimCalendarEventId $checkInClaimCalendarEventId
+
+```
+This example shows how to use the Get-MgBetaPlaceCheck Cmdlet.
+
 
 ## PARAMETERS
 

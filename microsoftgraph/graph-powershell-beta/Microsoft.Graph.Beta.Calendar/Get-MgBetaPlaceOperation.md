@@ -64,18 +64,28 @@ Get a placeOperation by ID.
 | Application | Place.Read.All, Place.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a succeeded operation
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+Get-MgBetaPlaceOperation
+
+```
+This example will get a succeeded operation
+
+### Example 2: Get a partially succeeded operation with errors
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaPlaceOperation
 
-### EXAMPLE 2
+```
+This example will get a partially succeeded operation with errors
 
-Import-Module Microsoft.Graph.Beta.Calendar
-
-Get-MgBetaPlaceOperation
 
 ## PARAMETERS
 

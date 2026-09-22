@@ -70,8 +70,9 @@ Create a new checkInClaim object to record the check-in status for a specific pl
 This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -82,6 +83,10 @@ $params = @{
 }
 
 New-MgBetaPlaceCheck -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPlaceCheck Cmdlet.
+
 
 ## PARAMETERS
 
