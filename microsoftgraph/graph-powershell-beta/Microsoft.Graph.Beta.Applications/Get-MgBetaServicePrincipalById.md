@@ -389,8 +389,8 @@ BODYPARAMETER `<IPaths15YkyvsServiceprincipalsMicrosoftGraphGetbyidsPostRequestb
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+- [Get-MgBetaServicePrincipalById](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
 
 
 

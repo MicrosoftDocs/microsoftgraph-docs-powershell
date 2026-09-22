@@ -378,7 +378,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationconnectorgroup)
+- [Get-MgBetaApplicationConnectorGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationconnectorgroup)
 
 
 
