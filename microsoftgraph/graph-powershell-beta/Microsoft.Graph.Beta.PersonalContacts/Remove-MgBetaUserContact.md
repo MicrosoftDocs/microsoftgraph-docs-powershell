@@ -15,6 +15,9 @@ title: Remove-MgBetaUserContact
 
 Delete navigation property contacts for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
