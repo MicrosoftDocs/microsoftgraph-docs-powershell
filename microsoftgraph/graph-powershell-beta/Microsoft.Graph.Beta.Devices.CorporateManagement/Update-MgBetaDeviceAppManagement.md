@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagement
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaDeviceAppManagement
 ## SYNOPSIS
 
 Update deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,7 +26,6 @@ Update-MgBetaDeviceAppManagement [-ResponseHeadersVariable <string>]
  [-DefaultManagedAppProtections <IMicrosoftGraphDefaultManagedAppProtection[]>]
  [-DeviceAppManagementTasks <IMicrosoftGraphDeviceAppManagementTask[]>]
  [-EnterpriseCodeSigningCertificates <IMicrosoftGraphEnterpriseCodeSigningCertificate[]>]
- [-Id <string>]
  [-IosLobAppProvisioningConfigurations <IMicrosoftGraphIosLobAppProvisioningConfiguration[]>]
  [-IosManagedAppProtections <IMicrosoftGraphIosManagedAppProtection[]>]
  [-IsEnabledForMicrosoftStoreForBusiness] [-ManagedAppPolicies <IMicrosoftGraphManagedAppPolicy[]>]
@@ -78,13 +74,15 @@ This cmdlet has the following aliases,
 
 Update deviceAppManagement
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -315,28 +313,6 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Id
-
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1182,6 +1158,7 @@ Read-only.
   [AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
+  [AppActionIfDeveloperOptionsEnabled <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDeviceLockNotSet <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
@@ -1244,10 +1221,8 @@ If enabled list of approved keyboards must be provided as well.
   [WarnAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
   [WipeAfterCompanyPortalUpdateDeferralInDays <Int32?>]: Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
-BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceAppManagement>: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
   [AndroidManagedAppProtections <IMicrosoftGraphAndroidManagedAppProtection[]>]: Android managed app policies.
     [AppGroupType <TargetedManagedAppGroupType?>]: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
     [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
@@ -1330,6 +1305,7 @@ Read-only.
     [AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
+    [AppActionIfDeveloperOptionsEnabled <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfDeviceLockNotSet <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
@@ -2130,6 +2106,7 @@ Read-only.
   [VppTokens <IMicrosoftGraphVppToken[]>]: List of Vpp tokens for this organization.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol?>]: Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
     [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
     [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
     [ClaimTokenManagementFromExternalMdm <Boolean?>]: Admin consent to allow claiming token management from external MDM.
@@ -2298,8 +2275,10 @@ Read-only.
     [Version <String>]: Version of the entity.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
     [AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
     [AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel?>]: Represents the level to which the device's clipboard may be shared between apps
+    [AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
     [AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
     [AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [Apps <IMicrosoftGraphManagedMobileApp[]>]: List of apps to which the policy is deployed.
@@ -3135,7 +3114,7 @@ Read-only.
   [RoleScopeTags <String[]>]: RoleScopeTags of the PolicySet
   [Status <PolicySetStatus?>]: The enum to specify the status of PolicySet.
 
-SYMANTECCODESIGNINGCERTIFICATE `<IMicrosoftGraphSymantecCodeSigningCertificate>`: symantecCodeSigningCertificate
+SYMANTECCODESIGNINGCERTIFICATE <IMicrosoftGraphSymantecCodeSigningCertificate>: symantecCodeSigningCertificate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3241,6 +3220,7 @@ Read-only.
 VPPTOKENS <IMicrosoftGraphVppToken[]>: List of Vpp tokens for this organization.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol?>]: Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
   [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
   [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
   [ClaimTokenManagementFromExternalMdm <Boolean?>]: Admin consent to allow claiming token management from external MDM.
@@ -3449,8 +3429,10 @@ WINDOWSMANAGEDAPPPROTECTIONS <IMicrosoftGraphWindowsManagedAppProtection[]>: Win
   [Version <String>]: Version of the entity.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel?>]: Represents the level to which the device's clipboard may be shared between apps
+  [AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [Apps <IMicrosoftGraphManagedMobileApp[]>]: List of apps to which the policy is deployed.
@@ -3517,7 +3499,7 @@ A timespan value of PT0S indicates that managed data will never be wiped when th
 When FALSE, indicates that printing is allowed from managed apps.
 Default value is FALSE.
 
-WINDOWSMANAGEMENTAPP `<IMicrosoftGraphWindowsManagementApp>`: Windows management app entity.
+WINDOWSMANAGEMENTAPP <IMicrosoftGraphWindowsManagementApp>: Windows management app entity.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3536,27 +3518,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDeviceAppManagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement)
