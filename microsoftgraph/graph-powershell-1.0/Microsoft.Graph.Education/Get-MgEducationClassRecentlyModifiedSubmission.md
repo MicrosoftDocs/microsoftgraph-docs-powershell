@@ -604,8 +604,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassrecentlymodifiedsubmission)
-- [](https://learn.microsoft.com/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-1.0)
+- [Get-MgEducationClassRecentlyModifiedSubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassrecentlymodifiedsubmission)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationclass-getrecentlymodifiedsubmissions?view=graph-rest-1.0)
 
 
 
