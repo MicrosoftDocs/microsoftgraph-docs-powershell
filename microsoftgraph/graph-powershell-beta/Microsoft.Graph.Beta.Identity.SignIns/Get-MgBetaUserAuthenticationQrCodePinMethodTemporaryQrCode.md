@@ -50,6 +50,14 @@ Temporary QR code has lifetime up to 12 hours.
 It can be issued when the user doesn't have access to their standard QR code.
 There can be only one active temporary QR code for the user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-QR.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.Read.All, UserAuthMethod-QR.ReadWrite, UserAuthMethod-QR.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-QR.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
