@@ -55,12 +55,17 @@ This action is asynchronous.
 After you call the migrate API, poll the Get crossTenantMigrationJob endpoint to check for a terminal status of completed, completedWithErrors, or failed.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Move-MgBetaCrossTenantMigrationJob -CrossTenantMigrationJobId $crossTenantMigrationJobId
+
+```
+This example shows how to use the Move-MgBetaCrossTenantMigrationJob Cmdlet.
+
 
 ## PARAMETERS
 
