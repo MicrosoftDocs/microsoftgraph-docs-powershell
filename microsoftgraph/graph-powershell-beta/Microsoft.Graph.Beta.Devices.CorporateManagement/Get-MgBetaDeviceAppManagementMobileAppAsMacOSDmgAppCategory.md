@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory
 
 The list of categories for this app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

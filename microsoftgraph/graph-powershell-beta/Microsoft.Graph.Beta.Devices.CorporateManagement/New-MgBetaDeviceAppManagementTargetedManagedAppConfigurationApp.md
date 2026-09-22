@@ -15,6 +15,9 @@ title: New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp
 
 Create new navigation property to apps for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementTargetedManagedAppConfigurationApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfigurationApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

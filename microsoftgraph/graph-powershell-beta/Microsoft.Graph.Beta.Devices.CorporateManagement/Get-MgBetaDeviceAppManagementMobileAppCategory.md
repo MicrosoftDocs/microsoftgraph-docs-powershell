@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementMobileAppCategory
 
 The mobile app categories.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
