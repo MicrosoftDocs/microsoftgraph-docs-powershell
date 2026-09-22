@@ -569,9 +569,9 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesscloudfirewallpolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-cloudfirewallpolicies?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessCloudFirewallPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccesscloudfirewallpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-cloudfirewallpolicy-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-networkaccessroot-list-cloudfirewallpolicies?view=graph-rest-beta)
 
 
 

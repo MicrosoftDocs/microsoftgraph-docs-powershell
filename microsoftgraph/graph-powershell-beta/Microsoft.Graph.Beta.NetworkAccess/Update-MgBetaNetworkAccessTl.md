@@ -424,7 +424,7 @@ Supports $filter (eq, ne, startsWith)
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstl)
+- [Update-MgBetaNetworkAccessTl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstl)
 
 
 
