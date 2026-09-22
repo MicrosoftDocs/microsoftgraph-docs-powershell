@@ -220,7 +220,7 @@ HelpMessage: ''
 
 ### -ProvisioningStatus
 
-.
+
 
 ```yaml
 Type: System.String
