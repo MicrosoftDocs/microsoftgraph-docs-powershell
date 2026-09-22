@@ -576,7 +576,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsettermchildrelationtoterm)
+- [Get-MgSiteTermStoreGroupSetTermChildRelationToTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsettermchildrelationtoterm)
 
 
 

@@ -1137,7 +1137,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistpermission)
+- [Update-MgSiteListPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistpermission)
 
 
 

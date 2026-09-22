@@ -424,7 +424,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumncount)
+- [Get-MgGroupSiteListColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistcolumncount)
 
 
 
