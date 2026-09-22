@@ -15,6 +15,9 @@ title: Get-MgBetaCommunicationOnlineMeetingConversation
 
 A collection of structured question-and-answer (Q&A) threads in Teams directly associated with online meetings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingConversation](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingConversation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

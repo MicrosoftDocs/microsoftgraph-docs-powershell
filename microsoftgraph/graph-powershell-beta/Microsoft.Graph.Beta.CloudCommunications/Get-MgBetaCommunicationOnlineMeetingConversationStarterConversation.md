@@ -16,6 +16,9 @@ title: Get-MgBetaCommunicationOnlineMeetingConversationStarterConversation
 The Viva Engage conversation to which this message belongs.
 This relationship establishes the thread context for the message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingConversationStarterConversation](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingConversationStarterConversation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

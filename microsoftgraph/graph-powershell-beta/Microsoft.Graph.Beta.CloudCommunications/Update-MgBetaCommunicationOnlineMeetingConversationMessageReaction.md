@@ -15,6 +15,9 @@ title: Update-MgBetaCommunicationOnlineMeetingConversationMessageReaction
 
 Update the navigation property reactions in communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeetingConversationMessageReaction](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingConversationMessageReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
