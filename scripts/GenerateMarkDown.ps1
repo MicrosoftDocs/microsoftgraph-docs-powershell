@@ -5,7 +5,6 @@ Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $CmdletMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json"),
     # Restrict generation to a single SDK profile ("v1.0" or "beta"); "both" keeps the
     # original full-run behaviour.
     [ValidateSet("both", "v1.0", "beta")]
@@ -122,7 +121,6 @@ function Get-FolderByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-    $CommandMetadataContent = Get-Content $CmdletMetadataPath | ConvertFrom-Json
 
     # In scoped (single-module) runs, restrict to the requested module and enable
     # complete-delete + regenerate for it (safe because the module is verified to import
@@ -139,11 +137,9 @@ function Get-FolderByProfile {
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Write-Host $ModuleName
-        $ModName = $ModuleName
         $Path = "$ModulePrefix.$ModuleName"
         if ($GraphProfile -eq 'beta') {
             $Path = "$ModulePrefix.Beta.$ModuleName"
-            $ModName = "Beta.$ModuleName"
         }
         $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
         $DocsDestination = Join-Path $WorkLoadDocsPath $GraphProfilePath
@@ -153,18 +149,21 @@ function Get-FolderByProfile {
         # not catch that. Verify the module actually imports AND exposes commands; if it
         # does not, skip it so its committed docs are preserved instead of being wiped
         # and never regenerated (which is what produced the mass-deletion refresh PRs).
-        $ModuleUsable = $false
+        $PublishedCommands = @()
         if (Get-Module -Name $Path -ListAvailable -ErrorAction SilentlyContinue) {
             try {
                 Import-Module $Path -Force -Global -ErrorAction Stop
-                if (Get-Command -Module $Path -ErrorAction SilentlyContinue) {
-                    $ModuleUsable = $true
-                }
+                # The installed NuGet module is the source of truth for published commands.
+                # Aliases are documented separately by GenerateAliasedDocs.ps1.
+                $PublishedCommands = @(
+                    Get-Command -Module $Path -CommandType Function, Cmdlet -ErrorAction Stop |
+                        Sort-Object -Property Name -Unique
+                )
             } catch {
                 Write-Warning "Module $Path failed to import: $($_.Exception.Message)"
             }
         }
-        if (-not $ModuleUsable) {
+        if ($PublishedCommands.Count -eq 0) {
             if ($Scoped) {
                 # Isolated single-module run: fail fast WITHOUT deleting anything so the
                 # module's committed docs are preserved. The pipeline job contains this
@@ -187,11 +186,11 @@ function Get-FolderByProfile {
         }
 
         # NOTE: docs are intentionally NOT bulk-deleted here. Each doc is overwritten in
-        # place as it is regenerated, and only genuine orphans (commands no longer in the
-        # metadata) are removed afterwards. This guarantees that a transient generation
-        # failure can never wipe a module's documentation.
+        # place as it is regenerated, and only genuine orphans (commands no longer exported
+        # by the installed module) are removed afterwards. This guarantees that a transient
+        # generation failure can never wipe a module's documentation.
         $CmdletCount = 0
-        $MetadataCommands = @{}
+        $PublishedCommandNames = @{}
         # Generate table of contents for each module
         $TocFileName = "$Path.md"
         $ModuleGuid = [guid]::NewGuid().ToString()
@@ -214,24 +213,19 @@ function Get-FolderByProfile {
         Add-Content -Path $Destination\$TocFileName -Value "Microsoft Graph PowerShell Cmdlets"
         Add-Content -Path $Destination\$TocFileName -Value ""
         Add-Content -Path $Destination\$TocFileName -Value "## $Path Cmdlets"
-        $CommandMetadataContent | Where-Object { $_.Module -eq $ModName -and $_.ApiVersion -eq $GraphProfile } | ForEach-Object {
-            $Command = $_.Command
-            $MetadataCommands[$Command] = $true
-            if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
-                Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
-            } else {
-                Write-Warning "Cmdlet $Command is not available."
-            }
+        $PublishedCommands | ForEach-Object {
+            $Command = $_.Name
+            $PublishedCommandNames[$Command] = $true
+            Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
             Add-Content -Path $Destination\$TocFileName -Value "### [$Command]($Command.md)"
             Add-Content -Path $Destination\$TocFileName -Value ""
             $CmdletCount++
         }
 
-        # Remove only genuine orphans: docs whose command is no longer in the metadata.
-        # Docs for commands still in metadata are preserved even if this run failed to
-        # regenerate them, so a bad run cannot delete valid documentation.
+        # Remove only genuine orphans: docs whose command is no longer exported by the
+        # installed module.
         Get-ChildItem -Path $Destination -Filter "*.md" -File | Where-Object {
-            $_.Name -ne $TocFileName -and -not $MetadataCommands.ContainsKey($_.BaseName)
+            $_.Name -ne $TocFileName -and -not $PublishedCommandNames.ContainsKey($_.BaseName)
         } | ForEach-Object {
             Write-Host "Removing orphaned doc: $($_.Name)"
             Remove-Item $_.FullName -Force
