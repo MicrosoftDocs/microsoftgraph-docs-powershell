@@ -15,6 +15,9 @@ title: Remove-MgBetaUserInsight
 
 Delete navigation property insights for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserInsight](/powershell/module/Microsoft.Graph.Users/Remove-MgUserInsight?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
