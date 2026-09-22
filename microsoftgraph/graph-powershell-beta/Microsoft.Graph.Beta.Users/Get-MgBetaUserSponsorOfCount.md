@@ -1,15 +1,15 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcountasdirectoryrole
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaUserMemberOfCountAsDirectoryRole
+title: Get-MgBetaUserSponsorOfCount
 ---
 
-# Get-MgBetaUserMemberOfCountAsDirectoryRole
+# Get-MgBetaUserSponsorOfCount
 
 ## SYNOPSIS
 
@@ -20,21 +20,19 @@ Get the number of the resource
 ### Get (Default)
 
 ```
-Get-MgBetaUserMemberOfCountAsDirectoryRole -UserId <string> -ConsistencyLevel <string>
- [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgBetaUserSponsorOfCount -UserId <string> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
 
 ```
-Get-MgBetaUserMemberOfCountAsDirectoryRole -InputObject <IUsersIdentity> -ConsistencyLevel <string>
- [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgBetaUserSponsorOfCount -InputObject <IUsersIdentity> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -71,28 +69,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ConsistencyLevel
-
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -401,4 +377,4 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcountasdirectoryrole)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorofcount)
