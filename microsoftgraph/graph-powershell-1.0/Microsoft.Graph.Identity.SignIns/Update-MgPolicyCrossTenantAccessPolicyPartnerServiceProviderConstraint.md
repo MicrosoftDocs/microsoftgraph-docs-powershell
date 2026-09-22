@@ -523,7 +523,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartnerserviceproviderconstraint)
+- [Update-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartnerserviceproviderconstraint)
 
 
 
