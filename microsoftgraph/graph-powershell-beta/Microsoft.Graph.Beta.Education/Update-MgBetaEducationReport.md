@@ -15,6 +15,9 @@ title: Update-MgBetaEducationReport
 
 Update the navigation property reports in education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationReport](/powershell/module/Microsoft.Graph.Education/Update-MgEducationReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
