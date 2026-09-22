@@ -375,8 +375,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityusercount)
-- [](https://learn.microsoft.com/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-1.0)
+- [Get-MgReportTeamUserActivityUserCount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityusercount)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getteamsuseractivityusercounts?view=graph-rest-1.0)
 
 
 

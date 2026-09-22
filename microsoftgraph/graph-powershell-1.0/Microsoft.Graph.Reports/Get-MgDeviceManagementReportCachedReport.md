@@ -579,7 +579,7 @@ BODYPARAMETER `<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedrepor
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportcachedreport)
+- [Get-MgDeviceManagementReportCachedReport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportcachedreport)
 
 
 
