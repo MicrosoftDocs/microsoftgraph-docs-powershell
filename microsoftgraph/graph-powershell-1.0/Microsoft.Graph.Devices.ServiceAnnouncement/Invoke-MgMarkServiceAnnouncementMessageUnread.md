@@ -384,8 +384,8 @@ BODYPARAMETER `<IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkun
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageunread)
-- [](https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-1.0)
+- [Invoke-MgMarkServiceAnnouncementMessageUnread](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageunread)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-1.0)
 
 
 
