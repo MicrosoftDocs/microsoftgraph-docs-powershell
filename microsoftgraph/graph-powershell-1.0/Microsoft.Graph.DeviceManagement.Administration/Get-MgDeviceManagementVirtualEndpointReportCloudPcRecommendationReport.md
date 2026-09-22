@@ -628,8 +628,8 @@ BODY `<IPathsG53J94DevicemanagementVirtualendpointReportMicrosoftGraphRetrievecl
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
-- [](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)
+- [Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointreportcloudpcrecommendationreport)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpcreport-retrievecloudpcrecommendationreports?view=graph-rest-1.0)
 
 
 
