@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-Module Guid: c8c3d6f2-3f76-487c-8254-cc57657134a1
+Module Guid: 8db8c32e-3b9c-4c62-85bf-eab228349176
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -200,6 +200,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingStateCount](Get-MgBetaDeviceManagementComanagedDeviceSecurityBaselineStateSettingStateCount.md)
+
+### [Get-MgBetaDeviceManagementComanagedDeviceSyncStatus](Get-MgBetaDeviceManagementComanagedDeviceSyncStatus.md)
 
 ### [Get-MgBetaDeviceManagementComanagedDeviceUser](Get-MgBetaDeviceManagementComanagedDeviceUser.md)
 
@@ -733,6 +735,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingStateCount](Get-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingStateCount.md)
 
+### [Get-MgBetaDeviceManagementManagedDeviceSyncStatus](Get-MgBetaDeviceManagementManagedDeviceSyncStatus.md)
+
 ### [Get-MgBetaDeviceManagementManagedDeviceUser](Get-MgBetaDeviceManagementManagedDeviceUser.md)
 
 ### [Get-MgBetaDeviceManagementManagedDeviceWindowOSImageManagedDeviceWindowsOSImage](Get-MgBetaDeviceManagementManagedDeviceWindowOSImageManagedDeviceWindowsOSImage.md)
@@ -1133,6 +1137,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebToken](New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebToken.md)
 
+### [New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingZeroTouchWebToken](New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingZeroTouchWebToken.md)
+
 ### [New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema](New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
 
 ### [New-MgBetaDeviceManagementAssignmentFilter](New-MgBetaDeviceManagementAssignmentFilter.md)
@@ -1443,6 +1449,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceConfigurationState](Remove-MgBetaDeviceManagementComanagedDeviceConfigurationState.md)
 
+### [Remove-MgBetaDeviceManagementComanagedDeviceEsim](Remove-MgBetaDeviceManagementComanagedDeviceEsim.md)
+
 ### [Remove-MgBetaDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement.md)
 
 ### [Remove-MgBetaDeviceManagementComanagedDeviceHealthScriptState](Remove-MgBetaDeviceManagementComanagedDeviceHealthScriptState.md)
@@ -1618,6 +1626,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDeviceManagementManagedDeviceConfigurationState](Remove-MgBetaDeviceManagementManagedDeviceConfigurationState.md)
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceEncryptionState](Remove-MgBetaDeviceManagementManagedDeviceEncryptionState.md)
+
+### [Remove-MgBetaDeviceManagementManagedDeviceEsim](Remove-MgBetaDeviceManagementManagedDeviceEsim.md)
 
 ### [Remove-MgBetaDeviceManagementManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaDeviceManagementManagedDeviceFirmwareConfigurationInterfaceManagement.md)
 
@@ -1815,7 +1825,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction](Start-MgBetaDeviceManagementComanagedDeviceConfigurationManagerAction.md)
 
+### [Start-MgBetaDeviceManagementComanagedDeviceEnhancedLogCollection](Start-MgBetaDeviceManagementComanagedDeviceEnhancedLogCollection.md)
+
 ### [Start-MgBetaDeviceManagementManagedDeviceConfigurationManagerAction](Start-MgBetaDeviceManagementManagedDeviceConfigurationManagerAction.md)
+
+### [Start-MgBetaDeviceManagementManagedDeviceEnhancedLogCollection](Start-MgBetaDeviceManagementManagedDeviceEnhancedLogCollection.md)
+
+### [Stop-MgBetaDeviceManagementComanagedDeviceEnhancedLogCollection](Stop-MgBetaDeviceManagementComanagedDeviceEnhancedLogCollection.md)
+
+### [Stop-MgBetaDeviceManagementManagedDeviceEnhancedLogCollection](Stop-MgBetaDeviceManagementManagedDeviceEnhancedLogCollection.md)
 
 ### [Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh](Suspend-MgBetaDeviceManagementComanagedDeviceConfigurationRefresh.md)
 
@@ -2146,23 +2164,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfile](Update-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
