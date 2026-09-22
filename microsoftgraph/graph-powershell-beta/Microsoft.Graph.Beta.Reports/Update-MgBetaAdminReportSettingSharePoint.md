@@ -395,7 +395,7 @@ The supported values are: egressReport, throttlingReport.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint)
+- [Update-MgBetaAdminReportSettingSharePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint)
 
 
 

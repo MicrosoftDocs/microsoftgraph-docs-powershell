@@ -585,7 +585,7 @@ BODYPARAMETER `<IPathsIdq7HwDevicemanagementReportsMicrosoftGraphGetunhealthydef
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportunhealthydefenderagentreport)
+- [Get-MgBetaDeviceManagementReportUnhealthyDefenderAgentReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportunhealthydefenderagentreport)
 
 
 

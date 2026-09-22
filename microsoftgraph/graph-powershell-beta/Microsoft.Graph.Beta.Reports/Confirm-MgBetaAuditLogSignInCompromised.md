@@ -420,8 +420,8 @@ BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPost
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
-- [](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta)
+- [Confirm-MgBetaAuditLogSignInCompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta)
 
 
 

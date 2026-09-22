@@ -533,8 +533,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsummarizednoninteractivesignin)
-- [](https://learn.microsoft.com/graph/api/auditlogroot-getsummarizednoninteractivesignins?view=graph-rest-beta)
+- [Get-MgBetaAuditLogSummarizedNonInteractiveSignIn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsummarizednoninteractivesignin)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/auditlogroot-getsummarizednoninteractivesignins?view=graph-rest-beta)
 
 
 
