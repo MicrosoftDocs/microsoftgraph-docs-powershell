@@ -447,8 +447,8 @@ Can be changed later.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)
-- [](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)
+- [New-MgDirectoryAttributeSet](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)
 
 
 

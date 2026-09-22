@@ -590,7 +590,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrecoverysnapshotrecoveryjob)
+- [Get-MgDirectoryRecoverySnapshotRecoveryJob](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrecoverysnapshotrecoveryjob)
 
 
 
