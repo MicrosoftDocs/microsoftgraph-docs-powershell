@@ -15,6 +15,9 @@ title: Join-MgBetaShareListContentTypeWithHubSite
 
 Invoke action associateWithHubSites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgShareListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)

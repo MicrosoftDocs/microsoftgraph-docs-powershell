@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveListContentType
 
 Delete navigation property contentTypes for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

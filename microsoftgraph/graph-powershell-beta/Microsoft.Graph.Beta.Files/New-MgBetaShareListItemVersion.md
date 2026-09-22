@@ -15,6 +15,9 @@ title: New-MgBetaShareListItemVersion
 
 Create new navigation property to versions for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgShareListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

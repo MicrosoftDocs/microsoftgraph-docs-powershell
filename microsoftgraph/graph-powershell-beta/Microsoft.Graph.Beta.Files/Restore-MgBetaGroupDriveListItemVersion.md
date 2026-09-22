@@ -15,6 +15,9 @@ title: Restore-MgBetaGroupDriveListItemVersion
 
 Invoke action restoreVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgGroupDriveListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

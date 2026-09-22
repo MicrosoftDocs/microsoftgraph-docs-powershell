@@ -15,6 +15,9 @@ title: Remove-MgBetaDriveRoot
 
 Delete navigation property root for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
