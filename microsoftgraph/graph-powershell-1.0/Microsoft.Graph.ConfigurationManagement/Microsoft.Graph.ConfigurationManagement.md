@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.ConfigurationManagement
-Module Guid: 22d628c0-b700-4527-96b4-272504ecdcc5
+Module Guid: e21d6e3a-04f8-479b-a16d-27c7eccc2911
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.configurationmanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,8 +11,6 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.ConfigurationManagement Cmdlets
-### [Get-MgAdminConfigurationManagement](Get-MgAdminConfigurationManagement.md)
-
 ### [Get-MgAdminConfigurationManagementConfigurationDrift](Get-MgAdminConfigurationManagementConfigurationDrift.md)
 
 ### [Get-MgAdminConfigurationManagementConfigurationDrift](Get-MgAdminConfigurationManagementConfigurationDrift.md)
@@ -37,68 +35,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAdminConfigurationManagementConfigurationSnapshot](Get-MgAdminConfigurationManagementConfigurationSnapshot.md)
 
-### [Get-MgAdminConfigurationManagementConfigurationSnapshotCount](Get-MgAdminConfigurationManagementConfigurationSnapshotCount.md)
-
 ### [Get-MgAdminConfigurationManagementConfigurationSnapshotJob](Get-MgAdminConfigurationManagementConfigurationSnapshotJob.md)
 
 ### [Get-MgAdminConfigurationManagementConfigurationSnapshotJob](Get-MgAdminConfigurationManagementConfigurationSnapshotJob.md)
-
-### [Get-MgAdminConfigurationManagementConfigurationSnapshotJobCount](Get-MgAdminConfigurationManagementConfigurationSnapshotJobCount.md)
-
-### [New-MgAdminConfigurationManagementConfigurationDrift](New-MgAdminConfigurationManagementConfigurationDrift.md)
 
 ### [New-MgAdminConfigurationManagementConfigurationMonitor](New-MgAdminConfigurationManagementConfigurationMonitor.md)
 
-### [New-MgAdminConfigurationManagementConfigurationMonitoringResult](New-MgAdminConfigurationManagementConfigurationMonitoringResult.md)
-
-### [New-MgAdminConfigurationManagementConfigurationSnapshot](New-MgAdminConfigurationManagementConfigurationSnapshot.md)
-
-### [New-MgAdminConfigurationManagementConfigurationSnapshotJob](New-MgAdminConfigurationManagementConfigurationSnapshotJob.md)
-
-### [Remove-MgAdminConfigurationManagement](Remove-MgAdminConfigurationManagement.md)
-
-### [Remove-MgAdminConfigurationManagementConfigurationDrift](Remove-MgAdminConfigurationManagementConfigurationDrift.md)
-
 ### [Remove-MgAdminConfigurationManagementConfigurationMonitor](Remove-MgAdminConfigurationManagementConfigurationMonitor.md)
-
-### [Remove-MgAdminConfigurationManagementConfigurationMonitorBaseline](Remove-MgAdminConfigurationManagementConfigurationMonitorBaseline.md)
-
-### [Remove-MgAdminConfigurationManagementConfigurationMonitoringResult](Remove-MgAdminConfigurationManagementConfigurationMonitoringResult.md)
-
-### [Remove-MgAdminConfigurationManagementConfigurationSnapshot](Remove-MgAdminConfigurationManagementConfigurationSnapshot.md)
 
 ### [Remove-MgAdminConfigurationManagementConfigurationSnapshotJob](Remove-MgAdminConfigurationManagementConfigurationSnapshotJob.md)
 
-### [Update-MgAdminConfigurationManagement](Update-MgAdminConfigurationManagement.md)
-
-### [Update-MgAdminConfigurationManagementConfigurationDrift](Update-MgAdminConfigurationManagementConfigurationDrift.md)
-
 ### [Update-MgAdminConfigurationManagementConfigurationMonitor](Update-MgAdminConfigurationManagementConfigurationMonitor.md)
-
-### [Update-MgAdminConfigurationManagementConfigurationMonitorBaseline](Update-MgAdminConfigurationManagementConfigurationMonitorBaseline.md)
-
-### [Update-MgAdminConfigurationManagementConfigurationMonitoringResult](Update-MgAdminConfigurationManagementConfigurationMonitoringResult.md)
-
-### [Update-MgAdminConfigurationManagementConfigurationSnapshot](Update-MgAdminConfigurationManagementConfigurationSnapshot.md)
-
-### [Update-MgAdminConfigurationManagementConfigurationSnapshotJob](Update-MgAdminConfigurationManagementConfigurationSnapshotJob.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
