@@ -53,13 +53,18 @@ Delete navigation property emails for users
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileEmail Cmdlet.
+
 
 ## PARAMETERS
 
