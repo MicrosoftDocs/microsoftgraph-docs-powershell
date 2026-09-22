@@ -15,6 +15,9 @@ title: Get-MgPlannerTask
 
 Retrieve the properties and relationships of plannerTask object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
