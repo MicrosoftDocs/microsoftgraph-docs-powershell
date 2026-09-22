@@ -683,7 +683,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitemversion)
+- [New-MgDriveListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistitemversion)
 
 
 
