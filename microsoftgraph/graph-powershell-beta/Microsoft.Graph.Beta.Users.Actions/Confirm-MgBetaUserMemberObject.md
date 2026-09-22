@@ -15,6 +15,9 @@ title: Confirm-MgBetaUserMemberObject
 
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
