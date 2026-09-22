@@ -51,12 +51,17 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 | Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryRoleDelta
+
+```
+This example shows how to use the Get-MgDirectoryRoleDelta Cmdlet.
+
 
 ## PARAMETERS
 

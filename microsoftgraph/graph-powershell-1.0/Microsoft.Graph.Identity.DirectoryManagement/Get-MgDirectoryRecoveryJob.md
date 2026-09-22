@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 Collection of all recovery jobs (both preview and recovery) for the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -574,6 +564,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrecoveryjob)
 - [](https://learn.microsoft.com/graph/api/entrarecoveryservices-recovery-list-jobs?view=graph-rest-1.0)
+
+
 
 
 
