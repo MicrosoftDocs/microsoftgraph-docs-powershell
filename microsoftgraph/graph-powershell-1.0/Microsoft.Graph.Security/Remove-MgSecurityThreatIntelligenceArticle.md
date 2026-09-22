@@ -15,6 +15,9 @@ title: Remove-MgSecurityThreatIntelligenceArticle
 
 Delete navigation property articles for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

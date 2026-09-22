@@ -16,6 +16,9 @@ title: Get-MgSecuritySubjectRightsRequestApproverByUserPrincipalName
 Collection of users who can approve the request.
 Currently only supported for requests of type delete.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestApproverByUserPrincipalName](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApproverByUserPrincipalName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligencePassiveDnsRecordArtifact
 
 The artifact related to this passiveDnsRecord entry.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
