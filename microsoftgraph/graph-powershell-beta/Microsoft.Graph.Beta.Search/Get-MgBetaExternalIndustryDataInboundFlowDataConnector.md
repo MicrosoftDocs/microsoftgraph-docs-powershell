@@ -54,16 +54,6 @@ The data connector to the source system from where this flow gets its data.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | IndustryData-DataConnector.Read.All, IndustryData-DataConnector.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -379,6 +369,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowdataconnector)
+
 
 
 
