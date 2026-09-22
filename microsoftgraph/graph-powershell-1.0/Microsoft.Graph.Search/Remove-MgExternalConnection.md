@@ -56,12 +56,17 @@ Deletes an externalConnection object.
 | Application | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Search
 
 Remove-MgExternalConnection -ExternalConnectionId $externalConnectionId
+
+```
+This example shows how to use the Remove-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 
