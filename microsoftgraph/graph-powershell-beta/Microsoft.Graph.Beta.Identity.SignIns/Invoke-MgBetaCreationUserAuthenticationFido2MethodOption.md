@@ -16,6 +16,9 @@ title: Invoke-MgBetaCreationUserAuthenticationFido2MethodOption
 Retrieve creation options required to generate and register a Microsoft Entra ID-compatible passkey.
 Self-service operations aren't supported.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCreationUserAuthenticationFido2MethodOption](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgCreationUserAuthenticationFido2MethodOption?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Creation (Default)

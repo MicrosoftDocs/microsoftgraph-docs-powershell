@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityRiskPrevention
 
 Represents the entry point for fraud and risk prevention configurations in Microsoft Entra External ID, including third-party provider settings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityRiskPrevention](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityRiskPrevention?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
