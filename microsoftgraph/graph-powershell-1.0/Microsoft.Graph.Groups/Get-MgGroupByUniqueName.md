@@ -61,16 +61,6 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Group-NestingSupport.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group-PreferredDataLocation.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -385,6 +375,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename)
 - [](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0)
+
 
 
 
