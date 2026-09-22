@@ -587,9 +587,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryremotetenantgroup)
-- [](https://learn.microsoft.com/graph/api/remotetenantgroup-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/directory-list-remotetenantgroups?view=graph-rest-beta)
+- [Get-MgBetaDirectoryRemoteTenantGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryremotetenantgroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/remotetenantgroup-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-list-remotetenantgroups?view=graph-rest-beta)
 
 
 

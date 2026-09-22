@@ -386,8 +386,8 @@ BODYPARAMETER `<IPaths6Pdj1BDirectorysettingtemplatesMicrosoftGraphGetuserownedo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplateuserownedobject)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
+- [Get-MgBetaDirectorySettingTemplateUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysettingtemplateuserownedobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
 
 
 
