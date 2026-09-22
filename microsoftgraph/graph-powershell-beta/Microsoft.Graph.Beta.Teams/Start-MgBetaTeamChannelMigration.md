@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamchannelmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaTeamChannelMigration
 ---
@@ -20,9 +20,6 @@ Users are also allowed to define a minimum timestamp for content to be migrated,
 The provided timestamp must be older than the current createdDateTime for a channel.
 The provided timestamp is used to replace the existing createdDateTime of the channel.
 This API supportes the following channel types.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Start-MgTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamChannelMigration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -82,28 +79,18 @@ The provided timestamp is used to replace the existing createdDateTime of the ch
 This API supportes the following channel types.
 
 ## EXAMPLES
-### Example 1: Start the migration on an existing channel with a specific timestamp
 
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Teams
-
-Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
-
-```
-This example will start the migration on an existing channel with a specific timestamp
-
-### Example 2: Start the migration when a channel is already in migration mode
-
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
-```
-This example will start the migration when a channel is already in migration mode
+### EXAMPLE 2
 
+Import-Module Microsoft.Graph.Beta.Teams
+
+Start-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
@@ -136,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -234,7 +221,7 @@ HelpMessage: ''
 
 ### -ConversationCreationDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -539,11 +526,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1WttybcTeamsTeamIdChannelsChannelIdMicrosoftGraphStartmigrationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1WttybcTeamsTeamIdChannelsChannelIdMicrosoftGraphStartmigrationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConversationCreationDateTime <DateTime?>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -560,7 +547,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -568,6 +558,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -577,8 +568,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -593,27 +587,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Start-MgBetaTeamChannelMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamchannelmigration)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamchannelmigration)
+- [](https://learn.microsoft.com/graph/api/channel-startmigration?view=graph-rest-beta)

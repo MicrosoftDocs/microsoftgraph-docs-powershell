@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamChannelMessageReply
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaTeamChannelMessageReply
 
 Send a new reply to a chatMessage in a specified channel.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReply?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -25,13 +22,13 @@ Send a new reply to a chatMessage in a specified channel.
 ```
 New-MgBetaTeamChannelMessageReply -ChannelId <string> -ChatMessageId <string> -TeamId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
+ [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphChatMessageBody>]
  [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId <string>]
- [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-Etag <string>]
- [-EventDetail <hashtable>] [-From <hashtable>]
- [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <string>] [-Importance <string>]
- [-LastEditedDateTime <datetime>] [-LastModifiedDateTime <datetime>] [-Locale <string>]
- [-Mentions <IMicrosoftGraphChatMessageMention[]>]
+ [-Citations <IMicrosoftGraphChatMessageCitation[]>] [-CreatedDateTime <datetime>]
+ [-DeletedDateTime <datetime>] [-Etag <string>] [-EventDetail <hashtable>] [-From <hashtable>]
+ [-HasReplies] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <string>]
+ [-Importance <string>] [-LastEditedDateTime <datetime>] [-LastModifiedDateTime <datetime>]
+ [-Locale <string>] [-Mentions <IMicrosoftGraphChatMessageMention[]>]
  [-MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>] [-MessageType <string>]
  [-OnBehalfOf <hashtable>] [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
@@ -56,9 +53,10 @@ New-MgBetaTeamChannelMessageReply -ChannelId <string> -ChatMessageId <string> -T
 ```
 New-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
- [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>]
- [-ChatId <string>] [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-Etag <string>]
- [-EventDetail <hashtable>] [-From <hashtable>]
+ [-Body <IMicrosoftGraphChatMessageBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>]
+ [-ChatId <string>] [-Citations <IMicrosoftGraphChatMessageCitation[]>]
+ [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-Etag <string>]
+ [-EventDetail <hashtable>] [-From <hashtable>] [-HasReplies]
  [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <string>] [-Importance <string>]
  [-LastEditedDateTime <datetime>] [-LastModifiedDateTime <datetime>] [-Locale <string>]
  [-Mentions <IMicrosoftGraphChatMessageMention[]>]
@@ -90,18 +88,9 @@ This cmdlet has the following aliases,
 
 Send a new reply to a chatMessage in a specified channel.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ChannelMessage.Send, Group.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Teamwork.Migrate.All,  |
-
 ## EXAMPLES
-### Example 1: Send a new reply to a chatMessage
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -114,12 +103,7 @@ $params = @{
 
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-```
-This example will send a new reply to a chatmessage
-
-### Example 2: Import messages
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -138,10 +122,6 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
-```
-This example will import messages
-
 
 ## PARAMETERS
 
@@ -202,11 +182,11 @@ HelpMessage: ''
 
 ### -Body
 
-itemBody
+chatMessageBody
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageBody
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -386,6 +366,36 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Citations
+
+Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+To construct, see NOTES section for CITATIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageCitation[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Confirm
 
 Prompts you for confirmation before running the cmdlet.
@@ -437,7 +447,7 @@ HelpMessage: ''
 
 ### -DeletedDateTime
 
-Read only.
+Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
 
 ```yaml
@@ -525,6 +535,33 @@ chatMessageFromIdentitySet
 ```yaml
 Type: System.Collections.Hashtable
 DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HasReplies
+
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -721,7 +758,7 @@ HelpMessage: ''
 
 ### -LastEditedDateTime
 
-Read only.
+Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
@@ -751,7 +788,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-Read only.
+Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
 
 ```yaml
@@ -1302,12 +1339,13 @@ For example, if you set contentType to application/word and set contentUrl to th
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphChatMessageBody>: chatMessageBody
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Content <String>]: The content of the item.
+  [Content <String>]: The content of the chat message.
   [ContentType <String>]: bodyType
+  [MessageBodyContentType <String>]: chatMessageBodyContentType
 
-BODYPARAMETER `<IMicrosoftGraphChatMessage>`: chatMessage
+BODYPARAMETER <IMicrosoftGraphChatMessage>: chatMessage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1331,17 +1369,38 @@ The property is used to attribute a Teams message card to the specified app.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
-  [Body <IMicrosoftGraphItemBody>]: itemBody
+  [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Content <String>]: The content of the item.
+    [Content <String>]: The content of the chat message.
     [ContentType <String>]: bodyType
+    [MessageBodyContentType <String>]: chatMessageBodyContentType
   [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ChannelId <String>]: The identity of the channel in which the message was posted.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+  [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+    [Excerpt <String>]: Read-only.
+Text snippet from the cited source.
+    [IconType <String>]: Read-only.
+Icon type identifier for the cited source, for example, ExcelIcon or WordIcon.
+    [Id <Int32?>]: Read-only.
+Citation identifier that's unique within the message.
+The message body references this identifier inline, for example, [1].
+    [SensitivityLabel <IMicrosoftGraphChatMessageCitationSensitivityLabel>]: chatMessageCitationSensitivityLabel
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: Read-only.
+User-facing description of the sensitivity restriction.
+      [DisplayName <String>]: Read-only.
+Display name of the sensitivity label.
+    [Title <String>]: Read-only.
+Display title of the cited source.
+    [WebUrl <String>]: Read-only.
+URL to the cited source.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1358,6 +1417,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
+  [HasReplies <Boolean?>]: 
   [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     [ContentBytes <Byte[]>]: Write only.
 Bytes for the hosted content (such as images).
@@ -1366,18 +1426,18 @@ Content type, such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1443,10 +1503,31 @@ Only applies to channel chat messages, not chat messages in a chat.
   [WebUrl <String>]: Read-only.
 Link to the message in Microsoft Teams.
 
-CHANNELIDENTITY `<IMicrosoftGraphChannelIdentity>`: channelIdentity
+CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChannelId <String>]: The identity of the channel in which the message was posted.
   [TeamId <String>]: The identity of the team in which the message was posted.
+
+CITATIONS <IMicrosoftGraphChatMessageCitation[]>: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+  [Excerpt <String>]: Read-only.
+Text snippet from the cited source.
+  [IconType <String>]: Read-only.
+Icon type identifier for the cited source, for example, ExcelIcon or WordIcon.
+  [Id <Int32?>]: Read-only.
+Citation identifier that's unique within the message.
+The message body references this identifier inline, for example, [1].
+  [SensitivityLabel <IMicrosoftGraphChatMessageCitationSensitivityLabel>]: chatMessageCitationSensitivityLabel
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: Read-only.
+User-facing description of the sensitivity restriction.
+    [DisplayName <String>]: Read-only.
+Display name of the sensitivity label.
+  [Title <String>]: Read-only.
+Display title of the cited source.
+  [WebUrl <String>]: Read-only.
+URL to the cited source.
 
 HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent[]>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
   [ContentBytes <Byte[]>]: Write only.
@@ -1456,7 +1537,7 @@ Content type, such as image/png, image/jpg.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -1473,7 +1554,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -1481,6 +1565,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -1490,8 +1575,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
@@ -1506,7 +1594,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1559,7 +1647,7 @@ For example, in the access reviews decisions API, this property might record the
       [Device <IMicrosoftGraphIdentity>]: identity
       [User <IMicrosoftGraphIdentity>]: identity
 
-POLICYVIOLATION `<IMicrosoftGraphChatMessagePolicyViolation>`: chatMessagePolicyViolation
+POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DlpAction <String>]: chatMessagePolicyViolationDlpActionTypes
   [JustificationText <String>]: Justification text provided by the sender of the message when overriding a policy violation.
@@ -1616,17 +1704,38 @@ The property is used to attribute a Teams message card to the specified app.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
-  [Body <IMicrosoftGraphItemBody>]: itemBody
+  [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Content <String>]: The content of the item.
+    [Content <String>]: The content of the chat message.
     [ContentType <String>]: bodyType
+    [MessageBodyContentType <String>]: chatMessageBodyContentType
   [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ChannelId <String>]: The identity of the channel in which the message was posted.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+  [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+    [Excerpt <String>]: Read-only.
+Text snippet from the cited source.
+    [IconType <String>]: Read-only.
+Icon type identifier for the cited source, for example, ExcelIcon or WordIcon.
+    [Id <Int32?>]: Read-only.
+Citation identifier that's unique within the message.
+The message body references this identifier inline, for example, [1].
+    [SensitivityLabel <IMicrosoftGraphChatMessageCitationSensitivityLabel>]: chatMessageCitationSensitivityLabel
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: Read-only.
+User-facing description of the sensitivity restriction.
+      [DisplayName <String>]: Read-only.
+Display name of the sensitivity label.
+    [Title <String>]: Read-only.
+Display title of the cited source.
+    [WebUrl <String>]: Read-only.
+URL to the cited source.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1643,6 +1752,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
     [Device <IMicrosoftGraphIdentity>]: identity
     [User <IMicrosoftGraphIdentity>]: identity
+  [HasReplies <Boolean?>]: 
   [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     [ContentBytes <Byte[]>]: Write only.
 Bytes for the hosted content (such as images).
@@ -1651,18 +1761,18 @@ Content type, such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
   [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
     [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
     [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1731,27 +1841,5 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [New-MgBetaTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessagereply)
+- [](https://learn.microsoft.com/graph/api/chatmessage-post-replies?view=graph-rest-beta)
