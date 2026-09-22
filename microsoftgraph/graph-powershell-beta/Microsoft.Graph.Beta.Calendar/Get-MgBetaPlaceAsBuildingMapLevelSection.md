@@ -614,8 +614,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevelsection)
-- [](https://learn.microsoft.com/graph/api/levelmap-list-sections?view=graph-rest-beta)
+- [Get-MgBetaPlaceAsBuildingMapLevelSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasbuildingmaplevelsection)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/levelmap-list-sections?view=graph-rest-beta)
 
 
 
