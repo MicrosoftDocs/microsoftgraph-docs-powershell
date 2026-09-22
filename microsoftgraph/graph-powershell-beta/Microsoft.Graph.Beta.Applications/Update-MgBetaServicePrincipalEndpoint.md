@@ -15,6 +15,9 @@ title: Update-MgBetaServicePrincipalEndpoint
 
 Update the navigation property endpoints in servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalEndpoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

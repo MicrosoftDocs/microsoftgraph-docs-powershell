@@ -15,6 +15,9 @@ title: New-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory
 
 Create new navigation property to directories for servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

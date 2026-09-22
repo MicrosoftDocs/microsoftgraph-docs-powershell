@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalClaimMappingPolicy
 
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
