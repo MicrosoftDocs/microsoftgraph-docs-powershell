@@ -47,12 +47,17 @@ Syncs Intune account with Microsoft Store For Business
 | Application | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp
+
+```
+This example shows how to use the Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp Cmdlet.
+
 
 ## PARAMETERS
 

@@ -69,12 +69,17 @@ Windows information protection for apps running on devices which are not MDM enr
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Get-MgDeviceAppManagementWindowsInformationProtectionPolicy
+
+```
+This example shows how to use the Get-MgDeviceAppManagementWindowsInformationProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 
