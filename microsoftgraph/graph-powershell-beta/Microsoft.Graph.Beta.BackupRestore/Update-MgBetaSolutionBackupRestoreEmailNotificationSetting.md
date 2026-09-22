@@ -453,8 +453,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting)
-- [](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-beta)
+- [Update-MgBetaSolutionBackupRestoreEmailNotificationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-beta)
 
 
 
