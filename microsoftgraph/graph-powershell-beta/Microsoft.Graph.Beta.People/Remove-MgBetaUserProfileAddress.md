@@ -443,8 +443,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress)
-- [](https://learn.microsoft.com/graph/api/itemaddress-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserProfileAddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itemaddress-delete?view=graph-rest-beta)
 
 
 
