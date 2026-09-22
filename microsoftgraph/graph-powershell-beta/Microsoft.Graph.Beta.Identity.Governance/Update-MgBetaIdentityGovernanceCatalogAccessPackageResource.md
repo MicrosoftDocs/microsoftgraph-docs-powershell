@@ -1001,7 +1001,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCEENVIRONMENT <IMicrosoftGraphAccessPackageResourceEnvironment>: accessPackageResourceEnvironment
+ACCESSPACKAGERESOURCEENVIRONMENT `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1391,7 +1391,7 @@ Read-only.
   [IsEditable <Boolean?>]: Specifies whether or not an existing attribute value can be edited by the requester.
   [IsPersistedOnAssignmentRemoval <Boolean?>]: Specifies whether the attribute will remain in the end system after an assignment ends.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackageResource>: accessPackageResource
+BODYPARAMETER `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1516,7 +1516,7 @@ Supports $filter (eq).
     [Status <String>]: customDataProvidedResourceUploadStatus
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-EXTERNALORIGINRESOURCECONNECTOR <IMicrosoftGraphExternalOriginResourceConnector>: externalOriginResourceConnector
+EXTERNALORIGINRESOURCECONNECTOR `<IMicrosoftGraphExternalOriginResourceConnector>`: externalOriginResourceConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1531,7 +1531,7 @@ Read-only.
   [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
   [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1683,3 +1683,25 @@ Supports $filter (eq).
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresource)
 - [](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
