@@ -15,6 +15,9 @@ title: Get-MgBetaReportYammerDeviceUsageUserDetail
 
 Invoke function getYammerDeviceUsageUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

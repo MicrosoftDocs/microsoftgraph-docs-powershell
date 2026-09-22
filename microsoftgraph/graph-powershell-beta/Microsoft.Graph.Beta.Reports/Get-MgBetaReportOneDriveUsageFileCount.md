@@ -15,6 +15,9 @@ title: Get-MgBetaReportOneDriveUsageFileCount
 
 Invoke function getOneDriveUsageFileCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOneDriveUsageFileCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOneDriveUsageFileCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

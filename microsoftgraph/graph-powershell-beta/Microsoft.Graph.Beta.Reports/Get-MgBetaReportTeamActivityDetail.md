@@ -15,6 +15,9 @@ title: Get-MgBetaReportTeamActivityDetail
 
 Invoke function getTeamsTeamActivityDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
