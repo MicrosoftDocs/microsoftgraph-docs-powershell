@@ -1,15 +1,15 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicycount
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointserviceplancount
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount
+title: Get-MgDeviceManagementVirtualEndpointServicePlanCount
 ---
 
-# Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount
+# Get-MgDeviceManagementVirtualEndpointServicePlanCount
 
 ## SYNOPSIS
 
@@ -20,7 +20,7 @@ Get the number of the resource
 ### Get (Default)
 
 ```
-Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount [-Filter <string>] [-Search <string>]
+Get-MgDeviceManagementVirtualEndpointServicePlanCount [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
@@ -281,4 +281,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicycount)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointserviceplancount)

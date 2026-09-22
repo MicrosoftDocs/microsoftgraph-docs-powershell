@@ -1,38 +1,37 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionacceptancestatus
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointserviceplan
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgDeviceManagementTermAndConditionAcceptanceStatus
+title: Get-MgDeviceManagementVirtualEndpointServicePlan
 ---
 
-# Get-MgDeviceManagementTermAndConditionAcceptanceStatus
+# Get-MgDeviceManagementVirtualEndpointServicePlan
 
 ## SYNOPSIS
 
-The list of acceptance statuses for this T&C policy.
+A collection of Cloud PC service plans.
 
 ## SYNTAX
 
 ### List (Default)
 
 ```
-Get-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId <string>
- [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>] [-Search <string>]
- [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+Get-MgDeviceManagementVirtualEndpointServicePlan [-ExpandProperty <string[]>] [-Property <string[]>]
+ [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
+ [-CountVariable <string>]
 ```
 
 ### Get
 
 ```
-Get-MgDeviceManagementTermAndConditionAcceptanceStatus
- -TermsAndConditionsAcceptanceStatusId <string> -TermsAndConditionsId <string>
+Get-MgDeviceManagementVirtualEndpointServicePlan -CloudPcServicePlanId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -42,7 +41,7 @@ Get-MgDeviceManagementTermAndConditionAcceptanceStatus
 ### GetViaIdentity
 
 ```
-Get-MgDeviceManagementTermAndConditionAcceptanceStatus
+Get-MgDeviceManagementVirtualEndpointServicePlan
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -56,15 +55,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-The list of acceptance statuses for this T&C policy.
+A collection of Cloud PC service plans.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+{{ Add code here }}
 
-Get-MgDeviceManagementTermAndConditionAcceptanceStatus -TermsAndConditionsId $termsAndConditionsId
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -102,6 +103,27 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CloudPcServicePlanId
+
+The unique identifier of cloudPcServicePlan
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -453,54 +475,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TermsAndConditionsAcceptanceStatusId
-
-The unique identifier of termsAndConditionsAcceptanceStatus
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -TermsAndConditionsId
-
-The unique identifier of termsAndConditions
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Top
 
 Show only the first n items
@@ -542,7 +516,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditionsAcceptanceStatus
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcServicePlan
 
 {{ Fill in the Description }}
 
@@ -585,4 +559,5 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionacceptancestatus)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointserviceplan)
+- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-1.0)
