@@ -1,27 +1,27 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxprotectionunitcount
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreemailnotificationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgSolutionBackupRestoreMailboxProtectionUnitCount
+title: Get-MgSolutionBackupRestoreEmailNotificationSetting
 ---
 
-# Get-MgSolutionBackupRestoreMailboxProtectionUnitCount
+# Get-MgSolutionBackupRestoreEmailNotificationSetting
 
 ## SYNOPSIS
 
-Get the number of the resource
+Read the properties and relationships of an emailNotificationsSetting object.
 
 ## SYNTAX
 
 ### Get (Default)
 
 ```
-Get-MgSolutionBackupRestoreMailboxProtectionUnitCount [-Filter <string>] [-Search <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Get-MgSolutionBackupRestoreEmailNotificationSetting [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -33,7 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the number of the resource
+Read the properties and relationships of an emailNotificationsSetting object.
 
 ## EXAMPLES
 
@@ -68,15 +68,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Filter
+### -ExpandProperty
 
-Filter items by property values
+Expand related entities
 
 ```yaml
-Type: System.String
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
-Aliases: []
+Aliases:
+- Expand
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -140,6 +141,28 @@ Type: Microsoft.Graph.PowerShell.Runtime.SendAsyncStep[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Property
+
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -237,27 +260,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
-
-Search items by search phrases
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -273,7 +275,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailNotificationsSetting
 
 {{ Fill in the Description }}
 
@@ -281,4 +283,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoremailboxprotectionunitcount)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreemailnotificationsetting)
+- [](https://learn.microsoft.com/graph/api/emailnotificationssetting-get?view=graph-rest-1.0)

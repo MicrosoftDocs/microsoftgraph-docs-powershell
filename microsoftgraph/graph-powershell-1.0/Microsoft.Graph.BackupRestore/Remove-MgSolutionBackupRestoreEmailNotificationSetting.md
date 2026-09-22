@@ -1,40 +1,29 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.BackupRestore-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoremailboxprotectionunitbulkadditionjob
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreemailnotificationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
+title: Remove-MgSolutionBackupRestoreEmailNotificationSetting
 ---
 
-# Remove-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
+# Remove-MgSolutionBackupRestoreEmailNotificationSetting
 
 ## SYNOPSIS
 
-Delete navigation property mailboxProtectionUnitsBulkAdditionJobs for solutions
+Delete navigation property emailNotificationsSetting for solutions
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
- -MailboxProtectionUnitsBulkAdditionJobId <string> [-IfMatch <string>]
+Remove-MgSolutionBackupRestoreEmailNotificationSetting [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### DeleteViaIdentity
-
-```
-Remove-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
- -InputObject <IBackupRestoreIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -44,7 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property mailboxProtectionUnitsBulkAdditionJobs for solutions
+Delete navigation property emailNotificationsSetting for solutions
 
 ## EXAMPLES
 
@@ -177,49 +166,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -InputObject
-
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IBackupRestoreIdentity
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: DeleteViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -MailboxProtectionUnitsBulkAdditionJobId
-
-The unique identifier of mailboxProtectionUnitsBulkAdditionJob
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -365,10 +311,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBackupRestoreIdentity
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
@@ -381,47 +323,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## NOTES
 
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
-
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
-  [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
-  [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
-  [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
-  [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
-  [DriveRestoreArtifactId <String>]: The unique identifier of driveRestoreArtifact
-  [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
-  [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
-  [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
-  [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
-  [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
-  [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
-  [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
-  [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
-  [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
-  [MailboxRestoreArtifactId <String>]: The unique identifier of mailboxRestoreArtifact
-  [MailboxRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of mailboxRestoreArtifactsBulkAdditionRequest
-  [NextFetchToken <String>]: Usage: nextFetchToken='{nextFetchToken}'
-  [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
-  [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
-  [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
-  [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
-  [ProtectionUnitBaseId <String>]: The unique identifier of protectionUnitBase
-  [RestorePointId <String>]: The unique identifier of restorePoint
-  [RestoreSessionBaseId <String>]: The unique identifier of restoreSessionBase
-  [ServiceAppId <String>]: The unique identifier of serviceApp
-  [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
-  [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
-  [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
-  [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule
-  [SiteProtectionUnitId <String>]: The unique identifier of siteProtectionUnit
-  [SiteProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of siteProtectionUnitsBulkAdditionJob
-  [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
-  [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
-
-
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoremailboxprotectionunitbulkadditionjob)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/remove-mgsolutionbackuprestoreemailnotificationsetting)
