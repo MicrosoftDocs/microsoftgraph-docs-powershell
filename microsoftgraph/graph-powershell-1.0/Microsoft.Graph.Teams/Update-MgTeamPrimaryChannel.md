@@ -15,6 +15,9 @@ title: Update-MgTeamPrimaryChannel
 
 Update the navigation property primaryChannel in teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

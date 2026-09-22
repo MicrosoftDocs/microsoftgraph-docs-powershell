@@ -15,6 +15,9 @@ title: Remove-MgTeamScheduleTimeCard
 
 Delete a timeCard instance in a schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeCard?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
