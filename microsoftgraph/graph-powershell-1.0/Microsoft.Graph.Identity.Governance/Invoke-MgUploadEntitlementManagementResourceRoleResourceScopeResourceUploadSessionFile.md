@@ -480,8 +480,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mguploadentitlementmanagementresourceroleresourcescoperesourceuploadsessionfile)
-- [](https://learn.microsoft.com/graph/api/customdataprovidedresourceuploadsession-uploadfile?view=graph-rest-1.0)
+- [Invoke-MgUploadEntitlementManagementResourceRoleResourceScopeResourceUploadSessionFile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mguploadentitlementmanagementresourceroleresourcescoperesourceuploadsessionfile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customdataprovidedresourceuploadsession-uploadfile?view=graph-rest-1.0)
 
 
 

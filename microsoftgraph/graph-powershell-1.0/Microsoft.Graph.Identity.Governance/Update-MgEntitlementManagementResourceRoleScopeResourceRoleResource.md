@@ -1502,7 +1502,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescoperesourceroleresource)
+- [Update-MgEntitlementManagementResourceRoleScopeResourceRoleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerolescoperesourceroleresource)
 
 
 

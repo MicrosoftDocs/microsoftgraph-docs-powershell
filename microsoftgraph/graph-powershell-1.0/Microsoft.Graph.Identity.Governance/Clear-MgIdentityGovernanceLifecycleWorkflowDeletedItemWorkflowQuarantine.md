@@ -419,8 +419,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/clear-mgidentitygovernancelifecycleworkflowdeleteditemworkflowquarantine)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-1.0)
+- [Clear-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowQuarantine](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/clear-mgidentitygovernancelifecycleworkflowdeleteditemworkflowquarantine)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-1.0)
 
 
 

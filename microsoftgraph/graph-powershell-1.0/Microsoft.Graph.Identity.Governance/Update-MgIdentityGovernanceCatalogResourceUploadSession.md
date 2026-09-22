@@ -842,7 +842,7 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancecatalogresourceuploadsession)
+- [Update-MgIdentityGovernanceCatalogResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancecatalogresourceuploadsession)
 
 
 

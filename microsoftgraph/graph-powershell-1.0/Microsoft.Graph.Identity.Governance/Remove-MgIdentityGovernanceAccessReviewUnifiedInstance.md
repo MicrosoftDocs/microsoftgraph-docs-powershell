@@ -456,7 +456,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewunifiedinstance)
+- [Remove-MgIdentityGovernanceAccessReviewUnifiedInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewunifiedinstance)
 
 
 

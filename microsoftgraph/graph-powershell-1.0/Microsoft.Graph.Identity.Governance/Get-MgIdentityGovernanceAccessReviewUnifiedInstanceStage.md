@@ -630,7 +630,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunifiedinstancestage)
+- [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunifiedinstancestage)
 
 
 

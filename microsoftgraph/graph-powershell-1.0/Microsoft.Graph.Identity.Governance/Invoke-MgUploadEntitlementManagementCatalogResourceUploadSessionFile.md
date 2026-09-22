@@ -459,8 +459,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mguploadentitlementmanagementcatalogresourceuploadsessionfile)
-- [](https://learn.microsoft.com/graph/api/customdataprovidedresourceuploadsession-uploadfile?view=graph-rest-1.0)
+- [Invoke-MgUploadEntitlementManagementCatalogResourceUploadSessionFile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mguploadentitlementmanagementcatalogresourceuploadsessionfile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customdataprovidedresourceuploadsession-uploadfile?view=graph-rest-1.0)
 
 
 

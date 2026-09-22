@@ -520,7 +520,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancecatalogresourcescopecount)
+- [Get-MgIdentityGovernanceCatalogResourceScopeCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancecatalogresourcescopecount)
 
 
 

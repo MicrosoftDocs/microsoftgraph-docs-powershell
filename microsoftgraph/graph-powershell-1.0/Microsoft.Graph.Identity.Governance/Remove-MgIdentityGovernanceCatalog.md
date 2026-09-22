@@ -459,7 +459,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancecatalog)
+- [Remove-MgIdentityGovernanceCatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancecatalog)
 
 
 

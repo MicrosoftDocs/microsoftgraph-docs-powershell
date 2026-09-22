@@ -631,8 +631,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementavailableaccesspackageresourcerolescope)
-- [](https://learn.microsoft.com/graph/api/availableaccesspackage-list-resourcerolescopes?view=graph-rest-1.0)
+- [Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementavailableaccesspackageresourcerolescope)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/availableaccesspackage-list-resourcerolescopes?view=graph-rest-1.0)
 
 
 

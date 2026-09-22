@@ -1018,7 +1018,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancecatalogresourceroleresourcescoperesourcerole)
+- [Update-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancecatalogresourceroleresourcescoperesourcerole)
 
 
 

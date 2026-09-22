@@ -1170,7 +1170,7 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinitioninstancestagedecision)
+- [Update-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinitioninstancestagedecision)
 
 
 

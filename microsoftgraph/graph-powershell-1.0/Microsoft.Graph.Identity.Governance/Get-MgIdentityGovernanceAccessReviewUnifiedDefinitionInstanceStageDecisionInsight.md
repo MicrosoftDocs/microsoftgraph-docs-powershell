@@ -713,7 +713,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunifieddefinitioninstancestagedecisioninsight)
+- [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunifieddefinitioninstancestagedecisioninsight)
 
 
 

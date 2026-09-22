@@ -417,7 +417,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancecatalogaccesspackagecount)
+- [Get-MgIdentityGovernanceCatalogAccessPackageCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancecatalogaccesspackagecount)
 
 
 

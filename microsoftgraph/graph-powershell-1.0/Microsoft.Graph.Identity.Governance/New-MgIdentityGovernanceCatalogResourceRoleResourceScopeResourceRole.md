@@ -989,7 +989,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancecatalogresourceroleresourcescoperesourcerole)
+- [New-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancecatalogresourceroleresourcescoperesourcerole)
 
 
 

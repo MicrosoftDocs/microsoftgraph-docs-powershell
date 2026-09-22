@@ -479,7 +479,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementresourcerolescoperoleresourceuploadsession)
+- [Remove-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementresourcerolescoperoleresourceuploadsession)
 
 
 

@@ -500,8 +500,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogresourceuploadsession)
-- [](https://learn.microsoft.com/graph/api/accesspackageresource-delete-uploadsessions?view=graph-rest-1.0)
+- [Remove-MgEntitlementManagementCatalogResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogresourceuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageresource-delete-uploadsessions?view=graph-rest-1.0)
 
 
 
