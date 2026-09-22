@@ -521,7 +521,7 @@ The possible values are: unknown, spam, malware, phish, none, unknownFutureValue
     [Url <String>]: The URL that is found in the email.
 This is full URL string, including query parameters.
 
-BODYPARAMETER <IMicrosoftGraphSecurityCollaborationRoot>: collaborationRoot
+BODYPARAMETER `<IMicrosoftGraphSecurityCollaborationRoot>`: collaborationRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -663,3 +663,25 @@ This is full URL string, including query parameters.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycollaboration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
