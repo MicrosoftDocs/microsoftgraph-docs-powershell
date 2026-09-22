@@ -15,6 +15,9 @@ title: Get-MgTenantRelationshipDelegatedAdminRelationshipOperation
 
 Read the properties of a delegatedAdminRelationshipOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
