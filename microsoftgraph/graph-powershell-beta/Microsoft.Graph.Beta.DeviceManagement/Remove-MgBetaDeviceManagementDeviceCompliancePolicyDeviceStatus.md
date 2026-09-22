@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus
 
 Delete navigation property deviceStatuses for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
