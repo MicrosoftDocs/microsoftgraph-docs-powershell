@@ -523,7 +523,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode)
+- [Update-MgAdminEdgeInternetExplorerMode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode)
 
 
 
