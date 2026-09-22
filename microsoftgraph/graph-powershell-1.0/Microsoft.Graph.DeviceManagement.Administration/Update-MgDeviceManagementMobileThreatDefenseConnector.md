@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementMobileThreatDefenseConnector
 
 Update the navigation property mobileThreatDefenseConnectors in deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementPartner
 
 The list of Device Management Partners configured by the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
