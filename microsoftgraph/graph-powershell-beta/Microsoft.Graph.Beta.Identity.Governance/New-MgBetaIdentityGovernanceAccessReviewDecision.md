@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecision
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewDecision
 ---
@@ -23,7 +23,8 @@ Create new navigation property to decisions for identityGovernance
 New-MgBetaIdentityGovernanceAccessReviewDecision [-ResponseHeadersVariable <string>]
  [-AccessReviewId <string>] [-AdditionalProperties <hashtable>]
  [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>]
- [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>] [-Id <string>]
+ [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>]
+ [-DelegatedBy <IMicrosoftGraphUserIdentity[]>] [-Id <string>]
  [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Instance <IMicrosoftGraphAccessReviewInstance>]
  [-Justification <string>] [-Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]
  [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>]
@@ -53,6 +54,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to decisions for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -265,6 +276,32 @@ Supports $select, $orderby, and $filter (eq only).
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DelegatedBy
+
+The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
+To construct, see NOTES section for DELEGATEDBY properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -796,7 +833,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+APPLIEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -806,7 +843,7 @@ For example, in the access reviews decisions API, this property might record the
   [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
   [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewInstanceDecisionItem>`: accessReviewInstanceDecisionItem
+BODYPARAMETER <IMicrosoftGraphAccessReviewInstanceDecisionItem>: accessReviewInstanceDecisionItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -835,6 +872,11 @@ Read-only.
   [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+  [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
   [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
     [Id <String>]: The unique identifier for an entity.
@@ -1028,6 +1070,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1113,7 +1159,7 @@ Read-only.
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Resource ID
     [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
   [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1125,13 +1171,26 @@ Read-only.
   [Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]: accessReviewInstanceDecisionItemTarget
     [(Any) <Object>]: This indicates any property can be added to this object.
 
+DELEGATEDBY <IMicrosoftGraphUserIdentity[]>: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
+  [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
+  [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
+
 INSIGHTS <IMicrosoftGraphGovernanceInsight[]>: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
 
-INSTANCE `<IMicrosoftGraphAccessReviewInstance>`: accessReviewInstance
+INSTANCE <IMicrosoftGraphAccessReviewInstance>: accessReviewInstance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1172,6 +1231,11 @@ Read-only.
     [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
       [Id <String>]: The unique identifier for an entity.
@@ -1211,7 +1275,7 @@ Read-only.
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Resource ID
       [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
     [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1396,6 +1460,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+  [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
   [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1449,14 +1517,14 @@ Possible values: Initializing, NotStarted, Starting, InProgress, Completing, Com
 Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
-PERMISSION `<IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>`: accessReviewInstanceDecisionItemPermission
+PERMISSION <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>: accessReviewInstanceDecisionItemPermission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: The description of the permission.
   [DisplayName <String>]: The display name of the permission.
   [Id <String>]: The identifier of the permission.
   [Type <String>]: The type of the permission.
 
-PRINCIPAL `<IMicrosoftGraphIdentity>`: identity
+PRINCIPAL <IMicrosoftGraphIdentity>: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1464,19 +1532,19 @@ For example, if a user changes their display name the API might show the new val
   [Id <String>]: Unique identifier for the identity or actor.
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
 
-PRINCIPALRESOURCEMEMBERSHIP `<IMicrosoftGraphDecisionItemPrincipalResourceMembership>`: decisionItemPrincipalResourceMembership
+PRINCIPALRESOURCEMEMBERSHIP <IMicrosoftGraphDecisionItemPrincipalResourceMembership>: decisionItemPrincipalResourceMembership
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MembershipType <String>]: decisionItemPrincipalResourceMembershipType
 
-RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessReviewInstanceDecisionItemResource
+RESOURCE <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>: accessReviewInstanceDecisionItemResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description of the resource
   [DisplayName <String>]: Display name of the resource
   [Id <String>]: Resource ID
   [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
 
-REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+REVIEWEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1489,27 +1557,4 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceAccessReviewDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecision)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdecision)

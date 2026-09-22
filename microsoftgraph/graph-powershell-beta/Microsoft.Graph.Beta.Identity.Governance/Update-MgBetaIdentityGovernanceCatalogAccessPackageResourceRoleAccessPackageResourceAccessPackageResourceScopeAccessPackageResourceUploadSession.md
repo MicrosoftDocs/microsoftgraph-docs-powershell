@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescopeaccesspackageresourceuploadsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession
 ---
@@ -24,9 +24,10 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageReso
  -AccessPackageCatalogId <string> -AccessPackageResourceRoleId <string>
  -AccessPackageResourceScopeId <string> -CustomDataProvidedResourceUploadSessionId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-CreatedDateTime <datetime>] [-Data <hashtable>] [-Id <string>] [-IsUploadDone] [-Source <string>]
- [-Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>] [-Status <string>] [-Type <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-CreatedDateTime <datetime>] [-Data <hashtable>]
+ [-Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>] [-Id <string>] [-IsUploadDone]
+ [-ReferenceId <string>] [-Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]
+ [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -49,9 +50,9 @@ Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageReso
 Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-Data <hashtable>]
- [-Id <string>] [-IsUploadDone] [-Source <string>]
- [-Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>] [-Status <string>] [-Type <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>] [-Id <string>] [-IsUploadDone]
+ [-ReferenceId <string>] [-Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]
+ [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -75,6 +76,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property uploadSessions in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -261,6 +272,7 @@ HelpMessage: ''
 
 DateTime when the upload session was created.
 Read-only.
+Supports $orderby.
 
 ```yaml
 Type: System.DateTime
@@ -314,10 +326,39 @@ HelpMessage: ''
 
 ### -Data
 
-customExtensionData
+data
 
 ```yaml
 Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Files
+
+The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+To construct, see NOTES section for FILES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomDataProvidedResourceFile[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -548,32 +589,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ResponseHeadersVariable
+### -ReferenceId
 
-Optional Response Headers Variable.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- RHV
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Source
-
-The source of the access data.
-This should be set to the customdataprovidedresource's name when creating the session.
+The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
 
 ```yaml
 Type: System.String
@@ -588,6 +607,28 @@ ParameterSets:
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 - Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ResponseHeadersVariable
+
+Optional Response Headers Variable.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- RHV
+ParameterSets:
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -629,34 +670,6 @@ HelpMessage: ''
 ### -Status
 
 customDataProvidedResourceUploadStatus
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Type
-
-Schematized form of the expected CSV columns in the uploaded file.
-The only possible value currently is: accessReviewDataUploadTriggerCallbackData
 
 ```yaml
 Type: System.String
@@ -737,26 +750,52 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomDataProvidedResourceUploadSession>`: customDataProvidedResourceUploadSession
+BODYPARAMETER <IMicrosoftGraphCustomDataProvidedResourceUploadSession>: customDataProvidedResourceUploadSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
 Read-only.
-  [Data <IMicrosoftGraphCustomExtensionData>]: customExtensionData
+Supports $orderby.
+  [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
     [(Any) <Object>]: This indicates any property can be added to this object.
+  [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+    [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+    [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
   [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
-  [Source <String>]: The source of the access data.
-This should be set to the customdataprovidedresource's name when creating the session.
+  [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
   [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
     [(Any) <Object>]: This indicates any property can be added to this object.
     [FilesUploaded <Int32?>]: Number of files uploaded in this session.
     [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
   [Status <String>]: customDataProvidedResourceUploadStatus
-  [Type <String>]: Schematized form of the expected CSV columns in the uploaded file.
-The only possible value currently is: accessReviewDataUploadTriggerCallbackData
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+FILES <IMicrosoftGraphCustomDataProvidedResourceFile[]>: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+  [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+  [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -798,6 +837,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
@@ -814,6 +854,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
+  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -840,6 +884,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -867,7 +912,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvidedResourceUploadStats
+STATS <IMicrosoftGraphCustomDataProvidedResourceUploadStats>: customDataProvidedResourceUploadStats
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FilesUploaded <Int32?>]: Number of files uploaded in this session.
   [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
@@ -875,27 +920,4 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescopeaccesspackageresourceuploadsession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescopeaccesspackageresourceuploadsession)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementexternaloriginresourceconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaEntitlementManagementExternalOriginResourceConnector
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaEntitlementManagementExternalOriginResourceConnector
 
 ## SYNOPSIS
 
-Update the navigation property externalOriginResourceConnectors in identityGovernance
+Update the properties of an externalOriginResourceConnector object.
 
 ## SYNTAX
 
@@ -72,15 +72,32 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property externalOriginResourceConnectors in identityGovernance
+Update the properties of an externalOriginResourceConnector object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
+### EXAMPLE 1
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	id = "d743fe46-80f8-41b1-a2ee-7796e024edb9"
+	connectorType = "sapIag"
+	displayName = "SAP IAG 5.0"
+	description = "SAP IAG 5.0.0.0.0"
+	connectionInfo = @{
+		"@odata.type" = "Microsoft.IGAELM.EC.FrontEnd.ExternalModel.externalTokenBasedSapIagConnectionInfo"
+		url = "https://IAGINTGORG-iag-intg-space-java-rest-arqapi.cfps.sap.hana.ondemand.com"
+		keyVaultName = "sap-key-vault"
+		subscriptionId = "caa5v042-9c76-44de-9e84-f3e3071a7b4e"
+		resourceGroup = "test-rg"
+		accessTokenUrl = "https://entra-intg-l4nds6yn.authentication.sap.hana.ondemand.com/oauth/token"
+		clientId = "sb-8d896b-72b5-46ce-9273-471874a09137!b133623|iagapi-iag-intg-space!b11378"
+		secretName = "clienecret"
+	}
+}
+
+Update-MgBetaEntitlementManagementExternalOriginResourceConnector -ExternalOriginResourceConnectorId $externalOriginResourceConnectorId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -239,7 +256,7 @@ HelpMessage: ''
 
 ### -CreatedBy
 
-
+The identifier of the user or application that created the connector.
 
 ```yaml
 Type: System.String
@@ -266,7 +283,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+The date and time when the connector was created.
 
 ```yaml
 Type: System.DateTime
@@ -293,7 +310,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+A description of the connector.
 
 ```yaml
 Type: System.String
@@ -320,7 +337,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+The display name of the connector.
 
 ```yaml
 Type: System.String
@@ -493,7 +510,7 @@ HelpMessage: ''
 
 ### -ModifiedBy
 
-
+The identifier of the user or application that last modified the connector.
 
 ```yaml
 Type: System.String
@@ -520,7 +537,7 @@ HelpMessage: ''
 
 ### -ModifiedDateTime
 
-
+The date and time when the connector was last modified.
 
 ```yaml
 Type: System.DateTime
@@ -686,7 +703,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExternalOriginResourceConnector>`: externalOriginResourceConnector
+BODYPARAMETER <IMicrosoftGraphExternalOriginResourceConnector>: externalOriginResourceConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -694,18 +711,18 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
   [ConnectorType <String>]: connectorType
-  [CreatedBy <String>]: 
-  [CreatedDateTime <DateTime?>]: 
-  [Description <String>]: 
-  [DisplayName <String>]: 
-  [ModifiedBy <String>]: 
-  [ModifiedDateTime <DateTime?>]: 
+  [CreatedBy <String>]: The identifier of the user or application that created the connector.
+  [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+  [Description <String>]: A description of the connector.
+  [DisplayName <String>]: The display name of the connector.
+  [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+  [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
 
-CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
+CONNECTIONINFO <IMicrosoftGraphConnectionInfo>: connectionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -747,6 +764,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
@@ -763,6 +781,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
+  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -789,6 +811,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -819,27 +842,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaEntitlementManagementExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementexternaloriginresourceconnector)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementexternaloriginresourceconnector)
+- [](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-update?view=graph-rest-beta)
