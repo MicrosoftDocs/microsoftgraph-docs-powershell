@@ -16,6 +16,9 @@ title: New-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion
 Create a registration question for a webinar or town hall.
 You can create either a predefined registration question or a custom registration question.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
