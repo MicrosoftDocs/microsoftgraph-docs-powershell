@@ -388,8 +388,8 @@ BODYPARAMETER `<IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy)
-- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-renewgroup?view=graph-rest-beta)
+- [Invoke-MgBetaRenewGroupLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-renewgroup?view=graph-rest-beta)
 
 
 

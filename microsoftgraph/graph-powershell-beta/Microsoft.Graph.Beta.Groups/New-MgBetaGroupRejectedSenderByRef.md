@@ -530,8 +530,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouprejectedsenderbyref)
-- [](https://learn.microsoft.com/graph/api/group-post-rejectedsenders?view=graph-rest-beta)
+- [New-MgBetaGroupRejectedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouprejectedsenderbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-rejectedsenders?view=graph-rest-beta)
 
 
 

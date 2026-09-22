@@ -476,8 +476,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouplifecyclepolicy)
-- [](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-delete?view=graph-rest-beta)
+- [Remove-MgBetaGroupLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouplifecyclepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-delete?view=graph-rest-beta)
 
 
 
