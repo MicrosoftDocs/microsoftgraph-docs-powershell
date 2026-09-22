@@ -389,7 +389,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownercountasserviceprincipal)
+- [Get-MgBetaUserDeviceRegisteredOwnerCountAsServicePrincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownercountasserviceprincipal)
 
 
 
