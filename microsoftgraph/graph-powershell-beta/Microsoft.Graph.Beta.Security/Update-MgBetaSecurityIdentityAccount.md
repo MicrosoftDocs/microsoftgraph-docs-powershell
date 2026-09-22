@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityIdentityAccount
 
 Update the navigation property identityAccounts in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIdentityAccount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

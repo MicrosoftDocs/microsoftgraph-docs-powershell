@@ -15,6 +15,9 @@ title: Set-MgBetaSecurityIncidentAlertComment
 
 Sets a new value for the collection of alertComment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityIncidentAlertComment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetViaIdentity (Default)
