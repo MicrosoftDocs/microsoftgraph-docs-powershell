@@ -50,6 +50,14 @@ A company logo that appears in the header of the sign-in page.
 The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

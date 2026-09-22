@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Read the properties of the tenantGovernanceSetting singleton, which controls related tenant discovery and invitation capabilities.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TenantGovernance-Setting.Read.All, TenantGovernance-Setting.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TenantGovernance-Setting.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
