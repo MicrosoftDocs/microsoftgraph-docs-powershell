@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Files
-Module Guid: cb241461-3f10-47e4-a078-97d22022fd04
+Module Guid: b860a3dc-4f4d-4a6a-8efe-de3d33368d69
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.files/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1833,6 +1833,18 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Join-MgBetaUserDriveListContentTypeWithHubSite](Join-MgBetaUserDriveListContentTypeWithHubSite.md)
 
+### [Lock-MgBetaDriveItem](Lock-MgBetaDriveItem.md)
+
+### [Lock-MgBetaDriveRoot](Lock-MgBetaDriveRoot.md)
+
+### [Lock-MgBetaGroupDriveItem](Lock-MgBetaGroupDriveItem.md)
+
+### [Lock-MgBetaGroupDriveRoot](Lock-MgBetaGroupDriveRoot.md)
+
+### [Lock-MgBetaUserDriveItem](Lock-MgBetaUserDriveItem.md)
+
+### [Lock-MgBetaUserDriveRoot](Lock-MgBetaUserDriveRoot.md)
+
 ### [New-MgBetaDrive](New-MgBetaDrive.md)
 
 ### [New-MgBetaDriveBundle](New-MgBetaDriveBundle.md)
@@ -2103,13 +2115,25 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaUserDriveRootVersion](New-MgBetaUserDriveRootVersion.md)
 
+### [Publish-MgBetaDriveItemLock](Publish-MgBetaDriveItemLock.md)
+
 ### [Publish-MgBetaDriveListContentType](Publish-MgBetaDriveListContentType.md)
+
+### [Publish-MgBetaDriveRootLock](Publish-MgBetaDriveRootLock.md)
+
+### [Publish-MgBetaGroupDriveItemLock](Publish-MgBetaGroupDriveItemLock.md)
 
 ### [Publish-MgBetaGroupDriveListContentType](Publish-MgBetaGroupDriveListContentType.md)
 
+### [Publish-MgBetaGroupDriveRootLock](Publish-MgBetaGroupDriveRootLock.md)
+
 ### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
 
+### [Publish-MgBetaUserDriveItemLock](Publish-MgBetaUserDriveItemLock.md)
+
 ### [Publish-MgBetaUserDriveListContentType](Publish-MgBetaUserDriveListContentType.md)
+
+### [Publish-MgBetaUserDriveRootLock](Publish-MgBetaUserDriveRootLock.md)
 
 ### [Remove-MgBetaDrive](Remove-MgBetaDrive.md)
 
@@ -3332,23 +3356,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserDriveRootThumbnail](Update-MgBetaUserDriveRootThumbnail.md)
 
 ### [Update-MgBetaUserDriveRootVersion](Update-MgBetaUserDriveRootVersion.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
