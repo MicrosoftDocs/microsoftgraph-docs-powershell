@@ -610,8 +610,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetapreviewidentitygovernancelifecycleworkflow)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-beta)
+- [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetapreviewidentitygovernancelifecycleworkflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-beta)
 
 
 

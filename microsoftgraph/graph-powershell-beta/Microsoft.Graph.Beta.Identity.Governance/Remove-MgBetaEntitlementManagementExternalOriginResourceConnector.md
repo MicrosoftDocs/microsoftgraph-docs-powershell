@@ -517,8 +517,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementexternaloriginresourceconnector)
-- [](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-delete?view=graph-rest-beta)
+- [Remove-MgBetaEntitlementManagementExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementexternaloriginresourceconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-delete?view=graph-rest-beta)
 
 
 

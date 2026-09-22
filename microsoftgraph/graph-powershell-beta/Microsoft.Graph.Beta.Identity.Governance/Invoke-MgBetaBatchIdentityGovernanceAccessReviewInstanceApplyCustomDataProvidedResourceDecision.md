@@ -659,8 +659,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstanceapplycustomdataprovidedresourcedecision)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions?view=graph-rest-beta)
+- [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceApplyCustomDataProvidedResourceDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstanceapplycustomdataprovidedresourcedecision)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions?view=graph-rest-beta)
 
 
 

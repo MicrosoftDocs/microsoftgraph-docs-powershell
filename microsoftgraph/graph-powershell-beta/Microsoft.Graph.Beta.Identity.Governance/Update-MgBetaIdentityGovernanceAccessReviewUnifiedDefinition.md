@@ -1905,7 +1905,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewunifieddefinition)
+- [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewunifieddefinition)
 
 
 

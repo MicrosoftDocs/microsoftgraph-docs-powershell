@@ -785,7 +785,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowlifecyclepolicy)
+- [New-MgBetaIdentityGovernanceLifecycleWorkflowLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowlifecyclepolicy)
 
 
 
