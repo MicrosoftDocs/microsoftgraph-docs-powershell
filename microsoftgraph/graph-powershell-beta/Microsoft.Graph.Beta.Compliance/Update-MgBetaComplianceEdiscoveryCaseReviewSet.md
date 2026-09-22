@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property reviewSets in compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -709,6 +699,7 @@ For details, see Document metadata fields in Advanced eDiscovery.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasereviewset)
+
 
 
 
