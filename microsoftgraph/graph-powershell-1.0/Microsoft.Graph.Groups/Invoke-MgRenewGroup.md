@@ -403,8 +403,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrenewgroup)
-- [](https://learn.microsoft.com/graph/api/group-renew?view=graph-rest-1.0)
+- [Invoke-MgRenewGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrenewgroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-renew?view=graph-rest-1.0)
 
 
 

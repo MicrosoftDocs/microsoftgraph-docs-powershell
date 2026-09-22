@@ -395,8 +395,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfavorite)
-- [](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-1.0)
+- [Remove-MgGroupFavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupfavorite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-removefavorite?view=graph-rest-1.0)
 
 
 

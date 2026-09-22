@@ -1,60 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostextension
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupMemberByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: New-MgGroupThreadPostExtension
+title: Remove-MgGroupMemberByRef
 ---
 
-# New-MgGroupThreadPostExtension
+# Remove-MgGroupMemberByRef
 
 ## SYNOPSIS
 
-Create new navigation property to extensions for groups
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupMemberDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Delete (Default)
 
 ```
-New-MgGroupThreadPostExtension -ConversationThreadId <string> -GroupId <string> -PostId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgGroupMemberByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Create
+### DeleteViaIdentity
 
 ```
-New-MgGroupThreadPostExtension -ConversationThreadId <string> -GroupId <string> -PostId <string>
- -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### CreateViaIdentityExpanded
-
-```
-New-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Id <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### CreateViaIdentity
-
-```
-New-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParameter <hashtable>
+Remove-MgGroupMemberByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -64,63 +46,31 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to extensions for groups
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgGroupMemberByRef Cmdlet.
+
 
 ## PARAMETERS
-
-### -AdditionalProperties
-
-Additional Parameters
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-extension
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -165,9 +115,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ConversationThreadId
+### -DirectoryObjectId
 
-The unique identifier of conversationThread
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -175,13 +125,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -202,13 +146,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -282,10 +220,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
+### -IfMatch
 
-The unique identifier for an entity.
-Read-only.
+ETag
 
 ```yaml
 Type: System.String
@@ -293,13 +230,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -321,13 +252,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -338,25 +263,19 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PostId
+### -PassThru
 
-The unique identifier of post
+Returns true when the command succeeds
 
 ```yaml
-Type: System.String
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateExpanded
+- Name: (All)
   Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -485,17 +404,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### System.Collections.Hashtable
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.String
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -530,8 +445,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgGroupThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostextension)
-
+- [Remove-MgGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupMemberByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0)
 
 
 
