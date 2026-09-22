@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId
@@ -639,6 +629,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerolescoperesourceuploadsession)
+
 
 
 

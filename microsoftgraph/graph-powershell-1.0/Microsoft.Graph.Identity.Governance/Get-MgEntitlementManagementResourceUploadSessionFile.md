@@ -61,16 +61,6 @@ This cmdlet has the following aliases,
 The files uploaded during this upload session.
 Supports $expand and $expand with nested $filter and $orderby.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageResourceId
@@ -668,6 +658,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourceuploadsessionfile)
+
 
 
 
