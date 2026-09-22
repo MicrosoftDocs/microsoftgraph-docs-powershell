@@ -1,15 +1,15 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofcountasadministrativeunit
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Users
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgUserMemberOfCountAsAdministrativeUnit
+title: Get-MgUserSponsorOfCount
 ---
 
-# Get-MgUserMemberOfCountAsAdministrativeUnit
+# Get-MgUserSponsorOfCount
 
 ## SYNOPSIS
 
@@ -20,21 +20,19 @@ Get the number of the resource
 ### Get (Default)
 
 ```
-Get-MgUserMemberOfCountAsAdministrativeUnit -UserId <string> -ConsistencyLevel <string>
- [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgUserSponsorOfCount -UserId <string> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
 
 ```
-Get-MgUserMemberOfCountAsAdministrativeUnit -InputObject <IUsersIdentity> -ConsistencyLevel <string>
- [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgUserSponsorOfCount -InputObject <IUsersIdentity> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -71,28 +69,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ConsistencyLevel
-
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -394,4 +370,4 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofcountasadministrativeunit)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorofcount)

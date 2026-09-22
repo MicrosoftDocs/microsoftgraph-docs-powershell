@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: de972d7e-d2d0-4174-bb19-9904ebca35ca
+Module Guid: 2238f6fc-6be0-4fe2-9ce5-1d877558ecef
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -262,6 +262,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserSponsorByRef](Get-MgUserSponsorByRef.md)
 
 ### [Get-MgUserSponsorCount](Get-MgUserSponsorCount.md)
+
+### [Get-MgUserSponsorOf](Get-MgUserSponsorOf.md)
+
+### [Get-MgUserSponsorOf](Get-MgUserSponsorOf.md)
+
+### [Get-MgUserSponsorOfCount](Get-MgUserSponsorOfCount.md)
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
 
@@ -526,23 +532,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserTodoListTaskExtension](Update-MgUserTodoListTaskExtension.md)
 
 ### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
