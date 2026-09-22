@@ -151,7 +151,7 @@ HelpMessage: ''
 
 ### -Capability
 
-.
+
 
 ```yaml
 Type: System.String
@@ -374,7 +374,7 @@ HelpMessage: ''
 
 ### -ProviderId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -401,7 +401,7 @@ HelpMessage: ''
 
 ### -ProviderName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -428,7 +428,7 @@ HelpMessage: ''
 
 ### -ProviderResourceId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -567,7 +567,7 @@ HelpMessage: ''
 
 ### -Uri
 
-.
+
 
 ```yaml
 Type: System.String
