@@ -15,6 +15,9 @@ title: New-MgShareListColumn
 
 Create new navigation property to columns for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgShareListItemPermission
 
 Delete navigation property permissions for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)

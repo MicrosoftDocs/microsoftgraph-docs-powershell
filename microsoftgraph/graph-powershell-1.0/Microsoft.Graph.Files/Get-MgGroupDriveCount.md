@@ -15,6 +15,9 @@ title: Get-MgGroupDriveCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

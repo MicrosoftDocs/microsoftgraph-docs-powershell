@@ -16,6 +16,9 @@ title: Restore-MgGroupDriveItemListItemVersion
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

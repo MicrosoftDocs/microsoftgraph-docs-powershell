@@ -15,6 +15,9 @@ title: Get-MgShareListSubscription
 
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
