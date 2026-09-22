@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ResourceSpecificPermissionGrant.ReadForTeam, TeamsAppInstallation.ManageSelectedForTeam, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadWriteSelfForTeam,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamsAppInstallation.Read.Group, ResourceSpecificPermissionGrant.ReadForTeam.All, TeamsApp.Read.Group, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, TeamsAppInstallation.ReadWriteSelfForTeam.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
