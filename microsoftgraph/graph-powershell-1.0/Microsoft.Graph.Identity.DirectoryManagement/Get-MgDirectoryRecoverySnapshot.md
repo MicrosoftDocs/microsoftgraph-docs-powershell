@@ -15,6 +15,9 @@ title: Get-MgDirectoryRecoverySnapshot
 
 Collection of backup snapshots available for the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRecoverySnapshot](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRecoverySnapshot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
