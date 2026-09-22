@@ -35,6 +35,14 @@ This cmdlet has the following aliases,
 
 Get details about users who have activated Microsoft 365.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Reports.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Reports.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
