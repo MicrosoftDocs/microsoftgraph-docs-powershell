@@ -72,6 +72,14 @@ Start a new group conversation by first creating a thread.
 A new conversation, conversation thread, and post are created in the group.\rUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-Conversation.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
