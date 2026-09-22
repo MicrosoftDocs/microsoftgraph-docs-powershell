@@ -3129,8 +3129,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent)
-- [](https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-1.0)
+- [New-MgGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-1.0)
 
 
 

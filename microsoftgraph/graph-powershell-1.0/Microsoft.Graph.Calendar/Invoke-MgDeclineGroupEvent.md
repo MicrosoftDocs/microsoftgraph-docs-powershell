@@ -607,8 +607,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdeclinegroupevent)
-- [](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0)
+- [Invoke-MgDeclineGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdeclinegroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0)
 
 
 
