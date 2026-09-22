@@ -401,7 +401,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventtownhallregistrationemail)
+- [Stop-MgVirtualEventTownhallRegistrationEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventtownhallregistrationemail)
 
 
 
