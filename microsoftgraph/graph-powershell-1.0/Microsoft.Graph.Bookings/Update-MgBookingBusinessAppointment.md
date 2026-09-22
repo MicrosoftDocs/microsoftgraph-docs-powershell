@@ -1383,7 +1383,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphBookingAppointment>: Represents a booked appointment of a service by a customer in a business.
+BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appointment of a service by a customer in a business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1468,13 +1468,13 @@ Default value is false.
   [StaffMemberIds <String[]>]: The ID of each bookingStaffMember who is scheduled in this appointment.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
 
-ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
+ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for more possible values.
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -1502,7 +1502,7 @@ The value of this property is available only when reading this bookingAppointmen
 It's denoted in ISO 8601 format.
   [Recipients <String>]: bookingReminderRecipients
 
-SERVICELOCATION <IMicrosoftGraphLocation>: location
+SERVICELOCATION `<IMicrosoftGraphLocation>`: location
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1527,7 +1527,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [UniqueId <String>]: For internal use only.
   [UniqueIdType <String>]: locationUniqueIdType
 
-STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
+STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   [TimeZone <String>]: Represents a time zone, for example, 'Pacific Standard Time'.
@@ -1538,3 +1538,25 @@ See below for more possible values.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment)
 - [](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
