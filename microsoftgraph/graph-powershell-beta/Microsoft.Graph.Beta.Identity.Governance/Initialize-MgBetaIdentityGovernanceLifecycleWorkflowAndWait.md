@@ -79,16 +79,6 @@ Use this action when you need immediate confirmation of workflow completion, for
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -602,6 +592,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowandwait)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activateandwait?view=graph-rest-beta)
+
 
 
 

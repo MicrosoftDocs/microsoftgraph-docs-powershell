@@ -60,16 +60,6 @@ This action accepts recommendations for the decisions in a specific stage only, 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -543,6 +533,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewdefinitioninstancestagerecommendation)
 - [](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta)
+
 
 
 

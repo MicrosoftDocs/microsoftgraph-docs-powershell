@@ -60,16 +60,6 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -543,6 +533,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewunifieddefinitioninstancestage)
 - [](https://learn.microsoft.com/graph/api/accessreviewstage-stop?view=graph-rest-beta)
+
 
 
 

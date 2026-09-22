@@ -55,16 +55,6 @@ In Microsoft Entra Entitlement Management, cancel accessPackageAssignmentRequest
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId
@@ -496,6 +486,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaentitlementmanagementassignmentrequest)
 - [](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-cancel?view=graph-rest-beta)
+
 
 
 

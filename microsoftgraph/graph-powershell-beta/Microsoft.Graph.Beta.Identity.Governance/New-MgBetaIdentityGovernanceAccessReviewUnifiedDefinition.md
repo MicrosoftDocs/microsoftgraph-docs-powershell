@@ -66,16 +66,6 @@ The catalog is identified in the resourceScopes collection of the principalResou
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalNotificationRecipients
@@ -1607,6 +1597,7 @@ Required.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewunifieddefinition)
 - [](https://learn.microsoft.com/graph/api/unifiedroot-post-definitions?view=graph-rest-beta)
+
 
 
 

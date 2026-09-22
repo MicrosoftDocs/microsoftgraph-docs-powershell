@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 Enables reviewers to set the applyResult and applyDescription on all accessReviewInstanceDecisionItem objects in a specific accessReviewInstance in batches by using customDataProvidedResourceId.
 NOTE: The access review instance must be in an Applying state.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -671,6 +661,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstanceapplycustomdataprovidedresourcedecision)
 - [](https://learn.microsoft.com/graph/api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions?view=graph-rest-beta)
+
 
 
 

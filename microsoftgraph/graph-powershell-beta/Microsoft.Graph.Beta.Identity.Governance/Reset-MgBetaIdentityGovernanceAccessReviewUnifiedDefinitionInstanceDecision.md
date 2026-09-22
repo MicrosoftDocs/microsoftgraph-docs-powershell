@@ -75,16 +75,6 @@ Resets decisions of all accessReviewInstanceDecisionItem objects on an accessRev
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -576,6 +566,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaidentitygovernanceaccessreviewunifieddefinitioninstancedecision)
 - [](https://learn.microsoft.com/graph/api/accessreviewinstance-resetdecisions?view=graph-rest-beta)
+
 
 
 

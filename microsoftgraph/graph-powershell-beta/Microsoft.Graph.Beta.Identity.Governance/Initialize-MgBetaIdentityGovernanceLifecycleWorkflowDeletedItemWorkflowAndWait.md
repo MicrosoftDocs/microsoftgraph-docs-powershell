@@ -71,16 +71,6 @@ Activate a lifecycle workflow for a specified subject and synchronously wait for
 This action returns an awaitedWorkflowProcessingResult with the execution outcome.
 Use this action when you need immediate confirmation of workflow completion, for example when provisioning a non-user subject.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -594,6 +584,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowandwait)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activateandwait?view=graph-rest-beta)
+
 
 
 

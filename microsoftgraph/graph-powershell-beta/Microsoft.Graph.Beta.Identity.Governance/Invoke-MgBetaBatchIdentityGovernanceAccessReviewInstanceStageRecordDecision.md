@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 Record decisions in bulk for all accessReviewInstanceDecisionItem objects within a single accessReviewStage of a multi-stage accessReviewInstance, by using principalId, resourceId, or neither.
 This action records decisions for a specific stage only, unlike accessReviewInstance: batchRecordDecisions, which operates across the entire instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -726,6 +716,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstancestagerecorddecision)
 - [](https://learn.microsoft.com/graph/api/accessreviewstage-batchrecorddecisions?view=graph-rest-beta)
+
 
 
 

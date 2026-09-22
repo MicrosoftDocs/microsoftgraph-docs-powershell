@@ -56,16 +56,6 @@ Returns all accessReviewInstance objects on a given accessReviewScheduleDefiniti
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -625,6 +615,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewunifieddefinitioninstancebycurrentuser)
 - [](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta)
+
 
 
 

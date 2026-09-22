@@ -57,8 +57,9 @@ Creates a new externalOriginResourceConnector object.
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -80,6 +81,10 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementExternalOriginResourceConnector -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEntitlementManagementExternalOriginResourceConnector Cmdlet.
+
 
 ## PARAMETERS
 

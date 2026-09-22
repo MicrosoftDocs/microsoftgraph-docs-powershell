@@ -66,12 +66,17 @@ Represents the connectors used to communicate with external resource systems.
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementExternalOriginResourceConnector
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementExternalOriginResourceConnector Cmdlet.
+
 
 ## PARAMETERS
 
