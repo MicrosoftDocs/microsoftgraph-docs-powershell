@@ -57,18 +57,28 @@ Delete a browserSharedCookie from a browserSiteList.
 | Application | BrowserSiteLists.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Delete a shared cookie that was not previously published
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
+
+```
+This example will delete a shared cookie that was not previously published
+
+### Example 2: Delete a shared cookie that was previously published
+
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
 
-### EXAMPLE 2
+```
+This example will delete a shared cookie that was previously published
 
-Import-Module Microsoft.Graph.DeviceManagement
-
-Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId $browserSiteListId -BrowserSharedCookieId $browserSharedCookieId
 
 ## PARAMETERS
 
