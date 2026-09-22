@@ -412,8 +412,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark)
-- [](https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0)
+- [Remove-MgSearchBookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0)
 
 
 

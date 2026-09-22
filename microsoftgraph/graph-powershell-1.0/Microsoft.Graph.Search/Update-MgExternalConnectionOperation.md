@@ -591,7 +591,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation)
+- [Update-MgExternalConnectionOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation)
 
 
 
