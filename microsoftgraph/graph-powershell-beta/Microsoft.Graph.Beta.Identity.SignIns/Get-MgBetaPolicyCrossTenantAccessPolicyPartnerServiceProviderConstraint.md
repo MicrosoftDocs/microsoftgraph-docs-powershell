@@ -1,43 +1,40 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartnerserviceproviderconstraint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef
+title: Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
 ---
 
-# Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef
+# Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
 
 ## SYNOPSIS
 
-Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-1.0)
+Get serviceProviderConstraints from policies
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 
 ```
-Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef -DirectoryObjectId <string>
- -FeatureRolloutPolicyId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
+ -CrossTenantAccessPolicyConfigurationPartnerTenantId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 
 ```
-Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef
- -InputObject <IIdentitySignInsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
+ -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <string[]>] [-Property <string[]>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,28 +44,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.HybridAuthentication, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+Get serviceProviderConstraints from policies
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+{{ Add code here }}
 
-Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
+### EXAMPLE 2
 
-```
-This example shows how to use the Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -93,62 +79,41 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -CrossTenantAccessPolicyConfigurationPartnerTenantId
 
-Prompts you for confirmation before running the cmdlet.
+The unique identifier of crossTenantAccessPolicyConfigurationPartner
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ExpandProperty
+
+Expand related entities
+
+```yaml
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- cf
+- Expand
 ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -FeatureRolloutPolicyId
-
-The unique identifier of featureRolloutPolicy
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -220,27 +185,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -252,7 +196,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -263,15 +207,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -Property
 
-Returns true when the command succeeds
+Select properties to be returned
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.String[]
+DefaultValue: ''
 SupportsWildcards: false
-Aliases: []
+Aliases:
+- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -369,28 +314,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WhatIf
-
-Runs the command in a mode that only reports what would happen without performing the actions.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- wi
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -410,7 +333,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceProviderConstraints
 
 {{ Fill in the Description }}
 
@@ -421,7 +344,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -487,6 +410,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -522,27 +446,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete-appliesto?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartnerserviceproviderconstraint)

@@ -1,42 +1,63 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditemcrosstenantpartnerserviceproviderconstraint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef
+title: Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint
 ---
 
-# Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef
+# Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint
 
 ## SYNOPSIS
 
-Delete ref of navigation property userFlowIdentityProviders for identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef?view=graph-powershell-1.0)
+Update the navigation property serviceProviderConstraints in policies
 
 ## SYNTAX
 
-### Delete (Default)
+### UpdateExpanded (Default)
 
 ```
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <string>
- -IdentityProviderBaseId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint
+ -CrossTenantAccessPolicyConfigurationPartnerTenantId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Update
+
+```
+Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint
+ -CrossTenantAccessPolicyConfigurationPartnerTenantId <string>
+ -BodyParameter <IMicrosoftGraphServiceProviderConstraints> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentityExpanded
+
+```
+Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint
+ -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-Id <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentity
+
+```
+Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint
+ -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphServiceProviderConstraints>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### DeleteViaIdentity
-
-```
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,24 +67,68 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete ref of navigation property userFlowIdentityProviders for identity
+Update the navigation property serviceProviderConstraints in policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
-### -B2XIdentityUserFlowId
+### -AdditionalProperties
 
-The unique identifier of b2xIdentityUserFlow
+Additional Parameters
 
 ```yaml
-Type: System.String
+Type: System.Collections.Hashtable
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+serviceProviderConstraints
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceProviderConstraints
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -104,6 +169,60 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CrossTenantAccessPolicyConfigurationPartnerTenantId
+
+The unique identifier of crossTenantAccessPolicyConfigurationPartner
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DeletedDateTime
+
+Shows the last date and time the policy was deleted.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -177,9 +296,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IdentityProviderBaseId
+### -Id
 
-The unique identifier of identityProviderBase
+.
 
 ```yaml
 Type: System.String
@@ -187,28 +306,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: UpdateViaIdentityExpanded
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -230,31 +334,16 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentity
   Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -382,13 +471,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceProviderConstraints
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceProviderConstraints
 
 {{ Fill in the Description }}
 
@@ -399,7 +492,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphServiceProviderConstraints>: serviceProviderConstraints
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
+  [Id <String>]: 
+
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -465,6 +563,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -500,27 +599,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditemcrosstenantpartnerserviceproviderconstraint)

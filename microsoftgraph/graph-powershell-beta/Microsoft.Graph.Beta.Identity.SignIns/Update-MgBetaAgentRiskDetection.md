@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAgentRiskDetection
 ---
@@ -77,6 +77,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property agentRiskDetections in identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -167,6 +177,9 @@ HelpMessage: ''
 ### -AgentDisplayName
 
 Name of the agent.
+Deprecated.
+Use displayName instead.
+This property will be removed after 2027-04-28.
 Supports $filter (eq, startsWith).
 
 ```yaml
@@ -195,7 +208,9 @@ HelpMessage: ''
 ### -AgentId
 
 The unique identifier for the agent.
-This is equivalent to 'id' to the specific agent type.
+Deprecated.
+Use identityId instead.
+This property will be removed after 2027-04-28.
 See riskyAgentIdentity, riskyAgentIdentityBlueprintPrincipal, and riskyAgentUser.
 Supports $filter (eq, startsWith).
 
@@ -328,7 +343,7 @@ HelpMessage: ''
 
 ### -ClientSessionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -434,7 +449,8 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+Human-readable name of the identity associated with this risk detection.
+Supports $filter (eq, startsWith).
 
 ```yaml
 Type: System.String
@@ -552,7 +568,8 @@ HelpMessage: ''
 
 ### -IdentityId
 
-
+Unique identifier of the identity associated with this risk detection.
+Supports $filter (eq, startsWith).
 
 ```yaml
 Type: System.String
@@ -884,7 +901,7 @@ HelpMessage: ''
 
 ### -SignInClientDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -911,7 +928,7 @@ HelpMessage: ''
 
 ### -SignInCorrelationId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -938,7 +955,7 @@ HelpMessage: ''
 
 ### -SignInRequestId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1047,7 +1064,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgentRiskDetection>`: agentRiskDetection
+BODYPARAMETER <IMicrosoftGraphAgentRiskDetection>: agentRiskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1057,9 +1074,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [AdditionalInfo <String>]: Additional information associated with the risk detection.
   [AgentDisplayName <String>]: Name of the agent.
+Deprecated.
+Use displayName instead.
+This property will be removed after 2027-04-28.
  Supports $filter (eq, startsWith).
   [AgentId <String>]: The unique identifier for the agent.
-This is equivalent to 'id' to the specific agent type.
+Deprecated.
+Use identityId instead.
+This property will be removed after 2027-04-28.
 See riskyAgentIdentity, riskyAgentIdentityBlueprintPrincipal, and riskyAgentUser.
  Supports $filter (eq, startsWith).
   [BlueprintId <String>]: The identifier of the blueprint associated with the agent.
@@ -1070,8 +1092,10 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [DetectionTimingType <String>]: riskDetectionTimingType
-  [DisplayName <String>]: 
-  [IdentityId <String>]: 
+  [DisplayName <String>]: Human-readable name of the identity associated with this risk detection.
+ Supports $filter (eq, startsWith).
+  [IdentityId <String>]: Unique identifier of the identity associated with this risk detection.
+ Supports $filter (eq, startsWith).
   [IdentityType <String>]: agentIdentityType
   [LastModifiedDateTime <DateTime?>]: Date and time that the risk detection was last updated.
  Supports $filter (eq, le, and ge).
@@ -1088,7 +1112,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Source <String>]: The source system that generated the risk detection.
 Nullable.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -1154,6 +1178,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -1189,27 +1214,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaAgentRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaagentriskdetection)
