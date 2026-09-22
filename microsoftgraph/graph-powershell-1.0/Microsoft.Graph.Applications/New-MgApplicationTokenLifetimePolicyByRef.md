@@ -16,6 +16,9 @@ title: New-MgApplicationTokenLifetimePolicyByRef
 Assign a tokenLifetimePolicy to an application.
 You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

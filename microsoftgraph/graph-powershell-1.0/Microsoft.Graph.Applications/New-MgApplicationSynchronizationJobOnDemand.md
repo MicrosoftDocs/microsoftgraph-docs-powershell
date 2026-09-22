@@ -16,6 +16,9 @@ title: New-MgApplicationSynchronizationJobOnDemand
 Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobOnDemand?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ProvisionExpanded (Default)

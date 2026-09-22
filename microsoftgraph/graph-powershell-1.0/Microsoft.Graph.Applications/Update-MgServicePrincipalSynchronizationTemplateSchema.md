@@ -15,6 +15,9 @@ title: Update-MgServicePrincipalSynchronizationTemplateSchema
 
 Update the navigation property schema in servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
