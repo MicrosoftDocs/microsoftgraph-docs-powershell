@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityRule
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaSecurityRule
 
 ## SYNOPSIS
 
-Get rules from security
+Container for the security rules configured in Microsoft Defender XDR, including custom detection rules.
 
 ## SYNTAX
 
@@ -33,7 +33,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get rules from security
+Container for the security rules configured in Microsoft Defender XDR, including custom detection rules.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -273,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityrule)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityrule)

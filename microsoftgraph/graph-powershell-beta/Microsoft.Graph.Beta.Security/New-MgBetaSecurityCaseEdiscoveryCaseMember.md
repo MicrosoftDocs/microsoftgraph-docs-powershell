@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCaseEdiscoveryCaseMember
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSecurityCaseEdiscoveryCaseMember
 
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseMember](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,18 +68,9 @@ This cmdlet has the following aliases,
 Add an ediscoveryCaseMember to an ediscoveryCase.
 The ediscoveryCaseMember can be one of two types: a user or a role group.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Add a case member of type **user** using **smtpAddress**
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -93,12 +81,7 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-```
-This example will add a case member of type **user** using **smtpaddress**
-
-### Example 2: Add a case member of type **roleGroup** using **displayName**
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -109,12 +92,7 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-```
-This example will add a case member of type **rolegroup** using **displayname**
-
-### Example 3: Add a case member of type **user** using **ID*
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -125,12 +103,7 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-```
-This example will add a case member of type **user** using **id*
-
-### Example 4: Add a case member of type **roleGroup** using **ID**
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -140,10 +113,6 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseMember -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
-```
-This example will add a case member of type **rolegroup** using **id**
-
 
 ## PARAMETERS
 
@@ -615,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryCaseMember>`: ediscoveryCaseMember
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryCaseMember>: ediscoveryCaseMember
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -625,22 +594,28 @@ Allowed only for case members of type roleGroup.
   [SmtpAddress <String>]: The smtp address of the eDiscovery case member.
 Allowed only for case members of type user.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+  [ActivityId <String>]: The unique identifier of activity
+  [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
+  [AttachmentId <String>]: The unique identifier of attachment
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
   [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
   [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
+  [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
+  [CaseTypeConfigurationId <String>]: The unique identifier of caseTypeConfiguration
   [CategoryTemplateId <String>]: The unique identifier of categoryTemplate
   [CitationTemplateId <String>]: The unique identifier of citationTemplate
   [CloudAppDiscoveryReportId <String>]: The unique identifier of cloudAppDiscoveryReport
   [CloudAppSecurityProfileId <String>]: The unique identifier of cloudAppSecurityProfile
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
+  [CustomFieldDefinitionId <String>]: The unique identifier of customFieldDefinition
   [CustomerInsightTenantId <String>]: The unique identifier of customerInsight
   [DataSourceId <String>]: The unique identifier of dataSource
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
@@ -662,6 +637,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [EmailThreatSubmissionPolicyId <String>]: The unique identifier of emailThreatSubmissionPolicy
   [EndUserNotificationDetailId <String>]: The unique identifier of endUserNotificationDetail
   [EndUserNotificationId <String>]: The unique identifier of endUserNotification
+  [EnvironmentId <String>]: The unique identifier of environment
+  [EvaluationId <String>]: The unique identifier of evaluation
   [FilePlanReferenceTemplateId <String>]: The unique identifier of filePlanReferenceTemplate
   [FileSecurityProfileId <String>]: The unique identifier of fileSecurityProfile
   [FileThreatSubmissionId <String>]: The unique identifier of fileThreatSubmission
@@ -688,8 +665,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [PartnerSecurityAlertId <String>]: The unique identifier of partnerSecurityAlert
   [PassiveDnsRecordId <String>]: The unique identifier of passiveDnsRecord
   [PayloadId <String>]: The unique identifier of payload
+  [PluginName <String>]: The unique identifier of plugin
   [PolicyFileId <String>]: The unique identifier of policyFile
+  [PromptId <String>]: The unique identifier of prompt
   [ProviderTenantSettingId <String>]: The unique identifier of providerTenantSetting
+  [Query <String>]: Usage: query='{query}'
+  [RelationId <String>]: The unique identifier of relation
   [RetentionEventId <String>]: The unique identifier of retentionEvent
   [RetentionEventTypeId <String>]: The unique identifier of retentionEventType
   [RetentionLabelId <String>]: The unique identifier of retentionLabel
@@ -700,15 +681,20 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecurityScoreHistoryId <String>]: The unique identifier of securityScoreHistory
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
+  [SensorMigrationId <String>]: The unique identifier of sensorMigration
+  [SessionId <String>]: The unique identifier of session
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
   [SimulationId <String>]: The unique identifier of simulation
   [SiteSourceId <String>]: The unique identifier of siteSource
   [SslCertificateId <String>]: The unique identifier of sslCertificate
+  [StatusDefinitionId <String>]: The unique identifier of statusDefinition
   [SubcategoryTemplateId <String>]: The unique identifier of subcategoryTemplate
   [SubdomainId <String>]: The unique identifier of subdomain
   [SubjectRightsRequestId <String>]: The unique identifier of subjectRightsRequest
+  [TaskId <String>]: The unique identifier of task
   [TiIndicatorId <String>]: The unique identifier of tiIndicator
   [TrainingCampaignId <String>]: The unique identifier of trainingCampaign
   [TrainingId <String>]: The unique identifier of training
@@ -723,31 +709,11 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [VulnerabilityId <String>]: The unique identifier of vulnerability
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
+  [WorkspaceId <String>]: The unique identifier of workspace
+  [ZoneId <String>]: The unique identifier of zone
 
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityCaseEdiscoveryCaseMember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasemember)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverycasemember-post?view=graph-rest-beta)

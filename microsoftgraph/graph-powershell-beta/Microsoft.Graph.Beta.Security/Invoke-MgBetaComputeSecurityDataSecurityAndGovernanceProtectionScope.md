@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernanceprotectionscope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope
 
 Invoke action compute
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgComputeSecurityDataSecurityAndGovernanceProtectionScope](/powershell/module/Microsoft.Graph.Security/Invoke-MgComputeSecurityDataSecurityAndGovernanceProtectionScope?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### ComputeExpanded (Default)
@@ -26,6 +23,7 @@ Invoke action compute
 Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope
  [-ResponseHeadersVariable <string>] [-Activities <string>] [-AdditionalProperties <hashtable>]
  [-DeviceMetadata <IMicrosoftGraphDeviceMetadata>]
+ [-EvaluationScope <IMicrosoftGraphEvaluationScope>]
  [-IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]
  [-Locations <IMicrosoftGraphPolicyLocation[]>] [-PivotOn <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -52,13 +50,15 @@ This cmdlet has the following aliases,
 
 Invoke action compute
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ProtectionScopes.Compute.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ProtectionScopes.Compute.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -106,7 +106,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -176,6 +176,28 @@ To construct, see NOTES section for DEVICEMETADATA properties and create a hash 
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceMetadata
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ComputeExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -EvaluationScope
+
+evaluationScope
+To construct, see NOTES section for EVALUATIONSCOPE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluationScope
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -278,7 +300,7 @@ HelpMessage: ''
 
 ### -Locations
 
-
+.
 To construct, see NOTES section for LOCATIONS properties and create a hash table.
 
 ```yaml
@@ -456,7 +478,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1Bik371SecurityDatasecurityandgovernanceProtectionscopesMicrosoftGraphComputePostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1Bik371SecurityDatasecurityandgovernanceProtectionscopesMicrosoftGraphComputePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Activities <String>]: userActivityTypes
   [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
@@ -468,6 +490,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
       [(Any) <Object>]: This indicates any property can be added to this object.
       [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
       [OperatingSystemVersion <String>]: The version string of the operating system.
+  [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Type <String>]: evaluationScopeType
   [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Name <String>]: The name of the integrated application.
@@ -476,7 +501,7 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
     [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
   [PivotOn <String>]: policyPivotProperty
 
-DEVICEMETADATA `<IMicrosoftGraphDeviceMetadata>`: deviceMetadata
+DEVICEMETADATA <IMicrosoftGraphDeviceMetadata>: deviceMetadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceType <String>]: Optional.
 The general type of the device (for example, 'Managed', 'Unmanaged').
@@ -486,7 +511,11 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
     [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
     [OperatingSystemVersion <String>]: The version string of the operating system.
 
-INTEGRATEDAPPMETADATA `<IMicrosoftGraphIntegratedApplicationMetadata>`: integratedApplicationMetadata
+EVALUATIONSCOPE <IMicrosoftGraphEvaluationScope>: evaluationScope
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Type <String>]: evaluationScopeType
+
+INTEGRATEDAPPMETADATA <IMicrosoftGraphIntegratedApplicationMetadata>: integratedApplicationMetadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: The name of the integrated application.
   [Version <String>]: The version number of the integrated application.
@@ -497,27 +526,4 @@ LOCATIONS <IMicrosoftGraphPolicyLocation[]>: .
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernanceprotectionscope)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernanceprotectionscope)
