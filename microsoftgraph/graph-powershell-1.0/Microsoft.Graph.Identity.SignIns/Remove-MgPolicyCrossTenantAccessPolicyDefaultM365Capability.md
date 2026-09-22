@@ -1,43 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicydefaultm365capability
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
+title: Remove-MgPolicyCrossTenantAccessPolicyDefaultM365Capability
 ---
 
-# Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
+# Remove-MgPolicyCrossTenantAccessPolicyDefaultM365Capability
 
 ## SYNOPSIS
 
-Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-beta)
+Delete navigation property m365Capabilities for policies
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -DirectoryObjectId <string>
- -FeatureRolloutPolicyId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgPolicyCrossTenantAccessPolicyDefaultM365Capability -M365CapabilityBaseName <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DeleteViaIdentity
 
 ```
-Remove-MgPolicyFeatureRolloutPolicyApplyToByRef
- -InputObject <IIdentitySignInsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgPolicyCrossTenantAccessPolicyDefaultM365Capability -InputObject <IIdentitySignInsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,28 +42,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.HybridAuthentication, Directory.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Not supported |
+Delete navigation property m365Capabilities for policies
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Identity.SignIns
+{{ Add code here }}
 
-Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
+### EXAMPLE 2
 
-```
-This example shows how to use the Remove-MgPolicyFeatureRolloutPolicyApplyToByRef Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,48 +91,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -DirectoryObjectId
-
-The unique identifier of directoryObject
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -FeatureRolloutPolicyId
-
-The unique identifier of featureRolloutPolicy
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -256,6 +198,27 @@ ParameterSets:
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -M365CapabilityBaseName
+
+The unique identifier of m365CapabilityBase
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -421,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -455,6 +418,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [IdentityUserFlowAttributeAssignmentId <String>]: The unique identifier of identityUserFlowAttributeAssignment
   [IdentityUserFlowAttributeId <String>]: The unique identifier of identityUserFlowAttribute
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
@@ -491,27 +455,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete-appliesto?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicydefaultm365capability)
