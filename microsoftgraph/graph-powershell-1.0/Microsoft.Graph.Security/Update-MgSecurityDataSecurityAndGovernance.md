@@ -330,7 +330,7 @@ HelpMessage: ''
 
 ### -SensitivityLabels
 
-.
+
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
