@@ -41,16 +41,6 @@ The returned schema reflects the user's effective permissions.
 Each user within a tenant may have a different effective schema depending on their role and access level.
 Common use cases include:
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -246,6 +236,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityhuntingschema)
+
 
 
 
