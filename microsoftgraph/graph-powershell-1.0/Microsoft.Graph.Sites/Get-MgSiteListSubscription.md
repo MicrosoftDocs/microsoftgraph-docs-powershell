@@ -15,6 +15,9 @@ title: Get-MgSiteListSubscription
 
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

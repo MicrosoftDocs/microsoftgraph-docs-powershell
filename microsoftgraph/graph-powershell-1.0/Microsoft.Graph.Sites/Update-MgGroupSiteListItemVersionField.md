@@ -15,6 +15,9 @@ title: Update-MgGroupSiteListItemVersionField
 
 Update the navigation property fields in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

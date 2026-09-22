@@ -15,6 +15,9 @@ title: Get-MgSiteTermStoreSet
 
 Read the properties and relationships of a set object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
