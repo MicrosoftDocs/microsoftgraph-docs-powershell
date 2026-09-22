@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminReportSetting
 ---
@@ -15,19 +15,16 @@ title: Update-MgBetaAdminReportSetting
 
 Update tenant-level settings for Microsoft 365 reports.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Update-MgAdminReportSetting?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 
 ```
 Update-MgBetaAdminReportSetting [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-DisplayConcealedNames] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <hashtable>] [-DisplayConcealedNames] [-Id <string>]
+ [-SharePoint <IMicrosoftGraphSharePointReportSettings>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -48,18 +45,9 @@ This cmdlet has the following aliases,
 
 Update tenant-level settings for Microsoft 365 reports.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ReportSettings.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ReportSettings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
@@ -68,10 +56,6 @@ $params = @{
 }
 
 Update-MgBetaAdminReportSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaAdminReportSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -355,6 +339,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SharePoint
+
+sharePointReportSettings
+To construct, see NOTES section for SHAREPOINT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointReportSettings
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -407,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdminReportSettings>`: adminReportSettings
+BODYPARAMETER <IMicrosoftGraphAdminReportSettings>: adminReportSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -415,31 +421,26 @@ Read-only.
 If false, all reports show identifiable information.
 This property represents a setting in the Microsoft 365 admin center.
 Required.
+  [SharePoint <IMicrosoftGraphSharePointReportSettings>]: sharePointReportSettings
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ApiUsageReportMetrics <IMicrosoftGraphApiUsageReportEnablementStatus[]>]: The collection of API usage report metrics and the status of their enablement.
+      [Metric <String>]: The name of the API usage report metric.
+The supported values are: egressReport, throttlingReport.
+      [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
+
+SHAREPOINT <IMicrosoftGraphSharePointReportSettings>: sharePointReportSettings
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ApiUsageReportMetrics <IMicrosoftGraphApiUsageReportEnablementStatus[]>]: The collection of API usage report metrics and the status of their enablement.
+    [Metric <String>]: The name of the API usage report metric.
+The supported values are: egressReport, throttlingReport.
+    [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaAdminReportSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
+- [](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-beta)

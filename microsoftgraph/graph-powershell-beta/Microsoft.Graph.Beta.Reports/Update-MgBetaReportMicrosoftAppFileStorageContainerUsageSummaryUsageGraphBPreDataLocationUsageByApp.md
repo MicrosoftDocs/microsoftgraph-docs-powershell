@@ -1,43 +1,65 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagegraphbpredatalocationusagebyapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
+title: Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp
 ---
 
-# Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
+# Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp
 
 ## SYNOPSIS
 
-Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed.
-Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
+Update the navigation property usageByApp in reports
 
 ## SYNTAX
 
-### Get (Default)
+### UpdateExpanded (Default)
 
 ```
-Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
- -ExclusiveIntervalEndDateTime <datetime> -InclusiveIntervalStartDateTime <datetime>
- [-AggregationIntervalInMinutes <int>] [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>]
- [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
-```
-
-### GetViaIdentity
-
-```
-Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
- -InputObject <IReportsIdentity> [-AggregationIntervalInMinutes <int>] [-Count] [-Filter <string>]
- [-Search <string>] [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
+Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp
+ -MicrosoftAppsFileStorageContainerAppUsageAppId <string>
+ -MicrosoftAppsFileStorageContainerGeoUsageDataLocationCode <string>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Update
+
+```
+Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp
+ -MicrosoftAppsFileStorageContainerAppUsageAppId <string>
+ -MicrosoftAppsFileStorageContainerGeoUsageDataLocationCode <string>
+ -BodyParameter <IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentityExpanded
+
+```
+Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp
+ -InputObject <IReportsIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentity
+
+```
+Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp
+ -InputObject <IReportsIdentity>
+ -BodyParameter <IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,38 +69,68 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed.
-Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
+Update the navigation property usageByApp in reports
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.Reports
+{{ Add code here }}
 
-Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
+### EXAMPLE 2
 
-```
-This example shows how to use the Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
 
-### -AggregationIntervalInMinutes
+### -AdditionalProperties
 
-Usage: aggregationIntervalInMinutes=@aggregationIntervalInMinutes
+Additional Parameters
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
+Type: System.Collections.Hashtable
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+microsoftAppsFileStorageContainerAppUsage
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -107,57 +159,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Count
+### -Confirm
 
-Include count of items
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ExclusiveIntervalEndDateTime
-
-Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
-
-```yaml
-Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Filter
-
-Filter items by property values
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
+Aliases:
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -233,27 +244,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -InclusiveIntervalStartDateTime
-
-Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
-
-```yaml
-Type: System.DateTime
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -265,10 +255,70 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: GetViaIdentity
+- Name: UpdateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -MicrosoftAppsFileStorageContainerAppUsageAppId
+
+The unique identifier of microsoftAppsFileStorageContainerAppUsage
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -MicrosoftAppsFileStorageContainerGeoUsageDataLocationCode
+
+The unique identifier of microsoftAppsFileStorageContainerGeoUsage
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -361,58 +411,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
+### -WhatIf
 
-Search items by search phrases
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: System.String
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Skip
-
-Skip the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
 Aliases:
-- Limit
+- wi
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -434,6 +442,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage
+
+{{ Fill in the Description }}
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 
 {{ Fill in the Description }}
@@ -444,7 +456,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceActivityValueMetric
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage
 
 {{ Fill in the Description }}
 
@@ -455,13 +467,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+BODYPARAMETER <IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage>: microsoftAppsFileStorageContainerAppUsage
+  [(Any) <Object>]: This indicates any property can be added to this object.
+
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
+  [AggregationWindow <String>]: Usage: aggregationWindow='{aggregationWindow}'
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
+  [ApiUsageReportEnablementStatusMetric <String>]: The unique identifier of apiUsageReportEnablementStatus
   [AppCredentialSignInActivityId <String>]: The unique identifier of appCredentialSignInActivity
+  [AppId <String>]: Usage: appId='{appId}'
   [ApplicationSignInDetailedSummaryId <String>]: The unique identifier of applicationSignInDetailedSummary
+  [AuditActivityTypeId <String>]: The unique identifier of auditActivityType
   [AuthenticationsMetricId <String>]: The unique identifier of authenticationsMetric
+  [CorrelatedIdentityId <String>]: The unique identifier of correlatedIdentity
   [CredentialUserRegistrationDetailsId <String>]: The unique identifier of credentialUserRegistrationDetails
   [CustomSecurityAttributeAuditId <String>]: The unique identifier of customSecurityAttributeAudit
   [DailyInactiveUsersByApplicationMetricId <String>]: The unique identifier of dailyInactiveUsersByApplicationMetric
@@ -473,7 +493,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExclusiveIntervalEndDateTime <DateTime?>]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   [Filter <String>]: Usage: filter='{filter}'
+  [GroupAnalyticsId <String>]: The unique identifier of groupAnalytics
   [GroupId <String>]: Usage: groupId='{groupId}'
+  [IdentityCorrelationId <String>]: The unique identifier of identityCorrelation
   [IncludedUserRoles <String>]: Usage: includedUserRoles='{includedUserRoles}'
   [IncludedUserTypes <String>]: Usage: includedUserTypes='{includedUserTypes}'
   [InclusiveIntervalStartDateTime <DateTime?>]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
@@ -482,6 +504,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [MfaCompletionMetricId <String>]: The unique identifier of mfaCompletionMetric
   [MfaTelecomFraudMetricId <String>]: The unique identifier of mfaTelecomFraudMetric
   [MfaUserCountMetricId <String>]: The unique identifier of mfaUserCountMetric
+  [MicrosoftAppsFileStorageContainerAppUsageAppId <String>]: The unique identifier of microsoftAppsFileStorageContainerAppUsage
+  [MicrosoftAppsFileStorageContainerGeoUsageDataLocationCode <String>]: The unique identifier of microsoftAppsFileStorageContainerGeoUsage
   [MonthlyInactiveUsersByApplicationMetricId <String>]: The unique identifier of monthlyInactiveUsersByApplicationMetric
   [MonthlyInactiveUsersMetricId <String>]: The unique identifier of monthlyInactiveUsersMetric
   [OperationId <String>]: The unique identifier of operation
@@ -493,6 +517,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [ProvisioningObjectSummaryId <String>]: The unique identifier of provisioningObjectSummary
   [SelfServiceSignUpId <String>]: The unique identifier of selfServiceSignUp
   [ServicePrincipalSignInActivityId <String>]: The unique identifier of servicePrincipalSignInActivity
+  [SignInEventsActivityId <String>]: The unique identifier of signInEventsActivity
+  [SignInEventsAppActivityAppId <String>]: The unique identifier of signInEventsAppActivity
   [SignInId <String>]: The unique identifier of signIn
   [Skip <Int32?>]: Usage: skip={skip}
   [SkipToken <String>]: Usage: skipToken='{skipToken}'
@@ -511,27 +537,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagegraphbpredatalocationusagebyapp)

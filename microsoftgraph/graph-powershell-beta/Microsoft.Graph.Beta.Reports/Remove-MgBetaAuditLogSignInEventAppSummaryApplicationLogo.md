@@ -1,42 +1,39 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninfailure
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetaauditlogsignineventappsummaryapplicationlogo
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaReportServiceActivityMetricForMfaSignInFailure
+title: Remove-MgBetaAuditLogSignInEventAppSummaryApplicationLogo
 ---
 
-# Get-MgBetaReportServiceActivityMetricForMfaSignInFailure
+# Remove-MgBetaAuditLogSignInEventAppSummaryApplicationLogo
 
 ## SYNOPSIS
 
-Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
-Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
+The main logo for the application.
+Not nullable.
 
 ## SYNTAX
 
-### Get (Default)
+### Delete (Default)
 
 ```
-Get-MgBetaReportServiceActivityMetricForMfaSignInFailure -ExclusiveIntervalEndDateTime <datetime>
- -InclusiveIntervalStartDateTime <datetime> [-AggregationIntervalInMinutes <int>] [-Count]
- [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Remove-MgBetaAuditLogSignInEventAppSummaryApplicationLogo -SignInEventsAppActivityAppId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### GetViaIdentity
+### DeleteViaIdentity
 
 ```
-Get-MgBetaReportServiceActivityMetricForMfaSignInFailure -InputObject <IReportsIdentity>
- [-AggregationIntervalInMinutes <int>] [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>]
- [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Remove-MgBetaAuditLogSignInEventAppSummaryApplicationLogo -InputObject <IReportsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,44 +43,20 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
-Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
+The main logo for the application.
+Not nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Beta.Reports
+{{ Add code here }}
 
-Get-MgBetaReportServiceActivityMetricForMfaSignInFailure
+### EXAMPLE 2
 
-```
-This example shows how to use the Get-MgBetaReportServiceActivityMetricForMfaSignInFailure Cmdlet.
-
+{{ Add code here }}
 
 ## PARAMETERS
-
-### -AggregationIntervalInMinutes
-
-Usage: aggregationIntervalInMinutes=@aggregationIntervalInMinutes
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -106,57 +79,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Count
+### -Confirm
 
-Include count of items
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ExclusiveIntervalEndDateTime
-
-Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
-
-```yaml
-Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Filter
-
-Filter items by property values
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
+Aliases:
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -232,19 +164,19 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -InclusiveIntervalStartDateTime
+### -IfMatch
 
-Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
+ETag
 
 ```yaml
-Type: System.DateTime
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: (All)
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -264,10 +196,31 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: GetViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -360,9 +313,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
+### -SignInEventsAppActivityAppId
 
-Search items by search phrases
+The unique identifier of signInEventsAppActivity
 
 ```yaml
 Type: System.String
@@ -370,9 +323,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: Delete
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -381,37 +334,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Skip
+### -WhatIf
 
-Skip the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- Limit
+- wi
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -443,7 +375,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceActivityValueMetric
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -454,13 +386,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
+  [AggregationWindow <String>]: Usage: aggregationWindow='{aggregationWindow}'
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
   [AlertId <String>]: The unique identifier of alert
+  [ApiUsageReportEnablementStatusMetric <String>]: The unique identifier of apiUsageReportEnablementStatus
   [AppCredentialSignInActivityId <String>]: The unique identifier of appCredentialSignInActivity
+  [AppId <String>]: Usage: appId='{appId}'
   [ApplicationSignInDetailedSummaryId <String>]: The unique identifier of applicationSignInDetailedSummary
+  [AuditActivityTypeId <String>]: The unique identifier of auditActivityType
   [AuthenticationsMetricId <String>]: The unique identifier of authenticationsMetric
+  [CorrelatedIdentityId <String>]: The unique identifier of correlatedIdentity
   [CredentialUserRegistrationDetailsId <String>]: The unique identifier of credentialUserRegistrationDetails
   [CustomSecurityAttributeAuditId <String>]: The unique identifier of customSecurityAttributeAudit
   [DailyInactiveUsersByApplicationMetricId <String>]: The unique identifier of dailyInactiveUsersByApplicationMetric
@@ -472,7 +409,9 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExclusiveIntervalEndDateTime <DateTime?>]: Usage: exclusiveIntervalEndDateTime={exclusiveIntervalEndDateTime}
   [Filter <String>]: Usage: filter='{filter}'
+  [GroupAnalyticsId <String>]: The unique identifier of groupAnalytics
   [GroupId <String>]: Usage: groupId='{groupId}'
+  [IdentityCorrelationId <String>]: The unique identifier of identityCorrelation
   [IncludedUserRoles <String>]: Usage: includedUserRoles='{includedUserRoles}'
   [IncludedUserTypes <String>]: Usage: includedUserTypes='{includedUserTypes}'
   [InclusiveIntervalStartDateTime <DateTime?>]: Usage: inclusiveIntervalStartDateTime={inclusiveIntervalStartDateTime}
@@ -481,6 +420,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [MfaCompletionMetricId <String>]: The unique identifier of mfaCompletionMetric
   [MfaTelecomFraudMetricId <String>]: The unique identifier of mfaTelecomFraudMetric
   [MfaUserCountMetricId <String>]: The unique identifier of mfaUserCountMetric
+  [MicrosoftAppsFileStorageContainerAppUsageAppId <String>]: The unique identifier of microsoftAppsFileStorageContainerAppUsage
+  [MicrosoftAppsFileStorageContainerGeoUsageDataLocationCode <String>]: The unique identifier of microsoftAppsFileStorageContainerGeoUsage
   [MonthlyInactiveUsersByApplicationMetricId <String>]: The unique identifier of monthlyInactiveUsersByApplicationMetric
   [MonthlyInactiveUsersMetricId <String>]: The unique identifier of monthlyInactiveUsersMetric
   [OperationId <String>]: The unique identifier of operation
@@ -492,6 +433,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   [ProvisioningObjectSummaryId <String>]: The unique identifier of provisioningObjectSummary
   [SelfServiceSignUpId <String>]: The unique identifier of selfServiceSignUp
   [ServicePrincipalSignInActivityId <String>]: The unique identifier of servicePrincipalSignInActivity
+  [SignInEventsActivityId <String>]: The unique identifier of signInEventsActivity
+  [SignInEventsAppActivityAppId <String>]: The unique identifier of signInEventsAppActivity
   [SignInId <String>]: The unique identifier of signIn
   [Skip <Int32?>]: Usage: skip={skip}
   [SkipToken <String>]: Usage: skipToken='{skipToken}'
@@ -510,27 +453,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportServiceActivityMetricForMfaSignInFailure](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninfailure)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsformfasigninfailure?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetaauditlogsignineventappsummaryapplicationlogo)
