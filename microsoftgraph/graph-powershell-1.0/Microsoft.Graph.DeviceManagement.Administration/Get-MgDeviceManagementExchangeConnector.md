@@ -69,12 +69,17 @@ The list of Exchange Connectors configured by the tenant.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementExchangeConnector
+
+```
+This example shows how to use the Get-MgDeviceManagementExchangeConnector Cmdlet.
+
 
 ## PARAMETERS
 

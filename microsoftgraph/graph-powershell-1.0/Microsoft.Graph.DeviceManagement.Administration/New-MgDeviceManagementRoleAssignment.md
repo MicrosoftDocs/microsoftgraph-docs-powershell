@@ -59,8 +59,9 @@ Create new navigation property to roleAssignments for deviceManagement
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -77,6 +78,10 @@ members = @(
 }
 
 New-MgDeviceManagementRoleAssignment -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
