@@ -49,6 +49,14 @@ Update privacy settings to display or return the specified type of insights in a
 Currently, itemInsights is the only supported type of settings.
 To learn more about customizing insights privacy for your organization, see Customize item insights privacy in Microsoft Graph.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PeopleSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PeopleSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
