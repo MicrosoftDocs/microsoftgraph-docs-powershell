@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsite
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgGroupSite
 ---
@@ -14,9 +14,6 @@ title: Add-MgGroupSite
 ## SYNOPSIS
 
 Follow a user's site or multiple sites.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaGroupSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,6 +66,16 @@ This cmdlet has the following aliases,
 
 Follow a user's site or multiple sites.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -374,7 +381,7 @@ HelpMessage: ''
 
 ### -Value
 
-
+.
 To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
@@ -456,7 +463,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZv3WsxGroupsGroupIdSitesMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZv3WsxGroupsGroupIdSitesMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Value <IMicrosoftGraphSite[]>]: 
     [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -1361,7 +1368,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -1467,7 +1474,10 @@ Required.
           [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
           [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-        [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+        [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
           [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
           [Body <IMicrosoftGraphItemBody>]: itemBody
           [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -1761,6 +1771,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                 [Content <IMicrosoftGraphContentBase>]: contentBase
                   [(Any) <Object>]: This indicates any property can be added to this object.
+                [ContentCategory <String>]: contentCategory
                 [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                 [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -2061,7 +2072,9 @@ Read-only.
 The default value is false.
             [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
             [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-            [Permissions <IMicrosoftGraphPermission[]>]: 
+            [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -2948,7 +2961,9 @@ Read-only.
             [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
             [ResourceId <String>]: The unique identifier for the result.
             [Type <String>]: The type of the operation.
-          [Permissions <IMicrosoftGraphPermission[]>]: 
+          [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
           [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
           [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
           [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -3713,6 +3728,7 @@ Nullable.
             [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in all OneNote notebooks that are owned by the user or group.
  Read-only.
 Nullable.
+          [OrganizationId <String>]: 
           [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -4863,6 +4879,13 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+        [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+          [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+          [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
         [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -4889,6 +4912,7 @@ Optional.
         [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
         [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+        [MeetingType <String>]: onlineMeetingType
         [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
         [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
           [(Any) <Object>]: This indicates any property can be added to this object.
@@ -5519,6 +5543,11 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
       [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -5651,8 +5680,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -5764,7 +5793,7 @@ Read-only.
 This relationship can only be used to load a specific term set.
     [TermStores <IMicrosoftGraphTermStore[]>]: The collection of termStores under this site.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -6712,7 +6741,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -6818,7 +6847,10 @@ Required.
         [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
         [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-      [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+      [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
         [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
         [Body <IMicrosoftGraphItemBody>]: itemBody
         [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -7112,6 +7144,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
               [Content <IMicrosoftGraphContentBase>]: contentBase
                 [(Any) <Object>]: This indicates any property can be added to this object.
+              [ContentCategory <String>]: contentCategory
               [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
               [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -7412,7 +7445,9 @@ Read-only.
 The default value is false.
           [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
           [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-          [Permissions <IMicrosoftGraphPermission[]>]: 
+          [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -8299,7 +8334,9 @@ Read-only.
           [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
           [ResourceId <String>]: The unique identifier for the result.
           [Type <String>]: The type of the operation.
-        [Permissions <IMicrosoftGraphPermission[]>]: 
+        [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
         [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
         [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
         [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -9064,6 +9101,7 @@ Nullable.
           [Sections <IMicrosoftGraphOnenoteSection[]>]: The sections in all OneNote notebooks that are owned by the user or group.
  Read-only.
 Nullable.
+        [OrganizationId <String>]: 
         [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -10214,6 +10252,13 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+      [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+        [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+        [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
       [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -10240,6 +10285,7 @@ Optional.
       [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
       [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+      [MeetingType <String>]: onlineMeetingType
       [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
       [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
         [(Any) <Object>]: This indicates any property can be added to this object.
@@ -10870,6 +10916,11 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
     [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -11002,8 +11053,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11118,28 +11169,5 @@ This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
 
-- [Add-MgGroupSite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsite)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mggroupsite)
+- [](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
