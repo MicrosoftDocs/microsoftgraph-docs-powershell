@@ -79,8 +79,9 @@ For a list of roles that can be assigned with administrative unit scope, see Ass
 | Application | RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 New-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

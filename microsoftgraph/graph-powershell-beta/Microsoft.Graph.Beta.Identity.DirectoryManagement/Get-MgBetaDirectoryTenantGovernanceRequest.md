@@ -66,12 +66,17 @@ Read the properties of a governanceRequest object.
 | Application | TenantGovernance-Request.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryTenantGovernanceRequest
+
+```
+This example shows how to use the Get-MgBetaDirectoryTenantGovernanceRequest Cmdlet.
+
 
 ## PARAMETERS
 
