@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 25c074df-3469-4765-b961-c5fd62e5c93f
+Module Guid: eb2cd674-c921-4b6f-b97d-7a888973f1ec
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -114,6 +114,20 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecurityAttackSimulationTrainingLanguageDetail](Get-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
 ### [Get-MgSecurityAttackSimulationTrainingLanguageDetailCount](Get-MgSecurityAttackSimulationTrainingLanguageDetailCount.md)
+
+### [Get-MgSecurityAuditLog](Get-MgSecurityAuditLog.md)
+
+### [Get-MgSecurityAuditLogQuery](Get-MgSecurityAuditLogQuery.md)
+
+### [Get-MgSecurityAuditLogQuery](Get-MgSecurityAuditLogQuery.md)
+
+### [Get-MgSecurityAuditLogQueryCount](Get-MgSecurityAuditLogQueryCount.md)
+
+### [Get-MgSecurityAuditLogQueryRecord](Get-MgSecurityAuditLogQueryRecord.md)
+
+### [Get-MgSecurityAuditLogQueryRecord](Get-MgSecurityAuditLogQueryRecord.md)
+
+### [Get-MgSecurityAuditLogQueryRecordCount](Get-MgSecurityAuditLogQueryRecordCount.md)
 
 ### [Get-MgSecurityCase](Get-MgSecurityCase.md)
 
@@ -232,6 +246,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecurityCaseEdiscoveryCaseTagCount](Get-MgSecurityCaseEdiscoveryCaseTagCount.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
+
+### [Get-MgSecurityCollaboration](Get-MgSecurityCollaboration.md)
+
+### [Get-MgSecurityCollaborationAnalyzedEmail](Get-MgSecurityCollaborationAnalyzedEmail.md)
+
+### [Get-MgSecurityCollaborationAnalyzedEmail](Get-MgSecurityCollaborationAnalyzedEmail.md)
+
+### [Get-MgSecurityCollaborationAnalyzedEmailCount](Get-MgSecurityCollaborationAnalyzedEmailCount.md)
 
 ### [Get-MgSecurityDataSecurityAndGovernance](Get-MgSecurityDataSecurityAndGovernance.md)
 
@@ -671,6 +693,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync.md)
 
+### [Invoke-MgRemediateSecurityCollaborationAnalyzedEmail](Invoke-MgRemediateSecurityCollaborationAnalyzedEmail.md)
+
 ### [Invoke-MgReopenSecurityCaseEdiscoveryCase](Invoke-MgReopenSecurityCaseEdiscoveryCase.md)
 
 ### [Merge-MgSecurityIncident](Merge-MgSecurityIncident.md)
@@ -705,6 +729,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgSecurityAttackSimulationTrainingLanguageDetail](New-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
+### [New-MgSecurityAuditLogQuery](New-MgSecurityAuditLogQuery.md)
+
 ### [New-MgSecurityCaseEdiscoveryCase](New-MgSecurityCaseEdiscoveryCase.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodian](New-MgSecurityCaseEdiscoveryCaseCustodian.md)
@@ -730,6 +756,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseTag](New-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [New-MgSecurityCollaborationAnalyzedEmail](New-MgSecurityCollaborationAnalyzedEmail.md)
 
 ### [New-MgSecurityDataSecurityAndGovernanceSensitivityLabel](New-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
 
@@ -841,6 +869,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSecurityAttackSimulationTrainingLanguageDetail](Remove-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
+### [Remove-MgSecurityAuditLog](Remove-MgSecurityAuditLog.md)
+
+### [Remove-MgSecurityAuditLogQuery](Remove-MgSecurityAuditLogQuery.md)
+
 ### [Remove-MgSecurityCase](Remove-MgSecurityCase.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCase](Remove-MgSecurityCaseEdiscoveryCase.md)
@@ -874,6 +906,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSecurityCaseEdiscoveryCaseSetting](Remove-MgSecurityCaseEdiscoveryCaseSetting.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseTag](Remove-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [Remove-MgSecurityCollaboration](Remove-MgSecurityCollaboration.md)
+
+### [Remove-MgSecurityCollaborationAnalyzedEmail](Remove-MgSecurityCollaborationAnalyzedEmail.md)
 
 ### [Remove-MgSecurityDataSecurityAndGovernance](Remove-MgSecurityDataSecurityAndGovernance.md)
 
@@ -1011,6 +1047,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSecurityAttackSimulationTrainingLanguageDetail](Update-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
+### [Update-MgSecurityAuditLog](Update-MgSecurityAuditLog.md)
+
 ### [Update-MgSecurityCase](Update-MgSecurityCase.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCase](Update-MgSecurityCaseEdiscoveryCase.md)
@@ -1044,6 +1082,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityCaseEdiscoveryCaseSetting](Update-MgSecurityCaseEdiscoveryCaseSetting.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCaseTag](Update-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [Update-MgSecurityCollaboration](Update-MgSecurityCollaboration.md)
+
+### [Update-MgSecurityCollaborationAnalyzedEmail](Update-MgSecurityCollaborationAnalyzedEmail.md)
 
 ### [Update-MgSecurityDataSecurityAndGovernance](Update-MgSecurityDataSecurityAndGovernance.md)
 
@@ -1150,23 +1192,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityTriggerType](Update-MgSecurityTriggerType.md)
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
