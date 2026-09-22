@@ -810,7 +810,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSharePointRestoreSession>: sharePointRestoreSession
+BODYPARAMETER `<IMicrosoftGraphSharePointRestoreSession>`: sharePointRestoreSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <DateTime?>]: The time of completion of the restore session.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -927,7 +927,7 @@ Read-only.
     [SiteIds <String[]>]: The list of SharePoint site IDs that are added to the corresponding SharePoint restore session in a bulk operation.
     [SiteWebUrls <String[]>]: The list of SharePoint site URLs that are added to the corresponding SharePoint restore session in a bulk operation.
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -939,7 +939,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR <IMicrosoftGraphPublicError>: publicError
+ERROR `<IMicrosoftGraphPublicError>`: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -986,7 +986,7 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
   [SiteId <String>]: Id of the site in which artifact is present.
 
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -1030,7 +1030,7 @@ INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1042,7 +1042,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -1162,3 +1162,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresharepointrestoresession)
 - [](https://learn.microsoft.com/graph/api/sharepointrestoresession-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
