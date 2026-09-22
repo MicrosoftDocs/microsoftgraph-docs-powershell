@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-Module Guid: 6f743cc1-8067-427e-906c-60184e746cf8
+Module Guid: 33095d72-cc53-48bd-82d2-4d1498243d62
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.cloudcommunications/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -341,6 +341,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserPresence](Get-MgBetaUserPresence.md)
 
+### [Invoke-MgBetaAdmitAllCommunicationCallParticipantFromLobby](Invoke-MgBetaAdmitAllCommunicationCallParticipantFromLobby.md)
+
+### [Invoke-MgBetaAdmitCommunicationCallParticipantFromLobby](Invoke-MgBetaAdmitCommunicationCallParticipantFromLobby.md)
+
 ### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
 
 ### [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting.md)
@@ -366,6 +370,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaRedirectCommunicationCall](Invoke-MgBetaRedirectCommunicationCall.md)
 
 ### [Invoke-MgBetaRejectCommunicationCall](Invoke-MgBetaRejectCommunicationCall.md)
+
+### [Invoke-MgBetaReportCommunicationCallParticipantSyntheticMedium](Invoke-MgBetaReportCommunicationCallParticipantSyntheticMedium.md)
 
 ### [Invoke-MgBetaSubscribeCommunicationCallToTone](Invoke-MgBetaSubscribeCommunicationCallToTone.md)
 
@@ -466,6 +472,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaCommunicationCallOperation](Remove-MgBetaCommunicationCallOperation.md)
 
 ### [Remove-MgBetaCommunicationCallParticipant](Remove-MgBetaCommunicationCallParticipant.md)
+
+### [Remove-MgBetaCommunicationCallParticipantFromLobby](Remove-MgBetaCommunicationCallParticipantFromLobby.md)
 
 ### [Remove-MgBetaCommunicationCallRecordOrganizerV2](Remove-MgBetaCommunicationCallRecordOrganizerV2.md)
 
@@ -748,23 +756,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
 
 ### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

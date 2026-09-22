@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeeting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserOnlineMeeting
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserOnlineMeeting
 ## SYNOPSIS
 
 Update the navigation property onlineMeetings in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -43,7 +40,7 @@ Update-MgBetaUserOnlineMeeting -OnlineMeetingId <string> -UserId <string>
  [-JoinWebUrl <string>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
  [-MeetingOptionsWebUrl <string>] [-MeetingSpokenLanguageTag <string>] [-MeetingTemplateId <string>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
+ [-MeetingType <string>] [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
  [-RecordingInputFile <string>] [-Recordings <IMicrosoftGraphCallRecording[]>]
  [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]
@@ -87,7 +84,7 @@ Update-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-JoinWebUrl <string>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
  [-MeetingOptionsWebUrl <string>] [-MeetingSpokenLanguageTag <string>] [-MeetingTemplateId <string>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
+ [-MeetingType <string>] [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
  [-RecordingInputFile <string>] [-Recordings <IMicrosoftGraphCallRecording[]>]
  [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]
@@ -117,18 +114,10 @@ This cmdlet has the following aliases,
 
 Update the navigation property onlineMeetings in users
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | OnlineMeetings.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | OnlineMeetings.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -139,14 +128,9 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserOnlineMeeting Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### EXAMPLE 2
 
-### Example 2: Code snippet
-
-```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -157,11 +141,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaUserOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -743,7 +722,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-Represents a Microsoft online meeting.
+onlineMeeting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -1350,7 +1329,7 @@ HelpMessage: ''
 
 ### -JoinUrl
 
-
+.
 
 ```yaml
 Type: System.String
@@ -1517,6 +1496,33 @@ HelpMessage: ''
 ### -MeetingTemplateId
 
 The ID of the meeting template.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -MeetingType
+
+onlineMeetingType
 
 ```yaml
 Type: System.String
@@ -2161,7 +2167,7 @@ Read-only.
   [TotalParticipantCount <Int32?>]: Total number of participants.
 Read-only.
 
-AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
+AUDIOCONFERENCING <IMicrosoftGraphAudioConferencing>: audioConferencing
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ConferenceId <String>]: The conference id of the online meeting.
   [DialinUrl <String>]: A URL to the externally-accessible web page that contains dial-in information.
@@ -2170,7 +2176,7 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   [TollNumber <String>]: The toll number that connects to the Audio Conference Provider.
   [TollNumbers <String[]>]: List of toll numbers that are displayed in the meeting invite.
 
-BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: Represents a Microsoft online meeting.
+BODYPARAMETER <IMicrosoftGraphOnlineMeeting>: onlineMeeting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -2262,9 +2268,11 @@ Read-only.
 Optional.
   [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [MoreInfoWebUrl <String>]: 
-    [TenantKey <String>]: 
-    [VideoTeleconferenceId <String>]: 
+    [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+    [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+    [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2294,6 +2302,7 @@ Optional.
   [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
   [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+  [MeetingType <String>]: onlineMeetingType
   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
   [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2460,7 +2469,7 @@ Read-only.
     [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
 
-BROADCASTSETTINGS `<IMicrosoftGraphBroadcastMeetingSettings>`: broadcastMeetingSettings
+BROADCASTSETTINGS <IMicrosoftGraphBroadcastMeetingSettings>: broadcastMeetingSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedAudience <String>]: broadcastMeetingAudience
   [Captions <IMicrosoftGraphBroadcastMeetingCaptionSettings>]: broadcastMeetingCaptionSettings
@@ -2477,24 +2486,26 @@ Default value is false.
   [IsVideoOnDemandEnabled <Boolean?>]: Indicates whether video on demand is enabled for this Teams live event.
 Default value is false.
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [MessageId <String>]: The unique identifier for a message in a Microsoft Teams channel.
   [ReplyChainMessageId <String>]: The ID of the reply message.
   [ThreadId <String>]: The unique identifier for a thread in Microsoft Teams.
 
-CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
+CHATRESTRICTIONS <IMicrosoftGraphChatRestrictions>: chatRestrictions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
 
-CLOUDVIDEOINTEROPINFO `<IMicrosoftGraphCloudVideoInteropInfo>`: cloudVideoInteropInfo
+CLOUDVIDEOINTEROPINFO <IMicrosoftGraphCloudVideoInteropInfo>: cloudVideoInteropInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [MoreInfoWebUrl <String>]: 
-  [TenantKey <String>]: 
-  [VideoTeleconferenceId <String>]: 
+  [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+  [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+  [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -2521,12 +2532,12 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [ToDateTime <DateTime?>]: Usage: toDateTime={toDateTime}
   [UserId <String>]: The unique identifier of user
 
-JOININFORMATION `<IMicrosoftGraphItemBody>`: itemBody
+JOININFORMATION <IMicrosoftGraphItemBody>: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-JOINMEETINGIDSETTINGS `<IMicrosoftGraphJoinMeetingIdSettings>`: joinMeetingIdSettings
+JOINMEETINGIDSETTINGS <IMicrosoftGraphJoinMeetingIdSettings>: joinMeetingIdSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsPasscodeRequired <Boolean?>]: Indicates whether a passcode is required to join a meeting when using joinMeetingId.
 Optional.
@@ -2537,13 +2548,13 @@ Read-only.
  Optional.
 Read-only.
 
-LOBBYBYPASSSETTINGS `<IMicrosoftGraphLobbyBypassSettings>`: lobbyBypassSettings
+LOBBYBYPASSSETTINGS <IMicrosoftGraphLobbyBypassSettings>: lobbyBypassSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsDialInBypassEnabled <Boolean?>]: Specifies whether or not to always let dial-in callers bypass the lobby.
 Optional.
   [Scope <String>]: lobbyBypassScope
 
-MEETINGATTENDANCEREPORT `<IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
+MEETINGATTENDANCEREPORT <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2598,7 +2609,7 @@ Read-only.
   [TotalParticipantCount <Int32?>]: Total number of participants.
 Read-only.
 
-PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
+PARTICIPANTS <IMicrosoftGraphMeetingParticipants>: meetingParticipants
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]: Information of the meeting attendees.
     [Identity <IMicrosoftGraphIdentitySet>]: identitySet
@@ -2652,7 +2663,7 @@ For example, in the access reviews decisions API, this property might record the
   [RecordingContentUrl <String>]: The URL that can be used to access the content of the recording.
 Read-only.
 
-REGISTRATION `<IMicrosoftGraphMeetingRegistration>`: meetingRegistration
+REGISTRATION <IMicrosoftGraphMeetingRegistration>: meetingRegistration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowedRegistrant <String>]: meetingAudience
   [Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]: Registrants of the online meeting.
@@ -2682,7 +2693,7 @@ Read-only.
   [StartDateTime <DateTime?>]: The meeting start time in UTC.
   [Subject <String>]: The subject of the meeting.
 
-SENSITIVITYLABELASSIGNMENT `<IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>`: onlineMeetingSensitivityLabelAssignment
+SENSITIVITYLABELASSIGNMENT <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>: onlineMeetingSensitivityLabelAssignment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SensitivityLabelId <String>]: Id of the sensitivity label that is applied to the Teams meeting.
 
@@ -2722,7 +2733,7 @@ Read-only.
   [TranscriptContentUrl <String>]: The URL that can be used to access the content of the transcript.
 Read-only.
 
-WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
+WATERMARKPROTECTION <IMicrosoftGraphWatermarkProtectionValues>: watermarkProtectionValues
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabledForContentSharing <Boolean?>]: Indicates whether to apply a watermark to any shared content.
   [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
@@ -2730,26 +2741,4 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserOnlineMeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeeting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeeting)
