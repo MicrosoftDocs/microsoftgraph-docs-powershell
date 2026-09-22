@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAccessReviewDefinition
 ---
@@ -14,9 +14,6 @@ title: New-MgIdentityGovernanceAccessReviewDefinition
 ## SYNOPSIS
 
 Create a new accessReviewScheduleDefinition object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,18 +54,9 @@ This cmdlet has the following aliases,
 
 Create a new accessReviewScheduleDefinition object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create an access review on a group
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -110,19 +98,15 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review on a group
-
-### Example 2: Create an access review on all teams with inactive guest users
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
 	displayName = "Review inactive guests on teams"
 	descriptionForAdmins = "Control guest user access to our teams."
-	descriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
+	descriptionForReviewers = "Information security is everyone's responsibility.
+Review our access policy for more."
 	instanceEnumerationScope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
 		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
@@ -171,12 +155,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review on all teams with inactive guest users
-
-### Example 3: Create an access review of all users to an application
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -245,12 +224,7 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-```
-This example will create an access review of all users to an application
-
-### Example 4: Create an access review on a group with multiple stages
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -318,10 +292,6 @@ decisionHistoriesForReviewersEnabled = $true
 }
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-
-```
-This example will create an access review on a group with multiple stages
-
 
 ## PARAMETERS
 
@@ -992,7 +962,7 @@ ADDITIONALNOTIFICATIONRECIPIENTS <IMicrosoftGraphAccessReviewNotificationRecipie
   [NotificationTemplateType <String>]: Indicates the type of access review email to be sent.
 Supported template type is CompletedAdditionalRecipients, which sends review completion notifications to the recipients.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+BODYPARAMETER <IMicrosoftGraphAccessReviewScheduleDefinition>: accessReviewScheduleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1034,6 +1004,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
     [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+    [ReviewerId <String>]: The identifier of the reviewer.
+    [ScopeType <String>]: accessReviewReviewerScopeType
   [InstanceEnumerationScope <IMicrosoftGraphAccessReviewScope>]: accessReviewScope
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Instances <IMicrosoftGraphAccessReviewInstance[]>]: If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence.
@@ -1062,6 +1034,8 @@ Read-only.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $select.
+Read-only.
+      [ApplyDescription <String>]: The description of the apply result.
 Read-only.
       [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
@@ -1095,7 +1069,7 @@ Read-only.
         [DisplayName <String>]: Display name of the resource
         [Id <String>]: Identifier of the resource
         [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
       [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1108,6 +1082,10 @@ Read-only.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
+    [Errors <IMicrosoftGraphAccessReviewError[]>]: Collection of errors in an access review instance lifecycle.
+Read-only.
+      [Code <String>]: The error code.
+      [Message <String>]: The error message.
     [FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]: This collection of reviewer scopes is used to define the list of fallback reviewers.
 These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
 This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
@@ -1266,7 +1244,7 @@ The typical states include Initializing, NotStarted, Starting, InProgress, Compl
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -1288,6 +1266,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: The identifier of the reviewer.
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
 INSTANCES <IMicrosoftGraphAccessReviewInstance[]>: If the accessReviewScheduleDefinition is a recurring access review, instances represent each recurrence.
 A review that doesn't recur will have exactly one instance.
@@ -1323,6 +1303,8 @@ The DatetimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $select.
 Read-only.
+    [ApplyDescription <String>]: The description of the apply result.
+Read-only.
     [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
@@ -1355,7 +1337,7 @@ Read-only.
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Identifier of the resource
       [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
     [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1368,6 +1350,10 @@ Read-only.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $select.
 Read-only.
+  [Errors <IMicrosoftGraphAccessReviewError[]>]: Collection of errors in an access review instance lifecycle.
+Read-only.
+    [Code <String>]: The error code.
+    [Message <String>]: The error message.
   [FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]: This collection of reviewer scopes is used to define the list of fallback reviewers.
 These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified.
 This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist.
@@ -1378,6 +1364,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
     [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+    [ReviewerId <String>]: The identifier of the reviewer.
+    [ScopeType <String>]: accessReviewReviewerScopeType
   [Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]: This collection of access review scopes is used to define who the reviewers are.
 Supports $select.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
@@ -1426,8 +1414,10 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: The identifier of the reviewer.
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
-SETTINGS `<IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSettings
+SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>: accessReviewScheduleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]: Optional field.
 Describes the  actions to take once a review is complete.
@@ -1528,6 +1518,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
     [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+    [ReviewerId <String>]: The identifier of the reviewer.
+    [ScopeType <String>]: accessReviewReviewerScopeType
   [RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting[]>]: 
   [RecommendationsEnabled <Boolean?>]: Indicates whether showing recommendations to reviewers is enabled.
 Required.
@@ -1543,27 +1535,5 @@ Required.
 
 ## RELATED LINKS
 
-- [New-MgIdentityGovernanceAccessReviewDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
+- [](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)

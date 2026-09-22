@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementAccessPackage
 ---
@@ -14,9 +14,6 @@ title: Update-MgEntitlementManagementAccessPackage
 ## SYNOPSIS
 
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -85,18 +82,9 @@ This cmdlet has the following aliases,
 
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -105,10 +93,6 @@ $params = @{
 }
 
 Update-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgEntitlementManagementAccessPackage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -909,6 +893,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
             [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+          [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+            [ConnectorType <String>]: connectorType
+            [CreatedBy <String>]: The identifier of the user or application that created the connector.
+            [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+            [Description <String>]: A description of the connector.
+            [DisplayName <String>]: The display name of the connector.
+            [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+            [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
           [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -932,6 +928,35 @@ Supports $filter (eq).
             [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
             [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+          [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+            [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+              [(Any) <Object>]: This indicates any property can be added to this object.
+            [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+              [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+              [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+            [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+            [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+            [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+              [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+            [Status <String>]: customDataProvidedResourceUploadStatus
         [Type <String>]: roleType
       [ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]: 
       [Resources <IMicrosoftGraphAccessPackageResource[]>]: Access package resources in this catalog.
@@ -2060,7 +2085,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -2166,7 +2191,10 @@ Required.
             [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
             [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
             [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
             [Body <IMicrosoftGraphItemBody>]: itemBody
             [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -2460,6 +2488,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                   [Content <IMicrosoftGraphContentBase>]: contentBase
                     [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ContentCategory <String>]: contentCategory
                   [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                   [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -2818,7 +2847,9 @@ Read-only.
 The default value is false.
                     [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
                     [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-                    [Permissions <IMicrosoftGraphPermission[]>]: 
+                    [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
                       [Id <String>]: The unique identifier for an entity.
 Read-only.
                       [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -3740,7 +3771,9 @@ Read-only.
               [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
               [ResourceId <String>]: The unique identifier for the result.
               [Type <String>]: The type of the operation.
-            [Permissions <IMicrosoftGraphPermission[]>]: 
+            [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
             [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
             [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
             [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -5089,6 +5122,13 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+          [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+            [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+            [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
           [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -5115,6 +5155,7 @@ Optional.
           [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
           [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+          [MeetingType <String>]: onlineMeetingType
           [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
           [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -5892,6 +5933,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
         [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -6024,8 +6070,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6221,6 +6267,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
     [Onenote <IMicrosoftGraphOnenote>]: onenote
+    [OrganizationId <String>]: 
     [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -6439,6 +6486,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
             [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+          [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+            [ConnectorType <String>]: connectorType
+            [CreatedBy <String>]: The identifier of the user or application that created the connector.
+            [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+            [Description <String>]: A description of the connector.
+            [DisplayName <String>]: The display name of the connector.
+            [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+            [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
           [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -6462,6 +6521,35 @@ Supports $filter (eq).
             [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
             [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+          [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+            [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+              [(Any) <Object>]: This indicates any property can be added to this object.
+            [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+              [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+              [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+            [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+            [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+            [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+              [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+            [Status <String>]: customDataProvidedResourceUploadStatus
         [Type <String>]: roleType
       [ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]: 
       [Resources <IMicrosoftGraphAccessPackageResource[]>]: Access package resources in this catalog.
@@ -7507,7 +7595,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -7613,7 +7701,10 @@ Required.
               [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
               [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-            [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+            [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
               [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
               [Body <IMicrosoftGraphItemBody>]: itemBody
               [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -7907,6 +7998,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                     [Content <IMicrosoftGraphContentBase>]: contentBase
                       [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ContentCategory <String>]: contentCategory
                     [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                     [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -8265,7 +8357,9 @@ Read-only.
 The default value is false.
                       [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
                       [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-                      [Permissions <IMicrosoftGraphPermission[]>]: 
+                      [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
                         [Id <String>]: The unique identifier for an entity.
 Read-only.
                         [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -9187,7 +9281,9 @@ Read-only.
                 [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
                 [ResourceId <String>]: The unique identifier for the result.
                 [Type <String>]: The type of the operation.
-              [Permissions <IMicrosoftGraphPermission[]>]: 
+              [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
               [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
               [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
               [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -10536,6 +10632,13 @@ Read-only.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+            [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+              [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+              [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
             [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -10562,6 +10665,7 @@ Optional.
             [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
             [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+            [MeetingType <String>]: onlineMeetingType
             [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
             [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -11339,6 +11443,11 @@ Read-only.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
+          [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
           [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -11471,8 +11580,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11668,6 +11777,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
       [Onenote <IMicrosoftGraphOnenote>]: onenote
+      [OrganizationId <String>]: 
       [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -11879,7 +11989,7 @@ The default value is true.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>]: The principals that can be assigned access from an access package through this policy.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackage>`: accessPackage
+BODYPARAMETER <IMicrosoftGraphAccessPackage>: accessPackage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -11979,6 +12089,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
             [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+          [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+            [ConnectorType <String>]: connectorType
+            [CreatedBy <String>]: The identifier of the user or application that created the connector.
+            [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+            [Description <String>]: A description of the connector.
+            [DisplayName <String>]: The display name of the connector.
+            [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+            [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
           [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -12002,6 +12124,35 @@ Supports $filter (eq).
             [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
             [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+          [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+            [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+              [(Any) <Object>]: This indicates any property can be added to this object.
+            [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+              [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+              [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+            [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+            [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+            [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+              [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+            [Status <String>]: customDataProvidedResourceUploadStatus
         [Type <String>]: roleType
       [ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]: 
       [Resources <IMicrosoftGraphAccessPackageResource[]>]: Access package resources in this catalog.
@@ -13130,7 +13281,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -13236,7 +13387,10 @@ Required.
             [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
             [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
             [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
             [Body <IMicrosoftGraphItemBody>]: itemBody
             [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -13530,6 +13684,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                   [Content <IMicrosoftGraphContentBase>]: contentBase
                     [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ContentCategory <String>]: contentCategory
                   [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                   [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -13888,7 +14043,9 @@ Read-only.
 The default value is false.
                     [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
                     [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-                    [Permissions <IMicrosoftGraphPermission[]>]: 
+                    [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
                       [Id <String>]: The unique identifier for an entity.
 Read-only.
                       [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -14810,7 +14967,9 @@ Read-only.
               [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
               [ResourceId <String>]: The unique identifier for the result.
               [Type <String>]: The type of the operation.
-            [Permissions <IMicrosoftGraphPermission[]>]: 
+            [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
             [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
             [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
             [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -16159,6 +16318,13 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+          [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+            [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+            [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
           [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -16185,6 +16351,7 @@ Optional.
           [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
           [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+          [MeetingType <String>]: onlineMeetingType
           [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
           [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -16962,6 +17129,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
         [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -17094,8 +17266,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -17291,6 +17463,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
     [Onenote <IMicrosoftGraphOnenote>]: onenote
+    [OrganizationId <String>]: 
     [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -17413,7 +17586,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     [Role <IMicrosoftGraphAccessPackageResourceRole>]: accessPackageResourceRole
     [Scope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
 
-CATALOG `<IMicrosoftGraphAccessPackageCatalog>`: accessPackageCatalog
+CATALOG <IMicrosoftGraphAccessPackageCatalog>: accessPackageCatalog
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -18578,7 +18751,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -18684,7 +18857,10 @@ Required.
               [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
               [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-            [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+            [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
               [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
               [Body <IMicrosoftGraphItemBody>]: itemBody
               [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -18978,6 +19154,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                     [Content <IMicrosoftGraphContentBase>]: contentBase
                       [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ContentCategory <String>]: contentCategory
                     [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                     [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -19336,7 +19513,9 @@ Read-only.
 The default value is false.
                       [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
                       [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-                      [Permissions <IMicrosoftGraphPermission[]>]: 
+                      [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
                         [Id <String>]: The unique identifier for an entity.
 Read-only.
                         [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -20258,7 +20437,9 @@ Read-only.
                 [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
                 [ResourceId <String>]: The unique identifier for the result.
                 [Type <String>]: The type of the operation.
-              [Permissions <IMicrosoftGraphPermission[]>]: 
+              [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
               [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
               [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
               [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -21607,6 +21788,13 @@ Read-only.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+            [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+              [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+              [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
             [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -21633,6 +21821,7 @@ Optional.
             [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
             [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+            [MeetingType <String>]: onlineMeetingType
             [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
             [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -22410,6 +22599,11 @@ Read-only.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
+          [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
           [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -22542,8 +22736,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -22739,6 +22933,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
       [Onenote <IMicrosoftGraphOnenote>]: onenote
+      [OrganizationId <String>]: 
       [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -22907,6 +23102,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
             [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+          [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+            [ConnectorType <String>]: connectorType
+            [CreatedBy <String>]: The identifier of the user or application that created the connector.
+            [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+            [Description <String>]: A description of the connector.
+            [DisplayName <String>]: The display name of the connector.
+            [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+            [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
           [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -22930,6 +23137,35 @@ Supports $filter (eq).
             [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
             [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+          [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+            [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+              [(Any) <Object>]: This indicates any property can be added to this object.
+            [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+              [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+              [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+            [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+            [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+            [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+              [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+            [Status <String>]: customDataProvidedResourceUploadStatus
         [Type <String>]: roleType
       [Scope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
   [CatalogType <String>]: accessPackageCatalogType
@@ -23047,6 +23283,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
             [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+          [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+            [ConnectorType <String>]: connectorType
+            [CreatedBy <String>]: The identifier of the user or application that created the connector.
+            [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+            [Description <String>]: A description of the connector.
+            [DisplayName <String>]: The display name of the connector.
+            [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+            [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
           [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -23070,6 +23318,35 @@ Supports $filter (eq).
             [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
             [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+          [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+            [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+              [(Any) <Object>]: This indicates any property can be added to this object.
+            [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+              [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+              [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+            [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+            [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+            [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+              [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+            [Status <String>]: customDataProvidedResourceUploadStatus
         [Type <String>]: roleType
       [ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]: 
       [Resources <IMicrosoftGraphAccessPackageResource[]>]: Access package resources in this catalog.
@@ -24198,7 +24475,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -24304,7 +24581,10 @@ Required.
             [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
             [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
             [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
             [Body <IMicrosoftGraphItemBody>]: itemBody
             [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -24598,6 +24878,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                   [Content <IMicrosoftGraphContentBase>]: contentBase
                     [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ContentCategory <String>]: contentCategory
                   [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                   [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -24956,7 +25237,9 @@ Read-only.
 The default value is false.
                     [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
                     [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-                    [Permissions <IMicrosoftGraphPermission[]>]: 
+                    [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
                       [Id <String>]: The unique identifier for an entity.
 Read-only.
                       [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -25878,7 +26161,9 @@ Read-only.
               [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
               [ResourceId <String>]: The unique identifier for the result.
               [Type <String>]: The type of the operation.
-            [Permissions <IMicrosoftGraphPermission[]>]: 
+            [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
             [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
             [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
             [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -27227,6 +27512,13 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+          [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+            [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+            [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
           [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -27253,6 +27545,7 @@ Optional.
           [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
           [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+          [MeetingType <String>]: onlineMeetingType
           [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
           [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -28030,6 +28323,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
         [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -28162,8 +28460,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -28359,6 +28657,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
     [Onenote <IMicrosoftGraphOnenote>]: onenote
+    [OrganizationId <String>]: 
     [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -29514,7 +29813,7 @@ Always set to en-us.
           [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
             [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
             [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -29620,7 +29919,10 @@ Required.
           [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
           [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-        [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+        [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
           [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
           [Body <IMicrosoftGraphItemBody>]: itemBody
           [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -29914,6 +30216,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
                 [Content <IMicrosoftGraphContentBase>]: contentBase
                   [(Any) <Object>]: This indicates any property can be added to this object.
+                [ContentCategory <String>]: contentCategory
                 [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                 [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -30272,7 +30575,9 @@ Read-only.
 The default value is false.
                   [DriveItem <IMicrosoftGraphDriveItem>]: driveItem
                   [Fields <IMicrosoftGraphFieldValueSet>]: fieldValueSet
-                  [Permissions <IMicrosoftGraphPermission[]>]: 
+                  [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
                     [Id <String>]: The unique identifier for an entity.
 Read-only.
                     [ExpirationDateTime <DateTime?>]: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.
@@ -31194,7 +31499,9 @@ Read-only.
             [PercentageComplete <Int32?>]: A value between 0 and 100 that indicates the progress of the operation.
             [ResourceId <String>]: The unique identifier for the result.
             [Type <String>]: The type of the operation.
-          [Permissions <IMicrosoftGraphPermission[]>]: 
+          [Permissions <IMicrosoftGraphPermission[]>]: The set of permissions for the item.
+Read-only.
+Nullable.
           [SharepointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
           [Subscriptions <IMicrosoftGraphSubscription[]>]: The set of subscriptions on the list.
           [System <IMicrosoftGraphSystemFacet>]: systemFacet
@@ -32543,6 +32850,13 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+        [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+          [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+          [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
         [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -32569,6 +32883,7 @@ Optional.
         [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
         [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+        [MeetingType <String>]: onlineMeetingType
         [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
         [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
           [(Any) <Object>]: This indicates any property can be added to this object.
@@ -33346,6 +33661,11 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
       [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -33478,8 +33798,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -33675,6 +33995,7 @@ Returned by default.
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
   [Onenote <IMicrosoftGraphOnenote>]: onenote
+  [OrganizationId <String>]: 
   [Owners <IMicrosoftGraphDirectoryObject[]>]: The owners of the group who can be users or service principals.
 Limited to 100 owners.
 Nullable.
@@ -33786,7 +34107,7 @@ Returned by default.
 Nullable.
   [WelcomeMessageEnabled <Boolean?>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -33822,10 +34143,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -33839,6 +34163,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -33915,6 +34240,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
         [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+      [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+        [ConnectorType <String>]: connectorType
+        [CreatedBy <String>]: The identifier of the user or application that created the connector.
+        [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+        [Description <String>]: A description of the connector.
+        [DisplayName <String>]: The display name of the connector.
+        [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+        [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
       [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -33938,33 +34275,40 @@ Supports $filter (eq).
         [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
         [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+      [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+        [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+          [(Any) <Object>]: This indicates any property can be added to this object.
+        [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+          [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+          [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+        [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+        [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+        [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+          [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+        [Status <String>]: customDataProvidedResourceUploadStatus
     [Type <String>]: roleType
   [Scope <IMicrosoftGraphAccessPackageResourceScope>]: accessPackageResourceScope
 
 
 ## RELATED LINKS
 
-- [Update-MgEntitlementManagementAccessPackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage)
+- [](https://learn.microsoft.com/graph/api/accesspackage-update?view=graph-rest-1.0)

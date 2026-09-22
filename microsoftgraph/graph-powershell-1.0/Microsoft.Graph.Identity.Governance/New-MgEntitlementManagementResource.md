@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresource
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementResource
 ---
@@ -23,12 +23,15 @@ Create new navigation property to resources for identityGovernance
 New-MgEntitlementManagementResource [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Attributes <IMicrosoftGraphAccessPackageResourceAttribute[]>]
  [-CreatedDateTime <datetime>] [-Description <string>] [-DisplayName <string>]
- [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <string>]
+ [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]
+ [-ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>] [-Id <string>]
  [-ModifiedDateTime <datetime>] [-OriginId <string>] [-OriginSystem <string>]
  [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
- [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]
+ [-UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -48,6 +51,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to resources for identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -231,6 +244,28 @@ To construct, see NOTES section for ENVIRONMENT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceEnvironment
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ExternalOriginResourceConnector
+
+externalOriginResourceConnector
+To construct, see NOTES section for EXTERNALORIGINRESOURCECONNECTOR properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalOriginResourceConnector
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -530,6 +565,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -UploadSessions
+
+The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+To construct, see NOTES section for UPLOADSESSIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomDataProvidedResourceUploadSession[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -592,7 +649,7 @@ If the destination is accessPackageUserDirectoryAttributeStore, then a user prop
   [Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]: accessPackageResourceAttributeSource
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+BODYPARAMETER <IMicrosoftGraphAccessPackageResource>: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -632,6 +689,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
     [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+  [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+    [ConnectorType <String>]: connectorType
+    [CreatedBy <String>]: The identifier of the user or application that created the connector.
+    [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+    [Description <String>]: A description of the connector.
+    [DisplayName <String>]: The display name of the connector.
+    [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+    [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
   [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -664,8 +733,37 @@ Supports $filter (eq).
     [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
     [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+  [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+    [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+      [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+      [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+    [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+    [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+    [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+      [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+    [Status <String>]: customDataProvidedResourceUploadStatus
 
-ENVIRONMENT `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
+ENVIRONMENT <IMicrosoftGraphAccessPackageResourceEnvironment>: accessPackageResourceEnvironment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -704,6 +802,18 @@ Read-only.
     [Description <String>]: A description for the resource.
     [DisplayName <String>]: The display name of the resource, such as the application name, group name or site name.
     [Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]: accessPackageResourceEnvironment
+    [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+      [ConnectorType <String>]: connectorType
+      [CreatedBy <String>]: The identifier of the user or application that created the connector.
+      [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+      [Description <String>]: A description of the connector.
+      [DisplayName <String>]: The display name of the connector.
+      [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+      [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
     [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -736,6 +846,50 @@ Supports $filter (eq).
       [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+    [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+      [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+        [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+        [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+      [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+      [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+      [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+        [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+      [Status <String>]: customDataProvidedResourceUploadStatus
+
+EXTERNALORIGINRESOURCECONNECTOR <IMicrosoftGraphExternalOriginResourceConnector>: externalOriginResourceConnector
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
+  [ConnectorType <String>]: connectorType
+  [CreatedBy <String>]: The identifier of the user or application that created the connector.
+  [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+  [Description <String>]: A description of the connector.
+  [DisplayName <String>]: The display name of the connector.
+  [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+  [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
 
 ROLES <IMicrosoftGraphAccessPackageResourceRole[]>: Read-only.
 Nullable.
@@ -787,6 +941,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
       [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+    [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+      [ConnectorType <String>]: connectorType
+      [CreatedBy <String>]: The identifier of the user or application that created the connector.
+      [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+      [Description <String>]: A description of the connector.
+      [DisplayName <String>]: The display name of the connector.
+      [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+      [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
     [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -810,6 +976,35 @@ Supports $filter (eq).
       [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
 Supports $filter (eq).
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+    [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+      [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+        [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+        [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+      [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+      [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+      [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+        [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+      [Status <String>]: customDataProvidedResourceUploadStatus
   [Type <String>]: roleType
 
 SCOPES <IMicrosoftGraphAccessPackageResourceScope[]>: Read-only.
@@ -865,6 +1060,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
       [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+    [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+      [ConnectorType <String>]: connectorType
+      [CreatedBy <String>]: The identifier of the user or application that created the connector.
+      [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+      [Description <String>]: A description of the connector.
+      [DisplayName <String>]: The display name of the connector.
+      [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+      [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
     [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -886,31 +1093,67 @@ For a SharePoint Online site, the originId is the sequence number of the role in
     [Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]: Read-only.
 Nullable.
 Supports $expand.
+    [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+      [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+        [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+        [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+      [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+      [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+      [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+        [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+      [Status <String>]: customDataProvidedResourceUploadStatus
+
+UPLOADSESSIONS <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+  [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+    [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+    [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+  [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+  [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+  [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+    [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+  [Status <String>]: customDataProvidedResourceUploadStatus
 
 
 ## RELATED LINKS
 
-- [New-MgEntitlementManagementResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresource)

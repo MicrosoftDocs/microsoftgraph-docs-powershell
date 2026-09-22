@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancedecisionbycurrentuser
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionBy
 
 Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review for which the calling user is the reviewer.
 The decision items are presented as accessReviewInstanceDecisionItem objects on a given accessReviewInstance or accessReviewStage for which the calling user is the reviewer.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,26 +51,13 @@ This cmdlet has the following aliases,
 Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review for which the calling user is the reviewer.
 The decision items are presented as accessReviewInstanceDecisionItem objects on a given accessReviewInstance or accessReviewStage for which the calling user is the reviewer.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve all decisions on an accessReviewInstance for which the calling user is the reviewer
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId 
-
-```
-This example will retrieve all decisions on an accessreviewinstance for which the calling user is the reviewer
-
+Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -On $onId
 
 ## PARAMETERS
 
@@ -533,7 +517,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -569,10 +553,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -586,6 +573,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -611,27 +599,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancedecisionbycurrentuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancedecisionbycurrentuser)
+- [](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskdefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
 ---
@@ -14,9 +14,6 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
 ## SYNOPSIS
 
 Read the details of a built-in workflow task in Lifecycle Workflows.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 
 Read the details of a built-in workflow task in Lifecycle Workflows.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Retrieve all built-in task definitions
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
 
-```
-This example will retrieve all built-in task definitions
-
-### Example 2: Retrieve all built-in tasks supported for "joiner" workflows
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category has 'joiner'" 
-
-```
-This example will retrieve all built-in tasks supported for "joiner" workflows
-
+Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category has 'joiner'"
 
 ## PARAMETERS
 
@@ -552,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -588,10 +567,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -605,6 +587,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -630,28 +613,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskdefinition)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-taskdefinition-get?view=graph-rest-1.0)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskdefinition)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-taskdefinition-get?view=graph-rest-1.0)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions?view=graph-rest-1.0)
