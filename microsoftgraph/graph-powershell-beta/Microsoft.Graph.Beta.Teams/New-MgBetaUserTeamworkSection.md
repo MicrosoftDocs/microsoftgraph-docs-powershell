@@ -79,16 +79,6 @@ Create a new section in a user's teamwork.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -858,6 +848,7 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworksection)
 - [](https://learn.microsoft.com/graph/api/userteamwork-post-sections?view=graph-rest-beta)
+
 
 
 

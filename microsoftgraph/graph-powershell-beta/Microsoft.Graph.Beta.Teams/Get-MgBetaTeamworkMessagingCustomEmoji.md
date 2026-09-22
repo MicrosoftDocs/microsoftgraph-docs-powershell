@@ -56,16 +56,6 @@ This cmdlet has the following aliases,
 
 The collection of custom emojis available in organization messaging.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -585,6 +575,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkmessagingcustomemoji)
 - [](https://learn.microsoft.com/graph/api/teamworkmessaging-list-customemojis?view=graph-rest-beta)
+
+
 
 
 
