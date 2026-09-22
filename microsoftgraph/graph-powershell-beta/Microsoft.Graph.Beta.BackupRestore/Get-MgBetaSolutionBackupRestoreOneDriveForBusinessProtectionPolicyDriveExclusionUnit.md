@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 Get a drive exclusion unit associated with a OneDrive for work or school protection policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -606,6 +596,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessprotectionpolicydriveexclusionunit)
 - [](https://learn.microsoft.com/graph/api/driveexclusionunit-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits?view=graph-rest-beta)
+
 
 
 
