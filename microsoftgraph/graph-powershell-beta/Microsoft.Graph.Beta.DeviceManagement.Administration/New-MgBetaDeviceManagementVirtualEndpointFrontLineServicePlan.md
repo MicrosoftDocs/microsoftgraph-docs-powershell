@@ -451,7 +451,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCloudPcFrontLineServicePlan>: cloudPcFrontLineServicePlan
+BODYPARAMETER `<IMicrosoftGraphCloudPcFrontLineServicePlan>`: cloudPcFrontLineServicePlan
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -465,3 +465,25 @@ For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
