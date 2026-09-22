@@ -87,16 +87,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property items in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -57543,6 +57533,7 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistitem)
+
 
 
 
