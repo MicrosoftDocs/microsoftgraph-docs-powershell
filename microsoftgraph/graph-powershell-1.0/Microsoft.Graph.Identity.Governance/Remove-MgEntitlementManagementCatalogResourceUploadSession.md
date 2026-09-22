@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Delete a customDataProvidedResourceUploadSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -512,6 +502,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogresourceuploadsession)
 - [](https://learn.microsoft.com/graph/api/accesspackageresource-delete-uploadsessions?view=graph-rest-1.0)
+
 
 
 

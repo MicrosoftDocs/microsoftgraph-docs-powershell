@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a customDataProvidedResourceUploadSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -668,6 +658,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourceuploadsession)
 - [](https://learn.microsoft.com/graph/api/customdataprovidedresourceuploadsession-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/accesspackageresource-list-uploadsessions?view=graph-rest-1.0)
+
+
 
 
 

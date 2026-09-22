@@ -70,12 +70,17 @@ Get a specific task from a workflow or workflowVersion.
 | Application | LifecycleWorkflows-Workflow.Read.All, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a task from a workflow version
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceLifecycleWorkflowVersionTask -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber -TaskId $taskId
+
+```
+This example will get a task from a workflow version
+
 
 ## PARAMETERS
 

@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 Run a workflow in preview mode for selected directory objects without affecting production users.
 This action triggers workflow processing in preview mode, and results can be retrieved by using the List userProcessingResults operation with $filter=workflowExecutionType eq 'previewMode'.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -586,6 +576,7 @@ Always null when the object hasn't been deleted.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgpreviewidentitygovernancelifecycleworkflowdeleteditemworkflow)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-1.0)
+
 
 
 

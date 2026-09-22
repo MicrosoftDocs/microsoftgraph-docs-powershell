@@ -85,16 +85,6 @@ Update the properties of an externalOriginResourceConnector object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -802,6 +792,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementexternaloriginresourceconnector)
 - [](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-update?view=graph-rest-1.0)
+
 
 
 

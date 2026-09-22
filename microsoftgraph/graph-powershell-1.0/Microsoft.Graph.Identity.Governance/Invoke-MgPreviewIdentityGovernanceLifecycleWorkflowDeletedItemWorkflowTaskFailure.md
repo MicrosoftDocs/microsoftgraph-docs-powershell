@@ -49,16 +49,6 @@ Validate the tasks configured in a workflow to check for configuration errors.
 This action identifies any tasks that would fail during execution, allowing you to fix issues before running the workflow.
 Returns an empty collection if no task failures are detected.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -431,6 +421,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgpreviewidentitygovernancelifecycleworkflowdeleteditemworkflowtaskfailure)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewtaskfailures?view=graph-rest-1.0)
+
 
 
 
