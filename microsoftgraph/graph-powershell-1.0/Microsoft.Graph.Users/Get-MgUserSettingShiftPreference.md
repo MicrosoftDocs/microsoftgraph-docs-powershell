@@ -15,6 +15,9 @@ title: Get-MgUserSettingShiftPreference
 
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

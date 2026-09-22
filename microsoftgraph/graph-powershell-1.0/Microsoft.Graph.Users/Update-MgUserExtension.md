@@ -15,6 +15,9 @@ title: Update-MgUserExtension
 
 Update the navigation property extensions in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
