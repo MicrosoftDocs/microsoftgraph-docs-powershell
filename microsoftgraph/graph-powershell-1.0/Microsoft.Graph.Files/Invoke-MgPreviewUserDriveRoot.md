@@ -100,7 +100,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -289,7 +289,7 @@ HelpMessage: ''
 
 ### -Page
 
-.
+
 
 ```yaml
 Type: System.String
@@ -450,7 +450,7 @@ HelpMessage: ''
 
 ### -Zoom
 
-.
+
 
 ```yaml
 Type: System.Double
