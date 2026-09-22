@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessForwardingProfile
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 
 Update an existing forwarding profile.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | NetworkAccess.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | NetworkAccess.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -97,10 +88,6 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessForwardingProfile -ForwardingProfileId $forwardingProfileId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaNetworkAccessForwardingProfile Cmdlet.
-
 
 ## PARAMETERS
 
@@ -133,7 +120,7 @@ HelpMessage: ''
 
 ### -Associations
 
-
+.
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNetworkaccessAssociation[]
@@ -403,7 +390,7 @@ HelpMessage: ''
 
 ### -IsCustomProfile
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -512,7 +499,7 @@ HelpMessage: ''
 
 ### -Priority
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -787,7 +774,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
+INPUTOBJECT <INetworkAccessIdentity>: Identity Parameter
   [ActivityPivotDateTime <DateTime?>]: Usage: activityPivotDateTime={activityPivotDateTime}
   [AggregatedBy <String>]: Usage: aggregatedBy='{aggregatedBy}'
   [AlertId <String>]: The unique identifier of alert
@@ -832,7 +819,7 @@ Read-only.
   [State <String>]: status
   [Version <String>]: Version.
 
-SERVICEPRINCIPAL `<IMicrosoftGraphServicePrincipal>`: servicePrincipal
+SERVICEPRINCIPAL <IMicrosoftGraphServicePrincipal>: servicePrincipal
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1066,8 +1053,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
     [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -1277,6 +1264,46 @@ Read-only.
     [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
+  [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Description <String>]: 
+      [GoverningPolicyReferenceId <String>]: 
+      [IssueCode <String>]: 
+      [RuleType <String>]: 
+    [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [CreatedDateTime <DateTime?>]: 
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [GracePeriodInDays <Int32?>]: 
+      [IsEnabled <Boolean?>]: 
+      [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [LastModifiedDateTime <DateTime?>]: 
+      [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [AdditionalRecipients <String[]>]: 
+        [IsEnabled <Boolean?>]: 
+        [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+      [PolicySource <String>]: lifecyclePolicySource
+      [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [IsEnabled <Boolean?>]: 
+      [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [VersionNumber <Int32?>]: 
+      [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+    [LastAttestationDateTime <DateTime?>]: 
   [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -1400,8 +1427,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
     [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
   [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -1739,27 +1766,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaNetworkAccessForwardingProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofile)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-forwardingprofile-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessforwardingprofile)
+- [](https://learn.microsoft.com/graph/api/networkaccess-forwardingprofile-update?view=graph-rest-beta)
