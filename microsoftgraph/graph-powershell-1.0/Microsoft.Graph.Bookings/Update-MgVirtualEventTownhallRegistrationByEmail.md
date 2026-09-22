@@ -15,6 +15,9 @@ title: Update-MgVirtualEventTownhallRegistrationByEmail
 
 Update the navigation property registrations in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallRegistrationByEmail](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallRegistrationByEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
