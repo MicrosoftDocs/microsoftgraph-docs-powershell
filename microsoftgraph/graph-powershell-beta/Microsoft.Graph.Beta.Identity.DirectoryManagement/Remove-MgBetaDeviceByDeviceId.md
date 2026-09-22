@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceByDeviceId
 
 Delete a registered device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceByDeviceId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
