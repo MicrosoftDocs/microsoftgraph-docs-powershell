@@ -318,7 +318,7 @@ HelpMessage: ''
 
 ### -OrderedPolicyIds
 
-.
+
 
 ```yaml
 Type: System.String[]
