@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOffice365GroupActivityFileCount -Period $periodId
+Get-MgReportOffice365GroupActivityFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityFileCount Cmdlet.
+
 
 ## PARAMETERS
 

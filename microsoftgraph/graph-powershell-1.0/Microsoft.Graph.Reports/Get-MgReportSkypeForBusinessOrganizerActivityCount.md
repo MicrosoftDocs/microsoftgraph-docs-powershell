@@ -50,12 +50,17 @@ Get usage trends on the number and type of conference sessions held and organize
 Types of conference sessions include IM, audio/video, application sharing, web, dial-in/out - third party, and Dial-in/out Microsoft.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessOrganizerActivityCount -Period $periodId
+Get-MgReportSkypeForBusinessOrganizerActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessOrganizerActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

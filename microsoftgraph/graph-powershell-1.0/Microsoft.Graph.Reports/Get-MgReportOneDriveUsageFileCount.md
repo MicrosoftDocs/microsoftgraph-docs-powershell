@@ -50,12 +50,17 @@ Get the total number of files across all sites and how many are active files.
 A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOneDriveUsageFileCount -Period $periodId
+Get-MgReportOneDriveUsageFileCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveUsageFileCount Cmdlet.
+
 
 ## PARAMETERS
 
