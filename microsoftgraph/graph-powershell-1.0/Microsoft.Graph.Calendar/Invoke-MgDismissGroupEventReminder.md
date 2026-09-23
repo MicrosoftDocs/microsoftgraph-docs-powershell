@@ -400,8 +400,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdismissgroupeventreminder)
-- [](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)
+- [Invoke-MgDismissGroupEventReminder](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgdismissgroupeventreminder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-dismissreminder?view=graph-rest-1.0)
 
 
 

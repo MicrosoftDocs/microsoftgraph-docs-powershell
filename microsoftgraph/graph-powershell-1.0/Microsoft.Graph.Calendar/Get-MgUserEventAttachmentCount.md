@@ -385,7 +385,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventattachmentcount)
+- [Get-MgUserEventAttachmentCount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventattachmentcount)
 
 
 

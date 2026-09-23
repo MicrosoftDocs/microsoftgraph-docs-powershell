@@ -423,8 +423,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace)
-- [](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-1.0)
+- [Remove-MgPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/place-delete?view=graph-rest-1.0)
 
 
 
