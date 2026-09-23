@@ -15,6 +15,9 @@ title: Remove-MgBetaUserCalendarPermission
 
 Delete calendarPermission.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
