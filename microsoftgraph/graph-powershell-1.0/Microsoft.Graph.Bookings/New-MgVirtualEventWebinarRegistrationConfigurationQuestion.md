@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistrationconfigurationquestion
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgVirtualEventWebinarRegistrationConfigurationQuestion
 ---
@@ -13,7 +13,7 @@ title: New-MgVirtualEventWebinarRegistrationConfigurationQuestion
 
 ## SYNOPSIS
 
-Create a registration question for a webinar.
+Create a registration question for a webinar or town hall.
 You can create either a predefined registration question or a custom registration question.
 
 > [!NOTE]
@@ -68,7 +68,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create a registration question for a webinar.
+Create a registration question for a webinar or town hall.
 You can create either a predefined registration question or a custom registration question.
 
 ## EXAMPLES

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Bookings
-Module Guid: 12c51b13-231e-4e22-bf99-e8dc11dc6cc9
+Module Guid: 1977df0c-6a7c-4016-afc6-1328c4870951
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -106,6 +106,30 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgVirtualEventTownhallPresenter](Get-MgVirtualEventTownhallPresenter.md)
 
 ### [Get-MgVirtualEventTownhallPresenterCount](Get-MgVirtualEventTownhallPresenterCount.md)
+
+### [Get-MgVirtualEventTownhallRegistration](Get-MgVirtualEventTownhallRegistration.md)
+
+### [Get-MgVirtualEventTownhallRegistration](Get-MgVirtualEventTownhallRegistration.md)
+
+### [Get-MgVirtualEventTownhallRegistrationByEmail](Get-MgVirtualEventTownhallRegistrationByEmail.md)
+
+### [Get-MgVirtualEventTownhallRegistrationByUserId](Get-MgVirtualEventTownhallRegistrationByUserId.md)
+
+### [Get-MgVirtualEventTownhallRegistrationConfiguration](Get-MgVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Get-MgVirtualEventTownhallRegistrationConfigurationQuestion](Get-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
+### [Get-MgVirtualEventTownhallRegistrationConfigurationQuestion](Get-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
+### [Get-MgVirtualEventTownhallRegistrationConfigurationQuestionCount](Get-MgVirtualEventTownhallRegistrationConfigurationQuestionCount.md)
+
+### [Get-MgVirtualEventTownhallRegistrationCount](Get-MgVirtualEventTownhallRegistrationCount.md)
+
+### [Get-MgVirtualEventTownhallRegistrationSession](Get-MgVirtualEventTownhallRegistrationSession.md)
+
+### [Get-MgVirtualEventTownhallRegistrationSession](Get-MgVirtualEventTownhallRegistrationSession.md)
+
+### [Get-MgVirtualEventTownhallRegistrationSessionCount](Get-MgVirtualEventTownhallRegistrationSessionCount.md)
 
 ### [Get-MgVirtualEventTownhallSession](Get-MgVirtualEventTownhallSession.md)
 
@@ -213,6 +237,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgVirtualEventTownhallPresenter](New-MgVirtualEventTownhallPresenter.md)
 
+### [New-MgVirtualEventTownhallRegistration](New-MgVirtualEventTownhallRegistration.md)
+
+### [New-MgVirtualEventTownhallRegistrationConfigurationQuestion](New-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
 ### [New-MgVirtualEventTownhallSession](New-MgVirtualEventTownhallSession.md)
 
 ### [New-MgVirtualEventTownhallSessionAttendanceReport](New-MgVirtualEventTownhallSessionAttendanceReport.md)
@@ -267,6 +295,16 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgVirtualEventTownhallPresenter](Remove-MgVirtualEventTownhallPresenter.md)
 
+### [Remove-MgVirtualEventTownhallRegistration](Remove-MgVirtualEventTownhallRegistration.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationByEmail](Remove-MgVirtualEventTownhallRegistrationByEmail.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationByUserId](Remove-MgVirtualEventTownhallRegistrationByUserId.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationConfiguration](Remove-MgVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationConfigurationQuestion](Remove-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
 ### [Remove-MgVirtualEventTownhallSession](Remove-MgVirtualEventTownhallSession.md)
 
 ### [Remove-MgVirtualEventTownhallSessionAttendanceReport](Remove-MgVirtualEventTownhallSessionAttendanceReport.md)
@@ -300,6 +338,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Stop-MgBookingBusinessCalendarView](Stop-MgBookingBusinessCalendarView.md)
 
 ### [Stop-MgVirtualEvent](Stop-MgVirtualEvent.md)
+
+### [Stop-MgVirtualEventTownhallRegistration](Stop-MgVirtualEventTownhallRegistration.md)
+
+### [Stop-MgVirtualEventTownhallRegistrationEmail](Stop-MgVirtualEventTownhallRegistrationEmail.md)
+
+### [Stop-MgVirtualEventTownhallRegistrationUserId](Stop-MgVirtualEventTownhallRegistrationUserId.md)
 
 ### [Stop-MgVirtualEventWebinarRegistration](Stop-MgVirtualEventWebinarRegistration.md)
 
@@ -338,6 +382,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgVirtualEventTownhall](Update-MgVirtualEventTownhall.md)
 
 ### [Update-MgVirtualEventTownhallPresenter](Update-MgVirtualEventTownhallPresenter.md)
+
+### [Update-MgVirtualEventTownhallRegistration](Update-MgVirtualEventTownhallRegistration.md)
+
+### [Update-MgVirtualEventTownhallRegistrationByEmail](Update-MgVirtualEventTownhallRegistrationByEmail.md)
+
+### [Update-MgVirtualEventTownhallRegistrationByUserId](Update-MgVirtualEventTownhallRegistrationByUserId.md)
+
+### [Update-MgVirtualEventTownhallRegistrationConfiguration](Update-MgVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Update-MgVirtualEventTownhallRegistrationConfigurationQuestion](Update-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
 
 ### [Update-MgVirtualEventTownhallSession](Update-MgVirtualEventTownhallSession.md)
 

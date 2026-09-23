@@ -1,43 +1,43 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfigurationquestion
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallregistrationbyuserid
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion
+title: Get-MgVirtualEventTownhallRegistrationByUserId
 ---
 
-# Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion
+# Get-MgVirtualEventTownhallRegistrationByUserId
 
 ## SYNOPSIS
 
-Delete a registration question from a webinar or town hall.
-The question can either be a predefined registration question or a custom registration question.
+Registration records of the town hall.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarRegistrationConfigurationQuestion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallRegistrationByUserId](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallRegistrationByUserId?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 
 ```
-Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion
- -VirtualEventRegistrationQuestionBaseId <string> -VirtualEventWebinarId <string>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Get-MgVirtualEventTownhallRegistrationByUserId -UserId <string> -VirtualEventTownhallId <string>
+ [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials]
 ```
 
-### DeleteViaIdentity
+### GetViaIdentity
 
 ```
-Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBookingsIdentity>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Get-MgVirtualEventTownhallRegistrationByUserId -InputObject <IBookingsIdentity>
+ [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,21 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a registration question from a webinar or town hall.
-The question can either be a predefined registration question or a custom registration question.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Bookings
-
-Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventRegistrationQuestionBaseId $virtualEventRegistrationQuestionBaseId
-
-```
-This example shows how to use the Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion Cmdlet.
-
+Registration records of the town hall.
 
 ## PARAMETERS
 
@@ -86,16 +72,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -ExpandProperty
 
-Prompts you for confirmation before running the cmdlet.
+Expand related entities
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- cf
+- Expand
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -171,27 +157,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -203,7 +168,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -214,15 +179,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -Property
 
-Returns true when the command succeeds
+Select properties to be returned
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.String[]
+DefaultValue: ''
 SupportsWildcards: false
-Aliases: []
+Aliases:
+- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -320,9 +286,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -VirtualEventRegistrationQuestionBaseId
+### -UserId
 
-The unique identifier of virtualEventRegistrationQuestionBase
+Alternate key of virtualEventRegistration
 
 ```yaml
 Type: System.String
@@ -330,7 +296,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: Get
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -341,9 +307,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -VirtualEventWebinarId
+### -VirtualEventTownhallId
 
-The unique identifier of virtualEventWebinar
+The unique identifier of virtualEventTownhall
 
 ```yaml
 Type: System.String
@@ -351,31 +317,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: Get
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -WhatIf
-
-Runs the command in a mode that only reports what would happen without performing the actions.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- wi
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -403,7 +347,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventRegistration
 
 {{ Fill in the Description }}
 
@@ -438,8 +382,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfigurationquestion)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventregistrationquestionbase-delete?view=graph-rest-1.0)
+- [Get-MgVirtualEventTownhallRegistrationByUserId](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallregistrationbyuserid)
+
 
 
 

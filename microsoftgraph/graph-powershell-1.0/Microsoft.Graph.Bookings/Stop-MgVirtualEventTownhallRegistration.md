@@ -1,65 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventtownhallregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Update-MgVirtualEventWebinarRegistrationConfiguration
+title: Stop-MgVirtualEventTownhallRegistration
 ---
 
-# Update-MgVirtualEventWebinarRegistrationConfiguration
+# Stop-MgVirtualEventTownhallRegistration
 
 ## SYNOPSIS
 
-Update the navigation property registrationConfiguration in solutions
+Invoke action cancel
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarRegistrationConfiguration](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarRegistrationConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventTownhallRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventTownhallRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Cancel (Default)
 
 ```
-Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Capacity <int>]
- [-Id <string>] [-IsManualApprovalEnabled] [-IsWaitlistEnabled]
- [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### Update
-
-```
-Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <string>
- -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+Stop-MgVirtualEventTownhallRegistration -VirtualEventRegistrationId <string>
+ -VirtualEventTownhallId <string> [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### UpdateViaIdentityExpanded
+### CancelViaIdentity
 
 ```
-Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Capacity <int>]
- [-Id <string>] [-IsManualApprovalEnabled] [-IsWaitlistEnabled]
- [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### UpdateViaIdentity
-
-```
-Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdentity>
- -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Stop-MgVirtualEventTownhallRegistration -InputObject <IBookingsIdentity>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -69,63 +46,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property registrationConfiguration in solutions
+Invoke action cancel
 
 ## PARAMETERS
-
-### -AdditionalProperties
-
-Additional Parameters
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-virtualEventWebinarRegistrationConfiguration
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -138,33 +61,6 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Capacity
-
-Total capacity of the virtual event.
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -260,34 +156,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
-
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -299,13 +167,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateViaIdentity
+- Name: CancelViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -316,36 +178,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IsManualApprovalEnabled
+### -PassThru
 
-Indicates whether registrations require organizer approval before a participant is confirmed.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -IsWaitlistEnabled
-
-Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
+Returns true when the command succeeds
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -353,13 +188,7 @@ DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -433,61 +262,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Questions
-
-Registration questions.
-To construct, see NOTES section for QUESTIONS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventRegistrationQuestionBase[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -RegistrationWebUrl
-
-Registration URL of the virtual event.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -510,9 +284,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -VirtualEventWebinarId
+### -VirtualEventRegistrationId
 
-The unique identifier of virtualEventWebinar
+The unique identifier of virtualEventRegistration
 
 ```yaml
 Type: System.String
@@ -520,13 +294,28 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateExpanded
+- Name: Cancel
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Update
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -VirtualEventTownhallId
+
+The unique identifier of virtualEventTownhall
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Cancel
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -572,17 +361,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### System.Collections.Hashtable
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -614,17 +399,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [VirtualEventTownhallId <String>]: The unique identifier of virtualEventTownhall
   [VirtualEventWebinarId <String>]: The unique identifier of virtualEventWebinar
 
-QUESTIONS <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>: Registration questions.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [DisplayName <String>]: Display name of the registration question.
-  [IsRequired <Boolean?>]: Indicates whether an answer to the question is required.
-The default value is false.
-
 
 ## RELATED LINKS
 
-- [Update-MgVirtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration)
+- [Stop-MgVirtualEventTownhallRegistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventtownhallregistration)
 
 
 

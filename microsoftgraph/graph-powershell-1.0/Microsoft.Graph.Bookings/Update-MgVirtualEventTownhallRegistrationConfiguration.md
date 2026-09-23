@@ -1,29 +1,29 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Bookings-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallregistrationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Update-MgVirtualEventWebinarRegistrationConfiguration
+title: Update-MgVirtualEventTownhallRegistrationConfiguration
 ---
 
-# Update-MgVirtualEventWebinarRegistrationConfiguration
+# Update-MgVirtualEventTownhallRegistrationConfiguration
 
 ## SYNOPSIS
 
 Update the navigation property registrationConfiguration in solutions
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventWebinarRegistrationConfiguration](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventWebinarRegistrationConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaVirtualEventTownhallRegistrationConfiguration](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaVirtualEventTownhallRegistrationConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 
 ```
-Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <string>
+Update-MgVirtualEventTownhallRegistrationConfiguration -VirtualEventTownhallId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Capacity <int>]
  [-Id <string>] [-IsManualApprovalEnabled] [-IsWaitlistEnabled]
  [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <string>]
@@ -35,7 +35,7 @@ Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <st
 ### Update
 
 ```
-Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <string>
+Update-MgVirtualEventTownhallRegistrationConfiguration -VirtualEventTownhallId <string>
  -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -44,7 +44,7 @@ Update-MgVirtualEventWebinarRegistrationConfiguration -VirtualEventWebinarId <st
 ### UpdateViaIdentityExpanded
 
 ```
-Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdentity>
+Update-MgVirtualEventTownhallRegistrationConfiguration -InputObject <IBookingsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Capacity <int>]
  [-Id <string>] [-IsManualApprovalEnabled] [-IsWaitlistEnabled]
  [-Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>] [-RegistrationWebUrl <string>]
@@ -56,7 +56,7 @@ Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIde
 ### UpdateViaIdentity
 
 ```
-Update-MgVirtualEventWebinarRegistrationConfiguration -InputObject <IBookingsIdentity>
+Update-MgVirtualEventTownhallRegistrationConfiguration -InputObject <IBookingsIdentity>
  -BodyParameter <hashtable> [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -102,7 +102,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-virtualEventWebinarRegistrationConfiguration
+virtualEventTownhallRegistrationConfiguration
 
 ```yaml
 Type: System.Collections.Hashtable
@@ -510,9 +510,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -VirtualEventWebinarId
+### -VirtualEventTownhallId
 
-The unique identifier of virtualEventWebinar
+The unique identifier of virtualEventTownhall
 
 ```yaml
 Type: System.String
@@ -582,7 +582,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVirtualEventTownhallRegistrationConfiguration
 
 {{ Fill in the Description }}
 
@@ -624,7 +624,7 @@ The default value is false.
 
 ## RELATED LINKS
 
-- [Update-MgVirtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarregistrationconfiguration)
+- [Update-MgVirtualEventTownhallRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallregistrationconfiguration)
 
 
 
