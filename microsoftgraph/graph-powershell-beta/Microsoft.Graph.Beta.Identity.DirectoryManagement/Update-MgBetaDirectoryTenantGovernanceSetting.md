@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceSetting
 ---
@@ -32,10 +32,10 @@ Update-MgBetaDirectoryTenantGovernanceSetting [-ResponseHeadersVariable <string>
 
 ```
 Update-MgBetaDirectoryTenantGovernanceSetting
- -BodyParameter <IMicrosoftGraphTenantGovernanceServicesTenantGovernanceSetting>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphTenantGovernanceSetting> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -94,7 +94,7 @@ tenantGovernanceSetting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesTenantGovernanceSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceSetting
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -133,10 +133,7 @@ HelpMessage: ''
 
 ### -CanReceiveInvitations
 
-Indicates whether the tenant can receive governance invitations.
-When set to false, the tenant cannot receive new governance invitations.
-When set to true, other tenants can send your tenant invitations by providing your tenant id or domain name.
-Default value is false.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -264,10 +261,7 @@ HelpMessage: ''
 
 ### -IsRelatedTenantsEnabled
 
-Indicates whether the related tenants feature is enabled for tenant discovery.
-When set to false, related tenant APIs don't work.
-This property can be enabled by calling the enableRelatedTenants action.
-Default value is false.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -402,7 +396,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesTenantGovernanceSetting
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceSetting
 
 {{ Fill in the Description }}
 
@@ -412,7 +406,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesTenantGovernanceSetting
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceSetting
 
 {{ Fill in the Description }}
 
@@ -423,18 +417,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesTenantGovernanceSetting>`: tenantGovernanceSetting
+BODYPARAMETER `<IMicrosoftGraphTenantGovernanceSetting>`: tenantGovernanceSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [CanReceiveInvitations <Boolean?>]: Indicates whether the tenant can receive governance invitations.
-When set to false, the tenant cannot receive new governance invitations.
-When set to true, other tenants can send your tenant invitations by providing your tenant id or domain name.
-Default value is false.
-  [IsRelatedTenantsEnabled <Boolean?>]: Indicates whether the related tenants feature is enabled for tenant discovery.
-When set to false, related tenant APIs don't work.
-This property can be enabled by calling the enableRelatedTenants action.
-Default value is false.
+  [CanReceiveInvitations <Boolean?>]: 
+  [IsRelatedTenantsEnabled <Boolean?>]:
 
 
 ## RELATED LINKS

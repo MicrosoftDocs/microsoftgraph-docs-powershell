@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryRecommendation
 ---
@@ -22,16 +22,21 @@ Update the navigation property recommendations in directory
 ```
 Update-MgBetaDirectoryRecommendation -RecommendationId <string> [-ResponseHeadersVariable <string>]
  [-ActionSteps <IMicrosoftGraphActionStep[]>] [-AdditionalProperties <hashtable>]
- [-Benefits <string>] [-Category <string>] [-CreatedDateTime <datetime>] [-CurrentScore <double>]
- [-DisplayName <string>] [-FeatureAreas <string[]>] [-Id <string>] [-ImpactStartDateTime <datetime>]
- [-ImpactType <string>] [-ImpactedResources <IMicrosoftGraphImpactedResource[]>]
- [-Insights <string>] [-LastCheckedDateTime <datetime>] [-LastModifiedBy <string>]
- [-LastModifiedDateTime <datetime>] [-MaxScore <double>] [-PostponeUntilDateTime <datetime>]
+ [-Benefits <string>] [-Category <string>] [-CategoryGroup <string>]
+ [-CompletedBySystemDateTime <datetime>] [-CompletedByUserDateTime <datetime>]
+ [-CreatedDateTime <datetime>] [-CurrentScore <double>] [-DisplayName <string>]
+ [-FailedReviewDateTime <datetime>] [-FeatureAreas <string[]>] [-Id <string>]
+ [-ImpactStartDateTime <datetime>] [-ImpactType <string>]
+ [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <string>]
+ [-LastCheckedDateTime <datetime>] [-LastModifiedBy <string>] [-LastModifiedDateTime <datetime>]
+ [-MaxScore <double>] [-NeedsMoreActionResourceCount <int>]
+ [-NistClassifications <IMicrosoftGraphNistClassification[]>] [-PostponeUntilDateTime <datetime>]
  [-Priority <string>] [-RecommendationType <string>] [-ReleaseType <string>]
- [-RemediationImpact <string>] [-RequiredLicenses <string>] [-Status <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-RemediatedDateTime <datetime>] [-RemediationImpact <string>] [-RequiredLicenses <string>]
+ [-Status <string>] [-StatusModifiedDateTime <datetime>]
+ [-Tags <IMicrosoftGraphRecommendationTag[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -49,13 +54,18 @@ Update-MgBetaDirectoryRecommendation -RecommendationId <string> -BodyParameter <
 Update-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <string>] [-ActionSteps <IMicrosoftGraphActionStep[]>]
  [-AdditionalProperties <hashtable>] [-Benefits <string>] [-Category <string>]
- [-CreatedDateTime <datetime>] [-CurrentScore <double>] [-DisplayName <string>]
- [-FeatureAreas <string[]>] [-Id <string>] [-ImpactStartDateTime <datetime>] [-ImpactType <string>]
+ [-CategoryGroup <string>] [-CompletedBySystemDateTime <datetime>]
+ [-CompletedByUserDateTime <datetime>] [-CreatedDateTime <datetime>] [-CurrentScore <double>]
+ [-DisplayName <string>] [-FailedReviewDateTime <datetime>] [-FeatureAreas <string[]>]
+ [-Id <string>] [-ImpactStartDateTime <datetime>] [-ImpactType <string>]
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <string>]
  [-LastCheckedDateTime <datetime>] [-LastModifiedBy <string>] [-LastModifiedDateTime <datetime>]
- [-MaxScore <double>] [-PostponeUntilDateTime <datetime>] [-Priority <string>]
- [-RecommendationType <string>] [-ReleaseType <string>] [-RemediationImpact <string>]
- [-RequiredLicenses <string>] [-Status <string>] [-Break] [-Headers <IDictionary>]
+ [-MaxScore <double>] [-NeedsMoreActionResourceCount <int>]
+ [-NistClassifications <IMicrosoftGraphNistClassification[]>] [-PostponeUntilDateTime <datetime>]
+ [-Priority <string>] [-RecommendationType <string>] [-ReleaseType <string>]
+ [-RemediatedDateTime <datetime>] [-RemediationImpact <string>] [-RequiredLicenses <string>]
+ [-Status <string>] [-StatusModifiedDateTime <datetime>]
+ [-Tags <IMicrosoftGraphRecommendationTag[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -238,6 +248,87 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CategoryGroup
+
+recommendationCategoryGroup
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CompletedBySystemDateTime
+
+
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CompletedByUserDateTime
+
+
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Confirm
 
 Prompts you for confirmation before running the cmdlet.
@@ -321,6 +412,33 @@ The title of the recommendation.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -FailedReviewDateTime
+
+
+
+```yaml
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -709,6 +827,61 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -NeedsMoreActionResourceCount
+
+
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -NistClassifications
+
+
+To construct, see NOTES section for NISTCLASSIFICATIONS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNistClassification[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -PostponeUntilDateTime
 
 The future date and time when the status of a postponed recommendation will be active again.
@@ -908,6 +1081,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RemediatedDateTime
+
+
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -RemediationImpact
 
 Description of the impact on users of the remediation.
@@ -991,6 +1191,61 @@ recommendationStatus
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -StatusModifiedDateTime
+
+
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Tags
+
+
+To construct, see NOTES section for TAGS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendationTag[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1098,6 +1353,10 @@ Examples include user, application.
   [Status <String>]: recommendationStatus
   [SubjectId <String>]: The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
+  [Tags <IMicrosoftGraphRecommendationTag[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DisplayName <String>]: 
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
@@ -1127,7 +1386,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
-  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
   [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
   [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -1149,10 +1407,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
@@ -1160,10 +1420,22 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
+
+NISTCLASSIFICATIONS <IMicrosoftGraphNistClassification[]>: .
+  [Category <String>]: 
+  [Description <String>]: 
+  [Function <String>]: 
+  [Name <String>]: 
+
+TAGS <IMicrosoftGraphRecommendationTag[]>: .
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [DisplayName <String>]:
 
 
 ## RELATED LINKS

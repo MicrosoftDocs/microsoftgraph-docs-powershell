@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 699d1cfa-4d83-4e2e-a1b1-69f8f3ae605c
+Module Guid: 86c24c75-879e-4387-aadc-7eb7fef15c65
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.directorymanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,22 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.Identity.DirectoryManagement Cmdlets
+### [Add-MgBetaBulkDirectoryImpactedResourceTag](Add-MgBetaBulkDirectoryImpactedResourceTag.md)
+
+### [Add-MgBetaBulkDirectoryRecommendationImpactedResourceTag](Add-MgBetaBulkDirectoryRecommendationImpactedResourceTag.md)
+
+### [Add-MgBetaDirectoryImpactedResourceAlternateMitigation](Add-MgBetaDirectoryImpactedResourceAlternateMitigation.md)
+
+### [Add-MgBetaDirectoryImpactedResourceTag](Add-MgBetaDirectoryImpactedResourceTag.md)
+
+### [Add-MgBetaDirectoryRecommendationAlternateMitigation](Add-MgBetaDirectoryRecommendationAlternateMitigation.md)
+
+### [Add-MgBetaDirectoryRecommendationImpactedResourceAlternateMitigation](Add-MgBetaDirectoryRecommendationImpactedResourceAlternateMitigation.md)
+
+### [Add-MgBetaDirectoryRecommendationImpactedResourceTag](Add-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Add-MgBetaDirectoryRecommendationTag](Add-MgBetaDirectoryRecommendationTag.md)
+
 ### [Complete-MgBetaDirectoryImpactedResource](Complete-MgBetaDirectoryImpactedResource.md)
 
 ### [Complete-MgBetaDirectoryRecommendation](Complete-MgBetaDirectoryRecommendation.md)
@@ -611,6 +627,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryImpactedResourceCount](Get-MgBetaDirectoryImpactedResourceCount.md)
 
+### [Get-MgBetaDirectoryImpactedResourceTag](Get-MgBetaDirectoryImpactedResourceTag.md)
+
+### [Get-MgBetaDirectoryImpactedResourceTag](Get-MgBetaDirectoryImpactedResourceTag.md)
+
+### [Get-MgBetaDirectoryImpactedResourceTagCount](Get-MgBetaDirectoryImpactedResourceTagCount.md)
+
 ### [Get-MgBetaDirectoryInboundSharedUserProfile](Get-MgBetaDirectoryInboundSharedUserProfile.md)
 
 ### [Get-MgBetaDirectoryInboundSharedUserProfile](Get-MgBetaDirectoryInboundSharedUserProfile.md)
@@ -669,6 +691,18 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryRecommendationImpactedResourceCount](Get-MgBetaDirectoryRecommendationImpactedResourceCount.md)
 
+### [Get-MgBetaDirectoryRecommendationImpactedResourceTag](Get-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Get-MgBetaDirectoryRecommendationImpactedResourceTag](Get-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Get-MgBetaDirectoryRecommendationImpactedResourceTagCount](Get-MgBetaDirectoryRecommendationImpactedResourceTagCount.md)
+
+### [Get-MgBetaDirectoryRecommendationTag](Get-MgBetaDirectoryRecommendationTag.md)
+
+### [Get-MgBetaDirectoryRecommendationTag](Get-MgBetaDirectoryRecommendationTag.md)
+
+### [Get-MgBetaDirectoryRecommendationTagCount](Get-MgBetaDirectoryRecommendationTagCount.md)
+
 ### [Get-MgBetaDirectoryRecovery](Get-MgBetaDirectoryRecovery.md)
 
 ### [Get-MgBetaDirectoryRecoveryJob](Get-MgBetaDirectoryRecoveryJob.md)
@@ -694,6 +728,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJob](Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJob.md)
 
 ### [Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJobCount](Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJobCount.md)
+
+### [Get-MgBetaDirectoryRemoteTenantGroup](Get-MgBetaDirectoryRemoteTenantGroup.md)
+
+### [Get-MgBetaDirectoryRemoteTenantGroup](Get-MgBetaDirectoryRemoteTenantGroup.md)
+
+### [Get-MgBetaDirectoryRemoteTenantGroupCount](Get-MgBetaDirectoryRemoteTenantGroupCount.md)
 
 ### [Get-MgBetaDirectoryRole](Get-MgBetaDirectoryRole.md)
 
@@ -1025,6 +1065,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserScopedRoleMemberOfCount](Get-MgBetaUserScopedRoleMemberOfCount.md)
 
+### [Invoke-MgBetaAcceptDirectoryImpactedResourceRisk](Invoke-MgBetaAcceptDirectoryImpactedResourceRisk.md)
+
+### [Invoke-MgBetaAcceptDirectoryRecommendationImpactedResourceRisk](Invoke-MgBetaAcceptDirectoryRecommendationImpactedResourceRisk.md)
+
+### [Invoke-MgBetaAcceptDirectoryRecommendationRisk](Invoke-MgBetaAcceptDirectoryRecommendationRisk.md)
+
 ### [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType.md)
 
 ### [Invoke-MgBetaDismissDirectoryImpactedResource](Invoke-MgBetaDismissDirectoryImpactedResource.md)
@@ -1035,6 +1081,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaForceDomainDelete](Invoke-MgBetaForceDomainDelete.md)
 
+### [Invoke-MgBetaMarkDirectoryImpactedResourcePlanned](Invoke-MgBetaMarkDirectoryImpactedResourcePlanned.md)
+
+### [Invoke-MgBetaMarkDirectoryRecommendationImpactedResourcePlanned](Invoke-MgBetaMarkDirectoryRecommendationImpactedResourcePlanned.md)
+
+### [Invoke-MgBetaMarkDirectoryRecommendationPlanned](Invoke-MgBetaMarkDirectoryRecommendationPlanned.md)
+
 ### [Invoke-MgBetaPostponeDirectoryImpactedResource](Invoke-MgBetaPostponeDirectoryImpactedResource.md)
 
 ### [Invoke-MgBetaPostponeDirectoryRecommendation](Invoke-MgBetaPostponeDirectoryRecommendation.md)
@@ -1044,6 +1096,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaPromoteDomain](Invoke-MgBetaPromoteDomain.md)
 
 ### [Invoke-MgBetaPromoteDomainToInitial](Invoke-MgBetaPromoteDomainToInitial.md)
+
+### [Invoke-MgBetaProvisionDevice](Invoke-MgBetaProvisionDevice.md)
 
 ### [Invoke-MgBetaReactivateDirectoryImpactedResource](Invoke-MgBetaReactivateDirectoryImpactedResource.md)
 
@@ -1123,6 +1177,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDirectoryImpactedResource](New-MgBetaDirectoryImpactedResource.md)
 
+### [New-MgBetaDirectoryImpactedResourceTag](New-MgBetaDirectoryImpactedResourceTag.md)
+
 ### [New-MgBetaDirectoryInboundSharedUserProfile](New-MgBetaDirectoryInboundSharedUserProfile.md)
 
 ### [New-MgBetaDirectoryOnPremiseSynchronization](New-MgBetaDirectoryOnPremiseSynchronization.md)
@@ -1141,9 +1197,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDirectoryRecommendationImpactedResource](New-MgBetaDirectoryRecommendationImpactedResource.md)
 
+### [New-MgBetaDirectoryRecommendationImpactedResourceTag](New-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [New-MgBetaDirectoryRecommendationTag](New-MgBetaDirectoryRecommendationTag.md)
+
 ### [New-MgBetaDirectoryRecoveryJob](New-MgBetaDirectoryRecoveryJob.md)
 
 ### [New-MgBetaDirectoryRecoverySnapshot](New-MgBetaDirectoryRecoverySnapshot.md)
+
+### [New-MgBetaDirectoryRemoteTenantGroup](New-MgBetaDirectoryRemoteTenantGroup.md)
 
 ### [New-MgBetaDirectoryRole](New-MgBetaDirectoryRole.md)
 
@@ -1227,6 +1289,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaAdminPeoplePronoun](Remove-MgBetaAdminPeoplePronoun.md)
 
+### [Remove-MgBetaBulkDirectoryImpactedResourceTag](Remove-MgBetaBulkDirectoryImpactedResourceTag.md)
+
+### [Remove-MgBetaBulkDirectoryRecommendationImpactedResourceTag](Remove-MgBetaBulkDirectoryRecommendationImpactedResourceTag.md)
+
 ### [Remove-MgBetaContact](Remove-MgBetaContact.md)
 
 ### [Remove-MgBetaContactOnPremiseSyncBehavior](Remove-MgBetaContactOnPremiseSyncBehavior.md)
@@ -1289,6 +1355,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDirectoryImpactedResource](Remove-MgBetaDirectoryImpactedResource.md)
 
+### [Remove-MgBetaDirectoryImpactedResourceTag](Remove-MgBetaDirectoryImpactedResourceTag.md)
+
 ### [Remove-MgBetaDirectoryInboundSharedUserProfile](Remove-MgBetaDirectoryInboundSharedUserProfile.md)
 
 ### [Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData](Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData.md)
@@ -1315,11 +1383,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDirectoryRecommendationImpactedResource](Remove-MgBetaDirectoryRecommendationImpactedResource.md)
 
+### [Remove-MgBetaDirectoryRecommendationImpactedResourceTag](Remove-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Remove-MgBetaDirectoryRecommendationTag](Remove-MgBetaDirectoryRecommendationTag.md)
+
 ### [Remove-MgBetaDirectoryRecovery](Remove-MgBetaDirectoryRecovery.md)
 
 ### [Remove-MgBetaDirectoryRecoveryJob](Remove-MgBetaDirectoryRecoveryJob.md)
 
 ### [Remove-MgBetaDirectoryRecoverySnapshot](Remove-MgBetaDirectoryRecoverySnapshot.md)
+
+### [Remove-MgBetaDirectoryRemoteTenantGroup](Remove-MgBetaDirectoryRemoteTenantGroup.md)
 
 ### [Remove-MgBetaDirectoryRole](Remove-MgBetaDirectoryRole.md)
 
@@ -1585,6 +1659,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDirectoryImpactedResource](Update-MgBetaDirectoryImpactedResource.md)
 
+### [Update-MgBetaDirectoryImpactedResourceTag](Update-MgBetaDirectoryImpactedResourceTag.md)
+
 ### [Update-MgBetaDirectoryInboundSharedUserProfile](Update-MgBetaDirectoryInboundSharedUserProfile.md)
 
 ### [Update-MgBetaDirectoryOnPremiseSynchronization](Update-MgBetaDirectoryOnPremiseSynchronization.md)
@@ -1607,11 +1683,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDirectoryRecommendationImpactedResource](Update-MgBetaDirectoryRecommendationImpactedResource.md)
 
+### [Update-MgBetaDirectoryRecommendationImpactedResourceTag](Update-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Update-MgBetaDirectoryRecommendationTag](Update-MgBetaDirectoryRecommendationTag.md)
+
 ### [Update-MgBetaDirectoryRecovery](Update-MgBetaDirectoryRecovery.md)
 
 ### [Update-MgBetaDirectoryRecoveryJob](Update-MgBetaDirectoryRecoveryJob.md)
 
 ### [Update-MgBetaDirectoryRecoverySnapshot](Update-MgBetaDirectoryRecoverySnapshot.md)
+
+### [Update-MgBetaDirectoryRemoteTenantGroup](Update-MgBetaDirectoryRemoteTenantGroup.md)
 
 ### [Update-MgBetaDirectoryRole](Update-MgBetaDirectoryRole.md)
 
