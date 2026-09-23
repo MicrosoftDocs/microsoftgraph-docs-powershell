@@ -1,35 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaarchivedriveroot
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadriverootlock
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Invoke-MgBetaArchiveDriveRoot
+title: Publish-MgBetaDriveRootLock
 ---
 
-# Invoke-MgBetaArchiveDriveRoot
+# Publish-MgBetaDriveRootLock
 
 ## SYNOPSIS
 
-Invoke action archive
+Release the exclusive lock that the calling user currently holds on a file represented by a driveItem.
+After successful release, the file is immediately available for other users to lock and modify.
+Only the user who currently holds the lock can release it.
+The server identifies the lock from the file's current state (no lock identifier is required from the caller).
 
 ## SYNTAX
 
-### Archive (Default)
+### Release (Default)
 
 ```
-Invoke-MgBetaArchiveDriveRoot -DriveId <string> [-ResponseHeadersVariable <string>] [-Break]
+Publish-MgBetaDriveRootLock -DriveId <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### ArchiveViaIdentity
+### ReleaseViaIdentity
 
 ```
-Invoke-MgBetaArchiveDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <string>]
+Publish-MgBetaDriveRootLock -InputObject <IFilesIdentity> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -42,15 +45,10 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action archive
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
+Release the exclusive lock that the calling user currently holds on a file represented by a driveItem.
+After successful release, the file is immediately available for other users to lock and modify.
+Only the user who currently holds the lock can release it.
+The server identifies the lock from the file's current state (no lock identifier is required from the caller).
 
 ## PARAMETERS
 
@@ -107,7 +105,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Archive
+- Name: Release
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -192,7 +190,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: ArchiveViaIdentity
+- Name: ReleaseViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -391,7 +389,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaArchiveDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaarchivedriveroot)
+- [Publish-MgBetaDriveRootLock](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadriverootlock)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-releaselock?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaunarchivedriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUnarchiveDriveRoot
 ---
@@ -48,9 +48,9 @@ Invoke action unarchive
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.Read, Files.Read.All,  |
-| Delegated (personal Microsoft account) | Files.Read, Files.Read.All,  |
-| Application | Not supported |
+| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Files.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
 
 ## PARAMETERS
 

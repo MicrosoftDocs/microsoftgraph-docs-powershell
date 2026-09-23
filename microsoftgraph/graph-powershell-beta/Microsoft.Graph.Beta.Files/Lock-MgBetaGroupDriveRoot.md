@@ -1,37 +1,63 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaarchivedriveroot
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetagroupdriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Invoke-MgBetaArchiveDriveRoot
+title: Lock-MgBetaGroupDriveRoot
 ---
 
-# Invoke-MgBetaArchiveDriveRoot
+# Lock-MgBetaGroupDriveRoot
 
 ## SYNOPSIS
 
-Invoke action archive
+Acquire an exclusive lock on a file represented by a driveItem, or extend an existing lock you already hold.
+While the lock is held, other users are prevented from acquiring a lock on the same file.
+The lock automatically expires after the duration specified in the request elapses.
+A single endpoint handles both initial acquisition and refresh.
+The server determines which behavior applies based on the file's current lock state and the caller's identity.
+The caller doesn't need to track whether they previously locked the file, and doesn't need to manage a lock identifier.
+Only exclusive locks are currently supported.
 
 ## SYNTAX
 
-### Archive (Default)
+### LockExpanded (Default)
 
 ```
-Invoke-MgBetaArchiveDriveRoot -DriveId <string> [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+Lock-MgBetaGroupDriveRoot -DriveId <string> -GroupId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DurationMinutes <int>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### ArchiveViaIdentity
+### Lock
 
 ```
-Invoke-MgBetaArchiveDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+Lock-MgBetaGroupDriveRoot -DriveId <string> -GroupId <string>
+ -BodyParameter <IPaths73JvpxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### LockViaIdentityExpanded
+
+```
+Lock-MgBetaGroupDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DurationMinutes <int>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### LockViaIdentity
+
+```
+Lock-MgBetaGroupDriveRoot -InputObject <IFilesIdentity>
+ -BodyParameter <IPaths73JvpxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
@@ -42,17 +68,70 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action archive
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Files.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All, Sites.ReadWrite.All,  |
+Acquire an exclusive lock on a file represented by a driveItem, or extend an existing lock you already hold.
+While the lock is held, other users are prevented from acquiring a lock on the same file.
+The lock automatically expires after the duration specified in the request elapses.
+A single endpoint handles both initial acquisition and refresh.
+The server determines which behavior applies based on the file's current lock state and the caller's identity.
+The caller doesn't need to track whether they previously locked the file, and doesn't need to manage a lock identifier.
+Only exclusive locks are currently supported.
 
 ## PARAMETERS
+
+### -AdditionalProperties
+
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: LockViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: LockExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths73JvpxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: LockViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Lock
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -107,7 +186,67 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Archive
+- Name: LockExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Lock
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DurationMinutes
+
+
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: LockViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: LockExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GroupId
+
+The unique identifier of group
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: LockExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Lock
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -192,31 +331,16 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: ArchiveViaIdentity
+- Name: LockViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
+- Name: LockViaIdentity
   Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
+  IsRequired: true
+  ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -344,13 +468,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths73JvpxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLockInfo
 
 {{ Fill in the Description }}
 
@@ -360,6 +488,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
+
+BODYPARAMETER `<IPaths73JvpxGroupsGroupIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>`: .
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [DurationMinutes <Int32?>]: 
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -391,7 +523,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaArchiveDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaarchivedriveroot)
+- [Lock-MgBetaGroupDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetagroupdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-lock?view=graph-rest-beta)
 
 
 

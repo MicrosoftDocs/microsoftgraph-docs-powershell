@@ -1,71 +1,64 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Files-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootsensitivitylabel
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetauserdriveroot
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Set-MgBetaUserDriveRootSensitivityLabel
+title: Lock-MgBetaUserDriveRoot
 ---
 
-# Set-MgBetaUserDriveRootSensitivityLabel
+# Lock-MgBetaUserDriveRoot
 
 ## SYNOPSIS
 
-Asynchronously assign a sensitivity label to a driveItem.
-This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
-Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
-For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
-This API applies sensitivity labels to files at rest.
-Office clients don't apply watermarks, headers, or footers to files that contain the label information.
-For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveRootSensitivityLabel?view=graph-powershell-1.0)
+Acquire an exclusive lock on a file represented by a driveItem, or extend an existing lock you already hold.
+While the lock is held, other users are prevented from acquiring a lock on the same file.
+The lock automatically expires after the duration specified in the request elapses.
+A single endpoint handles both initial acquisition and refresh.
+The server determines which behavior applies based on the file's current lock state and the caller's identity.
+The caller doesn't need to track whether they previously locked the file, and doesn't need to manage a lock identifier.
+Only exclusive locks are currently supported.
 
 ## SYNTAX
 
-### AssignExpanded (Default)
+### LockExpanded (Default)
 
 ```
-Set-MgBetaUserDriveRootSensitivityLabel -DriveId <string> -UserId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AppliedByUser <IMicrosoftGraphUserIdentity>] [-AssignmentMethod <string>]
- [-JustificationText <string>] [-SensitivityLabelId <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Lock-MgBetaUserDriveRoot -DriveId <string> -UserId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DurationMinutes <int>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Assign
+### Lock
 
 ```
-Set-MgBetaUserDriveRootSensitivityLabel -DriveId <string> -UserId <string>
- -BodyParameter <IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+Lock-MgBetaUserDriveRoot -DriveId <string> -UserId <string>
+ -BodyParameter <IPaths1PfnfhxUsersUserIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### AssignViaIdentityExpanded
+### LockViaIdentityExpanded
 
 ```
-Set-MgBetaUserDriveRootSensitivityLabel -InputObject <IFilesIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AppliedByUser <IMicrosoftGraphUserIdentity>] [-AssignmentMethod <string>]
- [-JustificationText <string>] [-SensitivityLabelId <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Lock-MgBetaUserDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-DurationMinutes <int>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### AssignViaIdentity
+### LockViaIdentity
 
 ```
-Set-MgBetaUserDriveRootSensitivityLabel -InputObject <IFilesIdentity>
- -BodyParameter <IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+Lock-MgBetaUserDriveRoot -InputObject <IFilesIdentity>
+ -BodyParameter <IPaths1PfnfhxUsersUserIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,13 +68,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Asynchronously assign a sensitivity label to a driveItem.
-This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
-Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
-For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
-This API applies sensitivity labels to files at rest.
-Office clients don't apply watermarks, headers, or footers to files that contain the label information.
-For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+Acquire an exclusive lock on a file represented by a driveItem, or extend an existing lock you already hold.
+While the lock is held, other users are prevented from acquiring a lock on the same file.
+The lock automatically expires after the duration specified in the request elapses.
+A single endpoint handles both initial acquisition and refresh.
+The server determines which behavior applies based on the file's current lock state and the caller's identity.
+The caller doesn't need to track whether they previously locked the file, and doesn't need to manage a lock identifier.
+Only exclusive locks are currently supported.
 
 ## PARAMETERS
 
@@ -95,68 +88,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignViaIdentityExpanded
+- Name: LockViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: AssignExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AppliedByUser
-
-userIdentity
-To construct, see NOTES section for APPLIEDBYUSER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: AssignViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: AssignExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AssignmentMethod
-
-sensitivityLabelAssignmentMethod
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: AssignViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: AssignExpanded
+- Name: LockExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -173,18 +111,18 @@ HelpMessage: ''
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1PfnfhxUsersUserIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignViaIdentity
+- Name: LockViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Assign
+- Name: Lock
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -248,15 +186,42 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignExpanded
+- Name: LockExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Assign
+- Name: Lock
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DurationMinutes
+
+
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: LockViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: LockExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -339,64 +304,16 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignViaIdentityExpanded
+- Name: LockViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: AssignViaIdentity
+- Name: LockViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -JustificationText
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: AssignViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: AssignExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -489,33 +406,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -SensitivityLabelId
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: AssignViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: AssignExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -UserId
 
 The unique identifier of user
@@ -526,13 +416,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AssignExpanded
+- Name: LockExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Assign
+- Name: Lock
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -578,7 +468,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1PfnfhxUsersUserIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema
 
 {{ Fill in the Description }}
 
@@ -588,7 +478,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLockInfo
 
 {{ Fill in the Description }}
 
@@ -599,30 +489,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDBYUSER `<IMicrosoftGraphUserIdentity>`: userIdentity
+BODYPARAMETER `<IPaths1PfnfhxUsersUserIdDrivesDriveIdRootMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-  [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-  [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
-  [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
-
-BODYPARAMETER `<IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [AppliedByUser <IMicrosoftGraphUserIdentity>]: userIdentity
-    [(Any) <Object>]: This indicates any property can be added to this object.
-    [DisplayName <String>]: The display name of the identity.
-For drive items, the display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
-    [Id <String>]: Unique identifier for the identity or actor.
-For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
-    [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
-    [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
-  [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
-  [JustificationText <String>]: 
-  [SensitivityLabelId <String>]: 
+  [DurationMinutes <Int32?>]: 
 
 INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
@@ -654,8 +523,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserDriveRootSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootsensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta)
+- [Lock-MgBetaUserDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetauserdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-lock?view=graph-rest-beta)
 
 
 
