@@ -15,6 +15,9 @@ title: Get-MgPlaceAsBuildingMapLevelCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsBuildingMapLevelCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsBuildingMapLevelCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

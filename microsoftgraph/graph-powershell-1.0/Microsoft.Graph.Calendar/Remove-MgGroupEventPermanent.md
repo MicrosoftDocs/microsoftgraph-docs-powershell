@@ -15,6 +15,9 @@ title: Remove-MgGroupEventPermanent
 
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupEventPermanent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
