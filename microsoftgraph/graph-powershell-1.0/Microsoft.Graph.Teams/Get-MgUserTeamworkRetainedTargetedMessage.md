@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkretainedtargetedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserTeamworkRetainedTargetedMessage
 ---
@@ -13,7 +13,7 @@ title: Get-MgUserTeamworkRetainedTargetedMessage
 
 ## SYNOPSIS
 
-Invoke function getAllRetainedTargetedMessages
+Get all retained targeted messages sent to a specific user in group chats and channels.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke function getAllRetainedTargetedMessages
+Get all retained targeted messages sent to a specific user in group chats and channels.
 
 ## PARAMETERS
 
@@ -505,6 +505,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgUserTeamworkRetainedTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkretainedtargetedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-getallretainedtargetedmessages?view=graph-rest-1.0)
 
 
 

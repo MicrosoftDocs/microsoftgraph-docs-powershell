@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserTeamworkInstalledApp
 ---
@@ -875,7 +875,10 @@ Required.
       [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
       [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-    [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+    [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
       [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
       [Body <IMicrosoftGraphItemBody>]: itemBody
       [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -1176,7 +1179,10 @@ Required.
     [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
     [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-  [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+  [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
     [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
     [Body <IMicrosoftGraphItemBody>]: itemBody
     [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity

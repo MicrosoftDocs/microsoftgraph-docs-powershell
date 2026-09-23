@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/start-mgchatmigration
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgChatMigration
 ---
@@ -82,18 +82,28 @@ Imported content is always limited by the createdDateTime of the target thread.
 An optional createdDateTime property in the payload allows you to update this value, but with strict rules: This API supportes the following channel types.
 
 ## EXAMPLES
+### Example 1: Start the migration in a chat
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Start-MgChatMigration -ChatId $chatId
+
+```
+This example will start the migration in a chat
+
+### Example 2: Start the migration when a chat is already in migration mode
+
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Start-MgChatMigration -ChatId $chatId
 
-### EXAMPLE 2
+```
+This example will start the migration when a chat is already in migration mode
 
-Import-Module Microsoft.Graph.Teams
-
-Start-MgChatMigration -ChatId $chatId
 
 ## PARAMETERS
 
