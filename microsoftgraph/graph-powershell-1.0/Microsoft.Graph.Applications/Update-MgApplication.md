@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgApplication
 ---
@@ -132,9 +132,9 @@ This API can also create an agentIdentityBlueprint object if it doesn't exist, o
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentityBlueprint.AddRemoveCreds.All, AgentIdentityBlueprint.ReadWrite.All, AgentIdentityBlueprint.UpdateAuthProperties.All, AgentIdentityBlueprint.UpdateBranding.All, AgentIdentityBlueprintPrincipal.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, AgentIdentityBlueprint.AddRemoveCreds.All, AgentIdentityBlueprint.ReadWrite.All, AgentIdentityBlueprint.UpdateAuthProperties.All, AgentIdentityBlueprint.UpdateBranding.All, AgentIdentityBlueprintPrincipal.ReadWrite.All, Application.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update an application

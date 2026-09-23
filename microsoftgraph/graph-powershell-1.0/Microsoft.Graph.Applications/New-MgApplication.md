@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgApplication
 ---
@@ -82,9 +82,9 @@ This API can also create an agentIdentityBlueprint object when the @odata.type p
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentityBlueprint.Create,  |
+| Delegated (work or school account) | AppRegistration.Create, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.ReadWrite.All,  |
-| Application | Application.ReadWrite.OwnedBy, AgentIdentityBlueprint.Create, Application.ReadWrite.All,  |
+| Application | AppRegistration.Create, Application.ReadWrite.All, Application.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
 ### Example 1: Create a new application

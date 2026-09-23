@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgServicePrincipalAppRoleAssignment
 ---
@@ -56,9 +56,9 @@ Deleting an app role assignment for a service principal is equivalent to revokin
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AppRoleAssignment.ReadWrite.All,  |
+| Application | AppRoleAssignment.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Remove the application role assignment for a service principal
