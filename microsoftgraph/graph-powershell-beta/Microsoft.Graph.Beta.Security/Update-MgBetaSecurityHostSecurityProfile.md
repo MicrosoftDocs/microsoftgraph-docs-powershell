@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/23/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityHostSecurityProfile
 ---
@@ -78,6 +78,16 @@ This cmdlet has the following aliases,
 
 Update the navigation property hostSecurityProfiles in security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -109,7 +119,7 @@ HelpMessage: ''
 
 ### -AzureSubscriptionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -136,7 +146,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -234,7 +244,7 @@ HelpMessage: ''
 
 ### -FirstSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -261,7 +271,7 @@ HelpMessage: ''
 
 ### -Fqdn
 
-
+.
 
 ```yaml
 Type: System.String
@@ -434,7 +444,7 @@ HelpMessage: ''
 
 ### -IsAzureAdJoined
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -461,7 +471,7 @@ HelpMessage: ''
 
 ### -IsAzureAdRegistered
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -488,7 +498,7 @@ HelpMessage: ''
 
 ### -IsHybridAzureDomainJoined
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -515,7 +525,7 @@ HelpMessage: ''
 
 ### -LastSeenDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -542,7 +552,7 @@ HelpMessage: ''
 
 ### -LogonUsers
 
-
+.
 To construct, see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
@@ -570,7 +580,7 @@ HelpMessage: ''
 
 ### -NetBiosName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -597,7 +607,7 @@ HelpMessage: ''
 
 ### -NetworkInterfaces
 
-
+.
 To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
@@ -625,7 +635,7 @@ HelpMessage: ''
 
 ### -OS
 
-
+.
 
 ```yaml
 Type: System.String
@@ -652,7 +662,7 @@ HelpMessage: ''
 
 ### -OSVersion
 
-
+.
 
 ```yaml
 Type: System.String
@@ -679,7 +689,7 @@ HelpMessage: ''
 
 ### -ParentHost
 
-
+.
 
 ```yaml
 Type: System.String
@@ -769,7 +779,7 @@ HelpMessage: ''
 
 ### -RelatedHostIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -818,7 +828,7 @@ HelpMessage: ''
 
 ### -RiskScore
 
-
+.
 
 ```yaml
 Type: System.String
@@ -845,7 +855,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -954,7 +964,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
+BODYPARAMETER <IMicrosoftGraphHostSecurityProfile>: hostSecurityProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -978,7 +988,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LogonId <String>]: User logon ID.
     [LogonTypes <String[]>]: Collection of the logon types observed for the logged on user from when first to last seen.
-Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
+The possible values are: unknown, interactive, remoteInteractive, network, batch, service.
   [NetBiosName <String>]: 
   [NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>]: 
     [Description <String>]: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
@@ -1001,22 +1011,28 @@ Required
     [Vendor <String>]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+  [ActivityId <String>]: The unique identifier of activity
+  [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
+  [AttachmentId <String>]: The unique identifier of attachment
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
   [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
   [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
+  [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
+  [CaseTypeConfigurationId <String>]: The unique identifier of caseTypeConfiguration
   [CategoryTemplateId <String>]: The unique identifier of categoryTemplate
   [CitationTemplateId <String>]: The unique identifier of citationTemplate
   [CloudAppDiscoveryReportId <String>]: The unique identifier of cloudAppDiscoveryReport
   [CloudAppSecurityProfileId <String>]: The unique identifier of cloudAppSecurityProfile
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
+  [CustomFieldDefinitionId <String>]: The unique identifier of customFieldDefinition
   [CustomerInsightTenantId <String>]: The unique identifier of customerInsight
   [DataSourceId <String>]: The unique identifier of dataSource
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
@@ -1038,6 +1054,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [EmailThreatSubmissionPolicyId <String>]: The unique identifier of emailThreatSubmissionPolicy
   [EndUserNotificationDetailId <String>]: The unique identifier of endUserNotificationDetail
   [EndUserNotificationId <String>]: The unique identifier of endUserNotification
+  [EnvironmentId <String>]: The unique identifier of environment
+  [EvaluationId <String>]: The unique identifier of evaluation
   [FilePlanReferenceTemplateId <String>]: The unique identifier of filePlanReferenceTemplate
   [FileSecurityProfileId <String>]: The unique identifier of fileSecurityProfile
   [FileThreatSubmissionId <String>]: The unique identifier of fileThreatSubmission
@@ -1064,8 +1082,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [PartnerSecurityAlertId <String>]: The unique identifier of partnerSecurityAlert
   [PassiveDnsRecordId <String>]: The unique identifier of passiveDnsRecord
   [PayloadId <String>]: The unique identifier of payload
+  [PluginName <String>]: The unique identifier of plugin
   [PolicyFileId <String>]: The unique identifier of policyFile
+  [PromptId <String>]: The unique identifier of prompt
   [ProviderTenantSettingId <String>]: The unique identifier of providerTenantSetting
+  [Query <String>]: Usage: query='{query}'
+  [RelationId <String>]: The unique identifier of relation
   [RetentionEventId <String>]: The unique identifier of retentionEvent
   [RetentionEventTypeId <String>]: The unique identifier of retentionEventType
   [RetentionLabelId <String>]: The unique identifier of retentionLabel
@@ -1076,15 +1098,20 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecurityScoreHistoryId <String>]: The unique identifier of securityScoreHistory
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
+  [SensorMigrationId <String>]: The unique identifier of sensorMigration
+  [SessionId <String>]: The unique identifier of session
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
   [SimulationId <String>]: The unique identifier of simulation
   [SiteSourceId <String>]: The unique identifier of siteSource
   [SslCertificateId <String>]: The unique identifier of sslCertificate
+  [StatusDefinitionId <String>]: The unique identifier of statusDefinition
   [SubcategoryTemplateId <String>]: The unique identifier of subcategoryTemplate
   [SubdomainId <String>]: The unique identifier of subdomain
   [SubjectRightsRequestId <String>]: The unique identifier of subjectRightsRequest
+  [TaskId <String>]: The unique identifier of task
   [TiIndicatorId <String>]: The unique identifier of tiIndicator
   [TrainingCampaignId <String>]: The unique identifier of trainingCampaign
   [TrainingId <String>]: The unique identifier of training
@@ -1099,6 +1126,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [VulnerabilityId <String>]: The unique identifier of vulnerability
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
+  [WorkspaceId <String>]: The unique identifier of workspace
+  [ZoneId <String>]: The unique identifier of zone
 
 LOGONUSERS <IMicrosoftGraphLogonUser[]>: .
   [AccountDomain <String>]: Domain of user account used to logon.
@@ -1112,7 +1141,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LogonId <String>]: User logon ID.
   [LogonTypes <String[]>]: Collection of the logon types observed for the logged on user from when first to last seen.
-Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
+The possible values are: unknown, interactive, remoteInteractive, network, batch, service.
 
 NETWORKINTERFACES <IMicrosoftGraphNetworkInterface[]>: .
   [Description <String>]: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
@@ -1121,7 +1150,7 @@ NETWORKINTERFACES <IMicrosoftGraphNetworkInterface[]>: .
   [LocalIPV6Address <String>]: Last local (link-local or site-local) IPv6 address associated with this NIC.
   [MacAddress <String>]: MAC address of the NIC on this host.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Provider <String>]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   [ProviderVersion <String>]: Version of the provider or subprovider, if it exists, that generated the alert.
@@ -1133,27 +1162,4 @@ Required
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityHostSecurityProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile)

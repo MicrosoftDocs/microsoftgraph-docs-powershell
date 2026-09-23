@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/23/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIncident
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityIncident
 ## SYNOPSIS
 
 Create new navigation property to incidents for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIncident?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ New-MgBetaSecurityIncident [-ResponseHeadersVariable <string>] [-AdditionalPrope
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <datetime>]
  [-CustomTags <string[]>] [-Description <string>] [-Determination <string>] [-DisplayName <string>]
  [-Id <string>] [-IncidentWebUrl <string>] [-LastModifiedBy <string>]
- [-LastUpdateDateTime <datetime>] [-RecommendedActions <string>]
+ [-LastUpdateDateTime <datetime>] [-PriorityScore <int>] [-RecommendedActions <string>]
  [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
  [-RedirectIncidentId <string>] [-ResolvingComment <string>] [-Severity <string>] [-Status <string>]
  [-Summary <string>] [-SystemTags <string[]>] [-TenantId <string>] [-Break] [-Headers <IDictionary>]
@@ -53,6 +50,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to incidents for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -483,6 +490,29 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PriorityScore
+
+A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority.
+This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals.
+The value can also be null which indicates the feature is not open for the tenant or the value of the score is pending calculation.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -823,8 +853,12 @@ Read-only.
   [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
   [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
   [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+  [Categories <String[]>]: The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
   [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
   [Classification <String>]: alertClassification
   [Comments <IMicrosoftGraphSecurityAlertComment[]>]: Array of comments created by the Security Operations (SecOps) team during the alert management process.
     [Comment <String>]: The comment text.
@@ -850,6 +884,7 @@ Values are free-form.
   [FirstActivityDateTime <DateTime?>]: The earliest activity associated with the alert.
   [IncidentId <String>]: Unique identifier to represent the incident this alert resource is associated with.
   [IncidentWebUrl <String>]: URL for the incident page in the Microsoft 365 Defender portal.
+  [InvestigationState <String>]: investigationState
   [LastActivityDateTime <DateTime?>]: The oldest activity associated with the alert.
   [LastUpdateDateTime <DateTime?>]: Time when the alert was last updated at Microsoft 365 Defender.
   [MitreTechniques <String[]>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
@@ -866,7 +901,7 @@ Values are free-form.
   [ThreatFamilyName <String>]: Threat family associated with this alert.
   [Title <String>]: Brief identifying string value describing the alert.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
+BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -880,8 +915,12 @@ Read-only.
     [AlertPolicyId <String>]: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
     [AlertWebUrl <String>]: URL for the Microsoft 365 Defender portal alert page.
     [AssignedTo <String>]: Owner of the alert, or null if no owner is assigned.
+    [Categories <String[]>]: The attack kill-chain categories that the alert belongs to.
+Aligned with the MITRE ATT&CK framework.
     [Category <String>]: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
+This property is in the process of being deprecated.
+Use the categories property instead.
     [Classification <String>]: alertClassification
     [Comments <IMicrosoftGraphSecurityAlertComment[]>]: Array of comments created by the Security Operations (SecOps) team during the alert management process.
       [Comment <String>]: The comment text.
@@ -907,6 +946,7 @@ Values are free-form.
     [FirstActivityDateTime <DateTime?>]: The earliest activity associated with the alert.
     [IncidentId <String>]: Unique identifier to represent the incident this alert resource is associated with.
     [IncidentWebUrl <String>]: URL for the incident page in the Microsoft 365 Defender portal.
+    [InvestigationState <String>]: investigationState
     [LastActivityDateTime <DateTime?>]: The oldest activity associated with the alert.
     [LastUpdateDateTime <DateTime?>]: Time when the alert was last updated at Microsoft 365 Defender.
     [MitreTechniques <String[]>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
@@ -934,6 +974,9 @@ Free editable text.
   [IncidentWebUrl <String>]: The URL for the incident page in the Microsoft 365 Defender portal.
   [LastModifiedBy <String>]: The identity that last modified the incident.
   [LastUpdateDateTime <DateTime?>]: Time when the incident was last updated.
+  [PriorityScore <Int32?>]: A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority.
+This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals.
+The value can also be null which indicates the feature is not open for the tenant or the value of the score is pending calculation.
   [RecommendedActions <String>]: A rich text string that represents the actions that are reccomnded to take in order to resolve the incident.
   [RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]: List of hunting Kusto Query Language (KQL) queries related to the incident.
     [KqlText <String>]: The query string.
@@ -959,27 +1002,4 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>: Li
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/clear-mgbetasecuritycaseediscoverycasesearchdata
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/23/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData
 ---
@@ -14,13 +14,10 @@ title: Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData
 ## SYNOPSIS
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgSecurityCaseEdiscoveryCaseSearchData](/powershell/module/Microsoft.Graph.Security/Clear-MgSecurityCaseEdiscoveryCaseSearchData?view=graph-powershell-1.0)
+You can collect and purge the following categories of Teams content:\r\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\r\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\r\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\r\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\r\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:\r\n- eDiscovery solution series: Data spillage scenario - Search and purge\r\n- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## SYNTAX
 
@@ -74,23 +71,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete Exchange mailbox items or Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.ReadWrite.All,  |
+You can collect and purge the following categories of Teams content:\r\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\r\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\r\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\r\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\r\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:\r\n- eDiscovery solution series: Data spillage scenario - Search and purge\r\n- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -100,10 +88,6 @@ $params = @{
 }
 
 Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
-
-```
-This example shows how to use the Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData Cmdlet.
-
 
 ## PARAMETERS
 
@@ -136,7 +120,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -566,27 +550,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [PurgeAreas <String>]: purgeAreas
   [PurgeType <String>]: purgeType
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+  [ActivityId <String>]: The unique identifier of activity
+  [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
+  [AttachmentId <String>]: The unique identifier of attachment
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
   [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
   [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
+  [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
+  [CaseTypeConfigurationId <String>]: The unique identifier of caseTypeConfiguration
   [CategoryTemplateId <String>]: The unique identifier of categoryTemplate
   [CitationTemplateId <String>]: The unique identifier of citationTemplate
   [CloudAppDiscoveryReportId <String>]: The unique identifier of cloudAppDiscoveryReport
   [CloudAppSecurityProfileId <String>]: The unique identifier of cloudAppSecurityProfile
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
+  [CustomFieldDefinitionId <String>]: The unique identifier of customFieldDefinition
   [CustomerInsightTenantId <String>]: The unique identifier of customerInsight
   [DataSourceId <String>]: The unique identifier of dataSource
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
@@ -608,6 +598,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [EmailThreatSubmissionPolicyId <String>]: The unique identifier of emailThreatSubmissionPolicy
   [EndUserNotificationDetailId <String>]: The unique identifier of endUserNotificationDetail
   [EndUserNotificationId <String>]: The unique identifier of endUserNotification
+  [EnvironmentId <String>]: The unique identifier of environment
+  [EvaluationId <String>]: The unique identifier of evaluation
   [FilePlanReferenceTemplateId <String>]: The unique identifier of filePlanReferenceTemplate
   [FileSecurityProfileId <String>]: The unique identifier of fileSecurityProfile
   [FileThreatSubmissionId <String>]: The unique identifier of fileThreatSubmission
@@ -634,8 +626,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [PartnerSecurityAlertId <String>]: The unique identifier of partnerSecurityAlert
   [PassiveDnsRecordId <String>]: The unique identifier of passiveDnsRecord
   [PayloadId <String>]: The unique identifier of payload
+  [PluginName <String>]: The unique identifier of plugin
   [PolicyFileId <String>]: The unique identifier of policyFile
+  [PromptId <String>]: The unique identifier of prompt
   [ProviderTenantSettingId <String>]: The unique identifier of providerTenantSetting
+  [Query <String>]: Usage: query='{query}'
+  [RelationId <String>]: The unique identifier of relation
   [RetentionEventId <String>]: The unique identifier of retentionEvent
   [RetentionEventTypeId <String>]: The unique identifier of retentionEventType
   [RetentionLabelId <String>]: The unique identifier of retentionLabel
@@ -646,15 +642,20 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecurityScoreHistoryId <String>]: The unique identifier of securityScoreHistory
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
+  [SensorMigrationId <String>]: The unique identifier of sensorMigration
+  [SessionId <String>]: The unique identifier of session
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
   [SimulationId <String>]: The unique identifier of simulation
   [SiteSourceId <String>]: The unique identifier of siteSource
   [SslCertificateId <String>]: The unique identifier of sslCertificate
+  [StatusDefinitionId <String>]: The unique identifier of statusDefinition
   [SubcategoryTemplateId <String>]: The unique identifier of subcategoryTemplate
   [SubdomainId <String>]: The unique identifier of subdomain
   [SubjectRightsRequestId <String>]: The unique identifier of subjectRightsRequest
+  [TaskId <String>]: The unique identifier of task
   [TiIndicatorId <String>]: The unique identifier of tiIndicator
   [TrainingCampaignId <String>]: The unique identifier of trainingCampaign
   [TrainingId <String>]: The unique identifier of training
@@ -669,31 +670,11 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [VulnerabilityId <String>]: The unique identifier of vulnerability
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
+  [WorkspaceId <String>]: The unique identifier of workspace
+  [ZoneId <String>]: The unique identifier of zone
 
 
 ## RELATED LINKS
 
-- [Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/clear-mgbetasecuritycaseediscoverycasesearchdata)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/clear-mgbetasecuritycaseediscoverycasesearchdata)
+- [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-beta)

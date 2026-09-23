@@ -1,31 +1,31 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogqueryrecord
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcasetask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/23/2026
 PlatyPS schema version: 2024-05-01
-title: New-MgBetaSecurityAuditLogQueryRecord
+title: New-MgBetaSecurityCaseManagementCaseTask
 ---
 
-# New-MgBetaSecurityAuditLogQueryRecord
+# New-MgBetaSecurityCaseManagementCaseTask
 
 ## SYNOPSIS
 
-Create new navigation property to records for security
+Create a task for a case.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 
 ```
-New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AdministrativeUnits <string[]>] [-AuditData <hashtable>]
- [-AuditLogRecordType <string>] [-ClientIP <string>] [-CreatedDateTime <datetime>] [-Id <string>]
- [-ObjectId <string>] [-Operation <string>] [-OrganizationId <string>] [-Service <string>]
- [-UserId <string>] [-UserPrincipalName <string>] [-UserType <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+New-MgBetaSecurityCaseManagementCaseTask -CaseId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-AssignedTo <string>] [-Category <string>]
+ [-ClosingNotes <string>] [-CreatedBy <string>] [-CreatedDateTime <datetime>]
+ [-Description <string>] [-DisplayName <string>] [-DueDateTime <datetime>] [-Id <string>]
+ [-LastModifiedBy <string>] [-LastModifiedDateTime <datetime>] [-Priority <string>]
+ [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -33,9 +33,9 @@ New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <string> [-ResponseHeader
 ### Create
 
 ```
-New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <string>
- -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+New-MgBetaSecurityCaseManagementCaseTask -CaseId <string>
+ -BodyParameter <IMicrosoftGraphSecurityCaseManagementTask> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -43,22 +43,22 @@ New-MgBetaSecurityAuditLogQueryRecord -AuditLogQueryId <string>
 ### CreateViaIdentityExpanded
 
 ```
-New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AdministrativeUnits <string[]>] [-AuditData <hashtable>] [-AuditLogRecordType <string>]
- [-ClientIP <string>] [-CreatedDateTime <datetime>] [-Id <string>] [-ObjectId <string>]
- [-Operation <string>] [-OrganizationId <string>] [-Service <string>] [-UserId <string>]
- [-UserPrincipalName <string>] [-UserType <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+New-MgBetaSecurityCaseManagementCaseTask -InputObject <ISecurityIdentity>
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-AssignedTo <string>]
+ [-Category <string>] [-ClosingNotes <string>] [-CreatedBy <string>] [-CreatedDateTime <datetime>]
+ [-Description <string>] [-DisplayName <string>] [-DueDateTime <datetime>] [-Id <string>]
+ [-LastModifiedBy <string>] [-LastModifiedDateTime <datetime>] [-Priority <string>]
+ [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
 
 ```
-New-MgBetaSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityAuditLogRecord> [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+New-MgBetaSecurityCaseManagementCaseTask -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityCaseManagementTask> [-ResponseHeadersVariable <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -70,7 +70,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to records for security
+Create a task for a case.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -101,90 +111,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -AdministrativeUnits
+### -AssignedTo
 
-The administrative units tagged to an audit log record.
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AuditData
-
-auditData
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AuditLogQueryId
-
-The unique identifier of auditLogQuery
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -AuditLogRecordType
-
-auditLogRecordType
+The user assigned to the task.
+Supports $filter.
 
 ```yaml
 Type: System.String
@@ -211,11 +141,11 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-auditLogRecord
+task
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditLogRecord
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCaseManagementTask
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -258,10 +188,64 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ClientIP
+### -CaseId
 
-The IP address of the device used when the activity was logged.
-The IP address is displayed in either an IPv4 or IPv6 address format.
+The unique identifier of case
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Category
+
+caseTaskCategory
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ClosingNotes
+
+Notes recorded when the task is completed.
+Supports $filter.
 
 ```yaml
 Type: System.String
@@ -308,9 +292,120 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CreatedBy
+
+The user or service that created the resource.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -CreatedDateTime
 
-The date and time in UTC when the user performed the activity.
+The date and time when the resource was created.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Description
+
+The description of the task.
+Supports $filter.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+The title of the task.
+Supports $filter.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DueDateTime
+
+The target completion date and time for the task.
+Supports $filter.
 
 ```yaml
 Type: System.DateTime
@@ -454,11 +549,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ObjectId
+### -LastModifiedBy
 
-For Exchange admin audit logging, the name of the object modified by the cmdlet.
-For SharePoint activity, the full URL path name of the file or folder accessed by a user.
-For Microsoft Entra activity, the name of the user account that was modified.
+The user or service that last modified the resource.
 
 ```yaml
 Type: System.String
@@ -483,12 +576,12 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Operation
+### -LastModifiedDateTime
 
-The name of the user or admin activity.
+The date and time when the resource was last modified.
 
 ```yaml
-Type: System.String
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -510,9 +603,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -OrganizationId
+### -Priority
 
-The GUID for your organization.
+caseTaskPriority
 
 ```yaml
 Type: System.String
@@ -622,93 +715,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Service
+### -Status
 
-The Microsoft 365 service where the activity occurred.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UserId
-
-The user who performed the action (specified in the Operation property) that resulted in the record being logged.
-Audit records for activity performed by system accounts (such as SHAREPOINT/system or NT AUTHORITY/SYSTEM) are also included in the audit log.
-Another common value for the UserId property is app@sharepoint.
-It indicates that the 'user' who performed the activity was an application with the necessary permissions in SharePoint to perform organization-wide actions (such as searching a SharePoint site or OneDrive account) on behalf of a user, admin, or service.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UserPrincipalName
-
-UPN of the user who performed the action.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UserType
-
-auditLogUserType
+taskStatus
 
 ```yaml
 Type: System.String
@@ -764,7 +773,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditLogRecord
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCaseManagementTask
 
 {{ Fill in the Description }}
 
@@ -778,7 +787,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditLogRecord
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCaseManagementTask
 
 {{ Fill in the Description }}
 
@@ -789,46 +798,50 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAuditLogRecord>`: auditLogRecord
+BODYPARAMETER <IMicrosoftGraphSecurityCaseManagementTask>: task
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [CreatedBy <String>]: The user or service that created the resource.
+  [CreatedDateTime <DateTime?>]: The date and time when the resource was created.
+  [LastModifiedBy <String>]: The user or service that last modified the resource.
+  [LastModifiedDateTime <DateTime?>]: The date and time when the resource was last modified.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [AdministrativeUnits <String[]>]: The administrative units tagged to an audit log record.
-  [AuditData <IMicrosoftGraphSecurityAuditData>]: auditData
-    [(Any) <Object>]: This indicates any property can be added to this object.
-  [AuditLogRecordType <String>]: auditLogRecordType
-  [ClientIP <String>]: The IP address of the device used when the activity was logged.
-The IP address is displayed in either an IPv4 or IPv6 address format.
-  [CreatedDateTime <DateTime?>]: The date and time in UTC when the user performed the activity.
-  [ObjectId <String>]: For Exchange admin audit logging, the name of the object modified by the cmdlet.
-For SharePoint activity, the full URL path name of the file or folder accessed by a user.
-For Microsoft Entra activity, the name of the user account that was modified.
-  [Operation <String>]: The name of the user or admin activity.
-  [OrganizationId <String>]: The GUID for your organization.
-  [Service <String>]: The Microsoft 365 service where the activity occurred.
-  [UserId <String>]: The user who performed the action (specified in the Operation property) that resulted in the record being logged.
-Audit records for activity performed by system accounts (such as SHAREPOINT/system or NT AUTHORITY/SYSTEM) are also included in the audit log.
-Another common value for the UserId property is app@sharepoint.
-It indicates that the 'user' who performed the activity was an application with the necessary permissions in SharePoint to perform organization-wide actions (such as searching a SharePoint site or OneDrive account) on behalf of a user, admin, or service.
-  [UserPrincipalName <String>]: UPN of the user who performed the action.
-  [UserType <String>]: auditLogUserType
+  [AssignedTo <String>]: The user assigned to the task.
+Supports $filter.
+  [Category <String>]: caseTaskCategory
+  [ClosingNotes <String>]: Notes recorded when the task is completed.
+Supports $filter.
+  [Description <String>]: The description of the task.
+Supports $filter.
+  [DisplayName <String>]: The title of the task.
+Supports $filter.
+  [DueDateTime <DateTime?>]: The target completion date and time for the task.
+Supports $filter.
+  [Priority <String>]: caseTaskPriority
+  [Status <String>]: taskStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+  [ActivityId <String>]: The unique identifier of activity
+  [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
+  [AttachmentId <String>]: The unique identifier of attachment
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
   [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
   [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
+  [CaseId <String>]: The unique identifier of case
   [CaseOperationId <String>]: The unique identifier of caseOperation
+  [CaseTypeConfigurationId <String>]: The unique identifier of caseTypeConfiguration
   [CategoryTemplateId <String>]: The unique identifier of categoryTemplate
   [CitationTemplateId <String>]: The unique identifier of citationTemplate
   [CloudAppDiscoveryReportId <String>]: The unique identifier of cloudAppDiscoveryReport
   [CloudAppSecurityProfileId <String>]: The unique identifier of cloudAppSecurityProfile
   [ContentFormats <String[]>]: Usage: contentFormats={contentFormats}
+  [CustomFieldDefinitionId <String>]: The unique identifier of customFieldDefinition
   [CustomerInsightTenantId <String>]: The unique identifier of customerInsight
   [DataSourceId <String>]: The unique identifier of dataSource
   [DepartmentTemplateId <String>]: The unique identifier of departmentTemplate
@@ -850,6 +863,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [EmailThreatSubmissionPolicyId <String>]: The unique identifier of emailThreatSubmissionPolicy
   [EndUserNotificationDetailId <String>]: The unique identifier of endUserNotificationDetail
   [EndUserNotificationId <String>]: The unique identifier of endUserNotification
+  [EnvironmentId <String>]: The unique identifier of environment
+  [EvaluationId <String>]: The unique identifier of evaluation
   [FilePlanReferenceTemplateId <String>]: The unique identifier of filePlanReferenceTemplate
   [FileSecurityProfileId <String>]: The unique identifier of fileSecurityProfile
   [FileThreatSubmissionId <String>]: The unique identifier of fileThreatSubmission
@@ -876,8 +891,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [PartnerSecurityAlertId <String>]: The unique identifier of partnerSecurityAlert
   [PassiveDnsRecordId <String>]: The unique identifier of passiveDnsRecord
   [PayloadId <String>]: The unique identifier of payload
+  [PluginName <String>]: The unique identifier of plugin
   [PolicyFileId <String>]: The unique identifier of policyFile
+  [PromptId <String>]: The unique identifier of prompt
   [ProviderTenantSettingId <String>]: The unique identifier of providerTenantSetting
+  [Query <String>]: Usage: query='{query}'
+  [RelationId <String>]: The unique identifier of relation
   [RetentionEventId <String>]: The unique identifier of retentionEvent
   [RetentionEventTypeId <String>]: The unique identifier of retentionEventType
   [RetentionLabelId <String>]: The unique identifier of retentionLabel
@@ -888,15 +907,20 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [SecurityScoreHistoryId <String>]: The unique identifier of securityScoreHistory
   [SensitivityLabelId <String>]: The unique identifier of sensitivityLabel
   [SensitivityLabelId1 <String>]: The unique identifier of sensitivityLabel
+  [SensorCandidateId <String>]: The unique identifier of sensorCandidate
   [SensorId <String>]: The unique identifier of sensor
+  [SensorMigrationId <String>]: The unique identifier of sensorMigration
+  [SessionId <String>]: The unique identifier of session
   [SimulationAutomationId <String>]: The unique identifier of simulationAutomation
   [SimulationAutomationRunId <String>]: The unique identifier of simulationAutomationRun
   [SimulationId <String>]: The unique identifier of simulation
   [SiteSourceId <String>]: The unique identifier of siteSource
   [SslCertificateId <String>]: The unique identifier of sslCertificate
+  [StatusDefinitionId <String>]: The unique identifier of statusDefinition
   [SubcategoryTemplateId <String>]: The unique identifier of subcategoryTemplate
   [SubdomainId <String>]: The unique identifier of subdomain
   [SubjectRightsRequestId <String>]: The unique identifier of subjectRightsRequest
+  [TaskId <String>]: The unique identifier of task
   [TiIndicatorId <String>]: The unique identifier of tiIndicator
   [TrainingCampaignId <String>]: The unique identifier of trainingCampaign
   [TrainingId <String>]: The unique identifier of training
@@ -911,31 +935,11 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [VulnerabilityId <String>]: The unique identifier of vulnerability
   [WhoisHistoryRecordId <String>]: The unique identifier of whoisHistoryRecord
   [WhoisRecordId <String>]: The unique identifier of whoisRecord
+  [WorkspaceId <String>]: The unique identifier of workspace
+  [ZoneId <String>]: The unique identifier of zone
 
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityAuditLogQueryRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogqueryrecord)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcasetask)
+- [](https://learn.microsoft.com/graph/api/security-casemanagement-case-post-tasks?view=graph-rest-beta)
