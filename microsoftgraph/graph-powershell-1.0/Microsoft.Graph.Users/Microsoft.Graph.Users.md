@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: de972d7e-d2d0-4174-bb19-9904ebca35ca
+Module Guid: 900d2e3b-6dd8-4989-89c5-9219d26e500c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,17 +13,11 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Users Cmdlets
 ### [Get-MgUser](Get-MgUser.md)
 
-### [Get-MgUser](Get-MgUser.md)
-
 ### [Get-MgUserByUserPrincipalName](Get-MgUserByUserPrincipalName.md)
 
 ### [Get-MgUserCount](Get-MgUserCount.md)
 
 ### [Get-MgUserCreatedObject](Get-MgUserCreatedObject.md)
-
-### [Get-MgUserCreatedObject](Get-MgUserCreatedObject.md)
-
-### [Get-MgUserCreatedObjectAsServicePrincipal](Get-MgUserCreatedObjectAsServicePrincipal.md)
 
 ### [Get-MgUserCreatedObjectAsServicePrincipal](Get-MgUserCreatedObjectAsServicePrincipal.md)
 
@@ -33,13 +27,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDirectReport](Get-MgUserDirectReport.md)
 
-### [Get-MgUserDirectReport](Get-MgUserDirectReport.md)
-
 ### [Get-MgUserDirectReportAsOrgContact](Get-MgUserDirectReportAsOrgContact.md)
-
-### [Get-MgUserDirectReportAsOrgContact](Get-MgUserDirectReportAsOrgContact.md)
-
-### [Get-MgUserDirectReportAsUser](Get-MgUserDirectReportAsUser.md)
 
 ### [Get-MgUserDirectReportAsUser](Get-MgUserDirectReportAsUser.md)
 
@@ -51,13 +39,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
 
-### [Get-MgUserExtension](Get-MgUserExtension.md)
-
 ### [Get-MgUserExtensionCount](Get-MgUserExtensionCount.md)
 
 ### [Get-MgUserInsight](Get-MgUserInsight.md)
-
-### [Get-MgUserInsightShared](Get-MgUserInsightShared.md)
 
 ### [Get-MgUserInsightShared](Get-MgUserInsightShared.md)
 
@@ -69,21 +53,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserInsightTrending](Get-MgUserInsightTrending.md)
 
-### [Get-MgUserInsightTrending](Get-MgUserInsightTrending.md)
-
 ### [Get-MgUserInsightTrendingCount](Get-MgUserInsightTrendingCount.md)
 
 ### [Get-MgUserInsightTrendingResource](Get-MgUserInsightTrendingResource.md)
 
 ### [Get-MgUserInsightUsed](Get-MgUserInsightUsed.md)
 
-### [Get-MgUserInsightUsed](Get-MgUserInsightUsed.md)
-
 ### [Get-MgUserInsightUsedCount](Get-MgUserInsightUsedCount.md)
 
 ### [Get-MgUserInsightUsedResource](Get-MgUserInsightUsedResource.md)
-
-### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
 
 ### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
 
@@ -99,17 +77,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
 
-### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
-
-### [Get-MgUserMemberOfAsAdministrativeUnit](Get-MgUserMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgUserMemberOfAsAdministrativeUnit](Get-MgUserMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgUserMemberOfAsDirectoryRole](Get-MgUserMemberOfAsDirectoryRole.md)
-
-### [Get-MgUserMemberOfAsDirectoryRole](Get-MgUserMemberOfAsDirectoryRole.md)
-
-### [Get-MgUserMemberOfAsGroup](Get-MgUserMemberOfAsGroup.md)
 
 ### [Get-MgUserMemberOfAsGroup](Get-MgUserMemberOfAsGroup.md)
 
@@ -123,13 +93,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
 
-### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
-
 ### [Get-MgUserOauth2PermissionGrantCount](Get-MgUserOauth2PermissionGrantCount.md)
 
 ### [Get-MgUserOnPremiseSyncBehavior](Get-MgUserOnPremiseSyncBehavior.md)
-
-### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
 
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
 
@@ -137,17 +103,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOwnedDevice](Get-MgUserOwnedDevice.md)
 
-### [Get-MgUserOwnedDevice](Get-MgUserOwnedDevice.md)
-
-### [Get-MgUserOwnedDeviceAsAppRoleAssignment](Get-MgUserOwnedDeviceAsAppRoleAssignment.md)
-
 ### [Get-MgUserOwnedDeviceAsAppRoleAssignment](Get-MgUserOwnedDeviceAsAppRoleAssignment.md)
 
 ### [Get-MgUserOwnedDeviceAsDevice](Get-MgUserOwnedDeviceAsDevice.md)
-
-### [Get-MgUserOwnedDeviceAsDevice](Get-MgUserOwnedDeviceAsDevice.md)
-
-### [Get-MgUserOwnedDeviceAsEndpoint](Get-MgUserOwnedDeviceAsEndpoint.md)
 
 ### [Get-MgUserOwnedDeviceAsEndpoint](Get-MgUserOwnedDeviceAsEndpoint.md)
 
@@ -161,17 +119,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
 
-### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
-
-### [Get-MgUserOwnedObjectAsApplication](Get-MgUserOwnedObjectAsApplication.md)
-
 ### [Get-MgUserOwnedObjectAsApplication](Get-MgUserOwnedObjectAsApplication.md)
 
 ### [Get-MgUserOwnedObjectAsGroup](Get-MgUserOwnedObjectAsGroup.md)
-
-### [Get-MgUserOwnedObjectAsGroup](Get-MgUserOwnedObjectAsGroup.md)
-
-### [Get-MgUserOwnedObjectAsServicePrincipal](Get-MgUserOwnedObjectAsServicePrincipal.md)
 
 ### [Get-MgUserOwnedObjectAsServicePrincipal](Get-MgUserOwnedObjectAsServicePrincipal.md)
 
@@ -185,23 +135,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
 
-### [Get-MgUserPhoto](Get-MgUserPhoto.md)
-
 ### [Get-MgUserPhotoContent](Get-MgUserPhotoContent.md)
 
 ### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
 
-### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
-
-### [Get-MgUserRegisteredDeviceAsAppRoleAssignment](Get-MgUserRegisteredDeviceAsAppRoleAssignment.md)
-
 ### [Get-MgUserRegisteredDeviceAsAppRoleAssignment](Get-MgUserRegisteredDeviceAsAppRoleAssignment.md)
 
 ### [Get-MgUserRegisteredDeviceAsDevice](Get-MgUserRegisteredDeviceAsDevice.md)
-
-### [Get-MgUserRegisteredDeviceAsDevice](Get-MgUserRegisteredDeviceAsDevice.md)
-
-### [Get-MgUserRegisteredDeviceAsEndpoint](Get-MgUserRegisteredDeviceAsEndpoint.md)
 
 ### [Get-MgUserRegisteredDeviceAsEndpoint](Get-MgUserRegisteredDeviceAsEndpoint.md)
 
@@ -227,17 +167,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserSettingStorageQuotaService](Get-MgUserSettingStorageQuotaService.md)
 
-### [Get-MgUserSettingStorageQuotaService](Get-MgUserSettingStorageQuotaService.md)
-
 ### [Get-MgUserSettingStorageQuotaServiceCount](Get-MgUserSettingStorageQuotaServiceCount.md)
 
 ### [Get-MgUserSettingWindows](Get-MgUserSettingWindows.md)
 
-### [Get-MgUserSettingWindows](Get-MgUserSettingWindows.md)
-
 ### [Get-MgUserSettingWindowsCount](Get-MgUserSettingWindowsCount.md)
-
-### [Get-MgUserSettingWindowsInstance](Get-MgUserSettingWindowsInstance.md)
 
 ### [Get-MgUserSettingWindowsInstance](Get-MgUserSettingWindowsInstance.md)
 
@@ -247,11 +181,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserSettingWorkHourAndLocationOccurrence](Get-MgUserSettingWorkHourAndLocationOccurrence.md)
 
-### [Get-MgUserSettingWorkHourAndLocationOccurrence](Get-MgUserSettingWorkHourAndLocationOccurrence.md)
-
 ### [Get-MgUserSettingWorkHourAndLocationOccurrenceCount](Get-MgUserSettingWorkHourAndLocationOccurrenceCount.md)
-
-### [Get-MgUserSettingWorkHourAndLocationRecurrence](Get-MgUserSettingWorkHourAndLocationRecurrence.md)
 
 ### [Get-MgUserSettingWorkHourAndLocationRecurrence](Get-MgUserSettingWorkHourAndLocationRecurrence.md)
 
@@ -263,7 +193,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserSponsorCount](Get-MgUserSponsorCount.md)
 
-### [Get-MgUserTodoList](Get-MgUserTodoList.md)
+### [Get-MgUserSponsorOf](Get-MgUserSponsorOf.md)
+
+### [Get-MgUserSponsorOfCount](Get-MgUserSponsorOfCount.md)
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
 
@@ -273,15 +205,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserTodoListExtension](Get-MgUserTodoListExtension.md)
 
-### [Get-MgUserTodoListExtension](Get-MgUserTodoListExtension.md)
-
 ### [Get-MgUserTodoListExtensionCount](Get-MgUserTodoListExtensionCount.md)
 
 ### [Get-MgUserTodoTask](Get-MgUserTodoTask.md)
-
-### [Get-MgUserTodoTask](Get-MgUserTodoTask.md)
-
-### [Get-MgUserTodoTaskAttachment](Get-MgUserTodoTaskAttachment.md)
 
 ### [Get-MgUserTodoTaskAttachment](Get-MgUserTodoTaskAttachment.md)
 
@@ -291,13 +217,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserTodoTaskAttachmentSession](Get-MgUserTodoTaskAttachmentSession.md)
 
-### [Get-MgUserTodoTaskAttachmentSession](Get-MgUserTodoTaskAttachmentSession.md)
-
 ### [Get-MgUserTodoTaskAttachmentSessionContent](Get-MgUserTodoTaskAttachmentSessionContent.md)
 
 ### [Get-MgUserTodoTaskAttachmentSessionCount](Get-MgUserTodoTaskAttachmentSessionCount.md)
-
-### [Get-MgUserTodoTaskChecklistItem](Get-MgUserTodoTaskChecklistItem.md)
 
 ### [Get-MgUserTodoTaskChecklistItem](Get-MgUserTodoTaskChecklistItem.md)
 
@@ -309,11 +231,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserTodoTaskExtension](Get-MgUserTodoTaskExtension.md)
 
-### [Get-MgUserTodoTaskExtension](Get-MgUserTodoTaskExtension.md)
-
 ### [Get-MgUserTodoTaskExtensionCount](Get-MgUserTodoTaskExtensionCount.md)
-
-### [Get-MgUserTodoTaskLinkedResource](Get-MgUserTodoTaskLinkedResource.md)
 
 ### [Get-MgUserTodoTaskLinkedResource](Get-MgUserTodoTaskLinkedResource.md)
 
@@ -321,17 +239,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
 
-### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
-
-### [Get-MgUserTransitiveMemberOfAsAdministrativeUnit](Get-MgUserTransitiveMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgUserTransitiveMemberOfAsAdministrativeUnit](Get-MgUserTransitiveMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgUserTransitiveMemberOfAsDirectoryRole](Get-MgUserTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgUserTransitiveMemberOfAsDirectoryRole](Get-MgUserTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgUserTransitiveMemberOfAsGroup](Get-MgUserTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgUserTransitiveMemberOfAsGroup](Get-MgUserTransitiveMemberOfAsGroup.md)
 
@@ -526,23 +436,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserTodoListTaskExtension](Update-MgUserTodoListTaskExtension.md)
 
 ### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

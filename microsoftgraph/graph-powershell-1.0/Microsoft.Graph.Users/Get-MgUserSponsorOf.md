@@ -1,39 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof
 Locale: en-US
 Module Name: Microsoft.Graph.Users
 ms.date: 09/23/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgUserTodoTaskChecklistItem
+title: Get-MgUserSponsorOf
 ---
 
-# Get-MgUserTodoTaskChecklistItem
+# Get-MgUserSponsorOf
 
 ## SYNOPSIS
 
-A collection of checklistItems linked to a task.
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## SYNTAX
 
 ### List (Default)
 
 ```
-Get-MgUserTodoTaskChecklistItem -TodoTaskId <string> -TodoTaskListId <string> -UserId <string>
- [-ExpandProperty <string[]>] [-Property <string[]>] [-Filter <string>] [-Search <string>]
- [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+Get-MgUserSponsorOf -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+ [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
+ [-CountVariable <string>]
 ```
 
 ### Get
 
 ```
-Get-MgUserTodoTaskChecklistItem -ChecklistItemId <string> -TodoTaskId <string>
- -TodoTaskListId <string> -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Get-MgUserSponsorOf -DirectoryObjectId <string> -UserId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -41,7 +44,7 @@ Get-MgUserTodoTaskChecklistItem -ChecklistItemId <string> -TodoTaskId <string>
 ### GetViaIdentity
 
 ```
-Get-MgUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
+Get-MgUserSponsorOf -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
@@ -54,7 +57,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-A collection of checklistItems linked to a task.
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## EXAMPLES
 
@@ -110,27 +117,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ChecklistItemId
-
-The unique identifier of checklistItem
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -CountVariable
 
 Specifies a count of the total number of items in a collection.
@@ -146,6 +132,27 @@ ParameterSets:
 - Name: List
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -474,60 +481,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TodoTaskId
-
-The unique identifier of todoTask
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -TodoTaskListId
-
-The unique identifier of todoTaskList
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Top
 
 Show only the first n items
@@ -596,7 +549,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChecklistItem
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 
 {{ Fill in the Description }}
 
@@ -637,4 +590,5 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof)
+- [](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-1.0)
