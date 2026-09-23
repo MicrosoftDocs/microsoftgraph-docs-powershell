@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 46499a0b-143d-4f74-8f5d-9a4d83969888
+Module Guid: 9ccc46af-6dc8-4535-b8c3-5153b49265ce
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,10 +15,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupCalendarEvent](Get-MgGroupCalendarEvent.md)
 
-### [Get-MgGroupCalendarEvent](Get-MgGroupCalendarEvent.md)
-
-### [Get-MgGroupCalendarPermission](Get-MgGroupCalendarPermission.md)
-
 ### [Get-MgGroupCalendarPermission](Get-MgGroupCalendarPermission.md)
 
 ### [Get-MgGroupCalendarPermissionCount](Get-MgGroupCalendarPermissionCount.md)
@@ -28,10 +24,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupCalendarView](Get-MgGroupCalendarView.md)
 
 ### [Get-MgGroupEvent](Get-MgGroupEvent.md)
-
-### [Get-MgGroupEvent](Get-MgGroupEvent.md)
-
-### [Get-MgGroupEventAttachment](Get-MgGroupEventAttachment.md)
 
 ### [Get-MgGroupEventAttachment](Get-MgGroupEventAttachment.md)
 
@@ -45,8 +37,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupEventExtension](Get-MgGroupEventExtension.md)
 
-### [Get-MgGroupEventExtension](Get-MgGroupEventExtension.md)
-
 ### [Get-MgGroupEventExtensionCount](Get-MgGroupEventExtensionCount.md)
 
 ### [Get-MgGroupEventInstance](Get-MgGroupEventInstance.md)
@@ -54,10 +44,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupEventInstanceDelta](Get-MgGroupEventInstanceDelta.md)
 
 ### [Get-MgPlaceAsBuilding](Get-MgPlaceAsBuilding.md)
-
-### [Get-MgPlaceAsBuilding](Get-MgPlaceAsBuilding.md)
-
-### [Get-MgPlaceAsBuildingCheck](Get-MgPlaceAsBuildingCheck.md)
 
 ### [Get-MgPlaceAsBuildingCheck](Get-MgPlaceAsBuildingCheck.md)
 
@@ -67,11 +53,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlaceAsBuildingMapFootprint](Get-MgPlaceAsBuildingMapFootprint.md)
 
-### [Get-MgPlaceAsBuildingMapFootprint](Get-MgPlaceAsBuildingMapFootprint.md)
-
 ### [Get-MgPlaceAsBuildingMapFootprintCount](Get-MgPlaceAsBuildingMapFootprintCount.md)
-
-### [Get-MgPlaceAsBuildingMapLevel](Get-MgPlaceAsBuildingMapLevel.md)
 
 ### [Get-MgPlaceAsBuildingMapLevel](Get-MgPlaceAsBuildingMapLevel.md)
 
@@ -79,11 +61,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlaceAsBuildingMapLevelFixture](Get-MgPlaceAsBuildingMapLevelFixture.md)
 
-### [Get-MgPlaceAsBuildingMapLevelFixture](Get-MgPlaceAsBuildingMapLevelFixture.md)
-
 ### [Get-MgPlaceAsBuildingMapLevelFixtureCount](Get-MgPlaceAsBuildingMapLevelFixtureCount.md)
-
-### [Get-MgPlaceAsBuildingMapLevelSection](Get-MgPlaceAsBuildingMapLevelSection.md)
 
 ### [Get-MgPlaceAsBuildingMapLevelSection](Get-MgPlaceAsBuildingMapLevelSection.md)
 
@@ -91,15 +69,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlaceAsBuildingMapLevelUnit](Get-MgPlaceAsBuildingMapLevelUnit.md)
 
-### [Get-MgPlaceAsBuildingMapLevelUnit](Get-MgPlaceAsBuildingMapLevelUnit.md)
-
 ### [Get-MgPlaceAsBuildingMapLevelUnitCount](Get-MgPlaceAsBuildingMapLevelUnitCount.md)
 
 ### [Get-MgPlaceAsDesk](Get-MgPlaceAsDesk.md)
-
-### [Get-MgPlaceAsDesk](Get-MgPlaceAsDesk.md)
-
-### [Get-MgPlaceAsDeskCheck](Get-MgPlaceAsDeskCheck.md)
 
 ### [Get-MgPlaceAsDeskCheck](Get-MgPlaceAsDeskCheck.md)
 
@@ -107,19 +79,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlaceAsFloor](Get-MgPlaceAsFloor.md)
 
-### [Get-MgPlaceAsFloor](Get-MgPlaceAsFloor.md)
-
-### [Get-MgPlaceAsFloorCheck](Get-MgPlaceAsFloorCheck.md)
-
 ### [Get-MgPlaceAsFloorCheck](Get-MgPlaceAsFloorCheck.md)
 
 ### [Get-MgPlaceAsFloorCheckInCount](Get-MgPlaceAsFloorCheckInCount.md)
 
 ### [Get-MgPlaceAsRoom](Get-MgPlaceAsRoom.md)
-
-### [Get-MgPlaceAsRoom](Get-MgPlaceAsRoom.md)
-
-### [Get-MgPlaceAsRoomCheck](Get-MgPlaceAsRoomCheck.md)
 
 ### [Get-MgPlaceAsRoomCheck](Get-MgPlaceAsRoomCheck.md)
 
@@ -127,19 +91,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlaceAsRoomList](Get-MgPlaceAsRoomList.md)
 
-### [Get-MgPlaceAsRoomList](Get-MgPlaceAsRoomList.md)
-
-### [Get-MgPlaceAsRoomListCheck](Get-MgPlaceAsRoomListCheck.md)
-
 ### [Get-MgPlaceAsRoomListCheck](Get-MgPlaceAsRoomListCheck.md)
 
 ### [Get-MgPlaceAsRoomListCheckInCount](Get-MgPlaceAsRoomListCheckInCount.md)
 
 ### [Get-MgPlaceAsRoomListRoom](Get-MgPlaceAsRoomListRoom.md)
-
-### [Get-MgPlaceAsRoomListRoom](Get-MgPlaceAsRoomListRoom.md)
-
-### [Get-MgPlaceAsRoomListRoomCheck](Get-MgPlaceAsRoomListRoomCheck.md)
 
 ### [Get-MgPlaceAsRoomListRoomCheck](Get-MgPlaceAsRoomListRoomCheck.md)
 
@@ -149,10 +105,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlaceAsRoomListWorkspace](Get-MgPlaceAsRoomListWorkspace.md)
 
-### [Get-MgPlaceAsRoomListWorkspace](Get-MgPlaceAsRoomListWorkspace.md)
-
-### [Get-MgPlaceAsRoomListWorkspaceCheck](Get-MgPlaceAsRoomListWorkspaceCheck.md)
-
 ### [Get-MgPlaceAsRoomListWorkspaceCheck](Get-MgPlaceAsRoomListWorkspaceCheck.md)
 
 ### [Get-MgPlaceAsRoomListWorkspaceCheckInCount](Get-MgPlaceAsRoomListWorkspaceCheckInCount.md)
@@ -161,25 +113,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlaceAsSection](Get-MgPlaceAsSection.md)
 
-### [Get-MgPlaceAsSection](Get-MgPlaceAsSection.md)
-
-### [Get-MgPlaceAsSectionCheck](Get-MgPlaceAsSectionCheck.md)
-
 ### [Get-MgPlaceAsSectionCheck](Get-MgPlaceAsSectionCheck.md)
 
 ### [Get-MgPlaceAsSectionCheckInCount](Get-MgPlaceAsSectionCheckInCount.md)
 
 ### [Get-MgPlaceAsWorkspace](Get-MgPlaceAsWorkspace.md)
 
-### [Get-MgPlaceAsWorkspace](Get-MgPlaceAsWorkspace.md)
-
-### [Get-MgPlaceAsWorkspaceCheck](Get-MgPlaceAsWorkspaceCheck.md)
-
 ### [Get-MgPlaceAsWorkspaceCheck](Get-MgPlaceAsWorkspaceCheck.md)
 
 ### [Get-MgPlaceAsWorkspaceCheckInCount](Get-MgPlaceAsWorkspaceCheckInCount.md)
-
-### [Get-MgPlaceCheck](Get-MgPlaceCheck.md)
 
 ### [Get-MgPlaceCheck](Get-MgPlaceCheck.md)
 
@@ -203,21 +145,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)
 
-### [Get-MgUserCalendar](Get-MgUserCalendar.md)
-
 ### [Get-MgUserCalendarCount](Get-MgUserCalendarCount.md)
 
 ### [Get-MgUserCalendarEvent](Get-MgUserCalendarEvent.md)
 
 ### [Get-MgUserCalendarGroup](Get-MgUserCalendarGroup.md)
 
-### [Get-MgUserCalendarGroup](Get-MgUserCalendarGroup.md)
-
 ### [Get-MgUserCalendarGroupCalendar](Get-MgUserCalendarGroupCalendar.md)
 
 ### [Get-MgUserCalendarGroupCount](Get-MgUserCalendarGroupCount.md)
-
-### [Get-MgUserCalendarPermission](Get-MgUserCalendarPermission.md)
 
 ### [Get-MgUserCalendarPermission](Get-MgUserCalendarPermission.md)
 
@@ -231,10 +167,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserEvent](Get-MgUserEvent.md)
 
-### [Get-MgUserEvent](Get-MgUserEvent.md)
-
-### [Get-MgUserEventAttachment](Get-MgUserEventAttachment.md)
-
 ### [Get-MgUserEventAttachment](Get-MgUserEventAttachment.md)
 
 ### [Get-MgUserEventAttachmentCount](Get-MgUserEventAttachmentCount.md)
@@ -244,8 +176,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserEventCount](Get-MgUserEventCount.md)
 
 ### [Get-MgUserEventDelta](Get-MgUserEventDelta.md)
-
-### [Get-MgUserEventExtension](Get-MgUserEventExtension.md)
 
 ### [Get-MgUserEventExtension](Get-MgUserEventExtension.md)
 
@@ -476,23 +406,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserEvent](Update-MgUserEvent.md)
 
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
