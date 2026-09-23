@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsRoomListRoom
 ---
@@ -856,7 +856,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-
+A stable service-level identifier for the place object used by Places workloads.
 
 ```yaml
 Type: System.String
@@ -1173,6 +1173,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     [Label <String>]: User-defined description of the place.
     [ParentId <String>]: The ID of a parent place.
     [Phone <String>]: The phone number of the place.
+    [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
     [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
@@ -1180,6 +1181,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1195,7 +1197,6 @@ This email address is used for booking.
 For example, 1 for first floor, 2 for second floor, and so on.
   [IsTeamsEnabled <Boolean?>]: Indicates whether the room is configured with the Microsoft Teams Rooms system.
   [Nickname <String>]: A short, friendly name for the room, often used for easier identification or display in UI.
-  [PlaceId <String>]: 
   [TeamsEnabledState <String>]: placeFeatureEnablement
   [VideoDeviceName <String>]: The name of the video device that is available in the room.
 
@@ -1241,6 +1242,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates

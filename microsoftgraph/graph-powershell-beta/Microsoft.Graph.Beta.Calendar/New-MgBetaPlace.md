@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -28,8 +28,8 @@ New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hash
  [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
  [-Children <IMicrosoftGraphPlace[]>] [-DisplayName <string>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-PlaceId <string>] [-Tags <string[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -534,6 +534,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PlaceId
+
+A stable service-level identifier for the place object used by Places workloads.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -738,6 +759,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
@@ -782,6 +804,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
