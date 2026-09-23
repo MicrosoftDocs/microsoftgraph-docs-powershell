@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDeviceManagementReport
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaDeviceManagementReport
 
 ## SYNOPSIS
 
-Get reports from deviceManagement
+Reports singleton
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReport?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get reports from deviceManagement
+Reports singleton
 
 **Permissions**
 

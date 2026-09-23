@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminReportSetting
 ---
@@ -24,10 +24,10 @@ Update tenant-level settings for Microsoft 365 reports.
 
 ```
 Update-MgBetaAdminReportSetting [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-DisplayConcealedNames] [-Id <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <hashtable>] [-DisplayConcealedNames] [-Id <string>]
+ [-SharePoint <IMicrosoftGraphSharePointReportSettings>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -355,6 +355,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SharePoint
+
+sharePointReportSettings
+To construct, see NOTES section for SHAREPOINT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointReportSettings
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -415,6 +437,23 @@ Read-only.
 If false, all reports show identifiable information.
 This property represents a setting in the Microsoft 365 admin center.
 Required.
+  [SharePoint <IMicrosoftGraphSharePointReportSettings>]: sharePointReportSettings
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ApiUsageReportMetrics <IMicrosoftGraphApiUsageReportEnablementStatus[]>]: The collection of API usage report metrics and the status of their enablement.
+      [Metric <String>]: The name of the API usage report metric.
+The supported values are: egressReport, throttlingReport.
+      [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
+
+SHAREPOINT `<IMicrosoftGraphSharePointReportSettings>`: sharePointReportSettings
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ApiUsageReportMetrics <IMicrosoftGraphApiUsageReportEnablementStatus[]>]: The collection of API usage report metrics and the status of their enablement.
+    [Metric <String>]: The name of the API usage report metric.
+The supported values are: egressReport, throttlingReport.
+    [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
 
 
 ## RELATED LINKS

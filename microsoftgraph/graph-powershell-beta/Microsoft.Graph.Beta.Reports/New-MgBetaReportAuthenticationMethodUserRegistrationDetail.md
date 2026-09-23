@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethoduserregistrationdetail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaReportAuthenticationMethodUserRegistrationDetail
 ---
@@ -562,7 +562,7 @@ HelpMessage: ''
 ### -SystemPreferredAuthenticationMethods
 
 Collection of authentication methods that the system determined to be the most secure authentication methods among the registered methods for second factor authentication.
-Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
+The possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
 Supports $filter (any with eq).
 
 ```yaml
@@ -752,7 +752,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [MethodsRegistered <String[]>]: Collection of authentication methods registered, such as mobilePhone, email, passKeyDeviceBound.
 Supports $filter (any with eq).
   [SystemPreferredAuthenticationMethods <String[]>]: Collection of authentication methods that the system determined to be the most secure authentication methods among the registered methods for second factor authentication.
-Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
+The possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice, sms, none, unknownFutureValue.
 Supports $filter (any with eq).
   [UserDisplayName <String>]: The user display name, such as Adele Vance.
 Supports $filter (eq, startsWith) and $orderby.

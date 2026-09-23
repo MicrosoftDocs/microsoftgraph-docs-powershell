@@ -1,42 +1,40 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Reports-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportzebrafotadeploymentreport
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport
+title: Update-MgBetaAdminReportSettingSharePoint
 ---
 
-# Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport
+# Update-MgBetaAdminReportSettingSharePoint
 
 ## SYNOPSIS
 
-Invoke action getZebraFotaDeploymentReport
+Update the navigation property sharePoint in admin
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### UpdateExpanded (Default)
 
 ```
-Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport -OutFile <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Filter <string>]
- [-GroupBy <string[]>] [-Name <string>] [-Property <string[]>] [-Search <string>]
- [-SessionId <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-Break]
+Update-MgBetaAdminReportSettingSharePoint [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>]
+ [-ApiUsageReportMetrics <IMicrosoftGraphApiUsageReportEnablementStatus[]>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Get
+### Update
 
 ```
-Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport -OutFile <string>
- -BodyParameter <IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema>
+Update-MgBetaAdminReportSettingSharePoint -BodyParameter <IMicrosoftGraphSharePointReportSettings>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,15 +44,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action getZebraFotaDeploymentReport
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
+Update the navigation property sharePoint in admin
 
 ## PARAMETERS
 
@@ -68,7 +58,29 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: GetExpanded
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ApiUsageReportMetrics
+
+The collection of API usage report metrics and the status of their enablement.
+To construct, see NOTES section for APIUSAGEREPORTMETRICS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApiUsageReportEnablementStatus[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -81,16 +93,16 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+sharePointReportSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointReportSettings
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: Update
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -134,48 +146,6 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Filter
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -GroupBy
-
-
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -249,30 +219,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Name
+### -Id
 
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OutFile
-
-Path to write output file to
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -280,50 +230,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Property
-
-
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Select
-ParameterSets:
-- Name: GetExpanded
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -419,113 +326,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -SessionId
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Skip
-
-
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: GetExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Sort
-
-
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- OrderBy
-ParameterSets:
-- Name: GetExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases:
-- Limit
-ParameterSets:
-- Name: GetExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -557,7 +357,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointReportSettings
 
 {{ Fill in the Description }}
 
@@ -567,7 +367,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointReportSettings
 
 {{ Fill in the Description }}
 
@@ -578,22 +378,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema>`: .
+APIUSAGEREPORTMETRICS <IMicrosoftGraphApiUsageReportEnablementStatus[]>: The collection of API usage report metrics and the status of their enablement.
+  [Metric <String>]: The name of the API usage report metric.
+The supported values are: egressReport, throttlingReport.
+  [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
+
+BODYPARAMETER `<IMicrosoftGraphSharePointReportSettings>`: sharePointReportSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Filter <String>]: 
-  [GroupBy <String[]>]: 
-  [Name <String>]: 
-  [OrderBy <String[]>]: 
-  [Search <String>]: 
-  [Select <String[]>]: 
-  [SessionId <String>]: 
-  [Skip <Int32?>]: 
-  [Top <Int32?>]:
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ApiUsageReportMetrics <IMicrosoftGraphApiUsageReportEnablementStatus[]>]: The collection of API usage report metrics and the status of their enablement.
+    [Metric <String>]: The name of the API usage report metric.
+The supported values are: egressReport, throttlingReport.
+    [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
 
 
 ## RELATED LINKS
 
-- [Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportzebrafotadeploymentreport)
+- [Update-MgBetaAdminReportSettingSharePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint)
 
 
 
