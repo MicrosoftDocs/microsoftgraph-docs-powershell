@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriveitemsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgDriveItemSensitivityLabel
 ---
@@ -13,7 +13,13 @@ title: Set-MgDriveItemSensitivityLabel
 
 ## SYNOPSIS
 
-Invoke action assignSensitivityLabel
+Asynchronously assign a sensitivity label to a driveItem.
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
+Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+This API applies sensitivity labels to files at rest.
+Office clients don't apply watermarks, headers, or footers to files that contain the label information.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
@@ -68,7 +74,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action assignSensitivityLabel
+Asynchronously assign a sensitivity label to a driveItem.
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
+Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+This API applies sensitivity labels to files at rest.
+Office clients don't apply watermarks, headers, or footers to files that contain the label information.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
 **Permissions**
 
@@ -602,6 +614,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriveitemsensitivitylabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0)
 
 
 
