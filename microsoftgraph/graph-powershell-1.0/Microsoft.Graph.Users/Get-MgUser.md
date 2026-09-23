@@ -691,9 +691,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser)
-- [](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0)
+- [Get-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0)
 
 
 

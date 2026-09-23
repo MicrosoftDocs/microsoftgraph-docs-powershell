@@ -481,7 +481,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachmentcontent)
+- [Remove-MgUserTodoListTaskAttachmentContent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachmentcontent)
 
 
 
