@@ -15,6 +15,9 @@ title: Get-MgUserAuthenticationWindowsHelloForBusinessMethod
 
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

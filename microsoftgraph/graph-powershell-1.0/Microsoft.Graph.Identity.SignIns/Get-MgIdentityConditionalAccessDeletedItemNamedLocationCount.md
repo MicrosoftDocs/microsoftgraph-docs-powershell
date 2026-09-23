@@ -15,6 +15,9 @@ title: Get-MgIdentityConditionalAccessDeletedItemNamedLocationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocationCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
