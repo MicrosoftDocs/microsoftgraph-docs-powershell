@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAgentRiskDetection
 ---
@@ -121,6 +121,9 @@ HelpMessage: ''
 ### -AgentDisplayName
 
 Name of the agent.
+Deprecated.
+Use displayName instead.
+This property will be removed after 2027-04-28.
 Supports $filter (eq, startsWith).
 
 ```yaml
@@ -143,7 +146,9 @@ HelpMessage: ''
 ### -AgentId
 
 The unique identifier for the agent.
-This is equivalent to 'id' to the specific agent type.
+Deprecated.
+Use identityId instead.
+This property will be removed after 2027-04-28.
 See riskyAgentIdentity, riskyAgentIdentityBlueprintPrincipal, and riskyAgentUser.
 Supports $filter (eq, startsWith).
 
@@ -319,7 +324,8 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+Human-readable name of the identity associated with this risk detection.
+Supports $filter (eq, startsWith).
 
 ```yaml
 Type: System.String
@@ -425,7 +431,8 @@ HelpMessage: ''
 
 ### -IdentityId
 
-
+Unique identifier of the identity associated with this risk detection.
+Supports $filter (eq, startsWith).
 
 ```yaml
 Type: System.String
@@ -826,9 +833,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [AdditionalInfo <String>]: Additional information associated with the risk detection.
   [AgentDisplayName <String>]: Name of the agent.
+Deprecated.
+Use displayName instead.
+This property will be removed after 2027-04-28.
  Supports $filter (eq, startsWith).
   [AgentId <String>]: The unique identifier for the agent.
-This is equivalent to 'id' to the specific agent type.
+Deprecated.
+Use identityId instead.
+This property will be removed after 2027-04-28.
 See riskyAgentIdentity, riskyAgentIdentityBlueprintPrincipal, and riskyAgentUser.
  Supports $filter (eq, startsWith).
   [BlueprintId <String>]: The identifier of the blueprint associated with the agent.
@@ -839,8 +851,10 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [DetectionTimingType <String>]: riskDetectionTimingType
-  [DisplayName <String>]: 
-  [IdentityId <String>]: 
+  [DisplayName <String>]: Human-readable name of the identity associated with this risk detection.
+ Supports $filter (eq, startsWith).
+  [IdentityId <String>]: Unique identifier of the identity associated with this risk detection.
+ Supports $filter (eq, startsWith).
   [IdentityType <String>]: agentIdentityType
   [LastModifiedDateTime <DateTime?>]: Date and time that the risk detection was last updated.
  Supports $filter (eq, le, and ge).

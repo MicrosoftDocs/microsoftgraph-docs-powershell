@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetapolicydeleteditemcrosstenantpartneridentitysynchronization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization
 ---
@@ -24,10 +24,12 @@ Set-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization
  -CrossTenantAccessPolicyConfigurationPartnerTenantId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-DisplayName <string>]
  [-ExternalCloudAuthorizedApplicationId <string>]
- [-GroupSyncInbound <IMicrosoftGraphCrossTenantGroupSyncInbound>] [-TenantId <string>]
- [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-GroupSyncInbound <IMicrosoftGraphCrossTenantGroupSyncInbound>]
+ [-RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]
+ [-TenantId <string>] [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Set
@@ -48,10 +50,12 @@ Set-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization
  -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-DisplayName <string>]
  [-ExternalCloudAuthorizedApplicationId <string>]
- [-GroupSyncInbound <IMicrosoftGraphCrossTenantGroupSyncInbound>] [-TenantId <string>]
- [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-GroupSyncInbound <IMicrosoftGraphCrossTenantGroupSyncInbound>]
+ [-RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]
+ [-TenantId <string>] [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### SetViaIdentity
@@ -488,6 +492,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RoleEnabledGroupSyncInbound
+
+crossTenantRoleEnabledGroupSyncInbound
+To construct, see NOTES section for ROLEENABLEDGROUPSYNCINBOUND properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: SetViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: SetExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -TenantId
 
 Tenant identifier for the partner Microsoft Entra organization.
@@ -613,6 +645,9 @@ Optional.
     [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
 false stops any current group synchronization from the source tenant to the target tenant.
 This property has no impact on existing groups that were synchronized.
+  [RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]: crossTenantRoleEnabledGroupSyncInbound
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsSyncAllowed <Boolean?>]: 
   [TenantId <String>]: Tenant identifier for the partner Microsoft Entra organization.
 Key.
 Read-only.
@@ -694,6 +729,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -725,6 +761,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
+
+ROLEENABLEDGROUPSYNCINBOUND `<IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>`: crossTenantRoleEnabledGroupSyncInbound
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [IsSyncAllowed <Boolean?>]: 
 
 USERSYNCINBOUND `<IMicrosoftGraphCrossTenantUserSyncInbound>`: crossTenantUserSyncInbound
   [(Any) <Object>]: This indicates any property can be added to this object.

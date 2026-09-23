@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycustomauthenticationextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityCustomAuthenticationExtension
 ---
@@ -84,6 +84,58 @@ The following derived types are currently supported.
 | Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomAuthenticationExtension.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Update an onTokenIssuanceStartCustomExtension object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
+	displayName = "onTokenIssuanceStartCustomExtension"
+	description = "Fetch additional claims from custom user store"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
+		targetUrl = "https://authenticationeventsAPI.contoso.com"
+	}
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+	}
+	claimsForTokenConfiguration = @(
+		@{
+			claimIdInApiResponse = "DateOfBirth"
+		}
+		@{
+			claimIdInApiResponse = "CustomRoles"
+		}
+	)
+}
+
+Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+
+```
+This example will update an ontokenissuancestartcustomextension object
+
+### Example 2: Update an onVerifiedIdClaimValidationCustomExtension object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension"
+	displayName = "Verified ID Claim Validation (updated)"
+	description = "Updated description for Verified ID claim validation"
+}
+
+Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+
+```
+This example will update an onverifiedidclaimvalidationcustomextension object
+
 
 ## PARAMETERS
 
@@ -731,6 +783,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -768,7 +821,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [Update-MgBetaIdentityCustomAuthenticationExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycustomauthenticationextension)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-beta)
-
 
 
 
