@@ -71,16 +71,6 @@ This cmdlet has the following aliases,
 
 Update the properties of a zone object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -825,6 +815,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityzone)
 - [](https://learn.microsoft.com/graph/api/security-zone-update?view=graph-rest-beta)
+
 
 
 

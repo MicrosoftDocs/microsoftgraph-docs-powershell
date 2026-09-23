@@ -78,16 +78,6 @@ Include @odata.type with #microsoft.graph.security.caseManagement.comment in the
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActivityId
@@ -732,6 +722,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcaseactivity)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-activity-update?view=graph-rest-beta)
+
 
 
 

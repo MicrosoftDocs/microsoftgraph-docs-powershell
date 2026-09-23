@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 Create an environment object to attach it to a zone.
 You can create up to 1,000 environments per zone.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -621,6 +611,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityzoneenvironment)
 - [](https://learn.microsoft.com/graph/api/security-zone-post-environments?view=graph-rest-beta)
+
 
 
 
