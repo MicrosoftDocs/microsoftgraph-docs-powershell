@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlannerTask
 ---
@@ -34,12 +34,12 @@ Update-MgBetaPlannerTask -PlannerTaskId <string> -IfMatch <string>
  [-CompletedDateTime <datetime>] [-ConversationThreadId <string>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>]
- [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <datetime>] [-HasChat]
- [-HasDescription] [-Id <string>] [-IsArchived] [-IsOnMyDay] [-IsOnMyDayLastModifiedDate <datetime>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-Messages <IMicrosoftGraphPlannerTaskChatMessage[]>] [-OrderHint <string>]
- [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>] [-Priority <int>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <datetime>] [-GoalIds <string[]>]
+ [-HasChat] [-HasDescription] [-Id <string>] [-IsArchived] [-IsOnMyDay]
+ [-IsOnMyDayLastModifiedDate <datetime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <datetime>] [-Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]
+ [-OrderHint <string>] [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>]
+ [-Priority <int>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <int>]
  [-SpecifiedCompletionRequirements <string>] [-StartDateTime <datetime>] [-Title <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -71,12 +71,12 @@ Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <string>
  [-CompletedDateTime <datetime>] [-ConversationThreadId <string>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>]
- [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <datetime>] [-HasChat]
- [-HasDescription] [-Id <string>] [-IsArchived] [-IsOnMyDay] [-IsOnMyDayLastModifiedDate <datetime>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-Messages <IMicrosoftGraphPlannerTaskChatMessage[]>] [-OrderHint <string>]
- [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>] [-Priority <int>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <datetime>] [-GoalIds <string[]>]
+ [-HasChat] [-HasDescription] [-Id <string>] [-IsArchived] [-IsOnMyDay]
+ [-IsOnMyDayLastModifiedDate <datetime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <datetime>] [-Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]
+ [-OrderHint <string>] [-PercentComplete <int>] [-PlanId <string>] [-PreviewType <string>]
+ [-Priority <int>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <int>]
  [-SpecifiedCompletionRequirements <string>] [-StartDateTime <datetime>] [-Title <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -705,6 +705,34 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GoalIds
+
+Read-only.
+The IDs of the goals associated with the task.
+
+```yaml
+Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1714,6 +1742,8 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
   [HasChat <Boolean?>]: Read-only.
 This value is true if the task has chat messages associated with it.
 Otherwise, false.
@@ -1915,6 +1945,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
   [PlannerDeltaId <String>]: The unique identifier of plannerDelta
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
   [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
   [PlannerRosterId <String>]: The unique identifier of plannerRoster
