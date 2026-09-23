@@ -64,16 +64,6 @@ For information on using advanced hunting in the Microsoft Defender portal, see 
 | Delegated (personal Microsoft account) | Not supported |
 | Application | ThreatHunting.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -482,6 +472,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityrunhuntingquery)
+
 
 
 

@@ -80,16 +80,6 @@ Create new navigation property to evaluations for security
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityCopilotWorkspaces.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -893,6 +883,7 @@ RESULT `<IMicrosoftGraphSecurityCopilotEvaluationResult>`: evaluationResult
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspacesessionpromptevaluation)
+
 
 
 
