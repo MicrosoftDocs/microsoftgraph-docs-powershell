@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.BackupRestore
-Module Guid: b056a02d-fbfd-4735-a6a5-8ceddedffb3a
+Module Guid: 413f4191-4bdf-4efe-90e6-7795831a705c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.backuprestore/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -38,6 +38,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJobCount](Get-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJobCount.md)
 
 ### [Get-MgSolutionBackupRestoreDriveProtectionUnitCount](Get-MgSolutionBackupRestoreDriveProtectionUnitCount.md)
+
+### [Get-MgSolutionBackupRestoreEmailNotificationSetting](Get-MgSolutionBackupRestoreEmailNotificationSetting.md)
 
 ### [Get-MgSolutionBackupRestoreExchangeProtectionPolicy](Get-MgSolutionBackupRestoreExchangeProtectionPolicy.md)
 
@@ -375,6 +377,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](Remove-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
 
+### [Remove-MgSolutionBackupRestoreEmailNotificationSetting](Remove-MgSolutionBackupRestoreEmailNotificationSetting.md)
+
 ### [Remove-MgSolutionBackupRestoreExchangeProtectionPolicy](Remove-MgSolutionBackupRestoreExchangeProtectionPolicy.md)
 
 ### [Remove-MgSolutionBackupRestoreExchangeRestoreSession](Remove-MgSolutionBackupRestoreExchangeRestoreSession.md)
@@ -442,6 +446,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSolutionBackupRestoreDriveProtectionUnit](Update-MgSolutionBackupRestoreDriveProtectionUnit.md)
 
 ### [Update-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob](Update-MgSolutionBackupRestoreDriveProtectionUnitBulkAdditionJob.md)
+
+### [Update-MgSolutionBackupRestoreEmailNotificationSetting](Update-MgSolutionBackupRestoreEmailNotificationSetting.md)
 
 ### [Update-MgSolutionBackupRestoreExchangeProtectionPolicy](Update-MgSolutionBackupRestoreExchangeProtectionPolicy.md)
 
