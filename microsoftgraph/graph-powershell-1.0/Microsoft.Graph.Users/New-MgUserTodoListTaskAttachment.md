@@ -79,9 +79,9 @@ Create new navigation property to attachments for users
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Users
 
 $params = @{
@@ -93,6 +93,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+```
+This example shows how to use the New-MgUserTodoListTaskAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
