@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/move-mgsecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgSecurityAlert
 ---
@@ -47,8 +47,9 @@ This cmdlet has the following aliases,
 Move one or more alert resources to a new or existing incident.
 
 ## EXAMPLES
+### Example 1: Move alerts to an incident
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -63,6 +64,10 @@ newCorrelationReasons = "sameAsset, temporalProximity"
 }
 
 Move-MgSecurityAlert -BodyParameter $params
+
+```
+This example will move alerts to an incident
+
 
 ## PARAMETERS
 

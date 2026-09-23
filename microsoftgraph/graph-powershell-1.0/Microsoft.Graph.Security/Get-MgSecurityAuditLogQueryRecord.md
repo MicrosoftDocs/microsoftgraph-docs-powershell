@@ -1,45 +1,53 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgassecuritycaseediscoverycasetaghierarchy
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlogqueryrecord
 Locale: en-US
 Module Name: Microsoft.Graph.Security
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy
+title: Get-MgSecurityAuditLogQueryRecord
 ---
 
-# Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy
+# Get-MgSecurityAuditLogQueryRecord
 
 ## SYNOPSIS
 
-List eDiscovery review tags with the tag hierarchy shown.
+The collection of audit log records retrieved by the query.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAuditLogQueryRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAuditLogQueryRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### As (Default)
+### List (Default)
 
 ```
-Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId <string> [-Count]
- [-ExpandProperty <string[]>] [-Filter <string>] [-Property <string[]>] [-Search <string>]
- [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
+Get-MgSecurityAuditLogQueryRecord -AuditLogQueryId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
+ [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
+ [-CountVariable <string>]
+```
+
+### Get
+
+```
+Get-MgSecurityAuditLogQueryRecord -AuditLogQueryId <string> -AuditLogRecordId <string>
+ [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials]
 ```
 
-### AsViaIdentity
+### GetViaIdentity
 
 ```
-Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -InputObject <ISecurityIdentity> [-Count]
- [-ExpandProperty <string[]>] [-Filter <string>] [-Property <string[]>] [-Search <string>]
- [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgSecurityAuditLogQueryRecord -InputObject <ISecurityIdentity> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,30 +57,78 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List eDiscovery review tags with the tag hierarchy shown.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Retrieve child tags of a specific eDiscovery
-
-```powershell
-
-Import-Module Microsoft.Graph.Security
-
-Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId $ediscoveryCaseId
-
-```
-This example will retrieve child tags of a specific ediscovery
-
+The collection of audit log records retrieved by the query.
 
 ## PARAMETERS
+
+### -All
+
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AuditLogQueryId
+
+The unique identifier of auditLogQuery
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AuditLogRecordId
+
+The unique identifier of auditLogRecord
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -95,40 +151,21 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Count
+### -CountVariable
 
-Include count of items
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -EdiscoveryCaseId
-
-The unique identifier of ediscoveryCase
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
 
 ```yaml
 Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases: []
+Aliases:
+- CV
 ParameterSets:
-- Name: As
+- Name: List
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -169,7 +206,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -254,10 +291,31 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AsViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PageSize
+
+Sets the page size of results.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -382,7 +440,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -403,7 +461,7 @@ DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -425,7 +483,7 @@ SupportsWildcards: false
 Aliases:
 - OrderBy
 ParameterSets:
-- Name: (All)
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -447,7 +505,7 @@ SupportsWildcards: false
 Aliases:
 - Limit
 ParameterSets:
-- Name: (All)
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -477,7 +535,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAuditLogRecord
 
 {{ Fill in the Description }}
 
@@ -567,8 +625,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgassecuritycaseediscoverycasetaghierarchy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-1.0)
+- [Get-MgSecurityAuditLogQueryRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlogqueryrecord)
+
 
 
 

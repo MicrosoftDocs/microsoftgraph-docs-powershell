@@ -1,45 +1,41 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgassecuritycaseediscoverycasetaghierarchy
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Security
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy
+title: Remove-MgSecurityCollaborationAnalyzedEmail
 ---
 
-# Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy
+# Remove-MgSecurityCollaborationAnalyzedEmail
 
 ## SYNOPSIS
 
-List eDiscovery review tags with the tag hierarchy shown.
+Delete navigation property analyzedEmails for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Beta.Security/Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCollaborationAnalyzedEmail?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### As (Default)
+### Delete (Default)
 
 ```
-Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId <string> [-Count]
- [-ExpandProperty <string[]>] [-Filter <string>] [-Property <string[]>] [-Search <string>]
- [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Remove-MgSecurityCollaborationAnalyzedEmail -AnalyzedEmailId <string> [-IfMatch <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### AsViaIdentity
+### DeleteViaIdentity
 
 ```
-Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -InputObject <ISecurityIdentity> [-Count]
- [-ExpandProperty <string[]>] [-Filter <string>] [-Property <string[]>] [-Search <string>]
- [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Remove-MgSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity> [-IfMatch <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -49,30 +45,30 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List eDiscovery review tags with the tag hierarchy shown.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Retrieve child tags of a specific eDiscovery
-
-```powershell
-
-Import-Module Microsoft.Graph.Security
-
-Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId $ediscoveryCaseId
-
-```
-This example will retrieve child tags of a specific ediscovery
-
+Delete navigation property analyzedEmails for security
 
 ## PARAMETERS
+
+### -AnalyzedEmailId
+
+The unique identifier of analyzedEmail
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -95,79 +91,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Count
+### -Confirm
 
-Include count of items
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -EdiscoveryCaseId
-
-The unique identifier of ediscoveryCase
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: As
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ExpandProperty
-
-Expand related entities
-
-```yaml
-Type: System.String[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- Expand
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Filter
-
-Filter items by property values
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -243,6 +176,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -254,7 +208,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: AsViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -265,16 +219,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
+### -PassThru
 
-Select properties to be returned
+Returns true when the command succeeds
 
 ```yaml
-Type: System.String[]
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
-Aliases:
-- Select
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -372,80 +325,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
+### -WhatIf
 
-Search items by search phrases
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Skip
-
-Skip the first n items
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Sort
-
-Order items by property values
-
-```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- OrderBy
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases:
-- Limit
+- wi
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -477,7 +366,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -567,8 +456,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgassecuritycaseediscoverycasetaghierarchy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-1.0)
+- [Remove-MgSecurityCollaborationAnalyzedEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycollaborationanalyzedemail)
+
 
 
 

@@ -1,40 +1,32 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Security-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/merge-mgsecurityincident
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycollaborationanalyzedemailcount
 Locale: en-US
 Module Name: Microsoft.Graph.Security
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Merge-MgSecurityIncident
+title: Get-MgSecurityCollaborationAnalyzedEmailCount
 ---
 
-# Merge-MgSecurityIncident
+# Get-MgSecurityCollaborationAnalyzedEmailCount
 
 ## SYNOPSIS
 
-Merge multiple incident resources into a single incident.
+Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCollaborationAnalyzedEmailCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCollaborationAnalyzedEmailCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### MergeExpanded (Default)
+### Get (Default)
 
 ```
-Merge-MgSecurityIncident [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-IncidentComment <string>] [-IncidentIds <string[]>] [-MergeReasons <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### Merge
-
-```
-Merge-MgSecurityIncident
- -BodyParameter <IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeincidentsPostRequestbodyContentApplicationJsonSchema>
+Get-MgSecurityCollaborationAnalyzedEmailCount [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -44,74 +36,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Merge multiple incident resources into a single incident.
+Get the number of the resource
 
-## EXAMPLES
-### Example 1: Merge incidents
+**Permissions**
 
-```powershell
-
-Import-Module Microsoft.Graph.Security
-
-$params = @{
-	incidentIds = @(
-	"2972395"
-"2972396"
-)
-incidentComment = "Merging related incidents from the same campaign"
-mergeReasons = "sameCampaign, sameActor"
-}
-
-Merge-MgSecurityIncident -BodyParameter $params
-
-```
-This example will merge incidents
-
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAnalyzedMessage.Read.All, SecurityAnalyzedMessage.ReadWrite.All,  |
 
 ## PARAMETERS
-
-### -AdditionalProperties
-
-Additional Parameters
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: MergeExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeincidentsPostRequestbodyContentApplicationJsonSchema
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Merge
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -134,16 +69,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -Filter
 
-Prompts you for confirmation before running the cmdlet.
+Filter items by property values
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- cf
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -209,69 +143,6 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -IncidentComment
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: MergeExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -IncidentIds
-
-
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: MergeExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -MergeReasons
-
-correlationReason
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: MergeExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -367,16 +238,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -WhatIf
+### -Search
 
-Runs the command in a mode that only reports what would happen without performing the actions.
+Search items by search phrases
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- wi
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -398,38 +268,22 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeincidentsPostRequestbodyContentApplicationJsonSchema
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.String
+### System.Int32
 
 {{ Fill in the Description }}
 
 ## NOTES
 
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeincidentsPostRequestbodyContentApplicationJsonSchema>`: .
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [IncidentComment <String>]: 
-  [IncidentIds <String[]>]: 
-  [MergeReasons <String>]: correlationReason
-
-
 ## RELATED LINKS
 
-- [Merge-MgSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/merge-mgsecurityincident)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-incident-mergeincidents?view=graph-rest-1.0)
+- [Get-MgSecurityCollaborationAnalyzedEmailCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycollaborationanalyzedemailcount)
+
 
 
 
