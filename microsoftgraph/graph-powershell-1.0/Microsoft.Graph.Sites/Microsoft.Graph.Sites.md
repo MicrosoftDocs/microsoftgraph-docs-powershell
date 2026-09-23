@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 39ac6236-2fd4-462f-8fba-248de5ecb021
+Module Guid: c7b4be7e-6407-45fb-899b-59dedef2c75c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.sites/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -77,17 +77,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
 
-### [Get-MgGroupSite](Get-MgGroupSite.md)
-
 ### [Get-MgGroupSiteActivityByInterval](Get-MgGroupSiteActivityByInterval.md)
 
 ### [Get-MgGroupSiteAnalytic](Get-MgGroupSiteAnalytic.md)
 
 ### [Get-MgGroupSiteAnalyticItemActivityStat](Get-MgGroupSiteAnalyticItemActivityStat.md)
-
-### [Get-MgGroupSiteAnalyticItemActivityStat](Get-MgGroupSiteAnalyticItemActivityStat.md)
-
-### [Get-MgGroupSiteAnalyticItemActivityStatActivity](Get-MgGroupSiteAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgGroupSiteAnalyticItemActivityStatActivity](Get-MgGroupSiteAnalyticItemActivityStatActivity.md)
 
@@ -109,13 +103,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteColumn](Get-MgGroupSiteColumn.md)
 
-### [Get-MgGroupSiteColumn](Get-MgGroupSiteColumn.md)
-
 ### [Get-MgGroupSiteColumnCount](Get-MgGroupSiteColumnCount.md)
 
 ### [Get-MgGroupSiteColumnSourceColumn](Get-MgGroupSiteColumnSourceColumn.md)
-
-### [Get-MgGroupSiteContentType](Get-MgGroupSiteContentType.md)
 
 ### [Get-MgGroupSiteContentType](Get-MgGroupSiteContentType.md)
 
@@ -123,11 +113,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteContentTypeBaseType](Get-MgGroupSiteContentTypeBaseType.md)
 
-### [Get-MgGroupSiteContentTypeBaseType](Get-MgGroupSiteContentTypeBaseType.md)
-
 ### [Get-MgGroupSiteContentTypeBaseTypeCount](Get-MgGroupSiteContentTypeBaseTypeCount.md)
-
-### [Get-MgGroupSiteContentTypeColumn](Get-MgGroupSiteContentTypeColumn.md)
 
 ### [Get-MgGroupSiteContentTypeColumn](Get-MgGroupSiteContentTypeColumn.md)
 
@@ -135,11 +121,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteContentTypeColumnLink](Get-MgGroupSiteContentTypeColumnLink.md)
 
-### [Get-MgGroupSiteContentTypeColumnLink](Get-MgGroupSiteContentTypeColumnLink.md)
-
 ### [Get-MgGroupSiteContentTypeColumnLinkCount](Get-MgGroupSiteContentTypeColumnLinkCount.md)
-
-### [Get-MgGroupSiteContentTypeColumnPosition](Get-MgGroupSiteContentTypeColumnPosition.md)
 
 ### [Get-MgGroupSiteContentTypeColumnPosition](Get-MgGroupSiteContentTypeColumnPosition.md)
 
@@ -167,11 +149,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteDrive](Get-MgGroupSiteDrive.md)
 
-### [Get-MgGroupSiteDrive](Get-MgGroupSiteDrive.md)
-
 ### [Get-MgGroupSiteDriveCount](Get-MgGroupSiteDriveCount.md)
-
-### [Get-MgGroupSiteExternalColumn](Get-MgGroupSiteExternalColumn.md)
 
 ### [Get-MgGroupSiteExternalColumn](Get-MgGroupSiteExternalColumn.md)
 
@@ -184,8 +162,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupSiteGetByPathColumn](Get-MgGroupSiteGetByPathColumn.md)
 
 ### [Get-MgGroupSiteGetByPathContentType](Get-MgGroupSiteGetByPathContentType.md)
-
-### [Get-MgGroupSiteGetByPathDrive](Get-MgGroupSiteGetByPathDrive.md)
 
 ### [Get-MgGroupSiteGetByPathDrive](Get-MgGroupSiteGetByPathDrive.md)
 
@@ -205,13 +181,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteGetByPathTermStore](Get-MgGroupSiteGetByPathTermStore.md)
 
-### [Get-MgGroupSiteGetByPathTermStore](Get-MgGroupSiteGetByPathTermStore.md)
-
 ### [Get-MgGroupSiteGetGraphBPrePathCreatedByUser](Get-MgGroupSiteGetGraphBPrePathCreatedByUser.md)
 
 ### [Get-MgGroupSiteGetGraphBPrePathLastModifiedByUser](Get-MgGroupSiteGetGraphBPrePathLastModifiedByUser.md)
-
-### [Get-MgGroupSiteItem](Get-MgGroupSiteItem.md)
 
 ### [Get-MgGroupSiteItem](Get-MgGroupSiteItem.md)
 
@@ -235,10 +207,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteList](Get-MgGroupSiteList.md)
 
-### [Get-MgGroupSiteList](Get-MgGroupSiteList.md)
-
-### [Get-MgGroupSiteListColumn](Get-MgGroupSiteListColumn.md)
-
 ### [Get-MgGroupSiteListColumn](Get-MgGroupSiteListColumn.md)
 
 ### [Get-MgGroupSiteListColumnCount](Get-MgGroupSiteListColumnCount.md)
@@ -247,21 +215,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteListContentType](Get-MgGroupSiteListContentType.md)
 
-### [Get-MgGroupSiteListContentType](Get-MgGroupSiteListContentType.md)
-
-### [Get-MgGroupSiteListContentTypeColumn](Get-MgGroupSiteListContentTypeColumn.md)
-
 ### [Get-MgGroupSiteListContentTypeColumn](Get-MgGroupSiteListContentTypeColumn.md)
 
 ### [Get-MgGroupSiteListContentTypeColumnCount](Get-MgGroupSiteListContentTypeColumnCount.md)
 
 ### [Get-MgGroupSiteListContentTypeColumnLink](Get-MgGroupSiteListContentTypeColumnLink.md)
 
-### [Get-MgGroupSiteListContentTypeColumnLink](Get-MgGroupSiteListContentTypeColumnLink.md)
-
 ### [Get-MgGroupSiteListContentTypeColumnLinkCount](Get-MgGroupSiteListContentTypeColumnLinkCount.md)
-
-### [Get-MgGroupSiteListContentTypeColumnPosition](Get-MgGroupSiteListContentTypeColumnPosition.md)
 
 ### [Get-MgGroupSiteListContentTypeColumnPosition](Get-MgGroupSiteListContentTypeColumnPosition.md)
 
@@ -287,8 +247,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteListItem](Get-MgGroupSiteListItem.md)
 
-### [Get-MgGroupSiteListItem](Get-MgGroupSiteListItem.md)
-
 ### [Get-MgGroupSiteListItemActivityByInterval](Get-MgGroupSiteListItemActivityByInterval.md)
 
 ### [Get-MgGroupSiteListItemAnalytic](Get-MgGroupSiteListItemAnalytic.md)
@@ -305,8 +263,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteListItemDocumentSetVersion](Get-MgGroupSiteListItemDocumentSetVersion.md)
 
-### [Get-MgGroupSiteListItemDocumentSetVersion](Get-MgGroupSiteListItemDocumentSetVersion.md)
-
 ### [Get-MgGroupSiteListItemDocumentSetVersionCount](Get-MgGroupSiteListItemDocumentSetVersionCount.md)
 
 ### [Get-MgGroupSiteListItemDocumentSetVersionField](Get-MgGroupSiteListItemDocumentSetVersionField.md)
@@ -317,7 +273,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteListItemField](Get-MgGroupSiteListItemField.md)
 
-### [Get-MgGroupSiteListItemVersion](Get-MgGroupSiteListItemVersion.md)
+### [Get-MgGroupSiteListItemPermission](Get-MgGroupSiteListItemPermission.md)
+
+### [Get-MgGroupSiteListItemPermissionCount](Get-MgGroupSiteListItemPermissionCount.md)
 
 ### [Get-MgGroupSiteListItemVersion](Get-MgGroupSiteListItemVersion.md)
 
@@ -327,19 +285,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteListOperation](Get-MgGroupSiteListOperation.md)
 
-### [Get-MgGroupSiteListOperation](Get-MgGroupSiteListOperation.md)
-
 ### [Get-MgGroupSiteListOperationCount](Get-MgGroupSiteListOperationCount.md)
 
-### [Get-MgGroupSiteListSubscription](Get-MgGroupSiteListSubscription.md)
+### [Get-MgGroupSiteListPermission](Get-MgGroupSiteListPermission.md)
+
+### [Get-MgGroupSiteListPermissionCount](Get-MgGroupSiteListPermissionCount.md)
 
 ### [Get-MgGroupSiteListSubscription](Get-MgGroupSiteListSubscription.md)
 
 ### [Get-MgGroupSiteListSubscriptionCount](Get-MgGroupSiteListSubscriptionCount.md)
 
 ### [Get-MgGroupSiteOnenote](Get-MgGroupSiteOnenote.md)
-
-### [Get-MgGroupSiteOnenoteNotebook](Get-MgGroupSiteOnenoteNotebook.md)
 
 ### [Get-MgGroupSiteOnenoteNotebook](Get-MgGroupSiteOnenoteNotebook.md)
 
@@ -351,11 +307,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOnenoteNotebookSection](Get-MgGroupSiteOnenoteNotebookSection.md)
 
-### [Get-MgGroupSiteOnenoteNotebookSection](Get-MgGroupSiteOnenoteNotebookSection.md)
-
 ### [Get-MgGroupSiteOnenoteNotebookSectionCount](Get-MgGroupSiteOnenoteNotebookSectionCount.md)
-
-### [Get-MgGroupSiteOnenoteNotebookSectionGroup](Get-MgGroupSiteOnenoteNotebookSectionGroup.md)
 
 ### [Get-MgGroupSiteOnenoteNotebookSectionGroup](Get-MgGroupSiteOnenoteNotebookSectionGroup.md)
 
@@ -367,11 +319,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOnenoteNotebookSectionGroupSection](Get-MgGroupSiteOnenoteNotebookSectionGroupSection.md)
 
-### [Get-MgGroupSiteOnenoteNotebookSectionGroupSection](Get-MgGroupSiteOnenoteNotebookSectionGroupSection.md)
-
 ### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionCount](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionCount.md)
-
-### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
 
 ### [Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
 
@@ -389,8 +337,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOnenoteNotebookSectionPage](Get-MgGroupSiteOnenoteNotebookSectionPage.md)
 
-### [Get-MgGroupSiteOnenoteNotebookSectionPage](Get-MgGroupSiteOnenoteNotebookSectionPage.md)
-
 ### [Get-MgGroupSiteOnenoteNotebookSectionPageContent](Get-MgGroupSiteOnenoteNotebookSectionPageContent.md)
 
 ### [Get-MgGroupSiteOnenoteNotebookSectionPageCount](Get-MgGroupSiteOnenoteNotebookSectionPageCount.md)
@@ -405,11 +351,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOnenoteOperation](Get-MgGroupSiteOnenoteOperation.md)
 
-### [Get-MgGroupSiteOnenoteOperation](Get-MgGroupSiteOnenoteOperation.md)
-
 ### [Get-MgGroupSiteOnenoteOperationCount](Get-MgGroupSiteOnenoteOperationCount.md)
-
-### [Get-MgGroupSiteOnenotePage](Get-MgGroupSiteOnenotePage.md)
 
 ### [Get-MgGroupSiteOnenotePage](Get-MgGroupSiteOnenotePage.md)
 
@@ -423,19 +365,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOnenoteResource](Get-MgGroupSiteOnenoteResource.md)
 
-### [Get-MgGroupSiteOnenoteResource](Get-MgGroupSiteOnenoteResource.md)
-
 ### [Get-MgGroupSiteOnenoteResourceContent](Get-MgGroupSiteOnenoteResourceContent.md)
 
 ### [Get-MgGroupSiteOnenoteResourceCount](Get-MgGroupSiteOnenoteResourceCount.md)
 
 ### [Get-MgGroupSiteOnenoteSection](Get-MgGroupSiteOnenoteSection.md)
 
-### [Get-MgGroupSiteOnenoteSection](Get-MgGroupSiteOnenoteSection.md)
-
 ### [Get-MgGroupSiteOnenoteSectionCount](Get-MgGroupSiteOnenoteSectionCount.md)
-
-### [Get-MgGroupSiteOnenoteSectionGroup](Get-MgGroupSiteOnenoteSectionGroup.md)
 
 ### [Get-MgGroupSiteOnenoteSectionGroup](Get-MgGroupSiteOnenoteSectionGroup.md)
 
@@ -447,11 +383,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOnenoteSectionGroupSection](Get-MgGroupSiteOnenoteSectionGroupSection.md)
 
-### [Get-MgGroupSiteOnenoteSectionGroupSection](Get-MgGroupSiteOnenoteSectionGroupSection.md)
-
 ### [Get-MgGroupSiteOnenoteSectionGroupSectionCount](Get-MgGroupSiteOnenoteSectionGroupSectionCount.md)
-
-### [Get-MgGroupSiteOnenoteSectionGroupSectionPage](Get-MgGroupSiteOnenoteSectionGroupSectionPage.md)
 
 ### [Get-MgGroupSiteOnenoteSectionGroupSectionPage](Get-MgGroupSiteOnenoteSectionGroupSectionPage.md)
 
@@ -469,8 +401,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOnenoteSectionPage](Get-MgGroupSiteOnenoteSectionPage.md)
 
-### [Get-MgGroupSiteOnenoteSectionPage](Get-MgGroupSiteOnenoteSectionPage.md)
-
 ### [Get-MgGroupSiteOnenoteSectionPageContent](Get-MgGroupSiteOnenoteSectionPageContent.md)
 
 ### [Get-MgGroupSiteOnenoteSectionPageCount](Get-MgGroupSiteOnenoteSectionPageCount.md)
@@ -485,15 +415,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteOperation](Get-MgGroupSiteOperation.md)
 
-### [Get-MgGroupSiteOperation](Get-MgGroupSiteOperation.md)
-
 ### [Get-MgGroupSiteOperationCount](Get-MgGroupSiteOperationCount.md)
 
 ### [Get-MgGroupSitePage](Get-MgGroupSitePage.md)
-
-### [Get-MgGroupSitePage](Get-MgGroupSitePage.md)
-
-### [Get-MgGroupSitePageAsSitePage](Get-MgGroupSitePageAsSitePage.md)
 
 ### [Get-MgGroupSitePageAsSitePage](Get-MgGroupSitePageAsSitePage.md)
 
@@ -501,15 +425,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
 
-### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
-
-### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
-
 ### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
 
 ### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
-
-### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
 ### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
@@ -518,8 +436,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
 
 ### [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection.md)
-
-### [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
 ### [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
@@ -540,8 +456,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
 
 ### [Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
-
-### [Get-MgGroupSitePageAsSitePageWebPart](Get-MgGroupSitePageAsSitePageWebPart.md)
 
 ### [Get-MgGroupSitePageAsSitePageWebPart](Get-MgGroupSitePageAsSitePageWebPart.md)
 
@@ -575,11 +489,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSitePermission](Get-MgGroupSitePermission.md)
 
-### [Get-MgGroupSitePermission](Get-MgGroupSitePermission.md)
-
 ### [Get-MgGroupSitePermissionCount](Get-MgGroupSitePermissionCount.md)
-
-### [Get-MgGroupSiteTermStore](Get-MgGroupSiteTermStore.md)
 
 ### [Get-MgGroupSiteTermStore](Get-MgGroupSiteTermStore.md)
 
@@ -587,21 +497,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreGroup](Get-MgGroupSiteTermStoreGroup.md)
 
-### [Get-MgGroupSiteTermStoreGroup](Get-MgGroupSiteTermStoreGroup.md)
-
 ### [Get-MgGroupSiteTermStoreGroupCount](Get-MgGroupSiteTermStoreGroupCount.md)
 
 ### [Get-MgGroupSiteTermStoreGroupSet](Get-MgGroupSiteTermStoreGroupSet.md)
 
-### [Get-MgGroupSiteTermStoreGroupSet](Get-MgGroupSiteTermStoreGroupSet.md)
-
-### [Get-MgGroupSiteTermStoreGroupSetChild](Get-MgGroupSiteTermStoreGroupSetChild.md)
-
 ### [Get-MgGroupSiteTermStoreGroupSetChild](Get-MgGroupSiteTermStoreGroupSetChild.md)
 
 ### [Get-MgGroupSiteTermStoreGroupSetChildCount](Get-MgGroupSiteTermStoreGroupSetChildCount.md)
-
-### [Get-MgGroupSiteTermStoreGroupSetChildRelation](Get-MgGroupSiteTermStoreGroupSetChildRelation.md)
 
 ### [Get-MgGroupSiteTermStoreGroupSetChildRelation](Get-MgGroupSiteTermStoreGroupSetChildRelation.md)
 
@@ -621,8 +523,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreGroupSetRelation](Get-MgGroupSiteTermStoreGroupSetRelation.md)
 
-### [Get-MgGroupSiteTermStoreGroupSetRelation](Get-MgGroupSiteTermStoreGroupSetRelation.md)
-
 ### [Get-MgGroupSiteTermStoreGroupSetRelationCount](Get-MgGroupSiteTermStoreGroupSetRelationCount.md)
 
 ### [Get-MgGroupSiteTermStoreGroupSetRelationFromTerm](Get-MgGroupSiteTermStoreGroupSetRelationFromTerm.md)
@@ -633,15 +533,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreGroupSetTerm](Get-MgGroupSiteTermStoreGroupSetTerm.md)
 
-### [Get-MgGroupSiteTermStoreGroupSetTerm](Get-MgGroupSiteTermStoreGroupSetTerm.md)
-
-### [Get-MgGroupSiteTermStoreGroupSetTermChild](Get-MgGroupSiteTermStoreGroupSetTermChild.md)
-
 ### [Get-MgGroupSiteTermStoreGroupSetTermChild](Get-MgGroupSiteTermStoreGroupSetTermChild.md)
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermChildCount](Get-MgGroupSiteTermStoreGroupSetTermChildCount.md)
-
-### [Get-MgGroupSiteTermStoreGroupSetTermChildRelation](Get-MgGroupSiteTermStoreGroupSetTermChildRelation.md)
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermChildRelation](Get-MgGroupSiteTermStoreGroupSetTermChildRelation.md)
 
@@ -659,8 +553,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermRelation](Get-MgGroupSiteTermStoreGroupSetTermRelation.md)
 
-### [Get-MgGroupSiteTermStoreGroupSetTermRelation](Get-MgGroupSiteTermStoreGroupSetTermRelation.md)
-
 ### [Get-MgGroupSiteTermStoreGroupSetTermRelationCount](Get-MgGroupSiteTermStoreGroupSetTermRelationCount.md)
 
 ### [Get-MgGroupSiteTermStoreGroupSetTermRelationFromTerm](Get-MgGroupSiteTermStoreGroupSetTermRelationFromTerm.md)
@@ -673,15 +565,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreSet](Get-MgGroupSiteTermStoreSet.md)
 
-### [Get-MgGroupSiteTermStoreSet](Get-MgGroupSiteTermStoreSet.md)
-
-### [Get-MgGroupSiteTermStoreSetChild](Get-MgGroupSiteTermStoreSetChild.md)
-
 ### [Get-MgGroupSiteTermStoreSetChild](Get-MgGroupSiteTermStoreSetChild.md)
 
 ### [Get-MgGroupSiteTermStoreSetChildCount](Get-MgGroupSiteTermStoreSetChildCount.md)
-
-### [Get-MgGroupSiteTermStoreSetChildRelation](Get-MgGroupSiteTermStoreSetChildRelation.md)
 
 ### [Get-MgGroupSiteTermStoreSetChildRelation](Get-MgGroupSiteTermStoreSetChildRelation.md)
 
@@ -701,15 +587,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSet](Get-MgGroupSiteTermStoreSetParentGroupSet.md)
 
-### [Get-MgGroupSiteTermStoreSetParentGroupSet](Get-MgGroupSiteTermStoreSetParentGroupSet.md)
-
-### [Get-MgGroupSiteTermStoreSetParentGroupSetChild](Get-MgGroupSiteTermStoreSetParentGroupSetChild.md)
-
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetChild](Get-MgGroupSiteTermStoreSetParentGroupSetChild.md)
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetChildCount](Get-MgGroupSiteTermStoreSetParentGroupSetChildCount.md)
-
-### [Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation](Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation.md)
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation](Get-MgGroupSiteTermStoreSetParentGroupSetChildRelation.md)
 
@@ -727,8 +607,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetRelation](Get-MgGroupSiteTermStoreSetParentGroupSetRelation.md)
 
-### [Get-MgGroupSiteTermStoreSetParentGroupSetRelation](Get-MgGroupSiteTermStoreSetParentGroupSetRelation.md)
-
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount](Get-MgGroupSiteTermStoreSetParentGroupSetRelationCount.md)
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetRelationFromTerm](Get-MgGroupSiteTermStoreSetParentGroupSetRelationFromTerm.md)
@@ -739,15 +617,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTerm](Get-MgGroupSiteTermStoreSetParentGroupSetTerm.md)
 
-### [Get-MgGroupSiteTermStoreSetParentGroupSetTerm](Get-MgGroupSiteTermStoreSetParentGroupSetTerm.md)
-
-### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChild](Get-MgGroupSiteTermStoreSetParentGroupSetTermChild.md)
-
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChild](Get-MgGroupSiteTermStoreSetParentGroupSetTermChild.md)
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildCount](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildCount.md)
-
-### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgGroupSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
@@ -765,8 +637,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation.md)
 
-### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelation.md)
-
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationCount](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationCount.md)
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationFromTerm](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationFromTerm.md)
@@ -776,8 +646,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationToTerm](Get-MgGroupSiteTermStoreSetParentGroupSetTermRelationToTerm.md)
 
 ### [Get-MgGroupSiteTermStoreSetParentGroupSetTermSet](Get-MgGroupSiteTermStoreSetParentGroupSetTermSet.md)
-
-### [Get-MgGroupSiteTermStoreSetRelation](Get-MgGroupSiteTermStoreSetRelation.md)
 
 ### [Get-MgGroupSiteTermStoreSetRelation](Get-MgGroupSiteTermStoreSetRelation.md)
 
@@ -791,15 +659,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreSetTerm](Get-MgGroupSiteTermStoreSetTerm.md)
 
-### [Get-MgGroupSiteTermStoreSetTerm](Get-MgGroupSiteTermStoreSetTerm.md)
-
-### [Get-MgGroupSiteTermStoreSetTermChild](Get-MgGroupSiteTermStoreSetTermChild.md)
-
 ### [Get-MgGroupSiteTermStoreSetTermChild](Get-MgGroupSiteTermStoreSetTermChild.md)
 
 ### [Get-MgGroupSiteTermStoreSetTermChildCount](Get-MgGroupSiteTermStoreSetTermChildCount.md)
-
-### [Get-MgGroupSiteTermStoreSetTermChildRelation](Get-MgGroupSiteTermStoreSetTermChildRelation.md)
 
 ### [Get-MgGroupSiteTermStoreSetTermChildRelation](Get-MgGroupSiteTermStoreSetTermChildRelation.md)
 
@@ -817,8 +679,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteTermStoreSetTermRelation](Get-MgGroupSiteTermStoreSetTermRelation.md)
 
-### [Get-MgGroupSiteTermStoreSetTermRelation](Get-MgGroupSiteTermStoreSetTermRelation.md)
-
 ### [Get-MgGroupSiteTermStoreSetTermRelationCount](Get-MgGroupSiteTermStoreSetTermRelationCount.md)
 
 ### [Get-MgGroupSiteTermStoreSetTermRelationFromTerm](Get-MgGroupSiteTermStoreSetTermRelationFromTerm.md)
@@ -831,11 +691,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSubSite](Get-MgGroupSubSite.md)
 
-### [Get-MgGroupSubSite](Get-MgGroupSubSite.md)
-
 ### [Get-MgGroupSubSiteCount](Get-MgGroupSubSiteCount.md)
-
-### [Get-MgSite](Get-MgSite.md)
 
 ### [Get-MgSite](Get-MgSite.md)
 
@@ -844,10 +700,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSiteAnalytic](Get-MgSiteAnalytic.md)
 
 ### [Get-MgSiteAnalyticItemActivityStat](Get-MgSiteAnalyticItemActivityStat.md)
-
-### [Get-MgSiteAnalyticItemActivityStat](Get-MgSiteAnalyticItemActivityStat.md)
-
-### [Get-MgSiteAnalyticItemActivityStatActivity](Get-MgSiteAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgSiteAnalyticItemActivityStatActivity](Get-MgSiteAnalyticItemActivityStatActivity.md)
 
@@ -869,13 +721,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteColumn](Get-MgSiteColumn.md)
 
-### [Get-MgSiteColumn](Get-MgSiteColumn.md)
-
 ### [Get-MgSiteColumnCount](Get-MgSiteColumnCount.md)
 
 ### [Get-MgSiteColumnSourceColumn](Get-MgSiteColumnSourceColumn.md)
-
-### [Get-MgSiteContentType](Get-MgSiteContentType.md)
 
 ### [Get-MgSiteContentType](Get-MgSiteContentType.md)
 
@@ -883,11 +731,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteContentTypeBaseType](Get-MgSiteContentTypeBaseType.md)
 
-### [Get-MgSiteContentTypeBaseType](Get-MgSiteContentTypeBaseType.md)
-
 ### [Get-MgSiteContentTypeBaseTypeCount](Get-MgSiteContentTypeBaseTypeCount.md)
-
-### [Get-MgSiteContentTypeColumn](Get-MgSiteContentTypeColumn.md)
 
 ### [Get-MgSiteContentTypeColumn](Get-MgSiteContentTypeColumn.md)
 
@@ -895,11 +739,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteContentTypeColumnLink](Get-MgSiteContentTypeColumnLink.md)
 
-### [Get-MgSiteContentTypeColumnLink](Get-MgSiteContentTypeColumnLink.md)
-
 ### [Get-MgSiteContentTypeColumnLinkCount](Get-MgSiteContentTypeColumnLinkCount.md)
-
-### [Get-MgSiteContentTypeColumnPosition](Get-MgSiteContentTypeColumnPosition.md)
 
 ### [Get-MgSiteContentTypeColumnPosition](Get-MgSiteContentTypeColumnPosition.md)
 
@@ -919,11 +759,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteDrive](Get-MgSiteDrive.md)
 
-### [Get-MgSiteDrive](Get-MgSiteDrive.md)
-
 ### [Get-MgSiteDriveCount](Get-MgSiteDriveCount.md)
-
-### [Get-MgSiteExternalColumn](Get-MgSiteExternalColumn.md)
 
 ### [Get-MgSiteExternalColumn](Get-MgSiteExternalColumn.md)
 
@@ -941,8 +777,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteGetByPathDrive](Get-MgSiteGetByPathDrive.md)
 
-### [Get-MgSiteGetByPathDrive](Get-MgSiteGetByPathDrive.md)
-
 ### [Get-MgSiteGetByPathExternalColumn](Get-MgSiteGetByPathExternalColumn.md)
 
 ### [Get-MgSiteGetByPathOperation](Get-MgSiteGetByPathOperation.md)
@@ -952,8 +786,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSiteGetByPathPermission](Get-MgSiteGetByPathPermission.md)
 
 ### [Get-MgSiteGetByPathSite](Get-MgSiteGetByPathSite.md)
-
-### [Get-MgSiteGetByPathTermStore](Get-MgSiteGetByPathTermStore.md)
 
 ### [Get-MgSiteGetByPathTermStore](Get-MgSiteGetByPathTermStore.md)
 
@@ -977,10 +809,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteList](Get-MgSiteList.md)
 
-### [Get-MgSiteList](Get-MgSiteList.md)
-
-### [Get-MgSiteListColumn](Get-MgSiteListColumn.md)
-
 ### [Get-MgSiteListColumn](Get-MgSiteListColumn.md)
 
 ### [Get-MgSiteListColumnCount](Get-MgSiteListColumnCount.md)
@@ -989,21 +817,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteListContentType](Get-MgSiteListContentType.md)
 
-### [Get-MgSiteListContentType](Get-MgSiteListContentType.md)
-
-### [Get-MgSiteListContentTypeColumn](Get-MgSiteListContentTypeColumn.md)
-
 ### [Get-MgSiteListContentTypeColumn](Get-MgSiteListContentTypeColumn.md)
 
 ### [Get-MgSiteListContentTypeColumnCount](Get-MgSiteListContentTypeColumnCount.md)
 
 ### [Get-MgSiteListContentTypeColumnLink](Get-MgSiteListContentTypeColumnLink.md)
 
-### [Get-MgSiteListContentTypeColumnLink](Get-MgSiteListContentTypeColumnLink.md)
-
 ### [Get-MgSiteListContentTypeColumnLinkCount](Get-MgSiteListContentTypeColumnLinkCount.md)
-
-### [Get-MgSiteListContentTypeColumnPosition](Get-MgSiteListContentTypeColumnPosition.md)
 
 ### [Get-MgSiteListContentTypeColumnPosition](Get-MgSiteListContentTypeColumnPosition.md)
 
@@ -1029,8 +849,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteListItem](Get-MgSiteListItem.md)
 
-### [Get-MgSiteListItem](Get-MgSiteListItem.md)
-
 ### [Get-MgSiteListItemActivityByInterval](Get-MgSiteListItemActivityByInterval.md)
 
 ### [Get-MgSiteListItemAnalytic](Get-MgSiteListItemAnalytic.md)
@@ -1047,8 +865,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
 
-### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
-
 ### [Get-MgSiteListItemDocumentSetVersionCount](Get-MgSiteListItemDocumentSetVersionCount.md)
 
 ### [Get-MgSiteListItemDocumentSetVersionField](Get-MgSiteListItemDocumentSetVersionField.md)
@@ -1059,7 +875,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteListItemField](Get-MgSiteListItemField.md)
 
-### [Get-MgSiteListItemVersion](Get-MgSiteListItemVersion.md)
+### [Get-MgSiteListItemPermission](Get-MgSiteListItemPermission.md)
+
+### [Get-MgSiteListItemPermissionCount](Get-MgSiteListItemPermissionCount.md)
 
 ### [Get-MgSiteListItemVersion](Get-MgSiteListItemVersion.md)
 
@@ -1069,11 +887,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteListOperation](Get-MgSiteListOperation.md)
 
-### [Get-MgSiteListOperation](Get-MgSiteListOperation.md)
-
 ### [Get-MgSiteListOperationCount](Get-MgSiteListOperationCount.md)
 
-### [Get-MgSiteListSubscription](Get-MgSiteListSubscription.md)
+### [Get-MgSiteListPermission](Get-MgSiteListPermission.md)
+
+### [Get-MgSiteListPermissionCount](Get-MgSiteListPermissionCount.md)
 
 ### [Get-MgSiteListSubscription](Get-MgSiteListSubscription.md)
 
@@ -1081,15 +899,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOperation](Get-MgSiteOperation.md)
 
-### [Get-MgSiteOperation](Get-MgSiteOperation.md)
-
 ### [Get-MgSiteOperationCount](Get-MgSiteOperationCount.md)
 
 ### [Get-MgSitePage](Get-MgSitePage.md)
-
-### [Get-MgSitePage](Get-MgSitePage.md)
-
-### [Get-MgSitePageAsSitePage](Get-MgSitePageAsSitePage.md)
 
 ### [Get-MgSitePageAsSitePage](Get-MgSitePageAsSitePage.md)
 
@@ -1097,15 +909,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection.md)
 
-### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection.md)
-
-### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
-
 ### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
 
 ### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
-
-### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
 ### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
@@ -1114,8 +920,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
 
 ### [Get-MgSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgSitePageAsSitePageCanvaLayoutVerticalSection.md)
-
-### [Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
 ### [Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
@@ -1136,8 +940,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
 
 ### [Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
-
-### [Get-MgSitePageAsSitePageWebPart](Get-MgSitePageAsSitePageWebPart.md)
 
 ### [Get-MgSitePageAsSitePageWebPart](Get-MgSitePageAsSitePageWebPart.md)
 
@@ -1171,11 +973,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSitePermission](Get-MgSitePermission.md)
 
-### [Get-MgSitePermission](Get-MgSitePermission.md)
-
 ### [Get-MgSitePermissionCount](Get-MgSitePermissionCount.md)
-
-### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
 
 ### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
 
@@ -1183,21 +981,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreGroup](Get-MgSiteTermStoreGroup.md)
 
-### [Get-MgSiteTermStoreGroup](Get-MgSiteTermStoreGroup.md)
-
 ### [Get-MgSiteTermStoreGroupCount](Get-MgSiteTermStoreGroupCount.md)
 
 ### [Get-MgSiteTermStoreGroupSet](Get-MgSiteTermStoreGroupSet.md)
 
-### [Get-MgSiteTermStoreGroupSet](Get-MgSiteTermStoreGroupSet.md)
-
-### [Get-MgSiteTermStoreGroupSetChild](Get-MgSiteTermStoreGroupSetChild.md)
-
 ### [Get-MgSiteTermStoreGroupSetChild](Get-MgSiteTermStoreGroupSetChild.md)
 
 ### [Get-MgSiteTermStoreGroupSetChildCount](Get-MgSiteTermStoreGroupSetChildCount.md)
-
-### [Get-MgSiteTermStoreGroupSetChildRelation](Get-MgSiteTermStoreGroupSetChildRelation.md)
 
 ### [Get-MgSiteTermStoreGroupSetChildRelation](Get-MgSiteTermStoreGroupSetChildRelation.md)
 
@@ -1217,8 +1007,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreGroupSetRelation](Get-MgSiteTermStoreGroupSetRelation.md)
 
-### [Get-MgSiteTermStoreGroupSetRelation](Get-MgSiteTermStoreGroupSetRelation.md)
-
 ### [Get-MgSiteTermStoreGroupSetRelationCount](Get-MgSiteTermStoreGroupSetRelationCount.md)
 
 ### [Get-MgSiteTermStoreGroupSetRelationFromTerm](Get-MgSiteTermStoreGroupSetRelationFromTerm.md)
@@ -1229,15 +1017,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreGroupSetTerm](Get-MgSiteTermStoreGroupSetTerm.md)
 
-### [Get-MgSiteTermStoreGroupSetTerm](Get-MgSiteTermStoreGroupSetTerm.md)
-
-### [Get-MgSiteTermStoreGroupSetTermChild](Get-MgSiteTermStoreGroupSetTermChild.md)
-
 ### [Get-MgSiteTermStoreGroupSetTermChild](Get-MgSiteTermStoreGroupSetTermChild.md)
 
 ### [Get-MgSiteTermStoreGroupSetTermChildCount](Get-MgSiteTermStoreGroupSetTermChildCount.md)
-
-### [Get-MgSiteTermStoreGroupSetTermChildRelation](Get-MgSiteTermStoreGroupSetTermChildRelation.md)
 
 ### [Get-MgSiteTermStoreGroupSetTermChildRelation](Get-MgSiteTermStoreGroupSetTermChildRelation.md)
 
@@ -1255,8 +1037,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreGroupSetTermRelation](Get-MgSiteTermStoreGroupSetTermRelation.md)
 
-### [Get-MgSiteTermStoreGroupSetTermRelation](Get-MgSiteTermStoreGroupSetTermRelation.md)
-
 ### [Get-MgSiteTermStoreGroupSetTermRelationCount](Get-MgSiteTermStoreGroupSetTermRelationCount.md)
 
 ### [Get-MgSiteTermStoreGroupSetTermRelationFromTerm](Get-MgSiteTermStoreGroupSetTermRelationFromTerm.md)
@@ -1269,15 +1049,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreSet](Get-MgSiteTermStoreSet.md)
 
-### [Get-MgSiteTermStoreSet](Get-MgSiteTermStoreSet.md)
-
-### [Get-MgSiteTermStoreSetChild](Get-MgSiteTermStoreSetChild.md)
-
 ### [Get-MgSiteTermStoreSetChild](Get-MgSiteTermStoreSetChild.md)
 
 ### [Get-MgSiteTermStoreSetChildCount](Get-MgSiteTermStoreSetChildCount.md)
-
-### [Get-MgSiteTermStoreSetChildRelation](Get-MgSiteTermStoreSetChildRelation.md)
 
 ### [Get-MgSiteTermStoreSetChildRelation](Get-MgSiteTermStoreSetChildRelation.md)
 
@@ -1297,15 +1071,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreSetParentGroupSet](Get-MgSiteTermStoreSetParentGroupSet.md)
 
-### [Get-MgSiteTermStoreSetParentGroupSet](Get-MgSiteTermStoreSetParentGroupSet.md)
-
-### [Get-MgSiteTermStoreSetParentGroupSetChild](Get-MgSiteTermStoreSetParentGroupSetChild.md)
-
 ### [Get-MgSiteTermStoreSetParentGroupSetChild](Get-MgSiteTermStoreSetParentGroupSetChild.md)
 
 ### [Get-MgSiteTermStoreSetParentGroupSetChildCount](Get-MgSiteTermStoreSetParentGroupSetChildCount.md)
-
-### [Get-MgSiteTermStoreSetParentGroupSetChildRelation](Get-MgSiteTermStoreSetParentGroupSetChildRelation.md)
 
 ### [Get-MgSiteTermStoreSetParentGroupSetChildRelation](Get-MgSiteTermStoreSetParentGroupSetChildRelation.md)
 
@@ -1323,8 +1091,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreSetParentGroupSetRelation](Get-MgSiteTermStoreSetParentGroupSetRelation.md)
 
-### [Get-MgSiteTermStoreSetParentGroupSetRelation](Get-MgSiteTermStoreSetParentGroupSetRelation.md)
-
 ### [Get-MgSiteTermStoreSetParentGroupSetRelationCount](Get-MgSiteTermStoreSetParentGroupSetRelationCount.md)
 
 ### [Get-MgSiteTermStoreSetParentGroupSetRelationFromTerm](Get-MgSiteTermStoreSetParentGroupSetRelationFromTerm.md)
@@ -1335,15 +1101,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTerm](Get-MgSiteTermStoreSetParentGroupSetTerm.md)
 
-### [Get-MgSiteTermStoreSetParentGroupSetTerm](Get-MgSiteTermStoreSetParentGroupSetTerm.md)
-
-### [Get-MgSiteTermStoreSetParentGroupSetTermChild](Get-MgSiteTermStoreSetParentGroupSetTermChild.md)
-
 ### [Get-MgSiteTermStoreSetParentGroupSetTermChild](Get-MgSiteTermStoreSetParentGroupSetTermChild.md)
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermChildCount](Get-MgSiteTermStoreSetParentGroupSetTermChildCount.md)
-
-### [Get-MgSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
@@ -1361,8 +1121,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermRelation](Get-MgSiteTermStoreSetParentGroupSetTermRelation.md)
 
-### [Get-MgSiteTermStoreSetParentGroupSetTermRelation](Get-MgSiteTermStoreSetParentGroupSetTermRelation.md)
-
 ### [Get-MgSiteTermStoreSetParentGroupSetTermRelationCount](Get-MgSiteTermStoreSetParentGroupSetTermRelationCount.md)
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm](Get-MgSiteTermStoreSetParentGroupSetTermRelationFromTerm.md)
@@ -1372,8 +1130,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSiteTermStoreSetParentGroupSetTermRelationToTerm](Get-MgSiteTermStoreSetParentGroupSetTermRelationToTerm.md)
 
 ### [Get-MgSiteTermStoreSetParentGroupSetTermSet](Get-MgSiteTermStoreSetParentGroupSetTermSet.md)
-
-### [Get-MgSiteTermStoreSetRelation](Get-MgSiteTermStoreSetRelation.md)
 
 ### [Get-MgSiteTermStoreSetRelation](Get-MgSiteTermStoreSetRelation.md)
 
@@ -1387,15 +1143,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreSetTerm](Get-MgSiteTermStoreSetTerm.md)
 
-### [Get-MgSiteTermStoreSetTerm](Get-MgSiteTermStoreSetTerm.md)
-
-### [Get-MgSiteTermStoreSetTermChild](Get-MgSiteTermStoreSetTermChild.md)
-
 ### [Get-MgSiteTermStoreSetTermChild](Get-MgSiteTermStoreSetTermChild.md)
 
 ### [Get-MgSiteTermStoreSetTermChildCount](Get-MgSiteTermStoreSetTermChildCount.md)
-
-### [Get-MgSiteTermStoreSetTermChildRelation](Get-MgSiteTermStoreSetTermChildRelation.md)
 
 ### [Get-MgSiteTermStoreSetTermChildRelation](Get-MgSiteTermStoreSetTermChildRelation.md)
 
@@ -1413,8 +1163,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteTermStoreSetTermRelation](Get-MgSiteTermStoreSetTermRelation.md)
 
-### [Get-MgSiteTermStoreSetTermRelation](Get-MgSiteTermStoreSetTermRelation.md)
-
 ### [Get-MgSiteTermStoreSetTermRelationCount](Get-MgSiteTermStoreSetTermRelationCount.md)
 
 ### [Get-MgSiteTermStoreSetTermRelationFromTerm](Get-MgSiteTermStoreSetTermRelationFromTerm.md)
@@ -1427,17 +1175,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSubSite](Get-MgSubSite.md)
 
-### [Get-MgSubSite](Get-MgSubSite.md)
-
 ### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
-
-### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
 
 ### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
 
 ### [Get-MgUserFollowedSiteCount](Get-MgUserFollowedSiteCount.md)
 
+### [Grant-MgGroupSiteListItemPermission](Grant-MgGroupSiteListItemPermission.md)
+
+### [Grant-MgGroupSiteListPermission](Grant-MgGroupSiteListPermission.md)
+
 ### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
+
+### [Grant-MgSiteListItemPermission](Grant-MgSiteListItemPermission.md)
+
+### [Grant-MgSiteListPermission](Grant-MgSiteListPermission.md)
 
 ### [Grant-MgSitePermission](Grant-MgSitePermission.md)
 
@@ -1505,9 +1257,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgGroupSiteListItemLink](New-MgGroupSiteListItemLink.md)
 
+### [New-MgGroupSiteListItemPermission](New-MgGroupSiteListItemPermission.md)
+
 ### [New-MgGroupSiteListItemVersion](New-MgGroupSiteListItemVersion.md)
 
 ### [New-MgGroupSiteListOperation](New-MgGroupSiteListOperation.md)
+
+### [New-MgGroupSiteListPermission](New-MgGroupSiteListPermission.md)
 
 ### [New-MgGroupSiteListSubscription](New-MgGroupSiteListSubscription.md)
 
@@ -1649,9 +1405,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgSiteListItemLink](New-MgSiteListItemLink.md)
 
+### [New-MgSiteListItemPermission](New-MgSiteListItemPermission.md)
+
 ### [New-MgSiteListItemVersion](New-MgSiteListItemVersion.md)
 
 ### [New-MgSiteListOperation](New-MgSiteListOperation.md)
+
+### [New-MgSiteListPermission](New-MgSiteListPermission.md)
 
 ### [New-MgSiteListSubscription](New-MgSiteListSubscription.md)
 
@@ -1779,11 +1539,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgGroupSiteListItemField](Remove-MgGroupSiteListItemField.md)
 
+### [Remove-MgGroupSiteListItemPermission](Remove-MgGroupSiteListItemPermission.md)
+
 ### [Remove-MgGroupSiteListItemVersion](Remove-MgGroupSiteListItemVersion.md)
 
 ### [Remove-MgGroupSiteListItemVersionField](Remove-MgGroupSiteListItemVersionField.md)
 
 ### [Remove-MgGroupSiteListOperation](Remove-MgGroupSiteListOperation.md)
+
+### [Remove-MgGroupSiteListPermission](Remove-MgGroupSiteListPermission.md)
 
 ### [Remove-MgGroupSiteListSubscription](Remove-MgGroupSiteListSubscription.md)
 
@@ -1941,11 +1705,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSiteListItemField](Remove-MgSiteListItemField.md)
 
+### [Remove-MgSiteListItemPermission](Remove-MgSiteListItemPermission.md)
+
 ### [Remove-MgSiteListItemVersion](Remove-MgSiteListItemVersion.md)
 
 ### [Remove-MgSiteListItemVersionField](Remove-MgSiteListItemVersionField.md)
 
 ### [Remove-MgSiteListOperation](Remove-MgSiteListOperation.md)
+
+### [Remove-MgSiteListPermission](Remove-MgSiteListPermission.md)
 
 ### [Remove-MgSiteListSubscription](Remove-MgSiteListSubscription.md)
 
@@ -2125,6 +1893,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting](Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgGroupSiteListItemPermission](Update-MgGroupSiteListItemPermission.md)
+
 ### [Update-MgGroupSiteListItemVersion](Update-MgGroupSiteListItemVersion.md)
 
 ### [Update-MgGroupSiteListItemVersionField](Update-MgGroupSiteListItemVersionField.md)
@@ -2132,6 +1902,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgGroupSiteListLastModifiedByUserMailboxSetting](Update-MgGroupSiteListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgGroupSiteListOperation](Update-MgGroupSiteListOperation.md)
+
+### [Update-MgGroupSiteListPermission](Update-MgGroupSiteListPermission.md)
 
 ### [Update-MgGroupSiteListSubscription](Update-MgGroupSiteListSubscription.md)
 
@@ -2293,6 +2065,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSiteListItemLastModifiedByUserMailboxSetting](Update-MgSiteListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgSiteListItemPermission](Update-MgSiteListItemPermission.md)
+
 ### [Update-MgSiteListItemVersion](Update-MgSiteListItemVersion.md)
 
 ### [Update-MgSiteListItemVersionField](Update-MgSiteListItemVersionField.md)
@@ -2300,6 +2074,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSiteListLastModifiedByUserMailboxSetting](Update-MgSiteListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgSiteListOperation](Update-MgSiteListOperation.md)
+
+### [Update-MgSiteListPermission](Update-MgSiteListPermission.md)
 
 ### [Update-MgSiteListSubscription](Update-MgSiteListSubscription.md)
 
@@ -2386,23 +2162,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSiteTermStoreSetTermChildRelation](Update-MgSiteTermStoreSetTermChildRelation.md)
 
 ### [Update-MgSiteTermStoreSetTermRelation](Update-MgSiteTermStoreSetTermRelation.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
