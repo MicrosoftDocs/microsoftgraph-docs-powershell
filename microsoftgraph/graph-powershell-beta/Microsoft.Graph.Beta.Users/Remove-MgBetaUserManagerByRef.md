@@ -15,6 +15,9 @@ title: Remove-MgBetaUserManagerByRef
 
 Remove an agentUser's manager.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManagerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
