@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgRoleManagement
 ---
@@ -694,6 +694,7 @@ Supports $filter (eq, in).
       [PrincipalId <String>]: Identifier of the principal to which the assignment is granted.
 Supported principals are users, role-assignable groups, and service principals.
 Supports $filter (eq, in).
+      [PrincipalOrganizationId <String>]: 
       [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
       [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
@@ -1050,6 +1051,7 @@ Supports $filter (eq, in).
     [PrincipalId <String>]: Identifier of the principal to which the assignment is granted.
 Supported principals are users, role-assignable groups, and service principals.
 Supports $filter (eq, in).
+    [PrincipalOrganizationId <String>]: 
     [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
     [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
@@ -1405,6 +1407,7 @@ Supports $filter (eq, in).
     [PrincipalId <String>]: Identifier of the principal to which the assignment is granted.
 Supported principals are users, role-assignable groups, and service principals.
 Supports $filter (eq, in).
+    [PrincipalOrganizationId <String>]: 
     [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
     [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
