@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 26e7efdc-db88-4664-9573-26e5612d4f70
+Module Guid: 9800db7d-ccfe-4f03-bde7-6f585c953c7e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -437,6 +437,38 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCount](Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCount.md)
 
+### [Get-MgDirectoryRecovery](Get-MgDirectoryRecovery.md)
+
+### [Get-MgDirectoryRecoveryJob](Get-MgDirectoryRecoveryJob.md)
+
+### [Get-MgDirectoryRecoveryJob](Get-MgDirectoryRecoveryJob.md)
+
+### [Get-MgDirectoryRecoveryJobCount](Get-MgDirectoryRecoveryJobCount.md)
+
+### [Get-MgDirectoryRecoverySnapshot](Get-MgDirectoryRecoverySnapshot.md)
+
+### [Get-MgDirectoryRecoverySnapshot](Get-MgDirectoryRecoverySnapshot.md)
+
+### [Get-MgDirectoryRecoverySnapshotCount](Get-MgDirectoryRecoverySnapshotCount.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryJob](Get-MgDirectoryRecoverySnapshotRecoveryJob.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryJob](Get-MgDirectoryRecoverySnapshotRecoveryJob.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryJobCount](Get-MgDirectoryRecoverySnapshotRecoveryJobCount.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryPreviewJob](Get-MgDirectoryRecoverySnapshotRecoveryPreviewJob.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryPreviewJob](Get-MgDirectoryRecoverySnapshotRecoveryPreviewJob.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryPreviewJobCount](Get-MgDirectoryRecoverySnapshotRecoveryPreviewJobCount.md)
+
+### [Get-MgDirectoryRemoteTenantGroup](Get-MgDirectoryRemoteTenantGroup.md)
+
+### [Get-MgDirectoryRemoteTenantGroup](Get-MgDirectoryRemoteTenantGroup.md)
+
+### [Get-MgDirectoryRemoteTenantGroupCount](Get-MgDirectoryRemoteTenantGroupCount.md)
+
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
 
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
@@ -671,6 +703,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
 
+### [New-MgDirectoryRecoveryJob](New-MgDirectoryRecoveryJob.md)
+
+### [New-MgDirectoryRecoverySnapshot](New-MgDirectoryRecoverySnapshot.md)
+
+### [New-MgDirectoryRemoteTenantGroup](New-MgDirectoryRemoteTenantGroup.md)
+
 ### [New-MgDirectoryRole](New-MgDirectoryRole.md)
 
 ### [New-MgDirectoryRoleMemberByRef](New-MgDirectoryRoleMemberByRef.md)
@@ -752,6 +790,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration.md)
 
 ### [Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
+
+### [Remove-MgDirectoryRecovery](Remove-MgDirectoryRecovery.md)
+
+### [Remove-MgDirectoryRecoveryJob](Remove-MgDirectoryRecoveryJob.md)
+
+### [Remove-MgDirectoryRecoverySnapshot](Remove-MgDirectoryRecoverySnapshot.md)
+
+### [Remove-MgDirectoryRemoteTenantGroup](Remove-MgDirectoryRemoteTenantGroup.md)
 
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
 
@@ -847,6 +893,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgOrganizationMobileDeviceManagementAuthority](Set-MgOrganizationMobileDeviceManagementAuthority.md)
 
+### [Stop-MgDirectoryRecoveryJob](Stop-MgDirectoryRecoveryJob.md)
+
 ### [Test-MgContactProperty](Test-MgContactProperty.md)
 
 ### [Test-MgContractProperty](Test-MgContractProperty.md)
@@ -910,6 +958,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration.md)
 
 ### [Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
+
+### [Update-MgDirectoryRecovery](Update-MgDirectoryRecovery.md)
+
+### [Update-MgDirectoryRecoveryJob](Update-MgDirectoryRecoveryJob.md)
+
+### [Update-MgDirectoryRecoverySnapshot](Update-MgDirectoryRecoverySnapshot.md)
+
+### [Update-MgDirectoryRemoteTenantGroup](Update-MgDirectoryRemoteTenantGroup.md)
 
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
 

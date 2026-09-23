@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminPeopleProfileCardProperty
 ---
@@ -60,7 +60,6 @@ For more information about how to add properties to the profile card for an orga
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	directoryPropertyName = "CustomAttribute1"
 	annotations = @(
 		@{
 			displayName = "Cost Center"
@@ -72,6 +71,8 @@ $params = @{
 			)
 		}
 	)
+	directoryPropertyName = "CustomAttribute1"
+	isVisible = $true
 }
 
 New-MgAdminPeopleProfileCardProperty -BodyParameter $params

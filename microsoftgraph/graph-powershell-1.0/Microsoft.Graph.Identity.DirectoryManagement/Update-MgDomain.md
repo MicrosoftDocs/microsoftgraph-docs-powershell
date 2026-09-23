@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDomain
 ---
@@ -1079,6 +1079,7 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
       [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+    [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
   [IsAdminManaged <Boolean?>]: The value of the property is false if the DNS record management of the domain is delegated to Microsoft 365.
 Otherwise, the value is true.
 Not nullable
@@ -1175,6 +1176,7 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+  [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
@@ -1207,6 +1209,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SnapshotId <String>]: The unique identifier of snapshot
@@ -1271,6 +1274,7 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
       [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+    [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
   [IsAdminManaged <Boolean?>]: The value of the property is false if the DNS record management of the domain is delegated to Microsoft 365.
 Otherwise, the value is true.
 Not nullable
