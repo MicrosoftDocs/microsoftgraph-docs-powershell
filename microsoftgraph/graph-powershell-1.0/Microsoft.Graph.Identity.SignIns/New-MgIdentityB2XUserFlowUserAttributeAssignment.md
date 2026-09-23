@@ -84,8 +84,9 @@ Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow
 | Application | IdentityUserFlow.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -102,6 +103,10 @@ $params = @{
 }
 
 New-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
+
+```
+This example shows how to use the New-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
+
 
 ## PARAMETERS
 
