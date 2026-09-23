@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipal
 ---
@@ -53,9 +53,9 @@ This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -408,6 +408,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
   [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ComplianceIssueId <String>]: The unique identifier of complianceIssue
   [ConnectorGroupId <String>]: The unique identifier of connectorGroup
   [ConnectorId <String>]: The unique identifier of connector
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
