@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceAppManagementWindowsManagedAppProtection
 ---
@@ -22,8 +22,10 @@ Create new navigation property to windowsManagedAppProtections for deviceAppMana
 ```
 New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>]
+ [-AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations>]
  [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
+ [-AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations>]
  [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>]
@@ -94,6 +96,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -AllowedInboundDataTransferSourceApps
+
+Windows MAM data transfer locations
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppDataTransferLocations
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -AllowedInboundDataTransferSources
 
 Data can be transferred from/to these classes of apps
@@ -121,6 +144,27 @@ Represents the level to which the device's clipboard may be shared between apps
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppClipboardSharingLevel
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AllowedOutboundDataTransferDestinationApps
+
+Windows MAM data transfer locations
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppDataTransferLocations
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1081,8 +1125,10 @@ BODYPARAMETER `<IMicrosoftGraphWindowsManagedAppProtection>`: Policy used to con
   [Version <String>]: Version of the entity.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel?>]: Represents the level to which the device's clipboard may be shared between apps
+  [AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [Apps <IMicrosoftGraphManagedMobileApp[]>]: List of apps to which the policy is deployed.

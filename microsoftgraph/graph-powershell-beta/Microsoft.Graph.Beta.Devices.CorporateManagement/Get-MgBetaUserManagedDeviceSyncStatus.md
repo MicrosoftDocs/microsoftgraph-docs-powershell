@@ -1,68 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappasandroidlobappcontentversionfile
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicesyncstatus
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile
+title: Get-MgBetaUserManagedDeviceSyncStatus
 ---
 
-# New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile
+# Get-MgBetaUserManagedDeviceSyncStatus
 
 ## SYNOPSIS
 
-Create new navigation property to files for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile?view=graph-powershell-1.0)
+Invoke function getSyncStatus
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Get (Default)
 
 ```
-New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile -MobileAppContentId <string>
- -MobileAppId <string> [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-Id <string>] [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <string>] [-Name <string>]
- [-Size <long>] [-SizeEncrypted <long>] [-UploadErrorCode <string>] [-UploadState <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### Create
-
-```
-New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile -MobileAppContentId <string>
- -MobileAppId <string> -BodyParameter <IMicrosoftGraphMobileAppContentFile>
+Get-MgBetaUserManagedDeviceSyncStatus -ManagedDeviceId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
-### CreateViaIdentityExpanded
+### GetViaIdentity
 
 ```
-New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile
- -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Id <string>] [-IsDependency] [-IsFrameworkFile]
- [-ManifestInputFile <string>] [-Name <string>] [-Size <long>] [-SizeEncrypted <long>]
- [-UploadErrorCode <string>] [-UploadState <string>] [-Break] [-Headers <IDictionary>]
+Get-MgBetaUserManagedDeviceSyncStatus -InputObject <IDevicesCorporateManagementIdentity>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### CreateViaIdentity
-
-```
-New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppContentFile> [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -72,64 +42,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to files for deviceAppManagement
+Invoke function getSyncStatus
 
 ## PARAMETERS
-
-### -AdditionalProperties
-
-Additional Parameters
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-Contains properties for a single installer file that is associated with a given mobileAppContent version.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppContentFile
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -140,28 +55,6 @@ Type: System.Management.Automation.SwitchParameter
 DefaultValue: False
 SupportsWildcards: false
 Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Confirm
-
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -237,34 +130,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
-
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -276,13 +141,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -293,66 +152,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IsDependency
+### -ManagedDeviceId
 
-Indicates whether this content file is a dependency for the main content file.
-TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
-Defaults to FALSE.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -IsFrameworkFile
-
-A value indicating whether the file is a framework file.
-To be deprecated.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ManifestInputFile
-
-Input File for Manifest (Indicates the manifest information, containing file metadata.)
+The unique identifier of managedDevice
 
 ```yaml
 Type: System.String
@@ -360,96 +162,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -MobileAppContentId
-
-The unique identifier of mobileAppContent
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
+- Name: Get
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -MobileAppId
-
-The unique identifier of mobileApp
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Create
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Name
-
-Indicates the name of the file.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -543,63 +258,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Size
+### -UserId
 
-Indicates the original size of the file, in bytes.
-
-```yaml
-Type: System.Int64
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -SizeEncrypted
-
-Indicates the size of the file after encryption, in bytes.
-
-```yaml
-Type: System.Int64
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UploadErrorCode
-
-Optional error codes that can be provided when uploadState of mobileAppContentFile is indicating an error.
+The unique identifier of user
 
 ```yaml
 Type: System.String
@@ -607,64 +268,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: CreateViaIdentityExpanded
+- Name: Get
   Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UploadState
-
-Contains properties for upload request states.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: CreateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: CreateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -WhatIf
-
-Runs the command in a mode that only reports what would happen without performing the actions.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- wi
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -686,17 +292,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppContentFile
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppContentFile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceSyncStatusResponse
 
 {{ Fill in the Description }}
 
@@ -706,22 +308,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IMicrosoftGraphMobileAppContentFile>`: Contains properties for a single installer file that is associated with a given mobileAppContent version.
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [IsDependency <Boolean?>]: Indicates whether this content file is a dependency for the main content file.
-TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
-Defaults to FALSE.
-  [IsFrameworkFile <Boolean?>]: A value indicating whether the file is a framework file.
-To be deprecated.
-  [Manifest <Byte[]>]: Indicates the manifest information, containing file metadata.
-  [Name <String>]: Indicates the name of the file.
-  [Size <Int64?>]: Indicates the original size of the file, in bytes.
-  [SizeEncrypted <Int64?>]: Indicates the size of the file after encryption, in bytes.
-  [UploadErrorCode <String>]: Optional error codes that can be provided when uploadState of mobileAppContentFile is indicating an error.
-  [UploadState <String>]: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
@@ -801,7 +387,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappasandroidlobappcontentversionfile)
+- [Get-MgBetaUserManagedDeviceSyncStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicesyncstatus)
 
 
 

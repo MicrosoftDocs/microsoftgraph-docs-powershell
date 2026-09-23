@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementandroidmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementAndroidManagedAppProtection
 ---
@@ -37,6 +37,7 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppPr
  [-AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction>]
  [-AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction>]
  [-AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction>]
+ [-AppActionIfDeveloperOptionsEnabled <ManagedAppRemediationAction>]
  [-AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction>]
  [-AppActionIfDeviceLockNotSet <ManagedAppRemediationAction>]
  [-AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction>]
@@ -121,6 +122,7 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection
  [-AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction>]
  [-AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction>]
  [-AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction>]
+ [-AppActionIfDeveloperOptionsEnabled <ManagedAppRemediationAction>]
  [-AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction>]
  [-AppActionIfDeviceLockNotSet <ManagedAppRemediationAction>]
  [-AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction>]
@@ -589,6 +591,33 @@ HelpMessage: ''
 ```
 
 ### -AppActionIfAndroidSafetyNetDeviceAttestationFailed
+
+An admin initiated action to be applied on a managed app.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AppActionIfDeveloperOptionsEnabled
 
 An admin initiated action to be applied on a managed app.
 
@@ -3495,6 +3524,7 @@ Read-only.
   [AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
+  [AppActionIfDeveloperOptionsEnabled <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDeviceLockNotSet <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.

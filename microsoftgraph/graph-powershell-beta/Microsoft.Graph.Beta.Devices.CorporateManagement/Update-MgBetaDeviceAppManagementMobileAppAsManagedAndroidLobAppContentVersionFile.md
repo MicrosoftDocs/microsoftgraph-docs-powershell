@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappasmanagedandroidlobappcontentversionfile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile
 ---
@@ -27,9 +27,10 @@ Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFil
  -MobileAppContentFileId <string> -MobileAppContentId <string> -MobileAppId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
  [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <string>] [-Name <string>] [-Size <long>]
- [-SizeEncrypted <long>] [-UploadState <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-SizeEncrypted <long>] [-UploadErrorCode <string>] [-UploadState <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -50,9 +51,9 @@ Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFil
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Id <string>] [-IsDependency] [-IsFrameworkFile]
  [-ManifestInputFile <string>] [-Name <string>] [-Size <long>] [-SizeEncrypted <long>]
- [-UploadState <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-UploadErrorCode <string>] [-UploadState <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -625,6 +626,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -UploadErrorCode
+
+Optional error codes that can be provided when uploadState of mobileAppContentFile is indicating an error.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -UploadState
 
 Contains properties for upload request states.
@@ -721,6 +749,7 @@ To be deprecated.
   [Name <String>]: Indicates the name of the file.
   [Size <Int64?>]: Indicates the original size of the file, in bytes.
   [SizeEncrypted <Int64?>]: Indicates the size of the file after encryption, in bytes.
+  [UploadErrorCode <String>]: Optional error codes that can be provided when uploadState of mobileAppContentFile is indicating an error.
   [UploadState <String>]: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter

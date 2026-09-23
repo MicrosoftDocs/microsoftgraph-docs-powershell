@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceAppManagementVppToken
 ---
@@ -24,10 +24,11 @@ Create new navigation property to vppTokens for deviceAppManagement
 
 ```
 New-MgBetaDeviceAppManagementVppToken [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-AppleId <string>] [-AutomaticallyUpdateApps]
- [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <string>] [-DataSharingConsentGranted]
- [-DisplayName <string>] [-ExpirationDateTime <datetime>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-LastSyncDateTime <datetime>]
+ [-AdditionalProperties <hashtable>]
+ [-AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol>] [-AppleId <string>]
+ [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <string>]
+ [-DataSharingConsentGranted] [-DisplayName <string>] [-ExpirationDateTime <datetime>]
+ [-Id <string>] [-LastModifiedDateTime <datetime>] [-LastSyncDateTime <datetime>]
  [-LastSyncStatus <VppTokenSyncStatus>] [-LocationName <string>] [-OrganizationName <string>]
  [-RoleScopeTagIds <string[]>] [-State <VppTokenState>] [-Token <string>]
  [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>]
@@ -70,6 +71,27 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AppleDeviceAppDeliveryProtocolType
+
+Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.AppleDeviceDeliveryProtocol
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -740,6 +762,7 @@ You can upload multiple Apple VPP Business or Education tokens.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol?>]: Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
   [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
   [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
   [ClaimTokenManagementFromExternalMdm <Boolean?>]: Admin consent to allow claiming token management from external MDM.
