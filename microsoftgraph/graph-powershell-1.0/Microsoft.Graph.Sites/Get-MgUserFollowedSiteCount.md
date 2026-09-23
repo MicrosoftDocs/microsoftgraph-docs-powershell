@@ -15,6 +15,9 @@ title: Get-MgUserFollowedSiteCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserFollowedSiteCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaUserFollowedSiteCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

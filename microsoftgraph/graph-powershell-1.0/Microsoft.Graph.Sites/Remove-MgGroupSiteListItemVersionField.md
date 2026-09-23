@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteListItemVersionField
 
 Delete navigation property fields for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

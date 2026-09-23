@@ -15,6 +15,9 @@ title: Get-MgSiteContentTypeColumn
 
 Retrieve the metadata for a site, a list, or a contentType column.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
