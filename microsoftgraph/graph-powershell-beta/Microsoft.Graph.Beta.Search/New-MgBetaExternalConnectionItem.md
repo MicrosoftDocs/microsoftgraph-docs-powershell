@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalConnectionItem
 ---
@@ -663,7 +663,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
   [InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]: externalItemInformationProtectionLabel
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [SensitivityLabelId <String>]: 
+    [SensitivityLabelId <String>]: The GUID of the Purview sensitivity label.
+To get the label GUID, use the Get sensitivityLabel API or the Get-Label PowerShell command.
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
@@ -675,7 +676,8 @@ Required.
 
 INFORMATIONPROTECTIONLABEL `<IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>`: externalItemInformationProtectionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [SensitivityLabelId <String>]: 
+  [SensitivityLabelId <String>]: The GUID of the Purview sensitivity label.
+To get the label GUID, use the Get sensitivityLabel API or the Get-Label PowerShell command.
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
