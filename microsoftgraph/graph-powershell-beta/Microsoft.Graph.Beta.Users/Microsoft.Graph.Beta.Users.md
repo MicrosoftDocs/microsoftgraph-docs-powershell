@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: d4f30c2f-6ff7-4f21-ad53-a7c391dc75bb
+Module Guid: feab8ce8-5b94-4d1d-8db2-be63130f735a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -19,10 +19,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUser](Get-MgBetaUser.md)
 
-### [Get-MgBetaUser](Get-MgBetaUser.md)
-
-### [Get-MgBetaUserAppRoleAssignedResource](Get-MgBetaUserAppRoleAssignedResource.md)
-
 ### [Get-MgBetaUserAppRoleAssignedResource](Get-MgBetaUserAppRoleAssignedResource.md)
 
 ### [Get-MgBetaUserAppRoleAssignedResourceByAppId](Get-MgBetaUserAppRoleAssignedResourceByAppId.md)
@@ -35,10 +31,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserCreatedObject](Get-MgBetaUserCreatedObject.md)
 
-### [Get-MgBetaUserCreatedObject](Get-MgBetaUserCreatedObject.md)
-
-### [Get-MgBetaUserCreatedObjectAsServicePrincipal](Get-MgBetaUserCreatedObjectAsServicePrincipal.md)
-
 ### [Get-MgBetaUserCreatedObjectAsServicePrincipal](Get-MgBetaUserCreatedObjectAsServicePrincipal.md)
 
 ### [Get-MgBetaUserCreatedObjectCount](Get-MgBetaUserCreatedObjectCount.md)
@@ -47,13 +39,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDirectReport](Get-MgBetaUserDirectReport.md)
 
-### [Get-MgBetaUserDirectReport](Get-MgBetaUserDirectReport.md)
-
 ### [Get-MgBetaUserDirectReportAsOrgContact](Get-MgBetaUserDirectReportAsOrgContact.md)
-
-### [Get-MgBetaUserDirectReportAsOrgContact](Get-MgBetaUserDirectReportAsOrgContact.md)
-
-### [Get-MgBetaUserDirectReportAsUser](Get-MgBetaUserDirectReportAsUser.md)
 
 ### [Get-MgBetaUserDirectReportAsUser](Get-MgBetaUserDirectReportAsUser.md)
 
@@ -65,13 +51,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserExtension](Get-MgBetaUserExtension.md)
 
-### [Get-MgBetaUserExtension](Get-MgBetaUserExtension.md)
-
 ### [Get-MgBetaUserExtensionCount](Get-MgBetaUserExtensionCount.md)
 
 ### [Get-MgBetaUserInsight](Get-MgBetaUserInsight.md)
-
-### [Get-MgBetaUserInsightShared](Get-MgBetaUserInsightShared.md)
 
 ### [Get-MgBetaUserInsightShared](Get-MgBetaUserInsightShared.md)
 
@@ -83,13 +65,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserInsightTrending](Get-MgBetaUserInsightTrending.md)
 
-### [Get-MgBetaUserInsightTrending](Get-MgBetaUserInsightTrending.md)
-
 ### [Get-MgBetaUserInsightTrendingCount](Get-MgBetaUserInsightTrendingCount.md)
 
 ### [Get-MgBetaUserInsightTrendingResource](Get-MgBetaUserInsightTrendingResource.md)
-
-### [Get-MgBetaUserInsightUsed](Get-MgBetaUserInsightUsed.md)
 
 ### [Get-MgBetaUserInsightUsed](Get-MgBetaUserInsightUsed.md)
 
@@ -98,8 +76,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserInsightUsedResource](Get-MgBetaUserInsightUsedResource.md)
 
 ### [Get-MgBetaUserInvitedBy](Get-MgBetaUserInvitedBy.md)
-
-### [Get-MgBetaUserLicenseDetail](Get-MgBetaUserLicenseDetail.md)
 
 ### [Get-MgBetaUserLicenseDetail](Get-MgBetaUserLicenseDetail.md)
 
@@ -115,17 +91,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMemberOf](Get-MgBetaUserMemberOf.md)
 
-### [Get-MgBetaUserMemberOf](Get-MgBetaUserMemberOf.md)
-
-### [Get-MgBetaUserMemberOfAsAdministrativeUnit](Get-MgBetaUserMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgBetaUserMemberOfAsAdministrativeUnit](Get-MgBetaUserMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgBetaUserMemberOfAsDirectoryRole](Get-MgBetaUserMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaUserMemberOfAsDirectoryRole](Get-MgBetaUserMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaUserMemberOfAsGroup](Get-MgBetaUserMemberOfAsGroup.md)
 
 ### [Get-MgBetaUserMemberOfAsGroup](Get-MgBetaUserMemberOfAsGroup.md)
 
@@ -139,11 +107,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserNotification](Get-MgBetaUserNotification.md)
 
-### [Get-MgBetaUserNotification](Get-MgBetaUserNotification.md)
-
 ### [Get-MgBetaUserNotificationCount](Get-MgBetaUserNotificationCount.md)
-
-### [Get-MgBetaUserOauth2PermissionGrant](Get-MgBetaUserOauth2PermissionGrant.md)
 
 ### [Get-MgBetaUserOauth2PermissionGrant](Get-MgBetaUserOauth2PermissionGrant.md)
 
@@ -153,15 +117,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserOutlookMasterCategory](Get-MgBetaUserOutlookMasterCategory.md)
 
-### [Get-MgBetaUserOutlookMasterCategory](Get-MgBetaUserOutlookMasterCategory.md)
-
 ### [Get-MgBetaUserOutlookMasterCategoryCount](Get-MgBetaUserOutlookMasterCategoryCount.md)
 
 ### [Get-MgBetaUserOutlookTask](Get-MgBetaUserOutlookTask.md)
-
-### [Get-MgBetaUserOutlookTask](Get-MgBetaUserOutlookTask.md)
-
-### [Get-MgBetaUserOutlookTaskAttachment](Get-MgBetaUserOutlookTaskAttachment.md)
 
 ### [Get-MgBetaUserOutlookTaskAttachment](Get-MgBetaUserOutlookTaskAttachment.md)
 
@@ -171,15 +129,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserOutlookTaskFolder](Get-MgBetaUserOutlookTaskFolder.md)
 
-### [Get-MgBetaUserOutlookTaskFolder](Get-MgBetaUserOutlookTaskFolder.md)
-
 ### [Get-MgBetaUserOutlookTaskFolderCount](Get-MgBetaUserOutlookTaskFolderCount.md)
 
 ### [Get-MgBetaUserOutlookTaskFolderTask](Get-MgBetaUserOutlookTaskFolderTask.md)
-
-### [Get-MgBetaUserOutlookTaskFolderTask](Get-MgBetaUserOutlookTaskFolderTask.md)
-
-### [Get-MgBetaUserOutlookTaskFolderTaskAttachment](Get-MgBetaUserOutlookTaskFolderTaskAttachment.md)
 
 ### [Get-MgBetaUserOutlookTaskFolderTaskAttachment](Get-MgBetaUserOutlookTaskFolderTaskAttachment.md)
 
@@ -189,21 +141,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserOutlookTaskGroup](Get-MgBetaUserOutlookTaskGroup.md)
 
-### [Get-MgBetaUserOutlookTaskGroup](Get-MgBetaUserOutlookTaskGroup.md)
-
 ### [Get-MgBetaUserOutlookTaskGroupCount](Get-MgBetaUserOutlookTaskGroupCount.md)
-
-### [Get-MgBetaUserOutlookTaskGroupTaskFolder](Get-MgBetaUserOutlookTaskGroupTaskFolder.md)
 
 ### [Get-MgBetaUserOutlookTaskGroupTaskFolder](Get-MgBetaUserOutlookTaskGroupTaskFolder.md)
 
 ### [Get-MgBetaUserOutlookTaskGroupTaskFolderCount](Get-MgBetaUserOutlookTaskGroupTaskFolderCount.md)
 
 ### [Get-MgBetaUserOutlookTaskGroupTaskFolderTask](Get-MgBetaUserOutlookTaskGroupTaskFolderTask.md)
-
-### [Get-MgBetaUserOutlookTaskGroupTaskFolderTask](Get-MgBetaUserOutlookTaskGroupTaskFolderTask.md)
-
-### [Get-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](Get-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
 
 ### [Get-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](Get-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
 
@@ -213,17 +157,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserOwnedDevice](Get-MgBetaUserOwnedDevice.md)
 
-### [Get-MgBetaUserOwnedDevice](Get-MgBetaUserOwnedDevice.md)
-
-### [Get-MgBetaUserOwnedDeviceAsAppRoleAssignment](Get-MgBetaUserOwnedDeviceAsAppRoleAssignment.md)
-
 ### [Get-MgBetaUserOwnedDeviceAsAppRoleAssignment](Get-MgBetaUserOwnedDeviceAsAppRoleAssignment.md)
 
 ### [Get-MgBetaUserOwnedDeviceAsDevice](Get-MgBetaUserOwnedDeviceAsDevice.md)
-
-### [Get-MgBetaUserOwnedDeviceAsDevice](Get-MgBetaUserOwnedDeviceAsDevice.md)
-
-### [Get-MgBetaUserOwnedDeviceAsEndpoint](Get-MgBetaUserOwnedDeviceAsEndpoint.md)
 
 ### [Get-MgBetaUserOwnedDeviceAsEndpoint](Get-MgBetaUserOwnedDeviceAsEndpoint.md)
 
@@ -237,17 +173,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserOwnedObject](Get-MgBetaUserOwnedObject.md)
 
-### [Get-MgBetaUserOwnedObject](Get-MgBetaUserOwnedObject.md)
-
-### [Get-MgBetaUserOwnedObjectAsApplication](Get-MgBetaUserOwnedObjectAsApplication.md)
-
 ### [Get-MgBetaUserOwnedObjectAsApplication](Get-MgBetaUserOwnedObjectAsApplication.md)
 
 ### [Get-MgBetaUserOwnedObjectAsGroup](Get-MgBetaUserOwnedObjectAsGroup.md)
-
-### [Get-MgBetaUserOwnedObjectAsGroup](Get-MgBetaUserOwnedObjectAsGroup.md)
-
-### [Get-MgBetaUserOwnedObjectAsServicePrincipal](Get-MgBetaUserOwnedObjectAsServicePrincipal.md)
 
 ### [Get-MgBetaUserOwnedObjectAsServicePrincipal](Get-MgBetaUserOwnedObjectAsServicePrincipal.md)
 
@@ -261,23 +189,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserPhoto](Get-MgBetaUserPhoto.md)
 
-### [Get-MgBetaUserPhoto](Get-MgBetaUserPhoto.md)
-
 ### [Get-MgBetaUserPhotoContent](Get-MgBetaUserPhotoContent.md)
 
 ### [Get-MgBetaUserRegisteredDevice](Get-MgBetaUserRegisteredDevice.md)
 
-### [Get-MgBetaUserRegisteredDevice](Get-MgBetaUserRegisteredDevice.md)
-
-### [Get-MgBetaUserRegisteredDeviceAsAppRoleAssignment](Get-MgBetaUserRegisteredDeviceAsAppRoleAssignment.md)
-
 ### [Get-MgBetaUserRegisteredDeviceAsAppRoleAssignment](Get-MgBetaUserRegisteredDeviceAsAppRoleAssignment.md)
 
 ### [Get-MgBetaUserRegisteredDeviceAsDevice](Get-MgBetaUserRegisteredDeviceAsDevice.md)
-
-### [Get-MgBetaUserRegisteredDeviceAsDevice](Get-MgBetaUserRegisteredDeviceAsDevice.md)
-
-### [Get-MgBetaUserRegisteredDeviceAsEndpoint](Get-MgBetaUserRegisteredDeviceAsEndpoint.md)
 
 ### [Get-MgBetaUserRegisteredDeviceAsEndpoint](Get-MgBetaUserRegisteredDeviceAsEndpoint.md)
 
@@ -307,17 +225,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserSettingStorageQuotaService](Get-MgBetaUserSettingStorageQuotaService.md)
 
-### [Get-MgBetaUserSettingStorageQuotaService](Get-MgBetaUserSettingStorageQuotaService.md)
-
 ### [Get-MgBetaUserSettingStorageQuotaServiceCount](Get-MgBetaUserSettingStorageQuotaServiceCount.md)
 
 ### [Get-MgBetaUserSettingWindows](Get-MgBetaUserSettingWindows.md)
 
-### [Get-MgBetaUserSettingWindows](Get-MgBetaUserSettingWindows.md)
-
 ### [Get-MgBetaUserSettingWindowsCount](Get-MgBetaUserSettingWindowsCount.md)
-
-### [Get-MgBetaUserSettingWindowsInstance](Get-MgBetaUserSettingWindowsInstance.md)
 
 ### [Get-MgBetaUserSettingWindowsInstance](Get-MgBetaUserSettingWindowsInstance.md)
 
@@ -327,11 +239,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserSettingWorkHourAndLocationOccurrence](Get-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
 
-### [Get-MgBetaUserSettingWorkHourAndLocationOccurrence](Get-MgBetaUserSettingWorkHourAndLocationOccurrence.md)
-
 ### [Get-MgBetaUserSettingWorkHourAndLocationOccurrenceCount](Get-MgBetaUserSettingWorkHourAndLocationOccurrenceCount.md)
-
-### [Get-MgBetaUserSettingWorkHourAndLocationRecurrence](Get-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
 
 ### [Get-MgBetaUserSettingWorkHourAndLocationRecurrence](Get-MgBetaUserSettingWorkHourAndLocationRecurrence.md)
 
@@ -343,7 +251,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserSponsorCount](Get-MgBetaUserSponsorCount.md)
 
-### [Get-MgBetaUserTodoList](Get-MgBetaUserTodoList.md)
+### [Get-MgBetaUserSponsorOf](Get-MgBetaUserSponsorOf.md)
+
+### [Get-MgBetaUserSponsorOfCount](Get-MgBetaUserSponsorOfCount.md)
 
 ### [Get-MgBetaUserTodoList](Get-MgBetaUserTodoList.md)
 
@@ -353,15 +263,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserTodoListExtension](Get-MgBetaUserTodoListExtension.md)
 
-### [Get-MgBetaUserTodoListExtension](Get-MgBetaUserTodoListExtension.md)
-
 ### [Get-MgBetaUserTodoListExtensionCount](Get-MgBetaUserTodoListExtensionCount.md)
 
 ### [Get-MgBetaUserTodoTask](Get-MgBetaUserTodoTask.md)
-
-### [Get-MgBetaUserTodoTask](Get-MgBetaUserTodoTask.md)
-
-### [Get-MgBetaUserTodoTaskAttachment](Get-MgBetaUserTodoTaskAttachment.md)
 
 ### [Get-MgBetaUserTodoTaskAttachment](Get-MgBetaUserTodoTaskAttachment.md)
 
@@ -371,13 +275,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserTodoTaskAttachmentSession](Get-MgBetaUserTodoTaskAttachmentSession.md)
 
-### [Get-MgBetaUserTodoTaskAttachmentSession](Get-MgBetaUserTodoTaskAttachmentSession.md)
-
 ### [Get-MgBetaUserTodoTaskAttachmentSessionContent](Get-MgBetaUserTodoTaskAttachmentSessionContent.md)
 
 ### [Get-MgBetaUserTodoTaskAttachmentSessionCount](Get-MgBetaUserTodoTaskAttachmentSessionCount.md)
-
-### [Get-MgBetaUserTodoTaskChecklistItem](Get-MgBetaUserTodoTaskChecklistItem.md)
 
 ### [Get-MgBetaUserTodoTaskChecklistItem](Get-MgBetaUserTodoTaskChecklistItem.md)
 
@@ -389,11 +289,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserTodoTaskExtension](Get-MgBetaUserTodoTaskExtension.md)
 
-### [Get-MgBetaUserTodoTaskExtension](Get-MgBetaUserTodoTaskExtension.md)
-
 ### [Get-MgBetaUserTodoTaskExtensionCount](Get-MgBetaUserTodoTaskExtensionCount.md)
-
-### [Get-MgBetaUserTodoTaskLinkedResource](Get-MgBetaUserTodoTaskLinkedResource.md)
 
 ### [Get-MgBetaUserTodoTaskLinkedResource](Get-MgBetaUserTodoTaskLinkedResource.md)
 
@@ -401,17 +297,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserTransitiveMemberOf](Get-MgBetaUserTransitiveMemberOf.md)
 
-### [Get-MgBetaUserTransitiveMemberOf](Get-MgBetaUserTransitiveMemberOf.md)
-
-### [Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgBetaUserTransitiveMemberOfAsDirectoryRole](Get-MgBetaUserTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaUserTransitiveMemberOfAsDirectoryRole](Get-MgBetaUserTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaUserTransitiveMemberOfAsGroup](Get-MgBetaUserTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgBetaUserTransitiveMemberOfAsGroup](Get-MgBetaUserTransitiveMemberOfAsGroup.md)
 
@@ -422,8 +310,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole](Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole.md)
 
 ### [Get-MgBetaUserTransitiveMemberOfCountAsGroup](Get-MgBetaUserTransitiveMemberOfCountAsGroup.md)
-
-### [Get-MgBetaUserTransitiveReport](Get-MgBetaUserTransitiveReport.md)
 
 ### [Get-MgBetaUserTransitiveReport](Get-MgBetaUserTransitiveReport.md)
 
@@ -688,23 +574,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserTodoListTaskExtension](Update-MgBetaUserTodoListTaskExtension.md)
 
 ### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

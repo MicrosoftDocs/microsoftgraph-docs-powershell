@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstorage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 08/07/2026
+ms.date: 09/23/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSettingStorage
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaUserSettingStorage
 ## SYNOPSIS
 
 Update the navigation property storage in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingStorage](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingStorage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,6 +64,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property storage in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -483,7 +490,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserStorage>`: userStorage
+BODYPARAMETER <IMicrosoftGraphUserStorage>: userStorage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -492,6 +499,20 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Deleted <Int64?>]: 
+    [FamilyMembersUsage <IMicrosoftGraphFamilyMemberStorageQuota[]>]: 
+      [AdditionalAllocations <IMicrosoftGraphAdditionalStorageAllocations>]: additionalStorageAllocations
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [BonusQuotaInBytes <Int64?>]: 
+        [SubscriptionQuotaInBytes <Int64?>]: 
+      [Used <Int64?>]: 
+      [User <IMicrosoftGraphIdentity>]: identity
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+        [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    [IsPooledStorageEnabled <Boolean?>]: 
     [ManageWebUrl <String>]: A URL that can be used in a browser to manage the breakdown.
 Read-only.
     [Remaining <Int64?>]: Total space remaining before reaching the quota limit in bytes.
@@ -506,7 +527,7 @@ The possible values are: normal, nearing, critical, full, and overLimit.
     [Total <Int64?>]: Total allowed storage space in bytes.
     [Used <Int64?>]: Total space used in bytes.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -540,11 +561,25 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [WorkPlanOccurrenceId <String>]: The unique identifier of workPlanOccurrence
   [WorkPlanRecurrenceId <String>]: The unique identifier of workPlanRecurrence
 
-QUOTA `<IMicrosoftGraphUnifiedStorageQuota>`: unifiedStorageQuota
+QUOTA <IMicrosoftGraphUnifiedStorageQuota>: unifiedStorageQuota
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Deleted <Int64?>]: 
+  [FamilyMembersUsage <IMicrosoftGraphFamilyMemberStorageQuota[]>]: 
+    [AdditionalAllocations <IMicrosoftGraphAdditionalStorageAllocations>]: additionalStorageAllocations
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [BonusQuotaInBytes <Int64?>]: 
+      [SubscriptionQuotaInBytes <Int64?>]: 
+    [Used <Int64?>]: 
+    [User <IMicrosoftGraphIdentity>]: identity
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  [IsPooledStorageEnabled <Boolean?>]: 
   [ManageWebUrl <String>]: A URL that can be used in a browser to manage the breakdown.
 Read-only.
   [Remaining <Int64?>]: Total space remaining before reaching the quota limit in bytes.
@@ -562,27 +597,4 @@ The possible values are: normal, nearing, critical, full, and overLimit.
 
 ## RELATED LINKS
 
-- [Update-MgBetaUserSettingStorage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstorage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingstorage)

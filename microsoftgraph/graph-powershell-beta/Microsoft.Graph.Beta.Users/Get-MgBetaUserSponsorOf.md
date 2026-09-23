@@ -1,29 +1,30 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertask
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorof
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
 ms.date: 09/23/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaUserOutlookTaskGroupTaskFolderTask
+title: Get-MgBetaUserSponsorOf
 ---
 
-# Get-MgBetaUserOutlookTaskGroupTaskFolderTask
+# Get-MgBetaUserSponsorOf
 
 ## SYNOPSIS
 
-The tasks in this task folder.
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
 Read-only.
 Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## SYNTAX
 
 ### List (Default)
 
 ```
-Get-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <string>
- -OutlookTaskGroupId <string> -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+Get-MgBetaUserSponsorOf -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
@@ -34,8 +35,7 @@ Get-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <string>
 ### Get
 
 ```
-Get-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <string>
- -OutlookTaskGroupId <string> -OutlookTaskId <string> -UserId <string> [-ExpandProperty <string[]>]
+Get-MgBetaUserSponsorOf -DirectoryObjectId <string> -UserId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
@@ -44,11 +44,10 @@ Get-MgBetaUserOutlookTaskGroupTaskFolderTask -OutlookTaskFolderId <string>
 ### GetViaIdentity
 
 ```
-Get-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity>
- [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgBetaUserSponsorOf -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -58,9 +57,11 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-The tasks in this task folder.
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
 Read-only.
 Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## EXAMPLES
 
@@ -131,6 +132,27 @@ ParameterSets:
 - Name: List
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -260,81 +282,6 @@ ParameterSets:
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OutlookTaskFolderId
-
-The unique identifier of outlookTaskFolder
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OutlookTaskGroupId
-
-The unique identifier of outlookTaskGroup
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OutlookTaskId
-
-The unique identifier of outlookTask
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -602,7 +549,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 
 {{ Fill in the Description }}
 
@@ -650,4 +597,5 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertask)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorof)
+- [](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-beta)
