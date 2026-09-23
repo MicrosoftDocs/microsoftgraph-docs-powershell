@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 9773af23-93df-4ec5-851f-0c6a4cc11c7e
+Module Guid: a98ee3d0-2f0d-4bf5-b3d4-544c6ecfd4fb
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -351,6 +351,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPolicyCrossTenantAccessPolicyDefault](Get-MgPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Get-MgPolicyCrossTenantAccessPolicyDefaultM365Capability](Get-MgPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
+### [Get-MgPolicyCrossTenantAccessPolicyDefaultM365Capability](Get-MgPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
+### [Get-MgPolicyCrossTenantAccessPolicyDefaultM365CapabilityCount](Get-MgPolicyCrossTenantAccessPolicyDefaultM365CapabilityCount.md)
+
 ### [Get-MgPolicyCrossTenantAccessPolicyPartner](Get-MgPolicyCrossTenantAccessPolicyPartner.md)
 
 ### [Get-MgPolicyCrossTenantAccessPolicyPartner](Get-MgPolicyCrossTenantAccessPolicyPartner.md)
@@ -358,6 +364,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgPolicyCrossTenantAccessPolicyPartnerCount](Get-MgPolicyCrossTenantAccessPolicyPartnerCount.md)
 
 ### [Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+
+### [Get-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](Get-MgPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Get-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](Get-MgPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Get-MgPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount](Get-MgPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount.md)
+
+### [Get-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Get-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
 
 ### [Get-MgPolicyCrossTenantAccessPolicyTemplate](Get-MgPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -380,6 +394,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToCount](Get-MgPolicyFeatureRolloutPolicyApplyToCount.md)
 
 ### [Get-MgPolicyFeatureRolloutPolicyCount](Get-MgPolicyFeatureRolloutPolicyCount.md)
+
+### [Get-MgPolicyFederatedTokenValidationPolicy](Get-MgPolicyFederatedTokenValidationPolicy.md)
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 
@@ -683,7 +699,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgPolicyClaimMappingPolicy](New-MgPolicyClaimMappingPolicy.md)
 
+### [New-MgPolicyCrossTenantAccessPolicyDefaultM365Capability](New-MgPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [New-MgPolicyCrossTenantAccessPolicyPartner](New-MgPolicyCrossTenantAccessPolicyPartner.md)
+
+### [New-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](New-MgPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
 
 ### [New-MgPolicyFeatureRolloutPolicy](New-MgPolicyFeatureRolloutPolicy.md)
 
@@ -843,9 +863,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgPolicyCrossTenantAccessPolicyDefault](Remove-MgPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Remove-MgPolicyCrossTenantAccessPolicyDefaultM365Capability](Remove-MgPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [Remove-MgPolicyCrossTenantAccessPolicyPartner](Remove-MgPolicyCrossTenantAccessPolicyPartner.md)
 
 ### [Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+
+### [Remove-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](Remove-MgPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Remove-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Remove-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
 
 ### [Remove-MgPolicyCrossTenantAccessPolicyTemplate](Remove-MgPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -858,6 +884,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
 
 ### [Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef.md)
+
+### [Remove-MgPolicyFederatedTokenValidationPolicy](Remove-MgPolicyFederatedTokenValidationPolicy.md)
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
 
@@ -916,6 +944,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](Remove-MgUserAuthenticationWindowsHelloForBusinessMethod.md)
 
 ### [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
+
+### [Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting](Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting.md)
+
+### [Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfigurationToDefaultSetting](Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfigurationToDefaultSetting.md)
 
 ### [Reset-MgUserAuthenticationMethodPassword](Reset-MgUserAuthenticationMethodPassword.md)
 
@@ -1037,7 +1069,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgPolicyCrossTenantAccessPolicyDefault](Update-MgPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Update-MgPolicyCrossTenantAccessPolicyDefaultM365Capability](Update-MgPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
+
+### [Update-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](Update-MgPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Update-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Update-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
 
 ### [Update-MgPolicyCrossTenantAccessPolicyTemplate](Update-MgPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -1048,6 +1086,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
 
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
+
+### [Update-MgPolicyFederatedTokenValidationPolicy](Update-MgPolicyFederatedTokenValidationPolicy.md)
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
 
