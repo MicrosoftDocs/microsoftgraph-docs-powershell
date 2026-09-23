@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementDirectoryRoleAssignmentSchedule
 ---
@@ -726,7 +726,7 @@ ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilitySchedule>`: unifiedRoleEli
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
@@ -850,7 +850,7 @@ APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
@@ -861,7 +861,7 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentSchedule>`: unifiedRoleAssig
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
