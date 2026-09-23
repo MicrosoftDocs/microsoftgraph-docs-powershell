@@ -1,30 +1,27 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberofcount
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaUserTransitiveMemberOfCount
+title: Get-MgBetaUserSponsorOfCount
 ---
 
-# Get-MgBetaUserTransitiveMemberOfCount
+# Get-MgBetaUserSponsorOfCount
 
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveMemberOfCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOfCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Get (Default)
 
 ```
-Get-MgBetaUserTransitiveMemberOfCount -UserId <string> -ConsistencyLevel <string> [-Filter <string>]
- [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Get-MgBetaUserSponsorOfCount -UserId <string> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -32,11 +29,10 @@ Get-MgBetaUserTransitiveMemberOfCount -UserId <string> -ConsistencyLevel <string
 ### GetViaIdentity
 
 ```
-Get-MgBetaUserTransitiveMemberOfCount -InputObject <IUsersIdentity> -ConsistencyLevel <string>
- [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgBetaUserSponsorOfCount -InputObject <IUsersIdentity> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,9 +48,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, GroupMember.Read.All, GroupMember.ReadBasic.All, User.Read.All,  |
+| Delegated (work or school account) | User.Read, User.Read.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | User.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, GroupMember.Read.All, GroupMember.ReadBasic.All,  |
+| Application | User.Read.All, User.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -71,28 +67,6 @@ ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -ConsistencyLevel
-
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -401,7 +375,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserTransitiveMemberOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberofcount)
+- [Get-MgBetaUserSponsorOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorofcount)
 
 
 
