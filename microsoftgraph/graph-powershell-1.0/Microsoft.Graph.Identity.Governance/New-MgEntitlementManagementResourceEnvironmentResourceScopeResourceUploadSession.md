@@ -1,68 +1,70 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.Governance-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgbatchidentitygovernanceaccessreviewdefinitioninstancerecorddecision
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironmentresourcescoperesourceuploadsession
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
+title: New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession
 ---
 
-# Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
+# New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession
 
 ## SYNOPSIS
 
-Enables reviewers to review all accessReviewInstanceDecisionItem objects in a specific accessReviewInstance in batches by using principalId, resourceId, or neither.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision?view=graph-powershell-beta)
+Create new navigation property to uploadSessions for identityGovernance
 
 ## SYNTAX
 
-### BatchExpanded (Default)
+### CreateExpanded (Default)
 
 ```
-Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
- -AccessReviewInstanceId <string> -AccessReviewScheduleDefinitionId <string>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Decision <string>]
- [-Justification <string>] [-PrincipalId <string>] [-ResourceId <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession
+ -AccessPackageResourceEnvironmentId <string> -AccessPackageResourceId <string>
+ -AccessPackageResourceScopeId <string> [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-Data <hashtable>]
+ [-Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>] [-Id <string>] [-IsUploadDone]
+ [-ReferenceId <string>] [-Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]
+ [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Create
+
+```
+New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession
+ -AccessPackageResourceEnvironmentId <string> -AccessPackageResourceId <string>
+ -AccessPackageResourceScopeId <string>
+ -BodyParameter <IMicrosoftGraphCustomDataProvidedResourceUploadSession>
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Batch
+### CreateViaIdentityExpanded
 
 ```
-Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
- -AccessReviewInstanceId <string> -AccessReviewScheduleDefinitionId <string>
- -BodyParameter <IPaths6XbrkaIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### BatchViaIdentityExpanded
-
-```
-Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
+New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Decision <string>] [-Justification <string>]
- [-PrincipalId <string>] [-ResourceId <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-Data <hashtable>]
+ [-Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>] [-Id <string>] [-IsUploadDone]
+ [-ReferenceId <string>] [-Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]
+ [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### BatchViaIdentity
+### CreateViaIdentity
 
 ```
-Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
+New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession
  -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IPaths6XbrkaIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IMicrosoftGraphCustomDataProvidedResourceUploadSession>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -72,40 +74,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Enables reviewers to review all accessReviewInstanceDecisionItem objects in a specific accessReviewInstance in batches by using principalId, resourceId, or neither.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Identity.Governance
-
-$params = @{
-	decision = "Approve"
-	justification = "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team"
-	resourceId = "a5c51e59-3fcd-4a37-87a1-835c0c21488a"
-}
-
-Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision Cmdlet.
-
+Create new navigation property to uploadSessions for identityGovernance
 
 ## PARAMETERS
 
-### -AccessReviewInstanceId
+### -AccessPackageResourceEnvironmentId
 
-The unique identifier of accessReviewInstance
+The unique identifier of accessPackageResourceEnvironment
 
 ```yaml
 Type: System.String
@@ -113,13 +88,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: BatchExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Batch
+- Name: Create
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -130,9 +105,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -AccessReviewScheduleDefinitionId
+### -AccessPackageResourceId
 
-The unique identifier of accessReviewScheduleDefinition
+The unique identifier of accessPackageResource
 
 ```yaml
 Type: System.String
@@ -140,13 +115,40 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: BatchExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Batch
+- Name: Create
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AccessPackageResourceScopeId
+
+The unique identifier of accessPackageResourceScope
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: Create
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -167,13 +169,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: BatchViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: BatchExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -186,22 +188,22 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+customDataProvidedResourceUploadSession
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths6XbrkaIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomDataProvidedResourceUploadSession
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: BatchViaIdentity
+- Name: CreateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: Batch
+- Name: Create
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -255,23 +257,81 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Decision
+### -CreatedDateTime
 
-
+DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
 
 ```yaml
-Type: System.String
+Type: System.DateTime
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: BatchViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: BatchExpanded
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Data
+
+data
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Files
+
+The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+To construct, see NOTES section for FILES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomDataProvidedResourceFile[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -345,6 +405,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Id
+
+The unique identifier for an entity.
+Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -356,13 +444,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: BatchViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: BatchViaIdentity
+- Name: CreateViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -373,36 +461,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Justification
+### -IsUploadDone
 
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: BatchViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: BatchExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
+Indicates if all the necessary files have been uploaded to this session.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -410,34 +471,13 @@ DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PrincipalId
-
-
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: BatchViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: BatchExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -511,9 +551,10 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ResourceId
+### -ReferenceId
 
-
+The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
 
 ```yaml
 Type: System.String
@@ -521,13 +562,13 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: BatchViaIdentityExpanded
+- Name: CreateViaIdentityExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-- Name: BatchExpanded
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -550,6 +591,61 @@ Aliases:
 - RHV
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Stats
+
+customDataProvidedResourceUploadStats
+To construct, see NOTES section for STATS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomDataProvidedResourceUploadStats
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Status
+
+customDataProvidedResourceUploadStatus
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -595,7 +691,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.PowerShell.Models.IPaths6XbrkaIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomDataProvidedResourceUploadSession
 
 {{ Fill in the Description }}
 
@@ -605,7 +701,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomDataProvidedResourceUploadSession
 
 {{ Fill in the Description }}
 
@@ -616,12 +712,50 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths6XbrkaIdentitygovernanceAccessreviewsDefinitionsAccessreviewscheduledefinitionIdInstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER `<IMicrosoftGraphCustomDataProvidedResourceUploadSession>`: customDataProvidedResourceUploadSession
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Decision <String>]: 
-  [Justification <String>]: 
-  [PrincipalId <String>]: 
-  [ResourceId <String>]: 
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+  [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+    [(Any) <Object>]: This indicates any property can be added to this object.
+  [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+    [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+    [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+  [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+  [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+  [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+    [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+  [Status <String>]: customDataProvidedResourceUploadStatus
+
+FILES <IMicrosoftGraphCustomDataProvidedResourceFile[]>: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+  [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+  [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
 
 INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
@@ -659,10 +793,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -676,6 +813,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -698,11 +836,16 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
+STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvidedResourceUploadStats
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+  [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+
 
 ## RELATED LINKS
 
-- [Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgbatchidentitygovernanceaccessreviewdefinitioninstancerecorddecision)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-batchrecorddecisions?view=graph-rest-1.0)
+- [New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourceenvironmentresourcescoperesourceuploadsession)
+
 
 
 
