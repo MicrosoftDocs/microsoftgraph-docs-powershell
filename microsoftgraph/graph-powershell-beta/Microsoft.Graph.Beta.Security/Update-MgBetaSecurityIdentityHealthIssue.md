@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityIdentityHealthIssue
 
 Update the properties of a healthIssue object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIdentityHealthIssue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

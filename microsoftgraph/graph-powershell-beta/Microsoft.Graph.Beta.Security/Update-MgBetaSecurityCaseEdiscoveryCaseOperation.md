@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityCaseEdiscoveryCaseOperation
 
 Update the navigation property operations in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

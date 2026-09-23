@@ -15,6 +15,9 @@ title: Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource
 
 Update the navigation property unifiedGroupSources in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

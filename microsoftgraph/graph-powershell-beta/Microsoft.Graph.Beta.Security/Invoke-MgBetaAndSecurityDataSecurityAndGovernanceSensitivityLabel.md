@@ -15,6 +15,9 @@ title: Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Security/Invoke-MgAndSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AndExpanded (Default)
