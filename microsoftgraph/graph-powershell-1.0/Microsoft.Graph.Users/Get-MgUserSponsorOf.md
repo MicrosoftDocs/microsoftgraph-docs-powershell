@@ -1,32 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof
 Locale: en-US
 Module Name: Microsoft.Graph.Users
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgUserSettingExchange
+title: Get-MgUserSponsorOf
 ---
 
-# Get-MgUserSettingExchange
+# Get-MgUserSponsorOf
 
 ## SYNOPSIS
 
-Get a list of Exchange mailboxes that belong to a user.
-Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
-To learn how to get a list of users in a tenant, see List users.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingExchange](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingExchange?view=graph-powershell-beta)
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 
 ```
-Get-MgUserSettingExchange -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+Get-MgUserSponsorOf -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+ [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
+ [-CountVariable <string>]
+```
+
+### Get
+
+```
+Get-MgUserSponsorOf -DirectoryObjectId <string> -UserId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -34,7 +44,7 @@ Get-MgUserSettingExchange -UserId <string> [-ExpandProperty <string[]>] [-Proper
 ### GetViaIdentity
 
 ```
-Get-MgUserSettingExchange -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
+Get-MgUserSponsorOf -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
@@ -47,24 +57,34 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a list of Exchange mailboxes that belong to a user.
-Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
-To learn how to get a list of users in a tenant, see List users.
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Users
-
-Get-MgUserSettingExchange -UserId $userId
-
-```
-This example shows how to use the Get-MgUserSettingExchange Cmdlet.
-
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## PARAMETERS
+
+### -All
+
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -87,6 +107,50 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -CountVariable
+
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- CV
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ExpandProperty
 
 Expand related entities
@@ -99,6 +163,27 @@ Aliases:
 - Expand
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Filter
+
+Filter items by property values
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -187,6 +272,27 @@ ParameterSets:
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PageSize
+
+Sets the page size of results.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -301,6 +407,92 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Search
+
+Search items by search phrases
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Skip
+
+Skip the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Sort
+
+Order items by property values
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- OrderBy
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Top
+
+Show only the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases:
+- Limit
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -UserId
 
 The unique identifier of user
@@ -311,6 +503,12 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
 - Name: Get
   Position: Named
   IsRequired: true
@@ -341,7 +539,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExchangeSettings
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 
 {{ Fill in the Description }}
 
@@ -382,8 +580,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserSettingExchange](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-1.0)
+- [Get-MgUserSponsorOf](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-1.0)
+
+
 
 
 

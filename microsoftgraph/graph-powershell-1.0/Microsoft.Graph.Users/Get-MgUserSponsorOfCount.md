@@ -1,31 +1,26 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Users
 ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgUserSettingExchange
+title: Get-MgUserSponsorOfCount
 ---
 
-# Get-MgUserSettingExchange
+# Get-MgUserSponsorOfCount
 
 ## SYNOPSIS
 
-Get a list of Exchange mailboxes that belong to a user.
-Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
-To learn how to get a list of users in a tenant, see List users.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingExchange](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingExchange?view=graph-powershell-beta)
+Get the number of the resource
 
 ## SYNTAX
 
 ### Get (Default)
 
 ```
-Get-MgUserSettingExchange -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+Get-MgUserSponsorOfCount -UserId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
@@ -34,8 +29,8 @@ Get-MgUserSettingExchange -UserId <string> [-ExpandProperty <string[]>] [-Proper
 ### GetViaIdentity
 
 ```
-Get-MgUserSettingExchange -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
- [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Get-MgUserSponsorOfCount -InputObject <IUsersIdentity> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -47,22 +42,15 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a list of Exchange mailboxes that belong to a user.
-Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
-To learn how to get a list of users in a tenant, see List users.
+Get the number of the resource
 
-## EXAMPLES
-### Example 1: Code snippet
+**Permissions**
 
-```powershell
-
-Import-Module Microsoft.Graph.Users
-
-Get-MgUserSettingExchange -UserId $userId
-
-```
-This example shows how to use the Get-MgUserSettingExchange Cmdlet.
-
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | User.Read, User.Read.All, User.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | User.Read.All, User.ReadWrite.All,  |
 
 ## PARAMETERS
 
@@ -87,16 +75,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExpandProperty
+### -Filter
 
-Expand related entities
+Filter items by property values
 
 ```yaml
-Type: System.String[]
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- Expand
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -194,28 +181,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
-
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Select
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Proxy
 
 The URI for the proxy server to use
@@ -301,6 +266,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Search
+
+Search items by search phrases
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -UserId
 
 The unique identifier of user
@@ -341,7 +327,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExchangeSettings
+### System.Int32
 
 {{ Fill in the Description }}
 
@@ -382,8 +368,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserSettingExchange](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/usersettings-list-exchange?view=graph-rest-1.0)
+- [Get-MgUserSponsorOfCount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorofcount)
+
 
 
 
