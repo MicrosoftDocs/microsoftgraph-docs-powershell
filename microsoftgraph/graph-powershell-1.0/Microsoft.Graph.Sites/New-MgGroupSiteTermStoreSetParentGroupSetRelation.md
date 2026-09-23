@@ -1123,7 +1123,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoresetparentgroupsetrelation)
+- [New-MgGroupSiteTermStoreSetParentGroupSetRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoresetparentgroupsetrelation)
 
 
 
