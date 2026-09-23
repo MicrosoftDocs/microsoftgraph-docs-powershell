@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaCommunicationCallParticipant
 ---
@@ -30,7 +30,8 @@ Update-MgBetaCommunicationCallParticipant -CallId <string> -ParticipantId <strin
  [-PreferredDisplayName <string>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
  [-RemovedState <IMicrosoftGraphRemovedState>]
  [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <long>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-SyntheticMediaDetection <IMicrosoftGraphSyntheticMediaDetectionInfo>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -55,7 +56,8 @@ Update-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
  [-PreferredDisplayName <string>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
  [-RemovedState <IMicrosoftGraphRemovedState>]
  [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <long>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-SyntheticMediaDetection <IMicrosoftGraphSyntheticMediaDetectionInfo>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -739,6 +741,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SyntheticMediaDetection
+
+syntheticMediaDetectionInfo
+To construct, see NOTES section for SYNTHETICMEDIADETECTION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSyntheticMediaDetectionInfo
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -849,6 +879,13 @@ Read-only.
     [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
     [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
   [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number the participant was last updated in.
+  [SyntheticMediaDetection <IMicrosoftGraphSyntheticMediaDetectionInfo>]: syntheticMediaDetectionInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DetectionId <String>]: Unique identifier for the detection event.
+This property correlates with the id parameter that the detection bot passed to reportSyntheticMedia.
+    [DetectorBot <String>]: Identifier of the detection bot that produced this result.
+    [IsParticipantTrusted <Boolean?>]: Set to true if the participant is classified as trusted or reliable (for example, a known internal user); otherwise, false.
+    [SyntheticConfidence <Double?>]: Confidence score (0.0 to 1.0) that the participant's media is synthetic.
 
 INFO `<IMicrosoftGraphParticipantInfo>`: participantInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -950,6 +987,14 @@ RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRe
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
   [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
+
+SYNTHETICMEDIADETECTION `<IMicrosoftGraphSyntheticMediaDetectionInfo>`: syntheticMediaDetectionInfo
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [DetectionId <String>]: Unique identifier for the detection event.
+This property correlates with the id parameter that the detection bot passed to reportSyntheticMedia.
+  [DetectorBot <String>]: Identifier of the detection bot that produced this result.
+  [IsParticipantTrusted <Boolean?>]: Set to true if the participant is classified as trusted or reliable (for example, a known internal user); otherwise, false.
+  [SyntheticConfidence <Double?>]: Confidence score (0.0 to 1.0) that the participant's media is synthetic.
 
 
 ## RELATED LINKS

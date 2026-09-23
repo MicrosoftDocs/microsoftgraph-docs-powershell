@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeeting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserOnlineMeeting
 ---
@@ -43,7 +43,7 @@ Update-MgBetaUserOnlineMeeting -OnlineMeetingId <string> -UserId <string>
  [-JoinWebUrl <string>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
  [-MeetingOptionsWebUrl <string>] [-MeetingSpokenLanguageTag <string>] [-MeetingTemplateId <string>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
+ [-MeetingType <string>] [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
  [-RecordingInputFile <string>] [-Recordings <IMicrosoftGraphCallRecording[]>]
  [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]
@@ -87,7 +87,7 @@ Update-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
  [-JoinWebUrl <string>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
  [-MeetingOptionsWebUrl <string>] [-MeetingSpokenLanguageTag <string>] [-MeetingTemplateId <string>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
+ [-MeetingType <string>] [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically]
  [-RecordingInputFile <string>] [-Recordings <IMicrosoftGraphCallRecording[]>]
  [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]
@@ -743,7 +743,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-Represents a Microsoft online meeting.
+onlineMeeting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -1541,6 +1541,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -MeetingType
+
+onlineMeetingType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OnlineMeetingId
 
 The unique identifier of onlineMeeting
@@ -2170,7 +2197,7 @@ AUDIOCONFERENCING `<IMicrosoftGraphAudioConferencing>`: audioConferencing
   [TollNumber <String>]: The toll number that connects to the Audio Conference Provider.
   [TollNumbers <String[]>]: List of toll numbers that are displayed in the meeting invite.
 
-BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: Represents a Microsoft online meeting.
+BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowAttendeeToEnableCamera <Boolean?>]: Indicates whether attendees can turn on their camera.
   [AllowAttendeeToEnableMic <Boolean?>]: Indicates whether attendees can turn on their microphone.
@@ -2262,9 +2289,11 @@ Read-only.
 Optional.
   [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [MoreInfoWebUrl <String>]: 
-    [TenantKey <String>]: 
-    [VideoTeleconferenceId <String>]: 
+    [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+    [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+    [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2294,6 +2323,7 @@ Optional.
   [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
   [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+  [MeetingType <String>]: onlineMeetingType
   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
   [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2490,9 +2520,11 @@ Optional.
 
 CLOUDVIDEOINTEROPINFO `<IMicrosoftGraphCloudVideoInteropInfo>`: cloudVideoInteropInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [MoreInfoWebUrl <String>]: 
-  [TenantKey <String>]: 
-  [VideoTeleconferenceId <String>]: 
+  [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+  [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+  [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
