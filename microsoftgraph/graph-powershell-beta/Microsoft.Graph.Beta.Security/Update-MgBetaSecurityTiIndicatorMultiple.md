@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityTiIndicatorMultiple
 ---
@@ -475,7 +475,7 @@ Default value is 3.
 Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
     [ThreatType <String>]: Each indicator must have a valid Indicator Threat Type.
-Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
+The possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
     [TlpLevel <String>]: tlpLevel
     [Url <String>]: 
@@ -564,7 +564,7 @@ Default value is 3.
 Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
   [ThreatType <String>]: Each indicator must have a valid Indicator Threat Type.
-Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
+The possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
   [TlpLevel <String>]: tlpLevel
   [Url <String>]: 

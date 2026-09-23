@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityInformationProtection
 ---
@@ -419,7 +419,7 @@ Read-only.
     [Color <String>]: The color that the UI should display for the label, if configured.
     [ContentFormats <String[]>]: Returns the supported content formats for the label.
     [Description <String>]: The admin-defined description for the label.
-    [HasProtection <Boolean?>]: Indicates whether the label has protection actions configured.
+    [HasProtection <Boolean?>]: Indicates whether the label has protection actions (such as encryption or do not forward) configured.
     [IsActive <Boolean?>]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
     [IsAppliable <Boolean?>]: Indicates whether the label can be applied to content.
@@ -444,7 +444,7 @@ Read-only.
   [Color <String>]: The color that the UI should display for the label, if configured.
   [ContentFormats <String[]>]: Returns the supported content formats for the label.
   [Description <String>]: The admin-defined description for the label.
-  [HasProtection <Boolean?>]: Indicates whether the label has protection actions configured.
+  [HasProtection <Boolean?>]: Indicates whether the label has protection actions (such as encryption or do not forward) configured.
   [IsActive <Boolean?>]: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in the UI.
   [IsAppliable <Boolean?>]: Indicates whether the label can be applied to content.

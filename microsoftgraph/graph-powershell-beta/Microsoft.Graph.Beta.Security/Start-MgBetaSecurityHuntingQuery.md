@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecurityhuntingquery
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaSecurityHuntingQuery
 ---
@@ -13,13 +13,13 @@ title: Start-MgBetaSecurityHuntingQuery
 
 ## SYNOPSIS
 
-Query a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
-This method is for advanced hunting in Microsoft 365 Defender.
+Query a specified set of event, activity, or entity data supported by Microsoft Defender XDR to proactively look for specific threats in your environment.
+This method is for advanced hunting in Microsoft Defender XDR.
 This method includes a query in Kusto Query Language (KQL).
 It specifies a data table in the advanced hunting schema and a piped sequence of operators to filter or search that data and format the query output in specific ways.
 Find out more about hunting for threats across devices, emails, apps, and identities.
 Learn about KQL.
-For information on using advanced hunting in the Microsoft 365 Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft 365 Defender.
+For information on using advanced hunting in the Microsoft Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft Defender XDR.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-1.0)
@@ -30,8 +30,8 @@ For information on using advanced hunting in the Microsoft 365 Defender portal, 
 
 ```
 Start-MgBetaSecurityHuntingQuery [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Query <string>] [-Timespan <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AdditionalProperties <hashtable>] [-Query <string>] [-Timespan <string>] [-WorkspaceId <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -53,13 +53,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Query a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
-This method is for advanced hunting in Microsoft 365 Defender.
+Query a specified set of event, activity, or entity data supported by Microsoft Defender XDR to proactively look for specific threats in your environment.
+This method is for advanced hunting in Microsoft Defender XDR.
 This method includes a query in Kusto Query Language (KQL).
 It specifies a data table in the advanced hunting schema and a piped sequence of operators to filter or search that data and format the query output in specific ways.
 Find out more about hunting for threats across devices, emails, apps, and identities.
 Learn about KQL.
-For information on using advanced hunting in the Microsoft 365 Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft 365 Defender.
+For information on using advanced hunting in the Microsoft Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft Defender XDR.
 
 **Permissions**
 
@@ -369,6 +369,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -WorkspaceId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: RunExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -402,7 +423,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Query <String>]: 
-  [Timespan <String>]:
+  [Timespan <String>]: 
+  [WorkspaceId <String>]:
 
 
 ## RELATED LINKS

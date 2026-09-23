@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Security
-Module Guid: b372dd65-c4e8-406b-a963-7569afe0b962
+Module Guid: 931d9530-80c8-4aff-bc08-79faefa0870e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.security/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,6 +22,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData](Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData.md)
 
 ### [Close-MgBetaSecurityCaseEdiscoveryCase](Close-MgBetaSecurityCaseEdiscoveryCase.md)
+
+### [Disable-MgBetaSecurityCaseEdiscoveryCaseLegalHoldPolicy](Disable-MgBetaSecurityCaseEdiscoveryCaseLegalHoldPolicy.md)
+
+### [Enable-MgBetaSecurityCaseEdiscoveryCaseLegalHoldPolicy](Enable-MgBetaSecurityCaseEdiscoveryCaseLegalHoldPolicy.md)
 
 ### [Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet](Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet.md)
 
@@ -297,6 +301,58 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSecurityCaseEdiscoveryCaseTagParent](Get-MgBetaSecurityCaseEdiscoveryCaseTagParent.md)
 
+### [Get-MgBetaSecurityCaseManagement](Get-MgBetaSecurityCaseManagement.md)
+
+### [Get-MgBetaSecurityCaseManagementCase](Get-MgBetaSecurityCaseManagementCase.md)
+
+### [Get-MgBetaSecurityCaseManagementCase](Get-MgBetaSecurityCaseManagementCase.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseActivity](Get-MgBetaSecurityCaseManagementCaseActivity.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseActivity](Get-MgBetaSecurityCaseManagementCaseActivity.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseActivityCount](Get-MgBetaSecurityCaseManagementCaseActivityCount.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseAttachment](Get-MgBetaSecurityCaseManagementCaseAttachment.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseAttachment](Get-MgBetaSecurityCaseManagementCaseAttachment.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseAttachmentContent](Get-MgBetaSecurityCaseManagementCaseAttachmentContent.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseAttachmentCount](Get-MgBetaSecurityCaseManagementCaseAttachmentCount.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseCount](Get-MgBetaSecurityCaseManagementCaseCount.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseRelation](Get-MgBetaSecurityCaseManagementCaseRelation.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseRelation](Get-MgBetaSecurityCaseManagementCaseRelation.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseRelationCount](Get-MgBetaSecurityCaseManagementCaseRelationCount.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTask](Get-MgBetaSecurityCaseManagementCaseTask.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTask](Get-MgBetaSecurityCaseManagementCaseTask.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTaskCount](Get-MgBetaSecurityCaseManagementCaseTaskCount.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfiguration](Get-MgBetaSecurityCaseManagementCaseTypeConfiguration.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfiguration](Get-MgBetaSecurityCaseManagementCaseTypeConfiguration.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCount](Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCount.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCustomField](Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCustomField.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCustomField](Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCustomField.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCustomFieldCount](Get-MgBetaSecurityCaseManagementCaseTypeConfigurationCustomFieldCount.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfigurationStatus](Get-MgBetaSecurityCaseManagementCaseTypeConfigurationStatus.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfigurationStatus](Get-MgBetaSecurityCaseManagementCaseTypeConfigurationStatus.md)
+
+### [Get-MgBetaSecurityCaseManagementCaseTypeConfigurationStatusCount](Get-MgBetaSecurityCaseManagementCaseTypeConfigurationStatusCount.md)
+
 ### [Get-MgBetaSecurityCloudAppSecurityProfile](Get-MgBetaSecurityCloudAppSecurityProfile.md)
 
 ### [Get-MgBetaSecurityCloudAppSecurityProfile](Get-MgBetaSecurityCloudAppSecurityProfile.md)
@@ -310,6 +366,38 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSecurityCollaborationAnalyzedEmail](Get-MgBetaSecurityCollaborationAnalyzedEmail.md)
 
 ### [Get-MgBetaSecurityCollaborationAnalyzedEmailCount](Get-MgBetaSecurityCollaborationAnalyzedEmailCount.md)
+
+### [Get-MgBetaSecurityCopilot](Get-MgBetaSecurityCopilot.md)
+
+### [Get-MgBetaSecurityCopilotWorkspace](Get-MgBetaSecurityCopilotWorkspace.md)
+
+### [Get-MgBetaSecurityCopilotWorkspace](Get-MgBetaSecurityCopilotWorkspace.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceCount](Get-MgBetaSecurityCopilotWorkspaceCount.md)
+
+### [Get-MgBetaSecurityCopilotWorkspacePlugin](Get-MgBetaSecurityCopilotWorkspacePlugin.md)
+
+### [Get-MgBetaSecurityCopilotWorkspacePlugin](Get-MgBetaSecurityCopilotWorkspacePlugin.md)
+
+### [Get-MgBetaSecurityCopilotWorkspacePluginCount](Get-MgBetaSecurityCopilotWorkspacePluginCount.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSession](Get-MgBetaSecurityCopilotWorkspaceSession.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSession](Get-MgBetaSecurityCopilotWorkspaceSession.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSessionCount](Get-MgBetaSecurityCopilotWorkspaceSessionCount.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSessionPrompt](Get-MgBetaSecurityCopilotWorkspaceSessionPrompt.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSessionPrompt](Get-MgBetaSecurityCopilotWorkspaceSessionPrompt.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSessionPromptCount](Get-MgBetaSecurityCopilotWorkspaceSessionPromptCount.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation](Get-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation](Get-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation.md)
+
+### [Get-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluationCount](Get-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluationCount.md)
 
 ### [Get-MgBetaSecurityDataDiscovery](Get-MgBetaSecurityDataDiscovery.md)
 
@@ -365,6 +453,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSecurityHostSecurityProfileCount](Get-MgBetaSecurityHostSecurityProfileCount.md)
 
+### [Get-MgBetaSecurityHuntingSchema](Get-MgBetaSecurityHuntingSchema.md)
+
 ### [Get-MgBetaSecurityIdentity](Get-MgBetaSecurityIdentity.md)
 
 ### [Get-MgBetaSecurityIdentityAccount](Get-MgBetaSecurityIdentityAccount.md)
@@ -383,6 +473,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSecurityIdentitySensor](Get-MgBetaSecurityIdentitySensor.md)
 
+### [Get-MgBetaSecurityIdentitySensorCandidate](Get-MgBetaSecurityIdentitySensorCandidate.md)
+
+### [Get-MgBetaSecurityIdentitySensorCandidate](Get-MgBetaSecurityIdentitySensorCandidate.md)
+
+### [Get-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](Get-MgBetaSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Get-MgBetaSecurityIdentitySensorCandidateCount](Get-MgBetaSecurityIdentitySensorCandidateCount.md)
+
 ### [Get-MgBetaSecurityIdentitySensorCount](Get-MgBetaSecurityIdentitySensorCount.md)
 
 ### [Get-MgBetaSecurityIdentitySensorDeploymentAccessKey](Get-MgBetaSecurityIdentitySensorDeploymentAccessKey.md)
@@ -394,6 +492,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSecurityIdentitySensorHealthIssue](Get-MgBetaSecurityIdentitySensorHealthIssue.md)
 
 ### [Get-MgBetaSecurityIdentitySensorHealthIssueCount](Get-MgBetaSecurityIdentitySensorHealthIssueCount.md)
+
+### [Get-MgBetaSecurityIdentitySensorMigration](Get-MgBetaSecurityIdentitySensorMigration.md)
+
+### [Get-MgBetaSecurityIdentitySensorMigration](Get-MgBetaSecurityIdentitySensorMigration.md)
+
+### [Get-MgBetaSecurityIdentitySensorMigrationCount](Get-MgBetaSecurityIdentitySensorMigrationCount.md)
+
+### [Get-MgBetaSecurityIdentitySetting](Get-MgBetaSecurityIdentitySetting.md)
+
+### [Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](Get-MgBetaSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Get-MgBetaSecurityIncident](Get-MgBetaSecurityIncident.md)
 
@@ -540,6 +648,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSecurityRuleDetectionRule](Get-MgBetaSecurityRuleDetectionRule.md)
 
 ### [Get-MgBetaSecurityRuleDetectionRuleCount](Get-MgBetaSecurityRuleDetectionRuleCount.md)
+
+### [Get-MgBetaSecurityRunHuntingQuery](Get-MgBetaSecurityRunHuntingQuery.md)
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
 
@@ -853,6 +963,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSecurityUserSecurityProfileCount](Get-MgBetaSecurityUserSecurityProfileCount.md)
 
+### [Get-MgBetaSecurityZone](Get-MgBetaSecurityZone.md)
+
+### [Get-MgBetaSecurityZone](Get-MgBetaSecurityZone.md)
+
+### [Get-MgBetaSecurityZoneAggregation](Get-MgBetaSecurityZoneAggregation.md)
+
+### [Get-MgBetaSecurityZoneAggregationCount](Get-MgBetaSecurityZoneAggregationCount.md)
+
+### [Get-MgBetaSecurityZoneCount](Get-MgBetaSecurityZoneCount.md)
+
+### [Get-MgBetaSecurityZoneEnvironment](Get-MgBetaSecurityZoneEnvironment.md)
+
+### [Get-MgBetaSecurityZoneEnvironment](Get-MgBetaSecurityZoneEnvironment.md)
+
+### [Get-MgBetaSecurityZoneEnvironmentCount](Get-MgBetaSecurityZoneEnvironmentCount.md)
+
 ### [Get-MgBetaUserSecurity](Get-MgBetaUserSecurity.md)
 
 ### [Get-MgBetaUserSecurityInformationProtection](Get-MgBetaUserSecurityInformationProtection.md)
@@ -869,6 +995,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian](Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian.md)
 
+### [Initialize-MgBetaSecurityIdentitySensorCandidate](Initialize-MgBetaSecurityIdentitySensorCandidate.md)
+
 ### [Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel](Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabel.md)
 
 ### [Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Invoke-MgBetaAndSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
@@ -883,6 +1011,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance](Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceSensitivityLabelSublabelInheritance.md)
 
+### [Invoke-MgBetaCreateSecurityAlert](Invoke-MgBetaCreateSecurityAlert.md)
+
 ### [Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics.md)
 
 ### [Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction](Invoke-MgBetaExecuteSecurityIncidentTaskResponseAction.md)
@@ -893,11 +1023,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaInvokeSecurityIdentityAccountAction](Invoke-MgBetaInvokeSecurityIdentityAccountAction.md)
 
+### [Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContent](Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContent.md)
+
 ### [Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync](Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync.md)
 
 ### [Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail](Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail.md)
 
 ### [Invoke-MgBetaReopenSecurityCaseEdiscoveryCase](Invoke-MgBetaReopenSecurityCaseEdiscoveryCase.md)
+
+### [Invoke-MgBetaRetrySecurityCaseEdiscoveryCaseLegalHoldPolicy](Invoke-MgBetaRetrySecurityCaseEdiscoveryCaseLegalHoldPolicy.md)
+
+### [Merge-MgBetaSecurityIncident](Merge-MgBetaSecurityIncident.md)
+
+### [Move-MgBetaSecurityAlert](Move-MgBetaSecurityAlert.md)
+
+### [Move-MgBetaSecurityIdentitySensorMigration](Move-MgBetaSecurityIdentitySensorMigration.md)
 
 ### [New-MgBetaSecurityAction](New-MgBetaSecurityAction.md)
 
@@ -933,8 +1073,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaSecurityAuditLogQuery](New-MgBetaSecurityAuditLogQuery.md)
 
-### [New-MgBetaSecurityAuditLogQueryRecord](New-MgBetaSecurityAuditLogQueryRecord.md)
-
 ### [New-MgBetaSecurityCaseEdiscoveryCase](New-MgBetaSecurityCaseEdiscoveryCase.md)
 
 ### [New-MgBetaSecurityCaseEdiscoveryCaseCustodian](New-MgBetaSecurityCaseEdiscoveryCaseCustodian.md)
@@ -969,9 +1107,29 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaSecurityCaseEdiscoveryCaseTag](New-MgBetaSecurityCaseEdiscoveryCaseTag.md)
 
+### [New-MgBetaSecurityCaseManagementCase](New-MgBetaSecurityCaseManagementCase.md)
+
+### [New-MgBetaSecurityCaseManagementCaseActivity](New-MgBetaSecurityCaseManagementCaseActivity.md)
+
+### [New-MgBetaSecurityCaseManagementCaseAttachment](New-MgBetaSecurityCaseManagementCaseAttachment.md)
+
+### [New-MgBetaSecurityCaseManagementCaseRelation](New-MgBetaSecurityCaseManagementCaseRelation.md)
+
+### [New-MgBetaSecurityCaseManagementCaseTask](New-MgBetaSecurityCaseManagementCaseTask.md)
+
 ### [New-MgBetaSecurityCloudAppSecurityProfile](New-MgBetaSecurityCloudAppSecurityProfile.md)
 
 ### [New-MgBetaSecurityCollaborationAnalyzedEmail](New-MgBetaSecurityCollaborationAnalyzedEmail.md)
+
+### [New-MgBetaSecurityCopilotWorkspace](New-MgBetaSecurityCopilotWorkspace.md)
+
+### [New-MgBetaSecurityCopilotWorkspacePlugin](New-MgBetaSecurityCopilotWorkspacePlugin.md)
+
+### [New-MgBetaSecurityCopilotWorkspaceSession](New-MgBetaSecurityCopilotWorkspaceSession.md)
+
+### [New-MgBetaSecurityCopilotWorkspaceSessionPrompt](New-MgBetaSecurityCopilotWorkspaceSessionPrompt.md)
+
+### [New-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation](New-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation.md)
 
 ### [New-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream](New-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream.md)
 
@@ -993,7 +1151,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaSecurityIdentitySensor](New-MgBetaSecurityIdentitySensor.md)
 
+### [New-MgBetaSecurityIdentitySensorCandidate](New-MgBetaSecurityIdentitySensorCandidate.md)
+
 ### [New-MgBetaSecurityIdentitySensorDeploymentAccessKey](New-MgBetaSecurityIdentitySensorDeploymentAccessKey.md)
+
+### [New-MgBetaSecurityIdentitySensorMigration](New-MgBetaSecurityIdentitySensorMigration.md)
 
 ### [New-MgBetaSecurityIncident](New-MgBetaSecurityIncident.md)
 
@@ -1091,6 +1253,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaSecurityUserSecurityProfile](New-MgBetaSecurityUserSecurityProfile.md)
 
+### [New-MgBetaSecurityZone](New-MgBetaSecurityZone.md)
+
+### [New-MgBetaSecurityZoneEnvironment](New-MgBetaSecurityZoneEnvironment.md)
+
 ### [New-MgBetaUserSecurityInformationProtectionSensitivityLabel](New-MgBetaUserSecurityInformationProtectionSensitivityLabel.md)
 
 ### [Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian](Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian.md)
@@ -1130,8 +1296,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaSecurityAuditLog](Remove-MgBetaSecurityAuditLog.md)
 
 ### [Remove-MgBetaSecurityAuditLogQuery](Remove-MgBetaSecurityAuditLogQuery.md)
-
-### [Remove-MgBetaSecurityAuditLogQueryRecord](Remove-MgBetaSecurityAuditLogQueryRecord.md)
 
 ### [Remove-MgBetaSecurityCase](Remove-MgBetaSecurityCase.md)
 
@@ -1179,11 +1343,37 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseTag](Remove-MgBetaSecurityCaseEdiscoveryCaseTag.md)
 
+### [Remove-MgBetaSecurityCaseManagement](Remove-MgBetaSecurityCaseManagement.md)
+
+### [Remove-MgBetaSecurityCaseManagementCase](Remove-MgBetaSecurityCaseManagementCase.md)
+
+### [Remove-MgBetaSecurityCaseManagementCaseActivity](Remove-MgBetaSecurityCaseManagementCaseActivity.md)
+
+### [Remove-MgBetaSecurityCaseManagementCaseAttachment](Remove-MgBetaSecurityCaseManagementCaseAttachment.md)
+
+### [Remove-MgBetaSecurityCaseManagementCaseAttachmentContent](Remove-MgBetaSecurityCaseManagementCaseAttachmentContent.md)
+
+### [Remove-MgBetaSecurityCaseManagementCaseRelation](Remove-MgBetaSecurityCaseManagementCaseRelation.md)
+
+### [Remove-MgBetaSecurityCaseManagementCaseTask](Remove-MgBetaSecurityCaseManagementCaseTask.md)
+
 ### [Remove-MgBetaSecurityCloudAppSecurityProfile](Remove-MgBetaSecurityCloudAppSecurityProfile.md)
 
 ### [Remove-MgBetaSecurityCollaboration](Remove-MgBetaSecurityCollaboration.md)
 
 ### [Remove-MgBetaSecurityCollaborationAnalyzedEmail](Remove-MgBetaSecurityCollaborationAnalyzedEmail.md)
+
+### [Remove-MgBetaSecurityCopilot](Remove-MgBetaSecurityCopilot.md)
+
+### [Remove-MgBetaSecurityCopilotWorkspace](Remove-MgBetaSecurityCopilotWorkspace.md)
+
+### [Remove-MgBetaSecurityCopilotWorkspacePlugin](Remove-MgBetaSecurityCopilotWorkspacePlugin.md)
+
+### [Remove-MgBetaSecurityCopilotWorkspaceSession](Remove-MgBetaSecurityCopilotWorkspaceSession.md)
+
+### [Remove-MgBetaSecurityCopilotWorkspaceSessionPrompt](Remove-MgBetaSecurityCopilotWorkspaceSessionPrompt.md)
+
+### [Remove-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation](Remove-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation.md)
 
 ### [Remove-MgBetaSecurityDataDiscovery](Remove-MgBetaSecurityDataDiscovery.md)
 
@@ -1214,6 +1404,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaSecurityIdentityHealthIssue](Remove-MgBetaSecurityIdentityHealthIssue.md)
 
 ### [Remove-MgBetaSecurityIdentitySensor](Remove-MgBetaSecurityIdentitySensor.md)
+
+### [Remove-MgBetaSecurityIdentitySensorCandidate](Remove-MgBetaSecurityIdentitySensorCandidate.md)
+
+### [Remove-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](Remove-MgBetaSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Remove-MgBetaSecurityIdentitySensorMigration](Remove-MgBetaSecurityIdentitySensorMigration.md)
+
+### [Remove-MgBetaSecurityIdentitySetting](Remove-MgBetaSecurityIdentitySetting.md)
+
+### [Remove-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](Remove-MgBetaSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Remove-MgBetaSecurityIncident](Remove-MgBetaSecurityIncident.md)
 
@@ -1341,6 +1541,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaSecurityUserSecurityProfile](Remove-MgBetaSecurityUserSecurityProfile.md)
 
+### [Remove-MgBetaSecurityZone](Remove-MgBetaSecurityZone.md)
+
+### [Remove-MgBetaSecurityZoneEnvironment](Remove-MgBetaSecurityZoneEnvironment.md)
+
 ### [Remove-MgBetaUserSecurity](Remove-MgBetaUserSecurity.md)
 
 ### [Remove-MgBetaUserSecurityInformationProtection](Remove-MgBetaUserSecurityInformationProtection.md)
@@ -1358,6 +1562,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent](Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent.md)
 
 ### [Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent](Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent.md)
+
+### [Set-MgBetaSecurityCaseManagementCaseAttachmentContent](Set-MgBetaSecurityCaseManagementCaseAttachmentContent.md)
 
 ### [Set-MgBetaSecurityIncidentAlertComment](Set-MgBetaSecurityIncidentAlertComment.md)
 
@@ -1419,10 +1625,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSecurityAuditLog](Update-MgBetaSecurityAuditLog.md)
 
-### [Update-MgBetaSecurityAuditLogQuery](Update-MgBetaSecurityAuditLogQuery.md)
-
-### [Update-MgBetaSecurityAuditLogQueryRecord](Update-MgBetaSecurityAuditLogQueryRecord.md)
-
 ### [Update-MgBetaSecurityCase](Update-MgBetaSecurityCase.md)
 
 ### [Update-MgBetaSecurityCaseEdiscoveryCase](Update-MgBetaSecurityCaseEdiscoveryCase.md)
@@ -1465,11 +1667,35 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSecurityCaseEdiscoveryCaseTag](Update-MgBetaSecurityCaseEdiscoveryCaseTag.md)
 
+### [Update-MgBetaSecurityCaseManagement](Update-MgBetaSecurityCaseManagement.md)
+
+### [Update-MgBetaSecurityCaseManagementCase](Update-MgBetaSecurityCaseManagementCase.md)
+
+### [Update-MgBetaSecurityCaseManagementCaseActivity](Update-MgBetaSecurityCaseManagementCaseActivity.md)
+
+### [Update-MgBetaSecurityCaseManagementCaseAttachment](Update-MgBetaSecurityCaseManagementCaseAttachment.md)
+
+### [Update-MgBetaSecurityCaseManagementCaseRelation](Update-MgBetaSecurityCaseManagementCaseRelation.md)
+
+### [Update-MgBetaSecurityCaseManagementCaseTask](Update-MgBetaSecurityCaseManagementCaseTask.md)
+
 ### [Update-MgBetaSecurityCloudAppSecurityProfile](Update-MgBetaSecurityCloudAppSecurityProfile.md)
 
 ### [Update-MgBetaSecurityCollaboration](Update-MgBetaSecurityCollaboration.md)
 
 ### [Update-MgBetaSecurityCollaborationAnalyzedEmail](Update-MgBetaSecurityCollaborationAnalyzedEmail.md)
+
+### [Update-MgBetaSecurityCopilot](Update-MgBetaSecurityCopilot.md)
+
+### [Update-MgBetaSecurityCopilotWorkspace](Update-MgBetaSecurityCopilotWorkspace.md)
+
+### [Update-MgBetaSecurityCopilotWorkspacePlugin](Update-MgBetaSecurityCopilotWorkspacePlugin.md)
+
+### [Update-MgBetaSecurityCopilotWorkspaceSession](Update-MgBetaSecurityCopilotWorkspaceSession.md)
+
+### [Update-MgBetaSecurityCopilotWorkspaceSessionPrompt](Update-MgBetaSecurityCopilotWorkspaceSessionPrompt.md)
+
+### [Update-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation](Update-MgBetaSecurityCopilotWorkspaceSessionPromptEvaluation.md)
 
 ### [Update-MgBetaSecurityDataDiscovery](Update-MgBetaSecurityDataDiscovery.md)
 
@@ -1500,6 +1726,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaSecurityIdentityHealthIssue](Update-MgBetaSecurityIdentityHealthIssue.md)
 
 ### [Update-MgBetaSecurityIdentitySensor](Update-MgBetaSecurityIdentitySensor.md)
+
+### [Update-MgBetaSecurityIdentitySensorCandidate](Update-MgBetaSecurityIdentitySensorCandidate.md)
+
+### [Update-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](Update-MgBetaSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Update-MgBetaSecurityIdentitySensorMigration](Update-MgBetaSecurityIdentitySensorMigration.md)
+
+### [Update-MgBetaSecurityIdentitySetting](Update-MgBetaSecurityIdentitySetting.md)
+
+### [Update-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](Update-MgBetaSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Update-MgBetaSecurityIncident](Update-MgBetaSecurityIncident.md)
 
@@ -1628,6 +1864,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaSecurityTriggerTypeRetentionEventType](Update-MgBetaSecurityTriggerTypeRetentionEventType.md)
 
 ### [Update-MgBetaSecurityUserSecurityProfile](Update-MgBetaSecurityUserSecurityProfile.md)
+
+### [Update-MgBetaSecurityZone](Update-MgBetaSecurityZone.md)
 
 ### [Update-MgBetaUserSecurity](Update-MgBetaUserSecurity.md)
 

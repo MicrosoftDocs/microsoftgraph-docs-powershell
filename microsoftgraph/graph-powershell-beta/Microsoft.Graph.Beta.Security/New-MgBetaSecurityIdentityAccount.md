@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIdentityAccount
 ---
@@ -53,7 +53,7 @@ Create new navigation property to identityAccounts for security
 
 ### -Accounts
 
-
+Collection of accounts of the identity in different identity providers.
 To construct, see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
@@ -139,7 +139,7 @@ HelpMessage: ''
 
 ### -CloudSecurityIdentifier
 
-
+The cloud security identifier of the identityAccount.
 
 ```yaml
 Type: System.String
@@ -182,7 +182,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+The Active Directory display name of the identityAccount.
 
 ```yaml
 Type: System.String
@@ -203,7 +203,7 @@ HelpMessage: ''
 
 ### -Domain
 
-
+The Active Directory domain name of the identityAccount.
 
 ```yaml
 Type: System.String
@@ -309,7 +309,7 @@ HelpMessage: ''
 
 ### -IsEnabled
 
-
+Boolean indicating if the identityAccounts is enabled.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -330,7 +330,7 @@ HelpMessage: ''
 
 ### -OnPremisesSecurityIdentifier
 
-
+The on-premises security identifier of the identityAccount.
 
 ```yaml
 Type: System.String
@@ -486,24 +486,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCOUNTS <IMicrosoftGraphSecurityAccount[]>: .
-  [Actions <String[]>]: 
-  [Identifier <String>]: 
+ACCOUNTS <IMicrosoftGraphSecurityAccount[]>: Collection of accounts of the identity in different identity providers.
+  [Actions <String[]>]: List of the type of action.
+The possible values are: disable, enable, forcePasswordReset, revokeAllSessions, requireUserToSignInAgain, markUserAsCompromised.
+  [Identifier <String>]: The account ID.
   [IdentityProvider <String>]: identityProvider
 
 BODYPARAMETER `<IMicrosoftGraphSecurityIdentityAccounts>`: identityAccounts
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Accounts <IMicrosoftGraphSecurityAccount[]>]: 
-    [Actions <String[]>]: 
-    [Identifier <String>]: 
+  [Accounts <IMicrosoftGraphSecurityAccount[]>]: Collection of accounts of the identity in different identity providers.
+    [Actions <String[]>]: List of the type of action.
+The possible values are: disable, enable, forcePasswordReset, revokeAllSessions, requireUserToSignInAgain, markUserAsCompromised.
+    [Identifier <String>]: The account ID.
     [IdentityProvider <String>]: identityProvider
-  [CloudSecurityIdentifier <String>]: 
-  [DisplayName <String>]: 
-  [Domain <String>]: 
-  [IsEnabled <Boolean?>]: 
-  [OnPremisesSecurityIdentifier <String>]:
+  [CloudSecurityIdentifier <String>]: The cloud security identifier of the identityAccount.
+  [DisplayName <String>]: The  Active Directory display name of the identityAccount.
+  [Domain <String>]: The Active Directory domain name of the identityAccount.
+  [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
+  [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
 
 
 ## RELATED LINKS

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityHostSecurityProfile
 ---
@@ -765,7 +765,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [LogonId <String>]: User logon ID.
     [LogonTypes <String[]>]: Collection of the logon types observed for the logged on user from when first to last seen.
-Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
+The possible values are: unknown, interactive, remoteInteractive, network, batch, service.
   [NetBiosName <String>]: 
   [NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>]: 
     [Description <String>]: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
@@ -800,7 +800,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [LogonId <String>]: User logon ID.
   [LogonTypes <String[]>]: Collection of the logon types observed for the logged on user from when first to last seen.
-Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
+The possible values are: unknown, interactive, remoteInteractive, network, batch, service.
 
 NETWORKINTERFACES <IMicrosoftGraphNetworkInterface[]>: .
   [Description <String>]: Description of the NIC (for example, Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).

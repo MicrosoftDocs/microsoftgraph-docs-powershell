@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIdentitySensor
 ---
@@ -27,9 +27,9 @@ New-MgBetaSecurityIdentitySensor [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-CreatedDateTime <datetime>] [-DeploymentStatus <string>]
  [-DisplayName <string>] [-DomainName <string>]
  [-HealthIssues <IMicrosoftGraphSecurityHealthIssue[]>] [-HealthStatus <string>] [-Id <string>]
- [-OpenHealthIssuesCount <long>] [-SensorType <string>]
- [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-MigrationState <string>] [-OpenHealthIssuesCount <long>] [-SensorType <string>]
+ [-ServiceStatus <string>] [-Settings <IMicrosoftGraphSecuritySensorSettings>] [-Version <string>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -354,6 +354,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -MigrationState
+
+migrationState
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -OpenHealthIssuesCount
 
 This field displays the count of health issues related to this sensor.
@@ -463,6 +484,27 @@ HelpMessage: ''
 ### -SensorType
 
 sensorType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ServiceStatus
+
+serviceStatus
 
 ```yaml
 Type: System.String
@@ -612,8 +654,10 @@ These commands run in sequence for the single recommended fix.
     [Severity <String>]: healthIssueSeverity
     [Status <String>]: healthIssueStatus
   [HealthStatus <String>]: sensorHealthStatus
+  [MigrationState <String>]: migrationState
   [OpenHealthIssuesCount <Int64?>]: This field displays the count of health issues related to this sensor.
   [SensorType <String>]: sensorType
+  [ServiceStatus <String>]: serviceStatus
   [Settings <IMicrosoftGraphSecuritySensorSettings>]: sensorSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Description <String>]: Description of the sensor.
