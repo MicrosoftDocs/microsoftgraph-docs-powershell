@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Calendar
-Module Guid: 4c6dd804-c16b-480c-b6a6-5f4a3470fbba
+Module Guid: b5e92bac-d5aa-4ced-8286-688275f342f8
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.calendar/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,10 +15,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupCalendarEvent](Get-MgBetaGroupCalendarEvent.md)
 
-### [Get-MgBetaGroupCalendarEvent](Get-MgBetaGroupCalendarEvent.md)
-
-### [Get-MgBetaGroupCalendarPermission](Get-MgBetaGroupCalendarPermission.md)
-
 ### [Get-MgBetaGroupCalendarPermission](Get-MgBetaGroupCalendarPermission.md)
 
 ### [Get-MgBetaGroupCalendarPermissionCount](Get-MgBetaGroupCalendarPermissionCount.md)
@@ -28,10 +24,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupCalendarView](Get-MgBetaGroupCalendarView.md)
 
 ### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
-
-### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
-
-### [Get-MgBetaGroupEventAttachment](Get-MgBetaGroupEventAttachment.md)
 
 ### [Get-MgBetaGroupEventAttachment](Get-MgBetaGroupEventAttachment.md)
 
@@ -45,8 +37,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupEventExtension](Get-MgBetaGroupEventExtension.md)
 
-### [Get-MgBetaGroupEventExtension](Get-MgBetaGroupEventExtension.md)
-
 ### [Get-MgBetaGroupEventExtensionCount](Get-MgBetaGroupEventExtensionCount.md)
 
 ### [Get-MgBetaGroupEventInstance](Get-MgBetaGroupEventInstance.md)
@@ -55,15 +45,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsBuilding](Get-MgBetaPlaceAsBuilding.md)
 
-### [Get-MgBetaPlaceAsBuilding](Get-MgBetaPlaceAsBuilding.md)
-
-### [Get-MgBetaPlaceAsBuildingCheck](Get-MgBetaPlaceAsBuildingCheck.md)
-
 ### [Get-MgBetaPlaceAsBuildingCheck](Get-MgBetaPlaceAsBuildingCheck.md)
 
 ### [Get-MgBetaPlaceAsBuildingCheckInCount](Get-MgBetaPlaceAsBuildingCheckInCount.md)
-
-### [Get-MgBetaPlaceAsBuildingChild](Get-MgBetaPlaceAsBuildingChild.md)
 
 ### [Get-MgBetaPlaceAsBuildingChild](Get-MgBetaPlaceAsBuildingChild.md)
 
@@ -73,11 +57,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsBuildingMapFootprint](Get-MgBetaPlaceAsBuildingMapFootprint.md)
 
-### [Get-MgBetaPlaceAsBuildingMapFootprint](Get-MgBetaPlaceAsBuildingMapFootprint.md)
-
 ### [Get-MgBetaPlaceAsBuildingMapFootprintCount](Get-MgBetaPlaceAsBuildingMapFootprintCount.md)
-
-### [Get-MgBetaPlaceAsBuildingMapLevel](Get-MgBetaPlaceAsBuildingMapLevel.md)
 
 ### [Get-MgBetaPlaceAsBuildingMapLevel](Get-MgBetaPlaceAsBuildingMapLevel.md)
 
@@ -85,11 +65,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsBuildingMapLevelFixture](Get-MgBetaPlaceAsBuildingMapLevelFixture.md)
 
-### [Get-MgBetaPlaceAsBuildingMapLevelFixture](Get-MgBetaPlaceAsBuildingMapLevelFixture.md)
-
 ### [Get-MgBetaPlaceAsBuildingMapLevelFixtureCount](Get-MgBetaPlaceAsBuildingMapLevelFixtureCount.md)
-
-### [Get-MgBetaPlaceAsBuildingMapLevelSection](Get-MgBetaPlaceAsBuildingMapLevelSection.md)
 
 ### [Get-MgBetaPlaceAsBuildingMapLevelSection](Get-MgBetaPlaceAsBuildingMapLevelSection.md)
 
@@ -97,15 +73,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsBuildingMapLevelUnit](Get-MgBetaPlaceAsBuildingMapLevelUnit.md)
 
-### [Get-MgBetaPlaceAsBuildingMapLevelUnit](Get-MgBetaPlaceAsBuildingMapLevelUnit.md)
-
 ### [Get-MgBetaPlaceAsBuildingMapLevelUnitCount](Get-MgBetaPlaceAsBuildingMapLevelUnitCount.md)
 
 ### [Get-MgBetaPlaceAsDesk](Get-MgBetaPlaceAsDesk.md)
-
-### [Get-MgBetaPlaceAsDesk](Get-MgBetaPlaceAsDesk.md)
-
-### [Get-MgBetaPlaceAsDeskCheck](Get-MgBetaPlaceAsDeskCheck.md)
 
 ### [Get-MgBetaPlaceAsDeskCheck](Get-MgBetaPlaceAsDeskCheck.md)
 
@@ -113,15 +83,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsDeskChild](Get-MgBetaPlaceAsDeskChild.md)
 
-### [Get-MgBetaPlaceAsDeskChild](Get-MgBetaPlaceAsDeskChild.md)
-
 ### [Get-MgBetaPlaceAsDeskChildCount](Get-MgBetaPlaceAsDeskChildCount.md)
 
 ### [Get-MgBetaPlaceAsFloor](Get-MgBetaPlaceAsFloor.md)
-
-### [Get-MgBetaPlaceAsFloor](Get-MgBetaPlaceAsFloor.md)
-
-### [Get-MgBetaPlaceAsFloorCheck](Get-MgBetaPlaceAsFloorCheck.md)
 
 ### [Get-MgBetaPlaceAsFloorCheck](Get-MgBetaPlaceAsFloorCheck.md)
 
@@ -129,15 +93,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsFloorChild](Get-MgBetaPlaceAsFloorChild.md)
 
-### [Get-MgBetaPlaceAsFloorChild](Get-MgBetaPlaceAsFloorChild.md)
-
 ### [Get-MgBetaPlaceAsFloorChildCount](Get-MgBetaPlaceAsFloorChildCount.md)
 
 ### [Get-MgBetaPlaceAsRoom](Get-MgBetaPlaceAsRoom.md)
-
-### [Get-MgBetaPlaceAsRoom](Get-MgBetaPlaceAsRoom.md)
-
-### [Get-MgBetaPlaceAsRoomCheck](Get-MgBetaPlaceAsRoomCheck.md)
 
 ### [Get-MgBetaPlaceAsRoomCheck](Get-MgBetaPlaceAsRoomCheck.md)
 
@@ -145,15 +103,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsRoomChild](Get-MgBetaPlaceAsRoomChild.md)
 
-### [Get-MgBetaPlaceAsRoomChild](Get-MgBetaPlaceAsRoomChild.md)
-
 ### [Get-MgBetaPlaceAsRoomChildCount](Get-MgBetaPlaceAsRoomChildCount.md)
 
 ### [Get-MgBetaPlaceAsRoomList](Get-MgBetaPlaceAsRoomList.md)
-
-### [Get-MgBetaPlaceAsRoomList](Get-MgBetaPlaceAsRoomList.md)
-
-### [Get-MgBetaPlaceAsRoomListCheck](Get-MgBetaPlaceAsRoomListCheck.md)
 
 ### [Get-MgBetaPlaceAsRoomListCheck](Get-MgBetaPlaceAsRoomListCheck.md)
 
@@ -161,21 +113,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsRoomListChild](Get-MgBetaPlaceAsRoomListChild.md)
 
-### [Get-MgBetaPlaceAsRoomListChild](Get-MgBetaPlaceAsRoomListChild.md)
-
 ### [Get-MgBetaPlaceAsRoomListChildCount](Get-MgBetaPlaceAsRoomListChildCount.md)
 
 ### [Get-MgBetaPlaceAsRoomListRoom](Get-MgBetaPlaceAsRoomListRoom.md)
 
-### [Get-MgBetaPlaceAsRoomListRoom](Get-MgBetaPlaceAsRoomListRoom.md)
-
-### [Get-MgBetaPlaceAsRoomListRoomCheck](Get-MgBetaPlaceAsRoomListRoomCheck.md)
-
 ### [Get-MgBetaPlaceAsRoomListRoomCheck](Get-MgBetaPlaceAsRoomListRoomCheck.md)
 
 ### [Get-MgBetaPlaceAsRoomListRoomCheckInCount](Get-MgBetaPlaceAsRoomListRoomCheckInCount.md)
-
-### [Get-MgBetaPlaceAsRoomListRoomChild](Get-MgBetaPlaceAsRoomListRoomChild.md)
 
 ### [Get-MgBetaPlaceAsRoomListRoomChild](Get-MgBetaPlaceAsRoomListRoomChild.md)
 
@@ -185,15 +129,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsRoomListWorkspace](Get-MgBetaPlaceAsRoomListWorkspace.md)
 
-### [Get-MgBetaPlaceAsRoomListWorkspace](Get-MgBetaPlaceAsRoomListWorkspace.md)
-
-### [Get-MgBetaPlaceAsRoomListWorkspaceCheck](Get-MgBetaPlaceAsRoomListWorkspaceCheck.md)
-
 ### [Get-MgBetaPlaceAsRoomListWorkspaceCheck](Get-MgBetaPlaceAsRoomListWorkspaceCheck.md)
 
 ### [Get-MgBetaPlaceAsRoomListWorkspaceCheckInCount](Get-MgBetaPlaceAsRoomListWorkspaceCheckInCount.md)
-
-### [Get-MgBetaPlaceAsRoomListWorkspaceChild](Get-MgBetaPlaceAsRoomListWorkspaceChild.md)
 
 ### [Get-MgBetaPlaceAsRoomListWorkspaceChild](Get-MgBetaPlaceAsRoomListWorkspaceChild.md)
 
@@ -203,15 +141,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsSection](Get-MgBetaPlaceAsSection.md)
 
-### [Get-MgBetaPlaceAsSection](Get-MgBetaPlaceAsSection.md)
-
-### [Get-MgBetaPlaceAsSectionCheck](Get-MgBetaPlaceAsSectionCheck.md)
-
 ### [Get-MgBetaPlaceAsSectionCheck](Get-MgBetaPlaceAsSectionCheck.md)
 
 ### [Get-MgBetaPlaceAsSectionCheckInCount](Get-MgBetaPlaceAsSectionCheckInCount.md)
-
-### [Get-MgBetaPlaceAsSectionChild](Get-MgBetaPlaceAsSectionChild.md)
 
 ### [Get-MgBetaPlaceAsSectionChild](Get-MgBetaPlaceAsSectionChild.md)
 
@@ -219,15 +151,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceAsWorkspace](Get-MgBetaPlaceAsWorkspace.md)
 
-### [Get-MgBetaPlaceAsWorkspace](Get-MgBetaPlaceAsWorkspace.md)
-
-### [Get-MgBetaPlaceAsWorkspaceCheck](Get-MgBetaPlaceAsWorkspaceCheck.md)
-
 ### [Get-MgBetaPlaceAsWorkspaceCheck](Get-MgBetaPlaceAsWorkspaceCheck.md)
 
 ### [Get-MgBetaPlaceAsWorkspaceCheckInCount](Get-MgBetaPlaceAsWorkspaceCheckInCount.md)
-
-### [Get-MgBetaPlaceAsWorkspaceChild](Get-MgBetaPlaceAsWorkspaceChild.md)
 
 ### [Get-MgBetaPlaceAsWorkspaceChild](Get-MgBetaPlaceAsWorkspaceChild.md)
 
@@ -235,11 +161,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceCheck](Get-MgBetaPlaceCheck.md)
 
-### [Get-MgBetaPlaceCheck](Get-MgBetaPlaceCheck.md)
-
 ### [Get-MgBetaPlaceCheckInCount](Get-MgBetaPlaceCheckInCount.md)
-
-### [Get-MgBetaPlaceChild](Get-MgBetaPlaceChild.md)
 
 ### [Get-MgBetaPlaceChild](Get-MgBetaPlaceChild.md)
 
@@ -263,10 +185,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlaceOperation](Get-MgBetaPlaceOperation.md)
 
-### [Get-MgBetaPlaceOperation](Get-MgBetaPlaceOperation.md)
-
-### [Get-MgBetaUserCalendar](Get-MgBetaUserCalendar.md)
-
 ### [Get-MgBetaUserCalendar](Get-MgBetaUserCalendar.md)
 
 ### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
@@ -277,13 +195,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserCalendarGroup](Get-MgBetaUserCalendarGroup.md)
 
-### [Get-MgBetaUserCalendarGroup](Get-MgBetaUserCalendarGroup.md)
-
 ### [Get-MgBetaUserCalendarGroupCalendar](Get-MgBetaUserCalendarGroupCalendar.md)
 
 ### [Get-MgBetaUserCalendarGroupCount](Get-MgBetaUserCalendarGroupCount.md)
-
-### [Get-MgBetaUserCalendarPermission](Get-MgBetaUserCalendarPermission.md)
 
 ### [Get-MgBetaUserCalendarPermission](Get-MgBetaUserCalendarPermission.md)
 
@@ -297,10 +211,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserEvent](Get-MgBetaUserEvent.md)
 
-### [Get-MgBetaUserEvent](Get-MgBetaUserEvent.md)
-
-### [Get-MgBetaUserEventAttachment](Get-MgBetaUserEventAttachment.md)
-
 ### [Get-MgBetaUserEventAttachment](Get-MgBetaUserEventAttachment.md)
 
 ### [Get-MgBetaUserEventAttachmentCount](Get-MgBetaUserEventAttachmentCount.md)
@@ -310,8 +220,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserEventCount](Get-MgBetaUserEventCount.md)
 
 ### [Get-MgBetaUserEventDelta](Get-MgBetaUserEventDelta.md)
-
-### [Get-MgBetaUserEventExtension](Get-MgBetaUserEventExtension.md)
 
 ### [Get-MgBetaUserEventExtension](Get-MgBetaUserEventExtension.md)
 
@@ -542,23 +450,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserEvent](Update-MgBetaUserEvent.md)
 
 ### [Update-MgBetaUserEventExtension](Update-MgBetaUserEventExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
