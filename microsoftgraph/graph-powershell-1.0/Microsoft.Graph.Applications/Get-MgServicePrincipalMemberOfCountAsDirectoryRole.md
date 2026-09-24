@@ -387,7 +387,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofcountasdirectoryrole)
+- [Get-MgServicePrincipalMemberOfCountAsDirectoryRole](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofcountasdirectoryrole)
 
 
 
