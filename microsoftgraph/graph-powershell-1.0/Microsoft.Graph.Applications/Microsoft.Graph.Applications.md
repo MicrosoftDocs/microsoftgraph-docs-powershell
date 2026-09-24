@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: acd3f9ed-d6f6-40d7-a4ae-991b9e6c554a
+Module Guid: bd034b13-e338-4fe2-9b86-a41aaac8d2f3
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -41,8 +41,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgApplication](Get-MgApplication.md)
 
-### [Get-MgApplication](Get-MgApplication.md)
-
 ### [Get-MgApplicationAppManagementPolicy](Get-MgApplicationAppManagementPolicy.md)
 
 ### [Get-MgApplicationAppManagementPolicyByRef](Get-MgApplicationAppManagementPolicyByRef.md)
@@ -63,19 +61,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgApplicationExtensionProperty](Get-MgApplicationExtensionProperty.md)
 
-### [Get-MgApplicationExtensionProperty](Get-MgApplicationExtensionProperty.md)
-
 ### [Get-MgApplicationExtensionPropertyCount](Get-MgApplicationExtensionPropertyCount.md)
-
-### [Get-MgApplicationFederatedIdentityCredential](Get-MgApplicationFederatedIdentityCredential.md)
 
 ### [Get-MgApplicationFederatedIdentityCredential](Get-MgApplicationFederatedIdentityCredential.md)
 
 ### [Get-MgApplicationFederatedIdentityCredentialByName](Get-MgApplicationFederatedIdentityCredentialByName.md)
 
 ### [Get-MgApplicationFederatedIdentityCredentialCount](Get-MgApplicationFederatedIdentityCredentialCount.md)
-
-### [Get-MgApplicationHomeRealmDiscoveryPolicy](Get-MgApplicationHomeRealmDiscoveryPolicy.md)
 
 ### [Get-MgApplicationHomeRealmDiscoveryPolicy](Get-MgApplicationHomeRealmDiscoveryPolicy.md)
 
@@ -91,17 +83,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgApplicationOwnerAsAppRoleAssignment](Get-MgApplicationOwnerAsAppRoleAssignment.md)
 
-### [Get-MgApplicationOwnerAsAppRoleAssignment](Get-MgApplicationOwnerAsAppRoleAssignment.md)
-
-### [Get-MgApplicationOwnerAsEndpoint](Get-MgApplicationOwnerAsEndpoint.md)
-
 ### [Get-MgApplicationOwnerAsEndpoint](Get-MgApplicationOwnerAsEndpoint.md)
 
 ### [Get-MgApplicationOwnerAsServicePrincipal](Get-MgApplicationOwnerAsServicePrincipal.md)
-
-### [Get-MgApplicationOwnerAsServicePrincipal](Get-MgApplicationOwnerAsServicePrincipal.md)
-
-### [Get-MgApplicationOwnerAsUser](Get-MgApplicationOwnerAsUser.md)
 
 ### [Get-MgApplicationOwnerAsUser](Get-MgApplicationOwnerAsUser.md)
 
@@ -123,8 +107,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgApplicationSynchronizationJob](Get-MgApplicationSynchronizationJob.md)
 
-### [Get-MgApplicationSynchronizationJob](Get-MgApplicationSynchronizationJob.md)
-
 ### [Get-MgApplicationSynchronizationJobBulkUpload](Get-MgApplicationSynchronizationJobBulkUpload.md)
 
 ### [Get-MgApplicationSynchronizationJobBulkUploadContent](Get-MgApplicationSynchronizationJobBulkUploadContent.md)
@@ -135,13 +117,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgApplicationSynchronizationJobSchemaDirectory](Get-MgApplicationSynchronizationJobSchemaDirectory.md)
 
-### [Get-MgApplicationSynchronizationJobSchemaDirectory](Get-MgApplicationSynchronizationJobSchemaDirectory.md)
-
 ### [Get-MgApplicationSynchronizationJobSchemaDirectoryCount](Get-MgApplicationSynchronizationJobSchemaDirectoryCount.md)
 
 ### [Get-MgApplicationSynchronizationSecretCount](Get-MgApplicationSynchronizationSecretCount.md)
-
-### [Get-MgApplicationSynchronizationTemplate](Get-MgApplicationSynchronizationTemplate.md)
 
 ### [Get-MgApplicationSynchronizationTemplate](Get-MgApplicationSynchronizationTemplate.md)
 
@@ -151,11 +129,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgApplicationSynchronizationTemplateSchemaDirectory](Get-MgApplicationSynchronizationTemplateSchemaDirectory.md)
 
-### [Get-MgApplicationSynchronizationTemplateSchemaDirectory](Get-MgApplicationSynchronizationTemplateSchemaDirectory.md)
-
 ### [Get-MgApplicationSynchronizationTemplateSchemaDirectoryCount](Get-MgApplicationSynchronizationTemplateSchemaDirectoryCount.md)
-
-### [Get-MgApplicationTemplate](Get-MgApplicationTemplate.md)
 
 ### [Get-MgApplicationTemplate](Get-MgApplicationTemplate.md)
 
@@ -175,15 +149,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupAppRoleAssignment](Get-MgGroupAppRoleAssignment.md)
 
-### [Get-MgGroupAppRoleAssignment](Get-MgGroupAppRoleAssignment.md)
-
 ### [Get-MgGroupAppRoleAssignmentCount](Get-MgGroupAppRoleAssignmentCount.md)
 
 ### [Get-MgServicePrincipal](Get-MgServicePrincipal.md)
-
-### [Get-MgServicePrincipal](Get-MgServicePrincipal.md)
-
-### [Get-MgServicePrincipalAppManagementPolicy](Get-MgServicePrincipalAppManagementPolicy.md)
 
 ### [Get-MgServicePrincipalAppManagementPolicy](Get-MgServicePrincipalAppManagementPolicy.md)
 
@@ -191,11 +159,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalAppRoleAssignedTo](Get-MgServicePrincipalAppRoleAssignedTo.md)
 
-### [Get-MgServicePrincipalAppRoleAssignedTo](Get-MgServicePrincipalAppRoleAssignedTo.md)
-
 ### [Get-MgServicePrincipalAppRoleAssignedToCount](Get-MgServicePrincipalAppRoleAssignedToCount.md)
-
-### [Get-MgServicePrincipalAppRoleAssignment](Get-MgServicePrincipalAppRoleAssignment.md)
 
 ### [Get-MgServicePrincipalAppRoleAssignment](Get-MgServicePrincipalAppRoleAssignment.md)
 
@@ -215,10 +179,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalCreatedObject](Get-MgServicePrincipalCreatedObject.md)
 
-### [Get-MgServicePrincipalCreatedObject](Get-MgServicePrincipalCreatedObject.md)
-
-### [Get-MgServicePrincipalCreatedObjectAsServicePrincipal](Get-MgServicePrincipalCreatedObjectAsServicePrincipal.md)
-
 ### [Get-MgServicePrincipalCreatedObjectAsServicePrincipal](Get-MgServicePrincipalCreatedObjectAsServicePrincipal.md)
 
 ### [Get-MgServicePrincipalCreatedObjectCount](Get-MgServicePrincipalCreatedObjectCount.md)
@@ -227,13 +187,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalDelegatedPermissionClassification](Get-MgServicePrincipalDelegatedPermissionClassification.md)
 
-### [Get-MgServicePrincipalDelegatedPermissionClassification](Get-MgServicePrincipalDelegatedPermissionClassification.md)
-
 ### [Get-MgServicePrincipalDelegatedPermissionClassificationCount](Get-MgServicePrincipalDelegatedPermissionClassificationCount.md)
 
 ### [Get-MgServicePrincipalDelta](Get-MgServicePrincipalDelta.md)
-
-### [Get-MgServicePrincipalEndpoint](Get-MgServicePrincipalEndpoint.md)
 
 ### [Get-MgServicePrincipalEndpoint](Get-MgServicePrincipalEndpoint.md)
 
@@ -251,17 +207,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalMemberOf](Get-MgServicePrincipalMemberOf.md)
 
-### [Get-MgServicePrincipalMemberOf](Get-MgServicePrincipalMemberOf.md)
-
-### [Get-MgServicePrincipalMemberOfAsAdministrativeUnit](Get-MgServicePrincipalMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgServicePrincipalMemberOfAsAdministrativeUnit](Get-MgServicePrincipalMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgServicePrincipalMemberOfAsDirectoryRole](Get-MgServicePrincipalMemberOfAsDirectoryRole.md)
-
-### [Get-MgServicePrincipalMemberOfAsDirectoryRole](Get-MgServicePrincipalMemberOfAsDirectoryRole.md)
-
-### [Get-MgServicePrincipalMemberOfAsGroup](Get-MgServicePrincipalMemberOfAsGroup.md)
 
 ### [Get-MgServicePrincipalMemberOfAsGroup](Get-MgServicePrincipalMemberOfAsGroup.md)
 
@@ -275,31 +223,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalOauth2PermissionGrant](Get-MgServicePrincipalOauth2PermissionGrant.md)
 
-### [Get-MgServicePrincipalOauth2PermissionGrant](Get-MgServicePrincipalOauth2PermissionGrant.md)
-
 ### [Get-MgServicePrincipalOauth2PermissionGrantCount](Get-MgServicePrincipalOauth2PermissionGrantCount.md)
 
 ### [Get-MgServicePrincipalOwnedObject](Get-MgServicePrincipalOwnedObject.md)
 
-### [Get-MgServicePrincipalOwnedObject](Get-MgServicePrincipalOwnedObject.md)
-
 ### [Get-MgServicePrincipalOwnedObjectAsApplication](Get-MgServicePrincipalOwnedObjectAsApplication.md)
-
-### [Get-MgServicePrincipalOwnedObjectAsApplication](Get-MgServicePrincipalOwnedObjectAsApplication.md)
-
-### [Get-MgServicePrincipalOwnedObjectAsAppRoleAssignment](Get-MgServicePrincipalOwnedObjectAsAppRoleAssignment.md)
 
 ### [Get-MgServicePrincipalOwnedObjectAsAppRoleAssignment](Get-MgServicePrincipalOwnedObjectAsAppRoleAssignment.md)
 
 ### [Get-MgServicePrincipalOwnedObjectAsEndpoint](Get-MgServicePrincipalOwnedObjectAsEndpoint.md)
 
-### [Get-MgServicePrincipalOwnedObjectAsEndpoint](Get-MgServicePrincipalOwnedObjectAsEndpoint.md)
-
 ### [Get-MgServicePrincipalOwnedObjectAsGroup](Get-MgServicePrincipalOwnedObjectAsGroup.md)
-
-### [Get-MgServicePrincipalOwnedObjectAsGroup](Get-MgServicePrincipalOwnedObjectAsGroup.md)
-
-### [Get-MgServicePrincipalOwnedObjectAsServicePrincipal](Get-MgServicePrincipalOwnedObjectAsServicePrincipal.md)
 
 ### [Get-MgServicePrincipalOwnedObjectAsServicePrincipal](Get-MgServicePrincipalOwnedObjectAsServicePrincipal.md)
 
@@ -319,17 +253,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalOwnerAsAppRoleAssignment](Get-MgServicePrincipalOwnerAsAppRoleAssignment.md)
 
-### [Get-MgServicePrincipalOwnerAsAppRoleAssignment](Get-MgServicePrincipalOwnerAsAppRoleAssignment.md)
-
-### [Get-MgServicePrincipalOwnerAsEndpoint](Get-MgServicePrincipalOwnerAsEndpoint.md)
-
 ### [Get-MgServicePrincipalOwnerAsEndpoint](Get-MgServicePrincipalOwnerAsEndpoint.md)
 
 ### [Get-MgServicePrincipalOwnerAsServicePrincipal](Get-MgServicePrincipalOwnerAsServicePrincipal.md)
-
-### [Get-MgServicePrincipalOwnerAsServicePrincipal](Get-MgServicePrincipalOwnerAsServicePrincipal.md)
-
-### [Get-MgServicePrincipalOwnerAsUser](Get-MgServicePrincipalOwnerAsUser.md)
 
 ### [Get-MgServicePrincipalOwnerAsUser](Get-MgServicePrincipalOwnerAsUser.md)
 
@@ -349,11 +275,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
 
-### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
-
 ### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount.md)
-
-### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 
 ### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 
@@ -362,8 +284,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgServicePrincipalSynchronization](Get-MgServicePrincipalSynchronization.md)
 
 ### [Get-MgServicePrincipalSynchronizationAccessToken](Get-MgServicePrincipalSynchronizationAccessToken.md)
-
-### [Get-MgServicePrincipalSynchronizationJob](Get-MgServicePrincipalSynchronizationJob.md)
 
 ### [Get-MgServicePrincipalSynchronizationJob](Get-MgServicePrincipalSynchronizationJob.md)
 
@@ -377,21 +297,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalSynchronizationJobSchemaDirectory](Get-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
 
-### [Get-MgServicePrincipalSynchronizationJobSchemaDirectory](Get-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
-
 ### [Get-MgServicePrincipalSynchronizationJobSchemaDirectoryCount](Get-MgServicePrincipalSynchronizationJobSchemaDirectoryCount.md)
 
 ### [Get-MgServicePrincipalSynchronizationSecretCount](Get-MgServicePrincipalSynchronizationSecretCount.md)
 
 ### [Get-MgServicePrincipalSynchronizationTemplate](Get-MgServicePrincipalSynchronizationTemplate.md)
 
-### [Get-MgServicePrincipalSynchronizationTemplate](Get-MgServicePrincipalSynchronizationTemplate.md)
-
 ### [Get-MgServicePrincipalSynchronizationTemplateCount](Get-MgServicePrincipalSynchronizationTemplateCount.md)
 
 ### [Get-MgServicePrincipalSynchronizationTemplateSchema](Get-MgServicePrincipalSynchronizationTemplateSchema.md)
-
-### [Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
 ### [Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
@@ -411,17 +325,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServicePrincipalTransitiveMemberOf](Get-MgServicePrincipalTransitiveMemberOf.md)
 
-### [Get-MgServicePrincipalTransitiveMemberOf](Get-MgServicePrincipalTransitiveMemberOf.md)
-
-### [Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgServicePrincipalTransitiveMemberOfAsGroup](Get-MgServicePrincipalTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgServicePrincipalTransitiveMemberOfAsGroup](Get-MgServicePrincipalTransitiveMemberOfAsGroup.md)
 
@@ -432,8 +338,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgServicePrincipalTransitiveMemberOfCountAsDirectoryRole](Get-MgServicePrincipalTransitiveMemberOfCountAsDirectoryRole.md)
 
 ### [Get-MgServicePrincipalTransitiveMemberOfCountAsGroup](Get-MgServicePrincipalTransitiveMemberOfCountAsGroup.md)
-
-### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
 
 ### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
 
@@ -726,23 +630,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
 ### [Update-MgUserAppRoleAssignment](Update-MgUserAppRoleAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
