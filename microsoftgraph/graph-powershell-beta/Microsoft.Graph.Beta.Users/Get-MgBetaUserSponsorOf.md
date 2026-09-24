@@ -63,16 +63,6 @@ Read-only.
 Nullable.
 Supports $filter, $count, $select, $expand, $top, and $skip.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -599,6 +589,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorof)
 - [](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-beta)
+
+
 
 
 
