@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorof
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 09/22/2026
+ms.date: 09/24/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserSponsorOf
 ---
@@ -62,6 +62,16 @@ If the user is a member of a group that's a sponsor, the objects sponsored by th
 Read-only.
 Nullable.
 Supports $filter, $count, $select, $expand, $top, and $skip.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -550,7 +560,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -587,29 +597,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaUserSponsorOf](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorof)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorof)
+- [](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-beta)
