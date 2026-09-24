@@ -15,6 +15,9 @@ title: Remove-MgBetaUserOutlookMasterCategory
 
 Delete navigation property masterCategories for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaTimeUserOutlook
 
 Invoke function supportedTimeZones
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTimeUserOutlook](/powershell/module/Microsoft.Graph.Users/Invoke-MgTimeUserOutlook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Time (Default)
