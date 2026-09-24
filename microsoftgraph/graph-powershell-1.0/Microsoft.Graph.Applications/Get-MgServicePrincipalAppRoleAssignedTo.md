@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalAppRoleAssignedTo
 
 Read the properties and relationships of an appRoleAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
