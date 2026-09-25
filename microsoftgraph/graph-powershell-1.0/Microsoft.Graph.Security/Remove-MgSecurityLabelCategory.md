@@ -469,8 +469,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory)
-- [](https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0)
+- [Remove-MgSecurityLabelCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0)
 
 
 
