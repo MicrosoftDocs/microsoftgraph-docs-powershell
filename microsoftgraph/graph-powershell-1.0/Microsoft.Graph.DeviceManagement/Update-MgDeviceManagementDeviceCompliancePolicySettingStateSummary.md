@@ -90,8 +90,9 @@ Update the navigation property deviceCompliancePolicySettingStateSummaries in de
 | Application | DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
@@ -110,6 +111,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary -DeviceCompliancePolicySettingStateSummaryId $deviceCompliancePolicySettingStateSummaryId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary Cmdlet.
+
 
 ## PARAMETERS
 

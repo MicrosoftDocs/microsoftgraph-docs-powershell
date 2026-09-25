@@ -69,12 +69,17 @@ The Notification Message Templates.
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagementNotificationMessageTemplate
+
+```
+This example shows how to use the Get-MgDeviceManagementNotificationMessageTemplate Cmdlet.
+
 
 ## PARAMETERS
 
