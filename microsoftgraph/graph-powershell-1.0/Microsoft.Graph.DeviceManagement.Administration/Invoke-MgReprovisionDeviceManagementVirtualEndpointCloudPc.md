@@ -565,8 +565,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc)
-- [](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0)
+- [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/cloudpc-reprovision?view=graph-rest-1.0)
 
 
 
