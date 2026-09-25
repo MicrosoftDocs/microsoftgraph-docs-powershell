@@ -563,9 +563,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
-- [](https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/industrydata-inboundflow-list?view=graph-rest-beta)
+- [Get-MgBetaExternalIndustryDataInboundFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-inboundflow-list?view=graph-rest-beta)
 
 
 
