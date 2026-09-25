@@ -407,8 +407,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowgroupdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-beta)
+- [Invoke-MgBetaFollowGroupDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowgroupdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-beta)
 
 
 

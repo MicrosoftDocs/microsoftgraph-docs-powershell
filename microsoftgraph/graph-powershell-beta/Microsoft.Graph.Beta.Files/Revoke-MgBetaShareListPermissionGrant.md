@@ -522,8 +522,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetasharelistpermissiongrant)
-- [](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
+- [Revoke-MgBetaShareListPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetasharelistpermissiongrant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-beta)
 
 
 

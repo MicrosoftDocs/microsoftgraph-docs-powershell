@@ -407,8 +407,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetasharelistcontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
+- [Unpublish-MgBetaShareListContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetasharelistcontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
 
 
 
