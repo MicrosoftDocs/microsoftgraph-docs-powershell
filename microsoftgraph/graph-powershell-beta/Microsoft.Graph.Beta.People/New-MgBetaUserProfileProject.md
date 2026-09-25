@@ -88,8 +88,9 @@ Create new navigation property to projects for users
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.People
 
@@ -118,6 +119,10 @@ detail = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileProject -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfileProject Cmdlet.
+
 
 ## PARAMETERS
 
