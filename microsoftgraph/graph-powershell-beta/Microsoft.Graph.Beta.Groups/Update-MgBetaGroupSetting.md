@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSetting
 
 Update the navigation property settings in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
