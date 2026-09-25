@@ -108,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -157,7 +157,7 @@ HelpMessage: ''
 
 ### -ClassificationResults
 
-.
+
 To construct, see NOTES section for CLASSIFICATIONRESULTS properties and create a hash table.
 
 ```yaml
