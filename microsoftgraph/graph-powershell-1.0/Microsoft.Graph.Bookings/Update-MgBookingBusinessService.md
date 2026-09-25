@@ -16,6 +16,9 @@ title: Update-MgBookingBusinessService
 Update the properties of a bookingService object in the specified bookingBusiness.
 The following are some examples you can customize for a service:\r- Price\r- Typical length of an appointment\r- Reminders\r- Any time buffer to set up before or finish up after the service\r- Scheduling policy parameters, such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

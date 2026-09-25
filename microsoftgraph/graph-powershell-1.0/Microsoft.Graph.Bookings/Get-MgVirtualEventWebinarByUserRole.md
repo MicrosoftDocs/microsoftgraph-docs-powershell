@@ -15,6 +15,9 @@ title: Get-MgVirtualEventWebinarByUserRole
 
 Get a virtualEventWebinar collection where the signed-in user is either the organizer or a coorganizer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarByUserRole](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarByUserRole?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
