@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspaceplugin
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCopilotWorkspacePlugin
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to plugins for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -707,11 +717,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTHORIZATION `<IMicrosoftGraphSecurityCopilotPluginAuth>`: pluginAuth
+AUTHORIZATION <IMicrosoftGraphSecurityCopilotPluginAuth>: pluginAuth
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthType <String>]: pluginAuthTypes
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCopilotPlugin>`: plugin
+BODYPARAMETER <IMicrosoftGraphSecurityCopilotPlugin>: plugin
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Authorization <IMicrosoftGraphSecurityCopilotPluginAuth>]: pluginAuth
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -740,7 +750,7 @@ Primary key.
     [Value <String>]: Value
   [SupportedAuthTypes <String>]: pluginAuthTypes
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -873,27 +883,4 @@ SETTINGS <IMicrosoftGraphSecurityCopilotPluginSetting[]>: Settings for the plugi
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityCopilotWorkspacePlugin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspaceplugin)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycopilotworkspaceplugin)

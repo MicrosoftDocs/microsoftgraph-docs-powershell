@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysettingautoauditingconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSecurityIdentitySettingAutoAuditingConfiguration
 ---
@@ -14,9 +14,6 @@ title: Remove-MgBetaSecurityIdentitySettingAutoAuditingConfiguration
 ## SYNOPSIS
 
 Delete navigation property autoAuditingConfiguration for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityIdentitySettingAutoAuditingConfiguration](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityIdentitySettingAutoAuditingConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property autoAuditingConfiguration for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -318,27 +325,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysettingautoauditingconfiguration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityidentitysettingautoauditingconfiguration)

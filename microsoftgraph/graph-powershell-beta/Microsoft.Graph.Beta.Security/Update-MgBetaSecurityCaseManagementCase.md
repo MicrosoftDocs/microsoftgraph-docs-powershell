@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcase
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityCaseManagementCase
 ---
@@ -75,13 +75,15 @@ This cmdlet has the following aliases,
 
 Update the properties of a microsoft.graph.security.caseManagement.case object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CaseManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CaseManagement.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -809,7 +811,7 @@ The maximum file size is 100 MB.
     [ResourceType <String>]: attachmentOriginType
   [ScanResult <String>]: attachmentScanResult
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCaseManagementCase>`: case
+BODYPARAMETER <IMicrosoftGraphSecurityCaseManagementCase>: case
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <String>]: The user or service that created the resource.
   [CreatedDateTime <DateTime?>]: The date and time when the resource was created.
@@ -884,7 +886,7 @@ Supports $filter.
     [Priority <String>]: caseTaskPriority
     [Status <String>]: taskStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -1037,28 +1039,5 @@ Supports $filter.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityCaseManagementCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcase)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-case-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcase)
+- [](https://learn.microsoft.com/graph/api/security-casemanagement-case-update?view=graph-rest-beta)

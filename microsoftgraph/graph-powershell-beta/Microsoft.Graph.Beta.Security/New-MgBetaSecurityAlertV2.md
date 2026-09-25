@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityAlertV2
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSecurityAlertV2
 
 Create a manual security alert in Microsoft 365 Defender with specified entities and metadata.
 When the alert is created, the backend automatically creates a new incident to contain the alert, or links the alert to an existing incident if linkToIncident is specified.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlertV2?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,25 +57,17 @@ This cmdlet has the following aliases,
 Create a manual security alert in Microsoft 365 Defender with specified entities and metadata.
 When the alert is created, the backend automatically creates a new incident to contain the alert, or links the alert to an existing incident if linkToIncident is specified.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Create a manual alert with a new incident
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.manualAlert"
 	title = "Suspicious login from TOR exit node"
-	description = "User account showed login activity from known TOR exit node. Manual investigation revealed potential account compromise."
+	description = "User account showed login activity from known TOR exit node.
+Manual investigation revealed potential account compromise."
 	category = "InitialAccess"
 	severity = "high"
 	recommendedActions = "Reset user credentials, enable MFA, review recent user activity"
@@ -103,12 +92,7 @@ entityDefinitions = @(
 
 New-MgBetaSecurityAlertV2 -BodyParameter $params
 
-```
-This example will create a manual alert with a new incident
-
-### Example 2: Create a manual alert linked to an existing incident
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -137,10 +121,6 @@ $params = @{
 }
 
 New-MgBetaSecurityAlertV2 -BodyParameter $params
-
-```
-This example will create a manual alert linked to an existing incident
-
 
 ## PARAMETERS
 
@@ -1193,7 +1173,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAlert>`: alert
+BODYPARAMETER <IMicrosoftGraphSecurityAlert>: alert
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1271,27 +1251,5 @@ Values are free-form.
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityAlertV2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-post-manualalert?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2)
+- [](https://learn.microsoft.com/graph/api/security-alert-post-manualalert?view=graph-rest-beta)

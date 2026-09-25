@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcaserelation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCaseManagementCaseRelation
 ---
@@ -68,13 +68,15 @@ This cmdlet has the following aliases,
 
 Create a concrete external resource relation for a case.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CaseManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CaseManagement.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -598,7 +600,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCaseManagementRelation>`: relation
+BODYPARAMETER <IMicrosoftGraphSecurityCaseManagementRelation>: relation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <String>]: The user or service that created the resource.
   [CreatedDateTime <DateTime?>]: The date and time when the resource was created.
@@ -608,7 +610,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityCaseManagementRelation>`: relation
 Read-only.
   [RelatedResourceId <String>]: The identifier of the related external resource.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -729,28 +731,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityCaseManagementCaseRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcaserelation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-case-post-relations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcaserelation)
+- [](https://learn.microsoft.com/graph/api/security-casemanagement-case-post-relations?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityIdentitySensorCandidate
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityIdentitySensorCandidate
 ## SYNOPSIS
 
 Get sensorCandidates from security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySensorCandidate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,6 +55,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get sensorCandidates from security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -519,7 +526,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -640,29 +647,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityIdentitySensorCandidate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorcandidate)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensorcandidates?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensorcandidate)
+- [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensorcandidates?view=graph-rest-beta)

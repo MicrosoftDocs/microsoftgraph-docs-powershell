@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityzone
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityZone
 ---
@@ -70,6 +70,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a zone object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -641,7 +651,7 @@ For example, $filter=aggregations/any(a: a/kind eq 'azureSubscription').
   [Count <Int32?>]: Number of environments of this type.
   [Kind <String>]: Environment type.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityZone>`: zone
+BODYPARAMETER <IMicrosoftGraphSecurityZone>: zone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -672,7 +682,7 @@ Read-only.
     [Kind <String>]: environmentKind
   [Modified <IMicrosoftGraphSecurityAuditInfo>]: auditInfo
 
-CREATED `<IMicrosoftGraphSecurityAuditInfo>`: auditInfo
+CREATED <IMicrosoftGraphSecurityAuditInfo>: auditInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [By <String>]: Display name of the user or application that performed the action.
   [DateTime <DateTime?>]: Timestamp of the action.
@@ -685,7 +695,7 @@ Supports $expand.
 Read-only.
   [Kind <String>]: environmentKind
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -803,7 +813,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-MODIFIED `<IMicrosoftGraphSecurityAuditInfo>`: auditInfo
+MODIFIED <IMicrosoftGraphSecurityAuditInfo>: auditInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [By <String>]: Display name of the user or application that performed the action.
   [DateTime <DateTime?>]: Timestamp of the action.
@@ -813,28 +823,5 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityZone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityzone)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-zone-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityzone)
+- [](https://learn.microsoft.com/graph/api/security-zone-update?view=graph-rest-beta)

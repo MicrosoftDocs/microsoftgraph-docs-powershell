@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityincidentalertcomment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaSecurityIncidentAlertComment
 ---
@@ -14,9 +14,6 @@ title: Set-MgBetaSecurityIncidentAlertComment
 ## SYNOPSIS
 
 Sets a new value for the collection of alertComment.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityIncidentAlertComment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Sets a new value for the collection of alertComment.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -410,7 +417,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityAlertComment[]>: Array of microsoft.graph.
   [CreatedByDisplayName <String>]: The person or app name that submitted the comment.
   [CreatedDateTime <DateTime?>]: The time when the comment was submitted.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -531,27 +538,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaSecurityIncidentAlertComment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityincidentalertcomment)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityincidentalertcomment)

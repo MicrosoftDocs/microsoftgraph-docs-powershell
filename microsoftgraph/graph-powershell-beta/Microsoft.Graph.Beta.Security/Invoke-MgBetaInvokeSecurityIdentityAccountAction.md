@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetainvokesecurityidentityaccountaction
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaInvokeSecurityIdentityAccountAction
 ---
@@ -15,9 +15,6 @@ title: Invoke-MgBetaInvokeSecurityIdentityAccountAction
 
 Perform actions such as revoking accounts and forcing password reset for identity accounts that are observed in Microsoft Defender for Identity.
 This action allows reading and performing identity security actions on behalf of the signed-in identity.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInvokeSecurityIdentityAccountAction](/powershell/module/Microsoft.Graph.Security/Invoke-MgInvokeSecurityIdentityAccountAction?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,9 +69,8 @@ Perform actions such as revoking accounts and forcing password reset for identit
 This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -86,15 +82,11 @@ $params = @{
 
 Invoke-MgBetaInvokeSecurityIdentityAccountAction -IdentityAccountsId $identityAccountsId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgBetaInvokeSecurityIdentityAccountAction Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AccountId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -175,7 +167,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -197,7 +189,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -546,19 +538,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths1O04P47SecurityIdentitiesIdentityaccountsIdMicrosoftGraphSecurityInvokeactionPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths1O04P47SecurityIdentitiesIdentityaccountsIdMicrosoftGraphSecurityInvokeactionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccountId <String>]: 
   [Action <String>]: action
   [IdentityProvider <String>]: identityProvider
 
-BODYPARAMETER `<IPaths1O04P47SecurityIdentitiesIdentityaccountsIdMicrosoftGraphSecurityInvokeactionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1O04P47SecurityIdentitiesIdentityaccountsIdMicrosoftGraphSecurityInvokeactionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AccountId <String>]: 
   [Action <String>]: action
   [IdentityProvider <String>]: identityProvider
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -679,27 +671,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaInvokeSecurityIdentityAccountAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetainvokesecurityidentityaccountaction)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identityaccounts-invokeaction?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetainvokesecurityidentityaccountaction)
+- [](https://learn.microsoft.com/graph/api/security-identityaccounts-invokeaction?view=graph-rest-beta)

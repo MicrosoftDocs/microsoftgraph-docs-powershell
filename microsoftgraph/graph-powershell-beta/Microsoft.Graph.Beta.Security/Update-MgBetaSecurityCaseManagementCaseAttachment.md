@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcaseattachment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityCaseManagementCaseAttachment
 ---
@@ -74,13 +74,15 @@ This cmdlet has the following aliases,
 
 Update the properties of an attachment object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | CaseManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | CaseManagement.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -797,7 +799,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityCaseManagementAttachment>`: attachment
+BODYPARAMETER <IMicrosoftGraphSecurityCaseManagementAttachment>: attachment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <String>]: The user or service that created the resource.
   [CreatedDateTime <DateTime?>]: The date and time when the resource was created.
@@ -819,7 +821,7 @@ The maximum file size is 100 MB.
     [ResourceType <String>]: attachmentOriginType
   [ScanResult <String>]: attachmentScanResult
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -937,7 +939,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-ORIGIN `<IMicrosoftGraphSecurityCaseManagementAttachmentOrigin>`: attachmentOrigin
+ORIGIN <IMicrosoftGraphSecurityCaseManagementAttachmentOrigin>: attachmentOrigin
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ResourceId <String>]: The identifier of the origin resource.
   [ResourceType <String>]: attachmentOriginType
@@ -945,28 +947,5 @@ ORIGIN `<IMicrosoftGraphSecurityCaseManagementAttachmentOrigin>`: attachmentOrig
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityCaseManagementCaseAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcaseattachment)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-attachment-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcaseattachment)
+- [](https://learn.microsoft.com/graph/api/security-casemanagement-attachment-update?view=graph-rest-beta)

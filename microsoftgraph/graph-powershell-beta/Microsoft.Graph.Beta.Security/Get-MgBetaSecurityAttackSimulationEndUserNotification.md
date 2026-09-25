@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationendusernotification
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityAttackSimulationEndUserNotification
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaSecurityAttackSimulationEndUserNotification
 ## SYNOPSIS
 
 Represents an end user's notification for an attack simulation training.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -61,17 +58,12 @@ This cmdlet has the following aliases,
 Represents an end user's notification for an attack simulation training.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'" 
-
-```
-This example shows how to use the Get-MgBetaSecurityAttackSimulationEndUserNotification Cmdlet.
-
+Get-MgBetaSecurityAttackSimulationEndUserNotification -Filter "source eq 'global'"
 
 ## PARAMETERS
 
@@ -533,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -654,27 +646,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityAttackSimulationEndUserNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationendusernotification)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/attacksimulationroot-list-endusernotifications?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationendusernotification)
+- [](https://learn.microsoft.com/graph/api/attacksimulationroot-list-endusernotifications?view=graph-rest-beta)

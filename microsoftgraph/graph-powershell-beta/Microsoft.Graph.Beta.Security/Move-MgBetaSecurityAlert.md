@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgBetaSecurityAlert
 ---
@@ -14,9 +14,6 @@ title: Move-MgBetaSecurityAlert
 ## SYNOPSIS
 
 Move one or more alert resources to a new or existing incident.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Move-MgSecurityAlert?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 
 Move one or more alert resources to a new or existing incident.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -74,7 +81,7 @@ HelpMessage: ''
 
 ### -AlertComment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -95,7 +102,7 @@ HelpMessage: ''
 
 ### -AlertIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -116,7 +123,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -244,7 +251,7 @@ HelpMessage: ''
 
 ### -IncidentId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -421,7 +428,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AlertComment <String>]: 
   [AlertIds <String[]>]: 
@@ -431,28 +438,5 @@ BODYPARAMETER `<IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPos
 
 ## RELATED LINKS
 
-- [Move-MgBetaSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityalert)
+- [](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-beta)

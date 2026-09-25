@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityIdentityAccount
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityIdentityAccount
 ## SYNOPSIS
 
 Update the navigation property identityAccounts in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIdentityAccount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property identityAccounts in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -629,7 +636,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [Identifier <String>]: The account ID.
   [IdentityProvider <String>]: identityProvider
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIdentityAccounts>`: identityAccounts
+BODYPARAMETER <IMicrosoftGraphSecurityIdentityAccounts>: identityAccounts
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -644,7 +651,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [IsEnabled <Boolean?>]: Boolean indicating if the identityAccounts is enabled.
   [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier of the identityAccount.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -765,27 +772,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityaccount)

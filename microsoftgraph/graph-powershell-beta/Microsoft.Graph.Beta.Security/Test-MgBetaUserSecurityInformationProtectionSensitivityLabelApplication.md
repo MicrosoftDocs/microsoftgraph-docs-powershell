@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication
 ---
@@ -73,18 +73,9 @@ Compute the sensitivity label that should be applied and return the set of actio
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | InformationProtectionPolicy.Read,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | InformationProtectionPolicy.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -154,10 +145,6 @@ $params = @{
 
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication -UserId $userId -BodyParameter $params
 
-```
-This example shows how to use the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -189,7 +176,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -573,7 +560,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ssqny1UsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentInfo <IMicrosoftGraphSecurityContentInfo>]: contentInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -595,7 +582,7 @@ The message appears in administrative logs.
     [ExtendedProperties <IMicrosoftGraphSecurityKeyValuePair[]>]: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
     [LabelId <String>]: The GUID of the label that should be applied to the information.
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentFormat <String>]: The format of the content to be labeled.
 The possible values are: file, email.
@@ -605,7 +592,7 @@ The possible values are: file, email.
     [Value <String>]: Value for this key-value pair.
   [State <String>]: contentState
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -723,7 +710,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-LABELINGOPTIONS `<IMicrosoftGraphSecurityLabelingOptions>`: labelingOptions
+LABELINGOPTIONS <IMicrosoftGraphSecurityLabelingOptions>: labelingOptions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: assignmentMethod
   [DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>]: downgradeJustification
@@ -739,27 +726,5 @@ The message appears in administrative logs.
 
 ## RELATED LINKS
 
-- [Test-MgBetaUserSecurityInformationProtectionSensitivityLabelApplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication)
+- [](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-beta)

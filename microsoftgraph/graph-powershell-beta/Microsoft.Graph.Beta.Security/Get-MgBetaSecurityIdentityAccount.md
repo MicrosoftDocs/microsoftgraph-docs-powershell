@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityIdentityAccount
 ---
@@ -15,9 +15,6 @@ title: Get-MgBetaSecurityIdentityAccount
 
 Read the properties and relationships of a single identity security account object.
 This allows retrieving information about available identity accounts.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentityAccount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -60,37 +57,19 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a single identity security account object.
 This allows retrieving information about available identity accounts.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesAccount.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesAccount.Read.All,  |
-
 ## EXAMPLES
-### Example 1: Get details of an identity account
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityIdentityAccount -IdentityAccountsId $identityAccountsId
 
-```
-This example will get details of an identity account
-
-### Example 2: Get the account details of an identity account
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Security
 
-Get-MgBetaSecurityIdentityAccount -IdentityAccountsId $identityAccountsId -Property "accounts" 
-
-```
-This example will get the account details of an identity account
-
+Get-MgBetaSecurityIdentityAccount -IdentityAccountsId $identityAccountsId -Property "accounts"
 
 ## PARAMETERS
 
@@ -552,7 +531,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -673,28 +652,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityaccount)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identityaccounts-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-identitycontainer-list-identityaccounts?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityaccount)
+- [](https://learn.microsoft.com/graph/api/security-identityaccounts-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-identityaccounts?view=graph-rest-beta)

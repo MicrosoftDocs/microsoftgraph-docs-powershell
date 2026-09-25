@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityIdentityAccount
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSecurityIdentityAccount
 ## SYNOPSIS
 
 Create new navigation property to identityAccounts for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIdentityAccount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to identityAccounts for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -492,7 +499,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
   [Identifier <String>]: The account ID.
   [IdentityProvider <String>]: identityProvider
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIdentityAccounts>`: identityAccounts
+BODYPARAMETER <IMicrosoftGraphSecurityIdentityAccounts>: identityAccounts
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -510,27 +517,4 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
 
 ## RELATED LINKS
 
-- [New-MgBetaSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensor
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityIdentitySensor
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityIdentitySensor
 ## SYNOPSIS
 
 Update the properties of a sensor object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIdentitySensor](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIdentitySensor?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -78,18 +75,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a sensor object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesSensors.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -104,10 +92,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityIdentitySensor -SensorId $sensorId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSecurityIdentitySensor Cmdlet.
-
 
 ## PARAMETERS
 
@@ -824,7 +808,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecuritySensor>`: sensor
+BODYPARAMETER <IMicrosoftGraphSecuritySensor>: sensor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -902,7 +886,7 @@ These commands run in sequence for the single recommended fix.
   [Severity <String>]: healthIssueSeverity
   [Status <String>]: healthIssueStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -1020,7 +1004,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-SETTINGS `<IMicrosoftGraphSecuritySensorSettings>`: sensorSettings
+SETTINGS <IMicrosoftGraphSecuritySensorSettings>: sensorSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description of the sensor.
   [DomainControllerDnsNames <String[]>]: DNS names for the domain controller
@@ -1034,27 +1018,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityIdentitySensor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensor)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensor)
+- [](https://learn.microsoft.com/graph/api/security-sensor-update?view=graph-rest-beta)

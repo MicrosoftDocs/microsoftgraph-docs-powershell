@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityThreatIntelligenceArticle
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSecurityThreatIntelligenceArticle
 ## SYNOPSIS
 
 Update the navigation property articles in security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceArticle?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property articles in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -712,12 +719,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+BODY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
 
-BODYPARAMETER `<IMicrosoftGraphSecurityArticle>`: article
+BODYPARAMETER <IMicrosoftGraphSecurityArticle>: article
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -754,7 +761,7 @@ Read-only.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -872,7 +879,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+SUMMARY <IMicrosoftGraphSecurityFormattedContent>: formattedContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of this formattedContent.
   [Format <String>]: contentFormat
@@ -880,27 +887,4 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityThreatIntelligenceArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)

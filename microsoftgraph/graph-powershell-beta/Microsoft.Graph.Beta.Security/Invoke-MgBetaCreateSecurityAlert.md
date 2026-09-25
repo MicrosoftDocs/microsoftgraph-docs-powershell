@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacreatesecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaCreateSecurityAlert
 ---
@@ -48,13 +48,15 @@ This cmdlet has the following aliases,
 Create a Microsoft 365 Defender alert by invoking a bound action on the alerts_v2 collection and returning the created alert resource.
 The action accepts a createAlertInput complex type that combines alert metadata and creation-specific options in one request object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -81,7 +83,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -366,7 +368,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17Ljn1USecurityAlertsV2MicrosoftGraphSecurityCreatealertPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17Ljn1USecurityAlertsV2MicrosoftGraphSecurityCreatealertPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreateAlertInput <IMicrosoftGraphSecurityCreateAlertInput>]: createAlertInput
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -387,7 +389,7 @@ Use 0 or omit the value to create a new incident.
     [Severity <String>]: alertSeverity
     [Title <String>]: Short display name shown for the alert in the Defender portal.
 
-CREATEALERTINPUT `<IMicrosoftGraphSecurityCreateAlertInput>`: createAlertInput
+CREATEALERTINPUT <IMicrosoftGraphSecurityCreateAlertInput>: createAlertInput
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Category <String>]: MITRE ATT&CK category for the alert.
   [Description <String>]: Free-text explanation of the suspicious activity or policy violation.
@@ -409,28 +411,5 @@ Use 0 or omit the value to create a new incident.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaCreateSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacreatesecurityalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-createalert?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacreatesecurityalert)
+- [](https://learn.microsoft.com/graph/api/security-alert-createalert?view=graph-rest-beta)

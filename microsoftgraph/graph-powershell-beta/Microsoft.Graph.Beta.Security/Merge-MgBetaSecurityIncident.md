@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/merge-mgbetasecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Merge-MgBetaSecurityIncident
 ---
@@ -14,9 +14,6 @@ title: Merge-MgBetaSecurityIncident
 ## SYNOPSIS
 
 Merge multiple incident resources into a single incident.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Merge-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Merge-MgSecurityIncident?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ This cmdlet has the following aliases,
 
 Merge multiple incident resources into a single incident.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -74,7 +81,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -202,7 +209,7 @@ HelpMessage: ''
 
 ### -IncidentComment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -223,7 +230,7 @@ HelpMessage: ''
 
 ### -IncidentIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -400,7 +407,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeincidentsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeincidentsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IncidentComment <String>]: 
   [IncidentIds <String[]>]: 
@@ -409,28 +416,5 @@ BODYPARAMETER `<IPaths135V4JsSecurityIncidentsMicrosoftGraphSecurityMergeinciden
 
 ## RELATED LINKS
 
-- [Merge-MgBetaSecurityIncident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/merge-mgbetasecurityincident)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-incident-mergeincidents?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/merge-mgbetasecurityincident)
+- [](https://learn.microsoft.com/graph/api/security-incident-mergeincidents?view=graph-rest-beta)

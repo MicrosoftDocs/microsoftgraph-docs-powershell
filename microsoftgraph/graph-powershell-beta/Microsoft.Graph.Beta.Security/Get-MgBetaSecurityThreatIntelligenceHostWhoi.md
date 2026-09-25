@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityThreatIntelligenceHostWhoi
 ---
@@ -14,11 +14,8 @@ title: Get-MgBetaSecurityThreatIntelligenceHostWhoi
 ## SYNOPSIS
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\r- Identify a host and get its current whoisRecord.
-\r- Specify an id value to get the corresponding whoisRecord.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostWhoi?view=graph-powershell-1.0)
+Specify the desired whoisRecord in one of the following two ways:\r\n- Identify a host and get its current whoisRecord.
+\r\n- Specify an id value to get the corresponding whoisRecord.
 
 ## SYNTAX
 
@@ -49,21 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\r- Identify a host and get its current whoisRecord.
-\r- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:\r\n- Identify a host and get its current whoisRecord.
+\r\n- Specify an id value to get the corresponding whoisRecord.
 
 ## EXAMPLES
-### Example 1: Get the whoisRecord resource for the specified host
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityThreatIntelligenceHostWhoi -HostId $hostId
-
-```
-This example will get the whoisrecord resource for the specified host
-
 
 ## PARAMETERS
 
@@ -353,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -474,27 +466,5 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityThreatIntelligenceHostWhoi](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi)
+- [](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-beta)

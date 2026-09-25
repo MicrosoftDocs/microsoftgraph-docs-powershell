@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityAttackSimulationTrainingCampaign
 ---
@@ -80,18 +80,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a trainingCampaign object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AttackSimulation.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AttackSimulation.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -154,10 +145,6 @@ status = "Cancelled"
 }
 
 Update-MgBetaSecurityAttackSimulationTrainingCampaign -TrainingCampaignId $trainingCampaignId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaSecurityAttackSimulationTrainingCampaign Cmdlet.
-
 
 ## PARAMETERS
 
@@ -879,7 +866,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTrainingCampaign>`: trainingCampaign
+BODYPARAMETER <IMicrosoftGraphTrainingCampaign>: trainingCampaign
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1001,13 +988,13 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [SettingType <String>]: trainingSettingType
 
-CAMPAIGNSCHEDULE `<IMicrosoftGraphCampaignSchedule>`: campaignSchedule
+CAMPAIGNSCHEDULE <IMicrosoftGraphCampaignSchedule>: campaignSchedule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletionDateTime <DateTime?>]: The date and time at which the campaign completed.
   [LaunchDateTime <DateTime?>]: The date and time at which the campaign was launched.
   [Status <String>]: campaignStatus
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+CREATEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1016,7 +1003,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Email <String>]: Email address of the user.
 
-ENDUSERNOTIFICATIONSETTING `<IMicrosoftGraphEndUserNotificationSetting>`: endUserNotificationSetting
+ENDUSERNOTIFICATIONSETTING <IMicrosoftGraphEndUserNotificationSetting>: endUserNotificationSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [NotificationPreference <String>]: endUserNotificationPreference
   [PositiveReinforcement <IMicrosoftGraphPositiveReinforcementNotification>]: positiveReinforcementNotification
@@ -1059,15 +1046,15 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [DeliveryPreference <String>]: notificationDeliveryPreference
   [SettingType <String>]: endUserNotificationSettingType
 
-EXCLUDEDACCOUNTTARGET `<IMicrosoftGraphAccountTargetContent>`: accountTargetContent
+EXCLUDEDACCOUNTTARGET <IMicrosoftGraphAccountTargetContent>: accountTargetContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: accountTargetContentType
 
-INCLUDEDACCOUNTTARGET `<IMicrosoftGraphAccountTargetContent>`: accountTargetContent
+INCLUDEDACCOUNTTARGET <IMicrosoftGraphAccountTargetContent>: accountTargetContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: accountTargetContentType
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -1185,7 +1172,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -1194,7 +1181,7 @@ For example, if a user changes their display name the API might show the new val
 For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
   [Email <String>]: Email address of the user.
 
-REPORT `<IMicrosoftGraphTrainingCampaignReport>`: trainingCampaignReport
+REPORT <IMicrosoftGraphTrainingCampaignReport>: trainingCampaignReport
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CampaignUsers <IMicrosoftGraphUserSimulationDetails[]>]: The overview of the attack simulation and training campaign.
     [AssignedTrainingsCount <Int32?>]: Number of trainings assigned to a user in an attack simulation and training campaign.
@@ -1251,34 +1238,12 @@ REPORT `<IMicrosoftGraphTrainingCampaignReport>`: trainingCampaignReport
       [NotStartedUsersCount <Int32?>]: The number of users who didn't start any training.
       [PreviouslyAssignedUsersCount <Int32?>]: The number of users who are already assigned the same training.
 
-TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
+TRAININGSETTING <IMicrosoftGraphTrainingSetting>: trainingSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SettingType <String>]: trainingSettingType
 
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityAttackSimulationTrainingCampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
+- [](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-beta)
