@@ -385,8 +385,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowgroupdriveroot)
-- [](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
+- [Invoke-MgFollowGroupDriveRoot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowgroupdriveroot)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
 
 
 

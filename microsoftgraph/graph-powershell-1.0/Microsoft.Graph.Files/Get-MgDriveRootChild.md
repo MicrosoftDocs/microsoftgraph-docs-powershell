@@ -580,7 +580,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchild)
+- [Get-MgDriveRootChild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchild)
 
 
 

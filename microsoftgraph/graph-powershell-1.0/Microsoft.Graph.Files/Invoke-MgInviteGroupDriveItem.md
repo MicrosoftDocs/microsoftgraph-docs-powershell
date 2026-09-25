@@ -753,8 +753,8 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitegroupdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
+- [Invoke-MgInviteGroupDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitegroupdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
 
 
 

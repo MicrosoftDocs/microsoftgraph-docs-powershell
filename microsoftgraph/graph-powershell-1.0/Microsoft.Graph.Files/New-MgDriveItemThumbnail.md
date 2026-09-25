@@ -677,7 +677,7 @@ This is only available when a folder thumbnail is requested.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemthumbnail)
+- [New-MgDriveItemThumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemthumbnail)
 
 
 
