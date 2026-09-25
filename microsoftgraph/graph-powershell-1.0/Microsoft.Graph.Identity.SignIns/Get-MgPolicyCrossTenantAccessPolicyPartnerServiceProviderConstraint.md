@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicypartnerserviceproviderconstraint
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
 ---
@@ -14,6 +14,9 @@ title: Get-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
 ## SYNOPSIS
 
 Get serviceProviderConstraints from policies
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint?view=graph-powershell-beta)
 
 ## SYNTAX
 
