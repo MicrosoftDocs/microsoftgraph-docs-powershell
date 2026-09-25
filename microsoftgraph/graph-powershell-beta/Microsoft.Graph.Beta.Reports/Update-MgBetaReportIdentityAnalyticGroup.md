@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportidentityanalyticgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportIdentityAnalyticGroup
 ---
@@ -91,6 +91,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property groups in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -1441,7 +1451,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGroupAnalytics>`: groupAnalytics
+BODYPARAMETER <IMicrosoftGraphGroupAnalytics>: groupAnalytics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1524,7 +1534,7 @@ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
   [TransitiveUserCount <Int64?>]: The total number of transitive user members of the group.
 Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AggregationWindow <String>]: Usage: aggregationWindow='{aggregationWindow}'
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
@@ -1591,27 +1601,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportIdentityAnalyticGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportidentityanalyticgroup)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportidentityanalyticgroup)

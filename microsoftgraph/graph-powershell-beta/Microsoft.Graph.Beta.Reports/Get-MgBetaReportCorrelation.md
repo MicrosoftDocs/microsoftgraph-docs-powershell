@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcorrelation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportCorrelation
 ---
@@ -55,13 +55,15 @@ This cmdlet has the following aliases,
 
 Get an identityCorrelation object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ProvisioningLog.Read.All, AuditLog.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, ProvisioningLog.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -523,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AggregationWindow <String>]: Usage: aggregationWindow='{aggregationWindow}'
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
@@ -590,30 +592,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportCorrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcorrelation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitycorrelation-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-list-correlations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcorrelation)
+- [](https://learn.microsoft.com/graph/api/identitycorrelation-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/reportroot-list-correlations?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforvisioweb
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportServiceActivityActiveUserMetricForVisioWeb
 ---
@@ -48,17 +48,12 @@ This cmdlet has the following aliases,
 Get all the active usage based on the number of active users who open or save Visio for the web.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityActiveUserMetricForVisioWeb
-
-```
-This example shows how to use the Get-MgBetaReportServiceActivityActiveUserMetricForVisioWeb Cmdlet.
-
 
 ## PARAMETERS
 
@@ -452,7 +447,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AggregationWindow <String>]: Usage: aggregationWindow='{aggregationWindow}'
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
@@ -519,27 +514,5 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportServiceActivityActiveUserMetricForVisioWeb](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforvisioweb)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforvisioweb?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivityactiveusermetricforvisioweb)
+- [](https://learn.microsoft.com/graph/api/serviceactivity-getactiveusermetricsforvisioweb?view=graph-rest-beta)

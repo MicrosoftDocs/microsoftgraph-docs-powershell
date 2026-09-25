@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminReportSettingSharePoint
 ---
@@ -45,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property sharePoint in admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -383,7 +393,7 @@ APIUSAGEREPORTMETRICS <IMicrosoftGraphApiUsageReportEnablementStatus[]>: The col
 The supported values are: egressReport, throttlingReport.
   [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
 
-BODYPARAMETER `<IMicrosoftGraphSharePointReportSettings>`: sharePointReportSettings
+BODYPARAMETER <IMicrosoftGraphSharePointReportSettings>: sharePointReportSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -395,27 +405,4 @@ The supported values are: egressReport, throttlingReport.
 
 ## RELATED LINKS
 
-- [Update-MgBetaAdminReportSettingSharePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint)

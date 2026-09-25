@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadpremiumlicenseinsight
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaReportAzureAdPremiumLicenseInsight
 ---
@@ -41,13 +41,15 @@ This API returns data about how many premium licenses are entitled and how the a
 The calling tenant must have at least one Microsoft Entra ID P1 or P2 license.
 Tenants without a premium license receive a 403 Forbidden response with the missingLicense error code.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Reports.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Reports.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -287,28 +289,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaReportAzureAdPremiumLicenseInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadpremiumlicenseinsight)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/azureadpremiumlicenseinsight-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadpremiumlicenseinsight)
+- [](https://learn.microsoft.com/graph/api/azureadpremiumlicenseinsight-get?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to usageByDataLocation for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -357,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftAppsFileStorageContainerGeoUsage>`: microsoftAppsFileStorageContainerGeoUsage
+BODYPARAMETER <IMicrosoftGraphMicrosoftAppsFileStorageContainerGeoUsage>: microsoftAppsFileStorageContainerGeoUsage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UsageByApp <IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage[]>]: Storage usage data broken down by application within this geographic location.
 Expandable using $expand=usageByApp.
@@ -365,27 +375,4 @@ Expandable using $expand=usageByApp.
 
 ## RELATED LINKS
 
-- [New-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation)

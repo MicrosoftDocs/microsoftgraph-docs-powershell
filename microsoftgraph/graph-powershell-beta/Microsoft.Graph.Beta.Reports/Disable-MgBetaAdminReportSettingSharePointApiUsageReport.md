@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/disable-mgbetaadminreportsettingsharepointapiusagereport
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Disable-MgBetaAdminReportSettingSharePointApiUsageReport
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 Disable a SharePoint API usage report metric for the tenant.
 After you disable a metric, SharePoint stops collecting and reporting data for that specific usage metric.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,7 +82,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -200,7 +210,7 @@ HelpMessage: ''
 
 ### -Metric
 
-
+.
 
 ```yaml
 Type: System.String
@@ -356,35 +366,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1S5OblkAdminReportsettingsSharepointMicrosoftGraphDisableapiusagereportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1S5OblkAdminReportsettingsSharepointMicrosoftGraphDisableapiusagereportPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Metric <String>]:
 
 
 ## RELATED LINKS
 
-- [Disable-MgBetaAdminReportSettingSharePointApiUsageReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/disable-mgbetaadminreportsettingsharepointapiusagereport)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/disable-mgbetaadminreportsettingsharepointapiusagereport)
+- [](https://learn.microsoft.com/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta)

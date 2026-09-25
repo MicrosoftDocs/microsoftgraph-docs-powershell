@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property usageByDataLocation in reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -459,12 +469,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftAppsFileStorageContainerGeoUsage>`: microsoftAppsFileStorageContainerGeoUsage
+BODYPARAMETER <IMicrosoftGraphMicrosoftAppsFileStorageContainerGeoUsage>: microsoftAppsFileStorageContainerGeoUsage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [UsageByApp <IMicrosoftGraphMicrosoftAppsFileStorageContainerAppUsage[]>]: Storage usage data broken down by application within this geographic location.
 Expandable using $expand=usageByApp.
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   [ActiveUsersMetricId <String>]: The unique identifier of activeUsersMetric
   [AggregationWindow <String>]: Usage: aggregationWindow='{aggregationWindow}'
   [AlertConfigurationId <String>]: The unique identifier of alertConfiguration
@@ -531,27 +541,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagebydatalocation)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetaadminreportsettingsharepoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Reports
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaAdminReportSettingSharePoint
 ---
@@ -34,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property sharePoint for admin
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -315,27 +325,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgBetaAdminReportSettingSharePoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetaadminreportsettingsharepoint)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetaadminreportsettingsharepoint)
