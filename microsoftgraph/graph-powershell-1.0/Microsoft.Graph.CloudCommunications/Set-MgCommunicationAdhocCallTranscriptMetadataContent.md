@@ -478,7 +478,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationadhoccalltranscriptmetadatacontent)
+- [Set-MgCommunicationAdhocCallTranscriptMetadataContent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationadhoccalltranscriptmetadatacontent)
 
 
 
