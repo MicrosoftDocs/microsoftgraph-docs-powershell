@@ -15,6 +15,9 @@ title: Get-MgBetaSite
 
 Retrieve properties and relationships for a site resource.\rA site resource represents a team site in SharePoint.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

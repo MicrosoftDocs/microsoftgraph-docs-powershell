@@ -15,6 +15,9 @@ title: Remove-MgBetaSitePageAsSitePageWebPart
 
 Delete a webPart object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Remove-MgSitePageAsSitePageWebPart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

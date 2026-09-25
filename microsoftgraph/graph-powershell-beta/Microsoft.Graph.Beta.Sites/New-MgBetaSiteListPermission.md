@@ -15,6 +15,9 @@ title: New-MgBetaSiteListPermission
 
 Create a new permission object on a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteListPermission](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
