@@ -15,6 +15,9 @@ title: Invoke-MgBetaUnarchiveServiceAnnouncementMessage
 
 Unarchive a list of serviceUpdateMessages for the signed in user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UnarchiveExpanded (Default)

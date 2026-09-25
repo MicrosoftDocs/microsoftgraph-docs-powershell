@@ -15,6 +15,9 @@ title: Get-MgBetaServiceAnnouncementMessageAttachmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessageAttachmentCount](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
