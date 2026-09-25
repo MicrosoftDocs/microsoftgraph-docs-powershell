@@ -86,8 +86,9 @@ Update the navigation property exchangeConnectors in deviceManagement
 | Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -105,6 +106,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId $deviceManagementExchangeConnectorId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementExchangeConnector Cmdlet.
+
 
 ## PARAMETERS
 

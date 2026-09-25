@@ -82,8 +82,9 @@ Update the navigation property roleAssignments in deviceManagement
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementRoleDefinitionRoleAssignment -RoleDefinitionId $roleDefinitionId -RoleAssignmentId $roleAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementRoleDefinitionRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 

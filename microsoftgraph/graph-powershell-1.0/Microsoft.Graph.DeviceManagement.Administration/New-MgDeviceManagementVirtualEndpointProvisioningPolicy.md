@@ -66,8 +66,9 @@ Create a new cloudPcProvisioningPolicy object.
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -97,6 +98,10 @@ $params = @{
 }
 
 New-MgDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+
 
 ## PARAMETERS
 
