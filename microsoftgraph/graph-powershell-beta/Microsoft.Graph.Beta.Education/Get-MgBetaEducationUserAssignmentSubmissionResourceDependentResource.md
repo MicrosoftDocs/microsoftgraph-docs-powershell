@@ -15,6 +15,9 @@ title: Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResource
 
 A collection of submission resources that depend on the parent educationSubmissionResource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentSubmissionResourceDependentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionResourceDependentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
