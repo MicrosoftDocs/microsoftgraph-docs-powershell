@@ -15,6 +15,9 @@ title: Remove-MgDirectoryRemoteTenantGroup
 
 Delete navigation property remoteTenantGroups for directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryRemoteTenantGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRemoteTenantGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

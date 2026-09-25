@@ -15,6 +15,9 @@ title: Get-MgDirectoryRecoverySnapshotRecoveryJob
 
 Collection of recovery jobs created for this snapshot.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRecoverySnapshotRecoveryJob](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRecoverySnapshotRecoveryJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

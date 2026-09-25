@@ -15,6 +15,9 @@ title: Update-MgDirectoryRoleByRoleTemplateId
 
 Update entity in directoryRoles by roleTemplateId
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRoleByRoleTemplateId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

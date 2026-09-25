@@ -15,6 +15,9 @@ title: Get-MgDirectoryRoleTemplateCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

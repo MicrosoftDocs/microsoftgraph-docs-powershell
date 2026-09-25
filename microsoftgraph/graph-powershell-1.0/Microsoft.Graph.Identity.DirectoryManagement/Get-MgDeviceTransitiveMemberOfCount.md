@@ -15,6 +15,9 @@ title: Get-MgDeviceTransitiveMemberOfCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceTransitiveMemberOfCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
