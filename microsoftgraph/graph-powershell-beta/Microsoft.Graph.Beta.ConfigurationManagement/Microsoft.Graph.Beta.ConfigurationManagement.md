@@ -47,3 +47,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaAdminConfigurationManagementConfigurationMonitor](Update-MgBetaAdminConfigurationManagementConfigurationMonitor.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
