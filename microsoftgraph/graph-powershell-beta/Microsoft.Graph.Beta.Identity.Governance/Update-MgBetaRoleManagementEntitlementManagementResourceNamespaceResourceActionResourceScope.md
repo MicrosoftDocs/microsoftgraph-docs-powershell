@@ -171,7 +171,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -402,7 +402,7 @@ HelpMessage: ''
 
 ### -Scope
 
-.
+
 
 ```yaml
 Type: System.String
@@ -429,7 +429,7 @@ HelpMessage: ''
 
 ### -Type
 
-.
+
 
 ```yaml
 Type: System.String
