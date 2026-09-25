@@ -16,6 +16,9 @@ title: Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 List of attendance records of an attendance report.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)
