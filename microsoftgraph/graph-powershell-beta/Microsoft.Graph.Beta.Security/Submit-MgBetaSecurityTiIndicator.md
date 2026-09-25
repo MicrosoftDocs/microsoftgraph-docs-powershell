@@ -605,8 +605,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator)
-- [](https://learn.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-beta)
+- [Submit-MgBetaSecurityTiIndicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-beta)
 
 
 

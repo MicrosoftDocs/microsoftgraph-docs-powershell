@@ -508,8 +508,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/disable-mgbetasecuritycaseediscoverycaselegalholdpolicy)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-disablepolicy?view=graph-rest-beta)
+- [Disable-MgBetaSecurityCaseEdiscoveryCaseLegalHoldPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/disable-mgbetasecuritycaseediscoverycaselegalholdpolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-disablepolicy?view=graph-rest-beta)
 
 
 

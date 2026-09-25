@@ -1066,8 +1066,8 @@ This property will be removed from this resource on 2026-10-01.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityruledetectionrule)
-- [](https://learn.microsoft.com/graph/api/security-rulesroot-post-detectionrules?view=graph-rest-beta)
+- [New-MgBetaSecurityRuleDetectionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityruledetectionrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-rulesroot-post-detectionrules?view=graph-rest-beta)
 
 
 

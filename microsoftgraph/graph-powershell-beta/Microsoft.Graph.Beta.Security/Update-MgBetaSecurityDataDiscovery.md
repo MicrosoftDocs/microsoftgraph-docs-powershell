@@ -443,7 +443,7 @@ The possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureV
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery)
+- [Update-MgBetaSecurityDataDiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatadiscovery)
 
 
 
