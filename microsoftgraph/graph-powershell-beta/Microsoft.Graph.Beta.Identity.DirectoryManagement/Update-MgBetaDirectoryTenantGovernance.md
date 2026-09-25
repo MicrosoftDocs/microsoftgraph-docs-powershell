@@ -140,7 +140,7 @@ HelpMessage: ''
 
 ### -GovernanceInvitations
 
-.
+
 To construct, see NOTES section for GOVERNANCEINVITATIONS properties and create a hash table.
 
 ```yaml
@@ -162,7 +162,7 @@ HelpMessage: ''
 
 ### -GovernancePolicyTemplates
 
-.
+
 To construct, see NOTES section for GOVERNANCEPOLICYTEMPLATES properties and create a hash table.
 
 ```yaml
@@ -184,7 +184,7 @@ HelpMessage: ''
 
 ### -GovernanceRelationships
 
-.
+
 To construct, see NOTES section for GOVERNANCERELATIONSHIPS properties and create a hash table.
 
 ```yaml
@@ -206,7 +206,7 @@ HelpMessage: ''
 
 ### -GovernanceRequests
 
-.
+
 To construct, see NOTES section for GOVERNANCEREQUESTS properties and create a hash table.
 
 ```yaml
@@ -376,7 +376,7 @@ HelpMessage: ''
 
 ### -RelatedTenants
 
-.
+
 To construct, see NOTES section for RELATEDTENANTS properties and create a hash table.
 
 ```yaml

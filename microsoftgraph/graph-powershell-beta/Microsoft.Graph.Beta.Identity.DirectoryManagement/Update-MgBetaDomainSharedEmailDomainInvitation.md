@@ -197,7 +197,7 @@ HelpMessage: ''
 
 ### -ExpiryTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -343,7 +343,7 @@ HelpMessage: ''
 
 ### -InvitationDomain
 
-.
+
 
 ```yaml
 Type: System.String
@@ -370,7 +370,7 @@ HelpMessage: ''
 
 ### -InvitationStatus
 
-.
+
 
 ```yaml
 Type: System.String

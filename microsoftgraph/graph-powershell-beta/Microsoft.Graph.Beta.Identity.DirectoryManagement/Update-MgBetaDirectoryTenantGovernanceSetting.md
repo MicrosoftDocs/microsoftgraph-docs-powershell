@@ -133,7 +133,7 @@ HelpMessage: ''
 
 ### -CanReceiveInvitations
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +261,7 @@ HelpMessage: ''
 
 ### -IsRelatedTenantsEnabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
