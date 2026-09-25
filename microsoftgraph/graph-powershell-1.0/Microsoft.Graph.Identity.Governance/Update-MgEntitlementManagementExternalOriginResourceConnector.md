@@ -688,7 +688,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphExternalOriginResourceConnector>: externalOriginResourceConnector
+BODYPARAMETER `<IMicrosoftGraphExternalOriginResourceConnector>`: externalOriginResourceConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -703,11 +703,11 @@ Read-only.
   [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
   [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
 
-CONNECTIONINFO <IMicrosoftGraphConnectionInfo>: connectionInfo
+CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -791,3 +791,25 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementexternaloriginresourceconnector)
 - [](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
