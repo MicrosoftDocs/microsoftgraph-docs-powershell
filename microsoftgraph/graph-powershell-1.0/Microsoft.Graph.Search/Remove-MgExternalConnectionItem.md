@@ -15,6 +15,9 @@ title: Remove-MgExternalConnectionItem
 
 Delete an externalItem object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
