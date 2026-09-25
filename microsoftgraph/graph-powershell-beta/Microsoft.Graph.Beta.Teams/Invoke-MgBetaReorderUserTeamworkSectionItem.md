@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetareorderuserteamworksectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReorderUserTeamworkSectionItem
 ---
@@ -68,13 +68,15 @@ This cmdlet has the following aliases,
 Reorder the items in a user-defined section in a user's teamwork.
 The section must have sortType set to userDefinedCustomOrder, and the itemsOrder collection must contain every item ID returned by List items, exactly once.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkSection.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -107,7 +109,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -129,7 +131,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -285,7 +287,7 @@ HelpMessage: ''
 
 ### -ItemsOrder
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -505,15 +507,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths3Nu8W4UsersUserIdTeamworkSectionsTeamworksectionIdItemsMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths3Nu8W4UsersUserIdTeamworkSectionsTeamworksectionIdItemsMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ItemsOrder <String[]>]: 
 
-BODYPARAMETER `<IPaths3Nu8W4UsersUserIdTeamworkSectionsTeamworksectionIdItemsMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3Nu8W4UsersUserIdTeamworkSectionsTeamworksectionIdItemsMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ItemsOrder <String[]>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -570,28 +572,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaReorderUserTeamworkSectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetareorderuserteamworksectionitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworksectionitem-reorder?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetareorderuserteamworksectionitem)
+- [](https://learn.microsoft.com/graph/api/teamworksectionitem-reorder?view=graph-rest-beta)

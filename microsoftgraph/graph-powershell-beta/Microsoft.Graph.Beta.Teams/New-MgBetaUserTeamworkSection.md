@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworksection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserTeamworkSection
 ---
@@ -71,13 +71,15 @@ This cmdlet has the following aliases,
 
 Create a new section in a user's teamwork.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkSection.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -723,7 +725,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkSection>`: teamworkSection
+BODYPARAMETER <IMicrosoftGraphTeamworkSection>: teamworkSection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -767,7 +769,7 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
   [SectionType <String>]: sectionType
   [SortType <String>]: sectionSortType
 
-DISPLAYICON `<IMicrosoftGraphSectionDisplayIcon>`: sectionDisplayIcon
+DISPLAYICON <IMicrosoftGraphSectionDisplayIcon>: sectionDisplayIcon
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentUrl <String>]: The URL to a custom icon image.
 Applicable when iconType is custom.
@@ -776,7 +778,7 @@ Applicable when iconType is custom.
 Use an emoji character such as 👍 for an emoji icon, or custom for a custom image icon.
   [SkinTone <String>]: sectionIconSkinTone
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -846,28 +848,5 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
 
 ## RELATED LINKS
 
-- [New-MgBetaUserTeamworkSection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworksection)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-post-sections?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserteamworksection)
+- [](https://learn.microsoft.com/graph/api/userteamwork-post-sections?view=graph-rest-beta)

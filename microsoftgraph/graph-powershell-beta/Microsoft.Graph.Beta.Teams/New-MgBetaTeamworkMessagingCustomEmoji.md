@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkmessagingcustomemoji
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaTeamworkMessagingCustomEmoji
 ---
@@ -46,6 +46,16 @@ This cmdlet has the following aliases,
 
 Create a new custom emoji in the teamwork messaging of the organization, which adds the custom emoji to Teams for the tenant.
 The emoji image is provided as base64-encoded content bytes.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -424,7 +434,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkCustomEmoji>`: teamworkCustomEmoji
+BODYPARAMETER <IMicrosoftGraphTeamworkCustomEmoji>: teamworkCustomEmoji
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentBytes <String>]: The base64-encoded image content of the emoji.
 Supported formats include PNG and GIF.
@@ -449,28 +459,5 @@ Must be unique and must not conflict with existing emoji names.
 
 ## RELATED LINKS
 
-- [New-MgBetaTeamworkMessagingCustomEmoji](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkmessagingcustomemoji)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworkmessaging-post-customemojis?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkmessagingcustomemoji)
+- [](https://learn.microsoft.com/graph/api/teamworkmessaging-post-customemojis?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetauserteamworksectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgBetaUserTeamworkSectionItem
 ---
@@ -72,13 +72,15 @@ Each item can belong to only one section at a time.
 This action removes the item from its current section and adds it to the target section.
 Use this action instead of add when the item is already in a user-defined section.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | TeamworkSection.ReadWrite,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -111,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -358,7 +360,7 @@ HelpMessage: ''
 
 ### -TargetSectionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -520,11 +522,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths86Lqa1UsersUserIdTeamworkSectionsTeamworksectionIdItemsTeamworksectionitemIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths86Lqa1UsersUserIdTeamworkSectionsTeamworksectionIdItemsTeamworksectionitemIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TargetSectionId <String>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -581,28 +583,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Move-MgBetaUserTeamworkSectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetauserteamworksectionitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/teamworksectionitem-move?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetauserteamworksectionitem)
+- [](https://learn.microsoft.com/graph/api/teamworksectionitem-move?view=graph-rest-beta)
