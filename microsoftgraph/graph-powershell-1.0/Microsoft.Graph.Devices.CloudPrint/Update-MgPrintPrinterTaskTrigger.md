@@ -15,6 +15,9 @@ title: Update-MgPrintPrinterTaskTrigger
 
 Update the navigation property taskTriggers in print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
