@@ -20,6 +20,9 @@ This API enables scenarios and use cases such as SOAR integration, playbooks, an
 For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRemediateSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Security/Invoke-MgRemediateSecurityCollaborationAnalyzedEmail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemediateExpanded (Default)

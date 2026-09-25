@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityAuditLogQueryRecordCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLogQueryRecordCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLogQueryRecordCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

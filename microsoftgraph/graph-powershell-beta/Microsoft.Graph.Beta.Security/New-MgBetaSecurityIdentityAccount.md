@@ -15,6 +15,9 @@ title: New-MgBetaSecurityIdentityAccount
 
 Create new navigation property to identityAccounts for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIdentityAccount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
