@@ -544,7 +544,7 @@ STATE `<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>`: importedWi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementimportedwindowsautopilotdeviceidentity)
+- [New-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementimportedwindowsautopilotdeviceidentity)
 
 
 

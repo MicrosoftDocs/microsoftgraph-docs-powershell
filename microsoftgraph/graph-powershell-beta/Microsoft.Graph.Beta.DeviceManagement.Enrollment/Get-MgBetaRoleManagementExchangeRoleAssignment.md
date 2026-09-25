@@ -570,9 +570,9 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroleassignment)
-- [](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta)
+- [Get-MgBetaRoleManagementExchangeRoleAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroleassignment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta)
 
 
 

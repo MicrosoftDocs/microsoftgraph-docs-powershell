@@ -548,7 +548,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/import-mgbetarolemanagementexchangeresourcenamespaceresourceaction)
+- [Import-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/import-mgbetarolemanagementexchangeresourcenamespaceresourceaction)
 
 
 
