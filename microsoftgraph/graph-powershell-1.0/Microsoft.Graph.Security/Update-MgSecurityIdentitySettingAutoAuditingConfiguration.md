@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysettingautoauditingconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentitySettingAutoAuditingConfiguration
 ---
@@ -14,6 +14,9 @@ title: Update-MgSecurityIdentitySettingAutoAuditingConfiguration
 ## SYNOPSIS
 
 Update the properties of an autoAuditingConfiguration object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySettingAutoAuditingConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 

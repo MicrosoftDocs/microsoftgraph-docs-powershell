@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgSecurityIdentitySensorCandidate
 ---
@@ -14,6 +14,9 @@ title: Initialize-MgSecurityIdentitySensorCandidate
 ## SYNOPSIS
 
 Activate Microsoft Defender for Identity sensors.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/Initialize-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
 
 ## SYNTAX
 

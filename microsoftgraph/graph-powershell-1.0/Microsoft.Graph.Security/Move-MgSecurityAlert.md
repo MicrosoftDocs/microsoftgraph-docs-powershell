@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/move-mgsecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgSecurityAlert
 ---
@@ -14,6 +14,9 @@ title: Move-MgSecurityAlert
 ## SYNOPSIS
 
 Move one or more alert resources to a new or existing incident.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Move-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Move-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 

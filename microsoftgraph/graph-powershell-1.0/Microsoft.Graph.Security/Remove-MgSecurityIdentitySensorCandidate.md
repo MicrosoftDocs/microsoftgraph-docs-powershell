@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSecurityIdentitySensorCandidate
 ---
@@ -14,6 +14,9 @@ title: Remove-MgSecurityIdentitySensorCandidate
 ## SYNOPSIS
 
 Delete navigation property sensorCandidates for security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
 
 ## SYNTAX
 

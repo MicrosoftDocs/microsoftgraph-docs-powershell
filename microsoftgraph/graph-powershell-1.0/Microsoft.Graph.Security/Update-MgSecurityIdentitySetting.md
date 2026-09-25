@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentitySetting
 ---
@@ -14,6 +14,9 @@ title: Update-MgSecurityIdentitySetting
 ## SYNOPSIS
 
 Update the navigation property settings in security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
