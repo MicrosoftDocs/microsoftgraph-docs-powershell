@@ -632,7 +632,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphVirtualEvent>: virtualEvent
+BODYPARAMETER `<IMicrosoftGraphVirtualEvent>`: virtualEvent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -857,7 +857,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [Status <String>]: virtualEventStatus
 
-CREATEDBY <IMicrosoftGraphCommunicationsIdentitySet>: communicationsIdentitySet
+CREATEDBY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -877,12 +877,12 @@ For example, in the access reviews decisions API, this property might record the
   [OnPremises <IMicrosoftGraphIdentity>]: identity
   [Phone <IMicrosoftGraphIdentity>]: identity
 
-DESCRIPTION <IMicrosoftGraphItemBody>: itemBody
+DESCRIPTION `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
 
-ENDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
+ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1288,11 +1288,11 @@ Only appears when the registrant is registered in Microsoft Entra ID.
   [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [VideoOnDemandWebUrl <String>]: The URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
 
-SETTINGS <IMicrosoftGraphVirtualEventSettings>: virtualEventSettings
+SETTINGS `<IMicrosoftGraphVirtualEventSettings>`: virtualEventSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAttendeeEmailNotificationEnabled <Boolean?>]: Indicates whether virtual event attendees receive email notifications.
 
-STARTDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
+STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
@@ -1303,3 +1303,25 @@ See below for possible values.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
