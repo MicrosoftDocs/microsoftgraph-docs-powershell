@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementTermAndCondition
 
 The terms and conditions associated with device management of the company.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
