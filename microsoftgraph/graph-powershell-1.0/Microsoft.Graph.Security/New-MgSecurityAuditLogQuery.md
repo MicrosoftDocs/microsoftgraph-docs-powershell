@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityauditlogquery
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityAuditLogQuery
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityAuditLogQuery
 ## SYNOPSIS
 
 Create a new auditLogQuery object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAuditLogQuery](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAuditLogQuery?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,13 +49,15 @@ This cmdlet has the following aliases,
 
 Create a new auditLogQuery object.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -644,7 +643,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAuditLogQuery>`: Represents a query against the unified audit log.
+BODYPARAMETER <IMicrosoftGraphSecurityAuditLogQuery>: Represents a query against the unified audit log.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -701,28 +700,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgSecurityAuditLogQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityauditlogquery)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityauditlogquery)
+- [](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)

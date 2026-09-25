@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensordeploymentaccesskey
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIdentitySensorDeploymentAccessKey
 ---
@@ -14,9 +14,6 @@ title: New-MgSecurityIdentitySensorDeploymentAccessKey
 ## SYNOPSIS
 
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentitySensorDeploymentAccessKey](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentitySensorDeploymentAccessKey?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,26 +35,13 @@ This cmdlet has the following aliases,
 
 Generate a new deployment access key that can be used to install a sensor associated with the workspace.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | SecurityIdentitiesSensors.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
 New-MgSecurityIdentitySensorDeploymentAccessKey
-
-```
-This example shows how to use the New-MgSecurityIdentitySensorDeploymentAccessKey Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,27 +281,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [New-MgSecurityIdentitySensorDeploymentAccessKey](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensordeploymentaccesskey)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensordeploymentaccesskey)
+- [](https://learn.microsoft.com/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-1.0)

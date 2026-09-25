@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycollaboration
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSecurityCollaboration
 ---
@@ -14,9 +14,6 @@ title: Remove-MgSecurityCollaboration
 ## SYNOPSIS
 
 Delete navigation property collaboration for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCollaboration](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCollaboration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property collaboration for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -318,27 +325,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Remove-MgSecurityCollaboration](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycollaboration)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycollaboration)

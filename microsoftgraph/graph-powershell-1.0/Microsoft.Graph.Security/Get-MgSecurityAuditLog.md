@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlog
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityAuditLog
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityAuditLog
 ## SYNOPSIS
 
 The entry point for the audit log query API.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAuditLog](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAuditLog?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The entry point for the audit log query API.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -276,27 +283,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgSecurityAuditLog](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlog)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlog)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlogqueryrecordcount
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityAuditLogQueryRecordCount
 ---
@@ -14,9 +14,6 @@ title: Get-MgSecurityAuditLogQueryRecordCount
 ## SYNOPSIS
 
 Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAuditLogQueryRecordCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAuditLogQueryRecordCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,13 +44,15 @@ This cmdlet has the following aliases,
 
 Get the number of the resource
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -341,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
   [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
@@ -420,27 +419,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgSecurityAuditLogQueryRecordCount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlogqueryrecordcount)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlogqueryrecordcount)
