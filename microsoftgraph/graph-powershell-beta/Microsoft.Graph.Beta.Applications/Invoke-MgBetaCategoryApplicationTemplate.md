@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetacategoryapplicationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaCategoryApplicationTemplate
 ---
@@ -34,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke function categories
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -335,27 +345,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaCategoryApplicationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetacategoryapplicationtemplate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetacategoryapplicationtemplate)
