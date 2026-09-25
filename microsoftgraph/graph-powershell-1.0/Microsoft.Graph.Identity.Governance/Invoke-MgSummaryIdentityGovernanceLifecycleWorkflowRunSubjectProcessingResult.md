@@ -59,16 +59,6 @@ Because the number of subject processing results returned by the list API can be
 | Delegated (personal Microsoft account) | Not supported |
 | Application | LifecycleWorkflows-Reports.Read.All, LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -459,6 +449,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowrunsubjectprocessingresult)
+
 
 
 

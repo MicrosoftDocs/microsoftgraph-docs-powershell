@@ -69,16 +69,6 @@ Get resourceActions from roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -649,6 +639,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryresourcenamespaceresourceaction)
+
 
 
 
