@@ -70,16 +70,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to windows for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -636,6 +626,7 @@ Refers to the user's Windows device that modified the object at the specified da
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindows)
+
 
 
 
