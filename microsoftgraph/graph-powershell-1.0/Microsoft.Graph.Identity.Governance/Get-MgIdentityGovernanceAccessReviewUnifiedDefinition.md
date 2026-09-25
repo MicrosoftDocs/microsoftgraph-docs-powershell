@@ -610,8 +610,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunifieddefinition)
-- [](https://learn.microsoft.com/graph/api/unifiedroot-list-definitions?view=graph-rest-1.0)
+- [Get-MgIdentityGovernanceAccessReviewUnifiedDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewunifieddefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroot-list-definitions?view=graph-rest-1.0)
 
 
 

@@ -565,8 +565,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernancelifecycleworkflowprocessing)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-cancelprocessing?view=graph-rest-1.0)
+- [Stop-MgIdentityGovernanceLifecycleWorkflowProcessing](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernancelifecycleworkflowprocessing)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-cancelprocessing?view=graph-rest-1.0)
 
 
 

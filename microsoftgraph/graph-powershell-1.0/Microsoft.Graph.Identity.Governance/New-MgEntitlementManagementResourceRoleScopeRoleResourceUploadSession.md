@@ -788,7 +788,7 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperoleresourceuploadsession)
+- [New-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescoperoleresourceuploadsession)
 
 
 

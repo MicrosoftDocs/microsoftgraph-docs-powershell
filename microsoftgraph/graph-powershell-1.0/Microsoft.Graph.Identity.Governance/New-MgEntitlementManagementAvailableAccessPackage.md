@@ -675,7 +675,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementavailableaccesspackage)
+- [New-MgEntitlementManagementAvailableAccessPackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementavailableaccesspackage)
 
 
 

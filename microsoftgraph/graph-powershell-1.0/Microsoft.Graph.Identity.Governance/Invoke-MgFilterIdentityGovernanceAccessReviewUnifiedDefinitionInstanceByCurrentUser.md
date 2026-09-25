@@ -578,8 +578,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewunifieddefinitioninstancebycurrentuser)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-1.0)
+- [Invoke-MgFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewunifieddefinitioninstancebycurrentuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

@@ -12462,8 +12462,8 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalog)
-- [](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-1.0)
+- [Update-MgEntitlementManagementCatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalog)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-1.0)
 
 
 

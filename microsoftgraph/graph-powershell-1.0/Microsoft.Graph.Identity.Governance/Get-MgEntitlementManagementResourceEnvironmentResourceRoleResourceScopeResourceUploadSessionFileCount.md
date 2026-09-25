@@ -500,7 +500,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourceenvironmentresourceroleresourcescoperesourceuploadsessionfilecount)
+- [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSessionFileCount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourceenvironmentresourceroleresourcescoperesourceuploadsessionfilecount)
 
 
 

@@ -444,8 +444,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewunifiedinstance)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-1.0)
+- [Stop-MgIdentityGovernanceAccessReviewUnifiedInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewunifiedinstance)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-stop?view=graph-rest-1.0)
 
 
 

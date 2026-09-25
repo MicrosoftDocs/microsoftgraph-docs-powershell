@@ -577,8 +577,8 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgpreviewidentitygovernancelifecycleworkflowdeleteditemworkflow)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-1.0)
+- [Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgpreviewidentitygovernancelifecycleworkflowdeleteditemworkflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-1.0)
 
 
 

@@ -1336,7 +1336,7 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancecatalogresourcescope)
+- [New-MgIdentityGovernanceCatalogResourceScope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancecatalogresourcescope)
 
 
 

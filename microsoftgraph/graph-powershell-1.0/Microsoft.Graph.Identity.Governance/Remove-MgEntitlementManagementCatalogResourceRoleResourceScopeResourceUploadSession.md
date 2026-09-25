@@ -595,7 +595,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogresourceroleresourcescoperesourceuploadsession)
+- [Remove-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalogresourceroleresourcescoperesourceuploadsession)
 
 
 

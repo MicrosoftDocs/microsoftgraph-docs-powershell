@@ -501,7 +501,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancecatalogresourceroleresourceexternaloriginresourceconnector)
+- [Get-MgIdentityGovernanceCatalogResourceRoleResourceExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancecatalogresourceroleresourceexternaloriginresourceconnector)
 
 
 

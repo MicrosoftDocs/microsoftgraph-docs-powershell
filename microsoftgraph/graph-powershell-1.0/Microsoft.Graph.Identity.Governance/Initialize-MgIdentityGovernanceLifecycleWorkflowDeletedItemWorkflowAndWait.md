@@ -547,8 +547,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflowdeleteditemworkflowandwait)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activateandwait?view=graph-rest-1.0)
+- [Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAndWait](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflowdeleteditemworkflowandwait)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activateandwait?view=graph-rest-1.0)
 
 
 

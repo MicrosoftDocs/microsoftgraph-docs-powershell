@@ -598,7 +598,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgentitlementmanagementresourcerequestresourcescoperesourceroleresourceuploadsessionfilecontent)
+- [Set-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSessionFileContent](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgentitlementmanagementresourcerequestresourcescoperesourceroleresourceuploadsessionfilecontent)
 
 
 

@@ -790,8 +790,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementexternaloriginresourceconnector)
-- [](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-update?view=graph-rest-1.0)
+- [Update-MgEntitlementManagementExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementexternaloriginresourceconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-update?view=graph-rest-1.0)
 
 
 
