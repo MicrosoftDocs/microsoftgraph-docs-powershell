@@ -19,6 +19,9 @@ Read-only.
 Nullable.
 Supports $filter, $count, $select, $expand, $top, and $skip.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsorOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsorOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
