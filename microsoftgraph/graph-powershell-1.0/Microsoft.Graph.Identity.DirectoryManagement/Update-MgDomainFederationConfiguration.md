@@ -914,7 +914,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphInternalDomainFederation>: internalDomainFederation
+BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IssuerUri <String>]: Issuer URI of the federation server.
   [MetadataExchangeUri <String>]: URI of the metadata exchange endpoint used for authentication from rich client applications.
@@ -950,7 +950,7 @@ For a list of statuses, see certificateUpdateResult status.
 Read-only.
   [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -990,7 +990,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-SIGNINGCERTIFICATEUPDATESTATUS <IMicrosoftGraphSigningCertificateUpdateStatus>: signingCertificateUpdateStatus
+SIGNINGCERTIFICATEUPDATESTATUS `<IMicrosoftGraphSigningCertificateUpdateStatus>`: signingCertificateUpdateStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CertificateUpdateResult <String>]: Status of the last certificate update.
 Read-only.
@@ -1003,3 +1003,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration)
 - [](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
