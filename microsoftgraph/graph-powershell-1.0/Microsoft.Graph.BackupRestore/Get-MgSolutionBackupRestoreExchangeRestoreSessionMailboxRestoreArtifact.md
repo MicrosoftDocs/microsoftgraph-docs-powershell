@@ -586,8 +586,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangerestoresessionmailboxrestoreartifact)
-- [](https://learn.microsoft.com/graph/api/exchangerestoresession-list-mailboxrestoreartifacts?view=graph-rest-1.0)
+- [Get-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/get-mgsolutionbackuprestoreexchangerestoresessionmailboxrestoreartifact)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/exchangerestoresession-list-mailboxrestoreartifacts?view=graph-rest-1.0)
 
 
 
