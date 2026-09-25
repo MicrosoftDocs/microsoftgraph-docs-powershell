@@ -15,6 +15,9 @@ title: Get-MgTeamScheduleTimeOffRequest
 
 Retrieve the properties and relationships of a timeoffrequest object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

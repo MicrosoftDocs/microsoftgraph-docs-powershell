@@ -16,6 +16,9 @@ title: Send-MgGroupTeamActivityNotification
 Send an activity feed notification in the scope of a team.
 For more information about sending notifications and the requirements for doing so, see\rsending Teams activity notifications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaGroupTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaGroupTeamActivityNotification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)

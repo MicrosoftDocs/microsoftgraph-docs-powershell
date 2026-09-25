@@ -15,6 +15,9 @@ title: New-MgUserChatTab
 
 Create new navigation property to tabs for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

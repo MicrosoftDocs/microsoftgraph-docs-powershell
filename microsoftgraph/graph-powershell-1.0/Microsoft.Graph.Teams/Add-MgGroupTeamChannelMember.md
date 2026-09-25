@@ -16,6 +16,9 @@ title: Add-MgGroupTeamChannelMember
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaGroupTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

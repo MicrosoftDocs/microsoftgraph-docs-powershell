@@ -15,6 +15,9 @@ title: Get-MgChatMember
 
 Retrieve a conversationMember from a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

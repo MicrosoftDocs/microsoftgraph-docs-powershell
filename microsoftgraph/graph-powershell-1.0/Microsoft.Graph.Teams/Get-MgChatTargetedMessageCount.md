@@ -15,6 +15,9 @@ title: Get-MgChatTargetedMessageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatTargetedMessageCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTargetedMessageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

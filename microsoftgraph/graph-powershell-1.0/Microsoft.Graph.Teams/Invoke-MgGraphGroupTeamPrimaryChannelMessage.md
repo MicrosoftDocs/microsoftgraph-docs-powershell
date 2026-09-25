@@ -15,6 +15,9 @@ title: Invoke-MgGraphGroupTeamPrimaryChannelMessage
 
 Reply with quote to a single chat message or multiple chat messages in a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaGraphGroupTeamPrimaryChannelMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)
