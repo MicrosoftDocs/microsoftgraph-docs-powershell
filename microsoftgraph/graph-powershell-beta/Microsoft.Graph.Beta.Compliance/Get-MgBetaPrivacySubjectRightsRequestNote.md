@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 List of notes associated with the request.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
 Get-MgBetaPrivacySubjectRightsRequestNote -SubjectRightsRequestId $subjectRightsRequestId
+
+```
+This example shows how to use the Get-MgBetaPrivacySubjectRightsRequestNote Cmdlet.
+
 
 ## PARAMETERS
 
