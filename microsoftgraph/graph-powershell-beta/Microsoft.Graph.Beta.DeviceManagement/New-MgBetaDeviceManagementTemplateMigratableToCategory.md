@@ -760,7 +760,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplatemigratabletocategory)
+- [New-MgBetaDeviceManagementTemplateMigratableToCategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplatemigratabletocategory)
 
 
 

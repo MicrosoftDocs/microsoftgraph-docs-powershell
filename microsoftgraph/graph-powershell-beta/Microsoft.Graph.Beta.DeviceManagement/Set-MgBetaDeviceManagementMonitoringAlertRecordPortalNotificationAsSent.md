@@ -479,8 +479,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
-- [](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-setportalnotificationassent?view=graph-rest-beta)
+- [Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/set-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/devicemanagement-alertrecord-setportalnotificationassent?view=graph-rest-beta)
 
 
 
