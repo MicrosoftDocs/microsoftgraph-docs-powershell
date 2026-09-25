@@ -366,8 +366,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglicenseuser)
-- [](https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0)
+- [Invoke-MgLicenseUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglicenseuser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0)
 
 
 

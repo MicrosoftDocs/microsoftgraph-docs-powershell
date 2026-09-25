@@ -537,8 +537,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserpassword)
-- [](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-1.0)
+- [Update-MgUserPassword](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguserpassword)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-changepassword?view=graph-rest-1.0)
 
 
 
