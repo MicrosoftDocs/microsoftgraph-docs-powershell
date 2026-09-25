@@ -480,7 +480,7 @@ ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>: A set of string key and s
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementTroubleshootingEvent>: Event representing an general failure.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementTroubleshootingEvent>`: Event representing an general failure.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -502,7 +502,7 @@ It is an Optional field
 Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
       [Text <String>]: 
 
-TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
+TROUBLESHOOTINGERRORDETAILS `<IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>`: Object containing detailed information about the error and its remediation.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Context <String>]: 
   [Failure <String>]: 
@@ -517,3 +517,25 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtroubleshootingevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

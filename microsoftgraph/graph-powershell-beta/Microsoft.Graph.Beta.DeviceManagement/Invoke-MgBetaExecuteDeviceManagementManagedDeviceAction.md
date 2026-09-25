@@ -577,7 +577,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActionName <ManagedDeviceRemoteAction?>]: managedDeviceRemoteAction
   [CarrierUrl <String>]: 
@@ -595,3 +595,25 @@ BODYPARAMETER <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecutea
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementmanageddeviceaction)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
