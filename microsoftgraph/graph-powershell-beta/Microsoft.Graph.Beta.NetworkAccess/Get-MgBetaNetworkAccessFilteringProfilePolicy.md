@@ -632,10 +632,10 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofilepolicy)
-- [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-list-policy?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-list?view=graph-rest-beta)
+- [Get-MgBetaNetworkAccessFilteringProfilePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessfilteringprofilepolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-threatintelligencepolicylink-list-policy?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-filteringpolicylink-list?view=graph-rest-beta)
 
 
 
