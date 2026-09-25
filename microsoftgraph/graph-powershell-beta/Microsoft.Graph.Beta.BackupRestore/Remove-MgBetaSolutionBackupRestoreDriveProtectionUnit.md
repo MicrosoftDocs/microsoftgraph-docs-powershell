@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreDriveProtectionUnit
 
 Delete navigation property driveProtectionUnits for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreDriveProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreDriveProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
