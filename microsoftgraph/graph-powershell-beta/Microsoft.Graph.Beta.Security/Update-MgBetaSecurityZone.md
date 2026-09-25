@@ -651,7 +651,7 @@ For example, $filter=aggregations/any(a: a/kind eq 'azureSubscription').
   [Count <Int32?>]: Number of environments of this type.
   [Kind <String>]: Environment type.
 
-BODYPARAMETER <IMicrosoftGraphSecurityZone>: zone
+BODYPARAMETER `<IMicrosoftGraphSecurityZone>`: zone
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -682,7 +682,7 @@ Read-only.
     [Kind <String>]: environmentKind
   [Modified <IMicrosoftGraphSecurityAuditInfo>]: auditInfo
 
-CREATED <IMicrosoftGraphSecurityAuditInfo>: auditInfo
+CREATED `<IMicrosoftGraphSecurityAuditInfo>`: auditInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [By <String>]: Display name of the user or application that performed the action.
   [DateTime <DateTime?>]: Timestamp of the action.
@@ -695,7 +695,7 @@ Supports $expand.
 Read-only.
   [Kind <String>]: environmentKind
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -813,7 +813,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   [WorkspaceId <String>]: The unique identifier of workspace
   [ZoneId <String>]: The unique identifier of zone
 
-MODIFIED <IMicrosoftGraphSecurityAuditInfo>: auditInfo
+MODIFIED `<IMicrosoftGraphSecurityAuditInfo>`: auditInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [By <String>]: Display name of the user or application that performed the action.
   [DateTime <DateTime?>]: Timestamp of the action.
@@ -825,3 +825,25 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityzone)
 - [](https://learn.microsoft.com/graph/api/security-zone-update?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

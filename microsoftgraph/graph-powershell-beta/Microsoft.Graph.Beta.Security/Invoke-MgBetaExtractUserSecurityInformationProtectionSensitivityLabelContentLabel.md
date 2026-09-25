@@ -503,7 +503,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentInfo <IMicrosoftGraphSecurityContentInfo>]: contentInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -515,7 +515,7 @@ The possible values are: file, email.
       [Value <String>]: Value for this key-value pair.
     [State <String>]: contentState
 
-CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
+CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentFormat <String>]: The format of the content to be labeled.
 The possible values are: file, email.
@@ -525,7 +525,7 @@ The possible values are: file, email.
     [Value <String>]: Value for this key-value pair.
   [State <String>]: contentState
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [ActivityId <String>]: The unique identifier of activity
   [AggregatedEnvironmentKind <String>]: The unique identifier of aggregatedEnvironment
   [AlertId <String>]: The unique identifier of alert
@@ -648,3 +648,25 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaextractusersecurityinformationprotectionsensitivitylabelcontentlabel)
 - [](https://learn.microsoft.com/graph/api/security-sensitivitylabel-extractcontentlabel?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
