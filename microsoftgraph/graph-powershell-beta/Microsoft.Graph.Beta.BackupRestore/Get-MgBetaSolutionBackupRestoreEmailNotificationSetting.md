@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreemailnotificationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestoreEmailNotificationSetting
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaSolutionBackupRestoreEmailNotificationSetting
 ## SYNOPSIS
 
 Read the properties and relationships of an emailNotificationsSetting object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreEmailNotificationSetting](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreEmailNotificationSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
