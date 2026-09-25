@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationmonitor
 Locale: en-US
 Module Name: Microsoft.Graph.ConfigurationManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgAdminConfigurationManagementConfigurationMonitor
 ---
@@ -17,9 +17,6 @@ Create a new configurationMonitor object that runs periodically in the backgroun
 You can create up to 30 configurationMonitor objects per tenant.
 Each monitor runs at a fixed interval of 6 hours and cannot be configured to run at any other frequency.
 An administrator can monitor up to 800 configuration resources per day per tenant across all monitors.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/New-MgBetaAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -57,18 +54,9 @@ You can create up to 30 configurationMonitor objects per tenant.
 Each monitor runs at a fixed interval of 6 hours and cannot be configured to run at any other frequency.
 An administrator can monitor up to 800 configuration resources per day per tenant across all monitors.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ConfigurationMonitoring.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ConfigurationMonitoring.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.ConfigurationManagement
 
@@ -118,10 +106,6 @@ $params = @{
 }
 
 New-MgAdminConfigurationManagementConfigurationMonitor -BodyParameter $params
-
-```
-This example shows how to use the New-MgAdminConfigurationManagementConfigurationMonitor Cmdlet.
-
 
 ## PARAMETERS
 
@@ -606,7 +590,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BASELINE `<IMicrosoftGraphConfigurationBaseline>`: configurationBaseline
+BASELINE <IMicrosoftGraphConfigurationBaseline>: configurationBaseline
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -623,7 +607,7 @@ At least one property of one resource must be present in the baseline.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [ResourceType <String>]: Name of the resource type.
 
-BODYPARAMETER `<IMicrosoftGraphConfigurationMonitor>`: configurationMonitor
+BODYPARAMETER <IMicrosoftGraphConfigurationMonitor>: configurationMonitor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -662,7 +646,7 @@ Supports $filter (eq, ne, startsWith) and $orderby.
   [Parameters <IMicrosoftGraphOpenComplexDictionaryType>]: openComplexDictionaryType
   [Status <MonitorStatus?>]: monitorStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -673,7 +657,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -687,27 +671,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [New-MgAdminConfigurationManagementConfigurationMonitor](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationmonitor)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationmanagement-post-configurationmonitors?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.configurationmanagement/new-mgadminconfigurationmanagementconfigurationmonitor)
+- [](https://learn.microsoft.com/graph/api/configurationmanagement-post-configurationmonitors?view=graph-rest-1.0)
