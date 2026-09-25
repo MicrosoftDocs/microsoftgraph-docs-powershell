@@ -700,7 +700,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrecoverysnapshot)
+- [Update-MgDirectoryRecoverySnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrecoverysnapshot)
 
 
 
