@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresource
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEntitlementManagementResourceEnvironmentResource
 ---
@@ -102,6 +102,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action refresh
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -915,7 +925,7 @@ If the destination is accessPackageUserDirectoryAttributeStore, then a user prop
   [Source <IMicrosoftGraphAccessPackageResourceAttributeSource>]: accessPackageResourceAttributeSource
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+BODYPARAMETER <IMicrosoftGraphAccessPackageResource>: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1029,7 +1039,7 @@ Supports $filter (eq).
       [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
     [Status <String>]: customDataProvidedResourceUploadStatus
 
-ENVIRONMENT `<IMicrosoftGraphAccessPackageResourceEnvironment>`: accessPackageResourceEnvironment
+ENVIRONMENT <IMicrosoftGraphAccessPackageResourceEnvironment>: accessPackageResourceEnvironment
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1142,7 +1152,7 @@ Supports $filter (eq).
         [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
       [Status <String>]: customDataProvidedResourceUploadStatus
 
-EXTERNALORIGINRESOURCECONNECTOR `<IMicrosoftGraphExternalOriginResourceConnector>`: externalOriginResourceConnector
+EXTERNALORIGINRESOURCECONNECTOR <IMicrosoftGraphExternalOriginResourceConnector>: externalOriginResourceConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1157,7 +1167,7 @@ Read-only.
   [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
   [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1501,27 +1511,4 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [Update-MgEntitlementManagementResourceEnvironmentResource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresource)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourceenvironmentresource)
