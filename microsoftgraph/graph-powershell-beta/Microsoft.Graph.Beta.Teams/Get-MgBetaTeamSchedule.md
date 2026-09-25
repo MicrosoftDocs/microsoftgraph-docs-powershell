@@ -52,6 +52,14 @@ During schedule provisioning, clients can use the GET method to get the schedule
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Group.ReadWrite.All, Schedule.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.Read.All, Schedule.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
