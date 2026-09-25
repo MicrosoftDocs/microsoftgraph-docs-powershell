@@ -642,7 +642,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit Actor.
+ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationDisplayName <String>]: Name of the Application.
   [ApplicationId <String>]: AAD Application Id.
@@ -653,7 +653,7 @@ ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit A
   [UserPermissions <String[]>]: List of user permissions when the audit was performed.
   [UserPrincipalName <String>]: User Principal Name (UPN).
 
-BODYPARAMETER <IMicrosoftGraphAuditEvent>: A class containing the properties for Audit Event.
+BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -698,3 +698,25 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementauditevent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
