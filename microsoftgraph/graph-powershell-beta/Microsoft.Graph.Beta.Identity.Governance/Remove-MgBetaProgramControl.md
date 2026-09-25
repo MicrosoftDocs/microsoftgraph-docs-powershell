@@ -82,6 +82,14 @@ This cmdlet has the following aliases,
 In the Microsoft Entra access reviews feature, delete a programControl object.
 This unlinks an access review from a program.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ProgramControl.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ProgramControl.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 Delete navigation property lifecyclePolicies for identityGovernance
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | LifecyclePolicies-AgentId.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | LifecyclePolicies-AgentId.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
