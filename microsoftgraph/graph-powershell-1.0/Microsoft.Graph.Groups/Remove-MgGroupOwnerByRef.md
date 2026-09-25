@@ -1,63 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouponpremisesyncbehavior
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
-title: Update-MgGroupOnPremiseSyncBehavior
+title: Remove-MgGroupOwnerByRef
 ---
 
-# Update-MgGroupOnPremiseSyncBehavior
+# Remove-MgGroupOwnerByRef
 
 ## SYNOPSIS
 
-Update the navigation property onPremisesSyncBehavior in groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupOnPremiseSyncBehavior?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Delete (Default)
 
 ```
-Update-MgGroupOnPremiseSyncBehavior -GroupId <string> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Id <string>] [-IsCloudManaged] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgGroupOwnerByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### Update
+### DeleteViaIdentity
 
 ```
-Update-MgGroupOnPremiseSyncBehavior -GroupId <string>
- -BodyParameter <IMicrosoftGraphOnPremisesSyncBehavior> [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### UpdateViaIdentityExpanded
-
-```
-Update-MgGroupOnPremiseSyncBehavior -InputObject <IGroupsIdentity>
- [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Id <string>]
- [-IsCloudManaged] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### UpdateViaIdentity
-
-```
-Update-MgGroupOnPremiseSyncBehavior -InputObject <IGroupsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesSyncBehavior> [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -67,72 +46,31 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property onPremisesSyncBehavior in groups
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+Remove-MgGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgGroupOwnerByRef Cmdlet.
+
 
 ## PARAMETERS
-
-### -AdditionalProperties
-
-Additional Parameters
-
-```yaml
-Type: System.Collections.Hashtable
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -BodyParameter
-
-onPremisesSyncBehavior
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesSyncBehavior
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateViaIdentity
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -177,6 +115,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -GroupId
 
 The unique identifier of group
@@ -187,13 +146,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: Update
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -267,10 +220,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Id
+### -IfMatch
 
-The unique identifier for an entity.
-Read-only.
+ETag
 
 ```yaml
 Type: System.String
@@ -278,13 +230,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -306,13 +252,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -323,9 +263,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IsCloudManaged
+### -PassThru
 
-
+Returns true when the command succeeds
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -333,13 +273,7 @@ DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: UpdateViaIdentityExpanded
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-- Name: UpdateExpanded
+- Name: (All)
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -470,17 +404,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 {{ Fill in the Description }}
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesSyncBehavior
-
-{{ Fill in the Description }}
-
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesSyncBehavior
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -490,12 +420,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
-
-BODYPARAMETER `<IMicrosoftGraphOnPremisesSyncBehavior>`: onPremisesSyncBehavior
-  [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
-  [IsCloudManaged <Boolean?>]: 
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
@@ -521,8 +445,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgGroupOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouponpremisesyncbehavior)
-
+- [Remove-MgGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
 
 
 

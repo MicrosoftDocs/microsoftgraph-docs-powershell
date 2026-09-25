@@ -696,7 +696,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant)
+- [Update-MgGroupPermissionGrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant)
 
 
 

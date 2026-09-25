@@ -397,8 +397,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite)
-- [](https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-1.0)
+- [Add-MgGroupFavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-1.0)
 
 
 

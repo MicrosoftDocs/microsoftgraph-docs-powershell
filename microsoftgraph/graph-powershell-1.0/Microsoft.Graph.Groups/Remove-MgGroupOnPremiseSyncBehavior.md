@@ -401,7 +401,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouponpremisesyncbehavior)
+- [Remove-MgGroupOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouponpremisesyncbehavior)
 
 
 
