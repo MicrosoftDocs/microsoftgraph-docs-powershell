@@ -1211,7 +1211,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection)
+- [New-MgBetaDeviceAppManagementWindowsManagedAppProtection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection)
 
 
 
