@@ -61,18 +61,28 @@ Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
 ## EXAMPLES
+### Example 1: List all bundles in a drive
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveBundle -DriveId $driveId
 
-### EXAMPLE 2
+```
+This example will list all bundles in a drive
+
+### Example 2: List all photo albums in a drive
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgBetaDriveBundle -DriveId $driveId -Filter "bundle/album ne null"
+Get-MgBetaDriveBundle -DriveId $driveId -Filter "bundle/album ne null" 
+
+```
+This example will list all photo albums in a drive
+
 
 ## PARAMETERS
 
