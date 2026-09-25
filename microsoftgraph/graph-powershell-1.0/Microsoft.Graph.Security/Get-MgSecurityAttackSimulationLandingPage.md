@@ -87,12 +87,17 @@ Get a landingPage associated with an attack simulation campaign for a tenant.
 | Application | AttackSimulation.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAttackSimulationLandingPage -Filter "source eq 'tenant'"
+Get-MgSecurityAttackSimulationLandingPage -Filter "source eq 'tenant'" 
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationLandingPage Cmdlet.
+
 
 ## PARAMETERS
 

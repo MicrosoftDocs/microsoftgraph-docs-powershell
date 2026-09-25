@@ -60,16 +60,6 @@ Create a new auditLogQuery object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLogsQuery-Entra.Read.All, AuditLogsQuery-CRM.Read.All, AuditLogsQuery-Endpoint.Read.All, AuditLogsQuery-Exchange.Read.All, AuditLogsQuery-OneDrive.Read.All, AuditLogsQuery-SharePoint.Read.All, AuditLogsQuery.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -713,6 +703,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityauditlogquery)
 - [](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)
+
 
 
 
