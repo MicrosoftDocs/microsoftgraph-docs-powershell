@@ -15,6 +15,9 @@ title: Remove-MgBetaUserSettingWorkHourAndLocationOccurrence
 
 Delete navigation property occurrences for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSettingWorkHourAndLocationOccurrence](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingWorkHourAndLocationOccurrence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
