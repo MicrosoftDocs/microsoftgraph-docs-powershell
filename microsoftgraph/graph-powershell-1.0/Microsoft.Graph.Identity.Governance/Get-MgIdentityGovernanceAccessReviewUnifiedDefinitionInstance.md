@@ -64,6 +64,14 @@ A review that doesn't recur will have exactly one instance.
 Instances also represent each unique resource under review in the accessReviewScheduleDefinition.
 If a review has multiple resources and multiple instances, each resource has a unique instance for each recurrence.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
