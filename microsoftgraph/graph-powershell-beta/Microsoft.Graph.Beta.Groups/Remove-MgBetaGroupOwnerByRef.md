@@ -1,43 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponpremisesyncbehavior
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaGroupOnPremiseSyncBehavior
+title: Remove-MgBetaGroupOwnerByRef
 ---
 
-# Get-MgBetaGroupOnPremiseSyncBehavior
+# Remove-MgBetaGroupOwnerByRef
 
 ## SYNOPSIS
 
-Read the properties of an onPremisesSyncBehavior object.
-The isCloudManaged property indicates whether the object's source of authority is set to the cloud.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnPremiseSyncBehavior](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOnPremiseSyncBehavior?view=graph-powershell-1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### Get (Default)
+### Delete (Default)
 
 ```
-Get-MgBetaGroupOnPremiseSyncBehavior -GroupId <string> [-ExpandProperty <string[]>]
- [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Remove-MgBetaGroupOwnerByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
-### GetViaIdentity
+### DeleteViaIdentity
 
 ```
-Get-MgBetaGroupOnPremiseSyncBehavior -InputObject <IGroupsIdentity> [-ExpandProperty <string[]>]
- [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+Remove-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,17 +46,16 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Read the properties of an onPremisesSyncBehavior object.
-The isCloudManaged property indicates whether the object's source of authority is set to the cloud.
-If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
+Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
+When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Application | Group.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -66,10 +64,10 @@ If true, updates from on-premises Active Directory are blocked in the cloud; if 
 
 Import-Module Microsoft.Graph.Beta.Groups
 
-Get-MgBetaGroupOnPremiseSyncBehavior -GroupId $groupId
+Remove-MgBetaGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
 
 ```
-This example shows how to use the Get-MgBetaGroupOnPremiseSyncBehavior Cmdlet.
+This example shows how to use the Remove-MgBetaGroupOwnerByRef Cmdlet.
 
 
 ## PARAMETERS
@@ -95,20 +93,41 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExpandProperty
+### -Confirm
 
-Expand related entities
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- Expand
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -127,7 +146,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -201,6 +220,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -IfMatch
+
+ETag
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -212,7 +252,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: GetViaIdentity
+- Name: DeleteViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -223,16 +263,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
+### -PassThru
 
-Select properties to be returned
+Returns true when the command succeeds
 
 ```yaml
-Type: System.String[]
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
-Aliases:
-- Select
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -330,6 +369,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -WhatIf
+
+Runs the command in a mode that only reports what would happen without performing the actions.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -349,7 +410,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesSyncBehavior
+### System.Boolean
 
 {{ Fill in the Description }}
 
@@ -387,8 +448,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaGroupOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponpremisesyncbehavior)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onpremisessyncbehavior-get?view=graph-rest-beta)
+- [Remove-MgBetaGroupOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupOwnerByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-beta)
 
 
 
