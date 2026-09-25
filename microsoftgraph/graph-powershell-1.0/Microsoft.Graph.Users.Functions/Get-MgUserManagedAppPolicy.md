@@ -59,12 +59,17 @@ Gets app restrictions for a given user.
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users.Functions
 
 Get-MgUserManagedAppPolicy -UserId $userId
+
+```
+This example shows how to use the Get-MgUserManagedAppPolicy Cmdlet.
+
 
 ## PARAMETERS
 
