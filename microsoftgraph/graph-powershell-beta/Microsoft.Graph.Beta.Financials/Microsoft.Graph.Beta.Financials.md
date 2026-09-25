@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Financials
-Module Guid: 98bcc24a-4a81-49c7-87e1-12374fb54a8d
+Module Guid: e5bc8d7a-6a58-485b-aaa9-5fd5661fa0c4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.financials/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1108,23 +1108,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaFinancialCompanyVendorPaymentTerm](Update-MgBetaFinancialCompanyVendorPaymentTerm.md)
 
 ### [Update-MgBetaFinancialCompanyVendorPicture](Update-MgBetaFinancialCompanyVendorPicture.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
