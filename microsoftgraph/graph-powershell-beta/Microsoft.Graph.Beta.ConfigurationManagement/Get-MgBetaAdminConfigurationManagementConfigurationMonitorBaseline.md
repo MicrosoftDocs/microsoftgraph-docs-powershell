@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ConfigurationManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/get-mgbetaadminconfigurationmanagementconfigurationmonitorbaseline
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline
 ---
@@ -14,9 +14,6 @@ title: Get-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline
 ## SYNOPSIS
 
 Read the properties and relationships of a configurationBaseline object that is attached to a specific monitor.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdminConfigurationManagementConfigurationMonitorBaseline](/powershell/module/Microsoft.Graph.ConfigurationManagement/Get-MgAdminConfigurationManagementConfigurationMonitorBaseline?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,17 +47,12 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a configurationBaseline object that is attached to a specific monitor.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.ConfigurationManagement
 
 Get-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline -ConfigurationMonitorId $configurationMonitorId
-
-```
-This example shows how to use the Get-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline Cmdlet.
-
 
 ## PARAMETERS
 
@@ -350,7 +342,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IConfigurationManagementIdentity>: Identity Parameter
   [ConfigurationBaselineId <String>]: The unique identifier of configurationBaseline
   [ConfigurationDriftId <String>]: The unique identifier of configurationDrift
   [ConfigurationMonitorId <String>]: The unique identifier of configurationMonitor
@@ -360,27 +352,5 @@ INPUTOBJECT `<IConfigurationManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaAdminConfigurationManagementConfigurationMonitorBaseline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/get-mgbetaadminconfigurationmanagementconfigurationmonitorbaseline)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/configurationbaseline-get?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.configurationmanagement/get-mgbetaadminconfigurationmanagementconfigurationmonitorbaseline)
+- [](https://learn.microsoft.com/graph/api/configurationbaseline-get?view=graph-rest-beta)
