@@ -440,7 +440,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource)
+- [Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource)
 
 
 
