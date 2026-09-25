@@ -70,8 +70,9 @@ This cmdlet has the following aliases,
 Mark a chat as unread for a user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -84,6 +85,10 @@ $params = @{
 }
 
 Invoke-MgMarkChatUnreadForUser -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgMarkChatUnreadForUser Cmdlet.
+
 
 ## PARAMETERS
 
