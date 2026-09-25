@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceSetting
 ---
@@ -49,9 +49,8 @@ Update the canReceiveInvitations property of the tenantGovernanceSetting singlet
 This property controls whether the tenant can receive governance invitations.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -60,10 +59,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryTenantGovernanceSetting -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaDirectoryTenantGovernanceSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -133,7 +128,7 @@ HelpMessage: ''
 
 ### -CanReceiveInvitations
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -261,7 +256,7 @@ HelpMessage: ''
 
 ### -IsRelatedTenantsEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -417,7 +412,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTenantGovernanceSetting>`: tenantGovernanceSetting
+BODYPARAMETER <IMicrosoftGraphTenantGovernanceSetting>: tenantGovernanceSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -427,27 +422,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryTenantGovernanceSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancesetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantgovernanceservices-tenantgovernancesetting-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancesetting)
+- [](https://learn.microsoft.com/graph/api/tenantgovernanceservices-tenantgovernancesetting-update?view=graph-rest-beta)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRecommendation
 ---
@@ -56,6 +56,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to recommendations for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -210,7 +220,7 @@ HelpMessage: ''
 
 ### -CompletedBySystemDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -231,7 +241,7 @@ HelpMessage: ''
 
 ### -CompletedByUserDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -338,7 +348,7 @@ HelpMessage: ''
 
 ### -FailedReviewDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -638,7 +648,7 @@ HelpMessage: ''
 
 ### -NeedsMoreActionResourceCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -659,7 +669,7 @@ HelpMessage: ''
 
 ### -NistClassifications
 
-
+.
 To construct, see NOTES section for NISTCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -829,7 +839,7 @@ HelpMessage: ''
 
 ### -RemediatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -936,7 +946,7 @@ HelpMessage: ''
 
 ### -StatusModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -957,7 +967,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 To construct, see NOTES section for TAGS properties and create a hash table.
 
 ```yaml
@@ -1078,27 +1088,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaDirectoryRecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendation)

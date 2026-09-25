@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryRecommendation
 ---
@@ -87,6 +87,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property recommendations in directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -277,7 +287,7 @@ HelpMessage: ''
 
 ### -CompletedBySystemDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -304,7 +314,7 @@ HelpMessage: ''
 
 ### -CompletedByUserDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -435,7 +445,7 @@ HelpMessage: ''
 
 ### -FailedReviewDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -829,7 +839,7 @@ HelpMessage: ''
 
 ### -NeedsMoreActionResourceCount
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -856,7 +866,7 @@ HelpMessage: ''
 
 ### -NistClassifications
 
-
+.
 To construct, see NOTES section for NISTCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -1083,7 +1093,7 @@ HelpMessage: ''
 
 ### -RemediatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -1214,7 +1224,7 @@ HelpMessage: ''
 
 ### -StatusModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -1241,7 +1251,7 @@ HelpMessage: ''
 
 ### -Tags
 
-
+.
 To construct, see NOTES section for TAGS properties and create a hash table.
 
 ```yaml
@@ -1358,7 +1368,7 @@ For example, this property is set to the applicationId if the resourceType is an
 Read-only.
     [DisplayName <String>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1440,27 +1450,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaDirectoryRecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecommendation)
