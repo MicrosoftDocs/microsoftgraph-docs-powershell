@@ -165,7 +165,7 @@ HelpMessage: ''
 
 ### -DataLossPreventionPolicies
 
-.
+
 To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
@@ -379,7 +379,7 @@ HelpMessage: ''
 
 ### -SensitivityLabels
 
-.
+
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
@@ -423,7 +423,7 @@ HelpMessage: ''
 
 ### -ThreatAssessmentRequests
 
-.
+
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
