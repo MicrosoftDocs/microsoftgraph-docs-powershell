@@ -669,9 +669,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdocumentsetversion)
-- [](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
+- [Get-MgSiteListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemdocumentsetversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
 
 
 
