@@ -15,6 +15,9 @@ title: Get-MgGroupOnenoteNotebookCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteNotebookCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

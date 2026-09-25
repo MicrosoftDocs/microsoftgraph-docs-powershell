@@ -17,6 +17,9 @@ The sections in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

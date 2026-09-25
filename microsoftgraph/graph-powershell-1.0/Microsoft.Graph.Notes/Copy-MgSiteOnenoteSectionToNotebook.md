@@ -15,6 +15,9 @@ title: Copy-MgSiteOnenoteSectionToNotebook
 
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Copy-MgBetaSiteOnenoteSectionToNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
