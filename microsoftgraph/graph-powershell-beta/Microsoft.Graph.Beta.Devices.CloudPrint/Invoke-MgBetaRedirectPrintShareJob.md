@@ -617,8 +617,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintsharejob)
-- [](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-beta)
+- [Invoke-MgBetaRedirectPrintShareJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaredirectprintsharejob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-redirect?view=graph-rest-beta)
 
 
 
