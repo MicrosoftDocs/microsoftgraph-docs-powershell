@@ -56,6 +56,14 @@ Find out more about hunting for threats across devices, emails, apps, and identi
 Learn about KQL.
 For information on using advanced hunting in the Microsoft Defender portal, see Proactively hunt for threats with advanced hunting in Microsoft Defender XDR.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ThreatHunting.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ThreatHunting.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
