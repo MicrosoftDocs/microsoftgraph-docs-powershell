@@ -78,8 +78,9 @@ Accept the specified event in a user calendar.
 | Application | Calendars.ReadWrite,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -90,6 +91,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaAcceptUserEvent Cmdlet.
+
 
 ## PARAMETERS
 
