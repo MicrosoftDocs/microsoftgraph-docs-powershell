@@ -15,6 +15,9 @@ title: Get-MgServicePrincipalDelegatedPermissionClassification
 
 Get delegatedPermissionClassifications from servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
