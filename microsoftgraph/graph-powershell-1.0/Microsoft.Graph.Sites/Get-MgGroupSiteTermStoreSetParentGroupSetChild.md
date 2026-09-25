@@ -15,6 +15,9 @@ title: Get-MgGroupSiteTermStoreSetParentGroupSetChild
 
 Children terms of set in term [store].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

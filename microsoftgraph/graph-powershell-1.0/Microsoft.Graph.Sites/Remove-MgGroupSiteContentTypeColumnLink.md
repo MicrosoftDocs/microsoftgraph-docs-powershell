@@ -15,6 +15,9 @@ title: Remove-MgGroupSiteContentTypeColumnLink
 
 Delete navigation property columnLinks for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
