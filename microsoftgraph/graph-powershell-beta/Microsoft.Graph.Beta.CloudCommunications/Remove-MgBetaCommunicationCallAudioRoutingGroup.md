@@ -449,8 +449,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallaudioroutinggroup)
-- [](https://learn.microsoft.com/graph/api/audioroutinggroup-delete?view=graph-rest-beta)
+- [Remove-MgBetaCommunicationCallAudioRoutingGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallaudioroutinggroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/audioroutinggroup-delete?view=graph-rest-beta)
 
 
 

@@ -559,8 +559,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresencemanuallocation)
-- [](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-beta)
+- [Set-MgBetaUserPresenceManualLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauserpresencemanuallocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-setmanuallocation?view=graph-rest-beta)
 
 
 
