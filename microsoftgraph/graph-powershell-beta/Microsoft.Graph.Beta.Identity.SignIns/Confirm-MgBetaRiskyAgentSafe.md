@@ -412,8 +412,8 @@ BODYPARAMETER `<IPathsTohbfIdentityprotectionRiskyagentsMicrosoftGraphConfirmsaf
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentsafe)
-- [](https://learn.microsoft.com/graph/api/riskyagent-confirmsafe?view=graph-rest-beta)
+- [Confirm-MgBetaRiskyAgentSafe](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyagentsafe)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/riskyagent-confirmsafe?view=graph-rest-beta)
 
 
 
