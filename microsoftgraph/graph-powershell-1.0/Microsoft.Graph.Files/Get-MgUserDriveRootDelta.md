@@ -77,16 +77,6 @@ Your app begins by calling delta without any parameters.\rThe service starts enu
 After you have finished receiving all the changes, you may apply them to your local state.\rTo check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
 Deleted items are returned with the deleted facet.\rItems with this property set should be removed from your local state.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -683,6 +673,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootdelta)
 - [](https://learn.microsoft.com/graph/api/driveitem-delta?view=graph-rest-1.0)
+
 
 
 
