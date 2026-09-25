@@ -66,12 +66,17 @@ This cmdlet has the following aliases,
 Get details about Yammer device usage by user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportYammerDeviceUsageUserDetail
+
+```
+This example shows how to use the Get-MgReportYammerDeviceUsageUserDetail Cmdlet.
+
 
 ## PARAMETERS
 
