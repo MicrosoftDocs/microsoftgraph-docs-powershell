@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddeviceesim
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserManagedDeviceEsim
 ---
@@ -66,6 +66,16 @@ This cmdlet has the following aliases,
 
 Remove eSIM from the device
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -97,7 +107,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -231,7 +241,7 @@ HelpMessage: ''
 
 ### -IccId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -500,11 +510,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsZ5Yd4FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphRemovedeviceesimPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZ5Yd4FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphRemovedeviceesimPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IccId <String>]: 
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -582,27 +592,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaUserManagedDeviceEsim](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddeviceesim)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddeviceesim)
