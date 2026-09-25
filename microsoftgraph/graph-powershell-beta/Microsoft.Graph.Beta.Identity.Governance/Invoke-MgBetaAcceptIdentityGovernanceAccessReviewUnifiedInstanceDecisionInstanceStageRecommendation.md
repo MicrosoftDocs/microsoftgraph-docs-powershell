@@ -523,8 +523,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewunifiedinstancedecisioninstancestagerecommendation)
-- [](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta)
+- [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageRecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewunifiedinstancedecisioninstancestagerecommendation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta)
 
 
 

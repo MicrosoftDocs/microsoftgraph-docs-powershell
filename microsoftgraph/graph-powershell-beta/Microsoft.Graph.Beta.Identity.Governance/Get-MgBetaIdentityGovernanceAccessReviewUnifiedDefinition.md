@@ -648,8 +648,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewunifieddefinition)
-- [](https://learn.microsoft.com/graph/api/unifiedroot-list-definitions?view=graph-rest-beta)
+- [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewunifieddefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unifiedroot-list-definitions?view=graph-rest-beta)
 
 
 

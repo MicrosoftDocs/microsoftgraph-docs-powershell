@@ -1707,8 +1707,8 @@ Supports $filter (eq).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresourceaccesspackageresourceroleaccesspackageresource)
-- [](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
+- [Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresourceaccesspackageresourceroleaccesspackageresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageresource-refresh?view=graph-rest-beta)
 
 
 

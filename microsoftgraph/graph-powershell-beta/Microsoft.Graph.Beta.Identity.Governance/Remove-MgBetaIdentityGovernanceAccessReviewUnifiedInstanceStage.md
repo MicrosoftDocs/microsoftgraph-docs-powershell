@@ -520,7 +520,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewunifiedinstancestage)
+- [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewunifiedinstancestage)
 
 
 

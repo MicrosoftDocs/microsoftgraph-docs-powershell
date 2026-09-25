@@ -475,8 +475,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaidentitygovernanceaccessreviewunifieddecisioninstancedecision)
-- [](https://learn.microsoft.com/graph/api/accessreviewinstance-resetdecisions?view=graph-rest-beta)
+- [Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaidentitygovernanceaccessreviewunifieddecisioninstancedecision)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-resetdecisions?view=graph-rest-beta)
 
 
 

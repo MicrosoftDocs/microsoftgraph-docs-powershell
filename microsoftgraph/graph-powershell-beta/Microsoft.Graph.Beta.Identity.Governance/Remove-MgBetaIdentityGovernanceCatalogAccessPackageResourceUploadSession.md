@@ -552,8 +552,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancecatalogaccesspackageresourceuploadsession)
-- [](https://learn.microsoft.com/graph/api/accesspackageresource-delete-uploadsessions?view=graph-rest-beta)
+- [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancecatalogaccesspackageresourceuploadsession)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageresource-delete-uploadsessions?view=graph-rest-beta)
 
 
 

@@ -723,7 +723,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewunifieddefinitioninstancecontactedreviewer)
+- [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewunifieddefinitioninstancecontactedreviewer)
 
 
 

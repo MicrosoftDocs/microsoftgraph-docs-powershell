@@ -459,8 +459,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/clear-mgbetaidentitygovernancelifecycleworkflowquarantine)
-- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta)
+- [Clear-MgBetaIdentityGovernanceLifecycleWorkflowQuarantine](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/clear-mgbetaidentitygovernancelifecycleworkflowquarantine)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta)
 
 
 
