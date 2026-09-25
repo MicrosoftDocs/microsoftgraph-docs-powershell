@@ -47,12 +47,17 @@ Get the deployment access key associated with a Microsoft Defender for Identity,
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityIdentitySensorDeploymentAccessKey
+
+```
+This example shows how to use the Get-MgBetaSecurityIdentitySensorDeploymentAccessKey Cmdlet.
+
 
 ## PARAMETERS
 

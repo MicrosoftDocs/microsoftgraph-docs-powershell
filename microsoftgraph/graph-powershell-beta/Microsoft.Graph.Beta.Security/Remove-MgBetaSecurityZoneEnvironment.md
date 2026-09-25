@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 Delete an environment object from a zone object by providing the environment ID.
 The environment ID should be URL-encoded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -530,6 +520,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityzoneenvironment)
 - [](https://learn.microsoft.com/graph/api/security-environment-delete?view=graph-rest-beta)
+
 
 
 

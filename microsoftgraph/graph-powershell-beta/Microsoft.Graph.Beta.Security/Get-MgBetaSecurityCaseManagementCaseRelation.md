@@ -67,16 +67,6 @@ The response is an incidentRelation, recommendationRelation, or workspaceIndicat
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.Read.All, CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -688,6 +678,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycasemanagementcaserelation)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-relation-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/security-casemanagement-case-list-relations?view=graph-rest-beta)
+
+
 
 
 
