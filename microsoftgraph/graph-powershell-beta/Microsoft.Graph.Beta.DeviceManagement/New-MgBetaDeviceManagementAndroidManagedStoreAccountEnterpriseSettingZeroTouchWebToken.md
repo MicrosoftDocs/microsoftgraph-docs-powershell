@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingzerotouchwebtoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingZeroTouchWebToken
 ---
@@ -48,13 +48,15 @@ This cmdlet has the following aliases,
 Generates a web token scoped to the Zero Touch Enrollment portal.
 Requires the ManageZeroTouchEnrollment RBAC permission.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementConfiguration.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementConfiguration.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -81,7 +83,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -209,7 +211,7 @@ HelpMessage: ''
 
 ### -ParentUri
 
-
+.
 
 ```yaml
 Type: System.String
@@ -365,34 +367,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1AzqjnzDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphCreatezerotouchwebtokenPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1AzqjnzDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphCreatezerotouchwebtokenPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ParentUri <String>]:
 
 
 ## RELATED LINKS
 
-- [New-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingZeroTouchWebToken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingzerotouchwebtoken)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingzerotouchwebtoken)

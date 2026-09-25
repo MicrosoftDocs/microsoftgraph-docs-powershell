@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementcomanageddeviceenhancedlogcollection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Start-MgBetaDeviceManagementComanagedDeviceEnhancedLogCollection
 ---
@@ -67,6 +67,16 @@ This cmdlet has the following aliases,
 
 Triggers an AppleCare-authorized enhanced log collection session on a supervised Apple device.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -98,7 +108,7 @@ HelpMessage: ''
 
 ### -AppleCareToken
 
-
+.
 
 ```yaml
 Type: System.String
@@ -125,7 +135,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -474,11 +484,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1A2Pf8ADevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphTriggerenhancedlogcollectionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1A2Pf8ADevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphTriggerenhancedlogcollectionPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppleCareToken <String>]: 
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -590,27 +600,4 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Start-MgBetaDeviceManagementComanagedDeviceEnhancedLogCollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementcomanageddeviceenhancedlogcollection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/start-mgbetadevicemanagementcomanageddeviceenhancedlogcollection)
