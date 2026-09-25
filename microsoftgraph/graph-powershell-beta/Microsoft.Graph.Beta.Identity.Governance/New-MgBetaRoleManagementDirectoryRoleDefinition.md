@@ -66,8 +66,9 @@ The following RBAC providers are currently supported:\r- Cloud PC\r- device mana
 | Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -85,6 +86,10 @@ isEnabled = "true"
 }
 
 New-MgBetaRoleManagementDirectoryRoleDefinition -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaRoleManagementDirectoryRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

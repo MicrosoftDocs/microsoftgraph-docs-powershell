@@ -52,16 +52,6 @@ Recommendations are generated if recommendationsEnabled is true on the accessRev
 If there's no recommendation on an accessReviewInstanceDecisionItem object, no decision is recorded.
 This action accepts recommendations for the decisions in a specific stage only, unlike accessReviewInstance: acceptRecommendations, which operates across the entire instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -514,6 +504,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewunifieddecisioninstancestagerecommendation)
 - [](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta)
+
 
 
 

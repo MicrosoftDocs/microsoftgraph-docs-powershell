@@ -60,12 +60,17 @@ In Microsoft Entra Entitlement Management, retrieve a list of accessPackage obje
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser -On $onId
+Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 
