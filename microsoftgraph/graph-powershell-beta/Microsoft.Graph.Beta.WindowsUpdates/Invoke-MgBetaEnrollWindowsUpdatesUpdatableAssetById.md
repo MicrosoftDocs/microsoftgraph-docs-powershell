@@ -56,16 +56,6 @@ You can also use the method enrollAssets to enroll assets.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | WindowsUpdates.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,6 +438,7 @@ BODY `<IPaths134Mc7AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdate
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableassetbyid)
+
 
 
 
