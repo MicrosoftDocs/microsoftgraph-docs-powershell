@@ -15,6 +15,9 @@ title: Update-MgPlaceAsBuildingMapLevelUnit
 
 Update the properties of an existing unitMap object in IMDF format on a specified floor, or create one if it doesn't exist.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsBuildingMapLevelUnit](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsBuildingMapLevelUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

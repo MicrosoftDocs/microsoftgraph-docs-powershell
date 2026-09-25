@@ -15,6 +15,9 @@ title: New-MgUserEventAttachment
 
 Create new navigation property to attachments for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
