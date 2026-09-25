@@ -484,8 +484,8 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)
+- [New-MgBetaAdminPeopleProfileCardProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-beta)
 
 
 

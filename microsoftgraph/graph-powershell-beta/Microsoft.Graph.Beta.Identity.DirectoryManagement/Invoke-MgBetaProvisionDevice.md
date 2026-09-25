@@ -361,7 +361,7 @@ BODYPARAMETER `<IPaths1Yuu517DevicesMicrosoftGraphProvisionPostRequestbodyConten
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaprovisiondevice)
+- [Invoke-MgBetaProvisionDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaprovisiondevice)
 
 
 
