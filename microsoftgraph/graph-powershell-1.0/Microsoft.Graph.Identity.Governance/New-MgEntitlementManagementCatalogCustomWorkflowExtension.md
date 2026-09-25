@@ -75,8 +75,9 @@ Create a new accessPackageAssignmentRequestWorkflowExtension or accessPackageAss
 You must explicitly provide an @odata.type property that indicates whether the object is an accessPackageAssignmentRequestWorkflowExtension or an accessPackageAssignmentWorkflowExtension.
 
 ## EXAMPLES
+### Example 2: Create a custom extension for use with an access package assignment
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -101,7 +102,12 @@ $params = @{
 
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a custom extension for use with an access package assignment
+
+### Example 3: Create a custom extension for use with an approval stage callback
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -123,6 +129,10 @@ $params = @{
 }
 
 New-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
+
+```
+This example will create a custom extension for use with an approval stage callback
+
 
 ## PARAMETERS
 

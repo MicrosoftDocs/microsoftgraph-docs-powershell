@@ -83,16 +83,6 @@ If you encounter errors with files uploaded or need to start fresh, you can dele
 The following table lists the derived types of customDataProvidedResourceUploadSession that can be created.
 Specify the @odata.type in the request body to indicate the derived type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -836,6 +826,7 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogresourceuploadsession)
 - [](https://learn.microsoft.com/graph/api/accesspackageresource-post-uploadsessions?view=graph-rest-1.0)
+
 
 
 

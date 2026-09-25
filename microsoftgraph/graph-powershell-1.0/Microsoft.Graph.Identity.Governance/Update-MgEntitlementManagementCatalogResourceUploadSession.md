@@ -75,16 +75,6 @@ This cmdlet has the following aliases,
 
 Update the properties of a customDataProvidedResourceUploadSession created for an accessPackageResource object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -855,6 +845,7 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourceuploadsession)
 - [](https://learn.microsoft.com/graph/api/customdataprovidedresourceuploadsession-update?view=graph-rest-1.0)
+
 
 
 

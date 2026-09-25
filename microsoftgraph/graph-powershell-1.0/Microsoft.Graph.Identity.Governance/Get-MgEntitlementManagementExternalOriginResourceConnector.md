@@ -68,16 +68,6 @@ Read the properties and relationships of an externalOriginResourceConnector obje
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -623,6 +613,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementexternaloriginresourceconnector)
 - [](https://learn.microsoft.com/graph/api/externaloriginresourceconnector-get?view=graph-rest-1.0)
 - [](https://learn.microsoft.com/graph/api/entitlementmanagement-list-externaloriginresourceconnectors?view=graph-rest-1.0)
+
+
 
 
 

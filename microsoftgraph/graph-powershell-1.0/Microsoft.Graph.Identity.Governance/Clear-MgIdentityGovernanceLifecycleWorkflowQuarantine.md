@@ -51,16 +51,6 @@ Release a quarantined workflow so that it resumes processing.
 A workflow is automatically quarantined when a run exceeds the threshold conditions defined in its quarantineConfiguration.
 After an administrator reviews the cause of the quarantine, calling this action clears the quarantine state and allows the workflow to run again.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -433,6 +423,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/clear-mgidentitygovernancelifecycleworkflowquarantine)
 - [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-1.0)
+
 
 
 
