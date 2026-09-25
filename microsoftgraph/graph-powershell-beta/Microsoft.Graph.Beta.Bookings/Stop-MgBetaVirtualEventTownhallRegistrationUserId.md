@@ -402,7 +402,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventtownhallregistrationuserid)
+- [Stop-MgBetaVirtualEventTownhallRegistrationUserId](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventtownhallregistrationuserid)
 
 
 
