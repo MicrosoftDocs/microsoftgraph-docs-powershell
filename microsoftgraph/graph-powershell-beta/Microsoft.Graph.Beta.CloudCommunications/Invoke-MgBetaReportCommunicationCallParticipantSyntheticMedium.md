@@ -93,16 +93,6 @@ The detection bot must be admitted to the call before it can call this action.
 For more information about registering a calling bot and joining calls, see Calls and online meetings.
 The bot obtains the call ID and participant ID from the call roster and subsequent participant roster update notifications, and uses the call's id as {call-id} and the participant's id as {participant-id} in the request URL.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -827,6 +817,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetareportcommunicationcallparticipantsyntheticmedium)
 - [](https://learn.microsoft.com/graph/api/participant-reportsyntheticmedia?view=graph-rest-beta)
+
 
 
 
