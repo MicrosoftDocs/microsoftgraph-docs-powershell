@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration
 
 Targeted managed app configurations.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 
 Delete navigation property deviceStatusSummary for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

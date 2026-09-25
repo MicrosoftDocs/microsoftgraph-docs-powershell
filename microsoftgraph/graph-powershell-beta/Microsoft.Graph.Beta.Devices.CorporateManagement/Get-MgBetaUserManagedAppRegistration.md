@@ -15,6 +15,9 @@ title: Get-MgBetaUserManagedAppRegistration
 
 Zero or more managed app registrations that belong to the user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedAppRegistration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

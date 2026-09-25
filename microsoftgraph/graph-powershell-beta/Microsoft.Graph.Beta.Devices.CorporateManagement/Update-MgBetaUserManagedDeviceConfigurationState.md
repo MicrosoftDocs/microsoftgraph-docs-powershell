@@ -15,6 +15,9 @@ title: Update-MgBetaUserManagedDeviceConfigurationState
 
 Update the navigation property deviceConfigurationStates in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceConfigurationState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
