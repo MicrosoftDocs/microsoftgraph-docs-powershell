@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreemailnotificationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.BackupRestore
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSolutionBackupRestoreEmailNotificationSetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgSolutionBackupRestoreEmailNotificationSetting
 ## SYNOPSIS
 
 Update the properties of an emailNotificationsSetting object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreEmailNotificationSetting](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreEmailNotificationSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of an emailNotificationsSetting object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -423,7 +430,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphEmailNotificationsSetting>`: emailNotificationsSetting
+BODYPARAMETER <IMicrosoftGraphEmailNotificationsSetting>: emailNotificationsSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -440,7 +447,7 @@ For example, in the access reviews decisions API, this property might record the
       [Email <String>]: Email address of the user.
     [Role <String>]: notificationRecipientsType
 
-RECIPIENTS `<IMicrosoftGraphNotificationRecipients>`: notificationRecipients
+RECIPIENTS <IMicrosoftGraphNotificationRecipients>: notificationRecipients
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CustomRecipients <IMicrosoftGraphEmailIdentity[]>]: A list of users or groups that receive notifications.
 Only specify this property when role is set to custom.
@@ -454,28 +461,5 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [Update-MgSolutionBackupRestoreEmailNotificationSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreemailnotificationsetting)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoreemailnotificationsetting)
+- [](https://learn.microsoft.com/graph/api/emailnotificationssetting-update?view=graph-rest-1.0)
