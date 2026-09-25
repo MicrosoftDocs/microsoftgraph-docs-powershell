@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 Disable a SharePoint API usage report metric for the tenant.
 After you disable a metric, SharePoint stops collecting and reporting data for that specific usage metric.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -375,6 +365,7 @@ BODYPARAMETER `<IPaths1S5OblkAdminReportsettingsSharepointMicrosoftGraphDisablea
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/disable-mgbetaadminreportsettingsharepointapiusagereport)
 - [](https://learn.microsoft.com/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta)
+
 
 
 

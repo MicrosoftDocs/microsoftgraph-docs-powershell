@@ -55,16 +55,6 @@ This cmdlet has the following aliases,
 
 Represents the total number of sign-in events for a specific day.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -594,6 +584,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignineventsummary)
 - [](https://learn.microsoft.com/graph/api/auditlogroot-list-signineventssummary?view=graph-rest-beta)
+
+
 
 
 
