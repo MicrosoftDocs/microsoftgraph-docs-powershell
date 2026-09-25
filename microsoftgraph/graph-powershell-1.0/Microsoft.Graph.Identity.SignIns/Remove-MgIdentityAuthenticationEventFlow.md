@@ -17,6 +17,9 @@ Delete a specific authenticationEventsFlow resource by ID.
 This operation also removes or unlinks all applications from the flow, which disables the customized authentication experience defined for the application.
 The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

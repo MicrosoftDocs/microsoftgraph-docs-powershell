@@ -15,6 +15,9 @@ title: Get-MgRiskyUserHistoryCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyUserHistoryCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistoryCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgIdentityRiskPreventionWebApplicationFirewallVerification
 
 Read the properties and relationships of webApplicationFirewallVerificationModel object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

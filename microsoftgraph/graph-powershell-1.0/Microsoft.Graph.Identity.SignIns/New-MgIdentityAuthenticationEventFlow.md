@@ -16,6 +16,9 @@ title: New-MgIdentityAuthenticationEventFlow
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 The following derived subtypes are supported:\r- externalUsersSelfServiceSignupEventsFlow object type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityAuthenticationEventFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

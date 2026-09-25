@@ -15,6 +15,9 @@ title: Update-MgPolicyFederatedTokenValidationPolicy
 
 Update the navigation property federatedTokenValidationPolicy in policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyFederatedTokenValidationPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

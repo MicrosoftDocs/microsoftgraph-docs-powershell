@@ -15,6 +15,9 @@ title: Remove-MgServicePrincipalRiskDetection
 
 Delete navigation property servicePrincipalRiskDetections for identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
