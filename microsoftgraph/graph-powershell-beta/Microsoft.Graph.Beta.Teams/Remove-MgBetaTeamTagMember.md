@@ -56,12 +56,17 @@ Delete a member from a standard tag in a team.
 | Application | TeamworkTag.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -TeamworkTagMemberId $teamworkTagMemberId
+
+```
+This example shows how to use the Remove-MgBetaTeamTagMember Cmdlet.
+
 
 ## PARAMETERS
 

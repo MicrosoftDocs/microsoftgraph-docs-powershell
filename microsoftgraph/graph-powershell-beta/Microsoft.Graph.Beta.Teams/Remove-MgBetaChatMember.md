@@ -96,12 +96,17 @@ Remove a conversationMember from a chat.
 | Application | ChatMember.ReadWrite.All, Chat.Manage.Chat,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Remove-MgBetaChatMember Cmdlet.
+
 
 ## PARAMETERS
 

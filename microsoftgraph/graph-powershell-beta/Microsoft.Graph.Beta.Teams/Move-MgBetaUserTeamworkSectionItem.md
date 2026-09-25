@@ -80,16 +80,6 @@ Use this action instead of add when the item is already in a user-defined sectio
 | Delegated (personal Microsoft account) | Not supported |
 | Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -593,6 +583,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/move-mgbetauserteamworksectionitem)
 - [](https://learn.microsoft.com/graph/api/teamworksectionitem-move?view=graph-rest-beta)
+
 
 
 
