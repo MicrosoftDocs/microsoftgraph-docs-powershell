@@ -16,6 +16,9 @@ title: Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGr
 References the group that is the scope of the membership or ownership assignment through PIM for Groups.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

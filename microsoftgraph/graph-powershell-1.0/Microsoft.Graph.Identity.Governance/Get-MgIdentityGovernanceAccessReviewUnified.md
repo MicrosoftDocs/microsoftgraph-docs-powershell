@@ -16,6 +16,9 @@ title: Get-MgIdentityGovernanceAccessReviewUnified
 Entry point for the unified (vNext) access reviews API surface.
 Requests under this path are routed to the vNext service through the dedicated accessReviews/unified path segment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnified](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnified?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

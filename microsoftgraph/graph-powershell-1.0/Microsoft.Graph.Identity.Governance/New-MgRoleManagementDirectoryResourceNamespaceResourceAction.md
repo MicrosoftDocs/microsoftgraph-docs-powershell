@@ -15,6 +15,9 @@ title: New-MgRoleManagementDirectoryResourceNamespaceResourceAction
 
 Create new navigation property to resourceActions for roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

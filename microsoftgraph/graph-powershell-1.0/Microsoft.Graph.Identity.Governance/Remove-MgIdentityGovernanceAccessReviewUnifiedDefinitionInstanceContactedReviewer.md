@@ -15,6 +15,9 @@ title: Remove-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContacted
 
 Delete navigation property contactedReviewers for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

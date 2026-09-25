@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskPr
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
