@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: 8f82943f-b890-45de-a1f1-03b92234b29c
+Module Guid: 930f1388-1dac-489c-9680-462cae21eba2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -694,23 +694,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserTodoListTaskExtension](Update-MgBetaUserTodoListTaskExtension.md)
 
 ### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
