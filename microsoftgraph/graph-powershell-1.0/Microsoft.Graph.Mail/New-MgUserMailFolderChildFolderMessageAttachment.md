@@ -15,6 +15,9 @@ title: New-MgUserMailFolderChildFolderMessageAttachment
 
 Create new navigation property to attachments for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
