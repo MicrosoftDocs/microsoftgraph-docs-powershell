@@ -15,6 +15,9 @@ title: Update-MgBetaBookingBusinessStaffMember
 
 Update the navigation property staffMembers in bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

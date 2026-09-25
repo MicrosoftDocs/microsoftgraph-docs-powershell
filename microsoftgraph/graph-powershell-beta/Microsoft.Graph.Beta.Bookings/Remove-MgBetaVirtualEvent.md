@@ -15,6 +15,9 @@ title: Remove-MgBetaVirtualEvent
 
 Delete navigation property events for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)

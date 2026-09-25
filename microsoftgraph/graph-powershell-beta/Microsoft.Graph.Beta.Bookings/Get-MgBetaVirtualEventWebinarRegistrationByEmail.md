@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventWebinarRegistrationByEmail
 
 Get the properties and relationships of a virtualEventRegistration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistrationByEmail](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistrationByEmail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

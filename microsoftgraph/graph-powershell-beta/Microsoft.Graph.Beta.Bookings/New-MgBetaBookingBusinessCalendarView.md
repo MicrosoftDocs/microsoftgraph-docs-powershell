@@ -15,6 +15,9 @@ title: New-MgBetaBookingBusinessCalendarView
 
 Create new navigation property to calendarView for bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
