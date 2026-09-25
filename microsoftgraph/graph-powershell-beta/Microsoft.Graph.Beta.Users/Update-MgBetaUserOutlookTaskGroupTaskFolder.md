@@ -974,7 +974,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskgrouptaskfolder)
+- [Update-MgBetaUserOutlookTaskGroupTaskFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskgrouptaskfolder)
 
 
 
