@@ -59,12 +59,17 @@ The following RBAC providers are currently supported:\r- Cloud PC\r- device mana
 | Application | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Remove-MgBetaRoleManagementCloudPcRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example shows how to use the Remove-MgBetaRoleManagementCloudPcRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 
