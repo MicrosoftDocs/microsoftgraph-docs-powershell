@@ -53,6 +53,14 @@ This cmdlet has the following aliases,
 
 Get statistics for an industryDataRun.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | IndustryData-Run.Read.All, IndustryData-Run.Start,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | IndustryData-Run.Read.All, IndustryData-Run.Start,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
