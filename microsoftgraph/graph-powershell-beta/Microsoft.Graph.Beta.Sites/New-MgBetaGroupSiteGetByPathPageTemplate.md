@@ -29274,7 +29274,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathpagetemplate)
+- [New-MgBetaGroupSiteGetByPathPageTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathpagetemplate)
 
 
 

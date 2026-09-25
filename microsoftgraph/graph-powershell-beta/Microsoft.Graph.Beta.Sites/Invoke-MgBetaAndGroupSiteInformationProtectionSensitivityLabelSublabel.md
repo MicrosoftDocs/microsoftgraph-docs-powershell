@@ -699,8 +699,8 @@ PROTECTEDCONTENTS <IMicrosoftGraphProtectedContent[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel)
-- [](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
+- [Invoke-MgBetaAndGroupSiteInformationProtectionSensitivityLabelSublabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaandgroupsiteinformationprotectionsensitivitylabelsublabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/sensitivitylabel-computerightsandinheritance?view=graph-rest-beta)
 
 
 

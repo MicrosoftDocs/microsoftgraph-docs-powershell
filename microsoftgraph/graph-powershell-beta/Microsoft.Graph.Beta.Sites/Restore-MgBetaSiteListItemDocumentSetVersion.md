@@ -506,8 +506,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemdocumentsetversion)
-- [](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-beta)
+- [Restore-MgBetaSiteListItemDocumentSetVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/restore-mgbetasitelistitemdocumentsetversion)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-beta)
 
 
 

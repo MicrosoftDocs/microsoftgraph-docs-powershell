@@ -627,8 +627,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite)
-- [](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
+- [Join-MgBetaSiteListContentTypeWithHubSite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
 
 
 
