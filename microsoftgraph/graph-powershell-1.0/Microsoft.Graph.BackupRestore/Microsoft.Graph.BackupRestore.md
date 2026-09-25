@@ -503,3 +503,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Update-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

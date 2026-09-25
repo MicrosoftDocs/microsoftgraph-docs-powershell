@@ -736,21 +736,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY <IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>: .
+BODY `<IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseLocationItemKey <String>]: 
   [BrowseResourceType <String>]: browsableResourceType
   [Filter <String>]: 
   [OrderBy <String>]: browseQueryOrder
 
-BODYPARAMETER <IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsViqi8KSolutionsBackuprestoreBrowsesessionsBrowsesessionbaseIdMicrosoftGraphBrowsePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BrowseLocationItemKey <String>]: 
   [BrowseResourceType <String>]: browsableResourceType
   [Filter <String>]: 
   [OrderBy <String>]: browseQueryOrder
 
-INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
+INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
@@ -789,3 +789,25 @@ INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/invoke-mgbrowsesolutionbackuprestorebrowsesession)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
