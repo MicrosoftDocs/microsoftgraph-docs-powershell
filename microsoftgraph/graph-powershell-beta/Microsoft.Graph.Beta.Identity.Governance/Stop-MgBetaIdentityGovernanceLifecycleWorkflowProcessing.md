@@ -16,6 +16,9 @@ title: Stop-MgBetaIdentityGovernanceLifecycleWorkflowProcessing
 Cancel one or more workflow runs that are currently in queued or inProgress status.
 Currently limited to canceling one run per request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceLifecycleWorkflowProcessing](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceLifecycleWorkflowProcessing?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport
 
 Represents the aggregation of task execution data for tasks within a workflow object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

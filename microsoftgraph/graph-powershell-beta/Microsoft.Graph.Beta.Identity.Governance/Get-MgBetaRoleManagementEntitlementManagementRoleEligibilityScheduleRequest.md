@@ -15,6 +15,9 @@ title: Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleReque
 
 Get roleEligibilityScheduleRequests from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

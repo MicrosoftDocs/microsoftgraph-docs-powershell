@@ -17,6 +17,9 @@ Activate a lifecycle workflow for a specified subject and synchronously wait for
 This action returns an awaitedWorkflowProcessingResult with the execution outcome.
 Use this action when you need immediate confirmation of workflow completion, for example when provisioning a non-user subject.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgIdentityGovernanceLifecycleWorkflowAndWait](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflowAndWait?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)

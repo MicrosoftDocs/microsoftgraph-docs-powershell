@@ -15,6 +15,9 @@ title: New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval
 
 Create new navigation property to assignmentApprovals for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

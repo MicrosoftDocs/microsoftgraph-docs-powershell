@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition
 
 Update the navigation property definitions in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewUnifiedDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewUnifiedDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

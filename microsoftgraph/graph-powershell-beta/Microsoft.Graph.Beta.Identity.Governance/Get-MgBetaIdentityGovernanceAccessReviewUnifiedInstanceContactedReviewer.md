@@ -18,6 +18,9 @@ While the reviewers and fallbackReviewers properties of the accessReviewSchedule
 Supports $select.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernanceAccessReviewUnified
 
 Delete navigation property unified for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewUnified](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewUnified?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
