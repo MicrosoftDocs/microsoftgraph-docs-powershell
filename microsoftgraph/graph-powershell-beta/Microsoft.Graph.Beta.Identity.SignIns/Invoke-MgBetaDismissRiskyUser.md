@@ -17,6 +17,9 @@ Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 The maximum count of users to dismiss in one call is 60.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### DismissExpanded (Default)
