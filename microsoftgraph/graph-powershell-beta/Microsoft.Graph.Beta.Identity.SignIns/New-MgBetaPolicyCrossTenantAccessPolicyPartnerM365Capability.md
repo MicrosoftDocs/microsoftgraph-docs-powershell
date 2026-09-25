@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartnerm365capability
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 ---
@@ -72,18 +72,9 @@ This cmdlet has the following aliases,
 Create a new Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
 The @odata.type property in the request body is required to specify which type of capability to create.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.CrossTenantCapability,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.CrossTenantCapability,  |
-
 ## EXAMPLES
-### Example 1: Create a cross-tenant mail tips capability
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -106,12 +97,7 @@ $params = @{
 
 New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 
-```
-This example will create a cross-tenant mail tips capability
-
-### Example 2: Create a cross-tenant places room booking capability
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -133,10 +119,6 @@ $params = @{
 }
 
 New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
-
-```
-This example will create a cross-tenant places room booking capability
-
 
 ## PARAMETERS
 
@@ -610,7 +592,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphM365CapabilityBase>`: m365CapabilityBase
+BODYPARAMETER <IMicrosoftGraphM365CapabilityBase>: m365CapabilityBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -631,7 +613,7 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
   [Name <String>]: The name or identifier of the capability.
 Key.
 
-INBOUNDACCESS `<IMicrosoftGraphM365CapabilityInboundAccess>`: m365CapabilityInboundAccess
+INBOUNDACCESS <IMicrosoftGraphM365CapabilityInboundAccess>: m365CapabilityInboundAccess
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAllowed <Boolean?>]: Indicates whether this capability should be allowed or blocked for inbound access.
   [ResourceScopes <IMicrosoftGraphM365CapabilityResourceScopes>]: m365CapabilityResourceScopes
@@ -643,7 +625,7 @@ The value is either All, to apply the capability to all resources of the type sp
       [ResourceType <String>]: m365ResourceType
     [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -745,27 +727,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartnerm365capability)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartnerm365capability)
+- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities?view=graph-rest-beta)

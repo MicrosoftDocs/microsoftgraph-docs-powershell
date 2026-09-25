@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyDefaultAppManagementPolicy
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaPolicyDefaultAppManagementPolicy
 ## SYNOPSIS
 
 Update the properties of a tenantAppManagementPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51,18 +48,9 @@ This cmdlet has the following aliases,
 
 Update the properties of a tenantAppManagementPolicy object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ApplicationConfiguration,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ApplicationConfiguration,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -242,10 +230,6 @@ excludeWildcardsInPathWithDomains = @(
 }
 
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -688,7 +672,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLICATIONRESTRICTIONS `<IMicrosoftGraphAppManagementApplicationConfiguration>`: appManagementApplicationConfiguration
+APPLICATIONRESTRICTIONS <IMicrosoftGraphAppManagementApplicationConfiguration>: appManagementApplicationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of certificate restrictions settings to be applied to an application or service principal.
     [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
@@ -822,7 +806,7 @@ Applications created before this date are not affected.
       [State <String>]: appManagementRestrictionState
       [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
 
-BODYPARAMETER `<IMicrosoftGraphTenantAppManagementPolicy>`: tenantAppManagementPolicy
+BODYPARAMETER <IMicrosoftGraphTenantAppManagementPolicy>: tenantAppManagementPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: Description for this policy.
 Required.
@@ -975,27 +959,5 @@ Default value is false.
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyDefaultAppManagementPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy)
+- [](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-update?view=graph-rest-beta)

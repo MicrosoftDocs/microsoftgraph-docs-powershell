@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAgentRiskDetection
 ---
@@ -49,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to agentRiskDetections for identityProtection
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -236,7 +246,7 @@ HelpMessage: ''
 
 ### -ClientSessionId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -688,7 +698,7 @@ HelpMessage: ''
 
 ### -SignInClientDisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -709,7 +719,7 @@ HelpMessage: ''
 
 ### -SignInCorrelationId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -730,7 +740,7 @@ HelpMessage: ''
 
 ### -SignInRequestId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -823,7 +833,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAgentRiskDetection>`: agentRiskDetection
+BODYPARAMETER <IMicrosoftGraphAgentRiskDetection>: agentRiskDetection
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -874,27 +884,4 @@ Nullable.
 
 ## RELATED LINKS
 
-- [New-MgBetaAgentRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection)
