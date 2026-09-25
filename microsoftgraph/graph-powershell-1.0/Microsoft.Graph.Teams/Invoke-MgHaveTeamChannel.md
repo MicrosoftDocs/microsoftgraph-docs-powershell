@@ -438,8 +438,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel)
-- [](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0)
+- [Invoke-MgHaveTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/channel-doesuserhaveaccess?view=graph-rest-1.0)
 
 
 

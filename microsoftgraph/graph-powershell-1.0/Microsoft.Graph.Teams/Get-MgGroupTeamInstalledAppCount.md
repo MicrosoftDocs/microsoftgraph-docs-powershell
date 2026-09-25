@@ -374,7 +374,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteaminstalledappcount)
+- [Get-MgGroupTeamInstalledAppCount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteaminstalledappcount)
 
 
 

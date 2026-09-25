@@ -607,8 +607,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessagedelta)
-- [](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
+- [Get-MgGroupTeamChannelMessageDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannelmessagedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
 
 
 

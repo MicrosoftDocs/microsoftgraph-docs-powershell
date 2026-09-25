@@ -1639,7 +1639,7 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessagereply)
+- [Update-MgTeamworkDeletedTeamChannelMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessagereply)
 
 
 
