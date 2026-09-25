@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgcreationuserauthenticationfido2methodoption
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgCreationUserAuthenticationFido2MethodOption
 ---
@@ -17,9 +17,6 @@ Retrieve creation options required to generate and register a Microsoft Entra ID
 This function returns WebAuthn credential creation options that include a challenge, relying party information, and user information, which are used by the client to create a new FIDO2 credential.
 The challenge property and credential IDs in excludeCredentials are Base64URL-encoded without padding.
 All binary data in the response follows Base64URL encoding as defined in RFC 4648 Section 5.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCreationUserAuthenticationFido2MethodOption](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaCreationUserAuthenticationFido2MethodOption?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,26 +50,13 @@ This function returns WebAuthn credential creation options that include a challe
 The challenge property and credential IDs in excludeCredentials are Base64URL-encoded without padding.
 All binary data in the response follows Base64URL encoding as defined in RFC 4648 Section 5.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | UserAuthMethod-Passkey.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthMethod-Passkey.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Invoke-MgCreationUserAuthenticationFido2MethodOption -UserId $userId
-
-```
-This example shows how to use the Invoke-MgCreationUserAuthenticationFido2MethodOption Cmdlet.
-
 
 ## PARAMETERS
 
@@ -318,7 +302,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -389,27 +373,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgCreationUserAuthenticationFido2MethodOption](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgcreationuserauthenticationfido2methodoption)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgcreationuserauthenticationfido2methodoption)
+- [](https://learn.microsoft.com/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartnerm365capability
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyCrossTenantAccessPolicyPartnerM365Capability
 ---
@@ -14,9 +14,6 @@ title: Update-MgPolicyCrossTenantAccessPolicyPartnerM365Capability
 ## SYNOPSIS
 
 Update an existing Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -72,6 +69,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update an existing Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -572,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphM365CapabilityBase>`: m365CapabilityBase
+BODYPARAMETER <IMicrosoftGraphM365CapabilityBase>: m365CapabilityBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -593,7 +600,7 @@ For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
   [Name <String>]: The name or identifier of the capability.
 Key.
 
-INBOUNDACCESS `<IMicrosoftGraphM365CapabilityInboundAccess>`: m365CapabilityInboundAccess
+INBOUNDACCESS <IMicrosoftGraphM365CapabilityInboundAccess>: m365CapabilityInboundAccess
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsAllowed <Boolean?>]: Indicates whether this capability should be allowed or blocked for inbound access.
   [ResourceScopes <IMicrosoftGraphM365CapabilityResourceScopes>]: m365CapabilityResourceScopes
@@ -605,7 +612,7 @@ The value is either All, to apply the capability to all resources of the type sp
       [ResourceType <String>]: m365ResourceType
     [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
   [AuthenticationCombinationConfigurationId <String>]: The unique identifier of authenticationCombinationConfiguration
@@ -676,28 +683,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartnerm365capability)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartnerm365capability)
+- [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities?view=graph-rest-1.0)
