@@ -55,12 +55,17 @@ This API returns the encrypted passwords as null.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupPasswordSingleSignOnCredential -GroupId $groupId
+
+```
+This example shows how to use the Get-MgBetaGroupPasswordSingleSignOnCredential Cmdlet.
+
 
 ## PARAMETERS
 
