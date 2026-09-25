@@ -16,6 +16,9 @@ title: Get-MgBetaPlaceCheck
 Read the properties and relationships of a checkInClaim object.
 This API provides the check-in status for a specific place, such as a desk, room, or workspace, associated with a particular reservation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceCheck](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceCheck?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

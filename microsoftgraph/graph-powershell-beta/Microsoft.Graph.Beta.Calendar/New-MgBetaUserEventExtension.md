@@ -15,6 +15,9 @@ title: New-MgBetaUserEventExtension
 
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserEventExtension](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

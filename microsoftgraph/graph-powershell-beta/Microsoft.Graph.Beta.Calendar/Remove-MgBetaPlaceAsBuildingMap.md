@@ -15,6 +15,9 @@ title: Remove-MgBetaPlaceAsBuildingMap
 
 Delete the map of a specific building.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsBuildingMap](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsBuildingMap?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaPlaceCountAsDesk
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceCountAsDesk](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceCountAsDesk?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
