@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriveitemsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaUserDriveItemSensitivityLabel
 ---
@@ -20,9 +20,6 @@ For more information about sensitivity labels from an administrator's perspectiv
 This API applies sensitivity labels to files at rest.
 Office clients don't apply watermarks, headers, or footers to files that contain the label information.
 For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveItemSensitivityLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -82,6 +79,16 @@ For more information about sensitivity labels from an administrator's perspectiv
 This API applies sensitivity labels to files at rest.
 Office clients don't apply watermarks, headers, or footers to files that contain the label information.
 For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -169,7 +176,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -385,7 +392,7 @@ HelpMessage: ''
 
 ### -JustificationText
 
-
+.
 
 ```yaml
 Type: System.String
@@ -518,7 +525,7 @@ HelpMessage: ''
 
 ### -SensitivityLabelId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -626,7 +633,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIEDBYUSER `<IMicrosoftGraphUserIdentity>`: userIdentity
+APPLIEDBYUSER <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.
 For drive items, the display name might not always be available or up to date.
@@ -636,7 +643,7 @@ For example, in the access reviews decisions API, this property might record the
   [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
   [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
 
-BODYPARAMETER `<IPathsWslwlcUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsWslwlcUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AppliedByUser <IMicrosoftGraphUserIdentity>]: userIdentity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -651,7 +658,7 @@ For example, in the access reviews decisions API, this property might record the
   [JustificationText <String>]: 
   [SensitivityLabelId <String>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -681,28 +688,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgBetaUserDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriveitemsensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriveitemsensitivitylabel)
+- [](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta)

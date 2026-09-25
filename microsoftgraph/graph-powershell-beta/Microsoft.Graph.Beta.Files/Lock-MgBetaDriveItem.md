@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetadriveitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Lock-MgBetaDriveItem
 ---
@@ -76,6 +76,16 @@ The server determines which behavior applies based on the file's current lock st
 The caller doesn't need to track whether they previously locked the file, and doesn't need to manage a lock identifier.
 Only exclusive locks are currently supported.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -107,7 +117,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -232,7 +242,7 @@ HelpMessage: ''
 
 ### -DurationMinutes
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -489,11 +499,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths14Pdw0CDrivesDriveIdItemsDriveitemIdMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths14Pdw0CDrivesDriveIdItemsDriveitemIdMicrosoftGraphLockPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DurationMinutes <Int32?>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -523,28 +533,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Lock-MgBetaDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetadriveitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-lock?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetadriveitem)
+- [](https://learn.microsoft.com/graph/api/driveitem-lock?view=graph-rest-beta)
