@@ -428,8 +428,8 @@ BODYPARAMETER `<IPathsFucohkReportsPartnersBillingReconciliationUnbilledMicrosof
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingreconciliationunbilled)
-- [](https://learn.microsoft.com/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-beta)
+- [Export-MgBetaReportPartnerBillingReconciliationUnbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingreconciliationunbilled)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-beta)
 
 
 

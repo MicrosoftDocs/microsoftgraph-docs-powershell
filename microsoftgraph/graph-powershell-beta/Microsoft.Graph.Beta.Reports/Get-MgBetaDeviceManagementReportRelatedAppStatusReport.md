@@ -585,7 +585,7 @@ BODYPARAMETER `<IPathsUcgxcdDevicemanagementReportsMicrosoftGraphGetrelatedappss
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportrelatedappstatusreport)
+- [Get-MgBetaDeviceManagementReportRelatedAppStatusReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportrelatedappstatusreport)
 
 
 
