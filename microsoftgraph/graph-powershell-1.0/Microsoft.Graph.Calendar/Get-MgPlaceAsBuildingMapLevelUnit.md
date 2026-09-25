@@ -611,8 +611,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelunit)
-- [](https://learn.microsoft.com/graph/api/levelmap-list-units?view=graph-rest-1.0)
+- [Get-MgPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasbuildingmaplevelunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/levelmap-list-units?view=graph-rest-1.0)
 
 
 

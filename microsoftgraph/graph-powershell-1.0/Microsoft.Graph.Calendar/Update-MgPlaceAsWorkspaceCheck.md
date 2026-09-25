@@ -571,7 +571,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasworkspacecheck)
+- [Update-MgPlaceAsWorkspaceCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplaceasworkspacecheck)
 
 
 
