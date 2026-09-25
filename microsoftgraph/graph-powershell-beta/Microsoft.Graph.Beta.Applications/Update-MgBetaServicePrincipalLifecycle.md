@@ -150,7 +150,7 @@ HelpMessage: ''
 
 ### -ComplianceIssues
 
-.
+
 To construct, see NOTES section for COMPLIANCEISSUES properties and create a hash table.
 
 ```yaml
@@ -347,7 +347,7 @@ HelpMessage: ''
 
 ### -LastAttestationDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
