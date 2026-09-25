@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementDetectedAppManagedDevice
 
 The devices that have the discovered application installed
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDetectedAppManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDetectedAppManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
