@@ -15,6 +15,9 @@ title: New-MgBetaTeamworkDeletedTeamChannelTab
 
 Create new navigation property to tabs for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -16,6 +16,9 @@ title: Set-MgBetaUserChatTargetedMessageHostedContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserChatTargetedMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgUserChatTargetedMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

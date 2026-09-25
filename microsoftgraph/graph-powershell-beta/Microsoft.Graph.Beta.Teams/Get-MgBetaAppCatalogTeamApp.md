@@ -15,6 +15,9 @@ title: Get-MgBetaAppCatalogTeamApp
 
 Get teamsApps from appCatalogs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

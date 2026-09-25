@@ -15,6 +15,9 @@ title: Get-MgBetaTeamScheduleTimeOff
 
 Retrieve the properties and relationships of a timeOff object by ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

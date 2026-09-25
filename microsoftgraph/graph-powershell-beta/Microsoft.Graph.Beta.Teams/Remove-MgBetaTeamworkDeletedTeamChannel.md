@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamworkDeletedTeamChannel
 
 Delete navigation property channels for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
