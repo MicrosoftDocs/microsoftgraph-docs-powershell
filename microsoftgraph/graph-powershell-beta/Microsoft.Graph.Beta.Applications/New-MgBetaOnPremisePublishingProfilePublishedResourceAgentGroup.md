@@ -777,7 +777,7 @@ Nullable.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresourceagentgroup)
+- [New-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresourceagentgroup)
 
 
 

@@ -441,8 +441,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationjobschemadirectory)
-- [](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta)
+- [Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaserviceprincipalsynchronizationjobschemadirectory)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-directorydefinition-discover?view=graph-rest-beta)
 
 
 
