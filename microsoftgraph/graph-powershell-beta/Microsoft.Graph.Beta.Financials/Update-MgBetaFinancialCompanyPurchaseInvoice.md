@@ -1300,7 +1300,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPurchaseInvoice>: purchaseInvoice
+BODYPARAMETER `<IMicrosoftGraphPurchaseInvoice>`: purchaseInvoice
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BuyFromAddress <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1444,7 +1444,7 @@ Read-only.
   [VendorName <String>]: 
   [VendorNumber <String>]: 
 
-BUYFROMADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+BUYFROMADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1452,7 +1452,7 @@ BUYFROMADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-CURRENCY <IMicrosoftGraphCurrency>: currency
+CURRENCY `<IMicrosoftGraphCurrency>`: currency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AmountDecimalPlaces <String>]: 
   [AmountRoundingPrecision <Decimal?>]: 
@@ -1462,7 +1462,7 @@ CURRENCY <IMicrosoftGraphCurrency>: currency
   [LastModifiedDateTime <DateTime?>]: 
   [Symbol <String>]: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1500,7 +1500,7 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-PAYTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+PAYTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1572,7 +1572,7 @@ Read-only.
   [TotalTaxAmount <Decimal?>]: 
   [UnitCost <Decimal?>]: 
 
-SHIPTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+SHIPTOADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1580,7 +1580,7 @@ SHIPTOADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-VENDOR <IMicrosoftGraphVendor>: vendor
+VENDOR `<IMicrosoftGraphVendor>`: vendor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1640,3 +1640,25 @@ VENDOR <IMicrosoftGraphVendor>: vendor
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoice)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
