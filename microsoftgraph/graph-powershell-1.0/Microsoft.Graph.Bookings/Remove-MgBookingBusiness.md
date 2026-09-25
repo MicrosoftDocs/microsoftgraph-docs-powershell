@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Delete a bookingBusiness object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -413,6 +403,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness)
 - [](https://learn.microsoft.com/graph/api/bookingbusiness-delete?view=graph-rest-1.0)
+
 
 
 
