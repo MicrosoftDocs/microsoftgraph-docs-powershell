@@ -88,8 +88,9 @@ Create a new contentType for a site.
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -104,6 +105,10 @@ $params = @{
 }
 
 New-MgBetaSiteContentType -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 
