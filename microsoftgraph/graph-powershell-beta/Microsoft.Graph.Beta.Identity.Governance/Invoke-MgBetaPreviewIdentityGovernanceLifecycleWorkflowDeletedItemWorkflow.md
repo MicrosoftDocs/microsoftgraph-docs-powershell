@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetapreviewidentitygovernancelifecycleworkflowdeleteditemworkflow
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
 ---
@@ -70,6 +70,16 @@ This cmdlet has the following aliases,
 Run a workflow in preview mode for selected directory objects without affecting production users.
 This action triggers workflow processing in preview mode, and results can be retrieved by using the List userProcessingResults operation with $filter=workflowExecutionType eq 'previewMode'.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -101,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -369,7 +379,7 @@ HelpMessage: ''
 
 ### -Subjects
 
-
+.
 To construct, see NOTES section for SUBJECTS properties and create a hash table.
 
 ```yaml
@@ -478,7 +488,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17CfdhcIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernancePreviewworkflowPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17CfdhcIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernancePreviewworkflowPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Subjects <IMicrosoftGraphDirectoryObject[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -486,7 +496,7 @@ Read-only.
     [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -612,28 +622,5 @@ Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetapreviewidentitygovernancelifecycleworkflowdeleteditemworkflow)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetapreviewidentitygovernancelifecycleworkflowdeleteditemworkflow)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-beta)

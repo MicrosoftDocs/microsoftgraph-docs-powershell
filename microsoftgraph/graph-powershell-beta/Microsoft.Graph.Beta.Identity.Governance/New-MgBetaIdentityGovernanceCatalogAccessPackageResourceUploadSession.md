@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancecatalogaccesspackageresourceuploadsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession
 ---
@@ -86,9 +86,8 @@ The following table lists the derived types of customDataProvidedResourceUploadS
 Specify the @odata.type in the request body to indicate the derived type.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -102,10 +101,6 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession -AccessPackageCatalogId $accessPackageCatalogId -AccessPackageResourceId $accessPackageResourceId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession Cmdlet.
-
 
 ## PARAMETERS
 
@@ -716,7 +711,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCustomDataProvidedResourceUploadSession>`: customDataProvidedResourceUploadSession
+BODYPARAMETER <IMicrosoftGraphCustomDataProvidedResourceUploadSession>: customDataProvidedResourceUploadSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -761,7 +756,7 @@ Read-only.
 Read-only.
  Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -878,7 +873,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [WorkflowTemplateId <String>]: The unique identifier of workflowTemplate
   [WorkflowVersionNumber <Int32?>]: The unique identifier of workflowVersion
 
-STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvidedResourceUploadStats
+STATS <IMicrosoftGraphCustomDataProvidedResourceUploadStats>: customDataProvidedResourceUploadStats
   [(Any) <Object>]: This indicates any property can be added to this object.
   [FilesUploaded <Int32?>]: Number of files uploaded in this session.
   [TotalBytesUploaded <Int64?>]: total bytes uploaded in this session
@@ -886,27 +881,5 @@ STATS `<IMicrosoftGraphCustomDataProvidedResourceUploadStats>`: customDataProvid
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancecatalogaccesspackageresourceuploadsession)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/customdataprovidedresource-post-uploadsessions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancecatalogaccesspackageresourceuploadsession)
+- [](https://learn.microsoft.com/graph/api/customdataprovidedresource-post-uploadsessions?view=graph-rest-beta)

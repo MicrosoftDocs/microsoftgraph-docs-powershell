@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstanceapplycustomdataprovidedresourcedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceApplyCustomDataProvidedResourceDecision
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 Enables reviewers to set the applyResult and applyDescription on all accessReviewInstanceDecisionItem objects in a specific accessReviewInstance in batches by using customDataProvidedResourceId.
 NOTE: The access review instance must be in an Applying state.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -130,7 +140,7 @@ HelpMessage: ''
 
 ### -ApplyDescription
 
-
+.
 
 ```yaml
 Type: System.String
@@ -184,7 +194,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -255,7 +265,7 @@ HelpMessage: ''
 
 ### -CustomDataProvidedResourceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -533,13 +543,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths17MziigIdentitygovernanceAccessreviewsInstancesAccessreviewinstanceIdMicrosoftGraphBatchapplycustomdataprovidedresourcedecisionsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths17MziigIdentitygovernanceAccessreviewsInstancesAccessreviewinstanceIdMicrosoftGraphBatchapplycustomdataprovidedresourcedecisionsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplyDescription <String>]: 
   [ApplyResult <String>]: accessReviewInstanceDecisionItemApplyResult
   [CustomDataProvidedResourceId <String>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -659,28 +669,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceApplyCustomDataProvidedResourceDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstanceapplycustomdataprovidedresourcedecision)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstanceapplycustomdataprovidedresourcedecision)
+- [](https://learn.microsoft.com/graph/api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions?view=graph-rest-beta)

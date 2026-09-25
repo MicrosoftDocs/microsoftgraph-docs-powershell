@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowprocessing
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing
 ---
@@ -69,6 +69,16 @@ This cmdlet has the following aliases,
 Cancel one or more workflow runs that are currently in queued or inProgress status.
 Currently limited to canceling one run per request.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +110,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -476,12 +486,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsG4TjvwIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCancelprocessingPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsG4TjvwIdentitygovernanceLifecycleworkflowsDeleteditemsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceCancelprocessingPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Scope <IMicrosoftGraphIdentityGovernanceCancelScope>]: cancelScope
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -601,28 +611,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowprocessing)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-cancelprocessing?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowprocessing)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-cancelprocessing?view=graph-rest-beta)

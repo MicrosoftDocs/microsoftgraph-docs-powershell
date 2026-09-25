@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowlifecyclepolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceLifecycleWorkflowLifecyclePolicy
 ---
@@ -52,13 +52,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to lifecyclePolicies for identityGovernance
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecyclePolicies-AgentId.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecyclePolicies-AgentId.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -172,7 +174,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -193,7 +195,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+.
 
 ```yaml
 Type: System.String
@@ -214,7 +216,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -256,7 +258,7 @@ HelpMessage: ''
 
 ### -GracePeriodInDays
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -362,7 +364,7 @@ HelpMessage: ''
 
 ### -IsEnabled
 
-
+.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -405,7 +407,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -554,7 +556,7 @@ HelpMessage: ''
 
 ### -Rules
 
-
+.
 To construct, see NOTES section for RULES properties and create a hash table.
 
 ```yaml
@@ -597,7 +599,7 @@ HelpMessage: ''
 
 ### -VersionNumber
 
-
+.
 
 ```yaml
 Type: System.Int32
@@ -618,7 +620,7 @@ HelpMessage: ''
 
 ### -Versions
 
-
+.
 To construct, see NOTES section for VERSIONS properties and create a hash table.
 
 ```yaml
@@ -690,7 +692,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceLifecyclePolicy>`: lifecyclePolicy
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>: lifecyclePolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -724,21 +726,21 @@ Read-only.
   [VersionNumber <Int32?>]: 
   [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
 
-CREATEDBY `<IMicrosoftGraphDirectoryObject>`: directoryObject
+CREATEDBY <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-LASTMODIFIEDBY `<IMicrosoftGraphDirectoryObject>`: directoryObject
+LASTMODIFIEDBY <IMicrosoftGraphDirectoryObject>: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-NOTIFICATIONSCHEDULE `<IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>`: lifecyclePolicyNotificationSettings
+NOTIFICATIONSCHEDULE <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>: lifecyclePolicyNotificationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AdditionalRecipients <String[]>]: 
   [IsEnabled <Boolean?>]: 
@@ -785,27 +787,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityGovernanceLifecycleWorkflowLifecyclePolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowlifecyclepolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancelifecycleworkflowlifecyclepolicy)

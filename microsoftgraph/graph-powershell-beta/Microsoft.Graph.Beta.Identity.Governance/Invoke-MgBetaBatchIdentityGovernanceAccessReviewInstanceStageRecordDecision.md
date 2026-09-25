@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstancestagerecorddecision
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceStageRecordDecision
 ---
@@ -71,6 +71,16 @@ This cmdlet has the following aliases,
 
 Record decisions in bulk for all accessReviewInstanceDecisionItem objects within a single accessReviewStage of a multi-stage accessReviewInstance, by using principalId, resourceId, or neither.
 This action records decisions for a specific stage only, unlike accessReviewInstance: batchRecordDecisions, which operates across the entire instance.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -157,7 +167,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -228,7 +238,7 @@ HelpMessage: ''
 
 ### -Decision
 
-
+.
 
 ```yaml
 Type: System.String
@@ -346,7 +356,7 @@ HelpMessage: ''
 
 ### -Justification
 
-
+.
 
 ```yaml
 Type: System.String
@@ -394,7 +404,7 @@ HelpMessage: ''
 
 ### -PrincipalId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -484,7 +494,7 @@ HelpMessage: ''
 
 ### -ResourceId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -587,14 +597,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1S3D39MIdentitygovernanceAccessreviewsInstancesAccessreviewinstanceIdStagesAccessreviewstageIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1S3D39MIdentitygovernanceAccessreviewsInstancesAccessreviewinstanceIdStagesAccessreviewstageIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Decision <String>]: 
   [Justification <String>]: 
   [PrincipalId <String>]: 
   [ResourceId <String>]: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -714,28 +724,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceStageRecordDecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstancestagerecorddecision)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewstage-batchrecorddecisions?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewinstancestagerecorddecision)
+- [](https://learn.microsoft.com/graph/api/accessreviewstage-batchrecorddecisions?view=graph-rest-beta)

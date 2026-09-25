@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementExternalOriginResourceConnector
 ---
@@ -48,18 +48,9 @@ This cmdlet has the following aliases,
 
 Creates a new externalOriginResourceConnector object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | EntitlementManagement.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -81,10 +72,6 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementExternalOriginResourceConnector -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaEntitlementManagementExternalOriginResourceConnector Cmdlet.
-
 
 ## PARAMETERS
 
@@ -565,7 +552,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExternalOriginResourceConnector>`: externalOriginResourceConnector
+BODYPARAMETER <IMicrosoftGraphExternalOriginResourceConnector>: externalOriginResourceConnector
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -580,34 +567,12 @@ Read-only.
   [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
   [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
 
-CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
+CONNECTIONINFO <IMicrosoftGraphConnectionInfo>: connectionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
 
 
 ## RELATED LINKS
 
-- [New-MgBetaEntitlementManagementExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-post-externaloriginresourceconnectors?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
+- [](https://learn.microsoft.com/graph/api/entitlementmanagement-post-externaloriginresourceconnectors?view=graph-rest-beta)
