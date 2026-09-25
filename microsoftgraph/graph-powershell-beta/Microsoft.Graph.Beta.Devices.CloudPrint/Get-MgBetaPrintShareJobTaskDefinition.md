@@ -16,6 +16,9 @@ title: Get-MgBetaPrintShareJobTaskDefinition
 The printTaskDefinition that was used to create this task.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJobTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobTaskDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
