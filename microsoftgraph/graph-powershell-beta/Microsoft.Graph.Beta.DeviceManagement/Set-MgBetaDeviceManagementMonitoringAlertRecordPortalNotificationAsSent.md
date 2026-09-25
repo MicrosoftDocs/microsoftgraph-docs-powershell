@@ -46,12 +46,17 @@ This cmdlet has the following aliases,
 Set the status of the notification associated with the specified alertRecord on the Microsoft EndPoint Manager admin center as sent, by setting the isPortalNotificationSent property of the portal notification to true.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement
 
 Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent -AlertRecordId $alertRecordId
+
+```
+This example shows how to use the Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent Cmdlet.
+
 
 ## PARAMETERS
 
