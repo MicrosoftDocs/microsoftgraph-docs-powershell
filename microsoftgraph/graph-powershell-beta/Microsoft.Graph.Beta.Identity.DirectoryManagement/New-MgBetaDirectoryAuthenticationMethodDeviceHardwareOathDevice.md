@@ -55,8 +55,9 @@ This API supports two scenarios:\r- Create the new hardware token without assign
 You can then assign to a user.\r- Create and assign a hardware token to a user in the same request.
 
 ## EXAMPLES
+### Example 1: Create a token without user assignment
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -72,7 +73,12 @@ $params = @{
 
 New-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a token without user assignment
+
+### Example 2: Create a token and assign it to a user
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -90,6 +96,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice -BodyParameter $params
+
+```
+This example will create a token and assign it to a user
+
 
 ## PARAMETERS
 

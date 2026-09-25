@@ -58,14 +58,19 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 | Application | OrganizationalBranding.ReadWrite.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Setting **bannerLogo** for the fr-FR localization using PUT
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = Binary data for the image
 
 Set-MgBetaOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+
+```
+This example shows setting **bannerlogo** for the fr-fr localization using put
+
 
 ## PARAMETERS
 
