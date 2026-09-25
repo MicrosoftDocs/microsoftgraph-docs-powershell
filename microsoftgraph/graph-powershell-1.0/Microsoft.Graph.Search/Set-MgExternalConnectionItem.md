@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgExternalConnectionItem
 ---
@@ -14,9 +14,6 @@ title: Set-MgExternalConnectionItem
 ## SYNOPSIS
 
 Create a new externalItem object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Create a new externalItem object.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example: Create a custom item
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Search
 
@@ -117,10 +105,6 @@ $params = @{
 }
 
 Set-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId -BodyParameter $params
-
-```
-This example will create a custom item
-
 
 ## PARAMETERS
 
@@ -701,7 +685,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Type <String>]: externalActivityType
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalItem>`: externalItem
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalItem>: externalItem
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -737,17 +721,17 @@ Required.
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemContent
+CONTENT <IMicrosoftGraphExternalConnectorsExternalItemContent>: externalItemContent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: externalItemContentType
   [Value <String>]: The content for the externalItem.
 Required.
 
-INFORMATIONPROTECTIONLABEL `<IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>`: externalItemInformationProtectionLabel
+INFORMATIONPROTECTIONLABEL <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>: externalItemInformationProtectionLabel
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SensitivityLabelId <String>]: 
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym
   [BookmarkId <String>]: The unique identifier of bookmark
   [ConnectionOperationId <String>]: The unique identifier of connectionOperation
@@ -761,27 +745,5 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgExternalConnectionItem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/set-mgexternalconnectionitem)
+- [](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-1.0)
