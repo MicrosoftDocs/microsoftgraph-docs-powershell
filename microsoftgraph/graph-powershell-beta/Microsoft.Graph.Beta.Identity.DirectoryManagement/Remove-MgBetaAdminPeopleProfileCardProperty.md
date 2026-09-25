@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminPeopleProfileCardProperty
 
 Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

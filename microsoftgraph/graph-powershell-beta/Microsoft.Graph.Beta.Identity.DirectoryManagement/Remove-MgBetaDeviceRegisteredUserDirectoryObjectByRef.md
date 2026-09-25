@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef
 
 Remove a user as a registered user of the device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceRegisteredUserDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredUserDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

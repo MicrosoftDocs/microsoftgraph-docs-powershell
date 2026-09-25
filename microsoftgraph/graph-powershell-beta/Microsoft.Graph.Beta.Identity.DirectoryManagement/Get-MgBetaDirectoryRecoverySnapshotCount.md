@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryRecoverySnapshotCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRecoverySnapshotCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRecoverySnapshotCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

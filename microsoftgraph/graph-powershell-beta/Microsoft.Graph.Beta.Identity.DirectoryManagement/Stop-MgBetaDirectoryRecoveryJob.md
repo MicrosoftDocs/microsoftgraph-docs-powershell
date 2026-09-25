@@ -17,6 +17,9 @@ Cancel a running recoveryJobBase object (either a preview or recovery job).
 The job must be in a non-terminal state (initialized, calculating, loadingData, or running).
 After cancellation, the job status changes to abandoned.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Stop-MgDirectoryRecoveryJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)
