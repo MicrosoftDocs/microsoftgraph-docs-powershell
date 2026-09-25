@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveListContentType
 
 The collection of content types present in this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

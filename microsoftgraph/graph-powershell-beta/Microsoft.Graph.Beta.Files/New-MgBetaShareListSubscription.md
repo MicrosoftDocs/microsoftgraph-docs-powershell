@@ -15,6 +15,9 @@ title: New-MgBetaShareListSubscription
 
 Create new navigation property to subscriptions for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListSubscription](/powershell/module/Microsoft.Graph.Files/New-MgShareListSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

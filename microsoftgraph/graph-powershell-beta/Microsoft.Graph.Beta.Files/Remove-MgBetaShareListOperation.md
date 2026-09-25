@@ -15,6 +15,9 @@ title: Remove-MgBetaShareListOperation
 
 Delete navigation property operations for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -17,6 +17,9 @@ Remove the retention label from a driveItem.
 This operation clears the retention label and all associated retention settings enforced on the item.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

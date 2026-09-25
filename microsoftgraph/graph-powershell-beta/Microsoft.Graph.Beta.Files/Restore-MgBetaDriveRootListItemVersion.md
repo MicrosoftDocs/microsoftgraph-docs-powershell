@@ -15,6 +15,9 @@ title: Restore-MgBetaDriveRootListItemVersion
 
 Invoke action restoreVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRootListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

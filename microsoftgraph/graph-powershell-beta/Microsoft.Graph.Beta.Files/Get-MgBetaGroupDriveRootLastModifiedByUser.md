@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveRootLastModifiedByUser
 
 Get lastModifiedByUser from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootLastModifiedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

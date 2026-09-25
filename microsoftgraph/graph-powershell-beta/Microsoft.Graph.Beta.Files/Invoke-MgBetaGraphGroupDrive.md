@@ -16,6 +16,9 @@ title: Invoke-MgBetaGraphGroupDrive
 Get a list of driveItem objects shared with the owner of a drive.
 The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they're items from a different drive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphGroupDrive](/powershell/module/Microsoft.Graph.Files/Invoke-MgGraphGroupDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Graph (Default)
