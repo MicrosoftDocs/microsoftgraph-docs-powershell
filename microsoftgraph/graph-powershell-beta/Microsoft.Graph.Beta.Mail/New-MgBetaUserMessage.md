@@ -1877,7 +1877,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage)
+- [New-MgBetaUserMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage)
 
 
 

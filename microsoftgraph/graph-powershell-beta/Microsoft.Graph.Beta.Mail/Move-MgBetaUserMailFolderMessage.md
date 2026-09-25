@@ -538,8 +538,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/move-mgbetausermailfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-beta)
+- [Move-MgBetaUserMailFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/move-mgbetausermailfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-beta)
 
 
 
