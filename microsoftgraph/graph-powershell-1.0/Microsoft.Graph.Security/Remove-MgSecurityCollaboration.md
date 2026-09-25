@@ -15,6 +15,9 @@ title: Remove-MgSecurityCollaboration
 
 Delete navigation property collaboration for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCollaboration](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCollaboration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseSetting
 
 Read the properties and relationships of an ediscoveryCaseSettings object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

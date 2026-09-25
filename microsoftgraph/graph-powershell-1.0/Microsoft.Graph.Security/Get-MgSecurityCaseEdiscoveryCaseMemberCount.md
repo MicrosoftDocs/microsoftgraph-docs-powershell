@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseMemberCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseMemberCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseMemberCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: Get-MgSecurityAttackSimulationLoginPage
 Get a loginPage associated with an attack simulation campaign for a tenant.
 Login pages are shown to users in attack simulations that use credential harvest and link in attachment social engineering techniques.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLoginPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgSecurityThreatIntelligenceHostPair
 
 Delete navigation property hostPairs for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
