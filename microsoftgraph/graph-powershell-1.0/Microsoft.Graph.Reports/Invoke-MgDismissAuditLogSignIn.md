@@ -16,6 +16,9 @@ title: Invoke-MgDismissAuditLogSignIn
 Mark an event in Microsoft Entra sign-in logs as dismissed.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaDismissAuditLogSignIn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### DismissExpanded (Default)

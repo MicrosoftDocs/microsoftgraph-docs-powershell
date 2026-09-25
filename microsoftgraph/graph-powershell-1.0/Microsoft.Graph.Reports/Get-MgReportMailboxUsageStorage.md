@@ -15,6 +15,9 @@ title: Get-MgReportMailboxUsageStorage
 
 Get the amount of storage used in your organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageStorage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

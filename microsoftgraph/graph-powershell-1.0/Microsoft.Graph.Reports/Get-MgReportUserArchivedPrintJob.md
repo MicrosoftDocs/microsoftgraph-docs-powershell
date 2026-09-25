@@ -15,6 +15,9 @@ title: Get-MgReportUserArchivedPrintJob
 
 Get a list of archived print jobs for a particular user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportUserArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportUserArchivedPrintJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
