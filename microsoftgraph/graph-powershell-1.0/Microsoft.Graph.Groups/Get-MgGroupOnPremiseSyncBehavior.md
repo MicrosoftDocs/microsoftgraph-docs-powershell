@@ -44,6 +44,14 @@ This cmdlet has the following aliases,
 
 Get onPremisesSyncBehavior from groups
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
