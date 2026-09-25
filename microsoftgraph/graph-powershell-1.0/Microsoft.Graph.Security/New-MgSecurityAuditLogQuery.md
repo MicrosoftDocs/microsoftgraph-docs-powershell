@@ -643,7 +643,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSecurityAuditLogQuery>: Represents a query against the unified audit log.
+BODYPARAMETER `<IMicrosoftGraphSecurityAuditLogQuery>`: Represents a query against the unified audit log.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -702,3 +702,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityauditlogquery)
 - [](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
