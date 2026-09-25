@@ -1,43 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Identity.SignIns-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbasebyref
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
 ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef
+title: Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 ---
 
-# Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef
+# Remove-MgIdentityB2XUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
 
-Delete ref of navigation property identityProviders for identity
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Delete (Default)
 
 ```
-Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef
- -AuthenticationEventsFlowId <string> -IdentityProviderBaseId <string> [-IfMatch <string>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <string>
+ -IdentityProviderBaseId <string> [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DeleteViaIdentity
 
 ```
-Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef
- -InputObject <IIdentitySignInsIdentity> [-IfMatch <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+Remove-MgIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -47,13 +46,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete ref of navigation property identityProviders for identity
+Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## PARAMETERS
 
-### -AuthenticationEventsFlowId
+### -B2XIdentityUserFlowId
 
-The unique identifier of authenticationEventsFlow
+The unique identifier of b2xIdentityUserFlow
 
 ```yaml
 Type: System.String
@@ -471,7 +470,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityauthenticationeventflowasonauthenticationmethodloadstartexternaluserselfservicesignupidentityproviderbasebyref)
+- [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/Remove-MgIdentityB2XUserFlowIdentityProviderByRef)
 
 
 

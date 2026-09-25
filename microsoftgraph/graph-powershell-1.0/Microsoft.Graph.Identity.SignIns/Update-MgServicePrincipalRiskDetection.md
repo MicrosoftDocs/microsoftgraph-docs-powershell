@@ -1163,7 +1163,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection)
+- [Update-MgServicePrincipalRiskDetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection)
 
 
 
