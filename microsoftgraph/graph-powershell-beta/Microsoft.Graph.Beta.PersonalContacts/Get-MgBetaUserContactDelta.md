@@ -17,6 +17,9 @@ Get a set of contacts that have been added, deleted, or updated in a specified f
 A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \rapplying state tokens in one or more of these calls, \ryou can query for incremental changes in the contacts in \rthat folder.
 This allows you to maintain and synchronize a local store of a user's contacts without \rhaving to fetch the entire set of contacts from the server every time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactDelta](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
