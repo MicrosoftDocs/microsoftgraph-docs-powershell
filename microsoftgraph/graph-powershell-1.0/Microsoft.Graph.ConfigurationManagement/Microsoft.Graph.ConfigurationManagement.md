@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.ConfigurationManagement
-Module Guid: e21d6e3a-04f8-479b-a16d-27c7eccc2911
+Module Guid: 9e05d836-5dca-4bd6-b035-22421dbc96d0
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.configurationmanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
