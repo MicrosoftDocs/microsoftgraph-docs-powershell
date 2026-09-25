@@ -532,8 +532,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreserviceapp)
-- [](https://learn.microsoft.com/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-beta)
+- [New-MgBetaSolutionBackupRestoreServiceApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoreserviceapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-beta)
 
 
 
