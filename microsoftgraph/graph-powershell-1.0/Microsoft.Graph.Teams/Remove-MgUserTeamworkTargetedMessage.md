@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworktargetedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserTeamworkTargetedMessage
 ---
@@ -68,6 +68,16 @@ This cmdlet has the following aliases,
 Delete a specific targeted message from a channel context.
 Teams administrators can use this API to remove targeted messages by providing the message ID, team ID, and channel ID.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -99,7 +109,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -148,7 +158,7 @@ HelpMessage: ''
 
 ### -ChannelId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -288,7 +298,7 @@ HelpMessage: ''
 
 ### -MessageId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -421,7 +431,7 @@ HelpMessage: ''
 
 ### -TeamId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -529,13 +539,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsHp1YlpUsersUserIdTeamworkMicrosoftGraphDeletetargetedmessagePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsHp1YlpUsersUserIdTeamworkMicrosoftGraphDeletetargetedmessagePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ChannelId <String>]: 
   [MessageId <String>]: 
   [TeamId <String>]: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -576,28 +586,5 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgUserTeamworkTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworktargetedmessage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-deletetargetedmessage?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworktargetedmessage)
+- [](https://learn.microsoft.com/graph/api/userteamwork-deletetargetedmessage?view=graph-rest-1.0)
