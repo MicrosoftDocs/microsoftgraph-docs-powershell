@@ -67,16 +67,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to shiftsRoleDefinitions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -618,6 +608,7 @@ Permissions that aren't in this collection are disabled.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleshiftroledefinition)
+
 
 
 
