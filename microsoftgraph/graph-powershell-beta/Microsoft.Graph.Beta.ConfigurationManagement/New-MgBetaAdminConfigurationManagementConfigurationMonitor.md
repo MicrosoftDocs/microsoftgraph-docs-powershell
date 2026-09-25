@@ -15,6 +15,9 @@ title: New-MgBetaAdminConfigurationManagementConfigurationMonitor
 
 Create a new configurationMonitor object that runs periodically in the background at a scheduled frequency.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminConfigurationManagementConfigurationMonitor](/powershell/module/Microsoft.Graph.ConfigurationManagement/New-MgAdminConfigurationManagementConfigurationMonitor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

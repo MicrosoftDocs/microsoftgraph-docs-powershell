@@ -15,6 +15,9 @@ title: Get-MgBetaAdminConfigurationManagementConfigurationDrift
 
 Get the properties and relationships of a configurationDrift object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminConfigurationManagementConfigurationDrift](/powershell/module/Microsoft.Graph.ConfigurationManagement/Get-MgAdminConfigurationManagementConfigurationDrift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
