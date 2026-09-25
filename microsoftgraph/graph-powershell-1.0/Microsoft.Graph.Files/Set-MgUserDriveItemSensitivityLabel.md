@@ -21,6 +21,9 @@ This API applies sensitivity labels to files at rest.
 Office clients don't apply watermarks, headers, or footers to files that contain the label information.
 For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgShareContentTypeBase
 
 Parent contentType from which this content type is derived.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareContentTypeBase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
