@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Migrations-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjobuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Migrations
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaCrossTenantMigrationJobUser
 ---
@@ -48,17 +48,12 @@ Cancel a specific crossTenantMigrationTask for a User within a CrossTenantMigrat
 If the User migration can't be canceled or is in a terminal state, a 409 CONFLICT response code is returned, and the migration continues.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Stop-MgBetaCrossTenantMigrationJobUser -CrossTenantMigrationJobId $crossTenantMigrationJobId -CrossTenantMigrationTaskId $crossTenantMigrationTaskId
-
-```
-This example shows how to use the Stop-MgBetaCrossTenantMigrationJobUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -369,7 +364,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
+INPUTOBJECT <IMigrationsIdentity>: Identity Parameter
   [CrossTenantMigrationJobId <String>]: The unique identifier of crossTenantMigrationJob
   [CrossTenantMigrationTaskId <String>]: The unique identifier of crossTenantMigrationTask
   [DisplayName <String>]: Alternate key of crossTenantMigrationJob
@@ -377,27 +372,5 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaCrossTenantMigrationJobUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjobuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationtask-cancel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjobuser)
+- [](https://learn.microsoft.com/graph/api/crosstenantmigrationtask-cancel?view=graph-rest-beta)

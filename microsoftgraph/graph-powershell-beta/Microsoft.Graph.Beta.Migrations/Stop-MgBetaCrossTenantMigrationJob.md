@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Migrations-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Migrations
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaCrossTenantMigrationJob
 ---
@@ -51,17 +51,12 @@ If the job can't be canceled, a 409 Conflict response is returned and the migrat
 This response happens when a migration is already in progress or is in a terminal state.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Stop-MgBetaCrossTenantMigrationJob -CrossTenantMigrationJobId $crossTenantMigrationJobId
-
-```
-This example shows how to use the Stop-MgBetaCrossTenantMigrationJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -351,7 +346,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
+INPUTOBJECT <IMigrationsIdentity>: Identity Parameter
   [CrossTenantMigrationJobId <String>]: The unique identifier of crossTenantMigrationJob
   [CrossTenantMigrationTaskId <String>]: The unique identifier of crossTenantMigrationTask
   [DisplayName <String>]: Alternate key of crossTenantMigrationJob
@@ -359,27 +354,5 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Stop-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-cancel?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/stop-mgbetacrosstenantmigrationjob)
+- [](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-cancel?view=graph-rest-beta)

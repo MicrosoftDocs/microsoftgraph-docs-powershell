@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Migrations-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/new-mgbetacrosstenantmigrationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Migrations
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaCrossTenantMigrationJob
 ---
@@ -55,9 +55,8 @@ A job defines the migration batch but doesn't start validation or migration.
 After you create the job, call validate to verify tenant and resource configuration, then call migrate to begin the actual migration.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
@@ -83,10 +82,6 @@ workloads = @(
 }
 
 New-MgBetaCrossTenantMigrationJob -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaCrossTenantMigrationJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -730,7 +725,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantMigrationJob>`: crossTenantMigrationJob
+BODYPARAMETER <IMicrosoftGraphCrossTenantMigrationJob>: crossTenantMigrationJob
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -780,7 +775,7 @@ Only Users are supported at this time.
   [Workloads <String[]>]: Workloads to migrate.
 Supported workloads are Teams, Exchange, and ODSP (OneDrive/SharePoint).
 
-EXCHANGESETTINGS `<IMicrosoftGraphExchangeOnlineCrossTenantMigrationSettings>`: exchangeOnlineCrossTenantMigrationSettings
+EXCHANGESETTINGS <IMicrosoftGraphExchangeOnlineCrossTenantMigrationSettings>: exchangeOnlineCrossTenantMigrationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SourceEndpoint <String>]: Name of the Migration Endpoint in the source tenant
   [TargetDeliveryDomain <String>]: Delivery domain on the target tenant
@@ -802,27 +797,5 @@ Only Users are supported at this time.
 
 ## RELATED LINKS
 
-- [New-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/new-mgbetacrosstenantmigrationjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/migrationsroot-post-crosstenantmigrationjobs?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/new-mgbetacrosstenantmigrationjob)
+- [](https://learn.microsoft.com/graph/api/migrationsroot-post-crosstenantmigrationjobs?view=graph-rest-beta)

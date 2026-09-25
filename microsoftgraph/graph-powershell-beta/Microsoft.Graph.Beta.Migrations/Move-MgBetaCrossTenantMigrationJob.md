@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Migrations-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/move-mgbetacrosstenantmigrationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Migrations
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgBetaCrossTenantMigrationJob
 ---
@@ -55,17 +55,12 @@ This action is asynchronous.
 After you call the migrate API, poll the Get crossTenantMigrationJob endpoint to check for a terminal status of completed, completedWithErrors, or failed.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Move-MgBetaCrossTenantMigrationJob -CrossTenantMigrationJobId $crossTenantMigrationJobId
-
-```
-This example shows how to use the Move-MgBetaCrossTenantMigrationJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -355,7 +350,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
+INPUTOBJECT <IMigrationsIdentity>: Identity Parameter
   [CrossTenantMigrationJobId <String>]: The unique identifier of crossTenantMigrationJob
   [CrossTenantMigrationTaskId <String>]: The unique identifier of crossTenantMigrationTask
   [DisplayName <String>]: Alternate key of crossTenantMigrationJob
@@ -363,27 +358,5 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Move-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/move-mgbetacrosstenantmigrationjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-migrate?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/move-mgbetacrosstenantmigrationjob)
+- [](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-migrate?view=graph-rest-beta)

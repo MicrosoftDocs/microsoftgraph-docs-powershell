@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Migrations-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/remove-mgbetacrosstenantmigrationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Migrations
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaCrossTenantMigrationJob
 ---
@@ -43,6 +43,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Delete navigation property crossTenantMigrationJobs for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -374,7 +384,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
+INPUTOBJECT <IMigrationsIdentity>: Identity Parameter
   [CrossTenantMigrationJobId <String>]: The unique identifier of crossTenantMigrationJob
   [CrossTenantMigrationTaskId <String>]: The unique identifier of crossTenantMigrationTask
   [DisplayName <String>]: Alternate key of crossTenantMigrationJob
@@ -382,27 +392,4 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Remove-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/remove-mgbetacrosstenantmigrationjob)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/remove-mgbetacrosstenantmigrationjob)

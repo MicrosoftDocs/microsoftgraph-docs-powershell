@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Migrations-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/get-mgbetacrosstenantmigrationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Migrations
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaCrossTenantMigrationJob
 ---
@@ -58,17 +58,12 @@ Read the properties and relationships of crossTenantMigrationJob object.
 Includes details of the crossTenantMigrationJob , but not details of the individual crossTenantMigrationTasks of the crossTenantMigrationJob.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Get-MgBetaCrossTenantMigrationJob
-
-```
-This example shows how to use the Get-MgBetaCrossTenantMigrationJob Cmdlet.
-
 
 ## PARAMETERS
 
@@ -530,7 +525,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
+INPUTOBJECT <IMigrationsIdentity>: Identity Parameter
   [CrossTenantMigrationJobId <String>]: The unique identifier of crossTenantMigrationJob
   [CrossTenantMigrationTaskId <String>]: The unique identifier of crossTenantMigrationTask
   [DisplayName <String>]: Alternate key of crossTenantMigrationJob
@@ -538,28 +533,6 @@ INPUTOBJECT `<IMigrationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgBetaCrossTenantMigrationJob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/get-mgbetacrosstenantmigrationjob)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-get?view=graph-rest-beta)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/migrationsroot-list-crosstenantmigrationjobs?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.migrations/get-mgbetacrosstenantmigrationjob)
+- [](https://learn.microsoft.com/graph/api/crosstenantmigrationjob-get?view=graph-rest-beta)
+- [](https://learn.microsoft.com/graph/api/migrationsroot-list-crosstenantmigrationjobs?view=graph-rest-beta)
