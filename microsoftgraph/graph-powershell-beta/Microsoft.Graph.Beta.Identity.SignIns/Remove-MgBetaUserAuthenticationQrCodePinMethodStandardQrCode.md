@@ -53,12 +53,17 @@ Delete a standard or temporary qrCode object.
 | Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode -UserId $userId
+
+```
+This example shows how to use the Remove-MgBetaUserAuthenticationQrCodePinMethodStandardQrCode Cmdlet.
+
 
 ## PARAMETERS
 

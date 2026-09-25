@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Invoke action verifySignature
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,6 +407,7 @@ BODYPARAMETER `<IPathsSit1AcInformationprotectionMicrosoftGraphVerifysignaturePo
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetainformationprotectionsignature)
+
 
 
 

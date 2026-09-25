@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Delete a resourceAccountKeyAuthenticationMethod object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -511,6 +501,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationresourceaccountkeyauthenticationmethod)
 - [](https://learn.microsoft.com/graph/api/resourceaccountkeyauthenticationmethod-delete?view=graph-rest-beta)
+
 
 
 
