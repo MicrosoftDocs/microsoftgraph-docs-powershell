@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserDriveItemListItemPermission
 ---
@@ -16,9 +16,6 @@ title: Get-MgUserDriveItemListItemPermission
 The set of permissions for the item.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -62,6 +59,16 @@ This cmdlet has the following aliases,
 The set of permissions for the item.
 Read-only.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -604,7 +611,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -633,27 +640,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Get-MgUserDriveItemListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitempermission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitempermission)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserDriveRootSensitivityLabel
 ---
@@ -20,9 +20,6 @@ For more information about sensitivity labels from an administrator's perspectiv
 This API applies sensitivity labels to files at rest.
 Office clients don't apply watermarks, headers, or footers to files that contain the label information.
 For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveRootSensitivityLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,6 +80,16 @@ This API applies sensitivity labels to files at rest.
 Office clients don't apply watermarks, headers, or footers to files that contain the label information.
 For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -141,7 +148,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -330,7 +337,7 @@ HelpMessage: ''
 
 ### -JustificationText
 
-
+.
 
 ```yaml
 Type: System.String
@@ -463,7 +470,7 @@ HelpMessage: ''
 
 ### -SensitivityLabelId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -571,13 +578,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [JustificationText <String>]: 
   [SensitivityLabelId <String>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -606,28 +613,5 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Set-MgUserDriveRootSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootsensitivitylabel)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootsensitivitylabel)
+- [](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0)

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdrivelistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Grant-MgDriveListItemPermission
 ---
@@ -14,9 +14,6 @@ title: Grant-MgDriveListItemPermission
 ## SYNOPSIS
 
 Grant users access to a link represented by a permission.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Grant-MgBetaDriveListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaDriveListItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,6 +67,16 @@ This cmdlet has the following aliases,
 
 Grant users access to a link represented by a permission.
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -101,7 +108,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -407,7 +414,7 @@ HelpMessage: ''
 
 ### -Recipients
 
-
+.
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
@@ -457,7 +464,7 @@ HelpMessage: ''
 
 ### -Roles
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -538,7 +545,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths6J6P9ODrivesDriveIdListItemsListitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths6J6P9ODrivesDriveIdListItemsListitemIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Recipients <IMicrosoftGraphDriveRecipient[]>]: 
     [Alias <String>]: The alias of the domain object, for cases where an email address is unavailable (for example, security groups).
@@ -546,7 +553,7 @@ BODYPARAMETER `<IPaths6J6P9ODrivesDriveIdListItemsListitemIdPermissionsPermissio
     [ObjectId <String>]: The unique identifier for the recipient in the directory.
   [Roles <String[]>]: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -580,28 +587,5 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 ## RELATED LINKS
 
-- [Grant-MgDriveListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdrivelistitempermission)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdrivelistitempermission)
+- [](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
