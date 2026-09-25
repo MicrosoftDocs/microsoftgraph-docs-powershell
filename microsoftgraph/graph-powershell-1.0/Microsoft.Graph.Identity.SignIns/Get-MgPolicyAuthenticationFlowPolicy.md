@@ -47,12 +47,17 @@ Read the properties and relationships of an authenticationFlowsPolicy object.
 | Application | Policy.Read.All, Policy.ReadWrite.AuthenticationFlows,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAuthenticationFlowPolicy
+
+```
+This example shows how to use the Get-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
 
 ## PARAMETERS
 
