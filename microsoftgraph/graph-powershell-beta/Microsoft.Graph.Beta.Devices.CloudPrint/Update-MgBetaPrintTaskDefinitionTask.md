@@ -614,7 +614,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphPrintTask>: printTask
+BODYPARAMETER `<IMicrosoftGraphPrintTask>`: printTask
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -646,7 +646,7 @@ Read-only.
     [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
     [Event <String>]: printEvent
 
-DEFINITION <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
+DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -677,7 +677,7 @@ Read-only.
       [Definition <IMicrosoftGraphPrintTaskDefinition>]: printTaskDefinition
       [Event <String>]: printEvent
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -692,12 +692,12 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   [PrinterShareId <String>]: The unique identifier of printerShare
   [UserId <String>]: The unique identifier of user
 
-STATUS <IMicrosoftGraphPrintTaskStatus>: printTaskStatus
+STATUS `<IMicrosoftGraphPrintTaskStatus>`: printTaskStatus
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Description <String>]: A human-readable description of the current processing state of the printTask.
   [State <String>]: printTaskProcessingState
 
-TRIGGER <IMicrosoftGraphPrintTaskTrigger>: printTaskTrigger
+TRIGGER `<IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -733,3 +733,25 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprinttaskdefinitiontask)
 - [](https://learn.microsoft.com/graph/api/printtaskdefinition-update-task?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
