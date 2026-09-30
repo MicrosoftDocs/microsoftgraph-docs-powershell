@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartnerserviceproviderconstraint
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
 ---
@@ -14,6 +14,9 @@ title: Update-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
 ## SYNOPSIS
 
 Update the navigation property serviceProviderConstraints in policies
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint?view=graph-powershell-beta)
 
 ## SYNTAX
 
