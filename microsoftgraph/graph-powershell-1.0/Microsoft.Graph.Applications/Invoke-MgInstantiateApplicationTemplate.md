@@ -16,6 +16,9 @@ title: Invoke-MgInstantiateApplicationTemplate
 Add an instance of an application from the Microsoft Entra application gallery into your directory.
 For non-gallery apps, use an application template with one of the following IDs to configure different single sign-on (SSO) modes like SAML SSO and password-based SSO.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaInstantiateApplicationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### InstantiateExpanded (Default)

@@ -17,6 +17,9 @@ Create a new synchronizationJob with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

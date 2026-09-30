@@ -15,6 +15,9 @@ title: Get-MgApplicationSynchronizationSecretCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationSecretCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationSecretCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
