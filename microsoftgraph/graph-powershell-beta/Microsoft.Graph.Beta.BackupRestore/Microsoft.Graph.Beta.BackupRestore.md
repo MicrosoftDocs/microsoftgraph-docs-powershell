@@ -521,3 +521,22 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](Update-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob.md)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
