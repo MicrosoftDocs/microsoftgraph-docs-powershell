@@ -482,7 +482,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationjobbulkuploadcontent)
+- [Set-MgServicePrincipalSynchronizationJobBulkUploadContent](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronizationjobbulkuploadcontent)
 
 
 
