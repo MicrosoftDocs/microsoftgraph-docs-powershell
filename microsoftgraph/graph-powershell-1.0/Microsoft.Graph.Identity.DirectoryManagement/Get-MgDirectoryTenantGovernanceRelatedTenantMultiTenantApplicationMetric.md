@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Get multiTenantApplicationMetrics from directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -396,6 +386,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorytenantgovernancerelatedtenantmultitenantapplicationmetric)
+
 
 
 
