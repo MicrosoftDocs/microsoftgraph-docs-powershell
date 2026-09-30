@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
 ---
@@ -14,9 +14,6 @@ title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
 ## SYNOPSIS
 
 Update the properties of a oneDriveForBusinessRestoreSession object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +29,7 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
  [-Error <IMicrosoftGraphPublicError>]
  [-GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-RestoreJobType <string>]
+ [-PolicyId <string>] [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -62,7 +59,7 @@ Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession
  [-Error <IMicrosoftGraphPublicError>]
  [-GranularDriveRestoreArtifacts <IMicrosoftGraphGranularDriveRestoreArtifact[]>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-RestoreJobType <string>]
+ [-PolicyId <string>] [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -88,6 +85,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a oneDriveForBusinessRestoreSession object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -584,6 +591,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PolicyId
+
+The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -807,7 +842,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOneDriveForBusinessRestoreSession>`: oneDriveForBusinessRestoreSession
+BODYPARAMETER <IMicrosoftGraphOneDriveForBusinessRestoreSession>: oneDriveForBusinessRestoreSession
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CompletedDateTime <DateTime?>]: The time of completion of the restore session.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -839,6 +874,8 @@ For example, in the access reviews decisions API, this property might record the
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the restore session.
+  [PolicyId <String>]: The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
   [RestoreJobType <String>]: restoreJobType
   [RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]: restoreSessionArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -924,7 +961,7 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
     [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1044,7 +1081,7 @@ Read-only.
   [DirectoryObjectIds <String[]>]: The list of directory object IDs that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
   [Drives <String[]>]: The list of email addresses that are added to the corresponding OneDrive for work or school restore session in a bulk operation.
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -1091,7 +1128,7 @@ It's the path of the folder where all the artifacts are restored within a granul
 Read-only.
   [DirectoryObjectId <String>]: Id of the drive in which artifact is present.
 
-INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+INPUTOBJECT <IBackupRestoreIdentity>: Identity Parameter
   [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
   [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
@@ -1135,7 +1172,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SiteRestoreArtifactId <String>]: The unique identifier of siteRestoreArtifact
   [SiteRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of siteRestoreArtifactsBulkAdditionRequest
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1147,7 +1184,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -1157,28 +1194,5 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 ## RELATED LINKS
 
-- [Update-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreonedriveforbusinessrestoresession)
+- [](https://learn.microsoft.com/graph/api/onedriveforbusinessrestoresession-update?view=graph-rest-beta)

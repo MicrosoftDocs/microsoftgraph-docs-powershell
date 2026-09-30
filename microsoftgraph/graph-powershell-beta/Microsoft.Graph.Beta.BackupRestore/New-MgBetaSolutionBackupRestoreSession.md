@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSession
 ---
@@ -15,9 +15,6 @@ title: New-MgBetaSolutionBackupRestoreSession
 
 Create new navigation property to restoreSessions for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSession?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,7 +24,7 @@ New-MgBetaSolutionBackupRestoreSession [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-CompletedDateTime <datetime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-RestoreJobType <string>]
+ [-LastModifiedDateTime <datetime>] [-PolicyId <string>] [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -51,6 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to restoreSessions for solutions
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -354,6 +361,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PolicyId
+
+The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -555,7 +584,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRestoreSessionBase>`: restoreSessionBase
+BODYPARAMETER <IMicrosoftGraphRestoreSessionBase>: restoreSessionBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -589,6 +618,8 @@ For example, in the access reviews decisions API, this property might record the
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the restore session.
+  [PolicyId <String>]: The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
   [RestoreJobType <String>]: restoreJobType
   [RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]: restoreSessionArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -598,7 +629,7 @@ For example, in the access reviews decisions API, this property might record the
     [Total <Int32?>]: The number of artifacts present in the restore session.
   [Status <String>]: restoreSessionStatus
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -610,7 +641,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+ERROR <IMicrosoftGraphPublicError>: publicError
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: Represents the error code.
   [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
@@ -626,7 +657,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -638,7 +669,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: restoreSessionArtifactCount
+RESTORESESSIONARTIFACTCOUNT <IMicrosoftGraphRestoreSessionArtifactCount>: restoreSessionArtifactCount
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Completed <Int32?>]: The number of artifacts whose restoration completed.
   [Failed <Int32?>]: The number of artifacts whose restoration failed.
@@ -648,27 +679,4 @@ RESTORESESSIONARTIFACTCOUNT `<IMicrosoftGraphRestoreSessionArtifactCount>`: rest
 
 ## RELATED LINKS
 
-- [New-MgBetaSolutionBackupRestoreSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresession)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresession)
