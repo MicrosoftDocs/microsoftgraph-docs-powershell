@@ -15,6 +15,9 @@ title: Remove-MgBetaUserTodoListExtension
 
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListExtension](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
