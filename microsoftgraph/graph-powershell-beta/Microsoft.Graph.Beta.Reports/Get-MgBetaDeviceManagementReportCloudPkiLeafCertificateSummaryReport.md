@@ -427,7 +427,7 @@ BODY `<IPaths6Kr53MDevicemanagementReportsMicrosoftGraphRetrievecloudpkileafcert
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcloudpkileafcertificatesummaryreport)
+- [Get-MgBetaDeviceManagementReportCloudPkiLeafCertificateSummaryReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportcloudpkileafcertificatesummaryreport)
 
 
 

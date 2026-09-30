@@ -585,7 +585,7 @@ BODYPARAMETER `<IPaths1Dvpe7XDevicemanagementReportsMicrosoftGraphGetquiettimepo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportquiettimepolicyusersummaryreport)
+- [Get-MgBetaDeviceManagementReportQuietTimePolicyUserSummaryReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetadevicemanagementreportquiettimepolicyusersummaryreport)
 
 
 
