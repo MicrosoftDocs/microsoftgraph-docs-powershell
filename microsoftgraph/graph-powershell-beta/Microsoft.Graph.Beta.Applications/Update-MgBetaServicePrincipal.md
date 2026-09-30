@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaServicePrincipal
 ---
@@ -41,8 +41,9 @@ Update-MgBetaServicePrincipal -ServicePrincipalId <string> [-ResponseHeadersVari
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <string>]
  [-Id <string>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDisabled]
  [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>] [-LoginUrl <string>] [-LogoutUrl <string>]
- [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
+ [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>]
+ [-Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>] [-LoginUrl <string>]
+ [-LogoutUrl <string>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
  [-NotificationEmailAddresses <string[]>]
  [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
  [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
@@ -95,8 +96,9 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
  [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <string>]
  [-Id <string>] [-Info <IMicrosoftGraphInformationalUrl>] [-IsDisabled]
  [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
- [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>] [-LoginUrl <string>] [-LogoutUrl <string>]
- [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
+ [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>]
+ [-Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>] [-LoginUrl <string>]
+ [-LogoutUrl <string>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <string>]
  [-NotificationEmailAddresses <string[]>]
  [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
  [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
@@ -143,9 +145,9 @@ This API can also create an agentIdentityBlueprintPrincipal object from an agent
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update the properties of a service principal
@@ -1276,6 +1278,34 @@ To construct, see NOTES section for LICENSEDETAILS properties and create a hash 
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLicenseDetails[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Lifecycle
+
+identityLifecycle
+To construct, see NOTES section for LIFECYCLE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceIdentityLifecycle
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -3024,6 +3054,46 @@ Read-only.
     [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
+  [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Description <String>]: 
+      [GoverningPolicyReferenceId <String>]: 
+      [IssueCode <String>]: 
+      [RuleType <String>]: 
+    [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [CreatedDateTime <DateTime?>]: 
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [GracePeriodInDays <Int32?>]: 
+      [IsEnabled <Boolean?>]: 
+      [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [LastModifiedDateTime <DateTime?>]: 
+      [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [AdditionalRecipients <String[]>]: 
+        [IsEnabled <Boolean?>]: 
+        [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+      [PolicySource <String>]: lifecyclePolicySource
+      [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [IsEnabled <Boolean?>]: 
+      [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [VersionNumber <Int32?>]: 
+      [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+    [LastAttestationDateTime <DateTime?>]: 
   [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -3654,6 +3724,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
   [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ComplianceIssueId <String>]: The unique identifier of complianceIssue
   [ConnectorGroupId <String>]: The unique identifier of connectorGroup
   [ConnectorId <String>]: The unique identifier of connector
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
@@ -3726,6 +3797,52 @@ Read-only.
   [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
+
+LIFECYCLE `<IMicrosoftGraphIdentityGovernanceIdentityLifecycle>`: identityLifecycle
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Description <String>]: 
+    [GoverningPolicyReferenceId <String>]: 
+    [IssueCode <String>]: 
+    [RuleType <String>]: 
+  [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    [CreatedDateTime <DateTime?>]: 
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [GracePeriodInDays <Int32?>]: 
+    [IsEnabled <Boolean?>]: 
+    [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+    [LastModifiedDateTime <DateTime?>]: 
+    [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AdditionalRecipients <String[]>]: 
+      [IsEnabled <Boolean?>]: 
+      [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+    [PolicySource <String>]: lifecyclePolicySource
+    [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [IsEnabled <Boolean?>]: 
+    [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [VersionNumber <Int32?>]: 
+    [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+  [LastAttestationDateTime <DateTime?>]: 
 
 MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.

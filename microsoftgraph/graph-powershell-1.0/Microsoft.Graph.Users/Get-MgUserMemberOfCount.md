@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserMemberOfCount
 ---
@@ -51,9 +51,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All, GroupMember.Read.All,  |
+| Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All, Group.ReadBasic.All, GroupMember.Read.All, GroupMember.ReadBasic.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All,  |
+| Application | Directory.Read.All, Directory.ReadWrite.All, Group.ReadBasic.All, GroupMember.ReadBasic.All,  |
 
 ## PARAMETERS
 

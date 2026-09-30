@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyownerlessgrouppolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyOwnerlessGroupPolicy
 ---
@@ -57,8 +57,9 @@ To disable the policy, set isEnabled to false.
 Setting isEnabled to false clears the values of all other policy parameters.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -67,6 +68,10 @@ $params = @{
 }
 
 Update-MgPolicyOwnerlessGroupPolicy -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPolicyOwnerlessGroupPolicy Cmdlet.
+
 
 ## PARAMETERS
 

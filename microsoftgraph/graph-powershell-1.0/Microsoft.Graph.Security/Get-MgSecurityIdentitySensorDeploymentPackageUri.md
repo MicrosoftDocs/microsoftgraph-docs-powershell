@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySensorDeploymentPackageUri
 ---
@@ -49,12 +49,17 @@ You can use this URL to download the installer to install the sensor on a server
 | Application | SecurityIdentitiesSensors.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityIdentitySensorDeploymentPackageUri
+
+```
+This example shows how to use the Get-MgSecurityIdentitySensorDeploymentPackageUri Cmdlet.
+
 
 ## PARAMETERS
 

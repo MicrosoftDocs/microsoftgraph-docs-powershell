@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityAlertV2
 ---
@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to alerts_v2 for security
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityAlert.Create.All, SecurityAlert.ReadWrite.All,  |
 
 ## PARAMETERS
 

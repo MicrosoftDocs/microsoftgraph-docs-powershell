@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaPolicyHomeRealmDiscoveryPolicy
 ---
@@ -64,9 +64,9 @@ Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+| Delegated (work or school account) | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+| Application | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -607,6 +607,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem

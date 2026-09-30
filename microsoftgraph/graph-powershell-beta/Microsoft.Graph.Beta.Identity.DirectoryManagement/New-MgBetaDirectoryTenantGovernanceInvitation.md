@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernanceinvitation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTenantGovernanceInvitation
 ---
@@ -32,8 +32,7 @@ New-MgBetaDirectoryTenantGovernanceInvitation [-ResponseHeadersVariable <string>
 ### Create
 
 ```
-New-MgBetaDirectoryTenantGovernanceInvitation
- -BodyParameter <IMicrosoftGraphTenantGovernanceServicesGovernanceInvitation>
+New-MgBetaDirectoryTenantGovernanceInvitation -BodyParameter <IMicrosoftGraphGovernanceInvitation>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
@@ -95,7 +94,7 @@ governanceInvitation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesGovernanceInvitation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceInvitation
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -156,9 +155,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-The date and time when the invitation was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-Supports $filter (lt, le, gt, ge, eq, ne) and $orderBy.
+
 
 ```yaml
 Type: System.DateTime
@@ -179,9 +176,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-The date and time when the invitation expires.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-Supports $filter (lt, le, gt, ge, eq, ne) and $orderBy.
+
 
 ```yaml
 Type: System.DateTime
@@ -202,8 +197,7 @@ HelpMessage: ''
 
 ### -GovernedTenantId
 
-The Microsoft Entra tenant ID of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
+
 
 ```yaml
 Type: System.String
@@ -224,8 +218,7 @@ HelpMessage: ''
 
 ### -GovernedTenantName
 
-The display name of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
+
 
 ```yaml
 Type: System.String
@@ -246,8 +239,7 @@ HelpMessage: ''
 
 ### -GoverningTenantId
 
-The Microsoft Entra tenant ID of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
+
 
 ```yaml
 Type: System.String
@@ -268,8 +260,7 @@ HelpMessage: ''
 
 ### -GoverningTenantName
 
-The display name of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
+
 
 ```yaml
 Type: System.String
@@ -489,7 +480,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesGovernanceInvitation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceInvitation
 
 {{ Fill in the Description }}
 
@@ -499,7 +490,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesGovernanceInvitation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceInvitation
 
 {{ Fill in the Description }}
 
@@ -510,24 +501,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTenantGovernanceServicesGovernanceInvitation>`: governanceInvitation
+BODYPARAMETER `<IMicrosoftGraphGovernanceInvitation>`: governanceInvitation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [CreatedDateTime <DateTime?>]: The date and time when the invitation was created.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-Supports $filter (lt, le, gt, ge, eq, ne) and $orderBy.
-  [ExpirationDateTime <DateTime?>]: The date and time when the invitation expires.
-The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-Supports $filter (lt, le, gt, ge, eq, ne) and $orderBy.
-  [GovernedTenantId <String>]: The Microsoft Entra tenant ID of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
-  [GovernedTenantName <String>]: The display name of the governed tenant.
-Supports $filter (eq, ne) and $orderBy.
-  [GoverningTenantId <String>]: The Microsoft Entra tenant ID of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
-  [GoverningTenantName <String>]: The display name of the governing tenant.
-Supports $filter (eq, ne) and $orderBy.
+  [CreatedDateTime <DateTime?>]: 
+  [ExpirationDateTime <DateTime?>]: 
+  [GovernedTenantId <String>]: 
+  [GovernedTenantName <String>]: 
+  [GoverningTenantId <String>]: 
+  [GoverningTenantName <String>]:
 
 
 ## RELATED LINKS

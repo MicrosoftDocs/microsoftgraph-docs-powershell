@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgServicePrincipalAppRoleAssignment
 ---
@@ -83,9 +83,9 @@ To grant an app role assignment to a client service principal, you need three id
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, AppRoleAssignment.ReadWrite.All, Directory.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

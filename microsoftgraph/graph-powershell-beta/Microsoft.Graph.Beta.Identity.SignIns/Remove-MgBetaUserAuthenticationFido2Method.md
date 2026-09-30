@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationfido2method
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserAuthenticationFido2Method
 ---
@@ -53,7 +53,7 @@ Deletes a user's FIDO2 security key authentication method object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthMethod-Passkey.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
+| Application | UserAuthMethod-Passkey.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -485,6 +485,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem

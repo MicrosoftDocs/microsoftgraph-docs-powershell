@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgContactMemberGroup
 ---
@@ -80,9 +80,9 @@ If you get the DirectoryResultSizeLimitExceeded error code, use the List group t
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadBasic.All, User.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadBasic.All, User.Read.All,  |
 
 ## PARAMETERS
 
@@ -505,6 +505,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SnapshotId <String>]: The unique identifier of snapshot

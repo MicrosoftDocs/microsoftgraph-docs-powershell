@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationappmanagementpolicybyref
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgApplicationAppManagementPolicyByRef
 ---
@@ -76,9 +76,9 @@ Only one policy object can be assigned to an application or service principal.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Policy.Read.ApplicationConfiguration, Policy.ReadWrite.ApplicationConfiguration,  |
+| Application | Application.Read.All, Policy.ReadWrite.ApplicationConfiguration,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

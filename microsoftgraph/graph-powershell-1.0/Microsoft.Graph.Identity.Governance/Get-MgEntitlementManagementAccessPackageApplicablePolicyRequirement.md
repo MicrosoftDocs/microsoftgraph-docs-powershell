@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageapplicablepolicyrequirement
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement
 ---
@@ -54,7 +54,7 @@ Each requirement object corresponds to an access package assignment policy that 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+| Delegated (work or school account) | EntitlementMgmt-SubjectAccess.ReadWrite, EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
@@ -395,10 +395,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -412,6 +415,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

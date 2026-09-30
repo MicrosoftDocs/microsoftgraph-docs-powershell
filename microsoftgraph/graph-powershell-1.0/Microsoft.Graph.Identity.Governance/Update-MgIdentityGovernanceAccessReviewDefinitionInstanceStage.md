@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestage
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage
 ---
@@ -763,6 +763,8 @@ The DatetimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $select.
 Read-only.
+    [ApplyDescription <String>]: The description of the apply result.
+Read-only.
     [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
@@ -795,7 +797,7 @@ Read-only.
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Identifier of the resource
       [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
     [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -816,6 +818,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
     [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+    [ReviewerId <String>]: The identifier of the reviewer.
+    [ScopeType <String>]: accessReviewReviewerScopeType
   [Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]: This collection of access review scopes is used to define who the reviewers are.
 For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API.
   [StartDateTime <DateTime?>]: The date and time in ISO 8601 format and UTC time when the review stage is scheduled to start.
@@ -843,6 +847,8 @@ For example, in the access reviews decisions API, this property might record the
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $select.
+Read-only.
+  [ApplyDescription <String>]: The description of the apply result.
 Read-only.
   [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
@@ -876,7 +882,7 @@ Read-only.
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Identifier of the resource
     [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
   [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -895,6 +901,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: The identifier of the reviewer.
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
 INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
@@ -932,10 +940,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -949,6 +960,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -979,6 +991,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: The identifier of the reviewer.
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
 
 ## RELATED LINKS

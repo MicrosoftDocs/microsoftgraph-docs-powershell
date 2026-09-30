@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationfido2method
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserAuthenticationFido2Method
 ---
@@ -53,7 +53,7 @@ Deletes a user's FIDO2 security key authentication method object.
 | --------------- | ------------------------------------------  |
 | Delegated (work or school account) | UserAuthMethod-Passkey.ReadWrite, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-Passkey.ReadWrite.All,  |
+| Application | UserAuthMethod-Passkey.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -453,6 +453,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [IdentityUserFlowAttributeAssignmentId <String>]: The unique identifier of identityUserFlowAttributeAssignment
   [IdentityUserFlowAttributeId <String>]: The unique identifier of identityUserFlowAttribute
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation

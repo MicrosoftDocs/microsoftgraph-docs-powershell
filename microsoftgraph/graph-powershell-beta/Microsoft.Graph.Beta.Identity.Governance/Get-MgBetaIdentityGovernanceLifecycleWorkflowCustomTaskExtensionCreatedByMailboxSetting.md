@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowcustomtaskextensioncreatedbymailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting
 ---
@@ -16,7 +16,7 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+Requires $select to retrieve.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByMailboxSetting?view=graph-powershell-1.0)
@@ -53,7 +53,7 @@ This cmdlet has the following aliases,
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
-Returned only on $select.
+Requires $select to retrieve.
 
 ## PARAMETERS
 
@@ -385,6 +385,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
@@ -401,6 +402,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
+  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -427,6 +432,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

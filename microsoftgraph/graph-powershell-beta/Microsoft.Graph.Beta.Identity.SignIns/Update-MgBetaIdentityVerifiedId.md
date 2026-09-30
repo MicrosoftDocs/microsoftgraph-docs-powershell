@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityVerifiedId
 ---
@@ -391,32 +391,49 @@ Read-only.
 Required.
     [FaceCheckConfiguration <IMicrosoftGraphFaceCheckConfiguration>]: faceCheckConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [IsEnabled <Boolean?>]: Defines if Face Check is required.
-Currently must always be true.
-      [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
-Currently must always be portrait
+      [IsEnabled <Boolean?>]: Indicates whether Face Check is required.
+Currently must be true.
+      [SourcePhotoClaimName <String>]: The source claim name for the photo used to validate Face Check.
+Currently must be portrait.
     [LastModifiedDateTime <DateTime?>]: DateTime the profile was last modified.
 Optional.
+    [MobileDriversLicenseConfiguration <IMicrosoftGraphMobileDriversLicenseConfiguration>]: mobileDriversLicenseConfiguration
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AcceptedRegions <String[]>]: The ISO 3166-2 region codes accepted for mobile driver's licenses.
+An empty collection indicates all regions are accepted.
+      [DocumentStandard <String>]: The document standard that accepted mobile driver's licenses must use, such as ISO18013-5.
     [Name <String>]: Display name for the verified ID profile.
 Required.
     [Priority <Int32?>]: Defines profile processing priority if multiple profiles are configured.
 Optional.
+    [SelfServiceIssuance <IMicrosoftGraphVerifiedIdSelfServiceIssuance>]: verifiedIdSelfServiceIssuance
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsEnabled <Boolean?>]: Indicates whether self-service issuance is enabled.
+      [IssuanceUrl <String>]: The HTTPS URL where users can start self-service issuance to obtain the credential when required by the credential type.
     [State <String>]: verifiedIdProfileState
     [VerifiedIdProfileConfiguration <IMicrosoftGraphVerifiedIdProfileConfiguration>]: verifiedIdProfileConfiguration
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AcceptedIssuer <String>]: Trusted Verified ID issuer.
+Required.
       [ClaimBindingSource <String>]: claimBindingSource
       [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
+Required.
         [MatchConfidenceLevel <String>]: matchConfidenceLevel
-        [SourceAttribute <String>]: Source attribute value
-        [VerifiedIdClaim <String>]: Entra ID attribute value
+        [SourceAttribute <String>]: The source attribute from the directory or credential.
+        [VerifiedIdClaim <String>]: The claim name in the verified ID credential.
       [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
         [(Any) <Object>]: This indicates any property can be added to this object.
         [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
         [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
+      [ManifestUrl <String>]: The URL where the credential issuer's manifest can be found.
+The manifest defines the credential schema and issuer details.
+Optional.
+      [MethodType <String>]: verifiedIdMethodType
       [Type <String>]: Verified ID type.
+Required.
     [VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]: Collection defining the usage purpose for the profile.
-The possible values are: recovery, onboarding, all, unknownFutureValue.
+The possible values are: recovery, onboarding, all, unknownFutureValue, verification.
+Use the Prefer: include-unknown-enum-members request header to get the following value from this evolvable enum: verification.
 Required.
       [IsEnabledForTestOnly <Boolean?>]: Sets profile usage for evaluation (test-only) or production.
       [Purpose <String>]: verifiedIdUsageConfigurationPurpose
@@ -430,32 +447,49 @@ Read-only.
 Required.
   [FaceCheckConfiguration <IMicrosoftGraphFaceCheckConfiguration>]: faceCheckConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [IsEnabled <Boolean?>]: Defines if Face Check is required.
-Currently must always be true.
-    [SourcePhotoClaimName <String>]: Source of photo to validate Face Check against.
-Currently must always be portrait
+    [IsEnabled <Boolean?>]: Indicates whether Face Check is required.
+Currently must be true.
+    [SourcePhotoClaimName <String>]: The source claim name for the photo used to validate Face Check.
+Currently must be portrait.
   [LastModifiedDateTime <DateTime?>]: DateTime the profile was last modified.
 Optional.
+  [MobileDriversLicenseConfiguration <IMicrosoftGraphMobileDriversLicenseConfiguration>]: mobileDriversLicenseConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AcceptedRegions <String[]>]: The ISO 3166-2 region codes accepted for mobile driver's licenses.
+An empty collection indicates all regions are accepted.
+    [DocumentStandard <String>]: The document standard that accepted mobile driver's licenses must use, such as ISO18013-5.
   [Name <String>]: Display name for the verified ID profile.
 Required.
   [Priority <Int32?>]: Defines profile processing priority if multiple profiles are configured.
 Optional.
+  [SelfServiceIssuance <IMicrosoftGraphVerifiedIdSelfServiceIssuance>]: verifiedIdSelfServiceIssuance
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsEnabled <Boolean?>]: Indicates whether self-service issuance is enabled.
+    [IssuanceUrl <String>]: The HTTPS URL where users can start self-service issuance to obtain the credential when required by the credential type.
   [State <String>]: verifiedIdProfileState
   [VerifiedIdProfileConfiguration <IMicrosoftGraphVerifiedIdProfileConfiguration>]: verifiedIdProfileConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AcceptedIssuer <String>]: Trusted Verified ID issuer.
+Required.
     [ClaimBindingSource <String>]: claimBindingSource
     [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
+Required.
       [MatchConfidenceLevel <String>]: matchConfidenceLevel
-      [SourceAttribute <String>]: Source attribute value
-      [VerifiedIdClaim <String>]: Entra ID attribute value
+      [SourceAttribute <String>]: The source attribute from the directory or credential.
+      [VerifiedIdClaim <String>]: The claim name in the verified ID credential.
     [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
       [(Any) <Object>]: This indicates any property can be added to this object.
       [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
       [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
+    [ManifestUrl <String>]: The URL where the credential issuer's manifest can be found.
+The manifest defines the credential schema and issuer details.
+Optional.
+    [MethodType <String>]: verifiedIdMethodType
     [Type <String>]: Verified ID type.
+Required.
   [VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]: Collection defining the usage purpose for the profile.
-The possible values are: recovery, onboarding, all, unknownFutureValue.
+The possible values are: recovery, onboarding, all, unknownFutureValue, verification.
+Use the Prefer: include-unknown-enum-members request header to get the following value from this evolvable enum: verification.
 Required.
     [IsEnabledForTestOnly <Boolean?>]: Sets profile usage for evaluation (test-only) or production.
     [Purpose <String>]: verifiedIdUsageConfigurationPurpose

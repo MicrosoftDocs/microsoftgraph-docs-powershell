@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetacomputesecuritydatasecurityandgovernanceprotectionscope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope
 ---
@@ -26,6 +26,7 @@ Invoke action compute
 Invoke-MgBetaComputeSecurityDataSecurityAndGovernanceProtectionScope
  [-ResponseHeadersVariable <string>] [-Activities <string>] [-AdditionalProperties <hashtable>]
  [-DeviceMetadata <IMicrosoftGraphDeviceMetadata>]
+ [-EvaluationScope <IMicrosoftGraphEvaluationScope>]
  [-IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]
  [-Locations <IMicrosoftGraphPolicyLocation[]>] [-PivotOn <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -176,6 +177,28 @@ To construct, see NOTES section for DEVICEMETADATA properties and create a hash 
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceMetadata
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: ComputeExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -EvaluationScope
+
+evaluationScope
+To construct, see NOTES section for EVALUATIONSCOPE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluationScope
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -468,6 +491,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
       [(Any) <Object>]: This indicates any property can be added to this object.
       [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
       [OperatingSystemVersion <String>]: The version string of the operating system.
+  [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Type <String>]: evaluationScopeType
   [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Name <String>]: The name of the integrated application.
@@ -485,6 +511,10 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
     [(Any) <Object>]: This indicates any property can be added to this object.
     [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
     [OperatingSystemVersion <String>]: The version string of the operating system.
+
+EVALUATIONSCOPE `<IMicrosoftGraphEvaluationScope>`: evaluationScope
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Type <String>]: evaluationScopeType
 
 INTEGRATEDAPPMETADATA `<IMicrosoftGraphIntegratedApplicationMetadata>`: integratedApplicationMetadata
   [(Any) <Object>]: This indicates any property can be added to this object.

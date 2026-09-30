@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyuniquename
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationByUniqueName
 ---
@@ -53,9 +53,9 @@ This API can be used to get agentIdentityBlueprint objects as well by their ID.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All, User.Read,  |
-| Application | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
 
 ## PARAMETERS
 
@@ -353,6 +353,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
   [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ComplianceIssueId <String>]: The unique identifier of complianceIssue
   [ConnectorGroupId <String>]: The unique identifier of connectorGroup
   [ConnectorId <String>]: The unique identifier of connector
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysensorcandidateactivationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentitySensorCandidateActivationConfiguration
 ---
@@ -14,6 +14,9 @@ title: Update-MgSecurityIdentitySensorCandidateActivationConfiguration
 ## SYNOPSIS
 
 Update the navigation property sensorCandidateActivationConfiguration in security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySensorCandidateActivationConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 

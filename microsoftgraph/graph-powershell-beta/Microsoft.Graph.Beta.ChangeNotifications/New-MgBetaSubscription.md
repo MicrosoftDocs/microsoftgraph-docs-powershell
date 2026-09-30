@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSubscription
 ---
@@ -61,7 +61,7 @@ Some resources support rich notifications, that is, notifications that include r
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 2: Create a subscription targeting a Web Push endpoint
 
 ```powershell
 
@@ -79,7 +79,7 @@ $params = @{
 New-MgBetaSubscription -BodyParameter $params
 
 ```
-This example shows how to use the New-MgBetaSubscription Cmdlet.
+This example will create a subscription targeting a web push endpoint
 
 
 ## PARAMETERS

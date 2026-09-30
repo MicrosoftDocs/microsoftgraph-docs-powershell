@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancecatalogaccesspackageresourceuploadsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession
 ---
@@ -13,7 +13,7 @@ title: Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession
 
 ## SYNOPSIS
 
-Delete navigation property uploadSessions for identityGovernance
+Delete a customDataProvidedResourceUploadSession object.
 
 ## SYNTAX
 
@@ -45,7 +45,20 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property uploadSessions for identityGovernance
+Delete a customDataProvidedResourceUploadSession object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession -AccessPackageCatalogId $accessPackageCatalogId -AccessPackageResourceId $accessPackageResourceId -CustomDataProvidedResourceUploadSessionId $customDataProvidedResourceUploadSessionId
+
+```
+This example shows how to use the Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession Cmdlet.
+
 
 ## PARAMETERS
 
@@ -461,6 +474,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
@@ -477,6 +491,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
+  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -503,6 +521,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -534,7 +553,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancecatalogaccesspackageresourceuploadsession)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackageresource-delete-uploadsessions?view=graph-rest-beta)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ---
@@ -27,12 +27,13 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
  -AccessReviewInstanceDecisionItemId <string> -AccessReviewInstanceId <string>
  -AccessReviewScheduleDefinitionId <string> -AccessReviewStageId <string>
  [-ResponseHeadersVariable <string>] [-AccessReviewId <string>] [-AdditionalProperties <hashtable>]
- [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>] [-ApplyResult <string>]
- [-Decision <string>] [-Id <string>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
- [-Justification <string>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>]
- [-Recommendation <string>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
- [-ResourceLink <string>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>]
+ [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>] [-Id <string>]
+ [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Justification <string>]
+ [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>] [-Recommendation <string>]
+ [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>] [-ResourceLink <string>]
+ [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -55,12 +56,13 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <string>]
  [-AccessReviewId <string>] [-AdditionalProperties <hashtable>]
- [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>] [-ApplyResult <string>]
- [-Decision <string>] [-Id <string>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
- [-Justification <string>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>]
- [-Recommendation <string>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
- [-ResourceLink <string>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>]
+ [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>] [-Id <string>]
+ [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Justification <string>]
+ [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>] [-Recommendation <string>]
+ [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>] [-ResourceLink <string>]
+ [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -323,6 +325,34 @@ Read-only.
 
 ```yaml
 Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ApplyDescription
+
+The description of the apply result.
+Read-only.
+
+```yaml
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1022,6 +1052,8 @@ The DatetimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $select.
 Read-only.
+  [ApplyDescription <String>]: The description of the apply result.
+Read-only.
   [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
@@ -1054,7 +1086,7 @@ Read-only.
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Identifier of the resource
     [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
   [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1100,10 +1132,13 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
@@ -1117,6 +1152,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -1157,7 +1193,7 @@ RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessRevi
   [DisplayName <String>]: Display name of the resource
   [Id <String>]: Identifier of the resource
   [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
 
 REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.

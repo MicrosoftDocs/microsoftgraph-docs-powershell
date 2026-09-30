@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchat
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgChat
 ---
@@ -836,7 +836,10 @@ HelpMessage: ''
 
 ### -TargetedMessages
 
-
+A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
 To construct, see NOTES section for TARGETEDMESSAGES properties and create a hash table.
 
 ```yaml
@@ -1279,7 +1282,10 @@ Required.
     [TeamsApp <IMicrosoftGraphTeamsApp>]: teamsApp
     [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
-  [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: 
+  [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
     [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
     [Body <IMicrosoftGraphItemBody>]: itemBody
     [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
@@ -1792,7 +1798,10 @@ For example, in the access reviews decisions API, this property might record the
   [WebUrl <String>]: Deep link URL of the tab instance.
 Read-only.
 
-TARGETEDMESSAGES <IMicrosoftGraphTargetedChatMessage[]>: .
+TARGETEDMESSAGES <IMicrosoftGraphTargetedChatMessage[]>: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
   [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
     [Content <String>]: The content of the attachment.
 If the attachment is a rich card, set the property to the rich card object.

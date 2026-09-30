@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-Module Guid: 4dde1ffe-2fbf-42b7-9aba-68f5897346ae
+Module Guid: e34aad03-94e1-419e-b6db-a71f803613b4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.corporatemanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1333,6 +1333,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingStateCount](Get-MgBetaUserManagedDeviceSecurityBaselineStateSettingStateCount.md)
 
+### [Get-MgBetaUserManagedDeviceSyncStatus](Get-MgBetaUserManagedDeviceSyncStatus.md)
+
 ### [Get-MgBetaUserManagedDeviceUser](Get-MgBetaUserManagedDeviceUser.md)
 
 ### [Get-MgBetaUserManagedDeviceWindowsProtectionState](Get-MgBetaUserManagedDeviceWindowsProtectionState.md)
@@ -2179,6 +2181,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaUserManagedDeviceConfigurationState](Remove-MgBetaUserManagedDeviceConfigurationState.md)
 
+### [Remove-MgBetaUserManagedDeviceEsim](Remove-MgBetaUserManagedDeviceEsim.md)
+
 ### [Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement.md)
 
 ### [Remove-MgBetaUserManagedDeviceHealthScriptState](Remove-MgBetaUserManagedDeviceHealthScriptState.md)
@@ -2248,6 +2252,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Skip-MgBetaUserManagedDeviceActivationLock](Skip-MgBetaUserManagedDeviceActivationLock.md)
 
 ### [Start-MgBetaUserManagedDeviceConfigurationManagerAction](Start-MgBetaUserManagedDeviceConfigurationManagerAction.md)
+
+### [Start-MgBetaUserManagedDeviceEnhancedLogCollection](Start-MgBetaUserManagedDeviceEnhancedLogCollection.md)
+
+### [Stop-MgBetaUserManagedDeviceEnhancedLogCollection](Stop-MgBetaUserManagedDeviceEnhancedLogCollection.md)
 
 ### [Suspend-MgBetaUserManagedDeviceConfigurationRefresh](Suspend-MgBetaUserManagedDeviceConfigurationRefresh.md)
 

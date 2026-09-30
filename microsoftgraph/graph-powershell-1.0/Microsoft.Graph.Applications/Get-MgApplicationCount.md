@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcount
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgApplicationCount
 ---
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Application.Read.All, Application.ReadWrite.All, User.Read,  |
-| Application | Application.Read.All, AgentIdentityBlueprint.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All,  |
 
 ## PARAMETERS
 

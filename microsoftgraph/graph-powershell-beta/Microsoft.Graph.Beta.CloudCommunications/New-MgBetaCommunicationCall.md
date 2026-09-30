@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaCommunicationCall
 ---
@@ -1757,6 +1757,13 @@ Read-only.
       [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
       [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
     [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number the participant was last updated in.
+    [SyntheticMediaDetection <IMicrosoftGraphSyntheticMediaDetectionInfo>]: syntheticMediaDetectionInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [DetectionId <String>]: Unique identifier for the detection event.
+This property correlates with the id parameter that the detection bot passed to reportSyntheticMedia.
+      [DetectorBot <String>]: Identifier of the detection bot that produced this result.
+      [IsParticipantTrusted <Boolean?>]: Set to true if the participant is classified as trusted or reliable (for example, a known internal user); otherwise, false.
+      [SyntheticConfidence <Double?>]: Confidence score (0.0 to 1.0) that the participant's media is synthetic.
   [RequestedModalities <String[]>]: The list of requested modalities.
 The possible values are: unknown, audio, video, videoBasedScreenSharing, data.
   [ResultInfo <IMicrosoftGraphResultInfo>]: resultInfo
@@ -1929,6 +1936,13 @@ Read-only.
     [ContentSharingDisabled <String>]: onlineMeetingContentSharingDisabledReason
     [VideoDisabled <String>]: onlineMeetingVideoDisabledReason
   [RosterSequenceNumber <Int64?>]: Indicates the roster sequence number the participant was last updated in.
+  [SyntheticMediaDetection <IMicrosoftGraphSyntheticMediaDetectionInfo>]: syntheticMediaDetectionInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DetectionId <String>]: Unique identifier for the detection event.
+This property correlates with the id parameter that the detection bot passed to reportSyntheticMedia.
+    [DetectorBot <String>]: Identifier of the detection bot that produced this result.
+    [IsParticipantTrusted <Boolean?>]: Set to true if the participant is classified as trusted or reliable (for example, a known internal user); otherwise, false.
+    [SyntheticConfidence <Double?>]: Confidence score (0.0 to 1.0) that the participant's media is synthetic.
 
 RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   [(Any) <Object>]: This indicates any property can be added to this object.

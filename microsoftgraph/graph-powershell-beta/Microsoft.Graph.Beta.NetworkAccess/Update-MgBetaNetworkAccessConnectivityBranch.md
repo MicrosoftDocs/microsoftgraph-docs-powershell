@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccessconnectivitybranch
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaNetworkAccessConnectivityBranch
 ---
@@ -1267,6 +1267,46 @@ Read-only.
         [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
+      [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Description <String>]: 
+          [GoverningPolicyReferenceId <String>]: 
+          [IssueCode <String>]: 
+          [RuleType <String>]: 
+        [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [CreatedDateTime <DateTime?>]: 
+          [Description <String>]: 
+          [DisplayName <String>]: 
+          [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+            [(Any) <Object>]: This indicates any property can be added to this object.
+          [GracePeriodInDays <Int32?>]: 
+          [IsEnabled <Boolean?>]: 
+          [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+          [LastModifiedDateTime <DateTime?>]: 
+          [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [AdditionalRecipients <String[]>]: 
+            [IsEnabled <Boolean?>]: 
+            [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+          [PolicySource <String>]: lifecyclePolicySource
+          [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [IsEnabled <Boolean?>]: 
+          [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+            [(Any) <Object>]: This indicates any property can be added to this object.
+          [VersionNumber <Int32?>]: 
+          [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+        [LastAttestationDateTime <DateTime?>]: 
       [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -2249,6 +2289,46 @@ Read-only.
       [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
+    [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Description <String>]: 
+        [GoverningPolicyReferenceId <String>]: 
+        [IssueCode <String>]: 
+        [RuleType <String>]: 
+      [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+        [CreatedDateTime <DateTime?>]: 
+        [Description <String>]: 
+        [DisplayName <String>]: 
+        [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
+          [(Any) <Object>]: This indicates any property can be added to this object.
+        [GracePeriodInDays <Int32?>]: 
+        [IsEnabled <Boolean?>]: 
+        [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
+        [LastModifiedDateTime <DateTime?>]: 
+        [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [AdditionalRecipients <String[]>]: 
+          [IsEnabled <Boolean?>]: 
+          [OffsetsAfterNonComplianceInDays <Int32[]>]: 
+        [PolicySource <String>]: lifecyclePolicySource
+        [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [IsEnabled <Boolean?>]: 
+        [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
+          [(Any) <Object>]: This indicates any property can be added to this object.
+        [VersionNumber <Int32?>]: 
+        [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
+      [LastAttestationDateTime <DateTime?>]: 
     [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.

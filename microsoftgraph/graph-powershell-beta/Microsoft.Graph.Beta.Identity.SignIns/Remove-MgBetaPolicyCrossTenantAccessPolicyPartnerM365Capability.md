@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartnerm365capability
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 ---
@@ -13,7 +13,7 @@ title: Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 
 ## SYNOPSIS
 
-Delete navigation property m365Capabilities for policies
+Delete a Microsoft 365 cross-tenant capability from a partner organization in the cross-tenant access policy.
 
 ## SYNTAX
 
@@ -44,7 +44,20 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property m365Capabilities for policies
+Delete a Microsoft 365 cross-tenant capability from a partner organization in the cross-tenant access policy.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -M365CapabilityBaseName $m365CapabilityBaseName
+
+```
+This example shows how to use the Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability Cmdlet.
+
 
 ## PARAMETERS
 
@@ -463,6 +476,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -499,7 +513,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartnerm365capability)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities?view=graph-rest-beta)
 
 
 

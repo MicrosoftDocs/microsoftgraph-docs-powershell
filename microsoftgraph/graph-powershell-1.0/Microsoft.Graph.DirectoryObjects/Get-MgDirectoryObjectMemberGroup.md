@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DirectoryObjects-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup
 Locale: en-US
 Module Name: Microsoft.Graph.DirectoryObjects
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryObjectMemberGroup
 ---
@@ -80,9 +80,9 @@ If you get the DirectoryResultSizeLimitExceeded error code, use the List group t
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadBasic.All, User.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All,  |
+| Application | Application.Read.All, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadBasic.All, User.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Check group memberships for a directory object

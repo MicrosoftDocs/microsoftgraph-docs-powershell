@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgGroupDelta
 ---
@@ -46,9 +46,9 @@ For more information, see Use delta query to track changes in Microsoft Graph da
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
+| Delegated (work or school account) | Group-NestingSupport.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All,  |
+| Application | Group-NestingSupport.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

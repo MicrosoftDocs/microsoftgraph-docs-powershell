@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydatasecurityandgovernancesensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel
 ---
@@ -26,10 +26,11 @@ Create new navigation property to sensitivityLabels for security
 New-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel [-ResponseHeadersVariable <string>]
  [-ActionSource <string>] [-AdditionalProperties <hashtable>] [-ApplicableTo <string>]
  [-ApplicationMode <string>] [-AutoTooltip <string>] [-Color <string>] [-Description <string>]
- [-DisplayName <string>] [-Id <string>] [-IsDefault] [-IsEnabled] [-IsEndpointProtectionEnabled]
- [-IsScopedToUser] [-Locale <string>] [-Name <string>] [-Priority <int>]
- [-Rights <IMicrosoftGraphUsageRightsIncluded>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>]
- [-ToolTip <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-DisplayName <string>] [-HasProtection] [-Id <string>] [-IsDefault] [-IsEnabled]
+ [-IsEndpointProtectionEnabled] [-IsScopedToUser] [-Locale <string>] [-Name <string>]
+ [-Priority <int>] [-Rights <IMicrosoftGraphUsageRightsIncluded>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
  [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
@@ -274,6 +275,27 @@ HelpMessage: ''
 ```yaml
 Type: System.String
 DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -HasProtection
+
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -733,6 +755,7 @@ Read-only.
   [Color <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEnabled <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 
@@ -768,6 +791,7 @@ Read-only.
   [Color <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEnabled <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyDeletedItem
 ---
@@ -444,6 +444,9 @@ Optional.
         [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
 false stops any current group synchronization from the source tenant to the target tenant.
 This property has no impact on existing groups that were synchronized.
+      [RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]: crossTenantRoleEnabledGroupSyncInbound
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [IsSyncAllowed <Boolean?>]: 
       [TenantId <String>]: Tenant identifier for the partner Microsoft Entra organization.
 Key.
 Read-only.
@@ -469,7 +472,8 @@ Read-only.
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
 If a resource appears in both included and excluded, the excluded property takes precedence.
-            [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+            [ResourceId <String>]: The ID of the resource to modify.
+The value is either All, to apply the capability to all resources of the type specified by resourceType (all users or all groups), or the GUID of a specific user or group.
             [ResourceType <String>]: m365ResourceType
           [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
       [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
@@ -539,6 +543,9 @@ Optional.
       [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
 false stops any current group synchronization from the source tenant to the target tenant.
 This property has no impact on existing groups that were synchronized.
+    [RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]: crossTenantRoleEnabledGroupSyncInbound
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [IsSyncAllowed <Boolean?>]: 
     [TenantId <String>]: Tenant identifier for the partner Microsoft Entra organization.
 Key.
 Read-only.
@@ -564,7 +571,8 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Excluded <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to exclude from the scope.
 If a resource appears in both included and excluded, the excluded property takes precedence.
-          [ResourceId <String>]: The ID of the resource to modify (a user or group ID).
+          [ResourceId <String>]: The ID of the resource to modify.
+The value is either All, to apply the capability to all resources of the type specified by resourceType (all users or all groups), or the GUID of a specific user or group.
           [ResourceType <String>]: m365ResourceType
         [Included <IMicrosoftGraphM365CapabilityResourceScope[]>]: Resources to include in the scope.
     [LastModifiedDateTime <DateTime?>]: The automatically updated last modified timestamp for the capability.
@@ -607,6 +615,9 @@ Optional.
     [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
 false stops any current group synchronization from the source tenant to the target tenant.
 This property has no impact on existing groups that were synchronized.
+  [RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]: crossTenantRoleEnabledGroupSyncInbound
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsSyncAllowed <Boolean?>]: 
   [TenantId <String>]: Tenant identifier for the partner Microsoft Entra organization.
 Key.
 Read-only.

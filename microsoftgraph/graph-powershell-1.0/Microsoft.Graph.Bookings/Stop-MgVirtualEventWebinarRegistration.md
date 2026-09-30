@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgvirtualeventwebinarregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgVirtualEventWebinarRegistration
 ---
@@ -13,7 +13,7 @@ title: Stop-MgVirtualEventWebinarRegistration
 
 ## SYNOPSIS
 
-Cancel a registrant's registration record for a webinar.
+Cancel a registrant's registration record for a webinar or town hall.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Cancel a registrant's registration record for a webinar.
+Cancel a registrant's registration record for a webinar or town hall.
 
 **Permissions**
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistworkspace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlaceAsRoomListWorkspace
 ---
@@ -800,7 +800,7 @@ HelpMessage: ''
 
 ### -PlaceId1
 
-
+A stable service-level identifier for the place object used by Places workloads.
 
 ```yaml
 Type: System.String
@@ -1063,6 +1063,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     [Label <String>]: User-defined description of the place.
     [ParentId <String>]: The ID of a parent place.
     [Phone <String>]: The phone number of the place.
+    [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
     [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
@@ -1070,6 +1071,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1084,7 +1086,6 @@ For example, 1 for first floor, 2 for second floor, and so on.
   [Mode <IMicrosoftGraphPlaceMode>]: placeMode
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Nickname <String>]: A short, friendly name for the workspace, often used for easier identification or display in the UI.
-  [PlaceId <String>]: 
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
   [CalendarEventId <String>]: The unique identifier for an Outlook calendar event associated with the checkInClaim object.
@@ -1128,6 +1129,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates

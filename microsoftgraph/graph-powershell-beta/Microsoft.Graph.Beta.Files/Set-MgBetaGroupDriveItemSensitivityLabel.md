@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriveitemsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgBetaGroupDriveItemSensitivityLabel
 ---
@@ -13,7 +13,13 @@ title: Set-MgBetaGroupDriveItemSensitivityLabel
 
 ## SYNOPSIS
 
-Invoke action assignSensitivityLabel
+Asynchronously assign a sensitivity label to a driveItem.
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
+Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+This API applies sensitivity labels to files at rest.
+Office clients don't apply watermarks, headers, or footers to files that contain the label information.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveItemSensitivityLabel?view=graph-powershell-1.0)
@@ -25,10 +31,10 @@ Invoke action assignSensitivityLabel
 ```
 Set-MgBetaGroupDriveItemSensitivityLabel -DriveId <string> -DriveItemId <string> -GroupId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AssignmentMethod <string>] [-JustificationText <string>] [-SensitivityLabelId <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-AppliedByUser <IMicrosoftGraphUserIdentity>] [-AssignmentMethod <string>]
+ [-JustificationText <string>] [-SensitivityLabelId <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Assign
@@ -46,10 +52,10 @@ Set-MgBetaGroupDriveItemSensitivityLabel -DriveId <string> -DriveItemId <string>
 ```
 Set-MgBetaGroupDriveItemSensitivityLabel -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-AssignmentMethod <string>] [-JustificationText <string>] [-SensitivityLabelId <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-AppliedByUser <IMicrosoftGraphUserIdentity>] [-AssignmentMethod <string>]
+ [-JustificationText <string>] [-SensitivityLabelId <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### AssignViaIdentity
@@ -69,7 +75,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action assignSensitivityLabel
+Asynchronously assign a sensitivity label to a driveItem.
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
+Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+This API applies sensitivity labels to files at rest.
+Office clients don't apply watermarks, headers, or footers to files that contain the label information.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
 ## PARAMETERS
 
@@ -79,6 +91,34 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: AssignViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: AssignExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AppliedByUser
+
+userIdentity
+To construct, see NOTES section for APPLIEDBYUSER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -586,8 +626,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
+APPLIEDBYUSER `<IMicrosoftGraphUserIdentity>`: userIdentity
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
+  [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
+
 BODYPARAMETER `<IPaths1EhooezGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [AppliedByUser <IMicrosoftGraphUserIdentity>]: userIdentity
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+    [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
+    [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
   [AssignmentMethod <String>]: sensitivityLabelAssignmentMethod
   [JustificationText <String>]: 
   [SensitivityLabelId <String>]: 
@@ -623,6 +682,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgBetaGroupDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriveitemsensitivitylabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta)
 
 
 

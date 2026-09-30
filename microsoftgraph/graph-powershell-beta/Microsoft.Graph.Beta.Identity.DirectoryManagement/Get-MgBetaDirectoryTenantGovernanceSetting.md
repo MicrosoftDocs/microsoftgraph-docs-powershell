@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytenantgovernancesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryTenantGovernanceSetting
 ---
@@ -286,7 +286,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesTenantGovernanceSetting
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceSetting
 
 {{ Fill in the Description }}
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Planner-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Planner
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlannerRoster
 ---
@@ -605,6 +605,8 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
         [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
         [HasChat <Boolean?>]: Read-only.
 This value is true if the task has chat messages associated with it.
 Otherwise, false.
@@ -777,15 +779,43 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
       [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
         [(Any) <Object>]: This indicates any property can be added to this object.
-    [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+    [Goals <IMicrosoftGraphPlannerGoal[]>]: Collection of goals in the plan.
+Read-only.
+Nullable.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [DisplayName <String>]: Required.
+The display name of the goal.
+      [FinishDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to finish.
+      [Notes <IMicrosoftGraphItemBody>]: itemBody
+      [PlanId <String>]: Required.
+The ID of the plan that contains the goal.
+      [Priority <Int32?>]: Optional.
+The relative priority of the goal.
+Valid values range from 0 to 10, inclusive.
+The default value is 5.
+      [StartDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to start.
+      [Status <String>]: plannerGoalStatus
+      [Tasks <IMicrosoftGraphPlannerTask[]>]: Read-only.
+Nullable.
+The tasks associated with the goal.
+This relationship doesn't support direct retrieval or $expand.
+To identify the goals associated with a task, read the goalIds property of the plannerTask resource.
+    [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: Collection of history items for entities in the plan.
+Read-only.
+Nullable.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [Actor <IMicrosoftGraphIdentitySet>]: identitySet
-      [EntityId <String>]: 
+      [EntityId <String>]: The ID of the entity that was changed.
       [EntityType <String>]: historyEntityType
       [EventType <String>]: historyEventType
-      [OccurredDateTime <DateTime?>]: 
-      [PlanId <String>]: 
+      [OccurredDateTime <DateTime?>]: The date and time when the change occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+      [PlanId <String>]: The ID of the plan that contains the changed entity.
     [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -950,6 +980,8 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
       [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
       [HasChat <Boolean?>]: Read-only.
 This value is true if the task has chat messages associated with it.
 Otherwise, false.
@@ -1122,15 +1154,43 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
       [(Any) <Object>]: This indicates any property can be added to this object.
-  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: 
+  [Goals <IMicrosoftGraphPlannerGoal[]>]: Collection of goals in the plan.
+Read-only.
+Nullable.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [DisplayName <String>]: Required.
+The display name of the goal.
+    [FinishDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to finish.
+    [Notes <IMicrosoftGraphItemBody>]: itemBody
+    [PlanId <String>]: Required.
+The ID of the plan that contains the goal.
+    [Priority <Int32?>]: Optional.
+The relative priority of the goal.
+Valid values range from 0 to 10, inclusive.
+The default value is 5.
+    [StartDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to start.
+    [Status <String>]: plannerGoalStatus
+    [Tasks <IMicrosoftGraphPlannerTask[]>]: Read-only.
+Nullable.
+The tasks associated with the goal.
+This relationship doesn't support direct retrieval or $expand.
+To identify the goals associated with a task, read the goalIds property of the plannerTask resource.
+  [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: Collection of history items for entities in the plan.
+Read-only.
+Nullable.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [Actor <IMicrosoftGraphIdentitySet>]: identitySet
-    [EntityId <String>]: 
+    [EntityId <String>]: The ID of the entity that was changed.
     [EntityType <String>]: historyEntityType
     [EventType <String>]: historyEventType
-    [OccurredDateTime <DateTime?>]: 
-    [PlanId <String>]: 
+    [OccurredDateTime <DateTime?>]: The date and time when the change occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+    [PlanId <String>]: The ID of the plan that contains the changed entity.
   [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.

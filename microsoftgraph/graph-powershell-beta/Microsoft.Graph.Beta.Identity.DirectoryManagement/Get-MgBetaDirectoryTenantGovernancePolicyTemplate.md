@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytenantgovernancepolicytemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryTenantGovernancePolicyTemplate
 ---
@@ -31,7 +31,7 @@ Get-MgBetaDirectoryTenantGovernancePolicyTemplate [-ExpandProperty <string[]>]
 ### Get
 
 ```
-Get-MgBetaDirectoryTenantGovernancePolicyTemplate -GovernancePolicyTemplateId <string>
+Get-MgBetaDirectoryTenantGovernancePolicyTemplate -TenantGovernancePolicyTemplateId <string>
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -191,27 +191,6 @@ ParameterSets:
 - Name: List
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -GovernancePolicyTemplateId
-
-The unique identifier of governancePolicyTemplate
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Get
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -497,6 +476,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -TenantGovernancePolicyTemplateId
+
+The unique identifier of tenantGovernancePolicyTemplate
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Top
 
 Show only the first n items
@@ -538,7 +538,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernanceServicesGovernancePolicyTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantGovernancePolicyTemplate
 
 {{ Fill in the Description }}
 
@@ -577,7 +577,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
-  [GovernancePolicyTemplateId <String>]: The unique identifier of governancePolicyTemplate
   [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
   [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
@@ -599,10 +598,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
   [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
@@ -610,6 +611,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight

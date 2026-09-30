@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 39ac6236-2fd4-462f-8fba-248de5ecb021
+Module Guid: cf18e8eb-e8d9-4087-9dc2-720c916c436b
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.sites/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -317,6 +317,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSiteListItemField](Get-MgGroupSiteListItemField.md)
 
+### [Get-MgGroupSiteListItemPermission](Get-MgGroupSiteListItemPermission.md)
+
+### [Get-MgGroupSiteListItemPermission](Get-MgGroupSiteListItemPermission.md)
+
+### [Get-MgGroupSiteListItemPermissionCount](Get-MgGroupSiteListItemPermissionCount.md)
+
 ### [Get-MgGroupSiteListItemVersion](Get-MgGroupSiteListItemVersion.md)
 
 ### [Get-MgGroupSiteListItemVersion](Get-MgGroupSiteListItemVersion.md)
@@ -330,6 +336,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupSiteListOperation](Get-MgGroupSiteListOperation.md)
 
 ### [Get-MgGroupSiteListOperationCount](Get-MgGroupSiteListOperationCount.md)
+
+### [Get-MgGroupSiteListPermission](Get-MgGroupSiteListPermission.md)
+
+### [Get-MgGroupSiteListPermission](Get-MgGroupSiteListPermission.md)
+
+### [Get-MgGroupSiteListPermissionCount](Get-MgGroupSiteListPermissionCount.md)
 
 ### [Get-MgGroupSiteListSubscription](Get-MgGroupSiteListSubscription.md)
 
@@ -1059,6 +1071,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteListItemField](Get-MgSiteListItemField.md)
 
+### [Get-MgSiteListItemPermission](Get-MgSiteListItemPermission.md)
+
+### [Get-MgSiteListItemPermission](Get-MgSiteListItemPermission.md)
+
+### [Get-MgSiteListItemPermissionCount](Get-MgSiteListItemPermissionCount.md)
+
 ### [Get-MgSiteListItemVersion](Get-MgSiteListItemVersion.md)
 
 ### [Get-MgSiteListItemVersion](Get-MgSiteListItemVersion.md)
@@ -1072,6 +1090,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSiteListOperation](Get-MgSiteListOperation.md)
 
 ### [Get-MgSiteListOperationCount](Get-MgSiteListOperationCount.md)
+
+### [Get-MgSiteListPermission](Get-MgSiteListPermission.md)
+
+### [Get-MgSiteListPermission](Get-MgSiteListPermission.md)
+
+### [Get-MgSiteListPermissionCount](Get-MgSiteListPermissionCount.md)
 
 ### [Get-MgSiteListSubscription](Get-MgSiteListSubscription.md)
 
@@ -1437,7 +1461,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserFollowedSiteCount](Get-MgUserFollowedSiteCount.md)
 
+### [Grant-MgGroupSiteListItemPermission](Grant-MgGroupSiteListItemPermission.md)
+
+### [Grant-MgGroupSiteListPermission](Grant-MgGroupSiteListPermission.md)
+
 ### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
+
+### [Grant-MgSiteListItemPermission](Grant-MgSiteListItemPermission.md)
+
+### [Grant-MgSiteListPermission](Grant-MgSiteListPermission.md)
 
 ### [Grant-MgSitePermission](Grant-MgSitePermission.md)
 
@@ -1505,9 +1537,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgGroupSiteListItemLink](New-MgGroupSiteListItemLink.md)
 
+### [New-MgGroupSiteListItemPermission](New-MgGroupSiteListItemPermission.md)
+
 ### [New-MgGroupSiteListItemVersion](New-MgGroupSiteListItemVersion.md)
 
 ### [New-MgGroupSiteListOperation](New-MgGroupSiteListOperation.md)
+
+### [New-MgGroupSiteListPermission](New-MgGroupSiteListPermission.md)
 
 ### [New-MgGroupSiteListSubscription](New-MgGroupSiteListSubscription.md)
 
@@ -1649,9 +1685,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgSiteListItemLink](New-MgSiteListItemLink.md)
 
+### [New-MgSiteListItemPermission](New-MgSiteListItemPermission.md)
+
 ### [New-MgSiteListItemVersion](New-MgSiteListItemVersion.md)
 
 ### [New-MgSiteListOperation](New-MgSiteListOperation.md)
+
+### [New-MgSiteListPermission](New-MgSiteListPermission.md)
 
 ### [New-MgSiteListSubscription](New-MgSiteListSubscription.md)
 
@@ -1779,11 +1819,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgGroupSiteListItemField](Remove-MgGroupSiteListItemField.md)
 
+### [Remove-MgGroupSiteListItemPermission](Remove-MgGroupSiteListItemPermission.md)
+
 ### [Remove-MgGroupSiteListItemVersion](Remove-MgGroupSiteListItemVersion.md)
 
 ### [Remove-MgGroupSiteListItemVersionField](Remove-MgGroupSiteListItemVersionField.md)
 
 ### [Remove-MgGroupSiteListOperation](Remove-MgGroupSiteListOperation.md)
+
+### [Remove-MgGroupSiteListPermission](Remove-MgGroupSiteListPermission.md)
 
 ### [Remove-MgGroupSiteListSubscription](Remove-MgGroupSiteListSubscription.md)
 
@@ -1941,11 +1985,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSiteListItemField](Remove-MgSiteListItemField.md)
 
+### [Remove-MgSiteListItemPermission](Remove-MgSiteListItemPermission.md)
+
 ### [Remove-MgSiteListItemVersion](Remove-MgSiteListItemVersion.md)
 
 ### [Remove-MgSiteListItemVersionField](Remove-MgSiteListItemVersionField.md)
 
 ### [Remove-MgSiteListOperation](Remove-MgSiteListOperation.md)
+
+### [Remove-MgSiteListPermission](Remove-MgSiteListPermission.md)
 
 ### [Remove-MgSiteListSubscription](Remove-MgSiteListSubscription.md)
 
@@ -2125,6 +2173,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting](Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgGroupSiteListItemPermission](Update-MgGroupSiteListItemPermission.md)
+
 ### [Update-MgGroupSiteListItemVersion](Update-MgGroupSiteListItemVersion.md)
 
 ### [Update-MgGroupSiteListItemVersionField](Update-MgGroupSiteListItemVersionField.md)
@@ -2132,6 +2182,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgGroupSiteListLastModifiedByUserMailboxSetting](Update-MgGroupSiteListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgGroupSiteListOperation](Update-MgGroupSiteListOperation.md)
+
+### [Update-MgGroupSiteListPermission](Update-MgGroupSiteListPermission.md)
 
 ### [Update-MgGroupSiteListSubscription](Update-MgGroupSiteListSubscription.md)
 
@@ -2293,6 +2345,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSiteListItemLastModifiedByUserMailboxSetting](Update-MgSiteListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgSiteListItemPermission](Update-MgSiteListItemPermission.md)
+
 ### [Update-MgSiteListItemVersion](Update-MgSiteListItemVersion.md)
 
 ### [Update-MgSiteListItemVersionField](Update-MgSiteListItemVersionField.md)
@@ -2300,6 +2354,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSiteListLastModifiedByUserMailboxSetting](Update-MgSiteListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgSiteListOperation](Update-MgSiteListOperation.md)
+
+### [Update-MgSiteListPermission](Update-MgSiteListPermission.md)
 
 ### [Update-MgSiteListSubscription](Update-MgSiteListSubscription.md)
 

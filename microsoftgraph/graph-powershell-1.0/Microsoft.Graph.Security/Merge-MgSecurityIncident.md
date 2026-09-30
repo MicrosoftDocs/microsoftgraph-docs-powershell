@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/merge-mgsecurityincident
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 08/07/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Merge-MgSecurityIncident
 ---
@@ -14,6 +14,9 @@ title: Merge-MgSecurityIncident
 ## SYNOPSIS
 
 Merge multiple incident resources into a single incident.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Merge-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Merge-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,8 +50,9 @@ This cmdlet has the following aliases,
 Merge multiple incident resources into a single incident.
 
 ## EXAMPLES
+### Example 1: Merge incidents
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -62,6 +66,10 @@ mergeReasons = "sameCampaign, sameActor"
 }
 
 Merge-MgSecurityIncident -BodyParameter $params
+
+```
+This example will merge incidents
+
 
 ## PARAMETERS
 

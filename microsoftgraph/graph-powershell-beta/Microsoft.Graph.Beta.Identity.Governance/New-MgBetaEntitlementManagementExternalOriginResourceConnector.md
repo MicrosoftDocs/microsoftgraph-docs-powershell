@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementExternalOriginResourceConnector
 ---
@@ -13,7 +13,7 @@ title: New-MgBetaEntitlementManagementExternalOriginResourceConnector
 
 ## SYNOPSIS
 
-Create new navigation property to externalOriginResourceConnectors for identityGovernance
+Creates a new externalOriginResourceConnector object.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Create new navigation property to externalOriginResourceConnectors for identityGovernance
+Creates a new externalOriginResourceConnector object.
 
 **Permissions**
 
@@ -55,6 +55,36 @@ Create new navigation property to externalOriginResourceConnectors for identityG
 | Delegated (work or school account) | EntitlementManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EntitlementManagement.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.externalOriginResourceConnector"
+	displayName = "SAP Access Control"
+	description = "SAP Access Control connector"
+	connectorType = "sapAc"
+	connectionInfo = @{
+		"@odata.type" = "microsoft.graph.externalTokenBasedSapIagConnectionInfo"
+		url = "dev.test"
+		accessTokenUrl = "9e90019f-6256-41fa-a225-5ef9cc1d9bf8"
+		clientId = "e9ad8b1d-959c-4e86-8ba2-2cbf4d14bc29"
+		keyVaultName = "Keyvault"
+		secretName = "Test"
+		subscriptionId = "5ee98b73-d9df-43a7-8a92-36855054bdee"
+		resourceGroup = "SAPIAG Group"
+	}
+}
+
+New-MgBetaEntitlementManagementExternalOriginResourceConnector -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEntitlementManagementExternalOriginResourceConnector Cmdlet.
+
 
 ## PARAMETERS
 
@@ -189,7 +219,7 @@ HelpMessage: ''
 
 ### -CreatedBy
 
-
+The identifier of the user or application that created the connector.
 
 ```yaml
 Type: System.String
@@ -210,7 +240,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+The date and time when the connector was created.
 
 ```yaml
 Type: System.DateTime
@@ -231,7 +261,7 @@ HelpMessage: ''
 
 ### -Description
 
-
+A description of the connector.
 
 ```yaml
 Type: System.String
@@ -252,7 +282,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-
+The display name of the connector.
 
 ```yaml
 Type: System.String
@@ -358,7 +388,7 @@ HelpMessage: ''
 
 ### -ModifiedBy
 
-
+The identifier of the user or application that last modified the connector.
 
 ```yaml
 Type: System.String
@@ -379,7 +409,7 @@ HelpMessage: ''
 
 ### -ModifiedDateTime
 
-
+The date and time when the connector was last modified.
 
 ```yaml
 Type: System.DateTime
@@ -543,12 +573,12 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Url <String>]: The endpoint that is used by Entitlement Management to communicate with the access package resource.
   [ConnectorType <String>]: connectorType
-  [CreatedBy <String>]: 
-  [CreatedDateTime <DateTime?>]: 
-  [Description <String>]: 
-  [DisplayName <String>]: 
-  [ModifiedBy <String>]: 
-  [ModifiedDateTime <DateTime?>]: 
+  [CreatedBy <String>]: The identifier of the user or application that created the connector.
+  [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+  [Description <String>]: A description of the connector.
+  [DisplayName <String>]: The display name of the connector.
+  [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+  [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
 
 CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -558,7 +588,7 @@ CONNECTIONINFO `<IMicrosoftGraphConnectionInfo>`: connectionInfo
 ## RELATED LINKS
 
 - [New-MgBetaEntitlementManagementExternalOriginResourceConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementexternaloriginresourceconnector)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/entitlementmanagement-post-externaloriginresourceconnectors?view=graph-rest-beta)
 
 
 

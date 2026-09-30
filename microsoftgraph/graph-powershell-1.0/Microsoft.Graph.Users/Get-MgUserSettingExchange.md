@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingexchange
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSettingExchange
 ---
@@ -52,12 +52,17 @@ Currently, the mailbox types supported are the user's primary mailbox and shared
 To learn how to get a list of users in a tenant, see List users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserSettingExchange -UserId $userId
+
+```
+This example shows how to use the Get-MgUserSettingExchange Cmdlet.
+
 
 ## PARAMETERS
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: f07ae8d6-8d80-4423-86aa-ba8bc8be14aa
+Module Guid: 9a05aee5-6a4c-44cb-8045-0fd9a6cde513
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.signins/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -521,6 +521,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount.md)
 
+### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
+
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyTemplate](Get-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
@@ -544,6 +546,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
 
 ### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365CapabilityCount](Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365CapabilityCount.md)
+
+### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Get-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -904,6 +908,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode](Get-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode.md)
 
 ### [Get-MgBetaUserAuthenticationRequirement](Get-MgBetaUserAuthenticationRequirement.md)
+
+### [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod](Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod.md)
+
+### [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod](Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod.md)
+
+### [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodCount](Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodCount.md)
+
+### [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodDevice](Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodDevice.md)
 
 ### [Get-MgBetaUserAuthenticationSignInPreference](Get-MgBetaUserAuthenticationSignInPreference.md)
 
@@ -1423,6 +1435,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
 
+### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
+
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate](Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
@@ -1438,6 +1452,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization.md)
 
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
+
+### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Remove-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -1543,6 +1559,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode](Remove-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode.md)
 
+### [Remove-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod](Remove-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod.md)
+
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)
 
 ### [Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
@@ -1589,9 +1607,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
 
+### [Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
+
 ### [Restore-MgBetaPolicyDeletedItemCrossTenantPartner](Restore-MgBetaPolicyDeletedItemCrossTenantPartner.md)
 
 ### [Restore-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](Restore-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization.md)
+
+### [Restore-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Restore-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Restore-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Restore-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -1791,6 +1813,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
 
+### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
+
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyTemplate](Update-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
@@ -1804,6 +1828,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPolicyDeletedItemCrossTenantPartner](Update-MgBetaPolicyDeletedItemCrossTenantPartner.md)
 
 ### [Update-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Update-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
+
+### [Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 

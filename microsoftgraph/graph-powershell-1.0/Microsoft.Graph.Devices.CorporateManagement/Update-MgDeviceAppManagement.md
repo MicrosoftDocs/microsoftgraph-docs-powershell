@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceAppManagement
 ---
@@ -25,7 +25,7 @@ Update the properties of a deviceAppManagement object.
 ```
 Update-MgDeviceAppManagement [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AndroidManagedAppProtections <IMicrosoftGraphAndroidManagedAppProtection[]>]
- [-DefaultManagedAppProtections <IMicrosoftGraphDefaultManagedAppProtection[]>] [-Id <string>]
+ [-DefaultManagedAppProtections <IMicrosoftGraphDefaultManagedAppProtection[]>]
  [-IosManagedAppProtections <IMicrosoftGraphIosManagedAppProtection[]>]
  [-IsEnabledForMicrosoftStoreForBusiness] [-ManagedAppPolicies <IMicrosoftGraphManagedAppPolicy[]>]
  [-ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]
@@ -275,28 +275,6 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Id
-
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -890,8 +868,6 @@ Read-only.
 
 BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
   [AndroidManagedAppProtections <IMicrosoftGraphAndroidManagedAppProtection[]>]: Android managed app policies.
     [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
       [Id <String>]: The unique identifier for an entity.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignedto
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipalAppRoleAssignedTo
 ---
@@ -52,9 +52,9 @@ Deletes an appRoleAssignment that a user, group, or client service principal has
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AppRoleAssignment.ReadWrite.All,  |
+| Application | AppRoleAssignment.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -428,6 +428,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
   [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
+  [ComplianceIssueId <String>]: The unique identifier of complianceIssue
   [ConnectorGroupId <String>]: The unique identifier of connectorGroup
   [ConnectorId <String>]: The unique identifier of connector
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification

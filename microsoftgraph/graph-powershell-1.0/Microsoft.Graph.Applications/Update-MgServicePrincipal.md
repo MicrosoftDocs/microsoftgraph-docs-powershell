@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgServicePrincipal
 ---
@@ -135,9 +135,9 @@ This API can also create an agentIdentityBlueprintPrincipal object from an agent
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, AgentIdentity.EnableDisable.All, AgentIdentity.ReadWrite.All, AgentIdentityBlueprintPrincipal.EnableDisable.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Update the properties of a service principal

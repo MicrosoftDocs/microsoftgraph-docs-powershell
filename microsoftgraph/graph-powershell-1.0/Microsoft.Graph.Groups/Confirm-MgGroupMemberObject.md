@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupmemberobject
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Confirm-MgGroupMemberObject
 ---
@@ -71,9 +71,9 @@ Invoke action checkMemberObjects
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read, User.Read.All, User.ReadWrite.All,  |
+| Delegated (work or school account) | GroupMember.ReadBasic.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Application.Read.All, Application.ReadWrite.All, Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read, User.Read.All, User.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Application.Read.All, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All, User.ReadWrite.All,  |
+| Application | GroupMember.ReadBasic.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Application.Read.All, Application.ReadWrite.All, Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, User.Read.All, User.ReadWrite.All,  |
 
 ## PARAMETERS
 

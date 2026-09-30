@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgServicePrincipal
 ---
@@ -53,9 +53,9 @@ This API can also delete an agentIdentityBlueprintPrincipal object by its ID.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.ReadWrite.All, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, Directory.ReadWrite.All,  |
+| Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Application.ReadWrite.OwnedBy, AgentIdentity.DeleteRestore.All, AgentIdentityBlueprintPrincipal.DeleteRestore.All, Application.ReadWrite.All, Directory.ReadWrite.All,  |
+| Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet

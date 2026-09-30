@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: d4f30c2f-6ff7-4f21-ad53-a7c391dc75bb
+Module Guid: 8f82943f-b890-45de-a1f1-03b92234b29c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.users/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -342,6 +342,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserSponsorByRef](Get-MgBetaUserSponsorByRef.md)
 
 ### [Get-MgBetaUserSponsorCount](Get-MgBetaUserSponsorCount.md)
+
+### [Get-MgBetaUserSponsorOf](Get-MgBetaUserSponsorOf.md)
+
+### [Get-MgBetaUserSponsorOf](Get-MgBetaUserSponsorOf.md)
+
+### [Get-MgBetaUserSponsorOfCount](Get-MgBetaUserSponsorOfCount.md)
 
 ### [Get-MgBetaUserTodoList](Get-MgBetaUserTodoList.md)
 

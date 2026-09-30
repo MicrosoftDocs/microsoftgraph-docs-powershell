@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattargetedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserChatTargetedMessage
 ---
@@ -13,7 +13,10 @@ title: Get-MgUserChatTargetedMessage
 
 ## SYNOPSIS
 
-Get targetedMessages from users
+A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
 
 ## SYNTAX
 
@@ -54,7 +57,10 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get targetedMessages from users
+A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
 
 ## PARAMETERS
 

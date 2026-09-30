@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewinstancedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Add-MgBetaAccessReviewInstanceDecision
 ---
@@ -16,7 +16,7 @@ title: Add-MgBetaAccessReviewInstanceDecision
 In the Microsoft Entra access reviews feature, apply the decisions of a completed accessReview.
 The target object can be either a one-time access review, or an instance of a recurring access review.
  After an access review is finished, either because it reached the end date or an administrator stopped it manually, and auto-apply wasn't configured for the review, you can call Apply to apply the changes.
-Until apply occurs, the decisions to remove access rights do not appear on the source resource, the users for instance retain their group memberships.
+Until apply occurs, the decisions to remove access rights don't appear on the source resource, the users for instance retain their group memberships.
 By calling apply, the outcome of the review is implemented by updating the group or application.
 If a user's access was denied in the review, when an administrator calls this API, Microsoft Entra ID removes their membership or application assignment.
 After an access review is finished, and auto-apply was configured, then the status of the review will change from Completed through intermediate states and finally will change to state Applied.
@@ -54,7 +54,7 @@ This cmdlet has the following aliases,
 In the Microsoft Entra access reviews feature, apply the decisions of a completed accessReview.
 The target object can be either a one-time access review, or an instance of a recurring access review.
  After an access review is finished, either because it reached the end date or an administrator stopped it manually, and auto-apply wasn't configured for the review, you can call Apply to apply the changes.
-Until apply occurs, the decisions to remove access rights do not appear on the source resource, the users for instance retain their group memberships.
+Until apply occurs, the decisions to remove access rights don't appear on the source resource, the users for instance retain their group memberships.
 By calling apply, the outcome of the review is implemented by updating the group or application.
 If a user's access was denied in the review, when an administrator calls this API, Microsoft Entra ID removes their membership or application assignment.
 After an access review is finished, and auto-apply was configured, then the status of the review will change from Completed through intermediate states and finally will change to state Applied.
@@ -434,6 +434,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
@@ -450,6 +451,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
+  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
+  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -476,6 +481,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

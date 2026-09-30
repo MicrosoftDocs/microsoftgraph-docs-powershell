@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDomainFederationConfiguration
 ---
@@ -30,10 +30,10 @@ Update-MgDomainFederationConfiguration -DomainId <string> -InternalDomainFederat
  [-NextSigningCertificate <string>] [-PassiveSignInUri <string>] [-PasswordResetUri <string>]
  [-PreferredAuthenticationProtocol <string>] [-PromptLoginBehavior <string>] [-SignOutUri <string>]
  [-SigningCertificate <string>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]
+ [-SystemBrowserEnabledOn <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -56,10 +56,10 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
  [-NextSigningCertificate <string>] [-PassiveSignInUri <string>] [-PasswordResetUri <string>]
  [-PreferredAuthenticationProtocol <string>] [-PromptLoginBehavior <string>] [-SignOutUri <string>]
  [-SigningCertificate <string>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]
+ [-SystemBrowserEnabledOn <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -845,6 +845,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SystemBrowserEnabledOn
+
+systemBrowserEnabledOn
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -935,6 +962,7 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+  [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
@@ -967,6 +995,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
   [RecoveryJobId <String>]: The unique identifier of recoveryJob
   [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SnapshotId <String>]: The unique identifier of snapshot

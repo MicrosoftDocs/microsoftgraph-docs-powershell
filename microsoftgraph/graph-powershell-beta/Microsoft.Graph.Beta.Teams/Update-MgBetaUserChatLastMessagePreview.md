@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatlastmessagepreview
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Teams
-ms.date: 08/07/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserChatLastMessagePreview
 ---
@@ -25,7 +25,7 @@ Update the navigation property lastMessagePreview in users
 ```
 Update-MgBetaUserChatLastMessagePreview -ChatId <string> -UserId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <datetime>] [-EventDetail <hashtable>]
+ [-Body <IMicrosoftGraphChatMessageBody>] [-CreatedDateTime <datetime>] [-EventDetail <hashtable>]
  [-From <hashtable>] [-Id <string>] [-IsDeleted] [-MessageType <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -47,7 +47,7 @@ Update-MgBetaUserChatLastMessagePreview -ChatId <string> -UserId <string>
 ```
 Update-MgBetaUserChatLastMessagePreview -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <datetime>] [-EventDetail <hashtable>]
+ [-Body <IMicrosoftGraphChatMessageBody>] [-CreatedDateTime <datetime>] [-EventDetail <hashtable>]
  [-From <hashtable>] [-Id <string>] [-IsDeleted] [-MessageType <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
@@ -104,11 +104,11 @@ HelpMessage: ''
 
 ### -Body
 
-itemBody
+chatMessageBody
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageBody
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -650,19 +650,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY `<IMicrosoftGraphChatMessageBody>`: chatMessageBody
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Content <String>]: The content of the item.
+  [Content <String>]: The content of the chat message.
   [ContentType <String>]: bodyType
+  [MessageBodyContentType <String>]: chatMessageBodyContentType
 
 BODYPARAMETER `<IMicrosoftGraphChatMessageInfo>`: chatMessageInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [Body <IMicrosoftGraphItemBody>]: itemBody
+  [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Content <String>]: The content of the item.
+    [Content <String>]: The content of the chat message.
     [ContentType <String>]: bodyType
+    [MessageBodyContentType <String>]: chatMessageBodyContentType
   [CreatedDateTime <DateTime?>]: Date time object representing the time at which message was created.
   [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -697,7 +699,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [OpenShiftId <String>]: The unique identifier of openShift
   [PinnedChatMessageInfoId <String>]: The unique identifier of pinnedChatMessageInfo
   [PlannerBucketId <String>]: The unique identifier of plannerBucket
+  [PlannerGoalId <String>]: The unique identifier of plannerGoal
+  [PlannerHistoryItemId <String>]: The unique identifier of plannerHistoryItem
   [PlannerPlanId <String>]: The unique identifier of plannerPlan
+  [PlannerTaskChatMessageId <String>]: The unique identifier of plannerTaskChatMessage
   [PlannerTaskId <String>]: The unique identifier of plannerTask
   [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
   [SchedulingGroupId <String>]: The unique identifier of schedulingGroup
@@ -705,6 +710,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [ShiftId <String>]: The unique identifier of shift
   [ShiftsRoleDefinitionId <String>]: The unique identifier of shiftsRoleDefinition
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamTemplateDefinitionId <String>]: The unique identifier of teamTemplateDefinition
   [TeamTemplateId <String>]: The unique identifier of teamTemplate
@@ -714,8 +720,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [TeamsAppInstallationId <String>]: The unique identifier of teamsAppInstallation
   [TeamsAsyncOperationId <String>]: The unique identifier of teamsAsyncOperation
   [TeamsTabId <String>]: The unique identifier of teamsTab
+  [TeamworkCustomEmojiDisplayName <String>]: The unique identifier of teamworkCustomEmoji
   [TeamworkDeviceId <String>]: The unique identifier of teamworkDevice
   [TeamworkDeviceOperationId <String>]: The unique identifier of teamworkDeviceOperation
+  [TeamworkSectionId <String>]: The unique identifier of teamworkSection
+  [TeamworkSectionItemId <String>]: The unique identifier of teamworkSectionItem
   [TeamworkTagId <String>]: The unique identifier of teamworkTag
   [TeamworkTagMemberId <String>]: The unique identifier of teamworkTagMember
   [TimeCardId <String>]: The unique identifier of timeCard
