@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Education
-Module Guid: 228bfd3f-9616-43b6-8204-788bbf38deca
+Module Guid: 6edf307d-dd35-4799-8b4a-a768419b3e21
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.education/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,13 +13,7 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Education Cmdlets
 ### [Get-MgEducationClass](Get-MgEducationClass.md)
 
-### [Get-MgEducationClass](Get-MgEducationClass.md)
-
 ### [Get-MgEducationClassAssignment](Get-MgEducationClassAssignment.md)
-
-### [Get-MgEducationClassAssignment](Get-MgEducationClassAssignment.md)
-
-### [Get-MgEducationClassAssignmentCategory](Get-MgEducationClassAssignmentCategory.md)
 
 ### [Get-MgEducationClassAssignmentCategory](Get-MgEducationClassAssignmentCategory.md)
 
@@ -41,11 +35,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationClassAssignmentResource](Get-MgEducationClassAssignmentResource.md)
 
-### [Get-MgEducationClassAssignmentResource](Get-MgEducationClassAssignmentResource.md)
-
 ### [Get-MgEducationClassAssignmentResourceCount](Get-MgEducationClassAssignmentResourceCount.md)
-
-### [Get-MgEducationClassAssignmentResourceDependentResource](Get-MgEducationClassAssignmentResourceDependentResource.md)
 
 ### [Get-MgEducationClassAssignmentResourceDependentResource](Get-MgEducationClassAssignmentResourceDependentResource.md)
 
@@ -61,11 +51,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationClassAssignmentSettingGradingCategory](Get-MgEducationClassAssignmentSettingGradingCategory.md)
 
-### [Get-MgEducationClassAssignmentSettingGradingCategory](Get-MgEducationClassAssignmentSettingGradingCategory.md)
-
 ### [Get-MgEducationClassAssignmentSettingGradingCategoryCount](Get-MgEducationClassAssignmentSettingGradingCategoryCount.md)
-
-### [Get-MgEducationClassAssignmentSettingGradingScheme](Get-MgEducationClassAssignmentSettingGradingScheme.md)
 
 ### [Get-MgEducationClassAssignmentSettingGradingScheme](Get-MgEducationClassAssignmentSettingGradingScheme.md)
 
@@ -73,11 +59,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationClassAssignmentSubmission](Get-MgEducationClassAssignmentSubmission.md)
 
-### [Get-MgEducationClassAssignmentSubmission](Get-MgEducationClassAssignmentSubmission.md)
-
 ### [Get-MgEducationClassAssignmentSubmissionCount](Get-MgEducationClassAssignmentSubmissionCount.md)
-
-### [Get-MgEducationClassAssignmentSubmissionOutcome](Get-MgEducationClassAssignmentSubmissionOutcome.md)
 
 ### [Get-MgEducationClassAssignmentSubmissionOutcome](Get-MgEducationClassAssignmentSubmissionOutcome.md)
 
@@ -85,11 +67,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationClassAssignmentSubmissionResource](Get-MgEducationClassAssignmentSubmissionResource.md)
 
-### [Get-MgEducationClassAssignmentSubmissionResource](Get-MgEducationClassAssignmentSubmissionResource.md)
-
 ### [Get-MgEducationClassAssignmentSubmissionResourceCount](Get-MgEducationClassAssignmentSubmissionResourceCount.md)
-
-### [Get-MgEducationClassAssignmentSubmissionResourceDependentResource](Get-MgEducationClassAssignmentSubmissionResourceDependentResource.md)
 
 ### [Get-MgEducationClassAssignmentSubmissionResourceDependentResource](Get-MgEducationClassAssignmentSubmissionResourceDependentResource.md)
 
@@ -97,11 +75,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationClassAssignmentSubmissionSubmittedResource](Get-MgEducationClassAssignmentSubmissionSubmittedResource.md)
 
-### [Get-MgEducationClassAssignmentSubmissionSubmittedResource](Get-MgEducationClassAssignmentSubmissionSubmittedResource.md)
-
 ### [Get-MgEducationClassAssignmentSubmissionSubmittedResourceCount](Get-MgEducationClassAssignmentSubmissionSubmittedResourceCount.md)
-
-### [Get-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Get-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
 
 ### [Get-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Get-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
 
@@ -125,19 +99,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationClassModule](Get-MgEducationClassModule.md)
 
-### [Get-MgEducationClassModule](Get-MgEducationClassModule.md)
-
 ### [Get-MgEducationClassModuleCount](Get-MgEducationClassModuleCount.md)
-
-### [Get-MgEducationClassModuleResource](Get-MgEducationClassModuleResource.md)
 
 ### [Get-MgEducationClassModuleResource](Get-MgEducationClassModuleResource.md)
 
 ### [Get-MgEducationClassModuleResourceCount](Get-MgEducationClassModuleResourceCount.md)
 
 ### [Get-MgEducationClassRecentlyModifiedSubmission](Get-MgEducationClassRecentlyModifiedSubmission.md)
-
-### [Get-MgEducationClassSchool](Get-MgEducationClassSchool.md)
 
 ### [Get-MgEducationClassSchool](Get-MgEducationClassSchool.md)
 
@@ -150,8 +118,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgEducationClassTeacherCount](Get-MgEducationClassTeacherCount.md)
 
 ### [Get-MgEducationMe](Get-MgEducationMe.md)
-
-### [Get-MgEducationMeAssignment](Get-MgEducationMeAssignment.md)
 
 ### [Get-MgEducationMeAssignment](Get-MgEducationMeAssignment.md)
 
@@ -173,11 +139,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationMeAssignmentResource](Get-MgEducationMeAssignmentResource.md)
 
-### [Get-MgEducationMeAssignmentResource](Get-MgEducationMeAssignmentResource.md)
-
 ### [Get-MgEducationMeAssignmentResourceCount](Get-MgEducationMeAssignmentResourceCount.md)
-
-### [Get-MgEducationMeAssignmentResourceDependentResource](Get-MgEducationMeAssignmentResourceDependentResource.md)
 
 ### [Get-MgEducationMeAssignmentResourceDependentResource](Get-MgEducationMeAssignmentResourceDependentResource.md)
 
@@ -189,11 +151,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationMeAssignmentSubmission](Get-MgEducationMeAssignmentSubmission.md)
 
-### [Get-MgEducationMeAssignmentSubmission](Get-MgEducationMeAssignmentSubmission.md)
-
 ### [Get-MgEducationMeAssignmentSubmissionCount](Get-MgEducationMeAssignmentSubmissionCount.md)
-
-### [Get-MgEducationMeAssignmentSubmissionOutcome](Get-MgEducationMeAssignmentSubmissionOutcome.md)
 
 ### [Get-MgEducationMeAssignmentSubmissionOutcome](Get-MgEducationMeAssignmentSubmissionOutcome.md)
 
@@ -201,11 +159,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationMeAssignmentSubmissionResource](Get-MgEducationMeAssignmentSubmissionResource.md)
 
-### [Get-MgEducationMeAssignmentSubmissionResource](Get-MgEducationMeAssignmentSubmissionResource.md)
-
 ### [Get-MgEducationMeAssignmentSubmissionResourceCount](Get-MgEducationMeAssignmentSubmissionResourceCount.md)
-
-### [Get-MgEducationMeAssignmentSubmissionResourceDependentResource](Get-MgEducationMeAssignmentSubmissionResourceDependentResource.md)
 
 ### [Get-MgEducationMeAssignmentSubmissionResourceDependentResource](Get-MgEducationMeAssignmentSubmissionResourceDependentResource.md)
 
@@ -213,11 +167,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationMeAssignmentSubmissionSubmittedResource](Get-MgEducationMeAssignmentSubmissionSubmittedResource.md)
 
-### [Get-MgEducationMeAssignmentSubmissionSubmittedResource](Get-MgEducationMeAssignmentSubmissionSubmittedResource.md)
-
 ### [Get-MgEducationMeAssignmentSubmissionSubmittedResourceCount](Get-MgEducationMeAssignmentSubmissionSubmittedResourceCount.md)
-
-### [Get-MgEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Get-MgEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
 
 ### [Get-MgEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Get-MgEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
 
@@ -225,11 +175,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationMeClass](Get-MgEducationMeClass.md)
 
-### [Get-MgEducationMeClass](Get-MgEducationMeClass.md)
-
 ### [Get-MgEducationMeClassCount](Get-MgEducationMeClassCount.md)
-
-### [Get-MgEducationMeRubric](Get-MgEducationMeRubric.md)
 
 ### [Get-MgEducationMeRubric](Get-MgEducationMeRubric.md)
 
@@ -237,11 +183,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationMeSchool](Get-MgEducationMeSchool.md)
 
-### [Get-MgEducationMeSchool](Get-MgEducationMeSchool.md)
-
 ### [Get-MgEducationMeSchoolCount](Get-MgEducationMeSchoolCount.md)
-
-### [Get-MgEducationMeTaughtClass](Get-MgEducationMeTaughtClass.md)
 
 ### [Get-MgEducationMeTaughtClass](Get-MgEducationMeTaughtClass.md)
 
@@ -259,11 +201,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationReportReadingAssignmentSubmission](Get-MgEducationReportReadingAssignmentSubmission.md)
 
-### [Get-MgEducationReportReadingAssignmentSubmission](Get-MgEducationReportReadingAssignmentSubmission.md)
-
 ### [Get-MgEducationReportReadingAssignmentSubmissionCount](Get-MgEducationReportReadingAssignmentSubmissionCount.md)
-
-### [Get-MgEducationReportReadingCoachPassage](Get-MgEducationReportReadingCoachPassage.md)
 
 ### [Get-MgEducationReportReadingCoachPassage](Get-MgEducationReportReadingCoachPassage.md)
 
@@ -271,19 +209,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationReportReflectCheck](Get-MgEducationReportReflectCheck.md)
 
-### [Get-MgEducationReportReflectCheck](Get-MgEducationReportReflectCheck.md)
-
 ### [Get-MgEducationReportReflectCheckInResponseCount](Get-MgEducationReportReflectCheckInResponseCount.md)
-
-### [Get-MgEducationReportSpeakerAssignmentSubmission](Get-MgEducationReportSpeakerAssignmentSubmission.md)
 
 ### [Get-MgEducationReportSpeakerAssignmentSubmission](Get-MgEducationReportSpeakerAssignmentSubmission.md)
 
 ### [Get-MgEducationReportSpeakerAssignmentSubmissionCount](Get-MgEducationReportSpeakerAssignmentSubmissionCount.md)
 
 ### [Get-MgEducationRoot](Get-MgEducationRoot.md)
-
-### [Get-MgEducationSchool](Get-MgEducationSchool.md)
 
 ### [Get-MgEducationSchool](Get-MgEducationSchool.md)
 
@@ -307,10 +239,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationUser](Get-MgEducationUser.md)
 
-### [Get-MgEducationUser](Get-MgEducationUser.md)
-
-### [Get-MgEducationUserAssignment](Get-MgEducationUserAssignment.md)
-
 ### [Get-MgEducationUserAssignment](Get-MgEducationUserAssignment.md)
 
 ### [Get-MgEducationUserAssignmentCategory](Get-MgEducationUserAssignmentCategory.md)
@@ -331,11 +259,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationUserAssignmentResource](Get-MgEducationUserAssignmentResource.md)
 
-### [Get-MgEducationUserAssignmentResource](Get-MgEducationUserAssignmentResource.md)
-
 ### [Get-MgEducationUserAssignmentResourceCount](Get-MgEducationUserAssignmentResourceCount.md)
-
-### [Get-MgEducationUserAssignmentResourceDependentResource](Get-MgEducationUserAssignmentResourceDependentResource.md)
 
 ### [Get-MgEducationUserAssignmentResourceDependentResource](Get-MgEducationUserAssignmentResourceDependentResource.md)
 
@@ -347,11 +271,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationUserAssignmentSubmission](Get-MgEducationUserAssignmentSubmission.md)
 
-### [Get-MgEducationUserAssignmentSubmission](Get-MgEducationUserAssignmentSubmission.md)
-
 ### [Get-MgEducationUserAssignmentSubmissionCount](Get-MgEducationUserAssignmentSubmissionCount.md)
-
-### [Get-MgEducationUserAssignmentSubmissionOutcome](Get-MgEducationUserAssignmentSubmissionOutcome.md)
 
 ### [Get-MgEducationUserAssignmentSubmissionOutcome](Get-MgEducationUserAssignmentSubmissionOutcome.md)
 
@@ -359,11 +279,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationUserAssignmentSubmissionResource](Get-MgEducationUserAssignmentSubmissionResource.md)
 
-### [Get-MgEducationUserAssignmentSubmissionResource](Get-MgEducationUserAssignmentSubmissionResource.md)
-
 ### [Get-MgEducationUserAssignmentSubmissionResourceCount](Get-MgEducationUserAssignmentSubmissionResourceCount.md)
-
-### [Get-MgEducationUserAssignmentSubmissionResourceDependentResource](Get-MgEducationUserAssignmentSubmissionResourceDependentResource.md)
 
 ### [Get-MgEducationUserAssignmentSubmissionResourceDependentResource](Get-MgEducationUserAssignmentSubmissionResourceDependentResource.md)
 
@@ -371,17 +287,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationUserAssignmentSubmissionSubmittedResource](Get-MgEducationUserAssignmentSubmissionSubmittedResource.md)
 
-### [Get-MgEducationUserAssignmentSubmissionSubmittedResource](Get-MgEducationUserAssignmentSubmissionSubmittedResource.md)
-
 ### [Get-MgEducationUserAssignmentSubmissionSubmittedResourceCount](Get-MgEducationUserAssignmentSubmissionSubmittedResourceCount.md)
 
 ### [Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
 
-### [Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-
 ### [Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount](Get-MgEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount.md)
-
-### [Get-MgEducationUserClass](Get-MgEducationUserClass.md)
 
 ### [Get-MgEducationUserClass](Get-MgEducationUserClass.md)
 
@@ -395,11 +305,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEducationUserRubric](Get-MgEducationUserRubric.md)
 
-### [Get-MgEducationUserRubric](Get-MgEducationUserRubric.md)
-
 ### [Get-MgEducationUserRubricCount](Get-MgEducationUserRubricCount.md)
-
-### [Get-MgEducationUserSchool](Get-MgEducationUserSchool.md)
 
 ### [Get-MgEducationUserSchool](Get-MgEducationUserSchool.md)
 
@@ -408,8 +314,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgEducationUserServiceProvisioningError](Get-MgEducationUserServiceProvisioningError.md)
 
 ### [Get-MgEducationUserServiceProvisioningErrorCount](Get-MgEducationUserServiceProvisioningErrorCount.md)
-
-### [Get-MgEducationUserTaughtClass](Get-MgEducationUserTaughtClass.md)
 
 ### [Get-MgEducationUserTaughtClass](Get-MgEducationUserTaughtClass.md)
 
@@ -814,23 +718,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgEducationUserMailboxSetting](Update-MgEducationUserMailboxSetting.md)
 
 ### [Update-MgEducationUserRubric](Update-MgEducationUserRubric.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

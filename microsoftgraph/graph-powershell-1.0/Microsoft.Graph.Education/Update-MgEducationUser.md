@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Education-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuser
 Locale: en-US
 Module Name: Microsoft.Graph.Education
-ms.date: 09/22/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgEducationUser
 ---
@@ -14,9 +14,6 @@ title: Update-MgEducationUser
 ## SYNOPSIS
 
 Update the properties of an educationUser object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -103,9 +100,8 @@ This cmdlet has the following aliases,
 Update the properties of an educationUser object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Education
 
@@ -117,10 +113,6 @@ $params = @{
 }
 
 Update-MgEducationUser -EducationUserId $educationUserId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgEducationUser Cmdlet.
-
 
 ## PARAMETERS
 
@@ -1746,7 +1738,7 @@ If the value is null, the student uploaded the resource.
     [SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]: 
     [UnsubmittedBy <IMicrosoftGraphIdentitySet>]: identitySet
 
-BODYPARAMETER `<IMicrosoftGraphEducationUser>`: educationUser
+BODYPARAMETER <IMicrosoftGraphEducationUser>: educationUser
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -2962,7 +2954,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5828,6 +5820,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+          [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+            [Categories <String[]>]: The categories associated with the item
+            [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+            [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+            [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+            [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+            [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
           [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6947,8 +6962,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -8622,7 +8637,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11488,6 +11503,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+        [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+          [Categories <String[]>]: The categories associated with the item
+          [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+          [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+          [Body <IMicrosoftGraphItemBody>]: itemBody
+          [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+          [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+          [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+          [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
         [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -12607,8 +12645,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -13097,7 +13135,7 @@ Nullable.
     [ExternalId <String>]: ID of term in the syncing system.
     [StartDate <DateTime?>]: Start of the term.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -13108,7 +13146,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   [EducationAssignmentId <String>]: The unique identifier of educationAssignment
   [EducationAssignmentResourceId <String>]: The unique identifier of educationAssignmentResource
   [EducationAssignmentResourceId1 <String>]: The unique identifier of educationAssignmentResource
@@ -13130,7 +13168,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   [ReflectCheckInResponseId <String>]: The unique identifier of reflectCheckInResponse
   [SpeakerAssignmentSubmissionId <String>]: The unique identifier of speakerAssignmentSubmission
 
-MAILINGADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+MAILINGADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -13139,11 +13177,11 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-ONPREMISESINFO `<IMicrosoftGraphEducationOnPremisesInfo>`: educationOnPremisesInfo
+ONPREMISESINFO <IMicrosoftGraphEducationOnPremisesInfo>: educationOnPremisesInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ImmutableId <String>]: Unique identifier for the user object in Active Directory.
 
-PASSWORDPROFILE `<IMicrosoftGraphPasswordProfile>`: passwordProfile
+PASSWORDPROFILE <IMicrosoftGraphPasswordProfile>: passwordProfile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ForceChangePasswordNextSignIn <Boolean?>]: true if the user must change their password on the next sign-in; otherwise false.
   [ForceChangePasswordNextSignInWithMfa <Boolean?>]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
@@ -13175,7 +13213,7 @@ Required.
   [MobilePhone <String>]: Mobile phone number of the contact.
   [Relationship <String>]: contactRelationship
 
-RESIDENCEADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+RESIDENCEADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -14465,7 +14503,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -17331,6 +17369,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+          [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+            [Categories <String[]>]: The categories associated with the item
+            [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+            [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+            [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+            [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+            [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
           [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -18445,8 +18506,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -18894,7 +18955,7 @@ Nullable.
   [Users <IMicrosoftGraphEducationUser[]>]: Users in the school.
 Nullable.
 
-STUDENT `<IMicrosoftGraphEducationStudent>`: educationStudent
+STUDENT <IMicrosoftGraphEducationStudent>: educationStudent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [BirthDate <DateTime?>]: Birth date of the student.
   [ExternalId <String>]: ID of the student in the source system.
@@ -20102,7 +20163,7 @@ Always set to en-us.
             [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
               [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
               [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -22968,6 +23029,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+        [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+          [Categories <String[]>]: The categories associated with the item
+          [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+          [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+          [Body <IMicrosoftGraphItemBody>]: itemBody
+          [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+          [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+          [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+          [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
         [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -24087,8 +24171,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -24577,12 +24661,12 @@ Nullable.
     [ExternalId <String>]: ID of term in the syncing system.
     [StartDate <DateTime?>]: Start of the term.
 
-TEACHER `<IMicrosoftGraphEducationTeacher>`: educationTeacher
+TEACHER <IMicrosoftGraphEducationTeacher>: educationTeacher
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalId <String>]: ID of the teacher in the source system.
   [TeacherNumber <String>]: Teacher number.
 
-USER `<IMicrosoftGraphUser>`: user
+USER <IMicrosoftGraphUser>: user
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -25483,7 +25567,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -28954,6 +29038,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
   [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+  [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+    [Categories <String[]>]: The categories associated with the item
+    [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+    [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+    [Body <IMicrosoftGraphItemBody>]: itemBody
+    [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+    [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+    [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+    [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
   [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -29898,8 +30005,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -29913,27 +30020,5 @@ NOTE: For more information about the permissions for members and guests, see Wha
 
 ## RELATED LINKS
 
-- [Update-MgEducationUser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/educationuser-update?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuser)
+- [](https://learn.microsoft.com/graph/api/educationuser-update?view=graph-rest-1.0)
