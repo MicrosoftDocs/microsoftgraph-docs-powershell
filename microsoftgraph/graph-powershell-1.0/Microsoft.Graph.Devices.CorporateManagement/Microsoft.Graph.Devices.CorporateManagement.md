@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 470ad756-93c4-479f-8535-c19bb4aa3486
+Module Guid: 6adb64bd-2de3-4115-be14-f2ac3e4349cd
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,15 +21,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtection](Get-MgDeviceAppManagementAndroidManagedAppProtection.md)
 
-### [Get-MgDeviceAppManagementAndroidManagedAppProtection](Get-MgDeviceAppManagementAndroidManagedAppProtection.md)
-
-### [Get-MgDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
-
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionApp](Get-MgDeviceAppManagementAndroidManagedAppProtectionApp.md)
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAppCount](Get-MgDeviceAppManagementAndroidManagedAppProtectionAppCount.md)
-
-### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
 
 ### [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
 
@@ -41,10 +35,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtection](Get-MgDeviceAppManagementDefaultManagedAppProtection.md)
 
-### [Get-MgDeviceAppManagementDefaultManagedAppProtection](Get-MgDeviceAppManagementDefaultManagedAppProtection.md)
-
-### [Get-MgDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
-
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionApp](Get-MgDeviceAppManagementDefaultManagedAppProtectionApp.md)
 
 ### [Get-MgDeviceAppManagementDefaultManagedAppProtectionAppCount](Get-MgDeviceAppManagementDefaultManagedAppProtectionAppCount.md)
@@ -55,15 +45,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtection](Get-MgDeviceAppManagementiOSManagedAppProtection.md)
 
-### [Get-MgDeviceAppManagementiOSManagedAppProtection](Get-MgDeviceAppManagementiOSManagedAppProtection.md)
-
-### [Get-MgDeviceAppManagementiOSManagedAppProtectionApp](Get-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
-
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionApp](Get-MgDeviceAppManagementiOSManagedAppProtectionApp.md)
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAppCount](Get-MgDeviceAppManagementiOSManagedAppProtectionAppCount.md)
-
-### [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
 
 ### [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment.md)
 
@@ -75,15 +59,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementManagedAppPolicy](Get-MgDeviceAppManagementManagedAppPolicy.md)
 
-### [Get-MgDeviceAppManagementManagedAppPolicy](Get-MgDeviceAppManagementManagedAppPolicy.md)
-
 ### [Get-MgDeviceAppManagementManagedAppPolicyCount](Get-MgDeviceAppManagementManagedAppPolicyCount.md)
 
 ### [Get-MgDeviceAppManagementManagedAppRegistration](Get-MgDeviceAppManagementManagedAppRegistration.md)
-
-### [Get-MgDeviceAppManagementManagedAppRegistration](Get-MgDeviceAppManagementManagedAppRegistration.md)
-
-### [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy.md)
 
@@ -93,11 +71,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
 
-### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
-
 ### [Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicyCount](Get-MgDeviceAppManagementManagedAppRegistrationIntendedPolicyCount.md)
-
-### [Get-MgDeviceAppManagementManagedAppRegistrationOperation](Get-MgDeviceAppManagementManagedAppRegistrationOperation.md)
 
 ### [Get-MgDeviceAppManagementManagedAppRegistrationOperation](Get-MgDeviceAppManagementManagedAppRegistrationOperation.md)
 
@@ -107,15 +81,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementManagedAppStatus](Get-MgDeviceAppManagementManagedAppStatus.md)
 
-### [Get-MgDeviceAppManagementManagedAppStatus](Get-MgDeviceAppManagementManagedAppStatus.md)
-
 ### [Get-MgDeviceAppManagementManagedAppStatusCount](Get-MgDeviceAppManagementManagedAppStatusCount.md)
 
 ### [Get-MgDeviceAppManagementManagedEBook](Get-MgDeviceAppManagementManagedEBook.md)
-
-### [Get-MgDeviceAppManagementManagedEBook](Get-MgDeviceAppManagementManagedEBook.md)
-
-### [Get-MgDeviceAppManagementManagedEBookAssignment](Get-MgDeviceAppManagementManagedEBookAssignment.md)
 
 ### [Get-MgDeviceAppManagementManagedEBookAssignment](Get-MgDeviceAppManagementManagedEBookAssignment.md)
 
@@ -125,13 +93,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementManagedEBookDeviceState](Get-MgDeviceAppManagementManagedEBookDeviceState.md)
 
-### [Get-MgDeviceAppManagementManagedEBookDeviceState](Get-MgDeviceAppManagementManagedEBookDeviceState.md)
-
 ### [Get-MgDeviceAppManagementManagedEBookDeviceStateCount](Get-MgDeviceAppManagementManagedEBookDeviceStateCount.md)
 
 ### [Get-MgDeviceAppManagementManagedEBookInstallSummary](Get-MgDeviceAppManagementManagedEBookInstallSummary.md)
-
-### [Get-MgDeviceAppManagementManagedEBookUserStateSummary](Get-MgDeviceAppManagementManagedEBookUserStateSummary.md)
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummary](Get-MgDeviceAppManagementManagedEBookUserStateSummary.md)
 
@@ -139,15 +103,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
 
-### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState.md)
-
 ### [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount](Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceStateCount.md)
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
-
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
 
@@ -157,11 +115,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
-
-### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
 ### [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
@@ -169,13 +123,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileApp](Get-MgDeviceAppManagementMobileApp.md)
 
-### [Get-MgDeviceAppManagementMobileApp](Get-MgDeviceAppManagementMobileApp.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 
@@ -183,15 +131,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 
@@ -201,15 +143,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
 
@@ -217,15 +153,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobApp](Get-MgDeviceAppManagementMobileAppAsiOSLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobApp](Get-MgDeviceAppManagementMobileAppAsiOSLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 
@@ -233,15 +163,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 
@@ -251,15 +175,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](Get-MgDeviceAppManagementMobileAppAsIoStoreApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](Get-MgDeviceAppManagementMobileAppAsIoStoreApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 
@@ -267,15 +185,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppApp](Get-MgDeviceAppManagementMobileAppAsIoVppApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsIoVppApp](Get-MgDeviceAppManagementMobileAppAsIoVppApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
 
@@ -283,15 +195,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 
@@ -299,15 +205,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 
@@ -317,15 +217,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 
@@ -333,15 +227,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 
@@ -351,15 +239,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 
@@ -367,15 +249,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 
@@ -385,15 +261,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 
@@ -401,15 +271,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 
@@ -419,15 +283,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 
@@ -435,15 +293,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 
@@ -453,15 +305,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 
@@ -469,11 +315,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount.md)
-
-### [Get-MgDeviceAppManagementMobileAppAssignment](Get-MgDeviceAppManagementMobileAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAssignment](Get-MgDeviceAppManagementMobileAppAssignment.md)
 
@@ -481,25 +323,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobApp](Get-MgDeviceAppManagementMobileAppAsWin32LobApp.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobApp](Get-MgDeviceAppManagementMobileAppAsWin32LobApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 
@@ -509,15 +341,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppX](Get-MgDeviceAppManagementMobileAppAsWindowsAppX.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppX](Get-MgDeviceAppManagementMobileAppAsWindowsAppX.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 
@@ -525,15 +351,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 
@@ -543,15 +363,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 
@@ -559,15 +373,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 
@@ -577,15 +385,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 
@@ -593,21 +395,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 
@@ -617,15 +411,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppAsWindowsWebApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppAsWindowsWebApp.md)
-
-### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 
@@ -633,21 +421,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
 
-### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
-
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount.md)
-
-### [Get-MgDeviceAppManagementMobileAppCategory](Get-MgDeviceAppManagementMobileAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppCategory](Get-MgDeviceAppManagementMobileAppCategory.md)
 
 ### [Get-MgDeviceAppManagementMobileAppCategoryCount](Get-MgDeviceAppManagementMobileAppCategoryCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfiguration](Get-MgDeviceAppManagementMobileAppConfiguration.md)
-
-### [Get-MgDeviceAppManagementMobileAppConfiguration](Get-MgDeviceAppManagementMobileAppConfiguration.md)
-
-### [Get-MgDeviceAppManagementMobileAppConfigurationAssignment](Get-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationAssignment](Get-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
 
@@ -657,13 +437,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
 
-### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus.md)
-
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusCount](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusCount.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary.md)
-
-### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatus](Get-MgDeviceAppManagementMobileAppConfigurationUserStatus.md)
 
@@ -707,21 +483,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementMobileAppRelationship](Get-MgDeviceAppManagementMobileAppRelationship.md)
 
-### [Get-MgDeviceAppManagementMobileAppRelationship](Get-MgDeviceAppManagementMobileAppRelationship.md)
-
 ### [Get-MgDeviceAppManagementMobileAppRelationshipCount](Get-MgDeviceAppManagementMobileAppRelationshipCount.md)
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
 
-### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
-
-### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
-
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp](Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp.md)
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAppCount](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAppCount.md)
-
-### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
 
@@ -733,15 +501,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementVppToken](Get-MgDeviceAppManagementVppToken.md)
 
-### [Get-MgDeviceAppManagementVppToken](Get-MgDeviceAppManagementVppToken.md)
-
 ### [Get-MgDeviceAppManagementVppTokenCount](Get-MgDeviceAppManagementVppTokenCount.md)
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
-
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgDeviceAppManagementWindowsInformationProtectionPolicy.md)
-
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
 
@@ -751,11 +513,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
 
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
-
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
-
-### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
 ### [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
 
@@ -763,17 +521,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
 
-### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
-
 ### [Get-MgUserDeviceManagementTroubleshootingEventCount](Get-MgUserDeviceManagementTroubleshootingEventCount.md)
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
 
-### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
-
 ### [Get-MgUserManagedAppRegistrationCount](Get-MgUserManagedAppRegistrationCount.md)
-
-### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
 
@@ -783,11 +535,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
 
-### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
-
 ### [Get-MgUserManagedDeviceCompliancePolicyStateCount](Get-MgUserManagedDeviceCompliancePolicyStateCount.md)
-
-### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
 
@@ -799,13 +547,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
 
-### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
-
 ### [Get-MgUserManagedDeviceUser](Get-MgUserManagedDeviceUser.md)
 
 ### [Get-MgUserManagedDeviceWindowsProtectionState](Get-MgUserManagedDeviceWindowsProtectionState.md)
-
-### [Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
 ### [Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
@@ -1516,23 +1260,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserManagedDeviceWindowsProtectionState](Update-MgUserManagedDeviceWindowsProtectionState.md)
 
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
