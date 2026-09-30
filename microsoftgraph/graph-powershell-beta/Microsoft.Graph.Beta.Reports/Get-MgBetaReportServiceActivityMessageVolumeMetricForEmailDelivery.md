@@ -50,12 +50,17 @@ Get the number of messages successfully delivered by Exchange.
 Success is based on message delivery within 15 minutes of its receipt by Exchange Online.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
 Get-MgBetaReportServiceActivityMessageVolumeMetricForEmailDelivery
+
+```
+This example shows how to use the Get-MgBetaReportServiceActivityMessageVolumeMetricForEmailDelivery Cmdlet.
+
 
 ## PARAMETERS
 

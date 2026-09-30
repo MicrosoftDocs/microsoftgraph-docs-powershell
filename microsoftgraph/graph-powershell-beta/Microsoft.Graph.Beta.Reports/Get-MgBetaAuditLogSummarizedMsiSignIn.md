@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Returns aggregated MSI sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual requestIds via the /signIns endpoint.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AggregationWindow
@@ -543,6 +533,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsummarizedmsisignin)
 - [](https://learn.microsoft.com/graph/api/auditlogroot-getsummarizedmsisignins?view=graph-rest-beta)
+
 
 
 

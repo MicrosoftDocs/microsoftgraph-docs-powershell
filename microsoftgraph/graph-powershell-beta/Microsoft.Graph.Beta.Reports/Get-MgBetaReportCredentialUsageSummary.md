@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Report the current state of how many users in your organization used the self-service password reset capabilities.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportCredentialUsageSummary -Filter "feature eq 'registration'"  -Period $periodId
+Get-MgBetaReportCredentialUsageSummary -Filter "feature eq 'registration'"  -Period $periodId 
+
+```
+This example shows how to use the Get-MgBetaReportCredentialUsageSummary Cmdlet.
+
 
 ## PARAMETERS
 
