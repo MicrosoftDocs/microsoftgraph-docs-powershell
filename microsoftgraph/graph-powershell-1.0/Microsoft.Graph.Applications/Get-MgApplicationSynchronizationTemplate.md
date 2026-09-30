@@ -15,6 +15,9 @@ title: Get-MgApplicationSynchronizationTemplate
 
 Preconfigured synchronization settings for a particular application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

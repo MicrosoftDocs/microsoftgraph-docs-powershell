@@ -16,6 +16,9 @@ title: Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression
 Parse a given string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ParseExpanded (Default)
