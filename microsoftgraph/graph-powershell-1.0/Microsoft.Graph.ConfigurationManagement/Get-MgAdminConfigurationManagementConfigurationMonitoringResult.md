@@ -15,6 +15,9 @@ title: Get-MgAdminConfigurationManagementConfigurationMonitoringResult
 
 Read the properties and relationships of a configurationMonitoringResult object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResult](/powershell/module/Microsoft.Graph.Beta.ConfigurationManagement/Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
