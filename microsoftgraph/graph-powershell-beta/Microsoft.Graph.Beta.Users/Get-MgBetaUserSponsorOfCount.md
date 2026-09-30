@@ -1,37 +1,36 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsighttrendingresource
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
 ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaUserInsightTrendingResource
+title: Get-MgBetaUserSponsorOfCount
 ---
 
-# Get-MgBetaUserInsightTrendingResource
+# Get-MgBetaUserSponsorOfCount
 
 ## SYNOPSIS
 
-Used for navigating to the trending document.
+Get the number of the resource
 
 ## SYNTAX
 
 ### Get (Default)
 
 ```
-Get-MgBetaUserInsightTrendingResource -TrendingId <string> -UserId <string>
- [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials]
+Get-MgBetaUserSponsorOfCount -UserId <string> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
 
 ```
-Get-MgBetaUserInsightTrendingResource -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
- [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Get-MgBetaUserSponsorOfCount -InputObject <IUsersIdentity> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -43,7 +42,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Used for navigating to the trending document.
+Get the number of the resource
 
 ## EXAMPLES
 
@@ -78,16 +77,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExpandProperty
+### -Filter
 
-Expand related entities
+Filter items by property values
 
 ```yaml
-Type: System.String[]
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- Expand
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -185,28 +183,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
-
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Select
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Proxy
 
 The URI for the proxy server to use
@@ -292,9 +268,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TrendingId
+### -Search
 
-The unique identifier of trending
+Search items by search phrases
 
 ```yaml
 Type: System.String
@@ -302,9 +278,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Get
+- Name: (All)
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -353,7 +329,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.String
+### System.Int32
 
 {{ Fill in the Description }}
 
@@ -401,4 +377,4 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsighttrendingresource)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorofcount)
