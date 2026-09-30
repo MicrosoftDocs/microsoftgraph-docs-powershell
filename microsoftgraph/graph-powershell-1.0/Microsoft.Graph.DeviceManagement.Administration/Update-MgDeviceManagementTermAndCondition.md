@@ -795,7 +795,7 @@ Read-only.
   [Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]: Base type for assignment targets.
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-BODYPARAMETER <IMicrosoftGraphTermsAndConditions>: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
+BODYPARAMETER `<IMicrosoftGraphTermsAndConditions>`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -829,7 +829,7 @@ This is shown to the user on prompts to accept the T&C policy.
   [Version <Int32?>]: Integer indicating the current version of the terms.
 Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [AuditEventId <String>]: The unique identifier of auditEvent
   [Category <String>]: Usage: category='{category}'
   [CloudPcAuditEventId <String>]: The unique identifier of cloudPcAuditEvent
@@ -862,3 +862,25 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandcondition)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
