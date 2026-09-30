@@ -283,7 +283,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowcountasexternaluserselfservicesignupeventflow)
+- [Get-MgIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventflowcountasexternaluserselfservicesignupeventflow)
 
 
 

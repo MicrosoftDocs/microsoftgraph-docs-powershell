@@ -681,8 +681,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityverifiedidprofile)
-- [](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-1.0)
+- [New-MgIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityverifiedidprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/identityverifiedidroot-post-profiles?view=graph-rest-1.0)
 
 
 
