@@ -527,7 +527,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseronpremisesyncbehavior)
+- [Update-MgUserOnPremiseSyncBehavior](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguseronpremisesyncbehavior)
 
 
 

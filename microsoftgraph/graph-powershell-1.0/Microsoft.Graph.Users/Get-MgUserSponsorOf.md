@@ -580,8 +580,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof)
-- [](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-1.0)
+- [Get-MgUserSponsorOf](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-1.0)
 
 
 
