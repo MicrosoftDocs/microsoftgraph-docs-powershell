@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceasroomlistroom
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/22/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlaceAsRoomListRoom
 ---
@@ -27,8 +27,8 @@ New-MgBetaPlaceAsRoomListRoom -PlaceId <string> [-ResponseHeadersVariable <strin
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-AudioDeviceName <string>] [-BookingType <string>] [-Building <string>] [-Capacity <int>]
  [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-Children <IMicrosoftGraphPlace[]>]
- [-DisplayDeviceName <string>] [-DisplayName <string>] [-EmailAddress <string>]
- [-FloorLabel <string>] [-FloorNumber <int>]
+ [-CustomProperties <hashtable>] [-DisplayDeviceName <string>] [-DisplayName <string>]
+ [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsTeamsEnabled]
  [-IsWheelChairAccessible] [-Label <string>] [-Nickname <string>] [-ParentId <string>]
  [-Phone <string>] [-PlaceId1 <string>] [-Tags <string[]>] [-TeamsEnabledState <string>]
@@ -44,8 +44,8 @@ New-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-PlaceId <string
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-AudioDeviceName <string>] [-BookingType <string>]
  [-Building <string>] [-Capacity <int>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
- [-Children <IMicrosoftGraphPlace[]>] [-DisplayDeviceName <string>] [-DisplayName <string>]
- [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
+ [-Children <IMicrosoftGraphPlace[]>] [-CustomProperties <hashtable>] [-DisplayDeviceName <string>]
+ [-DisplayName <string>] [-EmailAddress <string>] [-FloorLabel <string>] [-FloorNumber <int>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsTeamsEnabled]
  [-IsWheelChairAccessible] [-Label <string>] [-Nickname <string>] [-ParentId <string>]
  [-Phone <string>] [-Tags <string[]>] [-TeamsEnabledState <string>] [-VideoDeviceName <string>]
@@ -363,6 +363,33 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CustomProperties
+
+stringDictionary
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1131,6 +1158,8 @@ Read-only.
     [Address <IMicrosoftGraphPhysicalAddress>]: physicalAddress
     [CheckIns <IMicrosoftGraphCheckInClaim[]>]: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
     [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+    [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+      [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The name that is associated with the place.
     [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1146,6 +1175,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     [Phone <String>]: The phone number of the place.
     [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
     [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
   [IsWheelChairAccessible <Boolean?>]: Indicates whether the place is wheelchair accessible.
@@ -1200,6 +1230,8 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+    [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.

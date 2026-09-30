@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/22/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -26,7 +26,7 @@ You can also use this method to create the following child object types: buildin
 ```
 New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
- [-Children <IMicrosoftGraphPlace[]>] [-DisplayName <string>]
+ [-Children <IMicrosoftGraphPlace[]>] [-CustomProperties <hashtable>] [-DisplayName <string>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
  [-Label <string>] [-ParentId <string>] [-Phone <string>] [-PlaceId <string>] [-Tags <string[]>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -312,6 +312,27 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CustomProperties
+
+stringDictionary
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -746,6 +767,8 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+    [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -791,6 +814,8 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+    [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
