@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementVirtualEndpointServicePlan
 
 A collection of Cloud PC service plans.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointServicePlan](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointServicePlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
