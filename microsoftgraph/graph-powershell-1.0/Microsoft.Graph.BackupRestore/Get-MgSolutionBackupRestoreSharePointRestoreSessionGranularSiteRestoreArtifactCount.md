@@ -15,6 +15,9 @@ title: Get-MgSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArt
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifactCount](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Get-MgBetaSolutionBackupRestoreSharePointRestoreSessionGranularSiteRestoreArtifactCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

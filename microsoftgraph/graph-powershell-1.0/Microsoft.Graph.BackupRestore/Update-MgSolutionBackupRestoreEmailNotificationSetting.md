@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreEmailNotificationSetting
 
 Update the properties of an emailNotificationsSetting object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreEmailNotificationSetting](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreEmailNotificationSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

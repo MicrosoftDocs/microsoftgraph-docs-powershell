@@ -17,6 +17,9 @@ Create a protection policy for the OneDrive service in Microsoft 365.
 When the policy is created, its state is set to inactive.
 Users can also provide a list of protection units under the policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.BackupRestore/New-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
