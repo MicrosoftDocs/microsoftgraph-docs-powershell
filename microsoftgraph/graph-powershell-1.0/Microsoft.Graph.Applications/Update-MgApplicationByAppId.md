@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 08/07/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgApplicationByAppId
 ---
@@ -2156,9 +2156,15 @@ May not begin with ..
 
 AUTHENTICATIONBEHAVIORS `<IMicrosoftGraphAuthenticationBehaviors>`: authenticationBehaviors
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [BlockAzureAdGraphAccess <Boolean?>]: 
-  [RemoveUnverifiedEmailClaim <Boolean?>]: 
-  [RequireClientServicePrincipal <Boolean?>]: 
+  [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
+For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
+  [CoopEnforcement <Boolean?>]: Indicates whether Cross-Origin-Opener-Policy (COOP) headers are enforced on browser-based authentication responses for the application.
+Set to true to enable enforcement, false to temporarily suppress enforcement, or null to use the service default.
+For how-to guidance, see Control Cross-Origin-Opener-Policy enforcement.
+  [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
+  [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
+This property is only modifiable for multitenant resource applications that rely on access from clients without a service principal and had this behavior as set to false by Microsoft.
+Tenant administrators should respond to security advisories sent through Azure Health Service events and the Microsoft 365 message center.
 
 BODYPARAMETER `<IMicrosoftGraphApplication>`: application
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2308,9 +2314,15 @@ Read-only.
 null if the app wasn't created from an application template.
   [AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]: authenticationBehaviors
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [BlockAzureAdGraphAccess <Boolean?>]: 
-    [RemoveUnverifiedEmailClaim <Boolean?>]: 
-    [RequireClientServicePrincipal <Boolean?>]: 
+    [BlockAzureAdGraphAccess <Boolean?>]: If false, allows the app to have extended access to Azure AD Graph until August 31, 2025 when Azure AD Graph is fully retired.
+For more information on Azure AD retirement updates, see June 2024 update on Azure AD Graph API retirement.
+    [CoopEnforcement <Boolean?>]: Indicates whether Cross-Origin-Opener-Policy (COOP) headers are enforced on browser-based authentication responses for the application.
+Set to true to enable enforcement, false to temporarily suppress enforcement, or null to use the service default.
+For how-to guidance, see Control Cross-Origin-Opener-Policy enforcement.
+    [RemoveUnverifiedEmailClaim <Boolean?>]: If true, removes the email claim from tokens sent to an application when the email address's domain can't be verified.
+    [RequireClientServicePrincipal <Boolean?>]: If true, requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
+This property is only modifiable for multitenant resource applications that rely on access from clients without a service principal and had this behavior as set to false by Microsoft.
+Tenant administrators should respond to security advisories sent through Azure Health Service events and the Microsoft 365 message center.
   [Certification <IMicrosoftGraphCertification>]: certification
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CertificationExpirationDateTime <DateTime?>]: The timestamp when the current certification for the application expires.
