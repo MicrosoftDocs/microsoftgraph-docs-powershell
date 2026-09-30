@@ -731,7 +731,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicydevicestatus)
+- [New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicydevicestatus)
 
 
 
