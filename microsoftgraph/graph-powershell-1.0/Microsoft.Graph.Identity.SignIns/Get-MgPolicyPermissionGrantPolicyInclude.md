@@ -16,6 +16,9 @@ title: Get-MgPolicyPermissionGrantPolicyInclude
 Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

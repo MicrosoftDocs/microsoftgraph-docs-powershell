@@ -18,6 +18,9 @@ The invitation adds the external user to the organization as part of B2B collabo
 B2B collaboration is supported in both Microsoft Entra External ID in workforce and external tenants.
 When creating a new invitation, you have several options available:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

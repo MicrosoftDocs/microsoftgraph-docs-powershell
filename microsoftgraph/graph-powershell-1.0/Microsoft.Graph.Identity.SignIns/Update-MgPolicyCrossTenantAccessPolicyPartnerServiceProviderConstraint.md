@@ -15,6 +15,9 @@ title: Update-MgPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint
 
 Update the navigation property serviceProviderConstraints in policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
