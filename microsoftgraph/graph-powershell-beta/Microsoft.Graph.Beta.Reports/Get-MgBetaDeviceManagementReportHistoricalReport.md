@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementReportHistoricalReport
 
 Invoke action getHistoricalReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportHistoricalReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportHistoricalReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
