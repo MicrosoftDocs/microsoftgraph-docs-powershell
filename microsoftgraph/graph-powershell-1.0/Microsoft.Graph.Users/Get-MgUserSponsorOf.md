@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/22/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSponsorOf
 ---
@@ -18,6 +18,9 @@ If the user is a member of a group that's a sponsor, the objects sponsored by th
 Read-only.
 Nullable.
 Supports $filter, $count, $select, $expand, $top, and $skip.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsorOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsorOf?view=graph-powershell-beta)
 
 ## SYNTAX
 

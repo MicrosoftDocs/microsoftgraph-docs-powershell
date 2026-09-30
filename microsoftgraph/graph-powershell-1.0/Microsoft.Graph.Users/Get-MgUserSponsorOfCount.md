@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Users
-ms.date: 09/22/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserSponsorOfCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgUserSponsorOfCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsorOfCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsorOfCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
