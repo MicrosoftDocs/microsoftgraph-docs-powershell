@@ -1,38 +1,53 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttask
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof
 Locale: en-US
 Module Name: Microsoft.Graph.Users
 ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgUserTodoListTask
+title: Get-MgUserSponsorOf
 ---
 
-# Remove-MgUserTodoListTask
+# Get-MgUserSponsorOf
 
 ## SYNOPSIS
 
-Delete navigation property tasks for users
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## SYNTAX
 
-### Delete (Default)
+### List (Default)
 
 ```
-Remove-MgUserTodoListTask -TodoTaskId <string> -TodoTaskListId <string> -UserId <string>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### DeleteViaIdentity
-
-```
-Remove-MgUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <string>]
+Get-MgUserSponsorOf -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
+ [-Filter <string>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
+ [-CountVariable <string>]
+```
+
+### Get
+
+```
+Get-MgUserSponsorOf -DirectoryObjectId <string> -UserId <string> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+```
+
+### GetViaIdentity
+
+```
+Get-MgUserSponsorOf -InputObject <IUsersIdentity> [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,18 +57,44 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property tasks for users
+Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Users
+{{ Add code here }}
 
-# A UPN can also be used as -UserId.
-Remove-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
+
+### -All
+
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -76,18 +117,83 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -CountVariable
 
-Prompts you for confirmation before running the cmdlet.
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- cf
+- CV
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DirectoryObjectId
+
+The unique identifier of directoryObject
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Get
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ExpandProperty
+
+Expand related entities
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Expand
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Filter
+
+Filter items by property values
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: List
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -161,27 +267,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -193,7 +278,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
@@ -204,15 +289,37 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PassThru
+### -PageSize
 
-Returns true when the command succeeds
+Sets the page size of results.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
+Type: System.Int32
+DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Property
+
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- Select
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -310,9 +417,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TodoTaskId
+### -Search
 
-The unique identifier of todoTask
+Search items by search phrases
 
 ```yaml
 Type: System.String
@@ -320,9 +427,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: List
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -331,19 +438,63 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TodoTaskListId
+### -Skip
 
-The unique identifier of todoTaskList
+Skip the first n items
 
 ```yaml
-Type: System.String
-DefaultValue: ''
+Type: System.Int32
+DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: List
   Position: Named
-  IsRequired: true
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Sort
+
+Order items by property values
+
+```yaml
+Type: System.String[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- OrderBy
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Top
+
+Show only the first n items
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases:
+- Limit
+ParameterSets:
+- Name: List
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -362,31 +513,15 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: List
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -WhatIf
-
-Runs the command in a mode that only reports what would happen without performing the actions.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- wi
-ParameterSets:
-- Name: (All)
+- Name: Get
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -414,7 +549,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 
 {{ Fill in the Description }}
 
@@ -455,4 +590,5 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttask)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorof)
+- [](https://learn.microsoft.com/graph/api/user-list-sponsorof?view=graph-rest-1.0)

@@ -1,38 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Users-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttask
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorofcount
 Locale: en-US
 Module Name: Microsoft.Graph.Users
 ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
-title: Remove-MgUserTodoListTask
+title: Get-MgUserSponsorOfCount
 ---
 
-# Remove-MgUserTodoListTask
+# Get-MgUserSponsorOfCount
 
 ## SYNOPSIS
 
-Delete navigation property tasks for users
+Get the number of the resource
 
 ## SYNTAX
 
-### Delete (Default)
+### Get (Default)
 
 ```
-Remove-MgUserTodoListTask -TodoTaskId <string> -TodoTaskListId <string> -UserId <string>
- [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
-```
-
-### DeleteViaIdentity
-
-```
-Remove-MgUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <string>]
+Get-MgUserSponsorOfCount -UserId <string> [-Filter <string>] [-Search <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+```
+
+### GetViaIdentity
+
+```
+Get-MgUserSponsorOfCount -InputObject <IUsersIdentity> [-Filter <string>] [-Search <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,16 +42,17 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete navigation property tasks for users
+Get the number of the resource
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
-Import-Module Microsoft.Graph.Users
+{{ Add code here }}
 
-# A UPN can also be used as -UserId.
-Remove-MgUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -76,16 +77,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Confirm
+### -Filter
 
-Prompts you for confirmation before running the cmdlet.
+Filter items by property values
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- cf
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -161,27 +161,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -IfMatch
-
-ETag
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -InputObject
 
 Identity Parameter
@@ -193,31 +172,10 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: DeleteViaIdentity
+- Name: GetViaIdentity
   Position: Named
   IsRequired: true
   ValueFromPipeline: true
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PassThru
-
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
 DontShow: false
@@ -310,30 +268,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -TodoTaskId
+### -Search
 
-The unique identifier of todoTask
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: Delete
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -TodoTaskListId
-
-The unique identifier of todoTaskList
+Search items by search phrases
 
 ```yaml
 Type: System.String
@@ -341,9 +278,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: (All)
   Position: Named
-  IsRequired: true
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -362,31 +299,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: Delete
+- Name: Get
   Position: Named
   IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -WhatIf
-
-Runs the command in a mode that only reports what would happen without performing the actions.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- wi
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -414,7 +329,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Boolean
+### System.Int32
 
 {{ Fill in the Description }}
 
@@ -455,4 +370,4 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttask)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsorofcount)
