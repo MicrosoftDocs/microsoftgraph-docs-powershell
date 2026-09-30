@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: a93041a8-44b5-429c-82d2-37f0725c42bb
+Module Guid: 871a6dc8-9aa3-4f13-9914-d94be80e0ff4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,11 +13,7 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Devices.ServiceAnnouncement Cmdlets
 ### [Get-MgServiceAnnouncementHealthOverview](Get-MgServiceAnnouncementHealthOverview.md)
 
-### [Get-MgServiceAnnouncementHealthOverview](Get-MgServiceAnnouncementHealthOverview.md)
-
 ### [Get-MgServiceAnnouncementHealthOverviewCount](Get-MgServiceAnnouncementHealthOverviewCount.md)
-
-### [Get-MgServiceAnnouncementHealthOverviewIssue](Get-MgServiceAnnouncementHealthOverviewIssue.md)
 
 ### [Get-MgServiceAnnouncementHealthOverviewIssue](Get-MgServiceAnnouncementHealthOverviewIssue.md)
 
@@ -25,15 +21,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgServiceAnnouncementIssue](Get-MgServiceAnnouncementIssue.md)
 
-### [Get-MgServiceAnnouncementIssue](Get-MgServiceAnnouncementIssue.md)
-
 ### [Get-MgServiceAnnouncementIssueCount](Get-MgServiceAnnouncementIssueCount.md)
 
 ### [Get-MgServiceAnnouncementMessage](Get-MgServiceAnnouncementMessage.md)
-
-### [Get-MgServiceAnnouncementMessage](Get-MgServiceAnnouncementMessage.md)
-
-### [Get-MgServiceAnnouncementMessageAttachment](Get-MgServiceAnnouncementMessageAttachment.md)
 
 ### [Get-MgServiceAnnouncementMessageAttachment](Get-MgServiceAnnouncementMessageAttachment.md)
 
@@ -60,23 +50,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgUnarchiveServiceAnnouncementMessage](Invoke-MgUnarchiveServiceAnnouncementMessage.md)
 
 ### [Invoke-MgUnfavoriteServiceAnnouncementMessage](Invoke-MgUnfavoriteServiceAnnouncementMessage.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
