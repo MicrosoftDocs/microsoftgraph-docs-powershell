@@ -385,7 +385,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorytenantgovernancerelatedtenantb2bsigninactivitymetric)
+- [Get-MgDirectoryTenantGovernanceRelatedTenantB2BSignInActivityMetric](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorytenantgovernancerelatedtenantb2bsigninactivitymetric)
 
 
 
