@@ -643,8 +643,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecord)
-- [](https://learn.microsoft.com/graph/api/attendancerecord-list?view=graph-rest-1.0)
+- [Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallsessionattendancereportattendancerecord)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/attendancerecord-list?view=graph-rest-1.0)
 
 
 

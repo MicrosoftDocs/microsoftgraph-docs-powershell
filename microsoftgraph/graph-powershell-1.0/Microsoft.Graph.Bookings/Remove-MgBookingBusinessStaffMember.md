@@ -430,8 +430,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember)
-- [](https://learn.microsoft.com/graph/api/bookingstaffmember-delete?view=graph-rest-1.0)
+- [Remove-MgBookingBusinessStaffMember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingstaffmember-delete?view=graph-rest-1.0)
 
 
 
