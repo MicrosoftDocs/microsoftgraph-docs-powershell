@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 The permissions of the users with whom the calendar is shared.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -580,6 +570,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarpermission)
+
+
 
 
 
