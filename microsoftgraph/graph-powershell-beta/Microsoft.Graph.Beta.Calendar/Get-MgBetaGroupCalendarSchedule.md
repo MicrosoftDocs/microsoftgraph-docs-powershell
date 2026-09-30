@@ -15,6 +15,9 @@ title: Get-MgBetaGroupCalendarSchedule
 
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgBetaPlaceAsRoomList
 Read the properties of a place object specified by its ID.
 The place object can be one of the following types: The listed resources are derived from the place object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoomList](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
