@@ -15,6 +15,9 @@ title: Remove-MgBetaServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef
 
 Remove a tokenLifetimePolicy object from a service principal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalTokenLifetimePolicyTokenLifetimePolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

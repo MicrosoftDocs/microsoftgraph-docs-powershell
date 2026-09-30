@@ -15,6 +15,9 @@ title: Get-MgBetaApplicationHomeRealmDiscoveryPolicy
 
 Get homeRealmDiscoveryPolicies from applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
