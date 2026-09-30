@@ -15,6 +15,9 @@ title: Remove-MgUserCalendarGroup
 
 Delete navigation property calendarGroups for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
