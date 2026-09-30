@@ -15,6 +15,9 @@ title: Remove-MgDomainVerificationDnsRecord
 
 Delete navigation property verificationDnsRecords for domains
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

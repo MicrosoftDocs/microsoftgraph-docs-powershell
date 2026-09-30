@@ -17,6 +17,9 @@ A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

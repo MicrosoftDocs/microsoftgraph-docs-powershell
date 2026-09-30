@@ -15,6 +15,9 @@ title: Get-MgDeviceExtensionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceExtensionCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceExtensionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

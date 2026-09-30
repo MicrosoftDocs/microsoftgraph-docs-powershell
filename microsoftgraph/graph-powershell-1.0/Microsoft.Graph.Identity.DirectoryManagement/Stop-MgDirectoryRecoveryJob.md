@@ -15,6 +15,9 @@ title: Stop-MgDirectoryRecoveryJob
 
 Invoke action cancel
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Stop-MgBetaDirectoryRecoveryJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)

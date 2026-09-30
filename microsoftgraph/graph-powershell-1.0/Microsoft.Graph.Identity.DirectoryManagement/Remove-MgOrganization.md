@@ -15,6 +15,9 @@ title: Remove-MgOrganization
 
 Delete entity from organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Remove-MgAdminPeopleProfileSource
 
 Delete a profileSource object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminPeopleProfileSource](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaAdminPeopleProfileSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
