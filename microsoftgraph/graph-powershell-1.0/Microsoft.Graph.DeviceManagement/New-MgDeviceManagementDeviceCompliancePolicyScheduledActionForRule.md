@@ -529,7 +529,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceComplianceScheduledActionForRule>: Scheduled Action for Rule
+BODYPARAMETER `<IMicrosoftGraphDeviceComplianceScheduledActionForRule>`: Scheduled Action for Rule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -545,7 +545,7 @@ Valid values 0 to 8760
     [NotificationMessageCcList <String[]>]: A list of group IDs to speicify who to CC this notification message to.
     [NotificationTemplateId <String>]: What notification Message template to use
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [BrowserSharedCookieId <String>]: The unique identifier of browserSharedCookie
   [BrowserSiteId <String>]: The unique identifier of browserSite
@@ -594,3 +594,25 @@ Valid values 0 to 8760
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
