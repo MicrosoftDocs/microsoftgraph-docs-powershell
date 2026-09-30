@@ -16,6 +16,9 @@ title: Remove-MgBetaPlace
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
