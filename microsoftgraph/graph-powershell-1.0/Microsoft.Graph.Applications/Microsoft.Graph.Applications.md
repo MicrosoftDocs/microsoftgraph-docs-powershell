@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: 6f2808c7-bf63-4bed-9678-3176cbd6085b
+Module Guid: fe6ada23-e67e-4bfb-8f90-ce2d5fe8682c
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -726,23 +726,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
 ### [Update-MgUserAppRoleAssignment](Update-MgUserAppRoleAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
