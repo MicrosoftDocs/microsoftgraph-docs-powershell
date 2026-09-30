@@ -16,6 +16,9 @@ title: Set-MgUserOnlineMeetingTranscriptMetadataContent
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

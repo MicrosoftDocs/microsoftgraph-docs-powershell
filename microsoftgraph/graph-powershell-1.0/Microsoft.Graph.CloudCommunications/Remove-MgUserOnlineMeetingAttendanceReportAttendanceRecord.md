@@ -15,6 +15,9 @@ title: Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord
 
 Delete navigation property attendanceRecords for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

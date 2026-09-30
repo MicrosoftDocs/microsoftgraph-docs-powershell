@@ -17,6 +17,9 @@ Retrieve the properties and relationships of a callRecord object.
 You can get the id of a callRecord in two ways:\r* Subscribe to change notifications to the /communications/callRecords endpoint.\r* Use the callChainId property of a call.
 The call record is available only after the associated call is completed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

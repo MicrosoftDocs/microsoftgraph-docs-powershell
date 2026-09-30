@@ -15,6 +15,9 @@ title: Get-MgCommunicationOnlineMeetingTranscriptDelta
 
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingTranscriptDelta](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingTranscriptDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
