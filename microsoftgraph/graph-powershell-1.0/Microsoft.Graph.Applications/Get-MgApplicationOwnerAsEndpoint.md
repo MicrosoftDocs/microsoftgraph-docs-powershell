@@ -600,7 +600,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasendpoint)
+- [Get-MgApplicationOwnerAsEndpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasendpoint)
 
 
 

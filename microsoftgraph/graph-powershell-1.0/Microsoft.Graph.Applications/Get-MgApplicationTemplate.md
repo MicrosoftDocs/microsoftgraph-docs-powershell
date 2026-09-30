@@ -574,9 +574,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)
-- [](https://learn.microsoft.com/graph/api/applicationtemplate-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-1.0)
+- [Get-MgApplicationTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/applicationtemplate-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-1.0)
 
 
 
