@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | OrganizationalBranding.Read.All, Organization.Read.All, Organization.ReadWrite.All, OrganizationalBranding.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
