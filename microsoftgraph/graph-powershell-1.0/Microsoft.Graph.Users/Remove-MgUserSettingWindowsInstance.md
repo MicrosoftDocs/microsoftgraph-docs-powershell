@@ -15,6 +15,9 @@ title: Remove-MgUserSettingWindowsInstance
 
 Delete navigation property instances for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSettingWindowsInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
