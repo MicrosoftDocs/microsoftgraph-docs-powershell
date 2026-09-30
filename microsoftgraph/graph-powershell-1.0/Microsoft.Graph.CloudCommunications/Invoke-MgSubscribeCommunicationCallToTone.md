@@ -499,8 +499,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgsubscribecommunicationcalltotone)
-- [](https://learn.microsoft.com/graph/api/call-subscribetotone?view=graph-rest-1.0)
+- [Invoke-MgSubscribeCommunicationCallToTone](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgsubscribecommunicationcalltotone)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-subscribetotone?view=graph-rest-1.0)
 
 
 

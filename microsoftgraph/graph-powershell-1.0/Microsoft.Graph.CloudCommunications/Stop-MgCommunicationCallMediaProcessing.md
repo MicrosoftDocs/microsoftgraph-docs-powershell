@@ -515,8 +515,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing)
-- [](https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0)
+- [Stop-MgCommunicationCallMediaProcessing](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0)
 
 
 

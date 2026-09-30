@@ -446,7 +446,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeetingtranscriptmetadatacontent)
+- [Remove-MgUserOnlineMeetingTranscriptMetadataContent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeetingtranscriptmetadatacontent)
 
 
 
