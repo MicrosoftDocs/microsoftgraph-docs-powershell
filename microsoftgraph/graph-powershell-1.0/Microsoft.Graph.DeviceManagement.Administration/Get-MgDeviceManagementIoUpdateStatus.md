@@ -68,12 +68,17 @@ The IOS software update installation statuses for this account.
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementIoUpdateStatus
+
+```
+This example shows how to use the Get-MgDeviceManagementIoUpdateStatus Cmdlet.
+
 
 ## PARAMETERS
 
