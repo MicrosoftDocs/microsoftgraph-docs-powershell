@@ -908,7 +908,7 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist)
+- [New-MgUserTodoList](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist)
 
 
 
