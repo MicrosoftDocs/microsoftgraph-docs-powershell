@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryremotetenantgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDirectoryRemoteTenantGroup
 ---
@@ -14,6 +14,9 @@ title: Get-MgDirectoryRemoteTenantGroup
 ## SYNOPSIS
 
 Read the properties and relationships of a remoteTenantGroup object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRemoteTenantGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRemoteTenantGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
