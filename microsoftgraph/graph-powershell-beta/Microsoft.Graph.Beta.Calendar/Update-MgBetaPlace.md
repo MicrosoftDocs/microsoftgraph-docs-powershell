@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 09/22/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPlace
 ---
@@ -17,9 +17,6 @@ Upsert one or more place objects in async mode.
 This API allows you to create and update multiple places efficiently in a single request.
 For more information on how to use this API, including scenarios, best practices, and concurrency limits, see Working with the upsert Places API in Microsoft Graph.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlace?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -28,11 +25,12 @@ For more information on how to use this API, including scenarios, best practices
 Update-MgBetaPlace -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-Children <IMicrosoftGraphPlace[]>]
- [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
- [-IsWheelChairAccessible] [-Label <string>] [-ParentId <string>] [-Phone <string>]
- [-PlaceId1 <string>] [-Tags <string[]>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-CustomProperties <hashtable>] [-DisplayName <string>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-PlaceId1 <string>] [-Tags <string[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,7 +39,7 @@ Update-MgBetaPlace -PlaceId <string> [-ResponseHeadersVariable <string>]
 Update-MgBetaPlace -InputObject <ICalendarIdentity> [-PlaceId <string>]
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
- [-Children <IMicrosoftGraphPlace[]>] [-DisplayName <string>]
+ [-Children <IMicrosoftGraphPlace[]>] [-CustomProperties <hashtable>] [-DisplayName <string>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
  [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
@@ -78,18 +76,9 @@ Upsert one or more place objects in async mode.
 This API allows you to create and update multiple places efficiently in a single request.
 For more information on how to use this API, including scenarios, best practices, and concurrency limits, see Working with the upsert Places API in Microsoft Graph.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Place.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Place.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -102,12 +91,7 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
+### EXAMPLE 2
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -119,12 +103,7 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
+### EXAMPLE 3
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -135,12 +114,7 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
+### EXAMPLE 4
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -153,12 +127,7 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
-### Example 5: Code snippet
-
-```powershell
+### EXAMPLE 5
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -173,12 +142,7 @@ $params = @{
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 
-```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
-### Example 6: Code snippet
-
-```powershell
+### EXAMPLE 6
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -192,10 +156,6 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPlace Cmdlet.
-
 
 ## PARAMETERS
 
@@ -371,6 +331,33 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CustomProperties
+
+stringDictionary
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -885,7 +872,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
+ADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: The city.
   [CountryOrRegion <String>]: The country or region.
@@ -896,7 +883,7 @@ It's a free-format string value, for example, 'United States'.
   [Street <String>]: The street.
   [Type <String>]: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+BODYPARAMETER <IMicrosoftGraphPlace>: place
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -918,6 +905,8 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+    [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -963,6 +952,8 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+    [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -979,7 +970,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>: outlookGeoCoordinates
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Accuracy <Double?>]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
@@ -988,7 +979,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Latitude <Double?>]: The latitude of the location.
   [Longitude <Double?>]: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [CalendarGroupId <String>]: The unique identifier of calendarGroup
   [CalendarId <String>]: The unique identifier of calendar
@@ -1013,27 +1004,5 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/place-patch-places?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace)
+- [](https://learn.microsoft.com/graph/api/place-patch-places?view=graph-rest-beta)
