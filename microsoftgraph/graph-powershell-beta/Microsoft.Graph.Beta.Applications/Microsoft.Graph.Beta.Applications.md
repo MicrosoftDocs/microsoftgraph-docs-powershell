@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: b6dd8b2a-e475-4c7d-b4df-b2cfa9aae725
+Module Guid: b20624f1-32e0-4227-8d6b-7dd9a9e37f29
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -353,16 +353,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail](Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail.md)
 
-### [Get-MgBetaServicePrincipalLifecycle](Get-MgBetaServicePrincipalLifecycle.md)
-
-### [Get-MgBetaServicePrincipalLifecycleComplianceIssue](Get-MgBetaServicePrincipalLifecycleComplianceIssue.md)
-
-### [Get-MgBetaServicePrincipalLifecycleComplianceIssue](Get-MgBetaServicePrincipalLifecycleComplianceIssue.md)
-
-### [Get-MgBetaServicePrincipalLifecycleComplianceIssueCount](Get-MgBetaServicePrincipalLifecycleComplianceIssueCount.md)
-
-### [Get-MgBetaServicePrincipalLifecycleEffectiveGoverningPolicy](Get-MgBetaServicePrincipalLifecycleEffectiveGoverningPolicy.md)
-
 ### [Get-MgBetaServicePrincipalMemberGroup](Get-MgBetaServicePrincipalMemberGroup.md)
 
 ### [Get-MgBetaServicePrincipalMemberObject](Get-MgBetaServicePrincipalMemberObject.md)
@@ -566,8 +556,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserAppRoleAssignment](Get-MgBetaUserAppRoleAssignment.md)
 
 ### [Get-MgBetaUserAppRoleAssignmentCount](Get-MgBetaUserAppRoleAssignmentCount.md)
-
-### [Invoke-MgBetaAttestServicePrincipal](Invoke-MgBetaAttestServicePrincipal.md)
 
 ### [Invoke-MgBetaCategoryApplicationTemplate](Invoke-MgBetaCategoryApplicationTemplate.md)
 
@@ -799,8 +787,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaServicePrincipalLicenseDetail](Remove-MgBetaServicePrincipalLicenseDetail.md)
 
-### [Remove-MgBetaServicePrincipalLifecycle](Remove-MgBetaServicePrincipalLifecycle.md)
-
 ### [Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef](Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef.md)
 
 ### [Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
@@ -943,8 +929,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaServicePrincipalLicenseDetail](Update-MgBetaServicePrincipalLicenseDetail.md)
 
-### [Update-MgBetaServicePrincipalLifecycle](Update-MgBetaServicePrincipalLifecycle.md)
-
 ### [Update-MgBetaServicePrincipalPasswordSingleSignOnCredential](Update-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
 
 ### [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
@@ -968,23 +952,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
