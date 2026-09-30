@@ -65,6 +65,14 @@ To include the key property in the response, use the $select OData query paramet
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of Microsoft Entra audit logs.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BitlockerKey.ReadBasic.All, BitlockerKey.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
