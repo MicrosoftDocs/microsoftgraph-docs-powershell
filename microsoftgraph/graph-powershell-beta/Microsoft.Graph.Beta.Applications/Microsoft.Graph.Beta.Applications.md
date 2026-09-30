@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: 68cd5b3e-121e-4d80-a836-5ee14289f4cc
+Module Guid: bc73db6a-72f2-4485-ac0a-63162e5dab27
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.applications/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -37,8 +37,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaApplication](Get-MgBetaApplication.md)
 
-### [Get-MgBetaApplication](Get-MgBetaApplication.md)
-
 ### [Get-MgBetaApplicationAppManagementPolicy](Get-MgBetaApplicationAppManagementPolicy.md)
 
 ### [Get-MgBetaApplicationAppManagementPolicyByRef](Get-MgBetaApplicationAppManagementPolicyByRef.md)
@@ -63,19 +61,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaApplicationExtensionProperty](Get-MgBetaApplicationExtensionProperty.md)
 
-### [Get-MgBetaApplicationExtensionProperty](Get-MgBetaApplicationExtensionProperty.md)
-
 ### [Get-MgBetaApplicationExtensionPropertyCount](Get-MgBetaApplicationExtensionPropertyCount.md)
-
-### [Get-MgBetaApplicationFederatedIdentityCredential](Get-MgBetaApplicationFederatedIdentityCredential.md)
 
 ### [Get-MgBetaApplicationFederatedIdentityCredential](Get-MgBetaApplicationFederatedIdentityCredential.md)
 
 ### [Get-MgBetaApplicationFederatedIdentityCredentialByName](Get-MgBetaApplicationFederatedIdentityCredentialByName.md)
 
 ### [Get-MgBetaApplicationFederatedIdentityCredentialCount](Get-MgBetaApplicationFederatedIdentityCredentialCount.md)
-
-### [Get-MgBetaApplicationHomeRealmDiscoveryPolicy](Get-MgBetaApplicationHomeRealmDiscoveryPolicy.md)
 
 ### [Get-MgBetaApplicationHomeRealmDiscoveryPolicy](Get-MgBetaApplicationHomeRealmDiscoveryPolicy.md)
 
@@ -91,17 +83,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaApplicationOwnerAsAppRoleAssignment](Get-MgBetaApplicationOwnerAsAppRoleAssignment.md)
 
-### [Get-MgBetaApplicationOwnerAsAppRoleAssignment](Get-MgBetaApplicationOwnerAsAppRoleAssignment.md)
-
-### [Get-MgBetaApplicationOwnerAsEndpoint](Get-MgBetaApplicationOwnerAsEndpoint.md)
-
 ### [Get-MgBetaApplicationOwnerAsEndpoint](Get-MgBetaApplicationOwnerAsEndpoint.md)
 
 ### [Get-MgBetaApplicationOwnerAsServicePrincipal](Get-MgBetaApplicationOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaApplicationOwnerAsServicePrincipal](Get-MgBetaApplicationOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaApplicationOwnerAsUser](Get-MgBetaApplicationOwnerAsUser.md)
 
 ### [Get-MgBetaApplicationOwnerAsUser](Get-MgBetaApplicationOwnerAsUser.md)
 
@@ -123,8 +107,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaApplicationSynchronizationJob](Get-MgBetaApplicationSynchronizationJob.md)
 
-### [Get-MgBetaApplicationSynchronizationJob](Get-MgBetaApplicationSynchronizationJob.md)
-
 ### [Get-MgBetaApplicationSynchronizationJobBulkUpload](Get-MgBetaApplicationSynchronizationJobBulkUpload.md)
 
 ### [Get-MgBetaApplicationSynchronizationJobBulkUploadContent](Get-MgBetaApplicationSynchronizationJobBulkUploadContent.md)
@@ -135,13 +117,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaApplicationSynchronizationJobSchemaDirectory](Get-MgBetaApplicationSynchronizationJobSchemaDirectory.md)
 
-### [Get-MgBetaApplicationSynchronizationJobSchemaDirectory](Get-MgBetaApplicationSynchronizationJobSchemaDirectory.md)
-
 ### [Get-MgBetaApplicationSynchronizationJobSchemaDirectoryCount](Get-MgBetaApplicationSynchronizationJobSchemaDirectoryCount.md)
 
 ### [Get-MgBetaApplicationSynchronizationSecretCount](Get-MgBetaApplicationSynchronizationSecretCount.md)
-
-### [Get-MgBetaApplicationSynchronizationTemplate](Get-MgBetaApplicationSynchronizationTemplate.md)
 
 ### [Get-MgBetaApplicationSynchronizationTemplate](Get-MgBetaApplicationSynchronizationTemplate.md)
 
@@ -151,11 +129,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory](Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory.md)
 
-### [Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory](Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory.md)
-
 ### [Get-MgBetaApplicationSynchronizationTemplateSchemaDirectoryCount](Get-MgBetaApplicationSynchronizationTemplateSchemaDirectoryCount.md)
-
-### [Get-MgBetaApplicationTemplate](Get-MgBetaApplicationTemplate.md)
 
 ### [Get-MgBetaApplicationTemplate](Get-MgBetaApplicationTemplate.md)
 
@@ -177,25 +151,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupAppRoleAssignment](Get-MgBetaGroupAppRoleAssignment.md)
 
-### [Get-MgBetaGroupAppRoleAssignment](Get-MgBetaGroupAppRoleAssignment.md)
-
 ### [Get-MgBetaGroupAppRoleAssignmentCount](Get-MgBetaGroupAppRoleAssignmentCount.md)
 
 ### [Get-MgBetaOnPremisePublishingProfile](Get-MgBetaOnPremisePublishingProfile.md)
-
-### [Get-MgBetaOnPremisePublishingProfile](Get-MgBetaOnPremisePublishingProfile.md)
-
-### [Get-MgBetaOnPremisePublishingProfileAgent](Get-MgBetaOnPremisePublishingProfileAgent.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileAgent](Get-MgBetaOnPremisePublishingProfileAgent.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentCount](Get-MgBetaOnPremisePublishingProfileAgentCount.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroup](Get-MgBetaOnPremisePublishingProfileAgentGroup.md)
-
-### [Get-MgBetaOnPremisePublishingProfileAgentGroup](Get-MgBetaOnPremisePublishingProfileAgentGroup.md)
-
-### [Get-MgBetaOnPremisePublishingProfileAgentGroupAgent](Get-MgBetaOnPremisePublishingProfileAgentGroupAgent.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupAgent](Get-MgBetaOnPremisePublishingProfileAgentGroupAgent.md)
 
@@ -204,8 +168,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupByRef](Get-MgBetaOnPremisePublishingProfileAgentGroupByRef.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupCount](Get-MgBetaOnPremisePublishingProfileAgentGroupCount.md)
-
-### [Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](Get-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource.md)
 
@@ -219,21 +181,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaOnPremisePublishingProfileApplicationSegment](Get-MgBetaOnPremisePublishingProfileApplicationSegment.md)
 
-### [Get-MgBetaOnPremisePublishingProfileApplicationSegment](Get-MgBetaOnPremisePublishingProfileApplicationSegment.md)
-
 ### [Get-MgBetaOnPremisePublishingProfileApplicationSegmentCount](Get-MgBetaOnPremisePublishingProfileApplicationSegmentCount.md)
-
-### [Get-MgBetaOnPremisePublishingProfileConnector](Get-MgBetaOnPremisePublishingProfileConnector.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileConnector](Get-MgBetaOnPremisePublishingProfileConnector.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorCount](Get-MgBetaOnPremisePublishingProfileConnectorCount.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroup](Get-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-
-### [Get-MgBetaOnPremisePublishingProfileConnectorGroup](Get-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-
-### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication.md)
 
 ### [Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication](Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication.md)
 
@@ -261,8 +215,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResource](Get-MgBetaOnPremisePublishingProfilePublishedResource.md)
 
-### [Get-MgBetaOnPremisePublishingProfilePublishedResource](Get-MgBetaOnPremisePublishingProfilePublishedResource.md)
-
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroup](Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroup.md)
 
 ### [Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef](Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef.md)
@@ -273,15 +225,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaOnPremisePublishingProfileSensor](Get-MgBetaOnPremisePublishingProfileSensor.md)
 
-### [Get-MgBetaOnPremisePublishingProfileSensor](Get-MgBetaOnPremisePublishingProfileSensor.md)
-
 ### [Get-MgBetaOnPremisePublishingProfileSensorCount](Get-MgBetaOnPremisePublishingProfileSensorCount.md)
 
 ### [Get-MgBetaServicePrincipal](Get-MgBetaServicePrincipal.md)
-
-### [Get-MgBetaServicePrincipal](Get-MgBetaServicePrincipal.md)
-
-### [Get-MgBetaServicePrincipalAppManagementPolicy](Get-MgBetaServicePrincipalAppManagementPolicy.md)
 
 ### [Get-MgBetaServicePrincipalAppManagementPolicy](Get-MgBetaServicePrincipalAppManagementPolicy.md)
 
@@ -289,11 +235,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalAppRoleAssignedTo](Get-MgBetaServicePrincipalAppRoleAssignedTo.md)
 
-### [Get-MgBetaServicePrincipalAppRoleAssignedTo](Get-MgBetaServicePrincipalAppRoleAssignedTo.md)
-
 ### [Get-MgBetaServicePrincipalAppRoleAssignedToCount](Get-MgBetaServicePrincipalAppRoleAssignedToCount.md)
-
-### [Get-MgBetaServicePrincipalAppRoleAssignment](Get-MgBetaServicePrincipalAppRoleAssignment.md)
 
 ### [Get-MgBetaServicePrincipalAppRoleAssignment](Get-MgBetaServicePrincipalAppRoleAssignment.md)
 
@@ -315,10 +257,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalCreatedObject](Get-MgBetaServicePrincipalCreatedObject.md)
 
-### [Get-MgBetaServicePrincipalCreatedObject](Get-MgBetaServicePrincipalCreatedObject.md)
-
-### [Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal](Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal.md)
-
 ### [Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal](Get-MgBetaServicePrincipalCreatedObjectAsServicePrincipal.md)
 
 ### [Get-MgBetaServicePrincipalCreatedObjectCount](Get-MgBetaServicePrincipalCreatedObjectCount.md)
@@ -327,13 +265,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalDelegatedPermissionClassification](Get-MgBetaServicePrincipalDelegatedPermissionClassification.md)
 
-### [Get-MgBetaServicePrincipalDelegatedPermissionClassification](Get-MgBetaServicePrincipalDelegatedPermissionClassification.md)
-
 ### [Get-MgBetaServicePrincipalDelegatedPermissionClassificationCount](Get-MgBetaServicePrincipalDelegatedPermissionClassificationCount.md)
 
 ### [Get-MgBetaServicePrincipalDelta](Get-MgBetaServicePrincipalDelta.md)
-
-### [Get-MgBetaServicePrincipalEndpoint](Get-MgBetaServicePrincipalEndpoint.md)
 
 ### [Get-MgBetaServicePrincipalEndpoint](Get-MgBetaServicePrincipalEndpoint.md)
 
@@ -347,8 +281,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalLicenseDetail](Get-MgBetaServicePrincipalLicenseDetail.md)
 
-### [Get-MgBetaServicePrincipalLicenseDetail](Get-MgBetaServicePrincipalLicenseDetail.md)
-
 ### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
 
 ### [Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail](Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail.md)
@@ -359,17 +291,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalMemberOf](Get-MgBetaServicePrincipalMemberOf.md)
 
-### [Get-MgBetaServicePrincipalMemberOf](Get-MgBetaServicePrincipalMemberOf.md)
-
-### [Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgBetaServicePrincipalMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaServicePrincipalMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaServicePrincipalMemberOfAsGroup](Get-MgBetaServicePrincipalMemberOfAsGroup.md)
 
 ### [Get-MgBetaServicePrincipalMemberOfAsGroup](Get-MgBetaServicePrincipalMemberOfAsGroup.md)
 
@@ -383,31 +307,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalOauth2PermissionGrant](Get-MgBetaServicePrincipalOauth2PermissionGrant.md)
 
-### [Get-MgBetaServicePrincipalOauth2PermissionGrant](Get-MgBetaServicePrincipalOauth2PermissionGrant.md)
-
 ### [Get-MgBetaServicePrincipalOauth2PermissionGrantCount](Get-MgBetaServicePrincipalOauth2PermissionGrantCount.md)
 
 ### [Get-MgBetaServicePrincipalOwnedObject](Get-MgBetaServicePrincipalOwnedObject.md)
 
-### [Get-MgBetaServicePrincipalOwnedObject](Get-MgBetaServicePrincipalOwnedObject.md)
-
 ### [Get-MgBetaServicePrincipalOwnedObjectAsApplication](Get-MgBetaServicePrincipalOwnedObjectAsApplication.md)
-
-### [Get-MgBetaServicePrincipalOwnedObjectAsApplication](Get-MgBetaServicePrincipalOwnedObjectAsApplication.md)
-
-### [Get-MgBetaServicePrincipalOwnedObjectAsAppRoleAssignment](Get-MgBetaServicePrincipalOwnedObjectAsAppRoleAssignment.md)
 
 ### [Get-MgBetaServicePrincipalOwnedObjectAsAppRoleAssignment](Get-MgBetaServicePrincipalOwnedObjectAsAppRoleAssignment.md)
 
 ### [Get-MgBetaServicePrincipalOwnedObjectAsEndpoint](Get-MgBetaServicePrincipalOwnedObjectAsEndpoint.md)
 
-### [Get-MgBetaServicePrincipalOwnedObjectAsEndpoint](Get-MgBetaServicePrincipalOwnedObjectAsEndpoint.md)
-
 ### [Get-MgBetaServicePrincipalOwnedObjectAsGroup](Get-MgBetaServicePrincipalOwnedObjectAsGroup.md)
-
-### [Get-MgBetaServicePrincipalOwnedObjectAsGroup](Get-MgBetaServicePrincipalOwnedObjectAsGroup.md)
-
-### [Get-MgBetaServicePrincipalOwnedObjectAsServicePrincipal](Get-MgBetaServicePrincipalOwnedObjectAsServicePrincipal.md)
 
 ### [Get-MgBetaServicePrincipalOwnedObjectAsServicePrincipal](Get-MgBetaServicePrincipalOwnedObjectAsServicePrincipal.md)
 
@@ -427,17 +337,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalOwnerAsAppRoleAssignment](Get-MgBetaServicePrincipalOwnerAsAppRoleAssignment.md)
 
-### [Get-MgBetaServicePrincipalOwnerAsAppRoleAssignment](Get-MgBetaServicePrincipalOwnerAsAppRoleAssignment.md)
-
-### [Get-MgBetaServicePrincipalOwnerAsEndpoint](Get-MgBetaServicePrincipalOwnerAsEndpoint.md)
-
 ### [Get-MgBetaServicePrincipalOwnerAsEndpoint](Get-MgBetaServicePrincipalOwnerAsEndpoint.md)
 
 ### [Get-MgBetaServicePrincipalOwnerAsServicePrincipal](Get-MgBetaServicePrincipalOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaServicePrincipalOwnerAsServicePrincipal](Get-MgBetaServicePrincipalOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaServicePrincipalOwnerAsUser](Get-MgBetaServicePrincipalOwnerAsUser.md)
 
 ### [Get-MgBetaServicePrincipalOwnerAsUser](Get-MgBetaServicePrincipalOwnerAsUser.md)
 
@@ -457,19 +359,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy](Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy.md)
 
-### [Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy](Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicy.md)
-
 ### [Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicyCount](Get-MgBetaServicePrincipalPermissionGrantPreApprovalPolicyCount.md)
 
 ### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
 
 ### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
 
-### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp.md)
-
 ### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientAppCount.md)
-
-### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 
 ### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
 
@@ -478,8 +374,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaServicePrincipalSynchronization](Get-MgBetaServicePrincipalSynchronization.md)
 
 ### [Get-MgBetaServicePrincipalSynchronizationAccessToken](Get-MgBetaServicePrincipalSynchronizationAccessToken.md)
-
-### [Get-MgBetaServicePrincipalSynchronizationJob](Get-MgBetaServicePrincipalSynchronizationJob.md)
 
 ### [Get-MgBetaServicePrincipalSynchronizationJob](Get-MgBetaServicePrincipalSynchronizationJob.md)
 
@@ -493,21 +387,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory.md)
 
-### [Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory.md)
-
 ### [Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectoryCount](Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectoryCount.md)
 
 ### [Get-MgBetaServicePrincipalSynchronizationSecretCount](Get-MgBetaServicePrincipalSynchronizationSecretCount.md)
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplate](Get-MgBetaServicePrincipalSynchronizationTemplate.md)
 
-### [Get-MgBetaServicePrincipalSynchronizationTemplate](Get-MgBetaServicePrincipalSynchronizationTemplate.md)
-
 ### [Get-MgBetaServicePrincipalSynchronizationTemplateCount](Get-MgBetaServicePrincipalSynchronizationTemplateCount.md)
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplateSchema](Get-MgBetaServicePrincipalSynchronizationTemplateSchema.md)
-
-### [Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
 ### [Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
@@ -527,17 +415,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOf](Get-MgBetaServicePrincipalTransitiveMemberOf.md)
 
-### [Get-MgBetaServicePrincipalTransitiveMemberOf](Get-MgBetaServicePrincipalTransitiveMemberOf.md)
-
-### [Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
-
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
-
-### [Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup](Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup](Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup.md)
 
@@ -553,9 +433,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAppRoleAssignment](Get-MgBetaUserAppRoleAssignment.md)
 
-### [Get-MgBetaUserAppRoleAssignment](Get-MgBetaUserAppRoleAssignment.md)
-
 ### [Get-MgBetaUserAppRoleAssignmentCount](Get-MgBetaUserAppRoleAssignmentCount.md)
+
+### [Invoke-MgBetaCategoryApplicationTemplate](Invoke-MgBetaCategoryApplicationTemplate.md)
 
 ### [Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator](Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator.md)
 
@@ -950,23 +830,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](Update-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,45 +1,29 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Applications-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroupbyref
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetacategoryapplicationtemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
 ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaOnPremisePublishingProfileAgentGroupByRef
+title: Invoke-MgBetaCategoryApplicationTemplate
 ---
 
-# Get-MgBetaOnPremisePublishingProfileAgentGroupByRef
+# Invoke-MgBetaCategoryApplicationTemplate
 
 ## SYNOPSIS
 
-List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
-Read-only.
-Nullable.
+Invoke function categories
 
 ## SYNTAX
 
-### List1 (Default)
+### Category (Default)
 
 ```
-Get-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <string>
- -OnPremisesPublishingProfileId <string> [-Filter <string>] [-Search <string>] [-Skip <int>]
- [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
-```
-
-### List
-
-```
-Get-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <string>
- -OnPremisesPublishingProfileId <string> -OnPremisesAgentGroupId <string> [-Filter <string>]
- [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Invoke-MgBetaCategoryApplicationTemplate [-Count] [-Filter <string>] [-Search <string>]
+ [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,9 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
-Read-only.
-Nullable.
+Invoke function categories
 
 ## EXAMPLES
 
@@ -64,27 +46,6 @@ Nullable.
 {{ Add code here }}
 
 ## PARAMETERS
-
-### -All
-
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -107,17 +68,15 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -CountVariable
+### -Count
 
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+Include count of items
 
 ```yaml
-Type: System.String
-DefaultValue: ''
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
-Aliases:
-- CV
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -200,90 +159,6 @@ SendAsync Pipeline Steps to be prepended to the front of the pipeline
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Runtime.SendAsyncStep[]
 DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OnPremisesAgentGroupId
-
-The unique identifier of onPremisesAgentGroup
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: List
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OnPremisesAgentId
-
-The unique identifier of onPremisesAgent
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -OnPremisesPublishingProfileId
-
-The unique identifier of onPremisesPublishingProfile
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -PageSize
-
-Sets the page size of results.
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -425,28 +300,6 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Sort
-
-Order items by property values
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- OrderBy
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
 ### -Top
 
 Show only the first n items
@@ -484,7 +337,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.String
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplicationTemplateCategory
 
 {{ Fill in the Description }}
 
@@ -492,4 +345,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroupbyref)
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetacategoryapplicationtemplate)
