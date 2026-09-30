@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property sharePoint in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,6 +396,7 @@ The supported values are: egressReport, throttlingReport.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint)
+
 
 
 
