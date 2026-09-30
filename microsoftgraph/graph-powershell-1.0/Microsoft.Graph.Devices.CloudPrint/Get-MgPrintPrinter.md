@@ -67,18 +67,28 @@ Retrieve the properties and relationships of a printer object.
 | Application | Printer.Read.All, Printer.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Get a printer
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinter -PrinterId $printerId
 
-### EXAMPLE 2
+```
+This example will get a printer
+
+### Example 2: Get a printer and its capabilities
+
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities"
+Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities" 
+
+```
+This example will get a printer and its capabilities
+
 
 ## PARAMETERS
 

@@ -76,8 +76,9 @@ Redirecting a print job will only succeed if there is a printTask in a processin
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -117,6 +118,10 @@ $params = @{
 }
 
 Invoke-MgRedirectPrintPrinterJob -PrinterId $printerId -PrintJobId $printJobId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgRedirectPrintPrinterJob Cmdlet.
+
 
 ## PARAMETERS
 
