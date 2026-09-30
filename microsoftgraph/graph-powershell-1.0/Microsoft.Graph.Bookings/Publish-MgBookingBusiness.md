@@ -58,12 +58,17 @@ Set the isPublished property to true, and the publicUrl property to the URL of t
 | Application | Bookings.Manage.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Bookings
 
 Publish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
+
+```
+This example shows how to use the Publish-MgBookingBusiness Cmdlet.
+
 
 ## PARAMETERS
 
