@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 Collection of imported Windows autopilot devices.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
