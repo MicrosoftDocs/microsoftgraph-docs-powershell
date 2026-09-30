@@ -15,6 +15,9 @@ title: New-MgUserInsightShared
 
 Create new navigation property to shared for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserInsightShared](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserInsightShared?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
