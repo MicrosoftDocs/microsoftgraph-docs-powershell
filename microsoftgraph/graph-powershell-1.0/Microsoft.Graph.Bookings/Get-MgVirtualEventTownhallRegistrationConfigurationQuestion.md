@@ -15,6 +15,9 @@ title: Get-MgVirtualEventTownhallRegistrationConfigurationQuestion
 
 Registration questions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventTownhallRegistrationConfigurationQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

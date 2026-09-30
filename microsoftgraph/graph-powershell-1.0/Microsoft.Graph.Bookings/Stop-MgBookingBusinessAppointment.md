@@ -15,6 +15,9 @@ title: Stop-MgBookingBusinessAppointment
 
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
