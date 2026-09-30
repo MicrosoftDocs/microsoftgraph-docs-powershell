@@ -55,13 +55,18 @@ The number will no longer be available for SMS sign-in, which can prevent your u
 | Application | UserAuthMethod-Phone.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 # A UPN can also be used as -UserId.
 Disable-MgUserAuthenticationPhoneMethodSmsSignIn -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
+
+```
+This example shows how to use the Disable-MgUserAuthenticationPhoneMethodSmsSignIn Cmdlet.
+
 
 ## PARAMETERS
 

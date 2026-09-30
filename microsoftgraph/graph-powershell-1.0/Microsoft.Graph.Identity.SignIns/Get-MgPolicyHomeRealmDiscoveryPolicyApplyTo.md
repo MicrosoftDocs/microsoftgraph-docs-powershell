@@ -61,12 +61,17 @@ This cmdlet has the following aliases,
 Get appliesTo from policies
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
+
+```
+This example shows how to use the Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo Cmdlet.
+
 
 ## PARAMETERS
 

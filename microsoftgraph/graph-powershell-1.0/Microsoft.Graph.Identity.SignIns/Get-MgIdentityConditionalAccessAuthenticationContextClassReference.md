@@ -69,12 +69,17 @@ Retrieve the properties and relationships of a authenticationContextClassReferen
 | Application | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityConditionalAccessAuthenticationContextClassReference
+
+```
+This example shows how to use the Get-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+
 
 ## PARAMETERS
 

@@ -62,12 +62,17 @@ All binary data in the response follows Base64URL encoding as defined in RFC 464
 | Application | UserAuthMethod-Passkey.ReadWrite.All, UserAuthenticationMethod.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Invoke-MgCreationUserAuthenticationFido2MethodOption -UserId $userId
+
+```
+This example shows how to use the Invoke-MgCreationUserAuthenticationFido2MethodOption Cmdlet.
+
 
 ## PARAMETERS
 
