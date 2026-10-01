@@ -630,7 +630,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistcontenttypecolumn)
+- [Get-MgBetaUserDriveListContentTypeColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistcontenttypecolumn)
 
 
 
