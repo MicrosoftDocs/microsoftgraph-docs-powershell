@@ -15,6 +15,9 @@ title: Get-MgGroupMemberWithLicenseErrorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberWithLicenseErrorCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseErrorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
