@@ -581,8 +581,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-connectionoperation-get?view=graph-rest-1.0)
+- [Get-MgExternalConnectionOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-connectionoperation-get?view=graph-rest-1.0)
 
 
 
