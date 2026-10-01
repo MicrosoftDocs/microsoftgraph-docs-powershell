@@ -1162,7 +1162,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepermission)
+- [Update-MgBetaGroupSitePermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepermission)
 
 
 

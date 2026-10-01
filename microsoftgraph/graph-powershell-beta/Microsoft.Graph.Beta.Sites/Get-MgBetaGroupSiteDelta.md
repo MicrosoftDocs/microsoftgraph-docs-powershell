@@ -604,8 +604,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitedelta)
-- [](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta)
+- [Get-MgBetaGroupSiteDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta)
 
 
 
