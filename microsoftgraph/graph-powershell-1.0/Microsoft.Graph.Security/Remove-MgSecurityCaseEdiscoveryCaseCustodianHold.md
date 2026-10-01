@@ -89,6 +89,14 @@ Start the process of removing hold from eDiscovery custodians.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
