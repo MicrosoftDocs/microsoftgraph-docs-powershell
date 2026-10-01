@@ -15,6 +15,9 @@ title: Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 Invoke action import
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ImportExpanded (Default)
