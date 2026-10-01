@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.Partner
-Module Guid: 75f7661e-f8c3-48bd-983b-a307debb07e7
+Module Guid: 6c21c66a-b347-4a7c-800b-bd685ec67ea7
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.partner/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,21 +13,13 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.Identity.Partner Cmdlets
 ### [Get-MgBetaTenantRelationshipDelegatedAdminCustomer](Get-MgBetaTenantRelationshipDelegatedAdminCustomer.md)
 
-### [Get-MgBetaTenantRelationshipDelegatedAdminCustomer](Get-MgBetaTenantRelationshipDelegatedAdminCustomer.md)
-
 ### [Get-MgBetaTenantRelationshipDelegatedAdminCustomerCount](Get-MgBetaTenantRelationshipDelegatedAdminCustomerCount.md)
-
-### [Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail.md)
 
 ### [Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail.md)
 
 ### [Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount](Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount.md)
 
 ### [Get-MgBetaTenantRelationshipDelegatedAdminRelationship](Get-MgBetaTenantRelationshipDelegatedAdminRelationship.md)
-
-### [Get-MgBetaTenantRelationshipDelegatedAdminRelationship](Get-MgBetaTenantRelationshipDelegatedAdminRelationship.md)
-
-### [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment.md)
 
 ### [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment.md)
 
@@ -37,11 +29,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation.md)
 
-### [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation.md)
-
 ### [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperationCount](Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperationCount.md)
-
-### [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest.md)
 
 ### [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest.md)
 
@@ -82,23 +70,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation.md)
 
 ### [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
