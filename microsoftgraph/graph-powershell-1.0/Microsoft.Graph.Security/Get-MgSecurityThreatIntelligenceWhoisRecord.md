@@ -615,9 +615,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord)
-- [](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0)
+- [Get-MgSecurityThreatIntelligenceWhoisRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0)
 
 
 

@@ -612,9 +612,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificate)
-- [](https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0)
+- [Get-MgSecurityThreatIntelligenceSslCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0)
 
 
 

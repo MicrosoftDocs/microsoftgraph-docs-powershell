@@ -925,8 +925,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchresult)
-- [](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0)
+- [Export-MgSecurityCaseEdiscoveryCaseSearchResult](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasesearchresult)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoverysearch-exportresult?view=graph-rest-1.0)
 
 
 

@@ -605,9 +605,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlogquery)
-- [](https://learn.microsoft.com/graph/api/security-auditlogquery-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/security-auditcoreroot-list-auditlogqueries?view=graph-rest-1.0)
+- [Get-MgSecurityAuditLogQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityauditlogquery)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-auditlogquery-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-auditcoreroot-list-auditlogqueries?view=graph-rest-1.0)
 
 
 
