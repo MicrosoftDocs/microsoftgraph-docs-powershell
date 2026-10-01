@@ -394,7 +394,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevicecountasdevice)
+- [Get-MgBetaUserOwnedDeviceCountAsDevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserowneddevicecountasdevice)
 
 
 
