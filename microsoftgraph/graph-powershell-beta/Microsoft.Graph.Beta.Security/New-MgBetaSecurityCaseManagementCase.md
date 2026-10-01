@@ -642,7 +642,7 @@ The maximum file size is 100 MB.
     [ResourceType <String>]: attachmentOriginType
   [ScanResult <String>]: attachmentScanResult
 
-BODYPARAMETER <IMicrosoftGraphSecurityCaseManagementCase>: case
+BODYPARAMETER `<IMicrosoftGraphSecurityCaseManagementCase>`: case
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <String>]: The user or service that created the resource.
   [CreatedDateTime <DateTime?>]: The date and time when the resource was created.
@@ -754,3 +754,25 @@ Supports $filter.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycasemanagementcase)
 - [](https://learn.microsoft.com/graph/api/security-casemanagementroot-post-cases?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
