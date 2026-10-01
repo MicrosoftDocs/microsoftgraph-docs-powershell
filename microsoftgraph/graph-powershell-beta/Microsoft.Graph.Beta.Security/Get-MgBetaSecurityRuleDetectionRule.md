@@ -55,6 +55,14 @@ This cmdlet has the following aliases,
 
 The custom detection rules configured for the tenant.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | CustomDetection.Read.All, CustomDetection.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | CustomDetection.Read.All, CustomDetection.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

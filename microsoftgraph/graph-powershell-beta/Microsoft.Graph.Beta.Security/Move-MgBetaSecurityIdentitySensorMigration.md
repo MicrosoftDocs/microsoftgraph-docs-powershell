@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 Migrate the specified sensors to the unified security portal.
 This action initiates the migration process for one or more Microsoft Defender for Identity sensors.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SecurityIdentitiesMigration.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SecurityIdentitiesMigration.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
