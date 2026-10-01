@@ -744,7 +744,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphAndroidForWorkEnrollmentProfile>: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
+BODYPARAMETER `<IMicrosoftGraphAndroidForWorkEnrollmentProfile>`: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -762,7 +762,7 @@ Read-only.
   [TokenExpirationDateTime <DateTime?>]: Date time the most recently created token will expire.
   [TokenValue <String>]: Value of the most recently created token for this enrollment profile.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -791,7 +791,7 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [WindowsFeatureUpdateProfileAssignmentId <String>]: The unique identifier of windowsFeatureUpdateProfileAssignment
   [WindowsFeatureUpdateProfileId <String>]: The unique identifier of windowsFeatureUpdateProfile
 
-QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
+QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Type <String>]: Indicates the content mime type.
   [Value <Byte[]>]: The byte array that contains the actual content.
@@ -800,3 +800,25 @@ QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementandroidforworkenrollmentprofile)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
