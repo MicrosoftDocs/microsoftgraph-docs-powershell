@@ -15,6 +15,9 @@ title: Get-MgBetaEducationMeTaughtClass
 
 Classes for which the user is a teacher.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeTaughtClass?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

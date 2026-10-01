@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationUserAssignmentCategoryEducationCategoryByRef
 
 Delete ref of navigation property categories for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentCategoryEducationCategoryByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentCategoryEducationCategoryByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

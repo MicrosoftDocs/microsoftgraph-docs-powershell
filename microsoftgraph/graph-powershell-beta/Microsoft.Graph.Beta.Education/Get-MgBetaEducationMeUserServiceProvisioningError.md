@@ -15,6 +15,9 @@ title: Get-MgBetaEducationMeUserServiceProvisioningError
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
