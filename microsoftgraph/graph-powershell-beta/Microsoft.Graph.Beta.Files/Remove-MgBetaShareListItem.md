@@ -15,6 +15,9 @@ title: Remove-MgBetaShareListItem
 
 Delete navigation property listItem for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

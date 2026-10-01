@@ -15,6 +15,9 @@ title: New-MgBetaDriveListColumn
 
 Create new navigation property to columns for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

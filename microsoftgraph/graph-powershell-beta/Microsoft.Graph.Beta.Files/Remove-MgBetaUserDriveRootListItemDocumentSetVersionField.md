@@ -15,6 +15,9 @@ title: Remove-MgBetaUserDriveRootListItemDocumentSetVersionField
 
 Delete navigation property fields for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

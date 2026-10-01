@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveItemListItemPermissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemListItemPermissionCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemListItemPermissionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
