@@ -91,16 +91,6 @@ The following are the steps to attach a file to an Outlook item using an upload 
 | Delegated (personal Microsoft account) | Calendars.ReadWrite, Mail.ReadWrite,  |
 | Application | Calendars.ReadWrite, Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -574,6 +564,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachmentuploadsession)
 - [](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-beta)
+
 
 
 
