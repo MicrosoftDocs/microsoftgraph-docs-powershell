@@ -517,7 +517,7 @@ This property isn't in use and updating it isn't supported.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryonpremisesynchronization)
+- [New-MgBetaDirectoryOnPremiseSynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryonpremisesynchronization)
 
 
 

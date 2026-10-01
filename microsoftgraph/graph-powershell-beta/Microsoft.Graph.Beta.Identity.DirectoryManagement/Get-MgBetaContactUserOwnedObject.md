@@ -386,8 +386,8 @@ BODYPARAMETER `<IPaths1Bsgnp0ContactsMicrosoftGraphGetuserownedobjectsPostReques
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactuserownedobject)
-- [](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
+- [Get-MgBetaContactUserOwnedObject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactuserownedobject)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
 
 
 

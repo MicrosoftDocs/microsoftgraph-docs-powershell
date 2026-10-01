@@ -384,7 +384,7 @@ BODYPARAMETER `<IPaths1T0TwwpDirectoryImpactedresourcesMicrosoftGraphRemovetagPo
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetabulkdirectoryimpactedresourcetag)
+- [Remove-MgBetaBulkDirectoryImpactedResourceTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetabulkdirectoryimpactedresourcetag)
 
 
 
