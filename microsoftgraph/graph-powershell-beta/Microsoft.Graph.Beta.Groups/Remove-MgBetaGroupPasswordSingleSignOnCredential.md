@@ -529,8 +529,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppasswordsinglesignoncredential)
-- [](https://learn.microsoft.com/graph/api/group-deletepasswordsinglesignoncredentials?view=graph-rest-beta)
+- [Remove-MgBetaGroupPasswordSingleSignOnCredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouppasswordsinglesignoncredential)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-deletepasswordsinglesignoncredentials?view=graph-rest-beta)
 
 
 

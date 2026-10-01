@@ -559,8 +559,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsitecontentmodelgetbynamefromdrive)
-- [](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)
+- [Remove-MgBetaGroupSiteContentModelGetByNameFromDrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupsitecontentmodelgetbynamefromdrive)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contentmodel-removefromdrive?view=graph-rest-beta)
 
 
 

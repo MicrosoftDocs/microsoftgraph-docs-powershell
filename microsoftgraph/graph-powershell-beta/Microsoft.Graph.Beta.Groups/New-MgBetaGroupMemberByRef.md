@@ -527,8 +527,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref)
-- [](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta)
+- [New-MgBetaGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupmemberbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-beta)
 
 
 
