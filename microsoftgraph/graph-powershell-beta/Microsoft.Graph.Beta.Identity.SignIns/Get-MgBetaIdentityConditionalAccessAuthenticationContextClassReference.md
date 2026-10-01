@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Retrieve the properties and relationships of a authenticationContextClassReference object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AuthenticationContext.Read.All, AuthenticationContext.ReadWrite.All, Policy.Read.ConditionalAccess,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

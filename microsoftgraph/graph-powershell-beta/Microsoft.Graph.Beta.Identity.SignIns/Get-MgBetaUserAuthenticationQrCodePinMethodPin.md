@@ -45,6 +45,14 @@ This cmdlet has the following aliases,
 
 The PIN linked to the QR Code auth method of the user.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | UserAuthMethod-QR.Read, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.Read.All, UserAuthMethod-QR.ReadWrite, UserAuthMethod-QR.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | UserAuthMethod-QR.Read.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-QR.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
