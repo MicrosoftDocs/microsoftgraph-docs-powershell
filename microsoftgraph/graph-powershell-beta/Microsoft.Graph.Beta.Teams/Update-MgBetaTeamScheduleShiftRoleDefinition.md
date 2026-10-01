@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property shiftsRoleDefinitions in teams
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Schedule.ReadWrite.All, SchedulePermissions.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Schedule.ReadWrite.All, SchedulePermissions.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
