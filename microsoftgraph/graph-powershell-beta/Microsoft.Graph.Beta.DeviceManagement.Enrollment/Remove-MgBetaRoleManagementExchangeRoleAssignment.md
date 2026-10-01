@@ -53,12 +53,17 @@ Delete a unifiedRoleAssignment object.
 | Application | RoleManagement.ReadWrite.Exchange,  |
 
 ## EXAMPLES
+### Example 2: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Enrollment
 
 Remove-MgBetaRoleManagementExchangeRoleAssignment -UnifiedRoleAssignmentId $unifiedRoleAssignmentId
+
+```
+This example shows how to use the Remove-MgBetaRoleManagementExchangeRoleAssignment Cmdlet.
+
 
 ## PARAMETERS
 
