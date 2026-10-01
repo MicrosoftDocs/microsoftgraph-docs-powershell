@@ -510,7 +510,7 @@ The possible values are: disable, enable, forcePasswordReset, revokeAllSessions,
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount)
+- [New-MgBetaSecurityIdentityAccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentityaccount)
 
 
 

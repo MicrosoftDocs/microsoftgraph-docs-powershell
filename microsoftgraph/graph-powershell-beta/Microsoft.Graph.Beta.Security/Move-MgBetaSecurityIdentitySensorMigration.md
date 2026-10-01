@@ -371,8 +371,8 @@ BODYPARAMETER `<IPathsX2WxgdSecurityIdentitiesSensormigrationMicrosoftGraphSecur
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityidentitysensormigration)
-- [](https://learn.microsoft.com/graph/api/security-sensormigration-migrate?view=graph-rest-beta)
+- [Move-MgBetaSecurityIdentitySensorMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/move-mgbetasecurityidentitysensormigration)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensormigration-migrate?view=graph-rest-beta)
 
 
 

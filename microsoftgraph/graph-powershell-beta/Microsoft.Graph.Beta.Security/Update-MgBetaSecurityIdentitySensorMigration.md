@@ -807,7 +807,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensormigration)
+- [Update-MgBetaSecurityIdentitySensorMigration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensormigration)
 
 
 

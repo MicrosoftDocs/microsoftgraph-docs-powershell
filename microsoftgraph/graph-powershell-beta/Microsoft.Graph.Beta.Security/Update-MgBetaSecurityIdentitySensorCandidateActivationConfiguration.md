@@ -389,7 +389,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensorcandidateactivationconfiguration)
+- [Update-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentitysensorcandidateactivationconfiguration)
 
 
 
