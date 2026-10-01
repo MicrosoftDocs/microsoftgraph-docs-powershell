@@ -15,6 +15,9 @@ title: Remove-MgUserChatPermissionGrant
 
 Delete navigation property permissionGrants for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

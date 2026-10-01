@@ -15,6 +15,9 @@ title: Remove-MgTeam
 
 Delete entity from teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

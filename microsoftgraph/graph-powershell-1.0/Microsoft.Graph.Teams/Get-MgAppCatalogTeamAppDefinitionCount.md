@@ -15,6 +15,9 @@ title: Get-MgAppCatalogTeamAppDefinitionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinitionCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

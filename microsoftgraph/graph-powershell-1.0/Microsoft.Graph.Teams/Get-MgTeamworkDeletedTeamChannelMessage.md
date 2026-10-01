@@ -17,6 +17,9 @@ A collection of all the messages in the channel.
 A navigation property.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

@@ -15,6 +15,9 @@ title: Set-MgChatMessageReaction
 
 Invoke action setReaction
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaChatMessageReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
