@@ -15,6 +15,9 @@ title: Remove-MgBetaSiteListItem
 
 Removes an item from a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

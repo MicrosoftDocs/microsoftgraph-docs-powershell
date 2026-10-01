@@ -15,6 +15,9 @@ title: Get-MgBetaSiteContentTypeColumnPosition
 
 Column order information in a content type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeColumnPosition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

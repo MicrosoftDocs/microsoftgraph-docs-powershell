@@ -15,6 +15,9 @@ title: Remove-MgBetaSiteListItemDocumentSetVersionField
 
 Delete navigation property fields for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

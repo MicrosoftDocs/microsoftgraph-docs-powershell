@@ -15,6 +15,9 @@ title: Add-MgBetaGroupSiteListContentTypeCopy
 
 Invoke action addCopy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgGroupSiteListContentTypeCopy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

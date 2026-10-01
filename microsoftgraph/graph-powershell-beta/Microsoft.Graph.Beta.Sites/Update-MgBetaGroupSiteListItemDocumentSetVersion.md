@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSiteListItemDocumentSetVersion
 
 Update the navigation property documentSetVersions in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

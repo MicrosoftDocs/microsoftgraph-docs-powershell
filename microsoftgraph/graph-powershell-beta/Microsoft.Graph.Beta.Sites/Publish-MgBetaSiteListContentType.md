@@ -15,6 +15,9 @@ title: Publish-MgBetaSiteListContentType
 
 Invoke action publish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)

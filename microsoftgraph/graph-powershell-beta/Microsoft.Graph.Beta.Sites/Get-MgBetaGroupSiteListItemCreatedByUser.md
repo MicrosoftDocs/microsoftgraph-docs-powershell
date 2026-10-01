@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSiteListItemCreatedByUser
 
 Get createdByUser from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

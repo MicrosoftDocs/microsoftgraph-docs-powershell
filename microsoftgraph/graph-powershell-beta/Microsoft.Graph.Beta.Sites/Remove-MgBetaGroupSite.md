@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupSite
 
 Unfollow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)
