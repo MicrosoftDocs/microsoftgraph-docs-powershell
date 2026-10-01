@@ -58,8 +58,9 @@ Create a new updatePolicy object.
 | Application | WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -95,6 +96,10 @@ $params = @{
 }
 
 New-MgBetaWindowsUpdatesUpdatePolicy -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaWindowsUpdatesUpdatePolicy Cmdlet.
+
 
 ## PARAMETERS
 
