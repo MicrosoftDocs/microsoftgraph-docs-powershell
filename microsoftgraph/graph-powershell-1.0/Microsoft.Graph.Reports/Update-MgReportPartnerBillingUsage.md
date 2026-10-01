@@ -416,7 +416,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbillingusage)
+- [Update-MgReportPartnerBillingUsage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportpartnerbillingusage)
 
 
 
