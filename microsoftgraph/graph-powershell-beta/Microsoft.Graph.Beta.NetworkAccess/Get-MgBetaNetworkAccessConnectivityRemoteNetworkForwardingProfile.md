@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 Each forwarding profile associated with a remote network is specified.
 Supports $expand and $select.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -588,6 +578,7 @@ INPUTOBJECT `<INetworkAccessIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/get-mgbetanetworkaccessconnectivityremotenetworkforwardingprofile)
+
 
 
 
