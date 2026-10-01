@@ -424,8 +424,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna)
-- [](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-beta)
+- [Remove-MgBetaSearchQna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-beta)
 
 
 
