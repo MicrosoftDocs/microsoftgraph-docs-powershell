@@ -15,6 +15,9 @@ title: Update-MgEntitlementManagementAccessPackageSuggestion
 
 Update the navigation property accessPackageSuggestions in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAccessPackageSuggestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAccessPackageSuggestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

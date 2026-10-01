@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceTermsOfUseAgreementFileVersionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: New-MgIdentityGovernanceTermsOfUseAgreement
 
 Create a new agreement object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

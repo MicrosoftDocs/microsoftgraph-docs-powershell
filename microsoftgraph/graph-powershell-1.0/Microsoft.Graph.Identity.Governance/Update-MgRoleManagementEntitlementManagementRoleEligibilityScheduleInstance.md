@@ -15,6 +15,9 @@ title: Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstan
 
 Update the navigation property roleEligibilityScheduleInstances in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

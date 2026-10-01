@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 
 Update the navigation property assignmentScheduleRequests in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

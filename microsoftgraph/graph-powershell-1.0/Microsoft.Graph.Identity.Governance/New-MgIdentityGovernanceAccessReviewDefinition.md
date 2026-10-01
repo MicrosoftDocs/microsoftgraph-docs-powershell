@@ -15,6 +15,9 @@ title: New-MgIdentityGovernanceAccessReviewDefinition
 
 Create a new accessReviewScheduleDefinition object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgRoleManagementDirectoryRoleAssignmentAppScope
 
 Update the navigation property appScope in roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

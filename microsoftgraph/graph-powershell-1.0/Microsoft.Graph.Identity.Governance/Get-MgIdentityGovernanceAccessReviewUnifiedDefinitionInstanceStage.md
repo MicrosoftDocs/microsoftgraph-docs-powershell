@@ -17,6 +17,9 @@ If the instance has multiple stages, this returns the collection of stages.
 A new stage will only be created when the previous stage ends.
 The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
