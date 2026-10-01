@@ -15,6 +15,9 @@ title: Remove-MgBetaUserSettingStorageQuotaService
 
 Delete navigation property services for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSettingStorageQuotaService](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingStorageQuotaService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaUserTodoTaskAttachment
 
 A collection of file attachments for the task.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
