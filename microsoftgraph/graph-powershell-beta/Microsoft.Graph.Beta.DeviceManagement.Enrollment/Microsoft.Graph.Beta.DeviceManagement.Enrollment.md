@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-Module Guid: b8291244-b93c-4996-ae79-40400beb595e
+Module Guid: a4b6f876-52b4-44f5-bee4-56b7b2c668bb
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,23 +17,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 
-### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
-
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileCount.md)
 
 ### [Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget](Get-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfileEnrollmentTimeDeviceMembershipTarget.md)
 
 ### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
 
-### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile.md)
-
 ### [Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileCount](Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfileCount.md)
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
-
-### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
-
-### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
 
 ### [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
 
@@ -43,13 +35,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementAutopilotEvent](Get-MgBetaDeviceManagementAutopilotEvent.md)
 
-### [Get-MgBetaDeviceManagementAutopilotEvent](Get-MgBetaDeviceManagementAutopilotEvent.md)
-
 ### [Get-MgBetaDeviceManagementAutopilotEventCount](Get-MgBetaDeviceManagementAutopilotEventCount.md)
 
 ### [Get-MgBetaDeviceManagementConditionalAccessSetting](Get-MgBetaDeviceManagementConditionalAccessSetting.md)
-
-### [Get-MgBetaDeviceManagementDepOnboardingSetting](Get-MgBetaDeviceManagementDepOnboardingSetting.md)
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSetting](Get-MgBetaDeviceManagementDepOnboardingSetting.md)
 
@@ -67,23 +55,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
 
-### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
-
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileCount](Get-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileCount.md)
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount](Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount.md)
 
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
 
-### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
-
 ### [Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityCount](Get-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityCount.md)
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
-
-### [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration.md)
-
-### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
 
 ### [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
 
@@ -93,21 +73,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementImportedDeviceIdentity](Get-MgBetaDeviceManagementImportedDeviceIdentity.md)
 
-### [Get-MgBetaDeviceManagementImportedDeviceIdentity](Get-MgBetaDeviceManagementImportedDeviceIdentity.md)
-
 ### [Get-MgBetaDeviceManagementImportedDeviceIdentityCount](Get-MgBetaDeviceManagementImportedDeviceIdentityCount.md)
-
-### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
 
 ### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
 
 ### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
-
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
-
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice.md)
 
@@ -119,13 +91,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
 
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment.md)
-
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignmentCount.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileCount](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileCount.md)
-
-### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
 
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity.md)
 
@@ -139,10 +107,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
 
-### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfile.md)
-
-### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
-
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment.md)
 
 ### [Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignmentCount.md)
@@ -155,11 +119,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespace](Get-MgBetaRoleManagementCloudPcResourceNamespace.md)
 
-### [Get-MgBetaRoleManagementCloudPcResourceNamespace](Get-MgBetaRoleManagementCloudPcResourceNamespace.md)
-
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceCount](Get-MgBetaRoleManagementCloudPcResourceNamespaceCount.md)
-
-### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
 
@@ -171,10 +131,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignment](Get-MgBetaRoleManagementCloudPcRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleAssignment](Get-MgBetaRoleManagementCloudPcRoleAssignment.md)
-
-### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
-
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentAppScopeCount.md)
@@ -183,11 +139,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope.md)
-
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScopeCount.md)
-
-### [Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal](Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal](Get-MgBetaRoleManagementCloudPcRoleAssignmentPrincipal.md)
 
@@ -197,11 +149,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinition](Get-MgBetaRoleManagementCloudPcRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementCloudPcRoleDefinition](Get-MgBetaRoleManagementCloudPcRoleDefinition.md)
-
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinitionCount](Get-MgBetaRoleManagementCloudPcRoleDefinitionCount.md)
-
-### [Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
 ### [Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
 
@@ -209,11 +157,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespace](Get-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementResourceNamespace](Get-MgBetaRoleManagementDeviceManagementResourceNamespace.md)
-
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceCount](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceCount.md)
-
-### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
 
@@ -225,10 +169,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignment](Get-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignment](Get-MgBetaRoleManagementDeviceManagementRoleAssignment.md)
-
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
-
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScopeCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentAppScopeCount.md)
@@ -237,11 +177,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScope.md)
-
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScopeCount](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentDirectoryScopeCount.md)
-
-### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal](Get-MgBetaRoleManagementDeviceManagementRoleAssignmentPrincipal.md)
 
@@ -251,11 +187,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinition](Get-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementDeviceManagementRoleDefinition](Get-MgBetaRoleManagementDeviceManagementRoleDefinition.md)
-
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionCount](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionCount.md)
-
-### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 
 ### [Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
 
@@ -263,17 +195,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementExchangeCustomAppScope](Get-MgBetaRoleManagementExchangeCustomAppScope.md)
 
-### [Get-MgBetaRoleManagementExchangeCustomAppScope](Get-MgBetaRoleManagementExchangeCustomAppScope.md)
-
 ### [Get-MgBetaRoleManagementExchangeCustomAppScopeCount](Get-MgBetaRoleManagementExchangeCustomAppScopeCount.md)
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespace](Get-MgBetaRoleManagementExchangeResourceNamespace.md)
 
-### [Get-MgBetaRoleManagementExchangeResourceNamespace](Get-MgBetaRoleManagementExchangeResourceNamespace.md)
-
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceCount](Get-MgBetaRoleManagementExchangeResourceNamespaceCount.md)
-
-### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceAction.md)
 
@@ -282,8 +208,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionCount.md)
 
 ### [Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementExchangeResourceNamespaceResourceActionResourceScope.md)
-
-### [Get-MgBetaRoleManagementExchangeRoleAssignment](Get-MgBetaRoleManagementExchangeRoleAssignment.md)
 
 ### [Get-MgBetaRoleManagementExchangeRoleAssignment](Get-MgBetaRoleManagementExchangeRoleAssignment.md)
 
@@ -299,15 +223,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementExchangeRoleDefinition](Get-MgBetaRoleManagementExchangeRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementExchangeRoleDefinition](Get-MgBetaRoleManagementExchangeRoleDefinition.md)
-
 ### [Get-MgBetaRoleManagementExchangeRoleDefinitionCount](Get-MgBetaRoleManagementExchangeRoleDefinitionCount.md)
 
 ### [Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
-
-### [Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementExchangeRoleDefinitionInheritPermissionFrom.md)
-
-### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
 ### [Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Get-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
@@ -670,23 +588,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment.md)
 
 ### [Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementExchangeTransitiveRoleAssignmentAppScope.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
