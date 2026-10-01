@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 10/01/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync
 ---
@@ -14,9 +14,6 @@ title: Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync
 ## SYNOPSIS
 
 Invoke action processContentAsync
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](/powershell/module/Microsoft.Graph.Security/Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,13 +47,15 @@ This cmdlet has the following aliases,
 
 Invoke action processContentAsync
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Content.Process.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Content.Process.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -83,7 +82,7 @@ HelpMessage: ''
 
 ### -Body
 
-
+.
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
@@ -211,7 +210,7 @@ HelpMessage: ''
 
 ### -ProcessContentRequests
 
-
+.
 To construct, see NOTES section for PROCESSCONTENTREQUESTS properties and create a hash table.
 
 ```yaml
@@ -368,7 +367,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY `<IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentasyncPostRequestbodyContentApplicationJsonSchema>`: .
+BODY <IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcesscontentasyncPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ProcessContentRequests <IMicrosoftGraphProcessContentBatchRequest[]>]: 
     [ContentToProcess <IMicrosoftGraphProcessContentRequest>]: processContentRequest
@@ -376,6 +375,8 @@ BODY `<IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcessconten
       [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Activity <String>]: userActivityType
+        [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+          [Value <String>]: 
       [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -424,7 +425,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
         [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-        [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
     [RequestId <String>]: A unique identifier provided by the client to correlate this specific request item within the batch.
     [UserId <String>]: The unique identifier (Object ID or UPN) of the user in whose context the content should be processed.
 
@@ -434,6 +434,8 @@ PROCESSCONTENTREQUESTS <IMicrosoftGraphProcessContentBatchRequest[]>: .
     [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Activity <String>]: userActivityType
+      [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+        [Value <String>]: 
     [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -482,34 +484,10 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
       [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-      [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
   [RequestId <String>]: A unique identifier provided by the client to correlate this specific request item within the batch.
   [UserId <String>]: The unique identifier (Object ID or UPN) of the user in whose context the content should be processed.
 
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync)
