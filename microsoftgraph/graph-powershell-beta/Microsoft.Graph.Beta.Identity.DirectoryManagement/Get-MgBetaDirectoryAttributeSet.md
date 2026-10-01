@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryAttributeSet
 
 Read the properties and relationships of an attributeSet object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAttributeSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

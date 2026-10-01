@@ -15,6 +15,9 @@ title: Get-MgBetaDirectory
 
 Get directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
