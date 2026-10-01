@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Planner
-Module Guid: 93b6770f-6b79-46a9-a9ea-31014c68d21d
+Module Guid: b23acb98-c4d9-490a-9dd0-0f2bde2d8199
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.planner/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,8 +17,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupPlannerPlan](Get-MgBetaGroupPlannerPlan.md)
 
-### [Get-MgBetaGroupPlannerPlan](Get-MgBetaGroupPlannerPlan.md)
-
 ### [Get-MgBetaGroupPlannerPlanBucket](Get-MgBetaGroupPlannerPlanBucket.md)
 
 ### [Get-MgBetaGroupPlannerPlanCount](Get-MgBetaGroupPlannerPlanCount.md)
@@ -29,11 +27,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupPlannerPlanGoal](Get-MgBetaGroupPlannerPlanGoal.md)
 
-### [Get-MgBetaGroupPlannerPlanGoal](Get-MgBetaGroupPlannerPlanGoal.md)
-
 ### [Get-MgBetaGroupPlannerPlanGoalCount](Get-MgBetaGroupPlannerPlanGoalCount.md)
-
-### [Get-MgBetaGroupPlannerPlanHistoryItem](Get-MgBetaGroupPlannerPlanHistoryItem.md)
 
 ### [Get-MgBetaGroupPlannerPlanHistoryItem](Get-MgBetaGroupPlannerPlanHistoryItem.md)
 
@@ -47,8 +41,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlannerBucket](Get-MgBetaPlannerBucket.md)
 
-### [Get-MgBetaPlannerBucket](Get-MgBetaPlannerBucket.md)
-
 ### [Get-MgBetaPlannerBucketCount](Get-MgBetaPlannerBucketCount.md)
 
 ### [Get-MgBetaPlannerBucketDelta](Get-MgBetaPlannerBucketDelta.md)
@@ -57,17 +49,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlannerGoal](Get-MgBetaPlannerGoal.md)
 
-### [Get-MgBetaPlannerGoal](Get-MgBetaPlannerGoal.md)
-
 ### [Get-MgBetaPlannerGoalCount](Get-MgBetaPlannerGoalCount.md)
 
 ### [Get-MgBetaPlannerGoalTask](Get-MgBetaPlannerGoalTask.md)
 
-### [Get-MgBetaPlannerGoalTask](Get-MgBetaPlannerGoalTask.md)
-
 ### [Get-MgBetaPlannerGoalTaskCount](Get-MgBetaPlannerGoalTaskCount.md)
-
-### [Get-MgBetaPlannerPlan](Get-MgBetaPlannerPlan.md)
 
 ### [Get-MgBetaPlannerPlan](Get-MgBetaPlannerPlan.md)
 
@@ -81,11 +67,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlannerPlanGoal](Get-MgBetaPlannerPlanGoal.md)
 
-### [Get-MgBetaPlannerPlanGoal](Get-MgBetaPlannerPlanGoal.md)
-
 ### [Get-MgBetaPlannerPlanGoalCount](Get-MgBetaPlannerPlanGoalCount.md)
-
-### [Get-MgBetaPlannerPlanHistoryItem](Get-MgBetaPlannerPlanHistoryItem.md)
 
 ### [Get-MgBetaPlannerPlanHistoryItem](Get-MgBetaPlannerPlanHistoryItem.md)
 
@@ -97,11 +79,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlannerRoster](Get-MgBetaPlannerRoster.md)
 
-### [Get-MgBetaPlannerRoster](Get-MgBetaPlannerRoster.md)
-
 ### [Get-MgBetaPlannerRosterCount](Get-MgBetaPlannerRosterCount.md)
-
-### [Get-MgBetaPlannerRosterMember](Get-MgBetaPlannerRosterMember.md)
 
 ### [Get-MgBetaPlannerRosterMember](Get-MgBetaPlannerRosterMember.md)
 
@@ -109,11 +87,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlannerRosterPlan](Get-MgBetaPlannerRosterPlan.md)
 
-### [Get-MgBetaPlannerRosterPlan](Get-MgBetaPlannerRosterPlan.md)
-
 ### [Get-MgBetaPlannerRosterPlanCount](Get-MgBetaPlannerRosterPlanCount.md)
-
-### [Get-MgBetaPlannerTask](Get-MgBetaPlannerTask.md)
 
 ### [Get-MgBetaPlannerTask](Get-MgBetaPlannerTask.md)
 
@@ -129,13 +103,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPlannerTaskMessage](Get-MgBetaPlannerTaskMessage.md)
 
-### [Get-MgBetaPlannerTaskMessage](Get-MgBetaPlannerTaskMessage.md)
-
 ### [Get-MgBetaPlannerTaskMessageCount](Get-MgBetaPlannerTaskMessageCount.md)
 
 ### [Get-MgBetaPlannerTaskProgressTaskBoardFormat](Get-MgBetaPlannerTaskProgressTaskBoardFormat.md)
-
-### [Get-MgBetaUserPlanner](Get-MgBetaUserPlanner.md)
 
 ### [Get-MgBetaUserPlanner](Get-MgBetaUserPlanner.md)
 
@@ -145,11 +115,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserPlannerFavoritePlan](Get-MgBetaUserPlannerFavoritePlan.md)
 
-### [Get-MgBetaUserPlannerFavoritePlan](Get-MgBetaUserPlannerFavoritePlan.md)
-
 ### [Get-MgBetaUserPlannerFavoritePlanCount](Get-MgBetaUserPlannerFavoritePlanCount.md)
-
-### [Get-MgBetaUserPlannerMyDayTask](Get-MgBetaUserPlannerMyDayTask.md)
 
 ### [Get-MgBetaUserPlannerMyDayTask](Get-MgBetaUserPlannerMyDayTask.md)
 
@@ -161,11 +127,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserPlannerRecentPlan](Get-MgBetaUserPlannerRecentPlan.md)
 
-### [Get-MgBetaUserPlannerRecentPlan](Get-MgBetaUserPlannerRecentPlan.md)
-
 ### [Get-MgBetaUserPlannerRecentPlanCount](Get-MgBetaUserPlannerRecentPlanCount.md)
-
-### [Get-MgBetaUserPlannerRosterPlan](Get-MgBetaUserPlannerRosterPlan.md)
 
 ### [Get-MgBetaUserPlannerRosterPlan](Get-MgBetaUserPlannerRosterPlan.md)
 
@@ -274,23 +236,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPlannerTaskProgressTaskBoardFormat](Update-MgBetaPlannerTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgBetaUserPlanner](Update-MgBetaUserPlanner.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
