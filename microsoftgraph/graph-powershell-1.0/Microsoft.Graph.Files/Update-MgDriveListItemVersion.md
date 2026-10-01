@@ -710,7 +710,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemversion)
+- [Update-MgDriveListItemVersion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemversion)
 
 
 

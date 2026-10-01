@@ -427,8 +427,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowuserdriveitem)
-- [](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
+- [Invoke-MgUnfollowUserDriveItem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowuserdriveitem)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
 
 
 

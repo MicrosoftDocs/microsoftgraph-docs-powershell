@@ -604,7 +604,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivefollowing)
+- [Get-MgUserDriveFollowing](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivefollowing)
 
 
 

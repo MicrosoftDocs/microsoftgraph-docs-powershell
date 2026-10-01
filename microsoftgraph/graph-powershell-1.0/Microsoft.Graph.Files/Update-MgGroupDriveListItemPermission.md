@@ -1139,7 +1139,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistitempermission)
+- [Update-MgGroupDriveListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistitempermission)
 
 
 
