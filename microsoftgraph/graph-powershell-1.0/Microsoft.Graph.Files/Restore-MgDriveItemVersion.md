@@ -58,12 +58,17 @@ This operation creates a new version with the contents of the previous version, 
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
 Restore-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
+
+```
+This example shows how to use the Restore-MgDriveItemVersion Cmdlet.
+
 
 ## PARAMETERS
 
