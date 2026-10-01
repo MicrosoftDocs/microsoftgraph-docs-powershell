@@ -15,6 +15,9 @@ title: Get-MgBetaPlannerTaskCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskCount](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

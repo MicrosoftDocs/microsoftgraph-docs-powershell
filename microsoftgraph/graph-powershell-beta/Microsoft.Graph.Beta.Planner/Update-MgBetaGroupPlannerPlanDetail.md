@@ -15,6 +15,9 @@ title: Update-MgBetaGroupPlannerPlanDetail
 
 Update the navigation property details in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlannerPlanDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
