@@ -68,16 +68,6 @@ Read the properties and relationships of oneDriveForBusinessBrowseSession object
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BackupRestore-Restore.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -588,6 +578,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoreonedriveforbusinessbrowsesession)
 - [](https://learn.microsoft.com/graph/api/onedriveforbusinessbrowsesession-get?view=graph-rest-beta)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-list-onedriveforbusinessbrowsesessions?view=graph-rest-beta)
+
 
 
 
