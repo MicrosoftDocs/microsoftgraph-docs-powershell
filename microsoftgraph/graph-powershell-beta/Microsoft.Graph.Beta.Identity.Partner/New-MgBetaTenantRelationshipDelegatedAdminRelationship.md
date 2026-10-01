@@ -15,6 +15,9 @@ title: New-MgBetaTenantRelationshipDelegatedAdminRelationship
 
 Create a new delegatedAdminRelationship object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
