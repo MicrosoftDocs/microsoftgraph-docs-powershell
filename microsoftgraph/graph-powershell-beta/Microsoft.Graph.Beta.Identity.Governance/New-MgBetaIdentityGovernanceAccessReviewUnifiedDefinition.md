@@ -17,6 +17,9 @@ Create a new user-centric (catalog-scope) accessReviewScheduleDefinition object 
 With a user-centric review, a reviewer evaluates a principal's access to every group and application contained in an entitlement management catalog in a single review.
 The catalog is identified in the resourceScopes collection of the principalResourceMembershipsScope.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewUnifiedDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewUnifiedDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

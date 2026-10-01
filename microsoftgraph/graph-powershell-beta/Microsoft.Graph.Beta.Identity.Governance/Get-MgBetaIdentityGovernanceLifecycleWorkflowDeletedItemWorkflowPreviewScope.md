@@ -20,6 +20,9 @@ Read-only.
 Returned only on $expand.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
