@@ -51,12 +51,17 @@ If the job can't be canceled, a 409 Conflict response is returned and the migrat
 This response happens when a migration is already in progress or is in a terminal state.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Migrations
 
 Stop-MgBetaCrossTenantMigrationJob -CrossTenantMigrationJobId $crossTenantMigrationJobId
+
+```
+This example shows how to use the Stop-MgBetaCrossTenantMigrationJob Cmdlet.
+
 
 ## PARAMETERS
 
