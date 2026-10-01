@@ -487,7 +487,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermailfoldermessagecontent)
+- [Set-MgUserMailFolderMessageContent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermailfoldermessagecontent)
 
 
 
