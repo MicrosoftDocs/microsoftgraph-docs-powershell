@@ -175,7 +175,7 @@ HelpMessage: ''
 
 ### -Attendees
 
-.
+
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
@@ -203,7 +203,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -365,7 +365,7 @@ HelpMessage: ''
 
 ### -IsOrganizerOptional
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -420,7 +420,7 @@ HelpMessage: ''
 
 ### -MaxCandidates
 
-.
+
 
 ```yaml
 Type: System.Int32
@@ -447,7 +447,7 @@ HelpMessage: ''
 
 ### -MeetingDuration
 
-.
+
 
 ```yaml
 Type: System.TimeSpan
@@ -474,7 +474,7 @@ HelpMessage: ''
 
 ### -MinimumAttendeePercentage
 
-.
+
 
 ```yaml
 Type: System.Double
@@ -586,7 +586,7 @@ HelpMessage: ''
 
 ### -ReturnSuggestionReasons
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
