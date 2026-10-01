@@ -15,6 +15,9 @@ title: Update-MgPlannerTaskAssignedToTaskBoardFormat
 
 Update the properties of plannerAssignedToTaskBoardTaskFormat object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
