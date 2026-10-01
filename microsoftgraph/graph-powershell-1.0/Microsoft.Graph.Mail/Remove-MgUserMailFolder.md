@@ -15,6 +15,9 @@ title: Remove-MgUserMailFolder
 
 Delete navigation property mailFolders for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
