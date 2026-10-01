@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EduAssignments.ReadWriteBasic.All, EduAssignments.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
