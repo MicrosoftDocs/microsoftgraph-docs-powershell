@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Migrations
-Module Guid: 83cb6e1f-e1c9-4629-9216-15eae348acc8
+Module Guid: 17c5c86e-68de-4e28-bff5-33f29bea12eb
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.migrations/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,10 +12,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.Migrations Cmdlets
 ### [Get-MgBetaCrossTenantMigrationJob](Get-MgBetaCrossTenantMigrationJob.md)
-
-### [Get-MgBetaCrossTenantMigrationJob](Get-MgBetaCrossTenantMigrationJob.md)
-
-### [Get-MgBetaCrossTenantMigrationJobUser](Get-MgBetaCrossTenantMigrationJobUser.md)
 
 ### [Get-MgBetaCrossTenantMigrationJobUser](Get-MgBetaCrossTenantMigrationJobUser.md)
 
@@ -32,23 +28,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Test-MgBetaCrossTenantMigrationJob](Test-MgBetaCrossTenantMigrationJob.md)
 
 ### [Update-MgBetaCrossTenantMigrationJob](Update-MgBetaCrossTenantMigrationJob.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
