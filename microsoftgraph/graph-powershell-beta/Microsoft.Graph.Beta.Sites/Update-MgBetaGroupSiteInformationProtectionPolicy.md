@@ -518,7 +518,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
+BODYPARAMETER `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -544,7 +544,7 @@ Active labels should be hidden or disabled in user interfaces.
     [Sensitivity <Int32?>]: The sensitivity value of the label, where lower is less sensitive.
     [Tooltip <String>]: The tooltip that should be displayed for the label in a UI.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -632,3 +632,25 @@ Active labels should be hidden or disabled in user interfaces.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteinformationprotectionpolicy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
