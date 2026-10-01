@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityLabel
 
 Delete navigation property labels for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabel](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

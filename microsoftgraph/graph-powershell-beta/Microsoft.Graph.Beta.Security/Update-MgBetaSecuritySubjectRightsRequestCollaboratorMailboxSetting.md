@@ -15,6 +15,9 @@ title: Update-MgBetaSecuritySubjectRightsRequestCollaboratorMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaSecuritySecureScoreControlProfile
 
 Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

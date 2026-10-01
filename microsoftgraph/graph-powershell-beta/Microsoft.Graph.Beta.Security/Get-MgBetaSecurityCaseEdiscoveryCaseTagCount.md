@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseTagCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseTagCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseTagCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

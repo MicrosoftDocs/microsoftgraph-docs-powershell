@@ -16,6 +16,9 @@ title: Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold
 Start the process of applying hold on eDiscovery custodians.
 After the operation is created, you can use Get ediscoveryCustodian to retrieve the status of an ediscoveryCustodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ApplyExpanded (Default)

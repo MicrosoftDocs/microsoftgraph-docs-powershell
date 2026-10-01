@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel
 
 Delete navigation property sensitivityLabels for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityDataSecurityAndGovernanceSensitivityLabel](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityDataSecurityAndGovernanceSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

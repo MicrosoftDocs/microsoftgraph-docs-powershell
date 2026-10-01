@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityThreatIntelligenceSubdomain
 
 Delete navigation property subdomains for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

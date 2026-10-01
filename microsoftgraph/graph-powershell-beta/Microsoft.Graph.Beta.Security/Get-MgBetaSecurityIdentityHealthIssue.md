@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentityHealthIssue
 
 Read the properties and relationships of a healthIssue object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentityHealthIssue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityLabelCitation
 
 Delete navigation property citations for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelCitation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

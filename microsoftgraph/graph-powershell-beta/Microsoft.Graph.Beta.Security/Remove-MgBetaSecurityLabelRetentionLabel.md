@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityLabelRetentionLabel
 
 Delete a retentionLabel object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

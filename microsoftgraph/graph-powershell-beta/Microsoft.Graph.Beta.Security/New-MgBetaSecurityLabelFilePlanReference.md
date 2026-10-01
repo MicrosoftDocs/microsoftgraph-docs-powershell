@@ -15,6 +15,9 @@ title: New-MgBetaSecurityLabelFilePlanReference
 
 Create a new filePlanReferenceTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
