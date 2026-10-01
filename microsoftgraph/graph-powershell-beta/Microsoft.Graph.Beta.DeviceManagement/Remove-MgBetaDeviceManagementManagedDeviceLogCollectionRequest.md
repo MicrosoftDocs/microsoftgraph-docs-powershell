@@ -15,6 +15,9 @@ title: Remove-MgBetaDeviceManagementManagedDeviceLogCollectionRequest
 
 Delete navigation property logCollectionRequests for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementManagedDeviceLogCollectionRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

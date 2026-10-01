@@ -15,6 +15,9 @@ title: Update-MgBetaAdminEdgeInternetExplorerMode
 
 Update the navigation property internetExplorerMode in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerMode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

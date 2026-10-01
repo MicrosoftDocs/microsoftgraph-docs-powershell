@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementDetectedApp
 
 The list of detected apps associated with a device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
