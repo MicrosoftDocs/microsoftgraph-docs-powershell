@@ -58,6 +58,14 @@ Create a new user-centric (catalog-scope) accessReviewScheduleDefinition object 
 With a user-centric review, a reviewer evaluates a principal's access to every group and application contained in an entitlement management catalog in a single review.
 The catalog is identified in the resourceScopes collection of the principalResourceMembershipsScope.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | AccessReview.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

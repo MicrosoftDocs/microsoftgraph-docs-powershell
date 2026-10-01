@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
 The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)\r- directory (Microsoft Entra directory roles)\r- entitlement management (Microsoft Entra entitlement management)\r- Exchange Online (Except China operated by 21Vianet)
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All, RoleManagement.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All, RoleManagement.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

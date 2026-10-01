@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 Represents the alert entity.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

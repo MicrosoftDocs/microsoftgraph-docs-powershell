@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Immediately cancel a unifiedRoleEligibilityScheduleRequest that is in a Granted status, and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
