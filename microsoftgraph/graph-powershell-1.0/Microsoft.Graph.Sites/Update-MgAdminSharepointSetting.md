@@ -59,6 +59,14 @@ This cmdlet has the following aliases,
 
 Update one or more tenant-level settings for SharePoint and OneDrive.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | SharePointTenantSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | SharePointTenantSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
