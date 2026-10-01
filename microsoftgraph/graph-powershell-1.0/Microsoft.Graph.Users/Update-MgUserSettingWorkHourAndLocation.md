@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 
 Update the navigation property workHoursAndLocations in users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite, MailboxSettings.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Not supported |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
