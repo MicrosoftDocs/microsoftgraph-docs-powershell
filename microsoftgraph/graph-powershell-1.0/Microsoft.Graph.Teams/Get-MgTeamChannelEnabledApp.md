@@ -68,12 +68,17 @@ Get an enabled app in the specified channel within a team.
 | Application | TeamsAppInstallation.Read.Group, TeamsAppInstallation.ManageSelectedForTeam.All, TeamsAppInstallation.Read.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelEnabledApp -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgTeamChannelEnabledApp Cmdlet.
+
 
 ## PARAMETERS
 
