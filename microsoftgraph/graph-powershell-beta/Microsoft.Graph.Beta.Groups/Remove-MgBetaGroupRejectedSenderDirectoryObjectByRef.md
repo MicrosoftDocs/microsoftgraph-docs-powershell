@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef
 
 Remove a user or group from the rejected-senders list of the specified group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupRejectedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
