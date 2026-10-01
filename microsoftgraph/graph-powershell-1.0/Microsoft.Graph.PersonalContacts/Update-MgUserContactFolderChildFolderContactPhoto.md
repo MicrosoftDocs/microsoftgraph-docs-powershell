@@ -15,6 +15,9 @@ title: Update-MgUserContactFolderChildFolderContactPhoto
 
 Update the navigation property photo in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolderContactPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
