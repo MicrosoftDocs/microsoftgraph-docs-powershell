@@ -786,8 +786,8 @@ Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mguserchatactivitynotification)
-- [](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
+- [Send-MgUserChatActivityNotification](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mguserchatactivitynotification)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
 
 
 
