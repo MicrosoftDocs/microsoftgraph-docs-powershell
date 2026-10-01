@@ -71,12 +71,17 @@ Another way to input exempt apps through xml files
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
 Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile -WindowsInformationProtectionPolicyId $windowsInformationProtectionPolicyId
+
+```
+This example shows how to use the Get-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile Cmdlet.
+
 
 ## PARAMETERS
 

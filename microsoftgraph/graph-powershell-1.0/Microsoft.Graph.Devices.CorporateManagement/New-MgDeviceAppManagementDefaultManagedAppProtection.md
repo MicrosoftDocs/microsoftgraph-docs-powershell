@@ -78,8 +78,9 @@ Create new navigation property to defaultManagedAppProtections for deviceAppMana
 | Application | DeviceManagementApps.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -136,6 +137,10 @@ faceIdBlocked = $true
 }
 
 New-MgDeviceAppManagementDefaultManagedAppProtection -BodyParameter $params
+
+```
+This example shows how to use the New-MgDeviceAppManagementDefaultManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 

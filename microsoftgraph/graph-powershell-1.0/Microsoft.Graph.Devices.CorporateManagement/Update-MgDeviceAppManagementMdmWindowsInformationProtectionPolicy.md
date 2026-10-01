@@ -124,8 +124,9 @@ Update the navigation property mdmWindowsInformationProtectionPolicies in device
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -255,6 +256,10 @@ isAssigned = $true
 }
 
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy -MdmWindowsInformationProtectionPolicyId $mdmWindowsInformationProtectionPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

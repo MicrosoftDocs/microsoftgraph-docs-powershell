@@ -120,8 +120,9 @@ Update the navigation property androidManagedAppProtections in deviceAppManageme
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
@@ -171,6 +172,10 @@ customBrowserDisplayName = "Custom Browser Display Name value"
 }
 
 Update-MgDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId $androidManagedAppProtectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceAppManagementAndroidManagedAppProtection Cmdlet.
+
 
 ## PARAMETERS
 
