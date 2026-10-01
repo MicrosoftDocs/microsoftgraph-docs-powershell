@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/22/2026
+ms.date: 10/01/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy
 ---
@@ -72,6 +72,16 @@ This cmdlet has the following aliases,
 
 Invoke action evaluate
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -103,7 +113,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -488,7 +498,7 @@ HelpMessage: ''
 
 ### -Target
 
-
+.
 
 ```yaml
 Type: System.String
@@ -569,7 +579,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths15SccidGroupsGroupIdSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths15SccidGroupsGroupIdSitesSiteIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ClassifyText <IMicrosoftGraphTextClassificationRequest>]: textClassificationRequest
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -580,6 +590,15 @@ Read-only.
       [SourceId <String>]: An identifier for the source of the content being classified.
     [Embeddings <IMicrosoftGraphEmbeddingInput[]>]: Optional caller-supplied precomputed embeddings for the text, so the service can skip recomputing them.
 Embeddings for models outside the allow-list are rejected with a 400.
+      [ChunkOffsets <IMicrosoftGraphChunkOffsets>]: chunkOffsets
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Lengths <String>]: An optional base64 string that encodes a packed sequence of little-endian signed 32-bit integers.
+Decoded values represent chunk lengths and must be nonnegative.
+The decoded byte count must be divisible by 4.
+When supplied, the decoded element count must match starts, and elements pair by index.
+        [Starts <String>]: A base64 string that encodes a packed sequence of little-endian signed 64-bit integers.
+Decoded values represent chunk start positions and must be nonnegative and in ascending order.
+The decoded byte count must be divisible by 8.
       [Data <String>]: The embedding vectors the model produced for the text, encoded as a base64 string of little-endian 32-bit floats.
 Every vector the model emitted (for example, one per text chunk) is concatenated in order; each contributes exactly the modelType's embedding dimension worth of float components, so the decoded length must be a whole multiple of that dimension.
       [ModelType <String>]: The embedding model identifier drawn from the service allow-list (for example: text-embedding-3-small-512).
@@ -607,7 +626,7 @@ Unique (case-insensitive) within the embeddings collection; entries whose modelT
     [Author <String>]: 
   [Target <String>]: 
 
-CLASSIFYTEXT `<IMicrosoftGraphTextClassificationRequest>`: textClassificationRequest
+CLASSIFYTEXT <IMicrosoftGraphTextClassificationRequest>: textClassificationRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -616,6 +635,15 @@ Read-only.
     [SourceId <String>]: An identifier for the source of the content being classified.
   [Embeddings <IMicrosoftGraphEmbeddingInput[]>]: Optional caller-supplied precomputed embeddings for the text, so the service can skip recomputing them.
 Embeddings for models outside the allow-list are rejected with a 400.
+    [ChunkOffsets <IMicrosoftGraphChunkOffsets>]: chunkOffsets
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Lengths <String>]: An optional base64 string that encodes a packed sequence of little-endian signed 32-bit integers.
+Decoded values represent chunk lengths and must be nonnegative.
+The decoded byte count must be divisible by 4.
+When supplied, the decoded element count must match starts, and elements pair by index.
+      [Starts <String>]: A base64 string that encodes a packed sequence of little-endian signed 64-bit integers.
+Decoded values represent chunk start positions and must be nonnegative and in ascending order.
+The decoded byte count must be divisible by 8.
     [Data <String>]: The embedding vectors the model produced for the text, encoded as a base64 string of little-endian 32-bit floats.
 Every vector the model emitted (for example, one per text chunk) is concatenated in order; each contributes exactly the modelType's embedding dimension worth of float components, so the decoded length must be a whole multiple of that dimension.
     [ModelType <String>]: The embedding model identifier drawn from the service allow-list (for example: text-embedding-3-small-512).
@@ -626,7 +654,7 @@ Unique (case-insensitive) within the embeddings collection; entries whose modelT
   [SensitiveTypeIds <String[]>]: The identifiers of the sensitive information types to evaluate against the text.
   [Text <String>]: The text to classify.
 
-EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
+EVALUATIONINPUT <IMicrosoftGraphDlpEvaluationInput>: dlpEvaluationInput
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -640,7 +668,7 @@ EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
     [Count <Int32?>]: 
     [Id <String>]: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -702,34 +730,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-NOTIFICATIONINFO `<IMicrosoftGraphDlpNotification>`: dlpNotification
+NOTIFICATIONINFO <IMicrosoftGraphDlpNotification>: dlpNotification
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Author <String>]:
 
 
 ## RELATED LINKS
 
-- [Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy)
