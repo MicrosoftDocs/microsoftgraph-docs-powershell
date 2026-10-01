@@ -485,12 +485,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IReferenceCreate>: .
+BODYPARAMETER `<IReferenceCreate>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
-  OdataId <String>: The entity reference URL of the resource.
+  OdataId `<String>`: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   [AppId <String>]: Alternate key of servicePrincipal
   [AttachmentBaseId <String>]: The unique identifier of attachmentBase
   [AttachmentId <String>]: The unique identifier of attachment
@@ -529,3 +529,25 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersponsorbyref)
 - [](https://learn.microsoft.com/graph/api/agentuser-post-sponsors?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
