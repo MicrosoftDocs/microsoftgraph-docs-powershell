@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementReport
 
 Get reports from deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
