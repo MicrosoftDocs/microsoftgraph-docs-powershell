@@ -92,8 +92,9 @@ This cmdlet has the following aliases,
 Update the properties of a subjectRightsRequest object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Compliance
 
@@ -103,6 +104,10 @@ $params = @{
 }
 
 Update-MgBetaPrivacySubjectRightsRequest -SubjectRightsRequestId $subjectRightsRequestId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPrivacySubjectRightsRequest Cmdlet.
+
 
 ## PARAMETERS
 
