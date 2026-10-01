@@ -15,6 +15,9 @@ title: Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClien
 
 Read the properties and relationships of a approvedClientApp object for the remoteDesktopSecurityConfiguration object on a servicePrincipal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
