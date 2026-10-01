@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
-Module Guid: c7fcfb4c-42db-43b3-9333-8c142d69d049
+Module Guid: b0b1ad9b-81d3-44cb-840c-03e513e47130
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.crossdeviceexperiences/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,11 +13,7 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.CrossDeviceExperiences Cmdlets
 ### [Get-MgBetaUserActivity](Get-MgBetaUserActivity.md)
 
-### [Get-MgBetaUserActivity](Get-MgBetaUserActivity.md)
-
 ### [Get-MgBetaUserActivityCount](Get-MgBetaUserActivityCount.md)
-
-### [Get-MgBetaUserActivityHistoryItem](Get-MgBetaUserActivityHistoryItem.md)
 
 ### [Get-MgBetaUserActivityHistoryItem](Get-MgBetaUserActivityHistoryItem.md)
 
@@ -27,11 +23,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDevice](Get-MgBetaUserDevice.md)
 
-### [Get-MgBetaUserDevice](Get-MgBetaUserDevice.md)
-
 ### [Get-MgBetaUserDeviceByDeviceId](Get-MgBetaUserDeviceByDeviceId.md)
-
-### [Get-MgBetaUserDeviceCommand](Get-MgBetaUserDeviceCommand.md)
 
 ### [Get-MgBetaUserDeviceCommand](Get-MgBetaUserDeviceCommand.md)
 
@@ -45,19 +37,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDeviceExtension](Get-MgBetaUserDeviceExtension.md)
 
-### [Get-MgBetaUserDeviceExtension](Get-MgBetaUserDeviceExtension.md)
-
 ### [Get-MgBetaUserDeviceExtensionCount](Get-MgBetaUserDeviceExtensionCount.md)
 
 ### [Get-MgBetaUserDeviceMemberOf](Get-MgBetaUserDeviceMemberOf.md)
 
-### [Get-MgBetaUserDeviceMemberOf](Get-MgBetaUserDeviceMemberOf.md)
-
 ### [Get-MgBetaUserDeviceMemberOfAsAdministrativeUnit](Get-MgBetaUserDeviceMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaUserDeviceMemberOfAsAdministrativeUnit](Get-MgBetaUserDeviceMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaUserDeviceMemberOfAsGroup](Get-MgBetaUserDeviceMemberOfAsGroup.md)
 
 ### [Get-MgBetaUserDeviceMemberOfAsGroup](Get-MgBetaUserDeviceMemberOfAsGroup.md)
 
@@ -71,17 +55,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredOwnerAsAppRoleAssignment.md)
 
-### [Get-MgBetaUserDeviceRegisteredOwnerAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredOwnerAsAppRoleAssignment.md)
-
-### [Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint](Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint.md)
-
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint](Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint.md)
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsServicePrincipal](Get-MgBetaUserDeviceRegisteredOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaUserDeviceRegisteredOwnerAsServicePrincipal](Get-MgBetaUserDeviceRegisteredOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaUserDeviceRegisteredOwnerAsUser](Get-MgBetaUserDeviceRegisteredOwnerAsUser.md)
 
 ### [Get-MgBetaUserDeviceRegisteredOwnerAsUser](Get-MgBetaUserDeviceRegisteredOwnerAsUser.md)
 
@@ -101,17 +77,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDeviceRegisteredUserAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredUserAsAppRoleAssignment.md)
 
-### [Get-MgBetaUserDeviceRegisteredUserAsAppRoleAssignment](Get-MgBetaUserDeviceRegisteredUserAsAppRoleAssignment.md)
-
-### [Get-MgBetaUserDeviceRegisteredUserAsEndpoint](Get-MgBetaUserDeviceRegisteredUserAsEndpoint.md)
-
 ### [Get-MgBetaUserDeviceRegisteredUserAsEndpoint](Get-MgBetaUserDeviceRegisteredUserAsEndpoint.md)
 
 ### [Get-MgBetaUserDeviceRegisteredUserAsServicePrincipal](Get-MgBetaUserDeviceRegisteredUserAsServicePrincipal.md)
-
-### [Get-MgBetaUserDeviceRegisteredUserAsServicePrincipal](Get-MgBetaUserDeviceRegisteredUserAsServicePrincipal.md)
-
-### [Get-MgBetaUserDeviceRegisteredUserAsUser](Get-MgBetaUserDeviceRegisteredUserAsUser.md)
 
 ### [Get-MgBetaUserDeviceRegisteredUserAsUser](Get-MgBetaUserDeviceRegisteredUserAsUser.md)
 
@@ -129,19 +97,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDeviceTemplate](Get-MgBetaUserDeviceTemplate.md)
 
-### [Get-MgBetaUserDeviceTemplate](Get-MgBetaUserDeviceTemplate.md)
-
 ### [Get-MgBetaUserDeviceTemplateCount](Get-MgBetaUserDeviceTemplateCount.md)
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOf](Get-MgBetaUserDeviceTransitiveMemberOf.md)
 
-### [Get-MgBetaUserDeviceTransitiveMemberOf](Get-MgBetaUserDeviceTransitiveMemberOf.md)
-
 ### [Get-MgBetaUserDeviceTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaUserDeviceTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaUserDeviceTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaUserDeviceTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaUserDeviceTransitiveMemberOfAsGroup](Get-MgBetaUserDeviceTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOfAsGroup](Get-MgBetaUserDeviceTransitiveMemberOfAsGroup.md)
 
@@ -150,8 +110,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserDeviceTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaUserDeviceTransitiveMemberOfCountAsAdministrativeUnit.md)
 
 ### [Get-MgBetaUserDeviceTransitiveMemberOfCountAsGroup](Get-MgBetaUserDeviceTransitiveMemberOfCountAsGroup.md)
-
-### [Get-MgBetaUserDeviceUsageRights](Get-MgBetaUserDeviceUsageRights.md)
 
 ### [Get-MgBetaUserDeviceUsageRights](Get-MgBetaUserDeviceUsageRights.md)
 
@@ -208,23 +166,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserDeviceExtension](Update-MgBetaUserDeviceExtension.md)
 
 ### [Update-MgBetaUserDeviceUsageRights](Update-MgBetaUserDeviceUsageRights.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
