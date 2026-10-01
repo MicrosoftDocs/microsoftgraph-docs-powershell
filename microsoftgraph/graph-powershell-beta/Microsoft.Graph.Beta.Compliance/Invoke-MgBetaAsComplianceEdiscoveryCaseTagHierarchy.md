@@ -495,7 +495,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaascomplianceediscoverycasetaghierarchy)
+- [Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetaascomplianceediscoverycasetaghierarchy)
 
 
 
