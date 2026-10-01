@@ -590,8 +590,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail)
-- [](https://learn.microsoft.com/graph/api/itememail-get?view=graph-rest-beta)
+- [Get-MgBetaUserProfileEmail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileemail)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/itememail-get?view=graph-rest-beta)
 
 
 
