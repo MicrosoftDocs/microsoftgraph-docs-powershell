@@ -80,6 +80,14 @@ A channel without an owner or that belongs to a group that has no owner, can't b
 To restore a channel from its archived state, use the channel: unarchive method.
 A channel can’t be archived or unarchived if its team is archived.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChannelSettings.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChannelSettings.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -86,6 +86,14 @@ This cmdlet has the following aliases,
 Send a new chatMessage in the specified chat.
 This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ChatMessage.Send, Chat.ReadWrite, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
