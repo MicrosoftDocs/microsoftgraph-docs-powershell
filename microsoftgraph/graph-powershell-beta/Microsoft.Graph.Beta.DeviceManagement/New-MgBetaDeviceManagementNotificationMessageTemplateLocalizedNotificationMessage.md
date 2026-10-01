@@ -731,7 +731,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
+- [New-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
 
 
 
