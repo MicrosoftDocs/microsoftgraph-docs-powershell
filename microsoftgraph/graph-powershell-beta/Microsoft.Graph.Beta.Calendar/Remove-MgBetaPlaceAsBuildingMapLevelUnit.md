@@ -457,8 +457,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelunit)
-- [](https://learn.microsoft.com/graph/api/unitmap-delete?view=graph-rest-beta)
+- [Remove-MgBetaPlaceAsBuildingMapLevelUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceasbuildingmaplevelunit)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/unitmap-delete?view=graph-rest-beta)
 
 
 
