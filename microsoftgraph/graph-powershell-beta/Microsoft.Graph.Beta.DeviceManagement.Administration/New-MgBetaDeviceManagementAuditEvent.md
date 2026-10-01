@@ -58,16 +58,6 @@ Create new navigation property to auditEvents for deviceManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementApps.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -681,6 +671,7 @@ RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent)
+
 
 
 
