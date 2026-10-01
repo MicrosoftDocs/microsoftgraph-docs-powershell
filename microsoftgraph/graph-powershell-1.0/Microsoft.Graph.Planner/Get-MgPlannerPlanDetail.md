@@ -56,12 +56,17 @@ Retrieve the properties and relationships of a plannerPlanDetails object.
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId
+
+```
+This example shows how to use the Get-MgPlannerPlanDetail Cmdlet.
+
 
 ## PARAMETERS
 
