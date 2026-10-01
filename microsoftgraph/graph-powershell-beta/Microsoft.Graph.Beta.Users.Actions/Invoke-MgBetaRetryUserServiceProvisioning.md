@@ -15,6 +15,9 @@ title: Invoke-MgBetaRetryUserServiceProvisioning
 
 Retry the provisioning of a user object in Microsoft Entra ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetryUserServiceProvisioning?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Retry (Default)
