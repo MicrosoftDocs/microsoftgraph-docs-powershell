@@ -48,12 +48,17 @@ Delete a governancePolicyTemplate object.
 You can't delete the default template or templates currently used by active relationships.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDirectoryTenantGovernancePolicyTemplate -GovernancePolicyTemplateId $governancePolicyTemplateId
+
+```
+This example shows how to use the Remove-MgBetaDirectoryTenantGovernancePolicyTemplate Cmdlet.
+
 
 ## PARAMETERS
 

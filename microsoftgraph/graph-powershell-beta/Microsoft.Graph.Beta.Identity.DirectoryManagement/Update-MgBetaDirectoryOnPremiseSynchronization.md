@@ -74,8 +74,9 @@ This cmdlet has the following aliases,
 Update the properties of an onPremisesDirectorySynchronization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -94,6 +95,10 @@ $params = @{
 }
 
 Update-MgBetaDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaDirectoryOnPremiseSynchronization Cmdlet.
+
 
 ## PARAMETERS
 
