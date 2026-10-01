@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -400,6 +390,7 @@ BODYPARAMETER `<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyid)
 - [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+
 
 
 
