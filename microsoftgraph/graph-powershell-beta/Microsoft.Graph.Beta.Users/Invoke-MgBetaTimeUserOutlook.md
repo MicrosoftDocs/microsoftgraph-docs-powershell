@@ -76,16 +76,6 @@ Invoke function supportedTimeZones
 | Delegated (personal Microsoft account) | User.Read,  |
 | Application | User.Read.All, User.ReadBasic.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -507,6 +497,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/invoke-mgbetatimeuseroutlook)
+
 
 
 
