@@ -424,7 +424,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewgroupsiteonenotesectiongroupsectionpage)
+- [Invoke-MgPreviewGroupSiteOnenoteSectionGroupSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewgroupsiteonenotesectiongroupsectionpage)
 
 
 

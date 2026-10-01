@@ -429,7 +429,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecreatedbyuser)
+- [Get-MgGroupSitePageAsSitePageCreatedByUser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecreatedbyuser)
 
 
 

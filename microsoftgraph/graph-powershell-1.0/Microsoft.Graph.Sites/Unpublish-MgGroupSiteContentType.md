@@ -446,8 +446,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mggroupsitecontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
+- [Unpublish-MgGroupSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mggroupsitecontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
 
 
 

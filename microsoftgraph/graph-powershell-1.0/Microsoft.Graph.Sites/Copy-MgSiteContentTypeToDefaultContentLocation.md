@@ -675,8 +675,8 @@ For OneDrive, this property is not populated.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation)
-- [](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
+- [Copy-MgSiteContentTypeToDefaultContentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
 
 
 

@@ -467,8 +467,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype)
-- [](https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-1.0)
+- [Remove-MgSiteContentType](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-1.0)
 
 
 
