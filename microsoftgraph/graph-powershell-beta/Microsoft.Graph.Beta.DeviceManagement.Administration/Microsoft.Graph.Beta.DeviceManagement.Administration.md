@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-Module Guid: 22f577dc-638b-462d-9046-79f5ac46b442
+Module Guid: 2543579c-507a-47ee-a57e-1a61c4d751fd
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devicemanagement.administration/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,11 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementAuditEvent](Get-MgBetaDeviceManagementAuditEvent.md)
 
-### [Get-MgBetaDeviceManagementAuditEvent](Get-MgBetaDeviceManagementAuditEvent.md)
-
 ### [Get-MgBetaDeviceManagementAuditEventCount](Get-MgBetaDeviceManagementAuditEventCount.md)
-
-### [Get-MgBetaDeviceManagementCartToClassAssociation](Get-MgBetaDeviceManagementCartToClassAssociation.md)
 
 ### [Get-MgBetaDeviceManagementCartToClassAssociation](Get-MgBetaDeviceManagementCartToClassAssociation.md)
 
@@ -27,11 +23,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementComanagementEligibleDevice](Get-MgBetaDeviceManagementComanagementEligibleDevice.md)
 
-### [Get-MgBetaDeviceManagementComanagementEligibleDevice](Get-MgBetaDeviceManagementComanagementEligibleDevice.md)
-
 ### [Get-MgBetaDeviceManagementComanagementEligibleDeviceCount](Get-MgBetaDeviceManagementComanagementEligibleDeviceCount.md)
-
-### [Get-MgBetaDeviceManagementComplianceManagementPartner](Get-MgBetaDeviceManagementComplianceManagementPartner.md)
 
 ### [Get-MgBetaDeviceManagementComplianceManagementPartner](Get-MgBetaDeviceManagementComplianceManagementPartner.md)
 
@@ -41,15 +33,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState](Get-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState.md)
 
-### [Get-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState](Get-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState.md)
-
-### [Get-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation](Get-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation.md)
-
 ### [Get-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation](Get-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation.md)
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolationCount](Get-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolationCount.md)
-
-### [Get-MgBetaDeviceManagementDomainJoinConnector](Get-MgBetaDeviceManagementDomainJoinConnector.md)
 
 ### [Get-MgBetaDeviceManagementDomainJoinConnector](Get-MgBetaDeviceManagementDomainJoinConnector.md)
 
@@ -57,11 +43,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementExchangeConnector](Get-MgBetaDeviceManagementExchangeConnector.md)
 
-### [Get-MgBetaDeviceManagementExchangeConnector](Get-MgBetaDeviceManagementExchangeConnector.md)
-
 ### [Get-MgBetaDeviceManagementExchangeConnectorCount](Get-MgBetaDeviceManagementExchangeConnectorCount.md)
-
-### [Get-MgBetaDeviceManagementExchangeOnPremisePolicy](Get-MgBetaDeviceManagementExchangeOnPremisePolicy.md)
 
 ### [Get-MgBetaDeviceManagementExchangeOnPremisePolicy](Get-MgBetaDeviceManagementExchangeOnPremisePolicy.md)
 
@@ -71,17 +53,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyCategory](Get-MgBetaDeviceManagementGroupPolicyCategory.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyCategory](Get-MgBetaDeviceManagementGroupPolicyCategory.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyCategoryChild](Get-MgBetaDeviceManagementGroupPolicyCategoryChild.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyCategoryChild](Get-MgBetaDeviceManagementGroupPolicyCategoryChild.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyCategoryChildCount](Get-MgBetaDeviceManagementGroupPolicyCategoryChildCount.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyCategoryCount](Get-MgBetaDeviceManagementGroupPolicyCategoryCount.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyCategoryDefinition](Get-MgBetaDeviceManagementGroupPolicyCategoryDefinition.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyCategoryDefinition](Get-MgBetaDeviceManagementGroupPolicyCategoryDefinition.md)
 
@@ -93,19 +69,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinition](Get-MgBetaDeviceManagementGroupPolicyDefinition.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyDefinition](Get-MgBetaDeviceManagementGroupPolicyDefinition.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionCategory](Get-MgBetaDeviceManagementGroupPolicyDefinitionCategory.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionCount](Get-MgBetaDeviceManagementGroupPolicyDefinitionCount.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionFile](Get-MgBetaDeviceManagementGroupPolicyDefinitionFile.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyDefinitionFile](Get-MgBetaDeviceManagementGroupPolicyDefinitionFile.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionFileCount](Get-MgBetaDeviceManagementGroupPolicyDefinitionFileCount.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyDefinitionFileDefinition](Get-MgBetaDeviceManagementGroupPolicyDefinitionFileDefinition.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionFileDefinition](Get-MgBetaDeviceManagementGroupPolicyDefinitionFileDefinition.md)
 
@@ -116,8 +86,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionCategory](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionCategory.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionFile](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionFile.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation.md)
 
@@ -133,13 +101,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentation.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentation.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentationCount](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentationCount.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentationDefinition](Get-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionPresentationDefinition.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionPresentation.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionPresentation.md)
 
@@ -161,13 +125,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentation.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentation.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentationCount](Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentationCount.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentationDefinition](Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinitionPresentationDefinition.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionPresentation.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionPresentation](Get-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionPresentation.md)
 
@@ -177,11 +137,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyMigrationReport](Get-MgBetaDeviceManagementGroupPolicyMigrationReport.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyMigrationReport](Get-MgBetaDeviceManagementGroupPolicyMigrationReport.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyMigrationReportCount](Get-MgBetaDeviceManagementGroupPolicyMigrationReportCount.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](Get-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](Get-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping.md)
 
@@ -189,11 +145,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtensionCount](Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtensionCount.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyObjectFile](Get-MgBetaDeviceManagementGroupPolicyObjectFile.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyObjectFile](Get-MgBetaDeviceManagementGroupPolicyObjectFile.md)
 
@@ -201,11 +153,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileCount](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileCount.md)
-
-### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition.md)
 
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition.md)
 
@@ -213,15 +161,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
 
-### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
-
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperationCount](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperationCount.md)
 
 ### [Get-MgBetaDeviceManagementIntuneBrandingProfile](Get-MgBetaDeviceManagementIntuneBrandingProfile.md)
-
-### [Get-MgBetaDeviceManagementIntuneBrandingProfile](Get-MgBetaDeviceManagementIntuneBrandingProfile.md)
-
-### [Get-MgBetaDeviceManagementIntuneBrandingProfileAssignment](Get-MgBetaDeviceManagementIntuneBrandingProfileAssignment.md)
 
 ### [Get-MgBetaDeviceManagementIntuneBrandingProfileAssignment](Get-MgBetaDeviceManagementIntuneBrandingProfileAssignment.md)
 
@@ -231,11 +173,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementIoUpdateStatus](Get-MgBetaDeviceManagementIoUpdateStatus.md)
 
-### [Get-MgBetaDeviceManagementIoUpdateStatus](Get-MgBetaDeviceManagementIoUpdateStatus.md)
-
 ### [Get-MgBetaDeviceManagementIoUpdateStatusCount](Get-MgBetaDeviceManagementIoUpdateStatusCount.md)
-
-### [Get-MgBetaDeviceManagementMobileThreatDefenseConnector](Get-MgBetaDeviceManagementMobileThreatDefenseConnector.md)
 
 ### [Get-MgBetaDeviceManagementMobileThreatDefenseConnector](Get-MgBetaDeviceManagementMobileThreatDefenseConnector.md)
 
@@ -243,11 +181,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementNdeConnector](Get-MgBetaDeviceManagementNdeConnector.md)
 
-### [Get-MgBetaDeviceManagementNdeConnector](Get-MgBetaDeviceManagementNdeConnector.md)
-
 ### [Get-MgBetaDeviceManagementNdeConnectorCount](Get-MgBetaDeviceManagementNdeConnectorCount.md)
-
-### [Get-MgBetaDeviceManagementPartner](Get-MgBetaDeviceManagementPartner.md)
 
 ### [Get-MgBetaDeviceManagementPartner](Get-MgBetaDeviceManagementPartner.md)
 
@@ -255,17 +189,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementRemoteAssistancePartner](Get-MgBetaDeviceManagementRemoteAssistancePartner.md)
 
-### [Get-MgBetaDeviceManagementRemoteAssistancePartner](Get-MgBetaDeviceManagementRemoteAssistancePartner.md)
-
 ### [Get-MgBetaDeviceManagementRemoteAssistancePartnerCount](Get-MgBetaDeviceManagementRemoteAssistancePartnerCount.md)
 
 ### [Get-MgBetaDeviceManagementResourceOperation](Get-MgBetaDeviceManagementResourceOperation.md)
 
-### [Get-MgBetaDeviceManagementResourceOperation](Get-MgBetaDeviceManagementResourceOperation.md)
-
 ### [Get-MgBetaDeviceManagementResourceOperationCount](Get-MgBetaDeviceManagementResourceOperationCount.md)
-
-### [Get-MgBetaDeviceManagementRoleAssignment](Get-MgBetaDeviceManagementRoleAssignment.md)
 
 ### [Get-MgBetaDeviceManagementRoleAssignment](Get-MgBetaDeviceManagementRoleAssignment.md)
 
@@ -275,17 +203,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag](Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag.md)
 
-### [Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag](Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag.md)
-
 ### [Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTagCount](Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTagCount.md)
 
 ### [Get-MgBetaDeviceManagementRoleDefinition](Get-MgBetaDeviceManagementRoleDefinition.md)
 
-### [Get-MgBetaDeviceManagementRoleDefinition](Get-MgBetaDeviceManagementRoleDefinition.md)
-
 ### [Get-MgBetaDeviceManagementRoleDefinitionCount](Get-MgBetaDeviceManagementRoleDefinitionCount.md)
-
-### [Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment](Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment.md)
 
 ### [Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment](Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment.md)
 
@@ -295,10 +217,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementRoleScopeTag](Get-MgBetaDeviceManagementRoleScopeTag.md)
 
-### [Get-MgBetaDeviceManagementRoleScopeTag](Get-MgBetaDeviceManagementRoleScopeTag.md)
-
-### [Get-MgBetaDeviceManagementRoleScopeTagAssignment](Get-MgBetaDeviceManagementRoleScopeTagAssignment.md)
-
 ### [Get-MgBetaDeviceManagementRoleScopeTagAssignment](Get-MgBetaDeviceManagementRoleScopeTagAssignment.md)
 
 ### [Get-MgBetaDeviceManagementRoleScopeTagAssignmentCount](Get-MgBetaDeviceManagementRoleScopeTagAssignmentCount.md)
@@ -307,15 +225,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](Get-MgBetaDeviceManagementTelecomExpenseManagementPartner.md)
 
-### [Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](Get-MgBetaDeviceManagementTelecomExpenseManagementPartner.md)
-
 ### [Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount](Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount.md)
 
 ### [Get-MgBetaDeviceManagementTermAndCondition](Get-MgBetaDeviceManagementTermAndCondition.md)
-
-### [Get-MgBetaDeviceManagementTermAndCondition](Get-MgBetaDeviceManagementTermAndCondition.md)
-
-### [Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus.md)
 
 ### [Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus.md)
 
@@ -325,13 +237,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementTermAndConditionAssignment](Get-MgBetaDeviceManagementTermAndConditionAssignment.md)
 
-### [Get-MgBetaDeviceManagementTermAndConditionAssignment](Get-MgBetaDeviceManagementTermAndConditionAssignment.md)
-
 ### [Get-MgBetaDeviceManagementTermAndConditionAssignmentCount](Get-MgBetaDeviceManagementTermAndConditionAssignmentCount.md)
 
 ### [Get-MgBetaDeviceManagementTermAndConditionCount](Get-MgBetaDeviceManagementTermAndConditionCount.md)
-
-### [Get-MgBetaDeviceManagementTermAndConditionGroupAssignment](Get-MgBetaDeviceManagementTermAndConditionGroupAssignment.md)
 
 ### [Get-MgBetaDeviceManagementTermAndConditionGroupAssignment](Get-MgBetaDeviceManagementTermAndConditionGroupAssignment.md)
 
@@ -341,13 +249,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementUserPfxCertificate](Get-MgBetaDeviceManagementUserPfxCertificate.md)
 
-### [Get-MgBetaDeviceManagementUserPfxCertificate](Get-MgBetaDeviceManagementUserPfxCertificate.md)
-
 ### [Get-MgBetaDeviceManagementUserPfxCertificateCount](Get-MgBetaDeviceManagementUserPfxCertificateCount.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpoint](Get-MgBetaDeviceManagementVirtualEndpoint.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointAuditEvent](Get-MgBetaDeviceManagementVirtualEndpointAuditEvent.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointAuditEvent](Get-MgBetaDeviceManagementVirtualEndpointAuditEvent.md)
 
@@ -355,11 +259,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointBulkAction](Get-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
 
-### [Get-MgBetaDeviceManagementVirtualEndpointBulkAction](Get-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointBulkActionCount](Get-MgBetaDeviceManagementVirtualEndpointBulkActionCount.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPc.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPc.md)
 
@@ -369,11 +269,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointDeviceImage](Get-MgBetaDeviceManagementVirtualEndpointDeviceImage.md)
 
-### [Get-MgBetaDeviceManagementVirtualEndpointDeviceImage](Get-MgBetaDeviceManagementVirtualEndpointDeviceImage.md)
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointDeviceImageCount](Get-MgBetaDeviceManagementVirtualEndpointDeviceImageCount.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting](Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting](Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting.md)
 
@@ -381,17 +277,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan](Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan.md)
 
-### [Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan](Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan.md)
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlanCount](Get-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlanCount.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointGalleryImage](Get-MgBetaDeviceManagementVirtualEndpointGalleryImage.md)
 
-### [Get-MgBetaDeviceManagementVirtualEndpointGalleryImage](Get-MgBetaDeviceManagementVirtualEndpointGalleryImage.md)
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointGalleryImageCount](Get-MgBetaDeviceManagementVirtualEndpointGalleryImageCount.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection.md)
 
@@ -401,13 +291,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 
-### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser.md)
 
@@ -427,11 +311,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportExportJob](Get-MgBetaDeviceManagementVirtualEndpointReportExportJob.md)
 
-### [Get-MgBetaDeviceManagementVirtualEndpointReportExportJob](Get-MgBetaDeviceManagementVirtualEndpointReportExportJob.md)
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportExportJobCount](Get-MgBetaDeviceManagementVirtualEndpointReportExportJobCount.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointServicePlan](Get-MgBetaDeviceManagementVirtualEndpointServicePlan.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointServicePlan](Get-MgBetaDeviceManagementVirtualEndpointServicePlan.md)
 
@@ -439,21 +319,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointSnapshot](Get-MgBetaDeviceManagementVirtualEndpointSnapshot.md)
 
-### [Get-MgBetaDeviceManagementVirtualEndpointSnapshot](Get-MgBetaDeviceManagementVirtualEndpointSnapshot.md)
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointSnapshotCount](Get-MgBetaDeviceManagementVirtualEndpointSnapshotCount.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion](Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion](Get-MgBetaDeviceManagementVirtualEndpointSupportedRegion.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointSupportedRegionCount](Get-MgBetaDeviceManagementVirtualEndpointSupportedRegionCount.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointUserSetting](Get-MgBetaDeviceManagementVirtualEndpointUserSetting.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointUserSetting](Get-MgBetaDeviceManagementVirtualEndpointUserSetting.md)
-
-### [Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment](Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment.md)
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment](Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment.md)
 
@@ -830,23 +702,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDeviceManagementVirtualEndpointUserSetting](Update-MgBetaDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Update-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment](Update-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
