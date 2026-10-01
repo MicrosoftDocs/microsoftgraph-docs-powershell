@@ -807,7 +807,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphBookingCustomQuestion>: Represents a custom question of the business.
+BODYPARAMETER `<IMicrosoftGraphBookingCustomQuestion>`: Represents a custom question of the business.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -817,7 +817,7 @@ Read-only.
   [DisplayName <String>]: Display name of this entity.
   [LastUpdatedDateTime <DateTime?>]: The date, time and timezone when the custom question was last updated.
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [BookingAppointmentId <String>]: The unique identifier of bookingAppointment
   [BookingBusinessId <String>]: The unique identifier of bookingBusiness
@@ -843,3 +843,25 @@ INPUTOBJECT <IBookingsIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomquestion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
