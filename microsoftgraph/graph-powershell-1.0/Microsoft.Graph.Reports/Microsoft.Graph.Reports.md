@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 61b7caa1-8b9f-4e81-9c80-3c6810f7f8fa
+Module Guid: 83a1dfcf-5668-4ad3-98a7-52a1b9a60a57
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.reports/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -27,17 +27,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAuditLogDirectoryAudit](Get-MgAuditLogDirectoryAudit.md)
 
-### [Get-MgAuditLogDirectoryAudit](Get-MgAuditLogDirectoryAudit.md)
-
 ### [Get-MgAuditLogDirectoryAuditCount](Get-MgAuditLogDirectoryAuditCount.md)
 
 ### [Get-MgAuditLogProvisioning](Get-MgAuditLogProvisioning.md)
 
-### [Get-MgAuditLogProvisioning](Get-MgAuditLogProvisioning.md)
-
 ### [Get-MgAuditLogProvisioningCount](Get-MgAuditLogProvisioningCount.md)
-
-### [Get-MgAuditLogSignIn](Get-MgAuditLogSignIn.md)
 
 ### [Get-MgAuditLogSignIn](Get-MgAuditLogSignIn.md)
 
@@ -71,8 +65,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
 
-### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
-
 ### [Get-MgDeviceManagementReportExportJobCount](Get-MgDeviceManagementReportExportJobCount.md)
 
 ### [Get-MgDeviceManagementReportFilter](Get-MgDeviceManagementReportFilter.md)
@@ -93,17 +85,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgReportAuthenticationMethodUserRegistrationDetail](Get-MgReportAuthenticationMethodUserRegistrationDetail.md)
 
-### [Get-MgReportAuthenticationMethodUserRegistrationDetail](Get-MgReportAuthenticationMethodUserRegistrationDetail.md)
-
 ### [Get-MgReportAuthenticationMethodUserRegistrationDetailCount](Get-MgReportAuthenticationMethodUserRegistrationDetailCount.md)
 
 ### [Get-MgReportDailyPrintUsageByPrinter](Get-MgReportDailyPrintUsageByPrinter.md)
 
-### [Get-MgReportDailyPrintUsageByPrinter](Get-MgReportDailyPrintUsageByPrinter.md)
-
 ### [Get-MgReportDailyPrintUsageByPrinterCount](Get-MgReportDailyPrintUsageByPrinterCount.md)
-
-### [Get-MgReportDailyPrintUsageByUser](Get-MgReportDailyPrintUsageByUser.md)
 
 ### [Get-MgReportDailyPrintUsageByUser](Get-MgReportDailyPrintUsageByUser.md)
 
@@ -149,11 +135,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgReportMonthlyPrintUsageByPrinter](Get-MgReportMonthlyPrintUsageByPrinter.md)
 
-### [Get-MgReportMonthlyPrintUsageByPrinter](Get-MgReportMonthlyPrintUsageByPrinter.md)
-
 ### [Get-MgReportMonthlyPrintUsageByPrinterCount](Get-MgReportMonthlyPrintUsageByPrinterCount.md)
-
-### [Get-MgReportMonthlyPrintUsageByUser](Get-MgReportMonthlyPrintUsageByUser.md)
 
 ### [Get-MgReportMonthlyPrintUsageByUser](Get-MgReportMonthlyPrintUsageByUser.md)
 
@@ -201,11 +183,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgReportPartnerBillingManifest](Get-MgReportPartnerBillingManifest.md)
 
-### [Get-MgReportPartnerBillingManifest](Get-MgReportPartnerBillingManifest.md)
-
 ### [Get-MgReportPartnerBillingManifestCount](Get-MgReportPartnerBillingManifestCount.md)
-
-### [Get-MgReportPartnerBillingOperation](Get-MgReportPartnerBillingOperation.md)
 
 ### [Get-MgReportPartnerBillingOperation](Get-MgReportPartnerBillingOperation.md)
 
@@ -380,23 +358,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgReportPartnerBillingUsageBilled](Update-MgReportPartnerBillingUsageBilled.md)
 
 ### [Update-MgReportPartnerBillingUsageUnbilled](Update-MgReportPartnerBillingUsageUnbilled.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
