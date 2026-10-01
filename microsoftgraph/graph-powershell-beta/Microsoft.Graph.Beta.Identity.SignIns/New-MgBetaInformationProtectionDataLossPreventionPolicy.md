@@ -386,7 +386,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectiondatalosspreventionpolicy)
+- [New-MgBetaInformationProtectionDataLossPreventionPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectiondatalosspreventionpolicy)
 
 
 
