@@ -325,7 +325,7 @@ HelpMessage: ''
 
 ### -IsCloudManaged
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
