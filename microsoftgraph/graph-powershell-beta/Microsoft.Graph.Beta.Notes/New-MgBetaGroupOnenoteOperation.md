@@ -688,7 +688,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenoteoperation)
+- [New-MgBetaGroupOnenoteOperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenoteoperation)
 
 
 
