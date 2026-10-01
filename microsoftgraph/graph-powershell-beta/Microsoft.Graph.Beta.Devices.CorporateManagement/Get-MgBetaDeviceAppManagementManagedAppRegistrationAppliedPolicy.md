@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy
 
 Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
