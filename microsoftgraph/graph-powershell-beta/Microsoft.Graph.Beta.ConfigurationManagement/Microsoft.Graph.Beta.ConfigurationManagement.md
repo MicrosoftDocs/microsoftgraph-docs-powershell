@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.ConfigurationManagement
-Module Guid: 313b0d3f-6ae1-4e50-b86e-103c90e69186
+Module Guid: bf097ffc-2d4f-4a67-8b38-6952662db8af
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.configurationmanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,11 +13,7 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.ConfigurationManagement Cmdlets
 ### [Get-MgBetaAdminConfigurationManagementConfigurationDrift](Get-MgBetaAdminConfigurationManagementConfigurationDrift.md)
 
-### [Get-MgBetaAdminConfigurationManagementConfigurationDrift](Get-MgBetaAdminConfigurationManagementConfigurationDrift.md)
-
 ### [Get-MgBetaAdminConfigurationManagementConfigurationDriftCount](Get-MgBetaAdminConfigurationManagementConfigurationDriftCount.md)
-
-### [Get-MgBetaAdminConfigurationManagementConfigurationMonitor](Get-MgBetaAdminConfigurationManagementConfigurationMonitor.md)
 
 ### [Get-MgBetaAdminConfigurationManagementConfigurationMonitor](Get-MgBetaAdminConfigurationManagementConfigurationMonitor.md)
 
@@ -27,15 +23,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResult](Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResult.md)
 
-### [Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResult](Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResult.md)
-
 ### [Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResultCount](Get-MgBetaAdminConfigurationManagementConfigurationMonitoringResultCount.md)
 
 ### [Get-MgBetaAdminConfigurationManagementConfigurationSnapshot](Get-MgBetaAdminConfigurationManagementConfigurationSnapshot.md)
-
-### [Get-MgBetaAdminConfigurationManagementConfigurationSnapshot](Get-MgBetaAdminConfigurationManagementConfigurationSnapshot.md)
-
-### [Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJob](Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJob.md)
 
 ### [Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJob](Get-MgBetaAdminConfigurationManagementConfigurationSnapshotJob.md)
 
@@ -46,23 +36,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaAdminConfigurationManagementConfigurationSnapshotJob](Remove-MgBetaAdminConfigurationManagementConfigurationSnapshotJob.md)
 
 ### [Update-MgBetaAdminConfigurationManagementConfigurationMonitor](Update-MgBetaAdminConfigurationManagementConfigurationMonitor.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
