@@ -15,6 +15,9 @@ title: Update-MgBetaUserOnenoteResource
 
 Update the navigation property resources in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Update-MgUserOnenoteResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

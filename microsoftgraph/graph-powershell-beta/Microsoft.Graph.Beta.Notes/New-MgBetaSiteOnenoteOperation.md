@@ -15,6 +15,9 @@ title: New-MgBetaSiteOnenoteOperation
 
 Create new navigation property to operations for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

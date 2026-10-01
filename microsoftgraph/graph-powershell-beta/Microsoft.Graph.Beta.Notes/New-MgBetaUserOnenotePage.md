@@ -15,6 +15,9 @@ title: New-MgBetaUserOnenotePage
 
 Create new navigation property to pages for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOnenotePage](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenotePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

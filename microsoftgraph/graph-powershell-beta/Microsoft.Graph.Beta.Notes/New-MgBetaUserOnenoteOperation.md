@@ -15,6 +15,9 @@ title: New-MgBetaUserOnenoteOperation
 
 Create new navigation property to operations for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
