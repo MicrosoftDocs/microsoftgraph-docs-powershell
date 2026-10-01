@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: 55249df3-c5e4-491e-b1e0-8f33dacb4ff4
+Module Guid: a13abeb1-5870-4e4f-aef3-5baa50109c9e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,13 +13,9 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.PersonalContacts Cmdlets
 ### [Get-MgUserContact](Get-MgUserContact.md)
 
-### [Get-MgUserContact](Get-MgUserContact.md)
-
 ### [Get-MgUserContactCount](Get-MgUserContactCount.md)
 
 ### [Get-MgUserContactDelta](Get-MgUserContactDelta.md)
-
-### [Get-MgUserContactExtension](Get-MgUserContactExtension.md)
 
 ### [Get-MgUserContactExtension](Get-MgUserContactExtension.md)
 
@@ -27,21 +23,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserContactFolder](Get-MgUserContactFolder.md)
 
-### [Get-MgUserContactFolder](Get-MgUserContactFolder.md)
-
 ### [Get-MgUserContactFolderChildFolder](Get-MgUserContactFolderChildFolder.md)
-
-### [Get-MgUserContactFolderChildFolder](Get-MgUserContactFolderChildFolder.md)
-
-### [Get-MgUserContactFolderChildFolderContact](Get-MgUserContactFolderChildFolderContact.md)
 
 ### [Get-MgUserContactFolderChildFolderContact](Get-MgUserContactFolderChildFolderContact.md)
 
 ### [Get-MgUserContactFolderChildFolderContactCount](Get-MgUserContactFolderChildFolderContactCount.md)
 
 ### [Get-MgUserContactFolderChildFolderContactDelta](Get-MgUserContactFolderChildFolderContactDelta.md)
-
-### [Get-MgUserContactFolderChildFolderContactExtension](Get-MgUserContactFolderChildFolderContactExtension.md)
 
 ### [Get-MgUserContactFolderChildFolderContactExtension](Get-MgUserContactFolderChildFolderContactExtension.md)
 
@@ -57,13 +45,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserContactFolderContact](Get-MgUserContactFolderContact.md)
 
-### [Get-MgUserContactFolderContact](Get-MgUserContactFolderContact.md)
-
 ### [Get-MgUserContactFolderContactCount](Get-MgUserContactFolderContactCount.md)
 
 ### [Get-MgUserContactFolderContactDelta](Get-MgUserContactFolderContactDelta.md)
-
-### [Get-MgUserContactFolderContactExtension](Get-MgUserContactFolderContactExtension.md)
 
 ### [Get-MgUserContactFolderContactExtension](Get-MgUserContactFolderContactExtension.md)
 
@@ -156,23 +140,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserContactFolderContactPhoto](Update-MgUserContactFolderContactPhoto.md)
 
 ### [Update-MgUserContactPhoto](Update-MgUserContactPhoto.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
