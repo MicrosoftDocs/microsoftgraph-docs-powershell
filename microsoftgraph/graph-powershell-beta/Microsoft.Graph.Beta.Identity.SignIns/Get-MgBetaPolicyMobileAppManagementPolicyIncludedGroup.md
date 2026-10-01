@@ -46,12 +46,17 @@ Get the list of groups that are included in a mobile app management policy.
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobileAppManagementPolicyId $mobileAppManagementPolicyId
+
+```
+This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
+
 
 ## PARAMETERS
 

@@ -64,12 +64,17 @@ Retrieve the properties and associations for a Trustframeworkkeyset.
 | Application | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaTrustFrameworkKeySet
+
+```
+This example shows how to use the Get-MgBetaTrustFrameworkKeySet Cmdlet.
+
 
 ## PARAMETERS
 

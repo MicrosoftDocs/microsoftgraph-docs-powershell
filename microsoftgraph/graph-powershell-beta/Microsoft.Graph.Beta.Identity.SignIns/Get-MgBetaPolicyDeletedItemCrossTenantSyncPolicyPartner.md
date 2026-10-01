@@ -58,12 +58,17 @@ This cmdlet has the following aliases,
 Read the properties and relationships of a policyDeletableItem object, which might be one of the following deleted policy types:\r- crossTenantAccessPolicyConfigurationPartner\r- crossTenantIdentitySyncPolicyPartner\r- conditionalAccessPolicy\r- namedLocation
 
 ## EXAMPLES
+### Example 1: Retrieve a deleted crossTenantIdentitySyncPolicyPartner object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner -CrossTenantIdentitySyncPolicyPartnerTenantId $crossTenantIdentitySyncPolicyPartnerTenantId
+
+```
+This example will retrieve a deleted crosstenantidentitysyncpolicypartner object
+
 
 ## PARAMETERS
 

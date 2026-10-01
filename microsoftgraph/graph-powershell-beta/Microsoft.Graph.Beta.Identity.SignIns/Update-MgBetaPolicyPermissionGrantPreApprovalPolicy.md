@@ -69,8 +69,9 @@ This cmdlet has the following aliases,
 Update the properties of a permissionGrantPreApprovalPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -115,6 +116,10 @@ $params = @{
 }
 
 Update-MgBetaPolicyPermissionGrantPreApprovalPolicy -PermissionGrantPreApprovalPolicyId $permissionGrantPreApprovalPolicyId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPolicyPermissionGrantPreApprovalPolicy Cmdlet.
+
 
 ## PARAMETERS
 

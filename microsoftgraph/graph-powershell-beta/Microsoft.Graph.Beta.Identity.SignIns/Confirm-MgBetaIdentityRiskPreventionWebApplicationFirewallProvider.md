@@ -74,8 +74,9 @@ Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
 
 ## EXAMPLES
+### Example 1: Verify a specific webApplicationFirewallProvider object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -85,7 +86,12 @@ $params = @{
 
 Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will verify a specific webapplicationfirewallprovider object
+
+### Example 2: Verify a specific webApplicationFirewallProviders object along with the details of their associated provider.
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -94,6 +100,10 @@ $params = @{
 }
 
 Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider -WebApplicationFirewallProviderId $webApplicationFirewallProviderId -ExpandProperty "provider"  -BodyParameter $params
+
+```
+This example will verify a specific webapplicationfirewallproviders object along with the details of their associated provider.
+
 
 ## PARAMETERS
 

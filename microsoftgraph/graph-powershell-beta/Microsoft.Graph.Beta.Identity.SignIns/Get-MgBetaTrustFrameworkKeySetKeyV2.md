@@ -66,12 +66,17 @@ Read the properties and relationships of a trustFrameworkKeyv2 object.
 | Application | TrustFrameworkKeySet.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaTrustFrameworkKeySetKeyV2 -TrustFrameworkKeySetId $trustFrameworkKeySetId -TrustFrameworkKey_v2Kid $trustFrameworkKey_v2Kid
+
+```
+This example shows how to use the Get-MgBetaTrustFrameworkKeySetKeyV2 Cmdlet.
+
 
 ## PARAMETERS
 

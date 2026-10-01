@@ -48,13 +48,18 @@ Deactive a hardware OATH token.
 It remains assigned to a user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDeactivateUserAuthenticationHardwareOathMethod -UserId $userId -HardwareOathAuthenticationMethodId $hardwareOathAuthenticationMethodId
+
+```
+This example shows how to use the Invoke-MgBetaDeactivateUserAuthenticationHardwareOathMethod Cmdlet.
+
 
 ## PARAMETERS
 
