@@ -15,6 +15,9 @@ title: Update-MgUserInsight
 
 Update the navigation property insights in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserInsight](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
