@@ -84,16 +84,6 @@ Update the navigation property roleDefinitions in roleManagement
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.ReadWrite.All, CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -930,6 +920,7 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementdevicemanagementroledefinition)
+
 
 
 
