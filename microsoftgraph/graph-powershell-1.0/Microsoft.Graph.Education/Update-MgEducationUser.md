@@ -103,8 +103,9 @@ This cmdlet has the following aliases,
 Update the properties of an educationUser object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Education
 
@@ -116,6 +117,10 @@ $params = @{
 }
 
 Update-MgEducationUser -EducationUserId $educationUserId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

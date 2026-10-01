@@ -51,16 +51,6 @@ This cmdlet has the following aliases,
 
 Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -590,6 +580,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategorydelta)
 - [](https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0)
+
 
 
 
