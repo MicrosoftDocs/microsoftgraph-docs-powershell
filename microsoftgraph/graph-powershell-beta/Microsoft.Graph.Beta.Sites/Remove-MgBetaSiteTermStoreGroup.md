@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete navigation property groups for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Remove-MgBetaSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
+```
+This example shows how to use the Remove-MgBetaSiteTermStoreGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
