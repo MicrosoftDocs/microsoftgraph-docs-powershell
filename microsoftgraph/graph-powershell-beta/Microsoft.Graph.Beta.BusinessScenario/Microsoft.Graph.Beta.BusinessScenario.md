@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.BusinessScenario
-Module Guid: dbe7acfd-3171-4af4-adea-dd98812e4d52
+Module Guid: b2c17a82-fd27-4bb0-ae97-7f2d1244ea05
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.businessscenario/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,8 +12,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.BusinessScenario Cmdlets
 ### [Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction](Clear-MgBetaSolutionBusinessScenarioPlannerTaskMessageReaction.md)
-
-### [Get-MgBetaSolutionBusinessScenario](Get-MgBetaSolutionBusinessScenario.md)
 
 ### [Get-MgBetaSolutionBusinessScenario](Get-MgBetaSolutionBusinessScenario.md)
 
@@ -29,11 +27,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization](Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization.md)
 
-### [Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization](Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalization.md)
-
 ### [Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalizationCount](Get-MgBetaSolutionBusinessScenarioPlannerPlanConfigurationLocalizationCount.md)
-
-### [Get-MgBetaSolutionBusinessScenarioPlannerTask](Get-MgBetaSolutionBusinessScenarioPlannerTask.md)
 
 ### [Get-MgBetaSolutionBusinessScenarioPlannerTask](Get-MgBetaSolutionBusinessScenarioPlannerTask.md)
 
@@ -46,8 +40,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSolutionBusinessScenarioPlannerTaskCount](Get-MgBetaSolutionBusinessScenarioPlannerTaskCount.md)
 
 ### [Get-MgBetaSolutionBusinessScenarioPlannerTaskDetail](Get-MgBetaSolutionBusinessScenarioPlannerTaskDetail.md)
-
-### [Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage](Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
 
 ### [Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage](Get-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
 
@@ -112,23 +104,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage](Update-MgBetaSolutionBusinessScenarioPlannerTaskMessage.md)
 
 ### [Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat](Update-MgBetaSolutionBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
