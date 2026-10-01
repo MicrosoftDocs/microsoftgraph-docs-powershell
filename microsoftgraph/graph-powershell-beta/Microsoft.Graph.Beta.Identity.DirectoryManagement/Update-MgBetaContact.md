@@ -1126,7 +1126,7 @@ It's a free-format string value, for example, 'United States'.
   [State <String>]: The state.
   [Street <String>]: The street.
 
-BODYPARAMETER <IMicrosoftGraphOrgContact>: orgContact
+BODYPARAMETER `<IMicrosoftGraphOrgContact>`: orgContact
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -1220,7 +1220,7 @@ Read-only.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -1288,7 +1288,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [UsageRightId <String>]: The unique identifier of usageRight
   [UserId <String>]: The unique identifier of user
 
-MANAGER <IMicrosoftGraphDirectoryObject>: directoryObject
+MANAGER `<IMicrosoftGraphDirectoryObject>`: directoryObject
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1315,7 +1315,7 @@ Other objects contain the same value for the property.
 Current possible values: UserPrincipalName or ProxyAddress
   [Value <String>]: Value of the property causing the error.
 
-ONPREMISESSYNCBEHAVIOR <IMicrosoftGraphOnPremisesSyncBehavior>: onPremisesSyncBehavior
+ONPREMISESSYNCBEHAVIOR `<IMicrosoftGraphOnPremisesSyncBehavior>`: onPremisesSyncBehavior
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1352,3 +1352,25 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontact)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
