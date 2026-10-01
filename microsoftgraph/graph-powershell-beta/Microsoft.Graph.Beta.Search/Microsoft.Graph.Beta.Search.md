@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Search
-Module Guid: edf89755-fb53-4d87-9424-3cf610d1e817
+Module Guid: 02050197-d1b0-43fa-bdc7-518e8765c274
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.search/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,13 +17,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaExternalAuthorizationSystem](Get-MgBetaExternalAuthorizationSystem.md)
 
-### [Get-MgBetaExternalAuthorizationSystem](Get-MgBetaExternalAuthorizationSystem.md)
-
 ### [Get-MgBetaExternalAuthorizationSystemCount](Get-MgBetaExternalAuthorizationSystemCount.md)
 
 ### [Get-MgBetaExternalAuthorizationSystemDataCollectionInfo](Get-MgBetaExternalAuthorizationSystemDataCollectionInfo.md)
-
-### [Get-MgBetaExternalConnection](Get-MgBetaExternalConnection.md)
 
 ### [Get-MgBetaExternalConnection](Get-MgBetaExternalConnection.md)
 
@@ -31,21 +27,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaExternalConnectionGroup](Get-MgBetaExternalConnectionGroup.md)
 
-### [Get-MgBetaExternalConnectionGroup](Get-MgBetaExternalConnectionGroup.md)
-
 ### [Get-MgBetaExternalConnectionGroupCount](Get-MgBetaExternalConnectionGroupCount.md)
-
-### [Get-MgBetaExternalConnectionGroupMember](Get-MgBetaExternalConnectionGroupMember.md)
 
 ### [Get-MgBetaExternalConnectionGroupMember](Get-MgBetaExternalConnectionGroupMember.md)
 
 ### [Get-MgBetaExternalConnectionGroupMemberCount](Get-MgBetaExternalConnectionGroupMemberCount.md)
 
 ### [Get-MgBetaExternalConnectionItem](Get-MgBetaExternalConnectionItem.md)
-
-### [Get-MgBetaExternalConnectionItem](Get-MgBetaExternalConnectionItem.md)
-
-### [Get-MgBetaExternalConnectionItemActivity](Get-MgBetaExternalConnectionItemActivity.md)
 
 ### [Get-MgBetaExternalConnectionItemActivity](Get-MgBetaExternalConnectionItemActivity.md)
 
@@ -54,8 +42,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaExternalConnectionItemActivityPerformedBy](Get-MgBetaExternalConnectionItemActivityPerformedBy.md)
 
 ### [Get-MgBetaExternalConnectionItemCount](Get-MgBetaExternalConnectionItemCount.md)
-
-### [Get-MgBetaExternalConnectionOperation](Get-MgBetaExternalConnectionOperation.md)
 
 ### [Get-MgBetaExternalConnectionOperation](Get-MgBetaExternalConnectionOperation.md)
 
@@ -69,13 +55,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaExternalIndustryDataConnector](Get-MgBetaExternalIndustryDataConnector.md)
 
-### [Get-MgBetaExternalIndustryDataConnector](Get-MgBetaExternalIndustryDataConnector.md)
-
 ### [Get-MgBetaExternalIndustryDataConnectorCount](Get-MgBetaExternalIndustryDataConnectorCount.md)
 
 ### [Get-MgBetaExternalIndustryDataConnectorSourceSystem](Get-MgBetaExternalIndustryDataConnectorSourceSystem.md)
-
-### [Get-MgBetaExternalIndustryDataInboundFlow](Get-MgBetaExternalIndustryDataInboundFlow.md)
 
 ### [Get-MgBetaExternalIndustryDataInboundFlow](Get-MgBetaExternalIndustryDataInboundFlow.md)
 
@@ -87,11 +69,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaExternalIndustryDataOperation](Get-MgBetaExternalIndustryDataOperation.md)
 
-### [Get-MgBetaExternalIndustryDataOperation](Get-MgBetaExternalIndustryDataOperation.md)
-
 ### [Get-MgBetaExternalIndustryDataOperationCount](Get-MgBetaExternalIndustryDataOperationCount.md)
-
-### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet.md)
 
 ### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSet.md)
 
@@ -99,11 +77,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
 
-### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow.md)
-
 ### [Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlowCount](Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlowCount.md)
-
-### [Get-MgBetaExternalIndustryDataReferenceDefinition](Get-MgBetaExternalIndustryDataReferenceDefinition.md)
 
 ### [Get-MgBetaExternalIndustryDataReferenceDefinition](Get-MgBetaExternalIndustryDataReferenceDefinition.md)
 
@@ -111,15 +85,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaExternalIndustryDataRoleGroup](Get-MgBetaExternalIndustryDataRoleGroup.md)
 
-### [Get-MgBetaExternalIndustryDataRoleGroup](Get-MgBetaExternalIndustryDataRoleGroup.md)
-
 ### [Get-MgBetaExternalIndustryDataRoleGroupCount](Get-MgBetaExternalIndustryDataRoleGroupCount.md)
 
 ### [Get-MgBetaExternalIndustryDataRun](Get-MgBetaExternalIndustryDataRun.md)
-
-### [Get-MgBetaExternalIndustryDataRun](Get-MgBetaExternalIndustryDataRun.md)
-
-### [Get-MgBetaExternalIndustryDataRunActivity](Get-MgBetaExternalIndustryDataRunActivity.md)
 
 ### [Get-MgBetaExternalIndustryDataRunActivity](Get-MgBetaExternalIndustryDataRunActivity.md)
 
@@ -131,11 +99,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaExternalIndustryDataSourceSystem](Get-MgBetaExternalIndustryDataSourceSystem.md)
 
-### [Get-MgBetaExternalIndustryDataSourceSystem](Get-MgBetaExternalIndustryDataSourceSystem.md)
-
 ### [Get-MgBetaExternalIndustryDataSourceSystemCount](Get-MgBetaExternalIndustryDataSourceSystemCount.md)
-
-### [Get-MgBetaExternalIndustryDataYear](Get-MgBetaExternalIndustryDataYear.md)
 
 ### [Get-MgBetaExternalIndustryDataYear](Get-MgBetaExternalIndustryDataYear.md)
 
@@ -143,19 +107,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSearchAcronym](Get-MgBetaSearchAcronym.md)
 
-### [Get-MgBetaSearchAcronym](Get-MgBetaSearchAcronym.md)
-
 ### [Get-MgBetaSearchAcronymCount](Get-MgBetaSearchAcronymCount.md)
-
-### [Get-MgBetaSearchBookmark](Get-MgBetaSearchBookmark.md)
 
 ### [Get-MgBetaSearchBookmark](Get-MgBetaSearchBookmark.md)
 
 ### [Get-MgBetaSearchBookmarkCount](Get-MgBetaSearchBookmarkCount.md)
 
 ### [Get-MgBetaSearchEntity](Get-MgBetaSearchEntity.md)
-
-### [Get-MgBetaSearchQna](Get-MgBetaSearchQna.md)
 
 ### [Get-MgBetaSearchQna](Get-MgBetaSearchQna.md)
 
@@ -296,23 +254,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaSearchEntity](Update-MgBetaSearchEntity.md)
 
 ### [Update-MgBetaSearchQna](Update-MgBetaSearchQna.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
