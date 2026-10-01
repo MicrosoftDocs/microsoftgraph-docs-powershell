@@ -564,7 +564,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoredriveexclusionunit)
+- [Get-MgBetaSolutionBackupRestoreDriveExclusionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestoredriveexclusionunit)
 
 
 
