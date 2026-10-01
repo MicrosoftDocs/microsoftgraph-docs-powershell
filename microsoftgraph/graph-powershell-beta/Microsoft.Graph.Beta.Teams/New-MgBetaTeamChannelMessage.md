@@ -100,8 +100,9 @@ Send a new chatMessage in the specified channel.
 | Application | Teamwork.Migrate.All,  |
 
 ## EXAMPLES
+### Example 1: Send a Hello World message in a channel
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -113,7 +114,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will send a hello world message in a channel
+
+### Example 2: @mentions a user in a channel message
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -139,7 +145,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example @mentions a user in a channel message
+
+### Example 3: Send message that contains cards
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -157,9 +168,7 @@ $params = @{
 			content = '{
   "title": "This is an example of posting a card",
   "subtitle": "<h3>This is the subtitle</h3>",
-  "text": "Here is some body text.
-<br>\rAnd a <a href=\"http://microsoft.com/\">hyperlink</a>.
-<br>\rAnd below that is some buttons:",
+  "text": "Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -178,15 +187,19 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 4
+```
+This example will send message that contains cards
+
+### Example 4: Send a message with file attachment in it
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "Here's the latest budget.
-<attachment id="153fa47d-18c9-4179-be08-9879815a9f90"></attachment>"
+		content = "Here's the latest budget. <attachment id="153fa47d-18c9-4179-be08-9879815a9f90"></attachment>"
 	}
 	attachments = @(
 		@{
@@ -200,7 +213,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 5
+```
+This example will send a message with file attachment in it
+
+### Example 5: Send a card with inline images
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -315,7 +333,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 6
+```
+This example will send a card with inline images
+
+### Example 6: @mention a channel in a channel message
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -341,7 +364,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 7
+```
+This example will @mention a channel in a channel message
+
+### Example 7: @mention a team in a channel message
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -371,7 +399,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 8
+```
+This example will @mention a team in a channel message
+
+### Example 8: @mention a tag in a channel message
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -396,7 +429,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 9
+```
+This example will @mention a tag in a channel message
+
+### Example 9: Send message that contains cards that are attributed to a Teams app
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -414,9 +452,7 @@ $params = @{
 			content = '{
   "title": "This is an example of posting a card",
   "subtitle": "<h3>This is the subtitle</h3>",
-  "text": "Here is some body text.
-<br>\rAnd a <a href=\"http://microsoft.com/\">hyperlink</a>.
-<br>\rAnd below that is some buttons:",
+  "text": "Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -436,7 +472,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 10
+```
+This example will send message that contains cards that are attributed to a teams app
+
+### Example 10: Send a message that contains an announcement
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -471,6 +512,10 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example will send a message that contains an announcement
+
 
 ## PARAMETERS
 

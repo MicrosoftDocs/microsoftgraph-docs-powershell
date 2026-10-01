@@ -79,8 +79,9 @@ Clock in to start a timeCard.
 | Application | Schedule.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Clock in as yourself
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -94,7 +95,12 @@ $params = @{
 
 Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will clock in as yourself
+
+### Example 2: Clock in on behalf of another user
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -104,6 +110,10 @@ $params = @{
 }
 
 Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
+
+```
+This example will clock in on behalf of another user
+
 
 ## PARAMETERS
 

@@ -56,12 +56,17 @@ Get the userTeamwork settings for a specified user, which includes the Microsoft
 | Application | UserTeamwork.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaUserTeamwork -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserTeamwork Cmdlet.
+
 
 ## PARAMETERS
 

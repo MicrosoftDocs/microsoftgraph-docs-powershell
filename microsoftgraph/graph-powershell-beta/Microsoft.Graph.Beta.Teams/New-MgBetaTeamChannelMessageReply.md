@@ -100,8 +100,9 @@ Send a new reply to a chatMessage in a specified channel.
 | Application | Teamwork.Migrate.All,  |
 
 ## EXAMPLES
+### Example 1: Send a new reply to a chatMessage
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -114,7 +115,12 @@ $params = @{
 
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will send a new reply to a chatmessage
+
+### Example 2: Import messages
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -133,6 +139,10 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+```
+This example will import messages
+
 
 ## PARAMETERS
 
