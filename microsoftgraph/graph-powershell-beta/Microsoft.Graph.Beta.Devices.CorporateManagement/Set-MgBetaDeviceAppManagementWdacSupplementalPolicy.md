@@ -111,7 +111,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -379,7 +379,7 @@ HelpMessage: ''
 
 ### -WdacPolicyAssignments
 
-.
+
 To construct, see NOTES section for WDACPOLICYASSIGNMENTS properties and create a hash table.
 
 ```yaml
