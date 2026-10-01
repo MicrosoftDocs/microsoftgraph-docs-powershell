@@ -83,7 +83,7 @@ Update the navigation property jobs in print
 
 ### -AcknowledgedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -186,7 +186,7 @@ HelpMessage: ''
 
 ### -CompletedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -346,7 +346,7 @@ HelpMessage: ''
 
 ### -Documents
 
-.
+
 To construct, see NOTES section for DOCUMENTS properties and create a hash table.
 
 ```yaml
@@ -374,7 +374,7 @@ HelpMessage: ''
 
 ### -ErrorCode
 
-.
+
 
 ```yaml
 Type: System.Int32
