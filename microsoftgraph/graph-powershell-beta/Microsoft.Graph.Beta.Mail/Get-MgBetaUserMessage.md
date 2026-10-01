@@ -17,6 +17,9 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
