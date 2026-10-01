@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.People
-Module Guid: c3e04069-7fc7-47ff-8827-faf1af744181
+Module Guid: 37c6f7e0-a254-44a7-ac2e-4c846ded4d32
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.people/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,11 +13,7 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.People Cmdlets
 ### [Get-MgBetaUserActivityStatistics](Get-MgBetaUserActivityStatistics.md)
 
-### [Get-MgBetaUserActivityStatistics](Get-MgBetaUserActivityStatistics.md)
-
 ### [Get-MgBetaUserAnalyticActivityStatisticsCount](Get-MgBetaUserAnalyticActivityStatisticsCount.md)
-
-### [Get-MgBetaUserPerson](Get-MgBetaUserPerson.md)
 
 ### [Get-MgBetaUserPerson](Get-MgBetaUserPerson.md)
 
@@ -27,11 +23,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileAccount](Get-MgBetaUserProfileAccount.md)
 
-### [Get-MgBetaUserProfileAccount](Get-MgBetaUserProfileAccount.md)
-
 ### [Get-MgBetaUserProfileAccountCount](Get-MgBetaUserProfileAccountCount.md)
-
-### [Get-MgBetaUserProfileAddress](Get-MgBetaUserProfileAddress.md)
 
 ### [Get-MgBetaUserProfileAddress](Get-MgBetaUserProfileAddress.md)
 
@@ -39,11 +31,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileAnniversary](Get-MgBetaUserProfileAnniversary.md)
 
-### [Get-MgBetaUserProfileAnniversary](Get-MgBetaUserProfileAnniversary.md)
-
 ### [Get-MgBetaUserProfileAnniversaryCount](Get-MgBetaUserProfileAnniversaryCount.md)
-
-### [Get-MgBetaUserProfileAward](Get-MgBetaUserProfileAward.md)
 
 ### [Get-MgBetaUserProfileAward](Get-MgBetaUserProfileAward.md)
 
@@ -51,11 +39,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileCertification](Get-MgBetaUserProfileCertification.md)
 
-### [Get-MgBetaUserProfileCertification](Get-MgBetaUserProfileCertification.md)
-
 ### [Get-MgBetaUserProfileCertificationCount](Get-MgBetaUserProfileCertificationCount.md)
-
-### [Get-MgBetaUserProfileEducationalActivity](Get-MgBetaUserProfileEducationalActivity.md)
 
 ### [Get-MgBetaUserProfileEducationalActivity](Get-MgBetaUserProfileEducationalActivity.md)
 
@@ -63,11 +47,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileEmail](Get-MgBetaUserProfileEmail.md)
 
-### [Get-MgBetaUserProfileEmail](Get-MgBetaUserProfileEmail.md)
-
 ### [Get-MgBetaUserProfileEmailCount](Get-MgBetaUserProfileEmailCount.md)
-
-### [Get-MgBetaUserProfileInterest](Get-MgBetaUserProfileInterest.md)
 
 ### [Get-MgBetaUserProfileInterest](Get-MgBetaUserProfileInterest.md)
 
@@ -75,11 +55,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileLanguage](Get-MgBetaUserProfileLanguage.md)
 
-### [Get-MgBetaUserProfileLanguage](Get-MgBetaUserProfileLanguage.md)
-
 ### [Get-MgBetaUserProfileLanguageCount](Get-MgBetaUserProfileLanguageCount.md)
-
-### [Get-MgBetaUserProfileName](Get-MgBetaUserProfileName.md)
 
 ### [Get-MgBetaUserProfileName](Get-MgBetaUserProfileName.md)
 
@@ -87,11 +63,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileNote](Get-MgBetaUserProfileNote.md)
 
-### [Get-MgBetaUserProfileNote](Get-MgBetaUserProfileNote.md)
-
 ### [Get-MgBetaUserProfileNoteCount](Get-MgBetaUserProfileNoteCount.md)
-
-### [Get-MgBetaUserProfilePatent](Get-MgBetaUserProfilePatent.md)
 
 ### [Get-MgBetaUserProfilePatent](Get-MgBetaUserProfilePatent.md)
 
@@ -99,11 +71,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfilePhone](Get-MgBetaUserProfilePhone.md)
 
-### [Get-MgBetaUserProfilePhone](Get-MgBetaUserProfilePhone.md)
-
 ### [Get-MgBetaUserProfilePhoneCount](Get-MgBetaUserProfilePhoneCount.md)
-
-### [Get-MgBetaUserProfilePosition](Get-MgBetaUserProfilePosition.md)
 
 ### [Get-MgBetaUserProfilePosition](Get-MgBetaUserProfilePosition.md)
 
@@ -111,11 +79,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileProject](Get-MgBetaUserProfileProject.md)
 
-### [Get-MgBetaUserProfileProject](Get-MgBetaUserProfileProject.md)
-
 ### [Get-MgBetaUserProfileProjectCount](Get-MgBetaUserProfileProjectCount.md)
-
-### [Get-MgBetaUserProfilePublication](Get-MgBetaUserProfilePublication.md)
 
 ### [Get-MgBetaUserProfilePublication](Get-MgBetaUserProfilePublication.md)
 
@@ -123,17 +87,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserProfileSkill](Get-MgBetaUserProfileSkill.md)
 
-### [Get-MgBetaUserProfileSkill](Get-MgBetaUserProfileSkill.md)
-
 ### [Get-MgBetaUserProfileSkillCount](Get-MgBetaUserProfileSkillCount.md)
 
 ### [Get-MgBetaUserProfileWebAccount](Get-MgBetaUserProfileWebAccount.md)
 
-### [Get-MgBetaUserProfileWebAccount](Get-MgBetaUserProfileWebAccount.md)
-
 ### [Get-MgBetaUserProfileWebAccountCount](Get-MgBetaUserProfileWebAccountCount.md)
-
-### [Get-MgBetaUserProfileWebsite](Get-MgBetaUserProfileWebsite.md)
 
 ### [Get-MgBetaUserProfileWebsite](Get-MgBetaUserProfileWebsite.md)
 
@@ -262,23 +220,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaUserProfileWebAccount](Update-MgBetaUserProfileWebAccount.md)
 
 ### [Update-MgBetaUserProfileWebsite](Update-MgBetaUserProfileWebsite.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
