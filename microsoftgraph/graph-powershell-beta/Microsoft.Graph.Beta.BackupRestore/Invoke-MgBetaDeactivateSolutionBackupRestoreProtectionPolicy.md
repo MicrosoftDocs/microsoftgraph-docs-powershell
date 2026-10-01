@@ -19,6 +19,9 @@ Any backups taken before deactivation are retained according to the retention po
 You can restore data using previous restore points even after deactivation.
 To reactivate a deactivated policy, use the activate API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Invoke-MgDeactivateSolutionBackupRestoreProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Deactivate (Default)

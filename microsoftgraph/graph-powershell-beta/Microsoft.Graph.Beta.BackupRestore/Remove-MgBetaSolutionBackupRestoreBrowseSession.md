@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreBrowseSession
 
 Delete navigation property browseSessions for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

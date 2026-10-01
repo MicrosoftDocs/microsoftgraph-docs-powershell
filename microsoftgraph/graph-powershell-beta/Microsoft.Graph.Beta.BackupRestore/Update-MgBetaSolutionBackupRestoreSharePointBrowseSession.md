@@ -15,6 +15,9 @@ title: Update-MgBetaSolutionBackupRestoreSharePointBrowseSession
 
 Update the navigation property sharePointBrowseSessions in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreSharePointBrowseSession](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreSharePointBrowseSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
