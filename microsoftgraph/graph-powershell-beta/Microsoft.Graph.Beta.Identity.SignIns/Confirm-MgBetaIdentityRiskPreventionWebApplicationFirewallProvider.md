@@ -16,6 +16,9 @@ title: Confirm-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider
 Initiate a verification operation for a webApplicationFirewallProvider object.
 This API triggers provider-specific verification logic and returns a webApplicationFirewallVerificationModel object describing the verification result.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgIdentityRiskPreventionWebApplicationFirewallProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### VerifyExpanded (Default)

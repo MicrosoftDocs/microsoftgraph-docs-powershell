@@ -15,6 +15,9 @@ title: Restore-MgBetaIdentityConditionalAccessPolicy
 
 Restore a deleted conditionalAccessPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Restore-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

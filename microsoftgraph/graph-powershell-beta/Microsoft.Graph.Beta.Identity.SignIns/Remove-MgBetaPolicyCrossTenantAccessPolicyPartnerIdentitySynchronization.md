@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 Delete the user and group synchronization policy for a partner-specific configuration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

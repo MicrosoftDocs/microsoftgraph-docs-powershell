@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef
 
 Get ref of userFlowIdentityProviders from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

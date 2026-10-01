@@ -15,6 +15,9 @@ title: Get-MgBetaRiskyUserCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
