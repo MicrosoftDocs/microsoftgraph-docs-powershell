@@ -49,12 +49,17 @@ Retrieve a list of classes owned by a school.
 | Application | EduRoster.Read.All, EduRoster.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationSchoolClass -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Get-MgBetaEducationSchoolClass Cmdlet.
+
 
 ## PARAMETERS
 
