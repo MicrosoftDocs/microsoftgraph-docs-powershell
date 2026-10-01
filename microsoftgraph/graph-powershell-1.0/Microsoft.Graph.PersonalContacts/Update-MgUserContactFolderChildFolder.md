@@ -1027,7 +1027,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfolder)
+- [Update-MgUserContactFolderChildFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfolder)
 
 
 

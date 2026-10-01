@@ -489,7 +489,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactextension)
+- [New-MgUserContactExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactextension)
 
 
 
