@@ -415,8 +415,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname)
-- [](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
+- [Remove-MgUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserbyuserprincipalname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
 
 
 

@@ -383,8 +383,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserbyuserprincipalname)
-- [](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
+- [Get-MgUserByUserPrincipalName](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserbyuserprincipalname)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
 
 
 

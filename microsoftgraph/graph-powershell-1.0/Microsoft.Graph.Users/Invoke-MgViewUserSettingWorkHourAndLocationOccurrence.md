@@ -555,8 +555,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgviewusersettingworkhourandlocationoccurrence)
-- [](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0)
+- [Invoke-MgViewUserSettingWorkHourAndLocationOccurrence](https://learn.microsoft.com/powershell/module/microsoft.graph.users/invoke-mgviewusersettingworkhourandlocationoccurrence)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0)
 
 
 
