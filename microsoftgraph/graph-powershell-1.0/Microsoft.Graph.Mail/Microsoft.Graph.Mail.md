@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: 9d23832b-c4e5-42c6-9945-9632a1c53058
+Module Guid: dbc5ce6d-8bf3-413a-acb8-70de7c3896ba
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.mail/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -25,15 +25,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserInferenceClassificationOverride](Get-MgUserInferenceClassificationOverride.md)
 
-### [Get-MgUserInferenceClassificationOverride](Get-MgUserInferenceClassificationOverride.md)
-
 ### [Get-MgUserInferenceClassificationOverrideCount](Get-MgUserInferenceClassificationOverrideCount.md)
 
 ### [Get-MgUserMailFolder](Get-MgUserMailFolder.md)
-
-### [Get-MgUserMailFolder](Get-MgUserMailFolder.md)
-
-### [Get-MgUserMailFolderChildFolder](Get-MgUserMailFolderChildFolder.md)
 
 ### [Get-MgUserMailFolderChildFolder](Get-MgUserMailFolderChildFolder.md)
 
@@ -42,10 +36,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserMailFolderChildFolderDelta](Get-MgUserMailFolderChildFolderDelta.md)
 
 ### [Get-MgUserMailFolderChildFolderMessage](Get-MgUserMailFolderChildFolderMessage.md)
-
-### [Get-MgUserMailFolderChildFolderMessage](Get-MgUserMailFolderChildFolderMessage.md)
-
-### [Get-MgUserMailFolderChildFolderMessageAttachment](Get-MgUserMailFolderChildFolderMessageAttachment.md)
 
 ### [Get-MgUserMailFolderChildFolderMessageAttachment](Get-MgUserMailFolderChildFolderMessageAttachment.md)
 
@@ -59,11 +49,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserMailFolderChildFolderMessageExtension](Get-MgUserMailFolderChildFolderMessageExtension.md)
 
-### [Get-MgUserMailFolderChildFolderMessageExtension](Get-MgUserMailFolderChildFolderMessageExtension.md)
-
 ### [Get-MgUserMailFolderChildFolderMessageExtensionCount](Get-MgUserMailFolderChildFolderMessageExtensionCount.md)
-
-### [Get-MgUserMailFolderChildFolderMessageRule](Get-MgUserMailFolderChildFolderMessageRule.md)
 
 ### [Get-MgUserMailFolderChildFolderMessageRule](Get-MgUserMailFolderChildFolderMessageRule.md)
 
@@ -75,10 +61,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserMailFolderMessage](Get-MgUserMailFolderMessage.md)
 
-### [Get-MgUserMailFolderMessage](Get-MgUserMailFolderMessage.md)
-
-### [Get-MgUserMailFolderMessageAttachment](Get-MgUserMailFolderMessageAttachment.md)
-
 ### [Get-MgUserMailFolderMessageAttachment](Get-MgUserMailFolderMessageAttachment.md)
 
 ### [Get-MgUserMailFolderMessageAttachmentCount](Get-MgUserMailFolderMessageAttachmentCount.md)
@@ -89,21 +71,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserMailFolderMessageExtension](Get-MgUserMailFolderMessageExtension.md)
 
-### [Get-MgUserMailFolderMessageExtension](Get-MgUserMailFolderMessageExtension.md)
-
 ### [Get-MgUserMailFolderMessageExtensionCount](Get-MgUserMailFolderMessageExtensionCount.md)
-
-### [Get-MgUserMailFolderMessageRule](Get-MgUserMailFolderMessageRule.md)
 
 ### [Get-MgUserMailFolderMessageRule](Get-MgUserMailFolderMessageRule.md)
 
 ### [Get-MgUserMailFolderMessageRuleCount](Get-MgUserMailFolderMessageRuleCount.md)
 
 ### [Get-MgUserMessage](Get-MgUserMessage.md)
-
-### [Get-MgUserMessage](Get-MgUserMessage.md)
-
-### [Get-MgUserMessageAttachment](Get-MgUserMessageAttachment.md)
 
 ### [Get-MgUserMessageAttachment](Get-MgUserMessageAttachment.md)
 
@@ -114,8 +88,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserMessageCount](Get-MgUserMessageCount.md)
 
 ### [Get-MgUserMessageDelta](Get-MgUserMessageDelta.md)
-
-### [Get-MgUserMessageExtension](Get-MgUserMessageExtension.md)
 
 ### [Get-MgUserMessageExtension](Get-MgUserMessageExtension.md)
 
@@ -280,23 +252,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserMessage](Update-MgUserMessage.md)
 
 ### [Update-MgUserMessageExtension](Update-MgUserMessageExtension.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
