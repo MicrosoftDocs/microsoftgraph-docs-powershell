@@ -79,7 +79,7 @@ HelpMessage: ''
 
 ### -ApproveAllPermissions
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -100,7 +100,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-.
+
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -228,7 +228,7 @@ HelpMessage: ''
 
 ### -PackageIds
 
-.
+
 
 ```yaml
 Type: System.String[]
