@@ -15,6 +15,9 @@ title: Remove-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment
 
 Delete navigation property assignments for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

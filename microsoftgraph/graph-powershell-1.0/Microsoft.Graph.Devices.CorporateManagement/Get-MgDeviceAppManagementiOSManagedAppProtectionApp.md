@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementiOSManagedAppProtectionApp
 
 List of apps to which the policy is deployed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
