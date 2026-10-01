@@ -63,16 +63,6 @@ Retrieve the properties and relationships of a plannerGoal object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Tasks.Read.All, Tasks.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -551,6 +541,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannergoal)
 - [](https://learn.microsoft.com/graph/api/plannergoal-get?view=graph-rest-beta)
+
+
 
 
 

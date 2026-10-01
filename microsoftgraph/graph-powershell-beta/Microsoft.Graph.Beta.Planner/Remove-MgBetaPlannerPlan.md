@@ -56,12 +56,18 @@ Delete a plannerPlan object.
 | Application | Tasks.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Planner
 
-Remove-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Remove-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Remove-MgBetaPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 
