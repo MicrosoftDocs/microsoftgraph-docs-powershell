@@ -15,6 +15,9 @@ title: Remove-MgBetaAdminConfigurationManagementConfigurationSnapshotJob
 
 Delete a configurationSnapshotJob object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminConfigurationManagementConfigurationSnapshotJob](/powershell/module/Microsoft.Graph.ConfigurationManagement/Remove-MgAdminConfigurationManagementConfigurationSnapshotJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
