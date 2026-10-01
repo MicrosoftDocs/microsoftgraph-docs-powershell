@@ -15,6 +15,9 @@ title: Remove-MgSecurityAttackSimulationOperation
 
 Delete navigation property operations for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseSearch
 
 Read the properties and relationships of an ediscoverySearch object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

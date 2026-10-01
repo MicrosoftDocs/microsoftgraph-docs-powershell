@@ -15,6 +15,9 @@ title: Remove-MgSecurityCollaborationAnalyzedEmail
 
 Delete navigation property analyzedEmails for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCollaborationAnalyzedEmail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

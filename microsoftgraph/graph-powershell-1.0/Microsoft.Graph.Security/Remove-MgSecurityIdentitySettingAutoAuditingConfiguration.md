@@ -15,6 +15,9 @@ title: Remove-MgSecurityIdentitySettingAutoAuditingConfiguration
 
 Delete navigation property autoAuditingConfiguration for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIdentitySettingAutoAuditingConfiguration](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIdentitySettingAutoAuditingConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

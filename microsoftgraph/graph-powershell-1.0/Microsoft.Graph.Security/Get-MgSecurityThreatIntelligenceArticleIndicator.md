@@ -15,6 +15,9 @@ title: Get-MgSecurityThreatIntelligenceArticleIndicator
 
 Read the properties and relationships of an articleIndicator object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

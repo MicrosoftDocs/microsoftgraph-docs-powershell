@@ -15,6 +15,9 @@ title: New-MgSecurityIdentityHealthIssue
 
 Create new navigation property to healthIssues for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentityHealthIssue](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentityHealthIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

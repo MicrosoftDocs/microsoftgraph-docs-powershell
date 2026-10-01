@@ -15,6 +15,9 @@ title: Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource
 
 noncustodialDataSource sources that are included in the eDiscovery search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
