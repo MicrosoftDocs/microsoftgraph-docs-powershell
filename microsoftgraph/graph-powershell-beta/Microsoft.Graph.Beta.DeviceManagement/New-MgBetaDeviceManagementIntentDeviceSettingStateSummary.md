@@ -656,7 +656,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>: Entity that represents device setting state summary for an intent
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary>`: Entity that represents device setting state summary for an intent
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -668,7 +668,7 @@ Read-only.
   [RemediatedCount <Int32?>]: Number of remediated devices
   [SettingName <String>]: Name of a setting
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -781,3 +781,25 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementintentdevicesettingstatesummary)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -635,7 +635,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementComplianceActionItem>: Scheduled Action for Rule
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementComplianceActionItem>`: Scheduled Action for Rule
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -646,7 +646,7 @@ Valid values 0 to 8760
 This collection can contain a maximum of 100 elements.
   [NotificationTemplateId <String>]: What notification Message template to use
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -759,3 +759,25 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcompliancepolicyscheduledactionforrulescheduledactionconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

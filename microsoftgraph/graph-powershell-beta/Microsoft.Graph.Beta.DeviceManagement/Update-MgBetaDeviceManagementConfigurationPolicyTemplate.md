@@ -775,7 +775,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>: Device Management Configuration Policy Template
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: Device Management Configuration Policy Template
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -834,7 +834,7 @@ Applicable for reusable setting.
   [Technologies <DeviceManagementConfigurationTechnologies?>]: Describes which technology this setting can be deployed with
   [TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]: Describes the TemplateFamily for the Template entity
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -992,3 +992,25 @@ Applicable for reusable setting.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicytemplate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
