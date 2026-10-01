@@ -15,6 +15,9 @@ title: Remove-MgEducationMeAssignmentRubricByRef
 
 Delete ref of navigation property rubric for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationMeAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeAssignmentRubricByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

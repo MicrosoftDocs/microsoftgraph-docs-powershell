@@ -15,6 +15,9 @@ title: Get-MgEducationReportReadingCoachPassageCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationReportReadingCoachPassageCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationReportReadingCoachPassageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
