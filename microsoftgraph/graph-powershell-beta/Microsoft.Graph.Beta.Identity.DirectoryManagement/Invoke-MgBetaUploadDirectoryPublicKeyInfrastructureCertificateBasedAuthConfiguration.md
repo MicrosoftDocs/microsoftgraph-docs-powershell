@@ -76,6 +76,14 @@ Only one operation can run at a time and this operation can take up to 30 minute
 To know whether another upload is in progress, call the Get certificateBasedAuthPki.
 The status property will have the value running.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | PublicKeyInfrastructure.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | PublicKeyInfrastructure.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

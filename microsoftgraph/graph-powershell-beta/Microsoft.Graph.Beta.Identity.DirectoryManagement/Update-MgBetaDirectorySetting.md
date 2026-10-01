@@ -67,6 +67,14 @@ This cmdlet has the following aliases,
 
 Update the properties of a specific directory setting object.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupSettings.ReadWrite.All, Directory.ReadWrite.All, Policy.ReadWrite.Authorization,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
