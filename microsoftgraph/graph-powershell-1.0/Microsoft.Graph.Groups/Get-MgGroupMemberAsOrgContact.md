@@ -593,7 +593,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasorgcontact)
+- [Get-MgGroupMemberAsOrgContact](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberasorgcontact)
 
 
 

@@ -365,7 +365,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantcount)
+- [Get-MgGroupPermissionGrantCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantcount)
 
 
 

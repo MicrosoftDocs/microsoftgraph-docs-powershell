@@ -530,7 +530,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostextension)
+- [New-MgGroupThreadPostExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostextension)
 
 
 

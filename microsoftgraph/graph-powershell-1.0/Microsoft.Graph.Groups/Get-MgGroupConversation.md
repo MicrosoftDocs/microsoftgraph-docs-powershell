@@ -590,9 +590,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation)
-- [](https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0)
+- [Get-MgGroupConversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0)
 
 
 
