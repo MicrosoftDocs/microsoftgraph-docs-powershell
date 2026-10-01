@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Delete a zone object by providing the zoneId.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -507,6 +497,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityzone)
 - [](https://learn.microsoft.com/graph/api/security-zone-delete?view=graph-rest-beta)
+
 
 
 

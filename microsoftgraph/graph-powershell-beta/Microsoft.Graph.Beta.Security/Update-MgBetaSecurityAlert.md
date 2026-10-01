@@ -118,8 +118,37 @@ This method updates any solution that has a record of the referenced alert ID.
 | Application | SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	assignedTo = "String"
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
+	comments = @(
+		"String"
+	)
+	feedback = "@odata.type: microsoft.graph.alertFeedback"
+	status = "@odata.type: microsoft.graph.alertStatus"
+	tags = @(
+		"String"
+	)
+	vendorInformation = @{
+		provider = "String"
+		vendor = "String"
+	}
+}
+
+Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
+
+```
+This example will request without prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -142,28 +171,9 @@ $params = @{
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will request with prefer header
 
-Import-Module Microsoft.Graph.Beta.Security
-
-$params = @{
-	assignedTo = "String"
-	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
-	comments = @(
-		"String"
-	)
-	feedback = "@odata.type: microsoft.graph.alertFeedback"
-	status = "@odata.type: microsoft.graph.alertStatus"
-	tags = @(
-		"String"
-	)
-	vendorInformation = @{
-		provider = "String"
-		vendor = "String"
-	}
-}
-
-Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
 
 ## PARAMETERS
 

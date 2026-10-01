@@ -56,16 +56,6 @@ This cmdlet has the following aliases,
 
 Represents Microsoft Defender for Identity sensors that can be migrated to the unified security portal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -649,6 +639,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentitysensormigration)
 - [](https://learn.microsoft.com/graph/api/security-identitycontainer-list-sensormigration?view=graph-rest-beta)
+
+
 
 
 

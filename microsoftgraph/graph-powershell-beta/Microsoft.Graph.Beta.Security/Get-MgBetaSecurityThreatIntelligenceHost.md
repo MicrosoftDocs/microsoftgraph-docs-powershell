@@ -72,12 +72,17 @@ A host can be of one of the following types:
 | Application | ThreatIntelligence.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityThreatIntelligenceHost -HostId $hostId
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatIntelligenceHost Cmdlet.
+
 
 ## PARAMETERS
 

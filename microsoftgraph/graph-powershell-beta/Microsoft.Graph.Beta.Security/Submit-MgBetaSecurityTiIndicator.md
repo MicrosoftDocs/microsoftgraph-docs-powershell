@@ -55,8 +55,9 @@ Upload multiple threat intelligence (TI) indicators in one request instead of mu
 | Application | ThreatIndicators.ReadWrite.OwnedBy,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -66,8 +67,7 @@ $params = @{
 			activityGroupNames = @(
 			)
 			confidence = 0
-			description = "This is a canary indicator for demo purpose.
-Take no action on any observables set in this indicator."
+			description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
 			expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:44:03.1668987+00:00")
 			externalId = "Test--8586509942423126760MS164-0"
 			fileHashType = "sha256"
@@ -87,8 +87,7 @@ Take no action on any observables set in this indicator."
 			activityGroupNames = @(
 			)
 			confidence = 0
-			description = "This is a canary indicator for demo purpose.
-Take no action on any observables set in this indicator."
+			description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
 			expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:44:03.1748779+00:00")
 			externalId = "Test--8586509942423126760MS164-1"
 			fileHashType = "sha256"
@@ -108,6 +107,10 @@ Take no action on any observables set in this indicator."
 }
 
 Submit-MgBetaSecurityTiIndicator -BodyParameter $params
+
+```
+This example shows how to use the Submit-MgBetaSecurityTiIndicator Cmdlet.
+
 
 ## PARAMETERS
 

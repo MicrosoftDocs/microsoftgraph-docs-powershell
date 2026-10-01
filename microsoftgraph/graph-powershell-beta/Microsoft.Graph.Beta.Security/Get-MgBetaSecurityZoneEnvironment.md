@@ -58,16 +58,6 @@ This cmdlet has the following aliases,
 Collection of attached environments.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -678,6 +668,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityzoneenvironment)
 - [](https://learn.microsoft.com/graph/api/security-zone-list-environments?view=graph-rest-beta)
+
+
 
 
 

@@ -52,16 +52,6 @@ Delete a case object from case management.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CaseManagement.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -515,6 +505,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycasemanagementcase)
 - [](https://learn.microsoft.com/graph/api/security-casemanagementroot-delete-cases?view=graph-rest-beta)
+
 
 
 
