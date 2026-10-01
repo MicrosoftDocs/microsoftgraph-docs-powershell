@@ -701,8 +701,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment)
-- [](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-beta)
+- [Get-MgBetaBookingBusinessAppointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-beta)
 
 
 

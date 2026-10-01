@@ -786,7 +786,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsessionattendancereport)
+- [Update-MgBetaVirtualEventSessionAttendanceReport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsessionattendancereport)
 
 
 

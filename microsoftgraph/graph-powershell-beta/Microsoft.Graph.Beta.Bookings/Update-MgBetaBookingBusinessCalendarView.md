@@ -2357,7 +2357,7 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview)
+- [Update-MgBetaBookingBusinessCalendarView](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview)
 
 
 
