@@ -80,6 +80,14 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Calendars.ReadWrite, Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Calendars.ReadWrite, Mail.ReadWrite,  |
+| Application | Calendars.ReadWrite, Mail.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
