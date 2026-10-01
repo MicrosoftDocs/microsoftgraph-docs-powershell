@@ -430,7 +430,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelplannerplanhistoryitemcount)
+- [Get-MgBetaTeamChannelPlannerPlanHistoryItemCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelplannerplanhistoryitemcount)
 
 
 

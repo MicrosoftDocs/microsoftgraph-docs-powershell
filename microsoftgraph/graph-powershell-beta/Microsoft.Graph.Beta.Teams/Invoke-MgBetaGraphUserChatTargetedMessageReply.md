@@ -1092,8 +1092,8 @@ Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphuserchattargetedmessagereply)
-- [](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
+- [Invoke-MgBetaGraphUserChatTargetedMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphuserchattargetedmessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-replywithquote?view=graph-rest-beta)
 
 
 
