@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Invoke action addTag
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -395,6 +385,7 @@ BODYPARAMETER `<IPathsCdcc6IDirectoryImpactedresourcesMicrosoftGraphAddtagPostRe
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetabulkdirectoryimpactedresourcetag)
+
 
 
 
