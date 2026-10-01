@@ -71,7 +71,7 @@ HelpMessage: ''
 
 ### -AzureTenantId
 
-.
+
 
 ```yaml
 Type: System.String
@@ -157,7 +157,7 @@ HelpMessage: ''
 
 ### -Enabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -263,7 +263,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -284,7 +284,7 @@ HelpMessage: ''
 
 ### -Provider
 
-.
+
 
 ```yaml
 Type: System.String
@@ -390,7 +390,7 @@ HelpMessage: ''
 
 ### -Vendor
 
-.
+
 
 ```yaml
 Type: System.String
