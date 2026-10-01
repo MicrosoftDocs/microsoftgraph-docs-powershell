@@ -65,16 +65,6 @@ Nullable.
 You can't expand this relationship using $expand.
 Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -620,6 +610,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattargetedmessage)
+
 
 
 
