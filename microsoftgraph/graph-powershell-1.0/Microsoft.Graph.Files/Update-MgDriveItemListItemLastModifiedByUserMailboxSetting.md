@@ -714,7 +714,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>: automaticRepliesSetting
+AUTOMATICREPLIESSETTING `<IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExternalAudience <String>]: externalAudienceScope
   [ExternalReplyMessage <String>]: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
@@ -727,7 +727,7 @@ See below for more possible values.
   [ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
   [Status <String>]: automaticRepliesStatus
 
-BODYPARAMETER <IMicrosoftGraphMailboxSettings>: mailboxSettings
+BODYPARAMETER `<IMicrosoftGraphMailboxSettings>`: mailboxSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArchiveFolder <String>]: Folder ID of an archive folder for the user.
   [AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]: automaticRepliesSetting
@@ -763,7 +763,7 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
       [Name <String>]: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -789,14 +789,14 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   [Token <String>]: Usage: token='{token}'
   [UserId <String>]: The unique identifier of user
 
-LANGUAGE <IMicrosoftGraphLocaleInfo>: localeInfo
+LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: A name representing the user's locale in natural language, for example, 'English (United States)'.
   [Locale <String>]: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
 
-WORKINGHOURS <IMicrosoftGraphWorkingHours>: workingHours
+WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DaysOfWeek <String[]>]: The days of the week on which the user works.
   [EndTime <String>]: The time of the day that the user stops working.
@@ -810,3 +810,25 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitemlastmodifiedbyusermailboxsetting)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
