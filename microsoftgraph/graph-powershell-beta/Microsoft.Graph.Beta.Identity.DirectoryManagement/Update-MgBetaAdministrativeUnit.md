@@ -261,7 +261,7 @@ HelpMessage: ''
 
 ### -DeletedMembers
 
-.
+
 To construct, see NOTES section for DELETEDMEMBERS properties and create a hash table.
 
 ```yaml
@@ -289,7 +289,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -316,7 +316,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -491,7 +491,7 @@ HelpMessage: ''
 
 ### -IsMemberManagementRestricted
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -547,7 +547,7 @@ HelpMessage: ''
 
 ### -MembershipRule
 
-.
+
 
 ```yaml
 Type: System.String
@@ -574,7 +574,7 @@ HelpMessage: ''
 
 ### -MembershipRuleProcessingState
 
-.
+
 
 ```yaml
 Type: System.String
@@ -601,7 +601,7 @@ HelpMessage: ''
 
 ### -MembershipType
 
-.
+
 
 ```yaml
 Type: System.String
@@ -741,7 +741,7 @@ HelpMessage: ''
 
 ### -Visibility
 
-.
+
 
 ```yaml
 Type: System.String
