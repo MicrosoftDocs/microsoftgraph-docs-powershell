@@ -1897,7 +1897,7 @@ ITEM `<IMicrosoftGraphItem>`: item
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorderline)
+- [Update-MgBetaFinancialCompanySaleOrderLine](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleorderline)
 
 
 
