@@ -15,6 +15,9 @@ title: Get-MgBetaExternalConnection
 
 Retrieve the properties and relationships of an externalConnection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
