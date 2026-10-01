@@ -15,6 +15,9 @@ title: Update-MgUserDriveItemListItemCreatedByUserMailboxSetting
 
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

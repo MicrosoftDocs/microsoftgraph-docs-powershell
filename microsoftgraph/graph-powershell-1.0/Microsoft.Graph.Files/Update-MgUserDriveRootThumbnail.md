@@ -15,6 +15,9 @@ title: Update-MgUserDriveRootThumbnail
 
 Update the navigation property thumbnails in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

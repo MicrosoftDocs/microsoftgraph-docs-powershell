@@ -16,6 +16,9 @@ title: Get-MgDriveRootRetentionLabel
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootRetentionLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Remove-MgDriveRootChildContent
 
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootChildContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

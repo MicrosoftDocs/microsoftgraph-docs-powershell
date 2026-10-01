@@ -15,6 +15,9 @@ title: Get-MgUserDriveListContentType
 
 The collection of content types present in this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

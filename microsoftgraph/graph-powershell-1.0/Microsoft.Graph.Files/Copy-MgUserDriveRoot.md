@@ -15,6 +15,9 @@ title: Copy-MgUserDriveRoot
 
 Invoke action copy
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
