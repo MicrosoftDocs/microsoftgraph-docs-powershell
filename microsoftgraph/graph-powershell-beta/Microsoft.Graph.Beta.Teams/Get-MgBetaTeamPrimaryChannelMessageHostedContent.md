@@ -15,6 +15,9 @@ title: Get-MgBetaTeamPrimaryChannelMessageHostedContent
 
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamScheduleTimeOffRequest
 
 The time off requests in the schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

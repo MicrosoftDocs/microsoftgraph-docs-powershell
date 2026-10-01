@@ -15,6 +15,9 @@ title: Get-MgBetaTeamScheduleTimeCard
 
 Get the properties and relationships of a timeCard object by ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

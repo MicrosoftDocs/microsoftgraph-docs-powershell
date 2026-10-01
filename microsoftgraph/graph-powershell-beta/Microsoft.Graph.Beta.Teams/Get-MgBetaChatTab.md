@@ -15,6 +15,9 @@ title: Get-MgBetaChatTab
 
 Retrieve the properties and relationships of the specified tab in a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

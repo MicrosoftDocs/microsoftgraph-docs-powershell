@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamPhoto
 
 The team photo.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -16,6 +16,9 @@ title: Update-MgBetaChatTab
 Update the properties of the specified tab in a chat.
 \rThis API can be used to configure the content of the tab.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaUserTeamworkInstalledAppTeamApp
 
 The app that is installed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

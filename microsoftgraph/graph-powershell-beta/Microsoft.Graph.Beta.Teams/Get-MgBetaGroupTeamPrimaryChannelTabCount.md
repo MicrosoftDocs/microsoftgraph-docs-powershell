@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamPrimaryChannelTabCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelTabCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelTabCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
