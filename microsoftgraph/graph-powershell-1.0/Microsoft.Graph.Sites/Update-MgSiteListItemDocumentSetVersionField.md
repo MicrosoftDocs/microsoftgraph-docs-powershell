@@ -15,6 +15,9 @@ title: Update-MgSiteListItemDocumentSetVersionField
 
 Update the navigation property fields in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemDocumentSetVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

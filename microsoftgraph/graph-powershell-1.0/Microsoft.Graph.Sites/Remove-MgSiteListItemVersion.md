@@ -15,6 +15,9 @@ title: Remove-MgSiteListItemVersion
 
 Delete navigation property versions for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

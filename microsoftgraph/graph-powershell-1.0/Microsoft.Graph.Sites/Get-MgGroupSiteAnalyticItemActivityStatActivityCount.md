@@ -15,6 +15,9 @@ title: Get-MgGroupSiteAnalyticItemActivityStatActivityCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteAnalyticItemActivityStatActivityCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteAnalyticItemActivityStatActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

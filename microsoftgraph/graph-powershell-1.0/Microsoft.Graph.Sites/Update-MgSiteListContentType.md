@@ -15,6 +15,9 @@ title: Update-MgSiteListContentType
 
 Update the navigation property contentTypes in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgGroupSitePageAsSitePageLastModifiedByUser
 Identity of the user who last modified the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageLastModifiedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
