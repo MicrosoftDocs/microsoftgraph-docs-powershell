@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceManagementAuditEvent
 
 The Audit Events
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
