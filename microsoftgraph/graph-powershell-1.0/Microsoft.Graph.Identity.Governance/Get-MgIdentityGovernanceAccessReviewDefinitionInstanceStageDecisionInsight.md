@@ -16,6 +16,9 @@ title: Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsigh
 Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

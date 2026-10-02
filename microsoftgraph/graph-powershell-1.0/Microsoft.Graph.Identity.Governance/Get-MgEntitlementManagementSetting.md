@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementSetting
 
 Retrieve the properties of an entitlementManagementSettings object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

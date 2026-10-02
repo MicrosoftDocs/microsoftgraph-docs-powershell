@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer
 
 Update the navigation property contactedReviewers in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

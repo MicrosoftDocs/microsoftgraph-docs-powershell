@@ -15,6 +15,9 @@ title: Remove-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance
 
 Delete navigation property instances for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

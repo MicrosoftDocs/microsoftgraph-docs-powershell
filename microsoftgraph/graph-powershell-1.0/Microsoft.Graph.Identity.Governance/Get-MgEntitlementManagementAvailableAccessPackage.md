@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementAvailableAccessPackage
 
 Access packages available for end users to browse and request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAvailableAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAvailableAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

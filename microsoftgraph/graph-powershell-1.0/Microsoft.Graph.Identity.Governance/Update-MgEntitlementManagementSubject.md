@@ -15,6 +15,9 @@ title: Update-MgEntitlementManagementSubject
 
 Update an external directory user represented by an existing accessPackageSubject object to change the subject lifecycle.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSubject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

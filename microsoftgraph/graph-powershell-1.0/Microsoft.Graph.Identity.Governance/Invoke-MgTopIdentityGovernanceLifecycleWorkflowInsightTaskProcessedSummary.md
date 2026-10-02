@@ -17,6 +17,9 @@ Provide a summary from the insights resource of the most processed task objects,
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Top (Default)

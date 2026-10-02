@@ -15,6 +15,9 @@ title: Get-MgRoleManagementDirectory
 
 Get directory from roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
