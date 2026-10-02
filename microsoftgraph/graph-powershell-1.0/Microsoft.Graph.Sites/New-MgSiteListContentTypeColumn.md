@@ -15,6 +15,9 @@ title: New-MgSiteListContentTypeColumn
 
 Create new navigation property to columns for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

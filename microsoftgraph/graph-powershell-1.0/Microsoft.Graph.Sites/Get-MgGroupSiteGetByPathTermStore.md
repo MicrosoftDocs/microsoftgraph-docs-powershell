@@ -15,6 +15,9 @@ title: Get-MgGroupSiteGetByPathTermStore
 
 The default termStore under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

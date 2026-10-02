@@ -15,6 +15,9 @@ title: Get-MgSiteTermStoreGroupSetParentGroup
 
 The parent [group] that contains the set.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetParentGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
