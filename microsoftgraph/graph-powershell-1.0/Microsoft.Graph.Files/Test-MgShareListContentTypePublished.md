@@ -341,8 +341,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished)
-- [](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
+- [Test-MgShareListContentTypePublished](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypepublished)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
 
 
 

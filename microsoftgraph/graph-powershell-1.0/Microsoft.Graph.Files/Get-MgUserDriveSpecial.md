@@ -606,7 +606,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivespecial)
+- [Get-MgUserDriveSpecial](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivespecial)
 
 
 

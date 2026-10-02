@@ -393,7 +393,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractdriveitemsensitivitylabel)
+- [Invoke-MgExtractDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractdriveitemsensitivitylabel)
 
 
 

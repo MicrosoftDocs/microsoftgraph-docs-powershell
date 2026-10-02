@@ -1859,7 +1859,7 @@ For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistcolumn)
+- [New-MgShareListColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistcolumn)
 
 
 
