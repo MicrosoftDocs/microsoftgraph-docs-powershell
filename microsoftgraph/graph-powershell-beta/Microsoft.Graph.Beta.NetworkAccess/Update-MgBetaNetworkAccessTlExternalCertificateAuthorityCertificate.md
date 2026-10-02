@@ -772,8 +772,8 @@ VALIDITY `<IMicrosoftGraphNetworkaccessValidityDate>`: validityDate
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
-- [](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-update?view=graph-rest-beta)
+- [Update-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/update-mgbetanetworkaccesstlexternalcertificateauthoritycertificate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/networkaccess-externalcertificateauthoritycertificate-update?view=graph-rest-beta)
 
 
 
