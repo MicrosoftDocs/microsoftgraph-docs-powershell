@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessdeleteditem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityConditionalAccessDeletedItem
 ---
@@ -431,14 +431,23 @@ Returns a collection of the specified Conditional Access policies.
     [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
     [Conditions <IMicrosoftGraphConditionalAccessConditionSet>]: conditionalAccessConditionSet
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
-      [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+      [AgentContext <IMicrosoftGraphConditionalAccessAgentContext>]: Represents the agent context condition for conditional access policies.
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
+        [ExcludeAgentContexts <String[]>]: 
+        [IncludeAgentContexts <String[]>]: 
+      [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
+      [Agents <IMicrosoftGraphConditionalAccessAgents>]: conditionalAccessAgents
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [AgentFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Mode <String>]: filterMode
           [Rule <String>]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
+        [ExcludeAgentUsers <String[]>]: 
+        [IncludeAgentUsers <String[]>]: 
+      [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
         [ExcludeApplications <String[]>]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
         [GlobalSecureAccess <IMicrosoftGraphConditionalAccessGlobalSecureAccess>]: conditionalAccessGlobalSecureAccess
@@ -525,8 +534,7 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
         [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
+        [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
         [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
         [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
           [Id <String>]: The unique identifier for an entity.
@@ -538,6 +546,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
         [Description <String>]: The human-readable description of this policy.
         [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+        [Id <String>]: 
         [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
         [PolicyType <String>]: authenticationStrengthPolicyType
         [RequirementsSatisfied <String>]: authenticationStrengthRequirements
@@ -607,14 +616,23 @@ Returns a collection of the specified Conditional Access policies.
   [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [Conditions <IMicrosoftGraphConditionalAccessConditionSet>]: conditionalAccessConditionSet
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
-    [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+    [AgentContext <IMicrosoftGraphConditionalAccessAgentContext>]: Represents the agent context condition for conditional access policies.
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
+      [ExcludeAgentContexts <String[]>]: 
+      [IncludeAgentContexts <String[]>]: 
+    [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
+    [Agents <IMicrosoftGraphConditionalAccessAgents>]: conditionalAccessAgents
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AgentFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Mode <String>]: filterMode
         [Rule <String>]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
+      [ExcludeAgentUsers <String[]>]: 
+      [IncludeAgentUsers <String[]>]: 
+    [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
       [ExcludeApplications <String[]>]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
       [GlobalSecureAccess <IMicrosoftGraphConditionalAccessGlobalSecureAccess>]: conditionalAccessGlobalSecureAccess
@@ -701,8 +719,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
+      [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
       [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
       [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
         [Id <String>]: The unique identifier for an entity.
@@ -714,6 +731,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
       [Description <String>]: The human-readable description of this policy.
       [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+      [Id <String>]: 
       [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
       [PolicyType <String>]: authenticationStrengthPolicyType
       [RequirementsSatisfied <String>]: authenticationStrengthRequirements

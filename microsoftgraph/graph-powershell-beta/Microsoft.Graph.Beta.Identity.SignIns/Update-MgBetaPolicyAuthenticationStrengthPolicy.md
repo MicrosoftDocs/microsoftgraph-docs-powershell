@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAuthenticationStrengthPolicy
 ---
@@ -29,11 +29,11 @@ Update-MgBetaPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId 
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AllowedCombinations <string[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
- [-CreatedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
- [-ModifiedDateTime <datetime>] [-PolicyType <string>] [-RequirementsSatisfied <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-Description <string>]
+ [-DisplayName <string>] [-Id <string>] [-ModifiedDateTime <datetime>] [-PolicyType <string>]
+ [-RequirementsSatisfied <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -53,11 +53,11 @@ Update-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsId
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AllowedCombinations <string[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
- [-CreatedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
- [-ModifiedDateTime <datetime>] [-PolicyType <string>] [-RequirementsSatisfied <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-Description <string>]
+ [-DisplayName <string>] [-Id <string>] [-ModifiedDateTime <datetime>] [-PolicyType <string>]
+ [-RequirementsSatisfied <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -317,6 +317,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -DeletedDateTime
+
+Shows the last date and time the policy was deleted.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Description
 
 The human-readable description of this policy.
@@ -437,8 +464,7 @@ HelpMessage: ''
 
 ### -Id
 
-The unique identifier for an entity.
-Read-only.
+
 
 ```yaml
 Type: System.String
@@ -715,8 +741,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
   [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
     [Id <String>]: The unique identifier for an entity.
@@ -728,6 +753,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
   [Description <String>]: The human-readable description of this policy.
   [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+  [Id <String>]: 
   [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
   [PolicyType <String>]: authenticationStrengthPolicyType
   [RequirementsSatisfied <String>]: authenticationStrengthRequirements

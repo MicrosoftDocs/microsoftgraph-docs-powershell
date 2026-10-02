@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartnerm365capability
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 ---
@@ -15,6 +15,9 @@ title: New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability
 
 Create a new Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy.
 The @odata.type property in the request body is required to specify which type of capability to create.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyCrossTenantAccessPolicyPartnerM365Capability](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartnerM365Capability?view=graph-powershell-1.0)
 
 ## SYNTAX
 

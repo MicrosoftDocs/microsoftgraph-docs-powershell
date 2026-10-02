@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/reset-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronizationtodefaultsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting
 ---
@@ -15,6 +15,9 @@ title: Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationI
 
 Reset the cross-tenant access policy template with user synchronization settings for a multitenant organization to the default values.
 In its reset state, the template has no impact on user synchronization settings, other than that unconfigured user synchronization settings are created if needed, for every multitenant organization tenant.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Reset-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
