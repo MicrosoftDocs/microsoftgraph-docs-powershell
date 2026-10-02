@@ -15,6 +15,9 @@ title: New-MgBetaUserOnlineMeetingTranscript
 
 Create new navigation property to transcripts for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeetingTranscript?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaCommunicationCallRecordSession
 
 Create new navigation property to sessions for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

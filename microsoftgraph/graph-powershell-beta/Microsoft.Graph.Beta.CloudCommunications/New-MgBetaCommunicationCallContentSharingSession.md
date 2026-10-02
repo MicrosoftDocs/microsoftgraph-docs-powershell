@@ -15,6 +15,9 @@ title: New-MgBetaCommunicationCallContentSharingSession
 
 Create new navigation property to contentSharingSessions for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallContentSharingSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

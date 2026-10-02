@@ -16,6 +16,9 @@ title: Get-MgBetaUserOnlineMeetingAttendanceReport
 The attendance reports of an online meeting.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReport?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

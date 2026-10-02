@@ -15,6 +15,9 @@ title: Clear-MgBetaUserPresenceLocation
 
 Clear the work location signals for a user, including both the manual and automatic layers for the current date.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserPresenceLocation](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgUserPresenceLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Clear (Default)
