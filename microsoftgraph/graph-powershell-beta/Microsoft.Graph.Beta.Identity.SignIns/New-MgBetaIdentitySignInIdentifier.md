@@ -385,7 +385,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphSignInIdentifierBase>: signInIdentifierBase
+BODYPARAMETER `<IMicrosoftGraphSignInIdentifierBase>`: signInIdentifierBase
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsEnabled <Boolean?>]: Indicates whether this sign-in identifier type is enabled for user authentication in the tenant.
   [Name <String>]: The unique name identifier for this sign-in identifier configuration.
@@ -395,3 +395,25 @@ Possible values include: Email, UPN, Username, CustomUsername1, CustomUsername2.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitysigninidentifier)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
