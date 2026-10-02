@@ -79,8 +79,9 @@ This API is supported when the type of the cloudPcOnPremisesConnection object is
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword -CloudPcOnPremisesConnectionId $cloudPcOnPremisesConnectionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword Cmdlet.
+
 
 ## PARAMETERS
 

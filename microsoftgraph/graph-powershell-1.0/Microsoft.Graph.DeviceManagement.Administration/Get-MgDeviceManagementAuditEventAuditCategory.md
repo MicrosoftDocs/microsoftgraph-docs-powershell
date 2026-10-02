@@ -44,12 +44,17 @@ Invoke function getAuditCategories
 | Application | DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementAuditEventAuditCategory
+
+```
+This example shows how to use the Get-MgDeviceManagementAuditEventAuditCategory Cmdlet.
+
 
 ## PARAMETERS
 
