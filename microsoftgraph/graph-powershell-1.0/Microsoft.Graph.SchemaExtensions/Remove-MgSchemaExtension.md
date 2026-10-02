@@ -408,8 +408,8 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension)
-- [](https://learn.microsoft.com/graph/api/schemaextension-delete?view=graph-rest-1.0)
+- [Remove-MgSchemaExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schemaextension-delete?view=graph-rest-1.0)
 
 
 
