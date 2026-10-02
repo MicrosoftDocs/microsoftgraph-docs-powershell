@@ -701,7 +701,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsTgjglmCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphReportsyntheticmediaPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsTgjglmCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphReportsyntheticmediaPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentMetadata <IMicrosoftGraphMediaMetadata>]: mediaMetadata
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -751,7 +751,7 @@ Set to 0 for recorded or offline analysis, where a stream-relative time base doe
   [OverallConfidence <Double?>]: 
   [Severity <String>]: detectionSeverity
 
-CONTENTMETADATA <IMicrosoftGraphMediaMetadata>: mediaMetadata
+CONTENTMETADATA `<IMicrosoftGraphMediaMetadata>`: mediaMetadata
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AudioMetadata <IMicrosoftGraphAudioMetadata>]: audioMetadata
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -795,7 +795,7 @@ Applies only to video analysis; pass an empty array for audio-only segments.
     [StartTimeSec <Int32?>]: Start time of the segment, in seconds from the start of the analyzed live stream.
 Set to 0 for recorded or offline analysis, where a stream-relative time base doesn't apply.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   [AdhocCallId <String>]: The unique identifier of adhocCall
   [AttendanceRecordId <String>]: The unique identifier of attendanceRecord
   [AudioRoutingGroupId <String>]: The unique identifier of audioRoutingGroup
@@ -827,3 +827,25 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetareportcommunicationcallparticipantsyntheticmedium)
 - [](https://learn.microsoft.com/graph/api/participant-reportsyntheticmedia?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
