@@ -82,8 +82,9 @@ In Azure AD B2C, this operation can update a socialIdentityProvider, appleManage
 | Application | IdentityProvider.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update a specific **social identity provider** (Microsoft Entra ID or Azure AD B2C)
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -94,7 +95,12 @@ $params = @{
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update a specific **social identity provider** (microsoft entra id or azure ad b2c)
+
+### Example 2: Update a specific **OpenID Connect identity provider** (only for Azure AD B2C)
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -105,7 +111,12 @@ $params = @{
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will update a specific **openid connect identity provider** (only for azure ad b2c)
+
+### Example 3: Update a specific **Apple identity provider** (only for Azure AD B2C)
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -115,6 +126,10 @@ $params = @{
 }
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
+
+```
+This example will update a specific **apple identity provider** (only for azure ad b2c)
+
 
 ## PARAMETERS
 

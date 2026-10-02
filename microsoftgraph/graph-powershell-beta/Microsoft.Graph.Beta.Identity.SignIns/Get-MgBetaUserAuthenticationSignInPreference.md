@@ -48,12 +48,17 @@ Read the properties of a user's authentication states.
 Use this API to retrieve the following information:
 
 ## EXAMPLES
+### Example 1: Get a user's system-preferred MFA method
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaUserAuthenticationSignInPreference -UserId $userId
+
+```
+This example will get a user's system-preferred mfa method
+
 
 ## PARAMETERS
 

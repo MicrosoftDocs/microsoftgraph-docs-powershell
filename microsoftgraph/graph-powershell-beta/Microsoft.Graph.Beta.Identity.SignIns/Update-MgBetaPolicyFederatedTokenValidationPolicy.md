@@ -57,16 +57,6 @@ Update the properties of a federatedTokenValidationPolicy object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.FedTokenValidation,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -440,6 +430,7 @@ VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
 - [](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta)
+
 
 
 
