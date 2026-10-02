@@ -495,7 +495,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanypurchaseinvoicelineitem)
+- [Remove-MgBetaFinancialCompanyPurchaseInvoiceLineItem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanypurchaseinvoicelineitem)
 
 
 
