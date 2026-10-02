@@ -16,6 +16,9 @@ title: Clear-MgBetaApplicationVerifiedPublisher
 Unset the verifiedPublisher previously set on an agentIdentityBlueprint, removing all verified publisher properties.
 For more information, see Publisher verification.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Clear-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unset (Default)

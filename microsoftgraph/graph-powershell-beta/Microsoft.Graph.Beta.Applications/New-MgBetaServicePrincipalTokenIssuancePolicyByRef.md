@@ -15,6 +15,9 @@ title: New-MgBetaServicePrincipalTokenIssuancePolicyByRef
 
 Create new navigation property ref to tokenIssuancePolicies for servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalTokenIssuancePolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
