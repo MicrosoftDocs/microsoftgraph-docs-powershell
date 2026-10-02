@@ -859,8 +859,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasetag)
-- [](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-update?view=graph-rest-1.0)
+- [Update-MgSecurityCaseEdiscoveryCaseTag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasetag)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-update?view=graph-rest-1.0)
 
 
 

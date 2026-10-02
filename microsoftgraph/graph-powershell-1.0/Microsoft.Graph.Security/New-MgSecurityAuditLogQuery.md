@@ -701,8 +701,8 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityauditlogquery)
-- [](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)
+- [New-MgSecurityAuditLogQuery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityauditlogquery)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)
 
 
 
