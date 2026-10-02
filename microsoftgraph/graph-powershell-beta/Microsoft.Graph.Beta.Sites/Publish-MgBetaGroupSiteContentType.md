@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 
 Invoke action publish
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -475,6 +465,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetagroupsitecontenttype)
 - [](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-beta)
+
 
 
 

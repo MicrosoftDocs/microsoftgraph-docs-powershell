@@ -68,16 +68,6 @@ This cmdlet has the following aliases,
 Apply a contentModel to SharePoint document libraries.
 For an existing model that's already trained, this action automatically processes new documents that are added to the SharePoint libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -562,6 +552,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontentmodelgetbynametodrive)
 - [](https://learn.microsoft.com/graph/api/contentmodel-addtodrive?view=graph-rest-beta)
+
 
 
 
