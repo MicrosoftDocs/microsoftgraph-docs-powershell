@@ -283,3 +283,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysettingautoauditingconfiguration)
 - [](https://learn.microsoft.com/graph/api/security-autoauditingconfiguration-get?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
