@@ -680,7 +680,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachment)
+- [New-MgBetaUserMessageAttachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageattachment)
 
 
 
