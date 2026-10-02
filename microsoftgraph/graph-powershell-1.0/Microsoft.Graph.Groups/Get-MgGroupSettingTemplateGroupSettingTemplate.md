@@ -564,9 +564,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplategroupsettingtemplate)
-- [](https://learn.microsoft.com/graph/api/groupsettingtemplate-get?view=graph-rest-1.0)
-- [](https://learn.microsoft.com/graph/api/groupsettingtemplate-list?view=graph-rest-1.0)
+- [Get-MgGroupSettingTemplateGroupSettingTemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplategroupsettingtemplate)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/groupsettingtemplate-get?view=graph-rest-1.0)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/groupsettingtemplate-list?view=graph-rest-1.0)
 
 
 

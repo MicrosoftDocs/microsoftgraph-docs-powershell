@@ -386,7 +386,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostcount)
+- [Get-MgGroupThreadPostCount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostcount)
 
 
 

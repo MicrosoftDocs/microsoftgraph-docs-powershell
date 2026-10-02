@@ -1,35 +1,41 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupAcceptedSenderByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
 ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgGroupMemberByRef
+title: Remove-MgGroupAcceptedSenderByRef
 ---
 
-# Get-MgGroupMemberByRef
+# Remove-MgGroupAcceptedSenderByRef
 
 ## SYNOPSIS
 
-Get a list of the group's direct members.
-A group can have users, organizational contacts, devices, service principals and other groups as members.
-This operation is not transitive.
+Remove acceptedSender
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List (Default)
+### Delete (Default)
 
 ```
-Get-MgGroupMemberByRef -GroupId <string> [-Filter <string>] [-Search <string>] [-Skip <int>]
- [-Sort <string[]>] [-Top <int>] [-ConsistencyLevel <string>] [-ResponseHeadersVariable <string>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All] [-CountVariable <string>]
+Remove-MgGroupAcceptedSenderByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### DeleteViaIdentity
+
+```
+Remove-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -39,40 +45,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get a list of the group's direct members.
-A group can have users, organizational contacts, devices, service principals and other groups as members.
-This operation is not transitive.
-
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | GroupMember.ReadBasic.All, Directory.Read.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | GroupMember.ReadBasic.All, Directory.Read.All, Group.Read.All, Group.ReadBasic.All, Group.ReadWrite.All, GroupMember.Read.All, GroupMember.ReadWrite.All,  |
+Remove acceptedSender
 
 ## PARAMETERS
-
-### -All
-
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -95,39 +70,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ConsistencyLevel
+### -Confirm
 
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -CountVariable
-
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.String
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- CV
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -140,9 +92,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Filter
+### -DirectoryObjectId
 
-Filter items by property values
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -150,9 +102,9 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: Delete
   Position: Named
-  IsRequired: false
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -171,7 +123,7 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: Delete
   Position: Named
   IsRequired: true
   ValueFromPipeline: false
@@ -245,13 +197,56 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PageSize
+### -IfMatch
 
-Sets the page size of results.
+ETag
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -InputObject
+
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: DeleteViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -351,80 +346,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
+### -WhatIf
 
-Search items by search phrases
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Skip
-
-Skip the first n items
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Sort
-
-Order items by property values
-
-```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- OrderBy
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases:
-- Limit
+- wi
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -446,22 +377,53 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### System.String
+### System.Boolean
 
 {{ Fill in the Description }}
 
 ## NOTES
 
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+  [AttachmentId <String>]: The unique identifier of attachment
+  [ConversationId <String>]: The unique identifier of conversation
+  [ConversationThreadId <String>]: The unique identifier of conversationThread
+  [DirectoryObjectId <String>]: The unique identifier of directoryObject
+  [EndDateTime <String>]: Usage: endDateTime='{endDateTime}'
+  [ExtensionId <String>]: The unique identifier of extension
+  [GroupId <String>]: The unique identifier of group
+  [GroupLifecyclePolicyId <String>]: The unique identifier of groupLifecyclePolicy
+  [GroupSettingId <String>]: The unique identifier of groupSetting
+  [GroupSettingTemplateId <String>]: The unique identifier of groupSettingTemplate
+  [Interval <String>]: Usage: interval='{interval}'
+  [ListId <String>]: Usage: listId='{listId}'
+  [Path <String>]: Usage: path='{path}'
+  [PostId <String>]: The unique identifier of post
+  [ProfilePhotoId <String>]: The unique identifier of profilePhoto
+  [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
+  [SiteId <String>]: The unique identifier of site
+  [StartDateTime <String>]: Usage: startDateTime='{startDateTime}'
+  [UniqueName <String>]: Alternate key of group
+
+
 ## RELATED LINKS
 
-- [Get-MgGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberbyref)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0)
+- [Remove-MgGroupAcceptedSenderByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/Remove-MgGroupAcceptedSenderByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-1.0)
 
 
 
