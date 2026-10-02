@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewunifiedinstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewUnifiedInstance
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaIdentityGovernanceAccessReviewUnifiedInstance
 ## SYNOPSIS
 
 Create new navigation property to instances for identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewUnifiedInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewUnifiedInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 

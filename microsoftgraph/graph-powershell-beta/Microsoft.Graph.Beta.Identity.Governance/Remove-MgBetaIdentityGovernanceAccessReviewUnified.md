@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewunified
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaIdentityGovernanceAccessReviewUnified
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaIdentityGovernanceAccessReviewUnified
 ## SYNOPSIS
 
 Delete navigation property unified for identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewUnified](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewUnified?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementcontrolconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementControlConfiguration
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaEntitlementManagementControlConfiguration
 ## SYNOPSIS
 
 Create new navigation property to controlConfigurations for identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementControlConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementControlConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 

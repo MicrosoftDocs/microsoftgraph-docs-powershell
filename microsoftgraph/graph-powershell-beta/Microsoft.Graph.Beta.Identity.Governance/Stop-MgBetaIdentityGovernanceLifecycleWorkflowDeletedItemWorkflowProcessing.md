@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowprocessing
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing
 ---
@@ -15,6 +15,9 @@ title: Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessi
 
 Cancel one or more workflow runs that are currently in queued or inProgress status.
 Currently limited to canceling one run per request.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -540,10 +543,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
-  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
-  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'

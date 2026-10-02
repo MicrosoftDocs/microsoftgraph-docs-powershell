@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagesuggestion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaEntitlementManagementAccessPackageSuggestion
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaEntitlementManagementAccessPackageSuggestion
 ## SYNOPSIS
 
 Create new navigation property to accessPackageSuggestions for identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageSuggestion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageSuggestion?view=graph-powershell-1.0)
 
 ## SYNTAX
 

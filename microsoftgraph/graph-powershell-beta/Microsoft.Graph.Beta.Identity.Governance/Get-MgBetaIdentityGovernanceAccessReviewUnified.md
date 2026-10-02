@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewunified
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaIdentityGovernanceAccessReviewUnified
 ---
@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceAccessReviewUnified
 
 Entry point for the unified (vNext) access reviews API surface.
 Requests under this path are routed to the vNext service through the dedicated accessReviews/unified path segment.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewUnified](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewUnified?view=graph-powershell-1.0)
 
 ## SYNTAX
 

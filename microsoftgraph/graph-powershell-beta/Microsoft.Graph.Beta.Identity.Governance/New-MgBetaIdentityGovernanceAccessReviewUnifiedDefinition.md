@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewunifieddefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition
 ---
@@ -16,6 +16,9 @@ title: New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition
 Create a new user-centric (catalog-scope) accessReviewScheduleDefinition object through the unified route.
 With a user-centric review, a reviewer evaluates a principal's access to every group and application contained in an entitlement management catalog in a single review.
 The catalog is identified in the resourceScopes collection of the principalResourceMembershipsScope.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewUnifiedDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewUnifiedDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 

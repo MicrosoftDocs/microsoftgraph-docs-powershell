@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewunified
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceAccessReviewUnified
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaIdentityGovernanceAccessReviewUnified
 ## SYNOPSIS
 
 Update the navigation property unified in identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewUnified](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewUnified?view=graph-powershell-1.0)
 
 ## SYNTAX
 
