@@ -607,8 +607,8 @@ See below for more possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively)
-- [](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
+- [Invoke-MgAcceptGroupEventTentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/invoke-mgacceptgroupeventtentatively)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
 
 
 
