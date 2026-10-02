@@ -441,7 +441,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypecolumncount)
+- [Get-MgBetaGroupSiteContentTypeColumnCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitecontenttypecolumncount)
 
 
 

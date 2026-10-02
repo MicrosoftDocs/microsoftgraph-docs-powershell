@@ -898,7 +898,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetrelation)
+- [New-MgBetaGroupSiteTermStoreSetRelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetrelation)
 
 
 

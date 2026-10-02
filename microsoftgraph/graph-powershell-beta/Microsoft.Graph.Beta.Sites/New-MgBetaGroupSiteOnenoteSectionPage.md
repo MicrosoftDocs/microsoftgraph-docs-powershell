@@ -1280,7 +1280,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotesectionpage)
+- [New-MgBetaGroupSiteOnenoteSectionPage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenotesectionpage)
 
 
 

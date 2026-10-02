@@ -465,7 +465,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetrelationset)
+- [Get-MgBetaGroupSiteTermStoreSetRelationSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoresetrelationset)
 
 
 
