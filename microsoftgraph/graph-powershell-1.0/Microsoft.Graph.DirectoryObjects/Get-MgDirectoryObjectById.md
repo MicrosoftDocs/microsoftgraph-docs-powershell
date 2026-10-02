@@ -61,8 +61,9 @@ Some common uses for this function are to:
 | Application | Directory.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
@@ -81,6 +82,10 @@ types = @(
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDirectoryObjectById Cmdlet.
+
 
 ## PARAMETERS
 
