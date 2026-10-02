@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/move-mgsecurityalert
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/25/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Move-MgSecurityAlert
 ---
@@ -14,9 +14,6 @@ title: Move-MgSecurityAlert
 ## SYNOPSIS
 
 Move one or more alert resources to a new or existing incident.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Move-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Move-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -50,9 +47,8 @@ This cmdlet has the following aliases,
 Move one or more alert resources to a new or existing incident.
 
 ## EXAMPLES
-### Example 1: Move alerts to an incident
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Security
 
@@ -67,10 +63,6 @@ newCorrelationReasons = "sameAsset, temporalProximity"
 }
 
 Move-MgSecurityAlert -BodyParameter $params
-
-```
-This example will move alerts to an incident
-
 
 ## PARAMETERS
 
@@ -97,7 +89,7 @@ HelpMessage: ''
 
 ### -AlertComment
 
-
+.
 
 ```yaml
 Type: System.String
@@ -118,7 +110,7 @@ HelpMessage: ''
 
 ### -AlertIds
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -139,7 +131,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -267,7 +259,7 @@ HelpMessage: ''
 
 ### -IncidentId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -444,7 +436,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AlertComment <String>]: 
   [AlertIds <String[]>]: 
@@ -454,27 +446,5 @@ BODYPARAMETER `<IPaths180Y9NrSecurityAlertsV2MicrosoftGraphSecurityMovealertsPos
 
 ## RELATED LINKS
 
-- [Move-MgSecurityAlert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/move-mgsecurityalert)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-1.0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/move-mgsecurityalert)
+- [](https://learn.microsoft.com/graph/api/security-alert-movealerts?view=graph-rest-1.0)

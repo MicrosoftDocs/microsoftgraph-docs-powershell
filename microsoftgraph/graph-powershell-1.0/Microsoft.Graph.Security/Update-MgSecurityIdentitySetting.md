@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysetting
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 09/25/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentitySetting
 ---
@@ -14,9 +14,6 @@ title: Update-MgSecurityIdentitySetting
 ## SYNOPSIS
 
 Update the navigation property settings in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property settings in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -381,13 +388,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOAUDITINGCONFIGURATION `<IMicrosoftGraphSecurityAutoAuditingConfiguration>`: autoAuditingConfiguration
+AUTOAUDITINGCONFIGURATION <IMicrosoftGraphSecurityAutoAuditingConfiguration>: autoAuditingConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [IsAutomatic <Boolean?>]: Indicates whether automatic auditing is enabled for Defender for Identity monitoring.
 
-BODYPARAMETER `<IMicrosoftGraphSecuritySettingsContainer>`: settingsContainer
+BODYPARAMETER <IMicrosoftGraphSecuritySettingsContainer>: settingsContainer
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -400,27 +407,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgSecurityIdentitySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysetting)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysetting)
