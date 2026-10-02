@@ -15,6 +15,9 @@ title: Get-MgDeviceManagementMobileThreatDefenseConnectorCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileThreatDefenseConnectorCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementMobileThreatDefenseConnectorCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
