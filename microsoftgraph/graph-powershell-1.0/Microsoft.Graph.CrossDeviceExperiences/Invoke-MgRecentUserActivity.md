@@ -22,6 +22,9 @@ The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filteri
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recent (Default)
