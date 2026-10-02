@@ -49,9 +49,8 @@ This cmdlet has the following aliases,
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-
+### Example 1: Update the tenant-wide teamsAppSettings for all Teams apps in the tenant
+```powershell
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -60,6 +59,8 @@ $params = @{
 }
 
 Update-MgTeamworkTeamAppSetting -BodyParameter $params
+```
+This example updates the tenant-wide teamsAppSettings for all Teams apps in the tenant
 
 ## PARAMETERS
 
