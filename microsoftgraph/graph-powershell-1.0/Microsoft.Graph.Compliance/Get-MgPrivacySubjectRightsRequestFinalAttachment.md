@@ -58,12 +58,17 @@ The attachment is a zip file that contains all the files that were included by t
 | Application | Not supported |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Compliance
 
 Get-MgPrivacySubjectRightsRequestFinalAttachment -SubjectRightsRequestId $subjectRightsRequestId
+
+```
+This example shows how to use the Get-MgPrivacySubjectRightsRequestFinalAttachment Cmdlet.
+
 
 ## PARAMETERS
 
