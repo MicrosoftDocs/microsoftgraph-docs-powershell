@@ -418,8 +418,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting)
-- [](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0)
+- [Update-MgAdminReportSetting](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgadminreportsetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0)
 
 
 
