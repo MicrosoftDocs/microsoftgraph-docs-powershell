@@ -1019,7 +1019,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   [(Any) <Object>]: This indicates any property can be added to this object.
   [City <String>]: 
   [CountryLetterCode <String>]: 
@@ -1027,7 +1027,7 @@ ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   [State <String>]: 
   [Street <String>]: 
 
-BODYPARAMETER <IMicrosoftGraphVendor>: vendor
+BODYPARAMETER `<IMicrosoftGraphVendor>`: vendor
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Address <IMicrosoftGraphPostalAddressType>]: postalAddressType
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1083,7 +1083,7 @@ BODYPARAMETER <IMicrosoftGraphVendor>: vendor
   [TaxRegistrationNumber <String>]: 
   [Website <String>]: 
 
-CURRENCY <IMicrosoftGraphCurrency>: currency
+CURRENCY `<IMicrosoftGraphCurrency>`: currency
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AmountDecimalPlaces <String>]: 
   [AmountRoundingPrecision <Decimal?>]: 
@@ -1093,7 +1093,7 @@ CURRENCY <IMicrosoftGraphCurrency>: currency
   [LastModifiedDateTime <DateTime?>]: 
   [Symbol <String>]: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   [AccountId <String>]: The unique identifier of account
   [AgedAccountsPayableId <String>]: The unique identifier of agedAccountsPayable
   [AgedAccountsReceivableId <String>]: The unique identifier of agedAccountsReceivable
@@ -1131,14 +1131,14 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   [UnitOfMeasureId <String>]: The unique identifier of unitOfMeasure
   [VendorId <String>]: The unique identifier of vendor
 
-PAYMENTMETHOD <IMicrosoftGraphPaymentMethod>: paymentMethod
+PAYMENTMETHOD `<IMicrosoftGraphPaymentMethod>`: paymentMethod
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Code <String>]: 
   [DisplayName <String>]: 
   [Id <String>]: 
   [LastModifiedDateTime <DateTime?>]: 
 
-PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
+PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CalculateDiscountOnCreditMemos <Boolean?>]: 
   [Code <String>]: 
@@ -1160,3 +1160,25 @@ PICTURE <IMicrosoftGraphPicture[]>: .
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyvendor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
