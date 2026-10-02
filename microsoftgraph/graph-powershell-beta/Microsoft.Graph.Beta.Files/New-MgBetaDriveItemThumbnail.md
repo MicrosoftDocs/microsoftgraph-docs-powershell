@@ -15,6 +15,9 @@ title: New-MgBetaDriveItemThumbnail
 
 Create new navigation property to thumbnails for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Update-MgBetaDriveListItemDocumentSetVersionField
 
 Update the navigation property fields in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaDriveListItemAnalytic
 
 Analytics about the view activities that took place on this item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveRootListItemCreatedByUserServiceProvisioningError
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootListItemCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

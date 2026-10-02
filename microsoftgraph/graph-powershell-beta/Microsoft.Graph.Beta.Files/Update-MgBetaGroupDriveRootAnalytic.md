@@ -15,6 +15,9 @@ title: Update-MgBetaGroupDriveRootAnalytic
 
 Update the navigation property analytics in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

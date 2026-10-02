@@ -15,6 +15,9 @@ title: Invoke-MgBetaCheckinGroupDriveItem
 
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinGroupDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)

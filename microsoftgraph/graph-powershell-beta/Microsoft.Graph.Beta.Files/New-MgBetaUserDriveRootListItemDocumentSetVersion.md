@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveRootListItemDocumentSetVersion
 
 Create new navigation property to documentSetVersions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

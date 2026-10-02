@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveListContentTypeColumnPosition
 
 Column order information in a content type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentTypeColumnPosition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

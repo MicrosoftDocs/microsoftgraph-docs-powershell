@@ -15,6 +15,9 @@ title: Get-MgBetaGroupDriveRootAnalyticTime
 
 Get allTime from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticTime?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

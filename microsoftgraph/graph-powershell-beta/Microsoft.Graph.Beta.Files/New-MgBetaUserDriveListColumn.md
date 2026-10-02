@@ -15,6 +15,9 @@ title: New-MgBetaUserDriveListColumn
 
 Create new navigation property to columns for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

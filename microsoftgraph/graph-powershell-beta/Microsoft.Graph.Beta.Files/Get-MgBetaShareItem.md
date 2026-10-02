@@ -16,6 +16,9 @@ title: Get-MgBetaShareItem
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
