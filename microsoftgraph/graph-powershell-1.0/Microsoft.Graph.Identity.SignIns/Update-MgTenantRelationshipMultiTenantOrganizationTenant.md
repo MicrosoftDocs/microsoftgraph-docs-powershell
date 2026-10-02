@@ -74,6 +74,14 @@ This cmdlet has the following aliases,
 Update the properties of a tenant in a multitenant organization.
 Only owner tenants can call this API.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MultiTenantOrganization.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | MultiTenantOrganization.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
