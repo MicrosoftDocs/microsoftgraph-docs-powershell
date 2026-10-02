@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentitySensorCandidate
 
 Get sensorCandidates from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySensorCandidate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

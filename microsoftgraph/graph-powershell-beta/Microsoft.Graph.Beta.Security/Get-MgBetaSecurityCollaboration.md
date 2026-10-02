@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCollaboration
 
 Enables read and other actions on collaborative entities in Microsoft Defender.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCollaboration](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCollaboration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityThreatIntelligence
 
 Get threatIntelligence from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

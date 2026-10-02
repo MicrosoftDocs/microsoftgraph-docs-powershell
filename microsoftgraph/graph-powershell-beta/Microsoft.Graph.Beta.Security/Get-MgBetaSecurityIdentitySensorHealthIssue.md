@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityIdentitySensorHealthIssue
 
 Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified related to the sensor.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIdentitySensorHealthIssue](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIdentitySensorHealthIssue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

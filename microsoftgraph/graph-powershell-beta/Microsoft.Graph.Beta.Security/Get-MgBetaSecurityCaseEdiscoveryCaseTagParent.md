@@ -15,6 +15,9 @@ title: Get-MgBetaSecurityCaseEdiscoveryCaseTagParent
 
 Returns the parent tag of the specified tag.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseTagParent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

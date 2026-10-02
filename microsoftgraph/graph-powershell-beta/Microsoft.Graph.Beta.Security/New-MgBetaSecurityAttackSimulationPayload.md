@@ -15,6 +15,9 @@ title: New-MgBetaSecurityAttackSimulationPayload
 
 Create new navigation property to payloads for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationPayload?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
