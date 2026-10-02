@@ -15,6 +15,9 @@ title: New-MgServicePrincipalDelegatedPermissionClassification
 
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
