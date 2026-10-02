@@ -744,8 +744,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmoduleresource)
-- [](https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-beta)
+- [New-MgBetaEducationClassModuleResource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmoduleresource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-beta)
 
 
 

@@ -408,8 +408,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationclassmodule)
-- [](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-beta)
+- [Publish-MgBetaEducationClassModule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationclassmodule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-beta)
 
 
 
