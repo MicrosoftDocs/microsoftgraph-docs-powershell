@@ -74,12 +74,17 @@ Each past and current instance will have decisions.
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.Membership,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaAccessReview -Filter "businessFlowTemplateId eq '6e4f3d20-c5c3-407f-9695-8460952bcc68'" -Top 100 -Skip 0
+Get-MgBetaAccessReview -Filter "businessFlowTemplateId eq '6e4f3d20-c5c3-407f-9695-8460952bcc68'" -Top 100 -Skip 0 
+
+```
+This example shows how to use the Get-MgBetaAccessReview Cmdlet.
+
 
 ## PARAMETERS
 

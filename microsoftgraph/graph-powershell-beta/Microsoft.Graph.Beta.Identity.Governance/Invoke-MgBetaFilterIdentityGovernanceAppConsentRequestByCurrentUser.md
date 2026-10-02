@@ -60,12 +60,17 @@ Retrieve a collection of appConsentRequest objects for which the current user is
 | Application | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser -Filter "userConsentRequests/any(u:u/status eq 'InProgress')"  -On $onId
+Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser -Filter "userConsentRequests/any(u:u/status eq 'InProgress')"  -On $onId 
+
+```
+This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

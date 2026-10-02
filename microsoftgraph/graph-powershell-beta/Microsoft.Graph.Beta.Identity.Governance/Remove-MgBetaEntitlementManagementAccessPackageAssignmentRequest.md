@@ -59,12 +59,17 @@ You can't delete an access package assignment request if it has any accessPackag
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
+
+```
+This example shows how to use the Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet.
+
 
 ## PARAMETERS
 

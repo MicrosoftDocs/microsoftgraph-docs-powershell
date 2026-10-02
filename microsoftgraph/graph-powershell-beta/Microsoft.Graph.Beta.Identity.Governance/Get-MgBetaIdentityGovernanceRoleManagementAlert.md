@@ -66,12 +66,17 @@ Represents the alert entity.
 | Application | RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceRoleManagementAlert -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition,alertConfiguration,alertIncidents"
+Get-MgBetaIdentityGovernanceRoleManagementAlert -Filter "scopeId eq '/' and scopeType eq 'DirectoryRole'" -ExpandProperty "alertDefinition,alertConfiguration,alertIncidents" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceRoleManagementAlert Cmdlet.
+
 
 ## PARAMETERS
 
