@@ -548,7 +548,7 @@ HelpMessage: ''
 
 ### -History
 
-.
+
 To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
