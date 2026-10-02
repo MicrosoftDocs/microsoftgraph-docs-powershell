@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property aiInsights in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActionItems
@@ -783,6 +773,7 @@ For example, in the access reviews decisions API, this property might record the
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingaiinsight)
+
 
 
 
