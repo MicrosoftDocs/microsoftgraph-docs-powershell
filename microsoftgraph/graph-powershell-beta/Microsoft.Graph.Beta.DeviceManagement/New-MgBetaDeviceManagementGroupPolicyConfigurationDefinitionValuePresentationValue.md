@@ -927,7 +927,7 @@ The default value is empty.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvalue)
+- [New-MgBetaDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvalue)
 
 
 
