@@ -15,6 +15,9 @@ title: Get-MgPolicyTokenLifetimePolicyApplyTo
 
 Get appliesTo from policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyTokenLifetimePolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenLifetimePolicyApplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

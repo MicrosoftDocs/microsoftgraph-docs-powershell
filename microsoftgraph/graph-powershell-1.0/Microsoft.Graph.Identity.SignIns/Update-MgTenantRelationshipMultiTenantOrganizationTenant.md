@@ -16,6 +16,9 @@ title: Update-MgTenantRelationshipMultiTenantOrganizationTenant
 Update the properties of a tenant in a multitenant organization.
 Only owner tenants can call this API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

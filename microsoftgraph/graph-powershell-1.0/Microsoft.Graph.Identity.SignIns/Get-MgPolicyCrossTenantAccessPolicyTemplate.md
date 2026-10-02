@@ -15,6 +15,9 @@ title: Get-MgPolicyCrossTenantAccessPolicyTemplate
 
 Represents the base policy in the directory for multitenant organization settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgUserAuthenticationTemporaryAccessPassMethod
 
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgPolicyCrossTenantAccessPolicyPartnerM365Capability
 
 Delete a Microsoft 365 cross-tenant capability from a partner organization in the cross-tenant access policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
