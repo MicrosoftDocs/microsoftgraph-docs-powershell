@@ -15,6 +15,9 @@ title: Remove-MgSolutionBackupRestoreOneDriveForBusinessRestoreSession
 
 Delete navigation property oneDriveForBusinessRestoreSessions for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Remove-MgBetaSolutionBackupRestoreOneDriveForBusinessRestoreSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

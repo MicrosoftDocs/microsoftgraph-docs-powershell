@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreDriveProtectionUnit
 
 Update the navigation property driveProtectionUnits in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreDriveProtectionUnit](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreDriveProtectionUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

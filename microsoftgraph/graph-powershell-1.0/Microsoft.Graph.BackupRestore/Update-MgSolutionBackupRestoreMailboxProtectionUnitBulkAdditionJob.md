@@ -15,6 +15,9 @@ title: Update-MgSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob
 
 Update the navigation property mailboxProtectionUnitsBulkAdditionJobs in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.Beta.BackupRestore/Update-MgBetaSolutionBackupRestoreMailboxProtectionUnitBulkAdditionJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
