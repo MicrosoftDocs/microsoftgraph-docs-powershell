@@ -594,7 +594,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannel)
+- [Get-MgGroupTeamChannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannel)
 
 
 

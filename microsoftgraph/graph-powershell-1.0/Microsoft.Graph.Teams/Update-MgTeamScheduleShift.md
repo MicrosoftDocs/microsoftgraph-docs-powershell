@@ -846,8 +846,8 @@ Required.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift)
-- [](https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-1.0)
+- [Update-MgTeamScheduleShift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-1.0)
 
 
 

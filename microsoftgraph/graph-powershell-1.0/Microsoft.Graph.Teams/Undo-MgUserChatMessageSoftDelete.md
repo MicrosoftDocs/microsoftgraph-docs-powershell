@@ -452,8 +452,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mguserchatmessagesoftdelete)
-- [](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0)
+- [Undo-MgUserChatMessageSoftDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mguserchatmessagesoftdelete)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0)
 
 
 

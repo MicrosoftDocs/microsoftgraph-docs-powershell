@@ -460,8 +460,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimecard)
-- [](https://learn.microsoft.com/graph/api/schedule-delete-timecards?view=graph-rest-1.0)
+- [Remove-MgTeamScheduleTimeCard](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimecard)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/schedule-delete-timecards?view=graph-rest-1.0)
 
 
 
