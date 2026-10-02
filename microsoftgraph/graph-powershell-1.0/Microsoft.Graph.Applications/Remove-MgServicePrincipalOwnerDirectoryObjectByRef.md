@@ -59,8 +59,9 @@ As a recommended best practice, service principals should have at least two owne
 | Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Applications
 
@@ -69,6 +70,10 @@ $params = @{
 }
 
 Remove-MgServicePrincipalOwnerDirectoryObjectByRef -ServicePrincipalId $servicePrincipalId -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example shows how to use the Remove-MgServicePrincipalOwnerDirectoryObjectByRef Cmdlet.
+
 
 ## PARAMETERS
 
