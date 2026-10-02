@@ -645,7 +645,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingwindowsinstance)
+- [New-MgBetaUserSettingWindowsInstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingwindowsinstance)
 
 
 

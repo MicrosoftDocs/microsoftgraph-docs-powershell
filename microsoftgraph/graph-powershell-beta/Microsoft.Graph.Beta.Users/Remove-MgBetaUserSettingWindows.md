@@ -435,8 +435,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows)
-- [](https://learn.microsoft.com/graph/api/windowssetting-delete?view=graph-rest-beta)
+- [Remove-MgBetaUserSettingWindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/windowssetting-delete?view=graph-rest-beta)
 
 
 

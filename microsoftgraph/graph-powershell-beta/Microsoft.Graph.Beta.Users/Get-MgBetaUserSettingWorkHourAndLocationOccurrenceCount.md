@@ -371,7 +371,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingworkhourandlocationoccurrencecount)
+- [Get-MgBetaUserSettingWorkHourAndLocationOccurrenceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingworkhourandlocationoccurrencecount)
 
 
 
