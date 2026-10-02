@@ -554,8 +554,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfoldermessage)
-- [](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0)
+- [Copy-MgUserMailFolderChildFolderMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolderchildfoldermessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0)
 
 
 
