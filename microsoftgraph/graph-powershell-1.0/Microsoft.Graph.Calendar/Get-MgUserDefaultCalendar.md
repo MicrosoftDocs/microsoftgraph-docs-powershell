@@ -50,13 +50,18 @@ The user's primary calendar.
 Read-only.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Calendar
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultCalendar -UserId $userId
+```
+This example shows how to use the Get-MgUserDefaultCalendar Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
