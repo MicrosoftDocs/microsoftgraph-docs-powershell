@@ -15,6 +15,9 @@ title: Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotification
 
 Update the navigation property localizedNotificationMessages in deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
