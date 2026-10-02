@@ -417,8 +417,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/reset-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow)
-- [](https://learn.microsoft.com/graph/api/industrydata-provisioningflow-reset?view=graph-rest-beta)
+- [Reset-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/reset-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/industrydata-provisioningflow-reset?view=graph-rest-beta)
 
 
 
