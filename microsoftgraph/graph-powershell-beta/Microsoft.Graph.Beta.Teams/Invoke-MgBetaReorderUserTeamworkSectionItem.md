@@ -68,6 +68,14 @@ This cmdlet has the following aliases,
 Reorder the items in a user-defined section in a user's teamwork.
 The section must have sortType set to userDefinedCustomOrder, and the itemsOrder collection must contain every item ID returned by List items, exactly once.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkSection.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

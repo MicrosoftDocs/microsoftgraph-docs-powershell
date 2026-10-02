@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Read the properties of a section in a user's teamwork.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkSection.Read, TeamworkSection.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkSection.Read.All, TeamworkSection.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
