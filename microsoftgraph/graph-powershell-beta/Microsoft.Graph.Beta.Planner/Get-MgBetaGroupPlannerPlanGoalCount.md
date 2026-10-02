@@ -367,7 +367,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplangoalcount)
+- [Get-MgBetaGroupPlannerPlanGoalCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplangoalcount)
 
 
 
