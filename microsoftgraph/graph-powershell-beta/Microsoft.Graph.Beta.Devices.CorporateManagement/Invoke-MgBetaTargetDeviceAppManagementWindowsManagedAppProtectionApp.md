@@ -495,7 +495,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [Version <String>]: Version of the entity.
 
-BODYPARAMETER <IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1YpfxrgDeviceappmanagementWindowsmanagedappprotectionsWindowsmanagedappprotectionIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Apps <IMicrosoftGraphManagedMobileApp[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -504,7 +504,7 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [Version <String>]: Version of the entity.
 
-INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   [AndroidManagedAppProtectionId <String>]: The unique identifier of androidManagedAppProtection
   [AppLogCollectionRequestId <String>]: The unique identifier of appLogCollectionRequest
   [AssignmentFilterEvaluationStatusDetailsId <String>]: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -583,3 +583,25 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetatargetdeviceappmanagementwindowsmanagedappprotectionapp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
