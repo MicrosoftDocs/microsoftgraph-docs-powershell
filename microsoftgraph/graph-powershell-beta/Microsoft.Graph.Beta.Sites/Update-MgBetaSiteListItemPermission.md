@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteListItemPermission
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaSiteListItemPermission
 ## SYNOPSIS
 
 Update the navigation property permissions in sites
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteListItemPermission](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 

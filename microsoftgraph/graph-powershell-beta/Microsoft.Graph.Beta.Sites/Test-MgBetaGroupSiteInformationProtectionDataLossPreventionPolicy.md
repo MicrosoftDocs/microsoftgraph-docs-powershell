@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetagroupsiteinformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy
 ---
@@ -580,6 +580,15 @@ Read-only.
       [SourceId <String>]: An identifier for the source of the content being classified.
     [Embeddings <IMicrosoftGraphEmbeddingInput[]>]: Optional caller-supplied precomputed embeddings for the text, so the service can skip recomputing them.
 Embeddings for models outside the allow-list are rejected with a 400.
+      [ChunkOffsets <IMicrosoftGraphChunkOffsets>]: chunkOffsets
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Lengths <String>]: An optional base64 string that encodes a packed sequence of little-endian signed 32-bit integers.
+Decoded values represent chunk lengths and must be nonnegative.
+The decoded byte count must be divisible by 4.
+When supplied, the decoded element count must match starts, and elements pair by index.
+        [Starts <String>]: A base64 string that encodes a packed sequence of little-endian signed 64-bit integers.
+Decoded values represent chunk start positions and must be nonnegative and in ascending order.
+The decoded byte count must be divisible by 8.
       [Data <String>]: The embedding vectors the model produced for the text, encoded as a base64 string of little-endian 32-bit floats.
 Every vector the model emitted (for example, one per text chunk) is concatenated in order; each contributes exactly the modelType's embedding dimension worth of float components, so the decoded length must be a whole multiple of that dimension.
       [ModelType <String>]: The embedding model identifier drawn from the service allow-list (for example: text-embedding-3-small-512).
@@ -616,6 +625,15 @@ Read-only.
     [SourceId <String>]: An identifier for the source of the content being classified.
   [Embeddings <IMicrosoftGraphEmbeddingInput[]>]: Optional caller-supplied precomputed embeddings for the text, so the service can skip recomputing them.
 Embeddings for models outside the allow-list are rejected with a 400.
+    [ChunkOffsets <IMicrosoftGraphChunkOffsets>]: chunkOffsets
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Lengths <String>]: An optional base64 string that encodes a packed sequence of little-endian signed 32-bit integers.
+Decoded values represent chunk lengths and must be nonnegative.
+The decoded byte count must be divisible by 4.
+When supplied, the decoded element count must match starts, and elements pair by index.
+      [Starts <String>]: A base64 string that encodes a packed sequence of little-endian signed 64-bit integers.
+Decoded values represent chunk start positions and must be nonnegative and in ascending order.
+The decoded byte count must be divisible by 8.
     [Data <String>]: The embedding vectors the model produced for the text, encoded as a base64 string of little-endian 32-bit floats.
 Every vector the model emitted (for example, one per text chunk) is concatenated in order; each contributes exactly the modelType's embedding dimension worth of float components, so the decoded length must be a whole multiple of that dimension.
     [ModelType <String>]: The embedding model identifier drawn from the service allow-list (for example: text-embedding-3-small-512).

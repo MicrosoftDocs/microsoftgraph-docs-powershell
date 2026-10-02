@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSiteListPermission
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaGroupSiteListPermission
 ## SYNOPSIS
 
 Create new navigation property to permissions for groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListPermission](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
