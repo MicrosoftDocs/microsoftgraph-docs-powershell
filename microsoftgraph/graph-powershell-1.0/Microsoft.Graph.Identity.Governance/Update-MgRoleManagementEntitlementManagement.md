@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgRoleManagementEntitlementManagement
 ---
@@ -36,7 +36,7 @@ Update-MgRoleManagementEntitlementManagement [-ResponseHeadersVariable <string>]
  [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -46,7 +46,6 @@ Update-MgRoleManagementEntitlementManagement -BodyParameter <IMicrosoftGraphRbac
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -870,6 +869,7 @@ Supports $filter (eq, in).
     [PrincipalId <String>]: Identifier of the principal to which the assignment is granted.
 Supported principals are users, role-assignable groups, and service principals.
 Supports $filter (eq, in).
+    [PrincipalOrganizationId <String>]: 
     [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
     [RoleDefinitionId <String>]: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
@@ -968,6 +968,7 @@ Supports $filter (eq, in).
   [PrincipalId <String>]: Identifier of the principal to which the assignment is granted.
 Supported principals are users, role-assignable groups, and service principals.
 Supports $filter (eq, in).
+  [PrincipalOrganizationId <String>]: 
   [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.

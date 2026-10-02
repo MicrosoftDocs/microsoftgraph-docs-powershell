@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagesuggestionbycurrentuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser
 ---
@@ -17,6 +17,9 @@ Retrieve suggested accessPackageSuggestion objects for the current end user.
 This operation returns access packages that are suggested based on various criteria such as related people insights and the user's assignment history.
 The suggestions help end users discover relevant access packages they may need for their role or work context.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterEntitlementManagementAccessPackageSuggestionByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterEntitlementManagementAccessPackageSuggestionByCurrentUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -27,7 +30,7 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -On
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### FilterViaIdentity
@@ -38,7 +41,7 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -51,6 +54,30 @@ This cmdlet has the following aliases,
 Retrieve suggested accessPackageSuggestion objects for the current end user.
 This operation returns access packages that are suggested based on various criteria such as related people insights and the user's assignment history.
 The suggestions help end users discover relevant access packages they may need for their role or work context.
+
+## EXAMPLES
+### Example 1: Get all access package suggestions with default insight types
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId 
+
+```
+This example will get all access package suggestions with default insight types
+
+### Example 2: Get access package suggestions based on assignment history
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser -ExpandProperty "availableAccessPackage"  -On $onId 
+
+```
+This example will get access package suggestions based on assignment history
+
 
 ## PARAMETERS
 
@@ -510,12 +537,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -551,6 +580,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -583,7 +613,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 - [Invoke-MgBetaFilterEntitlementManagementAccessPackageSuggestionByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagesuggestionbycurrentuser)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/accesspackagesuggestions-filterbycurrentuser?view=graph-rest-beta)
-
 
 
 

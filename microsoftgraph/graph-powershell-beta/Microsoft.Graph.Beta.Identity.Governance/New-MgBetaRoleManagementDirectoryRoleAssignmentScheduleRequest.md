@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentschedulerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
 ---
@@ -39,7 +39,6 @@ New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest [-ResponseHeaders
  [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -50,7 +49,6 @@ New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -69,9 +67,9 @@ See Enable per-user Microsoft Entra multifactor authentication to secure sign-in
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
+| Delegated (work or school account) | RoleAssignmentSchedule.ReadWrite.Directory, RoleAssignmentSchedule.Remove.Directory, RoleEligibilitySchedule.Remove.Directory, RoleManagement.ReadWrite.Directory,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory, RoleEligibilitySchedule.Remove.Directory, RoleAssignmentSchedule.Remove.Directory,  |
+| Application | RoleAssignmentSchedule.ReadWrite.Directory, RoleAssignmentSchedule.Remove.Directory, RoleEligibilitySchedule.Remove.Directory, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
 ### Example 1: Admin assigning a directory role to a principal
@@ -940,7 +938,7 @@ ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilitySchedule>`: unifiedRoleEli
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
@@ -1064,7 +1062,7 @@ APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
@@ -1103,7 +1101,7 @@ adminUpdate: For administrators to change existing role assignments.adminExtend:
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
@@ -1409,7 +1407,7 @@ TARGETSCHEDULE `<IMicrosoftGraphUnifiedRoleAssignmentSchedule>`: unifiedRoleAssi
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.

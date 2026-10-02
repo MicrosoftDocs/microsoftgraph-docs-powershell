@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaAdminPeopleItemInsight
 ---
@@ -13,7 +13,7 @@ title: Update-MgBetaAdminPeopleItemInsight
 
 ## SYNOPSIS
 
-Update privacy settings to display or return the specified type of insights in an organization.
+Update privacy settings to display or return the specified type of insightsSettings in an organization.
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\r-  Customize item insights privacy \r-  Customize people insights privacy
 
@@ -30,7 +30,6 @@ Update-MgBetaAdminPeopleItemInsight [-ResponseHeadersVariable <string>]
  [-IsEnabledInOrganization] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +39,6 @@ Update-MgBetaAdminPeopleItemInsight -BodyParameter <IMicrosoftGraphInsightsSetti
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -50,7 +48,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update privacy settings to display or return the specified type of insights in an organization.
+Update privacy settings to display or return the specified type of insightsSettings in an organization.
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\r-  Customize item insights privacy \r-  Customize people insights privacy
 

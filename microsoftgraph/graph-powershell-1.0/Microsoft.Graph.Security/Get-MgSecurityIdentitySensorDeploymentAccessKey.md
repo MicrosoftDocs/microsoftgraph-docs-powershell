@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentaccesskey
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySensorDeploymentAccessKey
 ---
@@ -26,7 +26,7 @@ Get the deployment access key for Microsoft Defender for Identity that is requir
 Get-MgSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -45,6 +45,19 @@ Get the deployment access key for Microsoft Defender for Identity that is requir
 | Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIdentitySensorDeploymentAccessKey
+
+```
+This example shows how to use the Get-MgSecurityIdentitySensorDeploymentAccessKey Cmdlet.
+
 
 ## PARAMETERS
 
@@ -241,7 +254,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgSecurityIdentitySensorDeploymentAccessKey](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentaccesskey)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-getdeploymentaccesskey?view=graph-rest-1.0)
 
 
 

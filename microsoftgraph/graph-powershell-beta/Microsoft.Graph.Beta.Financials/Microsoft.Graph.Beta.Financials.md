@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Financials
-Module Guid: 422c591b-93e1-4c3a-b18e-8ac2e556911d
+Module Guid: 1f945cc3-cda0-4179-945b-97a621e8069d
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.financials/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,21 +15,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompany](Get-MgBetaFinancialCompany.md)
 
-### [Get-MgBetaFinancialCompany](Get-MgBetaFinancialCompany.md)
-
-### [Get-MgBetaFinancialCompanyAccount](Get-MgBetaFinancialCompanyAccount.md)
-
 ### [Get-MgBetaFinancialCompanyAccount](Get-MgBetaFinancialCompanyAccount.md)
 
 ### [Get-MgBetaFinancialCompanyAccountCount](Get-MgBetaFinancialCompanyAccountCount.md)
 
 ### [Get-MgBetaFinancialCompanyAgedAccountPayable](Get-MgBetaFinancialCompanyAgedAccountPayable.md)
 
-### [Get-MgBetaFinancialCompanyAgedAccountPayable](Get-MgBetaFinancialCompanyAgedAccountPayable.md)
-
 ### [Get-MgBetaFinancialCompanyAgedAccountPayableCount](Get-MgBetaFinancialCompanyAgedAccountPayableCount.md)
-
-### [Get-MgBetaFinancialCompanyAgedAccountReceivable](Get-MgBetaFinancialCompanyAgedAccountReceivable.md)
 
 ### [Get-MgBetaFinancialCompanyAgedAccountReceivable](Get-MgBetaFinancialCompanyAgedAccountReceivable.md)
 
@@ -39,11 +31,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyCountryRegion](Get-MgBetaFinancialCompanyCountryRegion.md)
 
-### [Get-MgBetaFinancialCompanyCountryRegion](Get-MgBetaFinancialCompanyCountryRegion.md)
-
 ### [Get-MgBetaFinancialCompanyCountryRegionCount](Get-MgBetaFinancialCompanyCountryRegionCount.md)
-
-### [Get-MgBetaFinancialCompanyCurrency](Get-MgBetaFinancialCompanyCurrency.md)
 
 ### [Get-MgBetaFinancialCompanyCurrency](Get-MgBetaFinancialCompanyCurrency.md)
 
@@ -51,13 +39,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyCustomer](Get-MgBetaFinancialCompanyCustomer.md)
 
-### [Get-MgBetaFinancialCompanyCustomer](Get-MgBetaFinancialCompanyCustomer.md)
-
 ### [Get-MgBetaFinancialCompanyCustomerCount](Get-MgBetaFinancialCompanyCustomerCount.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerCurrency](Get-MgBetaFinancialCompanyCustomerCurrency.md)
-
-### [Get-MgBetaFinancialCompanyCustomerPayment](Get-MgBetaFinancialCompanyCustomerPayment.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPayment](Get-MgBetaFinancialCompanyCustomerPayment.md)
 
@@ -69,15 +53,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentCustomerPicture](Get-MgBetaFinancialCompanyCustomerPaymentCustomerPicture.md)
 
-### [Get-MgBetaFinancialCompanyCustomerPaymentCustomerPicture](Get-MgBetaFinancialCompanyCustomerPaymentCustomerPicture.md)
-
 ### [Get-MgBetaFinancialCompanyCustomerPaymentCustomerPictureContent](Get-MgBetaFinancialCompanyCustomerPaymentCustomerPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentCustomerPictureCount](Get-MgBetaFinancialCompanyCustomerPaymentCustomerPictureCount.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod](Get-MgBetaFinancialCompanyCustomerPaymentCustomerShipmentMethod.md)
-
-### [Get-MgBetaFinancialCompanyCustomerPaymentJournal](Get-MgBetaFinancialCompanyCustomerPaymentJournal.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentJournal](Get-MgBetaFinancialCompanyCustomerPaymentJournal.md)
 
@@ -87,15 +67,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPayment](Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPayment.md)
 
-### [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPayment](Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPayment.md)
-
 ### [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCount](Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCount.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer](Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomer.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerCurrency](Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerCurrency.md)
-
-### [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPicture](Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPicture.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPicture](Get-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerPicture.md)
 
@@ -115,8 +91,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyCustomerPicture](Get-MgBetaFinancialCompanyCustomerPicture.md)
 
-### [Get-MgBetaFinancialCompanyCustomerPicture](Get-MgBetaFinancialCompanyCustomerPicture.md)
-
 ### [Get-MgBetaFinancialCompanyCustomerPictureContent](Get-MgBetaFinancialCompanyCustomerPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanyCustomerPictureCount](Get-MgBetaFinancialCompanyCustomerPictureCount.md)
@@ -125,11 +99,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyDimension](Get-MgBetaFinancialCompanyDimension.md)
 
-### [Get-MgBetaFinancialCompanyDimension](Get-MgBetaFinancialCompanyDimension.md)
-
 ### [Get-MgBetaFinancialCompanyDimensionCount](Get-MgBetaFinancialCompanyDimensionCount.md)
-
-### [Get-MgBetaFinancialCompanyDimensionValue](Get-MgBetaFinancialCompanyDimensionValue.md)
 
 ### [Get-MgBetaFinancialCompanyDimensionValue](Get-MgBetaFinancialCompanyDimensionValue.md)
 
@@ -137,11 +107,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyEmployee](Get-MgBetaFinancialCompanyEmployee.md)
 
-### [Get-MgBetaFinancialCompanyEmployee](Get-MgBetaFinancialCompanyEmployee.md)
-
 ### [Get-MgBetaFinancialCompanyEmployeeCount](Get-MgBetaFinancialCompanyEmployeeCount.md)
-
-### [Get-MgBetaFinancialCompanyEmployeePicture](Get-MgBetaFinancialCompanyEmployeePicture.md)
 
 ### [Get-MgBetaFinancialCompanyEmployeePicture](Get-MgBetaFinancialCompanyEmployeePicture.md)
 
@@ -151,13 +117,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyGeneralLedgerEntry](Get-MgBetaFinancialCompanyGeneralLedgerEntry.md)
 
-### [Get-MgBetaFinancialCompanyGeneralLedgerEntry](Get-MgBetaFinancialCompanyGeneralLedgerEntry.md)
-
 ### [Get-MgBetaFinancialCompanyGeneralLedgerEntryAccount](Get-MgBetaFinancialCompanyGeneralLedgerEntryAccount.md)
 
 ### [Get-MgBetaFinancialCompanyGeneralLedgerEntryCount](Get-MgBetaFinancialCompanyGeneralLedgerEntryCount.md)
-
-### [Get-MgBetaFinancialCompanyInformation](Get-MgBetaFinancialCompanyInformation.md)
 
 ### [Get-MgBetaFinancialCompanyInformation](Get-MgBetaFinancialCompanyInformation.md)
 
@@ -167,17 +129,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyItem](Get-MgBetaFinancialCompanyItem.md)
 
-### [Get-MgBetaFinancialCompanyItem](Get-MgBetaFinancialCompanyItem.md)
-
-### [Get-MgBetaFinancialCompanyItemCategory](Get-MgBetaFinancialCompanyItemCategory.md)
-
 ### [Get-MgBetaFinancialCompanyItemCategory](Get-MgBetaFinancialCompanyItemCategory.md)
 
 ### [Get-MgBetaFinancialCompanyItemCategoryCount](Get-MgBetaFinancialCompanyItemCategoryCount.md)
 
 ### [Get-MgBetaFinancialCompanyItemCount](Get-MgBetaFinancialCompanyItemCount.md)
-
-### [Get-MgBetaFinancialCompanyItemPicture](Get-MgBetaFinancialCompanyItemPicture.md)
 
 ### [Get-MgBetaFinancialCompanyItemPicture](Get-MgBetaFinancialCompanyItemPicture.md)
 
@@ -187,13 +143,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyJournal](Get-MgBetaFinancialCompanyJournal.md)
 
-### [Get-MgBetaFinancialCompanyJournal](Get-MgBetaFinancialCompanyJournal.md)
-
 ### [Get-MgBetaFinancialCompanyJournalAccount](Get-MgBetaFinancialCompanyJournalAccount.md)
 
 ### [Get-MgBetaFinancialCompanyJournalCount](Get-MgBetaFinancialCompanyJournalCount.md)
-
-### [Get-MgBetaFinancialCompanyJournalLine](Get-MgBetaFinancialCompanyJournalLine.md)
 
 ### [Get-MgBetaFinancialCompanyJournalLine](Get-MgBetaFinancialCompanyJournalLine.md)
 
@@ -203,17 +155,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyPaymentMethod](Get-MgBetaFinancialCompanyPaymentMethod.md)
 
-### [Get-MgBetaFinancialCompanyPaymentMethod](Get-MgBetaFinancialCompanyPaymentMethod.md)
-
 ### [Get-MgBetaFinancialCompanyPaymentMethodCount](Get-MgBetaFinancialCompanyPaymentMethodCount.md)
 
 ### [Get-MgBetaFinancialCompanyPaymentTerm](Get-MgBetaFinancialCompanyPaymentTerm.md)
 
-### [Get-MgBetaFinancialCompanyPaymentTerm](Get-MgBetaFinancialCompanyPaymentTerm.md)
-
 ### [Get-MgBetaFinancialCompanyPaymentTermCount](Get-MgBetaFinancialCompanyPaymentTermCount.md)
-
-### [Get-MgBetaFinancialCompanyPicture](Get-MgBetaFinancialCompanyPicture.md)
 
 ### [Get-MgBetaFinancialCompanyPicture](Get-MgBetaFinancialCompanyPicture.md)
 
@@ -223,13 +169,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyPurchaseInvoice](Get-MgBetaFinancialCompanyPurchaseInvoice.md)
 
-### [Get-MgBetaFinancialCompanyPurchaseInvoice](Get-MgBetaFinancialCompanyPurchaseInvoice.md)
-
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceCount](Get-MgBetaFinancialCompanyPurchaseInvoiceCount.md)
 
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceCurrency](Get-MgBetaFinancialCompanyPurchaseInvoiceCurrency.md)
-
-### [Get-MgBetaFinancialCompanyPurchaseInvoiceLine](Get-MgBetaFinancialCompanyPurchaseInvoiceLine.md)
 
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceLine](Get-MgBetaFinancialCompanyPurchaseInvoiceLine.md)
 
@@ -240,8 +182,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem](Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem.md)
 
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory](Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemCategory.md)
-
-### [Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture](Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture.md)
 
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture](Get-MgBetaFinancialCompanyPurchaseInvoiceLineItemPicture.md)
 
@@ -259,13 +199,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPicture](Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPicture.md)
 
-### [Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPicture](Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPicture.md)
-
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPictureContent](Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPictureCount](Get-MgBetaFinancialCompanyPurchaseInvoiceVendorPictureCount.md)
-
-### [Get-MgBetaFinancialCompanySaleCreditMemo](Get-MgBetaFinancialCompanySaleCreditMemo.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemo](Get-MgBetaFinancialCompanySaleCreditMemo.md)
 
@@ -283,15 +219,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoCustomerPicture](Get-MgBetaFinancialCompanySaleCreditMemoCustomerPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleCreditMemoCustomerPicture](Get-MgBetaFinancialCompanySaleCreditMemoCustomerPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleCreditMemoCustomerPictureContent](Get-MgBetaFinancialCompanySaleCreditMemoCustomerPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoCustomerPictureCount](Get-MgBetaFinancialCompanySaleCreditMemoCustomerPictureCount.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoCustomerShipmentMethod](Get-MgBetaFinancialCompanySaleCreditMemoCustomerShipmentMethod.md)
-
-### [Get-MgBetaFinancialCompanySaleCreditMemoLine](Get-MgBetaFinancialCompanySaleCreditMemoLine.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoLine](Get-MgBetaFinancialCompanySaleCreditMemoLine.md)
 
@@ -305,15 +237,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoLineItemPicture](Get-MgBetaFinancialCompanySaleCreditMemoLineItemPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleCreditMemoLineItemPicture](Get-MgBetaFinancialCompanySaleCreditMemoLineItemPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleCreditMemoLineItemPictureContent](Get-MgBetaFinancialCompanySaleCreditMemoLineItemPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoLineItemPictureCount](Get-MgBetaFinancialCompanySaleCreditMemoLineItemPictureCount.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoPaymentTerm](Get-MgBetaFinancialCompanySaleCreditMemoPaymentTerm.md)
-
-### [Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLine](Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLine.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLine](Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLine.md)
 
@@ -327,13 +255,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture](Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture](Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPictureContent](Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPictureCount](Get-MgBetaFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPictureCount.md)
-
-### [Get-MgBetaFinancialCompanySaleInvoice](Get-MgBetaFinancialCompanySaleInvoice.md)
 
 ### [Get-MgBetaFinancialCompanySaleInvoice](Get-MgBetaFinancialCompanySaleInvoice.md)
 
@@ -351,15 +275,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleInvoiceCustomerPicture](Get-MgBetaFinancialCompanySaleInvoiceCustomerPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleInvoiceCustomerPicture](Get-MgBetaFinancialCompanySaleInvoiceCustomerPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleInvoiceCustomerPictureContent](Get-MgBetaFinancialCompanySaleInvoiceCustomerPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleInvoiceCustomerPictureCount](Get-MgBetaFinancialCompanySaleInvoiceCustomerPictureCount.md)
 
 ### [Get-MgBetaFinancialCompanySaleInvoiceCustomerShipmentMethod](Get-MgBetaFinancialCompanySaleInvoiceCustomerShipmentMethod.md)
-
-### [Get-MgBetaFinancialCompanySaleInvoiceLine](Get-MgBetaFinancialCompanySaleInvoiceLine.md)
 
 ### [Get-MgBetaFinancialCompanySaleInvoiceLine](Get-MgBetaFinancialCompanySaleInvoiceLine.md)
 
@@ -373,8 +293,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleInvoiceLineItemPicture](Get-MgBetaFinancialCompanySaleInvoiceLineItemPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleInvoiceLineItemPicture](Get-MgBetaFinancialCompanySaleInvoiceLineItemPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureContent](Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount](Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount.md)
@@ -382,8 +300,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaFinancialCompanySaleInvoicePaymentTerm](Get-MgBetaFinancialCompanySaleInvoicePaymentTerm.md)
 
 ### [Get-MgBetaFinancialCompanySaleInvoiceShipmentMethod](Get-MgBetaFinancialCompanySaleInvoiceShipmentMethod.md)
-
-### [Get-MgBetaFinancialCompanySaleOrder](Get-MgBetaFinancialCompanySaleOrder.md)
 
 ### [Get-MgBetaFinancialCompanySaleOrder](Get-MgBetaFinancialCompanySaleOrder.md)
 
@@ -401,15 +317,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleOrderCustomerPicture](Get-MgBetaFinancialCompanySaleOrderCustomerPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleOrderCustomerPicture](Get-MgBetaFinancialCompanySaleOrderCustomerPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleOrderCustomerPictureContent](Get-MgBetaFinancialCompanySaleOrderCustomerPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleOrderCustomerPictureCount](Get-MgBetaFinancialCompanySaleOrderCustomerPictureCount.md)
 
 ### [Get-MgBetaFinancialCompanySaleOrderCustomerShipmentMethod](Get-MgBetaFinancialCompanySaleOrderCustomerShipmentMethod.md)
-
-### [Get-MgBetaFinancialCompanySaleOrderLine](Get-MgBetaFinancialCompanySaleOrderLine.md)
 
 ### [Get-MgBetaFinancialCompanySaleOrderLine](Get-MgBetaFinancialCompanySaleOrderLine.md)
 
@@ -423,15 +335,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleOrderLineItemPicture](Get-MgBetaFinancialCompanySaleOrderLineItemPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleOrderLineItemPicture](Get-MgBetaFinancialCompanySaleOrderLineItemPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleOrderLineItemPictureContent](Get-MgBetaFinancialCompanySaleOrderLineItemPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleOrderLineItemPictureCount](Get-MgBetaFinancialCompanySaleOrderLineItemPictureCount.md)
 
 ### [Get-MgBetaFinancialCompanySaleOrderPaymentTerm](Get-MgBetaFinancialCompanySaleOrderPaymentTerm.md)
-
-### [Get-MgBetaFinancialCompanySaleQuote](Get-MgBetaFinancialCompanySaleQuote.md)
 
 ### [Get-MgBetaFinancialCompanySaleQuote](Get-MgBetaFinancialCompanySaleQuote.md)
 
@@ -449,15 +357,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleQuoteCustomerPicture](Get-MgBetaFinancialCompanySaleQuoteCustomerPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleQuoteCustomerPicture](Get-MgBetaFinancialCompanySaleQuoteCustomerPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleQuoteCustomerPictureContent](Get-MgBetaFinancialCompanySaleQuoteCustomerPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleQuoteCustomerPictureCount](Get-MgBetaFinancialCompanySaleQuoteCustomerPictureCount.md)
 
 ### [Get-MgBetaFinancialCompanySaleQuoteCustomerShipmentMethod](Get-MgBetaFinancialCompanySaleQuoteCustomerShipmentMethod.md)
-
-### [Get-MgBetaFinancialCompanySaleQuoteLine](Get-MgBetaFinancialCompanySaleQuoteLine.md)
 
 ### [Get-MgBetaFinancialCompanySaleQuoteLine](Get-MgBetaFinancialCompanySaleQuoteLine.md)
 
@@ -471,8 +375,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanySaleQuoteLineItemPicture](Get-MgBetaFinancialCompanySaleQuoteLineItemPicture.md)
 
-### [Get-MgBetaFinancialCompanySaleQuoteLineItemPicture](Get-MgBetaFinancialCompanySaleQuoteLineItemPicture.md)
-
 ### [Get-MgBetaFinancialCompanySaleQuoteLineItemPictureContent](Get-MgBetaFinancialCompanySaleQuoteLineItemPictureContent.md)
 
 ### [Get-MgBetaFinancialCompanySaleQuoteLineItemPictureCount](Get-MgBetaFinancialCompanySaleQuoteLineItemPictureCount.md)
@@ -483,11 +385,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyShipmentMethod](Get-MgBetaFinancialCompanyShipmentMethod.md)
 
-### [Get-MgBetaFinancialCompanyShipmentMethod](Get-MgBetaFinancialCompanyShipmentMethod.md)
-
 ### [Get-MgBetaFinancialCompanyShipmentMethodCount](Get-MgBetaFinancialCompanyShipmentMethodCount.md)
-
-### [Get-MgBetaFinancialCompanyTaxArea](Get-MgBetaFinancialCompanyTaxArea.md)
 
 ### [Get-MgBetaFinancialCompanyTaxArea](Get-MgBetaFinancialCompanyTaxArea.md)
 
@@ -495,17 +393,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaFinancialCompanyTaxGroup](Get-MgBetaFinancialCompanyTaxGroup.md)
 
-### [Get-MgBetaFinancialCompanyTaxGroup](Get-MgBetaFinancialCompanyTaxGroup.md)
-
 ### [Get-MgBetaFinancialCompanyTaxGroupCount](Get-MgBetaFinancialCompanyTaxGroupCount.md)
 
 ### [Get-MgBetaFinancialCompanyUnitOfMeasure](Get-MgBetaFinancialCompanyUnitOfMeasure.md)
 
-### [Get-MgBetaFinancialCompanyUnitOfMeasure](Get-MgBetaFinancialCompanyUnitOfMeasure.md)
-
 ### [Get-MgBetaFinancialCompanyUnitOfMeasureCount](Get-MgBetaFinancialCompanyUnitOfMeasureCount.md)
-
-### [Get-MgBetaFinancialCompanyVendor](Get-MgBetaFinancialCompanyVendor.md)
 
 ### [Get-MgBetaFinancialCompanyVendor](Get-MgBetaFinancialCompanyVendor.md)
 
@@ -516,8 +408,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaFinancialCompanyVendorPaymentMethod](Get-MgBetaFinancialCompanyVendorPaymentMethod.md)
 
 ### [Get-MgBetaFinancialCompanyVendorPaymentTerm](Get-MgBetaFinancialCompanyVendorPaymentTerm.md)
-
-### [Get-MgBetaFinancialCompanyVendorPicture](Get-MgBetaFinancialCompanyVendorPicture.md)
 
 ### [Get-MgBetaFinancialCompanyVendorPicture](Get-MgBetaFinancialCompanyVendorPicture.md)
 

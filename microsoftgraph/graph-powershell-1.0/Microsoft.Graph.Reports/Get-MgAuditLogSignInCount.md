@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignincount
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAuditLogSignInCount
 ---
@@ -26,7 +26,7 @@ Get the number of the resource
 Get-MgAuditLogSignInCount [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -42,9 +42,9 @@ Get the number of the resource
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All,  |
+| Delegated (work or school account) | AuditLog.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All,  |
+| Application | AuditLog.Read.All,  |
 
 ## PARAMETERS
 

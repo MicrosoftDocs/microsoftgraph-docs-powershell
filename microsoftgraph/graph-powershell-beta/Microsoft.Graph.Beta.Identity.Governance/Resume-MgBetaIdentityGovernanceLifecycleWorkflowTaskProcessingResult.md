@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowtaskprocessingresult
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 ---
@@ -13,9 +13,9 @@ title: Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult
 
 ## SYNOPSIS
 
-Resume a task processing result that's inProgress.
-In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information, see: Lifecycle Workflows extensibility approach.
+Resume a taskProcessingResult that's inProgress.
+In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
+For more information, see Lifecycle Workflows extensibility approach.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-1.0)
@@ -32,7 +32,6 @@ Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult -TaskId <st
  [-Type <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Resume
@@ -44,7 +43,6 @@ Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult -TaskId <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ResumeViaIdentityExpanded
@@ -57,7 +55,6 @@ Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult
  [-Type <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ResumeViaIdentity
@@ -69,7 +66,6 @@ Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -79,9 +75,9 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Resume a task processing result that's inProgress.
-In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information, see: Lifecycle Workflows extensibility approach.
+Resume a taskProcessingResult that's inProgress.
+In the default case, an Azure Logic Apps system-assigned managed identity calls this API.
+For more information, see Lifecycle Workflows extensibility approach.
 
 **Permissions**
 
@@ -682,12 +678,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -723,6 +721,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Files
-Module Guid: 240b4bf5-8e68-49a0-90bb-c54fe16f62b0
+Module Guid: 30c2109d-f20d-4af6-96c5-a52860236df1
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.files/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -49,11 +49,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDrive](Get-MgBetaDrive.md)
 
-### [Get-MgBetaDrive](Get-MgBetaDrive.md)
-
 ### [Get-MgBetaDriveActivity](Get-MgBetaDriveActivity.md)
-
-### [Get-MgBetaDriveBundle](Get-MgBetaDriveBundle.md)
 
 ### [Get-MgBetaDriveBundle](Get-MgBetaDriveBundle.md)
 
@@ -64,8 +60,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDriveBundleCount](Get-MgBetaDriveBundleCount.md)
 
 ### [Get-MgBetaDriveContentTypeBase](Get-MgBetaDriveContentTypeBase.md)
-
-### [Get-MgBetaDriveContentTypeBaseType](Get-MgBetaDriveContentTypeBaseType.md)
 
 ### [Get-MgBetaDriveContentTypeBaseType](Get-MgBetaDriveContentTypeBaseType.md)
 
@@ -81,15 +75,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveFollowing](Get-MgBetaDriveFollowing.md)
 
-### [Get-MgBetaDriveFollowing](Get-MgBetaDriveFollowing.md)
-
 ### [Get-MgBetaDriveFollowingContent](Get-MgBetaDriveFollowingContent.md)
 
 ### [Get-MgBetaDriveFollowingContentStream](Get-MgBetaDriveFollowingContentStream.md)
 
 ### [Get-MgBetaDriveFollowingCount](Get-MgBetaDriveFollowingCount.md)
-
-### [Get-MgBetaDriveItem](Get-MgBetaDriveItem.md)
 
 ### [Get-MgBetaDriveItem](Get-MgBetaDriveItem.md)
 
@@ -101,8 +91,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveItemAnalyticItemActivityStat](Get-MgBetaDriveItemAnalyticItemActivityStat.md)
 
-### [Get-MgBetaDriveItemAnalyticItemActivityStat](Get-MgBetaDriveItemAnalyticItemActivityStat.md)
-
 ### [Get-MgBetaDriveItemAnalyticItemActivityStatActivity](Get-MgBetaDriveItemAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaDriveItemAnalyticItemActivityStatCount](Get-MgBetaDriveItemAnalyticItemActivityStatCount.md)
@@ -110,8 +98,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDriveItemAnalyticLastSevenDay](Get-MgBetaDriveItemAnalyticLastSevenDay.md)
 
 ### [Get-MgBetaDriveItemAnalyticTime](Get-MgBetaDriveItemAnalyticTime.md)
-
-### [Get-MgBetaDriveItemChild](Get-MgBetaDriveItemChild.md)
 
 ### [Get-MgBetaDriveItemChild](Get-MgBetaDriveItemChild.md)
 
@@ -136,8 +122,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveItemCreatedByUserServiceProvisioningErrorCount.md)
 
 ### [Get-MgBetaDriveItemDelta](Get-MgBetaDriveItemDelta.md)
-
-### [Get-MgBetaDriveItemExtension](Get-MgBetaDriveItemExtension.md)
 
 ### [Get-MgBetaDriveItemExtension](Get-MgBetaDriveItemExtension.md)
 
@@ -177,8 +161,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveItemListItemDocumentSetVersion](Get-MgBetaDriveItemListItemDocumentSetVersion.md)
 
-### [Get-MgBetaDriveItemListItemDocumentSetVersion](Get-MgBetaDriveItemListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaDriveItemListItemDocumentSetVersionCount](Get-MgBetaDriveItemListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaDriveItemListItemDocumentSetVersionField](Get-MgBetaDriveItemListItemDocumentSetVersionField.md)
@@ -193,11 +175,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveItemListItemPermission](Get-MgBetaDriveItemListItemPermission.md)
 
-### [Get-MgBetaDriveItemListItemPermission](Get-MgBetaDriveItemListItemPermission.md)
-
 ### [Get-MgBetaDriveItemListItemPermissionCount](Get-MgBetaDriveItemListItemPermissionCount.md)
-
-### [Get-MgBetaDriveItemListItemVersion](Get-MgBetaDriveItemListItemVersion.md)
 
 ### [Get-MgBetaDriveItemListItemVersion](Get-MgBetaDriveItemListItemVersion.md)
 
@@ -207,13 +185,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveItemPermission](Get-MgBetaDriveItemPermission.md)
 
-### [Get-MgBetaDriveItemPermission](Get-MgBetaDriveItemPermission.md)
-
 ### [Get-MgBetaDriveItemPermissionCount](Get-MgBetaDriveItemPermissionCount.md)
 
 ### [Get-MgBetaDriveItemRetentionLabel](Get-MgBetaDriveItemRetentionLabel.md)
-
-### [Get-MgBetaDriveItemSubscription](Get-MgBetaDriveItemSubscription.md)
 
 ### [Get-MgBetaDriveItemSubscription](Get-MgBetaDriveItemSubscription.md)
 
@@ -223,11 +197,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveItemThumbnail](Get-MgBetaDriveItemThumbnail.md)
 
-### [Get-MgBetaDriveItemThumbnail](Get-MgBetaDriveItemThumbnail.md)
-
 ### [Get-MgBetaDriveItemThumbnailCount](Get-MgBetaDriveItemThumbnailCount.md)
-
-### [Get-MgBetaDriveItemVersion](Get-MgBetaDriveItemVersion.md)
 
 ### [Get-MgBetaDriveItemVersion](Get-MgBetaDriveItemVersion.md)
 
@@ -249,17 +219,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveListColumn](Get-MgBetaDriveListColumn.md)
 
-### [Get-MgBetaDriveListColumn](Get-MgBetaDriveListColumn.md)
-
 ### [Get-MgBetaDriveListColumnCount](Get-MgBetaDriveListColumnCount.md)
 
 ### [Get-MgBetaDriveListColumnSourceColumn](Get-MgBetaDriveListColumnSourceColumn.md)
 
 ### [Get-MgBetaDriveListContentType](Get-MgBetaDriveListContentType.md)
-
-### [Get-MgBetaDriveListContentType](Get-MgBetaDriveListContentType.md)
-
-### [Get-MgBetaDriveListContentTypeColumn](Get-MgBetaDriveListContentTypeColumn.md)
 
 ### [Get-MgBetaDriveListContentTypeColumn](Get-MgBetaDriveListContentTypeColumn.md)
 
@@ -267,11 +231,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveListContentTypeColumnLink](Get-MgBetaDriveListContentTypeColumnLink.md)
 
-### [Get-MgBetaDriveListContentTypeColumnLink](Get-MgBetaDriveListContentTypeColumnLink.md)
-
 ### [Get-MgBetaDriveListContentTypeColumnLinkCount](Get-MgBetaDriveListContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaDriveListContentTypeColumnPosition](Get-MgBetaDriveListContentTypeColumnPosition.md)
 
 ### [Get-MgBetaDriveListContentTypeColumnPosition](Get-MgBetaDriveListContentTypeColumnPosition.md)
 
@@ -295,8 +255,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveListItem](Get-MgBetaDriveListItem.md)
 
-### [Get-MgBetaDriveListItem](Get-MgBetaDriveListItem.md)
-
 ### [Get-MgBetaDriveListItemActivity](Get-MgBetaDriveListItemActivity.md)
 
 ### [Get-MgBetaDriveListItemActivityByInterval](Get-MgBetaDriveListItemActivityByInterval.md)
@@ -317,8 +275,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveListItemDocumentSetVersion](Get-MgBetaDriveListItemDocumentSetVersion.md)
 
-### [Get-MgBetaDriveListItemDocumentSetVersion](Get-MgBetaDriveListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaDriveListItemDocumentSetVersionCount](Get-MgBetaDriveListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaDriveListItemDocumentSetVersionField](Get-MgBetaDriveListItemDocumentSetVersionField.md)
@@ -333,11 +289,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveListItemPermission](Get-MgBetaDriveListItemPermission.md)
 
-### [Get-MgBetaDriveListItemPermission](Get-MgBetaDriveListItemPermission.md)
-
 ### [Get-MgBetaDriveListItemPermissionCount](Get-MgBetaDriveListItemPermissionCount.md)
-
-### [Get-MgBetaDriveListItemVersion](Get-MgBetaDriveListItemVersion.md)
 
 ### [Get-MgBetaDriveListItemVersion](Get-MgBetaDriveListItemVersion.md)
 
@@ -347,17 +299,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveListOperation](Get-MgBetaDriveListOperation.md)
 
-### [Get-MgBetaDriveListOperation](Get-MgBetaDriveListOperation.md)
-
 ### [Get-MgBetaDriveListOperationCount](Get-MgBetaDriveListOperationCount.md)
 
 ### [Get-MgBetaDriveListPermission](Get-MgBetaDriveListPermission.md)
 
-### [Get-MgBetaDriveListPermission](Get-MgBetaDriveListPermission.md)
-
 ### [Get-MgBetaDriveListPermissionCount](Get-MgBetaDriveListPermissionCount.md)
-
-### [Get-MgBetaDriveListSubscription](Get-MgBetaDriveListSubscription.md)
 
 ### [Get-MgBetaDriveListSubscription](Get-MgBetaDriveListSubscription.md)
 
@@ -375,8 +321,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveRootAnalyticItemActivityStat](Get-MgBetaDriveRootAnalyticItemActivityStat.md)
 
-### [Get-MgBetaDriveRootAnalyticItemActivityStat](Get-MgBetaDriveRootAnalyticItemActivityStat.md)
-
 ### [Get-MgBetaDriveRootAnalyticItemActivityStatActivity](Get-MgBetaDriveRootAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaDriveRootAnalyticItemActivityStatCount](Get-MgBetaDriveRootAnalyticItemActivityStatCount.md)
@@ -384,8 +328,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDriveRootAnalyticLastSevenDay](Get-MgBetaDriveRootAnalyticLastSevenDay.md)
 
 ### [Get-MgBetaDriveRootAnalyticTime](Get-MgBetaDriveRootAnalyticTime.md)
-
-### [Get-MgBetaDriveRootChild](Get-MgBetaDriveRootChild.md)
 
 ### [Get-MgBetaDriveRootChild](Get-MgBetaDriveRootChild.md)
 
@@ -408,8 +350,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveRootCreatedByUserServiceProvisioningErrorCount.md)
 
 ### [Get-MgBetaDriveRootDelta](Get-MgBetaDriveRootDelta.md)
-
-### [Get-MgBetaDriveRootExtension](Get-MgBetaDriveRootExtension.md)
 
 ### [Get-MgBetaDriveRootExtension](Get-MgBetaDriveRootExtension.md)
 
@@ -449,8 +389,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveRootListItemDocumentSetVersion](Get-MgBetaDriveRootListItemDocumentSetVersion.md)
 
-### [Get-MgBetaDriveRootListItemDocumentSetVersion](Get-MgBetaDriveRootListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaDriveRootListItemDocumentSetVersionCount](Get-MgBetaDriveRootListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaDriveRootListItemDocumentSetVersionField](Get-MgBetaDriveRootListItemDocumentSetVersionField.md)
@@ -465,11 +403,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveRootListItemPermission](Get-MgBetaDriveRootListItemPermission.md)
 
-### [Get-MgBetaDriveRootListItemPermission](Get-MgBetaDriveRootListItemPermission.md)
-
 ### [Get-MgBetaDriveRootListItemPermissionCount](Get-MgBetaDriveRootListItemPermissionCount.md)
-
-### [Get-MgBetaDriveRootListItemVersion](Get-MgBetaDriveRootListItemVersion.md)
 
 ### [Get-MgBetaDriveRootListItemVersion](Get-MgBetaDriveRootListItemVersion.md)
 
@@ -479,13 +413,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveRootPermission](Get-MgBetaDriveRootPermission.md)
 
-### [Get-MgBetaDriveRootPermission](Get-MgBetaDriveRootPermission.md)
-
 ### [Get-MgBetaDriveRootPermissionCount](Get-MgBetaDriveRootPermissionCount.md)
 
 ### [Get-MgBetaDriveRootRetentionLabel](Get-MgBetaDriveRootRetentionLabel.md)
-
-### [Get-MgBetaDriveRootSubscription](Get-MgBetaDriveRootSubscription.md)
 
 ### [Get-MgBetaDriveRootSubscription](Get-MgBetaDriveRootSubscription.md)
 
@@ -495,19 +425,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDriveRootThumbnail](Get-MgBetaDriveRootThumbnail.md)
 
-### [Get-MgBetaDriveRootThumbnail](Get-MgBetaDriveRootThumbnail.md)
-
 ### [Get-MgBetaDriveRootThumbnailCount](Get-MgBetaDriveRootThumbnailCount.md)
-
-### [Get-MgBetaDriveRootVersion](Get-MgBetaDriveRootVersion.md)
 
 ### [Get-MgBetaDriveRootVersion](Get-MgBetaDriveRootVersion.md)
 
 ### [Get-MgBetaDriveRootVersionContent](Get-MgBetaDriveRootVersionContent.md)
 
 ### [Get-MgBetaDriveRootVersionCount](Get-MgBetaDriveRootVersionCount.md)
-
-### [Get-MgBetaDriveSpecial](Get-MgBetaDriveSpecial.md)
 
 ### [Get-MgBetaDriveSpecial](Get-MgBetaDriveSpecial.md)
 
@@ -521,11 +445,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDrive](Get-MgBetaGroupDrive.md)
 
-### [Get-MgBetaGroupDrive](Get-MgBetaGroupDrive.md)
-
 ### [Get-MgBetaGroupDriveActivity](Get-MgBetaGroupDriveActivity.md)
-
-### [Get-MgBetaGroupDriveBundle](Get-MgBetaGroupDriveBundle.md)
 
 ### [Get-MgBetaGroupDriveBundle](Get-MgBetaGroupDriveBundle.md)
 
@@ -536,8 +456,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupDriveBundleCount](Get-MgBetaGroupDriveBundleCount.md)
 
 ### [Get-MgBetaGroupDriveContentTypeBase](Get-MgBetaGroupDriveContentTypeBase.md)
-
-### [Get-MgBetaGroupDriveContentTypeBaseType](Get-MgBetaGroupDriveContentTypeBaseType.md)
 
 ### [Get-MgBetaGroupDriveContentTypeBaseType](Get-MgBetaGroupDriveContentTypeBaseType.md)
 
@@ -555,15 +473,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveFollowing](Get-MgBetaGroupDriveFollowing.md)
 
-### [Get-MgBetaGroupDriveFollowing](Get-MgBetaGroupDriveFollowing.md)
-
 ### [Get-MgBetaGroupDriveFollowingContent](Get-MgBetaGroupDriveFollowingContent.md)
 
 ### [Get-MgBetaGroupDriveFollowingContentStream](Get-MgBetaGroupDriveFollowingContentStream.md)
 
 ### [Get-MgBetaGroupDriveFollowingCount](Get-MgBetaGroupDriveFollowingCount.md)
-
-### [Get-MgBetaGroupDriveItem](Get-MgBetaGroupDriveItem.md)
 
 ### [Get-MgBetaGroupDriveItem](Get-MgBetaGroupDriveItem.md)
 
@@ -575,8 +489,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveItemAnalyticItemActivityStat](Get-MgBetaGroupDriveItemAnalyticItemActivityStat.md)
 
-### [Get-MgBetaGroupDriveItemAnalyticItemActivityStat](Get-MgBetaGroupDriveItemAnalyticItemActivityStat.md)
-
 ### [Get-MgBetaGroupDriveItemAnalyticItemActivityStatActivity](Get-MgBetaGroupDriveItemAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaGroupDriveItemAnalyticItemActivityStatCount](Get-MgBetaGroupDriveItemAnalyticItemActivityStatCount.md)
@@ -584,8 +496,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupDriveItemAnalyticLastSevenDay](Get-MgBetaGroupDriveItemAnalyticLastSevenDay.md)
 
 ### [Get-MgBetaGroupDriveItemAnalyticTime](Get-MgBetaGroupDriveItemAnalyticTime.md)
-
-### [Get-MgBetaGroupDriveItemChild](Get-MgBetaGroupDriveItemChild.md)
 
 ### [Get-MgBetaGroupDriveItemChild](Get-MgBetaGroupDriveItemChild.md)
 
@@ -610,8 +520,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveItemCreatedByUserServiceProvisioningErrorCount.md)
 
 ### [Get-MgBetaGroupDriveItemDelta](Get-MgBetaGroupDriveItemDelta.md)
-
-### [Get-MgBetaGroupDriveItemExtension](Get-MgBetaGroupDriveItemExtension.md)
 
 ### [Get-MgBetaGroupDriveItemExtension](Get-MgBetaGroupDriveItemExtension.md)
 
@@ -651,8 +559,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveItemListItemDocumentSetVersion](Get-MgBetaGroupDriveItemListItemDocumentSetVersion.md)
 
-### [Get-MgBetaGroupDriveItemListItemDocumentSetVersion](Get-MgBetaGroupDriveItemListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaGroupDriveItemListItemDocumentSetVersionCount](Get-MgBetaGroupDriveItemListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaGroupDriveItemListItemDocumentSetVersionField](Get-MgBetaGroupDriveItemListItemDocumentSetVersionField.md)
@@ -667,11 +573,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveItemListItemPermission](Get-MgBetaGroupDriveItemListItemPermission.md)
 
-### [Get-MgBetaGroupDriveItemListItemPermission](Get-MgBetaGroupDriveItemListItemPermission.md)
-
 ### [Get-MgBetaGroupDriveItemListItemPermissionCount](Get-MgBetaGroupDriveItemListItemPermissionCount.md)
-
-### [Get-MgBetaGroupDriveItemListItemVersion](Get-MgBetaGroupDriveItemListItemVersion.md)
 
 ### [Get-MgBetaGroupDriveItemListItemVersion](Get-MgBetaGroupDriveItemListItemVersion.md)
 
@@ -681,13 +583,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveItemPermission](Get-MgBetaGroupDriveItemPermission.md)
 
-### [Get-MgBetaGroupDriveItemPermission](Get-MgBetaGroupDriveItemPermission.md)
-
 ### [Get-MgBetaGroupDriveItemPermissionCount](Get-MgBetaGroupDriveItemPermissionCount.md)
 
 ### [Get-MgBetaGroupDriveItemRetentionLabel](Get-MgBetaGroupDriveItemRetentionLabel.md)
-
-### [Get-MgBetaGroupDriveItemSubscription](Get-MgBetaGroupDriveItemSubscription.md)
 
 ### [Get-MgBetaGroupDriveItemSubscription](Get-MgBetaGroupDriveItemSubscription.md)
 
@@ -697,11 +595,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveItemThumbnail](Get-MgBetaGroupDriveItemThumbnail.md)
 
-### [Get-MgBetaGroupDriveItemThumbnail](Get-MgBetaGroupDriveItemThumbnail.md)
-
 ### [Get-MgBetaGroupDriveItemThumbnailCount](Get-MgBetaGroupDriveItemThumbnailCount.md)
-
-### [Get-MgBetaGroupDriveItemVersion](Get-MgBetaGroupDriveItemVersion.md)
 
 ### [Get-MgBetaGroupDriveItemVersion](Get-MgBetaGroupDriveItemVersion.md)
 
@@ -723,17 +617,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveListColumn](Get-MgBetaGroupDriveListColumn.md)
 
-### [Get-MgBetaGroupDriveListColumn](Get-MgBetaGroupDriveListColumn.md)
-
 ### [Get-MgBetaGroupDriveListColumnCount](Get-MgBetaGroupDriveListColumnCount.md)
 
 ### [Get-MgBetaGroupDriveListColumnSourceColumn](Get-MgBetaGroupDriveListColumnSourceColumn.md)
 
 ### [Get-MgBetaGroupDriveListContentType](Get-MgBetaGroupDriveListContentType.md)
-
-### [Get-MgBetaGroupDriveListContentType](Get-MgBetaGroupDriveListContentType.md)
-
-### [Get-MgBetaGroupDriveListContentTypeColumn](Get-MgBetaGroupDriveListContentTypeColumn.md)
 
 ### [Get-MgBetaGroupDriveListContentTypeColumn](Get-MgBetaGroupDriveListContentTypeColumn.md)
 
@@ -741,11 +629,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveListContentTypeColumnLink](Get-MgBetaGroupDriveListContentTypeColumnLink.md)
 
-### [Get-MgBetaGroupDriveListContentTypeColumnLink](Get-MgBetaGroupDriveListContentTypeColumnLink.md)
-
 ### [Get-MgBetaGroupDriveListContentTypeColumnLinkCount](Get-MgBetaGroupDriveListContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaGroupDriveListContentTypeColumnPosition](Get-MgBetaGroupDriveListContentTypeColumnPosition.md)
 
 ### [Get-MgBetaGroupDriveListContentTypeColumnPosition](Get-MgBetaGroupDriveListContentTypeColumnPosition.md)
 
@@ -769,8 +653,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveListItem](Get-MgBetaGroupDriveListItem.md)
 
-### [Get-MgBetaGroupDriveListItem](Get-MgBetaGroupDriveListItem.md)
-
 ### [Get-MgBetaGroupDriveListItemActivity](Get-MgBetaGroupDriveListItemActivity.md)
 
 ### [Get-MgBetaGroupDriveListItemActivityByInterval](Get-MgBetaGroupDriveListItemActivityByInterval.md)
@@ -789,8 +671,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveListItemDocumentSetVersion](Get-MgBetaGroupDriveListItemDocumentSetVersion.md)
 
-### [Get-MgBetaGroupDriveListItemDocumentSetVersion](Get-MgBetaGroupDriveListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaGroupDriveListItemDocumentSetVersionCount](Get-MgBetaGroupDriveListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaGroupDriveListItemDocumentSetVersionField](Get-MgBetaGroupDriveListItemDocumentSetVersionField.md)
@@ -805,11 +685,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveListItemPermission](Get-MgBetaGroupDriveListItemPermission.md)
 
-### [Get-MgBetaGroupDriveListItemPermission](Get-MgBetaGroupDriveListItemPermission.md)
-
 ### [Get-MgBetaGroupDriveListItemPermissionCount](Get-MgBetaGroupDriveListItemPermissionCount.md)
-
-### [Get-MgBetaGroupDriveListItemVersion](Get-MgBetaGroupDriveListItemVersion.md)
 
 ### [Get-MgBetaGroupDriveListItemVersion](Get-MgBetaGroupDriveListItemVersion.md)
 
@@ -819,17 +695,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveListOperation](Get-MgBetaGroupDriveListOperation.md)
 
-### [Get-MgBetaGroupDriveListOperation](Get-MgBetaGroupDriveListOperation.md)
-
 ### [Get-MgBetaGroupDriveListOperationCount](Get-MgBetaGroupDriveListOperationCount.md)
 
 ### [Get-MgBetaGroupDriveListPermission](Get-MgBetaGroupDriveListPermission.md)
 
-### [Get-MgBetaGroupDriveListPermission](Get-MgBetaGroupDriveListPermission.md)
-
 ### [Get-MgBetaGroupDriveListPermissionCount](Get-MgBetaGroupDriveListPermissionCount.md)
-
-### [Get-MgBetaGroupDriveListSubscription](Get-MgBetaGroupDriveListSubscription.md)
 
 ### [Get-MgBetaGroupDriveListSubscription](Get-MgBetaGroupDriveListSubscription.md)
 
@@ -847,8 +717,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveRootAnalyticItemActivityStat](Get-MgBetaGroupDriveRootAnalyticItemActivityStat.md)
 
-### [Get-MgBetaGroupDriveRootAnalyticItemActivityStat](Get-MgBetaGroupDriveRootAnalyticItemActivityStat.md)
-
 ### [Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity](Get-MgBetaGroupDriveRootAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaGroupDriveRootAnalyticItemActivityStatCount](Get-MgBetaGroupDriveRootAnalyticItemActivityStatCount.md)
@@ -856,8 +724,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupDriveRootAnalyticLastSevenDay](Get-MgBetaGroupDriveRootAnalyticLastSevenDay.md)
 
 ### [Get-MgBetaGroupDriveRootAnalyticTime](Get-MgBetaGroupDriveRootAnalyticTime.md)
-
-### [Get-MgBetaGroupDriveRootChild](Get-MgBetaGroupDriveRootChild.md)
 
 ### [Get-MgBetaGroupDriveRootChild](Get-MgBetaGroupDriveRootChild.md)
 
@@ -880,8 +746,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveRootCreatedByUserServiceProvisioningErrorCount.md)
 
 ### [Get-MgBetaGroupDriveRootDelta](Get-MgBetaGroupDriveRootDelta.md)
-
-### [Get-MgBetaGroupDriveRootExtension](Get-MgBetaGroupDriveRootExtension.md)
 
 ### [Get-MgBetaGroupDriveRootExtension](Get-MgBetaGroupDriveRootExtension.md)
 
@@ -921,8 +785,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveRootListItemDocumentSetVersion](Get-MgBetaGroupDriveRootListItemDocumentSetVersion.md)
 
-### [Get-MgBetaGroupDriveRootListItemDocumentSetVersion](Get-MgBetaGroupDriveRootListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaGroupDriveRootListItemDocumentSetVersionCount](Get-MgBetaGroupDriveRootListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaGroupDriveRootListItemDocumentSetVersionField](Get-MgBetaGroupDriveRootListItemDocumentSetVersionField.md)
@@ -937,11 +799,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveRootListItemPermission](Get-MgBetaGroupDriveRootListItemPermission.md)
 
-### [Get-MgBetaGroupDriveRootListItemPermission](Get-MgBetaGroupDriveRootListItemPermission.md)
-
 ### [Get-MgBetaGroupDriveRootListItemPermissionCount](Get-MgBetaGroupDriveRootListItemPermissionCount.md)
-
-### [Get-MgBetaGroupDriveRootListItemVersion](Get-MgBetaGroupDriveRootListItemVersion.md)
 
 ### [Get-MgBetaGroupDriveRootListItemVersion](Get-MgBetaGroupDriveRootListItemVersion.md)
 
@@ -951,13 +809,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveRootPermission](Get-MgBetaGroupDriveRootPermission.md)
 
-### [Get-MgBetaGroupDriveRootPermission](Get-MgBetaGroupDriveRootPermission.md)
-
 ### [Get-MgBetaGroupDriveRootPermissionCount](Get-MgBetaGroupDriveRootPermissionCount.md)
 
 ### [Get-MgBetaGroupDriveRootRetentionLabel](Get-MgBetaGroupDriveRootRetentionLabel.md)
-
-### [Get-MgBetaGroupDriveRootSubscription](Get-MgBetaGroupDriveRootSubscription.md)
 
 ### [Get-MgBetaGroupDriveRootSubscription](Get-MgBetaGroupDriveRootSubscription.md)
 
@@ -967,19 +821,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupDriveRootThumbnail](Get-MgBetaGroupDriveRootThumbnail.md)
 
-### [Get-MgBetaGroupDriveRootThumbnail](Get-MgBetaGroupDriveRootThumbnail.md)
-
 ### [Get-MgBetaGroupDriveRootThumbnailCount](Get-MgBetaGroupDriveRootThumbnailCount.md)
-
-### [Get-MgBetaGroupDriveRootVersion](Get-MgBetaGroupDriveRootVersion.md)
 
 ### [Get-MgBetaGroupDriveRootVersion](Get-MgBetaGroupDriveRootVersion.md)
 
 ### [Get-MgBetaGroupDriveRootVersionContent](Get-MgBetaGroupDriveRootVersionContent.md)
 
 ### [Get-MgBetaGroupDriveRootVersionCount](Get-MgBetaGroupDriveRootVersionCount.md)
-
-### [Get-MgBetaGroupDriveSpecial](Get-MgBetaGroupDriveSpecial.md)
 
 ### [Get-MgBetaGroupDriveSpecial](Get-MgBetaGroupDriveSpecial.md)
 
@@ -990,8 +838,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupDriveSpecialCount](Get-MgBetaGroupDriveSpecialCount.md)
 
 ### [Get-MgBetaShareContentTypeBase](Get-MgBetaShareContentTypeBase.md)
-
-### [Get-MgBetaShareContentTypeBaseType](Get-MgBetaShareContentTypeBaseType.md)
 
 ### [Get-MgBetaShareContentTypeBaseType](Get-MgBetaShareContentTypeBaseType.md)
 
@@ -1012,8 +858,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaShareDriveItemContent](Get-MgBetaShareDriveItemContent.md)
 
 ### [Get-MgBetaShareDriveItemContentStream](Get-MgBetaShareDriveItemContentStream.md)
-
-### [Get-MgBetaShareItem](Get-MgBetaShareItem.md)
 
 ### [Get-MgBetaShareItem](Get-MgBetaShareItem.md)
 
@@ -1045,17 +889,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareListColumn](Get-MgBetaShareListColumn.md)
 
-### [Get-MgBetaShareListColumn](Get-MgBetaShareListColumn.md)
-
 ### [Get-MgBetaShareListColumnCount](Get-MgBetaShareListColumnCount.md)
 
 ### [Get-MgBetaShareListColumnSourceColumn](Get-MgBetaShareListColumnSourceColumn.md)
 
 ### [Get-MgBetaShareListContentType](Get-MgBetaShareListContentType.md)
-
-### [Get-MgBetaShareListContentType](Get-MgBetaShareListContentType.md)
-
-### [Get-MgBetaShareListContentTypeColumn](Get-MgBetaShareListContentTypeColumn.md)
 
 ### [Get-MgBetaShareListContentTypeColumn](Get-MgBetaShareListContentTypeColumn.md)
 
@@ -1063,11 +901,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareListContentTypeColumnLink](Get-MgBetaShareListContentTypeColumnLink.md)
 
-### [Get-MgBetaShareListContentTypeColumnLink](Get-MgBetaShareListContentTypeColumnLink.md)
-
 ### [Get-MgBetaShareListContentTypeColumnLinkCount](Get-MgBetaShareListContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaShareListContentTypeColumnPosition](Get-MgBetaShareListContentTypeColumnPosition.md)
 
 ### [Get-MgBetaShareListContentTypeColumnPosition](Get-MgBetaShareListContentTypeColumnPosition.md)
 
@@ -1091,8 +925,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareListItem](Get-MgBetaShareListItem.md)
 
-### [Get-MgBetaShareListItem](Get-MgBetaShareListItem.md)
-
 ### [Get-MgBetaShareListItemActivity](Get-MgBetaShareListItemActivity.md)
 
 ### [Get-MgBetaShareListItemActivityByInterval](Get-MgBetaShareListItemActivityByInterval.md)
@@ -1111,8 +943,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareListItemDocumentSetVersion](Get-MgBetaShareListItemDocumentSetVersion.md)
 
-### [Get-MgBetaShareListItemDocumentSetVersion](Get-MgBetaShareListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaShareListItemDocumentSetVersionCount](Get-MgBetaShareListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaShareListItemDocumentSetVersionField](Get-MgBetaShareListItemDocumentSetVersionField.md)
@@ -1127,11 +957,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareListItemPermission](Get-MgBetaShareListItemPermission.md)
 
-### [Get-MgBetaShareListItemPermission](Get-MgBetaShareListItemPermission.md)
-
 ### [Get-MgBetaShareListItemPermissionCount](Get-MgBetaShareListItemPermissionCount.md)
-
-### [Get-MgBetaShareListItemVersion](Get-MgBetaShareListItemVersion.md)
 
 ### [Get-MgBetaShareListItemVersion](Get-MgBetaShareListItemVersion.md)
 
@@ -1141,17 +967,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareListOperation](Get-MgBetaShareListOperation.md)
 
-### [Get-MgBetaShareListOperation](Get-MgBetaShareListOperation.md)
-
 ### [Get-MgBetaShareListOperationCount](Get-MgBetaShareListOperationCount.md)
 
 ### [Get-MgBetaShareListPermission](Get-MgBetaShareListPermission.md)
 
-### [Get-MgBetaShareListPermission](Get-MgBetaShareListPermission.md)
-
 ### [Get-MgBetaShareListPermissionCount](Get-MgBetaShareListPermissionCount.md)
-
-### [Get-MgBetaShareListSubscription](Get-MgBetaShareListSubscription.md)
 
 ### [Get-MgBetaShareListSubscription](Get-MgBetaShareListSubscription.md)
 
@@ -1169,19 +989,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaShareSharedDriveItemSharedDriveItem](Get-MgBetaShareSharedDriveItemSharedDriveItem.md)
 
-### [Get-MgBetaShareSharedDriveItemSharedDriveItem](Get-MgBetaShareSharedDriveItemSharedDriveItem.md)
-
 ### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
 
 ### [Get-MgBetaUserDefaultDrive](Get-MgBetaUserDefaultDrive.md)
 
 ### [Get-MgBetaUserDrive](Get-MgBetaUserDrive.md)
 
-### [Get-MgBetaUserDrive](Get-MgBetaUserDrive.md)
-
 ### [Get-MgBetaUserDriveActivity](Get-MgBetaUserDriveActivity.md)
-
-### [Get-MgBetaUserDriveBundle](Get-MgBetaUserDriveBundle.md)
 
 ### [Get-MgBetaUserDriveBundle](Get-MgBetaUserDriveBundle.md)
 
@@ -1192,8 +1006,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserDriveBundleCount](Get-MgBetaUserDriveBundleCount.md)
 
 ### [Get-MgBetaUserDriveContentTypeBase](Get-MgBetaUserDriveContentTypeBase.md)
-
-### [Get-MgBetaUserDriveContentTypeBaseType](Get-MgBetaUserDriveContentTypeBaseType.md)
 
 ### [Get-MgBetaUserDriveContentTypeBaseType](Get-MgBetaUserDriveContentTypeBaseType.md)
 
@@ -1211,15 +1023,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveFollowing](Get-MgBetaUserDriveFollowing.md)
 
-### [Get-MgBetaUserDriveFollowing](Get-MgBetaUserDriveFollowing.md)
-
 ### [Get-MgBetaUserDriveFollowingContent](Get-MgBetaUserDriveFollowingContent.md)
 
 ### [Get-MgBetaUserDriveFollowingContentStream](Get-MgBetaUserDriveFollowingContentStream.md)
 
 ### [Get-MgBetaUserDriveFollowingCount](Get-MgBetaUserDriveFollowingCount.md)
-
-### [Get-MgBetaUserDriveItem](Get-MgBetaUserDriveItem.md)
 
 ### [Get-MgBetaUserDriveItem](Get-MgBetaUserDriveItem.md)
 
@@ -1231,8 +1039,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveItemAnalyticItemActivityStat](Get-MgBetaUserDriveItemAnalyticItemActivityStat.md)
 
-### [Get-MgBetaUserDriveItemAnalyticItemActivityStat](Get-MgBetaUserDriveItemAnalyticItemActivityStat.md)
-
 ### [Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity](Get-MgBetaUserDriveItemAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaUserDriveItemAnalyticItemActivityStatCount](Get-MgBetaUserDriveItemAnalyticItemActivityStatCount.md)
@@ -1240,8 +1046,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserDriveItemAnalyticLastSevenDay](Get-MgBetaUserDriveItemAnalyticLastSevenDay.md)
 
 ### [Get-MgBetaUserDriveItemAnalyticTime](Get-MgBetaUserDriveItemAnalyticTime.md)
-
-### [Get-MgBetaUserDriveItemChild](Get-MgBetaUserDriveItemChild.md)
 
 ### [Get-MgBetaUserDriveItemChild](Get-MgBetaUserDriveItemChild.md)
 
@@ -1266,8 +1070,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningErrorCount.md)
 
 ### [Get-MgBetaUserDriveItemDelta](Get-MgBetaUserDriveItemDelta.md)
-
-### [Get-MgBetaUserDriveItemExtension](Get-MgBetaUserDriveItemExtension.md)
 
 ### [Get-MgBetaUserDriveItemExtension](Get-MgBetaUserDriveItemExtension.md)
 
@@ -1307,8 +1109,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveItemListItemDocumentSetVersion](Get-MgBetaUserDriveItemListItemDocumentSetVersion.md)
 
-### [Get-MgBetaUserDriveItemListItemDocumentSetVersion](Get-MgBetaUserDriveItemListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaUserDriveItemListItemDocumentSetVersionCount](Get-MgBetaUserDriveItemListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaUserDriveItemListItemDocumentSetVersionField](Get-MgBetaUserDriveItemListItemDocumentSetVersionField.md)
@@ -1323,11 +1123,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveItemListItemPermission](Get-MgBetaUserDriveItemListItemPermission.md)
 
-### [Get-MgBetaUserDriveItemListItemPermission](Get-MgBetaUserDriveItemListItemPermission.md)
-
 ### [Get-MgBetaUserDriveItemListItemPermissionCount](Get-MgBetaUserDriveItemListItemPermissionCount.md)
-
-### [Get-MgBetaUserDriveItemListItemVersion](Get-MgBetaUserDriveItemListItemVersion.md)
 
 ### [Get-MgBetaUserDriveItemListItemVersion](Get-MgBetaUserDriveItemListItemVersion.md)
 
@@ -1337,13 +1133,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveItemPermission](Get-MgBetaUserDriveItemPermission.md)
 
-### [Get-MgBetaUserDriveItemPermission](Get-MgBetaUserDriveItemPermission.md)
-
 ### [Get-MgBetaUserDriveItemPermissionCount](Get-MgBetaUserDriveItemPermissionCount.md)
 
 ### [Get-MgBetaUserDriveItemRetentionLabel](Get-MgBetaUserDriveItemRetentionLabel.md)
-
-### [Get-MgBetaUserDriveItemSubscription](Get-MgBetaUserDriveItemSubscription.md)
 
 ### [Get-MgBetaUserDriveItemSubscription](Get-MgBetaUserDriveItemSubscription.md)
 
@@ -1353,11 +1145,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveItemThumbnail](Get-MgBetaUserDriveItemThumbnail.md)
 
-### [Get-MgBetaUserDriveItemThumbnail](Get-MgBetaUserDriveItemThumbnail.md)
-
 ### [Get-MgBetaUserDriveItemThumbnailCount](Get-MgBetaUserDriveItemThumbnailCount.md)
-
-### [Get-MgBetaUserDriveItemVersion](Get-MgBetaUserDriveItemVersion.md)
 
 ### [Get-MgBetaUserDriveItemVersion](Get-MgBetaUserDriveItemVersion.md)
 
@@ -1379,17 +1167,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveListColumn](Get-MgBetaUserDriveListColumn.md)
 
-### [Get-MgBetaUserDriveListColumn](Get-MgBetaUserDriveListColumn.md)
-
 ### [Get-MgBetaUserDriveListColumnCount](Get-MgBetaUserDriveListColumnCount.md)
 
 ### [Get-MgBetaUserDriveListColumnSourceColumn](Get-MgBetaUserDriveListColumnSourceColumn.md)
 
 ### [Get-MgBetaUserDriveListContentType](Get-MgBetaUserDriveListContentType.md)
-
-### [Get-MgBetaUserDriveListContentType](Get-MgBetaUserDriveListContentType.md)
-
-### [Get-MgBetaUserDriveListContentTypeColumn](Get-MgBetaUserDriveListContentTypeColumn.md)
 
 ### [Get-MgBetaUserDriveListContentTypeColumn](Get-MgBetaUserDriveListContentTypeColumn.md)
 
@@ -1397,11 +1179,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveListContentTypeColumnLink](Get-MgBetaUserDriveListContentTypeColumnLink.md)
 
-### [Get-MgBetaUserDriveListContentTypeColumnLink](Get-MgBetaUserDriveListContentTypeColumnLink.md)
-
 ### [Get-MgBetaUserDriveListContentTypeColumnLinkCount](Get-MgBetaUserDriveListContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaUserDriveListContentTypeColumnPosition](Get-MgBetaUserDriveListContentTypeColumnPosition.md)
 
 ### [Get-MgBetaUserDriveListContentTypeColumnPosition](Get-MgBetaUserDriveListContentTypeColumnPosition.md)
 
@@ -1425,8 +1203,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveListItem](Get-MgBetaUserDriveListItem.md)
 
-### [Get-MgBetaUserDriveListItem](Get-MgBetaUserDriveListItem.md)
-
 ### [Get-MgBetaUserDriveListItemActivity](Get-MgBetaUserDriveListItemActivity.md)
 
 ### [Get-MgBetaUserDriveListItemActivityByInterval](Get-MgBetaUserDriveListItemActivityByInterval.md)
@@ -1445,8 +1221,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveListItemDocumentSetVersion](Get-MgBetaUserDriveListItemDocumentSetVersion.md)
 
-### [Get-MgBetaUserDriveListItemDocumentSetVersion](Get-MgBetaUserDriveListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaUserDriveListItemDocumentSetVersionCount](Get-MgBetaUserDriveListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaUserDriveListItemDocumentSetVersionField](Get-MgBetaUserDriveListItemDocumentSetVersionField.md)
@@ -1461,11 +1235,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveListItemPermission](Get-MgBetaUserDriveListItemPermission.md)
 
-### [Get-MgBetaUserDriveListItemPermission](Get-MgBetaUserDriveListItemPermission.md)
-
 ### [Get-MgBetaUserDriveListItemPermissionCount](Get-MgBetaUserDriveListItemPermissionCount.md)
-
-### [Get-MgBetaUserDriveListItemVersion](Get-MgBetaUserDriveListItemVersion.md)
 
 ### [Get-MgBetaUserDriveListItemVersion](Get-MgBetaUserDriveListItemVersion.md)
 
@@ -1475,17 +1245,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveListOperation](Get-MgBetaUserDriveListOperation.md)
 
-### [Get-MgBetaUserDriveListOperation](Get-MgBetaUserDriveListOperation.md)
-
 ### [Get-MgBetaUserDriveListOperationCount](Get-MgBetaUserDriveListOperationCount.md)
 
 ### [Get-MgBetaUserDriveListPermission](Get-MgBetaUserDriveListPermission.md)
 
-### [Get-MgBetaUserDriveListPermission](Get-MgBetaUserDriveListPermission.md)
-
 ### [Get-MgBetaUserDriveListPermissionCount](Get-MgBetaUserDriveListPermissionCount.md)
-
-### [Get-MgBetaUserDriveListSubscription](Get-MgBetaUserDriveListSubscription.md)
 
 ### [Get-MgBetaUserDriveListSubscription](Get-MgBetaUserDriveListSubscription.md)
 
@@ -1503,8 +1267,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveRootAnalyticItemActivityStat](Get-MgBetaUserDriveRootAnalyticItemActivityStat.md)
 
-### [Get-MgBetaUserDriveRootAnalyticItemActivityStat](Get-MgBetaUserDriveRootAnalyticItemActivityStat.md)
-
 ### [Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaUserDriveRootAnalyticItemActivityStatCount](Get-MgBetaUserDriveRootAnalyticItemActivityStatCount.md)
@@ -1512,8 +1274,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserDriveRootAnalyticLastSevenDay](Get-MgBetaUserDriveRootAnalyticLastSevenDay.md)
 
 ### [Get-MgBetaUserDriveRootAnalyticTime](Get-MgBetaUserDriveRootAnalyticTime.md)
-
-### [Get-MgBetaUserDriveRootChild](Get-MgBetaUserDriveRootChild.md)
 
 ### [Get-MgBetaUserDriveRootChild](Get-MgBetaUserDriveRootChild.md)
 
@@ -1536,8 +1296,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveRootCreatedByUserServiceProvisioningErrorCount.md)
 
 ### [Get-MgBetaUserDriveRootDelta](Get-MgBetaUserDriveRootDelta.md)
-
-### [Get-MgBetaUserDriveRootExtension](Get-MgBetaUserDriveRootExtension.md)
 
 ### [Get-MgBetaUserDriveRootExtension](Get-MgBetaUserDriveRootExtension.md)
 
@@ -1577,8 +1335,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveRootListItemDocumentSetVersion](Get-MgBetaUserDriveRootListItemDocumentSetVersion.md)
 
-### [Get-MgBetaUserDriveRootListItemDocumentSetVersion](Get-MgBetaUserDriveRootListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaUserDriveRootListItemDocumentSetVersionCount](Get-MgBetaUserDriveRootListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaUserDriveRootListItemDocumentSetVersionField](Get-MgBetaUserDriveRootListItemDocumentSetVersionField.md)
@@ -1593,11 +1349,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveRootListItemPermission](Get-MgBetaUserDriveRootListItemPermission.md)
 
-### [Get-MgBetaUserDriveRootListItemPermission](Get-MgBetaUserDriveRootListItemPermission.md)
-
 ### [Get-MgBetaUserDriveRootListItemPermissionCount](Get-MgBetaUserDriveRootListItemPermissionCount.md)
-
-### [Get-MgBetaUserDriveRootListItemVersion](Get-MgBetaUserDriveRootListItemVersion.md)
 
 ### [Get-MgBetaUserDriveRootListItemVersion](Get-MgBetaUserDriveRootListItemVersion.md)
 
@@ -1607,13 +1359,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveRootPermission](Get-MgBetaUserDriveRootPermission.md)
 
-### [Get-MgBetaUserDriveRootPermission](Get-MgBetaUserDriveRootPermission.md)
-
 ### [Get-MgBetaUserDriveRootPermissionCount](Get-MgBetaUserDriveRootPermissionCount.md)
 
 ### [Get-MgBetaUserDriveRootRetentionLabel](Get-MgBetaUserDriveRootRetentionLabel.md)
-
-### [Get-MgBetaUserDriveRootSubscription](Get-MgBetaUserDriveRootSubscription.md)
 
 ### [Get-MgBetaUserDriveRootSubscription](Get-MgBetaUserDriveRootSubscription.md)
 
@@ -1623,19 +1371,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserDriveRootThumbnail](Get-MgBetaUserDriveRootThumbnail.md)
 
-### [Get-MgBetaUserDriveRootThumbnail](Get-MgBetaUserDriveRootThumbnail.md)
-
 ### [Get-MgBetaUserDriveRootThumbnailCount](Get-MgBetaUserDriveRootThumbnailCount.md)
-
-### [Get-MgBetaUserDriveRootVersion](Get-MgBetaUserDriveRootVersion.md)
 
 ### [Get-MgBetaUserDriveRootVersion](Get-MgBetaUserDriveRootVersion.md)
 
 ### [Get-MgBetaUserDriveRootVersionContent](Get-MgBetaUserDriveRootVersionContent.md)
 
 ### [Get-MgBetaUserDriveRootVersionCount](Get-MgBetaUserDriveRootVersionCount.md)
-
-### [Get-MgBetaUserDriveSpecial](Get-MgBetaUserDriveSpecial.md)
 
 ### [Get-MgBetaUserDriveSpecial](Get-MgBetaUserDriveSpecial.md)
 
@@ -1684,6 +1426,18 @@ Microsoft Graph PowerShell Cmdlets
 ### [Grant-MgBetaUserDriveRootListItemPermission](Grant-MgBetaUserDriveRootListItemPermission.md)
 
 ### [Grant-MgBetaUserDriveRootPermission](Grant-MgBetaUserDriveRootPermission.md)
+
+### [Invoke-MgBetaArchiveDriveItem](Invoke-MgBetaArchiveDriveItem.md)
+
+### [Invoke-MgBetaArchiveDriveRoot](Invoke-MgBetaArchiveDriveRoot.md)
+
+### [Invoke-MgBetaArchiveGroupDriveItem](Invoke-MgBetaArchiveGroupDriveItem.md)
+
+### [Invoke-MgBetaArchiveGroupDriveRoot](Invoke-MgBetaArchiveGroupDriveRoot.md)
+
+### [Invoke-MgBetaArchiveUserDriveItem](Invoke-MgBetaArchiveUserDriveItem.md)
+
+### [Invoke-MgBetaArchiveUserDriveRoot](Invoke-MgBetaArchiveUserDriveRoot.md)
 
 ### [Invoke-MgBetaCheckinDriveItem](Invoke-MgBetaCheckinDriveItem.md)
 
@@ -1789,6 +1543,18 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaRecentUserDrive](Invoke-MgBetaRecentUserDrive.md)
 
+### [Invoke-MgBetaUnarchiveDriveItem](Invoke-MgBetaUnarchiveDriveItem.md)
+
+### [Invoke-MgBetaUnarchiveDriveRoot](Invoke-MgBetaUnarchiveDriveRoot.md)
+
+### [Invoke-MgBetaUnarchiveGroupDriveItem](Invoke-MgBetaUnarchiveGroupDriveItem.md)
+
+### [Invoke-MgBetaUnarchiveGroupDriveRoot](Invoke-MgBetaUnarchiveGroupDriveRoot.md)
+
+### [Invoke-MgBetaUnarchiveUserDriveItem](Invoke-MgBetaUnarchiveUserDriveItem.md)
+
+### [Invoke-MgBetaUnarchiveUserDriveRoot](Invoke-MgBetaUnarchiveUserDriveRoot.md)
+
 ### [Invoke-MgBetaUnfollowDriveItem](Invoke-MgBetaUnfollowDriveItem.md)
 
 ### [Invoke-MgBetaUnfollowDriveRoot](Invoke-MgBetaUnfollowDriveRoot.md)
@@ -1808,6 +1574,18 @@ Microsoft Graph PowerShell Cmdlets
 ### [Join-MgBetaShareListContentTypeWithHubSite](Join-MgBetaShareListContentTypeWithHubSite.md)
 
 ### [Join-MgBetaUserDriveListContentTypeWithHubSite](Join-MgBetaUserDriveListContentTypeWithHubSite.md)
+
+### [Lock-MgBetaDriveItem](Lock-MgBetaDriveItem.md)
+
+### [Lock-MgBetaDriveRoot](Lock-MgBetaDriveRoot.md)
+
+### [Lock-MgBetaGroupDriveItem](Lock-MgBetaGroupDriveItem.md)
+
+### [Lock-MgBetaGroupDriveRoot](Lock-MgBetaGroupDriveRoot.md)
+
+### [Lock-MgBetaUserDriveItem](Lock-MgBetaUserDriveItem.md)
+
+### [Lock-MgBetaUserDriveRoot](Lock-MgBetaUserDriveRoot.md)
 
 ### [New-MgBetaDrive](New-MgBetaDrive.md)
 
@@ -2079,13 +1857,25 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaUserDriveRootVersion](New-MgBetaUserDriveRootVersion.md)
 
+### [Publish-MgBetaDriveItemLock](Publish-MgBetaDriveItemLock.md)
+
 ### [Publish-MgBetaDriveListContentType](Publish-MgBetaDriveListContentType.md)
+
+### [Publish-MgBetaDriveRootLock](Publish-MgBetaDriveRootLock.md)
+
+### [Publish-MgBetaGroupDriveItemLock](Publish-MgBetaGroupDriveItemLock.md)
 
 ### [Publish-MgBetaGroupDriveListContentType](Publish-MgBetaGroupDriveListContentType.md)
 
+### [Publish-MgBetaGroupDriveRootLock](Publish-MgBetaGroupDriveRootLock.md)
+
 ### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
 
+### [Publish-MgBetaUserDriveItemLock](Publish-MgBetaUserDriveItemLock.md)
+
 ### [Publish-MgBetaUserDriveListContentType](Publish-MgBetaUserDriveListContentType.md)
+
+### [Publish-MgBetaUserDriveRootLock](Publish-MgBetaUserDriveRootLock.md)
 
 ### [Remove-MgBetaDrive](Remove-MgBetaDrive.md)
 

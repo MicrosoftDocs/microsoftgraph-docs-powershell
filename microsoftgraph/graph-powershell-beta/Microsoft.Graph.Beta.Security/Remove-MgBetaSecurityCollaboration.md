@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycollaboration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSecurityCollaboration
 ---
@@ -15,6 +15,9 @@ title: Remove-MgBetaSecurityCollaboration
 
 Delete navigation property collaboration for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCollaboration](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCollaboration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -24,7 +27,6 @@ Remove-MgBetaSecurityCollaboration [-IfMatch <string>] [-ResponseHeadersVariable
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

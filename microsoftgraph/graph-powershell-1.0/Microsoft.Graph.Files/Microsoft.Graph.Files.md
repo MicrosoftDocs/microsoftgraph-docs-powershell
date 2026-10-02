@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: 14ac0bd2-fd74-447f-b6e5-69be9d157684
+Module Guid: a28c799f-a361-445e-8167-38d95c809eb9
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.files/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -49,10 +49,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDrive](Get-MgDrive.md)
 
-### [Get-MgDrive](Get-MgDrive.md)
-
-### [Get-MgDriveBundle](Get-MgDriveBundle.md)
-
 ### [Get-MgDriveBundle](Get-MgDriveBundle.md)
 
 ### [Get-MgDriveBundleContent](Get-MgDriveBundleContent.md)
@@ -60,8 +56,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgDriveBundleCount](Get-MgDriveBundleCount.md)
 
 ### [Get-MgDriveContentTypeBase](Get-MgDriveContentTypeBase.md)
-
-### [Get-MgDriveContentTypeBaseType](Get-MgDriveContentTypeBaseType.md)
 
 ### [Get-MgDriveContentTypeBaseType](Get-MgDriveContentTypeBaseType.md)
 
@@ -77,21 +71,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
 
-### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
-
 ### [Get-MgDriveFollowingContent](Get-MgDriveFollowingContent.md)
 
 ### [Get-MgDriveFollowingCount](Get-MgDriveFollowingCount.md)
 
 ### [Get-MgDriveItem](Get-MgDriveItem.md)
 
-### [Get-MgDriveItem](Get-MgDriveItem.md)
-
 ### [Get-MgDriveItemActivityByInterval](Get-MgDriveItemActivityByInterval.md)
 
 ### [Get-MgDriveItemAnalytic](Get-MgDriveItemAnalytic.md)
-
-### [Get-MgDriveItemAnalyticItemActivityStat](Get-MgDriveItemAnalyticItemActivityStat.md)
 
 ### [Get-MgDriveItemAnalyticItemActivityStat](Get-MgDriveItemAnalyticItemActivityStat.md)
 
@@ -102,8 +90,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgDriveItemAnalyticLastSevenDay](Get-MgDriveItemAnalyticLastSevenDay.md)
 
 ### [Get-MgDriveItemAnalyticTime](Get-MgDriveItemAnalyticTime.md)
-
-### [Get-MgDriveItemChild](Get-MgDriveItemChild.md)
 
 ### [Get-MgDriveItemChild](Get-MgDriveItemChild.md)
 
@@ -157,8 +143,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveItemListItemDocumentSetVersion](Get-MgDriveItemListItemDocumentSetVersion.md)
 
-### [Get-MgDriveItemListItemDocumentSetVersion](Get-MgDriveItemListItemDocumentSetVersion.md)
-
 ### [Get-MgDriveItemListItemDocumentSetVersionCount](Get-MgDriveItemListItemDocumentSetVersionCount.md)
 
 ### [Get-MgDriveItemListItemDocumentSetVersionField](Get-MgDriveItemListItemDocumentSetVersionField.md)
@@ -169,7 +153,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveItemListItemField](Get-MgDriveItemListItemField.md)
 
-### [Get-MgDriveItemListItemVersion](Get-MgDriveItemListItemVersion.md)
+### [Get-MgDriveItemListItemPermission](Get-MgDriveItemListItemPermission.md)
+
+### [Get-MgDriveItemListItemPermissionCount](Get-MgDriveItemListItemPermissionCount.md)
 
 ### [Get-MgDriveItemListItemVersion](Get-MgDriveItemListItemVersion.md)
 
@@ -179,13 +165,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveItemPermission](Get-MgDriveItemPermission.md)
 
-### [Get-MgDriveItemPermission](Get-MgDriveItemPermission.md)
-
 ### [Get-MgDriveItemPermissionCount](Get-MgDriveItemPermissionCount.md)
 
 ### [Get-MgDriveItemRetentionLabel](Get-MgDriveItemRetentionLabel.md)
-
-### [Get-MgDriveItemSubscription](Get-MgDriveItemSubscription.md)
 
 ### [Get-MgDriveItemSubscription](Get-MgDriveItemSubscription.md)
 
@@ -193,11 +175,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveItemThumbnail](Get-MgDriveItemThumbnail.md)
 
-### [Get-MgDriveItemThumbnail](Get-MgDriveItemThumbnail.md)
-
 ### [Get-MgDriveItemThumbnailCount](Get-MgDriveItemThumbnailCount.md)
-
-### [Get-MgDriveItemVersion](Get-MgDriveItemVersion.md)
 
 ### [Get-MgDriveItemVersion](Get-MgDriveItemVersion.md)
 
@@ -217,17 +195,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveListColumn](Get-MgDriveListColumn.md)
 
-### [Get-MgDriveListColumn](Get-MgDriveListColumn.md)
-
 ### [Get-MgDriveListColumnCount](Get-MgDriveListColumnCount.md)
 
 ### [Get-MgDriveListColumnSourceColumn](Get-MgDriveListColumnSourceColumn.md)
 
 ### [Get-MgDriveListContentType](Get-MgDriveListContentType.md)
-
-### [Get-MgDriveListContentType](Get-MgDriveListContentType.md)
-
-### [Get-MgDriveListContentTypeColumn](Get-MgDriveListContentTypeColumn.md)
 
 ### [Get-MgDriveListContentTypeColumn](Get-MgDriveListContentTypeColumn.md)
 
@@ -235,11 +207,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveListContentTypeColumnLink](Get-MgDriveListContentTypeColumnLink.md)
 
-### [Get-MgDriveListContentTypeColumnLink](Get-MgDriveListContentTypeColumnLink.md)
-
 ### [Get-MgDriveListContentTypeColumnLinkCount](Get-MgDriveListContentTypeColumnLinkCount.md)
-
-### [Get-MgDriveListContentTypeColumnPosition](Get-MgDriveListContentTypeColumnPosition.md)
 
 ### [Get-MgDriveListContentTypeColumnPosition](Get-MgDriveListContentTypeColumnPosition.md)
 
@@ -263,8 +231,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveListItem](Get-MgDriveListItem.md)
 
-### [Get-MgDriveListItem](Get-MgDriveListItem.md)
-
 ### [Get-MgDriveListItemActivityByInterval](Get-MgDriveListItemActivityByInterval.md)
 
 ### [Get-MgDriveListItemAnalytic](Get-MgDriveListItemAnalytic.md)
@@ -283,8 +249,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
 
-### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
-
 ### [Get-MgDriveListItemDocumentSetVersionCount](Get-MgDriveListItemDocumentSetVersionCount.md)
 
 ### [Get-MgDriveListItemDocumentSetVersionField](Get-MgDriveListItemDocumentSetVersionField.md)
@@ -295,7 +259,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveListItemField](Get-MgDriveListItemField.md)
 
-### [Get-MgDriveListItemVersion](Get-MgDriveListItemVersion.md)
+### [Get-MgDriveListItemPermission](Get-MgDriveListItemPermission.md)
+
+### [Get-MgDriveListItemPermissionCount](Get-MgDriveListItemPermissionCount.md)
 
 ### [Get-MgDriveListItemVersion](Get-MgDriveListItemVersion.md)
 
@@ -305,11 +271,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveListOperation](Get-MgDriveListOperation.md)
 
-### [Get-MgDriveListOperation](Get-MgDriveListOperation.md)
-
 ### [Get-MgDriveListOperationCount](Get-MgDriveListOperationCount.md)
 
-### [Get-MgDriveListSubscription](Get-MgDriveListSubscription.md)
+### [Get-MgDriveListPermission](Get-MgDriveListPermission.md)
+
+### [Get-MgDriveListPermissionCount](Get-MgDriveListPermissionCount.md)
 
 ### [Get-MgDriveListSubscription](Get-MgDriveListSubscription.md)
 
@@ -323,8 +289,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveRootAnalyticItemActivityStat](Get-MgDriveRootAnalyticItemActivityStat.md)
 
-### [Get-MgDriveRootAnalyticItemActivityStat](Get-MgDriveRootAnalyticItemActivityStat.md)
-
 ### [Get-MgDriveRootAnalyticItemActivityStatActivity](Get-MgDriveRootAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgDriveRootAnalyticItemActivityStatCount](Get-MgDriveRootAnalyticItemActivityStatCount.md)
@@ -332,8 +296,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgDriveRootAnalyticLastSevenDay](Get-MgDriveRootAnalyticLastSevenDay.md)
 
 ### [Get-MgDriveRootAnalyticTime](Get-MgDriveRootAnalyticTime.md)
-
-### [Get-MgDriveRootChild](Get-MgDriveRootChild.md)
 
 ### [Get-MgDriveRootChild](Get-MgDriveRootChild.md)
 
@@ -385,8 +347,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveRootListItemDocumentSetVersion](Get-MgDriveRootListItemDocumentSetVersion.md)
 
-### [Get-MgDriveRootListItemDocumentSetVersion](Get-MgDriveRootListItemDocumentSetVersion.md)
-
 ### [Get-MgDriveRootListItemDocumentSetVersionCount](Get-MgDriveRootListItemDocumentSetVersionCount.md)
 
 ### [Get-MgDriveRootListItemDocumentSetVersionField](Get-MgDriveRootListItemDocumentSetVersionField.md)
@@ -397,7 +357,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveRootListItemField](Get-MgDriveRootListItemField.md)
 
-### [Get-MgDriveRootListItemVersion](Get-MgDriveRootListItemVersion.md)
+### [Get-MgDriveRootListItemPermission](Get-MgDriveRootListItemPermission.md)
+
+### [Get-MgDriveRootListItemPermissionCount](Get-MgDriveRootListItemPermissionCount.md)
 
 ### [Get-MgDriveRootListItemVersion](Get-MgDriveRootListItemVersion.md)
 
@@ -407,13 +369,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveRootPermission](Get-MgDriveRootPermission.md)
 
-### [Get-MgDriveRootPermission](Get-MgDriveRootPermission.md)
-
 ### [Get-MgDriveRootPermissionCount](Get-MgDriveRootPermissionCount.md)
 
 ### [Get-MgDriveRootRetentionLabel](Get-MgDriveRootRetentionLabel.md)
-
-### [Get-MgDriveRootSubscription](Get-MgDriveRootSubscription.md)
 
 ### [Get-MgDriveRootSubscription](Get-MgDriveRootSubscription.md)
 
@@ -421,19 +379,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDriveRootThumbnail](Get-MgDriveRootThumbnail.md)
 
-### [Get-MgDriveRootThumbnail](Get-MgDriveRootThumbnail.md)
-
 ### [Get-MgDriveRootThumbnailCount](Get-MgDriveRootThumbnailCount.md)
-
-### [Get-MgDriveRootVersion](Get-MgDriveRootVersion.md)
 
 ### [Get-MgDriveRootVersion](Get-MgDriveRootVersion.md)
 
 ### [Get-MgDriveRootVersionContent](Get-MgDriveRootVersionContent.md)
 
 ### [Get-MgDriveRootVersionCount](Get-MgDriveRootVersionCount.md)
-
-### [Get-MgDriveSpecial](Get-MgDriveSpecial.md)
 
 ### [Get-MgDriveSpecial](Get-MgDriveSpecial.md)
 
@@ -445,10 +397,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDrive](Get-MgGroupDrive.md)
 
-### [Get-MgGroupDrive](Get-MgGroupDrive.md)
-
-### [Get-MgGroupDriveBundle](Get-MgGroupDriveBundle.md)
-
 ### [Get-MgGroupDriveBundle](Get-MgGroupDriveBundle.md)
 
 ### [Get-MgGroupDriveBundleContent](Get-MgGroupDriveBundleContent.md)
@@ -456,8 +404,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupDriveBundleCount](Get-MgGroupDriveBundleCount.md)
 
 ### [Get-MgGroupDriveContentTypeBase](Get-MgGroupDriveContentTypeBase.md)
-
-### [Get-MgGroupDriveContentTypeBaseType](Get-MgGroupDriveContentTypeBaseType.md)
 
 ### [Get-MgGroupDriveContentTypeBaseType](Get-MgGroupDriveContentTypeBaseType.md)
 
@@ -475,21 +421,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveFollowing](Get-MgGroupDriveFollowing.md)
 
-### [Get-MgGroupDriveFollowing](Get-MgGroupDriveFollowing.md)
-
 ### [Get-MgGroupDriveFollowingContent](Get-MgGroupDriveFollowingContent.md)
 
 ### [Get-MgGroupDriveFollowingCount](Get-MgGroupDriveFollowingCount.md)
 
 ### [Get-MgGroupDriveItem](Get-MgGroupDriveItem.md)
 
-### [Get-MgGroupDriveItem](Get-MgGroupDriveItem.md)
-
 ### [Get-MgGroupDriveItemActivityByInterval](Get-MgGroupDriveItemActivityByInterval.md)
 
 ### [Get-MgGroupDriveItemAnalytic](Get-MgGroupDriveItemAnalytic.md)
-
-### [Get-MgGroupDriveItemAnalyticItemActivityStat](Get-MgGroupDriveItemAnalyticItemActivityStat.md)
 
 ### [Get-MgGroupDriveItemAnalyticItemActivityStat](Get-MgGroupDriveItemAnalyticItemActivityStat.md)
 
@@ -500,8 +440,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupDriveItemAnalyticLastSevenDay](Get-MgGroupDriveItemAnalyticLastSevenDay.md)
 
 ### [Get-MgGroupDriveItemAnalyticTime](Get-MgGroupDriveItemAnalyticTime.md)
-
-### [Get-MgGroupDriveItemChild](Get-MgGroupDriveItemChild.md)
 
 ### [Get-MgGroupDriveItemChild](Get-MgGroupDriveItemChild.md)
 
@@ -555,8 +493,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveItemListItemDocumentSetVersion](Get-MgGroupDriveItemListItemDocumentSetVersion.md)
 
-### [Get-MgGroupDriveItemListItemDocumentSetVersion](Get-MgGroupDriveItemListItemDocumentSetVersion.md)
-
 ### [Get-MgGroupDriveItemListItemDocumentSetVersionCount](Get-MgGroupDriveItemListItemDocumentSetVersionCount.md)
 
 ### [Get-MgGroupDriveItemListItemDocumentSetVersionField](Get-MgGroupDriveItemListItemDocumentSetVersionField.md)
@@ -567,7 +503,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveItemListItemField](Get-MgGroupDriveItemListItemField.md)
 
-### [Get-MgGroupDriveItemListItemVersion](Get-MgGroupDriveItemListItemVersion.md)
+### [Get-MgGroupDriveItemListItemPermission](Get-MgGroupDriveItemListItemPermission.md)
+
+### [Get-MgGroupDriveItemListItemPermissionCount](Get-MgGroupDriveItemListItemPermissionCount.md)
 
 ### [Get-MgGroupDriveItemListItemVersion](Get-MgGroupDriveItemListItemVersion.md)
 
@@ -577,13 +515,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveItemPermission](Get-MgGroupDriveItemPermission.md)
 
-### [Get-MgGroupDriveItemPermission](Get-MgGroupDriveItemPermission.md)
-
 ### [Get-MgGroupDriveItemPermissionCount](Get-MgGroupDriveItemPermissionCount.md)
 
 ### [Get-MgGroupDriveItemRetentionLabel](Get-MgGroupDriveItemRetentionLabel.md)
-
-### [Get-MgGroupDriveItemSubscription](Get-MgGroupDriveItemSubscription.md)
 
 ### [Get-MgGroupDriveItemSubscription](Get-MgGroupDriveItemSubscription.md)
 
@@ -591,11 +525,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveItemThumbnail](Get-MgGroupDriveItemThumbnail.md)
 
-### [Get-MgGroupDriveItemThumbnail](Get-MgGroupDriveItemThumbnail.md)
-
 ### [Get-MgGroupDriveItemThumbnailCount](Get-MgGroupDriveItemThumbnailCount.md)
-
-### [Get-MgGroupDriveItemVersion](Get-MgGroupDriveItemVersion.md)
 
 ### [Get-MgGroupDriveItemVersion](Get-MgGroupDriveItemVersion.md)
 
@@ -615,17 +545,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveListColumn](Get-MgGroupDriveListColumn.md)
 
-### [Get-MgGroupDriveListColumn](Get-MgGroupDriveListColumn.md)
-
 ### [Get-MgGroupDriveListColumnCount](Get-MgGroupDriveListColumnCount.md)
 
 ### [Get-MgGroupDriveListColumnSourceColumn](Get-MgGroupDriveListColumnSourceColumn.md)
 
 ### [Get-MgGroupDriveListContentType](Get-MgGroupDriveListContentType.md)
-
-### [Get-MgGroupDriveListContentType](Get-MgGroupDriveListContentType.md)
-
-### [Get-MgGroupDriveListContentTypeColumn](Get-MgGroupDriveListContentTypeColumn.md)
 
 ### [Get-MgGroupDriveListContentTypeColumn](Get-MgGroupDriveListContentTypeColumn.md)
 
@@ -633,11 +557,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveListContentTypeColumnLink](Get-MgGroupDriveListContentTypeColumnLink.md)
 
-### [Get-MgGroupDriveListContentTypeColumnLink](Get-MgGroupDriveListContentTypeColumnLink.md)
-
 ### [Get-MgGroupDriveListContentTypeColumnLinkCount](Get-MgGroupDriveListContentTypeColumnLinkCount.md)
-
-### [Get-MgGroupDriveListContentTypeColumnPosition](Get-MgGroupDriveListContentTypeColumnPosition.md)
 
 ### [Get-MgGroupDriveListContentTypeColumnPosition](Get-MgGroupDriveListContentTypeColumnPosition.md)
 
@@ -661,8 +581,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveListItem](Get-MgGroupDriveListItem.md)
 
-### [Get-MgGroupDriveListItem](Get-MgGroupDriveListItem.md)
-
 ### [Get-MgGroupDriveListItemActivityByInterval](Get-MgGroupDriveListItemActivityByInterval.md)
 
 ### [Get-MgGroupDriveListItemAnalytic](Get-MgGroupDriveListItemAnalytic.md)
@@ -679,8 +597,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveListItemDocumentSetVersion](Get-MgGroupDriveListItemDocumentSetVersion.md)
 
-### [Get-MgGroupDriveListItemDocumentSetVersion](Get-MgGroupDriveListItemDocumentSetVersion.md)
-
 ### [Get-MgGroupDriveListItemDocumentSetVersionCount](Get-MgGroupDriveListItemDocumentSetVersionCount.md)
 
 ### [Get-MgGroupDriveListItemDocumentSetVersionField](Get-MgGroupDriveListItemDocumentSetVersionField.md)
@@ -691,7 +607,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveListItemField](Get-MgGroupDriveListItemField.md)
 
-### [Get-MgGroupDriveListItemVersion](Get-MgGroupDriveListItemVersion.md)
+### [Get-MgGroupDriveListItemPermission](Get-MgGroupDriveListItemPermission.md)
+
+### [Get-MgGroupDriveListItemPermissionCount](Get-MgGroupDriveListItemPermissionCount.md)
 
 ### [Get-MgGroupDriveListItemVersion](Get-MgGroupDriveListItemVersion.md)
 
@@ -701,11 +619,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveListOperation](Get-MgGroupDriveListOperation.md)
 
-### [Get-MgGroupDriveListOperation](Get-MgGroupDriveListOperation.md)
-
 ### [Get-MgGroupDriveListOperationCount](Get-MgGroupDriveListOperationCount.md)
 
-### [Get-MgGroupDriveListSubscription](Get-MgGroupDriveListSubscription.md)
+### [Get-MgGroupDriveListPermission](Get-MgGroupDriveListPermission.md)
+
+### [Get-MgGroupDriveListPermissionCount](Get-MgGroupDriveListPermissionCount.md)
 
 ### [Get-MgGroupDriveListSubscription](Get-MgGroupDriveListSubscription.md)
 
@@ -719,8 +637,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveRootAnalyticItemActivityStat](Get-MgGroupDriveRootAnalyticItemActivityStat.md)
 
-### [Get-MgGroupDriveRootAnalyticItemActivityStat](Get-MgGroupDriveRootAnalyticItemActivityStat.md)
-
 ### [Get-MgGroupDriveRootAnalyticItemActivityStatActivity](Get-MgGroupDriveRootAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgGroupDriveRootAnalyticItemActivityStatCount](Get-MgGroupDriveRootAnalyticItemActivityStatCount.md)
@@ -728,8 +644,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupDriveRootAnalyticLastSevenDay](Get-MgGroupDriveRootAnalyticLastSevenDay.md)
 
 ### [Get-MgGroupDriveRootAnalyticTime](Get-MgGroupDriveRootAnalyticTime.md)
-
-### [Get-MgGroupDriveRootChild](Get-MgGroupDriveRootChild.md)
 
 ### [Get-MgGroupDriveRootChild](Get-MgGroupDriveRootChild.md)
 
@@ -781,8 +695,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveRootListItemDocumentSetVersion](Get-MgGroupDriveRootListItemDocumentSetVersion.md)
 
-### [Get-MgGroupDriveRootListItemDocumentSetVersion](Get-MgGroupDriveRootListItemDocumentSetVersion.md)
-
 ### [Get-MgGroupDriveRootListItemDocumentSetVersionCount](Get-MgGroupDriveRootListItemDocumentSetVersionCount.md)
 
 ### [Get-MgGroupDriveRootListItemDocumentSetVersionField](Get-MgGroupDriveRootListItemDocumentSetVersionField.md)
@@ -793,7 +705,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveRootListItemField](Get-MgGroupDriveRootListItemField.md)
 
-### [Get-MgGroupDriveRootListItemVersion](Get-MgGroupDriveRootListItemVersion.md)
+### [Get-MgGroupDriveRootListItemPermission](Get-MgGroupDriveRootListItemPermission.md)
+
+### [Get-MgGroupDriveRootListItemPermissionCount](Get-MgGroupDriveRootListItemPermissionCount.md)
 
 ### [Get-MgGroupDriveRootListItemVersion](Get-MgGroupDriveRootListItemVersion.md)
 
@@ -803,13 +717,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveRootPermission](Get-MgGroupDriveRootPermission.md)
 
-### [Get-MgGroupDriveRootPermission](Get-MgGroupDriveRootPermission.md)
-
 ### [Get-MgGroupDriveRootPermissionCount](Get-MgGroupDriveRootPermissionCount.md)
 
 ### [Get-MgGroupDriveRootRetentionLabel](Get-MgGroupDriveRootRetentionLabel.md)
-
-### [Get-MgGroupDriveRootSubscription](Get-MgGroupDriveRootSubscription.md)
 
 ### [Get-MgGroupDriveRootSubscription](Get-MgGroupDriveRootSubscription.md)
 
@@ -817,11 +727,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveRootThumbnail](Get-MgGroupDriveRootThumbnail.md)
 
-### [Get-MgGroupDriveRootThumbnail](Get-MgGroupDriveRootThumbnail.md)
-
 ### [Get-MgGroupDriveRootThumbnailCount](Get-MgGroupDriveRootThumbnailCount.md)
-
-### [Get-MgGroupDriveRootVersion](Get-MgGroupDriveRootVersion.md)
 
 ### [Get-MgGroupDriveRootVersion](Get-MgGroupDriveRootVersion.md)
 
@@ -831,15 +737,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupDriveSpecial](Get-MgGroupDriveSpecial.md)
 
-### [Get-MgGroupDriveSpecial](Get-MgGroupDriveSpecial.md)
-
 ### [Get-MgGroupDriveSpecialContent](Get-MgGroupDriveSpecialContent.md)
 
 ### [Get-MgGroupDriveSpecialCount](Get-MgGroupDriveSpecialCount.md)
 
 ### [Get-MgShareContentTypeBase](Get-MgShareContentTypeBase.md)
-
-### [Get-MgShareContentTypeBaseType](Get-MgShareContentTypeBaseType.md)
 
 ### [Get-MgShareContentTypeBaseType](Get-MgShareContentTypeBaseType.md)
 
@@ -858,8 +760,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 
 ### [Get-MgShareDriveItemContent](Get-MgShareDriveItemContent.md)
-
-### [Get-MgShareItem](Get-MgShareItem.md)
 
 ### [Get-MgShareItem](Get-MgShareItem.md)
 
@@ -887,17 +787,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgShareListColumn](Get-MgShareListColumn.md)
 
-### [Get-MgShareListColumn](Get-MgShareListColumn.md)
-
 ### [Get-MgShareListColumnCount](Get-MgShareListColumnCount.md)
 
 ### [Get-MgShareListColumnSourceColumn](Get-MgShareListColumnSourceColumn.md)
 
 ### [Get-MgShareListContentType](Get-MgShareListContentType.md)
-
-### [Get-MgShareListContentType](Get-MgShareListContentType.md)
-
-### [Get-MgShareListContentTypeColumn](Get-MgShareListContentTypeColumn.md)
 
 ### [Get-MgShareListContentTypeColumn](Get-MgShareListContentTypeColumn.md)
 
@@ -905,11 +799,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgShareListContentTypeColumnLink](Get-MgShareListContentTypeColumnLink.md)
 
-### [Get-MgShareListContentTypeColumnLink](Get-MgShareListContentTypeColumnLink.md)
-
 ### [Get-MgShareListContentTypeColumnLinkCount](Get-MgShareListContentTypeColumnLinkCount.md)
-
-### [Get-MgShareListContentTypeColumnPosition](Get-MgShareListContentTypeColumnPosition.md)
 
 ### [Get-MgShareListContentTypeColumnPosition](Get-MgShareListContentTypeColumnPosition.md)
 
@@ -933,8 +823,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgShareListItem](Get-MgShareListItem.md)
 
-### [Get-MgShareListItem](Get-MgShareListItem.md)
-
 ### [Get-MgShareListItemActivityByInterval](Get-MgShareListItemActivityByInterval.md)
 
 ### [Get-MgShareListItemAnalytic](Get-MgShareListItemAnalytic.md)
@@ -951,8 +839,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)
 
-### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)
-
 ### [Get-MgShareListItemDocumentSetVersionCount](Get-MgShareListItemDocumentSetVersionCount.md)
 
 ### [Get-MgShareListItemDocumentSetVersionField](Get-MgShareListItemDocumentSetVersionField.md)
@@ -963,7 +849,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgShareListItemField](Get-MgShareListItemField.md)
 
-### [Get-MgShareListItemVersion](Get-MgShareListItemVersion.md)
+### [Get-MgShareListItemPermission](Get-MgShareListItemPermission.md)
+
+### [Get-MgShareListItemPermissionCount](Get-MgShareListItemPermissionCount.md)
 
 ### [Get-MgShareListItemVersion](Get-MgShareListItemVersion.md)
 
@@ -973,11 +861,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgShareListOperation](Get-MgShareListOperation.md)
 
-### [Get-MgShareListOperation](Get-MgShareListOperation.md)
-
 ### [Get-MgShareListOperationCount](Get-MgShareListOperationCount.md)
 
-### [Get-MgShareListSubscription](Get-MgShareListSubscription.md)
+### [Get-MgShareListPermission](Get-MgShareListPermission.md)
+
+### [Get-MgShareListPermissionCount](Get-MgShareListPermissionCount.md)
 
 ### [Get-MgShareListSubscription](Get-MgShareListSubscription.md)
 
@@ -991,17 +879,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgShareSharedDriveItemSharedDriveItem](Get-MgShareSharedDriveItemSharedDriveItem.md)
 
-### [Get-MgShareSharedDriveItemSharedDriveItem](Get-MgShareSharedDriveItemSharedDriveItem.md)
-
 ### [Get-MgShareSite](Get-MgShareSite.md)
 
 ### [Get-MgUserDefaultDrive](Get-MgUserDefaultDrive.md)
 
 ### [Get-MgUserDrive](Get-MgUserDrive.md)
-
-### [Get-MgUserDrive](Get-MgUserDrive.md)
-
-### [Get-MgUserDriveBundle](Get-MgUserDriveBundle.md)
 
 ### [Get-MgUserDriveBundle](Get-MgUserDriveBundle.md)
 
@@ -1010,8 +892,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserDriveBundleCount](Get-MgUserDriveBundleCount.md)
 
 ### [Get-MgUserDriveContentTypeBase](Get-MgUserDriveContentTypeBase.md)
-
-### [Get-MgUserDriveContentTypeBaseType](Get-MgUserDriveContentTypeBaseType.md)
 
 ### [Get-MgUserDriveContentTypeBaseType](Get-MgUserDriveContentTypeBaseType.md)
 
@@ -1029,21 +909,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveFollowing](Get-MgUserDriveFollowing.md)
 
-### [Get-MgUserDriveFollowing](Get-MgUserDriveFollowing.md)
-
 ### [Get-MgUserDriveFollowingContent](Get-MgUserDriveFollowingContent.md)
 
 ### [Get-MgUserDriveFollowingCount](Get-MgUserDriveFollowingCount.md)
 
 ### [Get-MgUserDriveItem](Get-MgUserDriveItem.md)
 
-### [Get-MgUserDriveItem](Get-MgUserDriveItem.md)
-
 ### [Get-MgUserDriveItemActivityByInterval](Get-MgUserDriveItemActivityByInterval.md)
 
 ### [Get-MgUserDriveItemAnalytic](Get-MgUserDriveItemAnalytic.md)
-
-### [Get-MgUserDriveItemAnalyticItemActivityStat](Get-MgUserDriveItemAnalyticItemActivityStat.md)
 
 ### [Get-MgUserDriveItemAnalyticItemActivityStat](Get-MgUserDriveItemAnalyticItemActivityStat.md)
 
@@ -1054,8 +928,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserDriveItemAnalyticLastSevenDay](Get-MgUserDriveItemAnalyticLastSevenDay.md)
 
 ### [Get-MgUserDriveItemAnalyticTime](Get-MgUserDriveItemAnalyticTime.md)
-
-### [Get-MgUserDriveItemChild](Get-MgUserDriveItemChild.md)
 
 ### [Get-MgUserDriveItemChild](Get-MgUserDriveItemChild.md)
 
@@ -1109,8 +981,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveItemListItemDocumentSetVersion](Get-MgUserDriveItemListItemDocumentSetVersion.md)
 
-### [Get-MgUserDriveItemListItemDocumentSetVersion](Get-MgUserDriveItemListItemDocumentSetVersion.md)
-
 ### [Get-MgUserDriveItemListItemDocumentSetVersionCount](Get-MgUserDriveItemListItemDocumentSetVersionCount.md)
 
 ### [Get-MgUserDriveItemListItemDocumentSetVersionField](Get-MgUserDriveItemListItemDocumentSetVersionField.md)
@@ -1121,7 +991,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveItemListItemField](Get-MgUserDriveItemListItemField.md)
 
-### [Get-MgUserDriveItemListItemVersion](Get-MgUserDriveItemListItemVersion.md)
+### [Get-MgUserDriveItemListItemPermission](Get-MgUserDriveItemListItemPermission.md)
+
+### [Get-MgUserDriveItemListItemPermissionCount](Get-MgUserDriveItemListItemPermissionCount.md)
 
 ### [Get-MgUserDriveItemListItemVersion](Get-MgUserDriveItemListItemVersion.md)
 
@@ -1131,13 +1003,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveItemPermission](Get-MgUserDriveItemPermission.md)
 
-### [Get-MgUserDriveItemPermission](Get-MgUserDriveItemPermission.md)
-
 ### [Get-MgUserDriveItemPermissionCount](Get-MgUserDriveItemPermissionCount.md)
 
 ### [Get-MgUserDriveItemRetentionLabel](Get-MgUserDriveItemRetentionLabel.md)
-
-### [Get-MgUserDriveItemSubscription](Get-MgUserDriveItemSubscription.md)
 
 ### [Get-MgUserDriveItemSubscription](Get-MgUserDriveItemSubscription.md)
 
@@ -1145,11 +1013,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveItemThumbnail](Get-MgUserDriveItemThumbnail.md)
 
-### [Get-MgUserDriveItemThumbnail](Get-MgUserDriveItemThumbnail.md)
-
 ### [Get-MgUserDriveItemThumbnailCount](Get-MgUserDriveItemThumbnailCount.md)
-
-### [Get-MgUserDriveItemVersion](Get-MgUserDriveItemVersion.md)
 
 ### [Get-MgUserDriveItemVersion](Get-MgUserDriveItemVersion.md)
 
@@ -1169,17 +1033,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveListColumn](Get-MgUserDriveListColumn.md)
 
-### [Get-MgUserDriveListColumn](Get-MgUserDriveListColumn.md)
-
 ### [Get-MgUserDriveListColumnCount](Get-MgUserDriveListColumnCount.md)
 
 ### [Get-MgUserDriveListColumnSourceColumn](Get-MgUserDriveListColumnSourceColumn.md)
 
 ### [Get-MgUserDriveListContentType](Get-MgUserDriveListContentType.md)
-
-### [Get-MgUserDriveListContentType](Get-MgUserDriveListContentType.md)
-
-### [Get-MgUserDriveListContentTypeColumn](Get-MgUserDriveListContentTypeColumn.md)
 
 ### [Get-MgUserDriveListContentTypeColumn](Get-MgUserDriveListContentTypeColumn.md)
 
@@ -1187,11 +1045,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveListContentTypeColumnLink](Get-MgUserDriveListContentTypeColumnLink.md)
 
-### [Get-MgUserDriveListContentTypeColumnLink](Get-MgUserDriveListContentTypeColumnLink.md)
-
 ### [Get-MgUserDriveListContentTypeColumnLinkCount](Get-MgUserDriveListContentTypeColumnLinkCount.md)
-
-### [Get-MgUserDriveListContentTypeColumnPosition](Get-MgUserDriveListContentTypeColumnPosition.md)
 
 ### [Get-MgUserDriveListContentTypeColumnPosition](Get-MgUserDriveListContentTypeColumnPosition.md)
 
@@ -1215,8 +1069,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveListItem](Get-MgUserDriveListItem.md)
 
-### [Get-MgUserDriveListItem](Get-MgUserDriveListItem.md)
-
 ### [Get-MgUserDriveListItemActivityByInterval](Get-MgUserDriveListItemActivityByInterval.md)
 
 ### [Get-MgUserDriveListItemAnalytic](Get-MgUserDriveListItemAnalytic.md)
@@ -1233,8 +1085,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveListItemDocumentSetVersion](Get-MgUserDriveListItemDocumentSetVersion.md)
 
-### [Get-MgUserDriveListItemDocumentSetVersion](Get-MgUserDriveListItemDocumentSetVersion.md)
-
 ### [Get-MgUserDriveListItemDocumentSetVersionCount](Get-MgUserDriveListItemDocumentSetVersionCount.md)
 
 ### [Get-MgUserDriveListItemDocumentSetVersionField](Get-MgUserDriveListItemDocumentSetVersionField.md)
@@ -1245,7 +1095,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveListItemField](Get-MgUserDriveListItemField.md)
 
-### [Get-MgUserDriveListItemVersion](Get-MgUserDriveListItemVersion.md)
+### [Get-MgUserDriveListItemPermission](Get-MgUserDriveListItemPermission.md)
+
+### [Get-MgUserDriveListItemPermissionCount](Get-MgUserDriveListItemPermissionCount.md)
 
 ### [Get-MgUserDriveListItemVersion](Get-MgUserDriveListItemVersion.md)
 
@@ -1255,11 +1107,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveListOperation](Get-MgUserDriveListOperation.md)
 
-### [Get-MgUserDriveListOperation](Get-MgUserDriveListOperation.md)
-
 ### [Get-MgUserDriveListOperationCount](Get-MgUserDriveListOperationCount.md)
 
-### [Get-MgUserDriveListSubscription](Get-MgUserDriveListSubscription.md)
+### [Get-MgUserDriveListPermission](Get-MgUserDriveListPermission.md)
+
+### [Get-MgUserDriveListPermissionCount](Get-MgUserDriveListPermissionCount.md)
 
 ### [Get-MgUserDriveListSubscription](Get-MgUserDriveListSubscription.md)
 
@@ -1273,8 +1125,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveRootAnalyticItemActivityStat](Get-MgUserDriveRootAnalyticItemActivityStat.md)
 
-### [Get-MgUserDriveRootAnalyticItemActivityStat](Get-MgUserDriveRootAnalyticItemActivityStat.md)
-
 ### [Get-MgUserDriveRootAnalyticItemActivityStatActivity](Get-MgUserDriveRootAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgUserDriveRootAnalyticItemActivityStatCount](Get-MgUserDriveRootAnalyticItemActivityStatCount.md)
@@ -1282,8 +1132,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserDriveRootAnalyticLastSevenDay](Get-MgUserDriveRootAnalyticLastSevenDay.md)
 
 ### [Get-MgUserDriveRootAnalyticTime](Get-MgUserDriveRootAnalyticTime.md)
-
-### [Get-MgUserDriveRootChild](Get-MgUserDriveRootChild.md)
 
 ### [Get-MgUserDriveRootChild](Get-MgUserDriveRootChild.md)
 
@@ -1335,8 +1183,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveRootListItemDocumentSetVersion](Get-MgUserDriveRootListItemDocumentSetVersion.md)
 
-### [Get-MgUserDriveRootListItemDocumentSetVersion](Get-MgUserDriveRootListItemDocumentSetVersion.md)
-
 ### [Get-MgUserDriveRootListItemDocumentSetVersionCount](Get-MgUserDriveRootListItemDocumentSetVersionCount.md)
 
 ### [Get-MgUserDriveRootListItemDocumentSetVersionField](Get-MgUserDriveRootListItemDocumentSetVersionField.md)
@@ -1347,7 +1193,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveRootListItemField](Get-MgUserDriveRootListItemField.md)
 
-### [Get-MgUserDriveRootListItemVersion](Get-MgUserDriveRootListItemVersion.md)
+### [Get-MgUserDriveRootListItemPermission](Get-MgUserDriveRootListItemPermission.md)
+
+### [Get-MgUserDriveRootListItemPermissionCount](Get-MgUserDriveRootListItemPermissionCount.md)
 
 ### [Get-MgUserDriveRootListItemVersion](Get-MgUserDriveRootListItemVersion.md)
 
@@ -1357,13 +1205,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveRootPermission](Get-MgUserDriveRootPermission.md)
 
-### [Get-MgUserDriveRootPermission](Get-MgUserDriveRootPermission.md)
-
 ### [Get-MgUserDriveRootPermissionCount](Get-MgUserDriveRootPermissionCount.md)
 
 ### [Get-MgUserDriveRootRetentionLabel](Get-MgUserDriveRootRetentionLabel.md)
-
-### [Get-MgUserDriveRootSubscription](Get-MgUserDriveRootSubscription.md)
 
 ### [Get-MgUserDriveRootSubscription](Get-MgUserDriveRootSubscription.md)
 
@@ -1371,11 +1215,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveRootThumbnail](Get-MgUserDriveRootThumbnail.md)
 
-### [Get-MgUserDriveRootThumbnail](Get-MgUserDriveRootThumbnail.md)
-
 ### [Get-MgUserDriveRootThumbnailCount](Get-MgUserDriveRootThumbnailCount.md)
-
-### [Get-MgUserDriveRootVersion](Get-MgUserDriveRootVersion.md)
 
 ### [Get-MgUserDriveRootVersion](Get-MgUserDriveRootVersion.md)
 
@@ -1385,23 +1225,49 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserDriveSpecial](Get-MgUserDriveSpecial.md)
 
-### [Get-MgUserDriveSpecial](Get-MgUserDriveSpecial.md)
-
 ### [Get-MgUserDriveSpecialContent](Get-MgUserDriveSpecialContent.md)
 
 ### [Get-MgUserDriveSpecialCount](Get-MgUserDriveSpecialCount.md)
 
+### [Grant-MgDriveItemListItemPermission](Grant-MgDriveItemListItemPermission.md)
+
 ### [Grant-MgDriveItemPermission](Grant-MgDriveItemPermission.md)
+
+### [Grant-MgDriveListItemPermission](Grant-MgDriveListItemPermission.md)
+
+### [Grant-MgDriveListPermission](Grant-MgDriveListPermission.md)
+
+### [Grant-MgDriveRootListItemPermission](Grant-MgDriveRootListItemPermission.md)
 
 ### [Grant-MgDriveRootPermission](Grant-MgDriveRootPermission.md)
 
+### [Grant-MgGroupDriveItemListItemPermission](Grant-MgGroupDriveItemListItemPermission.md)
+
 ### [Grant-MgGroupDriveItemPermission](Grant-MgGroupDriveItemPermission.md)
+
+### [Grant-MgGroupDriveListItemPermission](Grant-MgGroupDriveListItemPermission.md)
+
+### [Grant-MgGroupDriveListPermission](Grant-MgGroupDriveListPermission.md)
+
+### [Grant-MgGroupDriveRootListItemPermission](Grant-MgGroupDriveRootListItemPermission.md)
 
 ### [Grant-MgGroupDriveRootPermission](Grant-MgGroupDriveRootPermission.md)
 
+### [Grant-MgShareListItemPermission](Grant-MgShareListItemPermission.md)
+
+### [Grant-MgShareListPermission](Grant-MgShareListPermission.md)
+
 ### [Grant-MgSharePermission](Grant-MgSharePermission.md)
 
+### [Grant-MgUserDriveItemListItemPermission](Grant-MgUserDriveItemListItemPermission.md)
+
 ### [Grant-MgUserDriveItemPermission](Grant-MgUserDriveItemPermission.md)
+
+### [Grant-MgUserDriveListItemPermission](Grant-MgUserDriveListItemPermission.md)
+
+### [Grant-MgUserDriveListPermission](Grant-MgUserDriveListPermission.md)
+
+### [Grant-MgUserDriveRootListItemPermission](Grant-MgUserDriveRootListItemPermission.md)
 
 ### [Grant-MgUserDriveRootPermission](Grant-MgUserDriveRootPermission.md)
 
@@ -1545,6 +1411,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgDriveItemListItemLink](New-MgDriveItemListItemLink.md)
 
+### [New-MgDriveItemListItemPermission](New-MgDriveItemListItemPermission.md)
+
 ### [New-MgDriveItemListItemVersion](New-MgDriveItemListItemVersion.md)
 
 ### [New-MgDriveItemPermission](New-MgDriveItemPermission.md)
@@ -1571,9 +1439,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgDriveListItemLink](New-MgDriveListItemLink.md)
 
+### [New-MgDriveListItemPermission](New-MgDriveListItemPermission.md)
+
 ### [New-MgDriveListItemVersion](New-MgDriveListItemVersion.md)
 
 ### [New-MgDriveListOperation](New-MgDriveListOperation.md)
+
+### [New-MgDriveListPermission](New-MgDriveListPermission.md)
 
 ### [New-MgDriveListSubscription](New-MgDriveListSubscription.md)
 
@@ -1586,6 +1458,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgDriveRootListItemDocumentSetVersion](New-MgDriveRootListItemDocumentSetVersion.md)
 
 ### [New-MgDriveRootListItemLink](New-MgDriveRootListItemLink.md)
+
+### [New-MgDriveRootListItemPermission](New-MgDriveRootListItemPermission.md)
 
 ### [New-MgDriveRootListItemVersion](New-MgDriveRootListItemVersion.md)
 
@@ -1615,6 +1489,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgGroupDriveItemListItemLink](New-MgGroupDriveItemListItemLink.md)
 
+### [New-MgGroupDriveItemListItemPermission](New-MgGroupDriveItemListItemPermission.md)
+
 ### [New-MgGroupDriveItemListItemVersion](New-MgGroupDriveItemListItemVersion.md)
 
 ### [New-MgGroupDriveItemPermission](New-MgGroupDriveItemPermission.md)
@@ -1641,9 +1517,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgGroupDriveListItemLink](New-MgGroupDriveListItemLink.md)
 
+### [New-MgGroupDriveListItemPermission](New-MgGroupDriveListItemPermission.md)
+
 ### [New-MgGroupDriveListItemVersion](New-MgGroupDriveListItemVersion.md)
 
 ### [New-MgGroupDriveListOperation](New-MgGroupDriveListOperation.md)
+
+### [New-MgGroupDriveListPermission](New-MgGroupDriveListPermission.md)
 
 ### [New-MgGroupDriveListSubscription](New-MgGroupDriveListSubscription.md)
 
@@ -1656,6 +1536,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgGroupDriveRootListItemDocumentSetVersion](New-MgGroupDriveRootListItemDocumentSetVersion.md)
 
 ### [New-MgGroupDriveRootListItemLink](New-MgGroupDriveRootListItemLink.md)
+
+### [New-MgGroupDriveRootListItemPermission](New-MgGroupDriveRootListItemPermission.md)
 
 ### [New-MgGroupDriveRootListItemVersion](New-MgGroupDriveRootListItemVersion.md)
 
@@ -1681,9 +1563,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgShareListItemDocumentSetVersion](New-MgShareListItemDocumentSetVersion.md)
 
+### [New-MgShareListItemPermission](New-MgShareListItemPermission.md)
+
 ### [New-MgShareListItemVersion](New-MgShareListItemVersion.md)
 
 ### [New-MgShareListOperation](New-MgShareListOperation.md)
+
+### [New-MgShareListPermission](New-MgShareListPermission.md)
 
 ### [New-MgShareListSubscription](New-MgShareListSubscription.md)
 
@@ -1704,6 +1590,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgUserDriveItemListItemDocumentSetVersion](New-MgUserDriveItemListItemDocumentSetVersion.md)
 
 ### [New-MgUserDriveItemListItemLink](New-MgUserDriveItemListItemLink.md)
+
+### [New-MgUserDriveItemListItemPermission](New-MgUserDriveItemListItemPermission.md)
 
 ### [New-MgUserDriveItemListItemVersion](New-MgUserDriveItemListItemVersion.md)
 
@@ -1731,9 +1619,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgUserDriveListItemLink](New-MgUserDriveListItemLink.md)
 
+### [New-MgUserDriveListItemPermission](New-MgUserDriveListItemPermission.md)
+
 ### [New-MgUserDriveListItemVersion](New-MgUserDriveListItemVersion.md)
 
 ### [New-MgUserDriveListOperation](New-MgUserDriveListOperation.md)
+
+### [New-MgUserDriveListPermission](New-MgUserDriveListPermission.md)
 
 ### [New-MgUserDriveListSubscription](New-MgUserDriveListSubscription.md)
 
@@ -1746,6 +1638,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgUserDriveRootListItemDocumentSetVersion](New-MgUserDriveRootListItemDocumentSetVersion.md)
 
 ### [New-MgUserDriveRootListItemLink](New-MgUserDriveRootListItemLink.md)
+
+### [New-MgUserDriveRootListItemPermission](New-MgUserDriveRootListItemPermission.md)
 
 ### [New-MgUserDriveRootListItemVersion](New-MgUserDriveRootListItemVersion.md)
 
@@ -1795,6 +1689,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgDriveItemListItemField](Remove-MgDriveItemListItemField.md)
 
+### [Remove-MgDriveItemListItemPermission](Remove-MgDriveItemListItemPermission.md)
+
 ### [Remove-MgDriveItemListItemVersion](Remove-MgDriveItemListItemVersion.md)
 
 ### [Remove-MgDriveItemListItemVersionField](Remove-MgDriveItemListItemVersionField.md)
@@ -1833,11 +1729,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgDriveListItemField](Remove-MgDriveListItemField.md)
 
+### [Remove-MgDriveListItemPermission](Remove-MgDriveListItemPermission.md)
+
 ### [Remove-MgDriveListItemVersion](Remove-MgDriveListItemVersion.md)
 
 ### [Remove-MgDriveListItemVersionField](Remove-MgDriveListItemVersionField.md)
 
 ### [Remove-MgDriveListOperation](Remove-MgDriveListOperation.md)
+
+### [Remove-MgDriveListPermission](Remove-MgDriveListPermission.md)
 
 ### [Remove-MgDriveListSubscription](Remove-MgDriveListSubscription.md)
 
@@ -1862,6 +1762,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgDriveRootListItemDriveItemContent](Remove-MgDriveRootListItemDriveItemContent.md)
 
 ### [Remove-MgDriveRootListItemField](Remove-MgDriveRootListItemField.md)
+
+### [Remove-MgDriveRootListItemPermission](Remove-MgDriveRootListItemPermission.md)
 
 ### [Remove-MgDriveRootListItemVersion](Remove-MgDriveRootListItemVersion.md)
 
@@ -1911,6 +1813,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgGroupDriveItemListItemField](Remove-MgGroupDriveItemListItemField.md)
 
+### [Remove-MgGroupDriveItemListItemPermission](Remove-MgGroupDriveItemListItemPermission.md)
+
 ### [Remove-MgGroupDriveItemListItemVersion](Remove-MgGroupDriveItemListItemVersion.md)
 
 ### [Remove-MgGroupDriveItemListItemVersionField](Remove-MgGroupDriveItemListItemVersionField.md)
@@ -1949,11 +1853,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgGroupDriveListItemField](Remove-MgGroupDriveListItemField.md)
 
+### [Remove-MgGroupDriveListItemPermission](Remove-MgGroupDriveListItemPermission.md)
+
 ### [Remove-MgGroupDriveListItemVersion](Remove-MgGroupDriveListItemVersion.md)
 
 ### [Remove-MgGroupDriveListItemVersionField](Remove-MgGroupDriveListItemVersionField.md)
 
 ### [Remove-MgGroupDriveListOperation](Remove-MgGroupDriveListOperation.md)
+
+### [Remove-MgGroupDriveListPermission](Remove-MgGroupDriveListPermission.md)
 
 ### [Remove-MgGroupDriveListSubscription](Remove-MgGroupDriveListSubscription.md)
 
@@ -1978,6 +1886,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgGroupDriveRootListItemDriveItemContent](Remove-MgGroupDriveRootListItemDriveItemContent.md)
 
 ### [Remove-MgGroupDriveRootListItemField](Remove-MgGroupDriveRootListItemField.md)
+
+### [Remove-MgGroupDriveRootListItemPermission](Remove-MgGroupDriveRootListItemPermission.md)
 
 ### [Remove-MgGroupDriveRootListItemVersion](Remove-MgGroupDriveRootListItemVersion.md)
 
@@ -2023,11 +1933,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgShareListItemField](Remove-MgShareListItemField.md)
 
+### [Remove-MgShareListItemPermission](Remove-MgShareListItemPermission.md)
+
 ### [Remove-MgShareListItemVersion](Remove-MgShareListItemVersion.md)
 
 ### [Remove-MgShareListItemVersionField](Remove-MgShareListItemVersionField.md)
 
 ### [Remove-MgShareListOperation](Remove-MgShareListOperation.md)
+
+### [Remove-MgShareListPermission](Remove-MgShareListPermission.md)
 
 ### [Remove-MgShareListSubscription](Remove-MgShareListSubscription.md)
 
@@ -2064,6 +1978,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgUserDriveItemListItemDriveItemContent](Remove-MgUserDriveItemListItemDriveItemContent.md)
 
 ### [Remove-MgUserDriveItemListItemField](Remove-MgUserDriveItemListItemField.md)
+
+### [Remove-MgUserDriveItemListItemPermission](Remove-MgUserDriveItemListItemPermission.md)
 
 ### [Remove-MgUserDriveItemListItemVersion](Remove-MgUserDriveItemListItemVersion.md)
 
@@ -2103,11 +2019,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgUserDriveListItemField](Remove-MgUserDriveListItemField.md)
 
+### [Remove-MgUserDriveListItemPermission](Remove-MgUserDriveListItemPermission.md)
+
 ### [Remove-MgUserDriveListItemVersion](Remove-MgUserDriveListItemVersion.md)
 
 ### [Remove-MgUserDriveListItemVersionField](Remove-MgUserDriveListItemVersionField.md)
 
 ### [Remove-MgUserDriveListOperation](Remove-MgUserDriveListOperation.md)
+
+### [Remove-MgUserDriveListPermission](Remove-MgUserDriveListPermission.md)
 
 ### [Remove-MgUserDriveListSubscription](Remove-MgUserDriveListSubscription.md)
 
@@ -2132,6 +2052,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgUserDriveRootListItemDriveItemContent](Remove-MgUserDriveRootListItemDriveItemContent.md)
 
 ### [Remove-MgUserDriveRootListItemField](Remove-MgUserDriveRootListItemField.md)
+
+### [Remove-MgUserDriveRootListItemPermission](Remove-MgUserDriveRootListItemPermission.md)
 
 ### [Remove-MgUserDriveRootListItemVersion](Remove-MgUserDriveRootListItemVersion.md)
 
@@ -2381,6 +2303,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgDriveItemListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgDriveItemListItemPermission](Update-MgDriveItemListItemPermission.md)
+
 ### [Update-MgDriveItemListItemVersion](Update-MgDriveItemListItemVersion.md)
 
 ### [Update-MgDriveItemListItemVersionField](Update-MgDriveItemListItemVersionField.md)
@@ -2421,6 +2345,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgDriveListItemLastModifiedByUserMailboxSetting](Update-MgDriveListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgDriveListItemPermission](Update-MgDriveListItemPermission.md)
+
 ### [Update-MgDriveListItemVersion](Update-MgDriveListItemVersion.md)
 
 ### [Update-MgDriveListItemVersionField](Update-MgDriveListItemVersionField.md)
@@ -2428,6 +2354,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDriveListLastModifiedByUserMailboxSetting](Update-MgDriveListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgDriveListOperation](Update-MgDriveListOperation.md)
+
+### [Update-MgDriveListPermission](Update-MgDriveListPermission.md)
 
 ### [Update-MgDriveListSubscription](Update-MgDriveListSubscription.md)
 
@@ -2452,6 +2380,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDriveRootListItemField](Update-MgDriveRootListItemField.md)
 
 ### [Update-MgDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgDriveRootListItemLastModifiedByUserMailboxSetting.md)
+
+### [Update-MgDriveRootListItemPermission](Update-MgDriveRootListItemPermission.md)
 
 ### [Update-MgDriveRootListItemVersion](Update-MgDriveRootListItemVersion.md)
 
@@ -2493,6 +2423,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgGroupDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveItemListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgGroupDriveItemListItemPermission](Update-MgGroupDriveItemListItemPermission.md)
+
 ### [Update-MgGroupDriveItemListItemVersion](Update-MgGroupDriveItemListItemVersion.md)
 
 ### [Update-MgGroupDriveItemListItemVersionField](Update-MgGroupDriveItemListItemVersionField.md)
@@ -2533,6 +2465,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgGroupDriveListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgGroupDriveListItemPermission](Update-MgGroupDriveListItemPermission.md)
+
 ### [Update-MgGroupDriveListItemVersion](Update-MgGroupDriveListItemVersion.md)
 
 ### [Update-MgGroupDriveListItemVersionField](Update-MgGroupDriveListItemVersionField.md)
@@ -2540,6 +2474,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgGroupDriveListLastModifiedByUserMailboxSetting](Update-MgGroupDriveListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgGroupDriveListOperation](Update-MgGroupDriveListOperation.md)
+
+### [Update-MgGroupDriveListPermission](Update-MgGroupDriveListPermission.md)
 
 ### [Update-MgGroupDriveListSubscription](Update-MgGroupDriveListSubscription.md)
 
@@ -2564,6 +2500,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgGroupDriveRootListItemField](Update-MgGroupDriveRootListItemField.md)
 
 ### [Update-MgGroupDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveRootListItemLastModifiedByUserMailboxSetting.md)
+
+### [Update-MgGroupDriveRootListItemPermission](Update-MgGroupDriveRootListItemPermission.md)
 
 ### [Update-MgGroupDriveRootListItemVersion](Update-MgGroupDriveRootListItemVersion.md)
 
@@ -2607,6 +2545,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgShareListItemLastModifiedByUserMailboxSetting](Update-MgShareListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgShareListItemPermission](Update-MgShareListItemPermission.md)
+
 ### [Update-MgShareListItemVersion](Update-MgShareListItemVersion.md)
 
 ### [Update-MgShareListItemVersionField](Update-MgShareListItemVersionField.md)
@@ -2614,6 +2554,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgShareListLastModifiedByUserMailboxSetting](Update-MgShareListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgShareListOperation](Update-MgShareListOperation.md)
+
+### [Update-MgShareListPermission](Update-MgShareListPermission.md)
 
 ### [Update-MgShareListSubscription](Update-MgShareListSubscription.md)
 
@@ -2646,6 +2588,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserDriveItemListItemField](Update-MgUserDriveItemListItemField.md)
 
 ### [Update-MgUserDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveItemListItemLastModifiedByUserMailboxSetting.md)
+
+### [Update-MgUserDriveItemListItemPermission](Update-MgUserDriveItemListItemPermission.md)
 
 ### [Update-MgUserDriveItemListItemVersion](Update-MgUserDriveItemListItemVersion.md)
 
@@ -2687,6 +2631,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgUserDriveListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveListItemLastModifiedByUserMailboxSetting.md)
 
+### [Update-MgUserDriveListItemPermission](Update-MgUserDriveListItemPermission.md)
+
 ### [Update-MgUserDriveListItemVersion](Update-MgUserDriveListItemVersion.md)
 
 ### [Update-MgUserDriveListItemVersionField](Update-MgUserDriveListItemVersionField.md)
@@ -2694,6 +2640,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserDriveListLastModifiedByUserMailboxSetting](Update-MgUserDriveListLastModifiedByUserMailboxSetting.md)
 
 ### [Update-MgUserDriveListOperation](Update-MgUserDriveListOperation.md)
+
+### [Update-MgUserDriveListPermission](Update-MgUserDriveListPermission.md)
 
 ### [Update-MgUserDriveListSubscription](Update-MgUserDriveListSubscription.md)
 
@@ -2718,6 +2666,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserDriveRootListItemField](Update-MgUserDriveRootListItemField.md)
 
 ### [Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting.md)
+
+### [Update-MgUserDriveRootListItemPermission](Update-MgUserDriveRootListItemPermission.md)
 
 ### [Update-MgUserDriveRootListItemVersion](Update-MgUserDriveRootListItemVersion.md)
 

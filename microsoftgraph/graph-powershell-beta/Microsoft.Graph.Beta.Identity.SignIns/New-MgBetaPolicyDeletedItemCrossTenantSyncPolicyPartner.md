@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicydeleteditemcrosstenantsyncpolicypartner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner
 ---
@@ -23,11 +23,12 @@ Create new navigation property to crossTenantSyncPolicyPartners for policies
 New-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-DeletedDateTime <datetime>] [-DisplayName <string>]
  [-ExternalCloudAuthorizedApplicationId <string>]
- [-GroupSyncInbound <IMicrosoftGraphCrossTenantGroupSyncInbound>] [-TenantId <string>]
- [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GroupSyncInbound <IMicrosoftGraphCrossTenantGroupSyncInbound>]
+ [-RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]
+ [-TenantId <string>] [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -38,7 +39,6 @@ New-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -161,7 +161,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-Display name for the cross-tenant user synchronization policy.
+Display name for the cross-tenant user and group synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
 
@@ -373,9 +373,32 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -RoleEnabledGroupSyncInbound
+
+crossTenantRoleEnabledGroupSyncInbound
+To construct, see NOTES section for ROLEENABLEDGROUPSYNCINBOUND properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -TenantId
 
 Tenant identifier for the partner Microsoft Entra organization.
+Key.
 Read-only.
 
 ```yaml
@@ -472,14 +495,20 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 BODYPARAMETER `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`: crossTenantIdentitySyncPolicyPartner
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
-  [DisplayName <String>]: Display name for the cross-tenant user synchronization policy.
+  [DisplayName <String>]: Display name for the cross-tenant user and group synchronization policy.
 Use the name of the partner Microsoft Entra tenant to easily identify the policy.
 Optional.
   [ExternalCloudAuthorizedApplicationId <String>]: 
   [GroupSyncInbound <IMicrosoftGraphCrossTenantGroupSyncInbound>]: crossTenantGroupSyncInbound
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
+false stops any current group synchronization from the source tenant to the target tenant.
+This property has no impact on existing groups that were synchronized.
+  [RoleEnabledGroupSyncInbound <IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>]: crossTenantRoleEnabledGroupSyncInbound
+    [(Any) <Object>]: This indicates any property can be added to this object.
     [IsSyncAllowed <Boolean?>]: 
   [TenantId <String>]: Tenant identifier for the partner Microsoft Entra organization.
+Key.
 Read-only.
   [UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]: crossTenantUserSyncInbound
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -488,6 +517,12 @@ false causes any current user synchronization from the source tenant to the targ
 This property has no impact on existing users who have already been synchronized.
 
 GROUPSYNCINBOUND `<IMicrosoftGraphCrossTenantGroupSyncInbound>`: crossTenantGroupSyncInbound
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [IsSyncAllowed <Boolean?>]: Defines whether group objects should be synchronized from the partner tenant.
+false stops any current group synchronization from the source tenant to the target tenant.
+This property has no impact on existing groups that were synchronized.
+
+ROLEENABLEDGROUPSYNCINBOUND `<IMicrosoftGraphCrossTenantRoleEnabledGroupSyncInbound>`: crossTenantRoleEnabledGroupSyncInbound
   [(Any) <Object>]: This indicates any property can be added to this object.
   [IsSyncAllowed <Boolean?>]: 
 

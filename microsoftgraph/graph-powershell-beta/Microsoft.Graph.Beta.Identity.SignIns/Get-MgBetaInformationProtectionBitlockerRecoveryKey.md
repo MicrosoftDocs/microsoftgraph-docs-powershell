@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaInformationProtectionBitlockerRecoveryKey
 ---
@@ -14,7 +14,7 @@ title: Get-MgBetaInformationProtectionBitlockerRecoveryKey
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the key property that represents the actual recovery key.
+By default, this operation doesn't return the key property that represents the actual recovery key.
 To include the key property in the response, use the $select OData query parameter.
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
@@ -32,7 +32,7 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKey [-ExpandProperty <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -42,7 +42,7 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId <str
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -52,7 +52,7 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKey -InputObject <IIdentitySignI
  [-ExpandProperty <string[]>] [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -63,7 +63,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the key property that represents the actual recovery key.
+By default, this operation doesn't return the key property that represents the actual recovery key.
 To include the key property in the response, use the $select OData query parameter.
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
@@ -610,6 +610,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -625,6 +626,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem

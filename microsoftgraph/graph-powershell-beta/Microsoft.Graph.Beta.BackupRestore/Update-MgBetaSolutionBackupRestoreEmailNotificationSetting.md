@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoreemailnotificationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreEmailNotificationSetting
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaSolutionBackupRestoreEmailNotificationSetting
 ## SYNOPSIS
 
 Update the properties of an emailNotificationsSetting object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreEmailNotificationSetting](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreEmailNotificationSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,6 @@ Update-MgBetaSolutionBackupRestoreEmailNotificationSetting [-ResponseHeadersVari
  [-Recipients <IMicrosoftGraphNotificationRecipients>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +37,7 @@ Update-MgBetaSolutionBackupRestoreEmailNotificationSetting
  -BodyParameter <IMicrosoftGraphEmailNotificationsSetting> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES

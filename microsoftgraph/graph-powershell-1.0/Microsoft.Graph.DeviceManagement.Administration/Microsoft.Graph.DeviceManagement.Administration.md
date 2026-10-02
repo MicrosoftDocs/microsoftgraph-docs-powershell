@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: 258bae96-18f6-4e61-9a2c-23c65b9a7a0f
+Module Guid: a331fac4-2ab5-4866-ad06-71521249194a
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,8 +17,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementAuditEvent](Get-MgDeviceManagementAuditEvent.md)
 
-### [Get-MgDeviceManagementAuditEvent](Get-MgDeviceManagementAuditEvent.md)
-
 ### [Get-MgDeviceManagementAuditEventAuditActivityType](Get-MgDeviceManagementAuditEventAuditActivityType.md)
 
 ### [Get-MgDeviceManagementAuditEventAuditCategory](Get-MgDeviceManagementAuditEventAuditCategory.md)
@@ -27,11 +25,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementComplianceManagementPartner](Get-MgDeviceManagementComplianceManagementPartner.md)
 
-### [Get-MgDeviceManagementComplianceManagementPartner](Get-MgDeviceManagementComplianceManagementPartner.md)
-
 ### [Get-MgDeviceManagementComplianceManagementPartnerCount](Get-MgDeviceManagementComplianceManagementPartnerCount.md)
-
-### [Get-MgDeviceManagementExchangeConnector](Get-MgDeviceManagementExchangeConnector.md)
 
 ### [Get-MgDeviceManagementExchangeConnector](Get-MgDeviceManagementExchangeConnector.md)
 
@@ -39,11 +33,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementIoUpdateStatus](Get-MgDeviceManagementIoUpdateStatus.md)
 
-### [Get-MgDeviceManagementIoUpdateStatus](Get-MgDeviceManagementIoUpdateStatus.md)
-
 ### [Get-MgDeviceManagementIoUpdateStatusCount](Get-MgDeviceManagementIoUpdateStatusCount.md)
-
-### [Get-MgDeviceManagementMobileThreatDefenseConnector](Get-MgDeviceManagementMobileThreatDefenseConnector.md)
 
 ### [Get-MgDeviceManagementMobileThreatDefenseConnector](Get-MgDeviceManagementMobileThreatDefenseConnector.md)
 
@@ -51,11 +41,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementPartner](Get-MgDeviceManagementPartner.md)
 
-### [Get-MgDeviceManagementPartner](Get-MgDeviceManagementPartner.md)
-
 ### [Get-MgDeviceManagementPartnerCount](Get-MgDeviceManagementPartnerCount.md)
-
-### [Get-MgDeviceManagementRemoteAssistancePartner](Get-MgDeviceManagementRemoteAssistancePartner.md)
 
 ### [Get-MgDeviceManagementRemoteAssistancePartner](Get-MgDeviceManagementRemoteAssistancePartner.md)
 
@@ -63,11 +49,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementResourceOperation](Get-MgDeviceManagementResourceOperation.md)
 
-### [Get-MgDeviceManagementResourceOperation](Get-MgDeviceManagementResourceOperation.md)
-
 ### [Get-MgDeviceManagementResourceOperationCount](Get-MgDeviceManagementResourceOperationCount.md)
-
-### [Get-MgDeviceManagementRoleAssignment](Get-MgDeviceManagementRoleAssignment.md)
 
 ### [Get-MgDeviceManagementRoleAssignment](Get-MgDeviceManagementRoleAssignment.md)
 
@@ -77,11 +59,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementRoleDefinition](Get-MgDeviceManagementRoleDefinition.md)
 
-### [Get-MgDeviceManagementRoleDefinition](Get-MgDeviceManagementRoleDefinition.md)
-
 ### [Get-MgDeviceManagementRoleDefinitionCount](Get-MgDeviceManagementRoleDefinitionCount.md)
-
-### [Get-MgDeviceManagementRoleDefinitionRoleAssignment](Get-MgDeviceManagementRoleDefinitionRoleAssignment.md)
 
 ### [Get-MgDeviceManagementRoleDefinitionRoleAssignment](Get-MgDeviceManagementRoleDefinitionRoleAssignment.md)
 
@@ -91,17 +69,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementTermAndCondition](Get-MgDeviceManagementTermAndCondition.md)
 
-### [Get-MgDeviceManagementTermAndCondition](Get-MgDeviceManagementTermAndCondition.md)
-
-### [Get-MgDeviceManagementTermAndConditionAcceptanceStatus](Get-MgDeviceManagementTermAndConditionAcceptanceStatus.md)
-
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatus](Get-MgDeviceManagementTermAndConditionAcceptanceStatus.md)
 
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusCount](Get-MgDeviceManagementTermAndConditionAcceptanceStatusCount.md)
 
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition](Get-MgDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition.md)
-
-### [Get-MgDeviceManagementTermAndConditionAssignment](Get-MgDeviceManagementTermAndConditionAssignment.md)
 
 ### [Get-MgDeviceManagementTermAndConditionAssignment](Get-MgDeviceManagementTermAndConditionAssignment.md)
 
@@ -113,19 +85,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementVirtualEndpointAuditEvent](Get-MgDeviceManagementVirtualEndpointAuditEvent.md)
 
-### [Get-MgDeviceManagementVirtualEndpointAuditEvent](Get-MgDeviceManagementVirtualEndpointAuditEvent.md)
-
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventCount](Get-MgDeviceManagementVirtualEndpointAuditEventCount.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointCloudPc](Get-MgDeviceManagementVirtualEndpointCloudPc.md)
 
-### [Get-MgDeviceManagementVirtualEndpointCloudPc](Get-MgDeviceManagementVirtualEndpointCloudPc.md)
-
 ### [Get-MgDeviceManagementVirtualEndpointCloudPcCount](Get-MgDeviceManagementVirtualEndpointCloudPcCount.md)
 
-### [Get-MgDeviceManagementVirtualEndpointDeviceImage](Get-MgDeviceManagementVirtualEndpointDeviceImage.md)
+### [Get-MgDeviceManagementVirtualEndpointCloudPcLaunchDetail](Get-MgDeviceManagementVirtualEndpointCloudPcLaunchDetail.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointDeviceImage](Get-MgDeviceManagementVirtualEndpointDeviceImage.md)
 
@@ -135,11 +103,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementVirtualEndpointGalleryImage](Get-MgDeviceManagementVirtualEndpointGalleryImage.md)
 
-### [Get-MgDeviceManagementVirtualEndpointGalleryImage](Get-MgDeviceManagementVirtualEndpointGalleryImage.md)
-
 ### [Get-MgDeviceManagementVirtualEndpointGalleryImageCount](Get-MgDeviceManagementVirtualEndpointGalleryImageCount.md)
-
-### [Get-MgDeviceManagementVirtualEndpointOnPremiseConnection](Get-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointOnPremiseConnection](Get-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
 
@@ -147,13 +111,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 
-### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
-
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
-
-### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
-
-### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser.md)
 
@@ -171,11 +129,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount.md)
 
-### [Get-MgDeviceManagementVirtualEndpointUserSetting](Get-MgDeviceManagementVirtualEndpointUserSetting.md)
+### [Get-MgDeviceManagementVirtualEndpointReport](Get-MgDeviceManagementVirtualEndpointReport.md)
+
+### [Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport](Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport.md)
+
+### [Get-MgDeviceManagementVirtualEndpointServicePlan](Get-MgDeviceManagementVirtualEndpointServicePlan.md)
+
+### [Get-MgDeviceManagementVirtualEndpointServicePlanCount](Get-MgDeviceManagementVirtualEndpointServicePlanCount.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointUserSetting](Get-MgDeviceManagementVirtualEndpointUserSetting.md)
-
-### [Get-MgDeviceManagementVirtualEndpointUserSettingAssignment](Get-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
 
 ### [Get-MgDeviceManagementVirtualEndpointUserSettingAssignment](Get-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
 
@@ -186,6 +148,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
 
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
+
+### [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc.md)
 
 ### [Invoke-MgTerminateDeviceManagementPartner](Invoke-MgTerminateDeviceManagementPartner.md)
 
@@ -273,6 +237,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 
+### [Remove-MgDeviceManagementVirtualEndpointReport](Remove-MgDeviceManagementVirtualEndpointReport.md)
+
 ### [Remove-MgDeviceManagementVirtualEndpointUserSetting](Remove-MgDeviceManagementVirtualEndpointUserSetting.md)
 
 ### [Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment](Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
@@ -331,11 +297,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgDeviceManagementVirtualEndpointOnPremiseConnection](Update-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
 
+### [Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword](Update-MgDeviceManagementVirtualEndpointOnPremiseConnectionAdDomainPassword.md)
+
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](Update-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting.md)
+
+### [Update-MgDeviceManagementVirtualEndpointReport](Update-MgDeviceManagementVirtualEndpointReport.md)
 
 ### [Update-MgDeviceManagementVirtualEndpointUserSetting](Update-MgDeviceManagementVirtualEndpointUserSetting.md)
 

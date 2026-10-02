@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalapproleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaServicePrincipalAppRoleAssignment
 ---
@@ -30,7 +30,6 @@ Remove-MgBetaServicePrincipalAppRoleAssignment -AppRoleAssignmentId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -40,7 +39,6 @@ Remove-MgBetaServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdenti
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -58,9 +56,9 @@ Deleting an app role assignment for a service principal is equivalent to revokin
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,  |
+| Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Application.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AppRoleAssignment.ReadWrite.All,  |
+| Application | AppRoleAssignment.ReadWrite.All, Application.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Remove the application role assignment for a service principal

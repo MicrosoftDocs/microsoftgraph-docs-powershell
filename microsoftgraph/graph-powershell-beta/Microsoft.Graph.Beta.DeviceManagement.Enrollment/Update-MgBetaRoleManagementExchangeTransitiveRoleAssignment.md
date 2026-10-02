@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangetransitiveroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment
 ---
@@ -29,7 +29,7 @@ Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment -UnifiedRoleAssignme
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,7 @@ Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment -UnifiedRoleAssignme
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -54,7 +54,7 @@ Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +65,7 @@ Update-MgBetaRoleManagementExchangeTransitiveRoleAssignment
  -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -786,7 +786,7 @@ APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
   [Id <String>]: The unique identifier for an entity.
 Read-only.
   [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
   [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
 
@@ -799,7 +799,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app specific scope when the assignment scope is app specific.

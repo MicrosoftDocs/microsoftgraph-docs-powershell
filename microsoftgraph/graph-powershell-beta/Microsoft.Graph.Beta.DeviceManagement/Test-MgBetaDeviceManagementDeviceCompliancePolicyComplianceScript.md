@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
 ---
@@ -25,7 +25,7 @@ Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
  [-DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Validate
@@ -36,7 +36,6 @@ Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -372,11 +371,17 @@ BODYPARAMETER `<IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGra
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DeviceComplianceScriptId <String>]: Device compliance script Id.
     [RulesContent <Byte[]>]: Json of the rules.
+    [RunIntervalInMinutes <Int32?>]: Indicates the interval, in minutes, at which the custom compliance script is evaluated on the device.
+Allowed range from 1 to 480.
+Nullable.
 
 DEVICECOMPLIANCEPOLICYSCRIPT `<IMicrosoftGraphDeviceCompliancePolicyScript>`: deviceCompliancePolicyScript
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeviceComplianceScriptId <String>]: Device compliance script Id.
   [RulesContent <Byte[]>]: Json of the rules.
+  [RunIntervalInMinutes <Int32?>]: Indicates the interval, in minutes, at which the custom compliance script is evaluated on the device.
+Allowed range from 1 to 480.
+Nullable.
 
 
 ## RELATED LINKS

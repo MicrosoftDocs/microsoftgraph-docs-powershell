@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementiosmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementiOSManagedAppProtection
 ---
@@ -67,14 +67,16 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtection
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <timespan>] [-PreviousPinBlockCount <int>] [-PrintBlocked]
  [-ProtectInboundDataFromUnknownSources]
- [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>] [-RoleScopeTagIds <string[]>]
- [-SaveAsBlocked] [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
+ [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
+ [-PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement>]
+ [-RoleScopeTagIds <string[]>] [-SaveAsBlocked]
+ [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
  [-SimplePinBlocked] [-TargetedAppManagementLevels <AppManagementLevel>]
  [-ThirdPartyKeyboardsBlocked] [-Version <string>]
  [-WritingToolsConfigurationState <WritingToolsIosManagedAppConfigurationState>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -84,7 +86,7 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection -IosManagedAppProtection
  -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -135,14 +137,16 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <timespan>] [-PreviousPinBlockCount <int>] [-PrintBlocked]
  [-ProtectInboundDataFromUnknownSources]
- [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>] [-RoleScopeTagIds <string[]>]
- [-SaveAsBlocked] [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
+ [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
+ [-PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement>]
+ [-RoleScopeTagIds <string[]>] [-SaveAsBlocked]
+ [-ScreenCaptureConfigurationState <ScreenCaptureIosManagedAppConfigurationState>]
  [-SimplePinBlocked] [-TargetedAppManagementLevels <AppManagementLevel>]
  [-ThirdPartyKeyboardsBlocked] [-Version <string>]
  [-WritingToolsConfigurationState <WritingToolsIosManagedAppConfigurationState>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -153,7 +157,7 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtection
  -BodyParameter <IMicrosoftGraphIosManagedAppProtection> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -2494,6 +2498,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PurviewContentEvaluationRequired
+
+Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppPurviewEvaluationRequirement
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -2870,6 +2901,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.

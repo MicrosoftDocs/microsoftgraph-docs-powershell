@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityidentitysensorcandidateactivationconfiguration
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgSecurityIdentitySensorCandidateActivationConfiguration
 ---
@@ -15,6 +15,9 @@ title: Remove-MgSecurityIdentitySensorCandidateActivationConfiguration
 
 Delete navigation property sensorCandidateActivationConfiguration for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityIdentitySensorCandidateActivationConfiguration](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityIdentitySensorCandidateActivationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -24,7 +27,6 @@ Remove-MgSecurityIdentitySensorCandidateActivationConfiguration [-IfMatch <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

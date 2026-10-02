@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitegetbypathanalytic
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSiteGetByPathAnalytic
 ---
@@ -30,7 +30,6 @@ Update-MgBetaSiteGetByPathAnalytic -Path <string> -SiteId <string>
  [-LastSevenDays <IMicrosoftGraphItemActivityStat>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +39,7 @@ Update-MgBetaSiteGetByPathAnalytic -Path <string> -SiteId <string>
  -BodyParameter <IMicrosoftGraphItemAnalytics> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +51,6 @@ Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-ResponseHeade
  [-LastSevenDays <IMicrosoftGraphItemActivityStat>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +60,7 @@ Update-MgBetaSiteGetByPathAnalytic -InputObject <ISitesIdentity>
  -BodyParameter <IMicrosoftGraphItemAnalytics> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -609,10 +607,11 @@ Always null when the object hasn't been deleted.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AboutMe <String>]: A freeform text entry field for users to describe themselves.
-Returned only on $select.
+Requires $select to retrieve.
         [AccountEnabled <Boolean?>]: true if the account is enabled; otherwise, false.
 This property is required when creating the object.
 Supports $filter (eq, ne, not, and in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Activities <IMicrosoftGraphUserActivity[]>]: The user's activities across devices.
 Read-only.
 Nullable.
@@ -893,22 +892,23 @@ Always null when the object hasn't been deleted.
             [IsEnabled <Boolean?>]: Denotes whether the policy is enabled.
             [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: 
+              [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of certificate restrictions settings to be applied to an application or service principal.
                 [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: 
+                  [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
+Limit of 5.
                     [Id <String>]: The unique identifier for an entity.
 Read-only.
                     [Operator <String>]: customSecurityAttributeComparisonOperator
                 [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 [RestrictionType <String>]: appKeyCredentialRestrictionType
                 [State <String>]: appManagementRestrictionState
-              [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: 
+              [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -938,12 +938,93 @@ For existing applications, the enforcement date can be retroactively applied.
                   [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                    [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                    [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
                     [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
                     [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                     [State <String>]: appManagementRestrictionState
                   [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+                [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: Collection of domain names that are blocked globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedDomains <String[]>]: Collection of domain names that are blocked for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                      [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions for this platform.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [ExcludeWildcardsInPath <Boolean?>]: When true, blocks the use of wildcards in the path portion of redirect URIs.
+When false, allows wildcards in paths.
+                      [ExcludeWildcardsInPathWithDomains <String[]>]: Collection of domain names where wildcards in the path portion of redirect URIs are blocked.
+Accepts only valid host names (no wildcards) as defined in RFC 3986 §3.2.2.
+For example, login.microsoft.com or contoso.com.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [State <String>]: appManagementRestrictionState
+                  [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: Collection of domain names that are allowed globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedDomains <String[]>]: Collection of domain names that are allowed for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme for this platform.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
           [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -1053,7 +1134,7 @@ Optional.
             [IncludeBasicClaimSet <Boolean?>]: Determines whether the basic claim set is included in tokens affected by this policy.
 If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
 By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
-          [CreatedByAppId <String>]: The appId (called Application (client) ID on the Microsoft Entra admin center) of the application used to create the service principal.
+          [CreatedByAppId <String>]: The appId of the application that created this service principal.
 Set internally by Microsoft Entra ID.
 Read-only.
           [CreatedObjects <IMicrosoftGraphDirectoryObject[]>]: Directory objects created by this service principal.
@@ -1185,7 +1266,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
             [KeyId <String>]: The unique identifier for the key.
@@ -1285,7 +1366,7 @@ Optional.
             [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
               [CustomizedLabel <String>]: Title/label override for customization.
               [DefaultLabel <String>]: Label that would be used if no customizedLabel is provided.
-Read only.
+Read-only.
               [FieldId <String>]: Id used to identity the field type.
 This is an internal ID and possible values are param1, param2, paramuserName, parampassword.
               [Type <String>]: Type of the credential.
@@ -1344,13 +1425,13 @@ May not begin with ..
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: 
+            [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
+Supports $expand.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [DisplayName <String>]: 
+              [DisplayName <String>]: Display name for the client application.
             [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
             [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
-<br/<Supports $expand.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [DisplayName <String>]: Display name for the target device group.
@@ -1713,7 +1794,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [EmailAddress <String>]: The email address registered to this user.
-          [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external methods registered to a user for authentication.
+          [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external MFA registered to a user for authentication.
             [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -1729,7 +1810,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
-            [DisplayName <String>]: Custom name given to the registered external authentication method.
+            [DisplayName <String>]: Custom name given to the registered external MFA.
           [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
             [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -1982,7 +2063,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
               [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
               [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -2168,6 +2249,23 @@ is 395 days (13 months) and default value is 365 days (12 months).
           [Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]: strongAuthenticationRequirements
             [(Any) <Object>]: This indicates any property can be added to this object.
             [PerUserMfaState <String>]: perUserMfaState
+          [ResourceAccountKeyAuthenticationMethods <IMicrosoftGraphResourceAccountKeyAuthenticationMethod[]>]: Represents the resource account key credentials registered to a user for authentication on shared devices.
+            [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [LastUsedDateTime <DateTime?>]: The date and time the authentication method was last used by the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Device <IMicrosoftGraphDevice>]: device
+            [DisplayName <String>]: The display name of the resource account key credential as shown in the Teams Room interface.
           [SignInPreferences <IMicrosoftGraphSignInPreferences>]: signInPreferences
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]: Indicates whether the credential preferences of the system are enabled.
@@ -2235,11 +2333,12 @@ Read-only.
 The identifiers must be unique in the tenant.
         [Birthday <DateTime?>]: The birthday of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Requires $select to retrieve.
         [BusinessPhones <String[]>]: The telephone numbers for the user.
 Only one number can be set for this property.
 Read-only for users synced from on-premises directory.
 Supports $filter (eq, not, ge, le, startsWith).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Calendar <IMicrosoftGraphCalendar>]: calendar
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -2626,7 +2725,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Content <String>]: The content of the chat message.
+              [ContentType <String>]: bodyType
+              [MessageBodyContentType <String>]: chatMessageBodyContentType
             [CreatedDateTime <DateTime?>]: Date time object representing the time at which message was created.
             [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2675,19 +2778,40 @@ The property is used to attribute a Teams message card to the specified app.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
-            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
             [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ChannelId <String>]: The identity of the channel in which the message was posted.
               [TeamId <String>]: The identity of the team in which the message was posted.
             [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+            [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+              [Excerpt <String>]: Read-only.
+Text snippet from the cited source.
+              [IconType <String>]: Read-only.
+Icon type identifier for the cited source, for example, ExcelIcon or WordIcon.
+              [Id <Int32?>]: Read-only.
+Citation identifier that's unique within the message.
+The message body references this identifier inline, for example, [1].
+              [SensitivityLabel <IMicrosoftGraphChatMessageCitationSensitivityLabel>]: chatMessageCitationSensitivityLabel
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Description <String>]: Read-only.
+User-facing description of the sensitivity restriction.
+                [DisplayName <String>]: Read-only.
+Display name of the sensitivity label.
+              [Title <String>]: Read-only.
+Display title of the cited source.
+              [WebUrl <String>]: Read-only.
+URL to the cited source.
             [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-            [DeletedDateTime <DateTime?>]: Read only.
+            [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
             [Etag <String>]: Read-only.
 Version number of the chat message.
             [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
             [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [HasReplies <Boolean?>]: 
             [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
               [ContentBytes <Byte[]>]: Write only.
 Bytes for the hosted content (such as images).
@@ -2696,11 +2820,11 @@ Content type, such as image/png, image/jpg.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
             [Importance <String>]: chatMessageImportance
-            [LastEditedDateTime <DateTime?>]: Read only.
+            [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-            [LastModifiedDateTime <DateTime?>]: Read only.
+            [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
@@ -2844,7 +2968,56 @@ Required.
 This value can't be changed after tab creation.
 Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
             [WebUrl <String>]: Deep link URL of the tab instance.
-Read only.
+Read-only.
+          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
+            [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+            [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
+            [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+            [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+            [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
+            [DeletedDateTime <DateTime?>]: Read-only.
+Timestamp at which the chat message was deleted, or null if not deleted.
+            [Etag <String>]: Read-only.
+Version number of the chat message.
+            [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
+            [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [HasReplies <Boolean?>]: 
+            [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+            [Importance <String>]: chatMessageImportance
+            [LastEditedDateTime <DateTime?>]: Read-only.
+Timestamp when edits to the chat message were made.
+Triggers an 'Edited' flag in the Teams UI.
+If no edits are made the value is null.
+            [LastModifiedDateTime <DateTime?>]: Read-only.
+Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+            [Locale <String>]: Locale of the chat message set by the client.
+Always set to en-us.
+            [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
+Supported entities are: user, bot, team, channel, chat, and tag.
+            [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+            [MessageType <String>]: chatMessageType
+            [OnBehalfOf <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]: chatMessagePolicyViolation
+            [Reactions <IMicrosoftGraphChatMessageReaction[]>]: Reactions for this chat message (for example, Like).
+            [Replies <IMicrosoftGraphChatMessage[]>]: Replies for a specified message.
+Supports $expand for channel messages.
+            [ReplyToId <String>]: Read-only.
+ID of the parent chat message or root chat message of the thread.
+(Only applies to chat messages in channels, not chats.)
+            [Subject <String>]: The subject of the chat message, in plaintext.
+            [Summary <String>]: Summary text of the chat message that could be used for push notifications and summary views or fall back views.
+Only applies to channel chat messages, not chat messages in a chat.
+            [WebUrl <String>]: Read-only.
+Link to the message in Microsoft Teams.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Recipient <IMicrosoftGraphIdentity>]: identity
           [TenantId <String>]: The identifier of the tenant in which the chat was created.
 Read-only.
           [Topic <String>]: (Optional) Subject or topic for the chat.
@@ -2880,21 +3053,80 @@ Each one represents the same information in a different clipboard format.
               [FormatName <String>]: For a list of possible values see formatName values.
         [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
-          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-              [AssignableTo <String>]: assigneeTypes
-              [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-              [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+            [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+            [Code <String>]: The error code associated with the assignment synchronization failure.
+            [Message <String>]: The error message associated with the assignment synchronization failure.
+            [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+            [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Id <String>]: The unique identifier for an entity.
 Read-only.
+              [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+                [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+                [ExternalServiceIdentifier <String>]: 
+                [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                  [AssignableTo <String>]: assigneeTypes
+                  [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                  [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+                [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+                [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                  [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                  [StartDate <DateTime?>]: The date when the subscription started.
+                  [State <String>]: subscriptionState
+                  [SubscriptionId <String>]: Identifier for the subscription object.
+                  [Tags <String>]: subscriptionTags
+                [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+              [ExternalServiceIdentifier <String>]: 
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
         [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -2953,12 +3185,21 @@ Read-only.
             [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
           [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
+          [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
           [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Time <DateTime?>]: The time of the Cloud PC sign in action.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
 Read-only.
+          [LastLogoffDateTime <DateTime?>]: The date and time when the user last logged off from the Cloud PC session.
+Returns null if the user has never established a session or if a session is currently active.
+The timestamp is shown in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+Returned only when explicitly selected with $select.
           [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -3010,10 +3251,15 @@ The default value is false.
           [ProvisionedDateTime <DateTime?>]: The latest provisioned date and time, automatically generated and assigned during the initial provisioning or any subsequent reprovisioning of the Cloud PC.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ProvisioningConfiguration <IMicrosoftGraphCloudPcProvisioningConfiguration>]: cloudPcProvisioningConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [DomainJoinType <String>]: cloudPcDomainJoinType
           [ProvisioningPolicyId <String>]: The provisioning policy ID of the Cloud PC.
           [ProvisioningPolicyName <String>]: The provisioning policy that is applied during the provisioning of Cloud PCs.
           [ProvisioningType <String>]: cloudPcProvisioningType
-          [ScopeIds <String[]>]: 
+          [ScopeIds <String[]>]: The scope IDs of the corresponding permission.
+Currently, it's the Intune scope tag ID.
+Read-only.
           [ServicePlanId <String>]: The service plan ID of the Cloud PC.
           [ServicePlanName <String>]: The service plan name of the Cloud PC.
           [ServicePlanType <String>]: cloudPcServicePlanType
@@ -3038,6 +3284,39 @@ Read-only.
 Read-only.
           [UserExperienceType <String>]: cloudPcUserExperienceType
           [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+        [CloudPcPools <IMicrosoftGraphCloudPcPool[]>]: The user's Cloud PC pools.
+Read-only.
+Nullable.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Assignments <IMicrosoftGraphCloudPcPoolAssignment[]>]: The collection of assignments that grant user or service principal identities access to this pool.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Capabilities <IMicrosoftGraphCloudPcPoolCapabilityConfiguration>]: cloudPcPoolCapabilityConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+          [CloudPcConfiguration <IMicrosoftGraphCloudPcConfiguration>]: cloudPcConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ImageDisplayName <String>]: The display name of the image.
+Read-only.
+            [ImageId <String>]: The unique identifier of the operating system image used for provisioning new Cloud PCs.
+The format for a gallery type image is: {publisherNameofferNameskuName}.
+            [ImageType <String>]: cloudPcProvisioningPolicyImageType
+            [OSLocale <String>]: The operating system locale for the Cloud PC.
+          [CreatedDateTime <DateTime?>]: The date and time when the pool was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+          [Description <String>]: The description of the pool.
+The maximum length is 512 characters.
+          [DisplayName <String>]: The display name of the pool.
+The name is unique across Cloud PC pools in an organization.
+The maximum length is 60 characters.
+          [LastModifiedDateTime <DateTime?>]: The date and time when the pool was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+          [NetworkConfiguration <IMicrosoftGraphCloudPcNetworkConfiguration>]: cloudPcNetworkConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
         [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
           [(Any) <Object>]: This indicates any property can be added to this object.
           [IsSipEnabled <Boolean?>]: Indicates whether the user has a SIP-enabled client registered for them.
@@ -3243,12 +3522,15 @@ Read-only.
                 [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Activity <String>]: userActivityType
+                  [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+                    [Value <String>]: 
                 [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
-Use conversation metadata for content like prompts and responses and file metadata for files.
+Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
 Required.
                   [Content <IMicrosoftGraphContentBase>]: contentBase
                     [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ContentCategory <String>]: contentCategory
                   [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                   [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -3263,6 +3545,10 @@ For ephemeral content like messages, this might be the same as createdDateTime.
                   [Name <String>]: Required.
 A descriptive name for the content (for example, file name, web page title, 'Chat Message').
                   [SequenceNumber <Int64?>]: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+                [ContextMetadata <IMicrosoftGraphContextMetadata>]: contextMetadata
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [MetadataProperties <IMicrosoftGraphCustomMetadataDictionary>]: customMetadataDictionary
+                    [(Any) <Object>]: This indicates any property can be added to this object.
                 [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [DeviceType <String>]: Optional.
@@ -3272,6 +3558,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
                     [OperatingSystemVersion <String>]: The version string of the operating system.
+                [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [Type <String>]: evaluationScopeType
                 [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Name <String>]: The name of the integrated application.
@@ -3346,6 +3635,38 @@ This value is usually the combination of the user's first name, middle initial, 
 This property is required when a user is created, and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderby, and $search.
+        [DistributionLists <IMicrosoftGraphDistributionList[]>]: The personal distribution lists in the user's mailbox.
+Read-only.
+Nullable.
+          [Categories <String[]>]: The categories associated with the item.
+          [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+          [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [DisplayName <String>]: The display name of the distribution list.
+          [Members <IMicrosoftGraphDistributionListMember[]>]: The members of the distribution list.
+Not returned by default; use $expand=members to include.
+Read-only.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Contact <IMicrosoftGraphContact>]: contact
+            [DisplayName <String>]: The display name of the member.
+Read-only.
+            [MemberId <String>]: A system generated unique identifier.
+Non-empty for contact, privateDL and mailbox members.
+ReadOnly.
+            [Type <String>]: recipientType
+          [Notes <String>]: Notes about the distribution list.
+          [PersonIdentifier <String>]: The unique identifier of the distribution list in the mailbox.
+Read-only.
+          [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the distribution list.
+Read-only.
         [Drive <IMicrosoftGraphDrive>]: drive
           [(Any) <Object>]: This indicates any property can be added to this object.
           [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -3513,6 +3834,17 @@ Read-only.
                   [Device <IMicrosoftGraphIdentity>]: identity
                   [User <IMicrosoftGraphIdentity>]: identity
                   [Group <IMicrosoftGraphIdentity>]: identity
+                  [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+                    [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
+Read-only.
+                    [Title <String>]: The title of the SharePoint group.
+Read-only.
                   [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [DisplayName <String>]: The display name of the identity.
@@ -3646,11 +3978,13 @@ It must be either dateOnly or dateTime.
               [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-              [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+              [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
               [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
               [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
               [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+              [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
               [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -3801,6 +4135,8 @@ Helps organize related content types.
 Only site collection administrators can seal or unseal content types.
             [DisplayName <String>]: The displayable title of the list.
             [Drive <IMicrosoftGraphDrive>]: drive
+            [ItemCount <Int32?>]: The total count of items in the list.
+Read-only.
             [Items <IMicrosoftGraphListItem[]>]: All items contained in the list.
             [List <IMicrosoftGraphListInfo>]: listInfo
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -3910,6 +4246,26 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
+              [VapidPublicKey <String>]: Optional.
+The application server's VAPID public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained by calling the getVapidPublicKey function on the subscription collection.
+The browser passes this value to PushManager.subscribe({ applicationServerKey }) to bind the push subscription to this server identity.
+Required when notificationUrl targets a known Web Push service origin (for example, *.push.apple.com, fcm.googleapis.com, updates.push.services.mozilla.com); rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8292.
+              [WebPushEncryptionP256DhPublicKey <String>]: Optional.
+The subscriber's ECDH public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('p256dh').
+Used as the peer public key during ECDH key agreement to derive the per-message content encryption key for RFC 8291 payload encryption.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
+              [WebPushEncryptionSecret <String>]: Optional.
+The subscriber's auth secret, base64url-encoded (16 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('auth').
+Used as the HMAC-SHA-256 salt for the HKDF combine step that derives key material for RFC 8291 payload encryption.
+Write-only: this value is never returned in GET responses (returned as null).
+Treat as a secret.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
             [System <IMicrosoftGraphSystemFacet>]: systemFacet
               [(Any) <Object>]: This indicates any property can be added to this object.
           [Owner <IMicrosoftGraphIdentitySet>]: identitySet
@@ -3930,6 +4286,10 @@ Read-only.
             [Used <Int64?>]: Total space used, in bytes.
 Read-only.
           [Root <IMicrosoftGraphDriveItem>]: driveItem
+          [Settings <IMicrosoftGraphDriveSettings>]: driveSettings
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ItemDefaultSensitivityLabelId <String>]: The ID of the default sensitivity label for items in the drive.
+Read-only.
           [SharePointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
           [Special <IMicrosoftGraphDriveItem[]>]: Collection of common folders available in OneDrive.
 Read-only.
@@ -3937,7 +4297,7 @@ Nullable.
           [System <IMicrosoftGraphSystemFacet>]: systemFacet
         [Drives <IMicrosoftGraphDrive[]>]: A collection of drives available for this user.
 Read-only.
-        [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: Represents a container that exposes navigation properties for employee experience user resources.
+        [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: employeeExperienceUser
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -3964,6 +4324,24 @@ Required.
             [LearningProviderId <String>]: The registration ID of the provider.
 Required.
             [Status <String>]: courseStatus
+          [Storyline <IMicrosoftGraphStoryline>]: User's storyline singleton container.
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Followers <IMicrosoftGraphStorylineFollower[]>]: The users who are following this user.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Follower <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Application <IMicrosoftGraphIdentity>]: identity
+                [Device <IMicrosoftGraphIdentity>]: identity
+                [User <IMicrosoftGraphIdentity>]: identity
+                [Audience <IMicrosoftGraphIdentity>]: identity
+                [Group <IMicrosoftGraphIdentity>]: identity
+            [Followings <IMicrosoftGraphStorylineFollowing[]>]: The users that this user is following.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Following <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
         [EmployeeHireDate <DateTime?>]: The date and time when the user was hired or will start work if there is a future hire.
 Supports $filter (eq, ne, not , ge, le, in).
         [EmployeeId <String>]: The employee identifier assigned to the user by the organization.
@@ -3978,10 +4356,10 @@ For more information, see Configure the employeeLeaveDateTime property for a use
         [EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]: employeeOrgData
           [(Any) <Object>]: This indicates any property can be added to this object.
           [CostCenter <String>]: The cost center associated with the user.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
           [Division <String>]: The name of the division in which the user works.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
         [EmployeeType <String>]: Captures enterprise worker type.
 For example, Employee, Contractor, Consultant, or Vendor.
@@ -4455,7 +4833,9 @@ Read-write.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ArchiveStatus <String>]: siteArchiveStatus
               [ArchivedBy <IMicrosoftGraphIdentitySet>]: identitySet
-              [ArchivedDateTime <DateTime?>]: 
+              [ArchivedDateTime <DateTime?>]: Time when the container was archived.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [DataLocationCode <String>]: The geographic region code for where this site collection resides.
 Only present for multi-geo tenants.
 Read-only.
@@ -4478,7 +4858,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         [HireDate <DateTime?>]: The hire date of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
- Returned only on $select.
+ Requires $select to retrieve.
  Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
         [Identities <IMicrosoftGraphObjectIdentity[]>]: Represents the identities that can be used to sign in to this user account.
@@ -4501,6 +4881,27 @@ The validations performed on the userPrincipalName property on the user object, 
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
+        [IdentityGovernance <IMicrosoftGraphIdentityGovernanceUserSettings>]: identityGovernanceUserSettings
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [ApproverDelegate <IMicrosoftGraphApproverDelegate>]: approverDelegate
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Delegate <IMicrosoftGraphUserSet>]: userSet
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [IsBackup <Boolean?>]: For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
+            [Schedule <IMicrosoftGraphRequestSchedule>]: requestSchedule
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
+For example, PT3H refers to three hours.
+ If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
+                [EndDateTime <DateTime?>]: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
+                [Type <String>]: expirationPatternType
+              [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+              [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+In PIM, when the  eligible or active assignment becomes active.
         [IdentityParentId <String>]: The object ID of the parent identity for agent users.
 Always null for regular user accounts.
 For agentUser resources, this property references the object ID of the associated agent identity.
@@ -4597,7 +4998,7 @@ Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Interests <String[]>]: A list for users to describe their interests.
-Returned only on $select.
+Requires $select to retrieve.
         [InvitedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
         [IsLicenseReconciliationNeeded <Boolean?>]: Indicates whether the user is pending an exchange mailbox license assignment.
  Read-only.
@@ -4606,7 +5007,8 @@ Returned only on $select.
 If not set, the default value is null and the default behavior is false.
 Read-only.
  To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-        [IsResourceAccount <Boolean?>]: Do not use – reserved for future use.
+        [IsResourceAccount <Boolean?>]: Do not use.
+Reserved for future use.
         [JobTitle <String>]: The user's job title.
 Maximum length is 128 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
@@ -4620,24 +5022,29 @@ If this list is non-empty, then only users or groups listed here can post.
           [AccessType <String>]: groupAccessType
           [AllowExternalSenders <Boolean?>]: Indicates if people external to the organization can send messages to the group.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]: Represents the app roles a group has been granted for an application.
 Supports $expand.
-          [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
-Returned only on $select.
+          [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group or a cloud security group.
+Requires a Microsoft Entra ID P1 license.
+Requires $select to retrieve.
+This property can be specified during group creation or update.
+However, for cloud security groups, it's immutable once set.
 This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
+See Key differences from Microsoft 365 group labeling to learn more about managing this property for Microsoft 365 vs.
+cloud security groups.
             [DisplayName <String>]: The display name of the label.
 Read-only.
             [LabelId <String>]: The unique identifier of the label.
           [AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]: The licenses that are assigned to the group.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
 Read-only.
           [AutoSubscribeNewMembers <Boolean?>]: Indicates if new members added to the group are auto-subscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [Calendar <IMicrosoftGraphCalendar>]: calendar
           [CalendarView <IMicrosoftGraphEvent[]>]: The calendar view for the calendar.
@@ -4647,6 +5054,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
           [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
             [(Any) <Object>]: This indicates any property can be added to this object.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
             [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
           [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
             [Id <String>]: The unique identifier for an entity.
@@ -4805,11 +5213,11 @@ You can use it as a $filter argument to get groups that have members with licens
  Supports $filter (eq).
           [HideFromAddressLists <Boolean?>]: true if the group isn't displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [HideFromOutlookClients <Boolean?>]: true if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [InfoCatalogs <String[]>]: Identifies the info segments assigned to the group.
 Returned by default.
@@ -4833,7 +5241,7 @@ Read-only.
  To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
           [IsSubscribedByMail <Boolean?>]: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]: licenseProcessingState
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -4883,6 +5291,7 @@ Read-only.
           [OnPremisesDomainName <String>]: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
 The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
 Read-only.
+          [OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]: onPremisesExtensionAttributes
           [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
@@ -5066,10 +5475,14 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
                   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-                  [HasChat <Boolean?>]: 
+                  [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
+                  [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
                   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
                   [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -5078,9 +5491,38 @@ If true, it shows the task.
                   [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
                   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-                  [LastModifiedDateTime <DateTime?>]: 
+                  [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                  [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+                    [Id <String>]: The unique identifier for an entity.
+Read-only.
+                    [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+                    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                    [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                    [DeletedDateTime <DateTime?>]: 
+                    [EditedDateTime <DateTime?>]: 
+                    [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+                      [MentionType <String>]: plannerTaskChatMentionType
+                      [Mentioned <String>]: The ID of the mentioned user.
+                      [Position <Int32?>]: The zero-based position of the mention in the message content.
+                    [MessageType <String>]: plannerTaskChatMessageType
+                    [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+                    [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+                      [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+                        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                        [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                      [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
                   [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
                   [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
                   [PlanId <String>]: Plan ID to which the task belongs.
@@ -5193,6 +5635,43 @@ Read-only.
                   [(Any) <Object>]: This indicates any property can be added to this object.
                 [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
                   [(Any) <Object>]: This indicates any property can be added to this object.
+              [Goals <IMicrosoftGraphPlannerGoal[]>]: Collection of goals in the plan.
+Read-only.
+Nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [DisplayName <String>]: Required.
+The display name of the goal.
+                [FinishDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to finish.
+                [Notes <IMicrosoftGraphItemBody>]: itemBody
+                [PlanId <String>]: Required.
+The ID of the plan that contains the goal.
+                [Priority <Int32?>]: Optional.
+The relative priority of the goal.
+Valid values range from 0 to 10, inclusive.
+The default value is 5.
+                [StartDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to start.
+                [Status <String>]: plannerGoalStatus
+                [Tasks <IMicrosoftGraphPlannerTask[]>]: Read-only.
+Nullable.
+The tasks associated with the goal.
+This relationship doesn't support direct retrieval or $expand.
+To identify the goals associated with a task, read the goalIds property of the plannerTask resource.
+              [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: Collection of history items for entities in the plan.
+Read-only.
+Nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+                [EntityId <String>]: The ID of the entity that was changed.
+                [EntityType <String>]: historyEntityType
+                [EventType <String>]: historyEventType
+                [OccurredDateTime <DateTime?>]: The date and time when the change occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+                [PlanId <String>]: The ID of the plan that contains the changed entity.
               [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -5244,7 +5723,7 @@ For the list of possible values, see Microsoft 365 group behaviors and provision
 The possible value is Team.
 For more information, see Microsoft 365 group behaviors and provisioning options.
 Returned by default.
-Supports $filter (eq, not, startsWith.
+Supports $filter (eq, not, startsWith).
           [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.Returned by default.
 Supports $filter (eq, ne, not, in).
@@ -5277,7 +5756,7 @@ Read-only.
 Read-only.
               [AllMembers <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
 It includes both direct and indirect members of shared channels.
-              [CreatedDateTime <DateTime?>]: Read only.
+              [CreatedDateTime <DateTime?>]: Read-only.
 Timestamp at which the channel was created.
               [Description <String>]: Optional textual description for the channel.
               [DisplayName <String>]: Channel name as it appears to the user in Microsoft Teams.
@@ -5292,6 +5771,7 @@ Read-only.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
 The default value is false.
+              [JoinedUsers <IMicrosoftGraphConversationMember[]>]: 
               [LayoutType <String>]: channelLayoutType
               [Members <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
               [MembershipType <String>]: channelMembershipType
@@ -5353,7 +5833,7 @@ This is an optional property, only used during team creation and isn't returned 
               [AllowGiphy <Boolean?>]: If set to true, enables Giphy use.
               [AllowStickersAndMemes <Boolean?>]: If set to true, enables users to include stickers and memes.
               [GiphyContentRating <String>]: giphyRatingType
-            [Group <IMicrosoftGraphGroup>]: Represents a Microsoft Entra group.
+            [Group <IMicrosoftGraphGroup>]: group
             [GuestSettings <IMicrosoftGraphTeamGuestSettings>]: teamGuestSettings
               [(Any) <Object>]: This indicates any property can be added to this object.
               [AllowCreateUpdateChannels <Boolean?>]: If set to true, guests can add and update channels.
@@ -5618,7 +6098,8 @@ Read-only.
                 [StartDateTime <DateTime?>]: The date and time the time off starts in ISO 8601 format and in UTC time.
                 [TimeOffReasonId <String>]: The reason for the time off.
               [TimeOffRequestsEnabled <Boolean?>]: Indicates whether time off requests are enabled for the schedule.
-              [TimeZone <String>]: Indicates the time zone of the schedule team using tz database format.
+              [TimeZone <String>]: The time zone of the schedule team as an IANA time zone database (tz database) name; for example, America/Chicago.
+For the full list of valid values, see List of tz database time zones.
 Required.
               [TimesOff <IMicrosoftGraphTimeOff[]>]: The instances of times off in the schedule.
                 [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -5699,12 +6180,12 @@ Immutable.
 Read-only.
           [UnseenConversationsCount <Int32?>]: Count of conversations delivered one or more new posts since the signed-in user's last visit to the group.
 This property is the same as unseenCount.
-Returned only on $select.
+Requires $select to retrieve.
           [UnseenCount <Int32?>]: Count of conversations that have received new posts since the signed-in user last visited the group.
-This property is the same as unseenConversationsCount.Returned only on $select.
+This property is the same as unseenConversationsCount.Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [UnseenMessagesCount <Int32?>]: Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group.
-Returned only on $select.
+Requires $select to retrieve.
           [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
 The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
@@ -5715,7 +6196,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-          [WelcomeMessageEnabled <Boolean?>]: 
+          [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Requires $select to retrieve.
+Supported only on the Get group API (GET /groups/{ID}).
           [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -5732,16 +6216,16 @@ Nullable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
         [LegalAgeGroupClassification <String>]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
 Allowed values: null, Undefined, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
-Returned only on $select.
+Requires $select to retrieve.
         [LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]: State of license assignments for this user.
 It also indicates licenses that are directly assigned and the ones the user inherited through group memberships.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
           [AssignedByGroup <String>]: Indicates whether the license is directly-assigned or inherited from a group.
 If directly-assigned, this field is null; if inherited through a group membership, this field contains the ID of the group.
 Read-Only.
@@ -5867,7 +6351,7 @@ To verify the existence of inline attachments, parse the body property to look f
             [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
               [Name <String>]: Represents the key in a key-value pair.
               [Value <String>]: The value in a key-value pair.
@@ -6416,6 +6900,8 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [AntiMalwareVersion <String>]: Current anti malware version
+            [ControlledConfigurationEnabled <Boolean?>]: When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
             [DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]: Device malware list
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6508,8 +6994,9 @@ Read-only.
         [MobilePhone <String>]: The primary cellular telephone number for the user.
 Read-only for users synced from the on-premises directory.
  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [MySite <String>]: The URL for the user's site.
-Returned only on $select.
+Requires $select to retrieve.
         [Notifications <IMicrosoftGraphNotification[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6549,6 +7036,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's userPrincipalName (UPN) property.
 Note: The $ and _ characters can't be used when specifying this property.
 Supports $filter (eq, ne, not, ge, le, in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -6604,6 +7092,10 @@ Read-only.
                 [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
                 [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
               [EmailAddress <String>]: Email address of the user associated with this attendance record.
+              [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+                [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+                [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+                [EngagementType <String>]: meetingEngagementType
               [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -6652,6 +7144,13 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+          [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+            [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+            [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
           [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -6678,6 +7177,7 @@ Optional.
           [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
           [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+          [MeetingType <String>]: onlineMeetingType
           [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
           [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -6798,6 +7298,7 @@ Read-only.
         [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Outlook <IMicrosoftGraphOutlookUser>]: outlookUser
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -6906,7 +7407,7 @@ It can be updated, but the user will be required to change the password on the n
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
         [PastProjects <String[]>]: A list for users to enumerate their past projects.
-Returned only on $select.
+Requires $select to retrieve.
         [PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]: Navigation property to get a list of access reviews pending approval by the reviewer.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -6947,6 +7448,11 @@ Read-only.
             [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+            [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
             [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
               [Id <String>]: The unique identifier for an entity.
@@ -6980,7 +7486,7 @@ Read-only.
               [DisplayName <String>]: Display name of the resource
               [Id <String>]: Resource ID
               [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
             [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -7134,6 +7640,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+          [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
           [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -7266,7 +7776,7 @@ Example: 'en-US', or 'es-ES'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         [PreferredName <String>]: The preferred name for the user.
 Not Supported.
-This attribute returns an empty string.Returned only on $select.
+This attribute returns an empty string.Requires $select to retrieve.
         [Presence <IMicrosoftGraphPresence>]: presence
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -7722,15 +8232,14 @@ Read-only.
               [WebUrl <String>]: Link to the institution or department homepage.
             [Program <IMicrosoftGraphEducationalActivityDetail>]: educationalActivityDetail
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+              [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
               [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
               [Awards <String[]>]: Any awards or honors associated with the program.
               [Description <String>]: Short description of the program provided by the user.
               [DisplayName <String>]: Long-form name of the program that the user provided.
-              [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-              [Grade <String>]: The final grade, class, GPA, or score.
-              [Notes <String>]: More notes the user provided.
+              [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+              [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+              [Notes <String>]: More notes provided by the user.
               [WebUrl <String>]: Link to the degree or program page.
             [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
           [Emails <IMicrosoftGraphItemEmail[]>]: Represents detailed information about email addresses associated with the user.
@@ -8033,9 +8542,9 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
         [Responsibilities <String[]>]: A list for the user to enumerate their responsibilities.
-Returned only on $select.
+Requires $select to retrieve.
         [Schools <String[]>]: A list for the user to enumerate the schools they have attended.
-Returned only on $select.
+Requires $select to retrieve.
         [ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]: The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
@@ -8099,7 +8608,7 @@ Users can control this setting in Office Delve.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [InPlaceArchiveMailboxId <String>]: 
+            [InPlaceArchiveMailboxId <String>]: The unique identifier for the user's In-Place Archive mailbox.
             [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
           [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -8139,7 +8648,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
           [ShiftPreferences <IMicrosoftGraphShiftPreferences>]: shiftPreferences
             [(Any) <Object>]: This indicates any property can be added to this object.
             [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -8161,6 +8670,14 @@ Read-only.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [Deleted <Int64?>]: 
+              [FamilyMembersUsage <IMicrosoftGraphFamilyMemberStorageQuota[]>]: 
+                [AdditionalAllocations <IMicrosoftGraphAdditionalStorageAllocations>]: additionalStorageAllocations
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BonusQuotaInBytes <Int64?>]: 
+                  [SubscriptionQuotaInBytes <Int64?>]: 
+                [Used <Int64?>]: 
+                [User <IMicrosoftGraphIdentity>]: identity
+              [IsPooledStorageEnabled <Boolean?>]: 
               [ManageWebUrl <String>]: A URL that can be used in a browser to manage the breakdown.
 Read-only.
               [Remaining <Int64?>]: Total space remaining before reaching the quota limit in bytes.
@@ -8249,7 +8766,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Use revokeSignInSessions to reset.
         [Skills <String[]>]: A list for the user to enumerate their skills.
-Returned only on $select.
+Requires $select to retrieve.
         [Solutions <IMicrosoftGraphUserSolutionRoot>]: userSolutionRoot
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -8258,6 +8775,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
         [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -8296,6 +8818,48 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
 The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+          [Sections <IMicrosoftGraphTeamworkSection[]>]: The sections in the user's chat list.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: Date and time when the section was created.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [DisplayIcon <IMicrosoftGraphSectionDisplayIcon>]: sectionDisplayIcon
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ContentUrl <String>]: The URL to a custom icon image.
+Applicable when iconType is custom.
+              [DisplayName <String>]: The human-readable name of the icon.
+              [IconType <String>]: The type of icon.
+Use an emoji character such as 👍 for an emoji icon, or custom for a custom image icon.
+              [SkinTone <String>]: sectionIconSkinTone
+            [DisplayName <String>]: The display name of the section.
+Required.
+Maximum length is 50 characters.
+Display names are case-sensitive and must be unique within a user's sections.
+The following names are reserved for system-defined sections and can't be used when creating a user-defined section: RecentChats, QuickViews, TeamsAndChannels, MutedChats, MeetingChats, EngageCommunities.
+            [IsExpanded <Boolean?>]: Indicates whether the section is expanded in the user interface.
+The default value is true.
+            [IsHierarchicalViewEnabled <Boolean?>]: Indicates whether the hierarchical view is enabled for the section.
+Read-only.
+            [Items <IMicrosoftGraphTeamworkSectionItem[]>]: The items (chats, channels, meetings, or communities) organized within the section.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [CreatedDateTime <DateTime?>]: Date and time when the item was added to the section.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+              [ItemType <String>]: sectionItemType
+              [LastModifiedDateTime <DateTime?>]: Date and time when the item was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [LastModifiedDateTime <DateTime?>]: Date and time when the section was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [SectionType <String>]: sectionType
+            [SortType <String>]: sectionSortType
         [Todo <IMicrosoftGraphTodo>]: todo
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -8308,6 +8872,12 @@ Read-only.
 Nullable.
             [IsOwner <Boolean?>]: True if the user is owner of the given task list.
             [IsShared <Boolean?>]: True if the task list is shared with other users
+            [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Value <String>]: The value of the property.
             [Tasks <IMicrosoftGraphTodoTask[]>]: The tasks in this task list.
 Read-only.
 Nullable.
@@ -8371,9 +8941,6 @@ Read-only.
               [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
               [ReminderDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
               [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: A collection of custom fields linked to the task.
-                [Id <String>]: The unique identifier for an entity.
-Read-only.
-                [Value <String>]: The value of the property.
               [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
               [Status <String>]: taskStatus
               [Title <String>]: A brief description of the task.
@@ -8398,6 +8965,7 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
  
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [UserType <String>]: A String value that can be used to classify user types in your directory.
 The possible values are Member and Guest.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -8425,6 +8993,8 @@ Read-only.
             [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
             [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers; otherwise, null.
+            [IsRegistrationEnabled <Boolean?>]: 
+            [IsRegistrationRequired <Boolean?>]: Indicates whether attendee registration is enabled for the virtual event.
             [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: The virtual event presenters.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8462,6 +9032,7 @@ Read-only.
                 [AudioConferencing <IMicrosoftGraphAudioConferencing>]: audioConferencing
                 [ChatInfo <IMicrosoftGraphChatInfo>]: chatInfo
                 [ChatRestrictions <IMicrosoftGraphChatRestrictions>]: chatRestrictions
+                [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
                 [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -8475,6 +9046,7 @@ Read-only.
                 [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
                 [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+                [MeetingType <String>]: onlineMeetingType
                 [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
                 [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
                 [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
@@ -8484,6 +9056,7 @@ Read-only.
                 [WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]: watermarkProtectionValues
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
+                [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
                 [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
                 [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: 
                 [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: 
@@ -8537,6 +9110,8 @@ For example, in the access reviews decisions API, this property might record the
             [RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]: virtualEventWebinarRegistrationConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Capacity <Int32?>]: Total capacity of the virtual event.
+              [IsManualApprovalEnabled <Boolean?>]: Indicates whether registrations require organizer approval before a participant is confirmed.
+              [IsWaitlistEnabled <Boolean?>]: Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
               [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -8546,8 +9121,6 @@ The default value is false.
               [RegistrationWebUrl <String>]: Registration URL of the virtual event.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [IsManualApprovalEnabled <Boolean?>]: 
-              [IsWaitlistEnabled <Boolean?>]: 
             [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: Registration records of the webinar.
         [WindowsInformationProtectionDeviceRegistrations <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]>]: Zero or more WIP device registrations that belong to the user.
           [Id <String>]: The unique identifier for an entity.
@@ -8618,6 +9191,7 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 Nullable.
       [File <IMicrosoftGraphFile>]: file
         [(Any) <Object>]: This indicates any property can be added to this object.
+        [ArchiveStatus <String>]: fileArchiveStatus
         [Hashes <IMicrosoftGraphHashes>]: hashes
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Crc32Hash <String>]: The CRC32 value of the file (if available).
@@ -8657,6 +9231,15 @@ Width of the image, in pixels.
 Read-only.
       [ListItem <IMicrosoftGraphListItem>]: listItem
       [Location <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
+      [LockInfo <IMicrosoftGraphLockInfo>]: lockInfo
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [CreatedDateTime <DateTime?>]: The date and time when the lock was created, in UTC.
+Read-only.
+        [ExpirationDateTime <DateTime?>]: The date and time when the lock expires, in UTC.
+Read-only.
+        [LockType <String>]: lockType
+        [Owners <IMicrosoftGraphUserIdentity[]>]: The collection of users that currently hold the lock on the file.
+Read-only.
       [Malware <IMicrosoftGraphMalware>]: malware
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Description <String>]: Contains the virus details for the malware facet.
@@ -9353,10 +9936,11 @@ Always null when the object hasn't been deleted.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
           [AboutMe <String>]: A freeform text entry field for users to describe themselves.
-Returned only on $select.
+Requires $select to retrieve.
           [AccountEnabled <Boolean?>]: true if the account is enabled; otherwise, false.
 This property is required when creating the object.
 Supports $filter (eq, ne, not, and in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [Activities <IMicrosoftGraphUserActivity[]>]: The user's activities across devices.
 Read-only.
 Nullable.
@@ -9637,22 +10221,23 @@ Always null when the object hasn't been deleted.
               [IsEnabled <Boolean?>]: Denotes whether the policy is enabled.
               [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: 
+                [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of certificate restrictions settings to be applied to an application or service principal.
                   [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
                   [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                     [(Any) <Object>]: This indicates any property can be added to this object.
-                    [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: 
+                    [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
+Limit of 5.
                       [Id <String>]: The unique identifier for an entity.
 Read-only.
                       [Operator <String>]: customSecurityAttributeComparisonOperator
                   [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
                   [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                   [RestrictionType <String>]: appKeyCredentialRestrictionType
                   [State <String>]: appManagementRestrictionState
-                [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: 
+                [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
                   [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                   [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -9682,12 +10267,93 @@ For existing applications, the enforcement date can be retroactively applied.
                     [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
                       [(Any) <Object>]: This indicates any property can be added to this object.
                       [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                      [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                      [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
                       [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
                       [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                       [State <String>]: appManagementRestrictionState
                     [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+                  [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedDomains <String[]>]: Collection of domain names that are blocked globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [BlockedDomains <String[]>]: Collection of domain names that are blocked for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                      [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                        [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions for this platform.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                      [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [ExcludeWildcardsInPath <Boolean?>]: When true, blocks the use of wildcards in the path portion of redirect URIs.
+When false, allows wildcards in paths.
+                        [ExcludeWildcardsInPathWithDomains <String[]>]: Collection of domain names where wildcards in the path portion of redirect URIs are blocked.
+Accepts only valid host names (no wildcards) as defined in RFC 3986 §3.2.2.
+For example, login.microsoft.com or contoso.com.
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                      [State <String>]: appManagementRestrictionState
+                    [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedDomains <String[]>]: Collection of domain names that are allowed globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [AllowedDomains <String[]>]: Collection of domain names that are allowed for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                      [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme.
+                      [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                      [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                        [(Any) <Object>]: This indicates any property can be added to this object.
+                        [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme for this platform.
+                      [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                      [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                      [State <String>]: appManagementRestrictionState
+                      [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
             [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -9797,7 +10463,7 @@ Optional.
               [IncludeBasicClaimSet <Boolean?>]: Determines whether the basic claim set is included in tokens affected by this policy.
 If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
 By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
-            [CreatedByAppId <String>]: The appId (called Application (client) ID on the Microsoft Entra admin center) of the application used to create the service principal.
+            [CreatedByAppId <String>]: The appId of the application that created this service principal.
 Set internally by Microsoft Entra ID.
 Read-only.
             [CreatedObjects <IMicrosoftGraphDirectoryObject[]>]: Directory objects created by this service principal.
@@ -9929,7 +10595,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
               [KeyId <String>]: The unique identifier for the key.
@@ -10029,7 +10695,7 @@ Optional.
               [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
                 [CustomizedLabel <String>]: Title/label override for customization.
                 [DefaultLabel <String>]: Label that would be used if no customizedLabel is provided.
-Read only.
+Read-only.
                 [FieldId <String>]: Id used to identity the field type.
 This is an internal ID and possible values are param1, param2, paramuserName, parampassword.
                 [Type <String>]: Type of the credential.
@@ -10088,13 +10754,13 @@ May not begin with ..
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: 
+              [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
+Supports $expand.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
-                [DisplayName <String>]: 
+                [DisplayName <String>]: Display name for the client application.
               [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
               [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
-<br/<Supports $expand.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
                 [DisplayName <String>]: Display name for the target device group.
@@ -10457,7 +11123,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [EmailAddress <String>]: The email address registered to this user.
-            [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external methods registered to a user for authentication.
+            [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external MFA registered to a user for authentication.
               [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -10473,7 +11139,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
-              [DisplayName <String>]: Custom name given to the registered external authentication method.
+              [DisplayName <String>]: Custom name given to the registered external MFA.
             [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
               [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -10726,7 +11392,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
                 [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
                 [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -10912,6 +11578,23 @@ is 395 days (13 months) and default value is 365 days (12 months).
             [Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]: strongAuthenticationRequirements
               [(Any) <Object>]: This indicates any property can be added to this object.
               [PerUserMfaState <String>]: perUserMfaState
+            [ResourceAccountKeyAuthenticationMethods <IMicrosoftGraphResourceAccountKeyAuthenticationMethod[]>]: Represents the resource account key credentials registered to a user for authentication on shared devices.
+              [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              [LastUsedDateTime <DateTime?>]: The date and time the authentication method was last used by the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Device <IMicrosoftGraphDevice>]: device
+              [DisplayName <String>]: The display name of the resource account key credential as shown in the Teams Room interface.
             [SignInPreferences <IMicrosoftGraphSignInPreferences>]: signInPreferences
               [(Any) <Object>]: This indicates any property can be added to this object.
               [IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]: Indicates whether the credential preferences of the system are enabled.
@@ -10979,11 +11662,12 @@ Read-only.
 The identifiers must be unique in the tenant.
           [Birthday <DateTime?>]: The birthday of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Requires $select to retrieve.
           [BusinessPhones <String[]>]: The telephone numbers for the user.
 Only one number can be set for this property.
 Read-only for users synced from on-premises directory.
 Supports $filter (eq, not, ge, le, startsWith).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [Calendar <IMicrosoftGraphCalendar>]: calendar
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
@@ -11370,7 +12054,11 @@ Read-only.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Body <IMicrosoftGraphItemBody>]: itemBody
+              [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Content <String>]: The content of the chat message.
+                [ContentType <String>]: bodyType
+                [MessageBodyContentType <String>]: chatMessageBodyContentType
               [CreatedDateTime <DateTime?>]: Date time object representing the time at which message was created.
               [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
                 [(Any) <Object>]: This indicates any property can be added to this object.
@@ -11419,19 +12107,40 @@ The property is used to attribute a Teams message card to the specified app.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
-              [Body <IMicrosoftGraphItemBody>]: itemBody
+              [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
               [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ChannelId <String>]: The identity of the channel in which the message was posted.
                 [TeamId <String>]: The identity of the team in which the message was posted.
               [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+              [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+                [Excerpt <String>]: Read-only.
+Text snippet from the cited source.
+                [IconType <String>]: Read-only.
+Icon type identifier for the cited source, for example, ExcelIcon or WordIcon.
+                [Id <Int32?>]: Read-only.
+Citation identifier that's unique within the message.
+The message body references this identifier inline, for example, [1].
+                [SensitivityLabel <IMicrosoftGraphChatMessageCitationSensitivityLabel>]: chatMessageCitationSensitivityLabel
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [Description <String>]: Read-only.
+User-facing description of the sensitivity restriction.
+                  [DisplayName <String>]: Read-only.
+Display name of the sensitivity label.
+                [Title <String>]: Read-only.
+Display title of the cited source.
+                [WebUrl <String>]: Read-only.
+URL to the cited source.
               [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-              [DeletedDateTime <DateTime?>]: Read only.
+              [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
               [Etag <String>]: Read-only.
 Version number of the chat message.
               [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
               [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+              [HasReplies <Boolean?>]: 
               [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
                 [ContentBytes <Byte[]>]: Write only.
 Bytes for the hosted content (such as images).
@@ -11440,11 +12149,11 @@ Content type, such as image/png, image/jpg.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
               [Importance <String>]: chatMessageImportance
-              [LastEditedDateTime <DateTime?>]: Read only.
+              [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-              [LastModifiedDateTime <DateTime?>]: Read only.
+              [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
@@ -11588,7 +12297,56 @@ Required.
 This value can't be changed after tab creation.
 Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
               [WebUrl <String>]: Deep link URL of the tab instance.
-Read only.
+Read-only.
+            [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
+              [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
+              [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+              [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
+              [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+              [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+              [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
+              [DeletedDateTime <DateTime?>]: Read-only.
+Timestamp at which the chat message was deleted, or null if not deleted.
+              [Etag <String>]: Read-only.
+Version number of the chat message.
+              [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
+              [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+              [HasReplies <Boolean?>]: 
+              [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+              [Importance <String>]: chatMessageImportance
+              [LastEditedDateTime <DateTime?>]: Read-only.
+Timestamp when edits to the chat message were made.
+Triggers an 'Edited' flag in the Teams UI.
+If no edits are made the value is null.
+              [LastModifiedDateTime <DateTime?>]: Read-only.
+Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+              [Locale <String>]: Locale of the chat message set by the client.
+Always set to en-us.
+              [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
+Supported entities are: user, bot, team, channel, chat, and tag.
+              [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+              [MessageType <String>]: chatMessageType
+              [OnBehalfOf <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+              [PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]: chatMessagePolicyViolation
+              [Reactions <IMicrosoftGraphChatMessageReaction[]>]: Reactions for this chat message (for example, Like).
+              [Replies <IMicrosoftGraphChatMessage[]>]: Replies for a specified message.
+Supports $expand for channel messages.
+              [ReplyToId <String>]: Read-only.
+ID of the parent chat message or root chat message of the thread.
+(Only applies to chat messages in channels, not chats.)
+              [Subject <String>]: The subject of the chat message, in plaintext.
+              [Summary <String>]: Summary text of the chat message that could be used for push notifications and summary views or fall back views.
+Only applies to channel chat messages, not chat messages in a chat.
+              [WebUrl <String>]: Read-only.
+Link to the message in Microsoft Teams.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Recipient <IMicrosoftGraphIdentity>]: identity
             [TenantId <String>]: The identifier of the tenant in which the chat was created.
 Read-only.
             [Topic <String>]: (Optional) Subject or topic for the chat.
@@ -11624,21 +12382,80 @@ Each one represents the same information in a different clipboard format.
                 [FormatName <String>]: For a list of possible values see formatName values.
           [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
             [(Any) <Object>]: This indicates any property can be added to this object.
-            [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+            [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-                [AssignableTo <String>]: assigneeTypes
-                [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-                [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+              [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+              [Code <String>]: The error code associated with the assignment synchronization failure.
+              [Message <String>]: The error message associated with the assignment synchronization failure.
+              [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+              [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Id <String>]: The unique identifier for an entity.
 Read-only.
+                [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+                  [AssignableTo <String>]: assigneeTypes
+                  [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                    [Id <String>]: The unique identifier for an entity.
+Read-only.
+                    [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                    [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                    [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+                  [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+                  [ExternalServiceIdentifier <String>]: 
+                  [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                    [AssignableTo <String>]: assigneeTypes
+                    [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                    [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+                  [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                  [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+                  [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                    [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                    [StartDate <DateTime?>]: The date when the subscription started.
+                    [State <String>]: subscriptionState
+                    [SubscriptionId <String>]: Identifier for the subscription object.
+                    [Tags <String>]: subscriptionTags
+                  [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                    [Id <String>]: The unique identifier for an entity.
+Read-only.
+                    [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                    [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                    [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+                [ExternalServiceIdentifier <String>]: 
+                [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+                [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+            [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+            [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
           [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -11697,12 +12514,21 @@ Read-only.
               [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
             [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
+            [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
             [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Time <DateTime?>]: The time of the Cloud PC sign in action.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
 Read-only.
+            [LastLogoffDateTime <DateTime?>]: The date and time when the user last logged off from the Cloud PC session.
+Returns null if the user has never established a session or if a session is currently active.
+The timestamp is shown in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+Returned only when explicitly selected with $select.
             [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -11754,10 +12580,15 @@ The default value is false.
             [ProvisionedDateTime <DateTime?>]: The latest provisioned date and time, automatically generated and assigned during the initial provisioning or any subsequent reprovisioning of the Cloud PC.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [ProvisioningConfiguration <IMicrosoftGraphCloudPcProvisioningConfiguration>]: cloudPcProvisioningConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [DomainJoinType <String>]: cloudPcDomainJoinType
             [ProvisioningPolicyId <String>]: The provisioning policy ID of the Cloud PC.
             [ProvisioningPolicyName <String>]: The provisioning policy that is applied during the provisioning of Cloud PCs.
             [ProvisioningType <String>]: cloudPcProvisioningType
-            [ScopeIds <String[]>]: 
+            [ScopeIds <String[]>]: The scope IDs of the corresponding permission.
+Currently, it's the Intune scope tag ID.
+Read-only.
             [ServicePlanId <String>]: The service plan ID of the Cloud PC.
             [ServicePlanName <String>]: The service plan name of the Cloud PC.
             [ServicePlanType <String>]: cloudPcServicePlanType
@@ -11782,6 +12613,39 @@ Read-only.
 Read-only.
             [UserExperienceType <String>]: cloudPcUserExperienceType
             [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+          [CloudPcPools <IMicrosoftGraphCloudPcPool[]>]: The user's Cloud PC pools.
+Read-only.
+Nullable.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Assignments <IMicrosoftGraphCloudPcPoolAssignment[]>]: The collection of assignments that grant user or service principal identities access to this pool.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Capabilities <IMicrosoftGraphCloudPcPoolCapabilityConfiguration>]: cloudPcPoolCapabilityConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+            [CloudPcConfiguration <IMicrosoftGraphCloudPcConfiguration>]: cloudPcConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ImageDisplayName <String>]: The display name of the image.
+Read-only.
+              [ImageId <String>]: The unique identifier of the operating system image used for provisioning new Cloud PCs.
+The format for a gallery type image is: {publisherNameofferNameskuName}.
+              [ImageType <String>]: cloudPcProvisioningPolicyImageType
+              [OSLocale <String>]: The operating system locale for the Cloud PC.
+            [CreatedDateTime <DateTime?>]: The date and time when the pool was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+            [Description <String>]: The description of the pool.
+The maximum length is 512 characters.
+            [DisplayName <String>]: The display name of the pool.
+The name is unique across Cloud PC pools in an organization.
+The maximum length is 60 characters.
+            [LastModifiedDateTime <DateTime?>]: The date and time when the pool was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+            [NetworkConfiguration <IMicrosoftGraphCloudPcNetworkConfiguration>]: cloudPcNetworkConfiguration
+              [(Any) <Object>]: This indicates any property can be added to this object.
           [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsSipEnabled <Boolean?>]: Indicates whether the user has a SIP-enabled client registered for them.
@@ -11987,12 +12851,15 @@ Read-only.
                   [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [Activity <String>]: userActivityType
+                    [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+                      [Value <String>]: 
                   [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
-Use conversation metadata for content like prompts and responses and file metadata for files.
+Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
 Required.
                     [Content <IMicrosoftGraphContentBase>]: contentBase
                       [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ContentCategory <String>]: contentCategory
                     [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                     [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -12007,6 +12874,10 @@ For ephemeral content like messages, this might be the same as createdDateTime.
                     [Name <String>]: Required.
 A descriptive name for the content (for example, file name, web page title, 'Chat Message').
                     [SequenceNumber <Int64?>]: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+                  [ContextMetadata <IMicrosoftGraphContextMetadata>]: contextMetadata
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [MetadataProperties <IMicrosoftGraphCustomMetadataDictionary>]: customMetadataDictionary
+                      [(Any) <Object>]: This indicates any property can be added to this object.
                   [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [DeviceType <String>]: Optional.
@@ -12016,6 +12887,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
                       [(Any) <Object>]: This indicates any property can be added to this object.
                       [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
                       [OperatingSystemVersion <String>]: The version string of the operating system.
+                  [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [Type <String>]: evaluationScopeType
                   [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [Name <String>]: The name of the integrated application.
@@ -12090,6 +12964,38 @@ This value is usually the combination of the user's first name, middle initial, 
 This property is required when a user is created, and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderby, and $search.
+          [DistributionLists <IMicrosoftGraphDistributionList[]>]: The personal distribution lists in the user's mailbox.
+Read-only.
+Nullable.
+            [Categories <String[]>]: The categories associated with the item.
+            [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+            [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [DisplayName <String>]: The display name of the distribution list.
+            [Members <IMicrosoftGraphDistributionListMember[]>]: The members of the distribution list.
+Not returned by default; use $expand=members to include.
+Read-only.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Contact <IMicrosoftGraphContact>]: contact
+              [DisplayName <String>]: The display name of the member.
+Read-only.
+              [MemberId <String>]: A system generated unique identifier.
+Non-empty for contact, privateDL and mailbox members.
+ReadOnly.
+              [Type <String>]: recipientType
+            [Notes <String>]: Notes about the distribution list.
+            [PersonIdentifier <String>]: The unique identifier of the distribution list in the mailbox.
+Read-only.
+            [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the distribution list.
+Read-only.
           [Drive <IMicrosoftGraphDrive>]: drive
             [(Any) <Object>]: This indicates any property can be added to this object.
             [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -12251,6 +13157,17 @@ Read-only.
                     [Device <IMicrosoftGraphIdentity>]: identity
                     [User <IMicrosoftGraphIdentity>]: identity
                     [Group <IMicrosoftGraphIdentity>]: identity
+                    [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                      [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+                      [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
+Read-only.
+                      [Title <String>]: The title of the SharePoint group.
+Read-only.
                     [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
                       [(Any) <Object>]: This indicates any property can be added to this object.
                       [DisplayName <String>]: The display name of the identity.
@@ -12384,11 +13301,13 @@ It must be either dateOnly or dateTime.
                 [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-                [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+                [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
                 [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
                 [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
                 [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+                [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
                 [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -12539,6 +13458,8 @@ Helps organize related content types.
 Only site collection administrators can seal or unseal content types.
               [DisplayName <String>]: The displayable title of the list.
               [Drive <IMicrosoftGraphDrive>]: drive
+              [ItemCount <Int32?>]: The total count of items in the list.
+Read-only.
               [Items <IMicrosoftGraphListItem[]>]: All items contained in the list.
               [List <IMicrosoftGraphListInfo>]: listInfo
                 [(Any) <Object>]: This indicates any property can be added to this object.
@@ -12648,6 +13569,26 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
+                [VapidPublicKey <String>]: Optional.
+The application server's VAPID public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained by calling the getVapidPublicKey function on the subscription collection.
+The browser passes this value to PushManager.subscribe({ applicationServerKey }) to bind the push subscription to this server identity.
+Required when notificationUrl targets a known Web Push service origin (for example, *.push.apple.com, fcm.googleapis.com, updates.push.services.mozilla.com); rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8292.
+                [WebPushEncryptionP256DhPublicKey <String>]: Optional.
+The subscriber's ECDH public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('p256dh').
+Used as the peer public key during ECDH key agreement to derive the per-message content encryption key for RFC 8291 payload encryption.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
+                [WebPushEncryptionSecret <String>]: Optional.
+The subscriber's auth secret, base64url-encoded (16 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('auth').
+Used as the HMAC-SHA-256 salt for the HKDF combine step that derives key material for RFC 8291 payload encryption.
+Write-only: this value is never returned in GET responses (returned as null).
+Treat as a secret.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
               [System <IMicrosoftGraphSystemFacet>]: systemFacet
                 [(Any) <Object>]: This indicates any property can be added to this object.
             [Owner <IMicrosoftGraphIdentitySet>]: identitySet
@@ -12668,6 +13609,10 @@ Read-only.
               [Used <Int64?>]: Total space used, in bytes.
 Read-only.
             [Root <IMicrosoftGraphDriveItem>]: driveItem
+            [Settings <IMicrosoftGraphDriveSettings>]: driveSettings
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ItemDefaultSensitivityLabelId <String>]: The ID of the default sensitivity label for items in the drive.
+Read-only.
             [SharePointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
             [Special <IMicrosoftGraphDriveItem[]>]: Collection of common folders available in OneDrive.
 Read-only.
@@ -12675,7 +13620,7 @@ Nullable.
             [System <IMicrosoftGraphSystemFacet>]: systemFacet
           [Drives <IMicrosoftGraphDrive[]>]: A collection of drives available for this user.
 Read-only.
-          [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: Represents a container that exposes navigation properties for employee experience user resources.
+          [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: employeeExperienceUser
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -12702,6 +13647,24 @@ Required.
               [LearningProviderId <String>]: The registration ID of the provider.
 Required.
               [Status <String>]: courseStatus
+            [Storyline <IMicrosoftGraphStoryline>]: User's storyline singleton container.
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Followers <IMicrosoftGraphStorylineFollower[]>]: The users who are following this user.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Follower <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [Application <IMicrosoftGraphIdentity>]: identity
+                  [Device <IMicrosoftGraphIdentity>]: identity
+                  [User <IMicrosoftGraphIdentity>]: identity
+                  [Audience <IMicrosoftGraphIdentity>]: identity
+                  [Group <IMicrosoftGraphIdentity>]: identity
+              [Followings <IMicrosoftGraphStorylineFollowing[]>]: The users that this user is following.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Following <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
           [EmployeeHireDate <DateTime?>]: The date and time when the user was hired or will start work if there is a future hire.
 Supports $filter (eq, ne, not , ge, le, in).
           [EmployeeId <String>]: The employee identifier assigned to the user by the organization.
@@ -12716,10 +13679,10 @@ For more information, see Configure the employeeLeaveDateTime property for a use
           [EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]: employeeOrgData
             [(Any) <Object>]: This indicates any property can be added to this object.
             [CostCenter <String>]: The cost center associated with the user.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
             [Division <String>]: The name of the division in which the user works.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
           [EmployeeType <String>]: Captures enterprise worker type.
 For example, Employee, Contractor, Consultant, or Vendor.
@@ -13193,7 +14156,9 @@ Read-write.
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [ArchiveStatus <String>]: siteArchiveStatus
                 [ArchivedBy <IMicrosoftGraphIdentitySet>]: identitySet
-                [ArchivedDateTime <DateTime?>]: 
+                [ArchivedDateTime <DateTime?>]: Time when the container was archived.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               [DataLocationCode <String>]: The geographic region code for where this site collection resides.
 Only present for multi-geo tenants.
 Read-only.
@@ -13216,7 +14181,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           [HireDate <DateTime?>]: The hire date of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
- Returned only on $select.
+ Requires $select to retrieve.
  Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
           [Identities <IMicrosoftGraphObjectIdentity[]>]: Represents the identities that can be used to sign in to this user account.
@@ -13239,6 +14204,27 @@ The validations performed on the userPrincipalName property on the user object, 
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
+          [IdentityGovernance <IMicrosoftGraphIdentityGovernanceUserSettings>]: identityGovernanceUserSettings
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ApproverDelegate <IMicrosoftGraphApproverDelegate>]: approverDelegate
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Delegate <IMicrosoftGraphUserSet>]: userSet
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [IsBackup <Boolean?>]: For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
+              [Schedule <IMicrosoftGraphRequestSchedule>]: requestSchedule
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
+For example, PT3H refers to three hours.
+ If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
+                  [EndDateTime <DateTime?>]: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
+                  [Type <String>]: expirationPatternType
+                [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+                [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+In PIM, when the  eligible or active assignment becomes active.
           [IdentityParentId <String>]: The object ID of the parent identity for agent users.
 Always null for regular user accounts.
 For agentUser resources, this property references the object ID of the associated agent identity.
@@ -13335,7 +14321,7 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
           [Interests <String[]>]: A list for users to describe their interests.
-Returned only on $select.
+Requires $select to retrieve.
           [InvitedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
           [IsLicenseReconciliationNeeded <Boolean?>]: Indicates whether the user is pending an exchange mailbox license assignment.
  Read-only.
@@ -13344,7 +14330,8 @@ Returned only on $select.
 If not set, the default value is null and the default behavior is false.
 Read-only.
  To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-          [IsResourceAccount <Boolean?>]: Do not use – reserved for future use.
+          [IsResourceAccount <Boolean?>]: Do not use.
+Reserved for future use.
           [JobTitle <String>]: The user's job title.
 Maximum length is 128 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
@@ -13358,24 +14345,29 @@ If this list is non-empty, then only users or groups listed here can post.
             [AccessType <String>]: groupAccessType
             [AllowExternalSenders <Boolean?>]: Indicates if people external to the organization can send messages to the group.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
             [AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]: Represents the app roles a group has been granted for an application.
 Supports $expand.
-            [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
-Returned only on $select.
+            [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group or a cloud security group.
+Requires a Microsoft Entra ID P1 license.
+Requires $select to retrieve.
+This property can be specified during group creation or update.
+However, for cloud security groups, it's immutable once set.
 This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
+See Key differences from Microsoft 365 group labeling to learn more about managing this property for Microsoft 365 vs.
+cloud security groups.
               [DisplayName <String>]: The display name of the label.
 Read-only.
               [LabelId <String>]: The unique identifier of the label.
             [AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]: The licenses that are assigned to the group.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
 Read-only.
             [AutoSubscribeNewMembers <Boolean?>]: Indicates if new members added to the group are auto-subscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
             [Calendar <IMicrosoftGraphCalendar>]: calendar
             [CalendarView <IMicrosoftGraphEvent[]>]: The calendar view for the calendar.
@@ -13385,6 +14377,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
             [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
               [(Any) <Object>]: This indicates any property can be added to this object.
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
               [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
             [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
               [Id <String>]: The unique identifier for an entity.
@@ -13543,11 +14536,11 @@ You can use it as a $filter argument to get groups that have members with licens
  Supports $filter (eq).
             [HideFromAddressLists <Boolean?>]: true if the group isn't displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
             [HideFromOutlookClients <Boolean?>]: true if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
             [InfoCatalogs <String[]>]: Identifies the info segments assigned to the group.
 Returned by default.
@@ -13571,7 +14564,7 @@ Read-only.
  To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
             [IsSubscribedByMail <Boolean?>]: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
             [LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]: licenseProcessingState
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -13621,6 +14614,7 @@ Read-only.
             [OnPremisesDomainName <String>]: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
 The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
 Read-only.
+            [OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]: onPremisesExtensionAttributes
             [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
@@ -13804,10 +14798,14 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
                     [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-                    [HasChat <Boolean?>]: 
+                    [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
+                    [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
                     [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
                     [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -13816,9 +14814,38 @@ If true, it shows the task.
                     [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
                     [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-                    [LastModifiedDateTime <DateTime?>]: 
+                    [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                    [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+                      [Id <String>]: The unique identifier for an entity.
+Read-only.
+                      [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+                      [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                      [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                      [DeletedDateTime <DateTime?>]: 
+                      [EditedDateTime <DateTime?>]: 
+                      [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+                        [MentionType <String>]: plannerTaskChatMentionType
+                        [Mentioned <String>]: The ID of the mentioned user.
+                        [Position <Int32?>]: The zero-based position of the mention in the message content.
+                      [MessageType <String>]: plannerTaskChatMessageType
+                      [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+                      [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+                        [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+                          [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                          [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                        [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
                     [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
                     [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
                     [PlanId <String>]: Plan ID to which the task belongs.
@@ -13931,6 +14958,43 @@ Read-only.
                     [(Any) <Object>]: This indicates any property can be added to this object.
                   [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
                     [(Any) <Object>]: This indicates any property can be added to this object.
+                [Goals <IMicrosoftGraphPlannerGoal[]>]: Collection of goals in the plan.
+Read-only.
+Nullable.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [DisplayName <String>]: Required.
+The display name of the goal.
+                  [FinishDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to finish.
+                  [Notes <IMicrosoftGraphItemBody>]: itemBody
+                  [PlanId <String>]: Required.
+The ID of the plan that contains the goal.
+                  [Priority <Int32?>]: Optional.
+The relative priority of the goal.
+Valid values range from 0 to 10, inclusive.
+The default value is 5.
+                  [StartDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to start.
+                  [Status <String>]: plannerGoalStatus
+                  [Tasks <IMicrosoftGraphPlannerTask[]>]: Read-only.
+Nullable.
+The tasks associated with the goal.
+This relationship doesn't support direct retrieval or $expand.
+To identify the goals associated with a task, read the goalIds property of the plannerTask resource.
+                [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: Collection of history items for entities in the plan.
+Read-only.
+Nullable.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+                  [EntityId <String>]: The ID of the entity that was changed.
+                  [EntityType <String>]: historyEntityType
+                  [EventType <String>]: historyEventType
+                  [OccurredDateTime <DateTime?>]: The date and time when the change occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+                  [PlanId <String>]: The ID of the plan that contains the changed entity.
                 [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -13982,7 +15046,7 @@ For the list of possible values, see Microsoft 365 group behaviors and provision
 The possible value is Team.
 For more information, see Microsoft 365 group behaviors and provisioning options.
 Returned by default.
-Supports $filter (eq, not, startsWith.
+Supports $filter (eq, not, startsWith).
             [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.Returned by default.
 Supports $filter (eq, ne, not, in).
@@ -14015,7 +15079,7 @@ Read-only.
 Read-only.
                 [AllMembers <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
 It includes both direct and indirect members of shared channels.
-                [CreatedDateTime <DateTime?>]: Read only.
+                [CreatedDateTime <DateTime?>]: Read-only.
 Timestamp at which the channel was created.
                 [Description <String>]: Optional textual description for the channel.
                 [DisplayName <String>]: Channel name as it appears to the user in Microsoft Teams.
@@ -14030,6 +15094,7 @@ Read-only.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
 The default value is false.
+                [JoinedUsers <IMicrosoftGraphConversationMember[]>]: 
                 [LayoutType <String>]: channelLayoutType
                 [Members <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
                 [MembershipType <String>]: channelMembershipType
@@ -14091,7 +15156,7 @@ This is an optional property, only used during team creation and isn't returned 
                 [AllowGiphy <Boolean?>]: If set to true, enables Giphy use.
                 [AllowStickersAndMemes <Boolean?>]: If set to true, enables users to include stickers and memes.
                 [GiphyContentRating <String>]: giphyRatingType
-              [Group <IMicrosoftGraphGroup>]: Represents a Microsoft Entra group.
+              [Group <IMicrosoftGraphGroup>]: group
               [GuestSettings <IMicrosoftGraphTeamGuestSettings>]: teamGuestSettings
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [AllowCreateUpdateChannels <Boolean?>]: If set to true, guests can add and update channels.
@@ -14356,7 +15421,8 @@ Read-only.
                   [StartDateTime <DateTime?>]: The date and time the time off starts in ISO 8601 format and in UTC time.
                   [TimeOffReasonId <String>]: The reason for the time off.
                 [TimeOffRequestsEnabled <Boolean?>]: Indicates whether time off requests are enabled for the schedule.
-                [TimeZone <String>]: Indicates the time zone of the schedule team using tz database format.
+                [TimeZone <String>]: The time zone of the schedule team as an IANA time zone database (tz database) name; for example, America/Chicago.
+For the full list of valid values, see List of tz database time zones.
 Required.
                 [TimesOff <IMicrosoftGraphTimeOff[]>]: The instances of times off in the schedule.
                   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -14437,12 +15503,12 @@ Immutable.
 Read-only.
             [UnseenConversationsCount <Int32?>]: Count of conversations delivered one or more new posts since the signed-in user's last visit to the group.
 This property is the same as unseenCount.
-Returned only on $select.
+Requires $select to retrieve.
             [UnseenCount <Int32?>]: Count of conversations that have received new posts since the signed-in user last visited the group.
-This property is the same as unseenConversationsCount.Returned only on $select.
+This property is the same as unseenConversationsCount.Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
             [UnseenMessagesCount <Int32?>]: Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group.
-Returned only on $select.
+Requires $select to retrieve.
             [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
 The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
@@ -14453,7 +15519,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-            [WelcomeMessageEnabled <Boolean?>]: 
+            [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Requires $select to retrieve.
+Supported only on the Get group API (GET /groups/{ID}).
             [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
               [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -14470,16 +15539,16 @@ Nullable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
           [LegalAgeGroupClassification <String>]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
 Allowed values: null, Undefined, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
-Returned only on $select.
+Requires $select to retrieve.
           [LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]: State of license assignments for this user.
 It also indicates licenses that are directly assigned and the ones the user inherited through group memberships.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
             [AssignedByGroup <String>]: Indicates whether the license is directly-assigned or inherited from a group.
 If directly-assigned, this field is null; if inherited through a group membership, this field contains the ID of the group.
 Read-Only.
@@ -14605,7 +15674,7 @@ To verify the existence of inline attachments, parse the body property to look f
               [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
                 [Name <String>]: Represents the key in a key-value pair.
                 [Value <String>]: The value in a key-value pair.
@@ -15154,6 +16223,8 @@ Read-only.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [AntiMalwareVersion <String>]: Current anti malware version
+              [ControlledConfigurationEnabled <Boolean?>]: When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
               [DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]: Device malware list
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -15246,8 +16317,9 @@ Read-only.
           [MobilePhone <String>]: The primary cellular telephone number for the user.
 Read-only for users synced from the on-premises directory.
  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [MySite <String>]: The URL for the user's site.
-Returned only on $select.
+Requires $select to retrieve.
           [Notifications <IMicrosoftGraphNotification[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -15287,6 +16359,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's userPrincipalName (UPN) property.
 Note: The $ and _ characters can't be used when specifying this property.
 Supports $filter (eq, ne, not, ge, le, in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -15342,6 +16415,10 @@ Read-only.
                   [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
                   [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
                 [EmailAddress <String>]: Email address of the user associated with this attendance record.
+                [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+                  [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+                  [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+                  [EngagementType <String>]: meetingEngagementType
                 [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -15390,6 +16467,13 @@ Read-only.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+            [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+              [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+              [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
             [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -15416,6 +16500,7 @@ Optional.
             [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
             [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+            [MeetingType <String>]: onlineMeetingType
             [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
             [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -15536,6 +16621,7 @@ Read-only.
           [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [Outlook <IMicrosoftGraphOutlookUser>]: outlookUser
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
@@ -15644,7 +16730,7 @@ It can be updated, but the user will be required to change the password on the n
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
           [PastProjects <String[]>]: A list for users to enumerate their past projects.
-Returned only on $select.
+Requires $select to retrieve.
           [PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]: Navigation property to get a list of access reviews pending approval by the reviewer.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -15685,6 +16771,11 @@ Read-only.
               [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+              [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
               [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
                 [Id <String>]: The unique identifier for an entity.
@@ -15718,7 +16809,7 @@ Read-only.
                 [DisplayName <String>]: Display name of the resource
                 [Id <String>]: Resource ID
                 [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
               [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -15872,6 +16963,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+            [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
             [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -16004,7 +17099,7 @@ Example: 'en-US', or 'es-ES'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           [PreferredName <String>]: The preferred name for the user.
 Not Supported.
-This attribute returns an empty string.Returned only on $select.
+This attribute returns an empty string.Requires $select to retrieve.
           [Presence <IMicrosoftGraphPresence>]: presence
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
@@ -16460,15 +17555,14 @@ Read-only.
                 [WebUrl <String>]: Link to the institution or department homepage.
               [Program <IMicrosoftGraphEducationalActivityDetail>]: educationalActivityDetail
                 [(Any) <Object>]: This indicates any property can be added to this object.
-                [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+                [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
                 [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
                 [Awards <String[]>]: Any awards or honors associated with the program.
                 [Description <String>]: Short description of the program provided by the user.
                 [DisplayName <String>]: Long-form name of the program that the user provided.
-                [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-                [Grade <String>]: The final grade, class, GPA, or score.
-                [Notes <String>]: More notes the user provided.
+                [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+                [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+                [Notes <String>]: More notes provided by the user.
                 [WebUrl <String>]: Link to the degree or program page.
               [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
             [Emails <IMicrosoftGraphItemEmail[]>]: Represents detailed information about email addresses associated with the user.
@@ -16771,9 +17865,9 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
           [Responsibilities <String[]>]: A list for the user to enumerate their responsibilities.
-Returned only on $select.
+Requires $select to retrieve.
           [Schools <String[]>]: A list for the user to enumerate the schools they have attended.
-Returned only on $select.
+Requires $select to retrieve.
           [ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]: The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
@@ -16837,7 +17931,7 @@ Users can control this setting in Office Delve.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [InPlaceArchiveMailboxId <String>]: 
+              [InPlaceArchiveMailboxId <String>]: The unique identifier for the user's In-Place Archive mailbox.
               [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
             [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -16877,7 +17971,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
             [ShiftPreferences <IMicrosoftGraphShiftPreferences>]: shiftPreferences
               [(Any) <Object>]: This indicates any property can be added to this object.
               [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -16899,6 +17993,14 @@ Read-only.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
                 [Deleted <Int64?>]: 
+                [FamilyMembersUsage <IMicrosoftGraphFamilyMemberStorageQuota[]>]: 
+                  [AdditionalAllocations <IMicrosoftGraphAdditionalStorageAllocations>]: additionalStorageAllocations
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BonusQuotaInBytes <Int64?>]: 
+                    [SubscriptionQuotaInBytes <Int64?>]: 
+                  [Used <Int64?>]: 
+                  [User <IMicrosoftGraphIdentity>]: identity
+                [IsPooledStorageEnabled <Boolean?>]: 
                 [ManageWebUrl <String>]: A URL that can be used in a browser to manage the breakdown.
 Read-only.
                 [Remaining <Int64?>]: Total space remaining before reaching the quota limit in bytes.
@@ -16987,7 +18089,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Use revokeSignInSessions to reset.
           [Skills <String[]>]: A list for the user to enumerate their skills.
-Returned only on $select.
+Requires $select to retrieve.
           [Solutions <IMicrosoftGraphUserSolutionRoot>]: userSolutionRoot
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
@@ -16996,6 +18098,11 @@ Read-only.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
+          [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
           [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -17034,6 +18141,48 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
 The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+            [Sections <IMicrosoftGraphTeamworkSection[]>]: The sections in the user's chat list.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [CreatedDateTime <DateTime?>]: Date and time when the section was created.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+              [DisplayIcon <IMicrosoftGraphSectionDisplayIcon>]: sectionDisplayIcon
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [ContentUrl <String>]: The URL to a custom icon image.
+Applicable when iconType is custom.
+                [DisplayName <String>]: The human-readable name of the icon.
+                [IconType <String>]: The type of icon.
+Use an emoji character such as 👍 for an emoji icon, or custom for a custom image icon.
+                [SkinTone <String>]: sectionIconSkinTone
+              [DisplayName <String>]: The display name of the section.
+Required.
+Maximum length is 50 characters.
+Display names are case-sensitive and must be unique within a user's sections.
+The following names are reserved for system-defined sections and can't be used when creating a user-defined section: RecentChats, QuickViews, TeamsAndChannels, MutedChats, MeetingChats, EngageCommunities.
+              [IsExpanded <Boolean?>]: Indicates whether the section is expanded in the user interface.
+The default value is true.
+              [IsHierarchicalViewEnabled <Boolean?>]: Indicates whether the hierarchical view is enabled for the section.
+Read-only.
+              [Items <IMicrosoftGraphTeamworkSectionItem[]>]: The items (chats, channels, meetings, or communities) organized within the section.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [CreatedDateTime <DateTime?>]: Date and time when the item was added to the section.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+                [ItemType <String>]: sectionItemType
+                [LastModifiedDateTime <DateTime?>]: Date and time when the item was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+              [LastModifiedDateTime <DateTime?>]: Date and time when the section was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+              [SectionType <String>]: sectionType
+              [SortType <String>]: sectionSortType
           [Todo <IMicrosoftGraphTodo>]: todo
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
@@ -17046,6 +18195,12 @@ Read-only.
 Nullable.
               [IsOwner <Boolean?>]: True if the user is owner of the given task list.
               [IsShared <Boolean?>]: True if the task list is shared with other users
+              [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Value <String>]: The value of the property.
               [Tasks <IMicrosoftGraphTodoTask[]>]: The tasks in this task list.
 Read-only.
 Nullable.
@@ -17109,9 +18264,6 @@ Read-only.
                 [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
                 [ReminderDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
                 [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: A collection of custom fields linked to the task.
-                  [Id <String>]: The unique identifier for an entity.
-Read-only.
-                  [Value <String>]: The value of the property.
                 [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
                 [Status <String>]: taskStatus
                 [Title <String>]: A brief description of the task.
@@ -17136,6 +18288,7 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
  
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [UserType <String>]: A String value that can be used to classify user types in your directory.
 The possible values are Member and Guest.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -17163,6 +18316,8 @@ Read-only.
               [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
               [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers; otherwise, null.
+              [IsRegistrationEnabled <Boolean?>]: 
+              [IsRegistrationRequired <Boolean?>]: Indicates whether attendee registration is enabled for the virtual event.
               [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: The virtual event presenters.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -17200,6 +18355,7 @@ Read-only.
                   [AudioConferencing <IMicrosoftGraphAudioConferencing>]: audioConferencing
                   [ChatInfo <IMicrosoftGraphChatInfo>]: chatInfo
                   [ChatRestrictions <IMicrosoftGraphChatRestrictions>]: chatRestrictions
+                  [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
                   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -17213,6 +18369,7 @@ Read-only.
                   [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
                   [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+                  [MeetingType <String>]: onlineMeetingType
                   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
                   [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
                   [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
@@ -17222,6 +18379,7 @@ Read-only.
                   [WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]: watermarkProtectionValues
                   [Id <String>]: The unique identifier for an entity.
 Read-only.
+                  [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
                   [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
                   [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: 
                   [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: 
@@ -17275,6 +18433,8 @@ For example, in the access reviews decisions API, this property might record the
               [RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]: virtualEventWebinarRegistrationConfiguration
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Capacity <Int32?>]: Total capacity of the virtual event.
+                [IsManualApprovalEnabled <Boolean?>]: Indicates whether registrations require organizer approval before a participant is confirmed.
+                [IsWaitlistEnabled <Boolean?>]: Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
                 [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
                   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -17284,8 +18444,6 @@ The default value is false.
                 [RegistrationWebUrl <String>]: Registration URL of the virtual event.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
-                [IsManualApprovalEnabled <Boolean?>]: 
-                [IsWaitlistEnabled <Boolean?>]: 
               [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: Registration records of the webinar.
           [WindowsInformationProtectionDeviceRegistrations <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]>]: Zero or more WIP device registrations that belong to the user.
             [Id <String>]: The unique identifier for an entity.
@@ -17356,6 +18514,7 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 Nullable.
         [File <IMicrosoftGraphFile>]: file
           [(Any) <Object>]: This indicates any property can be added to this object.
+          [ArchiveStatus <String>]: fileArchiveStatus
           [Hashes <IMicrosoftGraphHashes>]: hashes
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Crc32Hash <String>]: The CRC32 value of the file (if available).
@@ -17395,6 +18554,15 @@ Width of the image, in pixels.
 Read-only.
         [ListItem <IMicrosoftGraphListItem>]: listItem
         [Location <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
+        [LockInfo <IMicrosoftGraphLockInfo>]: lockInfo
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [CreatedDateTime <DateTime?>]: The date and time when the lock was created, in UTC.
+Read-only.
+          [ExpirationDateTime <DateTime?>]: The date and time when the lock expires, in UTC.
+Read-only.
+          [LockType <String>]: lockType
+          [Owners <IMicrosoftGraphUserIdentity[]>]: The collection of users that currently hold the lock on the file.
+Read-only.
         [Malware <IMicrosoftGraphMalware>]: malware
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Description <String>]: Contains the virus details for the malware facet.
@@ -18150,10 +19318,11 @@ Always null when the object hasn't been deleted.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AboutMe <String>]: A freeform text entry field for users to describe themselves.
-Returned only on $select.
+Requires $select to retrieve.
         [AccountEnabled <Boolean?>]: true if the account is enabled; otherwise, false.
 This property is required when creating the object.
 Supports $filter (eq, ne, not, and in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Activities <IMicrosoftGraphUserActivity[]>]: The user's activities across devices.
 Read-only.
 Nullable.
@@ -18434,22 +19603,23 @@ Always null when the object hasn't been deleted.
             [IsEnabled <Boolean?>]: Denotes whether the policy is enabled.
             [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: 
+              [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of certificate restrictions settings to be applied to an application or service principal.
                 [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: 
+                  [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
+Limit of 5.
                     [Id <String>]: The unique identifier for an entity.
 Read-only.
                     [Operator <String>]: customSecurityAttributeComparisonOperator
                 [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 [RestrictionType <String>]: appKeyCredentialRestrictionType
                 [State <String>]: appManagementRestrictionState
-              [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: 
+              [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -18479,12 +19649,93 @@ For existing applications, the enforcement date can be retroactively applied.
                   [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                    [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                    [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
                     [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
                     [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                     [State <String>]: appManagementRestrictionState
                   [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+                [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: Collection of domain names that are blocked globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedDomains <String[]>]: Collection of domain names that are blocked for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                      [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions for this platform.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [ExcludeWildcardsInPath <Boolean?>]: When true, blocks the use of wildcards in the path portion of redirect URIs.
+When false, allows wildcards in paths.
+                      [ExcludeWildcardsInPathWithDomains <String[]>]: Collection of domain names where wildcards in the path portion of redirect URIs are blocked.
+Accepts only valid host names (no wildcards) as defined in RFC 3986 §3.2.2.
+For example, login.microsoft.com or contoso.com.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [State <String>]: appManagementRestrictionState
+                  [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: Collection of domain names that are allowed globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedDomains <String[]>]: Collection of domain names that are allowed for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme for this platform.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
           [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -18594,7 +19845,7 @@ Optional.
             [IncludeBasicClaimSet <Boolean?>]: Determines whether the basic claim set is included in tokens affected by this policy.
 If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
 By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
-          [CreatedByAppId <String>]: The appId (called Application (client) ID on the Microsoft Entra admin center) of the application used to create the service principal.
+          [CreatedByAppId <String>]: The appId of the application that created this service principal.
 Set internally by Microsoft Entra ID.
 Read-only.
           [CreatedObjects <IMicrosoftGraphDirectoryObject[]>]: Directory objects created by this service principal.
@@ -18726,7 +19977,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
             [KeyId <String>]: The unique identifier for the key.
@@ -18826,7 +20077,7 @@ Optional.
             [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
               [CustomizedLabel <String>]: Title/label override for customization.
               [DefaultLabel <String>]: Label that would be used if no customizedLabel is provided.
-Read only.
+Read-only.
               [FieldId <String>]: Id used to identity the field type.
 This is an internal ID and possible values are param1, param2, paramuserName, parampassword.
               [Type <String>]: Type of the credential.
@@ -18885,13 +20136,13 @@ May not begin with ..
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: 
+            [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
+Supports $expand.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [DisplayName <String>]: 
+              [DisplayName <String>]: Display name for the client application.
             [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
             [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
-<br/<Supports $expand.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [DisplayName <String>]: Display name for the target device group.
@@ -19254,7 +20505,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [EmailAddress <String>]: The email address registered to this user.
-          [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external methods registered to a user for authentication.
+          [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external MFA registered to a user for authentication.
             [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -19270,7 +20521,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
-            [DisplayName <String>]: Custom name given to the registered external authentication method.
+            [DisplayName <String>]: Custom name given to the registered external MFA.
           [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
             [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -19523,7 +20774,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
               [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
               [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -19709,6 +20960,23 @@ is 395 days (13 months) and default value is 365 days (12 months).
           [Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]: strongAuthenticationRequirements
             [(Any) <Object>]: This indicates any property can be added to this object.
             [PerUserMfaState <String>]: perUserMfaState
+          [ResourceAccountKeyAuthenticationMethods <IMicrosoftGraphResourceAccountKeyAuthenticationMethod[]>]: Represents the resource account key credentials registered to a user for authentication on shared devices.
+            [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [LastUsedDateTime <DateTime?>]: The date and time the authentication method was last used by the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Device <IMicrosoftGraphDevice>]: device
+            [DisplayName <String>]: The display name of the resource account key credential as shown in the Teams Room interface.
           [SignInPreferences <IMicrosoftGraphSignInPreferences>]: signInPreferences
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]: Indicates whether the credential preferences of the system are enabled.
@@ -19776,11 +21044,12 @@ Read-only.
 The identifiers must be unique in the tenant.
         [Birthday <DateTime?>]: The birthday of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Requires $select to retrieve.
         [BusinessPhones <String[]>]: The telephone numbers for the user.
 Only one number can be set for this property.
 Read-only for users synced from on-premises directory.
 Supports $filter (eq, not, ge, le, startsWith).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Calendar <IMicrosoftGraphCalendar>]: calendar
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -20167,7 +21436,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Content <String>]: The content of the chat message.
+              [ContentType <String>]: bodyType
+              [MessageBodyContentType <String>]: chatMessageBodyContentType
             [CreatedDateTime <DateTime?>]: Date time object representing the time at which message was created.
             [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -20216,19 +21489,40 @@ The property is used to attribute a Teams message card to the specified app.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
-            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
             [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ChannelId <String>]: The identity of the channel in which the message was posted.
               [TeamId <String>]: The identity of the team in which the message was posted.
             [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+            [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+              [Excerpt <String>]: Read-only.
+Text snippet from the cited source.
+              [IconType <String>]: Read-only.
+Icon type identifier for the cited source, for example, ExcelIcon or WordIcon.
+              [Id <Int32?>]: Read-only.
+Citation identifier that's unique within the message.
+The message body references this identifier inline, for example, [1].
+              [SensitivityLabel <IMicrosoftGraphChatMessageCitationSensitivityLabel>]: chatMessageCitationSensitivityLabel
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Description <String>]: Read-only.
+User-facing description of the sensitivity restriction.
+                [DisplayName <String>]: Read-only.
+Display name of the sensitivity label.
+              [Title <String>]: Read-only.
+Display title of the cited source.
+              [WebUrl <String>]: Read-only.
+URL to the cited source.
             [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-            [DeletedDateTime <DateTime?>]: Read only.
+            [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
             [Etag <String>]: Read-only.
 Version number of the chat message.
             [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
             [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [HasReplies <Boolean?>]: 
             [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
               [ContentBytes <Byte[]>]: Write only.
 Bytes for the hosted content (such as images).
@@ -20237,11 +21531,11 @@ Content type, such as image/png, image/jpg.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
             [Importance <String>]: chatMessageImportance
-            [LastEditedDateTime <DateTime?>]: Read only.
+            [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-            [LastModifiedDateTime <DateTime?>]: Read only.
+            [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
@@ -20385,7 +21679,56 @@ Required.
 This value can't be changed after tab creation.
 Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
             [WebUrl <String>]: Deep link URL of the tab instance.
-Read only.
+Read-only.
+          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
+            [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+            [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
+            [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+            [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+            [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
+            [DeletedDateTime <DateTime?>]: Read-only.
+Timestamp at which the chat message was deleted, or null if not deleted.
+            [Etag <String>]: Read-only.
+Version number of the chat message.
+            [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
+            [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [HasReplies <Boolean?>]: 
+            [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+            [Importance <String>]: chatMessageImportance
+            [LastEditedDateTime <DateTime?>]: Read-only.
+Timestamp when edits to the chat message were made.
+Triggers an 'Edited' flag in the Teams UI.
+If no edits are made the value is null.
+            [LastModifiedDateTime <DateTime?>]: Read-only.
+Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+            [Locale <String>]: Locale of the chat message set by the client.
+Always set to en-us.
+            [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
+Supported entities are: user, bot, team, channel, chat, and tag.
+            [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+            [MessageType <String>]: chatMessageType
+            [OnBehalfOf <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]: chatMessagePolicyViolation
+            [Reactions <IMicrosoftGraphChatMessageReaction[]>]: Reactions for this chat message (for example, Like).
+            [Replies <IMicrosoftGraphChatMessage[]>]: Replies for a specified message.
+Supports $expand for channel messages.
+            [ReplyToId <String>]: Read-only.
+ID of the parent chat message or root chat message of the thread.
+(Only applies to chat messages in channels, not chats.)
+            [Subject <String>]: The subject of the chat message, in plaintext.
+            [Summary <String>]: Summary text of the chat message that could be used for push notifications and summary views or fall back views.
+Only applies to channel chat messages, not chat messages in a chat.
+            [WebUrl <String>]: Read-only.
+Link to the message in Microsoft Teams.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Recipient <IMicrosoftGraphIdentity>]: identity
           [TenantId <String>]: The identifier of the tenant in which the chat was created.
 Read-only.
           [Topic <String>]: (Optional) Subject or topic for the chat.
@@ -20421,21 +21764,80 @@ Each one represents the same information in a different clipboard format.
               [FormatName <String>]: For a list of possible values see formatName values.
         [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
-          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-              [AssignableTo <String>]: assigneeTypes
-              [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-              [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+            [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+            [Code <String>]: The error code associated with the assignment synchronization failure.
+            [Message <String>]: The error message associated with the assignment synchronization failure.
+            [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+            [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Id <String>]: The unique identifier for an entity.
 Read-only.
+              [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+                [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+                [ExternalServiceIdentifier <String>]: 
+                [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                  [AssignableTo <String>]: assigneeTypes
+                  [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                  [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+                [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+                [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                  [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                  [StartDate <DateTime?>]: The date when the subscription started.
+                  [State <String>]: subscriptionState
+                  [SubscriptionId <String>]: Identifier for the subscription object.
+                  [Tags <String>]: subscriptionTags
+                [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+              [ExternalServiceIdentifier <String>]: 
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
         [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -20494,12 +21896,21 @@ Read-only.
             [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
           [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
+          [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
           [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Time <DateTime?>]: The time of the Cloud PC sign in action.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
 Read-only.
+          [LastLogoffDateTime <DateTime?>]: The date and time when the user last logged off from the Cloud PC session.
+Returns null if the user has never established a session or if a session is currently active.
+The timestamp is shown in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+Returned only when explicitly selected with $select.
           [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -20551,10 +21962,15 @@ The default value is false.
           [ProvisionedDateTime <DateTime?>]: The latest provisioned date and time, automatically generated and assigned during the initial provisioning or any subsequent reprovisioning of the Cloud PC.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ProvisioningConfiguration <IMicrosoftGraphCloudPcProvisioningConfiguration>]: cloudPcProvisioningConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [DomainJoinType <String>]: cloudPcDomainJoinType
           [ProvisioningPolicyId <String>]: The provisioning policy ID of the Cloud PC.
           [ProvisioningPolicyName <String>]: The provisioning policy that is applied during the provisioning of Cloud PCs.
           [ProvisioningType <String>]: cloudPcProvisioningType
-          [ScopeIds <String[]>]: 
+          [ScopeIds <String[]>]: The scope IDs of the corresponding permission.
+Currently, it's the Intune scope tag ID.
+Read-only.
           [ServicePlanId <String>]: The service plan ID of the Cloud PC.
           [ServicePlanName <String>]: The service plan name of the Cloud PC.
           [ServicePlanType <String>]: cloudPcServicePlanType
@@ -20579,6 +21995,39 @@ Read-only.
 Read-only.
           [UserExperienceType <String>]: cloudPcUserExperienceType
           [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+        [CloudPcPools <IMicrosoftGraphCloudPcPool[]>]: The user's Cloud PC pools.
+Read-only.
+Nullable.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Assignments <IMicrosoftGraphCloudPcPoolAssignment[]>]: The collection of assignments that grant user or service principal identities access to this pool.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Capabilities <IMicrosoftGraphCloudPcPoolCapabilityConfiguration>]: cloudPcPoolCapabilityConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+          [CloudPcConfiguration <IMicrosoftGraphCloudPcConfiguration>]: cloudPcConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ImageDisplayName <String>]: The display name of the image.
+Read-only.
+            [ImageId <String>]: The unique identifier of the operating system image used for provisioning new Cloud PCs.
+The format for a gallery type image is: {publisherNameofferNameskuName}.
+            [ImageType <String>]: cloudPcProvisioningPolicyImageType
+            [OSLocale <String>]: The operating system locale for the Cloud PC.
+          [CreatedDateTime <DateTime?>]: The date and time when the pool was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+          [Description <String>]: The description of the pool.
+The maximum length is 512 characters.
+          [DisplayName <String>]: The display name of the pool.
+The name is unique across Cloud PC pools in an organization.
+The maximum length is 60 characters.
+          [LastModifiedDateTime <DateTime?>]: The date and time when the pool was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+          [NetworkConfiguration <IMicrosoftGraphCloudPcNetworkConfiguration>]: cloudPcNetworkConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
         [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
           [(Any) <Object>]: This indicates any property can be added to this object.
           [IsSipEnabled <Boolean?>]: Indicates whether the user has a SIP-enabled client registered for them.
@@ -20784,12 +22233,15 @@ Read-only.
                 [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Activity <String>]: userActivityType
+                  [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+                    [Value <String>]: 
                 [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
-Use conversation metadata for content like prompts and responses and file metadata for files.
+Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
 Required.
                   [Content <IMicrosoftGraphContentBase>]: contentBase
                     [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ContentCategory <String>]: contentCategory
                   [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                   [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -20804,6 +22256,10 @@ For ephemeral content like messages, this might be the same as createdDateTime.
                   [Name <String>]: Required.
 A descriptive name for the content (for example, file name, web page title, 'Chat Message').
                   [SequenceNumber <Int64?>]: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+                [ContextMetadata <IMicrosoftGraphContextMetadata>]: contextMetadata
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [MetadataProperties <IMicrosoftGraphCustomMetadataDictionary>]: customMetadataDictionary
+                    [(Any) <Object>]: This indicates any property can be added to this object.
                 [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [DeviceType <String>]: Optional.
@@ -20813,6 +22269,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
                     [OperatingSystemVersion <String>]: The version string of the operating system.
+                [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [Type <String>]: evaluationScopeType
                 [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Name <String>]: The name of the integrated application.
@@ -20887,6 +22346,38 @@ This value is usually the combination of the user's first name, middle initial, 
 This property is required when a user is created, and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderby, and $search.
+        [DistributionLists <IMicrosoftGraphDistributionList[]>]: The personal distribution lists in the user's mailbox.
+Read-only.
+Nullable.
+          [Categories <String[]>]: The categories associated with the item.
+          [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+          [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [DisplayName <String>]: The display name of the distribution list.
+          [Members <IMicrosoftGraphDistributionListMember[]>]: The members of the distribution list.
+Not returned by default; use $expand=members to include.
+Read-only.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Contact <IMicrosoftGraphContact>]: contact
+            [DisplayName <String>]: The display name of the member.
+Read-only.
+            [MemberId <String>]: A system generated unique identifier.
+Non-empty for contact, privateDL and mailbox members.
+ReadOnly.
+            [Type <String>]: recipientType
+          [Notes <String>]: Notes about the distribution list.
+          [PersonIdentifier <String>]: The unique identifier of the distribution list in the mailbox.
+Read-only.
+          [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the distribution list.
+Read-only.
         [Drive <IMicrosoftGraphDrive>]: drive
           [(Any) <Object>]: This indicates any property can be added to this object.
           [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -21054,6 +22545,17 @@ Read-only.
                   [Device <IMicrosoftGraphIdentity>]: identity
                   [User <IMicrosoftGraphIdentity>]: identity
                   [Group <IMicrosoftGraphIdentity>]: identity
+                  [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+                    [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
+Read-only.
+                    [Title <String>]: The title of the SharePoint group.
+Read-only.
                   [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [DisplayName <String>]: The display name of the identity.
@@ -21187,11 +22689,13 @@ It must be either dateOnly or dateTime.
               [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-              [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+              [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
               [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
               [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
               [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+              [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
               [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -21342,6 +22846,8 @@ Helps organize related content types.
 Only site collection administrators can seal or unseal content types.
             [DisplayName <String>]: The displayable title of the list.
             [Drive <IMicrosoftGraphDrive>]: drive
+            [ItemCount <Int32?>]: The total count of items in the list.
+Read-only.
             [Items <IMicrosoftGraphListItem[]>]: All items contained in the list.
             [List <IMicrosoftGraphListInfo>]: listInfo
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -21451,6 +22957,26 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
+              [VapidPublicKey <String>]: Optional.
+The application server's VAPID public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained by calling the getVapidPublicKey function on the subscription collection.
+The browser passes this value to PushManager.subscribe({ applicationServerKey }) to bind the push subscription to this server identity.
+Required when notificationUrl targets a known Web Push service origin (for example, *.push.apple.com, fcm.googleapis.com, updates.push.services.mozilla.com); rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8292.
+              [WebPushEncryptionP256DhPublicKey <String>]: Optional.
+The subscriber's ECDH public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('p256dh').
+Used as the peer public key during ECDH key agreement to derive the per-message content encryption key for RFC 8291 payload encryption.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
+              [WebPushEncryptionSecret <String>]: Optional.
+The subscriber's auth secret, base64url-encoded (16 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('auth').
+Used as the HMAC-SHA-256 salt for the HKDF combine step that derives key material for RFC 8291 payload encryption.
+Write-only: this value is never returned in GET responses (returned as null).
+Treat as a secret.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
             [System <IMicrosoftGraphSystemFacet>]: systemFacet
               [(Any) <Object>]: This indicates any property can be added to this object.
           [Owner <IMicrosoftGraphIdentitySet>]: identitySet
@@ -21471,6 +22997,10 @@ Read-only.
             [Used <Int64?>]: Total space used, in bytes.
 Read-only.
           [Root <IMicrosoftGraphDriveItem>]: driveItem
+          [Settings <IMicrosoftGraphDriveSettings>]: driveSettings
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ItemDefaultSensitivityLabelId <String>]: The ID of the default sensitivity label for items in the drive.
+Read-only.
           [SharePointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
           [Special <IMicrosoftGraphDriveItem[]>]: Collection of common folders available in OneDrive.
 Read-only.
@@ -21478,7 +23008,7 @@ Nullable.
           [System <IMicrosoftGraphSystemFacet>]: systemFacet
         [Drives <IMicrosoftGraphDrive[]>]: A collection of drives available for this user.
 Read-only.
-        [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: Represents a container that exposes navigation properties for employee experience user resources.
+        [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: employeeExperienceUser
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -21505,6 +23035,24 @@ Required.
             [LearningProviderId <String>]: The registration ID of the provider.
 Required.
             [Status <String>]: courseStatus
+          [Storyline <IMicrosoftGraphStoryline>]: User's storyline singleton container.
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Followers <IMicrosoftGraphStorylineFollower[]>]: The users who are following this user.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Follower <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Application <IMicrosoftGraphIdentity>]: identity
+                [Device <IMicrosoftGraphIdentity>]: identity
+                [User <IMicrosoftGraphIdentity>]: identity
+                [Audience <IMicrosoftGraphIdentity>]: identity
+                [Group <IMicrosoftGraphIdentity>]: identity
+            [Followings <IMicrosoftGraphStorylineFollowing[]>]: The users that this user is following.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Following <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
         [EmployeeHireDate <DateTime?>]: The date and time when the user was hired or will start work if there is a future hire.
 Supports $filter (eq, ne, not , ge, le, in).
         [EmployeeId <String>]: The employee identifier assigned to the user by the organization.
@@ -21519,10 +23067,10 @@ For more information, see Configure the employeeLeaveDateTime property for a use
         [EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]: employeeOrgData
           [(Any) <Object>]: This indicates any property can be added to this object.
           [CostCenter <String>]: The cost center associated with the user.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
           [Division <String>]: The name of the division in which the user works.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
         [EmployeeType <String>]: Captures enterprise worker type.
 For example, Employee, Contractor, Consultant, or Vendor.
@@ -21996,7 +23544,9 @@ Read-write.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ArchiveStatus <String>]: siteArchiveStatus
               [ArchivedBy <IMicrosoftGraphIdentitySet>]: identitySet
-              [ArchivedDateTime <DateTime?>]: 
+              [ArchivedDateTime <DateTime?>]: Time when the container was archived.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [DataLocationCode <String>]: The geographic region code for where this site collection resides.
 Only present for multi-geo tenants.
 Read-only.
@@ -22019,7 +23569,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         [HireDate <DateTime?>]: The hire date of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
- Returned only on $select.
+ Requires $select to retrieve.
  Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
         [Identities <IMicrosoftGraphObjectIdentity[]>]: Represents the identities that can be used to sign in to this user account.
@@ -22042,6 +23592,27 @@ The validations performed on the userPrincipalName property on the user object, 
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
+        [IdentityGovernance <IMicrosoftGraphIdentityGovernanceUserSettings>]: identityGovernanceUserSettings
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [ApproverDelegate <IMicrosoftGraphApproverDelegate>]: approverDelegate
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Delegate <IMicrosoftGraphUserSet>]: userSet
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [IsBackup <Boolean?>]: For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
+            [Schedule <IMicrosoftGraphRequestSchedule>]: requestSchedule
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
+For example, PT3H refers to three hours.
+ If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
+                [EndDateTime <DateTime?>]: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
+                [Type <String>]: expirationPatternType
+              [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+              [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+In PIM, when the  eligible or active assignment becomes active.
         [IdentityParentId <String>]: The object ID of the parent identity for agent users.
 Always null for regular user accounts.
 For agentUser resources, this property references the object ID of the associated agent identity.
@@ -22138,7 +23709,7 @@ Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Interests <String[]>]: A list for users to describe their interests.
-Returned only on $select.
+Requires $select to retrieve.
         [InvitedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
         [IsLicenseReconciliationNeeded <Boolean?>]: Indicates whether the user is pending an exchange mailbox license assignment.
  Read-only.
@@ -22147,7 +23718,8 @@ Returned only on $select.
 If not set, the default value is null and the default behavior is false.
 Read-only.
  To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-        [IsResourceAccount <Boolean?>]: Do not use – reserved for future use.
+        [IsResourceAccount <Boolean?>]: Do not use.
+Reserved for future use.
         [JobTitle <String>]: The user's job title.
 Maximum length is 128 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
@@ -22161,24 +23733,29 @@ If this list is non-empty, then only users or groups listed here can post.
           [AccessType <String>]: groupAccessType
           [AllowExternalSenders <Boolean?>]: Indicates if people external to the organization can send messages to the group.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]: Represents the app roles a group has been granted for an application.
 Supports $expand.
-          [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
-Returned only on $select.
+          [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group or a cloud security group.
+Requires a Microsoft Entra ID P1 license.
+Requires $select to retrieve.
+This property can be specified during group creation or update.
+However, for cloud security groups, it's immutable once set.
 This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
+See Key differences from Microsoft 365 group labeling to learn more about managing this property for Microsoft 365 vs.
+cloud security groups.
             [DisplayName <String>]: The display name of the label.
 Read-only.
             [LabelId <String>]: The unique identifier of the label.
           [AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]: The licenses that are assigned to the group.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
 Read-only.
           [AutoSubscribeNewMembers <Boolean?>]: Indicates if new members added to the group are auto-subscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [Calendar <IMicrosoftGraphCalendar>]: calendar
           [CalendarView <IMicrosoftGraphEvent[]>]: The calendar view for the calendar.
@@ -22188,6 +23765,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
           [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
             [(Any) <Object>]: This indicates any property can be added to this object.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
             [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
           [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
             [Id <String>]: The unique identifier for an entity.
@@ -22346,11 +23924,11 @@ You can use it as a $filter argument to get groups that have members with licens
  Supports $filter (eq).
           [HideFromAddressLists <Boolean?>]: true if the group isn't displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [HideFromOutlookClients <Boolean?>]: true if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [InfoCatalogs <String[]>]: Identifies the info segments assigned to the group.
 Returned by default.
@@ -22374,7 +23952,7 @@ Read-only.
  To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
           [IsSubscribedByMail <Boolean?>]: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]: licenseProcessingState
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -22424,6 +24002,7 @@ Read-only.
           [OnPremisesDomainName <String>]: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
 The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
 Read-only.
+          [OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]: onPremisesExtensionAttributes
           [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
@@ -22607,10 +24186,14 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
                   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-                  [HasChat <Boolean?>]: 
+                  [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
+                  [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
                   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
                   [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -22619,9 +24202,38 @@ If true, it shows the task.
                   [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
                   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-                  [LastModifiedDateTime <DateTime?>]: 
+                  [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                  [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+                    [Id <String>]: The unique identifier for an entity.
+Read-only.
+                    [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+                    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                    [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                    [DeletedDateTime <DateTime?>]: 
+                    [EditedDateTime <DateTime?>]: 
+                    [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+                      [MentionType <String>]: plannerTaskChatMentionType
+                      [Mentioned <String>]: The ID of the mentioned user.
+                      [Position <Int32?>]: The zero-based position of the mention in the message content.
+                    [MessageType <String>]: plannerTaskChatMessageType
+                    [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+                    [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+                      [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+                        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                        [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                      [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
                   [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
                   [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
                   [PlanId <String>]: Plan ID to which the task belongs.
@@ -22734,6 +24346,43 @@ Read-only.
                   [(Any) <Object>]: This indicates any property can be added to this object.
                 [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
                   [(Any) <Object>]: This indicates any property can be added to this object.
+              [Goals <IMicrosoftGraphPlannerGoal[]>]: Collection of goals in the plan.
+Read-only.
+Nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [DisplayName <String>]: Required.
+The display name of the goal.
+                [FinishDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to finish.
+                [Notes <IMicrosoftGraphItemBody>]: itemBody
+                [PlanId <String>]: Required.
+The ID of the plan that contains the goal.
+                [Priority <Int32?>]: Optional.
+The relative priority of the goal.
+Valid values range from 0 to 10, inclusive.
+The default value is 5.
+                [StartDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to start.
+                [Status <String>]: plannerGoalStatus
+                [Tasks <IMicrosoftGraphPlannerTask[]>]: Read-only.
+Nullable.
+The tasks associated with the goal.
+This relationship doesn't support direct retrieval or $expand.
+To identify the goals associated with a task, read the goalIds property of the plannerTask resource.
+              [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: Collection of history items for entities in the plan.
+Read-only.
+Nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+                [EntityId <String>]: The ID of the entity that was changed.
+                [EntityType <String>]: historyEntityType
+                [EventType <String>]: historyEventType
+                [OccurredDateTime <DateTime?>]: The date and time when the change occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+                [PlanId <String>]: The ID of the plan that contains the changed entity.
               [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -22785,7 +24434,7 @@ For the list of possible values, see Microsoft 365 group behaviors and provision
 The possible value is Team.
 For more information, see Microsoft 365 group behaviors and provisioning options.
 Returned by default.
-Supports $filter (eq, not, startsWith.
+Supports $filter (eq, not, startsWith).
           [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.Returned by default.
 Supports $filter (eq, ne, not, in).
@@ -22818,7 +24467,7 @@ Read-only.
 Read-only.
               [AllMembers <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
 It includes both direct and indirect members of shared channels.
-              [CreatedDateTime <DateTime?>]: Read only.
+              [CreatedDateTime <DateTime?>]: Read-only.
 Timestamp at which the channel was created.
               [Description <String>]: Optional textual description for the channel.
               [DisplayName <String>]: Channel name as it appears to the user in Microsoft Teams.
@@ -22833,6 +24482,7 @@ Read-only.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
 The default value is false.
+              [JoinedUsers <IMicrosoftGraphConversationMember[]>]: 
               [LayoutType <String>]: channelLayoutType
               [Members <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
               [MembershipType <String>]: channelMembershipType
@@ -22894,7 +24544,7 @@ This is an optional property, only used during team creation and isn't returned 
               [AllowGiphy <Boolean?>]: If set to true, enables Giphy use.
               [AllowStickersAndMemes <Boolean?>]: If set to true, enables users to include stickers and memes.
               [GiphyContentRating <String>]: giphyRatingType
-            [Group <IMicrosoftGraphGroup>]: Represents a Microsoft Entra group.
+            [Group <IMicrosoftGraphGroup>]: group
             [GuestSettings <IMicrosoftGraphTeamGuestSettings>]: teamGuestSettings
               [(Any) <Object>]: This indicates any property can be added to this object.
               [AllowCreateUpdateChannels <Boolean?>]: If set to true, guests can add and update channels.
@@ -23159,7 +24809,8 @@ Read-only.
                 [StartDateTime <DateTime?>]: The date and time the time off starts in ISO 8601 format and in UTC time.
                 [TimeOffReasonId <String>]: The reason for the time off.
               [TimeOffRequestsEnabled <Boolean?>]: Indicates whether time off requests are enabled for the schedule.
-              [TimeZone <String>]: Indicates the time zone of the schedule team using tz database format.
+              [TimeZone <String>]: The time zone of the schedule team as an IANA time zone database (tz database) name; for example, America/Chicago.
+For the full list of valid values, see List of tz database time zones.
 Required.
               [TimesOff <IMicrosoftGraphTimeOff[]>]: The instances of times off in the schedule.
                 [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -23240,12 +24891,12 @@ Immutable.
 Read-only.
           [UnseenConversationsCount <Int32?>]: Count of conversations delivered one or more new posts since the signed-in user's last visit to the group.
 This property is the same as unseenCount.
-Returned only on $select.
+Requires $select to retrieve.
           [UnseenCount <Int32?>]: Count of conversations that have received new posts since the signed-in user last visited the group.
-This property is the same as unseenConversationsCount.Returned only on $select.
+This property is the same as unseenConversationsCount.Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [UnseenMessagesCount <Int32?>]: Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group.
-Returned only on $select.
+Requires $select to retrieve.
           [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
 The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
@@ -23256,7 +24907,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-          [WelcomeMessageEnabled <Boolean?>]: 
+          [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Requires $select to retrieve.
+Supported only on the Get group API (GET /groups/{ID}).
           [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -23273,16 +24927,16 @@ Nullable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
         [LegalAgeGroupClassification <String>]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
 Allowed values: null, Undefined, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
-Returned only on $select.
+Requires $select to retrieve.
         [LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]: State of license assignments for this user.
 It also indicates licenses that are directly assigned and the ones the user inherited through group memberships.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
           [AssignedByGroup <String>]: Indicates whether the license is directly-assigned or inherited from a group.
 If directly-assigned, this field is null; if inherited through a group membership, this field contains the ID of the group.
 Read-Only.
@@ -23408,7 +25062,7 @@ To verify the existence of inline attachments, parse the body property to look f
             [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
               [Name <String>]: Represents the key in a key-value pair.
               [Value <String>]: The value in a key-value pair.
@@ -23957,6 +25611,8 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [AntiMalwareVersion <String>]: Current anti malware version
+            [ControlledConfigurationEnabled <Boolean?>]: When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
             [DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]: Device malware list
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -24049,8 +25705,9 @@ Read-only.
         [MobilePhone <String>]: The primary cellular telephone number for the user.
 Read-only for users synced from the on-premises directory.
  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [MySite <String>]: The URL for the user's site.
-Returned only on $select.
+Requires $select to retrieve.
         [Notifications <IMicrosoftGraphNotification[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -24090,6 +25747,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's userPrincipalName (UPN) property.
 Note: The $ and _ characters can't be used when specifying this property.
 Supports $filter (eq, ne, not, ge, le, in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -24145,6 +25803,10 @@ Read-only.
                 [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
                 [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
               [EmailAddress <String>]: Email address of the user associated with this attendance record.
+              [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+                [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+                [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+                [EngagementType <String>]: meetingEngagementType
               [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -24193,6 +25855,13 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+          [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+            [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+            [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
           [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -24219,6 +25888,7 @@ Optional.
           [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
           [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+          [MeetingType <String>]: onlineMeetingType
           [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
           [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -24339,6 +26009,7 @@ Read-only.
         [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Outlook <IMicrosoftGraphOutlookUser>]: outlookUser
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -24447,7 +26118,7 @@ It can be updated, but the user will be required to change the password on the n
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
         [PastProjects <String[]>]: A list for users to enumerate their past projects.
-Returned only on $select.
+Requires $select to retrieve.
         [PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]: Navigation property to get a list of access reviews pending approval by the reviewer.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -24488,6 +26159,11 @@ Read-only.
             [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+            [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
             [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
               [Id <String>]: The unique identifier for an entity.
@@ -24521,7 +26197,7 @@ Read-only.
               [DisplayName <String>]: Display name of the resource
               [Id <String>]: Resource ID
               [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
             [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -24675,6 +26351,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+          [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
           [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -24807,7 +26487,7 @@ Example: 'en-US', or 'es-ES'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         [PreferredName <String>]: The preferred name for the user.
 Not Supported.
-This attribute returns an empty string.Returned only on $select.
+This attribute returns an empty string.Requires $select to retrieve.
         [Presence <IMicrosoftGraphPresence>]: presence
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -25263,15 +26943,14 @@ Read-only.
               [WebUrl <String>]: Link to the institution or department homepage.
             [Program <IMicrosoftGraphEducationalActivityDetail>]: educationalActivityDetail
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+              [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
               [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
               [Awards <String[]>]: Any awards or honors associated with the program.
               [Description <String>]: Short description of the program provided by the user.
               [DisplayName <String>]: Long-form name of the program that the user provided.
-              [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-              [Grade <String>]: The final grade, class, GPA, or score.
-              [Notes <String>]: More notes the user provided.
+              [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+              [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+              [Notes <String>]: More notes provided by the user.
               [WebUrl <String>]: Link to the degree or program page.
             [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
           [Emails <IMicrosoftGraphItemEmail[]>]: Represents detailed information about email addresses associated with the user.
@@ -25574,9 +27253,9 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
         [Responsibilities <String[]>]: A list for the user to enumerate their responsibilities.
-Returned only on $select.
+Requires $select to retrieve.
         [Schools <String[]>]: A list for the user to enumerate the schools they have attended.
-Returned only on $select.
+Requires $select to retrieve.
         [ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]: The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
@@ -25640,7 +27319,7 @@ Users can control this setting in Office Delve.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [InPlaceArchiveMailboxId <String>]: 
+            [InPlaceArchiveMailboxId <String>]: The unique identifier for the user's In-Place Archive mailbox.
             [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
           [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -25680,7 +27359,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
           [ShiftPreferences <IMicrosoftGraphShiftPreferences>]: shiftPreferences
             [(Any) <Object>]: This indicates any property can be added to this object.
             [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -25702,6 +27381,14 @@ Read-only.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [Deleted <Int64?>]: 
+              [FamilyMembersUsage <IMicrosoftGraphFamilyMemberStorageQuota[]>]: 
+                [AdditionalAllocations <IMicrosoftGraphAdditionalStorageAllocations>]: additionalStorageAllocations
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BonusQuotaInBytes <Int64?>]: 
+                  [SubscriptionQuotaInBytes <Int64?>]: 
+                [Used <Int64?>]: 
+                [User <IMicrosoftGraphIdentity>]: identity
+              [IsPooledStorageEnabled <Boolean?>]: 
               [ManageWebUrl <String>]: A URL that can be used in a browser to manage the breakdown.
 Read-only.
               [Remaining <Int64?>]: Total space remaining before reaching the quota limit in bytes.
@@ -25790,7 +27477,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Use revokeSignInSessions to reset.
         [Skills <String[]>]: A list for the user to enumerate their skills.
-Returned only on $select.
+Requires $select to retrieve.
         [Solutions <IMicrosoftGraphUserSolutionRoot>]: userSolutionRoot
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -25799,6 +27486,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
         [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -25837,6 +27529,48 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
 The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+          [Sections <IMicrosoftGraphTeamworkSection[]>]: The sections in the user's chat list.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: Date and time when the section was created.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [DisplayIcon <IMicrosoftGraphSectionDisplayIcon>]: sectionDisplayIcon
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ContentUrl <String>]: The URL to a custom icon image.
+Applicable when iconType is custom.
+              [DisplayName <String>]: The human-readable name of the icon.
+              [IconType <String>]: The type of icon.
+Use an emoji character such as 👍 for an emoji icon, or custom for a custom image icon.
+              [SkinTone <String>]: sectionIconSkinTone
+            [DisplayName <String>]: The display name of the section.
+Required.
+Maximum length is 50 characters.
+Display names are case-sensitive and must be unique within a user's sections.
+The following names are reserved for system-defined sections and can't be used when creating a user-defined section: RecentChats, QuickViews, TeamsAndChannels, MutedChats, MeetingChats, EngageCommunities.
+            [IsExpanded <Boolean?>]: Indicates whether the section is expanded in the user interface.
+The default value is true.
+            [IsHierarchicalViewEnabled <Boolean?>]: Indicates whether the hierarchical view is enabled for the section.
+Read-only.
+            [Items <IMicrosoftGraphTeamworkSectionItem[]>]: The items (chats, channels, meetings, or communities) organized within the section.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [CreatedDateTime <DateTime?>]: Date and time when the item was added to the section.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+              [ItemType <String>]: sectionItemType
+              [LastModifiedDateTime <DateTime?>]: Date and time when the item was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [LastModifiedDateTime <DateTime?>]: Date and time when the section was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [SectionType <String>]: sectionType
+            [SortType <String>]: sectionSortType
         [Todo <IMicrosoftGraphTodo>]: todo
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -25849,6 +27583,12 @@ Read-only.
 Nullable.
             [IsOwner <Boolean?>]: True if the user is owner of the given task list.
             [IsShared <Boolean?>]: True if the task list is shared with other users
+            [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Value <String>]: The value of the property.
             [Tasks <IMicrosoftGraphTodoTask[]>]: The tasks in this task list.
 Read-only.
 Nullable.
@@ -25912,9 +27652,6 @@ Read-only.
               [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
               [ReminderDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
               [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: A collection of custom fields linked to the task.
-                [Id <String>]: The unique identifier for an entity.
-Read-only.
-                [Value <String>]: The value of the property.
               [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
               [Status <String>]: taskStatus
               [Title <String>]: A brief description of the task.
@@ -25939,6 +27676,7 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
  
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [UserType <String>]: A String value that can be used to classify user types in your directory.
 The possible values are Member and Guest.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -25966,6 +27704,8 @@ Read-only.
             [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
             [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers; otherwise, null.
+            [IsRegistrationEnabled <Boolean?>]: 
+            [IsRegistrationRequired <Boolean?>]: Indicates whether attendee registration is enabled for the virtual event.
             [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: The virtual event presenters.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -26003,6 +27743,7 @@ Read-only.
                 [AudioConferencing <IMicrosoftGraphAudioConferencing>]: audioConferencing
                 [ChatInfo <IMicrosoftGraphChatInfo>]: chatInfo
                 [ChatRestrictions <IMicrosoftGraphChatRestrictions>]: chatRestrictions
+                [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
                 [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -26016,6 +27757,7 @@ Read-only.
                 [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
                 [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+                [MeetingType <String>]: onlineMeetingType
                 [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
                 [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
                 [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
@@ -26025,6 +27767,7 @@ Read-only.
                 [WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]: watermarkProtectionValues
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
+                [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
                 [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
                 [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: 
                 [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: 
@@ -26078,6 +27821,8 @@ For example, in the access reviews decisions API, this property might record the
             [RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]: virtualEventWebinarRegistrationConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Capacity <Int32?>]: Total capacity of the virtual event.
+              [IsManualApprovalEnabled <Boolean?>]: Indicates whether registrations require organizer approval before a participant is confirmed.
+              [IsWaitlistEnabled <Boolean?>]: Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
               [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -26087,8 +27832,6 @@ The default value is false.
               [RegistrationWebUrl <String>]: Registration URL of the virtual event.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [IsManualApprovalEnabled <Boolean?>]: 
-              [IsWaitlistEnabled <Boolean?>]: 
             [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: Registration records of the webinar.
         [WindowsInformationProtectionDeviceRegistrations <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]>]: Zero or more WIP device registrations that belong to the user.
           [Id <String>]: The unique identifier for an entity.
@@ -26159,6 +27902,7 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 Nullable.
       [File <IMicrosoftGraphFile>]: file
         [(Any) <Object>]: This indicates any property can be added to this object.
+        [ArchiveStatus <String>]: fileArchiveStatus
         [Hashes <IMicrosoftGraphHashes>]: hashes
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Crc32Hash <String>]: The CRC32 value of the file (if available).
@@ -26198,6 +27942,15 @@ Width of the image, in pixels.
 Read-only.
       [ListItem <IMicrosoftGraphListItem>]: listItem
       [Location <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
+      [LockInfo <IMicrosoftGraphLockInfo>]: lockInfo
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [CreatedDateTime <DateTime?>]: The date and time when the lock was created, in UTC.
+Read-only.
+        [ExpirationDateTime <DateTime?>]: The date and time when the lock expires, in UTC.
+Read-only.
+        [LockType <String>]: lockType
+        [Owners <IMicrosoftGraphUserIdentity[]>]: The collection of users that currently hold the lock on the file.
+Read-only.
       [Malware <IMicrosoftGraphMalware>]: malware
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Description <String>]: Contains the virus details for the malware facet.
@@ -26890,10 +28643,11 @@ Always null when the object hasn't been deleted.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [AboutMe <String>]: A freeform text entry field for users to describe themselves.
-Returned only on $select.
+Requires $select to retrieve.
         [AccountEnabled <Boolean?>]: true if the account is enabled; otherwise, false.
 This property is required when creating the object.
 Supports $filter (eq, ne, not, and in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Activities <IMicrosoftGraphUserActivity[]>]: The user's activities across devices.
 Read-only.
 Nullable.
@@ -27174,22 +28928,23 @@ Always null when the object hasn't been deleted.
             [IsEnabled <Boolean?>]: Denotes whether the policy is enabled.
             [Restrictions <IMicrosoftGraphCustomAppManagementConfiguration>]: customAppManagementConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: 
+              [KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]: Collection of certificate restrictions settings to be applied to an application or service principal.
                 [CertificateBasedApplicationConfigurationIds <String[]>]: Collection of GUIDs that represent certificateBasedApplicationConfiguration that is allowed as root and intermediate certificate authorities.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                   [(Any) <Object>]: This indicates any property can be added to this object.
-                  [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: 
+                  [CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeExemption[]>]: The collection of customSecurityAttributeExemption to exempt from the policy enforcement.
+Limit of 5.
                     [Id <String>]: The unique identifier for an entity.
 Read-only.
                     [Operator <String>]: customSecurityAttributeComparisonOperator
                 [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for key expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
-This property is required when restrictionType is set to keyLifetime.
+This property is required when restrictionType is set to asymmetricKeyLifetime.
                 [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                 [RestrictionType <String>]: appKeyCredentialRestrictionType
                 [State <String>]: appManagementRestrictionState
-              [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: 
+              [PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]: Collection of password restrictions settings to be applied to an application or service principal.
                 [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
                 [MaxLifetime <TimeSpan?>]: String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration.
 For example, P4DT12H30M5S represents four days, 12 hours, 30 minutes, and five seconds.
@@ -27219,12 +28974,93 @@ For existing applications, the enforcement date can be retroactively applied.
                   [NonDefaultUriAddition <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
-                    [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction isn't enforced for those applications.
+                    [ExcludeAppsReceivingV2Tokens <Boolean?>]: If true, the restriction isn't enforced for applications that are configured to receive V2 tokens in Microsoft Entra ID; else, the restriction is enforced for those applications.
                     [ExcludeSaml <Boolean?>]: If true, the restriction isn't enforced for SAML applications in Microsoft Entra ID; else, the restriction is enforced for those applications.
                     [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Specifies the date from which the policy restriction applies to newly created applications.
 For existing applications, the enforcement date can be retroactively applied.
                     [State <String>]: appManagementRestrictionState
                   [UriAdditionWithoutUniqueTenantIdentifier <IMicrosoftGraphIdentifierUriRestriction>]: identifierUriRestriction
+                [RedirectUris <IMicrosoftGraphRedirectUriConfiguration>]: redirectUriConfiguration
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [UriWithBlockedDomain <IMicrosoftGraphRedirectUriBlockedDomainConfiguration>]: redirectUriBlockedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedDomains <String[]>]: Collection of domain names that are blocked globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedDomains <String[]>]: Collection of domain names that are blocked for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedDomainConfiguration>]: redirectUriPlatformBlockedDomainConfiguration
+                  [UriWithBlockedScheme <IMicrosoftGraphRedirectUriBlockedSchemeConfiguration>]: redirectUriBlockedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [BlockedSchemes <String[]>]: Collection of URI schemes that are blocked for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+                      [ExemptFormats <String[]>]: Collection of URI patterns that are exempt from the blocked scheme restrictions for this platform.
+Patterns must follow specific validation rules for standard URI formats or URN formats.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformBlockedSchemeConfiguration>]: redirectUriPlatformBlockedSchemeConfiguration
+                  [UriWithWildcard <IMicrosoftGraphRedirectUriWildcardConfiguration>]: redirectUriWildcardConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [ExcludeFormats <IMicrosoftGraphRedirectUriWildcardExcludeFormats>]: redirectUriWildcardExcludeFormats
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [ExcludeWildcardsInPath <Boolean?>]: When true, blocks the use of wildcards in the path portion of redirect URIs.
+When false, allows wildcards in paths.
+                      [ExcludeWildcardsInPathWithDomains <String[]>]: Collection of domain names where wildcards in the path portion of redirect URIs are blocked.
+Accepts only valid host names (no wildcards) as defined in RFC 3986 §3.2.2.
+For example, login.microsoft.com or contoso.com.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [State <String>]: appManagementRestrictionState
+                  [UriWithoutAllowedDomain <IMicrosoftGraphRedirectUriAllowedDomainConfiguration>]: redirectUriAllowedDomainConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedDomains <String[]>]: Collection of domain names that are allowed globally across all platforms.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedDomains <String[]>]: Collection of domain names that are allowed for this specific platform.
+Domain validation follows RFC 3986 (URI syntax, section 3.2.2 for the host component).
+Domain matching is case-insensitive and exact; wildcards are not supported.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedDomainConfiguration>]: redirectUriPlatformAllowedDomainConfiguration
+                  [UriWithoutAllowedScheme <IMicrosoftGraphRedirectUriAllowedSchemeConfiguration>]: redirectUriAllowedSchemeConfiguration
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed globally across all platforms.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme.
+                    [ExcludeActors <IMicrosoftGraphAppManagementPolicyActorExemptions>]: appManagementPolicyActorExemptions
+                    [PublicClient <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                      [(Any) <Object>]: This indicates any property can be added to this object.
+                      [AllowedSchemes <String[]>]: Collection of URI schemes that are allowed for this specific platform.
+Schemes refer to URI schemes as defined in RFC 3986 §3.1.
+The value '*' can be used to allow any scheme for this platform.
+                    [RestrictForAppsCreatedAfterDateTime <DateTime?>]: Date and time when this restriction starts applying to newly created applications.
+Applications created before this date are not affected.
+                    [Spa <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
+                    [State <String>]: appManagementRestrictionState
+                    [Web <IMicrosoftGraphRedirectUriPlatformAllowedSchemeConfiguration>]: redirectUriPlatformAllowedSchemeConfiguration
           [AppOwnerOrganizationId <String>]: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
@@ -27334,7 +29170,7 @@ Optional.
             [IncludeBasicClaimSet <Boolean?>]: Determines whether the basic claim set is included in tokens affected by this policy.
 If set to true, all claims in the basic claim set are emitted in tokens affected by the policy.
 By default the basic claim set isn't in the tokens unless they're explicitly configured in this policy.
-          [CreatedByAppId <String>]: The appId (called Application (client) ID on the Microsoft Entra admin center) of the application used to create the service principal.
+          [CreatedByAppId <String>]: The appId of the application that created this service principal.
 Set internally by Microsoft Entra ID.
 Read-only.
           [CreatedObjects <IMicrosoftGraphDirectoryObject[]>]: Directory objects created by this service principal.
@@ -27466,7 +29302,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Key <Byte[]>]: Value for the key credential.
 Should be a Base64 encoded value.
-Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it's always null.
+Requires $select to retrieve; only available for single object requests (GET /applications/{applicationId}?$select=keyCredentials or GET /servicePrincipals/{servicePrincipalId}?$select=keyCredentials); otherwise, it's always null.
  From a .cer certificate, you can read the key using the Convert.ToBase64String() method.
 For more information, see Get the certificate key.
             [KeyId <String>]: The unique identifier for the key.
@@ -27566,7 +29402,7 @@ Optional.
             [Fields <IMicrosoftGraphPasswordSingleSignOnField[]>]: The fields to capture to fill the user credentials for password-based single sign-on.
               [CustomizedLabel <String>]: Title/label override for customization.
               [DefaultLabel <String>]: Label that would be used if no customizedLabel is provided.
-Read only.
+Read-only.
               [FieldId <String>]: Id used to identity the field type.
 This is an internal ID and possible values are param1, param2, paramuserName, parampassword.
               [Type <String>]: Type of the credential.
@@ -27625,13 +29461,13 @@ May not begin with ..
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: 
+            [ApprovedClientApps <IMicrosoftGraphApprovedClientApp[]>]: The collection of approved client apps that are associated with the RDS configuration.
+Supports $expand.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [DisplayName <String>]: 
+              [DisplayName <String>]: Display name for the client application.
             [IsRemoteDesktopProtocolEnabled <Boolean?>]: Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.
             [TargetDeviceGroups <IMicrosoftGraphTargetDeviceGroup[]>]: The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
-<br/<Supports $expand.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [DisplayName <String>]: Display name for the target device group.
@@ -27994,7 +29830,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [EmailAddress <String>]: The email address registered to this user.
-          [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external methods registered to a user for authentication.
+          [ExternalAuthenticationMethods <IMicrosoftGraphExternalAuthenticationMethod[]>]: Represents the external MFA registered to a user for authentication.
             [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
 Optional.
@@ -28010,7 +29846,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [ConfigurationId <String>]: A unique identifier used to manage the external auth method within Microsoft Entra ID.
-            [DisplayName <String>]: Custom name given to the registered external authentication method.
+            [DisplayName <String>]: Custom name given to the registered external MFA.
           [Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]: Represents the FIDO2 security keys registered to a user for authentication.
             [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
 Read-only.
@@ -28263,7 +30099,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
               [OnPremisesSecurityIdentifier <String>]: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
               [OnPremisesSyncEnabled <Boolean?>]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
@@ -28449,6 +30285,23 @@ is 395 days (13 months) and default value is 365 days (12 months).
           [Requirements <IMicrosoftGraphStrongAuthenticationRequirements>]: strongAuthenticationRequirements
             [(Any) <Object>]: This indicates any property can be added to this object.
             [PerUserMfaState <String>]: perUserMfaState
+          [ResourceAccountKeyAuthenticationMethods <IMicrosoftGraphResourceAccountKeyAuthenticationMethod[]>]: Represents the resource account key credentials registered to a user for authentication on shared devices.
+            [CreatedDateTime <DateTime?>]: The date and time the authentication method was registered to the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [LastUsedDateTime <DateTime?>]: The date and time the authentication method was last used by the user.
+Read-only.
+Optional.
+This optional value is null if the authentication method doesn't populate it.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Device <IMicrosoftGraphDevice>]: device
+            [DisplayName <String>]: The display name of the resource account key credential as shown in the Teams Room interface.
           [SignInPreferences <IMicrosoftGraphSignInPreferences>]: signInPreferences
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsSystemPreferredAuthenticationMethodEnabled <Boolean?>]: Indicates whether the credential preferences of the system are enabled.
@@ -28516,11 +30369,12 @@ Read-only.
 The identifiers must be unique in the tenant.
         [Birthday <DateTime?>]: The birthday of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Requires $select to retrieve.
         [BusinessPhones <String[]>]: The telephone numbers for the user.
 Only one number can be set for this property.
 Read-only for users synced from on-premises directory.
 Supports $filter (eq, not, ge, le, startsWith).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Calendar <IMicrosoftGraphCalendar>]: calendar
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -28907,7 +30761,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Content <String>]: The content of the chat message.
+              [ContentType <String>]: bodyType
+              [MessageBodyContentType <String>]: chatMessageBodyContentType
             [CreatedDateTime <DateTime?>]: Date time object representing the time at which message was created.
             [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -28956,19 +30814,40 @@ The property is used to attribute a Teams message card to the specified app.
 For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document.
 The channel could display the thumbnail image instead of the document.
 When the user selects the image, the channel would open the document.
-            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
             [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ChannelId <String>]: The identity of the channel in which the message was posted.
               [TeamId <String>]: The identity of the team in which the message was posted.
             [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+            [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+              [Excerpt <String>]: Read-only.
+Text snippet from the cited source.
+              [IconType <String>]: Read-only.
+Icon type identifier for the cited source, for example, ExcelIcon or WordIcon.
+              [Id <Int32?>]: Read-only.
+Citation identifier that's unique within the message.
+The message body references this identifier inline, for example, [1].
+              [SensitivityLabel <IMicrosoftGraphChatMessageCitationSensitivityLabel>]: chatMessageCitationSensitivityLabel
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Description <String>]: Read-only.
+User-facing description of the sensitivity restriction.
+                [DisplayName <String>]: Read-only.
+Display name of the sensitivity label.
+              [Title <String>]: Read-only.
+Display title of the cited source.
+              [WebUrl <String>]: Read-only.
+URL to the cited source.
             [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-            [DeletedDateTime <DateTime?>]: Read only.
+            [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
             [Etag <String>]: Read-only.
 Version number of the chat message.
             [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
             [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [HasReplies <Boolean?>]: 
             [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
               [ContentBytes <Byte[]>]: Write only.
 Bytes for the hosted content (such as images).
@@ -28977,11 +30856,11 @@ Content type, such as image/png, image/jpg.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
             [Importance <String>]: chatMessageImportance
-            [LastEditedDateTime <DateTime?>]: Read only.
+            [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-            [LastModifiedDateTime <DateTime?>]: Read only.
+            [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
@@ -29125,7 +31004,56 @@ Required.
 This value can't be changed after tab creation.
 Because this property is deprecated, we recommend expanding teamsApp to retrieve the application that is linked to the tab.
             [WebUrl <String>]: Deep link URL of the tab instance.
-Read only.
+Read-only.
+          [TargetedMessages <IMicrosoftGraphTargetedChatMessage[]>]: A collection of targeted messages in the chat that are visible only to specific users.
+Nullable.
+You can't expand this relationship using $expand.
+Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
+            [Attachments <IMicrosoftGraphChatMessageAttachment[]>]: References to attached objects like files, tabs, meetings etc.
+            [Body <IMicrosoftGraphChatMessageBody>]: chatMessageBody
+            [ChannelIdentity <IMicrosoftGraphChannelIdentity>]: channelIdentity
+            [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
+            [Citations <IMicrosoftGraphChatMessageCitation[]>]: Read-only.
+Inline citations that reference external sources cited in the message.
+Citations are system-generated for bot messages and appear as a typed collection.
+            [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
+            [DeletedDateTime <DateTime?>]: Read-only.
+Timestamp at which the chat message was deleted, or null if not deleted.
+            [Etag <String>]: Read-only.
+Version number of the chat message.
+            [EventDetail <IMicrosoftGraphEventMessageDetail>]: eventMessageDetail
+            [From <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [HasReplies <Boolean?>]: 
+            [HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+            [Importance <String>]: chatMessageImportance
+            [LastEditedDateTime <DateTime?>]: Read-only.
+Timestamp when edits to the chat message were made.
+Triggers an 'Edited' flag in the Teams UI.
+If no edits are made the value is null.
+            [LastModifiedDateTime <DateTime?>]: Read-only.
+Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
+            [Locale <String>]: Locale of the chat message set by the client.
+Always set to en-us.
+            [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
+Supported entities are: user, bot, team, channel, chat, and tag.
+            [MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
+            [MessageType <String>]: chatMessageType
+            [OnBehalfOf <IMicrosoftGraphChatMessageFromIdentitySet>]: chatMessageFromIdentitySet
+            [PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]: chatMessagePolicyViolation
+            [Reactions <IMicrosoftGraphChatMessageReaction[]>]: Reactions for this chat message (for example, Like).
+            [Replies <IMicrosoftGraphChatMessage[]>]: Replies for a specified message.
+Supports $expand for channel messages.
+            [ReplyToId <String>]: Read-only.
+ID of the parent chat message or root chat message of the thread.
+(Only applies to chat messages in channels, not chats.)
+            [Subject <String>]: The subject of the chat message, in plaintext.
+            [Summary <String>]: Summary text of the chat message that could be used for push notifications and summary views or fall back views.
+Only applies to channel chat messages, not chat messages in a chat.
+            [WebUrl <String>]: Read-only.
+Link to the message in Microsoft Teams.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Recipient <IMicrosoftGraphIdentity>]: identity
           [TenantId <String>]: The identifier of the tenant in which the chat was created.
 Read-only.
           [Topic <String>]: (Optional) Subject or topic for the chat.
@@ -29161,21 +31089,80 @@ Each one represents the same information in a different clipboard format.
               [FormatName <String>]: For a list of possible values see formatName values.
         [CloudLicensing <IMicrosoftGraphCloudLicensingUserCloudLicensing>]: userCloudLicensing
           [(Any) <Object>]: This indicates any property can be added to this object.
-          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [AssignmentErrors <IMicrosoftGraphCloudLicensingAssignmentError[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
-Not nullable.
-Read-only.
-Supports $filter on the planId property.
-              [AssignableTo <String>]: assigneeTypes
-              [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
-              [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+            [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+            [Code <String>]: The error code associated with the assignment synchronization failure.
+            [Message <String>]: The error message associated with the assignment synchronization failure.
+            [OccurrenceDateTime <DateTime?>]: The date and time at which the error most recently occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
 Read-only.
 Supports $filter.
-            [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+            [UsageRight <IMicrosoftGraphCloudLicensingUsageRight>]: usageRight
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Id <String>]: The unique identifier for an entity.
 Read-only.
+              [Allotments <IMicrosoftGraphCloudLicensingAllotment[]>]: The set of allotments associated with the assignments that combine to form this usageRight.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [AllottedUnits <Int32?>]: The number of licenses contained within the allotment.
+Not nullable.
+Read-only.
+                [AssignableTo <String>]: assigneeTypes
+                [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The list of license assignments that consume licenses from this allotment.
+Not nullable.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [DisabledServicePlanIds <String[]>]: The list of disabled service plans for this assignment.
+Not nullable.
+                [ConsumedUnits <Int32?>]: The number of licenses that are currently consumed by assignments from this allotment.
+Not nullable.
+Read-only.
+                [ExternalServiceIdentifier <String>]: 
+                [Services <IMicrosoftGraphCloudLicensingService[]>]: The list of services that might be enabled or disabled for assignments from this allotment.
+Not nullable.
+Read-only.
+                  [AssignableTo <String>]: assigneeTypes
+                  [PlanId <String>]: The unique identifier of the service plan that is equal to the servicePlanId property on the related servicePlanInfo objects.
+                  [PlanName <String>]: The name of the service plan that is equal to the servicePlanName property on the related servicePlanInfo objects.
+                [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+                [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+                [Subscriptions <IMicrosoftGraphCloudLicensingSubscription[]>]: Basic information about the subscriptions that supports this allotment.
+                  [NextLifecycleDate <DateTime?>]: The date on which the current state transitions to the next state.
+                  [StartDate <DateTime?>]: The date when the subscription started.
+                  [State <String>]: subscriptionState
+                  [SubscriptionId <String>]: Identifier for the subscription object.
+                  [Tags <String>]: subscriptionTags
+                [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: List of over-assigned users who are in the waiting room for an allotment due to license capacity limits.
+                  [Id <String>]: The unique identifier for an entity.
+Read-only.
+                  [Allotment <IMicrosoftGraphCloudLicensingAllotment>]: allotment
+                  [AssignedTo <IMicrosoftGraphDirectoryObject>]: directoryObject
+                  [WaitingSinceDateTime <DateTime?>]: Indicates the moment when the user or device first waited for this license.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: The set of assignments that combine to form this usageRight, including both direct assignments and assignments inherited through group membership.
+              [ExternalServiceIdentifier <String>]: 
+              [Services <IMicrosoftGraphCloudLicensingService[]>]: Information about the services associated with the usageRight.
+Not nullable.
+Read-only.
+Supports $filter on the planId property.
+              [SkuId <String>]: Unique identifier (GUID) for the service SKU that is equal to the skuId property on the related subscribedSku object.
+Read-only.
+Supports $filter.
+              [SkuPartNumber <String>]: Unique SKU display name that is equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
+          [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
+          [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
+          [WaitingMembers <IMicrosoftGraphCloudLicensingWaitingMember[]>]: 
         [CloudPCs <IMicrosoftGraphCloudPc[]>]: The user's Cloud PCs.
 Read-only.
 Nullable.
@@ -29234,12 +31221,21 @@ Read-only.
             [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
           [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
+          [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
           [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Time <DateTime?>]: The time of the Cloud PC sign in action.
 The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC).
 For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
 Read-only.
+          [LastLogoffDateTime <DateTime?>]: The date and time when the user last logged off from the Cloud PC session.
+Returns null if the user has never established a session or if a session is currently active.
+The timestamp is shown in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+Returned only when explicitly selected with $select.
           [LastModifiedDateTime <DateTime?>]: The last modified date and time of the Cloud PC.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -29291,10 +31287,15 @@ The default value is false.
           [ProvisionedDateTime <DateTime?>]: The latest provisioned date and time, automatically generated and assigned during the initial provisioning or any subsequent reprovisioning of the Cloud PC.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          [ProvisioningConfiguration <IMicrosoftGraphCloudPcProvisioningConfiguration>]: cloudPcProvisioningConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [DomainJoinType <String>]: cloudPcDomainJoinType
           [ProvisioningPolicyId <String>]: The provisioning policy ID of the Cloud PC.
           [ProvisioningPolicyName <String>]: The provisioning policy that is applied during the provisioning of Cloud PCs.
           [ProvisioningType <String>]: cloudPcProvisioningType
-          [ScopeIds <String[]>]: 
+          [ScopeIds <String[]>]: The scope IDs of the corresponding permission.
+Currently, it's the Intune scope tag ID.
+Read-only.
           [ServicePlanId <String>]: The service plan ID of the Cloud PC.
           [ServicePlanName <String>]: The service plan name of the Cloud PC.
           [ServicePlanType <String>]: cloudPcServicePlanType
@@ -29319,6 +31320,39 @@ Read-only.
 Read-only.
           [UserExperienceType <String>]: cloudPcUserExperienceType
           [UserPrincipalName <String>]: The user principal name (UPN) of the user assigned to the Cloud PC.
+        [CloudPcPools <IMicrosoftGraphCloudPcPool[]>]: The user's Cloud PC pools.
+Read-only.
+Nullable.
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Assignments <IMicrosoftGraphCloudPcPoolAssignment[]>]: The collection of assignments that grant user or service principal identities access to this pool.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [Capabilities <IMicrosoftGraphCloudPcPoolCapabilityConfiguration>]: cloudPcPoolCapabilityConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+          [CloudPcConfiguration <IMicrosoftGraphCloudPcConfiguration>]: cloudPcConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ImageDisplayName <String>]: The display name of the image.
+Read-only.
+            [ImageId <String>]: The unique identifier of the operating system image used for provisioning new Cloud PCs.
+The format for a gallery type image is: {publisherNameofferNameskuName}.
+            [ImageType <String>]: cloudPcProvisioningPolicyImageType
+            [OSLocale <String>]: The operating system locale for the Cloud PC.
+          [CreatedDateTime <DateTime?>]: The date and time when the pool was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+          [Description <String>]: The description of the pool.
+The maximum length is 512 characters.
+          [DisplayName <String>]: The display name of the pool.
+The name is unique across Cloud PC pools in an organization.
+The maximum length is 60 characters.
+          [LastModifiedDateTime <DateTime?>]: The date and time when the pool was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2026 is 2026-01-01T00:00:00Z.
+Read-only.
+          [NetworkConfiguration <IMicrosoftGraphCloudPcNetworkConfiguration>]: cloudPcNetworkConfiguration
+            [(Any) <Object>]: This indicates any property can be added to this object.
         [CloudRealtimeCommunicationInfo <IMicrosoftGraphCloudRealtimeCommunicationInfo>]: cloudRealtimeCommunicationInfo
           [(Any) <Object>]: This indicates any property can be added to this object.
           [IsSipEnabled <Boolean?>]: Indicates whether the user has a SIP-enabled client registered for them.
@@ -29524,12 +31558,15 @@ Read-only.
                 [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Activity <String>]: userActivityType
+                  [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+                    [Value <String>]: 
                 [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
-Use conversation metadata for content like prompts and responses and file metadata for files.
+Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
 Required.
                   [Content <IMicrosoftGraphContentBase>]: contentBase
                     [(Any) <Object>]: This indicates any property can be added to this object.
+                  [ContentCategory <String>]: contentCategory
                   [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
                   [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -29544,6 +31581,10 @@ For ephemeral content like messages, this might be the same as createdDateTime.
                   [Name <String>]: Required.
 A descriptive name for the content (for example, file name, web page title, 'Chat Message').
                   [SequenceNumber <Int64?>]: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+                [ContextMetadata <IMicrosoftGraphContextMetadata>]: contextMetadata
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [MetadataProperties <IMicrosoftGraphCustomMetadataDictionary>]: customMetadataDictionary
+                    [(Any) <Object>]: This indicates any property can be added to this object.
                 [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [DeviceType <String>]: Optional.
@@ -29553,6 +31594,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
                     [OperatingSystemVersion <String>]: The version string of the operating system.
+                [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [Type <String>]: evaluationScopeType
                 [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Name <String>]: The name of the integrated application.
@@ -29627,6 +31671,38 @@ This value is usually the combination of the user's first name, middle initial, 
 This property is required when a user is created, and it cannot be cleared during updates.
 Maximum length is 256 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderby, and $search.
+        [DistributionLists <IMicrosoftGraphDistributionList[]>]: The personal distribution lists in the user's mailbox.
+Read-only.
+Nullable.
+          [Categories <String[]>]: The categories associated with the item.
+          [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+          [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          [Id <String>]: The unique identifier for an entity.
+Read-only.
+          [DisplayName <String>]: The display name of the distribution list.
+          [Members <IMicrosoftGraphDistributionListMember[]>]: The members of the distribution list.
+Not returned by default; use $expand=members to include.
+Read-only.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Contact <IMicrosoftGraphContact>]: contact
+            [DisplayName <String>]: The display name of the member.
+Read-only.
+            [MemberId <String>]: A system generated unique identifier.
+Non-empty for contact, privateDL and mailbox members.
+ReadOnly.
+            [Type <String>]: recipientType
+          [Notes <String>]: Notes about the distribution list.
+          [PersonIdentifier <String>]: The unique identifier of the distribution list in the mailbox.
+Read-only.
+          [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the distribution list.
+Read-only.
         [Drive <IMicrosoftGraphDrive>]: drive
           [(Any) <Object>]: This indicates any property can be added to this object.
           [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -29794,6 +31870,17 @@ Read-only.
                   [Device <IMicrosoftGraphIdentity>]: identity
                   [User <IMicrosoftGraphIdentity>]: identity
                   [Group <IMicrosoftGraphIdentity>]: identity
+                  [SharePointGroup <IMicrosoftGraphSharePointGroupIdentity>]: sharePointGroupIdentity
+                    [(Any) <Object>]: This indicates any property can be added to this object.
+                    [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+                    [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+                    [PrincipalId <String>]: The principal ID of the SharePoint group in the tenant.
+Read-only.
+                    [Title <String>]: The title of the SharePoint group.
+Read-only.
                   [SiteGroup <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [DisplayName <String>]: The display name of the identity.
@@ -29927,11 +32014,13 @@ It must be either dateOnly or dateTime.
               [HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]: hyperlinkOrPictureColumn
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [IsPicture <Boolean?>]: Specifies whether the display format used for URL columns is an image or a hyperlink.
-              [Indexed <Boolean?>]: Specifies whether the column values can used for sorting and searching.
+              [Indexed <Boolean?>]: Specifies whether the column values can be used for sorting and searching.
               [IsDeletable <Boolean?>]: Indicates whether this column can be deleted.
               [IsReorderable <Boolean?>]: Indicates whether values in the column can be reordered.
 Read-only.
               [IsSealed <Boolean?>]: Specifies whether the column can be changed.
+              [IsSearchable <Boolean?>]: Specifies whether the column values can be used for searching.
+Currently supported only for columns in a fileStorageContainer.
               [Lookup <IMicrosoftGraphLookupColumn>]: lookupColumn
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [AllowMultipleValues <Boolean?>]: Indicates whether multiple values can be selected from the source.
@@ -30082,6 +32171,8 @@ Helps organize related content types.
 Only site collection administrators can seal or unseal content types.
             [DisplayName <String>]: The displayable title of the list.
             [Drive <IMicrosoftGraphDrive>]: drive
+            [ItemCount <Int32?>]: The total count of items in the list.
+Read-only.
             [Items <IMicrosoftGraphListItem[]>]: All items contained in the list.
             [List <IMicrosoftGraphListInfo>]: listInfo
               [(Any) <Object>]: This indicates any property can be added to this object.
@@ -30191,6 +32282,26 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
+              [VapidPublicKey <String>]: Optional.
+The application server's VAPID public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained by calling the getVapidPublicKey function on the subscription collection.
+The browser passes this value to PushManager.subscribe({ applicationServerKey }) to bind the push subscription to this server identity.
+Required when notificationUrl targets a known Web Push service origin (for example, *.push.apple.com, fcm.googleapis.com, updates.push.services.mozilla.com); rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8292.
+              [WebPushEncryptionP256DhPublicKey <String>]: Optional.
+The subscriber's ECDH public key, base64url-encoded (P-256 uncompressed point, 65 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('p256dh').
+Used as the peer public key during ECDH key agreement to derive the per-message content encryption key for RFC 8291 payload encryption.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
+              [WebPushEncryptionSecret <String>]: Optional.
+The subscriber's auth secret, base64url-encoded (16 bytes pre-encoding).
+Obtained from the browser via PushSubscription.getKey('auth').
+Used as the HMAC-SHA-256 salt for the HKDF combine step that derives key material for RFC 8291 payload encryption.
+Write-only: this value is never returned in GET responses (returned as null).
+Treat as a secret.
+Required when notificationUrl targets a known Web Push service origin; rejected with 400 Bad Request if supplied on a standard webhook subscription.
+For more information, see RFC 8291 Section 3.
             [System <IMicrosoftGraphSystemFacet>]: systemFacet
               [(Any) <Object>]: This indicates any property can be added to this object.
           [Owner <IMicrosoftGraphIdentitySet>]: identitySet
@@ -30211,6 +32322,10 @@ Read-only.
             [Used <Int64?>]: Total space used, in bytes.
 Read-only.
           [Root <IMicrosoftGraphDriveItem>]: driveItem
+          [Settings <IMicrosoftGraphDriveSettings>]: driveSettings
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [ItemDefaultSensitivityLabelId <String>]: The ID of the default sensitivity label for items in the drive.
+Read-only.
           [SharePointIds <IMicrosoftGraphSharepointIds>]: sharepointIds
           [Special <IMicrosoftGraphDriveItem[]>]: Collection of common folders available in OneDrive.
 Read-only.
@@ -30218,7 +32333,7 @@ Nullable.
           [System <IMicrosoftGraphSystemFacet>]: systemFacet
         [Drives <IMicrosoftGraphDrive[]>]: A collection of drives available for this user.
 Read-only.
-        [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: Represents a container that exposes navigation properties for employee experience user resources.
+        [EmployeeExperience <IMicrosoftGraphEmployeeExperienceUser>]: employeeExperienceUser
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -30245,6 +32360,24 @@ Required.
             [LearningProviderId <String>]: The registration ID of the provider.
 Required.
             [Status <String>]: courseStatus
+          [Storyline <IMicrosoftGraphStoryline>]: User's storyline singleton container.
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Followers <IMicrosoftGraphStorylineFollower[]>]: The users who are following this user.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Follower <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Application <IMicrosoftGraphIdentity>]: identity
+                [Device <IMicrosoftGraphIdentity>]: identity
+                [User <IMicrosoftGraphIdentity>]: identity
+                [Audience <IMicrosoftGraphIdentity>]: identity
+                [Group <IMicrosoftGraphIdentity>]: identity
+            [Followings <IMicrosoftGraphStorylineFollowing[]>]: The users that this user is following.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Following <IMicrosoftGraphEngagementIdentitySet>]: The Viva Engage identities.
         [EmployeeHireDate <DateTime?>]: The date and time when the user was hired or will start work if there is a future hire.
 Supports $filter (eq, ne, not , ge, le, in).
         [EmployeeId <String>]: The employee identifier assigned to the user by the organization.
@@ -30259,10 +32392,10 @@ For more information, see Configure the employeeLeaveDateTime property for a use
         [EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]: employeeOrgData
           [(Any) <Object>]: This indicates any property can be added to this object.
           [CostCenter <String>]: The cost center associated with the user.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
           [Division <String>]: The name of the division in which the user works.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter.
         [EmployeeType <String>]: Captures enterprise worker type.
 For example, Employee, Contractor, Consultant, or Vendor.
@@ -30736,7 +32869,9 @@ Read-write.
               [(Any) <Object>]: This indicates any property can be added to this object.
               [ArchiveStatus <String>]: siteArchiveStatus
               [ArchivedBy <IMicrosoftGraphIdentitySet>]: identitySet
-              [ArchivedDateTime <DateTime?>]: 
+              [ArchivedDateTime <DateTime?>]: Time when the container was archived.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             [DataLocationCode <String>]: The geographic region code for where this site collection resides.
 Only present for multi-geo tenants.
 Read-only.
@@ -30759,7 +32894,7 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         [HireDate <DateTime?>]: The hire date of the user.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
- Returned only on $select.
+ Requires $select to retrieve.
  Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
         [Identities <IMicrosoftGraphObjectIdentity[]>]: Represents the identities that can be used to sign in to this user account.
@@ -30782,6 +32917,27 @@ The validations performed on the userPrincipalName property on the user object, 
 Extra validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName.
 This property can also be set to any custom string.
  For more information about filtering behavior for this property, see Filtering on the identities property of a user.
+        [IdentityGovernance <IMicrosoftGraphIdentityGovernanceUserSettings>]: identityGovernanceUserSettings
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [ApproverDelegate <IMicrosoftGraphApproverDelegate>]: approverDelegate
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [Delegate <IMicrosoftGraphUserSet>]: userSet
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [IsBackup <Boolean?>]: For a user in an approval stage, this property indicates whether the user is a backup fallback approver.
+            [Schedule <IMicrosoftGraphRequestSchedule>]: requestSchedule
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [Expiration <IMicrosoftGraphExpirationPattern>]: expirationPattern
+                [(Any) <Object>]: This indicates any property can be added to this object.
+                [Duration <TimeSpan?>]: The requestor's desired duration of access represented in ISO 8601 format for durations.
+For example, PT3H refers to three hours.
+ If specified in a request, endDateTime shouldn't be present and the type property should be set to afterDuration.
+                [EndDateTime <DateTime?>]: Timestamp of date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
+                [Type <String>]: expirationPatternType
+              [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
+              [StartDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+In PIM, when the  eligible or active assignment becomes active.
         [IdentityParentId <String>]: The object ID of the parent identity for agent users.
 Always null for regular user accounts.
 For agentUser resources, this property references the object ID of the associated agent identity.
@@ -30878,7 +33034,7 @@ Read-only.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
         [Interests <String[]>]: A list for users to describe their interests.
-Returned only on $select.
+Requires $select to retrieve.
         [InvitedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
         [IsLicenseReconciliationNeeded <Boolean?>]: Indicates whether the user is pending an exchange mailbox license assignment.
  Read-only.
@@ -30887,7 +33043,8 @@ Returned only on $select.
 If not set, the default value is null and the default behavior is false.
 Read-only.
  To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
-        [IsResourceAccount <Boolean?>]: Do not use – reserved for future use.
+        [IsResourceAccount <Boolean?>]: Do not use.
+Reserved for future use.
         [JobTitle <String>]: The user's job title.
 Maximum length is 128 characters.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
@@ -30901,24 +33058,29 @@ If this list is non-empty, then only users or groups listed here can post.
           [AccessType <String>]: groupAccessType
           [AllowExternalSenders <Boolean?>]: Indicates if people external to the organization can send messages to the group.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]: Represents the app roles a group has been granted for an application.
 Supports $expand.
-          [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group.
-Returned only on $select.
+          [AssignedLabels <IMicrosoftGraphAssignedLabel[]>]: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group or a cloud security group.
+Requires a Microsoft Entra ID P1 license.
+Requires $select to retrieve.
+This property can be specified during group creation or update.
+However, for cloud security groups, it's immutable once set.
 This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and a supported administrator role.
+See Key differences from Microsoft 365 group labeling to learn more about managing this property for Microsoft 365 vs.
+cloud security groups.
             [DisplayName <String>]: The display name of the label.
 Read-only.
             [LabelId <String>]: The unique identifier of the label.
           [AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]: The licenses that are assigned to the group.
-Returned only on $select.
+Requires $select to retrieve.
 Supports $filter (eq).
 Read-only.
           [AutoSubscribeNewMembers <Boolean?>]: Indicates if new members added to the group are auto-subscribed to receive email notifications.
 You can set this property in a PATCH request for the group; don't set it in the initial POST request that creates the group.
 Default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [Calendar <IMicrosoftGraphCalendar>]: calendar
           [CalendarView <IMicrosoftGraphEvent[]>]: The calendar view for the calendar.
@@ -30928,6 +33090,7 @@ Valid values for this property are defined by creating a ClassificationList sett
 Supports $filter (eq, ne, not, ge, le, startsWith).
           [CloudLicensing <IMicrosoftGraphCloudLicensingGroupCloudLicensing>]: groupCloudLicensing
             [(Any) <Object>]: This indicates any property can be added to this object.
+            [Assignments <IMicrosoftGraphCloudLicensingAssignment[]>]: 
             [UsageRights <IMicrosoftGraphCloudLicensingUsageRight[]>]: 
           [Conversations <IMicrosoftGraphConversation[]>]: The group's conversations.
             [Id <String>]: The unique identifier for an entity.
@@ -31086,11 +33249,11 @@ You can use it as a $filter argument to get groups that have members with licens
  Supports $filter (eq).
           [HideFromAddressLists <Boolean?>]: true if the group isn't displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [HideFromOutlookClients <Boolean?>]: true if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise.
 The default value is false.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [InfoCatalogs <String[]>]: Identifies the info segments assigned to the group.
 Returned by default.
@@ -31114,7 +33277,7 @@ Read-only.
  To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.
           [IsSubscribedByMail <Boolean?>]: Indicates whether the signed-in user is subscribed to receive email conversations.
 The default value is true.
-Returned only on $select.
+Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]: licenseProcessingState
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -31164,6 +33327,7 @@ Read-only.
           [OnPremisesDomainName <String>]: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory.
 The property is only populated for customers synchronizing their on-premises directory to Microsoft Entra ID via Microsoft Entra Connect.Returned by default.
 Read-only.
+          [OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]: onPremisesExtensionAttributes
           [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned by default.
@@ -31347,10 +33511,14 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
                   [DueDateTime <DateTime?>]: The date and time at which the task is due.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-                  [HasChat <Boolean?>]: 
+                  [GoalIds <String[]>]: Read-only.
+The IDs of the goals associated with the task.
+                  [HasChat <Boolean?>]: Read-only.
+This value is true if the task has chat messages associated with it.
+Otherwise, false.
                   [HasDescription <Boolean?>]: Read-only.
 This value is true if the details object of the task has a nonempty description.
-Otherwise,false.
+Otherwise, false.
                   [IsArchived <Boolean?>]: Read-only.
 If set to true, the task is archived.
 An archived task is read-only.
@@ -31359,9 +33527,38 @@ If true, it shows the task.
                   [IsOnMyDayLastModifiedDate <DateTime?>]: Read-only.
 The date on which task is added to or removed from MyDay.
                   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
-                  [LastModifiedDateTime <DateTime?>]: 
+                  [LastModifiedDateTime <DateTime?>]: Read-only.
+Date and time at which this is last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                  [Messages <IMicrosoftGraphPlannerTaskChatMessage[]>]: Read-only.
+Nullable.
+Chat messages associated with the task.
+                    [Id <String>]: The unique identifier for an entity.
+Read-only.
+                    [Content <String>]: The content of the chat message.
+Supports plain text and sanitized HTML.
+                    [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                    [CreatedDateTime <DateTime?>]: The date and time when the message was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                    [DeletedDateTime <DateTime?>]: 
+                    [EditedDateTime <DateTime?>]: 
+                    [Mentions <IMicrosoftGraphPlannerTaskChatMention[]>]: The list of mentions in the message.
+                      [MentionType <String>]: plannerTaskChatMentionType
+                      [Mentioned <String>]: The ID of the mentioned user.
+                      [Position <Int32?>]: The zero-based position of the mention in the message content.
+                    [MessageType <String>]: plannerTaskChatMessageType
+                    [ParentEntityId <String>]: The ID of the parent plannerTask that this message belongs to.
+                    [Reactions <IMicrosoftGraphPlannerTaskChatReaction[]>]: The reactions on the message.
+                      [ReactionEvents <IMicrosoftGraphPlannerTaskChatReactionEvent[]>]: 
+                        [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
+                        [CreatedDateTime <DateTime?>]: The date and time when the reaction was added.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+                      [ReactionType <String>]: The type of reaction, such as like, heart, or emoji characters.
                   [OrderHint <String>]: The hint used to order items of this type in a list view.
-For more information, see Using order hints in plannern.
+For more information, see Using order hints in planner.
                   [PercentComplete <Int32?>]: The percentage of task completion.
 When set to 100, the task is completed.
                   [PlanId <String>]: Plan ID to which the task belongs.
@@ -31474,6 +33671,43 @@ Read-only.
                   [(Any) <Object>]: This indicates any property can be added to this object.
                 [SharedWith <IMicrosoftGraphPlannerUserIds>]: plannerUserIds
                   [(Any) <Object>]: This indicates any property can be added to this object.
+              [Goals <IMicrosoftGraphPlannerGoal[]>]: Collection of goals in the plan.
+Read-only.
+Nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [DisplayName <String>]: Required.
+The display name of the goal.
+                [FinishDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to finish.
+                [Notes <IMicrosoftGraphItemBody>]: itemBody
+                [PlanId <String>]: Required.
+The ID of the plan that contains the goal.
+                [Priority <Int32?>]: Optional.
+The relative priority of the goal.
+Valid values range from 0 to 10, inclusive.
+The default value is 5.
+                [StartDate <DateTime?>]: Nullable.
+The date on which the goal is scheduled to start.
+                [Status <String>]: plannerGoalStatus
+                [Tasks <IMicrosoftGraphPlannerTask[]>]: Read-only.
+Nullable.
+The tasks associated with the goal.
+This relationship doesn't support direct retrieval or $expand.
+To identify the goals associated with a task, read the goalIds property of the plannerTask resource.
+              [HistoryItems <IMicrosoftGraphPlannerHistoryItem[]>]: Collection of history items for entities in the plan.
+Read-only.
+Nullable.
+                [Id <String>]: The unique identifier for an entity.
+Read-only.
+                [Actor <IMicrosoftGraphIdentitySet>]: identitySet
+                [EntityId <String>]: The ID of the entity that was changed.
+                [EntityType <String>]: historyEntityType
+                [EventType <String>]: historyEventType
+                [OccurredDateTime <DateTime?>]: The date and time when the change occurred.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+                [PlanId <String>]: The ID of the plan that contains the changed entity.
               [IsArchived <Boolean?>]: Read-only.
 If set to true, the plan is archived.
 An archived plan is read-only.
@@ -31525,7 +33759,7 @@ For the list of possible values, see Microsoft 365 group behaviors and provision
 The possible value is Team.
 For more information, see Microsoft 365 group behaviors and provisioning options.
 Returned by default.
-Supports $filter (eq, not, startsWith.
+Supports $filter (eq, not, startsWith).
           [SecurityEnabled <Boolean?>]: Specifies whether the group is a security group.
 Required.Returned by default.
 Supports $filter (eq, ne, not, in).
@@ -31558,7 +33792,7 @@ Read-only.
 Read-only.
               [AllMembers <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
 It includes both direct and indirect members of shared channels.
-              [CreatedDateTime <DateTime?>]: Read only.
+              [CreatedDateTime <DateTime?>]: Read-only.
 Timestamp at which the channel was created.
               [Description <String>]: Optional textual description for the channel.
               [DisplayName <String>]: Channel name as it appears to the user in Microsoft Teams.
@@ -31573,6 +33807,7 @@ Read-only.
 Note: All recommended channels automatically show in the channels list for education and frontline worker users.
 The property can only be set programmatically via the Create team method.
 The default value is false.
+              [JoinedUsers <IMicrosoftGraphConversationMember[]>]: 
               [LayoutType <String>]: channelLayoutType
               [Members <IMicrosoftGraphConversationMember[]>]: A collection of membership records associated with the channel.
               [MembershipType <String>]: channelMembershipType
@@ -31634,7 +33869,7 @@ This is an optional property, only used during team creation and isn't returned 
               [AllowGiphy <Boolean?>]: If set to true, enables Giphy use.
               [AllowStickersAndMemes <Boolean?>]: If set to true, enables users to include stickers and memes.
               [GiphyContentRating <String>]: giphyRatingType
-            [Group <IMicrosoftGraphGroup>]: Represents a Microsoft Entra group.
+            [Group <IMicrosoftGraphGroup>]: group
             [GuestSettings <IMicrosoftGraphTeamGuestSettings>]: teamGuestSettings
               [(Any) <Object>]: This indicates any property can be added to this object.
               [AllowCreateUpdateChannels <Boolean?>]: If set to true, guests can add and update channels.
@@ -31899,7 +34134,8 @@ Read-only.
                 [StartDateTime <DateTime?>]: The date and time the time off starts in ISO 8601 format and in UTC time.
                 [TimeOffReasonId <String>]: The reason for the time off.
               [TimeOffRequestsEnabled <Boolean?>]: Indicates whether time off requests are enabled for the schedule.
-              [TimeZone <String>]: Indicates the time zone of the schedule team using tz database format.
+              [TimeZone <String>]: The time zone of the schedule team as an IANA time zone database (tz database) name; for example, America/Chicago.
+For the full list of valid values, see List of tz database time zones.
 Required.
               [TimesOff <IMicrosoftGraphTimeOff[]>]: The instances of times off in the schedule.
                 [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -31980,12 +34216,12 @@ Immutable.
 Read-only.
           [UnseenConversationsCount <Int32?>]: Count of conversations delivered one or more new posts since the signed-in user's last visit to the group.
 This property is the same as unseenCount.
-Returned only on $select.
+Requires $select to retrieve.
           [UnseenCount <Int32?>]: Count of conversations that have received new posts since the signed-in user last visited the group.
-This property is the same as unseenConversationsCount.Returned only on $select.
+This property is the same as unseenConversationsCount.Requires $select to retrieve.
 Supported only on the Get group API (GET /groups/{ID}).
           [UnseenMessagesCount <Int32?>]: Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group.
-Returned only on $select.
+Requires $select to retrieve.
           [Visibility <String>]: Specifies the group join policy and group content visibility for groups.
 The possible values are: Private, Public, or HiddenMembership.
 HiddenMembership can be set only for Microsoft 365 groups when the groups are created.
@@ -31996,7 +34232,10 @@ Groups assignable to roles are always Private.
 To learn more, see group visibility options.
 Returned by default.
 Nullable.
-          [WelcomeMessageEnabled <Boolean?>]: 
+          [WelcomeMessageEnabled <Boolean?>]: Indicates whether a welcome message is sent to new members when they are added to the group.
+The default value is true.
+Requires $select to retrieve.
+Supported only on the Get group API (GET /groups/{ID}).
           [WritebackConfiguration <IMicrosoftGraphGroupWritebackConfiguration>]: groupWritebackConfiguration
             [(Any) <Object>]: This indicates any property can be added to this object.
             [IsEnabled <Boolean?>]: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled.
@@ -32013,16 +34252,16 @@ Nullable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
         [LegalAgeGroupClassification <String>]: Used by enterprise applications to determine the legal age group of the user.
 This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties.
 Allowed values: null, Undefined, MinorWithOutParentalConsent, MinorWithParentalConsent, MinorNoParentalConsentRequired, NotAdult, and Adult.
 For more information, see legal age group property definitions.
-Returned only on $select.
+Requires $select to retrieve.
         [LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]: State of license assignments for this user.
 It also indicates licenses that are directly assigned and the ones the user inherited through group memberships.
 Read-only.
-Returned only on $select.
+Requires $select to retrieve.
           [AssignedByGroup <String>]: Indicates whether the license is directly-assigned or inherited from a group.
 If directly-assigned, this field is null; if inherited through a group membership, this field contains the ID of the group.
 Read-Only.
@@ -32148,7 +34387,7 @@ To verify the existence of inline attachments, parse the body property to look f
             [InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]: A collection of message headers defined by RFC5322.
 The set includes message headers indicating the network path taken by a message from the sender to the recipient.
 It can also contain custom message headers that hold app data for the message.
- Returned only on applying a $select query option.
+ Requires $select to retrieve.
 Read-only.
               [Name <String>]: Represents the key in a key-value pair.
               [Value <String>]: The value in a key-value pair.
@@ -32697,6 +34936,8 @@ Read-only.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
             [AntiMalwareVersion <String>]: Current anti malware version
+            [ControlledConfigurationEnabled <Boolean?>]: When TRUE indicates the Windows Defender controlled configuration feature is enabled, when FALSE indicates the Windows Defender controlled configuration feature is not enabled.
+Defaults to setting on client device.
             [DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]: Device malware list
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -32789,8 +35030,9 @@ Read-only.
         [MobilePhone <String>]: The primary cellular telephone number for the user.
 Read-only for users synced from the on-premises directory.
  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [MySite <String>]: The URL for the user's site.
-Returned only on $select.
+Requires $select to retrieve.
         [Notifications <IMicrosoftGraphNotification[]>]: 
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -32830,6 +35072,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 This property must be specified when creating a new user account in the Graph if you're using a federated domain for the user's userPrincipalName (UPN) property.
 Note: The $ and _ characters can't be used when specifying this property.
 Supports $filter (eq, ne, not, ge, le, in).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [OnPremisesLastSyncDateTime <DateTime?>]: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -32885,6 +35128,10 @@ Read-only.
                 [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
                 [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
               [EmailAddress <String>]: Email address of the user associated with this attendance record.
+              [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+                [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+                [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+                [EngagementType <String>]: meetingEngagementType
               [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -32933,6 +35180,13 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+          [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+            [(Any) <Object>]: This indicates any property can be added to this object.
+            [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+            [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+            [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
           [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -32959,6 +35213,7 @@ Optional.
           [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
           [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+          [MeetingType <String>]: onlineMeetingType
           [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
           [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -33079,6 +35334,7 @@ Read-only.
         [OtherMails <String[]>]: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].
 Can store up to 250 values, each with a limit of 250 characters.
 NOTE: This property can't contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [Outlook <IMicrosoftGraphOutlookUser>]: outlookUser
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -33187,7 +35443,7 @@ It can be updated, but the user will be required to change the password on the n
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
         [PastProjects <String[]>]: A list for users to enumerate their past projects.
-Returned only on $select.
+Requires $select to retrieve.
         [PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]: Navigation property to get a list of access reviews pending approval by the reviewer.
           [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -33228,6 +35484,11 @@ Read-only.
             [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+            [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
             [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
               [Id <String>]: The unique identifier for an entity.
@@ -33261,7 +35522,7 @@ Read-only.
               [DisplayName <String>]: Display name of the resource
               [Id <String>]: Resource ID
               [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
             [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -33415,6 +35676,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+          [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
           [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -33547,7 +35812,7 @@ Example: 'en-US', or 'es-ES'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         [PreferredName <String>]: The preferred name for the user.
 Not Supported.
-This attribute returns an empty string.Returned only on $select.
+This attribute returns an empty string.Requires $select to retrieve.
         [Presence <IMicrosoftGraphPresence>]: presence
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -34003,15 +36268,14 @@ Read-only.
               [WebUrl <String>]: Link to the institution or department homepage.
             [Program <IMicrosoftGraphEducationalActivityDetail>]: educationalActivityDetail
               [(Any) <Object>]: This indicates any property can be added to this object.
-              [Abbreviation <String>]: Shortened name of the degree or program (example: PhD, MBA)
+              [Abbreviation <String>]: Shortened name of the degree or program, for example, PhD and MBA.
               [Activities <String[]>]: Extracurricular activities undertaken alongside the program.
               [Awards <String[]>]: Any awards or honors associated with the program.
               [Description <String>]: Short description of the program provided by the user.
               [DisplayName <String>]: Long-form name of the program that the user provided.
-              [FieldsOfStudy <String[]>]: Majors and minors associated with the program.
-(if applicable)
-              [Grade <String>]: The final grade, class, GPA, or score.
-              [Notes <String>]: More notes the user provided.
+              [FieldsOfStudy <String[]>]: Majors and minors associated with the program, if applicable.
+              [Grade <String>]: The final grade, class, grade point average (GPA), or score.
+              [Notes <String>]: More notes provided by the user.
               [WebUrl <String>]: Link to the degree or program page.
             [StartMonthYear <DateTime?>]: The month and year the user commenced the activity referenced.
           [Emails <IMicrosoftGraphItemEmail[]>]: Represents detailed information about email addresses associated with the user.
@@ -34314,9 +36578,9 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
         [Responsibilities <String[]>]: A list for the user to enumerate their responsibilities.
-Returned only on $select.
+Requires $select to retrieve.
         [Schools <String[]>]: A list for the user to enumerate the schools they have attended.
-Returned only on $select.
+Requires $select to retrieve.
         [ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]: The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
@@ -34380,7 +36644,7 @@ Users can control this setting in Office Delve.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
-            [InPlaceArchiveMailboxId <String>]: 
+            [InPlaceArchiveMailboxId <String>]: The unique identifier for the user's In-Place Archive mailbox.
             [PrimaryMailboxId <String>]: The unique identifier for the user's primary mailbox.
           [ItemInsights <IMicrosoftGraphUserInsightsSettings>]: userInsightsSettings
             [(Any) <Object>]: This indicates any property can be added to this object.
@@ -34420,7 +36684,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
           [ShiftPreferences <IMicrosoftGraphShiftPreferences>]: shiftPreferences
             [(Any) <Object>]: This indicates any property can be added to this object.
             [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
@@ -34442,6 +36706,14 @@ Read-only.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
               [Deleted <Int64?>]: 
+              [FamilyMembersUsage <IMicrosoftGraphFamilyMemberStorageQuota[]>]: 
+                [AdditionalAllocations <IMicrosoftGraphAdditionalStorageAllocations>]: additionalStorageAllocations
+                  [(Any) <Object>]: This indicates any property can be added to this object.
+                  [BonusQuotaInBytes <Int64?>]: 
+                  [SubscriptionQuotaInBytes <Int64?>]: 
+                [Used <Int64?>]: 
+                [User <IMicrosoftGraphIdentity>]: identity
+              [IsPooledStorageEnabled <Boolean?>]: 
               [ManageWebUrl <String>]: A URL that can be used in a browser to manage the breakdown.
 Read-only.
               [Remaining <Int64?>]: Total space remaining before reaching the quota limit in bytes.
@@ -34530,7 +36802,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 Use revokeSignInSessions to reset.
         [Skills <String[]>]: A list for the user to enumerate their skills.
-Returned only on $select.
+Requires $select to retrieve.
         [Solutions <IMicrosoftGraphUserSolutionRoot>]: userSolutionRoot
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -34539,6 +36811,11 @@ Read-only.
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [SponsorOf <IMicrosoftGraphDirectoryObject[]>]: Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities.
+If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included.
+Read-only.
+Nullable.
+Supports $filter, $count, $select, $expand, $top, and $skip.
         [Sponsors <IMicrosoftGraphDirectoryObject[]>]: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
@@ -34577,6 +36854,48 @@ The language component follows two-letter codes as defined in ISO 639-1, and the
 For users with multigeo licenses, the property contains the user's region (if available).
 For users without multigeo licenses, the property contains the organization's region.The region value can be any region supported by the Teams payload.
 The possible values are: Americas, Europe and MiddleEast, Asia Pacific, UAE, Australia, Brazil, Canada, Switzerland, Germany, France, India, Japan, South Korea, Norway, Singapore, United Kingdom, South Africa, Sweden, Qatar, Poland, Italy, Israel, Spain, Mexico, USGov Community Cloud, USGov Community Cloud High, USGov Department of Defense, and China.
+          [Sections <IMicrosoftGraphTeamworkSection[]>]: The sections in the user's chat list.
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [CreatedDateTime <DateTime?>]: Date and time when the section was created.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [DisplayIcon <IMicrosoftGraphSectionDisplayIcon>]: sectionDisplayIcon
+              [(Any) <Object>]: This indicates any property can be added to this object.
+              [ContentUrl <String>]: The URL to a custom icon image.
+Applicable when iconType is custom.
+              [DisplayName <String>]: The human-readable name of the icon.
+              [IconType <String>]: The type of icon.
+Use an emoji character such as 👍 for an emoji icon, or custom for a custom image icon.
+              [SkinTone <String>]: sectionIconSkinTone
+            [DisplayName <String>]: The display name of the section.
+Required.
+Maximum length is 50 characters.
+Display names are case-sensitive and must be unique within a user's sections.
+The following names are reserved for system-defined sections and can't be used when creating a user-defined section: RecentChats, QuickViews, TeamsAndChannels, MutedChats, MeetingChats, EngageCommunities.
+            [IsExpanded <Boolean?>]: Indicates whether the section is expanded in the user interface.
+The default value is true.
+            [IsHierarchicalViewEnabled <Boolean?>]: Indicates whether the hierarchical view is enabled for the section.
+Read-only.
+            [Items <IMicrosoftGraphTeamworkSectionItem[]>]: The items (chats, channels, meetings, or communities) organized within the section.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [CreatedDateTime <DateTime?>]: Date and time when the item was added to the section.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+              [ItemType <String>]: sectionItemType
+              [LastModifiedDateTime <DateTime?>]: Date and time when the item was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [LastModifiedDateTime <DateTime?>]: Date and time when the section was last modified.
+Read-only.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2024, is 2024-01-01T00:00:00Z.
+            [SectionType <String>]: sectionType
+            [SortType <String>]: sectionSortType
         [Todo <IMicrosoftGraphTodo>]: todo
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Id <String>]: The unique identifier for an entity.
@@ -34589,6 +36908,12 @@ Read-only.
 Nullable.
             [IsOwner <Boolean?>]: True if the user is owner of the given task list.
             [IsShared <Boolean?>]: True if the task list is shared with other users
+            [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: The collection of single-value extended properties defined for the task list.
+Read-only.
+Nullable.
+              [Id <String>]: The unique identifier for an entity.
+Read-only.
+              [Value <String>]: The value of the property.
             [Tasks <IMicrosoftGraphTodoTask[]>]: The tasks in this task list.
 Read-only.
 Nullable.
@@ -34652,9 +36977,6 @@ Read-only.
               [Recurrence <IMicrosoftGraphPatternedRecurrence>]: patternedRecurrence
               [ReminderDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
               [SingleValueExtendedProperties <IMicrosoftGraphSingleValueExtendedProperty[]>]: A collection of custom fields linked to the task.
-                [Id <String>]: The unique identifier for an entity.
-Read-only.
-                [Value <String>]: The value of the property.
               [StartDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
               [Status <String>]: taskStatus
               [Title <String>]: A brief description of the task.
@@ -34679,6 +37001,7 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
  
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
+This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
         [UserType <String>]: A String value that can be used to classify user types in your directory.
 The possible values are Member and Guest.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -34706,6 +37029,8 @@ Read-only.
             [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
             [ExternalEventInformation <IMicrosoftGraphVirtualEventExternalInformation[]>]: The external information of a virtual event.
 Returned only for event organizers or coorganizers; otherwise, null.
+            [IsRegistrationEnabled <Boolean?>]: 
+            [IsRegistrationRequired <Boolean?>]: Indicates whether attendee registration is enabled for the virtual event.
             [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: The virtual event presenters.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -34743,6 +37068,7 @@ Read-only.
                 [AudioConferencing <IMicrosoftGraphAudioConferencing>]: audioConferencing
                 [ChatInfo <IMicrosoftGraphChatInfo>]: chatInfo
                 [ChatRestrictions <IMicrosoftGraphChatRestrictions>]: chatRestrictions
+                [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
                 [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -34756,6 +37082,7 @@ Read-only.
                 [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
                 [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+                [MeetingType <String>]: onlineMeetingType
                 [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
                 [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
                 [ShareMeetingChatHistoryDefault <String>]: meetingChatHistoryDefaultMode
@@ -34765,6 +37092,7 @@ Read-only.
                 [WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]: watermarkProtectionValues
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
+                [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
                 [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
                 [Presenters <IMicrosoftGraphVirtualEventPresenter[]>]: 
                 [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: 
@@ -34818,6 +37146,8 @@ For example, in the access reviews decisions API, this property might record the
             [RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]: virtualEventWebinarRegistrationConfiguration
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Capacity <Int32?>]: Total capacity of the virtual event.
+              [IsManualApprovalEnabled <Boolean?>]: Indicates whether registrations require organizer approval before a participant is confirmed.
+              [IsWaitlistEnabled <Boolean?>]: Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.
               [Questions <IMicrosoftGraphVirtualEventRegistrationQuestionBase[]>]: Registration questions.
                 [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -34827,8 +37157,6 @@ The default value is false.
               [RegistrationWebUrl <String>]: Registration URL of the virtual event.
               [Id <String>]: The unique identifier for an entity.
 Read-only.
-              [IsManualApprovalEnabled <Boolean?>]: 
-              [IsWaitlistEnabled <Boolean?>]: 
             [Registrations <IMicrosoftGraphVirtualEventRegistration[]>]: Registration records of the webinar.
         [WindowsInformationProtectionDeviceRegistrations <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]>]: Zero or more WIP device registrations that belong to the user.
           [Id <String>]: The unique identifier for an entity.
@@ -34899,6 +37227,7 @@ To proactively opt in to the new behavior ahead of time, use the contentStream p
 Nullable.
       [File <IMicrosoftGraphFile>]: file
         [(Any) <Object>]: This indicates any property can be added to this object.
+        [ArchiveStatus <String>]: fileArchiveStatus
         [Hashes <IMicrosoftGraphHashes>]: hashes
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Crc32Hash <String>]: The CRC32 value of the file (if available).
@@ -34938,6 +37267,15 @@ Width of the image, in pixels.
 Read-only.
       [ListItem <IMicrosoftGraphListItem>]: listItem
       [Location <IMicrosoftGraphGeoCoordinates>]: geoCoordinates
+      [LockInfo <IMicrosoftGraphLockInfo>]: lockInfo
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [CreatedDateTime <DateTime?>]: The date and time when the lock was created, in UTC.
+Read-only.
+        [ExpirationDateTime <DateTime?>]: The date and time when the lock expires, in UTC.
+Read-only.
+        [LockType <String>]: lockType
+        [Owners <IMicrosoftGraphUserIdentity[]>]: The collection of users that currently hold the lock on the file.
+Read-only.
       [Malware <IMicrosoftGraphMalware>]: malware
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Description <String>]: Contains the virus details for the malware facet.

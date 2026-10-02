@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicyassignmentassignedusermailboxsetting
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting
 ---
@@ -15,7 +15,7 @@ title: Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssigned
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMai
  -UserId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -40,7 +40,7 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMai
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -52,7 +52,7 @@ This cmdlet has the following aliases,
 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-Returned only on $select.
+Requires $select to retrieve.
 
 ## PARAMETERS
 
@@ -394,6 +394,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [CloudPcOnPremisesConnectionId <String>]: The unique identifier of cloudPcOnPremisesConnection
   [CloudPcProvisioningPolicyAssignmentId <String>]: The unique identifier of cloudPcProvisioningPolicyAssignment
   [CloudPcProvisioningPolicyId <String>]: The unique identifier of cloudPcProvisioningPolicy
+  [CloudPcServicePlanId <String>]: The unique identifier of cloudPcServicePlan
   [CloudPcUserSettingAssignmentId <String>]: The unique identifier of cloudPcUserSettingAssignment
   [CloudPcUserSettingId <String>]: The unique identifier of cloudPcUserSetting
   [ComplianceManagementPartnerId <String>]: The unique identifier of complianceManagementPartner

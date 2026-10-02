@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
 ---
@@ -27,14 +27,15 @@ New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
  -AccessReviewScheduleDefinitionId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]
  [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
- [-Definition <IMicrosoftGraphAccessReviewScheduleDefinition>] [-EndDateTime <datetime>]
+ [-Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]
+ [-DelegatedBy <IMicrosoftGraphUserIdentity[]>] [-EndDateTime <datetime>]
  [-Errors <IMicrosoftGraphAccessReviewError[]>]
  [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <string>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Scope <hashtable>]
  [-Stages <IMicrosoftGraphAccessReviewStage[]>] [-StartDateTime <datetime>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -45,7 +46,6 @@ New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -55,14 +55,15 @@ New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-ContactedReviewers <IMicrosoftGraphAccessReviewReviewer[]>]
  [-Decisions <IMicrosoftGraphAccessReviewInstanceDecisionItem[]>]
- [-Definition <IMicrosoftGraphAccessReviewScheduleDefinition>] [-EndDateTime <datetime>]
+ [-Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]
+ [-DelegatedBy <IMicrosoftGraphUserIdentity[]>] [-EndDateTime <datetime>]
  [-Errors <IMicrosoftGraphAccessReviewError[]>]
  [-FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Id <string>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Scope <hashtable>]
  [-Stages <IMicrosoftGraphAccessReviewStage[]>] [-StartDateTime <datetime>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -73,7 +74,6 @@ New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -278,6 +278,37 @@ To construct, see NOTES section for DEFINITION properties and create a hash tabl
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DelegatedBy
+
+The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
+To construct, see NOTES section for DELEGATEDBY properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity[]
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -840,6 +871,11 @@ Read-only.
     [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
       [Id <String>]: The unique identifier for an entity.
@@ -879,7 +915,7 @@ Read-only.
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Resource ID
       [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
     [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1064,6 +1100,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+  [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
   [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1155,6 +1195,11 @@ Read-only.
   [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+  [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
   [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
     [Id <String>]: The unique identifier for an entity.
@@ -1348,6 +1393,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1433,7 +1482,7 @@ Read-only.
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Resource ID
     [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
   [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1531,6 +1580,11 @@ Read-only.
       [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+      [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
       [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
         [Id <String>]: The unique identifier for an entity.
@@ -1570,7 +1624,7 @@ Read-only.
         [DisplayName <String>]: Display name of the resource
         [Id <String>]: Resource ID
         [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
       [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1582,6 +1636,10 @@ Read-only.
       [Target <IMicrosoftGraphAccessReviewInstanceDecisionItemTarget>]: accessReviewInstanceDecisionItemTarget
         [(Any) <Object>]: This indicates any property can be added to this object.
     [Definition <IMicrosoftGraphAccessReviewScheduleDefinition>]: accessReviewScheduleDefinition
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1762,6 +1820,18 @@ The typical states include Initializing, NotStarted, Starting, InProgress, Compl
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
+DELEGATEDBY <IMicrosoftGraphUserIdentity[]>: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
+  [DisplayName <String>]: The display name of the identity.
+For drive items, the display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
+  [Id <String>]: Unique identifier for the identity or actor.
+For example, in the access reviews decisions API, this property might record the id of the principal, that is, the group, user, or application that's subject to review.
+  [IPAddress <String>]: Indicates the client IP address associated with the user performing the activity (audit log only).
+  [UserPrincipalName <String>]: The userPrincipalName attribute of the user.
+
 ERRORS <IMicrosoftGraphAccessReviewError[]>: Collection of errors in an access review instance lifecycle.
 Read-only.
   [Code <String>]: The error code.
@@ -1822,12 +1892,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -1863,6 +1935,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -1935,6 +2008,11 @@ Read-only.
     [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
       [Id <String>]: The unique identifier for an entity.
@@ -2128,6 +2206,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+      [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
       [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2191,7 +2273,7 @@ Read-only.
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Resource ID
       [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
     [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 77e81c1b-6426-4942-9a06-0c33e6823f56
+Module Guid: ee43a67e-ceea-4535-b85d-7341de88ae01
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -41,6 +41,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Confirm-MgOrganizationMemberObject](Confirm-MgOrganizationMemberObject.md)
 
+### [Enable-MgDirectoryTenantGovernanceSettingRelatedTenant](Enable-MgDirectoryTenantGovernanceSettingRelatedTenant.md)
+
 ### [Find-MgTenantRelationshipTenantInformationByDomainName](Find-MgTenantRelationshipTenantInformationByDomainName.md)
 
 ### [Find-MgTenantRelationshipTenantInformationByTenantId](Find-MgTenantRelationshipTenantInformationByTenantId.md)
@@ -51,13 +53,19 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAdminPeopleProfileCardProperty](Get-MgAdminPeopleProfileCardProperty.md)
 
-### [Get-MgAdminPeopleProfileCardProperty](Get-MgAdminPeopleProfileCardProperty.md)
-
 ### [Get-MgAdminPeopleProfileCardPropertyCount](Get-MgAdminPeopleProfileCardPropertyCount.md)
 
-### [Get-MgAdminPeoplePronoun](Get-MgAdminPeoplePronoun.md)
+### [Get-MgAdminPeopleProfilePropertySetting](Get-MgAdminPeopleProfilePropertySetting.md)
 
-### [Get-MgContact](Get-MgContact.md)
+### [Get-MgAdminPeopleProfilePropertySettingCount](Get-MgAdminPeopleProfilePropertySettingCount.md)
+
+### [Get-MgAdminPeopleProfileSource](Get-MgAdminPeopleProfileSource.md)
+
+### [Get-MgAdminPeopleProfileSourceBySourceId](Get-MgAdminPeopleProfileSourceBySourceId.md)
+
+### [Get-MgAdminPeopleProfileSourceCount](Get-MgAdminPeopleProfileSourceCount.md)
+
+### [Get-MgAdminPeoplePronoun](Get-MgAdminPeoplePronoun.md)
 
 ### [Get-MgContact](Get-MgContact.md)
 
@@ -69,13 +77,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgContactDirectReport](Get-MgContactDirectReport.md)
 
-### [Get-MgContactDirectReport](Get-MgContactDirectReport.md)
-
 ### [Get-MgContactDirectReportAsOrgContact](Get-MgContactDirectReportAsOrgContact.md)
-
-### [Get-MgContactDirectReportAsOrgContact](Get-MgContactDirectReportAsOrgContact.md)
-
-### [Get-MgContactDirectReportAsUser](Get-MgContactDirectReportAsUser.md)
 
 ### [Get-MgContactDirectReportAsUser](Get-MgContactDirectReportAsUser.md)
 
@@ -93,13 +95,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
 
-### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
-
 ### [Get-MgContactMemberOfAsAdministrativeUnit](Get-MgContactMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgContactMemberOfAsAdministrativeUnit](Get-MgContactMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgContactMemberOfAsGroup](Get-MgContactMemberOfAsGroup.md)
 
 ### [Get-MgContactMemberOfAsGroup](Get-MgContactMemberOfAsGroup.md)
 
@@ -117,13 +113,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
 
-### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
-
 ### [Get-MgContactTransitiveMemberOfAsAdministrativeUnit](Get-MgContactTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgContactTransitiveMemberOfAsAdministrativeUnit](Get-MgContactTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgContactTransitiveMemberOfAsGroup](Get-MgContactTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgContactTransitiveMemberOfAsGroup](Get-MgContactTransitiveMemberOfAsGroup.md)
 
@@ -132,8 +122,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgContactTransitiveMemberOfCountAsAdministrativeUnit](Get-MgContactTransitiveMemberOfCountAsAdministrativeUnit.md)
 
 ### [Get-MgContactTransitiveMemberOfCountAsGroup](Get-MgContactTransitiveMemberOfCountAsGroup.md)
-
-### [Get-MgContract](Get-MgContract.md)
 
 ### [Get-MgContract](Get-MgContract.md)
 
@@ -149,8 +137,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDevice](Get-MgDevice.md)
 
-### [Get-MgDevice](Get-MgDevice.md)
-
 ### [Get-MgDeviceByDeviceId](Get-MgDeviceByDeviceId.md)
 
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
@@ -158,8 +144,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgDeviceCount](Get-MgDeviceCount.md)
 
 ### [Get-MgDeviceDelta](Get-MgDeviceDelta.md)
-
-### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
 
 ### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
 
@@ -171,13 +155,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
 
-### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
-
 ### [Get-MgDeviceMemberOfAsAdministrativeUnit](Get-MgDeviceMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgDeviceMemberOfAsAdministrativeUnit](Get-MgDeviceMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgDeviceMemberOfAsGroup](Get-MgDeviceMemberOfAsGroup.md)
 
 ### [Get-MgDeviceMemberOfAsGroup](Get-MgDeviceMemberOfAsGroup.md)
 
@@ -191,17 +169,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceRegisteredOwnerAsAppRoleAssignment](Get-MgDeviceRegisteredOwnerAsAppRoleAssignment.md)
 
-### [Get-MgDeviceRegisteredOwnerAsAppRoleAssignment](Get-MgDeviceRegisteredOwnerAsAppRoleAssignment.md)
-
-### [Get-MgDeviceRegisteredOwnerAsEndpoint](Get-MgDeviceRegisteredOwnerAsEndpoint.md)
-
 ### [Get-MgDeviceRegisteredOwnerAsEndpoint](Get-MgDeviceRegisteredOwnerAsEndpoint.md)
 
 ### [Get-MgDeviceRegisteredOwnerAsServicePrincipal](Get-MgDeviceRegisteredOwnerAsServicePrincipal.md)
-
-### [Get-MgDeviceRegisteredOwnerAsServicePrincipal](Get-MgDeviceRegisteredOwnerAsServicePrincipal.md)
-
-### [Get-MgDeviceRegisteredOwnerAsUser](Get-MgDeviceRegisteredOwnerAsUser.md)
 
 ### [Get-MgDeviceRegisteredOwnerAsUser](Get-MgDeviceRegisteredOwnerAsUser.md)
 
@@ -221,17 +191,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceRegisteredUserAsAppRoleAssignment](Get-MgDeviceRegisteredUserAsAppRoleAssignment.md)
 
-### [Get-MgDeviceRegisteredUserAsAppRoleAssignment](Get-MgDeviceRegisteredUserAsAppRoleAssignment.md)
-
-### [Get-MgDeviceRegisteredUserAsEndpoint](Get-MgDeviceRegisteredUserAsEndpoint.md)
-
 ### [Get-MgDeviceRegisteredUserAsEndpoint](Get-MgDeviceRegisteredUserAsEndpoint.md)
 
 ### [Get-MgDeviceRegisteredUserAsServicePrincipal](Get-MgDeviceRegisteredUserAsServicePrincipal.md)
-
-### [Get-MgDeviceRegisteredUserAsServicePrincipal](Get-MgDeviceRegisteredUserAsServicePrincipal.md)
-
-### [Get-MgDeviceRegisteredUserAsUser](Get-MgDeviceRegisteredUserAsUser.md)
 
 ### [Get-MgDeviceRegisteredUserAsUser](Get-MgDeviceRegisteredUserAsUser.md)
 
@@ -249,13 +211,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceTransitiveMemberOf](Get-MgDeviceTransitiveMemberOf.md)
 
-### [Get-MgDeviceTransitiveMemberOf](Get-MgDeviceTransitiveMemberOf.md)
-
 ### [Get-MgDeviceTransitiveMemberOfAsAdministrativeUnit](Get-MgDeviceTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgDeviceTransitiveMemberOfAsAdministrativeUnit](Get-MgDeviceTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgDeviceTransitiveMemberOfAsGroup](Get-MgDeviceTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgDeviceTransitiveMemberOfAsGroup](Get-MgDeviceTransitiveMemberOfAsGroup.md)
 
@@ -269,13 +225,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryAdministrativeUnit](Get-MgDirectoryAdministrativeUnit.md)
 
-### [Get-MgDirectoryAdministrativeUnit](Get-MgDirectoryAdministrativeUnit.md)
-
 ### [Get-MgDirectoryAdministrativeUnitCount](Get-MgDirectoryAdministrativeUnitCount.md)
 
 ### [Get-MgDirectoryAdministrativeUnitDelta](Get-MgDirectoryAdministrativeUnitDelta.md)
-
-### [Get-MgDirectoryAdministrativeUnitExtension](Get-MgDirectoryAdministrativeUnitExtension.md)
 
 ### [Get-MgDirectoryAdministrativeUnitExtension](Get-MgDirectoryAdministrativeUnitExtension.md)
 
@@ -285,25 +237,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryAdministrativeUnitMemberAsApplication](Get-MgDirectoryAdministrativeUnitMemberAsApplication.md)
 
-### [Get-MgDirectoryAdministrativeUnitMemberAsApplication](Get-MgDirectoryAdministrativeUnitMemberAsApplication.md)
-
 ### [Get-MgDirectoryAdministrativeUnitMemberAsDevice](Get-MgDirectoryAdministrativeUnitMemberAsDevice.md)
-
-### [Get-MgDirectoryAdministrativeUnitMemberAsDevice](Get-MgDirectoryAdministrativeUnitMemberAsDevice.md)
-
-### [Get-MgDirectoryAdministrativeUnitMemberAsGroup](Get-MgDirectoryAdministrativeUnitMemberAsGroup.md)
 
 ### [Get-MgDirectoryAdministrativeUnitMemberAsGroup](Get-MgDirectoryAdministrativeUnitMemberAsGroup.md)
 
 ### [Get-MgDirectoryAdministrativeUnitMemberAsOrgContact](Get-MgDirectoryAdministrativeUnitMemberAsOrgContact.md)
 
-### [Get-MgDirectoryAdministrativeUnitMemberAsOrgContact](Get-MgDirectoryAdministrativeUnitMemberAsOrgContact.md)
-
 ### [Get-MgDirectoryAdministrativeUnitMemberAsServicePrincipal](Get-MgDirectoryAdministrativeUnitMemberAsServicePrincipal.md)
-
-### [Get-MgDirectoryAdministrativeUnitMemberAsServicePrincipal](Get-MgDirectoryAdministrativeUnitMemberAsServicePrincipal.md)
-
-### [Get-MgDirectoryAdministrativeUnitMemberAsUser](Get-MgDirectoryAdministrativeUnitMemberAsUser.md)
 
 ### [Get-MgDirectoryAdministrativeUnitMemberAsUser](Get-MgDirectoryAdministrativeUnitMemberAsUser.md)
 
@@ -325,21 +265,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryAdministrativeUnitScopedRoleMember](Get-MgDirectoryAdministrativeUnitScopedRoleMember.md)
 
-### [Get-MgDirectoryAdministrativeUnitScopedRoleMember](Get-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-
 ### [Get-MgDirectoryAdministrativeUnitScopedRoleMemberCount](Get-MgDirectoryAdministrativeUnitScopedRoleMemberCount.md)
-
-### [Get-MgDirectoryAttributeSet](Get-MgDirectoryAttributeSet.md)
 
 ### [Get-MgDirectoryAttributeSet](Get-MgDirectoryAttributeSet.md)
 
 ### [Get-MgDirectoryAttributeSetCount](Get-MgDirectoryAttributeSetCount.md)
 
 ### [Get-MgDirectoryCustomSecurityAttributeDefinition](Get-MgDirectoryCustomSecurityAttributeDefinition.md)
-
-### [Get-MgDirectoryCustomSecurityAttributeDefinition](Get-MgDirectoryCustomSecurityAttributeDefinition.md)
-
-### [Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 
 ### [Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 
@@ -351,25 +283,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryDeletedItemAsAdministrativeUnit](Get-MgDirectoryDeletedItemAsAdministrativeUnit.md)
 
-### [Get-MgDirectoryDeletedItemAsAdministrativeUnit](Get-MgDirectoryDeletedItemAsAdministrativeUnit.md)
-
 ### [Get-MgDirectoryDeletedItemAsApplication](Get-MgDirectoryDeletedItemAsApplication.md)
-
-### [Get-MgDirectoryDeletedItemAsApplication](Get-MgDirectoryDeletedItemAsApplication.md)
-
-### [Get-MgDirectoryDeletedItemAsDevice](Get-MgDirectoryDeletedItemAsDevice.md)
 
 ### [Get-MgDirectoryDeletedItemAsDevice](Get-MgDirectoryDeletedItemAsDevice.md)
 
 ### [Get-MgDirectoryDeletedItemAsGroup](Get-MgDirectoryDeletedItemAsGroup.md)
 
-### [Get-MgDirectoryDeletedItemAsGroup](Get-MgDirectoryDeletedItemAsGroup.md)
-
 ### [Get-MgDirectoryDeletedItemAsServicePrincipal](Get-MgDirectoryDeletedItemAsServicePrincipal.md)
-
-### [Get-MgDirectoryDeletedItemAsServicePrincipal](Get-MgDirectoryDeletedItemAsServicePrincipal.md)
-
-### [Get-MgDirectoryDeletedItemAsUser](Get-MgDirectoryDeletedItemAsUser.md)
 
 ### [Get-MgDirectoryDeletedItemAsUser](Get-MgDirectoryDeletedItemAsUser.md)
 
@@ -393,17 +313,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryDeviceLocalCredential](Get-MgDirectoryDeviceLocalCredential.md)
 
-### [Get-MgDirectoryDeviceLocalCredential](Get-MgDirectoryDeviceLocalCredential.md)
-
 ### [Get-MgDirectoryDeviceLocalCredentialCount](Get-MgDirectoryDeviceLocalCredentialCount.md)
 
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
 
-### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
-
 ### [Get-MgDirectoryFederationConfigurationCount](Get-MgDirectoryFederationConfigurationCount.md)
-
-### [Get-MgDirectoryOnPremiseSynchronization](Get-MgDirectoryOnPremiseSynchronization.md)
 
 ### [Get-MgDirectoryOnPremiseSynchronization](Get-MgDirectoryOnPremiseSynchronization.md)
 
@@ -413,17 +327,33 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration.md)
 
-### [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration.md)
-
-### [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
-
 ### [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
 
 ### [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthorityCount](Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthorityCount.md)
 
 ### [Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCount](Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCount.md)
 
-### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
+### [Get-MgDirectoryRecovery](Get-MgDirectoryRecovery.md)
+
+### [Get-MgDirectoryRecoveryJob](Get-MgDirectoryRecoveryJob.md)
+
+### [Get-MgDirectoryRecoveryJobCount](Get-MgDirectoryRecoveryJobCount.md)
+
+### [Get-MgDirectoryRecoverySnapshot](Get-MgDirectoryRecoverySnapshot.md)
+
+### [Get-MgDirectoryRecoverySnapshotCount](Get-MgDirectoryRecoverySnapshotCount.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryJob](Get-MgDirectoryRecoverySnapshotRecoveryJob.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryJobCount](Get-MgDirectoryRecoverySnapshotRecoveryJobCount.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryPreviewJob](Get-MgDirectoryRecoverySnapshotRecoveryPreviewJob.md)
+
+### [Get-MgDirectoryRecoverySnapshotRecoveryPreviewJobCount](Get-MgDirectoryRecoverySnapshotRecoveryPreviewJobCount.md)
+
+### [Get-MgDirectoryRemoteTenantGroup](Get-MgDirectoryRemoteTenantGroup.md)
+
+### [Get-MgDirectoryRemoteTenantGroupCount](Get-MgDirectoryRemoteTenantGroupCount.md)
 
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
 
@@ -439,25 +369,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryRoleMemberAsApplication](Get-MgDirectoryRoleMemberAsApplication.md)
 
-### [Get-MgDirectoryRoleMemberAsApplication](Get-MgDirectoryRoleMemberAsApplication.md)
-
 ### [Get-MgDirectoryRoleMemberAsDevice](Get-MgDirectoryRoleMemberAsDevice.md)
-
-### [Get-MgDirectoryRoleMemberAsDevice](Get-MgDirectoryRoleMemberAsDevice.md)
-
-### [Get-MgDirectoryRoleMemberAsGroup](Get-MgDirectoryRoleMemberAsGroup.md)
 
 ### [Get-MgDirectoryRoleMemberAsGroup](Get-MgDirectoryRoleMemberAsGroup.md)
 
 ### [Get-MgDirectoryRoleMemberAsOrgContact](Get-MgDirectoryRoleMemberAsOrgContact.md)
 
-### [Get-MgDirectoryRoleMemberAsOrgContact](Get-MgDirectoryRoleMemberAsOrgContact.md)
-
 ### [Get-MgDirectoryRoleMemberAsServicePrincipal](Get-MgDirectoryRoleMemberAsServicePrincipal.md)
-
-### [Get-MgDirectoryRoleMemberAsServicePrincipal](Get-MgDirectoryRoleMemberAsServicePrincipal.md)
-
-### [Get-MgDirectoryRoleMemberAsUser](Get-MgDirectoryRoleMemberAsUser.md)
 
 ### [Get-MgDirectoryRoleMemberAsUser](Get-MgDirectoryRoleMemberAsUser.md)
 
@@ -483,11 +401,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectoryRoleScopedMember](Get-MgDirectoryRoleScopedMember.md)
 
-### [Get-MgDirectoryRoleScopedMember](Get-MgDirectoryRoleScopedMember.md)
-
 ### [Get-MgDirectoryRoleScopedMemberCount](Get-MgDirectoryRoleScopedMemberCount.md)
-
-### [Get-MgDirectoryRoleTemplate](Get-MgDirectoryRoleTemplate.md)
 
 ### [Get-MgDirectoryRoleTemplate](Get-MgDirectoryRoleTemplate.md)
 
@@ -503,13 +417,45 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDirectorySubscription](Get-MgDirectorySubscription.md)
 
-### [Get-MgDirectorySubscription](Get-MgDirectorySubscription.md)
-
 ### [Get-MgDirectorySubscriptionByCommerceSubscriptionId](Get-MgDirectorySubscriptionByCommerceSubscriptionId.md)
 
 ### [Get-MgDirectorySubscriptionCount](Get-MgDirectorySubscriptionCount.md)
 
-### [Get-MgDomain](Get-MgDomain.md)
+### [Get-MgDirectoryTenantGovernance](Get-MgDirectoryTenantGovernance.md)
+
+### [Get-MgDirectoryTenantGovernanceInvitation](Get-MgDirectoryTenantGovernanceInvitation.md)
+
+### [Get-MgDirectoryTenantGovernanceInvitationCount](Get-MgDirectoryTenantGovernanceInvitationCount.md)
+
+### [Get-MgDirectoryTenantGovernancePolicyTemplate](Get-MgDirectoryTenantGovernancePolicyTemplate.md)
+
+### [Get-MgDirectoryTenantGovernancePolicyTemplateCount](Get-MgDirectoryTenantGovernancePolicyTemplateCount.md)
+
+### [Get-MgDirectoryTenantGovernanceRelatedTenant](Get-MgDirectoryTenantGovernanceRelatedTenant.md)
+
+### [Get-MgDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric](Get-MgDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric.md)
+
+### [Get-MgDirectoryTenantGovernanceRelatedTenantB2BRegistrationMetric](Get-MgDirectoryTenantGovernanceRelatedTenantB2BRegistrationMetric.md)
+
+### [Get-MgDirectoryTenantGovernanceRelatedTenantB2BSignInActivityMetric](Get-MgDirectoryTenantGovernanceRelatedTenantB2BSignInActivityMetric.md)
+
+### [Get-MgDirectoryTenantGovernanceRelatedTenantBillingMetric](Get-MgDirectoryTenantGovernanceRelatedTenantBillingMetric.md)
+
+### [Get-MgDirectoryTenantGovernanceRelatedTenantCount](Get-MgDirectoryTenantGovernanceRelatedTenantCount.md)
+
+### [Get-MgDirectoryTenantGovernanceRelatedTenantMultiTenantApplicationMetric](Get-MgDirectoryTenantGovernanceRelatedTenantMultiTenantApplicationMetric.md)
+
+### [Get-MgDirectoryTenantGovernanceRelationship](Get-MgDirectoryTenantGovernanceRelationship.md)
+
+### [Get-MgDirectoryTenantGovernanceRelationshipCount](Get-MgDirectoryTenantGovernanceRelationshipCount.md)
+
+### [Get-MgDirectoryTenantGovernanceRequest](Get-MgDirectoryTenantGovernanceRequest.md)
+
+### [Get-MgDirectoryTenantGovernanceRequestCount](Get-MgDirectoryTenantGovernanceRequestCount.md)
+
+### [Get-MgDirectoryTenantGovernanceRequestGovernancePolicyTemplate](Get-MgDirectoryTenantGovernanceRequestGovernancePolicyTemplate.md)
+
+### [Get-MgDirectoryTenantGovernanceSetting](Get-MgDirectoryTenantGovernanceSetting.md)
 
 ### [Get-MgDomain](Get-MgDomain.md)
 
@@ -517,11 +463,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDomainFederationConfiguration](Get-MgDomainFederationConfiguration.md)
 
-### [Get-MgDomainFederationConfiguration](Get-MgDomainFederationConfiguration.md)
-
 ### [Get-MgDomainFederationConfigurationCount](Get-MgDomainFederationConfigurationCount.md)
-
-### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
 
 ### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
 
@@ -531,17 +473,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
 
-### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
-
 ### [Get-MgDomainServiceConfigurationRecordCount](Get-MgDomainServiceConfigurationRecordCount.md)
 
 ### [Get-MgDomainVerificationDnsRecord](Get-MgDomainVerificationDnsRecord.md)
 
-### [Get-MgDomainVerificationDnsRecord](Get-MgDomainVerificationDnsRecord.md)
-
 ### [Get-MgDomainVerificationDnsRecordCount](Get-MgDomainVerificationDnsRecordCount.md)
-
-### [Get-MgOrganization](Get-MgOrganization.md)
 
 ### [Get-MgOrganization](Get-MgOrganization.md)
 
@@ -556,8 +492,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgOrganizationBrandingFavicon](Get-MgOrganizationBrandingFavicon.md)
 
 ### [Get-MgOrganizationBrandingHeaderLogo](Get-MgOrganizationBrandingHeaderLogo.md)
-
-### [Get-MgOrganizationBrandingLocalization](Get-MgOrganizationBrandingLocalization.md)
 
 ### [Get-MgOrganizationBrandingLocalization](Get-MgOrganizationBrandingLocalization.md)
 
@@ -587,8 +521,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgOrganizationExtension](Get-MgOrganizationExtension.md)
 
-### [Get-MgOrganizationExtension](Get-MgOrganizationExtension.md)
-
 ### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
 
 ### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
@@ -596,10 +528,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
-
-### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
-
-### [Get-MgUserScopedRoleMemberOf](Get-MgUserScopedRoleMemberOf.md)
 
 ### [Get-MgUserScopedRoleMemberOf](Get-MgUserScopedRoleMemberOf.md)
 
@@ -616,6 +544,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](Invoke-MgUploadDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration.md)
 
 ### [New-MgAdminPeopleProfileCardProperty](New-MgAdminPeopleProfileCardProperty.md)
+
+### [New-MgAdminPeopleProfilePropertySetting](New-MgAdminPeopleProfilePropertySetting.md)
+
+### [New-MgAdminPeopleProfileSource](New-MgAdminPeopleProfileSource.md)
 
 ### [New-MgContract](New-MgContract.md)
 
@@ -653,6 +585,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](New-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
 
+### [New-MgDirectoryRecoveryJob](New-MgDirectoryRecoveryJob.md)
+
+### [New-MgDirectoryRecoverySnapshot](New-MgDirectoryRecoverySnapshot.md)
+
+### [New-MgDirectoryRemoteTenantGroup](New-MgDirectoryRemoteTenantGroup.md)
+
 ### [New-MgDirectoryRole](New-MgDirectoryRole.md)
 
 ### [New-MgDirectoryRoleMemberByRef](New-MgDirectoryRoleMemberByRef.md)
@@ -662,6 +600,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgDirectoryRoleTemplate](New-MgDirectoryRoleTemplate.md)
 
 ### [New-MgDirectorySubscription](New-MgDirectorySubscription.md)
+
+### [New-MgDirectoryTenantGovernanceInvitation](New-MgDirectoryTenantGovernanceInvitation.md)
+
+### [New-MgDirectoryTenantGovernancePolicyTemplate](New-MgDirectoryTenantGovernancePolicyTemplate.md)
+
+### [New-MgDirectoryTenantGovernanceRelatedTenant](New-MgDirectoryTenantGovernanceRelatedTenant.md)
+
+### [New-MgDirectoryTenantGovernanceRelationship](New-MgDirectoryTenantGovernanceRelationship.md)
+
+### [New-MgDirectoryTenantGovernanceRequest](New-MgDirectoryTenantGovernanceRequest.md)
 
 ### [New-MgDomain](New-MgDomain.md)
 
@@ -684,6 +632,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgAdminPeopleItemInsight](Remove-MgAdminPeopleItemInsight.md)
 
 ### [Remove-MgAdminPeopleProfileCardProperty](Remove-MgAdminPeopleProfileCardProperty.md)
+
+### [Remove-MgAdminPeopleProfilePropertySetting](Remove-MgAdminPeopleProfilePropertySetting.md)
+
+### [Remove-MgAdminPeopleProfileSource](Remove-MgAdminPeopleProfileSource.md)
+
+### [Remove-MgAdminPeopleProfileSourceBySourceId](Remove-MgAdminPeopleProfileSourceBySourceId.md)
 
 ### [Remove-MgContact](Remove-MgContact.md)
 
@@ -729,6 +683,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Remove-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
 
+### [Remove-MgDirectoryRecovery](Remove-MgDirectoryRecovery.md)
+
+### [Remove-MgDirectoryRecoveryJob](Remove-MgDirectoryRecoveryJob.md)
+
+### [Remove-MgDirectoryRecoverySnapshot](Remove-MgDirectoryRecoverySnapshot.md)
+
+### [Remove-MgDirectoryRemoteTenantGroup](Remove-MgDirectoryRemoteTenantGroup.md)
+
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
 
 ### [Remove-MgDirectoryRoleByRoleTemplateId](Remove-MgDirectoryRoleByRoleTemplateId.md)
@@ -742,6 +704,20 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgDirectorySubscription](Remove-MgDirectorySubscription.md)
 
 ### [Remove-MgDirectorySubscriptionByCommerceSubscriptionId](Remove-MgDirectorySubscriptionByCommerceSubscriptionId.md)
+
+### [Remove-MgDirectoryTenantGovernance](Remove-MgDirectoryTenantGovernance.md)
+
+### [Remove-MgDirectoryTenantGovernanceInvitation](Remove-MgDirectoryTenantGovernanceInvitation.md)
+
+### [Remove-MgDirectoryTenantGovernancePolicyTemplate](Remove-MgDirectoryTenantGovernancePolicyTemplate.md)
+
+### [Remove-MgDirectoryTenantGovernanceRelatedTenant](Remove-MgDirectoryTenantGovernanceRelatedTenant.md)
+
+### [Remove-MgDirectoryTenantGovernanceRelationship](Remove-MgDirectoryTenantGovernanceRelationship.md)
+
+### [Remove-MgDirectoryTenantGovernanceRequest](Remove-MgDirectoryTenantGovernanceRequest.md)
+
+### [Remove-MgDirectoryTenantGovernanceSetting](Remove-MgDirectoryTenantGovernanceSetting.md)
 
 ### [Remove-MgDomain](Remove-MgDomain.md)
 
@@ -823,6 +799,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgOrganizationMobileDeviceManagementAuthority](Set-MgOrganizationMobileDeviceManagementAuthority.md)
 
+### [Stop-MgDirectoryRecoveryJob](Stop-MgDirectoryRecoveryJob.md)
+
 ### [Test-MgContactProperty](Test-MgContactProperty.md)
 
 ### [Test-MgContractProperty](Test-MgContractProperty.md)
@@ -840,6 +818,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgAdminPeopleItemInsight](Update-MgAdminPeopleItemInsight.md)
 
 ### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
+
+### [Update-MgAdminPeopleProfilePropertySetting](Update-MgAdminPeopleProfilePropertySetting.md)
+
+### [Update-MgAdminPeopleProfileSource](Update-MgAdminPeopleProfileSource.md)
+
+### [Update-MgAdminPeopleProfileSourceBySourceId](Update-MgAdminPeopleProfileSourceBySourceId.md)
 
 ### [Update-MgAdminPeoplePronoun](Update-MgAdminPeoplePronoun.md)
 
@@ -881,6 +865,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Update-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
 
+### [Update-MgDirectoryRecovery](Update-MgDirectoryRecovery.md)
+
+### [Update-MgDirectoryRecoveryJob](Update-MgDirectoryRecoveryJob.md)
+
+### [Update-MgDirectoryRecoverySnapshot](Update-MgDirectoryRecoverySnapshot.md)
+
+### [Update-MgDirectoryRemoteTenantGroup](Update-MgDirectoryRemoteTenantGroup.md)
+
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
 
 ### [Update-MgDirectoryRoleByRoleTemplateId](Update-MgDirectoryRoleByRoleTemplateId.md)
@@ -892,6 +884,20 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgDirectorySubscription](Update-MgDirectorySubscription.md)
 
 ### [Update-MgDirectorySubscriptionByCommerceSubscriptionId](Update-MgDirectorySubscriptionByCommerceSubscriptionId.md)
+
+### [Update-MgDirectoryTenantGovernance](Update-MgDirectoryTenantGovernance.md)
+
+### [Update-MgDirectoryTenantGovernanceInvitation](Update-MgDirectoryTenantGovernanceInvitation.md)
+
+### [Update-MgDirectoryTenantGovernancePolicyTemplate](Update-MgDirectoryTenantGovernancePolicyTemplate.md)
+
+### [Update-MgDirectoryTenantGovernanceRelatedTenant](Update-MgDirectoryTenantGovernanceRelatedTenant.md)
+
+### [Update-MgDirectoryTenantGovernanceRelationship](Update-MgDirectoryTenantGovernanceRelationship.md)
+
+### [Update-MgDirectoryTenantGovernanceRequest](Update-MgDirectoryTenantGovernanceRequest.md)
+
+### [Update-MgDirectoryTenantGovernanceSetting](Update-MgDirectoryTenantGovernanceSetting.md)
 
 ### [Update-MgDomain](Update-MgDomain.md)
 

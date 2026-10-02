@@ -3,9 +3,17 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config\ModulesMapping.jsonc"),
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $CmdletMetadataPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src/Authentication/Authentication/custom/common/MgCommandMetadata.json")
+    # Restrict generation to a single SDK profile ("v1.0" or "beta"); "both" keeps the
+    # original full-run behaviour.
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    # Restrict generation to a single module (e.g. "Applications" or "Authentication"). Empty
+    # means all modules. When set, the run is "scoped": the module's folder is completely
+    # cleared and regenerated, and an import failure aborts THIS run (fail-safe, no deletion)
+    # instead of silently skipping.
+    [string] $ModuleFilter = ""
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -27,7 +35,7 @@ function Set-Help {
         Command               = (Get-Command $Command)
         OutputFolder          = $ModuleDocsPath
         Force                 = $true
-        Encoding              = [System.Text.Encoding]::UTF8
+        Encoding              = [System.Text.UTF8Encoding]::new($false)
     }
 
     if ($Module -eq "Microsoft.Graph.Authentication") {
@@ -35,7 +43,7 @@ function Set-Help {
             Module                = (Get-Module $Module)
             OutputFolder          = $ModuleDocsPath
             WithModulePage        = $true
-            Encoding              = [System.Text.Encoding]::UTF8
+            Encoding              = [System.Text.UTF8Encoding]::new($false)
         }
         Import-Module $Module -Force -Global
     }
@@ -51,30 +59,55 @@ function Start-GraphHelp {
     Param(
         $ModulesToGenerate = @()
     )
-    
-    #Generate for auth module first
+
     $ModulePrefix = "Microsoft.Graph"
     $AuthPath = "$ModulePrefix.Authentication"
     $AuthDestination = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" $AuthPath
-    Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
-    
-    Import-Module Microsoft.Graph.Authentication -Global
-    $GraphMapping = Get-GraphMapping 
-    $GraphMapping.Keys | ForEach-Object {
-        $graphProfile = $_
-        $profilePath = "graph-powershell-1.0"
-        if ($graphProfile -eq "beta") {
-            $profilePath = "graph-powershell-beta"
-        }
 
-        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0"
-        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication" 
-         Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
+    # Determine which profiles this run covers.
+    $GraphMapping = Get-GraphMapping
+    $profilesToProcess = @($GraphMapping.Keys)
+    if ($GraphProfileFilter -ne "both") {
+        $profilesToProcess = @($GraphProfileFilter)
     }
+
+    # Authentication docs live under graph-powershell-1.0 and are only generated on a full run
+    # or when Authentication is the explicitly targeted module.
+    $generateAuth = ([string]::IsNullOrWhiteSpace($ModuleFilter) -or $ModuleFilter -eq "Authentication")
+    if ($generateAuth -and ($profilesToProcess -contains "v1.0")) {
+        # Guard against catastrophic deletions: never remove existing docs unless the module
+        # is available to regenerate them. Authentication is required for every run, so abort
+        # if it failed to install rather than wiping committed documentation.
+        if (-not (Get-Module -Name Microsoft.Graph.Authentication -ListAvailable -ErrorAction SilentlyContinue)) {
+            throw "Microsoft.Graph.Authentication module is not available. Aborting generation to avoid deleting existing documentation."
+        }
+        Import-Module Microsoft.Graph.Authentication -Force -Global -ErrorAction Stop
+        Get-ChildItem -Path $AuthDestination * -File -Recurse | foreach { $_.Delete() }
+        $AuthenticationDocsPath = Join-Path $PSScriptRoot "..\microsoftgraph\graph-powershell-1.0"
+        Set-Help -ModuleDocsPath $AuthenticationDocsPath -Command "Connect-MgGraph" -Module "Microsoft.Graph.Authentication"
+    }
+
+    # Workload modules. Skip entirely when Authentication is the explicit single target.
+    if ($ModuleFilter -ne "Authentication") {
+        $profilesToProcess | ForEach-Object {
+            $graphProfile = $_
+            $profilePath = "graph-powershell-1.0"
+            if ($graphProfile -eq "beta") {
+                $profilePath = "graph-powershell-beta"
+            }
+            Get-FolderByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate
+        }
+    }
+
     git config --global user.email "GraphTooling@service.microsoft.com"
     git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
-    git commit -m "Updated markdown help" 
+    $pending = git status --porcelain
+    if (-not [string]::IsNullOrWhiteSpace($pending)) {
+        git commit -m "Updated markdown help"
+    } else {
+        $global:LASTEXITCODE = 0
+    }
 }
 
 function Get-FolderByProfile {
@@ -88,25 +121,76 @@ function Get-FolderByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-    $CommandMetadataContent = Get-Content $CmdletMetadataPath | ConvertFrom-Json
+
+    # In scoped (single-module) runs, restrict to the requested module and enable
+    # complete-delete + regenerate for it (safe because the module is verified to import
+    # below before anything is removed).
+    $Scoped = -not [string]::IsNullOrWhiteSpace($ModuleFilter)
+    if ($Scoped) {
+        $ScopedModules = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+        if ($ScopedModules.Count -eq 0) {
+            throw "Module '$ModuleFilter' is not present in '$ModuleMappingConfigPath'."
+        }
+        $ModulesToGenerate = $ScopedModules
+    }
    
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Write-Host $ModuleName
-        $ModName = $ModuleName
         $Path = "$ModulePrefix.$ModuleName"
         if ($GraphProfile -eq 'beta') {
             $Path = "$ModulePrefix.Beta.$ModuleName"
-            $ModName = "Beta.$ModuleName"
         }
         $Destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
         $DocsDestination = Join-Path $WorkLoadDocsPath $GraphProfilePath
+
+        # Guard against catastrophic deletions. A module can be installed yet fail to
+        # import (e.g. an Authentication version conflict), and ListAvailable alone does
+        # not catch that. Verify the module actually imports AND exposes commands; if it
+        # does not, skip it so its committed docs are preserved instead of being wiped
+        # and never regenerated (which is what produced the mass-deletion refresh PRs).
+        $PublishedCommands = @()
+        if (Get-Module -Name $Path -ListAvailable -ErrorAction SilentlyContinue) {
+            try {
+                Import-Module $Path -Force -Global -ErrorAction Stop
+                # The installed NuGet module is the source of truth for published commands.
+                # Aliases are documented separately by GenerateAliasedDocs.ps1.
+                $PublishedCommands = @(
+                    Get-Command -Module $Path -CommandType Function, Cmdlet -ErrorAction Stop |
+                        Sort-Object -Property Name -Unique
+                )
+            } catch {
+                Write-Warning "Module $Path failed to import: $($_.Exception.Message)"
+            }
+        }
+        if ($PublishedCommands.Count -eq 0) {
+            if ($Scoped) {
+                # Isolated single-module run: fail fast WITHOUT deleting anything so the
+                # module's committed docs are preserved. The pipeline job contains this
+                # failure (continueOnError) so it never fails the whole run or other modules.
+                throw "Module $Path is not usable in isolated generation; aborting this module without deleting its documentation."
+            }
+            Write-Warning "Module $Path is not usable; skipping to preserve existing documentation."
+            return
+        }
+
         if (-not(Test-Path $Destination)) {
             New-Item -Path $Destination -ItemType Directory
         }
-            
-        Get-ChildItem -Path $Destination * -File -Recurse | foreach { $_.Delete() }
+        elseif ($Scoped) {
+            # Complete deletion + regeneration for this single module. Safe here because the
+            # module imported successfully above, so regeneration repopulates the folder.
+            Get-ChildItem -Path $Destination -Filter "*.md" -File | ForEach-Object {
+                Remove-Item $_.FullName -Force
+            }
+        }
+
+        # NOTE: docs are intentionally NOT bulk-deleted here. Each doc is overwritten in
+        # place as it is regenerated, and only genuine orphans (commands no longer exported
+        # by the installed module) are removed afterwards. This guarantees that a transient
+        # generation failure can never wipe a module's documentation.
         $CmdletCount = 0
+        $PublishedCommandNames = @{}
         # Generate table of contents for each module
         $TocFileName = "$Path.md"
         $ModuleGuid = [guid]::NewGuid().ToString()
@@ -129,21 +213,24 @@ function Get-FolderByProfile {
         Add-Content -Path $Destination\$TocFileName -Value "Microsoft Graph PowerShell Cmdlets"
         Add-Content -Path $Destination\$TocFileName -Value ""
         Add-Content -Path $Destination\$TocFileName -Value "## $Path Cmdlets"
-        $CommandMetadataContent | Where-Object { $_.Module -eq $ModName -and $_.ApiVersion -eq $GraphProfile } | ForEach-Object {
-            $Command = $_.Command
-            $CmdletDocsPath = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path "$Command.md"
-            if (-not(Test-Path $CmdletDocsPath)) {
-                if (Get-Command -Name $Command -ErrorAction SilentlyContinue) {
-                    Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
-                } else {
-                    Write-Warning "Cmdlet $Command is not available."
-                }
-                
-            }
+        $PublishedCommands | ForEach-Object {
+            $Command = $_.Name
+            $PublishedCommandNames[$Command] = $true
+            Set-Help -ModuleDocsPath $DocsDestination -Command $Command -Module $Path
             Add-Content -Path $Destination\$TocFileName -Value "### [$Command]($Command.md)"
             Add-Content -Path $Destination\$TocFileName -Value ""
             $CmdletCount++
         }
+
+        # Remove only genuine orphans: docs whose command is no longer exported by the
+        # installed module.
+        Get-ChildItem -Path $Destination -Filter "*.md" -File | Where-Object {
+            $_.Name -ne $TocFileName -and -not $PublishedCommandNames.ContainsKey($_.BaseName)
+        } | ForEach-Object {
+            Write-Host "Removing orphaned doc: $($_.Name)"
+            Remove-Item $_.FullName -Force
+        }
+
         if($CmdletCount -eq 0){
             Remove-Item -LiteralPath $Destination -Force -Recurse
         }
@@ -169,4 +256,8 @@ if ($ModulesToGenerate.Count -eq 0) {
 }
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-GraphHelp -ModulesToGenerate $ModulesToGenerate
+# Signal successful generation so downstream pipeline steps (post-processing, push, PR) only
+# run when this module actually generated. On an import failure the script throws before this
+# line, the variable is never set, and the isolated stage opens no PR and deletes nothing.
+Write-Host "##vso[task.setvariable variable=ModuleGenerated]true"
 Write-Host -ForegroundColor Green "-------------Done-------------"

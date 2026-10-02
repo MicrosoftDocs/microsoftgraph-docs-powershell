@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgSecurityIdentitySensorCandidate
 ---
@@ -15,6 +15,9 @@ title: Initialize-MgSecurityIdentitySensorCandidate
 
 Activate Microsoft Defender for Identity sensors.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/Initialize-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)
@@ -24,7 +27,6 @@ Initialize-MgSecurityIdentitySensorCandidate [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-ServerIds <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Activate
@@ -35,7 +37,6 @@ Initialize-MgSecurityIdentitySensorCandidate
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -54,6 +55,25 @@ Activate Microsoft Defender for Identity sensors.
 | Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	serverIds = @(
+	"c0633ebb-8cfb-f17a-0b9e-83aa661f53a3"
+)
+}
+
+Initialize-MgSecurityIdentitySensorCandidate -BodyParameter $params
+
+```
+This example shows how to use the Initialize-MgSecurityIdentitySensorCandidate Cmdlet.
+
 
 ## PARAMETERS
 
@@ -393,7 +413,7 @@ BODYPARAMETER `<IPaths1Fs10W4SecurityIdentitiesSensorcandidatesMicrosoftGraphSec
 ## RELATED LINKS
 
 - [Initialize-MgSecurityIdentitySensorCandidate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/initialize-mgsecurityidentitysensorcandidate)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensorcandidate-activate?view=graph-rest-1.0)
 
 
 

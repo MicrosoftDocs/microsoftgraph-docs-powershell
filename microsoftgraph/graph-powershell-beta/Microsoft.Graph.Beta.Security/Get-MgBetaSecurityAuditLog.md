@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlog
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityAuditLog
 ---
@@ -13,7 +13,10 @@ title: Get-MgBetaSecurityAuditLog
 
 ## SYNOPSIS
 
-Get auditLog from security
+The entry point for Microsoft Purview audit log queries and operations.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLog](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLog?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -23,7 +26,7 @@ Get auditLog from security
 Get-MgBetaSecurityAuditLog [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -33,7 +36,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get auditLog from security
+The entry point for Microsoft Purview audit log queries and operations.
 
 ## PARAMETERS
 

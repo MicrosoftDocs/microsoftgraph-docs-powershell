@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/update-mgbetasolutionbackuprestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSolutionBackupRestoreSession
 ---
@@ -28,11 +28,11 @@ Update-MgBetaSolutionBackupRestoreSession -RestoreSessionBaseId <string>
  [-CompletedDateTime <datetime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <datetime>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-RestoreJobType <string>]
+ [-PolicyId <string>] [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -42,7 +42,7 @@ Update-MgBetaSolutionBackupRestoreSession -RestoreSessionBaseId <string>
  -BodyParameter <IMicrosoftGraphRestoreSessionBase> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,11 +53,11 @@ Update-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity>
  [-CompletedDateTime <datetime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <datetime>] [-Error <IMicrosoftGraphPublicError>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-RestoreJobType <string>]
+ [-PolicyId <string>] [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -67,7 +67,7 @@ Update-MgBetaSolutionBackupRestoreSession -InputObject <IBackupRestoreIdentity>
  -BodyParameter <IMicrosoftGraphRestoreSessionBase> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -463,6 +463,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PolicyId
+
+The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -747,6 +775,8 @@ For example, in the access reviews decisions API, this property might record the
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the restore session.
+  [PolicyId <String>]: The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
   [RestoreJobType <String>]: restoreJobType
   [RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]: restoreSessionArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -785,7 +815,10 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Target <String>]: The target of the error.
 
 INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
+  [ActivityLogBaseId <String>]: The unique identifier of activityLogBase
   [BrowseSessionBaseId <String>]: The unique identifier of browseSessionBase
+  [DriveExclusionUnitId <String>]: The unique identifier of driveExclusionUnit
+  [DriveExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of driveExclusionUnitsBulkAdditionJob
   [DriveProtectionRuleId <String>]: The unique identifier of driveProtectionRule
   [DriveProtectionUnitId <String>]: The unique identifier of driveProtectionUnit
   [DriveProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of driveProtectionUnitsBulkAdditionJob
@@ -793,9 +826,12 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [DriveRestoreArtifactsBulkAdditionRequestId <String>]: The unique identifier of driveRestoreArtifactsBulkAdditionRequest
   [ExchangeProtectionPolicyId <String>]: The unique identifier of exchangeProtectionPolicy
   [ExchangeRestoreSessionId <String>]: The unique identifier of exchangeRestoreSession
+  [ExclusionUnitBaseId <String>]: The unique identifier of exclusionUnitBase
   [GranularDriveRestoreArtifactId <String>]: The unique identifier of granularDriveRestoreArtifact
   [GranularMailboxRestoreArtifactId <String>]: The unique identifier of granularMailboxRestoreArtifact
   [GranularSiteRestoreArtifactId <String>]: The unique identifier of granularSiteRestoreArtifact
+  [MailboxExclusionUnitId <String>]: The unique identifier of mailboxExclusionUnit
+  [MailboxExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxExclusionUnitsBulkAdditionJob
   [MailboxProtectionRuleId <String>]: The unique identifier of mailboxProtectionRule
   [MailboxProtectionUnitId <String>]: The unique identifier of mailboxProtectionUnit
   [MailboxProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of mailboxProtectionUnitsBulkAdditionJob
@@ -805,6 +841,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [OneDriveForBusinessBrowseSessionId <String>]: The unique identifier of oneDriveForBusinessBrowseSession
   [OneDriveForBusinessProtectionPolicyId <String>]: The unique identifier of oneDriveForBusinessProtectionPolicy
   [OneDriveForBusinessRestoreSessionId <String>]: The unique identifier of oneDriveForBusinessRestoreSession
+  [PolicyId <String>]: Usage: policyId='{policyId}'
   [ProtectionPolicyBaseId <String>]: The unique identifier of protectionPolicyBase
   [ProtectionUnitBaseId <String>]: The unique identifier of protectionUnitBase
   [RestorePointId <String>]: The unique identifier of restorePoint
@@ -813,6 +850,8 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
   [SharePointBrowseSessionId <String>]: The unique identifier of sharePointBrowseSession
   [SharePointProtectionPolicyId <String>]: The unique identifier of sharePointProtectionPolicy
   [SharePointRestoreSessionId <String>]: The unique identifier of sharePointRestoreSession
+  [SiteExclusionUnitId <String>]: The unique identifier of siteExclusionUnit
+  [SiteExclusionUnitsBulkAdditionJobId <String>]: The unique identifier of siteExclusionUnitsBulkAdditionJob
   [SiteProtectionRuleId <String>]: The unique identifier of siteProtectionRule
   [SiteProtectionUnitId <String>]: The unique identifier of siteProtectionUnit
   [SiteProtectionUnitsBulkAdditionJobId <String>]: The unique identifier of siteProtectionUnitsBulkAdditionJob

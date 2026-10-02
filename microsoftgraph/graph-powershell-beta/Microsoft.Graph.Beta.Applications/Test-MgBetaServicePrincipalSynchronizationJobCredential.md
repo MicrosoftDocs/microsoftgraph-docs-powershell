@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaserviceprincipalsynchronizationjobcredential
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaServicePrincipalSynchronizationJobCredential
 ---
@@ -13,7 +13,7 @@ title: Test-MgBetaServicePrincipalSynchronizationJobCredential
 
 ## SYNOPSIS
 
-Validate that the credentials are valid in the tenant.
+Validate that the credentials are valid in the tenant for a synchronizationJob.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgServicePrincipalSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential?view=graph-powershell-1.0)
@@ -30,7 +30,6 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId <str
  [-UseSavedCredentials] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Validate
@@ -42,7 +41,6 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -ServicePrincipalId <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
@@ -55,7 +53,6 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicati
  [-UseSavedCredentials] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
@@ -66,7 +63,6 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicati
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -76,7 +72,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Validate that the credentials are valid in the tenant.
+Validate that the credentials are valid in the tenant for a synchronizationJob.
 
 **Permissions**
 

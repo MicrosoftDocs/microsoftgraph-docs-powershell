@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityIdentitySensorCandidate
 ---
@@ -14,6 +14,9 @@ title: Update-MgSecurityIdentitySensorCandidate
 ## SYNOPSIS
 
 Update the navigation property sensorCandidates in security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Update-MgSecurityIdentitySensorCandidate -SensorCandidateId <string>
  [-DomainName <string>] [-Id <string>] [-LastSeenDateTime <datetime>] [-SenseClientVersion <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -35,7 +38,7 @@ Update-MgSecurityIdentitySensorCandidate -SensorCandidateId <string>
  -BodyParameter <IMicrosoftGraphSecuritySensorCandidate> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,7 +49,7 @@ Update-MgSecurityIdentitySensorCandidate -InputObject <ISecurityIdentity>
  [-DomainName <string>] [-Id <string>] [-LastSeenDateTime <datetime>] [-SenseClientVersion <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -56,7 +59,7 @@ Update-MgSecurityIdentitySensorCandidate -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecuritySensorCandidate> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -576,9 +579,12 @@ Supports $filter (eq).
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation

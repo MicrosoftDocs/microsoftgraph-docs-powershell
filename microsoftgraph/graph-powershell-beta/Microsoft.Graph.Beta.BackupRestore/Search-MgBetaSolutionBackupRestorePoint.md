@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/search-mgbetasolutionbackuprestorepoint
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Search-MgBetaSolutionBackupRestorePoint
 ---
@@ -14,6 +14,7 @@ title: Search-MgBetaSolutionBackupRestorePoint
 ## SYNOPSIS
 
 Search for the restorePoint objects associated with a protectionUnit.
+Optionally provide policyId to scope the search to a protection policy and validate that the specified protection units belong to that policy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Search-MgSolutionBackupRestorePoint](/powershell/module/Microsoft.Graph.BackupRestore/Search-MgSolutionBackupRestorePoint?view=graph-powershell-1.0)
@@ -25,11 +26,11 @@ Search for the restorePoint objects associated with a protectionUnit.
 ```
 Search-MgBetaSolutionBackupRestorePoint [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-ArtifactQuery <IMicrosoftGraphArtifactQuery>]
- [-ProtectionTimePeriod <IMicrosoftGraphTimePeriod>] [-ProtectionUnitIds <string[]>]
- [-RestorePointPreference <string>] [-Tags <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PolicyId <string>] [-ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]
+ [-ProtectionUnitIds <string[]>] [-RestorePointPreference <string>] [-Tags <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Search
@@ -40,7 +41,6 @@ Search-MgBetaSolutionBackupRestorePoint
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,6 +51,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Search for the restorePoint objects associated with a protectionUnit.
+Optionally provide policyId to scope the search to a protection policy and validate that the specified protection units belong to that policy.
 
 **Permissions**
 
@@ -223,6 +224,27 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PolicyId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: SearchExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -458,14 +480,43 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ARTIFACTQUERY `<IMicrosoftGraphArtifactQuery>`: artifactQuery
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArtifactType <String>]: restorableArtifact
-  [QueryExpression <String>]: Specifies criteria to retrieve artifacts.
+  [QueryExpression <String>]: Deprecated.
+Going forward, use the structuredQueryExpression property instead.
+Specifies criteria to retrieve artifacts.
+  [StructuredQueryExpression <IMicrosoftGraphRestoreSearchArtifactQueryExpression>]: restoreSearchArtifactQueryExpression
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [HasAttachment <Boolean?>]: Indicates whether the artifact has an attachment.
+Optional.
+    [Items <String[]>]: The types of items to include in the search.
+Optional.
+    [Recipients <String[]>]: The recipient email addresses to filter by.
+Optional.
+    [Senders <String[]>]: The sender email addresses to filter by.
+Optional.
+    [Subjects <String[]>]: The subject lines to filter by.
+Optional.
 
 BODYPARAMETER `<IPathsHu2059SolutionsBackuprestoreRestorepointsMicrosoftGraphSearchPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ArtifactQuery <IMicrosoftGraphArtifactQuery>]: artifactQuery
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ArtifactType <String>]: restorableArtifact
-    [QueryExpression <String>]: Specifies criteria to retrieve artifacts.
+    [QueryExpression <String>]: Deprecated.
+Going forward, use the structuredQueryExpression property instead.
+Specifies criteria to retrieve artifacts.
+    [StructuredQueryExpression <IMicrosoftGraphRestoreSearchArtifactQueryExpression>]: restoreSearchArtifactQueryExpression
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [HasAttachment <Boolean?>]: Indicates whether the artifact has an attachment.
+Optional.
+      [Items <String[]>]: The types of items to include in the search.
+Optional.
+      [Recipients <String[]>]: The recipient email addresses to filter by.
+Optional.
+      [Senders <String[]>]: The sender email addresses to filter by.
+Optional.
+      [Subjects <String[]>]: The subject lines to filter by.
+Optional.
+  [PolicyId <String>]: 
   [ProtectionTimePeriod <IMicrosoftGraphTimePeriod>]: timePeriod
     [(Any) <Object>]: This indicates any property can be added to this object.
     [EndDateTime <DateTime?>]: The date time of the end of the time period.

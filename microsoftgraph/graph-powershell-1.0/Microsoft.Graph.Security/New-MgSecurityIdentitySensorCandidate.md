@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensorcandidate
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIdentitySensorCandidate
 ---
@@ -14,6 +14,9 @@ title: New-MgSecurityIdentitySensorCandidate
 ## SYNOPSIS
 
 Create new navigation property to sensorCandidates for security
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ New-MgSecurityIdentitySensorCandidate [-ResponseHeadersVariable <string>]
  [-Id <string>] [-LastSeenDateTime <datetime>] [-SenseClientVersion <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -35,7 +38,6 @@ New-MgSecurityIdentitySensorCandidate -BodyParameter <IMicrosoftGraphSecuritySen
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

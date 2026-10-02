@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostcomponent
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityThreatIntelligenceHostComponent
 ---
@@ -29,7 +29,7 @@ Update-MgSecurityThreatIntelligenceHostComponent -HostComponentId <string>
  [-LastSeenDateTime <datetime>] [-Name <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,7 @@ Update-MgSecurityThreatIntelligenceHostComponent -HostComponentId <string>
  -BodyParameter <IMicrosoftGraphSecurityHostComponent> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +51,7 @@ Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity
  [-LastSeenDateTime <datetime>] [-Name <string>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -61,7 +61,7 @@ Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity
  -BodyParameter <IMicrosoftGraphSecurityHostComponent> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -1183,9 +1183,12 @@ Read-only.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation

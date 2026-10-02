@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitem
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Search
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaExternalConnectionItem
 ---
@@ -28,9 +28,10 @@ New-MgBetaExternalConnectionItem -ExternalConnectionId <string> [-ResponseHeader
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]
  [-AdditionalProperties <hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <string>]
+ [-InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]
  [-Properties <hashtable>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +41,7 @@ New-MgBetaExternalConnectionItem -ExternalConnectionId <string>
  -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -51,9 +52,10 @@ New-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-ResponseHeader
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>]
  [-AdditionalProperties <hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <string>]
+ [-InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]
  [-Properties <hashtable>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -63,7 +65,7 @@ New-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
  -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -380,6 +382,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -InformationProtectionLabel
+
+externalItemInformationProtectionLabel
+To construct, see NOTES section for INFORMATIONPROTECTIONLABEL properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -InputObject
 
 Identity Parameter
@@ -631,6 +661,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Type <String>]: externalItemContentType
     [Value <String>]: The content for the externalItem.
 Required.
+  [InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]: externalItemInformationProtectionLabel
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SensitivityLabelId <String>]: The GUID of the Purview sensitivity label.
+To get the label GUID, use the Get sensitivityLabel API or the Get-Label PowerShell command.
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
@@ -639,6 +673,11 @@ CONTENT `<IMicrosoftGraphExternalConnectorsExternalItemContent>`: externalItemCo
   [Type <String>]: externalItemContentType
   [Value <String>]: The content for the externalItem.
 Required.
+
+INFORMATIONPROTECTIONLABEL `<IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>`: externalItemInformationProtectionLabel
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [SensitivityLabelId <String>]: The GUID of the Purview sensitivity label.
+To get the label GUID, use the Get sensitivityLabel API or the Get-Label PowerShell command.
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   [AcronymId <String>]: The unique identifier of acronym

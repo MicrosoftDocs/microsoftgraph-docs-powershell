@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageapplicablepolicyrequirement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement
 
 ## SYNOPSIS
 
-In Microsoft Entra entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
+In Microsoft Entra entitlement management, this action retrieves accessPackageAssignmentRequestRequirements objects for an accessPackage that the currently signed-in user can use to create an accessPackageAssignmentRequest.
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 > [!NOTE]
@@ -28,7 +28,6 @@ Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessP
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -38,7 +37,7 @@ Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -48,14 +47,14 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-In Microsoft Entra entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
+In Microsoft Entra entitlement management, this action retrieves accessPackageAssignmentRequestRequirements objects for an accessPackage that the currently signed-in user can use to create an accessPackageAssignmentRequest.
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
+| Delegated (work or school account) | EntitlementMgmt-SubjectAccess.ReadWrite, EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
@@ -67,23 +66,6 @@ Each requirement object corresponds to an access package assignment policy that 
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	subject = @{
-		objectId = "5acd375c-8acb-45de-a958-fa0dd89259ad"
-	}
-}
-
-Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId -BodyParameter $params
 
 ```
 This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet.
@@ -419,12 +401,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -460,6 +444,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

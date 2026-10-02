@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetauserinformationprotectiondatalosspreventionpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaUserInformationProtectionDataLossPreventionPolicy
 ---
@@ -22,11 +22,12 @@ Invoke action evaluate
 ```
 Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Evaluate
@@ -37,7 +38,6 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
@@ -45,11 +45,12 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -UserId <string>
 ```
 Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-ClassifyText <IMicrosoftGraphTextClassificationRequest>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]
  [-NotificationInfo <IMicrosoftGraphDlpNotification>] [-Target <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### EvaluateViaIdentity
@@ -60,7 +61,6 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IIden
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -140,6 +140,34 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ClassifyText
+
+textClassificationRequest
+To construct, see NOTES section for CLASSIFYTEXT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTextClassificationRequest
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: EvaluateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: EvaluateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -516,6 +544,33 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPaths1EzienbUsersUserIdInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [ClassifyText <IMicrosoftGraphTextClassificationRequest>]: textClassificationRequest
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SourceId <String>]: An identifier for the source of the content being classified.
+    [Embeddings <IMicrosoftGraphEmbeddingInput[]>]: Optional caller-supplied precomputed embeddings for the text, so the service can skip recomputing them.
+Embeddings for models outside the allow-list are rejected with a 400.
+      [ChunkOffsets <IMicrosoftGraphChunkOffsets>]: chunkOffsets
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Lengths <String>]: An optional base64 string that encodes a packed sequence of little-endian signed 32-bit integers.
+Decoded values represent chunk lengths and must be nonnegative.
+The decoded byte count must be divisible by 4.
+When supplied, the decoded element count must match starts, and elements pair by index.
+        [Starts <String>]: A base64 string that encodes a packed sequence of little-endian signed 64-bit integers.
+Decoded values represent chunk start positions and must be nonnegative and in ascending order.
+The decoded byte count must be divisible by 8.
+      [Data <String>]: The embedding vectors the model produced for the text, encoded as a base64 string of little-endian 32-bit floats.
+Every vector the model emitted (for example, one per text chunk) is concatenated in order; each contributes exactly the modelType's embedding dimension worth of float components, so the decoded length must be a whole multiple of that dimension.
+      [ModelType <String>]: The embedding model identifier drawn from the service allow-list (for example: text-embedding-3-small-512).
+Unique (case-insensitive) within the embeddings collection; entries whose modelType is outside the allow-list are rejected with a 400.
+    [FileExtension <String>]: The file extension of the content being classified.
+    [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+    [ScopesToRun <String>]: sensitiveTypeScope
+    [SensitiveTypeIds <String[]>]: The identifiers of the sensitive information types to evaluate against the text.
+    [Text <String>]: The text to classify.
   [EvaluationInput <IMicrosoftGraphDlpEvaluationInput>]: dlpEvaluationInput
     [(Any) <Object>]: This indicates any property can be added to this object.
     [CurrentLabel <IMicrosoftGraphCurrentLabel>]: currentLabel
@@ -533,6 +588,34 @@ BODYPARAMETER `<IPaths1EzienbUsersUserIdInformationprotectionDatalosspreventionp
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Author <String>]: 
   [Target <String>]: 
+
+CLASSIFYTEXT `<IMicrosoftGraphTextClassificationRequest>`: textClassificationRequest
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [ContentMetaData <IMicrosoftGraphClassificationRequestContentMetaData>]: classificationRequestContentMetaData
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SourceId <String>]: An identifier for the source of the content being classified.
+  [Embeddings <IMicrosoftGraphEmbeddingInput[]>]: Optional caller-supplied precomputed embeddings for the text, so the service can skip recomputing them.
+Embeddings for models outside the allow-list are rejected with a 400.
+    [ChunkOffsets <IMicrosoftGraphChunkOffsets>]: chunkOffsets
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Lengths <String>]: An optional base64 string that encodes a packed sequence of little-endian signed 32-bit integers.
+Decoded values represent chunk lengths and must be nonnegative.
+The decoded byte count must be divisible by 4.
+When supplied, the decoded element count must match starts, and elements pair by index.
+      [Starts <String>]: A base64 string that encodes a packed sequence of little-endian signed 64-bit integers.
+Decoded values represent chunk start positions and must be nonnegative and in ascending order.
+The decoded byte count must be divisible by 8.
+    [Data <String>]: The embedding vectors the model produced for the text, encoded as a base64 string of little-endian 32-bit floats.
+Every vector the model emitted (for example, one per text chunk) is concatenated in order; each contributes exactly the modelType's embedding dimension worth of float components, so the decoded length must be a whole multiple of that dimension.
+    [ModelType <String>]: The embedding model identifier drawn from the service allow-list (for example: text-embedding-3-small-512).
+Unique (case-insensitive) within the embeddings collection; entries whose modelType is outside the allow-list are rejected with a 400.
+  [FileExtension <String>]: The file extension of the content being classified.
+  [MatchTolerancesToInclude <String>]: mlClassificationMatchTolerance
+  [ScopesToRun <String>]: sensitiveTypeScope
+  [SensitiveTypeIds <String[]>]: The identifiers of the sensitive information types to evaluate against the text.
+  [Text <String>]: The text to classify.
 
 EVALUATIONINPUT `<IMicrosoftGraphDlpEvaluationInput>`: dlpEvaluationInput
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -598,6 +681,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -613,6 +697,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem

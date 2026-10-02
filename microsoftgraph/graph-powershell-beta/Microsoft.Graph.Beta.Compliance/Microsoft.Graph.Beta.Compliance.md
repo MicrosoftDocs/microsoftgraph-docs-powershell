@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Compliance
-Module Guid: 668b7ffe-b8c5-449f-948d-6f760e5ee6e3
+Module Guid: 2db567ea-2d13-46b7-9bdd-4728dfefc8e6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.compliance/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -31,11 +31,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCase](Get-MgBetaComplianceEdiscoveryCase.md)
 
-### [Get-MgBetaComplianceEdiscoveryCase](Get-MgBetaComplianceEdiscoveryCase.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseCount](Get-MgBetaComplianceEdiscoveryCaseCount.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseCustodian](Get-MgBetaComplianceEdiscoveryCaseCustodian.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodian](Get-MgBetaComplianceEdiscoveryCaseCustodian.md)
 
@@ -45,13 +41,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceCount](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceCount.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
@@ -65,11 +57,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource](Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource](Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUserSourceCount](Get-MgBetaComplianceEdiscoveryCaseCustodianUserSourceCount.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseLegalHold](Get-MgBetaComplianceEdiscoveryCaseLegalHold.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHold](Get-MgBetaComplianceEdiscoveryCaseLegalHold.md)
 
@@ -77,13 +65,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceCount.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceSite](Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSourceSite.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
 
@@ -97,11 +81,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSourceCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSourceCount.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -113,10 +93,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperation](Get-MgBetaComplianceEdiscoveryCaseOperation.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseOperation](Get-MgBetaComplianceEdiscoveryCaseOperation.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet.md)
@@ -127,11 +103,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSet](Get-MgBetaComplianceEdiscoveryCaseReviewSet.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseReviewSet](Get-MgBetaComplianceEdiscoveryCaseReviewSet.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSetCount](Get-MgBetaComplianceEdiscoveryCaseReviewSetCount.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery](Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery](Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery.md)
 
@@ -140,10 +112,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaComplianceEdiscoveryCaseSetting](Get-MgBetaComplianceEdiscoveryCaseSetting.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollection](Get-MgBetaComplianceEdiscoveryCaseSourceCollection.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseSourceCollection](Get-MgBetaComplianceEdiscoveryCaseSourceCollection.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
 
@@ -155,23 +123,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSourceCount](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSourceCount.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource.md)
 
-### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSource.md)
-
 ### [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceCount](Get-MgBetaComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceCount.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseTag](Get-MgBetaComplianceEdiscoveryCaseTag.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseTag](Get-MgBetaComplianceEdiscoveryCaseTag.md)
-
-### [Get-MgBetaComplianceEdiscoveryCaseTagChildTag](Get-MgBetaComplianceEdiscoveryCaseTagChildTag.md)
 
 ### [Get-MgBetaComplianceEdiscoveryCaseTagChildTag](Get-MgBetaComplianceEdiscoveryCaseTagChildTag.md)
 
@@ -182,10 +142,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaComplianceEdiscoveryCaseTagParent](Get-MgBetaComplianceEdiscoveryCaseTagParent.md)
 
 ### [Get-MgBetaPrivacySubjectRightsRequest](Get-MgBetaPrivacySubjectRightsRequest.md)
-
-### [Get-MgBetaPrivacySubjectRightsRequest](Get-MgBetaPrivacySubjectRightsRequest.md)
-
-### [Get-MgBetaPrivacySubjectRightsRequestApprover](Get-MgBetaPrivacySubjectRightsRequestApprover.md)
 
 ### [Get-MgBetaPrivacySubjectRightsRequestApprover](Get-MgBetaPrivacySubjectRightsRequestApprover.md)
 
@@ -198,8 +154,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError](Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError.md)
 
 ### [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-
-### [Get-MgBetaPrivacySubjectRightsRequestCollaborator](Get-MgBetaPrivacySubjectRightsRequestCollaborator.md)
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCollaborator](Get-MgBetaPrivacySubjectRightsRequestCollaborator.md)
 
@@ -218,8 +172,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPrivacySubjectRightsRequestFinalAttachment](Get-MgBetaPrivacySubjectRightsRequestFinalAttachment.md)
 
 ### [Get-MgBetaPrivacySubjectRightsRequestFinalReport](Get-MgBetaPrivacySubjectRightsRequestFinalReport.md)
-
-### [Get-MgBetaPrivacySubjectRightsRequestNote](Get-MgBetaPrivacySubjectRightsRequestNote.md)
 
 ### [Get-MgBetaPrivacySubjectRightsRequestNote](Get-MgBetaPrivacySubjectRightsRequestNote.md)
 

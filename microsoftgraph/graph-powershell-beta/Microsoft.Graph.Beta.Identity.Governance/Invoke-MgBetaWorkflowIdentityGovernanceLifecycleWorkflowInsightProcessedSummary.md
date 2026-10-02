@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaworkflowidentitygovernancelifecycleworkflowinsightprocessedsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
 ---
@@ -13,8 +13,8 @@ title: Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedS
 
 ## SYNOPSIS
 
-Provide a summary of all workflows processed within a tenant for a specified period.
-Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+Provide a summary from the insights resource of workflow objects processed within a tenant for a specified period.
+Because the list returned by List workflows doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
  -EndDateTime <datetime> -StartDateTime <datetime> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### WorkflowsViaIdentity
@@ -38,7 +38,7 @@ Invoke-MgBetaWorkflowIdentityGovernanceLifecycleWorkflowInsightProcessedSummary
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -48,8 +48,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Provide a summary of all workflows processed within a tenant for a specified period.
-Because the amount of results for listed workflows as returned by the List workflows does not tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+Provide a summary from the insights resource of workflow objects processed within a tenant for a specified period.
+Because the list returned by List workflows doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -371,12 +371,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -412,6 +414,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

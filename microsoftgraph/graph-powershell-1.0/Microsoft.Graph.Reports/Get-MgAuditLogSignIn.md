@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Reports-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 Locale: en-US
 Module Name: Microsoft.Graph.Reports
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgAuditLogSignIn
 ---
@@ -29,7 +29,7 @@ Get-MgAuditLogSignIn [-ExpandProperty <string[]>] [-Property <string[]>] [-Filte
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -38,7 +38,7 @@ Get-MgAuditLogSignIn [-ExpandProperty <string[]>] [-Property <string[]>] [-Filte
 Get-MgAuditLogSignIn -SignInId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -47,7 +47,7 @@ Get-MgAuditLogSignIn -SignInId <string> [-ExpandProperty <string[]>] [-Property 
 Get-MgAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -64,9 +64,9 @@ Sign-ins that are interactive in nature (where a username/password is passed as 
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AuditLog.Read.All, Directory.Read.All,  |
+| Delegated (work or school account) | AuditLog.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | AuditLog.Read.All, Directory.Read.All,  |
+| Application | AuditLog.Read.All,  |
 
 ## EXAMPLES
 ### Example 1: List all sign-ins

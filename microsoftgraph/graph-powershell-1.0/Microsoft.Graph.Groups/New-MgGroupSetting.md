@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Groups
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupSetting
 ---
@@ -15,8 +15,7 @@ title: New-MgGroupSetting
 
 Create a new group setting based on the templates available in groupSettingTemplates.
 These settings can be at the tenant-level or at the group level.
-Group settings apply to only Microsoft 365 groups.
-The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+The following group setting templates are available for groups:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting?view=graph-powershell-beta)
@@ -31,7 +30,6 @@ New-MgGroupSetting [-ResponseHeadersVariable <string>] [-AdditionalProperties <h
  [-Values <IMicrosoftGraphSettingValue[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateExpanded
@@ -42,7 +40,6 @@ New-MgGroupSetting -GroupId <string> [-ResponseHeadersVariable <string>]
  [-Values <IMicrosoftGraphSettingValue[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -52,7 +49,6 @@ New-MgGroupSetting -GroupId <string> -BodyParameter <IMicrosoftGraphGroupSetting
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -63,7 +59,6 @@ New-MgGroupSetting -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <str
  [-Values <IMicrosoftGraphSettingValue[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -73,7 +68,6 @@ New-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGrap
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create1
@@ -82,7 +76,7 @@ New-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGrap
 New-MgGroupSetting -BodyParameter <IMicrosoftGraphGroupSetting> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -94,8 +88,7 @@ This cmdlet has the following aliases,
 
 Create a new group setting based on the templates available in groupSettingTemplates.
 These settings can be at the tenant-level or at the group level.
-Group settings apply to only Microsoft 365 groups.
-The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+The following group setting templates are available for groups:
 
 **Permissions**
 
@@ -114,6 +107,27 @@ Import-Module Microsoft.Graph.Groups
 
 $params = @{
 	templateId = "08d542b9-071f-4e16-94b0-74abb372e3d9"
+	values = @(
+		@{
+			name = "AllowToAddGuests"
+			value = "false"
+		}
+	)
+}
+
+New-MgGroupSetting -GroupId $groupId -BodyParameter $params
+
+```
+This example shows how to use the New-MgGroupSetting Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Groups
+
+$params = @{
+	templateId = "7e0abea2-5c20-405f-9658-bfc9a523fd49"
 	values = @(
 		@{
 			name = "AllowToAddGuests"

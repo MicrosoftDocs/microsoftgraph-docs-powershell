@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapp
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaRoleManagementEnterpriseApp
 ---
@@ -35,7 +35,7 @@ New-MgBetaRoleManagementEnterpriseApp [-ResponseHeadersVariable <string>]
  [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -45,7 +45,6 @@ New-MgBetaRoleManagementEnterpriseApp -BodyParameter <IMicrosoftGraphRbacApplica
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -692,7 +691,7 @@ Read-only.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
@@ -1116,7 +1115,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app specific scope when the assignment scope is app specific.
@@ -1198,7 +1197,7 @@ ROLEASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleAssignmentScheduleIns
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
@@ -1334,7 +1333,7 @@ adminUpdate: For administrators to change existing role assignments.adminExtend:
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
       [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
     [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
@@ -1524,7 +1523,7 @@ ROLEASSIGNMENTSCHEDULES <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>: .
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
@@ -1722,7 +1721,7 @@ ROLEELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphUnifiedRoleEligibilityScheduleI
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
@@ -1825,7 +1824,7 @@ AdminUpdate: For administrators to change existing role eligibilities.AdminExten
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the role eligibility is scoped to an app.
@@ -1986,7 +1985,7 @@ ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>: .
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app-specific scope when the assignment or eligibility is scoped to an app.
@@ -2113,7 +2112,7 @@ Read-only.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
     [DisplayName <String>]: Provides the display name of the app-specific resource represented by the app scope.
-Read only.
+Read-only.
     [Type <String>]: Describes the type of app-specific resource represented by the app scope.
 Read-only.
   [AppScopeId <String>]: Identifier of the app specific scope when the assignment scope is app specific.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Calendar
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaPlace
 ---
@@ -26,12 +26,12 @@ You can also use this method to create the following child object types: buildin
 ```
 New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
- [-Children <IMicrosoftGraphPlace[]>] [-DisplayName <string>]
+ [-Children <IMicrosoftGraphPlace[]>] [-CustomProperties <hashtable>] [-DisplayName <string>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-PlaceId <string>] [-Tags <string[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -40,7 +40,7 @@ New-MgBetaPlace [-ResponseHeadersVariable <string>] [-AdditionalProperties <hash
 New-MgBetaPlace -BodyParameter <IMicrosoftGraphPlace> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -52,6 +52,121 @@ This cmdlet has the following aliases,
 
 Create a new place object.
 You can also use this method to create the following child object types: building, floor, section, room, workspace, or desk.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Create a building
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.building"
+	displayName = "B001"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a building
+
+### Example 2: Create a floor
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.floor"
+	displayName = "F1"
+	parentId = "767a31a7-6987-41c9-b829-ab351b8aab53"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a floor
+
+### Example 3: Create a section
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.section"
+	displayName = "S1"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a section
+
+### Example 4: Create a desk
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.desk"
+	displayName = "D1"
+	parentId = "1ad0f725-6885-49c5-9a47-3b22a1f9409d"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a desk
+
+### Example 5: Create a room
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.room"
+	displayName = "Conf Room 4/3.3G11"
+	parentId = "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
+	bookingType = "standard"
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a room
+
+### Example 6: Create a workspace
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.workspace"
+	parentId = "f7de7265-e420-47b4-9d49-28d728716241"
+	displayName = "testSpace001"
+	tags = @(
+	"test"
+)
+}
+
+New-MgBetaPlace -BodyParameter $params
+
+```
+This example will create a workspace
+
 
 ## PARAMETERS
 
@@ -197,6 +312,27 @@ Aliases:
 - cf
 ParameterSets:
 - Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CustomProperties
+
+stringDictionary
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -419,6 +555,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PlaceId
+
+A stable service-level identifier for the place object used by Places workloads.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -610,6 +767,8 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+    [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -623,6 +782,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
@@ -654,6 +814,8 @@ For more information, see the iCalUId property in event.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   [Children <IMicrosoftGraphPlace[]>]: A collection of children places that is only used in the Upsert places API.
+  [CustomProperties <IMicrosoftGraphStringDictionary>]: stringDictionary
+    [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The name that is associated with the place.
   [GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]: outlookGeoCoordinates
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -667,6 +829,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
@@ -683,7 +846,6 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
 
 - [New-MgBetaPlace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplace)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/place-post?view=graph-rest-beta)
-
 
 
 

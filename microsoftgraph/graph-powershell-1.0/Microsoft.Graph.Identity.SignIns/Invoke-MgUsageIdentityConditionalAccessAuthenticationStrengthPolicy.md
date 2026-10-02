@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusageidentityconditionalaccessauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy
 ---
@@ -14,7 +14,7 @@ title: Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy
 ## SYNOPSIS
 
 Allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 > [!NOTE]
@@ -29,7 +29,7 @@ Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy
  -AuthenticationStrengthPolicyId <string> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### UsageViaIdentity
@@ -39,7 +39,7 @@ Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy
  -InputObject <IIdentitySignInsIdentity> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 ## PARAMETERS
@@ -320,6 +320,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -330,6 +331,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [IdentityUserFlowAttributeAssignmentId <String>]: The unique identifier of identityUserFlowAttributeAssignment
   [IdentityUserFlowAttributeId <String>]: The unique identifier of identityUserFlowAttribute
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
@@ -358,6 +360,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 1a6030b0-694b-4e57-8f42-7b7acaf140b6
+Module Guid: 973d9e76-d2bb-405d-80fa-6687659a4c4f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.directorymanagement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,22 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.Identity.DirectoryManagement Cmdlets
+### [Add-MgBetaBulkDirectoryImpactedResourceTag](Add-MgBetaBulkDirectoryImpactedResourceTag.md)
+
+### [Add-MgBetaBulkDirectoryRecommendationImpactedResourceTag](Add-MgBetaBulkDirectoryRecommendationImpactedResourceTag.md)
+
+### [Add-MgBetaDirectoryImpactedResourceAlternateMitigation](Add-MgBetaDirectoryImpactedResourceAlternateMitigation.md)
+
+### [Add-MgBetaDirectoryImpactedResourceTag](Add-MgBetaDirectoryImpactedResourceTag.md)
+
+### [Add-MgBetaDirectoryRecommendationAlternateMitigation](Add-MgBetaDirectoryRecommendationAlternateMitigation.md)
+
+### [Add-MgBetaDirectoryRecommendationImpactedResourceAlternateMitigation](Add-MgBetaDirectoryRecommendationImpactedResourceAlternateMitigation.md)
+
+### [Add-MgBetaDirectoryRecommendationImpactedResourceTag](Add-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Add-MgBetaDirectoryRecommendationTag](Add-MgBetaDirectoryRecommendationTag.md)
+
 ### [Complete-MgBetaDirectoryImpactedResource](Complete-MgBetaDirectoryImpactedResource.md)
 
 ### [Complete-MgBetaDirectoryRecommendation](Complete-MgBetaDirectoryRecommendation.md)
@@ -55,13 +71,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Confirm-MgBetaOrganizationMemberObject](Confirm-MgBetaOrganizationMemberObject.md)
 
+### [Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant](Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant.md)
+
 ### [Export-MgBetaDirectoryInboundSharedUserProfilePersonalData](Export-MgBetaDirectoryInboundSharedUserProfilePersonalData.md)
 
 ### [Find-MgBetaTenantRelationshipTenantInformationByDomainName](Find-MgBetaTenantRelationshipTenantInformationByDomainName.md)
 
 ### [Find-MgBetaTenantRelationshipTenantInformationByTenantId](Find-MgBetaTenantRelationshipTenantInformationByTenantId.md)
-
-### [Get-MgBetaAdministrativeUnit](Get-MgBetaAdministrativeUnit.md)
 
 ### [Get-MgBetaAdministrativeUnit](Get-MgBetaAdministrativeUnit.md)
 
@@ -71,13 +87,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAdministrativeUnitDeletedMember](Get-MgBetaAdministrativeUnitDeletedMember.md)
 
-### [Get-MgBetaAdministrativeUnitDeletedMember](Get-MgBetaAdministrativeUnitDeletedMember.md)
-
 ### [Get-MgBetaAdministrativeUnitDeletedMemberCount](Get-MgBetaAdministrativeUnitDeletedMemberCount.md)
 
 ### [Get-MgBetaAdministrativeUnitDelta](Get-MgBetaAdministrativeUnitDelta.md)
-
-### [Get-MgBetaAdministrativeUnitExtension](Get-MgBetaAdministrativeUnitExtension.md)
 
 ### [Get-MgBetaAdministrativeUnitExtension](Get-MgBetaAdministrativeUnitExtension.md)
 
@@ -87,25 +99,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAdministrativeUnitMemberAsApplication](Get-MgBetaAdministrativeUnitMemberAsApplication.md)
 
-### [Get-MgBetaAdministrativeUnitMemberAsApplication](Get-MgBetaAdministrativeUnitMemberAsApplication.md)
-
 ### [Get-MgBetaAdministrativeUnitMemberAsDevice](Get-MgBetaAdministrativeUnitMemberAsDevice.md)
-
-### [Get-MgBetaAdministrativeUnitMemberAsDevice](Get-MgBetaAdministrativeUnitMemberAsDevice.md)
-
-### [Get-MgBetaAdministrativeUnitMemberAsGroup](Get-MgBetaAdministrativeUnitMemberAsGroup.md)
 
 ### [Get-MgBetaAdministrativeUnitMemberAsGroup](Get-MgBetaAdministrativeUnitMemberAsGroup.md)
 
 ### [Get-MgBetaAdministrativeUnitMemberAsOrgContact](Get-MgBetaAdministrativeUnitMemberAsOrgContact.md)
 
-### [Get-MgBetaAdministrativeUnitMemberAsOrgContact](Get-MgBetaAdministrativeUnitMemberAsOrgContact.md)
-
 ### [Get-MgBetaAdministrativeUnitMemberAsServicePrincipal](Get-MgBetaAdministrativeUnitMemberAsServicePrincipal.md)
-
-### [Get-MgBetaAdministrativeUnitMemberAsServicePrincipal](Get-MgBetaAdministrativeUnitMemberAsServicePrincipal.md)
-
-### [Get-MgBetaAdministrativeUnitMemberAsUser](Get-MgBetaAdministrativeUnitMemberAsUser.md)
 
 ### [Get-MgBetaAdministrativeUnitMemberAsUser](Get-MgBetaAdministrativeUnitMemberAsUser.md)
 
@@ -131,8 +131,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAdministrativeUnitScopedRoleMember](Get-MgBetaAdministrativeUnitScopedRoleMember.md)
 
-### [Get-MgBetaAdministrativeUnitScopedRoleMember](Get-MgBetaAdministrativeUnitScopedRoleMember.md)
-
 ### [Get-MgBetaAdministrativeUnitScopedRoleMemberCount](Get-MgBetaAdministrativeUnitScopedRoleMemberCount.md)
 
 ### [Get-MgBetaAdministrativeUnitUserOwnedObject](Get-MgBetaAdministrativeUnitUserOwnedObject.md)
@@ -147,17 +145,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAdminPeopleProfileCardProperty](Get-MgBetaAdminPeopleProfileCardProperty.md)
 
-### [Get-MgBetaAdminPeopleProfileCardProperty](Get-MgBetaAdminPeopleProfileCardProperty.md)
-
 ### [Get-MgBetaAdminPeopleProfileCardPropertyCount](Get-MgBetaAdminPeopleProfileCardPropertyCount.md)
 
 ### [Get-MgBetaAdminPeopleProfilePropertySetting](Get-MgBetaAdminPeopleProfilePropertySetting.md)
 
-### [Get-MgBetaAdminPeopleProfilePropertySetting](Get-MgBetaAdminPeopleProfilePropertySetting.md)
-
 ### [Get-MgBetaAdminPeopleProfilePropertySettingCount](Get-MgBetaAdminPeopleProfilePropertySettingCount.md)
-
-### [Get-MgBetaAdminPeopleProfileSource](Get-MgBetaAdminPeopleProfileSource.md)
 
 ### [Get-MgBetaAdminPeopleProfileSource](Get-MgBetaAdminPeopleProfileSource.md)
 
@@ -169,8 +161,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaContact](Get-MgBetaContact.md)
 
-### [Get-MgBetaContact](Get-MgBetaContact.md)
-
 ### [Get-MgBetaContactById](Get-MgBetaContactById.md)
 
 ### [Get-MgBetaContactCount](Get-MgBetaContactCount.md)
@@ -179,13 +169,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaContactDirectReport](Get-MgBetaContactDirectReport.md)
 
-### [Get-MgBetaContactDirectReport](Get-MgBetaContactDirectReport.md)
-
 ### [Get-MgBetaContactDirectReportAsOrgContact](Get-MgBetaContactDirectReportAsOrgContact.md)
-
-### [Get-MgBetaContactDirectReportAsOrgContact](Get-MgBetaContactDirectReportAsOrgContact.md)
-
-### [Get-MgBetaContactDirectReportAsUser](Get-MgBetaContactDirectReportAsUser.md)
 
 ### [Get-MgBetaContactDirectReportAsUser](Get-MgBetaContactDirectReportAsUser.md)
 
@@ -203,13 +187,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaContactMemberOf](Get-MgBetaContactMemberOf.md)
 
-### [Get-MgBetaContactMemberOf](Get-MgBetaContactMemberOf.md)
-
 ### [Get-MgBetaContactMemberOfAsAdministrativeUnit](Get-MgBetaContactMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaContactMemberOfAsAdministrativeUnit](Get-MgBetaContactMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaContactMemberOfAsGroup](Get-MgBetaContactMemberOfAsGroup.md)
 
 ### [Get-MgBetaContactMemberOfAsGroup](Get-MgBetaContactMemberOfAsGroup.md)
 
@@ -227,13 +205,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaContactTransitiveMemberOf](Get-MgBetaContactTransitiveMemberOf.md)
 
-### [Get-MgBetaContactTransitiveMemberOf](Get-MgBetaContactTransitiveMemberOf.md)
-
 ### [Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaContactTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaContactTransitiveMemberOfAsGroup](Get-MgBetaContactTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgBetaContactTransitiveMemberOfAsGroup](Get-MgBetaContactTransitiveMemberOfAsGroup.md)
 
@@ -245,13 +217,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaContactTransitiveReport](Get-MgBetaContactTransitiveReport.md)
 
-### [Get-MgBetaContactTransitiveReport](Get-MgBetaContactTransitiveReport.md)
-
 ### [Get-MgBetaContactTransitiveReportCount](Get-MgBetaContactTransitiveReportCount.md)
 
 ### [Get-MgBetaContactUserOwnedObject](Get-MgBetaContactUserOwnedObject.md)
-
-### [Get-MgBetaContract](Get-MgBetaContract.md)
 
 ### [Get-MgBetaContract](Get-MgBetaContract.md)
 
@@ -269,13 +237,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDevice](Get-MgBetaDevice.md)
 
-### [Get-MgBetaDevice](Get-MgBetaDevice.md)
-
 ### [Get-MgBetaDeviceByDeviceId](Get-MgBetaDeviceByDeviceId.md)
 
 ### [Get-MgBetaDeviceById](Get-MgBetaDeviceById.md)
-
-### [Get-MgBetaDeviceCommand](Get-MgBetaDeviceCommand.md)
 
 ### [Get-MgBetaDeviceCommand](Get-MgBetaDeviceCommand.md)
 
@@ -289,8 +253,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceExtension](Get-MgBetaDeviceExtension.md)
 
-### [Get-MgBetaDeviceExtension](Get-MgBetaDeviceExtension.md)
-
 ### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
 
 ### [Get-MgBetaDeviceMemberGroup](Get-MgBetaDeviceMemberGroup.md)
@@ -299,13 +261,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceMemberOf](Get-MgBetaDeviceMemberOf.md)
 
-### [Get-MgBetaDeviceMemberOf](Get-MgBetaDeviceMemberOf.md)
-
 ### [Get-MgBetaDeviceMemberOfAsAdministrativeUnit](Get-MgBetaDeviceMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaDeviceMemberOfAsAdministrativeUnit](Get-MgBetaDeviceMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaDeviceMemberOfAsGroup](Get-MgBetaDeviceMemberOfAsGroup.md)
 
 ### [Get-MgBetaDeviceMemberOfAsGroup](Get-MgBetaDeviceMemberOfAsGroup.md)
 
@@ -319,17 +275,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceRegisteredOwnerAsAppRoleAssignment](Get-MgBetaDeviceRegisteredOwnerAsAppRoleAssignment.md)
 
-### [Get-MgBetaDeviceRegisteredOwnerAsAppRoleAssignment](Get-MgBetaDeviceRegisteredOwnerAsAppRoleAssignment.md)
-
-### [Get-MgBetaDeviceRegisteredOwnerAsEndpoint](Get-MgBetaDeviceRegisteredOwnerAsEndpoint.md)
-
 ### [Get-MgBetaDeviceRegisteredOwnerAsEndpoint](Get-MgBetaDeviceRegisteredOwnerAsEndpoint.md)
 
 ### [Get-MgBetaDeviceRegisteredOwnerAsServicePrincipal](Get-MgBetaDeviceRegisteredOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaDeviceRegisteredOwnerAsServicePrincipal](Get-MgBetaDeviceRegisteredOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaDeviceRegisteredOwnerAsUser](Get-MgBetaDeviceRegisteredOwnerAsUser.md)
 
 ### [Get-MgBetaDeviceRegisteredOwnerAsUser](Get-MgBetaDeviceRegisteredOwnerAsUser.md)
 
@@ -349,17 +297,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceRegisteredUserAsAppRoleAssignment](Get-MgBetaDeviceRegisteredUserAsAppRoleAssignment.md)
 
-### [Get-MgBetaDeviceRegisteredUserAsAppRoleAssignment](Get-MgBetaDeviceRegisteredUserAsAppRoleAssignment.md)
-
-### [Get-MgBetaDeviceRegisteredUserAsEndpoint](Get-MgBetaDeviceRegisteredUserAsEndpoint.md)
-
 ### [Get-MgBetaDeviceRegisteredUserAsEndpoint](Get-MgBetaDeviceRegisteredUserAsEndpoint.md)
 
 ### [Get-MgBetaDeviceRegisteredUserAsServicePrincipal](Get-MgBetaDeviceRegisteredUserAsServicePrincipal.md)
-
-### [Get-MgBetaDeviceRegisteredUserAsServicePrincipal](Get-MgBetaDeviceRegisteredUserAsServicePrincipal.md)
-
-### [Get-MgBetaDeviceRegisteredUserAsUser](Get-MgBetaDeviceRegisteredUserAsUser.md)
 
 ### [Get-MgBetaDeviceRegisteredUserAsUser](Get-MgBetaDeviceRegisteredUserAsUser.md)
 
@@ -377,19 +317,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceTemplate](Get-MgBetaDeviceTemplate.md)
 
-### [Get-MgBetaDeviceTemplate](Get-MgBetaDeviceTemplate.md)
-
 ### [Get-MgBetaDeviceTemplateCount](Get-MgBetaDeviceTemplateCount.md)
 
 ### [Get-MgBetaDeviceTransitiveMemberOf](Get-MgBetaDeviceTransitiveMemberOf.md)
 
-### [Get-MgBetaDeviceTransitiveMemberOf](Get-MgBetaDeviceTransitiveMemberOf.md)
-
 ### [Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaDeviceTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaDeviceTransitiveMemberOfAsGroup](Get-MgBetaDeviceTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgBetaDeviceTransitiveMemberOfAsGroup](Get-MgBetaDeviceTransitiveMemberOfAsGroup.md)
 
@@ -401,8 +333,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceUsageRights](Get-MgBetaDeviceUsageRights.md)
 
-### [Get-MgBetaDeviceUsageRights](Get-MgBetaDeviceUsageRights.md)
-
 ### [Get-MgBetaDeviceUsageRightsCount](Get-MgBetaDeviceUsageRightsCount.md)
 
 ### [Get-MgBetaDeviceUserOwnedObject](Get-MgBetaDeviceUserOwnedObject.md)
@@ -411,11 +341,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryAdministrativeUnit](Get-MgBetaDirectoryAdministrativeUnit.md)
 
-### [Get-MgBetaDirectoryAdministrativeUnit](Get-MgBetaDirectoryAdministrativeUnit.md)
-
 ### [Get-MgBetaDirectoryAdministrativeUnitCount](Get-MgBetaDirectoryAdministrativeUnitCount.md)
-
-### [Get-MgBetaDirectoryAdministrativeUnitDeletedMember](Get-MgBetaDirectoryAdministrativeUnitDeletedMember.md)
 
 ### [Get-MgBetaDirectoryAdministrativeUnitDeletedMember](Get-MgBetaDirectoryAdministrativeUnitDeletedMember.md)
 
@@ -425,33 +351,19 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryAdministrativeUnitExtension](Get-MgBetaDirectoryAdministrativeUnitExtension.md)
 
-### [Get-MgBetaDirectoryAdministrativeUnitExtension](Get-MgBetaDirectoryAdministrativeUnitExtension.md)
-
 ### [Get-MgBetaDirectoryAdministrativeUnitExtensionCount](Get-MgBetaDirectoryAdministrativeUnitExtensionCount.md)
 
 ### [Get-MgBetaDirectoryAdministrativeUnitMember](Get-MgBetaDirectoryAdministrativeUnitMember.md)
 
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberAsApplication](Get-MgBetaDirectoryAdministrativeUnitMemberAsApplication.md)
 
-### [Get-MgBetaDirectoryAdministrativeUnitMemberAsApplication](Get-MgBetaDirectoryAdministrativeUnitMemberAsApplication.md)
-
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberAsDevice](Get-MgBetaDirectoryAdministrativeUnitMemberAsDevice.md)
-
-### [Get-MgBetaDirectoryAdministrativeUnitMemberAsDevice](Get-MgBetaDirectoryAdministrativeUnitMemberAsDevice.md)
-
-### [Get-MgBetaDirectoryAdministrativeUnitMemberAsGroup](Get-MgBetaDirectoryAdministrativeUnitMemberAsGroup.md)
 
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberAsGroup](Get-MgBetaDirectoryAdministrativeUnitMemberAsGroup.md)
 
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberAsOrgContact](Get-MgBetaDirectoryAdministrativeUnitMemberAsOrgContact.md)
 
-### [Get-MgBetaDirectoryAdministrativeUnitMemberAsOrgContact](Get-MgBetaDirectoryAdministrativeUnitMemberAsOrgContact.md)
-
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberAsServicePrincipal](Get-MgBetaDirectoryAdministrativeUnitMemberAsServicePrincipal.md)
-
-### [Get-MgBetaDirectoryAdministrativeUnitMemberAsServicePrincipal](Get-MgBetaDirectoryAdministrativeUnitMemberAsServicePrincipal.md)
-
-### [Get-MgBetaDirectoryAdministrativeUnitMemberAsUser](Get-MgBetaDirectoryAdministrativeUnitMemberAsUser.md)
 
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberAsUser](Get-MgBetaDirectoryAdministrativeUnitMemberAsUser.md)
 
@@ -473,19 +385,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember.md)
 
-### [Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember.md)
-
 ### [Get-MgBetaDirectoryAdministrativeUnitScopedRoleMemberCount](Get-MgBetaDirectoryAdministrativeUnitScopedRoleMemberCount.md)
-
-### [Get-MgBetaDirectoryAttributeSet](Get-MgBetaDirectoryAttributeSet.md)
 
 ### [Get-MgBetaDirectoryAttributeSet](Get-MgBetaDirectoryAttributeSet.md)
 
 ### [Get-MgBetaDirectoryAttributeSetCount](Get-MgBetaDirectoryAttributeSetCount.md)
 
 ### [Get-MgBetaDirectoryAuthenticationMethodDevice](Get-MgBetaDirectoryAuthenticationMethodDevice.md)
-
-### [Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice](Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice.md)
 
 ### [Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice](Get-MgBetaDirectoryAuthenticationMethodDeviceHardwareOathDevice.md)
 
@@ -503,11 +409,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration.md)
 
-### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration.md)
-
 ### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationCount](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationCount.md)
-
-### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority.md)
 
 ### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority.md)
 
@@ -515,15 +417,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration](Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration.md)
 
-### [Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration](Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfiguration.md)
-
 ### [Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfigurationCount](Get-MgBetaDirectoryCertificateAuthorityMutualTlOauthConfigurationCount.md)
 
 ### [Get-MgBetaDirectoryCustomSecurityAttributeDefinition](Get-MgBetaDirectoryCustomSecurityAttributeDefinition.md)
-
-### [Get-MgBetaDirectoryCustomSecurityAttributeDefinition](Get-MgBetaDirectoryCustomSecurityAttributeDefinition.md)
-
-### [Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 
 ### [Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 
@@ -535,25 +431,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit](Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit.md)
 
-### [Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit](Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit.md)
-
 ### [Get-MgBetaDirectoryDeletedItemAsApplication](Get-MgBetaDirectoryDeletedItemAsApplication.md)
-
-### [Get-MgBetaDirectoryDeletedItemAsApplication](Get-MgBetaDirectoryDeletedItemAsApplication.md)
-
-### [Get-MgBetaDirectoryDeletedItemAsDevice](Get-MgBetaDirectoryDeletedItemAsDevice.md)
 
 ### [Get-MgBetaDirectoryDeletedItemAsDevice](Get-MgBetaDirectoryDeletedItemAsDevice.md)
 
 ### [Get-MgBetaDirectoryDeletedItemAsGroup](Get-MgBetaDirectoryDeletedItemAsGroup.md)
 
-### [Get-MgBetaDirectoryDeletedItemAsGroup](Get-MgBetaDirectoryDeletedItemAsGroup.md)
-
 ### [Get-MgBetaDirectoryDeletedItemAsServicePrincipal](Get-MgBetaDirectoryDeletedItemAsServicePrincipal.md)
-
-### [Get-MgBetaDirectoryDeletedItemAsServicePrincipal](Get-MgBetaDirectoryDeletedItemAsServicePrincipal.md)
-
-### [Get-MgBetaDirectoryDeletedItemAsUser](Get-MgBetaDirectoryDeletedItemAsUser.md)
 
 ### [Get-MgBetaDirectoryDeletedItemAsUser](Get-MgBetaDirectoryDeletedItemAsUser.md)
 
@@ -577,17 +461,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryDeviceLocalCredential](Get-MgBetaDirectoryDeviceLocalCredential.md)
 
-### [Get-MgBetaDirectoryDeviceLocalCredential](Get-MgBetaDirectoryDeviceLocalCredential.md)
-
 ### [Get-MgBetaDirectoryDeviceLocalCredentialCount](Get-MgBetaDirectoryDeviceLocalCredentialCount.md)
 
 ### [Get-MgBetaDirectoryExternalUserProfile](Get-MgBetaDirectoryExternalUserProfile.md)
 
-### [Get-MgBetaDirectoryExternalUserProfile](Get-MgBetaDirectoryExternalUserProfile.md)
-
 ### [Get-MgBetaDirectoryExternalUserProfileCount](Get-MgBetaDirectoryExternalUserProfileCount.md)
-
-### [Get-MgBetaDirectoryFeatureRolloutPolicy](Get-MgBetaDirectoryFeatureRolloutPolicy.md)
 
 ### [Get-MgBetaDirectoryFeatureRolloutPolicy](Get-MgBetaDirectoryFeatureRolloutPolicy.md)
 
@@ -599,17 +477,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryFederationConfiguration](Get-MgBetaDirectoryFederationConfiguration.md)
 
-### [Get-MgBetaDirectoryFederationConfiguration](Get-MgBetaDirectoryFederationConfiguration.md)
-
 ### [Get-MgBetaDirectoryFederationConfigurationCount](Get-MgBetaDirectoryFederationConfigurationCount.md)
-
-### [Get-MgBetaDirectoryImpactedResource](Get-MgBetaDirectoryImpactedResource.md)
 
 ### [Get-MgBetaDirectoryImpactedResource](Get-MgBetaDirectoryImpactedResource.md)
 
 ### [Get-MgBetaDirectoryImpactedResourceCount](Get-MgBetaDirectoryImpactedResourceCount.md)
 
-### [Get-MgBetaDirectoryInboundSharedUserProfile](Get-MgBetaDirectoryInboundSharedUserProfile.md)
+### [Get-MgBetaDirectoryImpactedResourceTag](Get-MgBetaDirectoryImpactedResourceTag.md)
+
+### [Get-MgBetaDirectoryImpactedResourceTagCount](Get-MgBetaDirectoryImpactedResourceTagCount.md)
 
 ### [Get-MgBetaDirectoryInboundSharedUserProfile](Get-MgBetaDirectoryInboundSharedUserProfile.md)
 
@@ -617,11 +493,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryOnPremiseSynchronization](Get-MgBetaDirectoryOnPremiseSynchronization.md)
 
-### [Get-MgBetaDirectoryOnPremiseSynchronization](Get-MgBetaDirectoryOnPremiseSynchronization.md)
-
 ### [Get-MgBetaDirectoryOnPremiseSynchronizationCount](Get-MgBetaDirectoryOnPremiseSynchronizationCount.md)
-
-### [Get-MgBetaDirectoryOutboundSharedUserProfile](Get-MgBetaDirectoryOutboundSharedUserProfile.md)
 
 ### [Get-MgBetaDirectoryOutboundSharedUserProfile](Get-MgBetaDirectoryOutboundSharedUserProfile.md)
 
@@ -629,11 +501,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryOutboundSharedUserProfileTenant](Get-MgBetaDirectoryOutboundSharedUserProfileTenant.md)
 
-### [Get-MgBetaDirectoryOutboundSharedUserProfileTenant](Get-MgBetaDirectoryOutboundSharedUserProfileTenant.md)
-
 ### [Get-MgBetaDirectoryOutboundSharedUserProfileTenantCount](Get-MgBetaDirectoryOutboundSharedUserProfileTenantCount.md)
-
-### [Get-MgBetaDirectoryPendingExternalUserProfile](Get-MgBetaDirectoryPendingExternalUserProfile.md)
 
 ### [Get-MgBetaDirectoryPendingExternalUserProfile](Get-MgBetaDirectoryPendingExternalUserProfile.md)
 
@@ -643,17 +511,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration.md)
 
-### [Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration](Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfiguration.md)
-
-### [Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
-
 ### [Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority.md)
 
 ### [Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthorityCount](Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthorityCount.md)
 
 ### [Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCount](Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCount.md)
-
-### [Get-MgBetaDirectoryRecommendation](Get-MgBetaDirectoryRecommendation.md)
 
 ### [Get-MgBetaDirectoryRecommendation](Get-MgBetaDirectoryRecommendation.md)
 
@@ -663,11 +525,37 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryRecommendationImpactedResource](Get-MgBetaDirectoryRecommendationImpactedResource.md)
 
-### [Get-MgBetaDirectoryRecommendationImpactedResource](Get-MgBetaDirectoryRecommendationImpactedResource.md)
-
 ### [Get-MgBetaDirectoryRecommendationImpactedResourceCount](Get-MgBetaDirectoryRecommendationImpactedResourceCount.md)
 
-### [Get-MgBetaDirectoryRole](Get-MgBetaDirectoryRole.md)
+### [Get-MgBetaDirectoryRecommendationImpactedResourceTag](Get-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Get-MgBetaDirectoryRecommendationImpactedResourceTagCount](Get-MgBetaDirectoryRecommendationImpactedResourceTagCount.md)
+
+### [Get-MgBetaDirectoryRecommendationTag](Get-MgBetaDirectoryRecommendationTag.md)
+
+### [Get-MgBetaDirectoryRecommendationTagCount](Get-MgBetaDirectoryRecommendationTagCount.md)
+
+### [Get-MgBetaDirectoryRecovery](Get-MgBetaDirectoryRecovery.md)
+
+### [Get-MgBetaDirectoryRecoveryJob](Get-MgBetaDirectoryRecoveryJob.md)
+
+### [Get-MgBetaDirectoryRecoveryJobCount](Get-MgBetaDirectoryRecoveryJobCount.md)
+
+### [Get-MgBetaDirectoryRecoverySnapshot](Get-MgBetaDirectoryRecoverySnapshot.md)
+
+### [Get-MgBetaDirectoryRecoverySnapshotCount](Get-MgBetaDirectoryRecoverySnapshotCount.md)
+
+### [Get-MgBetaDirectoryRecoverySnapshotRecoveryJob](Get-MgBetaDirectoryRecoverySnapshotRecoveryJob.md)
+
+### [Get-MgBetaDirectoryRecoverySnapshotRecoveryJobCount](Get-MgBetaDirectoryRecoverySnapshotRecoveryJobCount.md)
+
+### [Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJob](Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJob.md)
+
+### [Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJobCount](Get-MgBetaDirectoryRecoverySnapshotRecoveryPreviewJobCount.md)
+
+### [Get-MgBetaDirectoryRemoteTenantGroup](Get-MgBetaDirectoryRemoteTenantGroup.md)
+
+### [Get-MgBetaDirectoryRemoteTenantGroupCount](Get-MgBetaDirectoryRemoteTenantGroupCount.md)
 
 ### [Get-MgBetaDirectoryRole](Get-MgBetaDirectoryRole.md)
 
@@ -683,25 +571,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryRoleMemberAsApplication](Get-MgBetaDirectoryRoleMemberAsApplication.md)
 
-### [Get-MgBetaDirectoryRoleMemberAsApplication](Get-MgBetaDirectoryRoleMemberAsApplication.md)
-
 ### [Get-MgBetaDirectoryRoleMemberAsDevice](Get-MgBetaDirectoryRoleMemberAsDevice.md)
-
-### [Get-MgBetaDirectoryRoleMemberAsDevice](Get-MgBetaDirectoryRoleMemberAsDevice.md)
-
-### [Get-MgBetaDirectoryRoleMemberAsGroup](Get-MgBetaDirectoryRoleMemberAsGroup.md)
 
 ### [Get-MgBetaDirectoryRoleMemberAsGroup](Get-MgBetaDirectoryRoleMemberAsGroup.md)
 
 ### [Get-MgBetaDirectoryRoleMemberAsOrgContact](Get-MgBetaDirectoryRoleMemberAsOrgContact.md)
 
-### [Get-MgBetaDirectoryRoleMemberAsOrgContact](Get-MgBetaDirectoryRoleMemberAsOrgContact.md)
-
 ### [Get-MgBetaDirectoryRoleMemberAsServicePrincipal](Get-MgBetaDirectoryRoleMemberAsServicePrincipal.md)
-
-### [Get-MgBetaDirectoryRoleMemberAsServicePrincipal](Get-MgBetaDirectoryRoleMemberAsServicePrincipal.md)
-
-### [Get-MgBetaDirectoryRoleMemberAsUser](Get-MgBetaDirectoryRoleMemberAsUser.md)
 
 ### [Get-MgBetaDirectoryRoleMemberAsUser](Get-MgBetaDirectoryRoleMemberAsUser.md)
 
@@ -727,11 +603,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryRoleScopedMember](Get-MgBetaDirectoryRoleScopedMember.md)
 
-### [Get-MgBetaDirectoryRoleScopedMember](Get-MgBetaDirectoryRoleScopedMember.md)
-
 ### [Get-MgBetaDirectoryRoleScopedMemberCount](Get-MgBetaDirectoryRoleScopedMemberCount.md)
-
-### [Get-MgBetaDirectoryRoleTemplate](Get-MgBetaDirectoryRoleTemplate.md)
 
 ### [Get-MgBetaDirectoryRoleTemplate](Get-MgBetaDirectoryRoleTemplate.md)
 
@@ -751,10 +623,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectorySetting](Get-MgBetaDirectorySetting.md)
 
-### [Get-MgBetaDirectorySetting](Get-MgBetaDirectorySetting.md)
-
-### [Get-MgBetaDirectorySettingTemplate](Get-MgBetaDirectorySettingTemplate.md)
-
 ### [Get-MgBetaDirectorySettingTemplate](Get-MgBetaDirectorySettingTemplate.md)
 
 ### [Get-MgBetaDirectorySettingTemplateById](Get-MgBetaDirectorySettingTemplateById.md)
@@ -771,11 +639,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectorySharedEmailDomain](Get-MgBetaDirectorySharedEmailDomain.md)
 
-### [Get-MgBetaDirectorySharedEmailDomain](Get-MgBetaDirectorySharedEmailDomain.md)
-
 ### [Get-MgBetaDirectorySharedEmailDomainCount](Get-MgBetaDirectorySharedEmailDomainCount.md)
-
-### [Get-MgBetaDirectorySubscription](Get-MgBetaDirectorySubscription.md)
 
 ### [Get-MgBetaDirectorySubscription](Get-MgBetaDirectorySubscription.md)
 
@@ -789,13 +653,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryTemplateDeviceInstance](Get-MgBetaDirectoryTemplateDeviceInstance.md)
 
-### [Get-MgBetaDirectoryTemplateDeviceInstance](Get-MgBetaDirectoryTemplateDeviceInstance.md)
-
 ### [Get-MgBetaDirectoryTemplateDeviceInstanceByDeviceId](Get-MgBetaDirectoryTemplateDeviceInstanceByDeviceId.md)
 
 ### [Get-MgBetaDirectoryTemplateDeviceInstanceCount](Get-MgBetaDirectoryTemplateDeviceInstanceCount.md)
-
-### [Get-MgBetaDirectoryTemplateDeviceTemplate](Get-MgBetaDirectoryTemplateDeviceTemplate.md)
 
 ### [Get-MgBetaDirectoryTemplateDeviceTemplate](Get-MgBetaDirectoryTemplateDeviceTemplate.md)
 
@@ -803,11 +663,43 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDirectoryTemplateDeviceTemplateOwner](Get-MgBetaDirectoryTemplateDeviceTemplateOwner.md)
 
-### [Get-MgBetaDirectoryTemplateDeviceTemplateOwner](Get-MgBetaDirectoryTemplateDeviceTemplateOwner.md)
-
 ### [Get-MgBetaDirectoryTemplateDeviceTemplateOwnerCount](Get-MgBetaDirectoryTemplateDeviceTemplateOwnerCount.md)
 
-### [Get-MgBetaDomain](Get-MgBetaDomain.md)
+### [Get-MgBetaDirectoryTenantGovernance](Get-MgBetaDirectoryTenantGovernance.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceInvitation](Get-MgBetaDirectoryTenantGovernanceInvitation.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceInvitationCount](Get-MgBetaDirectoryTenantGovernanceInvitationCount.md)
+
+### [Get-MgBetaDirectoryTenantGovernancePolicyTemplate](Get-MgBetaDirectoryTenantGovernancePolicyTemplate.md)
+
+### [Get-MgBetaDirectoryTenantGovernancePolicyTemplateCount](Get-MgBetaDirectoryTenantGovernancePolicyTemplateCount.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelatedTenant](Get-MgBetaDirectoryTenantGovernanceRelatedTenant.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric](Get-MgBetaDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelatedTenantB2BRegistrationMetric](Get-MgBetaDirectoryTenantGovernanceRelatedTenantB2BRegistrationMetric.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelatedTenantB2BSignInActivityMetric](Get-MgBetaDirectoryTenantGovernanceRelatedTenantB2BSignInActivityMetric.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelatedTenantBillingMetric](Get-MgBetaDirectoryTenantGovernanceRelatedTenantBillingMetric.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelatedTenantCount](Get-MgBetaDirectoryTenantGovernanceRelatedTenantCount.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelatedTenantMultiTenantApplicationMetric](Get-MgBetaDirectoryTenantGovernanceRelatedTenantMultiTenantApplicationMetric.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelationship](Get-MgBetaDirectoryTenantGovernanceRelationship.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRelationshipCount](Get-MgBetaDirectoryTenantGovernanceRelationshipCount.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRequest](Get-MgBetaDirectoryTenantGovernanceRequest.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRequestCount](Get-MgBetaDirectoryTenantGovernanceRequestCount.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceRequestGovernancePolicyTemplate](Get-MgBetaDirectoryTenantGovernanceRequestGovernancePolicyTemplate.md)
+
+### [Get-MgBetaDirectoryTenantGovernanceSetting](Get-MgBetaDirectoryTenantGovernanceSetting.md)
 
 ### [Get-MgBetaDomain](Get-MgBetaDomain.md)
 
@@ -815,11 +707,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDomainFederationConfiguration](Get-MgBetaDomainFederationConfiguration.md)
 
-### [Get-MgBetaDomainFederationConfiguration](Get-MgBetaDomainFederationConfiguration.md)
-
 ### [Get-MgBetaDomainFederationConfigurationCount](Get-MgBetaDomainFederationConfigurationCount.md)
-
-### [Get-MgBetaDomainNameReference](Get-MgBetaDomainNameReference.md)
 
 ### [Get-MgBetaDomainNameReference](Get-MgBetaDomainNameReference.md)
 
@@ -829,11 +717,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDomainServiceConfigurationRecord](Get-MgBetaDomainServiceConfigurationRecord.md)
 
-### [Get-MgBetaDomainServiceConfigurationRecord](Get-MgBetaDomainServiceConfigurationRecord.md)
-
 ### [Get-MgBetaDomainServiceConfigurationRecordCount](Get-MgBetaDomainServiceConfigurationRecordCount.md)
-
-### [Get-MgBetaDomainSharedEmailDomainInvitation](Get-MgBetaDomainSharedEmailDomainInvitation.md)
 
 ### [Get-MgBetaDomainSharedEmailDomainInvitation](Get-MgBetaDomainSharedEmailDomainInvitation.md)
 
@@ -841,11 +725,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDomainVerificationDnsRecord](Get-MgBetaDomainVerificationDnsRecord.md)
 
-### [Get-MgBetaDomainVerificationDnsRecord](Get-MgBetaDomainVerificationDnsRecord.md)
-
 ### [Get-MgBetaDomainVerificationDnsRecordCount](Get-MgBetaDomainVerificationDnsRecordCount.md)
-
-### [Get-MgBetaOrganization](Get-MgBetaOrganization.md)
 
 ### [Get-MgBetaOrganization](Get-MgBetaOrganization.md)
 
@@ -860,8 +740,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaOrganizationBrandingFavicon](Get-MgBetaOrganizationBrandingFavicon.md)
 
 ### [Get-MgBetaOrganizationBrandingHeaderLogo](Get-MgBetaOrganizationBrandingHeaderLogo.md)
-
-### [Get-MgBetaOrganizationBrandingLocalization](Get-MgBetaOrganizationBrandingLocalization.md)
 
 ### [Get-MgBetaOrganizationBrandingLocalization](Get-MgBetaOrganizationBrandingLocalization.md)
 
@@ -887,11 +765,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaOrganizationBrandingTheme](Get-MgBetaOrganizationBrandingTheme.md)
 
-### [Get-MgBetaOrganizationBrandingTheme](Get-MgBetaOrganizationBrandingTheme.md)
-
 ### [Get-MgBetaOrganizationBrandingThemeCount](Get-MgBetaOrganizationBrandingThemeCount.md)
-
-### [Get-MgBetaOrganizationBrandingThemeLocalization](Get-MgBetaOrganizationBrandingThemeLocalization.md)
 
 ### [Get-MgBetaOrganizationBrandingThemeLocalization](Get-MgBetaOrganizationBrandingThemeLocalization.md)
 
@@ -914,8 +788,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaOrganizationById](Get-MgBetaOrganizationById.md)
 
 ### [Get-MgBetaOrganizationCount](Get-MgBetaOrganizationCount.md)
-
-### [Get-MgBetaOrganizationExtension](Get-MgBetaOrganizationExtension.md)
 
 ### [Get-MgBetaOrganizationExtension](Get-MgBetaOrganizationExtension.md)
 
@@ -943,13 +815,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSubscribedSku](Get-MgBetaSubscribedSku.md)
 
-### [Get-MgBetaSubscribedSku](Get-MgBetaSubscribedSku.md)
-
-### [Get-MgBetaUserScopedRoleMemberOf](Get-MgBetaUserScopedRoleMemberOf.md)
-
 ### [Get-MgBetaUserScopedRoleMemberOf](Get-MgBetaUserScopedRoleMemberOf.md)
 
 ### [Get-MgBetaUserScopedRoleMemberOfCount](Get-MgBetaUserScopedRoleMemberOfCount.md)
+
+### [Invoke-MgBetaAcceptDirectoryImpactedResourceRisk](Invoke-MgBetaAcceptDirectoryImpactedResourceRisk.md)
+
+### [Invoke-MgBetaAcceptDirectoryRecommendationImpactedResourceRisk](Invoke-MgBetaAcceptDirectoryRecommendationImpactedResourceRisk.md)
+
+### [Invoke-MgBetaAcceptDirectoryRecommendationRisk](Invoke-MgBetaAcceptDirectoryRecommendationRisk.md)
 
 ### [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType.md)
 
@@ -961,6 +835,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaForceDomainDelete](Invoke-MgBetaForceDomainDelete.md)
 
+### [Invoke-MgBetaMarkDirectoryImpactedResourcePlanned](Invoke-MgBetaMarkDirectoryImpactedResourcePlanned.md)
+
+### [Invoke-MgBetaMarkDirectoryRecommendationImpactedResourcePlanned](Invoke-MgBetaMarkDirectoryRecommendationImpactedResourcePlanned.md)
+
+### [Invoke-MgBetaMarkDirectoryRecommendationPlanned](Invoke-MgBetaMarkDirectoryRecommendationPlanned.md)
+
 ### [Invoke-MgBetaPostponeDirectoryImpactedResource](Invoke-MgBetaPostponeDirectoryImpactedResource.md)
 
 ### [Invoke-MgBetaPostponeDirectoryRecommendation](Invoke-MgBetaPostponeDirectoryRecommendation.md)
@@ -970,6 +850,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaPromoteDomain](Invoke-MgBetaPromoteDomain.md)
 
 ### [Invoke-MgBetaPromoteDomainToInitial](Invoke-MgBetaPromoteDomainToInitial.md)
+
+### [Invoke-MgBetaProvisionDevice](Invoke-MgBetaProvisionDevice.md)
 
 ### [Invoke-MgBetaReactivateDirectoryImpactedResource](Invoke-MgBetaReactivateDirectoryImpactedResource.md)
 
@@ -1049,6 +931,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaDirectoryImpactedResource](New-MgBetaDirectoryImpactedResource.md)
 
+### [New-MgBetaDirectoryImpactedResourceTag](New-MgBetaDirectoryImpactedResourceTag.md)
+
 ### [New-MgBetaDirectoryInboundSharedUserProfile](New-MgBetaDirectoryInboundSharedUserProfile.md)
 
 ### [New-MgBetaDirectoryOnPremiseSynchronization](New-MgBetaDirectoryOnPremiseSynchronization.md)
@@ -1066,6 +950,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDirectoryRecommendation](New-MgBetaDirectoryRecommendation.md)
 
 ### [New-MgBetaDirectoryRecommendationImpactedResource](New-MgBetaDirectoryRecommendationImpactedResource.md)
+
+### [New-MgBetaDirectoryRecommendationImpactedResourceTag](New-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [New-MgBetaDirectoryRecommendationTag](New-MgBetaDirectoryRecommendationTag.md)
+
+### [New-MgBetaDirectoryRecoveryJob](New-MgBetaDirectoryRecoveryJob.md)
+
+### [New-MgBetaDirectoryRecoverySnapshot](New-MgBetaDirectoryRecoverySnapshot.md)
+
+### [New-MgBetaDirectoryRemoteTenantGroup](New-MgBetaDirectoryRemoteTenantGroup.md)
 
 ### [New-MgBetaDirectoryRole](New-MgBetaDirectoryRole.md)
 
@@ -1086,6 +980,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaDirectoryTemplateDeviceFromTemplate](New-MgBetaDirectoryTemplateDeviceFromTemplate.md)
 
 ### [New-MgBetaDirectoryTemplateDeviceTemplate](New-MgBetaDirectoryTemplateDeviceTemplate.md)
+
+### [New-MgBetaDirectoryTenantGovernanceInvitation](New-MgBetaDirectoryTenantGovernanceInvitation.md)
+
+### [New-MgBetaDirectoryTenantGovernancePolicyTemplate](New-MgBetaDirectoryTenantGovernancePolicyTemplate.md)
+
+### [New-MgBetaDirectoryTenantGovernanceRelatedTenant](New-MgBetaDirectoryTenantGovernanceRelatedTenant.md)
+
+### [New-MgBetaDirectoryTenantGovernanceRelationship](New-MgBetaDirectoryTenantGovernanceRelationship.md)
+
+### [New-MgBetaDirectoryTenantGovernanceRequest](New-MgBetaDirectoryTenantGovernanceRequest.md)
 
 ### [New-MgBetaDomain](New-MgBetaDomain.md)
 
@@ -1138,6 +1042,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaAdminPeopleProfileSourceBySourceId](Remove-MgBetaAdminPeopleProfileSourceBySourceId.md)
 
 ### [Remove-MgBetaAdminPeoplePronoun](Remove-MgBetaAdminPeoplePronoun.md)
+
+### [Remove-MgBetaBulkDirectoryImpactedResourceTag](Remove-MgBetaBulkDirectoryImpactedResourceTag.md)
+
+### [Remove-MgBetaBulkDirectoryRecommendationImpactedResourceTag](Remove-MgBetaBulkDirectoryRecommendationImpactedResourceTag.md)
 
 ### [Remove-MgBetaContact](Remove-MgBetaContact.md)
 
@@ -1201,6 +1109,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDirectoryImpactedResource](Remove-MgBetaDirectoryImpactedResource.md)
 
+### [Remove-MgBetaDirectoryImpactedResourceTag](Remove-MgBetaDirectoryImpactedResourceTag.md)
+
 ### [Remove-MgBetaDirectoryInboundSharedUserProfile](Remove-MgBetaDirectoryInboundSharedUserProfile.md)
 
 ### [Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData](Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData.md)
@@ -1227,6 +1137,18 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaDirectoryRecommendationImpactedResource](Remove-MgBetaDirectoryRecommendationImpactedResource.md)
 
+### [Remove-MgBetaDirectoryRecommendationImpactedResourceTag](Remove-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Remove-MgBetaDirectoryRecommendationTag](Remove-MgBetaDirectoryRecommendationTag.md)
+
+### [Remove-MgBetaDirectoryRecovery](Remove-MgBetaDirectoryRecovery.md)
+
+### [Remove-MgBetaDirectoryRecoveryJob](Remove-MgBetaDirectoryRecoveryJob.md)
+
+### [Remove-MgBetaDirectoryRecoverySnapshot](Remove-MgBetaDirectoryRecoverySnapshot.md)
+
+### [Remove-MgBetaDirectoryRemoteTenantGroup](Remove-MgBetaDirectoryRemoteTenantGroup.md)
+
 ### [Remove-MgBetaDirectoryRole](Remove-MgBetaDirectoryRole.md)
 
 ### [Remove-MgBetaDirectoryRoleByRoleTemplateId](Remove-MgBetaDirectoryRoleByRoleTemplateId.md)
@@ -1252,6 +1174,20 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaDirectoryTemplate](Remove-MgBetaDirectoryTemplate.md)
 
 ### [Remove-MgBetaDirectoryTemplateDeviceTemplate](Remove-MgBetaDirectoryTemplateDeviceTemplate.md)
+
+### [Remove-MgBetaDirectoryTenantGovernance](Remove-MgBetaDirectoryTenantGovernance.md)
+
+### [Remove-MgBetaDirectoryTenantGovernanceInvitation](Remove-MgBetaDirectoryTenantGovernanceInvitation.md)
+
+### [Remove-MgBetaDirectoryTenantGovernancePolicyTemplate](Remove-MgBetaDirectoryTenantGovernancePolicyTemplate.md)
+
+### [Remove-MgBetaDirectoryTenantGovernanceRelatedTenant](Remove-MgBetaDirectoryTenantGovernanceRelatedTenant.md)
+
+### [Remove-MgBetaDirectoryTenantGovernanceRelationship](Remove-MgBetaDirectoryTenantGovernanceRelationship.md)
+
+### [Remove-MgBetaDirectoryTenantGovernanceRequest](Remove-MgBetaDirectoryTenantGovernanceRequest.md)
+
+### [Remove-MgBetaDirectoryTenantGovernanceSetting](Remove-MgBetaDirectoryTenantGovernanceSetting.md)
 
 ### [Remove-MgBetaDomain](Remove-MgBetaDomain.md)
 
@@ -1379,6 +1315,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaOrganizationMobileDeviceManagementAuthority](Set-MgBetaOrganizationMobileDeviceManagementAuthority.md)
 
+### [Stop-MgBetaDirectoryRecoveryJob](Stop-MgBetaDirectoryRecoveryJob.md)
+
 ### [Test-MgBetaAdministrativeUnitProperty](Test-MgBetaAdministrativeUnitProperty.md)
 
 ### [Test-MgBetaContactProperty](Test-MgBetaContactProperty.md)
@@ -1475,6 +1413,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaDirectoryImpactedResource](Update-MgBetaDirectoryImpactedResource.md)
 
+### [Update-MgBetaDirectoryImpactedResourceTag](Update-MgBetaDirectoryImpactedResourceTag.md)
+
 ### [Update-MgBetaDirectoryInboundSharedUserProfile](Update-MgBetaDirectoryInboundSharedUserProfile.md)
 
 ### [Update-MgBetaDirectoryOnPremiseSynchronization](Update-MgBetaDirectoryOnPremiseSynchronization.md)
@@ -1496,6 +1436,18 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDirectoryRecommendationConfiguration](Update-MgBetaDirectoryRecommendationConfiguration.md)
 
 ### [Update-MgBetaDirectoryRecommendationImpactedResource](Update-MgBetaDirectoryRecommendationImpactedResource.md)
+
+### [Update-MgBetaDirectoryRecommendationImpactedResourceTag](Update-MgBetaDirectoryRecommendationImpactedResourceTag.md)
+
+### [Update-MgBetaDirectoryRecommendationTag](Update-MgBetaDirectoryRecommendationTag.md)
+
+### [Update-MgBetaDirectoryRecovery](Update-MgBetaDirectoryRecovery.md)
+
+### [Update-MgBetaDirectoryRecoveryJob](Update-MgBetaDirectoryRecoveryJob.md)
+
+### [Update-MgBetaDirectoryRecoverySnapshot](Update-MgBetaDirectoryRecoverySnapshot.md)
+
+### [Update-MgBetaDirectoryRemoteTenantGroup](Update-MgBetaDirectoryRemoteTenantGroup.md)
 
 ### [Update-MgBetaDirectoryRole](Update-MgBetaDirectoryRole.md)
 
@@ -1520,6 +1472,22 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaDirectoryTemplate](Update-MgBetaDirectoryTemplate.md)
 
 ### [Update-MgBetaDirectoryTemplateDeviceTemplate](Update-MgBetaDirectoryTemplateDeviceTemplate.md)
+
+### [Update-MgBetaDirectoryTenantGovernance](Update-MgBetaDirectoryTenantGovernance.md)
+
+### [Update-MgBetaDirectoryTenantGovernanceInvitation](Update-MgBetaDirectoryTenantGovernanceInvitation.md)
+
+### [Update-MgBetaDirectoryTenantGovernancePolicyTemplate](Update-MgBetaDirectoryTenantGovernancePolicyTemplate.md)
+
+### [Update-MgBetaDirectoryTenantGovernanceRelatedTenant](Update-MgBetaDirectoryTenantGovernanceRelatedTenant.md)
+
+### [Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus](Update-MgBetaDirectoryTenantGovernanceRelatedTenantStatus.md)
+
+### [Update-MgBetaDirectoryTenantGovernanceRelationship](Update-MgBetaDirectoryTenantGovernanceRelationship.md)
+
+### [Update-MgBetaDirectoryTenantGovernanceRequest](Update-MgBetaDirectoryTenantGovernanceRequest.md)
+
+### [Update-MgBetaDirectoryTenantGovernanceSetting](Update-MgBetaDirectoryTenantGovernanceSetting.md)
 
 ### [Update-MgBetaDomain](Update-MgBetaDomain.md)
 

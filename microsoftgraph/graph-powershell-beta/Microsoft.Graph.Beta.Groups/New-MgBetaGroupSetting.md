@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupSetting
 ---
@@ -15,8 +15,7 @@ title: New-MgBetaGroupSetting
 
 Create a new directory setting based on the templates available in directorySettingTemplates.
 These settings can be at the tenant-level or at the group level.
-Group settings apply to only Microsoft 365 groups.
-The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+The following setting templates are available for groups:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-1.0)
@@ -31,7 +30,6 @@ New-MgBetaGroupSetting -GroupId <string> [-ResponseHeadersVariable <string>]
  [-Values <IMicrosoftGraphSettingValue[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -41,7 +39,6 @@ New-MgBetaGroupSetting -GroupId <string> -BodyParameter <IMicrosoftGraphDirector
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -52,7 +49,6 @@ New-MgBetaGroupSetting -InputObject <IGroupsIdentity> [-ResponseHeadersVariable 
  [-Values <IMicrosoftGraphSettingValue[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -62,7 +58,7 @@ New-MgBetaGroupSetting -InputObject <IGroupsIdentity>
  -BodyParameter <IMicrosoftGraphDirectorySetting> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -74,8 +70,7 @@ This cmdlet has the following aliases,
 
 Create a new directory setting based on the templates available in directorySettingTemplates.
 These settings can be at the tenant-level or at the group level.
-Group settings apply to only Microsoft 365 groups.
-The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+The following setting templates are available for groups:
 
 **Permissions**
 

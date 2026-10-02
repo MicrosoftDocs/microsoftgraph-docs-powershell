@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: 4a22bc73-8efa-4bfc-be32-5b50323b07d3
+Module Guid: 344fd814-ee8a-4fa9-b4bb-61bb464cfcb3
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.signins/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -37,11 +37,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAgentRiskDetection](Get-MgBetaAgentRiskDetection.md)
 
-### [Get-MgBetaAgentRiskDetection](Get-MgBetaAgentRiskDetection.md)
-
 ### [Get-MgBetaAgentRiskDetectionCount](Get-MgBetaAgentRiskDetectionCount.md)
-
-### [Get-MgBetaDataPolicyOperation](Get-MgBetaDataPolicyOperation.md)
 
 ### [Get-MgBetaDataPolicyOperation](Get-MgBetaDataPolicyOperation.md)
 
@@ -49,21 +45,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityApiConnector](Get-MgBetaIdentityApiConnector.md)
 
-### [Get-MgBetaIdentityApiConnector](Get-MgBetaIdentityApiConnector.md)
-
 ### [Get-MgBetaIdentityApiConnectorCount](Get-MgBetaIdentityApiConnectorCount.md)
 
 ### [Get-MgBetaIdentityAuthenticationEventFlow](Get-MgBetaIdentityAuthenticationEventFlow.md)
 
-### [Get-MgBetaIdentityAuthenticationEventFlow](Get-MgBetaIdentityAuthenticationEventFlow.md)
-
-### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow.md)
-
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow.md)
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition.md)
-
-### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
 
@@ -93,8 +81,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
 
-### [Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
-
 ### [Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount](Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount.md)
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollectionAsOnAttributeCollectionExternalUserSelfServiceSignUp](Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollectionAsOnAttributeCollectionExternalUserSelfServiceSignUp.md)
@@ -103,17 +89,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityAuthenticationEventListener](Get-MgBetaIdentityAuthenticationEventListener.md)
 
-### [Get-MgBetaIdentityAuthenticationEventListener](Get-MgBetaIdentityAuthenticationEventListener.md)
-
 ### [Get-MgBetaIdentityAuthenticationEventListenerCount](Get-MgBetaIdentityAuthenticationEventListenerCount.md)
 
 ### [Get-MgBetaIdentityB2CUserFlow](Get-MgBetaIdentityB2CUserFlow.md)
 
-### [Get-MgBetaIdentityB2CUserFlow](Get-MgBetaIdentityB2CUserFlow.md)
-
 ### [Get-MgBetaIdentityB2CUserFlowCount](Get-MgBetaIdentityB2CUserFlowCount.md)
-
-### [Get-MgBetaIdentityB2CUserFlowIdentityProvider](Get-MgBetaIdentityB2CUserFlowIdentityProvider.md)
 
 ### [Get-MgBetaIdentityB2CUserFlowIdentityProvider](Get-MgBetaIdentityB2CUserFlowIdentityProvider.md)
 
@@ -123,11 +103,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityB2CUserFlowLanguage](Get-MgBetaIdentityB2CUserFlowLanguage.md)
 
-### [Get-MgBetaIdentityB2CUserFlowLanguage](Get-MgBetaIdentityB2CUserFlowLanguage.md)
-
 ### [Get-MgBetaIdentityB2CUserFlowLanguageCount](Get-MgBetaIdentityB2CUserFlowLanguageCount.md)
-
-### [Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage](Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage.md)
 
 ### [Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage](Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage.md)
 
@@ -137,13 +113,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityB2CUserFlowLanguageOverridePage](Get-MgBetaIdentityB2CUserFlowLanguageOverridePage.md)
 
-### [Get-MgBetaIdentityB2CUserFlowLanguageOverridePage](Get-MgBetaIdentityB2CUserFlowLanguageOverridePage.md)
-
 ### [Get-MgBetaIdentityB2CUserFlowLanguageOverridePageContent](Get-MgBetaIdentityB2CUserFlowLanguageOverridePageContent.md)
 
 ### [Get-MgBetaIdentityB2CUserFlowLanguageOverridePageCount](Get-MgBetaIdentityB2CUserFlowLanguageOverridePageCount.md)
-
-### [Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment](Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment.md)
 
 ### [Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment](Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment.md)
 
@@ -155,13 +127,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityB2XUserFlow](Get-MgBetaIdentityB2XUserFlow.md)
 
-### [Get-MgBetaIdentityB2XUserFlow](Get-MgBetaIdentityB2XUserFlow.md)
-
 ### [Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration](Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowCount](Get-MgBetaIdentityB2XUserFlowCount.md)
-
-### [Get-MgBetaIdentityB2XUserFlowIdentityProvider](Get-MgBetaIdentityB2XUserFlowIdentityProvider.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowIdentityProvider](Get-MgBetaIdentityB2XUserFlowIdentityProvider.md)
 
@@ -171,19 +139,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityB2XUserFlowLanguage](Get-MgBetaIdentityB2XUserFlowLanguage.md)
 
-### [Get-MgBetaIdentityB2XUserFlowLanguage](Get-MgBetaIdentityB2XUserFlowLanguage.md)
-
 ### [Get-MgBetaIdentityB2XUserFlowLanguageCount](Get-MgBetaIdentityB2XUserFlowLanguageCount.md)
-
-### [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage](Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage](Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageCount](Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageCount.md)
-
-### [Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](Get-MgBetaIdentityB2XUserFlowLanguageOverridePage.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](Get-MgBetaIdentityB2XUserFlowLanguageOverridePage.md)
 
@@ -203,15 +165,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment](Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment.md)
 
-### [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment](Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment.md)
-
 ### [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentCount](Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentCount.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder.md)
 
 ### [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute.md)
-
-### [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference.md)
 
 ### [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference.md)
 
@@ -221,15 +179,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](Get-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode.md)
 
-### [Get-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](Get-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode.md)
-
 ### [Get-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodModeCount](Get-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodModeCount.md)
 
 ### [Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy](Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy.md)
-
-### [Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy](Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy.md)
-
-### [Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration.md)
 
 ### [Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration.md)
 
@@ -241,11 +193,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocation.md)
 
-### [Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocation](Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocation.md)
-
 ### [Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocationCount](Get-MgBetaIdentityConditionalAccessDeletedItemNamedLocationCount.md)
-
-### [Get-MgBetaIdentityConditionalAccessDeletedItemPolicy](Get-MgBetaIdentityConditionalAccessDeletedItemPolicy.md)
 
 ### [Get-MgBetaIdentityConditionalAccessDeletedItemPolicy](Get-MgBetaIdentityConditionalAccessDeletedItemPolicy.md)
 
@@ -253,17 +201,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityConditionalAccessNamedLocation](Get-MgBetaIdentityConditionalAccessNamedLocation.md)
 
-### [Get-MgBetaIdentityConditionalAccessNamedLocation](Get-MgBetaIdentityConditionalAccessNamedLocation.md)
-
 ### [Get-MgBetaIdentityConditionalAccessNamedLocationCount](Get-MgBetaIdentityConditionalAccessNamedLocationCount.md)
 
 ### [Get-MgBetaIdentityConditionalAccessPolicy](Get-MgBetaIdentityConditionalAccessPolicy.md)
 
-### [Get-MgBetaIdentityConditionalAccessPolicy](Get-MgBetaIdentityConditionalAccessPolicy.md)
-
 ### [Get-MgBetaIdentityConditionalAccessPolicyCount](Get-MgBetaIdentityConditionalAccessPolicyCount.md)
-
-### [Get-MgBetaIdentityConditionalAccessTemplate](Get-MgBetaIdentityConditionalAccessTemplate.md)
 
 ### [Get-MgBetaIdentityConditionalAccessTemplate](Get-MgBetaIdentityConditionalAccessTemplate.md)
 
@@ -273,11 +215,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityCustomAuthenticationExtension](Get-MgBetaIdentityCustomAuthenticationExtension.md)
 
-### [Get-MgBetaIdentityCustomAuthenticationExtension](Get-MgBetaIdentityCustomAuthenticationExtension.md)
-
 ### [Get-MgBetaIdentityCustomAuthenticationExtensionCount](Get-MgBetaIdentityCustomAuthenticationExtensionCount.md)
-
-### [Get-MgBetaIdentityProvider](Get-MgBetaIdentityProvider.md)
 
 ### [Get-MgBetaIdentityProvider](Get-MgBetaIdentityProvider.md)
 
@@ -287,17 +225,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityRiskPreventionFraudProtectionProvider](Get-MgBetaIdentityRiskPreventionFraudProtectionProvider.md)
 
-### [Get-MgBetaIdentityRiskPreventionFraudProtectionProvider](Get-MgBetaIdentityRiskPreventionFraudProtectionProvider.md)
-
 ### [Get-MgBetaIdentityRiskPreventionFraudProtectionProviderCount](Get-MgBetaIdentityRiskPreventionFraudProtectionProviderCount.md)
 
 ### [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider.md)
 
-### [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider](Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProvider.md)
-
 ### [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProviderCount](Get-MgBetaIdentityRiskPreventionWebApplicationFirewallProviderCount.md)
-
-### [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification.md)
 
 ### [Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification](Get-MgBetaIdentityRiskPreventionWebApplicationFirewallVerification.md)
 
@@ -307,15 +239,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentitySignInIdentifier](Get-MgBetaIdentitySignInIdentifier.md)
 
-### [Get-MgBetaIdentitySignInIdentifier](Get-MgBetaIdentitySignInIdentifier.md)
-
 ### [Get-MgBetaIdentitySignInIdentifierCount](Get-MgBetaIdentitySignInIdentifierCount.md)
 
 ### [Get-MgBetaIdentityUserFlow](Get-MgBetaIdentityUserFlow.md)
-
-### [Get-MgBetaIdentityUserFlow](Get-MgBetaIdentityUserFlow.md)
-
-### [Get-MgBetaIdentityUserFlowAttribute](Get-MgBetaIdentityUserFlowAttribute.md)
 
 ### [Get-MgBetaIdentityUserFlowAttribute](Get-MgBetaIdentityUserFlowAttribute.md)
 
@@ -327,8 +253,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityVerifiedIdProfile](Get-MgBetaIdentityVerifiedIdProfile.md)
 
-### [Get-MgBetaIdentityVerifiedIdProfile](Get-MgBetaIdentityVerifiedIdProfile.md)
-
 ### [Get-MgBetaIdentityVerifiedIdProfileCount](Get-MgBetaIdentityVerifiedIdProfileCount.md)
 
 ### [Get-MgBetaInformationProtection](Get-MgBetaInformationProtection.md)
@@ -337,19 +261,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaInformationProtectionBitlockerRecoveryKey](Get-MgBetaInformationProtectionBitlockerRecoveryKey.md)
 
-### [Get-MgBetaInformationProtectionBitlockerRecoveryKey](Get-MgBetaInformationProtectionBitlockerRecoveryKey.md)
-
 ### [Get-MgBetaInformationProtectionBitlockerRecoveryKeyCount](Get-MgBetaInformationProtectionBitlockerRecoveryKeyCount.md)
-
-### [Get-MgBetaInformationProtectionDataLossPreventionPolicy](Get-MgBetaInformationProtectionDataLossPreventionPolicy.md)
 
 ### [Get-MgBetaInformationProtectionDataLossPreventionPolicy](Get-MgBetaInformationProtectionDataLossPreventionPolicy.md)
 
 ### [Get-MgBetaInformationProtectionDataLossPreventionPolicyCount](Get-MgBetaInformationProtectionDataLossPreventionPolicyCount.md)
 
 ### [Get-MgBetaInformationProtectionPolicy](Get-MgBetaInformationProtectionPolicy.md)
-
-### [Get-MgBetaInformationProtectionPolicyLabel](Get-MgBetaInformationProtectionPolicyLabel.md)
 
 ### [Get-MgBetaInformationProtectionPolicyLabel](Get-MgBetaInformationProtectionPolicyLabel.md)
 
@@ -367,11 +285,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaInformationProtectionThreatAssessmentRequest](Get-MgBetaInformationProtectionThreatAssessmentRequest.md)
 
-### [Get-MgBetaInformationProtectionThreatAssessmentRequest](Get-MgBetaInformationProtectionThreatAssessmentRequest.md)
-
 ### [Get-MgBetaInformationProtectionThreatAssessmentRequestCount](Get-MgBetaInformationProtectionThreatAssessmentRequestCount.md)
-
-### [Get-MgBetaInformationProtectionThreatAssessmentRequestResult](Get-MgBetaInformationProtectionThreatAssessmentRequestResult.md)
 
 ### [Get-MgBetaInformationProtectionThreatAssessmentRequestResult](Get-MgBetaInformationProtectionThreatAssessmentRequestResult.md)
 
@@ -389,11 +303,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaInvitationInvitedUserSponsor](Get-MgBetaInvitationInvitedUserSponsor.md)
 
-### [Get-MgBetaInvitationInvitedUserSponsor](Get-MgBetaInvitationInvitedUserSponsor.md)
-
 ### [Get-MgBetaInvitationInvitedUserSponsorCount](Get-MgBetaInvitationInvitedUserSponsorCount.md)
-
-### [Get-MgBetaOauth2PermissionGrant](Get-MgBetaOauth2PermissionGrant.md)
 
 ### [Get-MgBetaOauth2PermissionGrant](Get-MgBetaOauth2PermissionGrant.md)
 
@@ -403,17 +313,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaOrganizationCertificateBasedAuthConfiguration](Get-MgBetaOrganizationCertificateBasedAuthConfiguration.md)
 
-### [Get-MgBetaOrganizationCertificateBasedAuthConfiguration](Get-MgBetaOrganizationCertificateBasedAuthConfiguration.md)
-
 ### [Get-MgBetaOrganizationCertificateBasedAuthConfigurationCount](Get-MgBetaOrganizationCertificateBasedAuthConfigurationCount.md)
 
 ### [Get-MgBetaPolicyAccessReviewPolicy](Get-MgBetaPolicyAccessReviewPolicy.md)
 
 ### [Get-MgBetaPolicyActivityBasedTimeoutPolicy](Get-MgBetaPolicyActivityBasedTimeoutPolicy.md)
-
-### [Get-MgBetaPolicyActivityBasedTimeoutPolicy](Get-MgBetaPolicyActivityBasedTimeoutPolicy.md)
-
-### [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo](Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo](Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo.md)
 
@@ -424,10 +328,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyAdminConsentRequestPolicy](Get-MgBetaPolicyAdminConsentRequestPolicy.md)
 
 ### [Get-MgBetaPolicyAppManagementPolicy](Get-MgBetaPolicyAppManagementPolicy.md)
-
-### [Get-MgBetaPolicyAppManagementPolicy](Get-MgBetaPolicyAppManagementPolicy.md)
-
-### [Get-MgBetaPolicyAppManagementPolicyApplyTo](Get-MgBetaPolicyAppManagementPolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyAppManagementPolicyApplyTo](Get-MgBetaPolicyAppManagementPolicyApplyTo.md)
 
@@ -441,15 +341,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 
-### [Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
-
 ### [Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount](Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount.md)
 
 ### [Get-MgBetaPolicyAuthenticationStrengthPolicy](Get-MgBetaPolicyAuthenticationStrengthPolicy.md)
-
-### [Get-MgBetaPolicyAuthenticationStrengthPolicy](Get-MgBetaPolicyAuthenticationStrengthPolicy.md)
-
-### [Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration.md)
 
 ### [Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration.md)
 
@@ -459,21 +353,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyAuthorizationPolicy](Get-MgBetaPolicyAuthorizationPolicy.md)
 
-### [Get-MgBetaPolicyAuthorizationPolicy](Get-MgBetaPolicyAuthorizationPolicy.md)
-
 ### [Get-MgBetaPolicyAuthorizationPolicyCount](Get-MgBetaPolicyAuthorizationPolicyCount.md)
-
-### [Get-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride](Get-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride.md)
 
 ### [Get-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride](Get-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride.md)
 
 ### [Get-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverrideCount](Get-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverrideCount.md)
 
 ### [Get-MgBetaPolicyB2BManagementPolicy](Get-MgBetaPolicyB2BManagementPolicy.md)
-
-### [Get-MgBetaPolicyB2BManagementPolicy](Get-MgBetaPolicyB2BManagementPolicy.md)
-
-### [Get-MgBetaPolicyB2BManagementPolicyApplyTo](Get-MgBetaPolicyB2BManagementPolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyB2BManagementPolicyApplyTo](Get-MgBetaPolicyB2BManagementPolicyApplyTo.md)
 
@@ -484,10 +370,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyB2CAuthenticationMethodPolicy](Get-MgBetaPolicyB2CAuthenticationMethodPolicy.md)
 
 ### [Get-MgBetaPolicyClaimMappingPolicy](Get-MgBetaPolicyClaimMappingPolicy.md)
-
-### [Get-MgBetaPolicyClaimMappingPolicy](Get-MgBetaPolicyClaimMappingPolicy.md)
-
-### [Get-MgBetaPolicyClaimMappingPolicyApplyTo](Get-MgBetaPolicyClaimMappingPolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyClaimMappingPolicyApplyTo](Get-MgBetaPolicyClaimMappingPolicyApplyTo.md)
 
@@ -501,13 +383,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyDefault](Get-MgBetaPolicyCrossTenantAccessPolicyDefault.md)
 
-### [Get-MgBetaPolicyCrossTenantAccessPolicyPartner](Get-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
+### [Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365CapabilityCount](Get-MgBetaPolicyCrossTenantAccessPolicyDefaultM365CapabilityCount.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartner](Get-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerCount](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerCount.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerM365CapabilityCount.md)
+
+### [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Get-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
 
 ### [Get-MgBetaPolicyCrossTenantAccessPolicyTemplate](Get-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -521,13 +411,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyDeletedItemCrossTenantPartner](Get-MgBetaPolicyDeletedItemCrossTenantPartner.md)
 
-### [Get-MgBetaPolicyDeletedItemCrossTenantPartner](Get-MgBetaPolicyDeletedItemCrossTenantPartner.md)
-
 ### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerCount](Get-MgBetaPolicyDeletedItemCrossTenantPartnerCount.md)
 
 ### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](Get-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization.md)
 
-### [Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
+### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
+
+### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365CapabilityCount](Get-MgBetaPolicyDeletedItemCrossTenantPartnerM365CapabilityCount.md)
+
+### [Get-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Get-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Get-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -538,8 +430,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Get-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 
 ### [Get-MgBetaPolicyExternalIdentityPolicy](Get-MgBetaPolicyExternalIdentityPolicy.md)
-
-### [Get-MgBetaPolicyFeatureRolloutPolicy](Get-MgBetaPolicyFeatureRolloutPolicy.md)
 
 ### [Get-MgBetaPolicyFeatureRolloutPolicy](Get-MgBetaPolicyFeatureRolloutPolicy.md)
 
@@ -555,10 +445,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](Get-MgBetaPolicyHomeRealmDiscoveryPolicy.md)
 
-### [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](Get-MgBetaPolicyHomeRealmDiscoveryPolicy.md)
-
-### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo.md)
-
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount](Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount.md)
@@ -566,8 +452,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyCount](Get-MgBetaPolicyHomeRealmDiscoveryPolicyCount.md)
 
 ### [Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-
-### [Get-MgBetaPolicyMobileAppManagementPolicy](Get-MgBetaPolicyMobileAppManagementPolicy.md)
 
 ### [Get-MgBetaPolicyMobileAppManagementPolicy](Get-MgBetaPolicyMobileAppManagementPolicy.md)
 
@@ -585,8 +469,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyMobileDeviceManagementPolicy](Get-MgBetaPolicyMobileDeviceManagementPolicy.md)
 
-### [Get-MgBetaPolicyMobileDeviceManagementPolicy](Get-MgBetaPolicyMobileDeviceManagementPolicy.md)
-
 ### [Get-MgBetaPolicyMobileDeviceManagementPolicyCount](Get-MgBetaPolicyMobileDeviceManagementPolicyCount.md)
 
 ### [Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup](Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroup.md)
@@ -601,17 +483,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyOnPremAuthenticationPolicy](Get-MgBetaPolicyOnPremAuthenticationPolicy.md)
 
-### [Get-MgBetaPolicyOnPremAuthenticationPolicy](Get-MgBetaPolicyOnPremAuthenticationPolicy.md)
-
-### [Get-MgBetaPolicyOnPremAuthenticationPolicyApplyTo](Get-MgBetaPolicyOnPremAuthenticationPolicyApplyTo.md)
-
 ### [Get-MgBetaPolicyOnPremAuthenticationPolicyApplyTo](Get-MgBetaPolicyOnPremAuthenticationPolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyOnPremAuthenticationPolicyApplyToCount](Get-MgBetaPolicyOnPremAuthenticationPolicyApplyToCount.md)
 
 ### [Get-MgBetaPolicyOnPremAuthenticationPolicyCount](Get-MgBetaPolicyOnPremAuthenticationPolicyCount.md)
 
-### [Get-MgBetaPolicyPermissionGrantPolicy](Get-MgBetaPolicyPermissionGrantPolicy.md)
+### [Get-MgBetaPolicyOwnerlessGroupPolicy](Get-MgBetaPolicyOwnerlessGroupPolicy.md)
 
 ### [Get-MgBetaPolicyPermissionGrantPolicy](Get-MgBetaPolicyPermissionGrantPolicy.md)
 
@@ -619,11 +497,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyPermissionGrantPolicyExclude](Get-MgBetaPolicyPermissionGrantPolicyExclude.md)
 
-### [Get-MgBetaPolicyPermissionGrantPolicyExclude](Get-MgBetaPolicyPermissionGrantPolicyExclude.md)
-
 ### [Get-MgBetaPolicyPermissionGrantPolicyExcludeCount](Get-MgBetaPolicyPermissionGrantPolicyExcludeCount.md)
-
-### [Get-MgBetaPolicyPermissionGrantPolicyInclude](Get-MgBetaPolicyPermissionGrantPolicyInclude.md)
 
 ### [Get-MgBetaPolicyPermissionGrantPolicyInclude](Get-MgBetaPolicyPermissionGrantPolicyInclude.md)
 
@@ -631,15 +505,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyPermissionGrantPreApprovalPolicy](Get-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
 
-### [Get-MgBetaPolicyPermissionGrantPreApprovalPolicy](Get-MgBetaPolicyPermissionGrantPreApprovalPolicy.md)
-
 ### [Get-MgBetaPolicyPermissionGrantPreApprovalPolicyCount](Get-MgBetaPolicyPermissionGrantPreApprovalPolicyCount.md)
 
 ### [Get-MgBetaPolicyRoleManagementPolicy](Get-MgBetaPolicyRoleManagementPolicy.md)
-
-### [Get-MgBetaPolicyRoleManagementPolicy](Get-MgBetaPolicyRoleManagementPolicy.md)
-
-### [Get-MgBetaPolicyRoleManagementPolicyAssignment](Get-MgBetaPolicyRoleManagementPolicyAssignment.md)
 
 ### [Get-MgBetaPolicyRoleManagementPolicyAssignment](Get-MgBetaPolicyRoleManagementPolicyAssignment.md)
 
@@ -651,11 +519,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyRoleManagementPolicyEffectiveRule](Get-MgBetaPolicyRoleManagementPolicyEffectiveRule.md)
 
-### [Get-MgBetaPolicyRoleManagementPolicyEffectiveRule](Get-MgBetaPolicyRoleManagementPolicyEffectiveRule.md)
-
 ### [Get-MgBetaPolicyRoleManagementPolicyEffectiveRuleCount](Get-MgBetaPolicyRoleManagementPolicyEffectiveRuleCount.md)
-
-### [Get-MgBetaPolicyRoleManagementPolicyRule](Get-MgBetaPolicyRoleManagementPolicyRule.md)
 
 ### [Get-MgBetaPolicyRoleManagementPolicyRule](Get-MgBetaPolicyRoleManagementPolicyRule.md)
 
@@ -663,11 +527,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyServicePrincipalCreationPolicy](Get-MgBetaPolicyServicePrincipalCreationPolicy.md)
 
-### [Get-MgBetaPolicyServicePrincipalCreationPolicy](Get-MgBetaPolicyServicePrincipalCreationPolicy.md)
-
 ### [Get-MgBetaPolicyServicePrincipalCreationPolicyCount](Get-MgBetaPolicyServicePrincipalCreationPolicyCount.md)
-
-### [Get-MgBetaPolicyServicePrincipalCreationPolicyExclude](Get-MgBetaPolicyServicePrincipalCreationPolicyExclude.md)
 
 ### [Get-MgBetaPolicyServicePrincipalCreationPolicyExclude](Get-MgBetaPolicyServicePrincipalCreationPolicyExclude.md)
 
@@ -675,15 +535,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyServicePrincipalCreationPolicyInclude](Get-MgBetaPolicyServicePrincipalCreationPolicyInclude.md)
 
-### [Get-MgBetaPolicyServicePrincipalCreationPolicyInclude](Get-MgBetaPolicyServicePrincipalCreationPolicyInclude.md)
-
 ### [Get-MgBetaPolicyServicePrincipalCreationPolicyIncludeCount](Get-MgBetaPolicyServicePrincipalCreationPolicyIncludeCount.md)
 
 ### [Get-MgBetaPolicyTokenIssuancePolicy](Get-MgBetaPolicyTokenIssuancePolicy.md)
-
-### [Get-MgBetaPolicyTokenIssuancePolicy](Get-MgBetaPolicyTokenIssuancePolicy.md)
-
-### [Get-MgBetaPolicyTokenIssuancePolicyApplyTo](Get-MgBetaPolicyTokenIssuancePolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyTokenIssuancePolicyApplyTo](Get-MgBetaPolicyTokenIssuancePolicyApplyTo.md)
 
@@ -693,10 +547,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPolicyTokenLifetimePolicy](Get-MgBetaPolicyTokenLifetimePolicy.md)
 
-### [Get-MgBetaPolicyTokenLifetimePolicy](Get-MgBetaPolicyTokenLifetimePolicy.md)
-
-### [Get-MgBetaPolicyTokenLifetimePolicyApplyTo](Get-MgBetaPolicyTokenLifetimePolicyApplyTo.md)
-
 ### [Get-MgBetaPolicyTokenLifetimePolicyApplyTo](Get-MgBetaPolicyTokenLifetimePolicyApplyTo.md)
 
 ### [Get-MgBetaPolicyTokenLifetimePolicyApplyToCount](Get-MgBetaPolicyTokenLifetimePolicyApplyToCount.md)
@@ -705,11 +555,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRiskDetection](Get-MgBetaRiskDetection.md)
 
-### [Get-MgBetaRiskDetection](Get-MgBetaRiskDetection.md)
-
 ### [Get-MgBetaRiskDetectionCount](Get-MgBetaRiskDetectionCount.md)
-
-### [Get-MgBetaRiskyAgent](Get-MgBetaRiskyAgent.md)
 
 ### [Get-MgBetaRiskyAgent](Get-MgBetaRiskyAgent.md)
 
@@ -717,11 +563,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRiskyServicePrincipal](Get-MgBetaRiskyServicePrincipal.md)
 
-### [Get-MgBetaRiskyServicePrincipal](Get-MgBetaRiskyServicePrincipal.md)
-
 ### [Get-MgBetaRiskyServicePrincipalCount](Get-MgBetaRiskyServicePrincipalCount.md)
-
-### [Get-MgBetaRiskyServicePrincipalHistory](Get-MgBetaRiskyServicePrincipalHistory.md)
 
 ### [Get-MgBetaRiskyServicePrincipalHistory](Get-MgBetaRiskyServicePrincipalHistory.md)
 
@@ -729,17 +571,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRiskyUser](Get-MgBetaRiskyUser.md)
 
-### [Get-MgBetaRiskyUser](Get-MgBetaRiskyUser.md)
-
 ### [Get-MgBetaRiskyUserCount](Get-MgBetaRiskyUserCount.md)
 
 ### [Get-MgBetaRiskyUserHistory](Get-MgBetaRiskyUserHistory.md)
 
-### [Get-MgBetaRiskyUserHistory](Get-MgBetaRiskyUserHistory.md)
-
 ### [Get-MgBetaRiskyUserHistoryCount](Get-MgBetaRiskyUserHistoryCount.md)
-
-### [Get-MgBetaServicePrincipalRiskDetection](Get-MgBetaServicePrincipalRiskDetection.md)
 
 ### [Get-MgBetaServicePrincipalRiskDetection](Get-MgBetaServicePrincipalRiskDetection.md)
 
@@ -751,13 +587,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant](Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant.md)
 
-### [Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant](Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant.md)
-
 ### [Get-MgBetaTenantRelationshipMultiTenantOrganizationTenantCount](Get-MgBetaTenantRelationshipMultiTenantOrganizationTenantCount.md)
 
 ### [Get-MgBetaTrustFramework](Get-MgBetaTrustFramework.md)
-
-### [Get-MgBetaTrustFrameworkKeySet](Get-MgBetaTrustFrameworkKeySet.md)
 
 ### [Get-MgBetaTrustFrameworkKeySet](Get-MgBetaTrustFrameworkKeySet.md)
 
@@ -769,10 +601,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTrustFrameworkKeySetKeyV2](Get-MgBetaTrustFrameworkKeySetKeyV2.md)
 
-### [Get-MgBetaTrustFrameworkKeySetKeyV2](Get-MgBetaTrustFrameworkKeySetKeyV2.md)
-
-### [Get-MgBetaTrustFrameworkPolicy](Get-MgBetaTrustFrameworkPolicy.md)
-
 ### [Get-MgBetaTrustFrameworkPolicy](Get-MgBetaTrustFrameworkPolicy.md)
 
 ### [Get-MgBetaTrustFrameworkPolicyContent](Get-MgBetaTrustFrameworkPolicyContent.md)
@@ -781,11 +609,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationEmailMethod](Get-MgBetaUserAuthenticationEmailMethod.md)
 
-### [Get-MgBetaUserAuthenticationEmailMethod](Get-MgBetaUserAuthenticationEmailMethod.md)
-
 ### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
-
-### [Get-MgBetaUserAuthenticationExternalAuthenticationMethod](Get-MgBetaUserAuthenticationExternalAuthenticationMethod.md)
 
 ### [Get-MgBetaUserAuthenticationExternalAuthenticationMethod](Get-MgBetaUserAuthenticationExternalAuthenticationMethod.md)
 
@@ -793,11 +617,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationFido2Method](Get-MgBetaUserAuthenticationFido2Method.md)
 
-### [Get-MgBetaUserAuthenticationFido2Method](Get-MgBetaUserAuthenticationFido2Method.md)
-
 ### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
-
-### [Get-MgBetaUserAuthenticationHardwareOathMethod](Get-MgBetaUserAuthenticationHardwareOathMethod.md)
 
 ### [Get-MgBetaUserAuthenticationHardwareOathMethod](Get-MgBetaUserAuthenticationHardwareOathMethod.md)
 
@@ -815,8 +635,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice](Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice.md)
 
-### [Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice](Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDevice.md)
-
 ### [Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignTo](Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignTo.md)
 
 ### [Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting](Get-MgBetaUserAuthenticationHardwareOathMethodDeviceHardwareOathDeviceAssignToMailboxSetting.md)
@@ -829,11 +647,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationMethod](Get-MgBetaUserAuthenticationMethod.md)
 
-### [Get-MgBetaUserAuthenticationMethod](Get-MgBetaUserAuthenticationMethod.md)
-
 ### [Get-MgBetaUserAuthenticationMethodCount](Get-MgBetaUserAuthenticationMethodCount.md)
-
-### [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod.md)
 
 ### [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod.md)
 
@@ -843,11 +657,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationOperation](Get-MgBetaUserAuthenticationOperation.md)
 
-### [Get-MgBetaUserAuthenticationOperation](Get-MgBetaUserAuthenticationOperation.md)
-
 ### [Get-MgBetaUserAuthenticationOperationCount](Get-MgBetaUserAuthenticationOperationCount.md)
-
-### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 
 ### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 
@@ -857,17 +667,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationPasswordMethod](Get-MgBetaUserAuthenticationPasswordMethod.md)
 
-### [Get-MgBetaUserAuthenticationPasswordMethod](Get-MgBetaUserAuthenticationPasswordMethod.md)
-
 ### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
 
 ### [Get-MgBetaUserAuthenticationPhoneMethod](Get-MgBetaUserAuthenticationPhoneMethod.md)
 
-### [Get-MgBetaUserAuthenticationPhoneMethod](Get-MgBetaUserAuthenticationPhoneMethod.md)
-
 ### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
-
-### [Get-MgBetaUserAuthenticationPlatformCredentialMethod](Get-MgBetaUserAuthenticationPlatformCredentialMethod.md)
 
 ### [Get-MgBetaUserAuthenticationPlatformCredentialMethod](Get-MgBetaUserAuthenticationPlatformCredentialMethod.md)
 
@@ -885,9 +689,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationRequirement](Get-MgBetaUserAuthenticationRequirement.md)
 
-### [Get-MgBetaUserAuthenticationSignInPreference](Get-MgBetaUserAuthenticationSignInPreference.md)
+### [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod](Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod.md)
 
-### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
+### [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodCount](Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodCount.md)
+
+### [Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodDevice](Get-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethodDevice.md)
+
+### [Get-MgBetaUserAuthenticationSignInPreference](Get-MgBetaUserAuthenticationSignInPreference.md)
 
 ### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
 
@@ -895,11 +703,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](Get-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
 
-### [Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](Get-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
-
 ### [Get-MgBetaUserAuthenticationTemporaryAccessPassMethodCount](Get-MgBetaUserAuthenticationTemporaryAccessPassMethodCount.md)
-
-### [Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod.md)
 
 ### [Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod.md)
 
@@ -913,11 +717,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserInformationProtectionBitlockerRecoveryKey](Get-MgBetaUserInformationProtectionBitlockerRecoveryKey.md)
 
-### [Get-MgBetaUserInformationProtectionBitlockerRecoveryKey](Get-MgBetaUserInformationProtectionBitlockerRecoveryKey.md)
-
 ### [Get-MgBetaUserInformationProtectionBitlockerRecoveryKeyCount](Get-MgBetaUserInformationProtectionBitlockerRecoveryKeyCount.md)
-
-### [Get-MgBetaUserInformationProtectionDataLossPreventionPolicy](Get-MgBetaUserInformationProtectionDataLossPreventionPolicy.md)
 
 ### [Get-MgBetaUserInformationProtectionDataLossPreventionPolicy](Get-MgBetaUserInformationProtectionDataLossPreventionPolicy.md)
 
@@ -927,19 +727,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserInformationProtectionPolicyLabel](Get-MgBetaUserInformationProtectionPolicyLabel.md)
 
-### [Get-MgBetaUserInformationProtectionPolicyLabel](Get-MgBetaUserInformationProtectionPolicyLabel.md)
-
 ### [Get-MgBetaUserInformationProtectionPolicyLabelCount](Get-MgBetaUserInformationProtectionPolicyLabelCount.md)
-
-### [Get-MgBetaUserInformationProtectionSensitivityLabel](Get-MgBetaUserInformationProtectionSensitivityLabel.md)
 
 ### [Get-MgBetaUserInformationProtectionSensitivityLabel](Get-MgBetaUserInformationProtectionSensitivityLabel.md)
 
 ### [Get-MgBetaUserInformationProtectionSensitivityLabelCount](Get-MgBetaUserInformationProtectionSensitivityLabelCount.md)
 
 ### [Get-MgBetaUserInformationProtectionSensitivityLabelRight](Get-MgBetaUserInformationProtectionSensitivityLabelRight.md)
-
-### [Get-MgBetaUserInformationProtectionSensitivityLabelSublabel](Get-MgBetaUserInformationProtectionSensitivityLabelSublabel.md)
 
 ### [Get-MgBetaUserInformationProtectionSensitivityLabelSublabel](Get-MgBetaUserInformationProtectionSensitivityLabelSublabel.md)
 
@@ -951,11 +745,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserInformationProtectionThreatAssessmentRequest](Get-MgBetaUserInformationProtectionThreatAssessmentRequest.md)
 
-### [Get-MgBetaUserInformationProtectionThreatAssessmentRequest](Get-MgBetaUserInformationProtectionThreatAssessmentRequest.md)
-
 ### [Get-MgBetaUserInformationProtectionThreatAssessmentRequestCount](Get-MgBetaUserInformationProtectionThreatAssessmentRequestCount.md)
-
-### [Get-MgBetaUserInformationProtectionThreatAssessmentRequestResult](Get-MgBetaUserInformationProtectionThreatAssessmentRequestResult.md)
 
 ### [Get-MgBetaUserInformationProtectionThreatAssessmentRequestResult](Get-MgBetaUserInformationProtectionThreatAssessmentRequestResult.md)
 
@@ -1133,9 +923,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaPolicyClaimMappingPolicy](New-MgBetaPolicyClaimMappingPolicy.md)
 
+### [New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](New-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [New-MgBetaPolicyCrossTenantAccessPolicyPartner](New-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 
+### [New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](New-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
 ### [New-MgBetaPolicyDeletedItemCrossTenantPartner](New-MgBetaPolicyDeletedItemCrossTenantPartner.md)
+
+### [New-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](New-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
 
 ### [New-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](New-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -1389,9 +1185,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyDefault](Remove-MgBetaPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Remove-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](Remove-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartner](Remove-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+
+### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
 
 ### [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate](Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -1406,6 +1208,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantPartner](Remove-MgBetaPolicyDeletedItemCrossTenantPartner.md)
 
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization.md)
+
+### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
+
+### [Remove-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Remove-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Remove-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Remove-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -1511,6 +1317,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode](Remove-MgBetaUserAuthenticationQrCodePinMethodTemporaryQrCode.md)
 
+### [Remove-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod](Remove-MgBetaUserAuthenticationResourceAccountKeyAuthenticationMethod.md)
+
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)
 
 ### [Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
@@ -1557,9 +1365,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
 
+### [Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Restore-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
+
 ### [Restore-MgBetaPolicyDeletedItemCrossTenantPartner](Restore-MgBetaPolicyDeletedItemCrossTenantPartner.md)
 
 ### [Restore-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization](Restore-MgBetaPolicyDeletedItemCrossTenantPartnerIdentitySynchronization.md)
+
+### [Restore-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Restore-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Restore-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner](Restore-MgBetaPolicyDeletedItemCrossTenantSyncPolicyPartner.md)
 
@@ -1753,7 +1565,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyDefault](Update-MgBetaPolicyCrossTenantAccessPolicyDefault.md)
 
+### [Update-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability](Update-MgBetaPolicyCrossTenantAccessPolicyDefaultM365Capability.md)
+
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyPartner](Update-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
+
+### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerM365Capability.md)
+
+### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerServiceProviderConstraint.md)
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyTemplate](Update-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
 
@@ -1766,6 +1584,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPolicyDeletedItem](Update-MgBetaPolicyDeletedItem.md)
 
 ### [Update-MgBetaPolicyDeletedItemCrossTenantPartner](Update-MgBetaPolicyDeletedItemCrossTenantPartner.md)
+
+### [Update-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability](Update-MgBetaPolicyDeletedItemCrossTenantPartnerM365Capability.md)
+
+### [Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint](Update-MgBetaPolicyDeletedItemCrossTenantPartnerServiceProviderConstraint.md)
 
 ### [Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 
@@ -1784,6 +1606,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPolicyMobileDeviceManagementPolicy](Update-MgBetaPolicyMobileDeviceManagementPolicy.md)
 
 ### [Update-MgBetaPolicyOnPremAuthenticationPolicy](Update-MgBetaPolicyOnPremAuthenticationPolicy.md)
+
+### [Update-MgBetaPolicyOwnerlessGroupPolicy](Update-MgBetaPolicyOwnerlessGroupPolicy.md)
 
 ### [Update-MgBetaPolicyPermissionGrantPolicy](Update-MgBetaPolicyPermissionGrantPolicy.md)
 

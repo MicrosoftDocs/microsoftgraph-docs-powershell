@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyFederatedTokenValidationPolicy
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaPolicyFederatedTokenValidationPolicy
 ## SYNOPSIS
 
 Update the properties of a federatedTokenValidationPolicy object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyFederatedTokenValidationPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,6 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy [-ResponseHeadersVariable <str
  [-ValidatingDomains <IMicrosoftGraphValidatingDomains>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -35,7 +37,7 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy
  -BodyParameter <IMicrosoftGraphFederatedTokenValidationPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -46,6 +48,14 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a federatedTokenValidationPolicy object.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Policy.ReadWrite.FedTokenValidation,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Policy.ReadWrite.FedTokenValidation,  |
 
 ## PARAMETERS
 

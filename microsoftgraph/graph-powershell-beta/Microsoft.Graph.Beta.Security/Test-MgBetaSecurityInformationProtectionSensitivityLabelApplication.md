@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelapplication
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
 ---
@@ -28,7 +28,6 @@ Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
  [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Evaluate
@@ -39,7 +38,6 @@ Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -398,7 +396,7 @@ BODYPARAMETER `<IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicro
   [ContentInfo <IMicrosoftGraphSecurityContentInfo>]: contentInfo
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ContentFormat <String>]: The format of the content to be labeled.
-Possible values are: file, email.
+The possible values are: file, email.
     [Identifier <String>]: Identifier used for Azure Information Protection Analytics.
     [Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
       [Name <String>]: Name for this key-value pair.
@@ -418,7 +416,7 @@ The message appears in administrative logs.
 CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentFormat <String>]: The format of the content to be labeled.
-Possible values are: file, email.
+The possible values are: file, email.
   [Identifier <String>]: Identifier used for Azure Information Protection Analytics.
   [Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
     [Name <String>]: Name for this key-value pair.

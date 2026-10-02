@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOrganization
 ---
@@ -41,6 +41,7 @@ Update-MgBetaOrganization -OrganizationId <string> [-ResponseHeadersVariable <st
  [-PostalCode <string>] [-PreferredLanguage <string>]
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
+ [-ResourceQuotas <IMicrosoftGraphResourceQuota[]>]
  [-SecurityComplianceNotificationMails <string[]>]
  [-SecurityComplianceNotificationPhones <string[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <string>] [-Street <string>]
@@ -48,7 +49,6 @@ Update-MgBetaOrganization -OrganizationId <string> [-ResponseHeadersVariable <st
  [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -58,7 +58,6 @@ Update-MgBetaOrganization -OrganizationId <string> -BodyParameter <IMicrosoftGra
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -81,6 +80,7 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  [-PostalCode <string>] [-PreferredLanguage <string>]
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
+ [-ResourceQuotas <IMicrosoftGraphResourceQuota[]>]
  [-SecurityComplianceNotificationMails <string[]>]
  [-SecurityComplianceNotificationPhones <string[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <string>] [-Street <string>]
@@ -88,7 +88,6 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -98,7 +97,7 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -116,9 +115,9 @@ The ID is also known as the tenantId of the organization.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, Organization.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Delegated (work or school account) | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, Organization.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | DeviceManagementServiceConfig.ReadWrite.All, Organization.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
+| Application | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, Organization.ReadWrite.All,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1188,6 +1187,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ResourceQuotas
+
+
+To construct, see NOTES section for RESOURCEQUOTAS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceQuota[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -1855,6 +1882,10 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
 See a detailed description of each value.
     [ProvisioningStatus <String>]: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
     [Service <String>]: The name of the service; for example, 'AccessControlS2S'
+  [ResourceQuotas <IMicrosoftGraphResourceQuota[]>]: 
+    [MaxPercentage <Int32?>]: 
+    [ResourceType <String>]: resourceQuotaType
+    [Total <Int32?>]: 
   [SecurityComplianceNotificationMails <String[]>]: Not nullable.
   [SecurityComplianceNotificationPhones <String[]>]: Not nullable.
   [Settings <IMicrosoftGraphOrganizationSettings>]: organizationSettings
@@ -2220,6 +2251,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ExtensionId <String>]: The unique identifier of extension
   [ExternalUserProfileId <String>]: The unique identifier of externalUserProfile
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
+  [GovernanceInvitationId <String>]: The unique identifier of governanceInvitation
+  [GovernanceRelationshipId <String>]: The unique identifier of governanceRelationship
+  [GovernanceRequestId <String>]: The unique identifier of governanceRequest
   [HardwareOathTokenAuthenticationMethodDeviceId <String>]: The unique identifier of hardwareOathTokenAuthenticationMethodDevice
   [IdentityProviderBaseId <String>]: The unique identifier of identityProviderBase
   [ImpactedResourceId <String>]: The unique identifier of impactedResource
@@ -2239,12 +2273,20 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [ProfilePropertySettingId <String>]: The unique identifier of profilePropertySetting
   [ProfileSourceId <String>]: The unique identifier of profileSource
   [RecommendationId <String>]: The unique identifier of recommendation
+  [RecommendationTagId <String>]: The unique identifier of recommendationTag
+  [RecoveryJobBaseId <String>]: The unique identifier of recoveryJobBase
+  [RecoveryJobId <String>]: The unique identifier of recoveryJob
+  [RecoveryPreviewJobId <String>]: The unique identifier of recoveryPreviewJob
+  [RelatedTenantId <String>]: The unique identifier of relatedTenant
+  [RemoteTenantGroupId <String>]: The unique identifier of remoteTenantGroup
   [RoleTemplateId <String>]: Alternate key of directoryRole
   [ScopedRoleMembershipId <String>]: The unique identifier of scopedRoleMembership
   [SharedEmailDomainId <String>]: The unique identifier of sharedEmailDomain
   [SharedEmailDomainInvitationId <String>]: The unique identifier of sharedEmailDomainInvitation
+  [SnapshotId <String>]: The unique identifier of snapshot
   [SourceId <String>]: Alternate key of profileSource
   [SubscribedSkuId <String>]: The unique identifier of subscribedSku
+  [TenantGovernancePolicyTemplateId <String>]: The unique identifier of tenantGovernancePolicyTemplate
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [TenantReferenceTenantId <String>]: The unique identifier of tenantReference
   [UsageRightId <String>]: The unique identifier of usageRight
@@ -2276,6 +2318,11 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
 See a detailed description of each value.
   [ProvisioningStatus <String>]: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
   [Service <String>]: The name of the service; for example, 'AccessControlS2S'
+
+RESOURCEQUOTAS <IMicrosoftGraphResourceQuota[]>: .
+  [MaxPercentage <Int32?>]: 
+  [ResourceType <String>]: resourceQuotaType
+  [Total <Int32?>]: 
 
 SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.

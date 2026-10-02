@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetagroupdrivelistpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Grant-MgBetaGroupDriveListPermission
 ---
@@ -14,6 +14,9 @@ title: Grant-MgBetaGroupDriveListPermission
 ## SYNOPSIS
 
 Grant users access to a link represented by a permission.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveListPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgGroupDriveListPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Grant-MgBetaGroupDriveListPermission -DriveId <string> -GroupId <string> -Permis
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Grant
@@ -36,7 +39,6 @@ Grant-MgBetaGroupDriveListPermission -DriveId <string> -GroupId <string> -Permis
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### GrantViaIdentityExpanded
@@ -47,7 +49,7 @@ Grant-MgBetaGroupDriveListPermission -InputObject <IFilesIdentity>
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <string[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### GrantViaIdentity
@@ -58,7 +60,6 @@ Grant-MgBetaGroupDriveListPermission -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

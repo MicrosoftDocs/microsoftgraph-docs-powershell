@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Planner
-Module Guid: ca19fde7-b3a6-42f4-9bbe-d4715fb36fe1
+Module Guid: fc42f1fd-077e-4838-8bba-722e7507883f
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.planner/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,8 +12,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Planner Cmdlets
 ### [Get-MgGroupPlanner](Get-MgGroupPlanner.md)
-
-### [Get-MgGroupPlannerPlan](Get-MgGroupPlannerPlan.md)
 
 ### [Get-MgGroupPlannerPlan](Get-MgGroupPlannerPlan.md)
 
@@ -29,13 +27,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPlannerBucket](Get-MgPlannerBucket.md)
 
-### [Get-MgPlannerBucket](Get-MgPlannerBucket.md)
-
 ### [Get-MgPlannerBucketCount](Get-MgPlannerBucketCount.md)
 
 ### [Get-MgPlannerBucketTask](Get-MgPlannerBucketTask.md)
-
-### [Get-MgPlannerPlan](Get-MgPlannerPlan.md)
 
 ### [Get-MgPlannerPlan](Get-MgPlannerPlan.md)
 
@@ -46,8 +40,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgPlannerPlanDetail](Get-MgPlannerPlanDetail.md)
 
 ### [Get-MgPlannerPlanTask](Get-MgPlannerPlanTask.md)
-
-### [Get-MgPlannerTask](Get-MgPlannerTask.md)
 
 ### [Get-MgPlannerTask](Get-MgPlannerTask.md)
 

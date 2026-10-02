@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriveitemsensitivitylabel
 Locale: en-US
 Module Name: Microsoft.Graph.Files
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgUserDriveItemSensitivityLabel
 ---
@@ -13,7 +13,13 @@ title: Set-MgUserDriveItemSensitivityLabel
 
 ## SYNOPSIS
 
-Invoke action assignSensitivityLabel
+Asynchronously assign a sensitivity label to a driveItem.
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
+Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+This API applies sensitivity labels to files at rest.
+Office clients don't apply watermarks, headers, or footers to files that contain the label information.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemSensitivityLabel?view=graph-powershell-beta)
@@ -29,7 +35,6 @@ Set-MgUserDriveItemSensitivityLabel -DriveId <string> -DriveItemId <string> -Use
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Assign
@@ -40,7 +45,6 @@ Set-MgUserDriveItemSensitivityLabel -DriveId <string> -DriveItemId <string> -Use
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -52,7 +56,6 @@ Set-MgUserDriveItemSensitivityLabel -InputObject <IFilesIdentity>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
@@ -63,7 +66,6 @@ Set-MgUserDriveItemSensitivityLabel -InputObject <IFilesIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,7 +75,13 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke action assignSensitivityLabel
+Asynchronously assign a sensitivity label to a driveItem.
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected.
+Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+This API applies sensitivity labels to files at rest.
+Office clients don't apply watermarks, headers, or footers to files that contain the label information.
+For more information about sensitivity labels from an administrator's perspective, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
 
 ## PARAMETERS
 
@@ -626,6 +634,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Set-MgUserDriveItemSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriveitemsensitivitylabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0)
 
 
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/restart-mgbetaserviceprincipalsynchronizationjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Restart-MgBetaServicePrincipalSynchronizationJob
 ---
@@ -13,7 +13,7 @@ title: Restart-MgBetaServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
 
-Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Restart a stopped synchronizationJob, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
 > [!NOTE]
@@ -30,7 +30,6 @@ Restart-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId <string>
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Restart
@@ -42,7 +41,6 @@ Restart-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestartViaIdentityExpanded
@@ -53,7 +51,6 @@ Restart-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIden
  [-Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### RestartViaIdentity
@@ -64,7 +61,6 @@ Restart-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIden
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,7 +70,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Restart a stopped synchronizationJob, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
 **Permissions**

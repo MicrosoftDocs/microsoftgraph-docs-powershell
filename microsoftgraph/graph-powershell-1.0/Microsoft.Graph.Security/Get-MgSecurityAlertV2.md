@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityAlertV2
 ---
@@ -28,7 +28,7 @@ Get-MgSecurityAlertV2 [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgSecurityAlertV2 [-ExpandProperty <string[]>] [-Property <string[]>] [-Filt
 Get-MgSecurityAlertV2 -AlertId <string> [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgSecurityAlertV2 -AlertId <string> [-ExpandProperty <string[]>] [-Property 
 Get-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -67,7 +67,7 @@ Get the properties and relationships of an alert object.
 | Application | SecurityAlert.Read.All, SecurityAlert.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get all alerts
 
 ```powershell
 
@@ -76,7 +76,18 @@ Import-Module Microsoft.Graph.Security
 Get-MgSecurityAlertV2
 
 ```
-This example shows how to use the Get-MgSecurityAlertV2 Cmdlet.
+This example will get all alerts
+
+### Example 2: Get all alerts from Microsoft Sentinel
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityAlertV2 -Filter "serviceSource eq 'microsoftSentinel'" 
+
+```
+This example will get all alerts from microsoft sentinel
 
 
 ## PARAMETERS
@@ -541,9 +552,12 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Teams
-Module Guid: d27e97a9-d91e-4659-9618-7642e1e98a92
+Module Guid: 3ac330de-4ce9-4e72-a7e6-d5d8969afbe6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.teams/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,15 +15,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Add-MgBetaGroupTeamChannelAllMember](Add-MgBetaGroupTeamChannelAllMember.md)
 
+### [Add-MgBetaGroupTeamChannelJoinedUser](Add-MgBetaGroupTeamChannelJoinedUser.md)
+
 ### [Add-MgBetaGroupTeamChannelMember](Add-MgBetaGroupTeamChannelMember.md)
 
 ### [Add-MgBetaGroupTeamMember](Add-MgBetaGroupTeamMember.md)
 
 ### [Add-MgBetaGroupTeamPrimaryChannelAllMember](Add-MgBetaGroupTeamPrimaryChannelAllMember.md)
 
+### [Add-MgBetaGroupTeamPrimaryChannelJoinedUser](Add-MgBetaGroupTeamPrimaryChannelJoinedUser.md)
+
 ### [Add-MgBetaGroupTeamPrimaryChannelMember](Add-MgBetaGroupTeamPrimaryChannelMember.md)
 
 ### [Add-MgBetaTeamChannelAllMember](Add-MgBetaTeamChannelAllMember.md)
+
+### [Add-MgBetaTeamChannelJoinedUser](Add-MgBetaTeamChannelJoinedUser.md)
 
 ### [Add-MgBetaTeamChannelMember](Add-MgBetaTeamChannelMember.md)
 
@@ -31,9 +37,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Add-MgBetaTeamPrimaryChannelAllMember](Add-MgBetaTeamPrimaryChannelAllMember.md)
 
+### [Add-MgBetaTeamPrimaryChannelJoinedUser](Add-MgBetaTeamPrimaryChannelJoinedUser.md)
+
 ### [Add-MgBetaTeamPrimaryChannelMember](Add-MgBetaTeamPrimaryChannelMember.md)
 
 ### [Add-MgBetaTeamworkDeletedTeamChannelAllMember](Add-MgBetaTeamworkDeletedTeamChannelAllMember.md)
+
+### [Add-MgBetaTeamworkDeletedTeamChannelJoinedUser](Add-MgBetaTeamworkDeletedTeamChannelJoinedUser.md)
 
 ### [Add-MgBetaTeamworkDeletedTeamChannelMember](Add-MgBetaTeamworkDeletedTeamChannelMember.md)
 
@@ -43,29 +53,53 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Clear-MgBetaChatMessageReplyReaction](Clear-MgBetaChatMessageReplyReaction.md)
 
+### [Clear-MgBetaChatTargetedMessageReplyReaction](Clear-MgBetaChatTargetedMessageReplyReaction.md)
+
 ### [Clear-MgBetaGroupTeamChannelMessageReaction](Clear-MgBetaGroupTeamChannelMessageReaction.md)
 
 ### [Clear-MgBetaGroupTeamChannelMessageReplyReaction](Clear-MgBetaGroupTeamChannelMessageReplyReaction.md)
+
+### [Clear-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessageReaction](Clear-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Clear-MgBetaGroupTeamChannelPlannerPlanTaskMessageReaction](Clear-MgBetaGroupTeamChannelPlannerPlanTaskMessageReaction.md)
 
 ### [Clear-MgBetaGroupTeamPrimaryChannelMessageReaction](Clear-MgBetaGroupTeamPrimaryChannelMessageReaction.md)
 
 ### [Clear-MgBetaGroupTeamPrimaryChannelMessageReplyReaction](Clear-MgBetaGroupTeamPrimaryChannelMessageReplyReaction.md)
 
+### [Clear-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction](Clear-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Clear-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessageReaction](Clear-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessageReaction.md)
+
 ### [Clear-MgBetaTeamChannelMessageReaction](Clear-MgBetaTeamChannelMessageReaction.md)
 
 ### [Clear-MgBetaTeamChannelMessageReplyReaction](Clear-MgBetaTeamChannelMessageReplyReaction.md)
+
+### [Clear-MgBetaTeamChannelPlannerPlanBucketTaskMessageReaction](Clear-MgBetaTeamChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Clear-MgBetaTeamChannelPlannerPlanTaskMessageReaction](Clear-MgBetaTeamChannelPlannerPlanTaskMessageReaction.md)
 
 ### [Clear-MgBetaTeamPrimaryChannelMessageReaction](Clear-MgBetaTeamPrimaryChannelMessageReaction.md)
 
 ### [Clear-MgBetaTeamPrimaryChannelMessageReplyReaction](Clear-MgBetaTeamPrimaryChannelMessageReplyReaction.md)
 
+### [Clear-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction](Clear-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Clear-MgBetaTeamPrimaryChannelPlannerPlanTaskMessageReaction](Clear-MgBetaTeamPrimaryChannelPlannerPlanTaskMessageReaction.md)
+
 ### [Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction](Clear-MgBetaTeamworkDeletedTeamChannelMessageReaction.md)
 
 ### [Clear-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction](Clear-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction.md)
 
+### [Clear-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessageReaction](Clear-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Clear-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessageReaction](Clear-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessageReaction.md)
+
 ### [Clear-MgBetaUserChatMessageReaction](Clear-MgBetaUserChatMessageReaction.md)
 
 ### [Clear-MgBetaUserChatMessageReplyReaction](Clear-MgBetaUserChatMessageReplyReaction.md)
+
+### [Clear-MgBetaUserChatTargetedMessageReplyReaction](Clear-MgBetaUserChatTargetedMessageReplyReaction.md)
 
 ### [Complete-MgBetaChatMigration](Complete-MgBetaChatMigration.md)
 
@@ -99,11 +133,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAllGroupTeamChannel](Get-MgBetaAllGroupTeamChannel.md)
 
-### [Get-MgBetaAllGroupTeamChannel](Get-MgBetaAllGroupTeamChannel.md)
-
 ### [Get-MgBetaAllGroupTeamChannelCount](Get-MgBetaAllGroupTeamChannelCount.md)
-
-### [Get-MgBetaAllTeamChannel](Get-MgBetaAllTeamChannel.md)
 
 ### [Get-MgBetaAllTeamChannel](Get-MgBetaAllTeamChannel.md)
 
@@ -115,15 +145,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAllUserChatMessage](Get-MgBetaAllUserChatMessage.md)
 
-### [Get-MgBetaAllUserChatMessage](Get-MgBetaAllUserChatMessage.md)
-
-### [Get-MgBetaAppCatalogTeamApp](Get-MgBetaAppCatalogTeamApp.md)
-
 ### [Get-MgBetaAppCatalogTeamApp](Get-MgBetaAppCatalogTeamApp.md)
 
 ### [Get-MgBetaAppCatalogTeamAppCount](Get-MgBetaAppCatalogTeamAppCount.md)
-
-### [Get-MgBetaAppCatalogTeamAppDefinition](Get-MgBetaAppCatalogTeamAppDefinition.md)
 
 ### [Get-MgBetaAppCatalogTeamAppDefinition](Get-MgBetaAppCatalogTeamAppDefinition.md)
 
@@ -137,8 +161,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard](Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard.md)
 
-### [Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard](Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard.md)
-
 ### [Get-MgBetaAppCatalogTeamAppDefinitionDashboardCardCount](Get-MgBetaAppCatalogTeamAppDefinitionDashboardCardCount.md)
 
 ### [Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon](Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon.md)
@@ -147,11 +169,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaChat](Get-MgBetaChat.md)
 
-### [Get-MgBetaChat](Get-MgBetaChat.md)
-
 ### [Get-MgBetaChatCount](Get-MgBetaChatCount.md)
-
-### [Get-MgBetaChatInstalledApp](Get-MgBetaChatInstalledApp.md)
 
 ### [Get-MgBetaChatInstalledApp](Get-MgBetaChatInstalledApp.md)
 
@@ -165,11 +183,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaChatMember](Get-MgBetaChatMember.md)
 
-### [Get-MgBetaChatMember](Get-MgBetaChatMember.md)
-
 ### [Get-MgBetaChatMemberCount](Get-MgBetaChatMemberCount.md)
-
-### [Get-MgBetaChatMessage](Get-MgBetaChatMessage.md)
 
 ### [Get-MgBetaChatMessage](Get-MgBetaChatMessage.md)
 
@@ -179,11 +193,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaChatMessageHostedContent](Get-MgBetaChatMessageHostedContent.md)
 
-### [Get-MgBetaChatMessageHostedContent](Get-MgBetaChatMessageHostedContent.md)
-
 ### [Get-MgBetaChatMessageHostedContentCount](Get-MgBetaChatMessageHostedContentCount.md)
-
-### [Get-MgBetaChatMessageReply](Get-MgBetaChatMessageReply.md)
 
 ### [Get-MgBetaChatMessageReply](Get-MgBetaChatMessageReply.md)
 
@@ -193,11 +203,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaChatMessageReplyHostedContent](Get-MgBetaChatMessageReplyHostedContent.md)
 
-### [Get-MgBetaChatMessageReplyHostedContent](Get-MgBetaChatMessageReplyHostedContent.md)
-
 ### [Get-MgBetaChatMessageReplyHostedContentCount](Get-MgBetaChatMessageReplyHostedContentCount.md)
-
-### [Get-MgBetaChatOperation](Get-MgBetaChatOperation.md)
 
 ### [Get-MgBetaChatOperation](Get-MgBetaChatOperation.md)
 
@@ -205,11 +211,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaChatPermissionGrant](Get-MgBetaChatPermissionGrant.md)
 
-### [Get-MgBetaChatPermissionGrant](Get-MgBetaChatPermissionGrant.md)
-
 ### [Get-MgBetaChatPermissionGrantCount](Get-MgBetaChatPermissionGrantCount.md)
-
-### [Get-MgBetaChatPinnedMessage](Get-MgBetaChatPinnedMessage.md)
 
 ### [Get-MgBetaChatPinnedMessage](Get-MgBetaChatPinnedMessage.md)
 
@@ -217,7 +219,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaChatRetainedMessage](Get-MgBetaChatRetainedMessage.md)
 
-### [Get-MgBetaChatTab](Get-MgBetaChatTab.md)
+### [Get-MgBetaChatRscConfiguration](Get-MgBetaChatRscConfiguration.md)
 
 ### [Get-MgBetaChatTab](Get-MgBetaChatTab.md)
 
@@ -225,17 +227,31 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaChatTabTeamApp](Get-MgBetaChatTabTeamApp.md)
 
-### [Get-MgBetaGroupTeam](Get-MgBetaGroupTeam.md)
+### [Get-MgBetaChatTargetedMessage](Get-MgBetaChatTargetedMessage.md)
 
-### [Get-MgBetaGroupTeamChannel](Get-MgBetaGroupTeamChannel.md)
+### [Get-MgBetaChatTargetedMessageCount](Get-MgBetaChatTargetedMessageCount.md)
+
+### [Get-MgBetaChatTargetedMessageHostedContent](Get-MgBetaChatTargetedMessageHostedContent.md)
+
+### [Get-MgBetaChatTargetedMessageHostedContentCount](Get-MgBetaChatTargetedMessageHostedContentCount.md)
+
+### [Get-MgBetaChatTargetedMessageReply](Get-MgBetaChatTargetedMessageReply.md)
+
+### [Get-MgBetaChatTargetedMessageReplyCount](Get-MgBetaChatTargetedMessageReplyCount.md)
+
+### [Get-MgBetaChatTargetedMessageReplyDelta](Get-MgBetaChatTargetedMessageReplyDelta.md)
+
+### [Get-MgBetaChatTargetedMessageReplyHostedContent](Get-MgBetaChatTargetedMessageReplyHostedContent.md)
+
+### [Get-MgBetaChatTargetedMessageReplyHostedContentCount](Get-MgBetaChatTargetedMessageReplyHostedContentCount.md)
+
+### [Get-MgBetaGroupTeam](Get-MgBetaGroupTeam.md)
 
 ### [Get-MgBetaGroupTeamChannel](Get-MgBetaGroupTeamChannel.md)
 
 ### [Get-MgBetaGroupTeamChannelAllMemberCount](Get-MgBetaGroupTeamChannelAllMemberCount.md)
 
 ### [Get-MgBetaGroupTeamChannelCount](Get-MgBetaGroupTeamChannelCount.md)
-
-### [Get-MgBetaGroupTeamChannelEnabledApp](Get-MgBetaGroupTeamChannelEnabledApp.md)
 
 ### [Get-MgBetaGroupTeamChannelEnabledApp](Get-MgBetaGroupTeamChannelEnabledApp.md)
 
@@ -247,13 +263,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelFileFolderContentStream](Get-MgBetaGroupTeamChannelFileFolderContentStream.md)
 
-### [Get-MgBetaGroupTeamChannelMember](Get-MgBetaGroupTeamChannelMember.md)
+### [Get-MgBetaGroupTeamChannelJoinedUser](Get-MgBetaGroupTeamChannelJoinedUser.md)
+
+### [Get-MgBetaGroupTeamChannelJoinedUserCount](Get-MgBetaGroupTeamChannelJoinedUserCount.md)
 
 ### [Get-MgBetaGroupTeamChannelMember](Get-MgBetaGroupTeamChannelMember.md)
 
 ### [Get-MgBetaGroupTeamChannelMemberCount](Get-MgBetaGroupTeamChannelMemberCount.md)
-
-### [Get-MgBetaGroupTeamChannelMessage](Get-MgBetaGroupTeamChannelMessage.md)
 
 ### [Get-MgBetaGroupTeamChannelMessage](Get-MgBetaGroupTeamChannelMessage.md)
 
@@ -263,11 +279,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelMessageHostedContent](Get-MgBetaGroupTeamChannelMessageHostedContent.md)
 
-### [Get-MgBetaGroupTeamChannelMessageHostedContent](Get-MgBetaGroupTeamChannelMessageHostedContent.md)
-
 ### [Get-MgBetaGroupTeamChannelMessageHostedContentCount](Get-MgBetaGroupTeamChannelMessageHostedContentCount.md)
-
-### [Get-MgBetaGroupTeamChannelMessageReply](Get-MgBetaGroupTeamChannelMessageReply.md)
 
 ### [Get-MgBetaGroupTeamChannelMessageReply](Get-MgBetaGroupTeamChannelMessageReply.md)
 
@@ -277,25 +289,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelMessageReplyHostedContent](Get-MgBetaGroupTeamChannelMessageReplyHostedContent.md)
 
-### [Get-MgBetaGroupTeamChannelMessageReplyHostedContent](Get-MgBetaGroupTeamChannelMessageReplyHostedContent.md)
-
 ### [Get-MgBetaGroupTeamChannelMessageReplyHostedContentCount](Get-MgBetaGroupTeamChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgBetaGroupTeamChannelPlanner](Get-MgBetaGroupTeamChannelPlanner.md)
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlan](Get-MgBetaGroupTeamChannelPlannerPlan.md)
 
-### [Get-MgBetaGroupTeamChannelPlannerPlan](Get-MgBetaGroupTeamChannelPlannerPlan.md)
-
-### [Get-MgBetaGroupTeamChannelPlannerPlanBucket](Get-MgBetaGroupTeamChannelPlannerPlanBucket.md)
-
 ### [Get-MgBetaGroupTeamChannelPlannerPlanBucket](Get-MgBetaGroupTeamChannelPlannerPlanBucket.md)
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanBucketCount](Get-MgBetaGroupTeamChannelPlannerPlanBucketCount.md)
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanBucketDelta](Get-MgBetaGroupTeamChannelPlannerPlanBucketDelta.md)
-
-### [Get-MgBetaGroupTeamChannelPlannerPlanBucketTask](Get-MgBetaGroupTeamChannelPlannerPlanBucketTask.md)
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanBucketTask](Get-MgBetaGroupTeamChannelPlannerPlanBucketTask.md)
 
@@ -309,6 +313,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail](Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage](Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage.md)
+
+### [Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessageCount](Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessageCount.md)
+
 ### [Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Get-MgBetaGroupTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanCount](Get-MgBetaGroupTeamChannelPlannerPlanCount.md)
@@ -317,7 +325,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanDetail](Get-MgBetaGroupTeamChannelPlannerPlanDetail.md)
 
-### [Get-MgBetaGroupTeamChannelPlannerPlanTask](Get-MgBetaGroupTeamChannelPlannerPlanTask.md)
+### [Get-MgBetaGroupTeamChannelPlannerPlanGoal](Get-MgBetaGroupTeamChannelPlannerPlanGoal.md)
+
+### [Get-MgBetaGroupTeamChannelPlannerPlanGoalCount](Get-MgBetaGroupTeamChannelPlannerPlanGoalCount.md)
+
+### [Get-MgBetaGroupTeamChannelPlannerPlanHistoryItem](Get-MgBetaGroupTeamChannelPlannerPlanHistoryItem.md)
+
+### [Get-MgBetaGroupTeamChannelPlannerPlanHistoryItemCount](Get-MgBetaGroupTeamChannelPlannerPlanHistoryItemCount.md)
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanTask](Get-MgBetaGroupTeamChannelPlannerPlanTask.md)
 
@@ -331,6 +345,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanTaskDetail](Get-MgBetaGroupTeamChannelPlannerPlanTaskDetail.md)
 
+### [Get-MgBetaGroupTeamChannelPlannerPlanTaskMessage](Get-MgBetaGroupTeamChannelPlannerPlanTaskMessage.md)
+
+### [Get-MgBetaGroupTeamChannelPlannerPlanTaskMessageCount](Get-MgBetaGroupTeamChannelPlannerPlanTaskMessageCount.md)
+
 ### [Get-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaGroupTeamChannelPlannerPlanUsageRights](Get-MgBetaGroupTeamChannelPlannerPlanUsageRights.md)
@@ -339,17 +357,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamChannelSharedWithTeam](Get-MgBetaGroupTeamChannelSharedWithTeam.md)
 
-### [Get-MgBetaGroupTeamChannelSharedWithTeam](Get-MgBetaGroupTeamChannelSharedWithTeam.md)
-
-### [Get-MgBetaGroupTeamChannelSharedWithTeamAllowedMember](Get-MgBetaGroupTeamChannelSharedWithTeamAllowedMember.md)
-
 ### [Get-MgBetaGroupTeamChannelSharedWithTeamAllowedMember](Get-MgBetaGroupTeamChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgBetaGroupTeamChannelSharedWithTeamAllowedMemberCount](Get-MgBetaGroupTeamChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgBetaGroupTeamChannelSharedWithTeamCount](Get-MgBetaGroupTeamChannelSharedWithTeamCount.md)
-
-### [Get-MgBetaGroupTeamChannelTab](Get-MgBetaGroupTeamChannelTab.md)
 
 ### [Get-MgBetaGroupTeamChannelTab](Get-MgBetaGroupTeamChannelTab.md)
 
@@ -365,11 +377,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamIncomingChannel](Get-MgBetaGroupTeamIncomingChannel.md)
 
-### [Get-MgBetaGroupTeamIncomingChannel](Get-MgBetaGroupTeamIncomingChannel.md)
-
 ### [Get-MgBetaGroupTeamIncomingChannelCount](Get-MgBetaGroupTeamIncomingChannelCount.md)
-
-### [Get-MgBetaGroupTeamInstalledApp](Get-MgBetaGroupTeamInstalledApp.md)
 
 ### [Get-MgBetaGroupTeamInstalledApp](Get-MgBetaGroupTeamInstalledApp.md)
 
@@ -381,17 +389,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamMember](Get-MgBetaGroupTeamMember.md)
 
-### [Get-MgBetaGroupTeamMember](Get-MgBetaGroupTeamMember.md)
-
 ### [Get-MgBetaGroupTeamMemberCount](Get-MgBetaGroupTeamMemberCount.md)
 
 ### [Get-MgBetaGroupTeamOperation](Get-MgBetaGroupTeamOperation.md)
 
-### [Get-MgBetaGroupTeamOperation](Get-MgBetaGroupTeamOperation.md)
-
 ### [Get-MgBetaGroupTeamOperationCount](Get-MgBetaGroupTeamOperationCount.md)
-
-### [Get-MgBetaGroupTeamOwner](Get-MgBetaGroupTeamOwner.md)
 
 ### [Get-MgBetaGroupTeamOwner](Get-MgBetaGroupTeamOwner.md)
 
@@ -407,8 +409,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPermissionGrant](Get-MgBetaGroupTeamPermissionGrant.md)
 
-### [Get-MgBetaGroupTeamPermissionGrant](Get-MgBetaGroupTeamPermissionGrant.md)
-
 ### [Get-MgBetaGroupTeamPermissionGrantCount](Get-MgBetaGroupTeamPermissionGrantCount.md)
 
 ### [Get-MgBetaGroupTeamPhoto](Get-MgBetaGroupTeamPhoto.md)
@@ -421,8 +421,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPrimaryChannelEnabledApp](Get-MgBetaGroupTeamPrimaryChannelEnabledApp.md)
 
-### [Get-MgBetaGroupTeamPrimaryChannelEnabledApp](Get-MgBetaGroupTeamPrimaryChannelEnabledApp.md)
-
 ### [Get-MgBetaGroupTeamPrimaryChannelEnabledAppCount](Get-MgBetaGroupTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelFileFolder](Get-MgBetaGroupTeamPrimaryChannelFileFolder.md)
@@ -431,13 +429,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPrimaryChannelFileFolderContentStream](Get-MgBetaGroupTeamPrimaryChannelFileFolderContentStream.md)
 
-### [Get-MgBetaGroupTeamPrimaryChannelMember](Get-MgBetaGroupTeamPrimaryChannelMember.md)
+### [Get-MgBetaGroupTeamPrimaryChannelJoinedUser](Get-MgBetaGroupTeamPrimaryChannelJoinedUser.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelJoinedUserCount](Get-MgBetaGroupTeamPrimaryChannelJoinedUserCount.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelMember](Get-MgBetaGroupTeamPrimaryChannelMember.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelMemberCount](Get-MgBetaGroupTeamPrimaryChannelMemberCount.md)
-
-### [Get-MgBetaGroupTeamPrimaryChannelMessage](Get-MgBetaGroupTeamPrimaryChannelMessage.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelMessage](Get-MgBetaGroupTeamPrimaryChannelMessage.md)
 
@@ -447,11 +445,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent](Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent.md)
 
-### [Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent](Get-MgBetaGroupTeamPrimaryChannelMessageHostedContent.md)
-
 ### [Get-MgBetaGroupTeamPrimaryChannelMessageHostedContentCount](Get-MgBetaGroupTeamPrimaryChannelMessageHostedContentCount.md)
-
-### [Get-MgBetaGroupTeamPrimaryChannelMessageReply](Get-MgBetaGroupTeamPrimaryChannelMessageReply.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelMessageReply](Get-MgBetaGroupTeamPrimaryChannelMessageReply.md)
 
@@ -461,25 +455,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent](Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent.md)
 
-### [Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent](Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent.md)
-
 ### [Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContentCount](Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlanner](Get-MgBetaGroupTeamPrimaryChannelPlanner.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlan](Get-MgBetaGroupTeamPrimaryChannelPlannerPlan.md)
 
-### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlan](Get-MgBetaGroupTeamPrimaryChannelPlannerPlan.md)
-
-### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucket](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucket.md)
-
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucket](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucket.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketCount](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketCount.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketDelta](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketDelta.md)
-
-### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTask](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTask.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTask](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTask.md)
 
@@ -493,6 +479,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskDetail](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskDetail.md)
 
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessageCount](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessageCount.md)
+
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanCount](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanCount.md)
@@ -501,7 +491,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanDetail](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanDetail.md)
 
-### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTask](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTask.md)
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanGoal](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanGoal.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanGoalCount](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanGoalCount.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItemCount](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItemCount.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTask](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTask.md)
 
@@ -515,23 +511,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail.md)
 
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage.md)
+
+### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessageCount](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessageCount.md)
+
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelPlannerPlanUsageRights](Get-MgBetaGroupTeamPrimaryChannelPlannerPlanUsageRights.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam](Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam.md)
 
-### [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam](Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam.md)
-
-### [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMember.md)
-
 ### [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMemberCount](Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamCount](Get-MgBetaGroupTeamPrimaryChannelSharedWithTeamCount.md)
-
-### [Get-MgBetaGroupTeamPrimaryChannelTab](Get-MgBetaGroupTeamPrimaryChannelTab.md)
 
 ### [Get-MgBetaGroupTeamPrimaryChannelTab](Get-MgBetaGroupTeamPrimaryChannelTab.md)
 
@@ -543,21 +537,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamScheduleDayNote](Get-MgBetaGroupTeamScheduleDayNote.md)
 
-### [Get-MgBetaGroupTeamScheduleDayNote](Get-MgBetaGroupTeamScheduleDayNote.md)
-
 ### [Get-MgBetaGroupTeamScheduleDayNoteCount](Get-MgBetaGroupTeamScheduleDayNoteCount.md)
-
-### [Get-MgBetaGroupTeamScheduleOfferShiftRequest](Get-MgBetaGroupTeamScheduleOfferShiftRequest.md)
 
 ### [Get-MgBetaGroupTeamScheduleOfferShiftRequest](Get-MgBetaGroupTeamScheduleOfferShiftRequest.md)
 
 ### [Get-MgBetaGroupTeamScheduleOfferShiftRequestCount](Get-MgBetaGroupTeamScheduleOfferShiftRequestCount.md)
 
 ### [Get-MgBetaGroupTeamScheduleOpenShift](Get-MgBetaGroupTeamScheduleOpenShift.md)
-
-### [Get-MgBetaGroupTeamScheduleOpenShift](Get-MgBetaGroupTeamScheduleOpenShift.md)
-
-### [Get-MgBetaGroupTeamScheduleOpenShiftChangeRequest](Get-MgBetaGroupTeamScheduleOpenShiftChangeRequest.md)
 
 ### [Get-MgBetaGroupTeamScheduleOpenShiftChangeRequest](Get-MgBetaGroupTeamScheduleOpenShiftChangeRequest.md)
 
@@ -567,11 +553,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamScheduleSchedulingGroup](Get-MgBetaGroupTeamScheduleSchedulingGroup.md)
 
-### [Get-MgBetaGroupTeamScheduleSchedulingGroup](Get-MgBetaGroupTeamScheduleSchedulingGroup.md)
-
 ### [Get-MgBetaGroupTeamScheduleSchedulingGroupCount](Get-MgBetaGroupTeamScheduleSchedulingGroupCount.md)
-
-### [Get-MgBetaGroupTeamScheduleShift](Get-MgBetaGroupTeamScheduleShift.md)
 
 ### [Get-MgBetaGroupTeamScheduleShift](Get-MgBetaGroupTeamScheduleShift.md)
 
@@ -579,11 +561,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamScheduleShiftRoleDefinition](Get-MgBetaGroupTeamScheduleShiftRoleDefinition.md)
 
-### [Get-MgBetaGroupTeamScheduleShiftRoleDefinition](Get-MgBetaGroupTeamScheduleShiftRoleDefinition.md)
-
 ### [Get-MgBetaGroupTeamScheduleShiftRoleDefinitionCount](Get-MgBetaGroupTeamScheduleShiftRoleDefinitionCount.md)
-
-### [Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest](Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest.md)
 
 ### [Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest](Get-MgBetaGroupTeamScheduleSwapShiftChangeRequest.md)
 
@@ -591,11 +569,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamScheduleTimeCard](Get-MgBetaGroupTeamScheduleTimeCard.md)
 
-### [Get-MgBetaGroupTeamScheduleTimeCard](Get-MgBetaGroupTeamScheduleTimeCard.md)
-
 ### [Get-MgBetaGroupTeamScheduleTimeCardCount](Get-MgBetaGroupTeamScheduleTimeCardCount.md)
-
-### [Get-MgBetaGroupTeamScheduleTimeOff](Get-MgBetaGroupTeamScheduleTimeOff.md)
 
 ### [Get-MgBetaGroupTeamScheduleTimeOff](Get-MgBetaGroupTeamScheduleTimeOff.md)
 
@@ -603,11 +577,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamScheduleTimeOffReason](Get-MgBetaGroupTeamScheduleTimeOffReason.md)
 
-### [Get-MgBetaGroupTeamScheduleTimeOffReason](Get-MgBetaGroupTeamScheduleTimeOffReason.md)
-
 ### [Get-MgBetaGroupTeamScheduleTimeOffReasonCount](Get-MgBetaGroupTeamScheduleTimeOffReasonCount.md)
-
-### [Get-MgBetaGroupTeamScheduleTimeOffRequest](Get-MgBetaGroupTeamScheduleTimeOffRequest.md)
 
 ### [Get-MgBetaGroupTeamScheduleTimeOffRequest](Get-MgBetaGroupTeamScheduleTimeOffRequest.md)
 
@@ -615,11 +585,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTeamTag](Get-MgBetaGroupTeamTag.md)
 
-### [Get-MgBetaGroupTeamTag](Get-MgBetaGroupTeamTag.md)
-
 ### [Get-MgBetaGroupTeamTagCount](Get-MgBetaGroupTeamTagCount.md)
-
-### [Get-MgBetaGroupTeamTagMember](Get-MgBetaGroupTeamTagMember.md)
 
 ### [Get-MgBetaGroupTeamTagMember](Get-MgBetaGroupTeamTagMember.md)
 
@@ -631,17 +597,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeam](Get-MgBetaTeam.md)
 
-### [Get-MgBetaTeam](Get-MgBetaTeam.md)
-
-### [Get-MgBetaTeamChannel](Get-MgBetaTeamChannel.md)
+### [Get-MgBetaTeamAppPreApproval](Get-MgBetaTeamAppPreApproval.md)
 
 ### [Get-MgBetaTeamChannel](Get-MgBetaTeamChannel.md)
 
 ### [Get-MgBetaTeamChannelAllMemberCount](Get-MgBetaTeamChannelAllMemberCount.md)
 
 ### [Get-MgBetaTeamChannelCount](Get-MgBetaTeamChannelCount.md)
-
-### [Get-MgBetaTeamChannelEnabledApp](Get-MgBetaTeamChannelEnabledApp.md)
 
 ### [Get-MgBetaTeamChannelEnabledApp](Get-MgBetaTeamChannelEnabledApp.md)
 
@@ -653,13 +615,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelFileFolderContentStream](Get-MgBetaTeamChannelFileFolderContentStream.md)
 
-### [Get-MgBetaTeamChannelMember](Get-MgBetaTeamChannelMember.md)
+### [Get-MgBetaTeamChannelJoinedUser](Get-MgBetaTeamChannelJoinedUser.md)
+
+### [Get-MgBetaTeamChannelJoinedUserCount](Get-MgBetaTeamChannelJoinedUserCount.md)
 
 ### [Get-MgBetaTeamChannelMember](Get-MgBetaTeamChannelMember.md)
 
 ### [Get-MgBetaTeamChannelMemberCount](Get-MgBetaTeamChannelMemberCount.md)
-
-### [Get-MgBetaTeamChannelMessage](Get-MgBetaTeamChannelMessage.md)
 
 ### [Get-MgBetaTeamChannelMessage](Get-MgBetaTeamChannelMessage.md)
 
@@ -669,11 +631,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelMessageHostedContent](Get-MgBetaTeamChannelMessageHostedContent.md)
 
-### [Get-MgBetaTeamChannelMessageHostedContent](Get-MgBetaTeamChannelMessageHostedContent.md)
-
 ### [Get-MgBetaTeamChannelMessageHostedContentCount](Get-MgBetaTeamChannelMessageHostedContentCount.md)
-
-### [Get-MgBetaTeamChannelMessageReply](Get-MgBetaTeamChannelMessageReply.md)
 
 ### [Get-MgBetaTeamChannelMessageReply](Get-MgBetaTeamChannelMessageReply.md)
 
@@ -683,25 +641,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelMessageReplyHostedContent](Get-MgBetaTeamChannelMessageReplyHostedContent.md)
 
-### [Get-MgBetaTeamChannelMessageReplyHostedContent](Get-MgBetaTeamChannelMessageReplyHostedContent.md)
-
 ### [Get-MgBetaTeamChannelMessageReplyHostedContentCount](Get-MgBetaTeamChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgBetaTeamChannelPlanner](Get-MgBetaTeamChannelPlanner.md)
 
 ### [Get-MgBetaTeamChannelPlannerPlan](Get-MgBetaTeamChannelPlannerPlan.md)
 
-### [Get-MgBetaTeamChannelPlannerPlan](Get-MgBetaTeamChannelPlannerPlan.md)
-
-### [Get-MgBetaTeamChannelPlannerPlanBucket](Get-MgBetaTeamChannelPlannerPlanBucket.md)
-
 ### [Get-MgBetaTeamChannelPlannerPlanBucket](Get-MgBetaTeamChannelPlannerPlanBucket.md)
 
 ### [Get-MgBetaTeamChannelPlannerPlanBucketCount](Get-MgBetaTeamChannelPlannerPlanBucketCount.md)
 
 ### [Get-MgBetaTeamChannelPlannerPlanBucketDelta](Get-MgBetaTeamChannelPlannerPlanBucketDelta.md)
-
-### [Get-MgBetaTeamChannelPlannerPlanBucketTask](Get-MgBetaTeamChannelPlannerPlanBucketTask.md)
 
 ### [Get-MgBetaTeamChannelPlannerPlanBucketTask](Get-MgBetaTeamChannelPlannerPlanBucketTask.md)
 
@@ -715,6 +665,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelPlannerPlanBucketTaskDetail](Get-MgBetaTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Get-MgBetaTeamChannelPlannerPlanBucketTaskMessage](Get-MgBetaTeamChannelPlannerPlanBucketTaskMessage.md)
+
+### [Get-MgBetaTeamChannelPlannerPlanBucketTaskMessageCount](Get-MgBetaTeamChannelPlannerPlanBucketTaskMessageCount.md)
+
 ### [Get-MgBetaTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Get-MgBetaTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaTeamChannelPlannerPlanCount](Get-MgBetaTeamChannelPlannerPlanCount.md)
@@ -723,7 +677,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelPlannerPlanDetail](Get-MgBetaTeamChannelPlannerPlanDetail.md)
 
-### [Get-MgBetaTeamChannelPlannerPlanTask](Get-MgBetaTeamChannelPlannerPlanTask.md)
+### [Get-MgBetaTeamChannelPlannerPlanGoal](Get-MgBetaTeamChannelPlannerPlanGoal.md)
+
+### [Get-MgBetaTeamChannelPlannerPlanGoalCount](Get-MgBetaTeamChannelPlannerPlanGoalCount.md)
+
+### [Get-MgBetaTeamChannelPlannerPlanHistoryItem](Get-MgBetaTeamChannelPlannerPlanHistoryItem.md)
+
+### [Get-MgBetaTeamChannelPlannerPlanHistoryItemCount](Get-MgBetaTeamChannelPlannerPlanHistoryItemCount.md)
 
 ### [Get-MgBetaTeamChannelPlannerPlanTask](Get-MgBetaTeamChannelPlannerPlanTask.md)
 
@@ -737,6 +697,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelPlannerPlanTaskDetail](Get-MgBetaTeamChannelPlannerPlanTaskDetail.md)
 
+### [Get-MgBetaTeamChannelPlannerPlanTaskMessage](Get-MgBetaTeamChannelPlannerPlanTaskMessage.md)
+
+### [Get-MgBetaTeamChannelPlannerPlanTaskMessageCount](Get-MgBetaTeamChannelPlannerPlanTaskMessageCount.md)
+
 ### [Get-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaTeamChannelPlannerPlanUsageRights](Get-MgBetaTeamChannelPlannerPlanUsageRights.md)
@@ -745,17 +709,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamChannelSharedWithTeam](Get-MgBetaTeamChannelSharedWithTeam.md)
 
-### [Get-MgBetaTeamChannelSharedWithTeam](Get-MgBetaTeamChannelSharedWithTeam.md)
-
-### [Get-MgBetaTeamChannelSharedWithTeamAllowedMember](Get-MgBetaTeamChannelSharedWithTeamAllowedMember.md)
-
 ### [Get-MgBetaTeamChannelSharedWithTeamAllowedMember](Get-MgBetaTeamChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgBetaTeamChannelSharedWithTeamAllowedMemberCount](Get-MgBetaTeamChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgBetaTeamChannelSharedWithTeamCount](Get-MgBetaTeamChannelSharedWithTeamCount.md)
-
-### [Get-MgBetaTeamChannelTab](Get-MgBetaTeamChannelTab.md)
 
 ### [Get-MgBetaTeamChannelTab](Get-MgBetaTeamChannelTab.md)
 
@@ -771,11 +729,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamIncomingChannel](Get-MgBetaTeamIncomingChannel.md)
 
-### [Get-MgBetaTeamIncomingChannel](Get-MgBetaTeamIncomingChannel.md)
-
 ### [Get-MgBetaTeamIncomingChannelCount](Get-MgBetaTeamIncomingChannelCount.md)
-
-### [Get-MgBetaTeamInstalledApp](Get-MgBetaTeamInstalledApp.md)
 
 ### [Get-MgBetaTeamInstalledApp](Get-MgBetaTeamInstalledApp.md)
 
@@ -787,19 +741,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamMember](Get-MgBetaTeamMember.md)
 
-### [Get-MgBetaTeamMember](Get-MgBetaTeamMember.md)
-
 ### [Get-MgBetaTeamMemberCount](Get-MgBetaTeamMemberCount.md)
 
 ### [Get-MgBetaTeamOpenShift](Get-MgBetaTeamOpenShift.md)
 
 ### [Get-MgBetaTeamOperation](Get-MgBetaTeamOperation.md)
 
-### [Get-MgBetaTeamOperation](Get-MgBetaTeamOperation.md)
-
 ### [Get-MgBetaTeamOperationCount](Get-MgBetaTeamOperationCount.md)
-
-### [Get-MgBetaTeamOwner](Get-MgBetaTeamOwner.md)
 
 ### [Get-MgBetaTeamOwner](Get-MgBetaTeamOwner.md)
 
@@ -815,8 +763,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPermissionGrant](Get-MgBetaTeamPermissionGrant.md)
 
-### [Get-MgBetaTeamPermissionGrant](Get-MgBetaTeamPermissionGrant.md)
-
 ### [Get-MgBetaTeamPermissionGrantCount](Get-MgBetaTeamPermissionGrantCount.md)
 
 ### [Get-MgBetaTeamPhoto](Get-MgBetaTeamPhoto.md)
@@ -829,8 +775,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelEnabledApp](Get-MgBetaTeamPrimaryChannelEnabledApp.md)
 
-### [Get-MgBetaTeamPrimaryChannelEnabledApp](Get-MgBetaTeamPrimaryChannelEnabledApp.md)
-
 ### [Get-MgBetaTeamPrimaryChannelEnabledAppCount](Get-MgBetaTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgBetaTeamPrimaryChannelFileFolder](Get-MgBetaTeamPrimaryChannelFileFolder.md)
@@ -839,13 +783,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelFileFolderContentStream](Get-MgBetaTeamPrimaryChannelFileFolderContentStream.md)
 
-### [Get-MgBetaTeamPrimaryChannelMember](Get-MgBetaTeamPrimaryChannelMember.md)
+### [Get-MgBetaTeamPrimaryChannelJoinedUser](Get-MgBetaTeamPrimaryChannelJoinedUser.md)
+
+### [Get-MgBetaTeamPrimaryChannelJoinedUserCount](Get-MgBetaTeamPrimaryChannelJoinedUserCount.md)
 
 ### [Get-MgBetaTeamPrimaryChannelMember](Get-MgBetaTeamPrimaryChannelMember.md)
 
 ### [Get-MgBetaTeamPrimaryChannelMemberCount](Get-MgBetaTeamPrimaryChannelMemberCount.md)
-
-### [Get-MgBetaTeamPrimaryChannelMessage](Get-MgBetaTeamPrimaryChannelMessage.md)
 
 ### [Get-MgBetaTeamPrimaryChannelMessage](Get-MgBetaTeamPrimaryChannelMessage.md)
 
@@ -855,11 +799,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelMessageHostedContent](Get-MgBetaTeamPrimaryChannelMessageHostedContent.md)
 
-### [Get-MgBetaTeamPrimaryChannelMessageHostedContent](Get-MgBetaTeamPrimaryChannelMessageHostedContent.md)
-
 ### [Get-MgBetaTeamPrimaryChannelMessageHostedContentCount](Get-MgBetaTeamPrimaryChannelMessageHostedContentCount.md)
-
-### [Get-MgBetaTeamPrimaryChannelMessageReply](Get-MgBetaTeamPrimaryChannelMessageReply.md)
 
 ### [Get-MgBetaTeamPrimaryChannelMessageReply](Get-MgBetaTeamPrimaryChannelMessageReply.md)
 
@@ -869,25 +809,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelMessageReplyHostedContent](Get-MgBetaTeamPrimaryChannelMessageReplyHostedContent.md)
 
-### [Get-MgBetaTeamPrimaryChannelMessageReplyHostedContent](Get-MgBetaTeamPrimaryChannelMessageReplyHostedContent.md)
-
 ### [Get-MgBetaTeamPrimaryChannelMessageReplyHostedContentCount](Get-MgBetaTeamPrimaryChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlanner](Get-MgBetaTeamPrimaryChannelPlanner.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlan](Get-MgBetaTeamPrimaryChannelPlannerPlan.md)
 
-### [Get-MgBetaTeamPrimaryChannelPlannerPlan](Get-MgBetaTeamPrimaryChannelPlannerPlan.md)
-
-### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucket](Get-MgBetaTeamPrimaryChannelPlannerPlanBucket.md)
-
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucket](Get-MgBetaTeamPrimaryChannelPlannerPlanBucket.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketCount](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketCount.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketDelta](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketDelta.md)
-
-### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTask](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTask.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTask](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTask.md)
 
@@ -901,6 +833,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskDetail](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskDetail.md)
 
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessageCount](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessageCount.md)
+
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Get-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanCount](Get-MgBetaTeamPrimaryChannelPlannerPlanCount.md)
@@ -909,7 +845,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanDetail](Get-MgBetaTeamPrimaryChannelPlannerPlanDetail.md)
 
-### [Get-MgBetaTeamPrimaryChannelPlannerPlanTask](Get-MgBetaTeamPrimaryChannelPlannerPlanTask.md)
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanGoal](Get-MgBetaTeamPrimaryChannelPlannerPlanGoal.md)
+
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanGoalCount](Get-MgBetaTeamPrimaryChannelPlannerPlanGoalCount.md)
+
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem](Get-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem.md)
+
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanHistoryItemCount](Get-MgBetaTeamPrimaryChannelPlannerPlanHistoryItemCount.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanTask](Get-MgBetaTeamPrimaryChannelPlannerPlanTask.md)
 
@@ -923,15 +865,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail](Get-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail.md)
 
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage](Get-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage.md)
+
+### [Get-MgBetaTeamPrimaryChannelPlannerPlanTaskMessageCount](Get-MgBetaTeamPrimaryChannelPlannerPlanTaskMessageCount.md)
+
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaTeamPrimaryChannelPlannerPlanUsageRights](Get-MgBetaTeamPrimaryChannelPlannerPlanUsageRights.md)
 
 ### [Get-MgBetaTeamPrimaryChannelSharedWithTeam](Get-MgBetaTeamPrimaryChannelSharedWithTeam.md)
-
-### [Get-MgBetaTeamPrimaryChannelSharedWithTeam](Get-MgBetaTeamPrimaryChannelSharedWithTeam.md)
-
-### [Get-MgBetaTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgBetaTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgBetaTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgBetaTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 
@@ -941,15 +883,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamPrimaryChannelTab](Get-MgBetaTeamPrimaryChannelTab.md)
 
-### [Get-MgBetaTeamPrimaryChannelTab](Get-MgBetaTeamPrimaryChannelTab.md)
-
 ### [Get-MgBetaTeamPrimaryChannelTabCount](Get-MgBetaTeamPrimaryChannelTabCount.md)
 
 ### [Get-MgBetaTeamPrimaryChannelTabTeamApp](Get-MgBetaTeamPrimaryChannelTabTeamApp.md)
 
-### [Get-MgBetaTeamSchedule](Get-MgBetaTeamSchedule.md)
+### [Get-MgBetaTeamRscConfiguration](Get-MgBetaTeamRscConfiguration.md)
 
-### [Get-MgBetaTeamScheduleDayNote](Get-MgBetaTeamScheduleDayNote.md)
+### [Get-MgBetaTeamSchedule](Get-MgBetaTeamSchedule.md)
 
 ### [Get-MgBetaTeamScheduleDayNote](Get-MgBetaTeamScheduleDayNote.md)
 
@@ -957,15 +897,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamScheduleOfferShiftRequest](Get-MgBetaTeamScheduleOfferShiftRequest.md)
 
-### [Get-MgBetaTeamScheduleOfferShiftRequest](Get-MgBetaTeamScheduleOfferShiftRequest.md)
-
 ### [Get-MgBetaTeamScheduleOfferShiftRequestCount](Get-MgBetaTeamScheduleOfferShiftRequestCount.md)
 
 ### [Get-MgBetaTeamScheduleOpenShift](Get-MgBetaTeamScheduleOpenShift.md)
-
-### [Get-MgBetaTeamScheduleOpenShift](Get-MgBetaTeamScheduleOpenShift.md)
-
-### [Get-MgBetaTeamScheduleOpenShiftChangeRequest](Get-MgBetaTeamScheduleOpenShiftChangeRequest.md)
 
 ### [Get-MgBetaTeamScheduleOpenShiftChangeRequest](Get-MgBetaTeamScheduleOpenShiftChangeRequest.md)
 
@@ -975,11 +909,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamScheduleSchedulingGroup](Get-MgBetaTeamScheduleSchedulingGroup.md)
 
-### [Get-MgBetaTeamScheduleSchedulingGroup](Get-MgBetaTeamScheduleSchedulingGroup.md)
-
 ### [Get-MgBetaTeamScheduleSchedulingGroupCount](Get-MgBetaTeamScheduleSchedulingGroupCount.md)
-
-### [Get-MgBetaTeamScheduleShift](Get-MgBetaTeamScheduleShift.md)
 
 ### [Get-MgBetaTeamScheduleShift](Get-MgBetaTeamScheduleShift.md)
 
@@ -987,11 +917,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamScheduleShiftRoleDefinition](Get-MgBetaTeamScheduleShiftRoleDefinition.md)
 
-### [Get-MgBetaTeamScheduleShiftRoleDefinition](Get-MgBetaTeamScheduleShiftRoleDefinition.md)
-
 ### [Get-MgBetaTeamScheduleShiftRoleDefinitionCount](Get-MgBetaTeamScheduleShiftRoleDefinitionCount.md)
-
-### [Get-MgBetaTeamScheduleSwapShiftChangeRequest](Get-MgBetaTeamScheduleSwapShiftChangeRequest.md)
 
 ### [Get-MgBetaTeamScheduleSwapShiftChangeRequest](Get-MgBetaTeamScheduleSwapShiftChangeRequest.md)
 
@@ -999,11 +925,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamScheduleTimeCard](Get-MgBetaTeamScheduleTimeCard.md)
 
-### [Get-MgBetaTeamScheduleTimeCard](Get-MgBetaTeamScheduleTimeCard.md)
-
 ### [Get-MgBetaTeamScheduleTimeCardCount](Get-MgBetaTeamScheduleTimeCardCount.md)
-
-### [Get-MgBetaTeamScheduleTimeOff](Get-MgBetaTeamScheduleTimeOff.md)
 
 ### [Get-MgBetaTeamScheduleTimeOff](Get-MgBetaTeamScheduleTimeOff.md)
 
@@ -1011,11 +933,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamScheduleTimeOffReason](Get-MgBetaTeamScheduleTimeOffReason.md)
 
-### [Get-MgBetaTeamScheduleTimeOffReason](Get-MgBetaTeamScheduleTimeOffReason.md)
-
 ### [Get-MgBetaTeamScheduleTimeOffReasonCount](Get-MgBetaTeamScheduleTimeOffReasonCount.md)
-
-### [Get-MgBetaTeamScheduleTimeOffRequest](Get-MgBetaTeamScheduleTimeOffRequest.md)
 
 ### [Get-MgBetaTeamScheduleTimeOffRequest](Get-MgBetaTeamScheduleTimeOffRequest.md)
 
@@ -1025,11 +943,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamTag](Get-MgBetaTeamTag.md)
 
-### [Get-MgBetaTeamTag](Get-MgBetaTeamTag.md)
-
 ### [Get-MgBetaTeamTagCount](Get-MgBetaTeamTagCount.md)
-
-### [Get-MgBetaTeamTagMember](Get-MgBetaTeamTagMember.md)
 
 ### [Get-MgBetaTeamTagMember](Get-MgBetaTeamTagMember.md)
 
@@ -1045,23 +959,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedChat](Get-MgBetaTeamworkDeletedChat.md)
 
-### [Get-MgBetaTeamworkDeletedChat](Get-MgBetaTeamworkDeletedChat.md)
-
 ### [Get-MgBetaTeamworkDeletedChatCount](Get-MgBetaTeamworkDeletedChatCount.md)
 
 ### [Get-MgBetaTeamworkDeletedTeam](Get-MgBetaTeamworkDeletedTeam.md)
-
-### [Get-MgBetaTeamworkDeletedTeam](Get-MgBetaTeamworkDeletedTeam.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannel](Get-MgBetaTeamworkDeletedTeamChannel.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannel](Get-MgBetaTeamworkDeletedTeamChannel.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelAllMemberCount](Get-MgBetaTeamworkDeletedTeamChannelAllMemberCount.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelCount](Get-MgBetaTeamworkDeletedTeamChannelCount.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannelEnabledApp](Get-MgBetaTeamworkDeletedTeamChannelEnabledApp.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelEnabledApp](Get-MgBetaTeamworkDeletedTeamChannelEnabledApp.md)
 
@@ -1073,13 +979,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream](Get-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream.md)
 
-### [Get-MgBetaTeamworkDeletedTeamChannelMember](Get-MgBetaTeamworkDeletedTeamChannelMember.md)
+### [Get-MgBetaTeamworkDeletedTeamChannelJoinedUser](Get-MgBetaTeamworkDeletedTeamChannelJoinedUser.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelJoinedUserCount](Get-MgBetaTeamworkDeletedTeamChannelJoinedUserCount.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelMember](Get-MgBetaTeamworkDeletedTeamChannelMember.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelMemberCount](Get-MgBetaTeamworkDeletedTeamChannelMemberCount.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannelMessage](Get-MgBetaTeamworkDeletedTeamChannelMessage.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelMessage](Get-MgBetaTeamworkDeletedTeamChannelMessage.md)
 
@@ -1089,11 +995,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent.md)
 
-### [Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent.md)
-
 ### [Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContentCount](Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContentCount.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannelMessageReply](Get-MgBetaTeamworkDeletedTeamChannelMessageReply.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelMessageReply](Get-MgBetaTeamworkDeletedTeamChannelMessageReply.md)
 
@@ -1103,25 +1005,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent](Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent.md)
 
-### [Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent](Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent.md)
-
 ### [Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContentCount](Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlanner](Get-MgBetaTeamworkDeletedTeamChannelPlanner.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlan](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlan.md)
 
-### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlan](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlan.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucket](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucket.md)
-
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucket](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucket.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketCount](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketCount.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketDelta](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketDelta.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask.md)
 
@@ -1135,6 +1029,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessageCount](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessageCount.md)
+
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanCount](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanCount.md)
@@ -1143,7 +1041,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanDetail](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanDetail.md)
 
-### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask.md)
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanGoal](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanGoal.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanGoalCount](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanGoalCount.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItemCount](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItemCount.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask.md)
 
@@ -1157,6 +1061,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail.md)
 
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage.md)
+
+### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessageCount](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessageCount.md)
+
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanUsageRights](Get-MgBetaTeamworkDeletedTeamChannelPlannerPlanUsageRights.md)
@@ -1164,10 +1072,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage](Get-MgBetaTeamworkDeletedTeamChannelRetainedMessage.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam](Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam](Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam.md)
-
-### [Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeamAllowedMember](Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeamAllowedMember](Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeamAllowedMember.md)
 
@@ -1177,15 +1081,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelTab](Get-MgBetaTeamworkDeletedTeamChannelTab.md)
 
-### [Get-MgBetaTeamworkDeletedTeamChannelTab](Get-MgBetaTeamworkDeletedTeamChannelTab.md)
-
 ### [Get-MgBetaTeamworkDeletedTeamChannelTabCount](Get-MgBetaTeamworkDeletedTeamChannelTabCount.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelTabTeamApp](Get-MgBetaTeamworkDeletedTeamChannelTabTeamApp.md)
 
 ### [Get-MgBetaTeamworkDeletedTeamCount](Get-MgBetaTeamworkDeletedTeamCount.md)
-
-### [Get-MgBetaTeamworkDevice](Get-MgBetaTeamworkDevice.md)
 
 ### [Get-MgBetaTeamworkDevice](Get-MgBetaTeamworkDevice.md)
 
@@ -1199,13 +1099,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkDeviceOperation](Get-MgBetaTeamworkDeviceOperation.md)
 
-### [Get-MgBetaTeamworkDeviceOperation](Get-MgBetaTeamworkDeviceOperation.md)
-
 ### [Get-MgBetaTeamworkDeviceOperationCount](Get-MgBetaTeamworkDeviceOperationCount.md)
 
-### [Get-MgBetaTeamworkTeamAppSetting](Get-MgBetaTeamworkTeamAppSetting.md)
+### [Get-MgBetaTeamworkMessaging](Get-MgBetaTeamworkMessaging.md)
 
-### [Get-MgBetaTeamworkTeamTemplate](Get-MgBetaTeamworkTeamTemplate.md)
+### [Get-MgBetaTeamworkMessagingCustomEmoji](Get-MgBetaTeamworkMessagingCustomEmoji.md)
+
+### [Get-MgBetaTeamworkMessagingCustomEmojiCount](Get-MgBetaTeamworkMessagingCustomEmojiCount.md)
+
+### [Get-MgBetaTeamworkTeamAppSetting](Get-MgBetaTeamworkTeamAppSetting.md)
 
 ### [Get-MgBetaTeamworkTeamTemplate](Get-MgBetaTeamworkTeamTemplate.md)
 
@@ -1213,11 +1115,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTeamworkTeamTemplateDefinition](Get-MgBetaTeamworkTeamTemplateDefinition.md)
 
-### [Get-MgBetaTeamworkTeamTemplateDefinition](Get-MgBetaTeamworkTeamTemplateDefinition.md)
-
 ### [Get-MgBetaTeamworkTeamTemplateDefinitionCount](Get-MgBetaTeamworkTeamTemplateDefinitionCount.md)
-
-### [Get-MgBetaTeamworkWorkforceIntegration](Get-MgBetaTeamworkWorkforceIntegration.md)
 
 ### [Get-MgBetaTeamworkWorkforceIntegration](Get-MgBetaTeamworkWorkforceIntegration.md)
 
@@ -1225,11 +1123,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserChat](Get-MgBetaUserChat.md)
 
-### [Get-MgBetaUserChat](Get-MgBetaUserChat.md)
-
 ### [Get-MgBetaUserChatCount](Get-MgBetaUserChatCount.md)
-
-### [Get-MgBetaUserChatInstalledApp](Get-MgBetaUserChatInstalledApp.md)
 
 ### [Get-MgBetaUserChatInstalledApp](Get-MgBetaUserChatInstalledApp.md)
 
@@ -1243,8 +1137,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserChatMember](Get-MgBetaUserChatMember.md)
 
-### [Get-MgBetaUserChatMember](Get-MgBetaUserChatMember.md)
-
 ### [Get-MgBetaUserChatMemberCount](Get-MgBetaUserChatMemberCount.md)
 
 ### [Get-MgBetaUserChatMessageCount](Get-MgBetaUserChatMessageCount.md)
@@ -1253,11 +1145,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserChatMessageHostedContent](Get-MgBetaUserChatMessageHostedContent.md)
 
-### [Get-MgBetaUserChatMessageHostedContent](Get-MgBetaUserChatMessageHostedContent.md)
-
 ### [Get-MgBetaUserChatMessageHostedContentCount](Get-MgBetaUserChatMessageHostedContentCount.md)
-
-### [Get-MgBetaUserChatMessageReply](Get-MgBetaUserChatMessageReply.md)
 
 ### [Get-MgBetaUserChatMessageReply](Get-MgBetaUserChatMessageReply.md)
 
@@ -1267,11 +1155,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserChatMessageReplyHostedContent](Get-MgBetaUserChatMessageReplyHostedContent.md)
 
-### [Get-MgBetaUserChatMessageReplyHostedContent](Get-MgBetaUserChatMessageReplyHostedContent.md)
-
 ### [Get-MgBetaUserChatMessageReplyHostedContentCount](Get-MgBetaUserChatMessageReplyHostedContentCount.md)
-
-### [Get-MgBetaUserChatOperation](Get-MgBetaUserChatOperation.md)
 
 ### [Get-MgBetaUserChatOperation](Get-MgBetaUserChatOperation.md)
 
@@ -1279,11 +1163,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserChatPermissionGrant](Get-MgBetaUserChatPermissionGrant.md)
 
-### [Get-MgBetaUserChatPermissionGrant](Get-MgBetaUserChatPermissionGrant.md)
-
 ### [Get-MgBetaUserChatPermissionGrantCount](Get-MgBetaUserChatPermissionGrantCount.md)
-
-### [Get-MgBetaUserChatPinnedMessage](Get-MgBetaUserChatPinnedMessage.md)
 
 ### [Get-MgBetaUserChatPinnedMessage](Get-MgBetaUserChatPinnedMessage.md)
 
@@ -1293,11 +1173,27 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserChatTab](Get-MgBetaUserChatTab.md)
 
-### [Get-MgBetaUserChatTab](Get-MgBetaUserChatTab.md)
-
 ### [Get-MgBetaUserChatTabCount](Get-MgBetaUserChatTabCount.md)
 
 ### [Get-MgBetaUserChatTabTeamApp](Get-MgBetaUserChatTabTeamApp.md)
+
+### [Get-MgBetaUserChatTargetedMessage](Get-MgBetaUserChatTargetedMessage.md)
+
+### [Get-MgBetaUserChatTargetedMessageCount](Get-MgBetaUserChatTargetedMessageCount.md)
+
+### [Get-MgBetaUserChatTargetedMessageHostedContent](Get-MgBetaUserChatTargetedMessageHostedContent.md)
+
+### [Get-MgBetaUserChatTargetedMessageHostedContentCount](Get-MgBetaUserChatTargetedMessageHostedContentCount.md)
+
+### [Get-MgBetaUserChatTargetedMessageReply](Get-MgBetaUserChatTargetedMessageReply.md)
+
+### [Get-MgBetaUserChatTargetedMessageReplyCount](Get-MgBetaUserChatTargetedMessageReplyCount.md)
+
+### [Get-MgBetaUserChatTargetedMessageReplyDelta](Get-MgBetaUserChatTargetedMessageReplyDelta.md)
+
+### [Get-MgBetaUserChatTargetedMessageReplyHostedContent](Get-MgBetaUserChatTargetedMessageReplyHostedContent.md)
+
+### [Get-MgBetaUserChatTargetedMessageReplyHostedContentCount](Get-MgBetaUserChatTargetedMessageReplyHostedContentCount.md)
 
 ### [Get-MgBetaUserJoinedTeam](Get-MgBetaUserJoinedTeam.md)
 
@@ -1305,11 +1201,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserTeamworkAssociatedTeam](Get-MgBetaUserTeamworkAssociatedTeam.md)
 
-### [Get-MgBetaUserTeamworkAssociatedTeam](Get-MgBetaUserTeamworkAssociatedTeam.md)
-
 ### [Get-MgBetaUserTeamworkAssociatedTeamCount](Get-MgBetaUserTeamworkAssociatedTeamCount.md)
-
-### [Get-MgBetaUserTeamworkInstalledApp](Get-MgBetaUserTeamworkInstalledApp.md)
 
 ### [Get-MgBetaUserTeamworkInstalledApp](Get-MgBetaUserTeamworkInstalledApp.md)
 
@@ -1320,6 +1212,18 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserTeamworkInstalledAppTeamApp](Get-MgBetaUserTeamworkInstalledAppTeamApp.md)
 
 ### [Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition](Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition.md)
+
+### [Get-MgBetaUserTeamworkRetainedTargetedMessage](Get-MgBetaUserTeamworkRetainedTargetedMessage.md)
+
+### [Get-MgBetaUserTeamworkSection](Get-MgBetaUserTeamworkSection.md)
+
+### [Get-MgBetaUserTeamworkSectionCount](Get-MgBetaUserTeamworkSectionCount.md)
+
+### [Get-MgBetaUserTeamworkSectionItem](Get-MgBetaUserTeamworkSectionItem.md)
+
+### [Get-MgBetaUserTeamworkSectionItemCount](Get-MgBetaUserTeamworkSectionItemCount.md)
+
+### [Get-MgBetaUserTeamworkTargetedMessage](Get-MgBetaUserTeamworkTargetedMessage.md)
 
 ### [Hide-MgBetaChatForUser](Hide-MgBetaChatForUser.md)
 
@@ -1363,6 +1267,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaForwardChatMessageToChat](Invoke-MgBetaForwardChatMessageToChat.md)
 
+### [Invoke-MgBetaForwardChatTargetedMessageReplyToChat](Invoke-MgBetaForwardChatTargetedMessageReplyToChat.md)
+
 ### [Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat](Invoke-MgBetaForwardGroupTeamChannelMessageReplyToChat.md)
 
 ### [Invoke-MgBetaForwardGroupTeamChannelMessageToChat](Invoke-MgBetaForwardGroupTeamChannelMessageToChat.md)
@@ -1387,11 +1293,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaForwardUserChatMessageToChat](Invoke-MgBetaForwardUserChatMessageToChat.md)
 
+### [Invoke-MgBetaForwardUserChatTargetedMessageReplyToChat](Invoke-MgBetaForwardUserChatTargetedMessageReplyToChat.md)
+
 ### [Invoke-MgBetaGraphChat](Invoke-MgBetaGraphChat.md)
 
 ### [Invoke-MgBetaGraphChatMessage](Invoke-MgBetaGraphChatMessage.md)
 
 ### [Invoke-MgBetaGraphChatMessageReply](Invoke-MgBetaGraphChatMessageReply.md)
+
+### [Invoke-MgBetaGraphChatTargetedMessageReply](Invoke-MgBetaGraphChatTargetedMessageReply.md)
 
 ### [Invoke-MgBetaGraphGroupTeamChannelMessage](Invoke-MgBetaGraphGroupTeamChannelMessage.md)
 
@@ -1418,6 +1328,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaGraphUserChatMessage](Invoke-MgBetaGraphUserChatMessage.md)
 
 ### [Invoke-MgBetaGraphUserChatMessageReply](Invoke-MgBetaGraphUserChatMessageReply.md)
+
+### [Invoke-MgBetaGraphUserChatTargetedMessageReply](Invoke-MgBetaGraphUserChatTargetedMessageReply.md)
 
 ### [Invoke-MgBetaHaveGroupTeamChannel](Invoke-MgBetaHaveGroupTeamChannel.md)
 
@@ -1449,6 +1361,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaMessageUserChat](Invoke-MgBetaMessageUserChat.md)
 
+### [Invoke-MgBetaReorderUserTeamworkSection](Invoke-MgBetaReorderUserTeamworkSection.md)
+
+### [Invoke-MgBetaReorderUserTeamworkSectionItem](Invoke-MgBetaReorderUserTeamworkSectionItem.md)
+
 ### [Invoke-MgBetaShareGroupTeamSchedule](Invoke-MgBetaShareGroupTeamSchedule.md)
 
 ### [Invoke-MgBetaShareTeamSchedule](Invoke-MgBetaShareTeamSchedule.md)
@@ -1456,6 +1372,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaSoftChatMessageDelete](Invoke-MgBetaSoftChatMessageDelete.md)
 
 ### [Invoke-MgBetaSoftChatMessageReplyDelete](Invoke-MgBetaSoftChatMessageReplyDelete.md)
+
+### [Invoke-MgBetaSoftChatTargetedMessageReplyDelete](Invoke-MgBetaSoftChatTargetedMessageReplyDelete.md)
 
 ### [Invoke-MgBetaSoftGroupTeamChannelMessageDelete](Invoke-MgBetaSoftGroupTeamChannelMessageDelete.md)
 
@@ -1480,6 +1398,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaSoftUserChatMessageDelete](Invoke-MgBetaSoftUserChatMessageDelete.md)
 
 ### [Invoke-MgBetaSoftUserChatMessageReplyDelete](Invoke-MgBetaSoftUserChatMessageReplyDelete.md)
+
+### [Invoke-MgBetaSoftUserChatTargetedMessageReplyDelete](Invoke-MgBetaSoftUserChatTargetedMessageReplyDelete.md)
 
 ### [Invoke-MgBetaUnarchiveGroupTeam](Invoke-MgBetaUnarchiveGroupTeam.md)
 
@@ -1515,6 +1435,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Move-MgBetaTeamworkDeletedTeamChannelPlannerPlanToContainer](Move-MgBetaTeamworkDeletedTeamChannelPlannerPlanToContainer.md)
 
+### [Move-MgBetaUserTeamworkSectionItem](Move-MgBetaUserTeamworkSectionItem.md)
+
 ### [New-MgBetaAppCatalogTeamApp](New-MgBetaAppCatalogTeamApp.md)
 
 ### [New-MgBetaAppCatalogTeamAppDefinition](New-MgBetaAppCatalogTeamAppDefinition.md)
@@ -1543,9 +1465,19 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaChatTab](New-MgBetaChatTab.md)
 
+### [New-MgBetaChatTargetedMessage](New-MgBetaChatTargetedMessage.md)
+
+### [New-MgBetaChatTargetedMessageHostedContent](New-MgBetaChatTargetedMessageHostedContent.md)
+
+### [New-MgBetaChatTargetedMessageReply](New-MgBetaChatTargetedMessageReply.md)
+
+### [New-MgBetaChatTargetedMessageReplyHostedContent](New-MgBetaChatTargetedMessageReplyHostedContent.md)
+
 ### [New-MgBetaGroupTeamChannel](New-MgBetaGroupTeamChannel.md)
 
 ### [New-MgBetaGroupTeamChannelEmail](New-MgBetaGroupTeamChannelEmail.md)
+
+### [New-MgBetaGroupTeamChannelJoinedUser](New-MgBetaGroupTeamChannelJoinedUser.md)
 
 ### [New-MgBetaGroupTeamChannelMember](New-MgBetaGroupTeamChannelMember.md)
 
@@ -1563,7 +1495,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaGroupTeamChannelPlannerPlanBucketTask](New-MgBetaGroupTeamChannelPlannerPlanBucketTask.md)
 
+### [New-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage](New-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage.md)
+
+### [New-MgBetaGroupTeamChannelPlannerPlanHistoryItem](New-MgBetaGroupTeamChannelPlannerPlanHistoryItem.md)
+
 ### [New-MgBetaGroupTeamChannelPlannerPlanTask](New-MgBetaGroupTeamChannelPlannerPlanTask.md)
+
+### [New-MgBetaGroupTeamChannelPlannerPlanTaskMessage](New-MgBetaGroupTeamChannelPlannerPlanTaskMessage.md)
 
 ### [New-MgBetaGroupTeamChannelSharedWithTeam](New-MgBetaGroupTeamChannelSharedWithTeam.md)
 
@@ -1578,6 +1516,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaGroupTeamPermissionGrant](New-MgBetaGroupTeamPermissionGrant.md)
 
 ### [New-MgBetaGroupTeamPrimaryChannelEmail](New-MgBetaGroupTeamPrimaryChannelEmail.md)
+
+### [New-MgBetaGroupTeamPrimaryChannelJoinedUser](New-MgBetaGroupTeamPrimaryChannelJoinedUser.md)
 
 ### [New-MgBetaGroupTeamPrimaryChannelMember](New-MgBetaGroupTeamPrimaryChannelMember.md)
 
@@ -1595,7 +1535,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTask](New-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTask.md)
 
+### [New-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage](New-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
+### [New-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem](New-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem.md)
+
 ### [New-MgBetaGroupTeamPrimaryChannelPlannerPlanTask](New-MgBetaGroupTeamPrimaryChannelPlannerPlanTask.md)
+
+### [New-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage](New-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage.md)
 
 ### [New-MgBetaGroupTeamPrimaryChannelSharedWithTeam](New-MgBetaGroupTeamPrimaryChannelSharedWithTeam.md)
 
@@ -1631,9 +1577,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaTeam](New-MgBetaTeam.md)
 
+### [New-MgBetaTeamAppPreApproval](New-MgBetaTeamAppPreApproval.md)
+
 ### [New-MgBetaTeamChannel](New-MgBetaTeamChannel.md)
 
 ### [New-MgBetaTeamChannelEmail](New-MgBetaTeamChannelEmail.md)
+
+### [New-MgBetaTeamChannelJoinedUser](New-MgBetaTeamChannelJoinedUser.md)
 
 ### [New-MgBetaTeamChannelMember](New-MgBetaTeamChannelMember.md)
 
@@ -1651,7 +1601,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaTeamChannelPlannerPlanBucketTask](New-MgBetaTeamChannelPlannerPlanBucketTask.md)
 
+### [New-MgBetaTeamChannelPlannerPlanBucketTaskMessage](New-MgBetaTeamChannelPlannerPlanBucketTaskMessage.md)
+
+### [New-MgBetaTeamChannelPlannerPlanHistoryItem](New-MgBetaTeamChannelPlannerPlanHistoryItem.md)
+
 ### [New-MgBetaTeamChannelPlannerPlanTask](New-MgBetaTeamChannelPlannerPlanTask.md)
+
+### [New-MgBetaTeamChannelPlannerPlanTaskMessage](New-MgBetaTeamChannelPlannerPlanTaskMessage.md)
 
 ### [New-MgBetaTeamChannelSharedWithTeam](New-MgBetaTeamChannelSharedWithTeam.md)
 
@@ -1666,6 +1622,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaTeamPermissionGrant](New-MgBetaTeamPermissionGrant.md)
 
 ### [New-MgBetaTeamPrimaryChannelEmail](New-MgBetaTeamPrimaryChannelEmail.md)
+
+### [New-MgBetaTeamPrimaryChannelJoinedUser](New-MgBetaTeamPrimaryChannelJoinedUser.md)
 
 ### [New-MgBetaTeamPrimaryChannelMember](New-MgBetaTeamPrimaryChannelMember.md)
 
@@ -1683,7 +1641,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaTeamPrimaryChannelPlannerPlanBucketTask](New-MgBetaTeamPrimaryChannelPlannerPlanBucketTask.md)
 
+### [New-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage](New-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
+### [New-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem](New-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem.md)
+
 ### [New-MgBetaTeamPrimaryChannelPlannerPlanTask](New-MgBetaTeamPrimaryChannelPlannerPlanTask.md)
+
+### [New-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage](New-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage.md)
 
 ### [New-MgBetaTeamPrimaryChannelSharedWithTeam](New-MgBetaTeamPrimaryChannelSharedWithTeam.md)
 
@@ -1725,6 +1689,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaTeamworkDeletedTeamChannelEmail](New-MgBetaTeamworkDeletedTeamChannelEmail.md)
 
+### [New-MgBetaTeamworkDeletedTeamChannelJoinedUser](New-MgBetaTeamworkDeletedTeamChannelJoinedUser.md)
+
 ### [New-MgBetaTeamworkDeletedTeamChannelMember](New-MgBetaTeamworkDeletedTeamChannelMember.md)
 
 ### [New-MgBetaTeamworkDeletedTeamChannelMessage](New-MgBetaTeamworkDeletedTeamChannelMessage.md)
@@ -1741,7 +1707,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask](New-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTask.md)
 
+### [New-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage](New-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage.md)
+
+### [New-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem](New-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem.md)
+
 ### [New-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask](New-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask.md)
+
+### [New-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage](New-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage.md)
 
 ### [New-MgBetaTeamworkDeletedTeamChannelSharedWithTeam](New-MgBetaTeamworkDeletedTeamChannelSharedWithTeam.md)
 
@@ -1750,6 +1722,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaTeamworkDevice](New-MgBetaTeamworkDevice.md)
 
 ### [New-MgBetaTeamworkDeviceOperation](New-MgBetaTeamworkDeviceOperation.md)
+
+### [New-MgBetaTeamworkMessagingCustomEmoji](New-MgBetaTeamworkMessagingCustomEmoji.md)
 
 ### [New-MgBetaTeamworkTeamTemplate](New-MgBetaTeamworkTeamTemplate.md)
 
@@ -1779,9 +1753,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
 
+### [New-MgBetaUserChatTargetedMessage](New-MgBetaUserChatTargetedMessage.md)
+
+### [New-MgBetaUserChatTargetedMessageHostedContent](New-MgBetaUserChatTargetedMessageHostedContent.md)
+
+### [New-MgBetaUserChatTargetedMessageReply](New-MgBetaUserChatTargetedMessageReply.md)
+
+### [New-MgBetaUserChatTargetedMessageReplyHostedContent](New-MgBetaUserChatTargetedMessageReplyHostedContent.md)
+
 ### [New-MgBetaUserTeamworkAssociatedTeam](New-MgBetaUserTeamworkAssociatedTeam.md)
 
 ### [New-MgBetaUserTeamworkInstalledApp](New-MgBetaUserTeamworkInstalledApp.md)
+
+### [New-MgBetaUserTeamworkSection](New-MgBetaUserTeamworkSection.md)
+
+### [New-MgBetaUserTeamworkSectionItem](New-MgBetaUserTeamworkSectionItem.md)
 
 ### [Remove-MgBetaAppCatalogTeamApp](Remove-MgBetaAppCatalogTeamApp.md)
 
@@ -1819,6 +1805,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaChatTab](Remove-MgBetaChatTab.md)
 
+### [Remove-MgBetaChatTargetedMessage](Remove-MgBetaChatTargetedMessage.md)
+
+### [Remove-MgBetaChatTargetedMessageHostedContent](Remove-MgBetaChatTargetedMessageHostedContent.md)
+
+### [Remove-MgBetaChatTargetedMessageReply](Remove-MgBetaChatTargetedMessageReply.md)
+
+### [Remove-MgBetaChatTargetedMessageReplyHostedContent](Remove-MgBetaChatTargetedMessageReplyHostedContent.md)
+
 ### [Remove-MgBetaGroupTeam](Remove-MgBetaGroupTeam.md)
 
 ### [Remove-MgBetaGroupTeamChannel](Remove-MgBetaGroupTeamChannel.md)
@@ -1830,6 +1824,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaGroupTeamChannelFileFolderContent](Remove-MgBetaGroupTeamChannelFileFolderContent.md)
 
 ### [Remove-MgBetaGroupTeamChannelFileFolderContentStream](Remove-MgBetaGroupTeamChannelFileFolderContentStream.md)
+
+### [Remove-MgBetaGroupTeamChannelJoinedUser](Remove-MgBetaGroupTeamChannelJoinedUser.md)
 
 ### [Remove-MgBetaGroupTeamChannelMember](Remove-MgBetaGroupTeamChannelMember.md)
 
@@ -1855,9 +1851,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail](Remove-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Remove-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage](Remove-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Remove-MgBetaGroupTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Remove-MgBetaGroupTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Remove-MgBetaGroupTeamChannelPlannerPlanDetail](Remove-MgBetaGroupTeamChannelPlannerPlanDetail.md)
+
+### [Remove-MgBetaGroupTeamChannelPlannerPlanHistoryItem](Remove-MgBetaGroupTeamChannelPlannerPlanHistoryItem.md)
 
 ### [Remove-MgBetaGroupTeamChannelPlannerPlanTask](Remove-MgBetaGroupTeamChannelPlannerPlanTask.md)
 
@@ -1866,6 +1866,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaGroupTeamChannelPlannerPlanTaskBucketTaskBoardFormat](Remove-MgBetaGroupTeamChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Remove-MgBetaGroupTeamChannelPlannerPlanTaskDetail](Remove-MgBetaGroupTeamChannelPlannerPlanTaskDetail.md)
+
+### [Remove-MgBetaGroupTeamChannelPlannerPlanTaskMessage](Remove-MgBetaGroupTeamChannelPlannerPlanTaskMessage.md)
 
 ### [Remove-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Remove-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -1893,6 +1895,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelFileFolderContentStream](Remove-MgBetaGroupTeamPrimaryChannelFileFolderContentStream.md)
 
+### [Remove-MgBetaGroupTeamPrimaryChannelJoinedUser](Remove-MgBetaGroupTeamPrimaryChannelJoinedUser.md)
+
 ### [Remove-MgBetaGroupTeamPrimaryChannelMember](Remove-MgBetaGroupTeamPrimaryChannelMember.md)
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelMessage](Remove-MgBetaGroupTeamPrimaryChannelMessage.md)
@@ -1917,9 +1921,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskDetail](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskDetail.md)
 
+### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanDetail](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanDetail.md)
+
+### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem.md)
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTask](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTask.md)
 
@@ -1928,6 +1936,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail.md)
+
+### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage.md)
 
 ### [Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Remove-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -1967,6 +1977,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaTeam](Remove-MgBetaTeam.md)
 
+### [Remove-MgBetaTeamAppPreApproval](Remove-MgBetaTeamAppPreApproval.md)
+
 ### [Remove-MgBetaTeamChannel](Remove-MgBetaTeamChannel.md)
 
 ### [Remove-MgBetaTeamChannelAllMember](Remove-MgBetaTeamChannelAllMember.md)
@@ -1976,6 +1988,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaTeamChannelFileFolderContent](Remove-MgBetaTeamChannelFileFolderContent.md)
 
 ### [Remove-MgBetaTeamChannelFileFolderContentStream](Remove-MgBetaTeamChannelFileFolderContentStream.md)
+
+### [Remove-MgBetaTeamChannelJoinedUser](Remove-MgBetaTeamChannelJoinedUser.md)
 
 ### [Remove-MgBetaTeamChannelMember](Remove-MgBetaTeamChannelMember.md)
 
@@ -1995,9 +2009,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaTeamChannelPlannerPlanBucketTaskDetail](Remove-MgBetaTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Remove-MgBetaTeamChannelPlannerPlanBucketTaskMessage](Remove-MgBetaTeamChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Remove-MgBetaTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Remove-MgBetaTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Remove-MgBetaTeamChannelPlannerPlanDetail](Remove-MgBetaTeamChannelPlannerPlanDetail.md)
+
+### [Remove-MgBetaTeamChannelPlannerPlanHistoryItem](Remove-MgBetaTeamChannelPlannerPlanHistoryItem.md)
 
 ### [Remove-MgBetaTeamChannelPlannerPlanTask](Remove-MgBetaTeamChannelPlannerPlanTask.md)
 
@@ -2006,6 +2024,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaTeamChannelPlannerPlanTaskBucketTaskBoardFormat](Remove-MgBetaTeamChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Remove-MgBetaTeamChannelPlannerPlanTaskDetail](Remove-MgBetaTeamChannelPlannerPlanTaskDetail.md)
+
+### [Remove-MgBetaTeamChannelPlannerPlanTaskMessage](Remove-MgBetaTeamChannelPlannerPlanTaskMessage.md)
 
 ### [Remove-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Remove-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2033,6 +2053,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaTeamPrimaryChannelFileFolderContentStream](Remove-MgBetaTeamPrimaryChannelFileFolderContentStream.md)
 
+### [Remove-MgBetaTeamPrimaryChannelJoinedUser](Remove-MgBetaTeamPrimaryChannelJoinedUser.md)
+
 ### [Remove-MgBetaTeamPrimaryChannelMember](Remove-MgBetaTeamPrimaryChannelMember.md)
 
 ### [Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent](Remove-MgBetaTeamPrimaryChannelMessageReplyHostedContent.md)
@@ -2051,9 +2073,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskDetail](Remove-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskDetail.md)
 
+### [Remove-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage](Remove-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Remove-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Remove-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Remove-MgBetaTeamPrimaryChannelPlannerPlanDetail](Remove-MgBetaTeamPrimaryChannelPlannerPlanDetail.md)
+
+### [Remove-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem](Remove-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem.md)
 
 ### [Remove-MgBetaTeamPrimaryChannelPlannerPlanTask](Remove-MgBetaTeamPrimaryChannelPlannerPlanTask.md)
 
@@ -2062,6 +2088,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat](Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail](Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail.md)
+
+### [Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage](Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage.md)
 
 ### [Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Remove-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2113,6 +2141,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream](Remove-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream.md)
 
+### [Remove-MgBetaTeamworkDeletedTeamChannelJoinedUser](Remove-MgBetaTeamworkDeletedTeamChannelJoinedUser.md)
+
 ### [Remove-MgBetaTeamworkDeletedTeamChannelMember](Remove-MgBetaTeamworkDeletedTeamChannelMember.md)
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelMessage](Remove-MgBetaTeamworkDeletedTeamChannelMessage.md)
@@ -2137,9 +2167,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanDetail](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanDetail.md)
+
+### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem.md)
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask.md)
 
@@ -2148,6 +2182,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskBucketTaskBoardFormat](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail.md)
+
+### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage.md)
 
 ### [Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Remove-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2164,6 +2200,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaTeamworkDeviceHealth](Remove-MgBetaTeamworkDeviceHealth.md)
 
 ### [Remove-MgBetaTeamworkDeviceOperation](Remove-MgBetaTeamworkDeviceOperation.md)
+
+### [Remove-MgBetaTeamworkMessaging](Remove-MgBetaTeamworkMessaging.md)
+
+### [Remove-MgBetaTeamworkMessagingCustomEmoji](Remove-MgBetaTeamworkMessagingCustomEmoji.md)
 
 ### [Remove-MgBetaTeamworkTeamAppSetting](Remove-MgBetaTeamworkTeamAppSetting.md)
 
@@ -2199,11 +2239,25 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaUserChatTab](Remove-MgBetaUserChatTab.md)
 
+### [Remove-MgBetaUserChatTargetedMessage](Remove-MgBetaUserChatTargetedMessage.md)
+
+### [Remove-MgBetaUserChatTargetedMessageHostedContent](Remove-MgBetaUserChatTargetedMessageHostedContent.md)
+
+### [Remove-MgBetaUserChatTargetedMessageReply](Remove-MgBetaUserChatTargetedMessageReply.md)
+
+### [Remove-MgBetaUserChatTargetedMessageReplyHostedContent](Remove-MgBetaUserChatTargetedMessageReplyHostedContent.md)
+
 ### [Remove-MgBetaUserTeamwork](Remove-MgBetaUserTeamwork.md)
 
 ### [Remove-MgBetaUserTeamworkAssociatedTeam](Remove-MgBetaUserTeamworkAssociatedTeam.md)
 
 ### [Remove-MgBetaUserTeamworkInstalledApp](Remove-MgBetaUserTeamworkInstalledApp.md)
+
+### [Remove-MgBetaUserTeamworkSection](Remove-MgBetaUserTeamworkSection.md)
+
+### [Remove-MgBetaUserTeamworkSectionItem](Remove-MgBetaUserTeamworkSectionItem.md)
+
+### [Remove-MgBetaUserTeamworkTargetedMessage](Remove-MgBetaUserTeamworkTargetedMessage.md)
 
 ### [Restart-MgBetaTeamworkDevice](Restart-MgBetaTeamworkDevice.md)
 
@@ -2231,6 +2285,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaChatMessageReplyReaction](Set-MgBetaChatMessageReplyReaction.md)
 
+### [Set-MgBetaChatRscConfiguration](Set-MgBetaChatRscConfiguration.md)
+
+### [Set-MgBetaChatTargetedMessageHostedContent](Set-MgBetaChatTargetedMessageHostedContent.md)
+
+### [Set-MgBetaChatTargetedMessageReplyHostedContent](Set-MgBetaChatTargetedMessageReplyHostedContent.md)
+
+### [Set-MgBetaChatTargetedMessageReplyReaction](Set-MgBetaChatTargetedMessageReplyReaction.md)
+
 ### [Set-MgBetaGroupTeam](Set-MgBetaGroupTeam.md)
 
 ### [Set-MgBetaGroupTeamChannelFileFolderContent](Set-MgBetaGroupTeamChannelFileFolderContent.md)
@@ -2244,6 +2306,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Set-MgBetaGroupTeamChannelMessageReplyHostedContent](Set-MgBetaGroupTeamChannelMessageReplyHostedContent.md)
 
 ### [Set-MgBetaGroupTeamChannelMessageReplyReaction](Set-MgBetaGroupTeamChannelMessageReplyReaction.md)
+
+### [Set-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessageReaction](Set-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Set-MgBetaGroupTeamChannelPlannerPlanTaskMessageReaction](Set-MgBetaGroupTeamChannelPlannerPlanTaskMessageReaction.md)
 
 ### [Set-MgBetaGroupTeamPhotoContent](Set-MgBetaGroupTeamPhotoContent.md)
 
@@ -2259,6 +2325,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaGroupTeamPrimaryChannelMessageReplyReaction](Set-MgBetaGroupTeamPrimaryChannelMessageReplyReaction.md)
 
+### [Set-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction](Set-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Set-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessageReaction](Set-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessageReaction.md)
+
 ### [Set-MgBetaGroupTeamSchedule](Set-MgBetaGroupTeamSchedule.md)
 
 ### [Set-MgBetaTeamChannelFileFolderContent](Set-MgBetaTeamChannelFileFolderContent.md)
@@ -2272,6 +2342,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Set-MgBetaTeamChannelMessageReplyHostedContent](Set-MgBetaTeamChannelMessageReplyHostedContent.md)
 
 ### [Set-MgBetaTeamChannelMessageReplyReaction](Set-MgBetaTeamChannelMessageReplyReaction.md)
+
+### [Set-MgBetaTeamChannelPlannerPlanBucketTaskMessageReaction](Set-MgBetaTeamChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Set-MgBetaTeamChannelPlannerPlanTaskMessageReaction](Set-MgBetaTeamChannelPlannerPlanTaskMessageReaction.md)
 
 ### [Set-MgBetaTeamPhotoContent](Set-MgBetaTeamPhotoContent.md)
 
@@ -2287,6 +2361,12 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaTeamPrimaryChannelMessageReplyReaction](Set-MgBetaTeamPrimaryChannelMessageReplyReaction.md)
 
+### [Set-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction](Set-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Set-MgBetaTeamPrimaryChannelPlannerPlanTaskMessageReaction](Set-MgBetaTeamPrimaryChannelPlannerPlanTaskMessageReaction.md)
+
+### [Set-MgBetaTeamRscConfiguration](Set-MgBetaTeamRscConfiguration.md)
+
 ### [Set-MgBetaTeamSchedule](Set-MgBetaTeamSchedule.md)
 
 ### [Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent](Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent.md)
@@ -2301,6 +2381,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction](Set-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction.md)
 
+### [Set-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessageReaction](Set-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessageReaction.md)
+
+### [Set-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessageReaction](Set-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessageReaction.md)
+
 ### [Set-MgBetaUserChatMessageHostedContent](Set-MgBetaUserChatMessageHostedContent.md)
 
 ### [Set-MgBetaUserChatMessageReaction](Set-MgBetaUserChatMessageReaction.md)
@@ -2309,11 +2393,31 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Set-MgBetaUserChatMessageReplyReaction](Set-MgBetaUserChatMessageReplyReaction.md)
 
+### [Set-MgBetaUserChatTargetedMessageHostedContent](Set-MgBetaUserChatTargetedMessageHostedContent.md)
+
+### [Set-MgBetaUserChatTargetedMessageReplyHostedContent](Set-MgBetaUserChatTargetedMessageReplyHostedContent.md)
+
+### [Set-MgBetaUserChatTargetedMessageReplyReaction](Set-MgBetaUserChatTargetedMessageReplyReaction.md)
+
+### [Start-MgBetaChatMigration](Start-MgBetaChatMigration.md)
+
+### [Start-MgBetaGroupTeamChannelMigration](Start-MgBetaGroupTeamChannelMigration.md)
+
+### [Start-MgBetaGroupTeamPrimaryChannelMigration](Start-MgBetaGroupTeamPrimaryChannelMigration.md)
+
 ### [Start-MgBetaGroupTeamScheduleTimeCardBreak](Start-MgBetaGroupTeamScheduleTimeCardBreak.md)
+
+### [Start-MgBetaTeamChannelMigration](Start-MgBetaTeamChannelMigration.md)
+
+### [Start-MgBetaTeamPrimaryChannelMigration](Start-MgBetaTeamPrimaryChannelMigration.md)
 
 ### [Start-MgBetaTeamScheduleTimeCardBreak](Start-MgBetaTeamScheduleTimeCardBreak.md)
 
+### [Start-MgBetaTeamworkDeletedTeamChannelMigration](Start-MgBetaTeamworkDeletedTeamChannelMigration.md)
+
 ### [Start-MgBetaTeamworkDeviceDiagnostic](Start-MgBetaTeamworkDeviceDiagnostic.md)
+
+### [Start-MgBetaUserChatMigration](Start-MgBetaUserChatMigration.md)
 
 ### [Stop-MgBetaGroupTeamScheduleTimeCardBreak](Stop-MgBetaGroupTeamScheduleTimeCardBreak.md)
 
@@ -2322,6 +2426,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Undo-MgBetaChatMessageReplySoftDelete](Undo-MgBetaChatMessageReplySoftDelete.md)
 
 ### [Undo-MgBetaChatMessageSoftDelete](Undo-MgBetaChatMessageSoftDelete.md)
+
+### [Undo-MgBetaChatTargetedMessageReplySoftDelete](Undo-MgBetaChatTargetedMessageReplySoftDelete.md)
 
 ### [Undo-MgBetaGroupTeamChannelMessageReplySoftDelete](Undo-MgBetaGroupTeamChannelMessageReplySoftDelete.md)
 
@@ -2348,6 +2454,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Undo-MgBetaUserChatMessageReplySoftDelete](Undo-MgBetaUserChatMessageReplySoftDelete.md)
 
 ### [Undo-MgBetaUserChatMessageSoftDelete](Undo-MgBetaUserChatMessageSoftDelete.md)
+
+### [Undo-MgBetaUserChatTargetedMessageReplySoftDelete](Undo-MgBetaUserChatTargetedMessageReplySoftDelete.md)
 
 ### [Update-MgBetaAppCatalogTeamApp](Update-MgBetaAppCatalogTeamApp.md)
 
@@ -2387,7 +2495,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaChatTab](Update-MgBetaChatTab.md)
 
+### [Update-MgBetaChatTargetedMessage](Update-MgBetaChatTargetedMessage.md)
+
+### [Update-MgBetaChatTargetedMessageHostedContent](Update-MgBetaChatTargetedMessageHostedContent.md)
+
+### [Update-MgBetaChatTargetedMessageReply](Update-MgBetaChatTargetedMessageReply.md)
+
+### [Update-MgBetaChatTargetedMessageReplyHostedContent](Update-MgBetaChatTargetedMessageReplyHostedContent.md)
+
 ### [Update-MgBetaGroupTeamChannel](Update-MgBetaGroupTeamChannel.md)
+
+### [Update-MgBetaGroupTeamChannelJoinedUser](Update-MgBetaGroupTeamChannelJoinedUser.md)
 
 ### [Update-MgBetaGroupTeamChannelMember](Update-MgBetaGroupTeamChannelMember.md)
 
@@ -2413,9 +2531,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail](Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage](Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Update-MgBetaGroupTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgBetaGroupTeamChannelPlannerPlanDetail](Update-MgBetaGroupTeamChannelPlannerPlanDetail.md)
+
+### [Update-MgBetaGroupTeamChannelPlannerPlanHistoryItem](Update-MgBetaGroupTeamChannelPlannerPlanHistoryItem.md)
 
 ### [Update-MgBetaGroupTeamChannelPlannerPlanTask](Update-MgBetaGroupTeamChannelPlannerPlanTask.md)
 
@@ -2424,6 +2546,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaGroupTeamChannelPlannerPlanTaskBucketTaskBoardFormat](Update-MgBetaGroupTeamChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Update-MgBetaGroupTeamChannelPlannerPlanTaskDetail](Update-MgBetaGroupTeamChannelPlannerPlanTaskDetail.md)
+
+### [Update-MgBetaGroupTeamChannelPlannerPlanTaskMessage](Update-MgBetaGroupTeamChannelPlannerPlanTaskMessage.md)
 
 ### [Update-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Update-MgBetaGroupTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2444,6 +2568,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaGroupTeamPhoto](Update-MgBetaGroupTeamPhoto.md)
 
 ### [Update-MgBetaGroupTeamPrimaryChannel](Update-MgBetaGroupTeamPrimaryChannel.md)
+
+### [Update-MgBetaGroupTeamPrimaryChannelJoinedUser](Update-MgBetaGroupTeamPrimaryChannelJoinedUser.md)
 
 ### [Update-MgBetaGroupTeamPrimaryChannelMember](Update-MgBetaGroupTeamPrimaryChannelMember.md)
 
@@ -2469,9 +2595,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskDetail](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskDetail.md)
 
+### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanDetail](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanDetail.md)
+
+### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanHistoryItem.md)
 
 ### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTask](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTask.md)
 
@@ -2480,6 +2610,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskDetail.md)
+
+### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskMessage.md)
 
 ### [Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Update-MgBetaGroupTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2517,7 +2649,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaTeam](Update-MgBetaTeam.md)
 
+### [Update-MgBetaTeamAppPreApproval](Update-MgBetaTeamAppPreApproval.md)
+
 ### [Update-MgBetaTeamChannel](Update-MgBetaTeamChannel.md)
+
+### [Update-MgBetaTeamChannelJoinedUser](Update-MgBetaTeamChannelJoinedUser.md)
 
 ### [Update-MgBetaTeamChannelMember](Update-MgBetaTeamChannelMember.md)
 
@@ -2541,9 +2677,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaTeamChannelPlannerPlanBucketTaskDetail](Update-MgBetaTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Update-MgBetaTeamChannelPlannerPlanBucketTaskMessage](Update-MgBetaTeamChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Update-MgBetaTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Update-MgBetaTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgBetaTeamChannelPlannerPlanDetail](Update-MgBetaTeamChannelPlannerPlanDetail.md)
+
+### [Update-MgBetaTeamChannelPlannerPlanHistoryItem](Update-MgBetaTeamChannelPlannerPlanHistoryItem.md)
 
 ### [Update-MgBetaTeamChannelPlannerPlanTask](Update-MgBetaTeamChannelPlannerPlanTask.md)
 
@@ -2552,6 +2692,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTeamChannelPlannerPlanTaskBucketTaskBoardFormat](Update-MgBetaTeamChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Update-MgBetaTeamChannelPlannerPlanTaskDetail](Update-MgBetaTeamChannelPlannerPlanTaskDetail.md)
+
+### [Update-MgBetaTeamChannelPlannerPlanTaskMessage](Update-MgBetaTeamChannelPlannerPlanTaskMessage.md)
 
 ### [Update-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Update-MgBetaTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2572,6 +2714,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTeamPhoto](Update-MgBetaTeamPhoto.md)
 
 ### [Update-MgBetaTeamPrimaryChannel](Update-MgBetaTeamPrimaryChannel.md)
+
+### [Update-MgBetaTeamPrimaryChannelJoinedUser](Update-MgBetaTeamPrimaryChannelJoinedUser.md)
 
 ### [Update-MgBetaTeamPrimaryChannelMember](Update-MgBetaTeamPrimaryChannelMember.md)
 
@@ -2595,9 +2739,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskDetail](Update-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskDetail.md)
 
+### [Update-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage](Update-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Update-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Update-MgBetaTeamPrimaryChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgBetaTeamPrimaryChannelPlannerPlanDetail](Update-MgBetaTeamPrimaryChannelPlannerPlanDetail.md)
+
+### [Update-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem](Update-MgBetaTeamPrimaryChannelPlannerPlanHistoryItem.md)
 
 ### [Update-MgBetaTeamPrimaryChannelPlannerPlanTask](Update-MgBetaTeamPrimaryChannelPlannerPlanTask.md)
 
@@ -2606,6 +2754,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat](Update-MgBetaTeamPrimaryChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Update-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail](Update-MgBetaTeamPrimaryChannelPlannerPlanTaskDetail.md)
+
+### [Update-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage](Update-MgBetaTeamPrimaryChannelPlannerPlanTaskMessage.md)
 
 ### [Update-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat](Update-MgBetaTeamPrimaryChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2649,6 +2799,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaTeamworkDeletedTeamChannel](Update-MgBetaTeamworkDeletedTeamChannel.md)
 
+### [Update-MgBetaTeamworkDeletedTeamChannelJoinedUser](Update-MgBetaTeamworkDeletedTeamChannelJoinedUser.md)
+
 ### [Update-MgBetaTeamworkDeletedTeamChannelMember](Update-MgBetaTeamworkDeletedTeamChannelMember.md)
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelMessage](Update-MgBetaTeamworkDeletedTeamChannelMessage.md)
@@ -2673,9 +2825,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskDetail.md)
 
+### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskMessage.md)
+
 ### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanBucketTaskProgressTaskBoardFormat.md)
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanDetail](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanDetail.md)
+
+### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanHistoryItem.md)
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTask.md)
 
@@ -2684,6 +2840,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskBucketTaskBoardFormat](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskBucketTaskBoardFormat.md)
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskDetail.md)
+
+### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskMessage.md)
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat](Update-MgBetaTeamworkDeletedTeamChannelPlannerPlanTaskProgressTaskBoardFormat.md)
 
@@ -2702,6 +2860,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaTeamworkDeviceOperation](Update-MgBetaTeamworkDeviceOperation.md)
 
 ### [Update-MgBetaTeamworkDeviceSoftware](Update-MgBetaTeamworkDeviceSoftware.md)
+
+### [Update-MgBetaTeamworkMessaging](Update-MgBetaTeamworkMessaging.md)
+
+### [Update-MgBetaTeamworkMessagingCustomEmoji](Update-MgBetaTeamworkMessagingCustomEmoji.md)
 
 ### [Update-MgBetaTeamworkTeamAppSetting](Update-MgBetaTeamworkTeamAppSetting.md)
 
@@ -2735,9 +2897,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaUserChatTab](Update-MgBetaUserChatTab.md)
 
+### [Update-MgBetaUserChatTargetedMessage](Update-MgBetaUserChatTargetedMessage.md)
+
+### [Update-MgBetaUserChatTargetedMessageHostedContent](Update-MgBetaUserChatTargetedMessageHostedContent.md)
+
+### [Update-MgBetaUserChatTargetedMessageReply](Update-MgBetaUserChatTargetedMessageReply.md)
+
+### [Update-MgBetaUserChatTargetedMessageReplyHostedContent](Update-MgBetaUserChatTargetedMessageReplyHostedContent.md)
+
 ### [Update-MgBetaUserTeamwork](Update-MgBetaUserTeamwork.md)
 
 ### [Update-MgBetaUserTeamworkAssociatedTeam](Update-MgBetaUserTeamworkAssociatedTeam.md)
+
+### [Update-MgBetaUserTeamworkSection](Update-MgBetaUserTeamworkSection.md)
+
+### [Update-MgBetaUserTeamworkSectionItem](Update-MgBetaUserTeamworkSectionItem.md)
 
 
 

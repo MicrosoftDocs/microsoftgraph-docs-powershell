@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityCaseEdiscoveryCaseSetting
 ---
@@ -30,7 +30,7 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <string>
  [-ReviewSetSettings <string>] [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -40,7 +40,7 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <string>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +53,7 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
  [-ReviewSetSettings <string>] [-TopicModeling <IMicrosoftGraphSecurityTopicModelingSettings>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +63,7 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCaseSettings> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -91,16 +91,26 @@ Update the properties of an ediscoveryCaseSettings object.
 Import-Module Microsoft.Graph.Security
 
 $params = @{
-	"@odata.type" = "#microsoft.graph.security.ediscoveryCaseSettings"
+	"@odata.type" = "https://graph.microsoft.com/v1.0/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/settings/$entity"
 	redundancyDetection = @{
-		"@odata.type" = "microsoft.graph.security.redundancyDetectionSettings"
+		isEnabled = $true
+		similarityThreshold = 65
+		minWords = 10
+		maxWords = 500000
 	}
 	topicModeling = @{
-		"@odata.type" = "microsoft.graph.security.topicModelingSettings"
+		isEnabled = $false
+		ignoreNumbers = $true
+		topicCount = 100
+		dynamicallyAdjustTopicCount = $true
 	}
 	ocr = @{
-		"@odata.type" = "microsoft.graph.security.ocrSettings"
+		isEnabled = $false
+		maxImageSize = 24576
+		timeout = "PT1M"
 	}
+	caseType = "standard"
+	reviewSetSettings = "disableGrouping"
 }
 
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
@@ -667,9 +677,12 @@ To learn more, see Maximum number of themes.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation

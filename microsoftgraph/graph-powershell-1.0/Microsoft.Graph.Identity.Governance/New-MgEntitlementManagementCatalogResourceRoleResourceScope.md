@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogresourceroleresourcescope
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgEntitlementManagementCatalogResourceRoleResourceScope
 ---
@@ -27,7 +27,6 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalo
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -40,7 +39,6 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalo
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create1
@@ -51,7 +49,7 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalo
  -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -62,7 +60,6 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope -AccessPackageCatalo
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -75,7 +72,6 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -88,7 +84,6 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope
  [-Resource <IMicrosoftGraphAccessPackageResource>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -99,7 +94,7 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope
  -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -110,7 +105,7 @@ New-MgEntitlementManagementCatalogResourceRoleResourceScope
  -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -613,7 +608,9 @@ HelpMessage: ''
 
 ### -OriginId
 
-The unique identifier for the scope in the resource as defined in the origin system.
+The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
 
 ```yaml
 Type: System.String
@@ -652,7 +649,8 @@ HelpMessage: ''
 
 ### -OriginSystem
 
-The origin system for the scope.
+The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
 
 ```yaml
 Type: System.String
@@ -877,8 +875,11 @@ Read-only.
   [Description <String>]: The description of the scope.
   [DisplayName <String>]: The display name of the scope.
   [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-  [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-  [OriginSystem <String>]: The origin system for the scope.
+  [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+  [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
   [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.
@@ -919,6 +920,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
       [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+    [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+      [ConnectorType <String>]: connectorType
+      [CreatedBy <String>]: The identifier of the user or application that created the connector.
+      [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+      [Description <String>]: A description of the connector.
+      [DisplayName <String>]: The display name of the connector.
+      [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+      [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
     [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -934,11 +947,41 @@ Read-only.
       [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
       [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+      [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources, or AadGroup.
       [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+      [Type <String>]: roleType
     [Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]: Read-only.
 Nullable.
 Supports $expand.
+    [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+      [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+        [(Any) <Object>]: This indicates any property can be added to this object.
+      [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+        [Id <String>]: The unique identifier for an entity.
+Read-only.
+        [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+        [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+        [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+      [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+      [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+      [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+        [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+      [Status <String>]: customDataProvidedResourceUploadStatus
 
 INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
@@ -956,6 +999,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -970,14 +1015,21 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStageId <String>]: The unique identifier of approvalStage
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
+  [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -988,6 +1040,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -1050,6 +1103,18 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Requires $filter (eq).
     [Resources <IMicrosoftGraphAccessPackageResource[]>]: Read-only.
 Required.
+  [ExternalOriginResourceConnector <IMicrosoftGraphExternalOriginResourceConnector>]: externalOriginResourceConnector
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [ConnectionInfo <IMicrosoftGraphConnectionInfo>]: connectionInfo
+    [ConnectorType <String>]: connectorType
+    [CreatedBy <String>]: The identifier of the user or application that created the connector.
+    [CreatedDateTime <DateTime?>]: The date and time when the connector was created.
+    [Description <String>]: A description of the connector.
+    [DisplayName <String>]: The display name of the connector.
+    [ModifiedBy <String>]: The identifier of the user or application that last modified the connector.
+    [ModifiedDateTime <DateTime?>]: The date and time when the connector was last modified.
   [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -1065,8 +1130,9 @@ Read-only.
     [DisplayName <String>]: The display name of the resource role such as the role defined by the application.
     [OriginId <String>]: The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId is the sequence number of the role in the site.
-    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AzureResources, or AadGroup.
     [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+    [Type <String>]: roleType
   [Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]: Read-only.
 Nullable.
 Supports $expand.
@@ -1075,9 +1141,41 @@ Read-only.
     [Description <String>]: The description of the scope.
     [DisplayName <String>]: The display name of the scope.
     [IsRootScope <Boolean?>]: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
-    [OriginId <String>]: The unique identifier for the scope in the resource as defined in the origin system.
-    [OriginSystem <String>]: The origin system for the scope.
+    [OriginId <String>]: The unique identifier of the resource in the origin system.
+If a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
+    [OriginSystem <String>]: The type of the resource in the origin system, such as SharePointOnline, AadApplication, AadGroup, AzureResources, or CustomDataProvidedResource.
+Supports $filter (eq).
     [Resource <IMicrosoftGraphAccessPackageResource>]: accessPackageResource
+  [UploadSessions <IMicrosoftGraphCustomDataProvidedResourceUploadSession[]>]: The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [CreatedDateTime <DateTime?>]: DateTime when the upload session was created.
+Read-only.
+Supports $orderby.
+    [Data <IMicrosoftGraphCustomDataProvidedResourcePayloadsData>]: data
+      [(Any) <Object>]: This indicates any property can be added to this object.
+    [Files <IMicrosoftGraphCustomDataProvidedResourceFile[]>]: The files uploaded during this upload session.
+Supports $expand and $expand with nested $filter and $orderby.
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Name <String>]: Name of the uploaded file, including the file extension.
+Required.
+ Supports $filter (eq, ne)  and $orderby.
+      [Size <Int64?>]: Size of the file in bytes.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+      [UploadedDateTime <DateTime?>]: Timestamp when the file was uploaded.
+Read-only.
+ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
+    [IsUploadDone <Boolean?>]: Indicates if all the necessary files have been uploaded to this session.
+    [ReferenceId <String>]: The ID of the context for which data is being uploaded, for example, the Access Review instance ID.
+Supports $filter (eq).
+    [Stats <IMicrosoftGraphCustomDataProvidedResourceUploadStats>]: customDataProvidedResourceUploadStats
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [FilesUploaded <Int32?>]: Number of files uploaded in this session.
+      [TotalBytesUploaded <Int64?>]: Total bytes uploaded in this session.
+    [Status <String>]: customDataProvidedResourceUploadStatus
 
 
 ## RELATED LINKS

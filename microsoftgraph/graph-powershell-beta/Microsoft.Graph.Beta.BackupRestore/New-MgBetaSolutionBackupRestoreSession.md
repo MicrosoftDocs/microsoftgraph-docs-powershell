@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSession
 ---
@@ -27,11 +27,11 @@ New-MgBetaSolutionBackupRestoreSession [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-CompletedDateTime <datetime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <datetime>]
  [-Error <IMicrosoftGraphPublicError>] [-Id <string>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <datetime>] [-RestoreJobType <string>]
+ [-LastModifiedDateTime <datetime>] [-PolicyId <string>] [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>] [-Status <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +41,6 @@ New-MgBetaSolutionBackupRestoreSession -BodyParameter <IMicrosoftGraphRestoreSes
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -355,6 +354,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PolicyId
+
+The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -590,6 +611,8 @@ For example, in the access reviews decisions API, this property might record the
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the restore session.
+  [PolicyId <String>]: The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
   [RestoreJobType <String>]: restoreJobType
   [RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]: restoreSessionArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.

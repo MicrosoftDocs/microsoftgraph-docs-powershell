@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileappasmacospkgappcontentversion
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion
 ---
@@ -27,7 +27,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion -MobileAppC
  [-Scripts <IMicrosoftGraphMobileAppContentScript[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +37,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion -MobileAppC
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,7 +49,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion
  [-Scripts <IMicrosoftGraphMobileAppContentScript[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +59,6 @@ Update-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -593,6 +589,7 @@ To be deprecated.
     [Name <String>]: Indicates the name of the file.
     [Size <Int64?>]: Indicates the original size of the file, in bytes.
     [SizeEncrypted <Int64?>]: Indicates the size of the file after encryption, in bytes.
+    [UploadErrorCode <String>]: Optional error codes that can be provided when uploadState of mobileAppContentFile is indicating an error.
     [UploadState <String>]: Contains properties for upload request states.
   [Scripts <IMicrosoftGraphMobileAppContentScript[]>]: The list of scripts for this app content version.
     [Id <String>]: The unique identifier for an entity.
@@ -619,6 +616,7 @@ To be deprecated.
   [Name <String>]: Indicates the name of the file.
   [Size <Int64?>]: Indicates the original size of the file, in bytes.
   [SizeEncrypted <Int64?>]: Indicates the size of the file after encryption, in bytes.
+  [UploadErrorCode <String>]: Optional error codes that can be provided when uploadState of mobileAppContentFile is indicating an error.
   [UploadState <String>]: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter

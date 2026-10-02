@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Sites
-Module Guid: 2f27657b-31fc-422c-9d33-2f07f76781bb
+Module Guid: ab55992e-0278-4a9a-863b-e1b74787fa74
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.sites/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -83,17 +83,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSite](Get-MgBetaGroupSite.md)
 
-### [Get-MgBetaGroupSite](Get-MgBetaGroupSite.md)
-
 ### [Get-MgBetaGroupSiteActivityByInterval](Get-MgBetaGroupSiteActivityByInterval.md)
 
 ### [Get-MgBetaGroupSiteAnalytic](Get-MgBetaGroupSiteAnalytic.md)
 
 ### [Get-MgBetaGroupSiteAnalyticItemActivityStat](Get-MgBetaGroupSiteAnalyticItemActivityStat.md)
-
-### [Get-MgBetaGroupSiteAnalyticItemActivityStat](Get-MgBetaGroupSiteAnalyticItemActivityStat.md)
-
-### [Get-MgBetaGroupSiteAnalyticItemActivityStatActivity](Get-MgBetaGroupSiteAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaGroupSiteAnalyticItemActivityStatActivity](Get-MgBetaGroupSiteAnalyticItemActivityStatActivity.md)
 
@@ -117,13 +111,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteColumn](Get-MgBetaGroupSiteColumn.md)
 
-### [Get-MgBetaGroupSiteColumn](Get-MgBetaGroupSiteColumn.md)
-
 ### [Get-MgBetaGroupSiteColumnCount](Get-MgBetaGroupSiteColumnCount.md)
 
 ### [Get-MgBetaGroupSiteColumnSourceColumn](Get-MgBetaGroupSiteColumnSourceColumn.md)
-
-### [Get-MgBetaGroupSiteContentModel](Get-MgBetaGroupSiteContentModel.md)
 
 ### [Get-MgBetaGroupSiteContentModel](Get-MgBetaGroupSiteContentModel.md)
 
@@ -135,11 +125,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteContentType](Get-MgBetaGroupSiteContentType.md)
 
-### [Get-MgBetaGroupSiteContentType](Get-MgBetaGroupSiteContentType.md)
-
 ### [Get-MgBetaGroupSiteContentTypeBase](Get-MgBetaGroupSiteContentTypeBase.md)
-
-### [Get-MgBetaGroupSiteContentTypeBaseType](Get-MgBetaGroupSiteContentTypeBaseType.md)
 
 ### [Get-MgBetaGroupSiteContentTypeBaseType](Get-MgBetaGroupSiteContentTypeBaseType.md)
 
@@ -147,17 +133,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteContentTypeColumn](Get-MgBetaGroupSiteContentTypeColumn.md)
 
-### [Get-MgBetaGroupSiteContentTypeColumn](Get-MgBetaGroupSiteContentTypeColumn.md)
-
 ### [Get-MgBetaGroupSiteContentTypeColumnCount](Get-MgBetaGroupSiteContentTypeColumnCount.md)
 
 ### [Get-MgBetaGroupSiteContentTypeColumnLink](Get-MgBetaGroupSiteContentTypeColumnLink.md)
 
-### [Get-MgBetaGroupSiteContentTypeColumnLink](Get-MgBetaGroupSiteContentTypeColumnLink.md)
-
 ### [Get-MgBetaGroupSiteContentTypeColumnLinkCount](Get-MgBetaGroupSiteContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaGroupSiteContentTypeColumnPosition](Get-MgBetaGroupSiteContentTypeColumnPosition.md)
 
 ### [Get-MgBetaGroupSiteContentTypeColumnPosition](Get-MgBetaGroupSiteContentTypeColumnPosition.md)
 
@@ -185,11 +165,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteDocumentProcessingJob](Get-MgBetaGroupSiteDocumentProcessingJob.md)
 
-### [Get-MgBetaGroupSiteDocumentProcessingJob](Get-MgBetaGroupSiteDocumentProcessingJob.md)
-
 ### [Get-MgBetaGroupSiteDocumentProcessingJobCount](Get-MgBetaGroupSiteDocumentProcessingJobCount.md)
-
-### [Get-MgBetaGroupSiteDrive](Get-MgBetaGroupSiteDrive.md)
 
 ### [Get-MgBetaGroupSiteDrive](Get-MgBetaGroupSiteDrive.md)
 
@@ -197,11 +173,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteExtension](Get-MgBetaGroupSiteExtension.md)
 
-### [Get-MgBetaGroupSiteExtension](Get-MgBetaGroupSiteExtension.md)
-
 ### [Get-MgBetaGroupSiteExtensionCount](Get-MgBetaGroupSiteExtensionCount.md)
-
-### [Get-MgBetaGroupSiteExternalColumn](Get-MgBetaGroupSiteExternalColumn.md)
 
 ### [Get-MgBetaGroupSiteExternalColumn](Get-MgBetaGroupSiteExternalColumn.md)
 
@@ -218,8 +190,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSiteGetByPathContentType](Get-MgBetaGroupSiteGetByPathContentType.md)
 
 ### [Get-MgBetaGroupSiteGetByPathDocumentProcessingJob](Get-MgBetaGroupSiteGetByPathDocumentProcessingJob.md)
-
-### [Get-MgBetaGroupSiteGetByPathDrive](Get-MgBetaGroupSiteGetByPathDrive.md)
 
 ### [Get-MgBetaGroupSiteGetByPathDrive](Get-MgBetaGroupSiteGetByPathDrive.md)
 
@@ -257,11 +227,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey](Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey.md)
 
-### [Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey](Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey.md)
-
 ### [Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKeyCount](Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKeyCount.md)
-
-### [Get-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy](Get-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy](Get-MgBetaGroupSiteInformationProtectionDataLossPreventionPolicy.md)
 
@@ -271,19 +237,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteInformationProtectionPolicyLabel](Get-MgBetaGroupSiteInformationProtectionPolicyLabel.md)
 
-### [Get-MgBetaGroupSiteInformationProtectionPolicyLabel](Get-MgBetaGroupSiteInformationProtectionPolicyLabel.md)
-
 ### [Get-MgBetaGroupSiteInformationProtectionPolicyLabelCount](Get-MgBetaGroupSiteInformationProtectionPolicyLabelCount.md)
-
-### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabel](Get-MgBetaGroupSiteInformationProtectionSensitivityLabel.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabel](Get-MgBetaGroupSiteInformationProtectionSensitivityLabel.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelCount](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelCount.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelRight](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelRight.md)
-
-### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel](Get-MgBetaGroupSiteInformationProtectionSensitivityLabelSublabel.md)
 
@@ -295,17 +255,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest](Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest.md)
 
-### [Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest](Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest.md)
-
 ### [Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestCount](Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestCount.md)
 
 ### [Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult](Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult.md)
 
-### [Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult](Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult.md)
-
 ### [Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResultCount](Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResultCount.md)
-
-### [Get-MgBetaGroupSiteItem](Get-MgBetaGroupSiteItem.md)
 
 ### [Get-MgBetaGroupSiteItem](Get-MgBetaGroupSiteItem.md)
 
@@ -329,11 +283,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteList](Get-MgBetaGroupSiteList.md)
 
-### [Get-MgBetaGroupSiteList](Get-MgBetaGroupSiteList.md)
-
 ### [Get-MgBetaGroupSiteListActivity](Get-MgBetaGroupSiteListActivity.md)
-
-### [Get-MgBetaGroupSiteListColumn](Get-MgBetaGroupSiteListColumn.md)
 
 ### [Get-MgBetaGroupSiteListColumn](Get-MgBetaGroupSiteListColumn.md)
 
@@ -343,21 +293,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteListContentType](Get-MgBetaGroupSiteListContentType.md)
 
-### [Get-MgBetaGroupSiteListContentType](Get-MgBetaGroupSiteListContentType.md)
-
-### [Get-MgBetaGroupSiteListContentTypeColumn](Get-MgBetaGroupSiteListContentTypeColumn.md)
-
 ### [Get-MgBetaGroupSiteListContentTypeColumn](Get-MgBetaGroupSiteListContentTypeColumn.md)
 
 ### [Get-MgBetaGroupSiteListContentTypeColumnCount](Get-MgBetaGroupSiteListContentTypeColumnCount.md)
 
 ### [Get-MgBetaGroupSiteListContentTypeColumnLink](Get-MgBetaGroupSiteListContentTypeColumnLink.md)
 
-### [Get-MgBetaGroupSiteListContentTypeColumnLink](Get-MgBetaGroupSiteListContentTypeColumnLink.md)
-
 ### [Get-MgBetaGroupSiteListContentTypeColumnLinkCount](Get-MgBetaGroupSiteListContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaGroupSiteListContentTypeColumnPosition](Get-MgBetaGroupSiteListContentTypeColumnPosition.md)
 
 ### [Get-MgBetaGroupSiteListContentTypeColumnPosition](Get-MgBetaGroupSiteListContentTypeColumnPosition.md)
 
@@ -382,10 +324,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSiteListDrive](Get-MgBetaGroupSiteListDrive.md)
 
 ### [Get-MgBetaGroupSiteListItem](Get-MgBetaGroupSiteListItem.md)
-
-### [Get-MgBetaGroupSiteListItem](Get-MgBetaGroupSiteListItem.md)
-
-### [Get-MgBetaGroupSiteListItemActivity](Get-MgBetaGroupSiteListItemActivity.md)
 
 ### [Get-MgBetaGroupSiteListItemActivity](Get-MgBetaGroupSiteListItemActivity.md)
 
@@ -415,8 +353,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteListItemDocumentSetVersion](Get-MgBetaGroupSiteListItemDocumentSetVersion.md)
 
-### [Get-MgBetaGroupSiteListItemDocumentSetVersion](Get-MgBetaGroupSiteListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaGroupSiteListItemDocumentSetVersionCount](Get-MgBetaGroupSiteListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaGroupSiteListItemDocumentSetVersionField](Get-MgBetaGroupSiteListItemDocumentSetVersionField.md)
@@ -431,11 +367,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteListItemPermission](Get-MgBetaGroupSiteListItemPermission.md)
 
-### [Get-MgBetaGroupSiteListItemPermission](Get-MgBetaGroupSiteListItemPermission.md)
-
 ### [Get-MgBetaGroupSiteListItemPermissionCount](Get-MgBetaGroupSiteListItemPermissionCount.md)
-
-### [Get-MgBetaGroupSiteListItemVersion](Get-MgBetaGroupSiteListItemVersion.md)
 
 ### [Get-MgBetaGroupSiteListItemVersion](Get-MgBetaGroupSiteListItemVersion.md)
 
@@ -445,17 +377,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteListOperation](Get-MgBetaGroupSiteListOperation.md)
 
-### [Get-MgBetaGroupSiteListOperation](Get-MgBetaGroupSiteListOperation.md)
-
 ### [Get-MgBetaGroupSiteListOperationCount](Get-MgBetaGroupSiteListOperationCount.md)
 
 ### [Get-MgBetaGroupSiteListPermission](Get-MgBetaGroupSiteListPermission.md)
 
-### [Get-MgBetaGroupSiteListPermission](Get-MgBetaGroupSiteListPermission.md)
-
 ### [Get-MgBetaGroupSiteListPermissionCount](Get-MgBetaGroupSiteListPermissionCount.md)
-
-### [Get-MgBetaGroupSiteListSubscription](Get-MgBetaGroupSiteListSubscription.md)
 
 ### [Get-MgBetaGroupSiteListSubscription](Get-MgBetaGroupSiteListSubscription.md)
 
@@ -467,8 +393,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteNotebook](Get-MgBetaGroupSiteOnenoteNotebook.md)
 
-### [Get-MgBetaGroupSiteOnenoteNotebook](Get-MgBetaGroupSiteOnenoteNotebook.md)
-
 ### [Get-MgBetaGroupSiteOnenoteNotebookCount](Get-MgBetaGroupSiteOnenoteNotebookCount.md)
 
 ### [Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl](Get-MgBetaGroupSiteOnenoteNotebookFromWebUrl.md)
@@ -477,11 +401,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteNotebookSection](Get-MgBetaGroupSiteOnenoteNotebookSection.md)
 
-### [Get-MgBetaGroupSiteOnenoteNotebookSection](Get-MgBetaGroupSiteOnenoteNotebookSection.md)
-
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionCount](Get-MgBetaGroupSiteOnenoteNotebookSectionCount.md)
-
-### [Get-MgBetaGroupSiteOnenoteNotebookSectionGroup](Get-MgBetaGroupSiteOnenoteNotebookSectionGroup.md)
 
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionGroup](Get-MgBetaGroupSiteOnenoteNotebookSectionGroup.md)
 
@@ -493,11 +413,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSection](Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSection.md)
 
-### [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSection](Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSection.md)
-
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionCount](Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionCount.md)
-
-### [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
 
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
 
@@ -515,8 +431,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionPage](Get-MgBetaGroupSiteOnenoteNotebookSectionPage.md)
 
-### [Get-MgBetaGroupSiteOnenoteNotebookSectionPage](Get-MgBetaGroupSiteOnenoteNotebookSectionPage.md)
-
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent](Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent.md)
 
 ### [Get-MgBetaGroupSiteOnenoteNotebookSectionPageCount](Get-MgBetaGroupSiteOnenoteNotebookSectionPageCount.md)
@@ -531,11 +445,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteOperation](Get-MgBetaGroupSiteOnenoteOperation.md)
 
-### [Get-MgBetaGroupSiteOnenoteOperation](Get-MgBetaGroupSiteOnenoteOperation.md)
-
 ### [Get-MgBetaGroupSiteOnenoteOperationCount](Get-MgBetaGroupSiteOnenoteOperationCount.md)
-
-### [Get-MgBetaGroupSiteOnenotePage](Get-MgBetaGroupSiteOnenotePage.md)
 
 ### [Get-MgBetaGroupSiteOnenotePage](Get-MgBetaGroupSiteOnenotePage.md)
 
@@ -549,19 +459,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteResource](Get-MgBetaGroupSiteOnenoteResource.md)
 
-### [Get-MgBetaGroupSiteOnenoteResource](Get-MgBetaGroupSiteOnenoteResource.md)
-
 ### [Get-MgBetaGroupSiteOnenoteResourceContent](Get-MgBetaGroupSiteOnenoteResourceContent.md)
 
 ### [Get-MgBetaGroupSiteOnenoteResourceCount](Get-MgBetaGroupSiteOnenoteResourceCount.md)
 
 ### [Get-MgBetaGroupSiteOnenoteSection](Get-MgBetaGroupSiteOnenoteSection.md)
 
-### [Get-MgBetaGroupSiteOnenoteSection](Get-MgBetaGroupSiteOnenoteSection.md)
-
 ### [Get-MgBetaGroupSiteOnenoteSectionCount](Get-MgBetaGroupSiteOnenoteSectionCount.md)
-
-### [Get-MgBetaGroupSiteOnenoteSectionGroup](Get-MgBetaGroupSiteOnenoteSectionGroup.md)
 
 ### [Get-MgBetaGroupSiteOnenoteSectionGroup](Get-MgBetaGroupSiteOnenoteSectionGroup.md)
 
@@ -573,11 +477,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteSectionGroupSection](Get-MgBetaGroupSiteOnenoteSectionGroupSection.md)
 
-### [Get-MgBetaGroupSiteOnenoteSectionGroupSection](Get-MgBetaGroupSiteOnenoteSectionGroupSection.md)
-
 ### [Get-MgBetaGroupSiteOnenoteSectionGroupSectionCount](Get-MgBetaGroupSiteOnenoteSectionGroupSectionCount.md)
-
-### [Get-MgBetaGroupSiteOnenoteSectionGroupSectionPage](Get-MgBetaGroupSiteOnenoteSectionGroupSectionPage.md)
 
 ### [Get-MgBetaGroupSiteOnenoteSectionGroupSectionPage](Get-MgBetaGroupSiteOnenoteSectionGroupSectionPage.md)
 
@@ -595,8 +495,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOnenoteSectionPage](Get-MgBetaGroupSiteOnenoteSectionPage.md)
 
-### [Get-MgBetaGroupSiteOnenoteSectionPage](Get-MgBetaGroupSiteOnenoteSectionPage.md)
-
 ### [Get-MgBetaGroupSiteOnenoteSectionPageContent](Get-MgBetaGroupSiteOnenoteSectionPageContent.md)
 
 ### [Get-MgBetaGroupSiteOnenoteSectionPageCount](Get-MgBetaGroupSiteOnenoteSectionPageCount.md)
@@ -611,17 +509,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteOperation](Get-MgBetaGroupSiteOperation.md)
 
-### [Get-MgBetaGroupSiteOperation](Get-MgBetaGroupSiteOperation.md)
-
 ### [Get-MgBetaGroupSiteOperationCount](Get-MgBetaGroupSiteOperationCount.md)
 
 ### [Get-MgBetaGroupSiteOperationStatus](Get-MgBetaGroupSiteOperationStatus.md)
 
 ### [Get-MgBetaGroupSitePage](Get-MgBetaGroupSitePage.md)
-
-### [Get-MgBetaGroupSitePage](Get-MgBetaGroupSitePage.md)
-
-### [Get-MgBetaGroupSitePageAsSitePage](Get-MgBetaGroupSitePageAsSitePage.md)
 
 ### [Get-MgBetaGroupSitePageAsSitePage](Get-MgBetaGroupSitePageAsSitePage.md)
 
@@ -629,15 +521,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
 
-### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
-
-### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
-
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
 
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
-
-### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
@@ -646,8 +532,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
 
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection.md)
-
-### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
@@ -668,8 +552,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
 
 ### [Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
-
-### [Get-MgBetaGroupSitePageAsSitePageWebPart](Get-MgBetaGroupSitePageAsSitePageWebPart.md)
 
 ### [Get-MgBetaGroupSitePageAsSitePageWebPart](Get-MgBetaGroupSitePageAsSitePageWebPart.md)
 
@@ -703,21 +585,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSitePageTemplate](Get-MgBetaGroupSitePageTemplate.md)
 
-### [Get-MgBetaGroupSitePageTemplate](Get-MgBetaGroupSitePageTemplate.md)
-
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayout](Get-MgBetaGroupSitePageTemplateCanvaLayout.md)
 
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSection](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSection.md)
 
-### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSection](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSection.md)
-
-### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumn](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumn.md)
-
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumn](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumn.md)
 
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnCount](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnCount.md)
-
-### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpart.md)
 
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionColumnWebpart.md)
 
@@ -728,8 +602,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionCount](Get-MgBetaGroupSitePageTemplateCanvaLayoutHorizontalSectionCount.md)
 
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSection](Get-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSection.md)
-
-### [Get-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpart](Get-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpart.md)
 
 ### [Get-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpart](Get-MgBetaGroupSitePageTemplateCanvaLayoutVerticalSectionWebpart.md)
 
@@ -757,13 +629,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSitePageTemplateWebPart](Get-MgBetaGroupSitePageTemplateWebPart.md)
 
-### [Get-MgBetaGroupSitePageTemplateWebPart](Get-MgBetaGroupSitePageTemplateWebPart.md)
-
 ### [Get-MgBetaGroupSitePageTemplateWebPartCount](Get-MgBetaGroupSitePageTemplateWebPartCount.md)
 
 ### [Get-MgBetaGroupSitePageTemplateWebPartPositionOfWebPart](Get-MgBetaGroupSitePageTemplateWebPartPositionOfWebPart.md)
-
-### [Get-MgBetaGroupSitePermission](Get-MgBetaGroupSitePermission.md)
 
 ### [Get-MgBetaGroupSitePermission](Get-MgBetaGroupSitePermission.md)
 
@@ -778,8 +646,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningError](Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningError.md)
 
 ### [Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningErrorCount.md)
-
-### [Get-MgBetaGroupSiteRecycleBinItem](Get-MgBetaGroupSiteRecycleBinItem.md)
 
 ### [Get-MgBetaGroupSiteRecycleBinItem](Get-MgBetaGroupSiteRecycleBinItem.md)
 
@@ -813,21 +679,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreGroup](Get-MgBetaGroupSiteTermStoreGroup.md)
 
-### [Get-MgBetaGroupSiteTermStoreGroup](Get-MgBetaGroupSiteTermStoreGroup.md)
-
 ### [Get-MgBetaGroupSiteTermStoreGroupCount](Get-MgBetaGroupSiteTermStoreGroupCount.md)
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSet](Get-MgBetaGroupSiteTermStoreGroupSet.md)
 
-### [Get-MgBetaGroupSiteTermStoreGroupSet](Get-MgBetaGroupSiteTermStoreGroupSet.md)
-
-### [Get-MgBetaGroupSiteTermStoreGroupSetChild](Get-MgBetaGroupSiteTermStoreGroupSetChild.md)
-
 ### [Get-MgBetaGroupSiteTermStoreGroupSetChild](Get-MgBetaGroupSiteTermStoreGroupSetChild.md)
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetChildCount](Get-MgBetaGroupSiteTermStoreGroupSetChildCount.md)
-
-### [Get-MgBetaGroupSiteTermStoreGroupSetChildRelation](Get-MgBetaGroupSiteTermStoreGroupSetChildRelation.md)
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetChildRelation](Get-MgBetaGroupSiteTermStoreGroupSetChildRelation.md)
 
@@ -847,8 +705,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetRelation](Get-MgBetaGroupSiteTermStoreGroupSetRelation.md)
 
-### [Get-MgBetaGroupSiteTermStoreGroupSetRelation](Get-MgBetaGroupSiteTermStoreGroupSetRelation.md)
-
 ### [Get-MgBetaGroupSiteTermStoreGroupSetRelationCount](Get-MgBetaGroupSiteTermStoreGroupSetRelationCount.md)
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetRelationFromTerm](Get-MgBetaGroupSiteTermStoreGroupSetRelationFromTerm.md)
@@ -859,15 +715,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetTerm](Get-MgBetaGroupSiteTermStoreGroupSetTerm.md)
 
-### [Get-MgBetaGroupSiteTermStoreGroupSetTerm](Get-MgBetaGroupSiteTermStoreGroupSetTerm.md)
-
-### [Get-MgBetaGroupSiteTermStoreGroupSetTermChild](Get-MgBetaGroupSiteTermStoreGroupSetTermChild.md)
-
 ### [Get-MgBetaGroupSiteTermStoreGroupSetTermChild](Get-MgBetaGroupSiteTermStoreGroupSetTermChild.md)
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetTermChildCount](Get-MgBetaGroupSiteTermStoreGroupSetTermChildCount.md)
-
-### [Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation](Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation.md)
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation](Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation.md)
 
@@ -885,8 +735,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetTermRelation](Get-MgBetaGroupSiteTermStoreGroupSetTermRelation.md)
 
-### [Get-MgBetaGroupSiteTermStoreGroupSetTermRelation](Get-MgBetaGroupSiteTermStoreGroupSetTermRelation.md)
-
 ### [Get-MgBetaGroupSiteTermStoreGroupSetTermRelationCount](Get-MgBetaGroupSiteTermStoreGroupSetTermRelationCount.md)
 
 ### [Get-MgBetaGroupSiteTermStoreGroupSetTermRelationFromTerm](Get-MgBetaGroupSiteTermStoreGroupSetTermRelationFromTerm.md)
@@ -899,15 +747,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreSet](Get-MgBetaGroupSiteTermStoreSet.md)
 
-### [Get-MgBetaGroupSiteTermStoreSet](Get-MgBetaGroupSiteTermStoreSet.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetChild](Get-MgBetaGroupSiteTermStoreSetChild.md)
-
 ### [Get-MgBetaGroupSiteTermStoreSetChild](Get-MgBetaGroupSiteTermStoreSetChild.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetChildCount](Get-MgBetaGroupSiteTermStoreSetChildCount.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetChildRelation](Get-MgBetaGroupSiteTermStoreSetChildRelation.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetChildRelation](Get-MgBetaGroupSiteTermStoreSetChildRelation.md)
 
@@ -927,15 +769,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSet](Get-MgBetaGroupSiteTermStoreSetParentGroupSet.md)
 
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSet](Get-MgBetaGroupSiteTermStoreSetParentGroupSet.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChild](Get-MgBetaGroupSiteTermStoreSetParentGroupSetChild.md)
-
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChild](Get-MgBetaGroupSiteTermStoreSetParentGroupSetChild.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildCount](Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildCount.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelation.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelation.md)
 
@@ -953,8 +789,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelation.md)
 
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelation.md)
-
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelationCount](Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelationCount.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelationFromTerm](Get-MgBetaGroupSiteTermStoreSetParentGroupSetRelationFromTerm.md)
@@ -965,15 +799,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTerm](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTerm.md)
 
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTerm](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTerm.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild.md)
-
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildCount](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildCount.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
@@ -991,8 +819,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation.md)
 
-### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation.md)
-
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationCount](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationCount.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationFromTerm](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationFromTerm.md)
@@ -1002,8 +828,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelationToTerm.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermSet](Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermSet.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetRelation](Get-MgBetaGroupSiteTermStoreSetRelation.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetRelation](Get-MgBetaGroupSiteTermStoreSetRelation.md)
 
@@ -1017,15 +841,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreSetTerm](Get-MgBetaGroupSiteTermStoreSetTerm.md)
 
-### [Get-MgBetaGroupSiteTermStoreSetTerm](Get-MgBetaGroupSiteTermStoreSetTerm.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetTermChild](Get-MgBetaGroupSiteTermStoreSetTermChild.md)
-
 ### [Get-MgBetaGroupSiteTermStoreSetTermChild](Get-MgBetaGroupSiteTermStoreSetTermChild.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetTermChildCount](Get-MgBetaGroupSiteTermStoreSetTermChildCount.md)
-
-### [Get-MgBetaGroupSiteTermStoreSetTermChildRelation](Get-MgBetaGroupSiteTermStoreSetTermChildRelation.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetTermChildRelation](Get-MgBetaGroupSiteTermStoreSetTermChildRelation.md)
 
@@ -1043,8 +861,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSiteTermStoreSetTermRelation](Get-MgBetaGroupSiteTermStoreSetTermRelation.md)
 
-### [Get-MgBetaGroupSiteTermStoreSetTermRelation](Get-MgBetaGroupSiteTermStoreSetTermRelation.md)
-
 ### [Get-MgBetaGroupSiteTermStoreSetTermRelationCount](Get-MgBetaGroupSiteTermStoreSetTermRelationCount.md)
 
 ### [Get-MgBetaGroupSiteTermStoreSetTermRelationFromTerm](Get-MgBetaGroupSiteTermStoreSetTermRelationFromTerm.md)
@@ -1057,11 +873,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSubSite](Get-MgBetaGroupSubSite.md)
 
-### [Get-MgBetaGroupSubSite](Get-MgBetaGroupSubSite.md)
-
 ### [Get-MgBetaGroupSubSiteCount](Get-MgBetaGroupSubSiteCount.md)
-
-### [Get-MgBetaSite](Get-MgBetaSite.md)
 
 ### [Get-MgBetaSite](Get-MgBetaSite.md)
 
@@ -1070,10 +882,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSiteAnalytic](Get-MgBetaSiteAnalytic.md)
 
 ### [Get-MgBetaSiteAnalyticItemActivityStat](Get-MgBetaSiteAnalyticItemActivityStat.md)
-
-### [Get-MgBetaSiteAnalyticItemActivityStat](Get-MgBetaSiteAnalyticItemActivityStat.md)
-
-### [Get-MgBetaSiteAnalyticItemActivityStatActivity](Get-MgBetaSiteAnalyticItemActivityStatActivity.md)
 
 ### [Get-MgBetaSiteAnalyticItemActivityStatActivity](Get-MgBetaSiteAnalyticItemActivityStatActivity.md)
 
@@ -1097,8 +905,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteColumn](Get-MgBetaSiteColumn.md)
 
-### [Get-MgBetaSiteColumn](Get-MgBetaSiteColumn.md)
-
 ### [Get-MgBetaSiteColumnCount](Get-MgBetaSiteColumnCount.md)
 
 ### [Get-MgBetaSiteColumnSourceColumn](Get-MgBetaSiteColumnSourceColumn.md)
@@ -1107,11 +913,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteContentType](Get-MgBetaSiteContentType.md)
 
-### [Get-MgBetaSiteContentType](Get-MgBetaSiteContentType.md)
-
 ### [Get-MgBetaSiteContentTypeBase](Get-MgBetaSiteContentTypeBase.md)
-
-### [Get-MgBetaSiteContentTypeBaseType](Get-MgBetaSiteContentTypeBaseType.md)
 
 ### [Get-MgBetaSiteContentTypeBaseType](Get-MgBetaSiteContentTypeBaseType.md)
 
@@ -1119,17 +921,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteContentTypeColumn](Get-MgBetaSiteContentTypeColumn.md)
 
-### [Get-MgBetaSiteContentTypeColumn](Get-MgBetaSiteContentTypeColumn.md)
-
 ### [Get-MgBetaSiteContentTypeColumnCount](Get-MgBetaSiteContentTypeColumnCount.md)
 
 ### [Get-MgBetaSiteContentTypeColumnLink](Get-MgBetaSiteContentTypeColumnLink.md)
 
-### [Get-MgBetaSiteContentTypeColumnLink](Get-MgBetaSiteContentTypeColumnLink.md)
-
 ### [Get-MgBetaSiteContentTypeColumnLinkCount](Get-MgBetaSiteContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaSiteContentTypeColumnPosition](Get-MgBetaSiteContentTypeColumnPosition.md)
 
 ### [Get-MgBetaSiteContentTypeColumnPosition](Get-MgBetaSiteContentTypeColumnPosition.md)
 
@@ -1149,11 +945,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteDrive](Get-MgBetaSiteDrive.md)
 
-### [Get-MgBetaSiteDrive](Get-MgBetaSiteDrive.md)
-
 ### [Get-MgBetaSiteDriveCount](Get-MgBetaSiteDriveCount.md)
-
-### [Get-MgBetaSiteExternalColumn](Get-MgBetaSiteExternalColumn.md)
 
 ### [Get-MgBetaSiteExternalColumn](Get-MgBetaSiteExternalColumn.md)
 
@@ -1168,8 +960,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSiteGetByPathColumn](Get-MgBetaSiteGetByPathColumn.md)
 
 ### [Get-MgBetaSiteGetByPathContentType](Get-MgBetaSiteGetByPathContentType.md)
-
-### [Get-MgBetaSiteGetByPathDrive](Get-MgBetaSiteGetByPathDrive.md)
 
 ### [Get-MgBetaSiteGetByPathDrive](Get-MgBetaSiteGetByPathDrive.md)
 
@@ -1205,11 +995,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteList](Get-MgBetaSiteList.md)
 
-### [Get-MgBetaSiteList](Get-MgBetaSiteList.md)
-
 ### [Get-MgBetaSiteListActivity](Get-MgBetaSiteListActivity.md)
-
-### [Get-MgBetaSiteListColumn](Get-MgBetaSiteListColumn.md)
 
 ### [Get-MgBetaSiteListColumn](Get-MgBetaSiteListColumn.md)
 
@@ -1219,21 +1005,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteListContentType](Get-MgBetaSiteListContentType.md)
 
-### [Get-MgBetaSiteListContentType](Get-MgBetaSiteListContentType.md)
-
-### [Get-MgBetaSiteListContentTypeColumn](Get-MgBetaSiteListContentTypeColumn.md)
-
 ### [Get-MgBetaSiteListContentTypeColumn](Get-MgBetaSiteListContentTypeColumn.md)
 
 ### [Get-MgBetaSiteListContentTypeColumnCount](Get-MgBetaSiteListContentTypeColumnCount.md)
 
 ### [Get-MgBetaSiteListContentTypeColumnLink](Get-MgBetaSiteListContentTypeColumnLink.md)
 
-### [Get-MgBetaSiteListContentTypeColumnLink](Get-MgBetaSiteListContentTypeColumnLink.md)
-
 ### [Get-MgBetaSiteListContentTypeColumnLinkCount](Get-MgBetaSiteListContentTypeColumnLinkCount.md)
-
-### [Get-MgBetaSiteListContentTypeColumnPosition](Get-MgBetaSiteListContentTypeColumnPosition.md)
 
 ### [Get-MgBetaSiteListContentTypeColumnPosition](Get-MgBetaSiteListContentTypeColumnPosition.md)
 
@@ -1258,10 +1036,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSiteListDrive](Get-MgBetaSiteListDrive.md)
 
 ### [Get-MgBetaSiteListItem](Get-MgBetaSiteListItem.md)
-
-### [Get-MgBetaSiteListItem](Get-MgBetaSiteListItem.md)
-
-### [Get-MgBetaSiteListItemActivity](Get-MgBetaSiteListItemActivity.md)
 
 ### [Get-MgBetaSiteListItemActivity](Get-MgBetaSiteListItemActivity.md)
 
@@ -1291,8 +1065,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteListItemDocumentSetVersion](Get-MgBetaSiteListItemDocumentSetVersion.md)
 
-### [Get-MgBetaSiteListItemDocumentSetVersion](Get-MgBetaSiteListItemDocumentSetVersion.md)
-
 ### [Get-MgBetaSiteListItemDocumentSetVersionCount](Get-MgBetaSiteListItemDocumentSetVersionCount.md)
 
 ### [Get-MgBetaSiteListItemDocumentSetVersionField](Get-MgBetaSiteListItemDocumentSetVersionField.md)
@@ -1307,11 +1079,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteListItemPermission](Get-MgBetaSiteListItemPermission.md)
 
-### [Get-MgBetaSiteListItemPermission](Get-MgBetaSiteListItemPermission.md)
-
 ### [Get-MgBetaSiteListItemPermissionCount](Get-MgBetaSiteListItemPermissionCount.md)
-
-### [Get-MgBetaSiteListItemVersion](Get-MgBetaSiteListItemVersion.md)
 
 ### [Get-MgBetaSiteListItemVersion](Get-MgBetaSiteListItemVersion.md)
 
@@ -1321,17 +1089,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteListOperation](Get-MgBetaSiteListOperation.md)
 
-### [Get-MgBetaSiteListOperation](Get-MgBetaSiteListOperation.md)
-
 ### [Get-MgBetaSiteListOperationCount](Get-MgBetaSiteListOperationCount.md)
 
 ### [Get-MgBetaSiteListPermission](Get-MgBetaSiteListPermission.md)
 
-### [Get-MgBetaSiteListPermission](Get-MgBetaSiteListPermission.md)
-
 ### [Get-MgBetaSiteListPermissionCount](Get-MgBetaSiteListPermissionCount.md)
-
-### [Get-MgBetaSiteListSubscription](Get-MgBetaSiteListSubscription.md)
 
 ### [Get-MgBetaSiteListSubscription](Get-MgBetaSiteListSubscription.md)
 
@@ -1341,17 +1103,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
 
-### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
-
 ### [Get-MgBetaSiteOperationCount](Get-MgBetaSiteOperationCount.md)
 
 ### [Get-MgBetaSiteOperationStatus](Get-MgBetaSiteOperationStatus.md)
 
 ### [Get-MgBetaSitePage](Get-MgBetaSitePage.md)
-
-### [Get-MgBetaSitePage](Get-MgBetaSitePage.md)
-
-### [Get-MgBetaSitePageAsSitePage](Get-MgBetaSitePageAsSitePage.md)
 
 ### [Get-MgBetaSitePageAsSitePage](Get-MgBetaSitePageAsSitePage.md)
 
@@ -1359,15 +1115,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection.md)
 
-### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection.md)
-
-### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
-
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
 
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
-
-### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
 
@@ -1376,8 +1126,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
 
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection.md)
-
-### [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 
@@ -1398,8 +1146,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
 
 ### [Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
-
-### [Get-MgBetaSitePageAsSitePageWebPart](Get-MgBetaSitePageAsSitePageWebPart.md)
 
 ### [Get-MgBetaSitePageAsSitePageWebPart](Get-MgBetaSitePageAsSitePageWebPart.md)
 
@@ -1433,13 +1179,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSitePermission](Get-MgBetaSitePermission.md)
 
-### [Get-MgBetaSitePermission](Get-MgBetaSitePermission.md)
-
 ### [Get-MgBetaSitePermissionCount](Get-MgBetaSitePermissionCount.md)
 
 ### [Get-MgBetaSiteTermStore](Get-MgBetaSiteTermStore.md)
-
-### [Get-MgBetaSiteTermStoreGroup](Get-MgBetaSiteTermStoreGroup.md)
 
 ### [Get-MgBetaSiteTermStoreGroup](Get-MgBetaSiteTermStoreGroup.md)
 
@@ -1447,15 +1189,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreGroupSet](Get-MgBetaSiteTermStoreGroupSet.md)
 
-### [Get-MgBetaSiteTermStoreGroupSet](Get-MgBetaSiteTermStoreGroupSet.md)
-
-### [Get-MgBetaSiteTermStoreGroupSetChild](Get-MgBetaSiteTermStoreGroupSetChild.md)
-
 ### [Get-MgBetaSiteTermStoreGroupSetChild](Get-MgBetaSiteTermStoreGroupSetChild.md)
 
 ### [Get-MgBetaSiteTermStoreGroupSetChildCount](Get-MgBetaSiteTermStoreGroupSetChildCount.md)
-
-### [Get-MgBetaSiteTermStoreGroupSetChildRelation](Get-MgBetaSiteTermStoreGroupSetChildRelation.md)
 
 ### [Get-MgBetaSiteTermStoreGroupSetChildRelation](Get-MgBetaSiteTermStoreGroupSetChildRelation.md)
 
@@ -1475,8 +1211,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreGroupSetRelation](Get-MgBetaSiteTermStoreGroupSetRelation.md)
 
-### [Get-MgBetaSiteTermStoreGroupSetRelation](Get-MgBetaSiteTermStoreGroupSetRelation.md)
-
 ### [Get-MgBetaSiteTermStoreGroupSetRelationCount](Get-MgBetaSiteTermStoreGroupSetRelationCount.md)
 
 ### [Get-MgBetaSiteTermStoreGroupSetRelationFromTerm](Get-MgBetaSiteTermStoreGroupSetRelationFromTerm.md)
@@ -1487,15 +1221,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreGroupSetTerm](Get-MgBetaSiteTermStoreGroupSetTerm.md)
 
-### [Get-MgBetaSiteTermStoreGroupSetTerm](Get-MgBetaSiteTermStoreGroupSetTerm.md)
-
-### [Get-MgBetaSiteTermStoreGroupSetTermChild](Get-MgBetaSiteTermStoreGroupSetTermChild.md)
-
 ### [Get-MgBetaSiteTermStoreGroupSetTermChild](Get-MgBetaSiteTermStoreGroupSetTermChild.md)
 
 ### [Get-MgBetaSiteTermStoreGroupSetTermChildCount](Get-MgBetaSiteTermStoreGroupSetTermChildCount.md)
-
-### [Get-MgBetaSiteTermStoreGroupSetTermChildRelation](Get-MgBetaSiteTermStoreGroupSetTermChildRelation.md)
 
 ### [Get-MgBetaSiteTermStoreGroupSetTermChildRelation](Get-MgBetaSiteTermStoreGroupSetTermChildRelation.md)
 
@@ -1513,8 +1241,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreGroupSetTermRelation](Get-MgBetaSiteTermStoreGroupSetTermRelation.md)
 
-### [Get-MgBetaSiteTermStoreGroupSetTermRelation](Get-MgBetaSiteTermStoreGroupSetTermRelation.md)
-
 ### [Get-MgBetaSiteTermStoreGroupSetTermRelationCount](Get-MgBetaSiteTermStoreGroupSetTermRelationCount.md)
 
 ### [Get-MgBetaSiteTermStoreGroupSetTermRelationFromTerm](Get-MgBetaSiteTermStoreGroupSetTermRelationFromTerm.md)
@@ -1527,15 +1253,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreSet](Get-MgBetaSiteTermStoreSet.md)
 
-### [Get-MgBetaSiteTermStoreSet](Get-MgBetaSiteTermStoreSet.md)
-
-### [Get-MgBetaSiteTermStoreSetChild](Get-MgBetaSiteTermStoreSetChild.md)
-
 ### [Get-MgBetaSiteTermStoreSetChild](Get-MgBetaSiteTermStoreSetChild.md)
 
 ### [Get-MgBetaSiteTermStoreSetChildCount](Get-MgBetaSiteTermStoreSetChildCount.md)
-
-### [Get-MgBetaSiteTermStoreSetChildRelation](Get-MgBetaSiteTermStoreSetChildRelation.md)
 
 ### [Get-MgBetaSiteTermStoreSetChildRelation](Get-MgBetaSiteTermStoreSetChildRelation.md)
 
@@ -1555,15 +1275,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSet](Get-MgBetaSiteTermStoreSetParentGroupSet.md)
 
-### [Get-MgBetaSiteTermStoreSetParentGroupSet](Get-MgBetaSiteTermStoreSetParentGroupSet.md)
-
-### [Get-MgBetaSiteTermStoreSetParentGroupSetChild](Get-MgBetaSiteTermStoreSetParentGroupSetChild.md)
-
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetChild](Get-MgBetaSiteTermStoreSetParentGroupSetChild.md)
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetChildCount](Get-MgBetaSiteTermStoreSetParentGroupSetChildCount.md)
-
-### [Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation](Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation.md)
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation](Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation.md)
 
@@ -1581,8 +1295,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetRelation](Get-MgBetaSiteTermStoreSetParentGroupSetRelation.md)
 
-### [Get-MgBetaSiteTermStoreSetParentGroupSetRelation](Get-MgBetaSiteTermStoreSetParentGroupSetRelation.md)
-
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetRelationCount](Get-MgBetaSiteTermStoreSetParentGroupSetRelationCount.md)
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetRelationFromTerm](Get-MgBetaSiteTermStoreSetParentGroupSetRelationFromTerm.md)
@@ -1593,15 +1305,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTerm](Get-MgBetaSiteTermStoreSetParentGroupSetTerm.md)
 
-### [Get-MgBetaSiteTermStoreSetParentGroupSetTerm](Get-MgBetaSiteTermStoreSetParentGroupSetTerm.md)
-
-### [Get-MgBetaSiteTermStoreSetParentGroupSetTermChild](Get-MgBetaSiteTermStoreSetParentGroupSetTermChild.md)
-
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermChild](Get-MgBetaSiteTermStoreSetParentGroupSetTermChild.md)
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermChildCount](Get-MgBetaSiteTermStoreSetParentGroupSetTermChildCount.md)
-
-### [Get-MgBetaSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgBetaSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermChildRelation](Get-MgBetaSiteTermStoreSetParentGroupSetTermChildRelation.md)
 
@@ -1619,8 +1325,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation](Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation.md)
 
-### [Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation](Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation.md)
-
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermRelationCount](Get-MgBetaSiteTermStoreSetParentGroupSetTermRelationCount.md)
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermRelationFromTerm](Get-MgBetaSiteTermStoreSetParentGroupSetTermRelationFromTerm.md)
@@ -1630,8 +1334,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermRelationToTerm](Get-MgBetaSiteTermStoreSetParentGroupSetTermRelationToTerm.md)
 
 ### [Get-MgBetaSiteTermStoreSetParentGroupSetTermSet](Get-MgBetaSiteTermStoreSetParentGroupSetTermSet.md)
-
-### [Get-MgBetaSiteTermStoreSetRelation](Get-MgBetaSiteTermStoreSetRelation.md)
 
 ### [Get-MgBetaSiteTermStoreSetRelation](Get-MgBetaSiteTermStoreSetRelation.md)
 
@@ -1645,15 +1347,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreSetTerm](Get-MgBetaSiteTermStoreSetTerm.md)
 
-### [Get-MgBetaSiteTermStoreSetTerm](Get-MgBetaSiteTermStoreSetTerm.md)
-
-### [Get-MgBetaSiteTermStoreSetTermChild](Get-MgBetaSiteTermStoreSetTermChild.md)
-
 ### [Get-MgBetaSiteTermStoreSetTermChild](Get-MgBetaSiteTermStoreSetTermChild.md)
 
 ### [Get-MgBetaSiteTermStoreSetTermChildCount](Get-MgBetaSiteTermStoreSetTermChildCount.md)
-
-### [Get-MgBetaSiteTermStoreSetTermChildRelation](Get-MgBetaSiteTermStoreSetTermChildRelation.md)
 
 ### [Get-MgBetaSiteTermStoreSetTermChildRelation](Get-MgBetaSiteTermStoreSetTermChildRelation.md)
 
@@ -1671,8 +1367,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSiteTermStoreSetTermRelation](Get-MgBetaSiteTermStoreSetTermRelation.md)
 
-### [Get-MgBetaSiteTermStoreSetTermRelation](Get-MgBetaSiteTermStoreSetTermRelation.md)
-
 ### [Get-MgBetaSiteTermStoreSetTermRelationCount](Get-MgBetaSiteTermStoreSetTermRelationCount.md)
 
 ### [Get-MgBetaSiteTermStoreSetTermRelationFromTerm](Get-MgBetaSiteTermStoreSetTermRelationFromTerm.md)
@@ -1685,11 +1379,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaSubSite](Get-MgBetaSubSite.md)
 
-### [Get-MgBetaSubSite](Get-MgBetaSubSite.md)
-
 ### [Get-MgBetaSubSiteCount](Get-MgBetaSubSiteCount.md)
-
-### [Get-MgBetaUserFollowedSite](Get-MgBetaUserFollowedSite.md)
 
 ### [Get-MgBetaUserFollowedSite](Get-MgBetaUserFollowedSite.md)
 

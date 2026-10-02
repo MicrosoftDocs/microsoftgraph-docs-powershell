@@ -1,0 +1,50 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+#
+# Emits one fully independent stage per module for a given SDK profile. Each stage runs on its
+# own agent (clean assembly-load context), generates + post-processes docs for that single
+# module, and opens its own pull request. All stages have dependsOn: [] so they run in
+# parallel and one module can never block or fail another.
+
+parameters:
+  - name: GraphProfileFilter
+    type: string
+  # Short label used in stage names (stage names cannot contain '.'), e.g. "v1" or "beta".
+  - name: ProfileLabel
+    type: string
+  - name: Modules
+    type: object
+    default: []
+  - name: BranchPrefix
+    type: string
+    default: WeeklyDocs
+  - name: BaseBranch
+    type: string
+    default: main
+  - name: PipelineTimeout
+    type: number
+    default: 120
+
+stages:
+  - ${{ each module in parameters.Modules }}:
+    - stage: "Gen_${{ parameters.ProfileLabel }}_${{ replace(module, '.', '_') }}"
+      displayName: '${{ parameters.GraphProfileFilter }} - ${{ module }}'
+      dependsOn: []
+      jobs:
+        - job: GenerateModuleDocs
+          timeoutInMinutes: ${{ parameters.PipelineTimeout }}
+          templateContext:
+            outputs:
+              - output: pipelineArtifact
+                displayName: 'Publish missing external docs'
+                targetPath: missingexternaldocsurl
+                artifactName: "MissingExternalDocs-${{ parameters.ProfileLabel }}-${{ replace(module, '.', '-') }}"
+                publishLocation: 'Container'
+                condition: succeededOrFailed()
+          steps:
+            - template: generate-module-docs-steps.yml
+              parameters:
+                Module: ${{ module }}
+                GraphProfileFilter: ${{ parameters.GraphProfileFilter }}
+                BranchPrefix: ${{ parameters.BranchPrefix }}
+                BaseBranch: ${{ parameters.BaseBranch }}

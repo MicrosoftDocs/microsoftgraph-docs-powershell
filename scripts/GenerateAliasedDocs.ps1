@@ -6,12 +6,18 @@
     See related PR <https://github.com/microsoftgraph/msgraph-sdk-powershell/pull/2721> for more information.
 #>
 
+Param(
+    [ValidateSet("both", "v1.0", "beta")]
+    [string] $GraphProfileFilter = "both",
+    [string] $ModuleFilter = ""
+)
+
 function Start-GenerateAliasedDocs {
     $BreakingChangeReportV1Report = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/docs/PowerShellBreakingChanges-V1.0.csv")
     $BreakingChangeReportBetaReport = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/docs/PowerShellBreakingChanges-beta.csv")
     $Reports = @()
-    $Reports += $BreakingChangeReportV1Report
-    $Reports += $BreakingChangeReportBetaReport
+    if ($GraphProfileFilter -ne "beta") { $Reports += $BreakingChangeReportV1Report }
+    if ($GraphProfileFilter -ne "v1.0") { $Reports += $BreakingChangeReportBetaReport }
     foreach ($BreakingChangeReport in $Reports) {
         Import-Csv $BreakingChangeReport | ForEach-Object {
             $Command = $_."NewCmdlet"
@@ -39,6 +45,7 @@ function Copy-Files {
         if($CmdDetails){
             $Module = $CmdDetails.Module
             $Module = $Module.Replace("Beta.", "")
+            if (-not [string]::IsNullOrWhiteSpace($ModuleFilter) -and $Module -ne $ModuleFilter) { return }
             $Module = "$ModulePrefix.$Module"
             $NewDoc = (Join-Path $PSScriptRoot "../microsoftgraph" $GraphProfilePath $Module "$Command.md")
             if(Test-Path $NewDoc) {

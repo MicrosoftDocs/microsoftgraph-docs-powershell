@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjobondemand
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaServicePrincipalSynchronizationJobOnDemand
 ---
@@ -13,7 +13,7 @@ title: New-MgBetaServicePrincipalSynchronizationJobOnDemand
 
 ## SYNOPSIS
 
-Select a user and provision the account on-demand.
+Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
@@ -31,7 +31,7 @@ New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId <string
  [-Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Provision
@@ -43,7 +43,6 @@ New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId <string
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ProvisionViaIdentityExpanded
@@ -54,7 +53,7 @@ New-MgBetaServicePrincipalSynchronizationJobOnDemand -InputObject <IApplications
  [-Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### ProvisionViaIdentity
@@ -65,7 +64,6 @@ New-MgBetaServicePrincipalSynchronizationJobOnDemand -InputObject <IApplications
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -75,7 +73,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Select a user and provision the account on-demand.
+Select a user and provision the account on-demand for a synchronizationJob.
 The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 

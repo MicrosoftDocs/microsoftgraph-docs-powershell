@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemlistitempermissioncount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserDriveItemListItemPermissionCount
 ---
@@ -15,6 +15,9 @@ title: Get-MgBetaUserDriveItemListItemPermissionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemListItemPermissionCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemListItemPermissionCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -24,7 +27,7 @@ Get-MgBetaUserDriveItemListItemPermissionCount -DriveId <string> -DriveItemId <s
  -UserId <string> [-Filter <string>] [-Search <string>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -33,7 +36,7 @@ Get-MgBetaUserDriveItemListItemPermissionCount -DriveId <string> -DriveItemId <s
 Get-MgBetaUserDriveItemListItemPermissionCount -InputObject <IFilesIdentity> [-Filter <string>]
  [-Search <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES

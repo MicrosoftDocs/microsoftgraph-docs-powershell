@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdefinitioninstancebycurrentuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser
 ---
@@ -28,7 +28,7 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser
  [-Filter <string>] [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>]
  [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### FilterViaIdentity
@@ -39,7 +39,7 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -60,7 +60,7 @@ Returns all accessReviewInstance objects on a given accessReviewScheduleDefiniti
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List access review instances assigned directly or through delegation to the current user
 
 ```powershell
 
@@ -69,7 +69,29 @@ Import-Module Microsoft.Graph.Beta.Identity.Governance
 Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -On $onId 
 
 ```
-This example shows how to use the Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser Cmdlet.
+This example will list access review instances assigned directly or through delegation to the current user
+
+### Example 2: List access review instances delegated to the current user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -Property "id,displayName,status,delegatedBy" 
+
+```
+This example will list access review instances delegated to the current user
+
+### Example 3: List access review instances directly assigned to the current user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -Property "id,displayName,status" 
+
+```
+This example will list access review instances directly assigned to the current user
 
 
 ## PARAMETERS
@@ -551,12 +573,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -592,6 +616,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

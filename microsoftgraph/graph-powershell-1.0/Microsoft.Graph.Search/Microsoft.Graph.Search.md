@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Search
-Module Guid: 9b5ff57f-0ddf-4771-b8d1-8daa75c99617
+Module Guid: 4e0bd5d0-4607-4bb9-92a3-390a7dc1e07d
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.search/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,11 +17,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgExternalConnection](Get-MgExternalConnection.md)
 
-### [Get-MgExternalConnection](Get-MgExternalConnection.md)
-
 ### [Get-MgExternalConnectionCount](Get-MgExternalConnectionCount.md)
-
-### [Get-MgExternalConnectionGroup](Get-MgExternalConnectionGroup.md)
 
 ### [Get-MgExternalConnectionGroup](Get-MgExternalConnectionGroup.md)
 
@@ -29,15 +25,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgExternalConnectionGroupMember](Get-MgExternalConnectionGroupMember.md)
 
-### [Get-MgExternalConnectionGroupMember](Get-MgExternalConnectionGroupMember.md)
-
 ### [Get-MgExternalConnectionGroupMemberCount](Get-MgExternalConnectionGroupMemberCount.md)
 
 ### [Get-MgExternalConnectionItem](Get-MgExternalConnectionItem.md)
-
-### [Get-MgExternalConnectionItem](Get-MgExternalConnectionItem.md)
-
-### [Get-MgExternalConnectionItemActivity](Get-MgExternalConnectionItemActivity.md)
 
 ### [Get-MgExternalConnectionItemActivity](Get-MgExternalConnectionItemActivity.md)
 
@@ -49,13 +39,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgExternalConnectionOperation](Get-MgExternalConnectionOperation.md)
 
-### [Get-MgExternalConnectionOperation](Get-MgExternalConnectionOperation.md)
-
 ### [Get-MgExternalConnectionOperationCount](Get-MgExternalConnectionOperationCount.md)
 
 ### [Get-MgExternalConnectionSchema](Get-MgExternalConnectionSchema.md)
-
-### [Get-MgSearchAcronym](Get-MgSearchAcronym.md)
 
 ### [Get-MgSearchAcronym](Get-MgSearchAcronym.md)
 
@@ -63,13 +49,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSearchBookmark](Get-MgSearchBookmark.md)
 
-### [Get-MgSearchBookmark](Get-MgSearchBookmark.md)
-
 ### [Get-MgSearchBookmarkCount](Get-MgSearchBookmarkCount.md)
 
 ### [Get-MgSearchEntity](Get-MgSearchEntity.md)
-
-### [Get-MgSearchQna](Get-MgSearchQna.md)
 
 ### [Get-MgSearchQna](Get-MgSearchQna.md)
 

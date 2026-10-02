@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschema
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgServicePrincipalSynchronizationJobSchema
 ---
@@ -13,7 +13,7 @@ title: Update-MgServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
 
-Update the synchronization schema for a given job or template.
+Update the synchronizationSchema for a given job or template.
 This method fully replaces the current schema with the one provided in the request.
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
@@ -32,7 +32,7 @@ Update-MgServicePrincipalSynchronizationJobSchema -ServicePrincipalId <string>
  [-Id <string>] [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -43,7 +43,6 @@ Update-MgServicePrincipalSynchronizationJobSchema -ServicePrincipalId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,7 +54,7 @@ Update-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIde
  [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +64,7 @@ Update-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIde
  -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -75,7 +74,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the synchronization schema for a given job or template.
+Update the synchronizationSchema for a given job or template.
 This method fully replaces the current schema with the one provided in the request.
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
@@ -773,6 +772,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition

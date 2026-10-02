@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewinstancedecisioninstancestage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage
 ---
@@ -29,7 +29,7 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-StartDateTime <datetime>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,7 +41,6 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,7 +54,7 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-StartDateTime <datetime>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +65,6 @@ Update-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -730,6 +728,11 @@ Read-only.
     [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
       [Id <String>]: The unique identifier for an entity.
@@ -923,6 +926,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+      [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
       [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -986,7 +993,7 @@ Read-only.
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Resource ID
       [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
     [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1045,6 +1052,11 @@ Read-only.
   [Decision <String>]: Result of the review.
 Possible values: Approve, Deny, NotReviewed, or DontKnow.
 Supports $select, $orderby, and $filter (eq only).
+  [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this decision item to the current reviewer.
+Null if the item wasn't delegated.
+A collection because multiple reviewers can delegate to the same user.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
   [Insights <IMicrosoftGraphGovernanceInsight[]>]: Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
     [Id <String>]: The unique identifier for an entity.
@@ -1238,6 +1250,10 @@ Required.
 The typical states include Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
+    [DelegatedBy <IMicrosoftGraphUserIdentity[]>]: The identities of users who delegated this review instance to the current reviewer.
+Null if the instance wasn't delegated.
+Only returned via filterByCurrentUser when explicitly requested via $select.
+Read-only.
     [EndDateTime <DateTime?>]: DateTime when review instance is scheduled to end.
 The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1323,7 +1339,7 @@ Read-only.
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Resource ID
     [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy, and CustomDataProvidedResource.
   [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -1389,12 +1405,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -1430,6 +1448,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

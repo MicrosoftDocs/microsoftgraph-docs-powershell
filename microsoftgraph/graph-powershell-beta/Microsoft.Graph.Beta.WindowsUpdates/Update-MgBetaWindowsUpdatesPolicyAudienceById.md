@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudiencebyid
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaWindowsUpdatesPolicyAudienceById
 ---
@@ -14,7 +14,7 @@ title: Update-MgBetaWindowsUpdatesPolicyAudienceById
 ## SYNOPSIS
 
 Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type.
-Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it does not already exist.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it doesn't already exist.
 If the same updatableAsset gets included in the exclusions and members collections of a deploymentAudience, deployment will not apply to that asset.
 You can also use the method updateAudience to update the deploymentAudience.
 
@@ -29,7 +29,6 @@ Update-MgBetaWindowsUpdatesPolicyAudienceById -UpdatePolicyId <string>
  [-RemoveMembers <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +39,6 @@ Update-MgBetaWindowsUpdatesPolicyAudienceById -UpdatePolicyId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +50,6 @@ Update-MgBetaWindowsUpdatesPolicyAudienceById -InputObject <IWindowsUpdatesIdent
  [-RemoveMembers <string[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +60,6 @@ Update-MgBetaWindowsUpdatesPolicyAudienceById -InputObject <IWindowsUpdatesIdent
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -74,7 +70,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type.
-Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it does not already exist.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates a Microsoft Entra device object if it doesn't already exist.
 If the same updatableAsset gets included in the exclusions and members collections of a deploymentAudience, deployment will not apply to that asset.
 You can also use the method updateAudience to update the deploymentAudience.
 
@@ -612,9 +608,12 @@ INPUTOBJECT `<IWindowsUpdatesIdentity>`: Identity Parameter
   [EditionId <String>]: The unique identifier of edition
   [KbNumber <Int32?>]: Usage: kbNumber={kbNumber}
   [KnownIssueId <String>]: The unique identifier of knownIssue
+  [PolicyApprovalId <String>]: The unique identifier of policyApproval
+  [PolicyId <String>]: The unique identifier of policy
   [ProductId <String>]: The unique identifier of product
   [ProductRevisionId <String>]: The unique identifier of productRevision
   [ResourceConnectionId <String>]: The unique identifier of resourceConnection
+  [RingId <String>]: The unique identifier of ring
   [UpdatableAssetId <String>]: The unique identifier of updatableAsset
   [UpdatePolicyId <String>]: The unique identifier of updatePolicy
 

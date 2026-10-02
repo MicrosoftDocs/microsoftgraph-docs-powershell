@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatasecurityandgovernance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityDataSecurityAndGovernance
 ---
@@ -24,11 +24,11 @@ Update the navigation property dataSecurityAndGovernance in security
 
 ```
 Update-MgBetaSecurityDataSecurityAndGovernance [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Id <string>] [-PolicyFiles <IMicrosoftGraphPolicyFile[]>]
- [-ProtectionScopes <hashtable>] [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Activities <hashtable>] [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-PolicyFiles <IMicrosoftGraphPolicyFile[]>] [-ProtectionScopes <hashtable>]
+ [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +38,7 @@ Update-MgBetaSecurityDataSecurityAndGovernance
  -BodyParameter <IMicrosoftGraphTenantDataSecurityAndGovernance> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -51,6 +51,27 @@ This cmdlet has the following aliases,
 Update the navigation property dataSecurityAndGovernance in security
 
 ## PARAMETERS
+
+### -Activities
+
+tenantActivitiesContainer
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -AdditionalProperties
 
@@ -437,6 +458,7 @@ Read-only.
     [Color <String>]: 
     [Description <String>]: 
     [DisplayName <String>]: 
+    [HasProtection <Boolean?>]: 
     [IsDefault <Boolean?>]: 
     [IsEnabled <Boolean?>]: 
     [IsEndpointProtectionEnabled <Boolean?>]: 
@@ -454,6 +476,10 @@ Read-only.
     [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
     [ToolTip <String>]: 
   [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Activities <IMicrosoftGraphTenantActivitiesContainer>]: tenantActivitiesContainer
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
   [PolicyFiles <IMicrosoftGraphPolicyFile[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -485,6 +511,7 @@ Read-only.
   [Color <String>]: 
   [Description <String>]: 
   [DisplayName <String>]: 
+  [HasProtection <Boolean?>]: 
   [IsDefault <Boolean?>]: 
   [IsEnabled <Boolean?>]: 
   [IsEndpointProtectionEnabled <Boolean?>]: 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarregistrationconfigurationquestion
 Locale: en-US
 Module Name: Microsoft.Graph.Bookings
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion
 ---
@@ -13,7 +13,7 @@ title: Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion
 
 ## SYNOPSIS
 
-Delete a registration question from a webinar.
+Delete a registration question from a webinar or town hall.
 The question can either be a predefined registration question or a custom registration question.
 
 > [!NOTE]
@@ -29,7 +29,6 @@ Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -39,7 +38,6 @@ Remove-MgVirtualEventWebinarRegistrationConfigurationQuestion -InputObject <IBoo
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -49,7 +47,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Delete a registration question from a webinar.
+Delete a registration question from a webinar or town hall.
 The question can either be a predefined registration question or a custom registration question.
 
 ## EXAMPLES

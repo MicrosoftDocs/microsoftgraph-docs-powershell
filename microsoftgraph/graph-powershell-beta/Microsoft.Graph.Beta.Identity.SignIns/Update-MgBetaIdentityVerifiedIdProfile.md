@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityVerifiedIdProfile
 ---
@@ -15,6 +15,9 @@ title: Update-MgBetaIdentityVerifiedIdProfile
 
 Update the properties of a verifiedIdProfile object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityVerifiedIdProfile](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityVerifiedIdProfile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23,12 +26,15 @@ Update the properties of a verifiedIdProfile object.
 Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Description <string>]
  [-FaceCheckConfiguration <IMicrosoftGraphFaceCheckConfiguration>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-Name <string>] [-Priority <int>] [-State <string>]
+ [-LastModifiedDateTime <datetime>]
+ [-MobileDriversLicenseConfiguration <IMicrosoftGraphMobileDriversLicenseConfiguration>]
+ [-Name <string>] [-Priority <int>]
+ [-SelfServiceIssuance <IMicrosoftGraphVerifiedIdSelfServiceIssuance>] [-State <string>]
  [-VerifiedIdProfileConfiguration <IMicrosoftGraphVerifiedIdProfileConfiguration>]
  [-VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]
  [-VerifierDid <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +44,7 @@ Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId <string>
  -BodyParameter <IMicrosoftGraphVerifiedIdProfile> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,12 +53,15 @@ Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId <string>
 Update-MgBetaIdentityVerifiedIdProfile -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>] [-Description <string>]
  [-FaceCheckConfiguration <IMicrosoftGraphFaceCheckConfiguration>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-Name <string>] [-Priority <int>] [-State <string>]
+ [-LastModifiedDateTime <datetime>]
+ [-MobileDriversLicenseConfiguration <IMicrosoftGraphMobileDriversLicenseConfiguration>]
+ [-Name <string>] [-Priority <int>]
+ [-SelfServiceIssuance <IMicrosoftGraphVerifiedIdSelfServiceIssuance>] [-State <string>]
  [-VerifiedIdProfileConfiguration <IMicrosoftGraphVerifiedIdProfileConfiguration>]
  [-VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]
  [-VerifierDid <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +71,7 @@ Update-MgBetaIdentityVerifiedIdProfile -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphVerifiedIdProfile> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,6 +82,28 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the properties of a verifiedIdProfile object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	verifiedIdUsageConfigurations = @(
+		@{
+			isEnabledForTestOnly = $false
+			purpose = "recovery"
+		}
+	)
+}
+
+Update-MgBetaIdentityVerifiedIdProfile -VerifiedIdProfileId $verifiedIdProfileId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaIdentityVerifiedIdProfile Cmdlet.
+
 
 ## PARAMETERS
 
@@ -377,6 +408,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -MobileDriversLicenseConfiguration
+
+mobileDriversLicenseConfiguration
+To construct, see NOTES section for MOBILEDRIVERSLICENSECONFIGURATION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileDriversLicenseConfiguration
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Name
 
 Display name for the verified ID profile.
@@ -518,6 +577,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SelfServiceIssuance
+
+verifiedIdSelfServiceIssuance
+To construct, see NOTES section for SELFSERVICEISSUANCE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVerifiedIdSelfServiceIssuance
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -State
 
 verifiedIdProfileState
@@ -603,7 +690,8 @@ HelpMessage: ''
 ### -VerifiedIdUsageConfigurations
 
 Collection defining the usage purpose for the profile.
-The possible values are: recovery, onboarding, all, unknownFutureValue.
+The possible values are: recovery, onboarding, all, unknownFutureValue, verification.
+Use the Prefer: include-unknown-enum-members request header to get the following value from this evolvable enum: verification.
 Required.
 To construct, see NOTES section for VERIFIEDIDUSAGECONFIGURATIONS properties and create a hash table.
 
@@ -722,26 +810,49 @@ Read-only.
 Required.
   [FaceCheckConfiguration <IMicrosoftGraphFaceCheckConfiguration>]: faceCheckConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [IsEnabled <Boolean?>]: Defines if Face Check is required.
-Currently must always be true.
-    [SourcePhotoClaimName <String>]: 
+    [IsEnabled <Boolean?>]: Indicates whether Face Check is required.
+Currently must be true.
+    [SourcePhotoClaimName <String>]: The source claim name for the photo used to validate Face Check.
+Currently must be portrait.
   [LastModifiedDateTime <DateTime?>]: DateTime the profile was last modified.
 Optional.
+  [MobileDriversLicenseConfiguration <IMicrosoftGraphMobileDriversLicenseConfiguration>]: mobileDriversLicenseConfiguration
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AcceptedRegions <String[]>]: The ISO 3166-2 region codes accepted for mobile driver's licenses.
+An empty collection indicates all regions are accepted.
+    [DocumentStandard <String>]: The document standard that accepted mobile driver's licenses must use, such as ISO18013-5.
   [Name <String>]: Display name for the verified ID profile.
 Required.
   [Priority <Int32?>]: Defines profile processing priority if multiple profiles are configured.
 Optional.
+  [SelfServiceIssuance <IMicrosoftGraphVerifiedIdSelfServiceIssuance>]: verifiedIdSelfServiceIssuance
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [IsEnabled <Boolean?>]: Indicates whether self-service issuance is enabled.
+    [IssuanceUrl <String>]: The HTTPS URL where users can start self-service issuance to obtain the credential when required by the credential type.
   [State <String>]: verifiedIdProfileState
   [VerifiedIdProfileConfiguration <IMicrosoftGraphVerifiedIdProfileConfiguration>]: verifiedIdProfileConfiguration
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AcceptedIssuer <String>]: Trusted Verified ID issuer.
+Required.
     [ClaimBindingSource <String>]: claimBindingSource
     [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
-      [SourceAttribute <String>]: Source attribute value
-      [VerifiedIdClaim <String>]: Entra ID attribute value
+Required.
+      [MatchConfidenceLevel <String>]: matchConfidenceLevel
+      [SourceAttribute <String>]: The source attribute from the directory or credential.
+      [VerifiedIdClaim <String>]: The claim name in the verified ID credential.
+    [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
+      [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
+    [ManifestUrl <String>]: The URL where the credential issuer's manifest can be found.
+The manifest defines the credential schema and issuer details.
+Optional.
+    [MethodType <String>]: verifiedIdMethodType
     [Type <String>]: Verified ID type.
+Required.
   [VerifiedIdUsageConfigurations <IMicrosoftGraphVerifiedIdUsageConfiguration[]>]: Collection defining the usage purpose for the profile.
-The possible values are: recovery, onboarding, all, unknownFutureValue.
+The possible values are: recovery, onboarding, all, unknownFutureValue, verification.
+Use the Prefer: include-unknown-enum-members request header to get the following value from this evolvable enum: verification.
 Required.
     [IsEnabledForTestOnly <Boolean?>]: Sets profile usage for evaluation (test-only) or production.
     [Purpose <String>]: verifiedIdUsageConfigurationPurpose
@@ -750,9 +861,10 @@ Required.
 
 FACECHECKCONFIGURATION `<IMicrosoftGraphFaceCheckConfiguration>`: faceCheckConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [IsEnabled <Boolean?>]: Defines if Face Check is required.
-Currently must always be true.
-  [SourcePhotoClaimName <String>]: 
+  [IsEnabled <Boolean?>]: Indicates whether Face Check is required.
+Currently must be true.
+  [SourcePhotoClaimName <String>]: The source claim name for the photo used to validate Face Check.
+Currently must be portrait.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
@@ -804,6 +916,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -819,6 +932,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -851,17 +965,41 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
+MOBILEDRIVERSLICENSECONFIGURATION `<IMicrosoftGraphMobileDriversLicenseConfiguration>`: mobileDriversLicenseConfiguration
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [AcceptedRegions <String[]>]: The ISO 3166-2 region codes accepted for mobile driver's licenses.
+An empty collection indicates all regions are accepted.
+  [DocumentStandard <String>]: The document standard that accepted mobile driver's licenses must use, such as ISO18013-5.
+
+SELFSERVICEISSUANCE `<IMicrosoftGraphVerifiedIdSelfServiceIssuance>`: verifiedIdSelfServiceIssuance
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [IsEnabled <Boolean?>]: Indicates whether self-service issuance is enabled.
+  [IssuanceUrl <String>]: The HTTPS URL where users can start self-service issuance to obtain the credential when required by the credential type.
+
 VERIFIEDIDPROFILECONFIGURATION `<IMicrosoftGraphVerifiedIdProfileConfiguration>`: verifiedIdProfileConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AcceptedIssuer <String>]: Trusted Verified ID issuer.
+Required.
   [ClaimBindingSource <String>]: claimBindingSource
   [ClaimBindings <IMicrosoftGraphClaimBinding[]>]: Claim bindings from Verified ID to source attributes.
-    [SourceAttribute <String>]: Source attribute value
-    [VerifiedIdClaim <String>]: Entra ID attribute value
+Required.
+    [MatchConfidenceLevel <String>]: matchConfidenceLevel
+    [SourceAttribute <String>]: The source attribute from the directory or credential.
+    [VerifiedIdClaim <String>]: The claim name in the verified ID credential.
+  [ClaimValidation <IMicrosoftGraphClaimValidation>]: claimValidation
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [CustomExtensionId <String>]: The identifier of a custom extension for claim validation.
+    [IsEnabled <Boolean?>]: Indicates whether claim validation is enabled.
+  [ManifestUrl <String>]: The URL where the credential issuer's manifest can be found.
+The manifest defines the credential schema and issuer details.
+Optional.
+  [MethodType <String>]: verifiedIdMethodType
   [Type <String>]: Verified ID type.
+Required.
 
 VERIFIEDIDUSAGECONFIGURATIONS <IMicrosoftGraphVerifiedIdUsageConfiguration[]>: Collection defining the usage purpose for the profile.
-The possible values are: recovery, onboarding, all, unknownFutureValue.
+The possible values are: recovery, onboarding, all, unknownFutureValue, verification.
+Use the Prefer: include-unknown-enum-members request header to get the following value from this evolvable enum: verification.
 Required.
   [IsEnabledForTestOnly <Boolean?>]: Sets profile usage for evaluation (test-only) or production.
   [Purpose <String>]: verifiedIdUsageConfigurationPurpose
@@ -871,7 +1009,6 @@ Required.
 
 - [Update-MgBetaIdentityVerifiedIdProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityverifiedidprofile)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/verifiedidprofile-update?view=graph-rest-beta)
-
 
 
 

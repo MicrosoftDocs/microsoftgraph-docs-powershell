@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementwindowsmanagedappprotection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagementWindowsManagedAppProtection
 ---
@@ -22,8 +22,10 @@ Update the navigation property windowsManagedAppProtections in deviceAppManageme
 ```
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppProtectionId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations>]
  [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
+ [-AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations>]
  [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>]
@@ -42,7 +44,6 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppPr
  [-PrintBlocked] [-RoleScopeTagIds <string[]>] [-Version <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -52,7 +53,7 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppPr
  -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -61,8 +62,10 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection -WindowsManagedAppPr
 Update-MgBetaDeviceAppManagementWindowsManagedAppProtection
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>]
+ [-AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations>]
  [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
  [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
+ [-AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations>]
  [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>]
@@ -81,7 +84,6 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection
  [-PrintBlocked] [-RoleScopeTagIds <string[]>] [-Version <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -92,7 +94,7 @@ Update-MgBetaDeviceAppManagementWindowsManagedAppProtection
  -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -120,6 +122,33 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AllowedInboundDataTransferSourceApps
+
+Windows MAM data transfer locations
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppDataTransferLocations
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -174,6 +203,33 @@ Represents the level to which the device's clipboard may be shared between apps
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppClipboardSharingLevel
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AllowedOutboundDataTransferDestinationApps
+
+Windows MAM data transfer locations
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsManagedAppDataTransferLocations
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1385,8 +1441,10 @@ BODYPARAMETER `<IMicrosoftGraphWindowsManagedAppProtection>`: Policy used to con
   [Version <String>]: Version of the entity.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel?>]: Represents the level to which the device's clipboard may be shared between apps
+  [AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [Apps <IMicrosoftGraphManagedMobileApp[]>]: List of apps to which the policy is deployed.

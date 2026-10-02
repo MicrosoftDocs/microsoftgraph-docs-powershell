@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaGroupSiteListPermission
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaGroupSiteListPermission
 ## SYNOPSIS
 
 Delete navigation property permissions for groups
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteListPermission](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,6 @@ Remove-MgBetaGroupSiteListPermission -GroupId <string> -ListId <string> -Permiss
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -35,7 +37,6 @@ Remove-MgBetaGroupSiteListPermission -InputObject <ISitesIdentity> [-IfMatch <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

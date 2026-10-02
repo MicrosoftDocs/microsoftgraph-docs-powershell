@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-Module Guid: 777c43ce-9063-474e-a0bb-568105a2fe86
+Module Guid: 06d49ffd-8508-4614-8047-43c722777be7
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.networkaccess/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,8 +13,6 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.NetworkAccess Cmdlets
 ### [Get-MgBetaNetworkAccessAlert](Get-MgBetaNetworkAccessAlert.md)
 
-### [Get-MgBetaNetworkAccessAlert](Get-MgBetaNetworkAccessAlert.md)
-
 ### [Get-MgBetaNetworkAccessAlertCount](Get-MgBetaNetworkAccessAlertCount.md)
 
 ### [Get-MgBetaNetworkAccessAlertFrequency](Get-MgBetaNetworkAccessAlertFrequency.md)
@@ -25,15 +23,19 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessAlertSummary](Get-MgBetaNetworkAccessAlertSummary.md)
 
+### [Get-MgBetaNetworkAccessCloudFirewallPolicy](Get-MgBetaNetworkAccessCloudFirewallPolicy.md)
+
+### [Get-MgBetaNetworkAccessCloudFirewallPolicyCount](Get-MgBetaNetworkAccessCloudFirewallPolicyCount.md)
+
+### [Get-MgBetaNetworkAccessCloudFirewallPolicyRule](Get-MgBetaNetworkAccessCloudFirewallPolicyRule.md)
+
+### [Get-MgBetaNetworkAccessCloudFirewallPolicyRuleCount](Get-MgBetaNetworkAccessCloudFirewallPolicyRuleCount.md)
+
 ### [Get-MgBetaNetworkAccessConnectivity](Get-MgBetaNetworkAccessConnectivity.md)
 
 ### [Get-MgBetaNetworkAccessConnectivityBranch](Get-MgBetaNetworkAccessConnectivityBranch.md)
 
-### [Get-MgBetaNetworkAccessConnectivityBranch](Get-MgBetaNetworkAccessConnectivityBranch.md)
-
 ### [Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfiguration](Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfiguration.md)
-
-### [Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink](Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink.md)
 
 ### [Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink](Get-MgBetaNetworkAccessConnectivityBranchConnectivityConfigurationLink.md)
 
@@ -43,17 +45,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessConnectivityBranchDeviceLink](Get-MgBetaNetworkAccessConnectivityBranchDeviceLink.md)
 
-### [Get-MgBetaNetworkAccessConnectivityBranchDeviceLink](Get-MgBetaNetworkAccessConnectivityBranchDeviceLink.md)
-
 ### [Get-MgBetaNetworkAccessConnectivityBranchDeviceLinkCount](Get-MgBetaNetworkAccessConnectivityBranchDeviceLinkCount.md)
 
 ### [Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile](Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile.md)
 
-### [Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile](Get-MgBetaNetworkAccessConnectivityBranchForwardingProfile.md)
-
 ### [Get-MgBetaNetworkAccessConnectivityBranchForwardingProfileCount](Get-MgBetaNetworkAccessConnectivityBranchForwardingProfileCount.md)
-
-### [Get-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy](Get-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy.md)
 
 ### [Get-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy](Get-MgBetaNetworkAccessConnectivityBranchForwardingProfilePolicy.md)
 
@@ -63,11 +59,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetwork](Get-MgBetaNetworkAccessConnectivityRemoteNetwork.md)
 
-### [Get-MgBetaNetworkAccessConnectivityRemoteNetwork](Get-MgBetaNetworkAccessConnectivityRemoteNetwork.md)
-
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration](Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfiguration.md)
-
-### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink](Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink.md)
 
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink](Get-MgBetaNetworkAccessConnectivityRemoteNetworkConnectivityConfigurationLink.md)
 
@@ -77,17 +69,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink](Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink.md)
 
-### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink](Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLink.md)
-
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLinkCount](Get-MgBetaNetworkAccessConnectivityRemoteNetworkDeviceLinkCount.md)
 
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile](Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile.md)
 
-### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile](Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfile.md)
-
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfileCount](Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfileCount.md)
-
-### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy](Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy.md)
 
 ### [Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy](Get-MgBetaNetworkAccessConnectivityRemoteNetworkForwardingProfilePolicy.md)
 
@@ -99,21 +85,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessFilteringPolicy](Get-MgBetaNetworkAccessFilteringPolicy.md)
 
-### [Get-MgBetaNetworkAccessFilteringPolicy](Get-MgBetaNetworkAccessFilteringPolicy.md)
-
 ### [Get-MgBetaNetworkAccessFilteringPolicyCount](Get-MgBetaNetworkAccessFilteringPolicyCount.md)
-
-### [Get-MgBetaNetworkAccessFilteringPolicyRule](Get-MgBetaNetworkAccessFilteringPolicyRule.md)
 
 ### [Get-MgBetaNetworkAccessFilteringPolicyRule](Get-MgBetaNetworkAccessFilteringPolicyRule.md)
 
 ### [Get-MgBetaNetworkAccessFilteringPolicyRuleCount](Get-MgBetaNetworkAccessFilteringPolicyRuleCount.md)
 
 ### [Get-MgBetaNetworkAccessFilteringProfile](Get-MgBetaNetworkAccessFilteringProfile.md)
-
-### [Get-MgBetaNetworkAccessFilteringProfile](Get-MgBetaNetworkAccessFilteringProfile.md)
-
-### [Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy](Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy.md)
 
 ### [Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy](Get-MgBetaNetworkAccessFilteringProfileConditionalAccessPolicy.md)
 
@@ -123,11 +101,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessFilteringProfilePolicy](Get-MgBetaNetworkAccessFilteringProfilePolicy.md)
 
-### [Get-MgBetaNetworkAccessFilteringProfilePolicy](Get-MgBetaNetworkAccessFilteringProfilePolicy.md)
-
 ### [Get-MgBetaNetworkAccessFilteringProfilePolicyCount](Get-MgBetaNetworkAccessFilteringProfilePolicyCount.md)
-
-### [Get-MgBetaNetworkAccessForwardingPolicy](Get-MgBetaNetworkAccessForwardingPolicy.md)
 
 ### [Get-MgBetaNetworkAccessForwardingPolicy](Get-MgBetaNetworkAccessForwardingPolicy.md)
 
@@ -135,17 +109,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessForwardingPolicyRule](Get-MgBetaNetworkAccessForwardingPolicyRule.md)
 
-### [Get-MgBetaNetworkAccessForwardingPolicyRule](Get-MgBetaNetworkAccessForwardingPolicyRule.md)
-
 ### [Get-MgBetaNetworkAccessForwardingPolicyRuleCount](Get-MgBetaNetworkAccessForwardingPolicyRuleCount.md)
 
 ### [Get-MgBetaNetworkAccessForwardingProfile](Get-MgBetaNetworkAccessForwardingProfile.md)
 
-### [Get-MgBetaNetworkAccessForwardingProfile](Get-MgBetaNetworkAccessForwardingProfile.md)
-
 ### [Get-MgBetaNetworkAccessForwardingProfileCount](Get-MgBetaNetworkAccessForwardingProfileCount.md)
-
-### [Get-MgBetaNetworkAccessForwardingProfilePolicy](Get-MgBetaNetworkAccessForwardingProfilePolicy.md)
 
 ### [Get-MgBetaNetworkAccessForwardingProfilePolicy](Get-MgBetaNetworkAccessForwardingProfilePolicy.md)
 
@@ -157,17 +125,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessLogConnection](Get-MgBetaNetworkAccessLogConnection.md)
 
-### [Get-MgBetaNetworkAccessLogConnection](Get-MgBetaNetworkAccessLogConnection.md)
-
 ### [Get-MgBetaNetworkAccessLogConnectionCount](Get-MgBetaNetworkAccessLogConnectionCount.md)
 
-### [Get-MgBetaNetworkAccessLogRemoteNetwork](Get-MgBetaNetworkAccessLogRemoteNetwork.md)
+### [Get-MgBetaNetworkAccessLogGenerativeAiInsight](Get-MgBetaNetworkAccessLogGenerativeAiInsight.md)
+
+### [Get-MgBetaNetworkAccessLogGenerativeAiInsightCount](Get-MgBetaNetworkAccessLogGenerativeAiInsightCount.md)
 
 ### [Get-MgBetaNetworkAccessLogRemoteNetwork](Get-MgBetaNetworkAccessLogRemoteNetwork.md)
 
 ### [Get-MgBetaNetworkAccessLogRemoteNetworkCount](Get-MgBetaNetworkAccessLogRemoteNetworkCount.md)
-
-### [Get-MgBetaNetworkAccessLogTraffic](Get-MgBetaNetworkAccessLogTraffic.md)
 
 ### [Get-MgBetaNetworkAccessLogTraffic](Get-MgBetaNetworkAccessLogTraffic.md)
 
@@ -217,11 +183,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessThreatIntelligencePolicy](Get-MgBetaNetworkAccessThreatIntelligencePolicy.md)
 
-### [Get-MgBetaNetworkAccessThreatIntelligencePolicy](Get-MgBetaNetworkAccessThreatIntelligencePolicy.md)
-
 ### [Get-MgBetaNetworkAccessThreatIntelligencePolicyCount](Get-MgBetaNetworkAccessThreatIntelligencePolicyCount.md)
-
-### [Get-MgBetaNetworkAccessThreatIntelligencePolicyRule](Get-MgBetaNetworkAccessThreatIntelligencePolicyRule.md)
 
 ### [Get-MgBetaNetworkAccessThreatIntelligencePolicyRule](Get-MgBetaNetworkAccessThreatIntelligencePolicyRule.md)
 
@@ -231,17 +193,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate](Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate.md)
 
-### [Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate](Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificate.md)
-
 ### [Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificateCount](Get-MgBetaNetworkAccessTlExternalCertificateAuthorityCertificateCount.md)
 
 ### [Get-MgBetaNetworkAccessTlInspectionPolicy](Get-MgBetaNetworkAccessTlInspectionPolicy.md)
 
-### [Get-MgBetaNetworkAccessTlInspectionPolicy](Get-MgBetaNetworkAccessTlInspectionPolicy.md)
-
 ### [Get-MgBetaNetworkAccessTlInspectionPolicyCount](Get-MgBetaNetworkAccessTlInspectionPolicyCount.md)
-
-### [Get-MgBetaNetworkAccessTlInspectionPolicyRule](Get-MgBetaNetworkAccessTlInspectionPolicyRule.md)
 
 ### [Get-MgBetaNetworkAccessTlInspectionPolicyRule](Get-MgBetaNetworkAccessTlInspectionPolicyRule.md)
 
@@ -255,17 +211,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaReportNetworkAccessReportDestination](Invoke-MgBetaReportNetworkAccessReportDestination.md)
 
-### [Invoke-MgBetaReportNetworkAccessReportDevice](Invoke-MgBetaReportNetworkAccessReportDevice.md)
-
-### [Invoke-MgBetaReportNetworkAccessReportUser](Invoke-MgBetaReportNetworkAccessReportUser.md)
-
 ### [Invoke-MgBetaTransactionNetworkAccessReportSummary](Invoke-MgBetaTransactionNetworkAccessReportSummary.md)
-
-### [Invoke-MgBetaUsageNetworkAccessReportProfiling](Invoke-MgBetaUsageNetworkAccessReportProfiling.md)
 
 ### [Invoke-MgBetaWebNetworkAccessReportCategoryReport](Invoke-MgBetaWebNetworkAccessReportCategoryReport.md)
 
 ### [New-MgBetaNetworkAccessAlert](New-MgBetaNetworkAccessAlert.md)
+
+### [New-MgBetaNetworkAccessCloudFirewallPolicy](New-MgBetaNetworkAccessCloudFirewallPolicy.md)
+
+### [New-MgBetaNetworkAccessCloudFirewallPolicyRule](New-MgBetaNetworkAccessCloudFirewallPolicyRule.md)
 
 ### [New-MgBetaNetworkAccessConnectivityBranch](New-MgBetaNetworkAccessConnectivityBranch.md)
 
@@ -305,6 +259,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaNetworkAccessLogConnection](New-MgBetaNetworkAccessLogConnection.md)
 
+### [New-MgBetaNetworkAccessLogGenerativeAiInsight](New-MgBetaNetworkAccessLogGenerativeAiInsight.md)
+
 ### [New-MgBetaNetworkAccessLogRemoteNetwork](New-MgBetaNetworkAccessLogRemoteNetwork.md)
 
 ### [New-MgBetaNetworkAccessLogTraffic](New-MgBetaNetworkAccessLogTraffic.md)
@@ -320,6 +276,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaNetworkAccessTlInspectionPolicyRule](New-MgBetaNetworkAccessTlInspectionPolicyRule.md)
 
 ### [Remove-MgBetaNetworkAccessAlert](Remove-MgBetaNetworkAccessAlert.md)
+
+### [Remove-MgBetaNetworkAccessCloudFirewallPolicy](Remove-MgBetaNetworkAccessCloudFirewallPolicy.md)
+
+### [Remove-MgBetaNetworkAccessCloudFirewallPolicyRule](Remove-MgBetaNetworkAccessCloudFirewallPolicyRule.md)
 
 ### [Remove-MgBetaNetworkAccessConnectivity](Remove-MgBetaNetworkAccessConnectivity.md)
 
@@ -367,6 +327,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaNetworkAccessLogConnection](Remove-MgBetaNetworkAccessLogConnection.md)
 
+### [Remove-MgBetaNetworkAccessLogGenerativeAiInsight](Remove-MgBetaNetworkAccessLogGenerativeAiInsight.md)
+
 ### [Remove-MgBetaNetworkAccessLogRemoteNetwork](Remove-MgBetaNetworkAccessLogRemoteNetwork.md)
 
 ### [Remove-MgBetaNetworkAccessLogTraffic](Remove-MgBetaNetworkAccessLogTraffic.md)
@@ -398,6 +360,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaNetworkAccessTlInspectionPolicyRule](Remove-MgBetaNetworkAccessTlInspectionPolicyRule.md)
 
 ### [Update-MgBetaNetworkAccessAlert](Update-MgBetaNetworkAccessAlert.md)
+
+### [Update-MgBetaNetworkAccessCloudFirewallPolicy](Update-MgBetaNetworkAccessCloudFirewallPolicy.md)
+
+### [Update-MgBetaNetworkAccessCloudFirewallPolicyRule](Update-MgBetaNetworkAccessCloudFirewallPolicyRule.md)
 
 ### [Update-MgBetaNetworkAccessConnectivity](Update-MgBetaNetworkAccessConnectivity.md)
 
@@ -442,6 +408,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaNetworkAccessLog](Update-MgBetaNetworkAccessLog.md)
 
 ### [Update-MgBetaNetworkAccessLogConnection](Update-MgBetaNetworkAccessLogConnection.md)
+
+### [Update-MgBetaNetworkAccessLogGenerativeAiInsight](Update-MgBetaNetworkAccessLogGenerativeAiInsight.md)
 
 ### [Update-MgBetaNetworkAccessLogRemoteNetwork](Update-MgBetaNetworkAccessLogRemoteNetwork.md)
 

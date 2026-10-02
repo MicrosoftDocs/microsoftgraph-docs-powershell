@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionapplicationsynchronizationtemplateschema
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema
 
 ## SYNOPSIS
 
-List all the functions currently supported in the attributeMappingSource.
+List all the functions currently supported in the attributeMappingSource for a synchronizationSchema.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionApplicationSynchronizationTemplateSchema?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema -ApplicationId <st
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### FunctionViaIdentity
@@ -39,7 +39,7 @@ Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema -InputObject <IApp
  [-Skip <int>] [-Sort <string[]>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List all the functions currently supported in the attributeMappingSource.
+List all the functions currently supported in the attributeMappingSource for a synchronizationSchema.
 
 **Permissions**
 

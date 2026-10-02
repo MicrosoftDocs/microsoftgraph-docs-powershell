@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPolicyAdminConsentRequestPolicy
 ---
@@ -29,7 +29,7 @@ Update-MgPolicyAdminConsentRequestPolicy [-ResponseHeadersVariable <string>]
  [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Version <int>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -39,7 +39,6 @@ Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminCon
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -513,6 +512,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
     [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+    [ReviewerId <String>]: The identifier of the reviewer.
+    [ScopeType <String>]: accessReviewReviewerScopeType
   [Version <Int32?>]: Specifies the version of this policy.
 When the policy is updated, this version is updated.
 Read-only.
@@ -525,6 +526,8 @@ This property is only required if a relative query, for example, ./manager, is s
 Possible value: decisions.
   [QueryType <String>]: The type of query.
 Examples include MicrosoftGraph and ARM.
+  [ReviewerId <String>]: The identifier of the reviewer.
+  [ScopeType <String>]: accessReviewReviewerScopeType
 
 
 ## RELATED LINKS

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression
 
 ## SYNOPSIS
 
-Parse a given string expression into an attributeMappingSource object.
+Parse a string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
 > [!NOTE]
@@ -31,7 +31,6 @@ Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -ServicePri
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Parse
@@ -43,7 +42,6 @@ Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -ServicePri
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ParseViaIdentityExpanded
@@ -56,7 +54,6 @@ Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ParseViaIdentity
@@ -68,7 +65,6 @@ Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -78,7 +74,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Parse a given string expression into an attributeMappingSource object.
+Parse a string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
 **Permissions**

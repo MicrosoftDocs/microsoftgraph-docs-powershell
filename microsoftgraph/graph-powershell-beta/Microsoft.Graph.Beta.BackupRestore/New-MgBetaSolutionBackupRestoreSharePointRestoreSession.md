@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoresharepointrestoresession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaSolutionBackupRestoreSharePointRestoreSession
 ## SYNOPSIS
 
 Create a new sharePointRestoreSession object.
+To create a granular restore session, granular site restore artifacts must be present in the payload.
+A request can't include both granularSiteRestoreArtifact and siteRestoreArtifact in the same create or update request.
+If no payload is provided when you create the restore session, the request creates an empty standard restore session by default.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreSharePointRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreSharePointRestoreSession?view=graph-powershell-1.0)
@@ -29,13 +32,13 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSession [-ResponseHeadersVariabl
  [-Error <IMicrosoftGraphPublicError>]
  [-GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>] [-Id <string>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <datetime>]
- [-RestoreJobType <string>]
+ [-PolicyId <string>] [-RestoreJobType <string>]
  [-RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]
  [-SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]
  [-SiteRestoreArtifactsBulkAdditionRequests <IMicrosoftGraphSiteRestoreArtifactsBulkAdditionRequest[]>]
  [-Status <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -45,7 +48,7 @@ New-MgBetaSolutionBackupRestoreSharePointRestoreSession
  -BodyParameter <IMicrosoftGraphSharePointRestoreSession> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -56,6 +59,9 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a new sharePointRestoreSession object.
+To create a granular restore session, granular site restore artifacts must be present in the payload.
+A request can't include both granularSiteRestoreArtifact and siteRestoreArtifact in the same create or update request.
+If no payload is provided when you create the restore session, the request creates an empty standard restore session by default.
 
 ## PARAMETERS
 
@@ -233,7 +239,7 @@ HelpMessage: ''
 
 ### -GranularSiteRestoreArtifacts
 
-
+A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
 To construct, see NOTES section for GRANULARSITERESTOREARTIFACTS properties and create a hash table.
 
 ```yaml
@@ -366,6 +372,28 @@ Timestamp of the last modification of the restore session.
 
 ```yaml
 Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PolicyId
+
+The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
+
+```yaml
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -658,6 +686,8 @@ For example, in the access reviews decisions API, this property might record the
     [Target <String>]: The target of the error.
   [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
   [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of the restore session.
+  [PolicyId <String>]: The identifier of the protection policy that scopes the restore session.
+When supplied during create or update, the service validates that the referenced protection units belong to the specified policy.
   [RestoreJobType <String>]: restoreJobType
   [RestoreSessionArtifactCount <IMicrosoftGraphRestoreSessionArtifactCount>]: restoreSessionArtifactCount
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -668,19 +698,22 @@ For example, in the access reviews decisions API, this property might record the
   [Status <String>]: restoreSessionStatus
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: 
-    [BrowseSessionId <String>]: 
-    [CompletionDateTime <DateTime?>]: 
-    [RestorePointDateTime <DateTime?>]: 
-    [RestoredItemKey <String>]: 
-    [RestoredItemPath <String>]: 
-    [RestoredItemWebUrl <String>]: 
-    [StartDateTime <DateTime?>]: 
+  [GranularSiteRestoreArtifacts <IMicrosoftGraphGranularSiteRestoreArtifact[]>]: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
+    [BrowseSessionId <String>]: The unique identifier of the browseSession
+    [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+    [DestinationType <String>]: destinationType
+    [Error <IMicrosoftGraphPublicError>]: publicError
+    [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+    [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+    [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+    [RestoredItemWebUrl <String>]: The web url of the restored artifact.
+    [StartDateTime <DateTime?>]: The start time of the restoration.
     [Status <String>]: artifactRestoreStatus
-    [WebUrl <String>]: 
+    [WebUrl <String>]: The original web url of the artifact being restored.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
-    [SiteId <String>]: 
+    [SiteId <String>]: Id of the site in which artifact is present.
   [SiteRestoreArtifacts <IMicrosoftGraphSiteRestoreArtifact[]>]: A collection of restore points and destination details that can be used to restore SharePoint sites.
     [CompletionDateTime <DateTime?>]: The time when restoration of restore artifact is completed.
     [DestinationType <String>]: destinationType
@@ -695,12 +728,19 @@ Read-only.
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
+        [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
+        [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
         [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [CreatedDateTime <DateTime?>]: The time of creation of the protection unit.
         [Error <IMicrosoftGraphPublicError>]: publicError
         [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
         [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+        [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+          [(Any) <Object>]: This indicates any property can be added to this object.
+          [EffectiveFromDateTime <DateTime?>]: 
+          [Status <String>]: retentionPeriodChangeStatus
+          [TargetRetentionPeriodInDays <Int32?>]: 
         [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
         [ProtectionSources <String>]: protectionSource
         [Status <String>]: protectionUnitStatus
@@ -761,19 +801,36 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   [Message <String>]: A non-localized message for the developer.
   [Target <String>]: The target of the error.
 
-GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: .
-  [BrowseSessionId <String>]: 
-  [CompletionDateTime <DateTime?>]: 
-  [RestorePointDateTime <DateTime?>]: 
-  [RestoredItemKey <String>]: 
-  [RestoredItemPath <String>]: 
-  [RestoredItemWebUrl <String>]: 
-  [StartDateTime <DateTime?>]: 
+GRANULARSITERESTOREARTIFACTS <IMicrosoftGraphGranularSiteRestoreArtifact[]>: A collection of browse session id and item key details that can be used to restore SharePoint files and folders.
+  [BrowseSessionId <String>]: The unique identifier of the browseSession
+  [CompletionDateTime <DateTime?>]: Date time when the artifact's restoration completes.
+  [DestinationType <String>]: destinationType
+  [Error <IMicrosoftGraphPublicError>]: publicError
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Code <String>]: Represents the error code.
+    [Details <IMicrosoftGraphPublicErrorDetail[]>]: Details of the error.
+      [Code <String>]: The error code.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [InnerError <IMicrosoftGraphPublicInnerError>]: publicInnerError
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Code <String>]: The error code.
+      [Details <IMicrosoftGraphPublicErrorDetail[]>]: A collection of error details.
+      [Message <String>]: The error message.
+      [Target <String>]: The target of the error.
+    [Message <String>]: A non-localized message for the developer.
+    [Target <String>]: The target of the error.
+  [RestorePointDateTime <DateTime?>]: The restore point date time to which the artifact is restored.
+  [RestoredItemKey <String>]: The unique identifier for the restored artifact.
+  [RestoredItemPath <String>]: The path of the restored artifact.
+It's the path of the folder where all the artifacts are restored within a granular restore session.
+  [RestoredItemWebUrl <String>]: The web url of the restored artifact.
+  [StartDateTime <DateTime?>]: The start time of the restoration.
   [Status <String>]: artifactRestoreStatus
-  [WebUrl <String>]: 
+  [WebUrl <String>]: The original web url of the artifact being restored.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
-  [SiteId <String>]: 
+  [SiteId <String>]: Id of the site in which artifact is present.
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -822,6 +879,8 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
+      [BackupRetentionPeriodInDays <Int32?>]: The retention period of the backup, in days.
+      [BillingPolicyId <String>]: The unique identifier of the billing policy assigned to the protection unit for cost allocation.
       [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Application <IMicrosoftGraphIdentity>]: identity
@@ -838,6 +897,11 @@ For example, in the access reviews decisions API, this property might record the
       [LastModifiedBy <IMicrosoftGraphIdentitySet>]: identitySet
       [LastModifiedDateTime <DateTime?>]: Timestamp of the last modification of this protection unit.
       [OffboardRequestedDateTime <DateTime?>]: The time when protection unit offboard was requested.
+      [PendingRetentionPeriodChange <IMicrosoftGraphRetentionPeriodChange>]: retentionPeriodChange
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [EffectiveFromDateTime <DateTime?>]: 
+        [Status <String>]: retentionPeriodChangeStatus
+        [TargetRetentionPeriodInDays <Int32?>]: 
       [PolicyId <String>]: The unique identifier of the protection policy based on which protection unit was created.
       [ProtectionSources <String>]: protectionSource
       [Status <String>]: protectionUnitStatus

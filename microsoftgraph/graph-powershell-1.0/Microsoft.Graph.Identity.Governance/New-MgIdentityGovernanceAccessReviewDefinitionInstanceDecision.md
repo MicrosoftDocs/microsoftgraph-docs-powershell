@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinitioninstancedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
 ---
@@ -26,14 +26,16 @@ Create new navigation property to decisions for identityGovernance
 New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewInstanceId <string>
  -AccessReviewScheduleDefinitionId <string> [-ResponseHeadersVariable <string>]
  [-AccessReviewId <string>] [-AdditionalProperties <hashtable>]
- [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>] [-ApplyResult <string>]
- [-Decision <string>] [-Id <string>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
- [-Justification <string>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>]
- [-Recommendation <string>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
- [-ResourceLink <string>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>]
+ [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>] [-Id <string>]
+ [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Justification <string>]
+ [-Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]
+ [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>] [-Recommendation <string>]
+ [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>] [-ResourceLink <string>]
+ [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -45,7 +47,6 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewInst
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -54,14 +55,16 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewInst
 New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
  -InputObject <IIdentityGovernanceIdentity> [-ResponseHeadersVariable <string>]
  [-AccessReviewId <string>] [-AdditionalProperties <hashtable>]
- [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>] [-ApplyResult <string>]
- [-Decision <string>] [-Id <string>] [-Insights <IMicrosoftGraphGovernanceInsight[]>]
- [-Justification <string>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>]
- [-Recommendation <string>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
- [-ResourceLink <string>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>]
- [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>]
+ [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>] [-Id <string>]
+ [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Justification <string>]
+ [-Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]
+ [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>] [-Recommendation <string>]
+ [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>] [-ResourceLink <string>]
+ [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -73,7 +76,6 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -235,6 +237,34 @@ Read-only.
 
 ```yaml
 Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ApplyDescription
+
+The description of the apply result.
+Read-only.
+
+```yaml
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -540,6 +570,34 @@ Justification left by the reviewer when they made the decision.
 
 ```yaml
 Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Permission
+
+accessReviewInstanceDecisionItemPermission
+To construct, see NOTES section for PERMISSION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewInstanceDecisionItemPermission
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -934,6 +992,8 @@ The DatetimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $select.
 Read-only.
+  [ApplyDescription <String>]: The description of the apply result.
+Read-only.
   [ApplyResult <String>]: The result of applying the decision.
 Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported.
 Supports $select, $orderby, and $filter (eq only).
@@ -947,6 +1007,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
     [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
   [Justification <String>]: Justification left by the reviewer when they made the decision.
+  [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [Id <String>]: 
+    [Type <String>]: 
   [Principal <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -963,10 +1029,11 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
   [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: 
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Identifier of the resource
     [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
   [ResourceLink <String>]: A link to the resource.
 For example, https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8.
 Supports $select.
@@ -992,6 +1059,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AccessPackageResourceRoleScopeId <String>]: The unique identifier of accessPackageResourceRoleScope
   [AccessPackageResourceScopeId <String>]: The unique identifier of accessPackageResourceScope
   [AccessPackageResourceScopeId1 <String>]: The unique identifier of accessPackageResourceScope
+  [AccessPackageSubjectId <String>]: The unique identifier of accessPackageSubject
+  [AccessPackageSuggestionId <String>]: The unique identifier of accessPackageSuggestion
   [AccessReviewHistoryDefinitionId <String>]: The unique identifier of accessReviewHistoryDefinition
   [AccessReviewHistoryInstanceId <String>]: The unique identifier of accessReviewHistoryInstance
   [AccessReviewInstanceDecisionItemId <String>]: The unique identifier of accessReviewInstanceDecisionItem
@@ -1006,14 +1075,21 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [AppConsentRequestId <String>]: The unique identifier of appConsentRequest
   [ApprovalId <String>]: The unique identifier of approval
   [ApprovalStageId <String>]: The unique identifier of approvalStage
+  [AvailableAccessPackageId <String>]: The unique identifier of availableAccessPackage
   [ConnectedOrganizationId <String>]: The unique identifier of connectedOrganization
+  [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
+  [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+  [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
   [PrivilegedAccessGroupAssignmentScheduleId <String>]: The unique identifier of privilegedAccessGroupAssignmentSchedule
   [PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
@@ -1024,6 +1100,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult
@@ -1052,6 +1129,13 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
   [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
 
+PERMISSION `<IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>`: accessReviewInstanceDecisionItemPermission
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Description <String>]: 
+  [DisplayName <String>]: 
+  [Id <String>]: 
+  [Type <String>]: 
+
 PRINCIPAL `<IMicrosoftGraphIdentity>`: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -1061,10 +1145,11 @@ For example, in the access reviews decisions API, this property might record the
 
 RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessReviewInstanceDecisionItemResource
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [Description <String>]: 
   [DisplayName <String>]: Display name of the resource
   [Id <String>]: Identifier of the resource
   [Type <String>]: Type of resource.
-Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.
+Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackage, AccessPackageAssignmentPolicy.
 
 REVIEWEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensordeploymentaccesskey
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgSecurityIdentitySensorDeploymentAccessKey
 ---
@@ -26,7 +26,7 @@ Generate a new deployment access key that can be used to install a sensor associ
 New-MgSecurityIdentitySensorDeploymentAccessKey [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -45,6 +45,19 @@ Generate a new deployment access key that can be used to install a sensor associ
 | Delegated (work or school account) | SecurityIdentitiesSensors.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+New-MgSecurityIdentitySensorDeploymentAccessKey
+
+```
+This example shows how to use the New-MgSecurityIdentitySensorDeploymentAccessKey Cmdlet.
+
 
 ## PARAMETERS
 
@@ -285,7 +298,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [New-MgSecurityIdentitySensorDeploymentAccessKey](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityidentitysensordeploymentaccesskey)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-regeneratedeploymentaccesskey?view=graph-rest-1.0)
 
 
 

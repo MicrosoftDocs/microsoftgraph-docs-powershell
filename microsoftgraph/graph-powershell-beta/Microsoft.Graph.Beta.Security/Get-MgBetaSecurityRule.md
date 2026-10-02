@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityrule
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityRule
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaSecurityRule
 
 ## SYNOPSIS
 
-Get rules from security
+Container for the security rules configured in Microsoft Defender XDR, including custom detection rules.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get rules from security
 Get-MgBetaSecurityRule [-ExpandProperty <string[]>] [-Property <string[]>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -33,7 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get rules from security
+Container for the security rules configured in Microsoft Defender XDR, including custom detection rules.
 
 ## PARAMETERS
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement
-Module Guid: 6638f0de-b23c-40b3-b7f9-b42f39d66299
+Module Guid: 0af7f750-1adc-46c5-8202-a5752c2c20c2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,17 +23,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteList](Get-MgAdminEdgeInternetExplorerModeSiteList.md)
 
-### [Get-MgAdminEdgeInternetExplorerModeSiteList](Get-MgAdminEdgeInternetExplorerModeSiteList.md)
-
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListCount](Get-MgAdminEdgeInternetExplorerModeSiteListCount.md)
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
 
-### [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
-
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount](Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount.md)
-
-### [Get-MgAdminEdgeInternetExplorerModeSiteListSite](Get-MgAdminEdgeInternetExplorerModeSiteListSite.md)
 
 ### [Get-MgAdminEdgeInternetExplorerModeSiteListSite](Get-MgAdminEdgeInternetExplorerModeSiteListSite.md)
 
@@ -43,11 +37,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDetectedApp](Get-MgDeviceManagementDetectedApp.md)
 
-### [Get-MgDeviceManagementDetectedApp](Get-MgDeviceManagementDetectedApp.md)
-
 ### [Get-MgDeviceManagementDetectedAppCount](Get-MgDeviceManagementDetectedAppCount.md)
-
-### [Get-MgDeviceManagementDetectedAppManagedDevice](Get-MgDeviceManagementDetectedAppManagedDevice.md)
 
 ### [Get-MgDeviceManagementDetectedAppManagedDevice](Get-MgDeviceManagementDetectedAppManagedDevice.md)
 
@@ -55,15 +45,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceCategory](Get-MgDeviceManagementDeviceCategory.md)
 
-### [Get-MgDeviceManagementDeviceCategory](Get-MgDeviceManagementDeviceCategory.md)
-
 ### [Get-MgDeviceManagementDeviceCategoryCount](Get-MgDeviceManagementDeviceCategoryCount.md)
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicy](Get-MgDeviceManagementDeviceCompliancePolicy.md)
-
-### [Get-MgDeviceManagementDeviceCompliancePolicy](Get-MgDeviceManagementDeviceCompliancePolicy.md)
-
-### [Get-MgDeviceManagementDeviceCompliancePolicyAssignment](Get-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyAssignment](Get-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
 
@@ -73,13 +57,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
 
-### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummaryCount.md)
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-
-### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus.md)
 
@@ -89,11 +69,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
 
-### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule.md)
-
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleCount.md)
-
-### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 
@@ -101,17 +77,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 
-### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount.md)
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
 
-### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingStateCount.md)
-
-### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatus](Get-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatus](Get-MgDeviceManagementDeviceCompliancePolicyUserStatus.md)
 
@@ -121,10 +91,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceConfiguration](Get-MgDeviceManagementDeviceConfiguration.md)
 
-### [Get-MgDeviceManagementDeviceConfiguration](Get-MgDeviceManagementDeviceConfiguration.md)
-
-### [Get-MgDeviceManagementDeviceConfigurationAssignment](Get-MgDeviceManagementDeviceConfigurationAssignment.md)
-
 ### [Get-MgDeviceManagementDeviceConfigurationAssignment](Get-MgDeviceManagementDeviceConfigurationAssignment.md)
 
 ### [Get-MgDeviceManagementDeviceConfigurationAssignmentCount](Get-MgDeviceManagementDeviceConfigurationAssignmentCount.md)
@@ -133,13 +99,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
 
-### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummaryCount.md)
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-
-### [Get-MgDeviceManagementDeviceConfigurationDeviceStatus](Get-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatus](Get-MgDeviceManagementDeviceConfigurationDeviceStatus.md)
 
@@ -151,13 +113,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatus](Get-MgDeviceManagementDeviceConfigurationUserStatus.md)
 
-### [Get-MgDeviceManagementDeviceConfigurationUserStatus](Get-MgDeviceManagementDeviceConfigurationUserStatus.md)
-
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatusCount](Get-MgDeviceManagementDeviceConfigurationUserStatusCount.md)
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](Get-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-
-### [Get-MgDeviceManagementManagedDevice](Get-MgDeviceManagementManagedDevice.md)
 
 ### [Get-MgDeviceManagementManagedDevice](Get-MgDeviceManagementManagedDevice.md)
 
@@ -167,19 +125,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementManagedDeviceCompliancePolicyState](Get-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
 
-### [Get-MgDeviceManagementManagedDeviceCompliancePolicyState](Get-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-
 ### [Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount](Get-MgDeviceManagementManagedDeviceCompliancePolicyStateCount.md)
-
-### [Get-MgDeviceManagementManagedDeviceConfigurationState](Get-MgDeviceManagementManagedDeviceConfigurationState.md)
 
 ### [Get-MgDeviceManagementManagedDeviceConfigurationState](Get-MgDeviceManagementManagedDeviceConfigurationState.md)
 
 ### [Get-MgDeviceManagementManagedDeviceConfigurationStateCount](Get-MgDeviceManagementManagedDeviceConfigurationStateCount.md)
 
 ### [Get-MgDeviceManagementManagedDeviceCount](Get-MgDeviceManagementManagedDeviceCount.md)
-
-### [Get-MgDeviceManagementManagedDeviceLogCollectionRequest](Get-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
 
 ### [Get-MgDeviceManagementManagedDeviceLogCollectionRequest](Get-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
 
@@ -193,15 +145,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 
-### [Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState](Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
-
 ### [Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount](Get-MgDeviceManagementManagedDeviceWindowsProtectionStateDetectedMalwareStateCount.md)
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEvent](Get-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-
-### [Get-MgDeviceManagementMobileAppTroubleshootingEvent](Get-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-
-### [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 
@@ -211,11 +157,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementNotificationMessageTemplate](Get-MgDeviceManagementNotificationMessageTemplate.md)
 
-### [Get-MgDeviceManagementNotificationMessageTemplate](Get-MgDeviceManagementNotificationMessageTemplate.md)
-
 ### [Get-MgDeviceManagementNotificationMessageTemplateCount](Get-MgDeviceManagementNotificationMessageTemplateCount.md)
-
-### [Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
 
@@ -225,11 +167,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementTroubleshootingEvent](Get-MgDeviceManagementTroubleshootingEvent.md)
 
-### [Get-MgDeviceManagementTroubleshootingEvent](Get-MgDeviceManagementTroubleshootingEvent.md)
-
 ### [Get-MgDeviceManagementTroubleshootingEventCount](Get-MgDeviceManagementTroubleshootingEventCount.md)
-
-### [Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary.md)
 
@@ -237,17 +175,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
 
-### [Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary.md)
-
 ### [Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount](Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummaryCount.md)
 
 ### [Get-MgDeviceManagementWindowsMalwareInformation](Get-MgDeviceManagementWindowsMalwareInformation.md)
 
-### [Get-MgDeviceManagementWindowsMalwareInformation](Get-MgDeviceManagementWindowsMalwareInformation.md)
-
 ### [Get-MgDeviceManagementWindowsMalwareInformationCount](Get-MgDeviceManagementWindowsMalwareInformationCount.md)
-
-### [Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 
 ### [Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState](Get-MgDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 

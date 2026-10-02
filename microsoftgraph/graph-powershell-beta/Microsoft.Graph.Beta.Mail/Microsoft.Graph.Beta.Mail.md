@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Mail
-Module Guid: 3d5020ac-bd52-448f-b500-71370494f5e2
+Module Guid: d5255235-1cd2-4a62-8875-1cc00b1b1fe0
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.mail/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -25,15 +25,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserInferenceClassificationOverride](Get-MgBetaUserInferenceClassificationOverride.md)
 
-### [Get-MgBetaUserInferenceClassificationOverride](Get-MgBetaUserInferenceClassificationOverride.md)
-
 ### [Get-MgBetaUserInferenceClassificationOverrideCount](Get-MgBetaUserInferenceClassificationOverrideCount.md)
 
 ### [Get-MgBetaUserMailFolder](Get-MgBetaUserMailFolder.md)
-
-### [Get-MgBetaUserMailFolder](Get-MgBetaUserMailFolder.md)
-
-### [Get-MgBetaUserMailFolderChildFolder](Get-MgBetaUserMailFolderChildFolder.md)
 
 ### [Get-MgBetaUserMailFolderChildFolder](Get-MgBetaUserMailFolderChildFolder.md)
 
@@ -42,10 +36,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserMailFolderChildFolderDelta](Get-MgBetaUserMailFolderChildFolderDelta.md)
 
 ### [Get-MgBetaUserMailFolderChildFolderMessage](Get-MgBetaUserMailFolderChildFolderMessage.md)
-
-### [Get-MgBetaUserMailFolderChildFolderMessage](Get-MgBetaUserMailFolderChildFolderMessage.md)
-
-### [Get-MgBetaUserMailFolderChildFolderMessageAttachment](Get-MgBetaUserMailFolderChildFolderMessageAttachment.md)
 
 ### [Get-MgBetaUserMailFolderChildFolderMessageAttachment](Get-MgBetaUserMailFolderChildFolderMessageAttachment.md)
 
@@ -59,11 +49,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMailFolderChildFolderMessageExtension](Get-MgBetaUserMailFolderChildFolderMessageExtension.md)
 
-### [Get-MgBetaUserMailFolderChildFolderMessageExtension](Get-MgBetaUserMailFolderChildFolderMessageExtension.md)
-
 ### [Get-MgBetaUserMailFolderChildFolderMessageExtensionCount](Get-MgBetaUserMailFolderChildFolderMessageExtensionCount.md)
-
-### [Get-MgBetaUserMailFolderChildFolderMessageMention](Get-MgBetaUserMailFolderChildFolderMessageMention.md)
 
 ### [Get-MgBetaUserMailFolderChildFolderMessageMention](Get-MgBetaUserMailFolderChildFolderMessageMention.md)
 
@@ -71,17 +57,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMailFolderChildFolderMessageRule](Get-MgBetaUserMailFolderChildFolderMessageRule.md)
 
-### [Get-MgBetaUserMailFolderChildFolderMessageRule](Get-MgBetaUserMailFolderChildFolderMessageRule.md)
-
 ### [Get-MgBetaUserMailFolderChildFolderMessageRuleCount](Get-MgBetaUserMailFolderChildFolderMessageRuleCount.md)
 
 ### [Get-MgBetaUserMailFolderChildFolderOperation](Get-MgBetaUserMailFolderChildFolderOperation.md)
 
-### [Get-MgBetaUserMailFolderChildFolderOperation](Get-MgBetaUserMailFolderChildFolderOperation.md)
-
 ### [Get-MgBetaUserMailFolderChildFolderOperationCount](Get-MgBetaUserMailFolderChildFolderOperationCount.md)
-
-### [Get-MgBetaUserMailFolderChildFolderUserConfiguration](Get-MgBetaUserMailFolderChildFolderUserConfiguration.md)
 
 ### [Get-MgBetaUserMailFolderChildFolderUserConfiguration](Get-MgBetaUserMailFolderChildFolderUserConfiguration.md)
 
@@ -93,10 +73,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMailFolderMessage](Get-MgBetaUserMailFolderMessage.md)
 
-### [Get-MgBetaUserMailFolderMessage](Get-MgBetaUserMailFolderMessage.md)
-
-### [Get-MgBetaUserMailFolderMessageAttachment](Get-MgBetaUserMailFolderMessageAttachment.md)
-
 ### [Get-MgBetaUserMailFolderMessageAttachment](Get-MgBetaUserMailFolderMessageAttachment.md)
 
 ### [Get-MgBetaUserMailFolderMessageAttachmentCount](Get-MgBetaUserMailFolderMessageAttachmentCount.md)
@@ -107,11 +83,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMailFolderMessageExtension](Get-MgBetaUserMailFolderMessageExtension.md)
 
-### [Get-MgBetaUserMailFolderMessageExtension](Get-MgBetaUserMailFolderMessageExtension.md)
-
 ### [Get-MgBetaUserMailFolderMessageExtensionCount](Get-MgBetaUserMailFolderMessageExtensionCount.md)
-
-### [Get-MgBetaUserMailFolderMessageMention](Get-MgBetaUserMailFolderMessageMention.md)
 
 ### [Get-MgBetaUserMailFolderMessageMention](Get-MgBetaUserMailFolderMessageMention.md)
 
@@ -119,11 +91,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMailFolderMessageRule](Get-MgBetaUserMailFolderMessageRule.md)
 
-### [Get-MgBetaUserMailFolderMessageRule](Get-MgBetaUserMailFolderMessageRule.md)
-
 ### [Get-MgBetaUserMailFolderMessageRuleCount](Get-MgBetaUserMailFolderMessageRuleCount.md)
-
-### [Get-MgBetaUserMailFolderOperation](Get-MgBetaUserMailFolderOperation.md)
 
 ### [Get-MgBetaUserMailFolderOperation](Get-MgBetaUserMailFolderOperation.md)
 
@@ -131,15 +99,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMailFolderUserConfiguration](Get-MgBetaUserMailFolderUserConfiguration.md)
 
-### [Get-MgBetaUserMailFolderUserConfiguration](Get-MgBetaUserMailFolderUserConfiguration.md)
-
 ### [Get-MgBetaUserMailFolderUserConfigurationCount](Get-MgBetaUserMailFolderUserConfigurationCount.md)
 
 ### [Get-MgBetaUserMessage](Get-MgBetaUserMessage.md)
-
-### [Get-MgBetaUserMessage](Get-MgBetaUserMessage.md)
-
-### [Get-MgBetaUserMessageAttachment](Get-MgBetaUserMessageAttachment.md)
 
 ### [Get-MgBetaUserMessageAttachment](Get-MgBetaUserMessageAttachment.md)
 
@@ -153,11 +115,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserMessageExtension](Get-MgBetaUserMessageExtension.md)
 
-### [Get-MgBetaUserMessageExtension](Get-MgBetaUserMessageExtension.md)
-
 ### [Get-MgBetaUserMessageExtensionCount](Get-MgBetaUserMessageExtensionCount.md)
-
-### [Get-MgBetaUserMessageMention](Get-MgBetaUserMessageMention.md)
 
 ### [Get-MgBetaUserMessageMention](Get-MgBetaUserMessageMention.md)
 

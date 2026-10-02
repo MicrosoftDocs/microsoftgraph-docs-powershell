@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Submit-MgBetaSecurityTiIndicator
 ---
@@ -24,7 +24,7 @@ Submit-MgBetaSecurityTiIndicator [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Value <IMicrosoftGraphTiIndicator[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Submit
@@ -35,7 +35,6 @@ Submit-MgBetaSecurityTiIndicator
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -508,7 +507,7 @@ Default value is 3.
 Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
     [ThreatType <String>]: Each indicator must have a valid Indicator Threat Type.
-Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
+The possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
     [TlpLevel <String>]: tlpLevel
     [Url <String>]: 
@@ -597,7 +596,7 @@ Default value is 3.
 Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
   [ThreatType <String>]: Each indicator must have a valid Indicator Threat Type.
-Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
+The possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
   [TlpLevel <String>]: tlpLevel
   [Url <String>]: 

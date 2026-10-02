@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSiteListItemPermission
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaSiteListItemPermission
 ## SYNOPSIS
 
 Delete navigation property permissions for sites
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteListItemPermission](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,6 @@ Remove-MgBetaSiteListItemPermission -ListId <string> -ListItemId <string> -Permi
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -35,7 +37,6 @@ Remove-MgBetaSiteListItemPermission -InputObject <ISitesIdentity> [-IfMatch <str
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -51,9 +52,9 @@ Delete navigation property permissions for sites
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All,  |
+| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
 
 ## PARAMETERS
 

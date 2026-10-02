@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Notes
-Module Guid: fe845cdb-9529-421e-affc-23eb1614ddba
+Module Guid: 4887539d-48af-4c64-8ee5-02387058449b
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.notes/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -99,19 +99,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupOnenoteNotebook](Get-MgGroupOnenoteNotebook.md)
 
-### [Get-MgGroupOnenoteNotebook](Get-MgGroupOnenoteNotebook.md)
-
 ### [Get-MgGroupOnenoteNotebookCount](Get-MgGroupOnenoteNotebookCount.md)
 
 ### [Get-MgGroupOnenoteNotebookFromWebUrl](Get-MgGroupOnenoteNotebookFromWebUrl.md)
 
 ### [Get-MgGroupOnenoteNotebookSection](Get-MgGroupOnenoteNotebookSection.md)
 
-### [Get-MgGroupOnenoteNotebookSection](Get-MgGroupOnenoteNotebookSection.md)
-
 ### [Get-MgGroupOnenoteNotebookSectionCount](Get-MgGroupOnenoteNotebookSectionCount.md)
-
-### [Get-MgGroupOnenoteNotebookSectionGroup](Get-MgGroupOnenoteNotebookSectionGroup.md)
 
 ### [Get-MgGroupOnenoteNotebookSectionGroup](Get-MgGroupOnenoteNotebookSectionGroup.md)
 
@@ -123,11 +117,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupOnenoteNotebookSectionGroupSection](Get-MgGroupOnenoteNotebookSectionGroupSection.md)
 
-### [Get-MgGroupOnenoteNotebookSectionGroupSection](Get-MgGroupOnenoteNotebookSectionGroupSection.md)
-
 ### [Get-MgGroupOnenoteNotebookSectionGroupSectionCount](Get-MgGroupOnenoteNotebookSectionGroupSectionCount.md)
-
-### [Get-MgGroupOnenoteNotebookSectionGroupSectionPage](Get-MgGroupOnenoteNotebookSectionGroupSectionPage.md)
 
 ### [Get-MgGroupOnenoteNotebookSectionGroupSectionPage](Get-MgGroupOnenoteNotebookSectionGroupSectionPage.md)
 
@@ -145,8 +135,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupOnenoteNotebookSectionPage](Get-MgGroupOnenoteNotebookSectionPage.md)
 
-### [Get-MgGroupOnenoteNotebookSectionPage](Get-MgGroupOnenoteNotebookSectionPage.md)
-
 ### [Get-MgGroupOnenoteNotebookSectionPageContent](Get-MgGroupOnenoteNotebookSectionPageContent.md)
 
 ### [Get-MgGroupOnenoteNotebookSectionPageCount](Get-MgGroupOnenoteNotebookSectionPageCount.md)
@@ -161,11 +149,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupOnenoteOperation](Get-MgGroupOnenoteOperation.md)
 
-### [Get-MgGroupOnenoteOperation](Get-MgGroupOnenoteOperation.md)
-
 ### [Get-MgGroupOnenoteOperationCount](Get-MgGroupOnenoteOperationCount.md)
-
-### [Get-MgGroupOnenotePage](Get-MgGroupOnenotePage.md)
 
 ### [Get-MgGroupOnenotePage](Get-MgGroupOnenotePage.md)
 
@@ -181,19 +165,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupOnenoteResource](Get-MgGroupOnenoteResource.md)
 
-### [Get-MgGroupOnenoteResource](Get-MgGroupOnenoteResource.md)
-
 ### [Get-MgGroupOnenoteResourceContent](Get-MgGroupOnenoteResourceContent.md)
 
 ### [Get-MgGroupOnenoteResourceCount](Get-MgGroupOnenoteResourceCount.md)
 
 ### [Get-MgGroupOnenoteSection](Get-MgGroupOnenoteSection.md)
 
-### [Get-MgGroupOnenoteSection](Get-MgGroupOnenoteSection.md)
-
 ### [Get-MgGroupOnenoteSectionCount](Get-MgGroupOnenoteSectionCount.md)
-
-### [Get-MgGroupOnenoteSectionGroup](Get-MgGroupOnenoteSectionGroup.md)
 
 ### [Get-MgGroupOnenoteSectionGroup](Get-MgGroupOnenoteSectionGroup.md)
 
@@ -205,11 +183,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupOnenoteSectionGroupSection](Get-MgGroupOnenoteSectionGroupSection.md)
 
-### [Get-MgGroupOnenoteSectionGroupSection](Get-MgGroupOnenoteSectionGroupSection.md)
-
 ### [Get-MgGroupOnenoteSectionGroupSectionCount](Get-MgGroupOnenoteSectionGroupSectionCount.md)
-
-### [Get-MgGroupOnenoteSectionGroupSectionPage](Get-MgGroupOnenoteSectionGroupSectionPage.md)
 
 ### [Get-MgGroupOnenoteSectionGroupSectionPage](Get-MgGroupOnenoteSectionGroupSectionPage.md)
 
@@ -224,8 +198,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupOnenoteSectionGroupSectionParentNotebook](Get-MgGroupOnenoteSectionGroupSectionParentNotebook.md)
 
 ### [Get-MgGroupOnenoteSectionGroupSectionParentSectionGroup](Get-MgGroupOnenoteSectionGroupSectionParentSectionGroup.md)
-
-### [Get-MgGroupOnenoteSectionPage](Get-MgGroupOnenoteSectionPage.md)
 
 ### [Get-MgGroupOnenoteSectionPage](Get-MgGroupOnenoteSectionPage.md)
 
@@ -247,8 +219,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOnenoteNotebook](Get-MgSiteOnenoteNotebook.md)
 
-### [Get-MgSiteOnenoteNotebook](Get-MgSiteOnenoteNotebook.md)
-
 ### [Get-MgSiteOnenoteNotebookCount](Get-MgSiteOnenoteNotebookCount.md)
 
 ### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
@@ -257,11 +227,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOnenoteNotebookSection](Get-MgSiteOnenoteNotebookSection.md)
 
-### [Get-MgSiteOnenoteNotebookSection](Get-MgSiteOnenoteNotebookSection.md)
-
 ### [Get-MgSiteOnenoteNotebookSectionCount](Get-MgSiteOnenoteNotebookSectionCount.md)
-
-### [Get-MgSiteOnenoteNotebookSectionGroup](Get-MgSiteOnenoteNotebookSectionGroup.md)
 
 ### [Get-MgSiteOnenoteNotebookSectionGroup](Get-MgSiteOnenoteNotebookSectionGroup.md)
 
@@ -273,11 +239,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOnenoteNotebookSectionGroupSection](Get-MgSiteOnenoteNotebookSectionGroupSection.md)
 
-### [Get-MgSiteOnenoteNotebookSectionGroupSection](Get-MgSiteOnenoteNotebookSectionGroupSection.md)
-
 ### [Get-MgSiteOnenoteNotebookSectionGroupSectionCount](Get-MgSiteOnenoteNotebookSectionGroupSectionCount.md)
-
-### [Get-MgSiteOnenoteNotebookSectionGroupSectionPage](Get-MgSiteOnenoteNotebookSectionGroupSectionPage.md)
 
 ### [Get-MgSiteOnenoteNotebookSectionGroupSectionPage](Get-MgSiteOnenoteNotebookSectionGroupSectionPage.md)
 
@@ -295,8 +257,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOnenoteNotebookSectionPage](Get-MgSiteOnenoteNotebookSectionPage.md)
 
-### [Get-MgSiteOnenoteNotebookSectionPage](Get-MgSiteOnenoteNotebookSectionPage.md)
-
 ### [Get-MgSiteOnenoteNotebookSectionPageContent](Get-MgSiteOnenoteNotebookSectionPageContent.md)
 
 ### [Get-MgSiteOnenoteNotebookSectionPageCount](Get-MgSiteOnenoteNotebookSectionPageCount.md)
@@ -311,11 +271,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOnenoteOperation](Get-MgSiteOnenoteOperation.md)
 
-### [Get-MgSiteOnenoteOperation](Get-MgSiteOnenoteOperation.md)
-
 ### [Get-MgSiteOnenoteOperationCount](Get-MgSiteOnenoteOperationCount.md)
-
-### [Get-MgSiteOnenotePage](Get-MgSiteOnenotePage.md)
 
 ### [Get-MgSiteOnenotePage](Get-MgSiteOnenotePage.md)
 
@@ -329,19 +285,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOnenoteResource](Get-MgSiteOnenoteResource.md)
 
-### [Get-MgSiteOnenoteResource](Get-MgSiteOnenoteResource.md)
-
 ### [Get-MgSiteOnenoteResourceContent](Get-MgSiteOnenoteResourceContent.md)
 
 ### [Get-MgSiteOnenoteResourceCount](Get-MgSiteOnenoteResourceCount.md)
 
 ### [Get-MgSiteOnenoteSection](Get-MgSiteOnenoteSection.md)
 
-### [Get-MgSiteOnenoteSection](Get-MgSiteOnenoteSection.md)
-
 ### [Get-MgSiteOnenoteSectionCount](Get-MgSiteOnenoteSectionCount.md)
-
-### [Get-MgSiteOnenoteSectionGroup](Get-MgSiteOnenoteSectionGroup.md)
 
 ### [Get-MgSiteOnenoteSectionGroup](Get-MgSiteOnenoteSectionGroup.md)
 
@@ -353,11 +303,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSiteOnenoteSectionGroupSection](Get-MgSiteOnenoteSectionGroupSection.md)
 
-### [Get-MgSiteOnenoteSectionGroupSection](Get-MgSiteOnenoteSectionGroupSection.md)
-
 ### [Get-MgSiteOnenoteSectionGroupSectionCount](Get-MgSiteOnenoteSectionGroupSectionCount.md)
-
-### [Get-MgSiteOnenoteSectionGroupSectionPage](Get-MgSiteOnenoteSectionGroupSectionPage.md)
 
 ### [Get-MgSiteOnenoteSectionGroupSectionPage](Get-MgSiteOnenoteSectionGroupSectionPage.md)
 
@@ -372,8 +318,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSiteOnenoteSectionGroupSectionParentNotebook](Get-MgSiteOnenoteSectionGroupSectionParentNotebook.md)
 
 ### [Get-MgSiteOnenoteSectionGroupSectionParentSectionGroup](Get-MgSiteOnenoteSectionGroupSectionParentSectionGroup.md)
-
-### [Get-MgSiteOnenoteSectionPage](Get-MgSiteOnenoteSectionPage.md)
 
 ### [Get-MgSiteOnenoteSectionPage](Get-MgSiteOnenoteSectionPage.md)
 
@@ -393,8 +337,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnenoteNotebook](Get-MgUserOnenoteNotebook.md)
 
-### [Get-MgUserOnenoteNotebook](Get-MgUserOnenoteNotebook.md)
-
 ### [Get-MgUserOnenoteNotebookCount](Get-MgUserOnenoteNotebookCount.md)
 
 ### [Get-MgUserOnenoteNotebookFromWebUrl](Get-MgUserOnenoteNotebookFromWebUrl.md)
@@ -403,11 +345,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnenoteNotebookSection](Get-MgUserOnenoteNotebookSection.md)
 
-### [Get-MgUserOnenoteNotebookSection](Get-MgUserOnenoteNotebookSection.md)
-
 ### [Get-MgUserOnenoteNotebookSectionCount](Get-MgUserOnenoteNotebookSectionCount.md)
-
-### [Get-MgUserOnenoteNotebookSectionGroup](Get-MgUserOnenoteNotebookSectionGroup.md)
 
 ### [Get-MgUserOnenoteNotebookSectionGroup](Get-MgUserOnenoteNotebookSectionGroup.md)
 
@@ -419,11 +357,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnenoteNotebookSectionGroupSection](Get-MgUserOnenoteNotebookSectionGroupSection.md)
 
-### [Get-MgUserOnenoteNotebookSectionGroupSection](Get-MgUserOnenoteNotebookSectionGroupSection.md)
-
 ### [Get-MgUserOnenoteNotebookSectionGroupSectionCount](Get-MgUserOnenoteNotebookSectionGroupSectionCount.md)
-
-### [Get-MgUserOnenoteNotebookSectionGroupSectionPage](Get-MgUserOnenoteNotebookSectionGroupSectionPage.md)
 
 ### [Get-MgUserOnenoteNotebookSectionGroupSectionPage](Get-MgUserOnenoteNotebookSectionGroupSectionPage.md)
 
@@ -441,8 +375,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnenoteNotebookSectionPage](Get-MgUserOnenoteNotebookSectionPage.md)
 
-### [Get-MgUserOnenoteNotebookSectionPage](Get-MgUserOnenoteNotebookSectionPage.md)
-
 ### [Get-MgUserOnenoteNotebookSectionPageContent](Get-MgUserOnenoteNotebookSectionPageContent.md)
 
 ### [Get-MgUserOnenoteNotebookSectionPageCount](Get-MgUserOnenoteNotebookSectionPageCount.md)
@@ -457,11 +389,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnenoteOperation](Get-MgUserOnenoteOperation.md)
 
-### [Get-MgUserOnenoteOperation](Get-MgUserOnenoteOperation.md)
-
 ### [Get-MgUserOnenoteOperationCount](Get-MgUserOnenoteOperationCount.md)
-
-### [Get-MgUserOnenotePage](Get-MgUserOnenotePage.md)
 
 ### [Get-MgUserOnenotePage](Get-MgUserOnenotePage.md)
 
@@ -475,19 +403,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnenoteResource](Get-MgUserOnenoteResource.md)
 
-### [Get-MgUserOnenoteResource](Get-MgUserOnenoteResource.md)
-
 ### [Get-MgUserOnenoteResourceContent](Get-MgUserOnenoteResourceContent.md)
 
 ### [Get-MgUserOnenoteResourceCount](Get-MgUserOnenoteResourceCount.md)
 
 ### [Get-MgUserOnenoteSection](Get-MgUserOnenoteSection.md)
 
-### [Get-MgUserOnenoteSection](Get-MgUserOnenoteSection.md)
-
 ### [Get-MgUserOnenoteSectionCount](Get-MgUserOnenoteSectionCount.md)
-
-### [Get-MgUserOnenoteSectionGroup](Get-MgUserOnenoteSectionGroup.md)
 
 ### [Get-MgUserOnenoteSectionGroup](Get-MgUserOnenoteSectionGroup.md)
 
@@ -499,11 +421,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnenoteSectionGroupSection](Get-MgUserOnenoteSectionGroupSection.md)
 
-### [Get-MgUserOnenoteSectionGroupSection](Get-MgUserOnenoteSectionGroupSection.md)
-
 ### [Get-MgUserOnenoteSectionGroupSectionCount](Get-MgUserOnenoteSectionGroupSectionCount.md)
-
-### [Get-MgUserOnenoteSectionGroupSectionPage](Get-MgUserOnenoteSectionGroupSectionPage.md)
 
 ### [Get-MgUserOnenoteSectionGroupSectionPage](Get-MgUserOnenoteSectionGroupSectionPage.md)
 
@@ -518,8 +436,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserOnenoteSectionGroupSectionParentNotebook](Get-MgUserOnenoteSectionGroupSectionParentNotebook.md)
 
 ### [Get-MgUserOnenoteSectionGroupSectionParentSectionGroup](Get-MgUserOnenoteSectionGroupSectionParentSectionGroup.md)
-
-### [Get-MgUserOnenoteSectionPage](Get-MgUserOnenoteSectionPage.md)
 
 ### [Get-MgUserOnenoteSectionPage](Get-MgUserOnenoteSectionPage.md)
 

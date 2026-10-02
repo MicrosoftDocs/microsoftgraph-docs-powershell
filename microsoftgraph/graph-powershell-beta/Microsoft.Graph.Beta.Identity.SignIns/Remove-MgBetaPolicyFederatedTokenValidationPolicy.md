@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfederatedtokenvalidationpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaPolicyFederatedTokenValidationPolicy
 ---
@@ -15,6 +15,9 @@ title: Remove-MgBetaPolicyFederatedTokenValidationPolicy
 
 Delete navigation property federatedTokenValidationPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFederatedTokenValidationPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -24,7 +27,6 @@ Remove-MgBetaPolicyFederatedTokenValidationPolicy [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

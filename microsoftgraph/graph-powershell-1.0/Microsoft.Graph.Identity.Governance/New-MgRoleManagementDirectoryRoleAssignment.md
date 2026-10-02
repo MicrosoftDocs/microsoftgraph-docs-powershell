@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignment
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgRoleManagementDirectoryRoleAssignment
 ---
@@ -27,11 +27,11 @@ New-MgRoleManagementDirectoryRoleAssignment [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <string>]
  [-Condition <string>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>]
  [-DirectoryScopeId <string>] [-Id <string>] [-Principal <IMicrosoftGraphDirectoryObject>]
- [-PrincipalId <string>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]
- [-RoleDefinitionId <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PrincipalId <string>] [-PrincipalOrganizationId <string>]
+ [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <string>] [-Break]
+ [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -41,7 +41,6 @@ New-MgRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphUnifi
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -451,6 +450,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -PrincipalOrganizationId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Proxy
 
 The URI for the proxy server to use
@@ -676,6 +696,7 @@ Supports $filter (eq, in).
   [PrincipalId <String>]: Identifier of the principal to which the assignment is granted.
 Supported principals are users, role-assignable groups, and service principals.
 Supports $filter (eq, in).
+  [PrincipalOrganizationId <String>]: 
   [RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]: unifiedRoleDefinition
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Id <String>]: The unique identifier for an entity.

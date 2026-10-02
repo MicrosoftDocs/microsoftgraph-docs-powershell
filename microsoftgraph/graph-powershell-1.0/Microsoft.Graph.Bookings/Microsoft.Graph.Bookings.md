@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Bookings
-Module Guid: 49871ae0-aa0a-4d25-8faf-df3311fc96b2
+Module Guid: 50ed6bac-dcb3-4789-8211-546fccd09714
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,15 +13,9 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Bookings Cmdlets
 ### [Get-MgBookingBusiness](Get-MgBookingBusiness.md)
 
-### [Get-MgBookingBusiness](Get-MgBookingBusiness.md)
-
-### [Get-MgBookingBusinessAppointment](Get-MgBookingBusinessAppointment.md)
-
 ### [Get-MgBookingBusinessAppointment](Get-MgBookingBusinessAppointment.md)
 
 ### [Get-MgBookingBusinessAppointmentCount](Get-MgBookingBusinessAppointmentCount.md)
-
-### [Get-MgBookingBusinessCalendarView](Get-MgBookingBusinessCalendarView.md)
 
 ### [Get-MgBookingBusinessCalendarView](Get-MgBookingBusinessCalendarView.md)
 
@@ -31,17 +25,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBookingBusinessCustomer](Get-MgBookingBusinessCustomer.md)
 
-### [Get-MgBookingBusinessCustomer](Get-MgBookingBusinessCustomer.md)
-
 ### [Get-MgBookingBusinessCustomerCount](Get-MgBookingBusinessCustomerCount.md)
 
 ### [Get-MgBookingBusinessCustomQuestion](Get-MgBookingBusinessCustomQuestion.md)
 
-### [Get-MgBookingBusinessCustomQuestion](Get-MgBookingBusinessCustomQuestion.md)
-
 ### [Get-MgBookingBusinessCustomQuestionCount](Get-MgBookingBusinessCustomQuestionCount.md)
-
-### [Get-MgBookingBusinessService](Get-MgBookingBusinessService.md)
 
 ### [Get-MgBookingBusinessService](Get-MgBookingBusinessService.md)
 
@@ -51,11 +39,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBookingBusinessStaffMember](Get-MgBookingBusinessStaffMember.md)
 
-### [Get-MgBookingBusinessStaffMember](Get-MgBookingBusinessStaffMember.md)
-
 ### [Get-MgBookingBusinessStaffMemberCount](Get-MgBookingBusinessStaffMemberCount.md)
-
-### [Get-MgBookingCurrency](Get-MgBookingCurrency.md)
 
 ### [Get-MgBookingCurrency](Get-MgBookingCurrency.md)
 
@@ -63,11 +47,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEvent](Get-MgVirtualEvent.md)
 
-### [Get-MgVirtualEvent](Get-MgVirtualEvent.md)
-
 ### [Get-MgVirtualEventCount](Get-MgVirtualEventCount.md)
-
-### [Get-MgVirtualEventPresenter](Get-MgVirtualEventPresenter.md)
 
 ### [Get-MgVirtualEventPresenter](Get-MgVirtualEventPresenter.md)
 
@@ -75,13 +55,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEventSession](Get-MgVirtualEventSession.md)
 
-### [Get-MgVirtualEventSession](Get-MgVirtualEventSession.md)
-
 ### [Get-MgVirtualEventSessionAttendanceReport](Get-MgVirtualEventSessionAttendanceReport.md)
-
-### [Get-MgVirtualEventSessionAttendanceReport](Get-MgVirtualEventSessionAttendanceReport.md)
-
-### [Get-MgVirtualEventSessionAttendanceReportAttendanceRecord](Get-MgVirtualEventSessionAttendanceReportAttendanceRecord.md)
 
 ### [Get-MgVirtualEventSessionAttendanceReportAttendanceRecord](Get-MgVirtualEventSessionAttendanceReportAttendanceRecord.md)
 
@@ -93,8 +67,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEventTownhall](Get-MgVirtualEventTownhall.md)
 
-### [Get-MgVirtualEventTownhall](Get-MgVirtualEventTownhall.md)
-
 ### [Get-MgVirtualEventTownhallByUserIdAndRole](Get-MgVirtualEventTownhallByUserIdAndRole.md)
 
 ### [Get-MgVirtualEventTownhallByUserRole](Get-MgVirtualEventTownhallByUserRole.md)
@@ -103,19 +75,29 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEventTownhallPresenter](Get-MgVirtualEventTownhallPresenter.md)
 
-### [Get-MgVirtualEventTownhallPresenter](Get-MgVirtualEventTownhallPresenter.md)
-
 ### [Get-MgVirtualEventTownhallPresenterCount](Get-MgVirtualEventTownhallPresenterCount.md)
 
-### [Get-MgVirtualEventTownhallSession](Get-MgVirtualEventTownhallSession.md)
+### [Get-MgVirtualEventTownhallRegistration](Get-MgVirtualEventTownhallRegistration.md)
+
+### [Get-MgVirtualEventTownhallRegistrationByEmail](Get-MgVirtualEventTownhallRegistrationByEmail.md)
+
+### [Get-MgVirtualEventTownhallRegistrationByUserId](Get-MgVirtualEventTownhallRegistrationByUserId.md)
+
+### [Get-MgVirtualEventTownhallRegistrationConfiguration](Get-MgVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Get-MgVirtualEventTownhallRegistrationConfigurationQuestion](Get-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
+### [Get-MgVirtualEventTownhallRegistrationConfigurationQuestionCount](Get-MgVirtualEventTownhallRegistrationConfigurationQuestionCount.md)
+
+### [Get-MgVirtualEventTownhallRegistrationCount](Get-MgVirtualEventTownhallRegistrationCount.md)
+
+### [Get-MgVirtualEventTownhallRegistrationSession](Get-MgVirtualEventTownhallRegistrationSession.md)
+
+### [Get-MgVirtualEventTownhallRegistrationSessionCount](Get-MgVirtualEventTownhallRegistrationSessionCount.md)
 
 ### [Get-MgVirtualEventTownhallSession](Get-MgVirtualEventTownhallSession.md)
 
 ### [Get-MgVirtualEventTownhallSessionAttendanceReport](Get-MgVirtualEventTownhallSessionAttendanceReport.md)
-
-### [Get-MgVirtualEventTownhallSessionAttendanceReport](Get-MgVirtualEventTownhallSessionAttendanceReport.md)
-
-### [Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
 
 ### [Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord](Get-MgVirtualEventTownhallSessionAttendanceReportAttendanceRecord.md)
 
@@ -127,8 +109,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEventWebinar](Get-MgVirtualEventWebinar.md)
 
-### [Get-MgVirtualEventWebinar](Get-MgVirtualEventWebinar.md)
-
 ### [Get-MgVirtualEventWebinarByUserIdAndRole](Get-MgVirtualEventWebinarByUserIdAndRole.md)
 
 ### [Get-MgVirtualEventWebinarByUserRole](Get-MgVirtualEventWebinarByUserRole.md)
@@ -137,11 +117,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEventWebinarPresenter](Get-MgVirtualEventWebinarPresenter.md)
 
-### [Get-MgVirtualEventWebinarPresenter](Get-MgVirtualEventWebinarPresenter.md)
-
 ### [Get-MgVirtualEventWebinarPresenterCount](Get-MgVirtualEventWebinarPresenterCount.md)
-
-### [Get-MgVirtualEventWebinarRegistration](Get-MgVirtualEventWebinarRegistration.md)
 
 ### [Get-MgVirtualEventWebinarRegistration](Get-MgVirtualEventWebinarRegistration.md)
 
@@ -153,13 +129,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEventWebinarRegistrationConfigurationQuestion](Get-MgVirtualEventWebinarRegistrationConfigurationQuestion.md)
 
-### [Get-MgVirtualEventWebinarRegistrationConfigurationQuestion](Get-MgVirtualEventWebinarRegistrationConfigurationQuestion.md)
-
 ### [Get-MgVirtualEventWebinarRegistrationConfigurationQuestionCount](Get-MgVirtualEventWebinarRegistrationConfigurationQuestionCount.md)
 
 ### [Get-MgVirtualEventWebinarRegistrationCount](Get-MgVirtualEventWebinarRegistrationCount.md)
-
-### [Get-MgVirtualEventWebinarRegistrationSession](Get-MgVirtualEventWebinarRegistrationSession.md)
 
 ### [Get-MgVirtualEventWebinarRegistrationSession](Get-MgVirtualEventWebinarRegistrationSession.md)
 
@@ -167,13 +139,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgVirtualEventWebinarSession](Get-MgVirtualEventWebinarSession.md)
 
-### [Get-MgVirtualEventWebinarSession](Get-MgVirtualEventWebinarSession.md)
-
 ### [Get-MgVirtualEventWebinarSessionAttendanceReport](Get-MgVirtualEventWebinarSessionAttendanceReport.md)
-
-### [Get-MgVirtualEventWebinarSessionAttendanceReport](Get-MgVirtualEventWebinarSessionAttendanceReport.md)
-
-### [Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
 
 ### [Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord.md)
 
@@ -212,6 +178,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgVirtualEventTownhall](New-MgVirtualEventTownhall.md)
 
 ### [New-MgVirtualEventTownhallPresenter](New-MgVirtualEventTownhallPresenter.md)
+
+### [New-MgVirtualEventTownhallRegistration](New-MgVirtualEventTownhallRegistration.md)
+
+### [New-MgVirtualEventTownhallRegistrationConfigurationQuestion](New-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
 
 ### [New-MgVirtualEventTownhallSession](New-MgVirtualEventTownhallSession.md)
 
@@ -267,6 +237,16 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgVirtualEventTownhallPresenter](Remove-MgVirtualEventTownhallPresenter.md)
 
+### [Remove-MgVirtualEventTownhallRegistration](Remove-MgVirtualEventTownhallRegistration.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationByEmail](Remove-MgVirtualEventTownhallRegistrationByEmail.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationByUserId](Remove-MgVirtualEventTownhallRegistrationByUserId.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationConfiguration](Remove-MgVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Remove-MgVirtualEventTownhallRegistrationConfigurationQuestion](Remove-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
+
 ### [Remove-MgVirtualEventTownhallSession](Remove-MgVirtualEventTownhallSession.md)
 
 ### [Remove-MgVirtualEventTownhallSessionAttendanceReport](Remove-MgVirtualEventTownhallSessionAttendanceReport.md)
@@ -300,6 +280,12 @@ Microsoft Graph PowerShell Cmdlets
 ### [Stop-MgBookingBusinessCalendarView](Stop-MgBookingBusinessCalendarView.md)
 
 ### [Stop-MgVirtualEvent](Stop-MgVirtualEvent.md)
+
+### [Stop-MgVirtualEventTownhallRegistration](Stop-MgVirtualEventTownhallRegistration.md)
+
+### [Stop-MgVirtualEventTownhallRegistrationEmail](Stop-MgVirtualEventTownhallRegistrationEmail.md)
+
+### [Stop-MgVirtualEventTownhallRegistrationUserId](Stop-MgVirtualEventTownhallRegistrationUserId.md)
 
 ### [Stop-MgVirtualEventWebinarRegistration](Stop-MgVirtualEventWebinarRegistration.md)
 
@@ -338,6 +324,16 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgVirtualEventTownhall](Update-MgVirtualEventTownhall.md)
 
 ### [Update-MgVirtualEventTownhallPresenter](Update-MgVirtualEventTownhallPresenter.md)
+
+### [Update-MgVirtualEventTownhallRegistration](Update-MgVirtualEventTownhallRegistration.md)
+
+### [Update-MgVirtualEventTownhallRegistrationByEmail](Update-MgVirtualEventTownhallRegistrationByEmail.md)
+
+### [Update-MgVirtualEventTownhallRegistrationByUserId](Update-MgVirtualEventTownhallRegistrationByUserId.md)
+
+### [Update-MgVirtualEventTownhallRegistrationConfiguration](Update-MgVirtualEventTownhallRegistrationConfiguration.md)
+
+### [Update-MgVirtualEventTownhallRegistrationConfigurationQuestion](Update-MgVirtualEventTownhallRegistrationConfigurationQuestion.md)
 
 ### [Update-MgVirtualEventTownhallSession](Update-MgVirtualEventTownhallSession.md)
 

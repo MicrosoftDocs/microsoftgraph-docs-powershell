@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgGroupTeamPrimaryChannelMessage
 ---
@@ -37,7 +37,7 @@ New-MgGroupTeamPrimaryChannelMessage -GroupId <string> [-ResponseHeadersVariable
  [-ReplyToId <string>] [-Subject <string>] [-Summary <string>] [-WebUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -47,7 +47,6 @@ New-MgGroupTeamPrimaryChannelMessage -GroupId <string> -BodyParameter <IMicrosof
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -68,7 +67,7 @@ New-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity>
  [-ReplyToId <string>] [-Subject <string>] [-Summary <string>] [-WebUrl <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentity
@@ -78,7 +77,7 @@ New-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity>
  -BodyParameter <IMicrosoftGraphChatMessage> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -330,7 +329,7 @@ HelpMessage: ''
 
 ### -DeletedDateTime
 
-Read only.
+Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
 
 ```yaml
@@ -641,7 +640,7 @@ HelpMessage: ''
 
 ### -LastEditedDateTime
 
-Read only.
+Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
@@ -671,7 +670,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-Read only.
+Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
 
 ```yaml
@@ -1205,7 +1204,7 @@ When the user selects the image, the channel would open the document.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1230,11 +1229,11 @@ such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.
@@ -1333,6 +1332,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp
@@ -1460,7 +1460,7 @@ When the user selects the image, the channel would open the document.
     [TeamId <String>]: The identity of the team in which the message was posted.
   [ChatId <String>]: If the message was sent in a chat, represents the identity of the chat.
   [CreatedDateTime <DateTime?>]: Timestamp of when the chat message was created.
-  [DeletedDateTime <DateTime?>]: Read only.
+  [DeletedDateTime <DateTime?>]: Read-only.
 Timestamp at which the chat message was deleted, or null if not deleted.
   [Etag <String>]: Read-only.
 Version number of the chat message.
@@ -1485,11 +1485,11 @@ such as image/png, image/jpg.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
   [Importance <String>]: chatMessageImportance
-  [LastEditedDateTime <DateTime?>]: Read only.
+  [LastEditedDateTime <DateTime?>]: Read-only.
 Timestamp when edits to the chat message were made.
 Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
-  [LastModifiedDateTime <DateTime?>]: Read only.
+  [LastModifiedDateTime <DateTime?>]: Read-only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   [Locale <String>]: Locale of the chat message set by the client.
 Always set to en-us.

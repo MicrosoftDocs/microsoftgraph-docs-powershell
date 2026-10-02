@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityLabelRetentionLabel
 ---
@@ -13,7 +13,7 @@ title: Get-MgSecurityLabelRetentionLabel
 
 ## SYNOPSIS
 
-Represents how customers can manage their data, whether and for how long to retain or delete it.
+Read the properties and relationships of a retentionLabel object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabel?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Get-MgSecurityLabelRetentionLabel [-ExpandProperty <string[]>] [-Property <strin
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>] [<CommonParameters>]
+ [-CountVariable <string>]
 ```
 
 ### Get
@@ -37,7 +37,7 @@ Get-MgSecurityLabelRetentionLabel [-ExpandProperty <string[]>] [-Property <strin
 Get-MgSecurityLabelRetentionLabel -RetentionLabelId <string> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### GetViaIdentity
@@ -46,7 +46,7 @@ Get-MgSecurityLabelRetentionLabel -RetentionLabelId <string> [-ExpandProperty <s
 Get-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ExpandProperty <string[]>]
  [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -56,7 +56,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Represents how customers can manage their data, whether and for how long to retain or delete it.
+Read the properties and relationships of a retentionLabel object.
 
 **Permissions**
 
@@ -541,9 +541,12 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -616,6 +619,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgSecurityLabelRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionlabel-get?view=graph-rest-1.0)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-labelsroot-list-retentionlabel?view=graph-rest-1.0)
 
 

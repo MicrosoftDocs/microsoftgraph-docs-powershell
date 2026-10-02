@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgprocesssecuritydatasecurityandgovernancecontentasync
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync
 ---
@@ -28,7 +28,7 @@ Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync [-ResponseHeadersV
  [-ProcessContentRequests <IMicrosoftGraphProcessContentBatchRequest[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Process
@@ -39,7 +39,6 @@ Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -383,6 +382,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
         [Content <IMicrosoftGraphContentBase>]: contentBase
           [(Any) <Object>]: This indicates any property can be added to this object.
+        [ContentCategory <String>]: contentCategory
         [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
         [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -433,6 +433,7 @@ Use conversation metadata for content like prompts and responses and file metada
 Required.
       [Content <IMicrosoftGraphContentBase>]: contentBase
         [(Any) <Object>]: This indicates any property can be added to this object.
+      [ContentCategory <String>]: contentCategory
       [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
       [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).

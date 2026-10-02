@@ -6,7 +6,7 @@ param(
     $ModulesToGenerate = @(),
     
     [Parameter(Mandatory = $false)]
-    [string]$ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
+    [string]$ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
     
     [Parameter(Mandatory = $false)]
     [string]$WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
@@ -19,7 +19,11 @@ param(
     
     [Parameter(Mandatory = $false)]
     [ValidateSet("v1.0", "beta", "both")]
-    [string]$GraphProfile = "both"
+    [Alias("GraphProfileFilter")]
+    [string]$GraphProfile = "both",
+
+    [Parameter(Mandatory = $false)]
+    [string]$ModuleFilter = ""
 )
 
 function Get-GraphMapping {
@@ -215,6 +219,14 @@ if ($ModulesToGenerate.Count -eq 0) {
         Write-Error "Failed to parse module mapping file: $($_.Exception.Message)"
         exit 1
     }
+}
+
+if (-not [string]::IsNullOrWhiteSpace($ModuleFilter)) {
+    $ModulesToGenerate = @($ModulesToGenerate | Where-Object { $_ -eq $ModuleFilter })
+}
+if ($ModulesToGenerate.Count -eq 0) {
+    Write-Host "No post-processing target for module '$ModuleFilter' (e.g. Authentication); skipping."
+    return
 }
 
 # Main execution

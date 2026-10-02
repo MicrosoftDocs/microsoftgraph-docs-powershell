@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAuthenticationMethodPolicy
 ---
@@ -26,7 +26,8 @@ Update the properties of an authenticationMethodsPolicy object.
 Update-MgBetaPolicyAuthenticationMethodPolicy [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>]
  [-AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]
- [-Description <string>] [-DisplayName <string>] [-Id <string>] [-LastModifiedDateTime <datetime>]
+ [-DeletedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
+ [-LastModifiedDateTime <datetime>]
  [-MicrosoftAuthenticatorPlatformSettings <IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings>]
  [-PolicyMigrationState <string>] [-PolicyVersion <string>] [-ReconfirmationInDays <int>]
  [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>]
@@ -34,7 +35,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicy [-ResponseHeadersVariable <string>
  [-SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -44,7 +45,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicy
  -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -215,6 +216,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -DeletedDateTime
+
+Shows the last date and time the policy was deleted.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Description
 
 A description of the policy.
@@ -322,8 +344,7 @@ HelpMessage: ''
 
 ### -Id
 
-The unique identifier for an entity.
-Read-only.
+
 
 ```yaml
 Type: System.String
@@ -662,8 +683,7 @@ Read-only.
 
 BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodsPolicy>`: authenticationMethodsPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]: Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
     [Id <String>]: The unique identifier for an entity.
@@ -674,6 +694,7 @@ Read-only.
     [State <String>]: authenticationMethodState
   [Description <String>]: A description of the policy.
   [DisplayName <String>]: The name of the policy.
+  [Id <String>]: 
   [LastModifiedDateTime <DateTime?>]: The date and time of the last update to the policy.
   [MicrosoftAuthenticatorPlatformSettings <IMicrosoftGraphMicrosoftAuthenticatorPlatformSettings>]: microsoftAuthenticatorPlatformSettings
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -699,7 +720,7 @@ The default value is true.
         [Id <String>]: The object identifier of a Microsoft Entra user or group.
         [TargetType <String>]: authenticationMethodTargetType
         [TargetedAuthenticationMethod <String>]: The authentication method that the user is prompted to register.
-The value must be microsoftAuthenticator.
+The value can be Fido2 or microsoftAuthenticator.
       [SnoozeDurationInDays <Int32?>]: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
 Minimum 0 days.
 Maximum: 14 days.
@@ -742,7 +763,7 @@ The default value is true.
       [Id <String>]: The object identifier of a Microsoft Entra user or group.
       [TargetType <String>]: authenticationMethodTargetType
       [TargetedAuthenticationMethod <String>]: The authentication method that the user is prompted to register.
-The value must be microsoftAuthenticator.
+The value can be Fido2 or microsoftAuthenticator.
     [SnoozeDurationInDays <Int32?>]: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt.
 Minimum 0 days.
 Maximum: 14 days.

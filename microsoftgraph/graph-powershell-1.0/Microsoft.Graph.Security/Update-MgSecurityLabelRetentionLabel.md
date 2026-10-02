@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSecurityLabelRetentionLabel
 ---
@@ -36,7 +36,7 @@ Update-MgSecurityLabelRetentionLabel -RetentionLabelId <string> [-ResponseHeader
  [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>] [-RetentionTrigger <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -46,7 +46,7 @@ Update-MgSecurityLabelRetentionLabel -RetentionLabelId <string>
  -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -64,7 +64,7 @@ Update-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
  [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>] [-RetentionTrigger <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -74,7 +74,7 @@ Update-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
  -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -86,6 +86,27 @@ This cmdlet has the following aliases,
 
 Update the properties of a retentionLabel object.
 To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.security.retentionLabel"
+	retentionDuration = @{
+		"@odata.type" = "microsoft.graph.security.retentionDurationInDays"
+		days = 
+	}
+}
+
+Update-MgSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSecurityLabelRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 
@@ -1151,9 +1172,12 @@ Read-only.
 
 INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   [AlertId <String>]: The unique identifier of alert
+  [AnalyzedEmailId <String>]: The unique identifier of analyzedEmail
   [ArticleId <String>]: The unique identifier of article
   [ArticleIndicatorId <String>]: The unique identifier of articleIndicator
   [AttackSimulationOperationId <String>]: The unique identifier of attackSimulationOperation
+  [AuditLogQueryId <String>]: The unique identifier of auditLogQuery
+  [AuditLogRecordId <String>]: The unique identifier of auditLogRecord
   [AuthoredNoteId <String>]: The unique identifier of authoredNote
   [AuthorityTemplateId <String>]: The unique identifier of authorityTemplate
   [CaseOperationId <String>]: The unique identifier of caseOperation
@@ -1258,7 +1282,6 @@ For example, in the access reviews decisions API, this property might record the
 
 - [Update-MgSecurityLabelRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabel)
 - [Graph API Reference](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0)
-
 
 
 

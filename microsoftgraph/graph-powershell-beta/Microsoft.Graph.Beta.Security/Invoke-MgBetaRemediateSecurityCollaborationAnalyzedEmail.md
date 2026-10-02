@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail
 ---
@@ -20,6 +20,9 @@ This API enables scenarios and use cases such as SOAR integration, playbooks, an
 For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRemediateSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Security/Invoke-MgRemediateSecurityCollaborationAnalyzedEmail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemediateExpanded (Default)
@@ -32,7 +35,6 @@ Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail [-ResponseHeadersVariab
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Remediate
@@ -43,7 +45,6 @@ Invoke-MgBetaRemediateSecurityCollaborationAnalyzedEmail
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -549,6 +550,7 @@ Read-only.
         [ProcessId <String>]: The unique identifier of the process involved in the behavior.
         [ProcessName <String>]: The name of the process that performed or was involved in the behavior.
         [Target <String>]: The target of the operation.
+      [DetonationBehaviourDetailsV2 <String>]: Shows the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation in a JSON format.
       [DetonationChain <IMicrosoftGraphSecurityDetonationChain>]: detonationChain
         [(Any) <Object>]: This indicates any property can be added to this object.
         [ChildNodes <IMicrosoftGraphSecurityDetonationChain[]>]: A list of all child nodes in the chain.
@@ -563,6 +565,10 @@ No screenshots are captured if the URL opens into a link that directly downloads
 However, you see the downloaded file in the detonation chain.
       [DetonationVerdict <String>]: The verdict of the detonation.
       [DetonationVerdictReason <String>]: The reason for the verdict of the detonation.
+      [EntityMetadata <String>]: Additional metadata about the entity in JSON format.
+      [MitreTechniques <String>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
+      [StaticAnalysis <String>]: The results of static analysis performed on the file or URL.
+      [SubmissionSource <String>]: The source of the submission.
     [FileExtension <String>]: Extension of the file.
     [FileName <String>]: The name of the attachment in the email.
     [FileSize <Int32?>]: Size of the file.
@@ -681,6 +687,7 @@ Read-only.
           [ProcessId <String>]: The unique identifier of the process involved in the behavior.
           [ProcessName <String>]: The name of the process that performed or was involved in the behavior.
           [Target <String>]: The target of the operation.
+        [DetonationBehaviourDetailsV2 <String>]: Shows the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation in a JSON format.
         [DetonationChain <IMicrosoftGraphSecurityDetonationChain>]: detonationChain
           [(Any) <Object>]: This indicates any property can be added to this object.
           [ChildNodes <IMicrosoftGraphSecurityDetonationChain[]>]: A list of all child nodes in the chain.
@@ -695,6 +702,10 @@ No screenshots are captured if the URL opens into a link that directly downloads
 However, you see the downloaded file in the detonation chain.
         [DetonationVerdict <String>]: The verdict of the detonation.
         [DetonationVerdictReason <String>]: The reason for the verdict of the detonation.
+        [EntityMetadata <String>]: Additional metadata about the entity in JSON format.
+        [MitreTechniques <String>]: The attack techniques, as aligned with the MITRE ATT&CK framework.
+        [StaticAnalysis <String>]: The results of static analysis performed on the file or URL.
+        [SubmissionSource <String>]: The source of the submission.
       [FileExtension <String>]: Extension of the file.
       [FileName <String>]: The name of the attachment in the email.
       [FileSize <Int32?>]: Size of the file.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycustomauthenticationextension
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityCustomAuthenticationExtension
 ---
@@ -13,7 +13,8 @@ title: Update-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
 
-Update the navigation property customAuthenticationExtensions in identity
+Update the properties of a customAuthenticationExtension object.
+The following derived types are currently supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
@@ -30,7 +31,7 @@ Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensio
  [-DisplayName <string>] [-EndpointConfiguration <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -40,7 +41,7 @@ Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensio
  -BodyParameter <IMicrosoftGraphCustomAuthenticationExtension> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,7 +54,7 @@ Update-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignIn
  [-DisplayName <string>] [-EndpointConfiguration <hashtable>] [-Id <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -63,7 +64,7 @@ Update-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignIn
  -BodyParameter <IMicrosoftGraphCustomAuthenticationExtension> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -73,7 +74,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Update the navigation property customAuthenticationExtensions in identity
+Update the properties of a customAuthenticationExtension object.
+The following derived types are currently supported.
 
 **Permissions**
 
@@ -82,6 +84,58 @@ Update the navigation property customAuthenticationExtensions in identity
 | Delegated (work or school account) | CustomAuthenticationExtension.ReadWrite.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | CustomAuthenticationExtension.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Update an onTokenIssuanceStartCustomExtension object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onTokenIssuanceStartCustomExtension"
+	displayName = "onTokenIssuanceStartCustomExtension"
+	description = "Fetch additional claims from custom user store"
+	endpointConfiguration = @{
+		"@odata.type" = "#microsoft.graph.httpRequestEndpoint"
+		targetUrl = "https://authenticationeventsAPI.contoso.com"
+	}
+	authenticationConfiguration = @{
+		"@odata.type" = "#microsoft.graph.azureAdTokenAuthentication"
+		resourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
+	}
+	claimsForTokenConfiguration = @(
+		@{
+			claimIdInApiResponse = "DateOfBirth"
+		}
+		@{
+			claimIdInApiResponse = "CustomRoles"
+		}
+	)
+}
+
+Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+
+```
+This example will update an ontokenissuancestartcustomextension object
+
+### Example 2: Update an onVerifiedIdClaimValidationCustomExtension object
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension"
+	displayName = "Verified ID Claim Validation (updated)"
+	description = "Updated description for Verified ID claim validation"
+}
+
+Update-MgBetaIdentityCustomAuthenticationExtension -CustomAuthenticationExtensionId $customAuthenticationExtensionId -BodyParameter $params
+
+```
+This example will update an onverifiedidclaimvalidationcustomextension object
+
 
 ## PARAMETERS
 
@@ -713,6 +767,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -728,6 +783,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem
@@ -764,7 +820,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Update-MgBetaIdentityCustomAuthenticationExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycustomauthenticationextension)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/customauthenticationextension-update?view=graph-rest-beta)
 
 
 

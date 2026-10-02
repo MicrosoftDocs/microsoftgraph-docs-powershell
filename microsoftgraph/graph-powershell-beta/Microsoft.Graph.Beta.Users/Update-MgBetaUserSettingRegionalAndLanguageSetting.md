@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Users-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingregionalandlanguagesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Users
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaUserSettingRegionalAndLanguageSetting
 ---
@@ -31,7 +31,6 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <string>
  [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +40,7 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId <string>
  -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -58,7 +57,6 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
  [-TranslationPreferences <IMicrosoftGraphTranslationPreferences>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -68,7 +66,7 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
  -BodyParameter <IMicrosoftGraphRegionalAndLanguageSettings> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -729,7 +727,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
 
 DEFAULTDISPLAYLANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -815,7 +813,7 @@ This is computed from the authoringLanguages collection in regionalAndLanguageSe
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
-Read only.
+Read-only.
 
 
 ## RELATED LINKS

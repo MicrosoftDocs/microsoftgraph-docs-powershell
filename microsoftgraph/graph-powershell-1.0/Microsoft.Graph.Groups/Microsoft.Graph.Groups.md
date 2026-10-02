@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: 5b5a1584-67b3-40e3-b1fa-a26a3b4b884d
+Module Guid: 55bece5b-e535-4ac6-8b6b-e32edf2aa299
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -27,8 +27,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroup](Get-MgGroup.md)
 
-### [Get-MgGroup](Get-MgGroup.md)
-
 ### [Get-MgGroupAcceptedSender](Get-MgGroupAcceptedSender.md)
 
 ### [Get-MgGroupAcceptedSenderByRef](Get-MgGroupAcceptedSenderByRef.md)
@@ -41,21 +39,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupConversation](Get-MgGroupConversation.md)
 
-### [Get-MgGroupConversation](Get-MgGroupConversation.md)
-
 ### [Get-MgGroupConversationCount](Get-MgGroupConversationCount.md)
-
-### [Get-MgGroupConversationThread](Get-MgGroupConversationThread.md)
 
 ### [Get-MgGroupConversationThread](Get-MgGroupConversationThread.md)
 
 ### [Get-MgGroupConversationThreadCount](Get-MgGroupConversationThreadCount.md)
 
 ### [Get-MgGroupConversationThreadPost](Get-MgGroupConversationThreadPost.md)
-
-### [Get-MgGroupConversationThreadPost](Get-MgGroupConversationThreadPost.md)
-
-### [Get-MgGroupConversationThreadPostAttachment](Get-MgGroupConversationThreadPostAttachment.md)
 
 ### [Get-MgGroupConversationThreadPostAttachment](Get-MgGroupConversationThreadPostAttachment.md)
 
@@ -65,17 +55,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupConversationThreadPostExtension](Get-MgGroupConversationThreadPostExtension.md)
 
-### [Get-MgGroupConversationThreadPostExtension](Get-MgGroupConversationThreadPostExtension.md)
-
 ### [Get-MgGroupConversationThreadPostExtensionCount](Get-MgGroupConversationThreadPostExtensionCount.md)
 
 ### [Get-MgGroupConversationThreadPostInReplyToAttachment](Get-MgGroupConversationThreadPostInReplyToAttachment.md)
 
-### [Get-MgGroupConversationThreadPostInReplyToAttachment](Get-MgGroupConversationThreadPostInReplyToAttachment.md)
-
 ### [Get-MgGroupConversationThreadPostInReplyToAttachmentCount](Get-MgGroupConversationThreadPostInReplyToAttachmentCount.md)
-
-### [Get-MgGroupConversationThreadPostInReplyToExtension](Get-MgGroupConversationThreadPostInReplyToExtension.md)
 
 ### [Get-MgGroupConversationThreadPostInReplyToExtension](Get-MgGroupConversationThreadPostInReplyToExtension.md)
 
@@ -89,11 +73,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupExtension](Get-MgGroupExtension.md)
 
-### [Get-MgGroupExtension](Get-MgGroupExtension.md)
-
 ### [Get-MgGroupExtensionCount](Get-MgGroupExtensionCount.md)
-
-### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
 
 ### [Get-MgGroupLifecyclePolicy](Get-MgGroupLifecyclePolicy.md)
 
@@ -105,25 +85,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupMemberAsApplication](Get-MgGroupMemberAsApplication.md)
 
-### [Get-MgGroupMemberAsApplication](Get-MgGroupMemberAsApplication.md)
-
 ### [Get-MgGroupMemberAsDevice](Get-MgGroupMemberAsDevice.md)
-
-### [Get-MgGroupMemberAsDevice](Get-MgGroupMemberAsDevice.md)
-
-### [Get-MgGroupMemberAsGroup](Get-MgGroupMemberAsGroup.md)
 
 ### [Get-MgGroupMemberAsGroup](Get-MgGroupMemberAsGroup.md)
 
 ### [Get-MgGroupMemberAsOrgContact](Get-MgGroupMemberAsOrgContact.md)
 
-### [Get-MgGroupMemberAsOrgContact](Get-MgGroupMemberAsOrgContact.md)
-
 ### [Get-MgGroupMemberAsServicePrincipal](Get-MgGroupMemberAsServicePrincipal.md)
-
-### [Get-MgGroupMemberAsServicePrincipal](Get-MgGroupMemberAsServicePrincipal.md)
-
-### [Get-MgGroupMemberAsUser](Get-MgGroupMemberAsUser.md)
 
 ### [Get-MgGroupMemberAsUser](Get-MgGroupMemberAsUser.md)
 
@@ -149,13 +117,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupMemberOf](Get-MgGroupMemberOf.md)
 
-### [Get-MgGroupMemberOf](Get-MgGroupMemberOf.md)
-
 ### [Get-MgGroupMemberOfAsAdministrativeUnit](Get-MgGroupMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgGroupMemberOfAsAdministrativeUnit](Get-MgGroupMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgGroupMemberOfAsGroup](Get-MgGroupMemberOfAsGroup.md)
 
 ### [Get-MgGroupMemberOfAsGroup](Get-MgGroupMemberOfAsGroup.md)
 
@@ -167,29 +129,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
 
-### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
-
 ### [Get-MgGroupMemberWithLicenseErrorAsApplication](Get-MgGroupMemberWithLicenseErrorAsApplication.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsApplication](Get-MgGroupMemberWithLicenseErrorAsApplication.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsDevice](Get-MgGroupMemberWithLicenseErrorAsDevice.md)
 
 ### [Get-MgGroupMemberWithLicenseErrorAsDevice](Get-MgGroupMemberWithLicenseErrorAsDevice.md)
 
 ### [Get-MgGroupMemberWithLicenseErrorAsGroup](Get-MgGroupMemberWithLicenseErrorAsGroup.md)
 
-### [Get-MgGroupMemberWithLicenseErrorAsGroup](Get-MgGroupMemberWithLicenseErrorAsGroup.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsOrgContact](Get-MgGroupMemberWithLicenseErrorAsOrgContact.md)
-
 ### [Get-MgGroupMemberWithLicenseErrorAsOrgContact](Get-MgGroupMemberWithLicenseErrorAsOrgContact.md)
 
 ### [Get-MgGroupMemberWithLicenseErrorAsServicePrincipal](Get-MgGroupMemberWithLicenseErrorAsServicePrincipal.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsServicePrincipal](Get-MgGroupMemberWithLicenseErrorAsServicePrincipal.md)
-
-### [Get-MgGroupMemberWithLicenseErrorAsUser](Get-MgGroupMemberWithLicenseErrorAsUser.md)
 
 ### [Get-MgGroupMemberWithLicenseErrorAsUser](Get-MgGroupMemberWithLicenseErrorAsUser.md)
 
@@ -213,25 +161,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupOwnerAsApplication](Get-MgGroupOwnerAsApplication.md)
 
-### [Get-MgGroupOwnerAsApplication](Get-MgGroupOwnerAsApplication.md)
-
 ### [Get-MgGroupOwnerAsDevice](Get-MgGroupOwnerAsDevice.md)
-
-### [Get-MgGroupOwnerAsDevice](Get-MgGroupOwnerAsDevice.md)
-
-### [Get-MgGroupOwnerAsGroup](Get-MgGroupOwnerAsGroup.md)
 
 ### [Get-MgGroupOwnerAsGroup](Get-MgGroupOwnerAsGroup.md)
 
 ### [Get-MgGroupOwnerAsOrgContact](Get-MgGroupOwnerAsOrgContact.md)
 
-### [Get-MgGroupOwnerAsOrgContact](Get-MgGroupOwnerAsOrgContact.md)
-
 ### [Get-MgGroupOwnerAsServicePrincipal](Get-MgGroupOwnerAsServicePrincipal.md)
-
-### [Get-MgGroupOwnerAsServicePrincipal](Get-MgGroupOwnerAsServicePrincipal.md)
-
-### [Get-MgGroupOwnerAsUser](Get-MgGroupOwnerAsUser.md)
 
 ### [Get-MgGroupOwnerAsUser](Get-MgGroupOwnerAsUser.md)
 
@@ -253,11 +189,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
 
-### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
-
 ### [Get-MgGroupPermissionGrantCount](Get-MgGroupPermissionGrantCount.md)
-
-### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
 
 ### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
 
@@ -271,8 +203,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupSetting](Get-MgGroupSetting.md)
 
-### [Get-MgGroupSetting](Get-MgGroupSetting.md)
-
 ### [Get-MgGroupSettingCount](Get-MgGroupSettingCount.md)
 
 ### [Get-MgGroupSettingTemplateById](Get-MgGroupSettingTemplateById.md)
@@ -280,8 +210,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgGroupSettingTemplateCount](Get-MgGroupSettingTemplateCount.md)
 
 ### [Get-MgGroupSettingTemplateDelta](Get-MgGroupSettingTemplateDelta.md)
-
-### [Get-MgGroupSettingTemplateGroupSettingTemplate](Get-MgGroupSettingTemplateGroupSettingTemplate.md)
 
 ### [Get-MgGroupSettingTemplateGroupSettingTemplate](Get-MgGroupSettingTemplateGroupSettingTemplate.md)
 
@@ -295,15 +223,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupThread](Get-MgGroupThread.md)
 
-### [Get-MgGroupThread](Get-MgGroupThread.md)
-
 ### [Get-MgGroupThreadCount](Get-MgGroupThreadCount.md)
 
 ### [Get-MgGroupThreadPost](Get-MgGroupThreadPost.md)
-
-### [Get-MgGroupThreadPost](Get-MgGroupThreadPost.md)
-
-### [Get-MgGroupThreadPostAttachment](Get-MgGroupThreadPostAttachment.md)
 
 ### [Get-MgGroupThreadPostAttachment](Get-MgGroupThreadPostAttachment.md)
 
@@ -313,11 +235,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupThreadPostExtension](Get-MgGroupThreadPostExtension.md)
 
-### [Get-MgGroupThreadPostExtension](Get-MgGroupThreadPostExtension.md)
-
 ### [Get-MgGroupThreadPostExtensionCount](Get-MgGroupThreadPostExtensionCount.md)
-
-### [Get-MgGroupThreadPostInReplyToAttachment](Get-MgGroupThreadPostInReplyToAttachment.md)
 
 ### [Get-MgGroupThreadPostInReplyToAttachment](Get-MgGroupThreadPostInReplyToAttachment.md)
 
@@ -325,35 +243,19 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupThreadPostInReplyToExtension](Get-MgGroupThreadPostInReplyToExtension.md)
 
-### [Get-MgGroupThreadPostInReplyToExtension](Get-MgGroupThreadPostInReplyToExtension.md)
-
 ### [Get-MgGroupThreadPostInReplyToExtensionCount](Get-MgGroupThreadPostInReplyToExtensionCount.md)
 
 ### [Get-MgGroupTransitiveMember](Get-MgGroupTransitiveMember.md)
 
-### [Get-MgGroupTransitiveMember](Get-MgGroupTransitiveMember.md)
-
 ### [Get-MgGroupTransitiveMemberAsApplication](Get-MgGroupTransitiveMemberAsApplication.md)
-
-### [Get-MgGroupTransitiveMemberAsApplication](Get-MgGroupTransitiveMemberAsApplication.md)
-
-### [Get-MgGroupTransitiveMemberAsDevice](Get-MgGroupTransitiveMemberAsDevice.md)
 
 ### [Get-MgGroupTransitiveMemberAsDevice](Get-MgGroupTransitiveMemberAsDevice.md)
 
 ### [Get-MgGroupTransitiveMemberAsGroup](Get-MgGroupTransitiveMemberAsGroup.md)
 
-### [Get-MgGroupTransitiveMemberAsGroup](Get-MgGroupTransitiveMemberAsGroup.md)
-
-### [Get-MgGroupTransitiveMemberAsOrgContact](Get-MgGroupTransitiveMemberAsOrgContact.md)
-
 ### [Get-MgGroupTransitiveMemberAsOrgContact](Get-MgGroupTransitiveMemberAsOrgContact.md)
 
 ### [Get-MgGroupTransitiveMemberAsServicePrincipal](Get-MgGroupTransitiveMemberAsServicePrincipal.md)
-
-### [Get-MgGroupTransitiveMemberAsServicePrincipal](Get-MgGroupTransitiveMemberAsServicePrincipal.md)
-
-### [Get-MgGroupTransitiveMemberAsUser](Get-MgGroupTransitiveMemberAsUser.md)
 
 ### [Get-MgGroupTransitiveMemberAsUser](Get-MgGroupTransitiveMemberAsUser.md)
 
@@ -373,13 +275,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
 
-### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
-
 ### [Get-MgGroupTransitiveMemberOfAsAdministrativeUnit](Get-MgGroupTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgGroupTransitiveMemberOfAsAdministrativeUnit](Get-MgGroupTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgGroupTransitiveMemberOfAsGroup](Get-MgGroupTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgGroupTransitiveMemberOfAsGroup](Get-MgGroupTransitiveMemberOfAsGroup.md)
 
@@ -441,7 +337,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgGroupLifecyclePolicy](New-MgGroupLifecyclePolicy.md)
 
+### [New-MgGroupMember](New-MgGroupMember.md)
+
 ### [New-MgGroupMemberByRef](New-MgGroupMemberByRef.md)
+
+### [New-MgGroupOwner](New-MgGroupOwner.md)
 
 ### [New-MgGroupOwnerByRef](New-MgGroupOwnerByRef.md)
 

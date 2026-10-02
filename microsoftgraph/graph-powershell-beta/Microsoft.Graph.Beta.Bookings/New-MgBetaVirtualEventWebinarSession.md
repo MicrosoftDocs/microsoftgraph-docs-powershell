@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinarsession
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventWebinarSession
 ---
@@ -32,21 +32,22 @@ New-MgBetaVirtualEventWebinarSession -VirtualEventWebinarId <string>
  [-AllowedLobbyAdmitters <string>] [-AllowedPresenters <string>]
  [-AnonymizeIdentityForRoles <string[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-ExpiryDateTime <datetime>] [-Id <string>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-Capacity <int>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
+ [-CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]
+ [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-ExpiryDateTime <datetime>] [-Id <string>]
+ [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinWebUrl <string>]
  [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>] [-MeetingOptionsWebUrl <string>]
- [-MeetingSpokenLanguageTag <string>] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
- [-RecordAutomatically] [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
+ [-MeetingSpokenLanguageTag <string>] [-MeetingType <string>]
+ [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-RecordAutomatically]
+ [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]
  [-ShareMeetingChatHistoryDefault <string>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
  [-Subject <string>] [-VideoOnDemandWebUrl <string>] [-VideoTeleconferenceId <string>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -56,7 +57,7 @@ New-MgBetaVirtualEventWebinarSession -VirtualEventWebinarId <string>
  -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### CreateViaIdentityExpanded
@@ -71,21 +72,22 @@ New-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity>
  [-AllowedLobbyAdmitters <string>] [-AllowedPresenters <string>]
  [-AnonymizeIdentityForRoles <string[]>]
  [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-EndDateTime <IMicrosoftGraphDateTimeZone>]
- [-ExpiryDateTime <datetime>] [-Id <string>] [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced]
- [-JoinInformation <IMicrosoftGraphItemBody>]
+ [-AudioConferencing <IMicrosoftGraphAudioConferencing>] [-Capacity <int>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-ChatRestrictions <IMicrosoftGraphChatRestrictions>]
+ [-CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]
+ [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-ExpiryDateTime <datetime>] [-Id <string>]
+ [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinWebUrl <string>]
  [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>] [-MeetingOptionsWebUrl <string>]
- [-MeetingSpokenLanguageTag <string>] [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
- [-RecordAutomatically] [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
+ [-MeetingSpokenLanguageTag <string>] [-MeetingType <string>]
+ [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>] [-RecordAutomatically]
+ [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]
  [-ShareMeetingChatHistoryDefault <string>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
  [-Subject <string>] [-VideoOnDemandWebUrl <string>] [-VideoTeleconferenceId <string>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -95,7 +97,7 @@ New-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity>
  -BodyParameter <IMicrosoftGraphVirtualEventSession> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -649,6 +651,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Capacity
+
+Represents the expected number of attendees for town hall session.
+
+```yaml
+Type: System.Int32
+DefaultValue: 0
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ChatInfo
 
 chatInfo
@@ -684,6 +713,34 @@ To construct, see NOTES section for CHATRESTRICTIONS properties and create a has
 
 ```yaml
 Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatRestrictions
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -CloudVideoInteropInfo
+
+cloudVideoInteropInfo
+To construct, see NOTES section for CLOUDVIDEOINTEROPINFO properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudVideoInteropInfo
 DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
@@ -1100,6 +1157,33 @@ HelpMessage: ''
 ### -MeetingSpokenLanguageTag
 
 Specifies the spoken language used during the meeting for recording and transcription purposes.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -MeetingType
+
+onlineMeetingType
 
 ```yaml
 Type: System.String
@@ -1581,6 +1665,10 @@ Read-only.
       [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
       [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
     [EmailAddress <String>]: Email address of the user associated with this attendance record.
+    [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+      [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+      [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+      [EngagementType <String>]: meetingEngagementType
     [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -1660,6 +1748,10 @@ Read-only.
         [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
         [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
       [EmailAddress <String>]: Email address of the user associated with this attendance record.
+      [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+        [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+        [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+        [EngagementType <String>]: meetingEngagementType
       [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -1714,6 +1806,13 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+  [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+    [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+    [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
   [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1743,6 +1842,7 @@ Optional.
   [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
   [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+  [MeetingType <String>]: onlineMeetingType
   [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
   [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1757,6 +1857,7 @@ Read-only.
     [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
   [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
@@ -1821,6 +1922,14 @@ CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+
+CLOUDVIDEOINTEROPINFO `<IMicrosoftGraphCloudVideoInteropInfo>`: cloudVideoInteropInfo
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+  [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+  [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
 
 ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1927,6 +2036,10 @@ Read-only.
           [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
           [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
         [EmailAddress <String>]: Email address of the user associated with this attendance record.
+        [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+          [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+          [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+          [EngagementType <String>]: meetingEngagementType
         [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Referrer <String>]: A URL or string that represents the location from which the registrant registered.
@@ -1975,6 +2088,13 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+      [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+      [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
     [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2001,6 +2121,7 @@ Optional.
     [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
     [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+    [MeetingType <String>]: onlineMeetingType
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2015,6 +2136,7 @@ Read-only.
       [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
     [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).
@@ -2118,6 +2240,10 @@ Read-only.
           [JoinDateTime <DateTime?>]: The time the attendee joined in UTC.
           [LeaveDateTime <DateTime?>]: The time the attendee left in UTC.
         [EmailAddress <String>]: Email address of the user associated with this attendance record.
+        [Engagements <IMicrosoftGraphMeetingEngagement[]>]: The list of real-time participant interaction behaviors during a meeting.
+          [DateTime <DateTime?>]: The UTC date and time when the engagement event occurred, in ISO 8601 format.
+          [EngagementSubType <String>]: The specific engagement action within the type (e.g., like, love, applause, laugh, surprised for reactions; raiseHand for hand; cameraOn for camera; unmute, mute for microphone).
+          [EngagementType <String>]: meetingEngagementType
         [ExternalRegistrationInformation <IMicrosoftGraphVirtualEventExternalRegistrationInformation>]: virtualEventExternalRegistrationInformation
         [Identity <IMicrosoftGraphIdentity>]: identity
           [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2166,6 +2292,13 @@ Read-only.
       [(Any) <Object>]: This indicates any property can be added to this object.
       [AllowTextOnly <Boolean?>]: Indicates whether only text is allowed in the meeting chat.
 Optional.
+    [CloudVideoInteropInfo <IMicrosoftGraphCloudVideoInteropInfo>]: cloudVideoInteropInfo
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [MoreInfoWebUrl <String>]: Provides other video teleconferencing (VTC) dial-in options.
+Read-only.
+      [TenantKey <String>]: The tenant key that is used to dial into the interactive voice response (IVR) of the partner CVI service.
+      [VideoTeleconferenceId <String>]: The video teleconferencing ID.
+Read-only.
     [ExpiryDateTime <DateTime?>]: Indicates the date and time when the meeting resource expires.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -2195,6 +2328,7 @@ Optional.
     [MeetingOptionsWebUrl <String>]: Provides the URL to the Teams meeting options page for the specified meeting.
 This link allows only the organizer to configure meeting settings.
     [MeetingSpokenLanguageTag <String>]: Specifies the spoken language used during the meeting for recording and transcription purposes.
+    [MeetingType <String>]: onlineMeetingType
     [RecordAutomatically <Boolean?>]: Indicates whether to record the meeting automatically.
     [SensitivityLabelAssignment <IMicrosoftGraphOnlineMeetingSensitivityLabelAssignment>]: onlineMeetingSensitivityLabelAssignment
       [(Any) <Object>]: This indicates any property can be added to this object.
@@ -2209,6 +2343,7 @@ Read-only.
       [IsEnabledForVideo <Boolean?>]: Indicates whether to apply a watermark to everyone's video feed.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [Capacity <Int32?>]: Represents the expected number of attendees for town hall session.
     [EndDateTime <IMicrosoftGraphDateTimeZone>]: dateTimeTimeZone
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DateTime <String>]: A single point of time in a combined date and time representation ({date}T{time}).

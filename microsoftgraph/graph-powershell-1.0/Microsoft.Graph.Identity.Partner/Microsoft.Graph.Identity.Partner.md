@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Partner
-Module Guid: 02d6a328-3d5b-4002-add7-367f22d013df
+Module Guid: de06a470-396c-4945-9517-d1bc3b34f0ca
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.partner/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,21 +13,13 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Identity.Partner Cmdlets
 ### [Get-MgTenantRelationshipDelegatedAdminCustomer](Get-MgTenantRelationshipDelegatedAdminCustomer.md)
 
-### [Get-MgTenantRelationshipDelegatedAdminCustomer](Get-MgTenantRelationshipDelegatedAdminCustomer.md)
-
 ### [Get-MgTenantRelationshipDelegatedAdminCustomerCount](Get-MgTenantRelationshipDelegatedAdminCustomerCount.md)
-
-### [Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail.md)
 
 ### [Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail.md)
 
 ### [Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount](Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount.md)
 
 ### [Get-MgTenantRelationshipDelegatedAdminRelationship](Get-MgTenantRelationshipDelegatedAdminRelationship.md)
-
-### [Get-MgTenantRelationshipDelegatedAdminRelationship](Get-MgTenantRelationshipDelegatedAdminRelationship.md)
-
-### [Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment.md)
 
 ### [Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment.md)
 
@@ -37,11 +29,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTenantRelationshipDelegatedAdminRelationshipOperation](Get-MgTenantRelationshipDelegatedAdminRelationshipOperation.md)
 
-### [Get-MgTenantRelationshipDelegatedAdminRelationshipOperation](Get-MgTenantRelationshipDelegatedAdminRelationshipOperation.md)
-
 ### [Get-MgTenantRelationshipDelegatedAdminRelationshipOperationCount](Get-MgTenantRelationshipDelegatedAdminRelationshipOperationCount.md)
-
-### [Get-MgTenantRelationshipDelegatedAdminRelationshipRequest](Get-MgTenantRelationshipDelegatedAdminRelationshipRequest.md)
 
 ### [Get-MgTenantRelationshipDelegatedAdminRelationshipRequest](Get-MgTenantRelationshipDelegatedAdminRelationshipRequest.md)
 

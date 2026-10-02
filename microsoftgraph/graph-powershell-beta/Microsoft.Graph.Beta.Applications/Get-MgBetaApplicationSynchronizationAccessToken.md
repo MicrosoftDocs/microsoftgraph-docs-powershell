@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaApplicationSynchronizationAccessToken
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaApplicationSynchronizationAccessToken
 
 ## SYNOPSIS
 
-Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
+Acquire an OAuth access token from the synchronization resource to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationAccessToken?view=graph-powershell-1.0)
@@ -29,7 +29,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId <string>
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Acquire
@@ -40,7 +39,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AcquireViaIdentityExpanded
@@ -52,7 +50,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### AcquireViaIdentity
@@ -63,7 +60,6 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -73,7 +69,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
+Acquire an OAuth access token from the synchronization resource to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 **Permissions**
 

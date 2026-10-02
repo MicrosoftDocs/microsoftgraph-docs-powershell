@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-Module Guid: d043f997-1f4a-4c45-b332-9c1446381f88
+Module Guid: 79e969fa-e874-4ce9-a451-19df92227e80
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.personalcontacts/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,13 +13,9 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.PersonalContacts Cmdlets
 ### [Get-MgBetaUserContact](Get-MgBetaUserContact.md)
 
-### [Get-MgBetaUserContact](Get-MgBetaUserContact.md)
-
 ### [Get-MgBetaUserContactCount](Get-MgBetaUserContactCount.md)
 
 ### [Get-MgBetaUserContactDelta](Get-MgBetaUserContactDelta.md)
-
-### [Get-MgBetaUserContactExtension](Get-MgBetaUserContactExtension.md)
 
 ### [Get-MgBetaUserContactExtension](Get-MgBetaUserContactExtension.md)
 
@@ -27,21 +23,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserContactFolder](Get-MgBetaUserContactFolder.md)
 
-### [Get-MgBetaUserContactFolder](Get-MgBetaUserContactFolder.md)
-
 ### [Get-MgBetaUserContactFolderChildFolder](Get-MgBetaUserContactFolderChildFolder.md)
-
-### [Get-MgBetaUserContactFolderChildFolder](Get-MgBetaUserContactFolderChildFolder.md)
-
-### [Get-MgBetaUserContactFolderChildFolderContact](Get-MgBetaUserContactFolderChildFolderContact.md)
 
 ### [Get-MgBetaUserContactFolderChildFolderContact](Get-MgBetaUserContactFolderChildFolderContact.md)
 
 ### [Get-MgBetaUserContactFolderChildFolderContactCount](Get-MgBetaUserContactFolderChildFolderContactCount.md)
 
 ### [Get-MgBetaUserContactFolderChildFolderContactDelta](Get-MgBetaUserContactFolderChildFolderContactDelta.md)
-
-### [Get-MgBetaUserContactFolderChildFolderContactExtension](Get-MgBetaUserContactFolderChildFolderContactExtension.md)
 
 ### [Get-MgBetaUserContactFolderChildFolderContactExtension](Get-MgBetaUserContactFolderChildFolderContactExtension.md)
 
@@ -57,13 +45,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserContactFolderContact](Get-MgBetaUserContactFolderContact.md)
 
-### [Get-MgBetaUserContactFolderContact](Get-MgBetaUserContactFolderContact.md)
-
 ### [Get-MgBetaUserContactFolderContactCount](Get-MgBetaUserContactFolderContactCount.md)
 
 ### [Get-MgBetaUserContactFolderContactDelta](Get-MgBetaUserContactFolderContactDelta.md)
-
-### [Get-MgBetaUserContactFolderContactExtension](Get-MgBetaUserContactFolderContactExtension.md)
 
 ### [Get-MgBetaUserContactFolderContactExtension](Get-MgBetaUserContactFolderContactExtension.md)
 

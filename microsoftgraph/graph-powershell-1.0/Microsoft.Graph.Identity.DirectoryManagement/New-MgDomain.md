@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDomain
 ---
@@ -41,7 +41,6 @@ New-MgDomain [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtab
  [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Create
@@ -50,7 +49,7 @@ New-MgDomain [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtab
 New-MgDomain -BodyParameter <IMicrosoftGraphDomain> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -873,6 +872,7 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
       [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+    [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
   [IsAdminManaged <Boolean?>]: The value of the property is false if the DNS record management of the domain is delegated to Microsoft 365.
 Otherwise, the value is true.
 Not nullable
@@ -969,6 +969,7 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
     [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+  [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
 
 ROOTDOMAIN `<IMicrosoftGraphDomain>`: domain
   [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1026,6 +1027,7 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
       [LastRunDateTime <DateTime?>]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
+    [SystemBrowserEnabledOn <String>]: systemBrowserEnabledOn
   [IsAdminManaged <Boolean?>]: The value of the property is false if the DNS record management of the domain is delegated to Microsoft 365.
 Otherwise, the value is true.
 Not nullable

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleschedulinggroup
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgTeamScheduleSchedulingGroup
 ---
@@ -13,7 +13,7 @@ title: Remove-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
 
-Mark a schedulingGroup as inactive by setting its isActive property.\rThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.\rThis method doesn't remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 > [!NOTE]
@@ -28,7 +28,6 @@ Remove-MgTeamScheduleSchedulingGroup -SchedulingGroupId <string> -TeamId <string
  [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,7 +37,6 @@ Remove-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-IfMatch <st
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -48,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Mark a schedulingGroup as inactive by setting its isActive property.\rThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.\rThis method doesn't remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 **Permissions**
@@ -444,6 +442,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [SharedWithChannelTeamInfoId <String>]: The unique identifier of sharedWithChannelTeamInfo
   [ShiftId <String>]: The unique identifier of shift
   [SwapShiftsChangeRequestId <String>]: The unique identifier of swapShiftsChangeRequest
+  [TargetedChatMessageId <String>]: The unique identifier of targetedChatMessage
   [TeamId <String>]: The unique identifier of team
   [TeamsAppDefinitionId <String>]: The unique identifier of teamsAppDefinition
   [TeamsAppId <String>]: The unique identifier of teamsApp

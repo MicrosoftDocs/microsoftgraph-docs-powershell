@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 01eec85c-0aa5-4fef-a8de-b5f224bdb39b
+Module Guid: a541c108-e042-47f2-a8f7-7ac563781d56
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.security/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -33,11 +33,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
 
-### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
-
 ### [Get-MgSecurityAlertCount](Get-MgSecurityAlertCount.md)
-
-### [Get-MgSecurityAlertV2](Get-MgSecurityAlertV2.md)
 
 ### [Get-MgSecurityAlertV2](Get-MgSecurityAlertV2.md)
 
@@ -45,15 +41,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
 
-### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
-
-### [Get-MgSecurityAttackSimulationAutomation](Get-MgSecurityAttackSimulationAutomation.md)
-
 ### [Get-MgSecurityAttackSimulationAutomation](Get-MgSecurityAttackSimulationAutomation.md)
 
 ### [Get-MgSecurityAttackSimulationAutomationCount](Get-MgSecurityAttackSimulationAutomationCount.md)
-
-### [Get-MgSecurityAttackSimulationAutomationRun](Get-MgSecurityAttackSimulationAutomationRun.md)
 
 ### [Get-MgSecurityAttackSimulationAutomationRun](Get-MgSecurityAttackSimulationAutomationRun.md)
 
@@ -63,11 +53,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityAttackSimulationEndUserNotification](Get-MgSecurityAttackSimulationEndUserNotification.md)
 
-### [Get-MgSecurityAttackSimulationEndUserNotification](Get-MgSecurityAttackSimulationEndUserNotification.md)
-
 ### [Get-MgSecurityAttackSimulationEndUserNotificationCount](Get-MgSecurityAttackSimulationEndUserNotificationCount.md)
-
-### [Get-MgSecurityAttackSimulationEndUserNotificationDetail](Get-MgSecurityAttackSimulationEndUserNotificationDetail.md)
 
 ### [Get-MgSecurityAttackSimulationEndUserNotificationDetail](Get-MgSecurityAttackSimulationEndUserNotificationDetail.md)
 
@@ -75,11 +61,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityAttackSimulationLandingPage](Get-MgSecurityAttackSimulationLandingPage.md)
 
-### [Get-MgSecurityAttackSimulationLandingPage](Get-MgSecurityAttackSimulationLandingPage.md)
-
 ### [Get-MgSecurityAttackSimulationLandingPageCount](Get-MgSecurityAttackSimulationLandingPageCount.md)
-
-### [Get-MgSecurityAttackSimulationLandingPageDetail](Get-MgSecurityAttackSimulationLandingPageDetail.md)
 
 ### [Get-MgSecurityAttackSimulationLandingPageDetail](Get-MgSecurityAttackSimulationLandingPageDetail.md)
 
@@ -87,11 +69,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityAttackSimulationLoginPage](Get-MgSecurityAttackSimulationLoginPage.md)
 
-### [Get-MgSecurityAttackSimulationLoginPage](Get-MgSecurityAttackSimulationLoginPage.md)
-
 ### [Get-MgSecurityAttackSimulationLoginPageCount](Get-MgSecurityAttackSimulationLoginPageCount.md)
-
-### [Get-MgSecurityAttackSimulationOperation](Get-MgSecurityAttackSimulationOperation.md)
 
 ### [Get-MgSecurityAttackSimulationOperation](Get-MgSecurityAttackSimulationOperation.md)
 
@@ -99,11 +77,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityAttackSimulationPayload](Get-MgSecurityAttackSimulationPayload.md)
 
-### [Get-MgSecurityAttackSimulationPayload](Get-MgSecurityAttackSimulationPayload.md)
-
 ### [Get-MgSecurityAttackSimulationPayloadCount](Get-MgSecurityAttackSimulationPayloadCount.md)
-
-### [Get-MgSecurityAttackSimulationTraining](Get-MgSecurityAttackSimulationTraining.md)
 
 ### [Get-MgSecurityAttackSimulationTraining](Get-MgSecurityAttackSimulationTraining.md)
 
@@ -111,19 +85,23 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityAttackSimulationTrainingLanguageDetail](Get-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
-### [Get-MgSecurityAttackSimulationTrainingLanguageDetail](Get-MgSecurityAttackSimulationTrainingLanguageDetail.md)
-
 ### [Get-MgSecurityAttackSimulationTrainingLanguageDetailCount](Get-MgSecurityAttackSimulationTrainingLanguageDetailCount.md)
+
+### [Get-MgSecurityAuditLog](Get-MgSecurityAuditLog.md)
+
+### [Get-MgSecurityAuditLogQuery](Get-MgSecurityAuditLogQuery.md)
+
+### [Get-MgSecurityAuditLogQueryCount](Get-MgSecurityAuditLogQueryCount.md)
+
+### [Get-MgSecurityAuditLogQueryRecord](Get-MgSecurityAuditLogQueryRecord.md)
+
+### [Get-MgSecurityAuditLogQueryRecordCount](Get-MgSecurityAuditLogQueryRecordCount.md)
 
 ### [Get-MgSecurityCase](Get-MgSecurityCase.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCase](Get-MgSecurityCaseEdiscoveryCase.md)
 
-### [Get-MgSecurityCaseEdiscoveryCase](Get-MgSecurityCaseEdiscoveryCase.md)
-
 ### [Get-MgSecurityCaseEdiscoveryCaseCount](Get-MgSecurityCaseEdiscoveryCaseCount.md)
-
-### [Get-MgSecurityCaseEdiscoveryCaseCustodian](Get-MgSecurityCaseEdiscoveryCaseCustodian.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodian](Get-MgSecurityCaseEdiscoveryCaseCustodian.md)
 
@@ -133,13 +111,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource.md)
 
-### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource.md)
-
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceCount](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceCount.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite](Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite.md)
-
-### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
@@ -153,11 +127,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 
-### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
-
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSourceCount](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSourceCount.md)
 
-### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
+### [Get-MgSecurityCaseEdiscoveryCaseMember](Get-MgSecurityCaseEdiscoveryCaseMember.md)
+
+### [Get-MgSecurityCaseEdiscoveryCaseMemberCount](Get-MgSecurityCaseEdiscoveryCaseMemberCount.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -167,11 +141,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseOperation](Get-MgSecurityCaseEdiscoveryCaseOperation.md)
 
-### [Get-MgSecurityCaseEdiscoveryCaseOperation](Get-MgSecurityCaseEdiscoveryCaseOperation.md)
-
 ### [Get-MgSecurityCaseEdiscoveryCaseOperationCount](Get-MgSecurityCaseEdiscoveryCaseOperationCount.md)
-
-### [Get-MgSecurityCaseEdiscoveryCaseReviewSet](Get-MgSecurityCaseEdiscoveryCaseReviewSet.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSet](Get-MgSecurityCaseEdiscoveryCaseReviewSet.md)
 
@@ -179,15 +149,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery](Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery.md)
 
-### [Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery](Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery.md)
-
 ### [Get-MgSecurityCaseEdiscoveryCaseReviewSetQueryCount](Get-MgSecurityCaseEdiscoveryCaseReviewSetQueryCount.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearch](Get-MgSecurityCaseEdiscoveryCaseSearch.md)
-
-### [Get-MgSecurityCaseEdiscoveryCaseSearch](Get-MgSecurityCaseEdiscoveryCaseSearch.md)
-
-### [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 
@@ -199,13 +163,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
 
-### [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource.md)
-
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSourceCount](Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSourceCount.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation.md)
-
-### [Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource](Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource.md)
 
@@ -215,10 +175,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTag](Get-MgSecurityCaseEdiscoveryCaseTag.md)
 
-### [Get-MgSecurityCaseEdiscoveryCaseTag](Get-MgSecurityCaseEdiscoveryCaseTag.md)
-
-### [Get-MgSecurityCaseEdiscoveryCaseTagChildTag](Get-MgSecurityCaseEdiscoveryCaseTagChildTag.md)
-
 ### [Get-MgSecurityCaseEdiscoveryCaseTagChildTag](Get-MgSecurityCaseEdiscoveryCaseTagChildTag.md)
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagChildTagCount](Get-MgSecurityCaseEdiscoveryCaseTagChildTagCount.md)
@@ -227,19 +183,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
 
+### [Get-MgSecurityCollaboration](Get-MgSecurityCollaboration.md)
+
+### [Get-MgSecurityCollaborationAnalyzedEmail](Get-MgSecurityCollaborationAnalyzedEmail.md)
+
+### [Get-MgSecurityCollaborationAnalyzedEmailCount](Get-MgSecurityCollaborationAnalyzedEmailCount.md)
+
 ### [Get-MgSecurityDataSecurityAndGovernance](Get-MgSecurityDataSecurityAndGovernance.md)
 
 ### [Get-MgSecurityDataSecurityAndGovernanceProtectionScope](Get-MgSecurityDataSecurityAndGovernanceProtectionScope.md)
 
 ### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
 
-### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
-
 ### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelCount](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelCount.md)
 
 ### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelRight.md)
-
-### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
 
 ### [Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel](Get-MgSecurityDataSecurityAndGovernanceSensitivityLabelSublabel.md)
 
@@ -251,21 +209,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityIdentityAccount](Get-MgSecurityIdentityAccount.md)
 
-### [Get-MgSecurityIdentityAccount](Get-MgSecurityIdentityAccount.md)
-
 ### [Get-MgSecurityIdentityAccountCount](Get-MgSecurityIdentityAccountCount.md)
-
-### [Get-MgSecurityIdentityHealthIssue](Get-MgSecurityIdentityHealthIssue.md)
 
 ### [Get-MgSecurityIdentityHealthIssue](Get-MgSecurityIdentityHealthIssue.md)
 
 ### [Get-MgSecurityIdentityHealthIssueCount](Get-MgSecurityIdentityHealthIssueCount.md)
 
 ### [Get-MgSecurityIdentitySensor](Get-MgSecurityIdentitySensor.md)
-
-### [Get-MgSecurityIdentitySensor](Get-MgSecurityIdentitySensor.md)
-
-### [Get-MgSecurityIdentitySensorCandidate](Get-MgSecurityIdentitySensorCandidate.md)
 
 ### [Get-MgSecurityIdentitySensorCandidate](Get-MgSecurityIdentitySensorCandidate.md)
 
@@ -281,15 +231,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityIdentitySensorHealthIssue](Get-MgSecurityIdentitySensorHealthIssue.md)
 
-### [Get-MgSecurityIdentitySensorHealthIssue](Get-MgSecurityIdentitySensorHealthIssue.md)
-
 ### [Get-MgSecurityIdentitySensorHealthIssueCount](Get-MgSecurityIdentitySensorHealthIssueCount.md)
 
-### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
+### [Get-MgSecurityIdentitySetting](Get-MgSecurityIdentitySetting.md)
+
+### [Get-MgSecurityIdentitySettingAutoAuditingConfiguration](Get-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
-
-### [Get-MgSecurityIncidentAlert](Get-MgSecurityIncidentAlert.md)
 
 ### [Get-MgSecurityIncidentAlert](Get-MgSecurityIncidentAlert.md)
 
@@ -303,11 +251,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityLabelAuthority](Get-MgSecurityLabelAuthority.md)
 
-### [Get-MgSecurityLabelAuthority](Get-MgSecurityLabelAuthority.md)
-
 ### [Get-MgSecurityLabelAuthorityCount](Get-MgSecurityLabelAuthorityCount.md)
-
-### [Get-MgSecurityLabelCategory](Get-MgSecurityLabelCategory.md)
 
 ### [Get-MgSecurityLabelCategory](Get-MgSecurityLabelCategory.md)
 
@@ -315,11 +259,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityLabelCategorySubcategory](Get-MgSecurityLabelCategorySubcategory.md)
 
-### [Get-MgSecurityLabelCategorySubcategory](Get-MgSecurityLabelCategorySubcategory.md)
-
 ### [Get-MgSecurityLabelCategorySubcategoryCount](Get-MgSecurityLabelCategorySubcategoryCount.md)
-
-### [Get-MgSecurityLabelCitation](Get-MgSecurityLabelCitation.md)
 
 ### [Get-MgSecurityLabelCitation](Get-MgSecurityLabelCitation.md)
 
@@ -327,19 +267,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityLabelDepartment](Get-MgSecurityLabelDepartment.md)
 
-### [Get-MgSecurityLabelDepartment](Get-MgSecurityLabelDepartment.md)
-
 ### [Get-MgSecurityLabelDepartmentCount](Get-MgSecurityLabelDepartmentCount.md)
-
-### [Get-MgSecurityLabelFilePlanReference](Get-MgSecurityLabelFilePlanReference.md)
 
 ### [Get-MgSecurityLabelFilePlanReference](Get-MgSecurityLabelFilePlanReference.md)
 
 ### [Get-MgSecurityLabelFilePlanReferenceCount](Get-MgSecurityLabelFilePlanReferenceCount.md)
 
 ### [Get-MgSecurityLabelRetentionEventType](Get-MgSecurityLabelRetentionEventType.md)
-
-### [Get-MgSecurityLabelRetentionLabel](Get-MgSecurityLabelRetentionLabel.md)
 
 ### [Get-MgSecurityLabelRetentionLabel](Get-MgSecurityLabelRetentionLabel.md)
 
@@ -359,15 +293,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](Get-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
 
-### [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](Get-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
-
 ### [Get-MgSecurityLabelRetentionLabelDispositionReviewStageCount](Get-MgSecurityLabelRetentionLabelDispositionReviewStageCount.md)
 
 ### [Get-MgSecuritySecureScore](Get-MgSecuritySecureScore.md)
-
-### [Get-MgSecuritySecureScore](Get-MgSecuritySecureScore.md)
-
-### [Get-MgSecuritySecureScoreControlProfile](Get-MgSecuritySecureScoreControlProfile.md)
 
 ### [Get-MgSecuritySecureScoreControlProfile](Get-MgSecuritySecureScoreControlProfile.md)
 
@@ -376,10 +304,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecuritySecureScoreCount](Get-MgSecuritySecureScoreCount.md)
 
 ### [Get-MgSecuritySubjectRightsRequest](Get-MgSecuritySubjectRightsRequest.md)
-
-### [Get-MgSecuritySubjectRightsRequest](Get-MgSecuritySubjectRightsRequest.md)
-
-### [Get-MgSecuritySubjectRightsRequestApprover](Get-MgSecuritySubjectRightsRequestApprover.md)
 
 ### [Get-MgSecuritySubjectRightsRequestApprover](Get-MgSecuritySubjectRightsRequestApprover.md)
 
@@ -392,8 +316,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningError](Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningError.md)
 
 ### [Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-
-### [Get-MgSecuritySubjectRightsRequestCollaborator](Get-MgSecuritySubjectRightsRequestCollaborator.md)
 
 ### [Get-MgSecuritySubjectRightsRequestCollaborator](Get-MgSecuritySubjectRightsRequestCollaborator.md)
 
@@ -415,8 +337,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecuritySubjectRightsRequestNote](Get-MgSecuritySubjectRightsRequestNote.md)
 
-### [Get-MgSecuritySubjectRightsRequestNote](Get-MgSecuritySubjectRightsRequestNote.md)
-
 ### [Get-MgSecuritySubjectRightsRequestNoteCount](Get-MgSecuritySubjectRightsRequestNoteCount.md)
 
 ### [Get-MgSecuritySubjectRightsRequestTeam](Get-MgSecuritySubjectRightsRequestTeam.md)
@@ -425,11 +345,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceArticle](Get-MgSecurityThreatIntelligenceArticle.md)
 
-### [Get-MgSecurityThreatIntelligenceArticle](Get-MgSecurityThreatIntelligenceArticle.md)
-
 ### [Get-MgSecurityThreatIntelligenceArticleCount](Get-MgSecurityThreatIntelligenceArticleCount.md)
-
-### [Get-MgSecurityThreatIntelligenceArticleIndicator](Get-MgSecurityThreatIntelligenceArticleIndicator.md)
 
 ### [Get-MgSecurityThreatIntelligenceArticleIndicator](Get-MgSecurityThreatIntelligenceArticleIndicator.md)
 
@@ -439,23 +355,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceHost](Get-MgSecurityThreatIntelligenceHost.md)
 
-### [Get-MgSecurityThreatIntelligenceHost](Get-MgSecurityThreatIntelligenceHost.md)
-
-### [Get-MgSecurityThreatIntelligenceHostChildHostPair](Get-MgSecurityThreatIntelligenceHostChildHostPair.md)
-
 ### [Get-MgSecurityThreatIntelligenceHostChildHostPair](Get-MgSecurityThreatIntelligenceHostChildHostPair.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostChildHostPairCount](Get-MgSecurityThreatIntelligenceHostChildHostPairCount.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostComponent](Get-MgSecurityThreatIntelligenceHostComponent.md)
 
-### [Get-MgSecurityThreatIntelligenceHostComponent](Get-MgSecurityThreatIntelligenceHostComponent.md)
-
 ### [Get-MgSecurityThreatIntelligenceHostComponentCount](Get-MgSecurityThreatIntelligenceHostComponentCount.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostComponentHost](Get-MgSecurityThreatIntelligenceHostComponentHost.md)
-
-### [Get-MgSecurityThreatIntelligenceHostCookie](Get-MgSecurityThreatIntelligenceHostCookie.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostCookie](Get-MgSecurityThreatIntelligenceHostCookie.md)
 
@@ -467,8 +375,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceHostPair](Get-MgSecurityThreatIntelligenceHostPair.md)
 
-### [Get-MgSecurityThreatIntelligenceHostPair](Get-MgSecurityThreatIntelligenceHostPair.md)
-
 ### [Get-MgSecurityThreatIntelligenceHostPairChildHost](Get-MgSecurityThreatIntelligenceHostPairChildHost.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostPairCount](Get-MgSecurityThreatIntelligenceHostPairCount.md)
@@ -477,11 +383,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceHostParentHostPair](Get-MgSecurityThreatIntelligenceHostParentHostPair.md)
 
-### [Get-MgSecurityThreatIntelligenceHostParentHostPair](Get-MgSecurityThreatIntelligenceHostParentHostPair.md)
-
 ### [Get-MgSecurityThreatIntelligenceHostParentHostPairCount](Get-MgSecurityThreatIntelligenceHostParentHostPairCount.md)
-
-### [Get-MgSecurityThreatIntelligenceHostPassiveDns](Get-MgSecurityThreatIntelligenceHostPassiveDns.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostPassiveDns](Get-MgSecurityThreatIntelligenceHostPassiveDns.md)
 
@@ -489,11 +391,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse](Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse.md)
 
-### [Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse](Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse.md)
-
 ### [Get-MgSecurityThreatIntelligenceHostPassiveDnsReverseCount](Get-MgSecurityThreatIntelligenceHostPassiveDnsReverseCount.md)
-
-### [Get-MgSecurityThreatIntelligenceHostPort](Get-MgSecurityThreatIntelligenceHostPort.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostPort](Get-MgSecurityThreatIntelligenceHostPort.md)
 
@@ -507,19 +405,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceHostSslCertificate](Get-MgSecurityThreatIntelligenceHostSslCertificate.md)
 
-### [Get-MgSecurityThreatIntelligenceHostSslCertificate](Get-MgSecurityThreatIntelligenceHostSslCertificate.md)
-
 ### [Get-MgSecurityThreatIntelligenceHostSslCertificateCount](Get-MgSecurityThreatIntelligenceHostSslCertificateCount.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostSslCertificateHost](Get-MgSecurityThreatIntelligenceHostSslCertificateHost.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostSubdomain](Get-MgSecurityThreatIntelligenceHostSubdomain.md)
 
-### [Get-MgSecurityThreatIntelligenceHostSubdomain](Get-MgSecurityThreatIntelligenceHostSubdomain.md)
-
 ### [Get-MgSecurityThreatIntelligenceHostSubdomainCount](Get-MgSecurityThreatIntelligenceHostSubdomainCount.md)
-
-### [Get-MgSecurityThreatIntelligenceHostTracker](Get-MgSecurityThreatIntelligenceHostTracker.md)
 
 ### [Get-MgSecurityThreatIntelligenceHostTracker](Get-MgSecurityThreatIntelligenceHostTracker.md)
 
@@ -531,17 +423,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceIntelProfile](Get-MgSecurityThreatIntelligenceIntelProfile.md)
 
-### [Get-MgSecurityThreatIntelligenceIntelProfile](Get-MgSecurityThreatIntelligenceIntelProfile.md)
-
 ### [Get-MgSecurityThreatIntelligenceIntelProfileCount](Get-MgSecurityThreatIntelligenceIntelProfileCount.md)
 
 ### [Get-MgSecurityThreatIntelligenceIntelProfileIndicator](Get-MgSecurityThreatIntelligenceIntelProfileIndicator.md)
 
-### [Get-MgSecurityThreatIntelligenceIntelProfileIndicator](Get-MgSecurityThreatIntelligenceIntelProfileIndicator.md)
-
 ### [Get-MgSecurityThreatIntelligenceIntelProfileIndicatorCount](Get-MgSecurityThreatIntelligenceIntelProfileIndicatorCount.md)
-
-### [Get-MgSecurityThreatIntelligencePassiveDnsRecord](Get-MgSecurityThreatIntelligencePassiveDnsRecord.md)
 
 ### [Get-MgSecurityThreatIntelligencePassiveDnsRecord](Get-MgSecurityThreatIntelligencePassiveDnsRecord.md)
 
@@ -553,13 +439,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceProfileIndicator](Get-MgSecurityThreatIntelligenceProfileIndicator.md)
 
-### [Get-MgSecurityThreatIntelligenceProfileIndicator](Get-MgSecurityThreatIntelligenceProfileIndicator.md)
-
 ### [Get-MgSecurityThreatIntelligenceProfileIndicatorArtifact](Get-MgSecurityThreatIntelligenceProfileIndicatorArtifact.md)
 
 ### [Get-MgSecurityThreatIntelligenceProfileIndicatorCount](Get-MgSecurityThreatIntelligenceProfileIndicatorCount.md)
-
-### [Get-MgSecurityThreatIntelligenceSslCertificate](Get-MgSecurityThreatIntelligenceSslCertificate.md)
 
 ### [Get-MgSecurityThreatIntelligenceSslCertificate](Get-MgSecurityThreatIntelligenceSslCertificate.md)
 
@@ -567,11 +449,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost.md)
 
-### [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost.md)
-
 ### [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHostCount](Get-MgSecurityThreatIntelligenceSslCertificateRelatedHostCount.md)
-
-### [Get-MgSecurityThreatIntelligenceSubdomain](Get-MgSecurityThreatIntelligenceSubdomain.md)
 
 ### [Get-MgSecurityThreatIntelligenceSubdomain](Get-MgSecurityThreatIntelligenceSubdomain.md)
 
@@ -581,15 +459,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceVulnerability](Get-MgSecurityThreatIntelligenceVulnerability.md)
 
-### [Get-MgSecurityThreatIntelligenceVulnerability](Get-MgSecurityThreatIntelligenceVulnerability.md)
-
-### [Get-MgSecurityThreatIntelligenceVulnerabilityArticle](Get-MgSecurityThreatIntelligenceVulnerabilityArticle.md)
-
 ### [Get-MgSecurityThreatIntelligenceVulnerabilityArticle](Get-MgSecurityThreatIntelligenceVulnerabilityArticle.md)
 
 ### [Get-MgSecurityThreatIntelligenceVulnerabilityArticleCount](Get-MgSecurityThreatIntelligenceVulnerabilityArticleCount.md)
-
-### [Get-MgSecurityThreatIntelligenceVulnerabilityComponent](Get-MgSecurityThreatIntelligenceVulnerabilityComponent.md)
 
 ### [Get-MgSecurityThreatIntelligenceVulnerabilityComponent](Get-MgSecurityThreatIntelligenceVulnerabilityComponent.md)
 
@@ -599,19 +471,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityThreatIntelligenceWhoisHistoryRecord](Get-MgSecurityThreatIntelligenceWhoisHistoryRecord.md)
 
-### [Get-MgSecurityThreatIntelligenceWhoisHistoryRecord](Get-MgSecurityThreatIntelligenceWhoisHistoryRecord.md)
-
 ### [Get-MgSecurityThreatIntelligenceWhoisHistoryRecordCount](Get-MgSecurityThreatIntelligenceWhoisHistoryRecordCount.md)
 
 ### [Get-MgSecurityThreatIntelligenceWhoisHistoryRecordHost](Get-MgSecurityThreatIntelligenceWhoisHistoryRecordHost.md)
 
 ### [Get-MgSecurityThreatIntelligenceWhoisRecord](Get-MgSecurityThreatIntelligenceWhoisRecord.md)
 
-### [Get-MgSecurityThreatIntelligenceWhoisRecord](Get-MgSecurityThreatIntelligenceWhoisRecord.md)
-
 ### [Get-MgSecurityThreatIntelligenceWhoisRecordCount](Get-MgSecurityThreatIntelligenceWhoisRecordCount.md)
-
-### [Get-MgSecurityThreatIntelligenceWhoisRecordHistory](Get-MgSecurityThreatIntelligenceWhoisRecordHistory.md)
 
 ### [Get-MgSecurityThreatIntelligenceWhoisRecordHistory](Get-MgSecurityThreatIntelligenceWhoisRecordHistory.md)
 
@@ -623,15 +489,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgSecurityTriggerRetentionEvent](Get-MgSecurityTriggerRetentionEvent.md)
 
-### [Get-MgSecurityTriggerRetentionEvent](Get-MgSecurityTriggerRetentionEvent.md)
-
 ### [Get-MgSecurityTriggerRetentionEventCount](Get-MgSecurityTriggerRetentionEventCount.md)
 
 ### [Get-MgSecurityTriggerRetentionEventType](Get-MgSecurityTriggerRetentionEventType.md)
 
 ### [Get-MgSecurityTriggerType](Get-MgSecurityTriggerType.md)
-
-### [Get-MgSecurityTriggerTypeRetentionEventType](Get-MgSecurityTriggerTypeRetentionEventType.md)
 
 ### [Get-MgSecurityTriggerTypeRetentionEventType](Get-MgSecurityTriggerTypeRetentionEventType.md)
 
@@ -661,7 +523,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync](Invoke-MgProcessSecurityDataSecurityAndGovernanceContentAsync.md)
 
+### [Invoke-MgRemediateSecurityCollaborationAnalyzedEmail](Invoke-MgRemediateSecurityCollaborationAnalyzedEmail.md)
+
 ### [Invoke-MgReopenSecurityCaseEdiscoveryCase](Invoke-MgReopenSecurityCaseEdiscoveryCase.md)
+
+### [Merge-MgSecurityIncident](Merge-MgSecurityIncident.md)
+
+### [Move-MgSecurityAlert](Move-MgSecurityAlert.md)
 
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
 
@@ -691,6 +559,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgSecurityAttackSimulationTrainingLanguageDetail](New-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
+### [New-MgSecurityAuditLogQuery](New-MgSecurityAuditLogQuery.md)
+
 ### [New-MgSecurityCaseEdiscoveryCase](New-MgSecurityCaseEdiscoveryCase.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodian](New-MgSecurityCaseEdiscoveryCaseCustodian.md)
@@ -700,6 +570,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](New-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
+
+### [New-MgSecurityCaseEdiscoveryCaseMember](New-MgSecurityCaseEdiscoveryCaseMember.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -714,6 +586,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource.md)
 
 ### [New-MgSecurityCaseEdiscoveryCaseTag](New-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [New-MgSecurityCollaborationAnalyzedEmail](New-MgSecurityCollaborationAnalyzedEmail.md)
 
 ### [New-MgSecurityDataSecurityAndGovernanceSensitivityLabel](New-MgSecurityDataSecurityAndGovernanceSensitivityLabel.md)
 
@@ -825,6 +699,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgSecurityAttackSimulationTrainingLanguageDetail](Remove-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
+### [Remove-MgSecurityAuditLog](Remove-MgSecurityAuditLog.md)
+
+### [Remove-MgSecurityAuditLogQuery](Remove-MgSecurityAuditLogQuery.md)
+
 ### [Remove-MgSecurityCase](Remove-MgSecurityCase.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCase](Remove-MgSecurityCaseEdiscoveryCase.md)
@@ -838,6 +716,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](Remove-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Remove-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
+
+### [Remove-MgSecurityCaseEdiscoveryCaseMember](Remove-MgSecurityCaseEdiscoveryCaseMember.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -856,6 +736,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSecurityCaseEdiscoveryCaseSetting](Remove-MgSecurityCaseEdiscoveryCaseSetting.md)
 
 ### [Remove-MgSecurityCaseEdiscoveryCaseTag](Remove-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [Remove-MgSecurityCollaboration](Remove-MgSecurityCollaboration.md)
+
+### [Remove-MgSecurityCollaborationAnalyzedEmail](Remove-MgSecurityCollaborationAnalyzedEmail.md)
 
 ### [Remove-MgSecurityDataSecurityAndGovernance](Remove-MgSecurityDataSecurityAndGovernance.md)
 
@@ -876,6 +760,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgSecurityIdentitySensorCandidate](Remove-MgSecurityIdentitySensorCandidate.md)
 
 ### [Remove-MgSecurityIdentitySensorCandidateActivationConfiguration](Remove-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Remove-MgSecurityIdentitySetting](Remove-MgSecurityIdentitySetting.md)
+
+### [Remove-MgSecurityIdentitySettingAutoAuditingConfiguration](Remove-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
 
@@ -989,6 +877,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgSecurityAttackSimulationTrainingLanguageDetail](Update-MgSecurityAttackSimulationTrainingLanguageDetail.md)
 
+### [Update-MgSecurityAuditLog](Update-MgSecurityAuditLog.md)
+
 ### [Update-MgSecurityCase](Update-MgSecurityCase.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCase](Update-MgSecurityCaseEdiscoveryCase.md)
@@ -1002,6 +892,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
+
+### [Update-MgSecurityCaseEdiscoveryCaseMember](Update-MgSecurityCaseEdiscoveryCaseMember.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 
@@ -1020,6 +912,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityCaseEdiscoveryCaseSetting](Update-MgSecurityCaseEdiscoveryCaseSetting.md)
 
 ### [Update-MgSecurityCaseEdiscoveryCaseTag](Update-MgSecurityCaseEdiscoveryCaseTag.md)
+
+### [Update-MgSecurityCollaboration](Update-MgSecurityCollaboration.md)
+
+### [Update-MgSecurityCollaborationAnalyzedEmail](Update-MgSecurityCollaborationAnalyzedEmail.md)
 
 ### [Update-MgSecurityDataSecurityAndGovernance](Update-MgSecurityDataSecurityAndGovernance.md)
 
@@ -1040,6 +936,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgSecurityIdentitySensorCandidate](Update-MgSecurityIdentitySensorCandidate.md)
 
 ### [Update-MgSecurityIdentitySensorCandidateActivationConfiguration](Update-MgSecurityIdentitySensorCandidateActivationConfiguration.md)
+
+### [Update-MgSecurityIdentitySetting](Update-MgSecurityIdentitySetting.md)
+
+### [Update-MgSecurityIdentitySettingAutoAuditingConfiguration](Update-MgSecurityIdentitySettingAutoAuditingConfiguration.md)
 
 ### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
 

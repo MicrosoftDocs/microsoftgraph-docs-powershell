@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetatopidentitygovernancelifecycleworkflowinsighttaskprocessedsummary
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSu
 
 ## SYNOPSIS
 
-Provide a summary of the most processed tasks, known as top tasks, for a specified time period in a tenant.
+Provide a summary from the insights resource of the most processed task objects, known as top tasks, for a specified time period in a tenant.
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
 
@@ -29,7 +29,7 @@ Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary
  -EndDateTime <datetime> -StartDateTime <datetime> [-Count] [-Filter <string>] [-Search <string>]
  [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### TopViaIdentity
@@ -39,7 +39,7 @@ Invoke-MgBetaTopIdentityGovernanceLifecycleWorkflowInsightTaskProcessedSummary
  -InputObject <IIdentityGovernanceIdentity> [-Count] [-Filter <string>] [-Search <string>]
  [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Provide a summary of the most processed tasks, known as top tasks, for a specified time period in a tenant.
+Provide a summary from the insights resource of the most processed task objects, known as top tasks, for a specified time period in a tenant.
 The task definition is provided, along with numerical counts of total, successful, and failed runs.
 For information about workflows processed, see insights: topWorkflowsProcessedSummary.
 
@@ -479,12 +479,14 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [ControlConfigurationId <String>]: The unique identifier of controlConfiguration
   [CustomAccessPackageWorkflowExtensionId <String>]: The unique identifier of customAccessPackageWorkflowExtension
   [CustomCalloutExtensionId <String>]: The unique identifier of customCalloutExtension
+  [CustomDataProvidedResourceFileId <String>]: The unique identifier of customDataProvidedResourceFile
   [CustomDataProvidedResourceUploadSessionId <String>]: The unique identifier of customDataProvidedResourceUploadSession
   [CustomExtensionHandlerId <String>]: The unique identifier of customExtensionHandler
   [CustomExtensionStageSettingId <String>]: The unique identifier of customExtensionStageSetting
   [CustomTaskExtensionId <String>]: The unique identifier of customTaskExtension
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
+  [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [FindingId <String>]: The unique identifier of finding
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
   [GovernanceResourceId <String>]: The unique identifier of governanceResource
@@ -520,6 +522,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [RunId <String>]: The unique identifier of run
   [RunId1 <String>]: The unique identifier of run
   [StartDateTime <DateTime?>]: Usage: startDateTime={startDateTime}
+  [SubjectProcessingResultId <String>]: The unique identifier of subjectProcessingResult
   [TaskDefinitionId <String>]: The unique identifier of taskDefinition
   [TaskId <String>]: The unique identifier of task
   [TaskProcessingResultId <String>]: The unique identifier of taskProcessingResult

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaagentriskdetection
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaAgentRiskDetection
 ---
@@ -22,12 +22,14 @@ Create new navigation property to agentRiskDetections for identityProtection
 ```
 New-MgBetaAgentRiskDetection [-ResponseHeadersVariable <string>] [-ActivityDateTime <datetime>]
  [-AdditionalInfo <string>] [-AdditionalProperties <hashtable>] [-AgentDisplayName <string>]
- [-AgentId <string>] [-DetectedDateTime <datetime>] [-DetectionTimingType <string>] [-Id <string>]
- [-LastModifiedDateTime <datetime>] [-RiskDetail <string>] [-RiskEventType <string>]
- [-RiskEvidence <string>] [-RiskLevel <string>] [-RiskState <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AgentId <string>] [-BlueprintId <string>] [-ClientSessionId <string>]
+ [-DetectedDateTime <datetime>] [-DetectionTimingType <string>] [-DisplayName <string>]
+ [-Id <string>] [-IdentityId <string>] [-IdentityType <string>] [-LastModifiedDateTime <datetime>]
+ [-RiskDetail <string>] [-RiskEventType <string>] [-RiskEvidence <string>] [-RiskLevel <string>]
+ [-RiskState <string>] [-SignInClientDisplayName <string>] [-SignInCorrelationId <string>]
+ [-SignInRequestId <string>] [-Source <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -37,7 +39,6 @@ New-MgBetaAgentRiskDetection -BodyParameter <IMicrosoftGraphAgentRiskDetection>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -120,6 +121,9 @@ HelpMessage: ''
 ### -AgentDisplayName
 
 Name of the agent.
+Deprecated.
+Use displayName instead.
+This property will be removed after 2027-04-28.
 Supports $filter (eq, startsWith).
 
 ```yaml
@@ -142,9 +146,33 @@ HelpMessage: ''
 ### -AgentId
 
 The unique identifier for the agent.
-This is equivalent to 'id' to the specific agent type.
+Deprecated.
+Use identityId instead.
+This property will be removed after 2027-04-28.
 See riskyAgentIdentity, riskyAgentIdentityBlueprintPrincipal, and riskyAgentUser.
 Supports $filter (eq, startsWith).
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BlueprintId
+
+The identifier of the blueprint associated with the agent.
+Nullable.
 
 ```yaml
 Type: System.String
@@ -206,6 +234,27 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ClientSessionId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Confirm
 
 Prompts you for confirmation before running the cmdlet.
@@ -255,6 +304,28 @@ HelpMessage: ''
 ### -DetectionTimingType
 
 riskDetectionTimingType
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DisplayName
+
+Human-readable name of the identity associated with this risk detection.
+Supports $filter (eq, startsWith).
 
 ```yaml
 Type: System.String
@@ -340,6 +411,49 @@ HelpMessage: ''
 
 The unique identifier for an entity.
 Read-only.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IdentityId
+
+Unique identifier of the identity associated with this risk detection.
+Supports $filter (eq, startsWith).
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -IdentityType
+
+agentIdentityType
 
 ```yaml
 Type: System.String
@@ -572,6 +686,91 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -SignInClientDisplayName
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -SignInCorrelationId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -SignInRequestId
+
+
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -Source
+
+The source system that generated the risk detection.
+Nullable.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: CreateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -WhatIf
 
 Runs the command in a mode that only reports what would happen without performing the actions.
@@ -634,16 +833,29 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [AdditionalInfo <String>]: Additional information associated with the risk detection.
   [AgentDisplayName <String>]: Name of the agent.
+Deprecated.
+Use displayName instead.
+This property will be removed after 2027-04-28.
  Supports $filter (eq, startsWith).
   [AgentId <String>]: The unique identifier for the agent.
-This is equivalent to 'id' to the specific agent type.
+Deprecated.
+Use identityId instead.
+This property will be removed after 2027-04-28.
 See riskyAgentIdentity, riskyAgentIdentityBlueprintPrincipal, and riskyAgentUser.
  Supports $filter (eq, startsWith).
+  [BlueprintId <String>]: The identifier of the blueprint associated with the agent.
+Nullable.
+  [ClientSessionId <String>]: 
   [DetectedDateTime <DateTime?>]: Date and time that the risk was detected.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq, le, and ge).
   [DetectionTimingType <String>]: riskDetectionTimingType
+  [DisplayName <String>]: Human-readable name of the identity associated with this risk detection.
+ Supports $filter (eq, startsWith).
+  [IdentityId <String>]: Unique identifier of the identity associated with this risk detection.
+ Supports $filter (eq, startsWith).
+  [IdentityType <String>]: agentIdentityType
   [LastModifiedDateTime <DateTime?>]: Date and time that the risk detection was last updated.
  Supports $filter (eq, le, and ge).
   [RiskDetail <String>]: riskDetail
@@ -653,6 +865,11 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
  Supports $filter (eq).
   [RiskLevel <String>]: riskLevel
   [RiskState <String>]: riskState
+  [SignInClientDisplayName <String>]: 
+  [SignInCorrelationId <String>]: 
+  [SignInRequestId <String>]: 
+  [Source <String>]: The source system that generated the risk detection.
+Nullable.
 
 
 ## RELATED LINKS

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Compliance
-Module Guid: 33bd55e8-3dab-414f-b440-0b26780d67ef
+Module Guid: d34d64a7-44ef-4797-9dfa-6919a4435e3e
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,10 +15,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPrivacySubjectRightsRequest](Get-MgPrivacySubjectRightsRequest.md)
 
-### [Get-MgPrivacySubjectRightsRequest](Get-MgPrivacySubjectRightsRequest.md)
-
-### [Get-MgPrivacySubjectRightsRequestApprover](Get-MgPrivacySubjectRightsRequestApprover.md)
-
 ### [Get-MgPrivacySubjectRightsRequestApprover](Get-MgPrivacySubjectRightsRequestApprover.md)
 
 ### [Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName](Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName.md)
@@ -30,8 +26,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningError](Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningError.md)
 
 ### [Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-
-### [Get-MgPrivacySubjectRightsRequestCollaborator](Get-MgPrivacySubjectRightsRequestCollaborator.md)
 
 ### [Get-MgPrivacySubjectRightsRequestCollaborator](Get-MgPrivacySubjectRightsRequestCollaborator.md)
 
@@ -50,8 +44,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgPrivacySubjectRightsRequestFinalAttachment](Get-MgPrivacySubjectRightsRequestFinalAttachment.md)
 
 ### [Get-MgPrivacySubjectRightsRequestFinalReport](Get-MgPrivacySubjectRightsRequestFinalReport.md)
-
-### [Get-MgPrivacySubjectRightsRequestNote](Get-MgPrivacySubjectRightsRequestNote.md)
 
 ### [Get-MgPrivacySubjectRightsRequestNote](Get-MgPrivacySubjectRightsRequestNote.md)
 

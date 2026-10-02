@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementioupdatestatus
 Locale: en-US
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDeviceManagementIoUpdateStatus
 ---
@@ -31,7 +31,6 @@ Update-MgDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId <string>
  [-UserName <string>] [-UserPrincipalName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -41,7 +40,7 @@ Update-MgDeviceManagementIoUpdateStatus -IosUpdateDeviceStatusId <string>
  -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,7 +54,6 @@ Update-MgDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministr
  [-UserName <string>] [-UserPrincipalName <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -65,7 +63,7 @@ Update-MgDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministr
  -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -823,6 +821,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   [CloudPcOnPremisesConnectionId <String>]: The unique identifier of cloudPcOnPremisesConnection
   [CloudPcProvisioningPolicyAssignmentId <String>]: The unique identifier of cloudPcProvisioningPolicyAssignment
   [CloudPcProvisioningPolicyId <String>]: The unique identifier of cloudPcProvisioningPolicy
+  [CloudPcServicePlanId <String>]: The unique identifier of cloudPcServicePlan
   [CloudPcUserSettingAssignmentId <String>]: The unique identifier of cloudPcUserSettingAssignment
   [CloudPcUserSettingId <String>]: The unique identifier of cloudPcUserSetting
   [ComplianceManagementPartnerId <String>]: The unique identifier of complianceManagementPartner

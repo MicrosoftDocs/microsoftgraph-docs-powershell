@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessdeleteditempolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ## SYNOPSIS
 
 Update the navigation property policies in identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,7 +31,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicy
  [-ModifiedDateTime <datetime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
  [-State <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -38,7 +41,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -ConditionalAccessPolicy
  -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -52,7 +55,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -InputObject <IIdentityS
  [-ModifiedDateTime <datetime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
  [-State <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -62,7 +65,7 @@ Update-MgBetaIdentityConditionalAccessDeletedItemPolicy -InputObject <IIdentityS
  -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -233,7 +236,7 @@ HelpMessage: ''
 
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
 
 ```yaml
 Type: System.DateTime
@@ -490,7 +493,7 @@ HelpMessage: ''
 
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
 
 ```yaml
 Type: System.DateTime
@@ -716,14 +719,23 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy>`: conditionalAccessPolic
   [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [Conditions <IMicrosoftGraphConditionalAccessConditionSet>]: conditionalAccessConditionSet
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
-    [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+    [AgentContext <IMicrosoftGraphConditionalAccessAgentContext>]: Represents the agent context condition for conditional access policies.
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
+      [ExcludeAgentContexts <String[]>]: 
+      [IncludeAgentContexts <String[]>]: 
+    [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
+    [Agents <IMicrosoftGraphConditionalAccessAgents>]: conditionalAccessAgents
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AgentFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Mode <String>]: filterMode
         [Rule <String>]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
+      [ExcludeAgentUsers <String[]>]: 
+      [IncludeAgentUsers <String[]>]: 
+    [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
       [ExcludeApplications <String[]>]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
       [GlobalSecureAccess <IMicrosoftGraphConditionalAccessGlobalSecureAccess>]: conditionalAccessGlobalSecureAccess
@@ -803,15 +815,14 @@ Required.
       [IncludeUsers <String[]>]: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
   [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
   [Description <String>]: Not used.
   [DisplayName <String>]: Specifies a display name for the conditionalAccessPolicy object.
   [GrantControls <IMicrosoftGraphConditionalAccessGrantControls>]: conditionalAccessGrantControls
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
+      [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
       [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
       [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
         [Id <String>]: The unique identifier for an entity.
@@ -823,13 +834,15 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
       [Description <String>]: The human-readable description of this policy.
       [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+      [Id <String>]: 
       [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
       [PolicyType <String>]: authenticationStrengthPolicyType
       [RequirementsSatisfied <String>]: authenticationStrengthRequirements
     [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
     [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
     [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
     [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
@@ -837,7 +850,7 @@ Possible values: AND, OR.
 Read-only.
   [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
   [SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]: conditionalAccessSessionControls
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]: applicationEnforcedRestrictionsSessionControl
@@ -873,14 +886,23 @@ Readonly.
 
 CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessConditionSet
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
-  [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+  [AgentContext <IMicrosoftGraphConditionalAccessAgentContext>]: Represents the agent context condition for conditional access policies.
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
+    [ExcludeAgentContexts <String[]>]: 
+    [IncludeAgentContexts <String[]>]: 
+  [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
+  [Agents <IMicrosoftGraphConditionalAccessAgents>]: conditionalAccessAgents
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AgentFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Mode <String>]: filterMode
       [Rule <String>]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
+    [ExcludeAgentUsers <String[]>]: 
+    [IncludeAgentUsers <String[]>]: 
+  [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
     [ExcludeApplications <String[]>]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
     [GlobalSecureAccess <IMicrosoftGraphConditionalAccessGlobalSecureAccess>]: conditionalAccessGlobalSecureAccess
@@ -963,8 +985,7 @@ GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAcce
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
     [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
     [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
       [Id <String>]: The unique identifier for an entity.
@@ -976,13 +997,15 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
     [Description <String>]: The human-readable description of this policy.
     [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+    [Id <String>]: 
     [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
     [PolicyType <String>]: authenticationStrengthPolicyType
     [RequirementsSatisfied <String>]: authenticationStrengthRequirements
   [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
   [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
-To learn more about custom control, see Custom controls (preview).
+For more information, see Custom controls.
   [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
   [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
@@ -1037,6 +1060,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -1052,6 +1076,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem

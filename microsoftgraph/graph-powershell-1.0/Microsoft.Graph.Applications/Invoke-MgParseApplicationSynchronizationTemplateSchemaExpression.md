@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationtemplateschemaexpression
 Locale: en-US
 Module Name: Microsoft.Graph.Applications
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression
 
 ## SYNOPSIS
 
-Parse a given string expression into an attributeMappingSource object.
+Parse a given string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
 > [!NOTE]
@@ -31,7 +31,6 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -ApplicationId 
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Parse
@@ -43,7 +42,6 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression -ApplicationId 
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ParseViaIdentityExpanded
@@ -56,7 +54,6 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression
  [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### ParseViaIdentity
@@ -68,7 +65,6 @@ Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -78,7 +74,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Parse a given string expression into an attributeMappingSource object.
+Parse a given string expression into an attributeMappingSource object for a synchronizationSchema.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
 ## PARAMETERS
@@ -607,6 +603,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   [AppRoleAssignmentId <String>]: The unique identifier of appRoleAssignment
   [ApplicationId <String>]: The unique identifier of application
   [ApplicationTemplateId <String>]: The unique identifier of applicationTemplate
+  [ApprovedClientAppId <String>]: The unique identifier of approvedClientApp
   [ClaimsMappingPolicyId <String>]: The unique identifier of claimsMappingPolicy
   [DelegatedPermissionClassificationId <String>]: The unique identifier of delegatedPermissionClassification
   [DirectoryDefinitionId <String>]: The unique identifier of directoryDefinition

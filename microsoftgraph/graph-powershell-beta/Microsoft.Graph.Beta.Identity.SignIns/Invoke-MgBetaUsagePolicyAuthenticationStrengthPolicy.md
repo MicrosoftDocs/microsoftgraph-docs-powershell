@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausagepolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy
 ---
@@ -14,7 +14,7 @@ title: Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy
 ## SYNOPSIS
 
 The usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 > [!NOTE]
@@ -28,7 +28,7 @@ Policies in the former category are restricted in what kinds of changes may be m
 Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### UsageViaIdentity
@@ -37,7 +37,7 @@ Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy -AuthenticationStrengthPoli
 Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -48,16 +48,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 The usage function allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
-The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that don't require such a claim.
 Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 **Permissions**
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+| Delegated (work or school account) | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod, Policy.Read.All,  |
+| Application | Policy.Read.AuthenticationMethod, Policy.Read.All, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -366,6 +366,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [LabelIds <String[]>]: Usage: labelIds={labelIds}
   [Locale <String>]: Usage: locale='{locale}'
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MobileAppManagementPolicyId <String>]: The unique identifier of mobileAppManagementPolicy
   [MobileDeviceManagementPolicyId <String>]: The unique identifier of mobileDeviceManagementPolicy
@@ -381,6 +382,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [PermissionGrantPreApprovalPolicyId <String>]: The unique identifier of permissionGrantPreApprovalPolicy
   [PhoneAuthenticationMethodId <String>]: The unique identifier of phoneAuthenticationMethod
   [PlatformCredentialAuthenticationMethodId <String>]: The unique identifier of platformCredentialAuthenticationMethod
+  [ResourceAccountKeyAuthenticationMethodId <String>]: The unique identifier of resourceAccountKeyAuthenticationMethod
   [RiskDetectionId <String>]: The unique identifier of riskDetection
   [RiskyAgentId <String>]: The unique identifier of riskyAgent
   [RiskyServicePrincipalHistoryItemId <String>]: The unique identifier of riskyServicePrincipalHistoryItem

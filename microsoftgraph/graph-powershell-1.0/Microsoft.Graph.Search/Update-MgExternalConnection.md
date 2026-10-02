@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Search-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection
 Locale: en-US
 Module Name: Microsoft.Graph.Search
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgExternalConnection
 ---
@@ -27,14 +27,15 @@ Update-MgExternalConnection -ExternalConnectionId <string> [-ResponseHeadersVari
  [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]
  [-AdditionalProperties <hashtable>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <string>]
- [-Description <string>] [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <string>]
+ [-ContentCategory <string>] [-Description <string>]
+ [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <string>]
  [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <string>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
  [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -45,7 +46,6 @@ Update-MgExternalConnection -ExternalConnectionId <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,14 +55,15 @@ Update-MgExternalConnection -InputObject <ISearchIdentity> [-ResponseHeadersVari
  [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]
  [-AdditionalProperties <hashtable>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <string>]
- [-Description <string>] [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <string>]
+ [-ContentCategory <string>] [-Description <string>]
+ [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <string>]
  [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <string>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
  [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -73,7 +74,6 @@ Update-MgExternalConnection -InputObject <ISearchIdentity>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -271,6 +271,33 @@ HelpMessage: ''
 
 The Teams app ID.
 Optional.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -ContentCategory
+
+contentCategory
 
 ```yaml
 Type: System.String
@@ -824,6 +851,7 @@ Read-only.
     [AuthorizedAppIds <String[]>]: A collection of application IDs for registered Microsoft Entra apps that are allowed to manage the externalConnection and to index content in the externalConnection.
   [ConnectorId <String>]: The Teams app ID.
 Optional.
+  [ContentCategory <String>]: contentCategory
   [Description <String>]: Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
   [Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>]: 
@@ -863,6 +891,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Type <String>]: externalItemContentType
       [Value <String>]: The content for the externalItem.
 Required.
+    [InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]: externalItemInformationProtectionLabel
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [SensitivityLabelId <String>]: 
     [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
       [(Any) <Object>]: This indicates any property can be added to this object.
   [Name <String>]: The display name of the connection to be displayed in the Microsoft 365 admin center.
@@ -900,6 +931,10 @@ Maximum 32 characters.
 Only alphanumeric characters allowed.
 For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
+      [Description <String>]: Specifies a human-readable description that explains the purpose, usage, or guidance related to the property.
+This property enhances semantic understanding by helping Copilot interpret queries and accurately map them to properties that results in more relevant and precise responses.
+Optional but we recommend that you use this property for queryable properties.
+The maximum supported length is 200 characters.
       [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
@@ -917,8 +952,8 @@ Optional.
       [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following members in this evolvable enum: iconUrl.
+Optional..The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum,For People Connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
       [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -932,7 +967,7 @@ Maximum of 2 search result templates per connection.
       [Id <String>]: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-      [Layout <IMicrosoftGraphJson>]: Json
+      [Layout <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
         [(Any) <Object>]: This indicates any property can be added to this object.
       [Priority <Int32?>]: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.
@@ -1006,6 +1041,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     [Type <String>]: externalItemContentType
     [Value <String>]: The content for the externalItem.
 Required.
+  [InformationProtectionLabel <IMicrosoftGraphExternalConnectorsExternalItemInformationProtectionLabel>]: externalItemInformationProtectionLabel
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [SensitivityLabelId <String>]: 
   [Properties <IMicrosoftGraphExternalConnectorsProperties>]: properties
     [(Any) <Object>]: This indicates any property can be added to this object.
 
@@ -1042,6 +1080,10 @@ Maximum 32 characters.
 Only alphanumeric characters allowed.
 For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.
 Optional.
+    [Description <String>]: Specifies a human-readable description that explains the purpose, usage, or guidance related to the property.
+This property enhances semantic understanding by helping Copilot interpret queries and accurately map them to properties that results in more relevant and precise responses.
+Optional but we recommend that you use this property for queryable properties.
+The maximum supported length is 200 characters.
     [IsQueryable <Boolean?>]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
@@ -1059,8 +1101,8 @@ Optional.
     [Labels <String[]>]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
-Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl.
-Use the Prefer: include-unknown-enum-members request header to get the following members in this evolvable enum: iconUrl.
+Optional..The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, containerName, containerUrl, iconUrl, assignedTo, dueDate, closedDate, closedBy, reportedBy, sprintName, severity, state, priority, secondaryId, itemParentId, parentUrl, tags, itemType, itemPath, numReactions.
+Use the Prefer: include-unknown-enum-members request header to retrieve additional values defined in this evolvable enum,For People Connectors you can include : personEmails, personAddresses, personAnniversaries, personName, personNote, personPhones, personCurrentPosition, personWebAccounts, personWebSite, personSkills, personProjects, personAccount, personAwards, personCertifications, personAssistants, personColleagues, personManager, personAlternateContacts, personEmergencyContacts.
     [Name <String>]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
@@ -1075,7 +1117,7 @@ Maximum of 2 search result templates per connection.
     [Id <String>]: The text identifier for the display template; for example, contosoTickets.
 Maximum 16 characters.
 Only alphanumeric characters allowed.
-    [Layout <IMicrosoftGraphJson>]: Json
+    [Layout <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [Priority <Int32?>]: Defines the priority of a display template.
 A display template with priority 1 is evaluated before a template with priority 4.

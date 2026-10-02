@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDeviceAppManagement
 ---
@@ -29,7 +29,6 @@ Update-MgBetaDeviceAppManagement [-ResponseHeadersVariable <string>]
  [-DefaultManagedAppProtections <IMicrosoftGraphDefaultManagedAppProtection[]>]
  [-DeviceAppManagementTasks <IMicrosoftGraphDeviceAppManagementTask[]>]
  [-EnterpriseCodeSigningCertificates <IMicrosoftGraphEnterpriseCodeSigningCertificate[]>]
- [-Id <string>]
  [-IosLobAppProvisioningConfigurations <IMicrosoftGraphIosLobAppProvisioningConfiguration[]>]
  [-IosManagedAppProtections <IMicrosoftGraphIosManagedAppProtection[]>]
  [-IsEnabledForMicrosoftStoreForBusiness] [-ManagedAppPolicies <IMicrosoftGraphManagedAppPolicy[]>]
@@ -58,7 +57,6 @@ Update-MgBetaDeviceAppManagement [-ResponseHeadersVariable <string>]
  [-WindowsManagementApp <IMicrosoftGraphWindowsManagementApp>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -68,7 +66,6 @@ Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagem
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -317,28 +314,6 @@ SupportsWildcards: false
 Aliases: []
 ParameterSets:
 - Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Id
-
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -1166,6 +1141,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -1183,6 +1159,7 @@ Read-only.
   [AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
+  [AppActionIfDeveloperOptionsEnabled <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDeviceLockNotSet <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
@@ -1247,8 +1224,6 @@ If enabled list of approved keyboards must be provided as well.
 
 BODYPARAMETER `<IMicrosoftGraphDeviceAppManagement>`: Singleton entity that acts as a container for all device app management functionality.
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
   [AndroidManagedAppProtections <IMicrosoftGraphAndroidManagedAppProtection[]>]: Android managed app policies.
     [AppGroupType <TargetedManagedAppGroupType?>]: Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
     [Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
@@ -1313,6 +1288,7 @@ Valid values 0 to 24
     [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
     [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+    [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
     [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
     [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -1330,6 +1306,7 @@ Read-only.
     [AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfAndroidSafetyNetDeviceAttestationFailed <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
+    [AppActionIfDeveloperOptionsEnabled <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfDeviceLockNotSet <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
@@ -1443,6 +1420,7 @@ Valid values 0 to 24
     [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
     [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+    [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
     [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
     [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -1684,6 +1662,7 @@ Valid values 0 to 24
     [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
     [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+    [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
     [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
     [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -2128,6 +2107,7 @@ Read-only.
   [VppTokens <IMicrosoftGraphVppToken[]>]: List of Vpp tokens for this organization.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol?>]: Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
     [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
     [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
     [ClaimTokenManagementFromExternalMdm <Boolean?>]: Admin consent to allow claiming token management from external MDM.
@@ -2296,8 +2276,10 @@ Read-only.
     [Version <String>]: Version of the entity.
     [Id <String>]: The unique identifier for an entity.
 Read-only.
+    [AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
     [AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
     [AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel?>]: Represents the level to which the device's clipboard may be shared between apps
+    [AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
     [AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
     [AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
     [Apps <IMicrosoftGraphManagedMobileApp[]>]: List of apps to which the policy is deployed.
@@ -2408,6 +2390,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -2681,6 +2664,7 @@ Valid values 0 to 24
   [PrintBlocked <Boolean?>]: Indicates whether printing is allowed from managed apps.
   [ProtectedMessagingRedirectAppType <MessagingRedirectAppType?>]: Defines how app messaging redirection is protected by an App Protection Policy.
 Default is anyApp.
+  [PurviewContentEvaluationRequired <ManagedAppPurviewEvaluationRequirement?>]: Specifies whether Microsoft Purview Data Loss Prevention (DLP) content evaluation is required before data sharing.
   [SaveAsBlocked <Boolean?>]: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
   [SimplePinBlocked <Boolean?>]: Indicates whether simplePin is blocked.
   [CreatedDateTime <DateTime?>]: The date and time the policy was created.
@@ -3237,6 +3221,7 @@ Read-only.
 VPPTOKENS <IMicrosoftGraphVppToken[]>: List of Vpp tokens for this organization.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AppleDeviceAppDeliveryProtocolType <AppleDeviceDeliveryProtocol?>]: Enum of the supported types of Apple delivery protocols, representing the available protocols to deliver payloads to Apple devices
   [AppleId <String>]: The apple Id associated with the given Apple Volume Purchase Program Token.
   [AutomaticallyUpdateApps <Boolean?>]: Whether or not apps for the VPP token will be automatically updated.
   [ClaimTokenManagementFromExternalMdm <Boolean?>]: Admin consent to allow claiming token management from external MDM.
@@ -3445,8 +3430,10 @@ WINDOWSMANAGEDAPPPROTECTIONS <IMicrosoftGraphWindowsManagedAppProtection[]>: Win
   [Version <String>]: Version of the entity.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
+  [AllowedInboundDataTransferSourceApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel?>]: Represents the level to which the device's clipboard may be shared between apps
+  [AllowedOutboundDataTransferDestinationApps <WindowsManagedAppDataTransferLocations?>]: Windows MAM data transfer locations
   [AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel?>]: Data can be transferred from/to these classes of apps
   [AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction?>]: An admin initiated action to be applied on a managed app.
   [Apps <IMicrosoftGraphManagedMobileApp[]>]: List of apps to which the policy is deployed.

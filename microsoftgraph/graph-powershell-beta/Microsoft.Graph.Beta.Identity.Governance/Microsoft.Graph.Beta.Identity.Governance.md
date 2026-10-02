@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-Module Guid: 3b139e74-850d-4828-8342-b73691ee1c32
+Module Guid: 09a58263-545a-44e1-9a16-41133aca34a8
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.identity.governance/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,11 +23,23 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Add-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision](Add-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision.md)
 
+### [Add-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision](Add-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision.md)
+
+### [Add-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](Add-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision.md)
+
+### [Add-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision](Add-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision.md)
+
+### [Add-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](Add-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision.md)
+
+### [Add-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision](Add-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision.md)
+
+### [Clear-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowQuarantine](Clear-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowQuarantine.md)
+
+### [Clear-MgBetaIdentityGovernanceLifecycleWorkflowQuarantine](Clear-MgBetaIdentityGovernanceLifecycleWorkflowQuarantine.md)
+
 ### [Export-MgBetaPrivilegedAccessResourceRoleAssignment](Export-MgBetaPrivilegedAccessResourceRoleAssignment.md)
 
 ### [Export-MgBetaPrivilegedAccessRoleAssignment](Export-MgBetaPrivilegedAccessRoleAssignment.md)
-
-### [Get-MgBetaAccessReview](Get-MgBetaAccessReview.md)
 
 ### [Get-MgBetaAccessReview](Get-MgBetaAccessReview.md)
 
@@ -35,11 +47,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAccessReviewDecision](Get-MgBetaAccessReviewDecision.md)
 
-### [Get-MgBetaAccessReviewDecision](Get-MgBetaAccessReviewDecision.md)
-
 ### [Get-MgBetaAccessReviewDecisionCount](Get-MgBetaAccessReviewDecisionCount.md)
-
-### [Get-MgBetaAccessReviewInstance](Get-MgBetaAccessReviewInstance.md)
 
 ### [Get-MgBetaAccessReviewInstance](Get-MgBetaAccessReviewInstance.md)
 
@@ -47,11 +55,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAccessReviewInstanceDecision](Get-MgBetaAccessReviewInstanceDecision.md)
 
-### [Get-MgBetaAccessReviewInstanceDecision](Get-MgBetaAccessReviewInstanceDecision.md)
-
 ### [Get-MgBetaAccessReviewInstanceDecisionCount](Get-MgBetaAccessReviewInstanceDecisionCount.md)
-
-### [Get-MgBetaAccessReviewInstanceMyDecision](Get-MgBetaAccessReviewInstanceMyDecision.md)
 
 ### [Get-MgBetaAccessReviewInstanceMyDecision](Get-MgBetaAccessReviewInstanceMyDecision.md)
 
@@ -59,11 +63,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAccessReviewInstanceReviewer](Get-MgBetaAccessReviewInstanceReviewer.md)
 
-### [Get-MgBetaAccessReviewInstanceReviewer](Get-MgBetaAccessReviewInstanceReviewer.md)
-
 ### [Get-MgBetaAccessReviewInstanceReviewerCount](Get-MgBetaAccessReviewInstanceReviewerCount.md)
-
-### [Get-MgBetaAccessReviewMyDecision](Get-MgBetaAccessReviewMyDecision.md)
 
 ### [Get-MgBetaAccessReviewMyDecision](Get-MgBetaAccessReviewMyDecision.md)
 
@@ -71,15 +71,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAccessReviewReviewer](Get-MgBetaAccessReviewReviewer.md)
 
-### [Get-MgBetaAccessReviewReviewer](Get-MgBetaAccessReviewReviewer.md)
-
 ### [Get-MgBetaAccessReviewReviewerCount](Get-MgBetaAccessReviewReviewerCount.md)
 
 ### [Get-MgBetaAgreement](Get-MgBetaAgreement.md)
-
-### [Get-MgBetaAgreement](Get-MgBetaAgreement.md)
-
-### [Get-MgBetaAgreementAcceptance](Get-MgBetaAgreementAcceptance.md)
 
 ### [Get-MgBetaAgreementAcceptance](Get-MgBetaAgreementAcceptance.md)
 
@@ -87,11 +81,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAgreementFile](Get-MgBetaAgreementFile.md)
 
-### [Get-MgBetaAgreementFile](Get-MgBetaAgreementFile.md)
-
 ### [Get-MgBetaAgreementFileCount](Get-MgBetaAgreementFileCount.md)
-
-### [Get-MgBetaAgreementFileLocalization](Get-MgBetaAgreementFileLocalization.md)
 
 ### [Get-MgBetaAgreementFileLocalization](Get-MgBetaAgreementFileLocalization.md)
 
@@ -99,11 +89,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAgreementFileLocalizationVersion](Get-MgBetaAgreementFileLocalizationVersion.md)
 
-### [Get-MgBetaAgreementFileLocalizationVersion](Get-MgBetaAgreementFileLocalizationVersion.md)
-
 ### [Get-MgBetaAgreementFileLocalizationVersionCount](Get-MgBetaAgreementFileLocalizationVersionCount.md)
-
-### [Get-MgBetaAgreementFileVersion](Get-MgBetaAgreementFileVersion.md)
 
 ### [Get-MgBetaAgreementFileVersion](Get-MgBetaAgreementFileVersion.md)
 
@@ -111,17 +97,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaBusinessFlowTemplate](Get-MgBetaBusinessFlowTemplate.md)
 
-### [Get-MgBetaBusinessFlowTemplate](Get-MgBetaBusinessFlowTemplate.md)
-
 ### [Get-MgBetaBusinessFlowTemplateCount](Get-MgBetaBusinessFlowTemplateCount.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackage](Get-MgBetaEntitlementManagementAccessPackage.md)
 
-### [Get-MgBetaEntitlementManagementAccessPackage](Get-MgBetaEntitlementManagementAccessPackage.md)
-
 ### [Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement](Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageAssignment](Get-MgBetaEntitlementManagementAccessPackageAssignment.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignment](Get-MgBetaEntitlementManagementAccessPackageAssignment.md)
 
@@ -135,25 +115,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
 
-### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
-
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCount](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCount.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
 
-### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
-
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest](Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest](Get-MgBetaEntitlementManagementAccessPackageAssignmentRequest.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentRequestCount](Get-MgBetaEntitlementManagementAccessPackageAssignmentRequestCount.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole](Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole](Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole.md)
 
@@ -162,10 +132,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaEntitlementManagementAccessPackageByUniqueName](Get-MgBetaEntitlementManagementAccessPackageByUniqueName.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalog](Get-MgBetaEntitlementManagementAccessPackageCatalog.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageCatalog](Get-MgBetaEntitlementManagementAccessPackageCatalog.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension.md)
 
@@ -181,8 +147,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
 
-### [Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
-
 ### [Get-MgBetaEntitlementManagementAccessPackageCount](Get-MgBetaEntitlementManagementAccessPackageCount.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage](Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage.md)
@@ -195,15 +159,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith.md)
 
-### [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageResource](Get-MgBetaEntitlementManagementAccessPackageResource.md)
-
 ### [Get-MgBetaEntitlementManagementAccessPackageResource](Get-MgBetaEntitlementManagementAccessPackageResource.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageResourceCount](Get-MgBetaEntitlementManagementAccessPackageResourceCount.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment](Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment](Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment.md)
 
@@ -211,7 +169,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaEntitlementManagementAccessPackageResourceEnvironmentCount](Get-MgBetaEntitlementManagementAccessPackageResourceEnvironmentCount.md)
 
-### [Get-MgBetaEntitlementManagementAccessPackageResourceRequest](Get-MgBetaEntitlementManagementAccessPackageResourceRequest.md)
+### [Get-MgBetaEntitlementManagementAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaEntitlementManagementAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageResourceRequest](Get-MgBetaEntitlementManagementAccessPackageResourceRequest.md)
 
@@ -219,17 +177,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaEntitlementManagementAccessPackageResourceUploadSession](Get-MgBetaEntitlementManagementAccessPackageResourceUploadSession.md)
 
-### [Get-MgBetaEntitlementManagementAccessPackageResourceUploadSession](Get-MgBetaEntitlementManagementAccessPackageResourceUploadSession.md)
-
-### [Get-MgBetaEntitlementManagementAccessPackageSuggestion](Get-MgBetaEntitlementManagementAccessPackageSuggestion.md)
-
 ### [Get-MgBetaEntitlementManagementAccessPackageSuggestion](Get-MgBetaEntitlementManagementAccessPackageSuggestion.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageSuggestionAccessPackage](Get-MgBetaEntitlementManagementAccessPackageSuggestionAccessPackage.md)
 
 ### [Get-MgBetaEntitlementManagementAccessPackageSuggestionCount](Get-MgBetaEntitlementManagementAccessPackageSuggestionCount.md)
-
-### [Get-MgBetaEntitlementManagementAssignmentRequest](Get-MgBetaEntitlementManagementAssignmentRequest.md)
 
 ### [Get-MgBetaEntitlementManagementAssignmentRequest](Get-MgBetaEntitlementManagementAssignmentRequest.md)
 
@@ -241,17 +193,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaEntitlementManagementAvailableAccessPackage](Get-MgBetaEntitlementManagementAvailableAccessPackage.md)
 
-### [Get-MgBetaEntitlementManagementAvailableAccessPackage](Get-MgBetaEntitlementManagementAvailableAccessPackage.md)
-
 ### [Get-MgBetaEntitlementManagementAvailableAccessPackageCount](Get-MgBetaEntitlementManagementAvailableAccessPackageCount.md)
 
 ### [Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope](Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope.md)
 
-### [Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope](Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScope.md)
-
 ### [Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScopeCount](Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScopeCount.md)
-
-### [Get-MgBetaEntitlementManagementConnectedOrganization](Get-MgBetaEntitlementManagementConnectedOrganization.md)
 
 ### [Get-MgBetaEntitlementManagementConnectedOrganization](Get-MgBetaEntitlementManagementConnectedOrganization.md)
 
@@ -269,9 +215,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorCount](Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorCount.md)
 
-### [Get-MgBetaEntitlementManagementSetting](Get-MgBetaEntitlementManagementSetting.md)
+### [Get-MgBetaEntitlementManagementControlConfiguration](Get-MgBetaEntitlementManagementControlConfiguration.md)
 
-### [Get-MgBetaEntitlementManagementSubject](Get-MgBetaEntitlementManagementSubject.md)
+### [Get-MgBetaEntitlementManagementControlConfigurationCount](Get-MgBetaEntitlementManagementControlConfigurationCount.md)
+
+### [Get-MgBetaEntitlementManagementExternalOriginResourceConnector](Get-MgBetaEntitlementManagementExternalOriginResourceConnector.md)
+
+### [Get-MgBetaEntitlementManagementExternalOriginResourceConnectorCount](Get-MgBetaEntitlementManagementExternalOriginResourceConnectorCount.md)
+
+### [Get-MgBetaEntitlementManagementSetting](Get-MgBetaEntitlementManagementSetting.md)
 
 ### [Get-MgBetaEntitlementManagementSubject](Get-MgBetaEntitlementManagementSubject.md)
 
@@ -283,11 +235,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecision](Get-MgBetaIdentityGovernanceAccessReviewDecision.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDecision](Get-MgBetaIdentityGovernanceAccessReviewDecision.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewDecisionCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDecisionInsight.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDecisionInsight.md)
 
@@ -297,17 +245,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceContactedReviewer.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceContactedReviewer.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceContactedReviewerCount.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecisionInsight.md)
 
@@ -317,11 +259,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision.md)
 
@@ -329,21 +267,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsight.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecisionInsightCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinition](Get-MgBetaIdentityGovernanceAccessReviewDefinition.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinition](Get-MgBetaIdentityGovernanceAccessReviewDefinition.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionCount](Get-MgBetaIdentityGovernanceAccessReviewDefinitionCount.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
 
@@ -353,11 +283,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
 
@@ -369,11 +295,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
 
@@ -381,11 +303,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInstance](Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInstance.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition.md)
 
@@ -393,15 +311,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceCount](Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceCount.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstance](Get-MgBetaIdentityGovernanceAccessReviewInstance.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewInstance](Get-MgBetaIdentityGovernanceAccessReviewInstance.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewInstanceContactedReviewer.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewInstanceContactedReviewer.md)
 
@@ -411,11 +323,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecision.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecision.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInsight.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInsight.md)
 
@@ -425,13 +333,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewer.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewer.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceContactedReviewerCount.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceDefinition.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStage.md)
 
@@ -439,11 +343,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecision.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecision.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecisionCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecisionInsight.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceDecisionInstanceStageDecisionInsight.md)
 
@@ -453,17 +353,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewInstanceStage.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewInstanceStage.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageCount.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecision.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecision.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInsight.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInsight.md)
 
@@ -473,17 +367,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceContactedReviewer.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceContactedReviewer.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceContactedReviewerCount.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision.md)
 
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision.md)
-
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionCount.md)
-
-### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight.md)
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight.md)
 
@@ -493,7 +381,179 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAccessReviewPolicy](Get-MgBetaIdentityGovernanceAccessReviewPolicy.md)
 
-### [Get-MgBetaIdentityGovernanceAppConsentRequest](Get-MgBetaIdentityGovernanceAppConsentRequest.md)
+### [Get-MgBetaIdentityGovernanceAccessReviewUnified](Get-MgBetaIdentityGovernanceAccessReviewUnified.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewer.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewerCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDefinition.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewerCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewer.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewerCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceDefinition.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDefinition.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewer.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewerCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDefinition.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstance.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewerCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewer.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewerCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceDefinition.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDefinition.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewer](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewer.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewerCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewerCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsight](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsight.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsightCount](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsightCount.md)
+
+### [Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDefinition](Get-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDefinition.md)
 
 ### [Get-MgBetaIdentityGovernanceAppConsentRequest](Get-MgBetaIdentityGovernanceAppConsentRequest.md)
 
@@ -501,11 +561,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest.md)
 
-### [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest.md)
-
 ### [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
-
-### [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
 
 ### [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep.md)
 
@@ -515,10 +571,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalog](Get-MgBetaIdentityGovernanceCatalog.md)
 
-### [Get-MgBetaIdentityGovernanceCatalog](Get-MgBetaIdentityGovernanceCatalog.md)
-
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackage](Get-MgBetaIdentityGovernanceCatalogAccessPackage.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackage](Get-MgBetaIdentityGovernanceCatalogAccessPackage.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageByUniqueName](Get-MgBetaIdentityGovernanceCatalogAccessPackageByUniqueName.md)
@@ -527,17 +579,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageCustomWorkflowExtension](Get-MgBetaIdentityGovernanceCatalogAccessPackageCustomWorkflowExtension.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageCustomWorkflowExtension](Get-MgBetaIdentityGovernanceCatalogAccessPackageCustomWorkflowExtension.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageCustomWorkflowExtensionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageCustomWorkflowExtensionCount.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResource](Get-MgBetaIdentityGovernanceCatalogAccessPackageResource.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResource](Get-MgBetaIdentityGovernanceCatalogAccessPackageResource.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceEnvironment](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceEnvironment.md)
-
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRole.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRole.md)
 
@@ -547,29 +593,37 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResource](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResource.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceEnvironment](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceEnvironment.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionCount.md)
 
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFile.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount.md)
+
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleCount.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFile.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScope.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleCount.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScope.md)
 
@@ -579,31 +633,41 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResource](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResource.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceEnvironment](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceEnvironment.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionCount.md)
 
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFile.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount.md)
+
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionCount.md)
 
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFile.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount.md)
+
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeCount.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRole.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRole.md)
 
@@ -613,11 +677,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceRole.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceRole.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceRoleCount.md)
-
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope.md)
 
@@ -627,27 +687,35 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionCount.md)
 
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFile.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount.md)
+
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleCount.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFile.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScope.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleCount.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScope.md)
 
@@ -657,45 +725,55 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRole.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResource](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResource.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceEnvironment](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceEnvironment.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFile.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScope.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileCount.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleCount.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScope](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScope.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScopeCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScopeCount.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceExternalOriginResourceConnector.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionCount.md)
 
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFile.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileCount.md)
+
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeCount.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionCount.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFile](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFile.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileContent](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileContent.md)
+
+### [Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileCount](Get-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileCount.md)
 
 ### [Get-MgBetaIdentityGovernanceCatalogByUniqueName](Get-MgBetaIdentityGovernanceCatalogByUniqueName.md)
 
@@ -703,15 +781,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceCatalogCustomAccessPackageWorkflowExtension](Get-MgBetaIdentityGovernanceCatalogCustomAccessPackageWorkflowExtension.md)
 
-### [Get-MgBetaIdentityGovernanceCatalogCustomAccessPackageWorkflowExtension](Get-MgBetaIdentityGovernanceCatalogCustomAccessPackageWorkflowExtension.md)
-
 ### [Get-MgBetaIdentityGovernanceCatalogCustomAccessPackageWorkflowExtensionCount](Get-MgBetaIdentityGovernanceCatalogCustomAccessPackageWorkflowExtensionCount.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflow](Get-MgBetaIdentityGovernanceLifecycleWorkflow.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflow](Get-MgBetaIdentityGovernanceLifecycleWorkflow.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget.md)
 
@@ -726,8 +798,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 
@@ -753,10 +823,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount.md)
@@ -765,31 +831,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowSubjectProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowSubjectProcessingResult.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope](Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope](Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope.md)
 
@@ -805,7 +861,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRun.md)
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowPreviewScope](Get-MgBetaIdentityGovernanceLifecycleWorkflowPreviewScope.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowPreviewScopeCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowPreviewScopeCount.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRun.md)
 
@@ -813,11 +871,29 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunReprocessedRun.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunReprocessedRun.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunReprocessedRunCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunReprocessedRunCount.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRunCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRunCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubject](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubject.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningError.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultTask.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
 
@@ -835,11 +911,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultCount.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun.md)
 
@@ -855,11 +927,29 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResult.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRun.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRunCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRunCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResult.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubject](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubject.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningError.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultTask.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
 
@@ -867,11 +957,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinitionCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinitionCount.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult.md)
 
@@ -889,15 +975,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportCount.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTask.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
 
@@ -915,17 +997,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateCount.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskCount.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
 
@@ -943,11 +1019,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultCount.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun.md)
 
@@ -963,13 +1035,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget.md)
 
@@ -995,11 +1061,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskCount.md)
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult.md)
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult.md)
 
@@ -1021,11 +1083,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticAwFinding](Get-MgBetaIdentityGovernancePermissionAnalyticAwFinding.md)
 
-### [Get-MgBetaIdentityGovernancePermissionAnalyticAwFinding](Get-MgBetaIdentityGovernancePermissionAnalyticAwFinding.md)
-
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticAwFindingCount](Get-MgBetaIdentityGovernancePermissionAnalyticAwFindingCount.md)
-
-### [Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution.md)
 
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticAwPermissionCreepIndexDistribution.md)
 
@@ -1037,11 +1095,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding](Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding.md)
 
-### [Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding](Get-MgBetaIdentityGovernancePermissionAnalyticAzureFinding.md)
-
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticAzureFindingCount](Get-MgBetaIdentityGovernancePermissionAnalyticAzureFindingCount.md)
-
-### [Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution.md)
 
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticAzurePermissionCreepIndexDistribution.md)
 
@@ -1053,11 +1107,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpFinding](Get-MgBetaIdentityGovernancePermissionAnalyticGcpFinding.md)
 
-### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpFinding](Get-MgBetaIdentityGovernancePermissionAnalyticGcpFinding.md)
-
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpFindingCount](Get-MgBetaIdentityGovernancePermissionAnalyticGcpFindingCount.md)
-
-### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution.md)
 
 ### [Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution](Get-MgBetaIdentityGovernancePermissionAnalyticGcpPermissionCreepIndexDistribution.md)
 
@@ -1069,17 +1119,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
 
-### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
-
 ### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount.md)
 
 ### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval.md)
 
-### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApproval.md)
-
 ### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalCount](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalCount.md)
-
-### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep.md)
 
 ### [Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep](Get-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalStep.md)
 
@@ -1093,17 +1137,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalCount.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep.md)
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep.md)
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStepCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStepCount.md)
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
 
@@ -1116,8 +1154,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount.md)
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
 
@@ -1137,8 +1173,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestCount.md)
@@ -1155,8 +1189,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup.md)
@@ -1164,8 +1196,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount.md)
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 
@@ -1183,8 +1213,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestCount.md)
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup.md)
@@ -1199,15 +1227,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource](Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource.md)
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource](Get-MgBetaIdentityGovernancePrivilegedAccessGroupResource.md)
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupResourceCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupResourceCount.md)
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlert](Get-MgBetaIdentityGovernanceRoleManagementAlert.md)
-
-### [Get-MgBetaIdentityGovernanceRoleManagementAlert](Get-MgBetaIdentityGovernanceRoleManagementAlert.md)
-
-### [Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration](Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration.md)
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration](Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration.md)
 
@@ -1219,11 +1241,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition](Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition.md)
 
-### [Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition](Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition.md)
-
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertDefinitionCount](Get-MgBetaIdentityGovernanceRoleManagementAlertDefinitionCount.md)
-
-### [Get-MgBetaIdentityGovernanceRoleManagementAlertIncident](Get-MgBetaIdentityGovernanceRoleManagementAlertIncident.md)
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertIncident](Get-MgBetaIdentityGovernanceRoleManagementAlertIncident.md)
 
@@ -1231,15 +1249,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertOperation](Get-MgBetaIdentityGovernanceRoleManagementAlertOperation.md)
 
-### [Get-MgBetaIdentityGovernanceRoleManagementAlertOperation](Get-MgBetaIdentityGovernanceRoleManagementAlertOperation.md)
-
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertOperationCount](Get-MgBetaIdentityGovernanceRoleManagementAlertOperationCount.md)
 
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](Get-MgBetaIdentityGovernanceTermsOfUseAgreement.md)
-
-### [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](Get-MgBetaIdentityGovernanceTermsOfUseAgreement.md)
-
-### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 
@@ -1249,11 +1261,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile.md)
 
-### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile.md)
-
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileCount](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileCount.md)
-
-### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 
@@ -1261,11 +1269,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
 
-### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
-
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount.md)
-
-### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion.md)
 
 ### [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion](Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion.md)
 
@@ -1273,11 +1277,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedAccess](Get-MgBetaPrivilegedAccess.md)
 
-### [Get-MgBetaPrivilegedAccess](Get-MgBetaPrivilegedAccess.md)
-
 ### [Get-MgBetaPrivilegedAccessCount](Get-MgBetaPrivilegedAccessCount.md)
-
-### [Get-MgBetaPrivilegedAccessResource](Get-MgBetaPrivilegedAccessResource.md)
 
 ### [Get-MgBetaPrivilegedAccessResource](Get-MgBetaPrivilegedAccessResource.md)
 
@@ -1287,13 +1287,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedAccessResourceRoleAssignment](Get-MgBetaPrivilegedAccessResourceRoleAssignment.md)
 
-### [Get-MgBetaPrivilegedAccessResourceRoleAssignment](Get-MgBetaPrivilegedAccessResourceRoleAssignment.md)
-
 ### [Get-MgBetaPrivilegedAccessResourceRoleAssignmentCount](Get-MgBetaPrivilegedAccessResourceRoleAssignmentCount.md)
 
 ### [Get-MgBetaPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment](Get-MgBetaPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment.md)
-
-### [Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequest](Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequest.md)
 
 ### [Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequest](Get-MgBetaPrivilegedAccessResourceRoleAssignmentRequest.md)
 
@@ -1321,15 +1317,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedAccessResourceRoleDefinition](Get-MgBetaPrivilegedAccessResourceRoleDefinition.md)
 
-### [Get-MgBetaPrivilegedAccessResourceRoleDefinition](Get-MgBetaPrivilegedAccessResourceRoleDefinition.md)
-
 ### [Get-MgBetaPrivilegedAccessResourceRoleDefinitionCount](Get-MgBetaPrivilegedAccessResourceRoleDefinitionCount.md)
 
 ### [Get-MgBetaPrivilegedAccessResourceRoleDefinitionResource](Get-MgBetaPrivilegedAccessResourceRoleDefinitionResource.md)
 
 ### [Get-MgBetaPrivilegedAccessResourceRoleDefinitionRoleSetting](Get-MgBetaPrivilegedAccessResourceRoleDefinitionRoleSetting.md)
-
-### [Get-MgBetaPrivilegedAccessResourceRoleSetting](Get-MgBetaPrivilegedAccessResourceRoleSetting.md)
 
 ### [Get-MgBetaPrivilegedAccessResourceRoleSetting](Get-MgBetaPrivilegedAccessResourceRoleSetting.md)
 
@@ -1345,13 +1337,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedAccessRoleAssignment](Get-MgBetaPrivilegedAccessRoleAssignment.md)
 
-### [Get-MgBetaPrivilegedAccessRoleAssignment](Get-MgBetaPrivilegedAccessRoleAssignment.md)
-
 ### [Get-MgBetaPrivilegedAccessRoleAssignmentCount](Get-MgBetaPrivilegedAccessRoleAssignmentCount.md)
 
 ### [Get-MgBetaPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment](Get-MgBetaPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment.md)
-
-### [Get-MgBetaPrivilegedAccessRoleAssignmentRequest](Get-MgBetaPrivilegedAccessRoleAssignmentRequest.md)
 
 ### [Get-MgBetaPrivilegedAccessRoleAssignmentRequest](Get-MgBetaPrivilegedAccessRoleAssignmentRequest.md)
 
@@ -1371,15 +1359,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedAccessRoleDefinition](Get-MgBetaPrivilegedAccessRoleDefinition.md)
 
-### [Get-MgBetaPrivilegedAccessRoleDefinition](Get-MgBetaPrivilegedAccessRoleDefinition.md)
-
 ### [Get-MgBetaPrivilegedAccessRoleDefinitionCount](Get-MgBetaPrivilegedAccessRoleDefinitionCount.md)
 
 ### [Get-MgBetaPrivilegedAccessRoleDefinitionResource](Get-MgBetaPrivilegedAccessRoleDefinitionResource.md)
 
 ### [Get-MgBetaPrivilegedAccessRoleDefinitionRoleSetting](Get-MgBetaPrivilegedAccessRoleDefinitionRoleSetting.md)
-
-### [Get-MgBetaPrivilegedAccessRoleSetting](Get-MgBetaPrivilegedAccessRoleSetting.md)
 
 ### [Get-MgBetaPrivilegedAccessRoleSetting](Get-MgBetaPrivilegedAccessRoleSetting.md)
 
@@ -1391,15 +1375,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedApproval](Get-MgBetaPrivilegedApproval.md)
 
-### [Get-MgBetaPrivilegedApproval](Get-MgBetaPrivilegedApproval.md)
-
 ### [Get-MgBetaPrivilegedApprovalCount](Get-MgBetaPrivilegedApprovalCount.md)
 
 ### [Get-MgBetaPrivilegedApprovalRequest](Get-MgBetaPrivilegedApprovalRequest.md)
 
 ### [Get-MgBetaPrivilegedApprovalRoleInfo](Get-MgBetaPrivilegedApprovalRoleInfo.md)
-
-### [Get-MgBetaPrivilegedApprovalRoleInfoAssignment](Get-MgBetaPrivilegedApprovalRoleInfoAssignment.md)
 
 ### [Get-MgBetaPrivilegedApprovalRoleInfoAssignment](Get-MgBetaPrivilegedApprovalRoleInfoAssignment.md)
 
@@ -1411,11 +1391,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedOperationEvent](Get-MgBetaPrivilegedOperationEvent.md)
 
-### [Get-MgBetaPrivilegedOperationEvent](Get-MgBetaPrivilegedOperationEvent.md)
-
 ### [Get-MgBetaPrivilegedOperationEventCount](Get-MgBetaPrivilegedOperationEventCount.md)
-
-### [Get-MgBetaPrivilegedRole](Get-MgBetaPrivilegedRole.md)
 
 ### [Get-MgBetaPrivilegedRole](Get-MgBetaPrivilegedRole.md)
 
@@ -1423,13 +1399,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedRoleAssignmentRequest](Get-MgBetaPrivilegedRoleAssignmentRequest.md)
 
-### [Get-MgBetaPrivilegedRoleAssignmentRequest](Get-MgBetaPrivilegedRoleAssignmentRequest.md)
-
 ### [Get-MgBetaPrivilegedRoleAssignmentRequestCount](Get-MgBetaPrivilegedRoleAssignmentRequestCount.md)
 
 ### [Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfo](Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfo.md)
-
-### [Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfoAssignment](Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfoAssignment.md)
 
 ### [Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfoAssignment](Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfoAssignment.md)
 
@@ -1443,8 +1415,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedRoleAssignmentRoleInfoAssignment](Get-MgBetaPrivilegedRoleAssignmentRoleInfoAssignment.md)
 
-### [Get-MgBetaPrivilegedRoleAssignmentRoleInfoAssignment](Get-MgBetaPrivilegedRoleAssignmentRoleInfoAssignment.md)
-
 ### [Get-MgBetaPrivilegedRoleAssignmentRoleInfoAssignmentCount](Get-MgBetaPrivilegedRoleAssignmentRoleInfoAssignmentCount.md)
 
 ### [Get-MgBetaPrivilegedRoleAssignmentRoleInfoSetting](Get-MgBetaPrivilegedRoleAssignmentRoleInfoSetting.md)
@@ -1455,25 +1425,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrivilegedRoleRoleAssignment](Get-MgBetaPrivilegedRoleRoleAssignment.md)
 
-### [Get-MgBetaPrivilegedRoleRoleAssignment](Get-MgBetaPrivilegedRoleRoleAssignment.md)
-
 ### [Get-MgBetaPrivilegedRoleSetting](Get-MgBetaPrivilegedRoleSetting.md)
 
 ### [Get-MgBetaPrivilegedRoleSummary](Get-MgBetaPrivilegedRoleSummary.md)
 
 ### [Get-MgBetaProgram](Get-MgBetaProgram.md)
 
-### [Get-MgBetaProgram](Get-MgBetaProgram.md)
-
-### [Get-MgBetaProgramControl](Get-MgBetaProgramControl.md)
-
 ### [Get-MgBetaProgramControl](Get-MgBetaProgramControl.md)
 
 ### [Get-MgBetaProgramControlCount](Get-MgBetaProgramControlCount.md)
 
 ### [Get-MgBetaProgramControlProgram](Get-MgBetaProgramControlProgram.md)
-
-### [Get-MgBetaProgramControlType](Get-MgBetaProgramControlType.md)
 
 ### [Get-MgBetaProgramControlType](Get-MgBetaProgramControlType.md)
 
@@ -1485,11 +1447,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDirectoryResourceNamespace](Get-MgBetaRoleManagementDirectoryResourceNamespace.md)
 
-### [Get-MgBetaRoleManagementDirectoryResourceNamespace](Get-MgBetaRoleManagementDirectoryResourceNamespace.md)
-
 ### [Get-MgBetaRoleManagementDirectoryResourceNamespaceCount](Get-MgBetaRoleManagementDirectoryResourceNamespaceCount.md)
-
-### [Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction.md)
 
@@ -1501,15 +1459,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignment](Get-MgBetaRoleManagementDirectoryRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementDirectoryRoleAssignment](Get-MgBetaRoleManagementDirectoryRoleAssignment.md)
-
-### [Get-MgBetaRoleManagementDirectoryRoleAssignmentApproval](Get-MgBetaRoleManagementDirectoryRoleAssignmentApproval.md)
-
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentApproval](Get-MgBetaRoleManagementDirectoryRoleAssignmentApproval.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalCount](Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalCount.md)
-
-### [Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep](Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep](Get-MgBetaRoleManagementDirectoryRoleAssignmentApprovalStep.md)
 
@@ -1527,8 +1479,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule.md)
 
-### [Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule.md)
-
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleAppScope](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleAppScope.md)
@@ -1536,8 +1486,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleCount](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleCount.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 
@@ -1554,8 +1502,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedulePrincipal](Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedulePrincipal.md)
-
-### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 
@@ -1577,17 +1523,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDirectoryRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementDirectoryRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleDefinition.md)
-
 ### [Get-MgBetaRoleManagementDirectoryRoleDefinitionCount](Get-MgBetaRoleManagementDirectoryRoleDefinitionCount.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
 
-### [Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
-
 ### [Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFromCount](Get-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFromCount.md)
-
-### [Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule.md)
 
@@ -1596,8 +1536,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleCount](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleCount.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
 
@@ -1612,8 +1550,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal](Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal.md)
-
-### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 
@@ -1633,8 +1569,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignment](Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignment](Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignment.md)
-
 ### [Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentCount](Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentCount.md)
@@ -1647,17 +1581,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEnterpriseApp](Get-MgBetaRoleManagementEnterpriseApp.md)
 
-### [Get-MgBetaRoleManagementEnterpriseApp](Get-MgBetaRoleManagementEnterpriseApp.md)
-
 ### [Get-MgBetaRoleManagementEnterpriseAppCount](Get-MgBetaRoleManagementEnterpriseAppCount.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespace](Get-MgBetaRoleManagementEnterpriseAppResourceNamespace.md)
 
-### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespace](Get-MgBetaRoleManagementEnterpriseAppResourceNamespace.md)
-
 ### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceCount](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceCount.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction.md)
 
@@ -1669,15 +1597,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignment](Get-MgBetaRoleManagementEnterpriseAppRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignment](Get-MgBetaRoleManagementEnterpriseAppRoleAssignment.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval.md)
-
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalCount.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep.md)
 
@@ -1695,8 +1617,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule.md)
 
-### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule.md)
-
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleActivatedUsing](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleActivatedUsing.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleAppScope.md)
@@ -1704,8 +1624,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleCount.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance.md)
 
@@ -1722,8 +1640,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedulePrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedulePrincipal.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest.md)
 
@@ -1745,17 +1661,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
-
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionCount](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionCount.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
 
-### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
-
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFromCount](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFromCount.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule.md)
 
@@ -1764,8 +1674,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleCount](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleCount.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance.md)
 
@@ -1780,8 +1688,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedulePrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedulePrincipal.md)
-
-### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest.md)
 
@@ -1801,8 +1707,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment.md)
-
 ### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentCount](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentCount.md)
@@ -1817,11 +1721,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespace](Get-MgBetaRoleManagementEntitlementManagementResourceNamespace.md)
 
-### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespace](Get-MgBetaRoleManagementEntitlementManagementResourceNamespace.md)
-
 ### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceCount](Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceCount.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
 
@@ -1833,15 +1733,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignment](Get-MgBetaRoleManagementEntitlementManagementRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignment](Get-MgBetaRoleManagementEntitlementManagementRoleAssignment.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval.md)
-
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApprovalCount](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApprovalCount.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApprovalStep](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApprovalStep.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApprovalStep](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentApprovalStep.md)
 
@@ -1859,8 +1753,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
 
-### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
-
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope.md)
@@ -1868,8 +1760,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleCount](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleCount.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 
@@ -1886,8 +1776,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
 
@@ -1909,17 +1797,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleDefinition.md)
 
-### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleDefinition.md)
-
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionCount](Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionCount.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
 
-### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
-
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount](Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
 
@@ -1928,8 +1810,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleCount](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleCount.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 
@@ -1944,8 +1824,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal.md)
-
-### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 
@@ -1965,8 +1843,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment](Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
 
-### [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment](Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
-
 ### [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentCount](Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentCount.md)
@@ -1976,8 +1852,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal](Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal.md)
 
 ### [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition.md)
-
-### [Get-MgBetaUserAgreementAcceptance](Get-MgBetaUserAgreementAcceptance.md)
 
 ### [Get-MgBetaUserAgreementAcceptance](Get-MgBetaUserAgreementAcceptance.md)
 
@@ -1991,7 +1865,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Initialize-MgBetaIdentityGovernanceLifecycleWorkflow](Initialize-MgBetaIdentityGovernanceLifecycleWorkflow.md)
 
+### [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowAndWait](Initialize-MgBetaIdentityGovernanceLifecycleWorkflowAndWait.md)
+
 ### [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+
+### [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAndWait](Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAndWait.md)
 
 ### [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope](Initialize-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowWithScope.md)
 
@@ -1999,13 +1877,45 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation.md)
 
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDecisionInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDecisionInstanceStageRecommendation.md)
+
 ### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation.md)
 
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceStageRecommendation.md)
+
 ### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceDecisionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceDecisionInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceDecisionInstanceStageRecommendation.md)
 
 ### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceRecommendation.md)
 
 ### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceStageDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceStageDecisionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewInstanceStageRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDecisionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceRecommendation.md)
+
+### [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceStageRecommendation](Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedInstanceStageRecommendation.md)
 
 ### [Invoke-MgBetaAssignedRoleManagementDirectoryRoleDefinitionInheritPermissionFromPrincipal](Invoke-MgBetaAssignedRoleManagementDirectoryRoleDefinitionInheritPermissionFromPrincipal.md)
 
@@ -2021,13 +1931,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision](Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision.md)
 
-### [Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision.md)
-
-### [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceDecisionInstanceRecordDecision](Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceDecisionInstanceRecordDecision.md)
+### [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceApplyCustomDataProvidedResourceDecision](Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceApplyCustomDataProvidedResourceDecision.md)
 
 ### [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceRecordDecision](Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceRecordDecision.md)
 
-### [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceStageDecisionInstanceRecordDecision](Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceStageDecisionInstanceRecordDecision.md)
+### [Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceStageRecordDecision](Invoke-MgBetaBatchIdentityGovernanceAccessReviewInstanceStageRecordDecision.md)
 
 ### [Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser](Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser.md)
 
@@ -2072,6 +1980,44 @@ Microsoft Graph PowerShell Cmdlets
 ### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewInstanceStageDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewInstanceStageDecisionByCurrentUser.md)
 
 ### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceStageByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceStageByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionByCurrentUser.md)
+
+### [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionByCurrentUser.md)
 
 ### [Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser](Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestByCurrentUser.md)
 
@@ -2143,6 +2089,14 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaMyPrivilegedRoleAssignmentRequest](Invoke-MgBetaMyPrivilegedRoleAssignmentRequest.md)
 
+### [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflow](Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflow.md)
+
+### [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
+
+### [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskFailure](Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskFailure.md)
+
+### [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowTaskFailure](Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowTaskFailure.md)
+
 ### [Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision](Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecision.md)
 
 ### [Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision](Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
@@ -2193,7 +2147,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun](Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun.md)
 
+### [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult](Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult.md)
+
 ### [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
+
+### [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowSubjectProcessingResult](Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowSubjectProcessingResult.md)
 
 ### [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport](Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport.md)
 
@@ -2257,6 +2215,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaEntitlementManagementAccessPackage](New-MgBetaEntitlementManagementAccessPackage.md)
 
+### [New-MgBetaEntitlementManagementAccessPackageAssignment](New-MgBetaEntitlementManagementAccessPackageAssignment.md)
+
 ### [New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
 
 ### [New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
@@ -2292,6 +2252,10 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
 
 ### [New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
+
+### [New-MgBetaEntitlementManagementControlConfiguration](New-MgBetaEntitlementManagementControlConfiguration.md)
+
+### [New-MgBetaEntitlementManagementExternalOriginResourceConnector](New-MgBetaEntitlementManagementExternalOriginResourceConnector.md)
 
 ### [New-MgBetaEntitlementManagementSubject](New-MgBetaEntitlementManagementSubject.md)
 
@@ -2360,6 +2324,14 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision](New-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision.md)
 
 ### [New-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight](New-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight.md)
+
+### [New-MgBetaIdentityGovernanceAccessReviewUnifiedDecision](New-MgBetaIdentityGovernanceAccessReviewUnifiedDecision.md)
+
+### [New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition.md)
+
+### [New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance](New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance.md)
+
+### [New-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](New-MgBetaIdentityGovernanceAccessReviewUnifiedInstance.md)
 
 ### [New-MgBetaIdentityGovernanceAppConsentRequest](New-MgBetaIdentityGovernanceAppConsentRequest.md)
 
@@ -2697,6 +2669,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef.md)
 
+### [Remove-MgBetaEntitlementManagementControlConfiguration](Remove-MgBetaEntitlementManagementControlConfiguration.md)
+
+### [Remove-MgBetaEntitlementManagementExternalOriginResourceConnector](Remove-MgBetaEntitlementManagementExternalOriginResourceConnector.md)
+
 ### [Remove-MgBetaEntitlementManagementSubject](Remove-MgBetaEntitlementManagementSubject.md)
 
 ### [Remove-MgBetaEntitlementManagementSubjectByObjectId](Remove-MgBetaEntitlementManagementSubjectByObjectId.md)
@@ -2777,6 +2753,92 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaIdentityGovernanceAccessReviewPolicy](Remove-MgBetaIdentityGovernanceAccessReviewPolicy.md)
 
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnified](Remove-MgBetaIdentityGovernanceAccessReviewUnified.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewer](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewer.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewer](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewer.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewer](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewer.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstance.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewer](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewer.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewer](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewer.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision.md)
+
+### [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsight](Remove-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsight.md)
+
 ### [Remove-MgBetaIdentityGovernanceAppConsentRequest](Remove-MgBetaIdentityGovernanceAppConsentRequest.md)
 
 ### [Remove-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](Remove-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest.md)
@@ -2801,7 +2863,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
 
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
+
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScope](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScope.md)
 
@@ -2813,7 +2879,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
 
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
+
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRole](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRole.md)
 
@@ -2829,7 +2899,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
 
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
+
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScope](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScope.md)
 
@@ -2843,11 +2917,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSession.md)
 
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScope](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceScope.md)
 
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSession.md)
 
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
 ### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSession.md)
+
+### [Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileContent](Remove-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileContent.md)
 
 ### [Remove-MgBetaIdentityGovernanceCatalogByUniqueName](Remove-MgBetaIdentityGovernanceCatalogByUniqueName.md)
 
@@ -3143,6 +3223,16 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Reset-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision](Reset-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecision.md)
 
+### [Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision](Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision.md)
+
+### [Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision.md)
+
+### [Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision](Reset-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision.md)
+
+### [Reset-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](Reset-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision.md)
+
+### [Reset-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision](Reset-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision.md)
+
 ### [Restore-MgBetaIdentityGovernanceLifecycleWorkflow](Restore-MgBetaIdentityGovernanceLifecycleWorkflow.md)
 
 ### [Restore-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Restore-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
@@ -3163,6 +3253,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Search-MgBetaIdentityGovernanceCatalog](Search-MgBetaIdentityGovernanceCatalog.md)
 
+### [Select-MgBetaEntitlementManagementAccessPackage](Select-MgBetaEntitlementManagementAccessPackage.md)
+
+### [Select-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](Select-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
+
 ### [Send-MgBetaAccessReviewInstanceReminder](Send-MgBetaAccessReviewInstanceReminder.md)
 
 ### [Send-MgBetaAccessReviewReminder](Send-MgBetaAccessReviewReminder.md)
@@ -3177,9 +3271,45 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Send-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceReminder.md)
 
+### [Send-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceReminder.md)
+
+### [Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceReminder.md)
+
+### [Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceReminder.md)
+
+### [Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceReminder.md)
+
+### [Send-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceReminder.md)
+
+### [Send-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceReminder.md)
+
+### [Send-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceReminder](Send-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceReminder.md)
+
 ### [Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
 
+### [Set-MgBetaEntitlementManagementControlConfiguration](Set-MgBetaEntitlementManagementControlConfiguration.md)
+
 ### [Set-MgBetaIdentityGovernanceAccessReviewDefinition](Set-MgBetaIdentityGovernanceAccessReviewDefinition.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceUploadSessionFileContent.md)
+
+### [Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileContent](Set-MgBetaIdentityGovernanceCatalogAccessPackageResourceUploadSessionFileContent.md)
+
+### [Split-MgBetaEntitlementManagementConnectedOrganization](Split-MgBetaEntitlementManagementConnectedOrganization.md)
 
 ### [Stop-MgBetaAccessReview](Stop-MgBetaAccessReview.md)
 
@@ -3218,6 +3348,50 @@ Microsoft Graph PowerShell Cmdlets
 ### [Stop-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstance](Stop-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstance.md)
 
 ### [Stop-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstance.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance.md)
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceApplyDecision.md)
+
+### [Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing](Stop-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowProcessing.md)
+
+### [Stop-MgBetaIdentityGovernanceLifecycleWorkflowProcessing](Stop-MgBetaIdentityGovernanceLifecycleWorkflowProcessing.md)
 
 ### [Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Stop-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
 
@@ -3311,6 +3485,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaEntitlementManagementConnectedOrganization](Update-MgBetaEntitlementManagementConnectedOrganization.md)
 
+### [Update-MgBetaEntitlementManagementExternalOriginResourceConnector](Update-MgBetaEntitlementManagementExternalOriginResourceConnector.md)
+
 ### [Update-MgBetaEntitlementManagementSetting](Update-MgBetaEntitlementManagementSetting.md)
 
 ### [Update-MgBetaEntitlementManagementSubject](Update-MgBetaEntitlementManagementSubject.md)
@@ -3390,6 +3566,92 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewInstanceStageDecisionInstanceDecisionInsight.md)
 
 ### [Update-MgBetaIdentityGovernanceAccessReviewPolicy](Update-MgBetaIdentityGovernanceAccessReviewPolicy.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnified](Update-MgBetaIdentityGovernanceAccessReviewUnified.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstance.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewer](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceContactedReviewer.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStage.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDecisionInstanceStageDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstance.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstance.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewer](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceContactedReviewer.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStage.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInstanceStageDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstance.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewer](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceContactedReviewer.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInstanceDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstance](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstance.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstance.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewer](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceContactedReviewer.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStage.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecisionInstanceStageDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStage.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstance.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewer](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceContactedReviewer.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecision.md)
+
+### [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsight](Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInstanceDecisionInsight.md)
 
 ### [Update-MgBetaIdentityGovernanceAppConsentRequest](Update-MgBetaIdentityGovernanceAppConsentRequest.md)
 
@@ -3483,11 +3745,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting.md)
 
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting.md)
+
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectMailboxSetting.md)
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectMailboxSetting.md)
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting.md)
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResultSubjectMailboxSetting.md)
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowTask](Update-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync
 ---
@@ -28,7 +28,7 @@ Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync
  [-ProcessContentRequests <IMicrosoftGraphProcessContentBatchRequest[]>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Process
@@ -39,7 +39,6 @@ Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -377,12 +376,15 @@ BODY `<IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcessconten
       [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Activity <String>]: userActivityType
+        [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+          [Value <String>]: 
       [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
-Use conversation metadata for content like prompts and responses and file metadata for files.
+Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
 Required.
         [Content <IMicrosoftGraphContentBase>]: contentBase
           [(Any) <Object>]: This indicates any property can be added to this object.
+        [ContentCategory <String>]: contentCategory
         [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
         [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -397,6 +399,10 @@ For ephemeral content like messages, this might be the same as createdDateTime.
         [Name <String>]: Required.
 A descriptive name for the content (for example, file name, web page title, 'Chat Message').
         [SequenceNumber <Int64?>]: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+      [ContextMetadata <IMicrosoftGraphContextMetadata>]: contextMetadata
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [MetadataProperties <IMicrosoftGraphCustomMetadataDictionary>]: customMetadataDictionary
+          [(Any) <Object>]: This indicates any property can be added to this object.
       [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DeviceType <String>]: Optional.
@@ -406,6 +412,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
           [(Any) <Object>]: This indicates any property can be added to this object.
           [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
           [OperatingSystemVersion <String>]: The version string of the operating system.
+      [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Type <String>]: evaluationScopeType
       [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Name <String>]: The name of the integrated application.
@@ -426,12 +435,15 @@ PROCESSCONTENTREQUESTS <IMicrosoftGraphProcessContentBatchRequest[]>: .
     [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Activity <String>]: userActivityType
+      [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+        [Value <String>]: 
     [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
-Use conversation metadata for content like prompts and responses and file metadata for files.
+Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
 Required.
       [Content <IMicrosoftGraphContentBase>]: contentBase
         [(Any) <Object>]: This indicates any property can be added to this object.
+      [ContentCategory <String>]: contentCategory
       [CorrelationId <String>]: An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).
       [CreatedDateTime <DateTime?>]: Required.
 Timestamp indicating when the original content was created (for example, file creation time, message sent time).
@@ -446,6 +458,10 @@ For ephemeral content like messages, this might be the same as createdDateTime.
       [Name <String>]: Required.
 A descriptive name for the content (for example, file name, web page title, 'Chat Message').
       [SequenceNumber <Int64?>]: A sequence number indicating the order in which content was generated or should be processed, required when correlationId is used.
+    [ContextMetadata <IMicrosoftGraphContextMetadata>]: contextMetadata
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [MetadataProperties <IMicrosoftGraphCustomMetadataDictionary>]: customMetadataDictionary
+        [(Any) <Object>]: This indicates any property can be added to this object.
     [DeviceMetadata <IMicrosoftGraphDeviceMetadata>]: deviceMetadata
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DeviceType <String>]: Optional.
@@ -455,6 +471,9 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
         [(Any) <Object>]: This indicates any property can be added to this object.
         [OperatingSystemPlatform <String>]: The platform of the operating system (for example, 'Windows').
         [OperatingSystemVersion <String>]: The version string of the operating system.
+    [EvaluationScope <IMicrosoftGraphEvaluationScope>]: evaluationScope
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Type <String>]: evaluationScopeType
     [IntegratedAppMetadata <IMicrosoftGraphIntegratedApplicationMetadata>]: integratedApplicationMetadata
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Name <String>]: The name of the integrated application.

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/remove-mgbetasolutionbackuprestoreemailnotificationsetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 02/20/2026
+ms.date: 09/25/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSolutionBackupRestoreEmailNotificationSetting
 ---
@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreEmailNotificationSetting
 
 Delete navigation property emailNotificationsSetting for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreEmailNotificationSetting](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreEmailNotificationSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -24,7 +27,6 @@ Remove-MgBetaSolutionBackupRestoreEmailNotificationSetting [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
  [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES

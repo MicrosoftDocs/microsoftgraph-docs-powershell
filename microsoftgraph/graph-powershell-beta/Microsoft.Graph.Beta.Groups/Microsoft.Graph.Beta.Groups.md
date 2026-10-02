@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Groups
-Module Guid: d89db056-dc5f-4664-8ff0-498239affc53
+Module Guid: 1a023857-7b8c-450a-b885-042e3e7be351
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.groups/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -25,8 +25,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroup](Get-MgBetaGroup.md)
 
-### [Get-MgBetaGroup](Get-MgBetaGroup.md)
-
 ### [Get-MgBetaGroupAcceptedSender](Get-MgBetaGroupAcceptedSender.md)
 
 ### [Get-MgBetaGroupAcceptedSenderByRef](Get-MgBetaGroupAcceptedSenderByRef.md)
@@ -39,21 +37,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupConversation](Get-MgBetaGroupConversation.md)
 
-### [Get-MgBetaGroupConversation](Get-MgBetaGroupConversation.md)
-
 ### [Get-MgBetaGroupConversationCount](Get-MgBetaGroupConversationCount.md)
-
-### [Get-MgBetaGroupConversationThread](Get-MgBetaGroupConversationThread.md)
 
 ### [Get-MgBetaGroupConversationThread](Get-MgBetaGroupConversationThread.md)
 
 ### [Get-MgBetaGroupConversationThreadCount](Get-MgBetaGroupConversationThreadCount.md)
 
 ### [Get-MgBetaGroupConversationThreadPost](Get-MgBetaGroupConversationThreadPost.md)
-
-### [Get-MgBetaGroupConversationThreadPost](Get-MgBetaGroupConversationThreadPost.md)
-
-### [Get-MgBetaGroupConversationThreadPostAttachment](Get-MgBetaGroupConversationThreadPostAttachment.md)
 
 ### [Get-MgBetaGroupConversationThreadPostAttachment](Get-MgBetaGroupConversationThreadPostAttachment.md)
 
@@ -63,11 +53,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupConversationThreadPostExtension](Get-MgBetaGroupConversationThreadPostExtension.md)
 
-### [Get-MgBetaGroupConversationThreadPostExtension](Get-MgBetaGroupConversationThreadPostExtension.md)
-
 ### [Get-MgBetaGroupConversationThreadPostExtensionCount](Get-MgBetaGroupConversationThreadPostExtensionCount.md)
-
-### [Get-MgBetaGroupConversationThreadPostInReplyToAttachment](Get-MgBetaGroupConversationThreadPostInReplyToAttachment.md)
 
 ### [Get-MgBetaGroupConversationThreadPostInReplyToAttachment](Get-MgBetaGroupConversationThreadPostInReplyToAttachment.md)
 
@@ -75,17 +61,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupConversationThreadPostInReplyToExtension](Get-MgBetaGroupConversationThreadPostInReplyToExtension.md)
 
-### [Get-MgBetaGroupConversationThreadPostInReplyToExtension](Get-MgBetaGroupConversationThreadPostInReplyToExtension.md)
-
 ### [Get-MgBetaGroupConversationThreadPostInReplyToExtensionCount](Get-MgBetaGroupConversationThreadPostInReplyToExtensionCount.md)
 
 ### [Get-MgBetaGroupConversationThreadPostInReplyToMention](Get-MgBetaGroupConversationThreadPostInReplyToMention.md)
 
-### [Get-MgBetaGroupConversationThreadPostInReplyToMention](Get-MgBetaGroupConversationThreadPostInReplyToMention.md)
-
 ### [Get-MgBetaGroupConversationThreadPostInReplyToMentionCount](Get-MgBetaGroupConversationThreadPostInReplyToMentionCount.md)
-
-### [Get-MgBetaGroupConversationThreadPostMention](Get-MgBetaGroupConversationThreadPostMention.md)
 
 ### [Get-MgBetaGroupConversationThreadPostMention](Get-MgBetaGroupConversationThreadPostMention.md)
 
@@ -99,17 +79,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupEndpoint](Get-MgBetaGroupEndpoint.md)
 
-### [Get-MgBetaGroupEndpoint](Get-MgBetaGroupEndpoint.md)
-
 ### [Get-MgBetaGroupEndpointCount](Get-MgBetaGroupEndpointCount.md)
 
 ### [Get-MgBetaGroupExtension](Get-MgBetaGroupExtension.md)
 
-### [Get-MgBetaGroupExtension](Get-MgBetaGroupExtension.md)
-
 ### [Get-MgBetaGroupExtensionCount](Get-MgBetaGroupExtensionCount.md)
-
-### [Get-MgBetaGroupLifecyclePolicy](Get-MgBetaGroupLifecyclePolicy.md)
 
 ### [Get-MgBetaGroupLifecyclePolicy](Get-MgBetaGroupLifecyclePolicy.md)
 
@@ -121,25 +95,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupMemberAsApplication](Get-MgBetaGroupMemberAsApplication.md)
 
-### [Get-MgBetaGroupMemberAsApplication](Get-MgBetaGroupMemberAsApplication.md)
-
 ### [Get-MgBetaGroupMemberAsDevice](Get-MgBetaGroupMemberAsDevice.md)
-
-### [Get-MgBetaGroupMemberAsDevice](Get-MgBetaGroupMemberAsDevice.md)
-
-### [Get-MgBetaGroupMemberAsGroup](Get-MgBetaGroupMemberAsGroup.md)
 
 ### [Get-MgBetaGroupMemberAsGroup](Get-MgBetaGroupMemberAsGroup.md)
 
 ### [Get-MgBetaGroupMemberAsOrgContact](Get-MgBetaGroupMemberAsOrgContact.md)
 
-### [Get-MgBetaGroupMemberAsOrgContact](Get-MgBetaGroupMemberAsOrgContact.md)
-
 ### [Get-MgBetaGroupMemberAsServicePrincipal](Get-MgBetaGroupMemberAsServicePrincipal.md)
-
-### [Get-MgBetaGroupMemberAsServicePrincipal](Get-MgBetaGroupMemberAsServicePrincipal.md)
-
-### [Get-MgBetaGroupMemberAsUser](Get-MgBetaGroupMemberAsUser.md)
 
 ### [Get-MgBetaGroupMemberAsUser](Get-MgBetaGroupMemberAsUser.md)
 
@@ -165,13 +127,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupMemberOf](Get-MgBetaGroupMemberOf.md)
 
-### [Get-MgBetaGroupMemberOf](Get-MgBetaGroupMemberOf.md)
-
 ### [Get-MgBetaGroupMemberOfAsAdministrativeUnit](Get-MgBetaGroupMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaGroupMemberOfAsAdministrativeUnit](Get-MgBetaGroupMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaGroupMemberOfAsGroup](Get-MgBetaGroupMemberOfAsGroup.md)
 
 ### [Get-MgBetaGroupMemberOfAsGroup](Get-MgBetaGroupMemberOfAsGroup.md)
 
@@ -183,29 +139,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupMemberWithLicenseError](Get-MgBetaGroupMemberWithLicenseError.md)
 
-### [Get-MgBetaGroupMemberWithLicenseError](Get-MgBetaGroupMemberWithLicenseError.md)
-
 ### [Get-MgBetaGroupMemberWithLicenseErrorAsApplication](Get-MgBetaGroupMemberWithLicenseErrorAsApplication.md)
-
-### [Get-MgBetaGroupMemberWithLicenseErrorAsApplication](Get-MgBetaGroupMemberWithLicenseErrorAsApplication.md)
-
-### [Get-MgBetaGroupMemberWithLicenseErrorAsDevice](Get-MgBetaGroupMemberWithLicenseErrorAsDevice.md)
 
 ### [Get-MgBetaGroupMemberWithLicenseErrorAsDevice](Get-MgBetaGroupMemberWithLicenseErrorAsDevice.md)
 
 ### [Get-MgBetaGroupMemberWithLicenseErrorAsGroup](Get-MgBetaGroupMemberWithLicenseErrorAsGroup.md)
 
-### [Get-MgBetaGroupMemberWithLicenseErrorAsGroup](Get-MgBetaGroupMemberWithLicenseErrorAsGroup.md)
-
-### [Get-MgBetaGroupMemberWithLicenseErrorAsOrgContact](Get-MgBetaGroupMemberWithLicenseErrorAsOrgContact.md)
-
 ### [Get-MgBetaGroupMemberWithLicenseErrorAsOrgContact](Get-MgBetaGroupMemberWithLicenseErrorAsOrgContact.md)
 
 ### [Get-MgBetaGroupMemberWithLicenseErrorAsServicePrincipal](Get-MgBetaGroupMemberWithLicenseErrorAsServicePrincipal.md)
-
-### [Get-MgBetaGroupMemberWithLicenseErrorAsServicePrincipal](Get-MgBetaGroupMemberWithLicenseErrorAsServicePrincipal.md)
-
-### [Get-MgBetaGroupMemberWithLicenseErrorAsUser](Get-MgBetaGroupMemberWithLicenseErrorAsUser.md)
 
 ### [Get-MgBetaGroupMemberWithLicenseErrorAsUser](Get-MgBetaGroupMemberWithLicenseErrorAsUser.md)
 
@@ -229,25 +171,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupOwnerAsApplication](Get-MgBetaGroupOwnerAsApplication.md)
 
-### [Get-MgBetaGroupOwnerAsApplication](Get-MgBetaGroupOwnerAsApplication.md)
-
 ### [Get-MgBetaGroupOwnerAsDevice](Get-MgBetaGroupOwnerAsDevice.md)
-
-### [Get-MgBetaGroupOwnerAsDevice](Get-MgBetaGroupOwnerAsDevice.md)
-
-### [Get-MgBetaGroupOwnerAsGroup](Get-MgBetaGroupOwnerAsGroup.md)
 
 ### [Get-MgBetaGroupOwnerAsGroup](Get-MgBetaGroupOwnerAsGroup.md)
 
 ### [Get-MgBetaGroupOwnerAsOrgContact](Get-MgBetaGroupOwnerAsOrgContact.md)
 
-### [Get-MgBetaGroupOwnerAsOrgContact](Get-MgBetaGroupOwnerAsOrgContact.md)
-
 ### [Get-MgBetaGroupOwnerAsServicePrincipal](Get-MgBetaGroupOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaGroupOwnerAsServicePrincipal](Get-MgBetaGroupOwnerAsServicePrincipal.md)
-
-### [Get-MgBetaGroupOwnerAsUser](Get-MgBetaGroupOwnerAsUser.md)
 
 ### [Get-MgBetaGroupOwnerAsUser](Get-MgBetaGroupOwnerAsUser.md)
 
@@ -271,11 +201,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupPermissionGrant](Get-MgBetaGroupPermissionGrant.md)
 
-### [Get-MgBetaGroupPermissionGrant](Get-MgBetaGroupPermissionGrant.md)
-
 ### [Get-MgBetaGroupPermissionGrantCount](Get-MgBetaGroupPermissionGrantCount.md)
-
-### [Get-MgBetaGroupPhoto](Get-MgBetaGroupPhoto.md)
 
 ### [Get-MgBetaGroupPhoto](Get-MgBetaGroupPhoto.md)
 
@@ -289,8 +215,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupSetting](Get-MgBetaGroupSetting.md)
 
-### [Get-MgBetaGroupSetting](Get-MgBetaGroupSetting.md)
-
 ### [Get-MgBetaGroupSettingCount](Get-MgBetaGroupSettingCount.md)
 
 ### [Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive](Get-MgBetaGroupSiteContentModelGetByNameAppliedDrive.md)
@@ -301,15 +225,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupThread](Get-MgBetaGroupThread.md)
 
-### [Get-MgBetaGroupThread](Get-MgBetaGroupThread.md)
-
 ### [Get-MgBetaGroupThreadCount](Get-MgBetaGroupThreadCount.md)
 
 ### [Get-MgBetaGroupThreadPost](Get-MgBetaGroupThreadPost.md)
-
-### [Get-MgBetaGroupThreadPost](Get-MgBetaGroupThreadPost.md)
-
-### [Get-MgBetaGroupThreadPostAttachment](Get-MgBetaGroupThreadPostAttachment.md)
 
 ### [Get-MgBetaGroupThreadPostAttachment](Get-MgBetaGroupThreadPostAttachment.md)
 
@@ -319,11 +237,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupThreadPostExtension](Get-MgBetaGroupThreadPostExtension.md)
 
-### [Get-MgBetaGroupThreadPostExtension](Get-MgBetaGroupThreadPostExtension.md)
-
 ### [Get-MgBetaGroupThreadPostExtensionCount](Get-MgBetaGroupThreadPostExtensionCount.md)
-
-### [Get-MgBetaGroupThreadPostInReplyToAttachment](Get-MgBetaGroupThreadPostInReplyToAttachment.md)
 
 ### [Get-MgBetaGroupThreadPostInReplyToAttachment](Get-MgBetaGroupThreadPostInReplyToAttachment.md)
 
@@ -331,11 +245,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupThreadPostInReplyToExtension](Get-MgBetaGroupThreadPostInReplyToExtension.md)
 
-### [Get-MgBetaGroupThreadPostInReplyToExtension](Get-MgBetaGroupThreadPostInReplyToExtension.md)
-
 ### [Get-MgBetaGroupThreadPostInReplyToExtensionCount](Get-MgBetaGroupThreadPostInReplyToExtensionCount.md)
-
-### [Get-MgBetaGroupThreadPostInReplyToMention](Get-MgBetaGroupThreadPostInReplyToMention.md)
 
 ### [Get-MgBetaGroupThreadPostInReplyToMention](Get-MgBetaGroupThreadPostInReplyToMention.md)
 
@@ -343,35 +253,19 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupThreadPostMention](Get-MgBetaGroupThreadPostMention.md)
 
-### [Get-MgBetaGroupThreadPostMention](Get-MgBetaGroupThreadPostMention.md)
-
 ### [Get-MgBetaGroupThreadPostMentionCount](Get-MgBetaGroupThreadPostMentionCount.md)
 
 ### [Get-MgBetaGroupTransitiveMember](Get-MgBetaGroupTransitiveMember.md)
 
-### [Get-MgBetaGroupTransitiveMember](Get-MgBetaGroupTransitiveMember.md)
-
 ### [Get-MgBetaGroupTransitiveMemberAsApplication](Get-MgBetaGroupTransitiveMemberAsApplication.md)
-
-### [Get-MgBetaGroupTransitiveMemberAsApplication](Get-MgBetaGroupTransitiveMemberAsApplication.md)
-
-### [Get-MgBetaGroupTransitiveMemberAsDevice](Get-MgBetaGroupTransitiveMemberAsDevice.md)
 
 ### [Get-MgBetaGroupTransitiveMemberAsDevice](Get-MgBetaGroupTransitiveMemberAsDevice.md)
 
 ### [Get-MgBetaGroupTransitiveMemberAsGroup](Get-MgBetaGroupTransitiveMemberAsGroup.md)
 
-### [Get-MgBetaGroupTransitiveMemberAsGroup](Get-MgBetaGroupTransitiveMemberAsGroup.md)
-
-### [Get-MgBetaGroupTransitiveMemberAsOrgContact](Get-MgBetaGroupTransitiveMemberAsOrgContact.md)
-
 ### [Get-MgBetaGroupTransitiveMemberAsOrgContact](Get-MgBetaGroupTransitiveMemberAsOrgContact.md)
 
 ### [Get-MgBetaGroupTransitiveMemberAsServicePrincipal](Get-MgBetaGroupTransitiveMemberAsServicePrincipal.md)
-
-### [Get-MgBetaGroupTransitiveMemberAsServicePrincipal](Get-MgBetaGroupTransitiveMemberAsServicePrincipal.md)
-
-### [Get-MgBetaGroupTransitiveMemberAsUser](Get-MgBetaGroupTransitiveMemberAsUser.md)
 
 ### [Get-MgBetaGroupTransitiveMemberAsUser](Get-MgBetaGroupTransitiveMemberAsUser.md)
 
@@ -391,13 +285,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaGroupTransitiveMemberOf](Get-MgBetaGroupTransitiveMemberOf.md)
 
-### [Get-MgBetaGroupTransitiveMemberOf](Get-MgBetaGroupTransitiveMemberOf.md)
-
 ### [Get-MgBetaGroupTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaGroupTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaGroupTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaGroupTransitiveMemberOfAsAdministrativeUnit.md)
-
-### [Get-MgBetaGroupTransitiveMemberOfAsGroup](Get-MgBetaGroupTransitiveMemberOfAsGroup.md)
 
 ### [Get-MgBetaGroupTransitiveMemberOfAsGroup](Get-MgBetaGroupTransitiveMemberOfAsGroup.md)
 
@@ -475,7 +363,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [New-MgBetaGroupLifecyclePolicy](New-MgBetaGroupLifecyclePolicy.md)
 
+### [New-MgBetaGroupMember](New-MgBetaGroupMember.md)
+
 ### [New-MgBetaGroupMemberByRef](New-MgBetaGroupMemberByRef.md)
+
+### [New-MgBetaGroupOwner](New-MgBetaGroupOwner.md)
 
 ### [New-MgBetaGroupOwnerByRef](New-MgBetaGroupOwnerByRef.md)
 

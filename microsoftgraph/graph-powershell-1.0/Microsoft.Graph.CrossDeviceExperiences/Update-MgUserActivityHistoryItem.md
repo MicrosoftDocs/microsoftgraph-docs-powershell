@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem
 Locale: en-US
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserActivityHistoryItem
 ---
@@ -31,7 +31,6 @@ Update-MgUserActivityHistoryItem -ActivityHistoryItemId <string> -UserActivityId
  [-Status <string>] [-UserTimezone <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -42,7 +41,6 @@ Update-MgUserActivityHistoryItem -ActivityHistoryItemId <string> -UserActivityId
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -56,7 +54,6 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
  [-Status <string>] [-UserTimezone <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -66,7 +63,7 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
  -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -793,7 +790,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
   [AppDisplayName <String>]: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
-  [ContentInfo <IMicrosoftGraphJson>]: Json
+  [ContentInfo <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
     [(Any) <Object>]: This indicates any property can be added to this object.
   [ContentUrl <String>]: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -844,7 +841,7 @@ For example – a high contrast image
     [BackgroundColor <String>]: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-    [Content <IMicrosoftGraphJson>]: Json
+    [Content <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
     [Description <String>]: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
     [DisplayText <String>]: Required.
@@ -876,7 +873,7 @@ PowerPoint.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
     [AppDisplayName <String>]: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
-    [ContentInfo <IMicrosoftGraphJson>]: Json
+    [ContentInfo <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
       [(Any) <Object>]: This indicates any property can be added to this object.
     [ContentUrl <String>]: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -905,7 +902,7 @@ For example – a high contrast image
       [BackgroundColor <String>]: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      [Content <IMicrosoftGraphJson>]: Json
+      [Content <IMicrosoftGraphJson>]: Standard way to represent a Json blob on Graph.
       [Description <String>]: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       [DisplayText <String>]: Required.

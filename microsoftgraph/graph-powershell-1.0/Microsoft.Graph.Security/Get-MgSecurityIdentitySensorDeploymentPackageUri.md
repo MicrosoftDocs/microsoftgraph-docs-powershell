@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri
 Locale: en-US
 Module Name: Microsoft.Graph.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgSecurityIdentitySensorDeploymentPackageUri
 ---
@@ -27,7 +27,7 @@ You can use this URL to download the installer to install the sensor on a server
 Get-MgSecurityIdentitySensorDeploymentPackageUri [-ResponseHeadersVariable <string>] [-Break]
  [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -47,6 +47,19 @@ You can use this URL to download the installer to install the sensor on a server
 | Delegated (work or school account) | SecurityIdentitiesSensors.Read.All,  |
 | Delegated (personal Microsoft account) | Not supported |
 | Application | SecurityIdentitiesSensors.Read.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+Get-MgSecurityIdentitySensorDeploymentPackageUri
+
+```
+This example shows how to use the Get-MgSecurityIdentitySensorDeploymentPackageUri Cmdlet.
+
 
 ## PARAMETERS
 
@@ -243,7 +256,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [Get-MgSecurityIdentitySensorDeploymentPackageUri](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityidentitysensordeploymentpackageuri)
-
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-sensor-getdeploymentpackageuri?view=graph-rest-1.0)
 
 
 

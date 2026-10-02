@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityTiIndicator
 ---
@@ -41,7 +41,7 @@ New-MgBetaSecurityTiIndicator [-ResponseHeadersVariable <string>] [-Action <stri
  [-TargetProduct <string>] [-ThreatType <string>] [-TlpLevel <string>] [-Url <string>]
  [-UserAgent <string>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Create
@@ -51,7 +51,6 @@ New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -1526,7 +1525,7 @@ HelpMessage: ''
 ### -ThreatType
 
 Each indicator must have a valid Indicator Threat Type.
-Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
+The possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
 
 ```yaml
@@ -1745,7 +1744,7 @@ Default value is 3.
 Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
   [ThreatType <String>]: Each indicator must have a valid Indicator Threat Type.
-Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
+The possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList.
 Required.
   [TlpLevel <String>]: tlpLevel
   [Url <String>]: 

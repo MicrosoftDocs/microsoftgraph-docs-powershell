@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterapplicationsynchronizationtemplateschemaoperator
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator
 ---
@@ -13,7 +13,7 @@ title: Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator
 
 ## SYNOPSIS
 
-List all operators supported in the scoping filters.
+List all operators supported in the scoping filters for a synchronizationSchema.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator -Application
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### FilterViaIdentity
@@ -39,7 +39,7 @@ Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator
  [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -49,7 +49,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-List all operators supported in the scoping filters.
+List all operators supported in the scoping filters for a synchronizationSchema.
 
 **Permissions**
 

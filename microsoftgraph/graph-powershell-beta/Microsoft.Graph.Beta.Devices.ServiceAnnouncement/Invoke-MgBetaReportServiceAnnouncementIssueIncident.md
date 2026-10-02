@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementissueincident
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReportServiceAnnouncementIssueIncident
 ---
@@ -15,7 +15,7 @@ title: Invoke-MgBetaReportServiceAnnouncementIssueIncident
 
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
-The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document doesn't exist for the issue.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementIssueIncident?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ The operation returns an error if the specified issue doesn't exist for the tena
 Invoke-MgBetaReportServiceAnnouncementIssueIncident -ServiceHealthIssueId <string> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ### ReportViaIdentity
@@ -38,7 +38,7 @@ Invoke-MgBetaReportServiceAnnouncementIssueIncident
  -InputObject <IDevicesServiceAnnouncementIdentity> -OutFile <string>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
- [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [<CommonParameters>]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
 
 ## ALIASES
@@ -50,7 +50,7 @@ This cmdlet has the following aliases,
 
 Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
 An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
-The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
+The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document doesn't exist for the issue.
 
 **Permissions**
 

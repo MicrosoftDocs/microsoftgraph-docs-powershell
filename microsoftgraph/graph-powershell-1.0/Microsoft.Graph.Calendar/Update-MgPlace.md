@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Calendar-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgplace
 Locale: en-US
 Module Name: Microsoft.Graph.Calendar
-ms.date: 02/20/2026
+ms.date: 08/07/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgPlace
 ---
@@ -28,10 +28,23 @@ Update-MgPlace -PlaceId <string> [-ResponseHeadersVariable <string>]
  [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
  [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayName <string>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-Label <string>] [-ParentId <string>] [-Phone <string>] [-PlaceId1 <string>] [-Tags <string[]>]
+ [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### UpdateViaIdentityExpanded
+
+```
+Update-MgPlace -InputObject <ICalendarIdentity> [-PlaceId <string>]
+ [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-CheckIns <IMicrosoftGraphCheckInClaim[]>]
+ [-DisplayName <string>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>]
+ [-IsWheelChairAccessible] [-Label <string>] [-ParentId <string>] [-Phone <string>]
+ [-Tags <string[]>] [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
+ [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -41,20 +54,6 @@ Update-MgPlace -PlaceId <string> -BodyParameter <IMicrosoftGraphPlace>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-
-```
-Update-MgPlace -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
- [-CheckIns <IMicrosoftGraphCheckInClaim[]>] [-DisplayName <string>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <string>] [-IsWheelChairAccessible]
- [-Label <string>] [-ParentId <string>] [-Phone <string>] [-Tags <string[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -64,7 +63,6 @@ Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphP
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -77,6 +75,14 @@ This cmdlet has the following aliases,
 Update the properties of place object that can be a building, floor, section, desk, room, workspace, or roomList.
 You can identify the place by specifying the id property.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -85,7 +91,96 @@ You can identify the place by specifying the id property.
 Import-Module Microsoft.Graph.Calendar
 
 $params = @{
+	"@odata.type" = "microsoft.graph.building"
+	tags = @(
+	"most popular building"
+)
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.floor"
+	isWheelChairAccessible = $true
+	sortOrder = 
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.section"
+	label = "discuss area"
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.desk"
+	mode = @{
+		"@odata.type" = "microsoft.graph.dropInPlaceMode"
+	}
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
 	"@odata.type" = "microsoft.graph.room"
+	nickname = "Conf Room"
+	building = "1"
+	label = "100"
+	capacity = 
+	isWheelChairAccessible = $false
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+### Example 6: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.workspace"
 	nickname = "Conf Room"
 	building = "1"
 	label = "100"
@@ -547,6 +642,12 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
 - Name: UpdateExpanded
   Position: Named
   IsRequired: true
@@ -556,6 +657,27 @@ ParameterSets:
 - Name: Update
   Position: Named
   IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PlaceId1
+
+A stable service-level identifier for the place object used by Places workloads.
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -773,6 +895,7 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   [Label <String>]: User-defined description of the place.
   [ParentId <String>]: The ID of a parent place.
   [Phone <String>]: The phone number of the place.
+  [PlaceId <String>]: A stable service-level identifier for the place object used by Places workloads.
   [Tags <String[]>]: Custom tags that are associated with the place for categorization or filtering.
 
 CHECKINS <IMicrosoftGraphCheckInClaim[]>: A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.

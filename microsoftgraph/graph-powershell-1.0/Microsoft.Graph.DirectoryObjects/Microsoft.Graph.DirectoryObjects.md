@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DirectoryObjects
-Module Guid: b5c20ada-3c1e-4c17-8cdf-00d98c0d0edf
+Module Guid: f005c5e3-79f4-4c69-9516-69cca66bb314
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -14,8 +14,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Confirm-MgDirectoryObjectMemberGroup](Confirm-MgDirectoryObjectMemberGroup.md)
 
 ### [Confirm-MgDirectoryObjectMemberObject](Confirm-MgDirectoryObjectMemberObject.md)
-
-### [Get-MgDirectoryObject](Get-MgDirectoryObject.md)
 
 ### [Get-MgDirectoryObject](Get-MgDirectoryObject.md)
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Applications-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaapplicationsynchronizationjobschemadirectory
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Applications
-ms.date: 02/20/2026
+ms.date: 09/30/2026
 PlatyPS schema version: 2024-05-01
 title: Find-MgBetaApplicationSynchronizationJobSchemaDirectory
 ---
@@ -13,7 +13,7 @@ title: Find-MgBetaApplicationSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
 
-Discover the latest schema definition for provisioning to an application.
+Discover the latest schema for a directoryDefinition to provision to an application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Find-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
@@ -27,7 +27,7 @@ Find-MgBetaApplicationSynchronizationJobSchemaDirectory -ApplicationId <string>
  -DirectoryDefinitionId <string> -SynchronizationJobId <string> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### DiscoverViaIdentity
@@ -37,7 +37,6 @@ Find-MgBetaApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicati
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ## ALIASES
@@ -47,7 +46,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Discover the latest schema definition for provisioning to an application.
+Discover the latest schema for a directoryDefinition to provision to an application.
 
 ## PARAMETERS
 

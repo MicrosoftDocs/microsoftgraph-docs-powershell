@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.date: 02/20/2026
+ms.date: 09/22/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityConditionalAccessPolicy
 ---
@@ -26,13 +26,12 @@ Update the properties of a conditionalAccessPolicy object.
 Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <string>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>] [-CreatedDateTime <datetime>]
- [-Description <string>] [-DisplayName <string>]
+ [-DeletedDateTime <datetime>] [-Description <string>] [-DisplayName <string>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <string>]
  [-ModifiedDateTime <datetime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
  [-State <string>] [-TemplateId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### Update
@@ -42,7 +41,7 @@ Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <string>
  -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -51,13 +50,12 @@ Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <string>
 Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>] [-CreatedDateTime <datetime>]
- [-Description <string>] [-DisplayName <string>]
+ [-DeletedDateTime <datetime>] [-Description <string>] [-DisplayName <string>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <string>]
  [-ModifiedDateTime <datetime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
  [-State <string>] [-TemplateId <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
- [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -67,7 +65,7 @@ Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-ResponseHeadersVariable <string>]
  [-Break] [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
  [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -83,9 +81,9 @@ Update the properties of a conditionalAccessPolicy object.
 
 | Permission type | Permissions (from least to most privileged) |
 | --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Application.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.Read.All,  |
+| Delegated (work or school account) | Application.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 | Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Application.Read.All,  |
+| Application | Policy.Read.All, Application.Read.All, Policy.ReadWrite.ConditionalAccess,  |
 
 ## EXAMPLES
 ### Example 1: Add sign in risk levels to an existing conditional access policy
@@ -267,7 +265,34 @@ HelpMessage: ''
 
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -DeletedDateTime
+
+
 
 ```yaml
 Type: System.DateTime
@@ -439,7 +464,7 @@ HelpMessage: ''
 
 ### -Id
 
-The unique identifier for an entity.
+Specifies the identifier of a conditionalAccessPolicy object.
 Read-only.
 
 ```yaml
@@ -497,7 +522,7 @@ HelpMessage: ''
 
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
 
 ```yaml
 Type: System.DateTime
@@ -748,8 +773,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy>`: conditionalAccessPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
+  [DeletedDateTime <DateTime?>]: 
   [Conditions <IMicrosoftGraphConditionalAccessConditionSet>]: conditionalAccessConditionSet
     [(Any) <Object>]: This indicates any property can be added to this object.
     [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
@@ -814,7 +838,7 @@ Required.
       [IncludeUsers <String[]>]: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
   [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
   [Description <String>]: 
   [DisplayName <String>]: Specifies a display name for the conditionalAccessPolicy object.
   [GrantControls <IMicrosoftGraphConditionalAccessGrantControls>]: conditionalAccessGrantControls
@@ -838,15 +862,18 @@ Supports $filter (eq, ne, not , and in).
       [PolicyType <String>]: authenticationStrengthPolicyType
       [RequirementsSatisfied <String>]: authenticationStrengthRequirements
     [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+ Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
     [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
 For more information, see Custom controls.
     [Operator <String>]: Defines the relationship of the grant controls.
 Possible values: AND, OR.
     [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
+  [Id <String>]: Specifies the identifier of a conditionalAccessPolicy object.
+Read-only.
   [ModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Readonly.
+Read-only.
   [SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]: conditionalAccessSessionControls
     [(Any) <Object>]: This indicates any property can be added to this object.
     [ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]: applicationEnforcedRestrictionsSessionControl
@@ -959,7 +986,8 @@ Supports $filter (eq, ne, not , and in).
     [PolicyType <String>]: authenticationStrengthPolicyType
     [RequirementsSatisfied <String>]: authenticationStrengthRequirements
   [BuiltInControls <String[]>]: List of values of built-in controls required by the policy.
-Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
+Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue, riskRemediation.
+ Use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: riskRemediation.
   [CustomAuthenticationFactors <String[]>]: List of custom controls IDs required by the policy.
 For more information, see Custom controls.
   [Operator <String>]: Defines the relationship of the grant controls.
@@ -989,6 +1017,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [DataPolicyOperationId <String>]: The unique identifier of dataPolicyOperation
   [DirectoryObjectId <String>]: The unique identifier of directoryObject
   [EmailAuthenticationMethodId <String>]: The unique identifier of emailAuthenticationMethod
+  [ExternalAuthenticationMethodId <String>]: The unique identifier of externalAuthenticationMethod
   [FeatureRolloutPolicyId <String>]: The unique identifier of featureRolloutPolicy
   [Fido2AuthenticationMethodId <String>]: The unique identifier of fido2AuthenticationMethod
   [FraudProtectionProviderId <String>]: The unique identifier of fraudProtectionProvider
@@ -999,6 +1028,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [IdentityUserFlowAttributeAssignmentId <String>]: The unique identifier of identityUserFlowAttributeAssignment
   [IdentityUserFlowAttributeId <String>]: The unique identifier of identityUserFlowAttribute
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
+  [M365CapabilityBaseName <String>]: The unique identifier of m365CapabilityBase
   [MicrosoftAuthenticatorAuthenticationMethodId <String>]: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   [MultiTenantOrganizationMemberId <String>]: The unique identifier of multiTenantOrganizationMember
   [NamedLocationId <String>]: The unique identifier of namedLocation
@@ -1027,6 +1057,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   [UserFlowLanguageConfigurationId <String>]: The unique identifier of userFlowLanguageConfiguration
   [UserFlowLanguagePageId <String>]: The unique identifier of userFlowLanguagePage
   [UserId <String>]: The unique identifier of user
+  [VerifiedIdProfileId <String>]: The unique identifier of verifiedIdProfile
   [WebApplicationFirewallProviderId <String>]: The unique identifier of webApplicationFirewallProvider
   [WebApplicationFirewallVerificationModelId <String>]: The unique identifier of webApplicationFirewallVerificationModel
   [WindowsHelloForBusinessAuthenticationMethodId <String>]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
