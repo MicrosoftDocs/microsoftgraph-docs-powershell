@@ -51,6 +51,14 @@ Get a set of mail folders that have been added, deleted, or removed from the use
 A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\rapplying state tokens in one or more of these calls,\ryou can query for incremental changes in the mail folders.
 This allows you to maintain and synchronize\ra local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
+| Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
