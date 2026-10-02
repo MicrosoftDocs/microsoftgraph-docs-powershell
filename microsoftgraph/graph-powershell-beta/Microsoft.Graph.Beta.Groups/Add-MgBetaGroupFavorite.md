@@ -400,8 +400,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupfavorite)
-- [](https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-beta)
+- [Add-MgBetaGroupFavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupfavorite)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-beta)
 
 
 

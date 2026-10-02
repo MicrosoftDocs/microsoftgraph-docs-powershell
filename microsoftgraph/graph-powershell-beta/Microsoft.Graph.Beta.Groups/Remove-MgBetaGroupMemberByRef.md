@@ -1,31 +1,42 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Groups-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetauserjoinedgroup
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupMemberByRef
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
 ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaUserJoinedGroup
+title: Remove-MgBetaGroupMemberByRef
 ---
 
-# Get-MgBetaUserJoinedGroup
+# Remove-MgBetaGroupMemberByRef
 
 ## SYNOPSIS
 
-Get joinedGroups from users
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupMemberDirectoryObjectByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### List (Default)
+### Delete (Default)
 
 ```
-Get-MgBetaUserJoinedGroup -UserId <string> [-ExpandProperty <string[]>] [-Filter <string>]
- [-Property <string[]>] [-Search <string>] [-Skip <int>] [-Sort <string[]>] [-Top <int>]
+Remove-MgBetaGroupMemberByRef -DirectoryObjectId <string> -GroupId <string>
+ [-IfMatch <string>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### DeleteViaIdentity
+
+```
+Remove-MgBetaGroupMemberByRef -InputObject <IGroupsIdentity> [-IfMatch <string>]
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
- [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-PageSize <int>] [-All]
- [-CountVariable <string>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-PassThru]
+ [-Proxy <uri>] [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -35,30 +46,31 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Get joinedGroups from users
+Remove a member from a group via the members navigation property.
+You can't remove a member from groups with dynamic memberships.
+
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | GroupMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All,  |
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Groups
+
+Remove-MgBetaGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgBetaGroupMemberByRef Cmdlet.
+
 
 ## PARAMETERS
-
-### -All
-
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-DefaultValue: False
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
 
 ### -Break
 
@@ -81,17 +93,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -CountVariable
+### -Confirm
 
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.String
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- CV
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -104,31 +115,9 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExpandProperty
+### -DirectoryObjectId
 
-Expand related entities
-
-```yaml
-Type: System.String[]
-DefaultValue: ''
-SupportsWildcards: false
-Aliases:
-- Expand
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Filter
-
-Filter items by property values
+The unique identifier of directoryObject
 
 ```yaml
 Type: System.String
@@ -136,9 +125,30 @@ DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: Delete
   Position: Named
-  IsRequired: false
+  IsRequired: true
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -GroupId
+
+The unique identifier of group
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Delete
+  Position: Named
+  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -210,13 +220,13 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -PageSize
+### -IfMatch
 
-Sets the page size of results.
+ETag
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
+Type: System.String
+DefaultValue: ''
 SupportsWildcards: false
 Aliases: []
 ParameterSets:
@@ -231,16 +241,37 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
+### -InputObject
 
-Select properties to be returned
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: System.String[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- Select
+Aliases: []
+ParameterSets:
+- Name: DeleteViaIdentity
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -PassThru
+
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: False
+SupportsWildcards: false
+Aliases: []
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -338,105 +369,20 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Search
+### -WhatIf
 
-Search items by search phrases
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Skip
-
-Skip the first n items
+Runs the command in a mode that only reports what would happen without performing the actions.
 
 ```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Sort
-
-Order items by property values
-
-```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- OrderBy
+- wi
 ParameterSets:
 - Name: (All)
   Position: Named
   IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -Top
-
-Show only the first n items
-
-```yaml
-Type: System.Int32
-DefaultValue: 0
-SupportsWildcards: false
-Aliases:
-- Limit
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: false
-  ValueFromPipeline: false
-  ValueFromPipelineByPropertyName: false
-  ValueFromRemainingArguments: false
-DontShow: false
-AcceptedValues: []
-HelpMessage: ''
-```
-
-### -UserId
-
-The unique identifier of user
-
-```yaml
-Type: System.String
-DefaultValue: ''
-SupportsWildcards: false
-Aliases: []
-ParameterSets:
-- Name: (All)
-  Position: Named
-  IsRequired: true
   ValueFromPipeline: false
   ValueFromPipelineByPropertyName: false
   ValueFromRemainingArguments: false
@@ -454,22 +400,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
+### System.Boolean
 
 {{ Fill in the Description }}
 
 ## NOTES
 
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
+
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+  [AttachmentId <String>]: The unique identifier of attachment
+  [ConversationId <String>]: The unique identifier of conversation
+  [ConversationThreadId <String>]: The unique identifier of conversationThread
+  [DirectoryObjectId <String>]: The unique identifier of directoryObject
+  [DirectorySettingId <String>]: The unique identifier of directorySetting
+  [EndDateTime <String>]: Usage: endDateTime='{endDateTime}'
+  [EndpointId <String>]: The unique identifier of endpoint
+  [ExtensionId <String>]: The unique identifier of extension
+  [GroupId <String>]: The unique identifier of group
+  [GroupLifecyclePolicyId <String>]: The unique identifier of groupLifecyclePolicy
+  [Interval <String>]: Usage: interval='{interval}'
+  [ListId <String>]: Usage: listId='{listId}'
+  [MentionId <String>]: The unique identifier of mention
+  [ModelName <String>]: Usage: modelName='{modelName}'
+  [Path <String>]: Usage: path='{path}'
+  [PostId <String>]: The unique identifier of post
+  [ProfilePhotoId <String>]: The unique identifier of profilePhoto
+  [ResourceSpecificPermissionGrantId <String>]: The unique identifier of resourceSpecificPermissionGrant
+  [SiteId <String>]: The unique identifier of site
+  [StartDateTime <String>]: Usage: startDateTime='{startDateTime}'
+  [UniqueName <String>]: Alternate key of group
+  [UserId <String>]: The unique identifier of user
+
+
 ## RELATED LINKS
 
-- [Get-MgBetaUserJoinedGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetauserjoinedgroup)
-
+- [Remove-MgBetaGroupMemberByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/Remove-MgBetaGroupMemberByRef)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-beta)
 
 
 
