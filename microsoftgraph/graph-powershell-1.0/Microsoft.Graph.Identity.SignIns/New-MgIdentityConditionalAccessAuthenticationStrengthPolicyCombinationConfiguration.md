@@ -60,8 +60,9 @@ Create a new authenticationCombinationConfiguration object which can be of one o
 | Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
 
 ## EXAMPLES
+### Example 1: Create a fido2combinationConfiguration object
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -79,7 +80,12 @@ appliesToCombinations = @(
 
 New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a fido2combinationconfiguration object
+
+### Example 2: Create a x509CertificateCombinationConfiguration object
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -96,6 +102,10 @@ appliesToCombinations = @(
 }
 
 New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
+
+```
+This example will create a x509certificatecombinationconfiguration object
+
 
 ## PARAMETERS
 

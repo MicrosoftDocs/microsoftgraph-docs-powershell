@@ -60,16 +60,6 @@ The @odata.type property in the request body is required to specify which type o
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Policy.ReadWrite.CrossTenantCapability,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -485,6 +475,7 @@ The value is either All, to apply the capability to all resources of the type sp
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicycrosstenantaccesspolicydefaultm365capability)
 - [](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities?view=graph-rest-1.0)
+
 
 
 
