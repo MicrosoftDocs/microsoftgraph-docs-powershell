@@ -68,16 +68,6 @@ Nullable.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | GroupSettings.Read.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, GroupSettings.ReadWrite.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -593,6 +583,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsetting)
+
+
 
 
 
