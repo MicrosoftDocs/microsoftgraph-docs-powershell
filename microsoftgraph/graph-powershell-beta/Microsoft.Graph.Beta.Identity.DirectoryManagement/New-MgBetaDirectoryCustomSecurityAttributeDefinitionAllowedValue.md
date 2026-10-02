@@ -78,8 +78,9 @@ Create a new allowedValue object.
 | Application | CustomSecAttributeDefinition.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -89,6 +90,10 @@ $params = @{
 }
 
 New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
+
 
 ## PARAMETERS
 

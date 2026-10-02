@@ -66,18 +66,28 @@ Read the properties of a governancePolicyTemplate object.
 | Application | TenantGovernance-PolicyTemplate.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Get a specific governance policy template
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryTenantGovernancePolicyTemplate -GovernancePolicyTemplateId $governancePolicyTemplateId
+
+```
+This example will get a specific governance policy template
+
+### Example 2: Get the default governance policy template
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryTenantGovernancePolicyTemplate -GovernancePolicyTemplateId $governancePolicyTemplateId
 
-### EXAMPLE 2
+```
+This example will get the default governance policy template
 
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaDirectoryTenantGovernancePolicyTemplate -GovernancePolicyTemplateId $governancePolicyTemplateId
 
 ## PARAMETERS
 
