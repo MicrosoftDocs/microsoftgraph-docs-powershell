@@ -85,16 +85,6 @@ This cmdlet has the following aliases,
 
 Update the properties of a sharePointRestoreSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1131,6 +1121,7 @@ Read-only.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.backuprestore/update-mgsolutionbackuprestoresharepointrestoresession)
 - [](https://learn.microsoft.com/graph/api/sharepointrestoresession-update?view=graph-rest-1.0)
+
 
 
 
