@@ -15,6 +15,9 @@ title: New-MgBetaDeviceManagementDeviceEnrollmentConfiguration
 
 Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
