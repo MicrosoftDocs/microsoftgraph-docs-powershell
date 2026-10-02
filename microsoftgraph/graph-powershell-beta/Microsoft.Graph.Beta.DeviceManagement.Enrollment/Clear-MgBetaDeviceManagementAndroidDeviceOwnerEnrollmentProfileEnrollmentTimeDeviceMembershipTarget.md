@@ -46,16 +46,6 @@ This cmdlet has the following aliases,
 
 Invoke action clearEnrollmentTimeDeviceMembershipTarget
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AndroidDeviceOwnerEnrollmentProfileId
@@ -398,6 +388,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/clear-mgbetadevicemanagementandroiddeviceownerenrollmentprofileenrollmenttimedevicemembershiptarget)
+
 
 
 
