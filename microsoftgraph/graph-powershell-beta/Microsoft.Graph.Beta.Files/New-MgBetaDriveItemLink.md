@@ -14,7 +14,7 @@ title: New-MgBetaDriveItemLink
 ## SYNOPSIS
 
 Create a link to share a driveItem driveItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\r\nIf a sharing link of the specified type already exists for the app, the existing sharing link is returned.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\rIf a sharing link of the specified type already exists for the app, the existing sharing link is returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ## SYNTAX
@@ -69,7 +69,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create a link to share a driveItem driveItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\r\nIf a sharing link of the specified type already exists for the app, the existing sharing link is returned.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\rIf a sharing link of the specified type already exists for the app, the existing sharing link is returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ## EXAMPLES
@@ -717,7 +717,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Sp1J5CDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Sp1J5CDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ExpirationDateTime <DateTime?>]: 
   [Message <String>]: 
@@ -731,7 +731,7 @@ BODYPARAMETER <IPaths1Sp1J5CDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelin
   [SendNotification <Boolean?>]: 
   [Type <String>]: 
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   [ColumnDefinitionId <String>]: The unique identifier of columnDefinition
   [ColumnLinkId <String>]: The unique identifier of columnLink
   [ContentTypeId <String>]: The unique identifier of contentType
@@ -768,3 +768,25 @@ RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlink)
 - [](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
