@@ -15,6 +15,9 @@ title: Get-MgShareContentTypeBaseTypeCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareContentTypeBaseTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareContentTypeBaseTypeCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

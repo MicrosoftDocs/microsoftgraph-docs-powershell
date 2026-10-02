@@ -15,6 +15,9 @@ title: Get-MgGroupDriveContentTypeBaseType
 
 The collection of content types that are ancestors of this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveContentTypeBaseType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

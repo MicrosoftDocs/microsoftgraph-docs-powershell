@@ -15,6 +15,9 @@ title: New-MgDriveItemChild
 
 Create new navigation property to children for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

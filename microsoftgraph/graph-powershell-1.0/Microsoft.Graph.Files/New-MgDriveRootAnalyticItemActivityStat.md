@@ -15,6 +15,9 @@ title: New-MgDriveRootAnalyticItemActivityStat
 
 Create new navigation property to itemActivityStats for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

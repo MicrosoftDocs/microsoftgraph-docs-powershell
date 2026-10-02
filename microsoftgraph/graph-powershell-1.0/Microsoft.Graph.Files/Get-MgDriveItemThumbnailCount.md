@@ -15,6 +15,9 @@ title: Get-MgDriveItemThumbnailCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemThumbnailCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnailCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

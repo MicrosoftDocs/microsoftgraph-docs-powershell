@@ -15,6 +15,9 @@ title: Get-MgGroupDriveContentTypeBase
 
 Parent contentType from which this content type is derived.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveContentTypeBase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

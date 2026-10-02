@@ -15,6 +15,9 @@ title: New-MgDriveListItemPermission
 
 Create new navigation property to permissions for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

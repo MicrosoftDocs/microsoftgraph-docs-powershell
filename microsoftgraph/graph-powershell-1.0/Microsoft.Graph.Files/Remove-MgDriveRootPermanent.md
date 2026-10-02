@@ -15,6 +15,9 @@ title: Remove-MgDriveRootPermanent
 
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

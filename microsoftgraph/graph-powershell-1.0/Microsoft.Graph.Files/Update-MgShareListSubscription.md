@@ -15,6 +15,9 @@ title: Update-MgShareListSubscription
 
 Update the navigation property subscriptions in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

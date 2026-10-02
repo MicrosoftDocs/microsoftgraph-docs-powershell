@@ -15,6 +15,9 @@ title: Update-MgGroupDriveItemPermission
 
 Update the navigation property permissions in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
