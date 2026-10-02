@@ -46,6 +46,14 @@ This cmdlet has the following aliases,
 Delete a place object.
 You can also use this method to delete the following child object types: building, floor, section, or desk.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Place.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Place.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
