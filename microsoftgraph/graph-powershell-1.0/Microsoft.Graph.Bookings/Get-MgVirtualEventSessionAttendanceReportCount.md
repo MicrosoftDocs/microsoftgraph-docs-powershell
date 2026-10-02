@@ -15,6 +15,9 @@ title: Get-MgVirtualEventSessionAttendanceReportCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventSessionAttendanceReportCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventSessionAttendanceReportCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

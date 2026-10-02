@@ -15,6 +15,9 @@ title: Get-MgBookingBusinessCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
