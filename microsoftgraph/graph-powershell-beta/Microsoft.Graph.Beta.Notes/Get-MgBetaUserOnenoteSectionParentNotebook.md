@@ -16,6 +16,9 @@ title: Get-MgBetaUserOnenoteSectionParentNotebook
 The notebook that contains the section.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteSectionParentNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteSectionParentNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
