@@ -79,16 +79,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property governancePolicyTemplates in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -11486,6 +11476,7 @@ MULTITENANTAPPLICATIONSTOPROVISION <IMicrosoftGraphMultiTenantApplicationsToProv
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancepolicytemplate)
+
 
 
 
