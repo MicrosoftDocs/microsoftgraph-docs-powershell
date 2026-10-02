@@ -552,8 +552,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointserviceplan)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-1.0)
+- [Get-MgDeviceManagementVirtualEndpointServicePlan](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointserviceplan)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-1.0)
 
 
 

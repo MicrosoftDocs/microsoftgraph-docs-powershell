@@ -407,8 +407,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/disconnect-mgdevicemanagementremoteassistancepartner)
-- [](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-disconnect?view=graph-rest-1.0)
+- [Disconnect-MgDeviceManagementRemoteAssistancePartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/disconnect-mgdevicemanagementremoteassistancepartner)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-disconnect?view=graph-rest-1.0)
 
 
 
