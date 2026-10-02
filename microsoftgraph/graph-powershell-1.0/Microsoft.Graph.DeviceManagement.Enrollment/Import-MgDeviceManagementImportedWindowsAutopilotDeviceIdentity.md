@@ -59,8 +59,9 @@ Invoke action import
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -BodyParameter $params
+
+```
+This example shows how to use the Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity Cmdlet.
+
 
 ## PARAMETERS
 

@@ -69,12 +69,17 @@ The list of device enrollment configurations
 | Application | DeviceManagementServiceConfig.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Enrollment
 
 Get-MgDeviceManagementDeviceEnrollmentConfiguration
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceEnrollmentConfiguration Cmdlet.
+
 
 ## PARAMETERS
 
