@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Reports
-Module Guid: 2e9bbe73-9849-467b-a114-2eb2ad642f7e
+Module Guid: 301cc595-3304-41ad-a183-d52277bb54e2
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.reports/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -33,11 +33,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAdminReportSettingSharePointApiUsageReportMetric](Get-MgBetaAdminReportSettingSharePointApiUsageReportMetric.md)
 
-### [Get-MgBetaAdminReportSettingSharePointApiUsageReportMetric](Get-MgBetaAdminReportSettingSharePointApiUsageReportMetric.md)
-
 ### [Get-MgBetaAdminReportSettingSharePointApiUsageReportMetricCount](Get-MgBetaAdminReportSettingSharePointApiUsageReportMetricCount.md)
-
-### [Get-MgBetaAuditLogAuditActivityType](Get-MgBetaAuditLogAuditActivityType.md)
 
 ### [Get-MgBetaAuditLogAuditActivityType](Get-MgBetaAuditLogAuditActivityType.md)
 
@@ -45,11 +41,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAuditLogCustomSecurityAttributeAudit](Get-MgBetaAuditLogCustomSecurityAttributeAudit.md)
 
-### [Get-MgBetaAuditLogCustomSecurityAttributeAudit](Get-MgBetaAuditLogCustomSecurityAttributeAudit.md)
-
 ### [Get-MgBetaAuditLogCustomSecurityAttributeAuditCount](Get-MgBetaAuditLogCustomSecurityAttributeAuditCount.md)
-
-### [Get-MgBetaAuditLogDirectoryAudit](Get-MgBetaAuditLogDirectoryAudit.md)
 
 ### [Get-MgBetaAuditLogDirectoryAudit](Get-MgBetaAuditLogDirectoryAudit.md)
 
@@ -57,11 +49,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAuditLogDirectoryProvisioning](Get-MgBetaAuditLogDirectoryProvisioning.md)
 
-### [Get-MgBetaAuditLogDirectoryProvisioning](Get-MgBetaAuditLogDirectoryProvisioning.md)
-
 ### [Get-MgBetaAuditLogDirectoryProvisioningCount](Get-MgBetaAuditLogDirectoryProvisioningCount.md)
-
-### [Get-MgBetaAuditLogProvisioning](Get-MgBetaAuditLogProvisioning.md)
 
 ### [Get-MgBetaAuditLogProvisioning](Get-MgBetaAuditLogProvisioning.md)
 
@@ -69,11 +57,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAuditLogSignIn](Get-MgBetaAuditLogSignIn.md)
 
-### [Get-MgBetaAuditLogSignIn](Get-MgBetaAuditLogSignIn.md)
-
 ### [Get-MgBetaAuditLogSignInCount](Get-MgBetaAuditLogSignInCount.md)
-
-### [Get-MgBetaAuditLogSignInEventAppSummary](Get-MgBetaAuditLogSignInEventAppSummary.md)
 
 ### [Get-MgBetaAuditLogSignInEventAppSummary](Get-MgBetaAuditLogSignInEventAppSummary.md)
 
@@ -85,11 +69,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaAuditLogSignInEventSummary](Get-MgBetaAuditLogSignInEventSummary.md)
 
-### [Get-MgBetaAuditLogSignInEventSummary](Get-MgBetaAuditLogSignInEventSummary.md)
-
 ### [Get-MgBetaAuditLogSignInEventSummaryCount](Get-MgBetaAuditLogSignInEventSummaryCount.md)
-
-### [Get-MgBetaAuditLogSignUp](Get-MgBetaAuditLogSignUp.md)
 
 ### [Get-MgBetaAuditLogSignUp](Get-MgBetaAuditLogSignUp.md)
 
@@ -118,8 +98,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaDeviceManagementReportAppStatusOverviewReport](Get-MgBetaDeviceManagementReportAppStatusOverviewReport.md)
 
 ### [Get-MgBetaDeviceManagementReportCachedReport](Get-MgBetaDeviceManagementReportCachedReport.md)
-
-### [Get-MgBetaDeviceManagementReportCachedReportConfiguration](Get-MgBetaDeviceManagementReportCachedReportConfiguration.md)
 
 ### [Get-MgBetaDeviceManagementReportCachedReportConfiguration](Get-MgBetaDeviceManagementReportCachedReportConfiguration.md)
 
@@ -203,8 +181,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaDeviceManagementReportExportJob](Get-MgBetaDeviceManagementReportExportJob.md)
 
-### [Get-MgBetaDeviceManagementReportExportJob](Get-MgBetaDeviceManagementReportExportJob.md)
-
 ### [Get-MgBetaDeviceManagementReportExportJobCount](Get-MgBetaDeviceManagementReportExportJobCount.md)
 
 ### [Get-MgBetaDeviceManagementReportFailedMobileAppReport](Get-MgBetaDeviceManagementReportFailedMobileAppReport.md)
@@ -269,11 +245,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportAppCredentialSignInActivity](Get-MgBetaReportAppCredentialSignInActivity.md)
 
-### [Get-MgBetaReportAppCredentialSignInActivity](Get-MgBetaReportAppCredentialSignInActivity.md)
-
 ### [Get-MgBetaReportAppCredentialSignInActivityCount](Get-MgBetaReportAppCredentialSignInActivityCount.md)
-
-### [Get-MgBetaReportApplicationSignInDetailedSummary](Get-MgBetaReportApplicationSignInDetailedSummary.md)
 
 ### [Get-MgBetaReportApplicationSignInDetailedSummary](Get-MgBetaReportApplicationSignInDetailedSummary.md)
 
@@ -289,11 +261,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportAuthenticationMethodUserEventSummary](Get-MgBetaReportAuthenticationMethodUserEventSummary.md)
 
-### [Get-MgBetaReportAuthenticationMethodUserEventSummary](Get-MgBetaReportAuthenticationMethodUserEventSummary.md)
-
 ### [Get-MgBetaReportAuthenticationMethodUserEventSummaryCount](Get-MgBetaReportAuthenticationMethodUserEventSummaryCount.md)
-
-### [Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary](Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary.md)
 
 ### [Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary](Get-MgBetaReportAuthenticationMethodUserMfaSignInSummary.md)
 
@@ -301,11 +269,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary](Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary.md)
 
-### [Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary](Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummary.md)
-
 ### [Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummaryCount](Get-MgBetaReportAuthenticationMethodUserPasswordResetAndChangeSummaryCount.md)
-
-### [Get-MgBetaReportAuthenticationMethodUserRegistrationDetail](Get-MgBetaReportAuthenticationMethodUserRegistrationDetail.md)
 
 ### [Get-MgBetaReportAuthenticationMethodUserRegistrationDetail](Get-MgBetaReportAuthenticationMethodUserRegistrationDetail.md)
 
@@ -323,11 +287,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportCorrelation](Get-MgBetaReportCorrelation.md)
 
-### [Get-MgBetaReportCorrelation](Get-MgBetaReportCorrelation.md)
-
 ### [Get-MgBetaReportCorrelationCount](Get-MgBetaReportCorrelationCount.md)
-
-### [Get-MgBetaReportCorrelationIdentity](Get-MgBetaReportCorrelationIdentity.md)
 
 ### [Get-MgBetaReportCorrelationIdentity](Get-MgBetaReportCorrelationIdentity.md)
 
@@ -341,21 +301,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportCredentialUserRegistrationDetail](Get-MgBetaReportCredentialUserRegistrationDetail.md)
 
-### [Get-MgBetaReportCredentialUserRegistrationDetail](Get-MgBetaReportCredentialUserRegistrationDetail.md)
-
 ### [Get-MgBetaReportCredentialUserRegistrationDetailCount](Get-MgBetaReportCredentialUserRegistrationDetailCount.md)
 
 ### [Get-MgBetaReportDailyPrintUsage](Get-MgBetaReportDailyPrintUsage.md)
 
-### [Get-MgBetaReportDailyPrintUsage](Get-MgBetaReportDailyPrintUsage.md)
-
-### [Get-MgBetaReportDailyPrintUsageByPrinter](Get-MgBetaReportDailyPrintUsageByPrinter.md)
-
 ### [Get-MgBetaReportDailyPrintUsageByPrinter](Get-MgBetaReportDailyPrintUsageByPrinter.md)
 
 ### [Get-MgBetaReportDailyPrintUsageByPrinterCount](Get-MgBetaReportDailyPrintUsageByPrinterCount.md)
-
-### [Get-MgBetaReportDailyPrintUsageByUser](Get-MgBetaReportDailyPrintUsageByUser.md)
 
 ### [Get-MgBetaReportDailyPrintUsageByUser](Get-MgBetaReportDailyPrintUsageByUser.md)
 
@@ -365,11 +317,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportDailyPrintUsageSummaryByPrinter](Get-MgBetaReportDailyPrintUsageSummaryByPrinter.md)
 
-### [Get-MgBetaReportDailyPrintUsageSummaryByPrinter](Get-MgBetaReportDailyPrintUsageSummaryByPrinter.md)
-
 ### [Get-MgBetaReportDailyPrintUsageSummaryByPrinterCount](Get-MgBetaReportDailyPrintUsageSummaryByPrinterCount.md)
-
-### [Get-MgBetaReportDailyPrintUsageSummaryByUser](Get-MgBetaReportDailyPrintUsageSummaryByUser.md)
 
 ### [Get-MgBetaReportDailyPrintUsageSummaryByUser](Get-MgBetaReportDailyPrintUsageSummaryByUser.md)
 
@@ -405,10 +353,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportHealthMonitoringAlert](Get-MgBetaReportHealthMonitoringAlert.md)
 
-### [Get-MgBetaReportHealthMonitoringAlert](Get-MgBetaReportHealthMonitoringAlert.md)
-
-### [Get-MgBetaReportHealthMonitoringAlertConfiguration](Get-MgBetaReportHealthMonitoringAlertConfiguration.md)
-
 ### [Get-MgBetaReportHealthMonitoringAlertConfiguration](Get-MgBetaReportHealthMonitoringAlertConfiguration.md)
 
 ### [Get-MgBetaReportHealthMonitoringAlertConfigurationCount](Get-MgBetaReportHealthMonitoringAlertConfigurationCount.md)
@@ -416,8 +360,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaReportHealthMonitoringAlertCount](Get-MgBetaReportHealthMonitoringAlertCount.md)
 
 ### [Get-MgBetaReportIdentityAnalytic](Get-MgBetaReportIdentityAnalytic.md)
-
-### [Get-MgBetaReportIdentityAnalyticGroup](Get-MgBetaReportIdentityAnalyticGroup.md)
 
 ### [Get-MgBetaReportIdentityAnalyticGroup](Get-MgBetaReportIdentityAnalyticGroup.md)
 
@@ -457,11 +399,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation](Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation.md)
 
-### [Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation](Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocation.md)
-
 ### [Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocationCount](Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageByDataLocationCount.md)
-
-### [Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp](Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp.md)
 
 ### [Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp](Get-MgBetaReportMicrosoftAppFileStorageContainerUsageSummaryUsageGraphBPreDataLocationUsageByApp.md)
 
@@ -469,11 +407,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportMonthlyPrintUsageByPrinter](Get-MgBetaReportMonthlyPrintUsageByPrinter.md)
 
-### [Get-MgBetaReportMonthlyPrintUsageByPrinter](Get-MgBetaReportMonthlyPrintUsageByPrinter.md)
-
 ### [Get-MgBetaReportMonthlyPrintUsageByPrinterCount](Get-MgBetaReportMonthlyPrintUsageByPrinterCount.md)
-
-### [Get-MgBetaReportMonthlyPrintUsageByUser](Get-MgBetaReportMonthlyPrintUsageByUser.md)
 
 ### [Get-MgBetaReportMonthlyPrintUsageByUser](Get-MgBetaReportMonthlyPrintUsageByUser.md)
 
@@ -481,11 +415,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportMonthlyPrintUsageSummaryByPrinter](Get-MgBetaReportMonthlyPrintUsageSummaryByPrinter.md)
 
-### [Get-MgBetaReportMonthlyPrintUsageSummaryByPrinter](Get-MgBetaReportMonthlyPrintUsageSummaryByPrinter.md)
-
 ### [Get-MgBetaReportMonthlyPrintUsageSummaryByPrinterCount](Get-MgBetaReportMonthlyPrintUsageSummaryByPrinterCount.md)
-
-### [Get-MgBetaReportMonthlyPrintUsageSummaryByUser](Get-MgBetaReportMonthlyPrintUsageSummaryByUser.md)
 
 ### [Get-MgBetaReportMonthlyPrintUsageSummaryByUser](Get-MgBetaReportMonthlyPrintUsageSummaryByUser.md)
 
@@ -533,11 +463,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportPartnerBillingManifest](Get-MgBetaReportPartnerBillingManifest.md)
 
-### [Get-MgBetaReportPartnerBillingManifest](Get-MgBetaReportPartnerBillingManifest.md)
-
 ### [Get-MgBetaReportPartnerBillingManifestCount](Get-MgBetaReportPartnerBillingManifestCount.md)
-
-### [Get-MgBetaReportPartnerBillingOperation](Get-MgBetaReportPartnerBillingOperation.md)
 
 ### [Get-MgBetaReportPartnerBillingOperation](Get-MgBetaReportPartnerBillingOperation.md)
 
@@ -606,8 +532,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaReportServiceActivityUsageMetricForTeamByLaunch](Get-MgBetaReportServiceActivityUsageMetricForTeamByLaunch.md)
 
 ### [Get-MgBetaReportServiceActivityUsageMetricForTeamByMeetingJoined](Get-MgBetaReportServiceActivityUsageMetricForTeamByMeetingJoined.md)
-
-### [Get-MgBetaReportServicePrincipalSignInActivity](Get-MgBetaReportServicePrincipalSignInActivity.md)
 
 ### [Get-MgBetaReportServicePrincipalSignInActivity](Get-MgBetaReportServicePrincipalSignInActivity.md)
 
@@ -705,8 +629,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserCredentialUsageDetail](Get-MgBetaReportUserCredentialUsageDetail.md)
 
-### [Get-MgBetaReportUserCredentialUsageDetail](Get-MgBetaReportUserCredentialUsageDetail.md)
-
 ### [Get-MgBetaReportUserCredentialUsageDetailCount](Get-MgBetaReportUserCredentialUsageDetailCount.md)
 
 ### [Get-MgBetaReportUserInsight](Get-MgBetaReportUserInsight.md)
@@ -715,21 +637,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserInsightDailyActiveUser](Get-MgBetaReportUserInsightDailyActiveUser.md)
 
-### [Get-MgBetaReportUserInsightDailyActiveUser](Get-MgBetaReportUserInsightDailyActiveUser.md)
-
 ### [Get-MgBetaReportUserInsightDailyActiveUserCount](Get-MgBetaReportUserInsightDailyActiveUserCount.md)
-
-### [Get-MgBetaReportUserInsightDailyAuthentication](Get-MgBetaReportUserInsightDailyAuthentication.md)
 
 ### [Get-MgBetaReportUserInsightDailyAuthentication](Get-MgBetaReportUserInsightDailyAuthentication.md)
 
 ### [Get-MgBetaReportUserInsightDailyAuthenticationCount](Get-MgBetaReportUserInsightDailyAuthenticationCount.md)
 
 ### [Get-MgBetaReportUserInsightDailyInactiveUser](Get-MgBetaReportUserInsightDailyInactiveUser.md)
-
-### [Get-MgBetaReportUserInsightDailyInactiveUser](Get-MgBetaReportUserInsightDailyInactiveUser.md)
-
-### [Get-MgBetaReportUserInsightDailyInactiveUserByApplication](Get-MgBetaReportUserInsightDailyInactiveUserByApplication.md)
 
 ### [Get-MgBetaReportUserInsightDailyInactiveUserByApplication](Get-MgBetaReportUserInsightDailyInactiveUserByApplication.md)
 
@@ -739,11 +653,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserInsightDailyMfaCompletion](Get-MgBetaReportUserInsightDailyMfaCompletion.md)
 
-### [Get-MgBetaReportUserInsightDailyMfaCompletion](Get-MgBetaReportUserInsightDailyMfaCompletion.md)
-
 ### [Get-MgBetaReportUserInsightDailyMfaCompletionCount](Get-MgBetaReportUserInsightDailyMfaCompletionCount.md)
-
-### [Get-MgBetaReportUserInsightDailyMfaTelecomFraud](Get-MgBetaReportUserInsightDailyMfaTelecomFraud.md)
 
 ### [Get-MgBetaReportUserInsightDailyMfaTelecomFraud](Get-MgBetaReportUserInsightDailyMfaTelecomFraud.md)
 
@@ -751,11 +661,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserInsightDailySignUp](Get-MgBetaReportUserInsightDailySignUp.md)
 
-### [Get-MgBetaReportUserInsightDailySignUp](Get-MgBetaReportUserInsightDailySignUp.md)
-
 ### [Get-MgBetaReportUserInsightDailySignUpCount](Get-MgBetaReportUserInsightDailySignUpCount.md)
-
-### [Get-MgBetaReportUserInsightDailySummary](Get-MgBetaReportUserInsightDailySummary.md)
 
 ### [Get-MgBetaReportUserInsightDailySummary](Get-MgBetaReportUserInsightDailySummary.md)
 
@@ -763,11 +669,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserInsightDailyUserCount](Get-MgBetaReportUserInsightDailyUserCount.md)
 
-### [Get-MgBetaReportUserInsightDailyUserCount](Get-MgBetaReportUserInsightDailyUserCount.md)
-
 ### [Get-MgBetaReportUserInsightMonthly](Get-MgBetaReportUserInsightMonthly.md)
-
-### [Get-MgBetaReportUserInsightMonthlyActiveUser](Get-MgBetaReportUserInsightMonthlyActiveUser.md)
 
 ### [Get-MgBetaReportUserInsightMonthlyActiveUser](Get-MgBetaReportUserInsightMonthlyActiveUser.md)
 
@@ -775,15 +677,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserInsightMonthlyAuthentication](Get-MgBetaReportUserInsightMonthlyAuthentication.md)
 
-### [Get-MgBetaReportUserInsightMonthlyAuthentication](Get-MgBetaReportUserInsightMonthlyAuthentication.md)
-
 ### [Get-MgBetaReportUserInsightMonthlyAuthenticationCount](Get-MgBetaReportUserInsightMonthlyAuthenticationCount.md)
 
 ### [Get-MgBetaReportUserInsightMonthlyInactiveUser](Get-MgBetaReportUserInsightMonthlyInactiveUser.md)
-
-### [Get-MgBetaReportUserInsightMonthlyInactiveUser](Get-MgBetaReportUserInsightMonthlyInactiveUser.md)
-
-### [Get-MgBetaReportUserInsightMonthlyInactiveUserByApplication](Get-MgBetaReportUserInsightMonthlyInactiveUserByApplication.md)
 
 ### [Get-MgBetaReportUserInsightMonthlyInactiveUserByApplication](Get-MgBetaReportUserInsightMonthlyInactiveUserByApplication.md)
 
@@ -793,11 +689,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserInsightMonthlyMfaCompletion](Get-MgBetaReportUserInsightMonthlyMfaCompletion.md)
 
-### [Get-MgBetaReportUserInsightMonthlyMfaCompletion](Get-MgBetaReportUserInsightMonthlyMfaCompletion.md)
-
 ### [Get-MgBetaReportUserInsightMonthlyMfaCompletionCount](Get-MgBetaReportUserInsightMonthlyMfaCompletionCount.md)
-
-### [Get-MgBetaReportUserInsightMonthlyMfaRegisteredUser](Get-MgBetaReportUserInsightMonthlyMfaRegisteredUser.md)
 
 ### [Get-MgBetaReportUserInsightMonthlyMfaRegisteredUser](Get-MgBetaReportUserInsightMonthlyMfaRegisteredUser.md)
 
@@ -805,17 +697,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaReportUserInsightMonthlyRequest](Get-MgBetaReportUserInsightMonthlyRequest.md)
 
-### [Get-MgBetaReportUserInsightMonthlyRequest](Get-MgBetaReportUserInsightMonthlyRequest.md)
-
 ### [Get-MgBetaReportUserInsightMonthlyRequestCount](Get-MgBetaReportUserInsightMonthlyRequestCount.md)
 
 ### [Get-MgBetaReportUserInsightMonthlySignUp](Get-MgBetaReportUserInsightMonthlySignUp.md)
 
-### [Get-MgBetaReportUserInsightMonthlySignUp](Get-MgBetaReportUserInsightMonthlySignUp.md)
-
 ### [Get-MgBetaReportUserInsightMonthlySignUpCount](Get-MgBetaReportUserInsightMonthlySignUpCount.md)
-
-### [Get-MgBetaReportUserInsightMonthlySummary](Get-MgBetaReportUserInsightMonthlySummary.md)
 
 ### [Get-MgBetaReportUserInsightMonthlySummary](Get-MgBetaReportUserInsightMonthlySummary.md)
 
