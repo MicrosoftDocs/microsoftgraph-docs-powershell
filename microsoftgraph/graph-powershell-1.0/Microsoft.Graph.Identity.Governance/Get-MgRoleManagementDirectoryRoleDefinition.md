@@ -71,18 +71,28 @@ The following role-based access control (RBAC) providers are currently supported
 | Application | RoleManagement.Read.Directory, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Get the definition of a custom role
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
+
+```
+This example will get the definition of a custom role
+
+### Example 2: Get the definition of a built-in role
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
 
-### EXAMPLE 2
+```
+This example will get the definition of a built-in role
 
-Import-Module Microsoft.Graph.Identity.Governance
-
-Get-MgRoleManagementDirectoryRoleDefinition -UnifiedRoleDefinitionId $unifiedRoleDefinitionId
 
 ## PARAMETERS
 

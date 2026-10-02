@@ -61,8 +61,9 @@ Create a new unifiedRoleAssignment object.
 | Application | RoleManagement.ReadWrite.Directory,  |
 
 ## EXAMPLES
+### Example 1: Create a role assignment with tenant scope
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -75,7 +76,12 @@ $params = @{
 
 New-MgRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create a role assignment with tenant scope
+
+### Example 2: Create a role assignment with administrative unit scope
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -88,7 +94,12 @@ $params = @{
 
 New-MgRoleManagementDirectoryRoleAssignment -BodyParameter $params
 
-### EXAMPLE 3
+```
+This example will create a role assignment with administrative unit scope
+
+### Example 3: Create a role assignment with application scope
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -100,6 +111,10 @@ $params = @{
 }
 
 New-MgRoleManagementDirectoryRoleAssignment -BodyParameter $params
+
+```
+This example will create a role assignment with application scope
+
 
 ## PARAMETERS
 
