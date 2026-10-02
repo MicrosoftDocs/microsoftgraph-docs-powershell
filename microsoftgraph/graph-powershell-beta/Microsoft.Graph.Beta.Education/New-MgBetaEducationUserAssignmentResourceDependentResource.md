@@ -15,6 +15,9 @@ title: New-MgBetaEducationUserAssignmentResourceDependentResource
 
 Create new navigation property to dependentResources for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentResourceDependentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentResourceDependentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

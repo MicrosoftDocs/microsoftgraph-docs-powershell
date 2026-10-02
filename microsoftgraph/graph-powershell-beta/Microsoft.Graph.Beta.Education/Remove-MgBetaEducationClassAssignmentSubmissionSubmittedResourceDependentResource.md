@@ -15,6 +15,9 @@ title: Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependent
 
 Delete navigation property dependentResources for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmissionSubmittedResourceDependentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

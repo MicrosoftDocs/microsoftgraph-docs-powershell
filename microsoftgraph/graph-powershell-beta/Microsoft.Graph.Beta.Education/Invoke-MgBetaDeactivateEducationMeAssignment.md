@@ -16,6 +16,9 @@ title: Invoke-MgBetaDeactivateEducationMeAssignment
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeactivateEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Invoke-MgDeactivateEducationMeAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Deactivate (Default)

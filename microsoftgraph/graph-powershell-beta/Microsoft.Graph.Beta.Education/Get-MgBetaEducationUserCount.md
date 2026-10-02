@@ -15,6 +15,9 @@ title: Get-MgBetaEducationUserCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

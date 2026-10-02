@@ -15,6 +15,9 @@ title: New-MgBetaEducationUserAssignmentSubmission
 
 Create new navigation property to submissions for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
