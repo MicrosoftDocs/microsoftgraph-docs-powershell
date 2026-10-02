@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecoverysnapshotrecoveryjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryRecoverySnapshotRecoveryJob
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaDirectoryRecoverySnapshotRecoveryJob
 ## SYNOPSIS
 
 Collection of recovery jobs created for this snapshot.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRecoverySnapshotRecoveryJob](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRecoverySnapshotRecoveryJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 

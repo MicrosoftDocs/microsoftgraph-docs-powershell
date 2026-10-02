@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryremotetenantgroup
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryRemoteTenantGroup
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaDirectoryRemoteTenantGroup
 ## SYNOPSIS
 
 Create new navigation property to remoteTenantGroups for directory
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRemoteTenantGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRemoteTenantGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 

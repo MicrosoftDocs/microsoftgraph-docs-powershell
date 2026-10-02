@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/stop-mgbetadirectoryrecoveryjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaDirectoryRecoveryJob
 ---
@@ -16,6 +16,9 @@ title: Stop-MgBetaDirectoryRecoveryJob
 Cancel a running recoveryJobBase object (either a preview or recovery job).
 The job must be in a non-terminal state (initialized, calculating, loadingData, or running).
 After cancellation, the job status changes to abandoned.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Stop-MgDirectoryRecoveryJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 

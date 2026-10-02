@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrecovery
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryRecovery
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaDirectoryRecovery
 ## SYNOPSIS
 
 Represents the Entra backup and recovery service for the tenant.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRecovery](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRecovery?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrecoveryjob
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryRecoveryJob
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaDirectoryRecoveryJob
 ## SYNOPSIS
 
 Update the navigation property jobs in directory
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryRecoveryJob](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRecoveryJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 

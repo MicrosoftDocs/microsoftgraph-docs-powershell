@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaOrganization
 ---
@@ -41,6 +41,7 @@ Update-MgBetaOrganization -OrganizationId <string> [-ResponseHeadersVariable <st
  [-PostalCode <string>] [-PreferredLanguage <string>]
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
+ [-ResourceQuotas <IMicrosoftGraphResourceQuota[]>]
  [-SecurityComplianceNotificationMails <string[]>]
  [-SecurityComplianceNotificationPhones <string[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <string>] [-Street <string>]
@@ -79,6 +80,7 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  [-PostalCode <string>] [-PreferredLanguage <string>]
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
+ [-ResourceQuotas <IMicrosoftGraphResourceQuota[]>]
  [-SecurityComplianceNotificationMails <string[]>]
  [-SecurityComplianceNotificationPhones <string[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <string>] [-Street <string>]
@@ -1185,6 +1187,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -ResourceQuotas
+
+
+To construct, see NOTES section for RESOURCEQUOTAS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceQuota[]
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -ResponseHeadersVariable
 
 Optional Response Headers Variable.
@@ -1852,6 +1882,10 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
 See a detailed description of each value.
     [ProvisioningStatus <String>]: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
     [Service <String>]: The name of the service; for example, 'AccessControlS2S'
+  [ResourceQuotas <IMicrosoftGraphResourceQuota[]>]: 
+    [MaxPercentage <Int32?>]: 
+    [ResourceType <String>]: resourceQuotaType
+    [Total <Int32?>]: 
   [SecurityComplianceNotificationMails <String[]>]: Not nullable.
   [SecurityComplianceNotificationPhones <String[]>]: Not nullable.
   [Settings <IMicrosoftGraphOrganizationSettings>]: organizationSettings
@@ -2284,6 +2318,11 @@ The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
 See a detailed description of each value.
   [ProvisioningStatus <String>]: The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
   [Service <String>]: The name of the service; for example, 'AccessControlS2S'
+
+RESOURCEQUOTAS <IMicrosoftGraphResourceQuota[]>: .
+  [MaxPercentage <Int32?>]: 
+  [ResourceType <String>]: resourceQuotaType
+  [Total <Int32?>]: 
 
 SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
