@@ -53,16 +53,6 @@ Read the properties and relationships of a businessScenario object.
 | Delegated (personal Microsoft account) | Not supported |
 | Application | BusinessScenarioConfig.Read.OwnedBy, BusinessScenarioConfig.ReadWrite.OwnedBy,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -363,6 +353,7 @@ INPUTOBJECT `<IBusinessScenarioIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.businessscenario/get-mgbetasolutionbusinessscenariobyuniquename)
 - [](https://learn.microsoft.com/graph/api/businessscenario-get?view=graph-rest-beta)
+
 
 
 
