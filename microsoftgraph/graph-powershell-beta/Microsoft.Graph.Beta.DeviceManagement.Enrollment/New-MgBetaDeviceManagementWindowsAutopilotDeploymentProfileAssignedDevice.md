@@ -1255,7 +1255,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphWindowsAutopilotDeviceIdentity>: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
+BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeviceIdentity>`: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1413,7 +1413,7 @@ The default is FALSE.
   [UserPrincipalName <String>]: User Principal Name.
   [UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
 
-DEPLOYMENTPROFILE <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopilot Deployment Profile
+DEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1570,7 +1570,7 @@ When false, Windows Autopilot for pre-provisioned deployment mode for OOBE is no
 The default is FALSE.
   [RoleScopeTagIds <String[]>]: List of role scope tags for the deployment profile.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -1599,7 +1599,7 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
   [WindowsFeatureUpdateProfileAssignmentId <String>]: The unique identifier of windowsFeatureUpdateProfileAssignment
   [WindowsFeatureUpdateProfileId <String>]: The unique identifier of windowsFeatureUpdateProfile
 
-INTENDEDDEPLOYMENTPROFILE <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopilot Deployment Profile
+INTENDEDDEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1760,3 +1760,25 @@ The default is FALSE.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeploymentprofileassigneddevice)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

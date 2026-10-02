@@ -15,7 +15,7 @@ title: Remove-MgBetaRoleManagementDeviceManagementRoleAssignment
 
 Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
 This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC)
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 
 Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
 This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:\r\n- Cloud PC \r\n- device management (Intune)\r\n- Defender (Microsoft Defender XDR Unified RBAC)
+The following RBAC providers are currently supported:\r- Cloud PC \r- device management (Intune)\r- Defender (Microsoft Defender XDR Unified RBAC)
 
 ## EXAMPLES
 
@@ -387,7 +387,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   [AndroidDeviceOwnerEnrollmentProfileId <String>]: The unique identifier of androidDeviceOwnerEnrollmentProfile
   [AndroidForWorkEnrollmentProfileId <String>]: The unique identifier of androidForWorkEnrollmentProfile
   [AppScopeId <String>]: The unique identifier of appScope
@@ -421,3 +421,25 @@ INPUTOBJECT <IDeviceManagementEnrollmentIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementdevicemanagementroleassignment)
 - [](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
