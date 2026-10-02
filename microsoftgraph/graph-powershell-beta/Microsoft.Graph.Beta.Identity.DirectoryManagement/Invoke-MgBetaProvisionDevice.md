@@ -45,16 +45,6 @@ This cmdlet has the following aliases,
 
 Invoke action provision
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,6 +362,7 @@ BODYPARAMETER `<IPaths1Yuu517DevicesMicrosoftGraphProvisionPostRequestbodyConten
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaprovisiondevice)
+
 
 
 
