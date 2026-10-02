@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinitioninstancestage
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage
 ---
@@ -76,13 +76,15 @@ This cmdlet has the following aliases,
 
 Update the navigation property stages in identityGovernance
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -699,7 +701,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewStage>`: accessReviewStage
+BODYPARAMETER <IMicrosoftGraphAccessReviewStage>: accessReviewStage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -737,6 +739,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
       [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
     [Justification <String>]: Justification left by the reviewer when they made the decision.
+    [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [Id <String>]: 
+      [Type <String>]: 
     [Principal <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -753,6 +761,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
     [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: 
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Identifier of the resource
       [Type <String>]: Type of resource.
@@ -822,6 +831,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
     [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
   [Justification <String>]: Justification left by the reviewer when they made the decision.
+  [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [Id <String>]: 
+    [Type <String>]: 
   [Principal <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -838,6 +853,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
   [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: 
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Identifier of the resource
     [Type <String>]: Type of resource.
@@ -863,7 +879,7 @@ Examples include MicrosoftGraph and ARM.
   [ReviewerId <String>]: The identifier of the reviewer.
   [ScopeType <String>]: accessReviewReviewerScopeType
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -907,6 +923,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -956,27 +973,4 @@ Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinitioninstancestage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinitioninstancestage)

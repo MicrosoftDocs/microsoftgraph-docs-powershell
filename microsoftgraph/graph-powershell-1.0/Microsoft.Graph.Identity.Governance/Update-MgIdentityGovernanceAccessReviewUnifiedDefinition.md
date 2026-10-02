@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAccessReviewUnifiedDefinition
 ---
@@ -83,6 +83,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property definitions in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -920,7 +930,7 @@ ADDITIONALNOTIFICATIONRECIPIENTS <IMicrosoftGraphAccessReviewNotificationRecipie
   [NotificationTemplateType <String>]: Indicates the type of access review email to be sent.
 Supported template type is CompletedAdditionalRecipients, which sends review completion notifications to the recipients.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewScheduleDefinition>`: accessReviewScheduleDefinition
+BODYPARAMETER <IMicrosoftGraphAccessReviewScheduleDefinition>: accessReviewScheduleDefinition
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1008,6 +1018,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
         [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
       [Justification <String>]: Justification left by the reviewer when they made the decision.
+      [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Description <String>]: 
+        [DisplayName <String>]: 
+        [Id <String>]: 
+        [Type <String>]: 
       [Principal <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -1024,6 +1040,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
       [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
         [(Any) <Object>]: This indicates any property can be added to this object.
+        [Description <String>]: 
         [DisplayName <String>]: Display name of the resource
         [Id <String>]: Identifier of the resource
         [Type <String>]: Type of resource.
@@ -1202,7 +1219,7 @@ The typical states include Initializing, NotStarted, Starting, InProgress, Compl
  Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using delta.
@@ -1227,7 +1244,7 @@ Examples include MicrosoftGraph and ARM.
   [ReviewerId <String>]: The identifier of the reviewer.
   [ScopeType <String>]: accessReviewReviewerScopeType
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1271,6 +1288,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -1355,6 +1373,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
       [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
     [Justification <String>]: Justification left by the reviewer when they made the decision.
+    [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [Id <String>]: 
+      [Type <String>]: 
     [Principal <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -1371,6 +1395,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
     [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: 
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Identifier of the resource
       [Type <String>]: Type of resource.
@@ -1454,7 +1479,7 @@ Examples include MicrosoftGraph and ARM.
   [ReviewerId <String>]: The identifier of the reviewer.
   [ScopeType <String>]: accessReviewReviewerScopeType
 
-SETTINGS `<IMicrosoftGraphAccessReviewScheduleSettings>`: accessReviewScheduleSettings
+SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>: accessReviewScheduleSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]: Optional field.
 Describes the  actions to take once a review is complete.
@@ -1572,27 +1597,4 @@ Required.
 
 ## RELATED LINKS
 
-- [Update-MgIdentityGovernanceAccessReviewUnifiedDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinition)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifieddefinition)

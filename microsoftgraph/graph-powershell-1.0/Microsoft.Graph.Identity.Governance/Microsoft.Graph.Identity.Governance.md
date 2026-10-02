@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 63f9f24f-3c9c-400f-a577-a2e5a2a365c2
+Module Guid: 0b164235-aeb1-403b-a0ae-7514127fca44
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,15 +23,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAgreement](Get-MgAgreement.md)
 
-### [Get-MgAgreement](Get-MgAgreement.md)
-
-### [Get-MgAgreementAcceptance](Get-MgAgreementAcceptance.md)
-
 ### [Get-MgAgreementAcceptance](Get-MgAgreementAcceptance.md)
 
 ### [Get-MgAgreementAcceptanceCount](Get-MgAgreementAcceptanceCount.md)
-
-### [Get-MgAgreementFile](Get-MgAgreementFile.md)
 
 ### [Get-MgAgreementFile](Get-MgAgreementFile.md)
 
@@ -39,11 +33,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAgreementFileLocalization](Get-MgAgreementFileLocalization.md)
 
-### [Get-MgAgreementFileLocalization](Get-MgAgreementFileLocalization.md)
-
 ### [Get-MgAgreementFileLocalizationCount](Get-MgAgreementFileLocalizationCount.md)
-
-### [Get-MgAgreementFileLocalizationVersion](Get-MgAgreementFileLocalizationVersion.md)
 
 ### [Get-MgAgreementFileLocalizationVersion](Get-MgAgreementFileLocalizationVersion.md)
 
@@ -51,11 +41,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
 
-### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
-
 ### [Get-MgAgreementFileVersionCount](Get-MgAgreementFileVersionCount.md)
-
-### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
 
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
 
@@ -65,11 +51,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
 
-### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-
 ### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStageCount](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStageCount.md)
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 
@@ -87,10 +69,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleWith](Get-MgEntitlementManagementAccessPackageIncompatibleWith.md)
 
-### [Get-MgEntitlementManagementAccessPackageIncompatibleWith](Get-MgEntitlementManagementAccessPackageIncompatibleWith.md)
-
-### [Get-MgEntitlementManagementAccessPackageSuggestion](Get-MgEntitlementManagementAccessPackageSuggestion.md)
-
 ### [Get-MgEntitlementManagementAccessPackageSuggestion](Get-MgEntitlementManagementAccessPackageSuggestion.md)
 
 ### [Get-MgEntitlementManagementAccessPackageSuggestionAccessPackage](Get-MgEntitlementManagementAccessPackageSuggestionAccessPackage.md)
@@ -99,13 +77,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementAssignment](Get-MgEntitlementManagementAssignment.md)
 
-### [Get-MgEntitlementManagementAssignment](Get-MgEntitlementManagementAssignment.md)
-
 ### [Get-MgEntitlementManagementAssignmentAdditional](Get-MgEntitlementManagementAssignmentAdditional.md)
 
 ### [Get-MgEntitlementManagementAssignmentCount](Get-MgEntitlementManagementAssignmentCount.md)
-
-### [Get-MgEntitlementManagementAssignmentPolicy](Get-MgEntitlementManagementAssignmentPolicy.md)
 
 ### [Get-MgEntitlementManagementAssignmentPolicy](Get-MgEntitlementManagementAssignmentPolicy.md)
 
@@ -117,13 +91,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting](Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting.md)
 
-### [Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting](Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting.md)
-
 ### [Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCount](Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCount.md)
 
 ### [Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension](Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension.md)
-
-### [Get-MgEntitlementManagementAssignmentPolicyQuestion](Get-MgEntitlementManagementAssignmentPolicyQuestion.md)
 
 ### [Get-MgEntitlementManagementAssignmentPolicyQuestion](Get-MgEntitlementManagementAssignmentPolicyQuestion.md)
 
@@ -131,11 +101,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementAssignmentRequest](Get-MgEntitlementManagementAssignmentRequest.md)
 
-### [Get-MgEntitlementManagementAssignmentRequest](Get-MgEntitlementManagementAssignmentRequest.md)
-
 ### [Get-MgEntitlementManagementAssignmentRequestCount](Get-MgEntitlementManagementAssignmentRequestCount.md)
-
-### [Get-MgEntitlementManagementAvailableAccessPackage](Get-MgEntitlementManagementAvailableAccessPackage.md)
 
 ### [Get-MgEntitlementManagementAvailableAccessPackage](Get-MgEntitlementManagementAvailableAccessPackage.md)
 
@@ -143,11 +109,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScope](Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScope.md)
 
-### [Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScope](Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScope.md)
-
 ### [Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScopeCount](Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScopeCount.md)
-
-### [Get-MgEntitlementManagementCatalog](Get-MgEntitlementManagementCatalog.md)
 
 ### [Get-MgEntitlementManagementCatalog](Get-MgEntitlementManagementCatalog.md)
 
@@ -157,11 +119,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogCustomWorkflowExtension](Get-MgEntitlementManagementCatalogCustomWorkflowExtension.md)
 
-### [Get-MgEntitlementManagementCatalogCustomWorkflowExtension](Get-MgEntitlementManagementCatalogCustomWorkflowExtension.md)
-
 ### [Get-MgEntitlementManagementCatalogCustomWorkflowExtensionCount](Get-MgEntitlementManagementCatalogCustomWorkflowExtensionCount.md)
-
-### [Get-MgEntitlementManagementCatalogResource](Get-MgEntitlementManagementCatalogResource.md)
 
 ### [Get-MgEntitlementManagementCatalogResource](Get-MgEntitlementManagementCatalogResource.md)
 
@@ -170,8 +128,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgEntitlementManagementCatalogResourceEnvironment](Get-MgEntitlementManagementCatalogResourceEnvironment.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceExternalOriginResourceConnector](Get-MgEntitlementManagementCatalogResourceExternalOriginResourceConnector.md)
-
-### [Get-MgEntitlementManagementCatalogResourceRole](Get-MgEntitlementManagementCatalogResourceRole.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceRole](Get-MgEntitlementManagementCatalogResourceRole.md)
 
@@ -185,8 +141,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScope](Get-MgEntitlementManagementCatalogResourceRoleResourceScope.md)
 
-### [Get-MgEntitlementManagementCatalogResourceRoleResourceScope](Get-MgEntitlementManagementCatalogResourceRoleResourceScope.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeCount](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResource](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResource.md)
@@ -197,17 +151,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRole](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRole](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRoleCount](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceRoleResourceScopeResourceUploadSessionFile.md)
 
@@ -217,19 +165,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSession](Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSession](Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFileContent](Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFileCount](Get-MgEntitlementManagementCatalogResourceRoleResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementCatalogResourceScope](Get-MgEntitlementManagementCatalogResourceScope.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceScope](Get-MgEntitlementManagementCatalogResourceScope.md)
 
@@ -243,8 +185,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRole](Get-MgEntitlementManagementCatalogResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementCatalogResourceScopeResourceRole](Get-MgEntitlementManagementCatalogResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleCount](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResource](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResource.md)
@@ -255,17 +195,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceScope](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceScope.md)
 
-### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceScope](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceScope.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceScopeCount](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceUploadSessionFile.md)
 
@@ -275,11 +209,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSession](Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSession](Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceScopeResourceUploadSessionFile.md)
 
@@ -289,19 +219,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementCatalogResourceUploadSession](Get-MgEntitlementManagementCatalogResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementCatalogResourceUploadSession](Get-MgEntitlementManagementCatalogResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementCatalogResourceUploadSessionCount](Get-MgEntitlementManagementCatalogResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementCatalogResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceUploadSessionFile](Get-MgEntitlementManagementCatalogResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceUploadSessionFileContent](Get-MgEntitlementManagementCatalogResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementCatalogResourceUploadSessionFileCount](Get-MgEntitlementManagementCatalogResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
 
 ### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
 
@@ -321,11 +245,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementControlConfiguration](Get-MgEntitlementManagementControlConfiguration.md)
 
-### [Get-MgEntitlementManagementControlConfiguration](Get-MgEntitlementManagementControlConfiguration.md)
-
 ### [Get-MgEntitlementManagementControlConfigurationCount](Get-MgEntitlementManagementControlConfigurationCount.md)
-
-### [Get-MgEntitlementManagementExternalOriginResourceConnector](Get-MgEntitlementManagementExternalOriginResourceConnector.md)
 
 ### [Get-MgEntitlementManagementExternalOriginResourceConnector](Get-MgEntitlementManagementExternalOriginResourceConnector.md)
 
@@ -333,11 +253,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResource](Get-MgEntitlementManagementResource.md)
 
-### [Get-MgEntitlementManagementResource](Get-MgEntitlementManagementResource.md)
-
 ### [Get-MgEntitlementManagementResourceCount](Get-MgEntitlementManagementResourceCount.md)
-
-### [Get-MgEntitlementManagementResourceEnvironment](Get-MgEntitlementManagementResourceEnvironment.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironment](Get-MgEntitlementManagementResourceEnvironment.md)
 
@@ -345,13 +261,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResource](Get-MgEntitlementManagementResourceEnvironmentResource.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResource](Get-MgEntitlementManagementResourceEnvironmentResource.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceCount](Get-MgEntitlementManagementResourceEnvironmentResourceCount.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceExternalOriginResourceConnector](Get-MgEntitlementManagementResourceEnvironmentResourceExternalOriginResourceConnector.md)
-
-### [Get-MgEntitlementManagementResourceEnvironmentResourceRole](Get-MgEntitlementManagementResourceEnvironmentResourceRole.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRole](Get-MgEntitlementManagementResourceEnvironmentResourceRole.md)
 
@@ -365,8 +277,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScope](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScope.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScope](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScope.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeCount](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResource](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResource.md)
@@ -377,11 +287,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceScopeResourceUploadSessionFile.md)
 
@@ -391,19 +297,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFileContent](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFileCount](Get-MgEntitlementManagementResourceEnvironmentResourceRoleResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementResourceEnvironmentResourceScope](Get-MgEntitlementManagementResourceEnvironmentResourceScope.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScope](Get-MgEntitlementManagementResourceEnvironmentResourceScope.md)
 
@@ -417,8 +317,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRole](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRole](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleCount](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResource](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResource.md)
@@ -429,11 +327,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRoleResourceUploadSessionFile.md)
 
@@ -443,11 +337,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceScopeResourceUploadSessionFile.md)
 
@@ -457,11 +347,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceEnvironmentResourceUploadSession](Get-MgEntitlementManagementResourceEnvironmentResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceUploadSessionCount](Get-MgEntitlementManagementResourceEnvironmentResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceEnvironmentResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceEnvironmentResourceUploadSessionFile](Get-MgEntitlementManagementResourceEnvironmentResourceUploadSessionFile.md)
 
@@ -473,11 +359,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequest](Get-MgEntitlementManagementResourceRequest.md)
 
-### [Get-MgEntitlementManagementResourceRequest](Get-MgEntitlementManagementResourceRequest.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalog](Get-MgEntitlementManagementResourceRequestCatalog.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogAccessPackage](Get-MgEntitlementManagementResourceRequestCatalogAccessPackage.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogAccessPackage](Get-MgEntitlementManagementResourceRequestCatalogAccessPackage.md)
 
@@ -485,11 +367,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension](Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension](Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtensionCount](Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtensionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResource](Get-MgEntitlementManagementResourceRequestCatalogResource.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResource](Get-MgEntitlementManagementResourceRequestCatalogResource.md)
 
@@ -498,8 +376,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceEnvironment](Get-MgEntitlementManagementResourceRequestCatalogResourceEnvironment.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceExternalOriginResourceConnector](Get-MgEntitlementManagementResourceRequestCatalogResourceExternalOriginResourceConnector.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceRole](Get-MgEntitlementManagementResourceRequestCatalogResourceRole.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRole](Get-MgEntitlementManagementResourceRequestCatalogResourceRole.md)
 
@@ -513,8 +389,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScope](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScope.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScope](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScope.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeCount](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResource](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResource.md)
@@ -525,17 +399,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceRole](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceRole](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceRoleCount](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceScopeResourceUploadSessionFile.md)
 
@@ -545,19 +413,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFileContent](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFileCount](Get-MgEntitlementManagementResourceRequestCatalogResourceRoleResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceScope](Get-MgEntitlementManagementResourceRequestCatalogResourceScope.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScope](Get-MgEntitlementManagementResourceRequestCatalogResourceScope.md)
 
@@ -571,8 +433,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleCount](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResource](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResource.md)
@@ -583,17 +443,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceScope](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceScope.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceScope](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceScope.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceScopeCount](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRoleResourceUploadSessionFile.md)
 
@@ -603,11 +457,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceUploadSessionFile.md)
 
@@ -617,11 +467,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSession](Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestCatalogResourceUploadSessionFile.md)
 
@@ -639,8 +485,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRole](Get-MgEntitlementManagementResourceRequestResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceRequestResourceRole](Get-MgEntitlementManagementResourceRequestResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleCount](Get-MgEntitlementManagementResourceRequestResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResource](Get-MgEntitlementManagementResourceRequestResourceRoleResource.md)
@@ -648,8 +492,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceEnvironment](Get-MgEntitlementManagementResourceRequestResourceRoleResourceEnvironment.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceExternalOriginResourceConnector](Get-MgEntitlementManagementResourceRequestResourceRoleResourceExternalOriginResourceConnector.md)
-
-### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScope](Get-MgEntitlementManagementResourceRequestResourceRoleResourceScope.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScope](Get-MgEntitlementManagementResourceRequestResourceRoleResourceScope.md)
 
@@ -663,11 +505,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceRoleResourceScopeResourceUploadSessionFile.md)
 
@@ -677,19 +515,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFileContent](Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFileCount](Get-MgEntitlementManagementResourceRequestResourceRoleResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestResourceScope](Get-MgEntitlementManagementResourceRequestResourceScope.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceScope](Get-MgEntitlementManagementResourceRequestResourceScope.md)
 
@@ -703,8 +535,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRole](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRole](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleCount](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResource](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResource.md)
@@ -715,11 +545,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceScopeResourceRoleResourceUploadSessionFile.md)
 
@@ -729,11 +555,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceScopeResourceUploadSessionFile.md)
 
@@ -743,19 +565,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRequestResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRequestResourceUploadSession](Get-MgEntitlementManagementResourceRequestResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRequestResourceUploadSessionCount](Get-MgEntitlementManagementResourceRequestResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRequestResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceUploadSessionFile](Get-MgEntitlementManagementResourceRequestResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceUploadSessionFileContent](Get-MgEntitlementManagementResourceRequestResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementResourceRequestResourceUploadSessionFileCount](Get-MgEntitlementManagementResourceRequestResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementResourceRole](Get-MgEntitlementManagementResourceRole.md)
 
 ### [Get-MgEntitlementManagementResourceRole](Get-MgEntitlementManagementResourceRole.md)
 
@@ -769,8 +585,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleResourceScope](Get-MgEntitlementManagementResourceRoleResourceScope.md)
 
-### [Get-MgEntitlementManagementResourceRoleResourceScope](Get-MgEntitlementManagementResourceRoleResourceScope.md)
-
 ### [Get-MgEntitlementManagementResourceRoleResourceScopeCount](Get-MgEntitlementManagementResourceRoleResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementResourceRoleResourceScopeResource](Get-MgEntitlementManagementResourceRoleResourceScopeResource.md)
@@ -781,11 +595,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleResourceScopeResourceUploadSessionFile.md)
 
@@ -795,19 +605,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleResourceUploadSessionFileContent](Get-MgEntitlementManagementResourceRoleResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementResourceRoleResourceUploadSessionFileCount](Get-MgEntitlementManagementResourceRoleResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleScope](Get-MgEntitlementManagementResourceRoleScope.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScope](Get-MgEntitlementManagementResourceRoleScope.md)
 
@@ -821,8 +625,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRole](Get-MgEntitlementManagementResourceRoleScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeResourceRole](Get-MgEntitlementManagementResourceRoleScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleCount](Get-MgEntitlementManagementResourceRoleScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResource](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResource.md)
@@ -833,17 +635,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScope](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScope.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScope](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScope.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScopeCount](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeResourceRoleResourceUploadSessionFile.md)
 
@@ -853,17 +649,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceScope](Get-MgEntitlementManagementResourceRoleScopeResourceScope.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeResourceScope](Get-MgEntitlementManagementResourceRoleScopeResourceScope.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceScopeCount](Get-MgEntitlementManagementResourceRoleScopeResourceScopeCount.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceRoleScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeResourceUploadSessionFile.md)
 
@@ -881,11 +671,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceRole](Get-MgEntitlementManagementResourceRoleScopeRoleResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceRole](Get-MgEntitlementManagementResourceRoleScopeRoleResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceRoleCount](Get-MgEntitlementManagementResourceRoleScopeRoleResourceRoleCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScope](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScope.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScope](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScope.md)
 
@@ -899,17 +685,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceRole](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceRole](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceRoleCount](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeRoleResourceScopeResourceUploadSessionFile.md)
 
@@ -919,19 +699,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSession](Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFileContent](Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFileContent.md)
 
 ### [Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFileCount](Get-MgEntitlementManagementResourceRoleScopeRoleResourceUploadSessionFileCount.md)
-
-### [Get-MgEntitlementManagementResourceScope](Get-MgEntitlementManagementResourceScope.md)
 
 ### [Get-MgEntitlementManagementResourceScope](Get-MgEntitlementManagementResourceScope.md)
 
@@ -945,8 +719,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceScopeResourceRole](Get-MgEntitlementManagementResourceScopeResourceRole.md)
 
-### [Get-MgEntitlementManagementResourceScopeResourceRole](Get-MgEntitlementManagementResourceScopeResourceRole.md)
-
 ### [Get-MgEntitlementManagementResourceScopeResourceRoleCount](Get-MgEntitlementManagementResourceScopeResourceRoleCount.md)
 
 ### [Get-MgEntitlementManagementResourceScopeResourceRoleResource](Get-MgEntitlementManagementResourceScopeResourceRoleResource.md)
@@ -957,11 +729,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSession](Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSessionCount](Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSessionFile](Get-MgEntitlementManagementResourceScopeResourceRoleResourceUploadSessionFile.md)
 
@@ -971,11 +739,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceScopeResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceScopeResourceUploadSession](Get-MgEntitlementManagementResourceScopeResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceScopeResourceUploadSessionCount](Get-MgEntitlementManagementResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceScopeResourceUploadSessionFile](Get-MgEntitlementManagementResourceScopeResourceUploadSessionFile.md)
 
@@ -985,11 +749,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementResourceUploadSession](Get-MgEntitlementManagementResourceUploadSession.md)
 
-### [Get-MgEntitlementManagementResourceUploadSession](Get-MgEntitlementManagementResourceUploadSession.md)
-
 ### [Get-MgEntitlementManagementResourceUploadSessionCount](Get-MgEntitlementManagementResourceUploadSessionCount.md)
-
-### [Get-MgEntitlementManagementResourceUploadSessionFile](Get-MgEntitlementManagementResourceUploadSessionFile.md)
 
 ### [Get-MgEntitlementManagementResourceUploadSessionFile](Get-MgEntitlementManagementResourceUploadSessionFile.md)
 
@@ -1001,8 +761,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgEntitlementManagementSubject](Get-MgEntitlementManagementSubject.md)
 
-### [Get-MgEntitlementManagementSubject](Get-MgEntitlementManagementSubject.md)
-
 ### [Get-MgEntitlementManagementSubjectByObjectId](Get-MgEntitlementManagementSubjectByObjectId.md)
 
 ### [Get-MgEntitlementManagementSubjectConnectedOrganization](Get-MgEntitlementManagementSubjectConnectedOrganization.md)
@@ -1011,15 +769,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinition](Get-MgIdentityGovernanceAccessReviewDefinition.md)
 
-### [Get-MgIdentityGovernanceAccessReviewDefinition](Get-MgIdentityGovernanceAccessReviewDefinition.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionCount](Get-MgIdentityGovernanceAccessReviewDefinitionCount.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
-
-### [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](Get-MgIdentityGovernanceAccessReviewDefinitionInstance.md)
-
-### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer.md)
 
@@ -1029,11 +781,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
 
-### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionCount](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsight.md)
 
@@ -1041,11 +789,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
 
-### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageCount](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision.md)
 
@@ -1053,15 +797,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight.md)
 
-### [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionInsight.md)
-
-### [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](Get-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](Get-MgIdentityGovernanceAccessReviewHistoryDefinition.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionCount](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance.md)
 
@@ -1071,11 +809,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDecision](Get-MgIdentityGovernanceAccessReviewUnifiedDecision.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDecision](Get-MgIdentityGovernanceAccessReviewUnifiedDecision.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDecisionCount](Get-MgIdentityGovernanceAccessReviewUnifiedDecisionCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedDecisionInsight.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedDecisionInsight.md)
 
@@ -1083,15 +817,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinition](Get-MgIdentityGovernanceAccessReviewUnifiedDefinition.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinition](Get-MgIdentityGovernanceAccessReviewUnifiedDefinition.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionCount](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionCount.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstance](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstance.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstance](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstance.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceContactedReviewer.md)
 
@@ -1101,11 +829,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecision.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionCount](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceDecisionInsight.md)
 
@@ -1113,11 +837,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStage.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageCount](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision.md)
 
@@ -1125,15 +845,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsight.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsightCount](Get-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecisionInsightCount.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstance](Get-MgIdentityGovernanceAccessReviewUnifiedInstance.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedInstance](Get-MgIdentityGovernanceAccessReviewUnifiedInstance.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceContactedReviewer.md)
 
@@ -1143,11 +857,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionCount](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceDecisionInsight.md)
 
@@ -1155,11 +865,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStage](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStage.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStage](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStage.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageCount](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageCount.md)
-
-### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecision.md)
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecision](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecision.md)
 
@@ -1167,11 +873,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight.md)
 
-### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsight.md)
-
 ### [Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsightCount](Get-MgIdentityGovernanceAccessReviewUnifiedInstanceStageDecisionInsightCount.md)
-
-### [Get-MgIdentityGovernanceAppConsentRequest](Get-MgIdentityGovernanceAppConsentRequest.md)
 
 ### [Get-MgIdentityGovernanceAppConsentRequest](Get-MgIdentityGovernanceAppConsentRequest.md)
 
@@ -1179,11 +881,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
 
-### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest.md)
-
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval.md)
-
-### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage.md)
 
 ### [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage.md)
 
@@ -1193,10 +891,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalog](Get-MgIdentityGovernanceCatalog.md)
 
-### [Get-MgIdentityGovernanceCatalog](Get-MgIdentityGovernanceCatalog.md)
-
-### [Get-MgIdentityGovernanceCatalogAccessPackage](Get-MgIdentityGovernanceCatalogAccessPackage.md)
-
 ### [Get-MgIdentityGovernanceCatalogAccessPackage](Get-MgIdentityGovernanceCatalogAccessPackage.md)
 
 ### [Get-MgIdentityGovernanceCatalogAccessPackageCount](Get-MgIdentityGovernanceCatalogAccessPackageCount.md)
@@ -1205,11 +899,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogCustomWorkflowExtension](Get-MgIdentityGovernanceCatalogCustomWorkflowExtension.md)
 
-### [Get-MgIdentityGovernanceCatalogCustomWorkflowExtension](Get-MgIdentityGovernanceCatalogCustomWorkflowExtension.md)
-
 ### [Get-MgIdentityGovernanceCatalogCustomWorkflowExtensionCount](Get-MgIdentityGovernanceCatalogCustomWorkflowExtensionCount.md)
-
-### [Get-MgIdentityGovernanceCatalogResource](Get-MgIdentityGovernanceCatalogResource.md)
 
 ### [Get-MgIdentityGovernanceCatalogResource](Get-MgIdentityGovernanceCatalogResource.md)
 
@@ -1218,8 +908,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernanceCatalogResourceEnvironment](Get-MgIdentityGovernanceCatalogResourceEnvironment.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceExternalOriginResourceConnector](Get-MgIdentityGovernanceCatalogResourceExternalOriginResourceConnector.md)
-
-### [Get-MgIdentityGovernanceCatalogResourceRole](Get-MgIdentityGovernanceCatalogResourceRole.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceRole](Get-MgIdentityGovernanceCatalogResourceRole.md)
 
@@ -1233,8 +921,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScope](Get-MgIdentityGovernanceCatalogResourceRoleResourceScope.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScope](Get-MgIdentityGovernanceCatalogResourceRoleResourceScope.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeCount](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeCount.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResource](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResource.md)
@@ -1245,17 +931,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRole](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRole.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRole](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRole.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRoleCount](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceRoleCount.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSession.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSession.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSessionCount](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceRoleResourceScopeResourceUploadSessionFile.md)
 
@@ -1265,19 +945,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSession.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSession.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionCount](Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFileContent](Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFileContent.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFileCount](Get-MgIdentityGovernanceCatalogResourceRoleResourceUploadSessionFileCount.md)
-
-### [Get-MgIdentityGovernanceCatalogResourceScope](Get-MgIdentityGovernanceCatalogResourceScope.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceScope](Get-MgIdentityGovernanceCatalogResourceScope.md)
 
@@ -1291,8 +965,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRole](Get-MgIdentityGovernanceCatalogResourceScopeResourceRole.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRole](Get-MgIdentityGovernanceCatalogResourceScopeResourceRole.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleCount](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleCount.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResource](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResource.md)
@@ -1303,17 +975,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceScope](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceScope.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceScope](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceScope.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceScopeCount](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceScopeCount.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSession.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSession.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSessionCount](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSessionCount.md)
-
-### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSessionFile.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceScopeResourceRoleResourceUploadSessionFile.md)
 
@@ -1323,11 +989,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSession.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSession.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSessionCount](Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSessionCount.md)
-
-### [Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSessionFile.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceScopeResourceUploadSessionFile.md)
 
@@ -1337,11 +999,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceCatalogResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceUploadSession.md)
 
-### [Get-MgIdentityGovernanceCatalogResourceUploadSession](Get-MgIdentityGovernanceCatalogResourceUploadSession.md)
-
 ### [Get-MgIdentityGovernanceCatalogResourceUploadSessionCount](Get-MgIdentityGovernanceCatalogResourceUploadSessionCount.md)
-
-### [Get-MgIdentityGovernanceCatalogResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceUploadSessionFile.md)
 
 ### [Get-MgIdentityGovernanceCatalogResourceUploadSessionFile](Get-MgIdentityGovernanceCatalogResourceUploadSessionFile.md)
 
@@ -1350,10 +1008,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernanceCatalogResourceUploadSessionFileCount](Get-MgIdentityGovernanceCatalogResourceUploadSessionFileCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflow](Get-MgIdentityGovernanceLifecycleWorkflow.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflow](Get-MgIdentityGovernanceLifecycleWorkflow.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget.md)
 
@@ -1368,8 +1022,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 
@@ -1395,10 +1047,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowAdministrationScopeTarget.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount.md)
@@ -1407,39 +1055,21 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowPreviewScope.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowSubjectProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowSubjectProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowSubjectProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowSubjectProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope](Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope](Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope.md)
 
@@ -1457,11 +1087,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowPreviewScope](Get-MgIdentityGovernanceLifecycleWorkflowPreviewScope.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowPreviewScope](Get-MgIdentityGovernanceLifecycleWorkflowPreviewScope.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowPreviewScopeCount](Get-MgIdentityGovernanceLifecycleWorkflowPreviewScopeCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowRun.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowRun.md)
 
@@ -1469,11 +1095,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRun.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRunCount](Get-MgIdentityGovernanceLifecycleWorkflowRunReprocessedRunCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResult.md)
 
@@ -1481,11 +1103,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRun.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRunCount](Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultReprocessedRunCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunSubjectProcessingResultTaskProcessingResult.md)
 
@@ -1503,8 +1121,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultCount](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject.md)
@@ -1519,11 +1135,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultCount](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultReprocessedRun.md)
 
@@ -1539,11 +1151,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowSetting](Get-MgIdentityGovernanceLifecycleWorkflowSetting.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResult.md)
 
@@ -1551,11 +1159,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRun.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRun.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRunCount](Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultReprocessedRunCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResultTaskProcessingResult.md)
 
@@ -1573,17 +1177,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTask](Get-MgIdentityGovernanceLifecycleWorkflowTask.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowTask](Get-MgIdentityGovernanceLifecycleWorkflowTask.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskCount](Get-MgIdentityGovernanceLifecycleWorkflowTaskCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition](Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition](Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinitionCount](Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinitionCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult.md)
 
@@ -1601,15 +1199,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReport](Get-MgIdentityGovernanceLifecycleWorkflowTaskReport.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReport](Get-MgIdentityGovernanceLifecycleWorkflowTaskReport.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportCount](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTask](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTask.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
 
@@ -1627,17 +1221,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTemplate](Get-MgIdentityGovernanceLifecycleWorkflowTemplate.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowTemplate](Get-MgIdentityGovernanceLifecycleWorkflowTemplate.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateCount](Get-MgIdentityGovernanceLifecycleWorkflowTemplateCount.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskCount](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
 
@@ -1655,11 +1243,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultCount](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultReprocessedRun.md)
 
@@ -1675,13 +1259,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowVersion.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowVersion.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget](Get-MgIdentityGovernanceLifecycleWorkflowVersionAdministrationScopeTarget.md)
 
@@ -1707,11 +1285,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgIdentityGovernanceLifecycleWorkflowVersionTask.md)
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgIdentityGovernanceLifecycleWorkflowVersionTask.md)
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskCount](Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskCount.md)
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult.md)
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult.md)
 
@@ -1733,17 +1307,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
 
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
-
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalCount.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage.md)
 
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage.md)
-
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStageCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStageCount.md)
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
 
@@ -1756,8 +1324,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount.md)
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
 
@@ -1777,8 +1343,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
 
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
-
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestCount.md)
@@ -1795,8 +1359,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
 
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
-
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup.md)
@@ -1804,8 +1366,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount.md)
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 
@@ -1823,8 +1383,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
 
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
-
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestCount.md)
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup.md)
@@ -1837,11 +1395,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestTargetSchedule](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestTargetSchedule.md)
 
-### [Get-MgIdentityGovernanceTermsOfUseAgreement](Get-MgIdentityGovernanceTermsOfUseAgreement.md)
+### [Get-MgIdentityGovernancePrivilegedAccessGroupResource](Get-MgIdentityGovernancePrivilegedAccessGroupResource.md)
+
+### [Get-MgIdentityGovernancePrivilegedAccessGroupResourceCount](Get-MgIdentityGovernancePrivilegedAccessGroupResourceCount.md)
 
 ### [Get-MgIdentityGovernanceTermsOfUseAgreement](Get-MgIdentityGovernanceTermsOfUseAgreement.md)
-
-### [Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance](Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 
 ### [Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance](Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance.md)
 
@@ -1851,11 +1409,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceTermsOfUseAgreementFile](Get-MgIdentityGovernanceTermsOfUseAgreementFile.md)
 
-### [Get-MgIdentityGovernanceTermsOfUseAgreementFile](Get-MgIdentityGovernanceTermsOfUseAgreementFile.md)
-
 ### [Get-MgIdentityGovernanceTermsOfUseAgreementFileCount](Get-MgIdentityGovernanceTermsOfUseAgreementFileCount.md)
-
-### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 
 ### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization.md)
 
@@ -1863,11 +1417,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
 
-### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion.md)
-
 ### [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount](Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount.md)
-
-### [Get-MgIdentityGovernanceTermsOfUseAgreementFileVersion](Get-MgIdentityGovernanceTermsOfUseAgreementFileVersion.md)
 
 ### [Get-MgIdentityGovernanceTermsOfUseAgreementFileVersion](Get-MgIdentityGovernanceTermsOfUseAgreementFileVersion.md)
 
@@ -1877,17 +1427,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgRoleManagementDirectoryResourceNamespace](Get-MgRoleManagementDirectoryResourceNamespace.md)
 
-### [Get-MgRoleManagementDirectoryResourceNamespace](Get-MgRoleManagementDirectoryResourceNamespace.md)
-
 ### [Get-MgRoleManagementDirectoryResourceNamespaceCount](Get-MgRoleManagementDirectoryResourceNamespaceCount.md)
 
 ### [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
 
-### [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-
 ### [Get-MgRoleManagementDirectoryResourceNamespaceResourceActionCount](Get-MgRoleManagementDirectoryResourceNamespaceResourceActionCount.md)
-
-### [Get-MgRoleManagementDirectoryRoleAssignment](Get-MgRoleManagementDirectoryRoleAssignment.md)
 
 ### [Get-MgRoleManagementDirectoryRoleAssignment](Get-MgRoleManagementDirectoryRoleAssignment.md)
 
@@ -1903,8 +1447,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentSchedule](Get-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentSchedule](Get-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing.md)
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleAppScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleAppScope.md)
@@ -1912,8 +1454,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleCount](Get-MgRoleManagementDirectoryRoleAssignmentScheduleCount.md)
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope.md)
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 
@@ -1930,8 +1470,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal](Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal.md)
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 
@@ -1953,17 +1491,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgRoleManagementDirectoryRoleDefinition](Get-MgRoleManagementDirectoryRoleDefinition.md)
 
-### [Get-MgRoleManagementDirectoryRoleDefinition](Get-MgRoleManagementDirectoryRoleDefinition.md)
-
 ### [Get-MgRoleManagementDirectoryRoleDefinitionCount](Get-MgRoleManagementDirectoryRoleDefinitionCount.md)
 
 ### [Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
 
-### [Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
-
 ### [Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFromCount](Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFromCount.md)
-
-### [Get-MgRoleManagementDirectoryRoleEligibilitySchedule](Get-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
 
 ### [Get-MgRoleManagementDirectoryRoleEligibilitySchedule](Get-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
 
@@ -1972,8 +1504,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleCount](Get-MgRoleManagementDirectoryRoleEligibilityScheduleCount.md)
 
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope.md)
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
 
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
 
@@ -1988,8 +1518,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgRoleManagementDirectoryRoleEligibilitySchedulePrincipal](Get-MgRoleManagementDirectoryRoleEligibilitySchedulePrincipal.md)
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 
@@ -2011,17 +1539,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespace](Get-MgRoleManagementEntitlementManagementResourceNamespace.md)
 
-### [Get-MgRoleManagementEntitlementManagementResourceNamespace](Get-MgRoleManagementEntitlementManagementResourceNamespace.md)
-
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespaceCount](Get-MgRoleManagementEntitlementManagementResourceNamespaceCount.md)
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
 
-### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionCount](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionCount.md)
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignment](Get-MgRoleManagementEntitlementManagementRoleAssignment.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignment](Get-MgRoleManagementEntitlementManagementRoleAssignment.md)
 
@@ -2037,8 +1559,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope.md)
@@ -2046,8 +1566,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleCount](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleCount.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope.md)
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 
@@ -2064,8 +1582,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal.md)
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
 
@@ -2087,17 +1603,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgRoleManagementEntitlementManagementRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleDefinition.md)
 
-### [Get-MgRoleManagementEntitlementManagementRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleDefinition.md)
-
 ### [Get-MgRoleManagementEntitlementManagementRoleDefinitionCount](Get-MgRoleManagementEntitlementManagementRoleDefinitionCount.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
 
-### [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
-
 ### [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount](Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromCount.md)
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
 
@@ -2106,8 +1616,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleCount](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleCount.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope.md)
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 
@@ -2125,8 +1633,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
-
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestCount](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestCount.md)
@@ -2140,8 +1646,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule.md)
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
-
-### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
 
 ### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
 
@@ -2630,6 +2134,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 
 ### [New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
+
+### [New-MgIdentityGovernancePrivilegedAccessGroupResource](New-MgIdentityGovernancePrivilegedAccessGroupResource.md)
 
 ### [New-MgIdentityGovernanceTermsOfUseAgreement](New-MgIdentityGovernanceTermsOfUseAgreement.md)
 
@@ -3136,6 +2642,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 
 ### [Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
+
+### [Remove-MgIdentityGovernancePrivilegedAccessGroupResource](Remove-MgIdentityGovernancePrivilegedAccessGroupResource.md)
 
 ### [Remove-MgIdentityGovernanceTermsOfUseAgreement](Remove-MgIdentityGovernanceTermsOfUseAgreement.md)
 
@@ -3735,6 +3243,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
 
+### [Update-MgIdentityGovernancePrivilegedAccessGroupResource](Update-MgIdentityGovernancePrivilegedAccessGroupResource.md)
+
 ### [Update-MgIdentityGovernanceTermsOfUseAgreement](Update-MgIdentityGovernanceTermsOfUseAgreement.md)
 
 ### [Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance.md)
@@ -3798,23 +3308,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
