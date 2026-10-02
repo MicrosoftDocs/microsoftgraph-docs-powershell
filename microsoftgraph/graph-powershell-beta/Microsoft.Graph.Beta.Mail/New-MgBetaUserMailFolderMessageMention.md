@@ -72,16 +72,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to mentions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -804,6 +794,7 @@ MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention)
+
 
 
 

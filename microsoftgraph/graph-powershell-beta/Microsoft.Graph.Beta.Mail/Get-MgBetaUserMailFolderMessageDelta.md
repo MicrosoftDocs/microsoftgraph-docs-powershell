@@ -63,16 +63,6 @@ Using deltas allows you toincrementally maintain and synchronize a local store o
 | Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite,  |
 | Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -615,6 +605,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagedelta)
 - [](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-beta)
+
 
 
 
