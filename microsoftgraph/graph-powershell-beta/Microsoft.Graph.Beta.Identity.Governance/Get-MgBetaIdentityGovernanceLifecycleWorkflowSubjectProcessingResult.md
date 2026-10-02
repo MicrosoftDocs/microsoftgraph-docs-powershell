@@ -15,6 +15,9 @@ title: Get-MgBetaIdentityGovernanceLifecycleWorkflowSubjectProcessingResult
 
 Get subjectProcessingResults from identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowSubjectProcessingResult?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

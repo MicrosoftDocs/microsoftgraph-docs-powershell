@@ -15,6 +15,9 @@ title: Get-MgBetaEntitlementManagementControlConfiguration
 
 Represents the policies that control lifecycle and access to access packages across the organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementControlConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementControlConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

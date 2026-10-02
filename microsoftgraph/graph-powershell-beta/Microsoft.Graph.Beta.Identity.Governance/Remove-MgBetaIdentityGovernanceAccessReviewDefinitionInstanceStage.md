@@ -15,6 +15,9 @@ title: Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage
 
 Delete navigation property stages for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

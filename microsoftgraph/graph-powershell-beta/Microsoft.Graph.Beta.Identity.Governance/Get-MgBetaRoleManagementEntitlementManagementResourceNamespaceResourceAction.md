@@ -15,6 +15,9 @@ title: Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAct
 
 Operations that an authorized principal is allowed to perform.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

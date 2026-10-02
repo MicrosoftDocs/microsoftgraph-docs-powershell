@@ -15,6 +15,9 @@ title: New-MgBetaRoleManagementEntitlementManagementRoleAssignment
 
 Create a new unifiedRoleAssignment object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

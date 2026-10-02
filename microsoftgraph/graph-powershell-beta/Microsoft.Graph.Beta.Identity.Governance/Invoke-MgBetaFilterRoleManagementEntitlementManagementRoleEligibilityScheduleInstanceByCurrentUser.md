@@ -15,6 +15,9 @@ title: Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleEligibilitySche
 
 Get a list of the unifiedRoleEligibilityScheduleInstance objects and their properties associated with a particular principal object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
