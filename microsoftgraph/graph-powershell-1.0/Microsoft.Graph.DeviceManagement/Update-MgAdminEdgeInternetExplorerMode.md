@@ -48,16 +48,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property internetExplorerMode in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -534,6 +524,7 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode)
+
 
 
 
