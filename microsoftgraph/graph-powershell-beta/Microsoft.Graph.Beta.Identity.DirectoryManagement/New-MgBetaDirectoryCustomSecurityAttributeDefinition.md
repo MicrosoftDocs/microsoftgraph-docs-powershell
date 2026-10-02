@@ -710,8 +710,8 @@ If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)
-- [](https://learn.microsoft.com/graph/api/directory-post-customsecurityattributedefinitions?view=graph-rest-beta)
+- [New-MgBetaDirectoryCustomSecurityAttributeDefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinition)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-post-customsecurityattributedefinitions?view=graph-rest-beta)
 
 
 

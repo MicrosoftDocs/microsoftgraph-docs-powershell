@@ -384,7 +384,7 @@ BODYPARAMETER `<IPathsCdcc6IDirectoryImpactedresourcesMicrosoftGraphAddtagPostRe
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetabulkdirectoryimpactedresourcetag)
+- [Add-MgBetaBulkDirectoryImpactedResourceTag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetabulkdirectoryimpactedresourcetag)
 
 
 
