@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresourceaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescope
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope
 ---
@@ -74,6 +74,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property accessPackageResourceScopes in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -763,7 +773,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACCESSPACKAGERESOURCE `<IMicrosoftGraphAccessPackageResource>`: accessPackageResource
+ACCESSPACKAGERESOURCE <IMicrosoftGraphAccessPackageResource>: accessPackageResource
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -888,7 +898,7 @@ Supports $filter (eq).
     [Status <String>]: customDataProvidedResourceUploadStatus
   [Url <String>]: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
+BODYPARAMETER <IMicrosoftGraphAccessPackageResourceScope>: accessPackageResourceScope
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1014,7 +1024,7 @@ Supports $filter (eq).
   [RoleOriginId <String>]: The origin system for the role, if different.
   [Url <String>]: A resource locator for the scope.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1073,10 +1083,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
-  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
-  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -1134,27 +1140,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceCatalogAccessPackageResourceScopeAccessPackageResourceAccessPackageResourceRoleAccessPackageResourceAccessPackageResourceScope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresourceaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescope)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancecatalogaccesspackageresourcescopeaccesspackageresourceaccesspackageresourceroleaccesspackageresourceaccesspackageresourcescope)

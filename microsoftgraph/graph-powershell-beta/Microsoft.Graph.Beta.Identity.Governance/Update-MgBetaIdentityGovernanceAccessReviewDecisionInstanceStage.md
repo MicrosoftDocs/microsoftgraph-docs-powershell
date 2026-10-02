@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancestage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage
 ---
@@ -74,6 +74,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property stages in identityGovernance
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -668,7 +678,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewStage>`: accessReviewStage
+BODYPARAMETER <IMicrosoftGraphAccessReviewStage>: accessReviewStage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1335,7 +1345,7 @@ Examples include MicrosoftGraph and ARM.
   [ReviewerId <String>]: 
   [ScopeType <String>]: accessReviewReviewerScopeType
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -1394,10 +1404,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
-  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
-  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -1466,27 +1472,4 @@ Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancestage)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdecisioninstancestage)

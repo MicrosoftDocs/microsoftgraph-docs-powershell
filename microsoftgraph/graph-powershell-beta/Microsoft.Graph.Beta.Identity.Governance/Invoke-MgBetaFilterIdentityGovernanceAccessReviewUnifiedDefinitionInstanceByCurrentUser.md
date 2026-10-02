@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewunifieddefinitioninstancebycurrentuser
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByCurrentUser
 ---
@@ -48,13 +48,15 @@ This cmdlet has the following aliases,
 
 Returns all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -493,7 +495,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -552,10 +554,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [GovernanceRoleSettingId <String>]: The unique identifier of governanceRoleSetting
   [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
-  [LifecyclePolicyId <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyId1 <String>]: The unique identifier of lifecyclePolicy
-  [LifecyclePolicyPriorityConfigurationId <String>]: The unique identifier of lifecyclePolicyPriorityConfiguration
-  [LifecyclePolicyRuleId <String>]: The unique identifier of lifecyclePolicyRule
   [LongRunningOperationId <String>]: The unique identifier of longRunningOperation
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -613,28 +611,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaFilterIdentityGovernanceAccessReviewUnifiedDefinitionInstanceByCurrentUser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewunifieddefinitioninstancebycurrentuser)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewunifieddefinitioninstancebycurrentuser)
+- [](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta)
