@@ -71,6 +71,14 @@ This cmdlet has the following aliases,
 Assign a Microsoft Entra role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | RoleManagement.ReadWrite.Directory,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | RoleManagement.ReadWrite.Directory,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
