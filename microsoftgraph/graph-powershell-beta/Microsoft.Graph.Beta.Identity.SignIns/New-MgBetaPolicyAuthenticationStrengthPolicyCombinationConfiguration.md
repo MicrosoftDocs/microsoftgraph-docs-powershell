@@ -15,6 +15,9 @@ title: New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration
 
 Create new navigation property to combinationConfigurations for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

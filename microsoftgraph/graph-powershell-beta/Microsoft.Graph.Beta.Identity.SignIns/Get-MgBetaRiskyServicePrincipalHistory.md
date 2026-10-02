@@ -15,6 +15,9 @@ title: Get-MgBetaRiskyServicePrincipalHistory
 
 Represents the risk history of Microsoft Entra service principals.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipalHistory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

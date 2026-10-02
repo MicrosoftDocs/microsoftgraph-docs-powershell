@@ -15,6 +15,9 @@ title: Get-MgBetaInvitationInvitedUserServiceProvisioningError
 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInvitationInvitedUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaRiskyUser
 
 Delete navigation property riskyUsers for identityProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgRiskyUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
