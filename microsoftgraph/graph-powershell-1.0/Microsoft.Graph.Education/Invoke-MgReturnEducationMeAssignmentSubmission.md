@@ -52,16 +52,6 @@ Make the grade and feedback associated with this submission available to the stu
 This action changes the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -398,6 +388,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreturneducationmeassignmentsubmission)
 - [](https://learn.microsoft.com/graph/api/educationsubmission-return?view=graph-rest-1.0)
+
 
 
 
