@@ -15,6 +15,9 @@ title: Get-MgReportOffice365GroupActivityCount
 
 Get the number of group activities across group workloads.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
