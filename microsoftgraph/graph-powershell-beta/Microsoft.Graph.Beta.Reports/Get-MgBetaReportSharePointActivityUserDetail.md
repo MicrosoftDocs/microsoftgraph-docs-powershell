@@ -15,6 +15,9 @@ title: Get-MgBetaReportSharePointActivityUserDetail
 
 Invoke function getSharePointActivityUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSharePointActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointActivityUserDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

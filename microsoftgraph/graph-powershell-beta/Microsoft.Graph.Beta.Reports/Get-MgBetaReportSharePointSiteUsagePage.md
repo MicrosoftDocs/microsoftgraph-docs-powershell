@@ -15,6 +15,9 @@ title: Get-MgBetaReportSharePointSiteUsagePage
 
 Invoke function getSharePointSiteUsagePages
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSharePointSiteUsagePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
