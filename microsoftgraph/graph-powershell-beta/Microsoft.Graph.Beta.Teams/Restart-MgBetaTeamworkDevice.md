@@ -55,12 +55,17 @@ A device is restarted after the async operation completes successfully, which mi
 | Application | TeamworkDevice.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Teams
 
 Restart-MgBetaTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
+
+```
+This example shows how to use the Restart-MgBetaTeamworkDevice Cmdlet.
+
 
 ## PARAMETERS
 

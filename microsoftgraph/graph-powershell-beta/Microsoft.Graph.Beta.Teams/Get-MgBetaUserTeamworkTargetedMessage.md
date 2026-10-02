@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Get all targeted messages sent to a specific user in group chats and channels.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -535,6 +525,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworktargetedmessage)
 - [](https://learn.microsoft.com/graph/api/userteamwork-getalltargetedmessages?view=graph-rest-beta)
+
 
 
 

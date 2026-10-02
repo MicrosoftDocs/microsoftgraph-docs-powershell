@@ -47,16 +47,6 @@ This cmdlet has the following aliases,
 Create a new custom emoji in the teamwork messaging of the organization, which adds the custom emoji to Teams for the tenant.
 The emoji image is provided as base64-encoded content bytes.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -461,6 +451,7 @@ Must be unique and must not conflict with existing emoji names.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkmessagingcustomemoji)
 - [](https://learn.microsoft.com/graph/api/teamworkmessaging-post-customemojis?view=graph-rest-beta)
+
 
 
 
