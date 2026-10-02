@@ -57,6 +57,14 @@ This cmdlet has the following aliases,
 
 A container for configuration snapshot baselines.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | ConfigurationMonitoring.Read.All, ConfigurationMonitoring.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ConfigurationMonitoring.Read.All, ConfigurationMonitoring.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
