@@ -61,16 +61,6 @@ This cmdlet has the following aliases,
 A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or other externalGroups as members.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -612,6 +602,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmember)
+
+
 
 
 
