@@ -462,8 +462,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
-- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-delete-approvedclientapps?view=graph-rest-beta)
+- [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-delete-approvedclientapps?view=graph-rest-beta)
 
 
 

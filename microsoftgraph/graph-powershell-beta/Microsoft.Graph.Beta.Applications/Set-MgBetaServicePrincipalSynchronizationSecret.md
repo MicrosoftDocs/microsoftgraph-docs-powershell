@@ -551,8 +551,8 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret)
-- [](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta)
+- [Set-MgBetaServicePrincipalSynchronizationSecret](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationsecret)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/synchronization-serviceprincipal-put-synchronization?view=graph-rest-beta)
 
 
 

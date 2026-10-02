@@ -610,9 +610,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
-- [](https://learn.microsoft.com/graph/api/approvedclientapp-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-approvedclientapps?view=graph-rest-beta)
+- [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationApprovedClientApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationapprovedclientapp)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/approvedclientapp-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-approvedclientapps?view=graph-rest-beta)
 
 
 

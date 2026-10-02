@@ -702,8 +702,8 @@ Optional.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey)
-- [](https://learn.microsoft.com/graph/api/application-addkey?view=graph-rest-beta)
+- [Add-MgBetaApplicationKey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationkey)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/application-addkey?view=graph-rest-beta)
 
 
 
