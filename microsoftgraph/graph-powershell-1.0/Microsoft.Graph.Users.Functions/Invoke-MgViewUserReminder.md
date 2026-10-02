@@ -49,20 +49,6 @@ This cmdlet has the following aliases,
 
 Invoke function reminderView
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-{{ Add output here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -467,6 +453,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
 - [](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-1.0)
+
 
 
 
