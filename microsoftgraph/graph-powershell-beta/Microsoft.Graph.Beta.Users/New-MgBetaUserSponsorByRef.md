@@ -77,8 +77,9 @@ Sponsors are users and groups that are responsible for this agent user's privile
 | Application | User.ReadWrite.All, AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Users
 
@@ -87,6 +88,10 @@ $params = @{
 }
 
 New-MgBetaUserSponsorByRef -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserSponsorByRef Cmdlet.
+
 
 ## PARAMETERS
 
