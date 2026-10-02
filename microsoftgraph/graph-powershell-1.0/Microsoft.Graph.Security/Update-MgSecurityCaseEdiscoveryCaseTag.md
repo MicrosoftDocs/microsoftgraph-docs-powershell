@@ -15,6 +15,9 @@ title: Update-MgSecurityCaseEdiscoveryCaseTag
 
 Update the properties of an ediscoveryReviewTag object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgSecurityTriggerType
 
 Delete navigation property triggerTypes for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

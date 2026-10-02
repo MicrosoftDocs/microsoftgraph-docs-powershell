@@ -15,6 +15,9 @@ title: Initialize-MgSecurityIdentitySensorCandidate
 
 Activate Microsoft Defender for Identity sensors.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Initialize-MgBetaSecurityIdentitySensorCandidate](/powershell/module/Microsoft.Graph.Beta.Security/Initialize-MgBetaSecurityIdentitySensorCandidate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)

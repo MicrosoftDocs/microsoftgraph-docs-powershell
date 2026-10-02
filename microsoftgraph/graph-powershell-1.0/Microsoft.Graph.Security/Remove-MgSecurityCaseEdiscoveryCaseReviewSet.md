@@ -15,6 +15,9 @@ title: Remove-MgSecurityCaseEdiscoveryCaseReviewSet
 
 Delete navigation property reviewSets for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

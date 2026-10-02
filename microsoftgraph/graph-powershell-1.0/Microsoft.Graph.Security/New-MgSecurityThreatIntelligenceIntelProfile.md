@@ -15,6 +15,9 @@ title: New-MgSecurityThreatIntelligenceIntelProfile
 
 Create new navigation property to intelProfiles for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

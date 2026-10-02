@@ -15,6 +15,9 @@ title: Merge-MgSecurityIncident
 
 Merge multiple incident resources into a single incident.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Merge-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Merge-MgBetaSecurityIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MergeExpanded (Default)

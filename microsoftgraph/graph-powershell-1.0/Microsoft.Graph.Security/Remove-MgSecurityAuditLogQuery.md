@@ -15,6 +15,9 @@ title: Remove-MgSecurityAuditLogQuery
 
 Delete navigation property queries for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAuditLogQuery](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAuditLogQuery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

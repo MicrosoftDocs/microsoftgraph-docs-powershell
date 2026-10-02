@@ -15,6 +15,9 @@ title: New-MgSecurityAttackSimulationLandingPageDetail
 
 Create new navigation property to details for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

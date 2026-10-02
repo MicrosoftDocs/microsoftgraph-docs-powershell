@@ -15,6 +15,9 @@ title: Update-MgSecurityLabelRetentionLabelDispositionReviewStage
 
 Update the navigation property dispositionReviewStages in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

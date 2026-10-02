@@ -16,6 +16,9 @@ title: Get-MgSecurityIdentityAccount
 Read the properties and relationships of a single identity security account object.
 This allows retrieving information about available identity accounts.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIdentityAccount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIdentityAccount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

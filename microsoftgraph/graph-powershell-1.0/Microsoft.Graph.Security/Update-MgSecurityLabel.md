@@ -15,6 +15,9 @@ title: Update-MgSecurityLabel
 
 Update the navigation property labels in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
