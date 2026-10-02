@@ -48,6 +48,14 @@ Read the properties of an onPremisesSyncBehavior object.
 The isCloudManaged property indicates whether the object's source of authority is set to the cloud.
 If true, updates from on-premises Active Directory are blocked in the cloud; if false, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Group-OnPremisesSyncBehavior.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
