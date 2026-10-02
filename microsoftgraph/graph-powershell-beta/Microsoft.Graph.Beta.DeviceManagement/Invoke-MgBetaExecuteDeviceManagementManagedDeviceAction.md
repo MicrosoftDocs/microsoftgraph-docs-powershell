@@ -56,16 +56,6 @@ Invoke action executeAction
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.PrivilegedOperations.All, DeviceManagementManagedDevices.Read.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -ActionName
@@ -603,6 +593,7 @@ BODYPARAMETER `<IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecute
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/invoke-mgbetaexecutedevicemanagementmanageddeviceaction)
+
 
 
 
