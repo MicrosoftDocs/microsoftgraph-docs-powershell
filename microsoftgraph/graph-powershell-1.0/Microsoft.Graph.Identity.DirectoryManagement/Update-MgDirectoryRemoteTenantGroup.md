@@ -15,6 +15,9 @@ title: Update-MgDirectoryRemoteTenantGroup
 
 Update the navigation property remoteTenantGroups in directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryRemoteTenantGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRemoteTenantGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

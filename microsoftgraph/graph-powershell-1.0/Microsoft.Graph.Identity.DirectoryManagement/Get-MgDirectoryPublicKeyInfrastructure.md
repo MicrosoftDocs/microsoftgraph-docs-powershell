@@ -15,6 +15,9 @@ title: Get-MgDirectoryPublicKeyInfrastructure
 
 The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryPublicKeyInfrastructure](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryPublicKeyInfrastructure?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

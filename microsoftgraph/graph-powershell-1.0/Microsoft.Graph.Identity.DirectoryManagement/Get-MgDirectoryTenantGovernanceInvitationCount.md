@@ -15,6 +15,9 @@ title: Get-MgDirectoryTenantGovernanceInvitationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryTenantGovernanceInvitationCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryTenantGovernanceInvitationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

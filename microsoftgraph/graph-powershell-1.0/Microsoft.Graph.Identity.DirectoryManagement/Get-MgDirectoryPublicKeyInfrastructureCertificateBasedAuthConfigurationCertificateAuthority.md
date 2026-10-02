@@ -15,6 +15,9 @@ title: Get-MgDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCe
 
 The collection of certificate authorities contained in this public key infrastructure resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryPublicKeyInfrastructureCertificateBasedAuthConfigurationCertificateAuthority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

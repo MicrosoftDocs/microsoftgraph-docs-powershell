@@ -15,6 +15,9 @@ title: Get-MgDirectoryDeletedItemAsAdministrativeUnit
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
