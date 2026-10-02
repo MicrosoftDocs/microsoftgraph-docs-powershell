@@ -511,8 +511,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuserrole)
-- [](https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-1.0)
+- [Get-MgVirtualEventWebinarByUserRole](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuserrole)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-1.0)
 
 
 

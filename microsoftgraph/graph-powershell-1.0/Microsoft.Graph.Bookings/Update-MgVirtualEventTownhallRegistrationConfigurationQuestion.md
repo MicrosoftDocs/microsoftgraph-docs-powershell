@@ -572,7 +572,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallregistrationconfigurationquestion)
+- [Update-MgVirtualEventTownhallRegistrationConfigurationQuestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallregistrationconfigurationquestion)
 
 
 

@@ -809,7 +809,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarsessionattendancereportattendancerecord)
+- [Update-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventwebinarsessionattendancereportattendancerecord)
 
 
 

@@ -624,7 +624,7 @@ The default value is false.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallregistrationconfiguration)
+- [Update-MgVirtualEventTownhallRegistrationConfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgvirtualeventtownhallregistrationconfiguration)
 
 
 

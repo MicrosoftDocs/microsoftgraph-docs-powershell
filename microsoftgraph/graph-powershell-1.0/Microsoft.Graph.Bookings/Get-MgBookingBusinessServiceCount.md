@@ -365,7 +365,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservicecount)
+- [Get-MgBookingBusinessServiceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservicecount)
 
 
 
