@@ -15,6 +15,9 @@ title: Remove-MgUserMailFolderChildFolderMessagePermanent
 
 Invoke action permanentDelete
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderChildFolderMessagePermanent](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderChildFolderMessagePermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

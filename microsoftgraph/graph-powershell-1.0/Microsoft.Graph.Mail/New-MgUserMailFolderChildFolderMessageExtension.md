@@ -15,6 +15,9 @@ title: New-MgUserMailFolderChildFolderMessageExtension
 
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgUserMessageAttachmentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachmentCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

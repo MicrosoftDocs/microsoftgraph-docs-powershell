@@ -16,6 +16,9 @@ title: Get-MgUserMessageContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

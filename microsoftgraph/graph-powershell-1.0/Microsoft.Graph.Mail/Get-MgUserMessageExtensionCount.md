@@ -15,6 +15,9 @@ title: Get-MgUserMessageExtensionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageExtensionCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageExtensionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
