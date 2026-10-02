@@ -15,6 +15,9 @@ title: Get-MgUserOwnedObjectAsGroup
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOwnedObjectAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectAsGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

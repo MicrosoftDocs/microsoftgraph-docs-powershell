@@ -15,6 +15,9 @@ title: New-MgUserExtension
 
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
