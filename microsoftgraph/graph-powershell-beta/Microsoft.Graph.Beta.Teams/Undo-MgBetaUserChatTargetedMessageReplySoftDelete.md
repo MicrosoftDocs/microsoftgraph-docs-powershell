@@ -477,8 +477,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetauserchattargetedmessagereplysoftdelete)
-- [](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta)
+- [Undo-MgBetaUserChatTargetedMessageReplySoftDelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetauserchattargetedmessagereplysoftdelete)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-beta)
 
 
 

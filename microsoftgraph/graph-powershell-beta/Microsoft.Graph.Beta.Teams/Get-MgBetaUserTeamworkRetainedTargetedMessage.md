@@ -523,8 +523,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkretainedtargetedmessage)
-- [](https://learn.microsoft.com/graph/api/userteamwork-getallretainedtargetedmessages?view=graph-rest-beta)
+- [Get-MgBetaUserTeamworkRetainedTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkretainedtargetedmessage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/userteamwork-getallretainedtargetedmessages?view=graph-rest-beta)
 
 
 

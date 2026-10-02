@@ -609,7 +609,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattargetedmessage)
+- [Get-MgBetaChatTargetedMessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattargetedmessage)
 
 
 
