@@ -557,9 +557,9 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintconnector)
-- [](https://learn.microsoft.com/graph/api/printconnector-get?view=graph-rest-beta)
-- [](https://learn.microsoft.com/graph/api/print-list-connectors?view=graph-rest-beta)
+- [Get-MgBetaPrintConnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintconnector)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printconnector-get?view=graph-rest-beta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/print-list-connectors?view=graph-rest-beta)
 
 
 
