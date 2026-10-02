@@ -747,8 +747,8 @@ Read-write.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
-- [](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta)
+- [Update-MgBetaDriveItemRetentionLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemretentionlabel)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta)
 
 
 
