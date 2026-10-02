@@ -49,16 +49,6 @@ Make sure you don't specify the same user or group in the rejected senders and a
 | Delegated (personal Microsoft account) | Not supported |
 | Application | Not supported |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -448,6 +438,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref)
 - [](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
+
 
 
 
