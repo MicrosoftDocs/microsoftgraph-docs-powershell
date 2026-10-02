@@ -15,6 +15,9 @@ title: Update-MgCommunicationOnlineMeetingTranscript
 
 Update the navigation property transcripts in communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeetingTranscript?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgCommunicationOnlineMeetingCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
