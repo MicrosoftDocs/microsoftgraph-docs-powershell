@@ -720,8 +720,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcaseactivity)
-- [](https://learn.microsoft.com/graph/api/security-casemanagement-activity-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityCaseManagementCaseActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcaseactivity)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-activity-update?view=graph-rest-beta)
 
 
 

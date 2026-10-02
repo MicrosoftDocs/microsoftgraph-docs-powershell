@@ -483,7 +483,7 @@ This flagged enumeration allows multiple members to be returned simultaneously.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensorcandidate)
+- [New-MgBetaSecurityIdentitySensorCandidate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityidentitysensorcandidate)
 
 
 

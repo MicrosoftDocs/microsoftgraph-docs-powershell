@@ -670,7 +670,7 @@ The possible values are: downloadedBytes, uploadedBytes, unknown, unknownFutureV
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
+- [New-MgBetaSecurityDataDiscoveryCloudAppDiscoveryUploadedStream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydatadiscoverycloudappdiscoveryuploadedstream)
 
 
 
