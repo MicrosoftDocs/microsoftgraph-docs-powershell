@@ -834,7 +834,7 @@ HelpMessage: ''
 
 ### -RefreshTokensValidFromDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -967,7 +967,7 @@ HelpMessage: ''
 
 ### -ShowInAddressList
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
