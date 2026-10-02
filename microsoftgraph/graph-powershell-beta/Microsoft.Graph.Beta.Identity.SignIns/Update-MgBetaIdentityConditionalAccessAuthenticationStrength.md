@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaIdentityConditionalAccessAuthenticationStrength
 ---
@@ -47,6 +47,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property authenticationStrengths in identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -159,7 +169,7 @@ HelpMessage: ''
 
 ### -Combinations
 
-
+.
 
 ```yaml
 Type: System.String[]
@@ -450,7 +460,7 @@ Read-only.
   [AuthenticationMethod <String>]: baseAuthenticationMethod
   [DisplayName <String>]: The display name of this mode
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStrengthRoot
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthRoot>: authenticationStrengthRoot
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -462,8 +472,7 @@ Read-only.
     [DisplayName <String>]: The display name of this mode
   [Combinations <String[]>]: 
   [Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>]: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
     [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
     [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
       [Id <String>]: The unique identifier for an entity.
@@ -475,13 +484,13 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
     [Description <String>]: The human-readable description of this policy.
     [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+    [Id <String>]: 
     [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
     [PolicyType <String>]: authenticationStrengthPolicyType
     [RequirementsSatisfied <String>]: authenticationStrengthRequirements
 
 POLICIES <IMicrosoftGraphAuthenticationStrengthPolicy[]>: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
   [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
     [Id <String>]: The unique identifier for an entity.
@@ -493,6 +502,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
   [Description <String>]: The human-readable description of this policy.
   [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+  [Id <String>]: 
   [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
   [PolicyType <String>]: authenticationStrengthPolicyType
   [RequirementsSatisfied <String>]: authenticationStrengthRequirements
@@ -500,27 +510,4 @@ Supports $filter (eq, ne, not , and in).
 
 ## RELATED LINKS
 
-- [Update-MgBetaIdentityConditionalAccessAuthenticationStrength](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength)

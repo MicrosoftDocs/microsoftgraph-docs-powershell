@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPolicyAuthenticationStrengthPolicy
 ---
@@ -17,9 +17,6 @@ Update the properties of an authenticationStrengthPolicy object.
 You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -29,11 +26,11 @@ Update-MgBetaPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId 
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AllowedCombinations <string[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
- [-CreatedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
- [-ModifiedDateTime <datetime>] [-PolicyType <string>] [-RequirementsSatisfied <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-Description <string>]
+ [-DisplayName <string>] [-Id <string>] [-ModifiedDateTime <datetime>] [-PolicyType <string>]
+ [-RequirementsSatisfied <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -53,11 +50,11 @@ Update-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsId
  [-ResponseHeadersVariable <string>] [-AdditionalProperties <hashtable>]
  [-AllowedCombinations <string[]>]
  [-CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]
- [-CreatedDateTime <datetime>] [-Description <string>] [-DisplayName <string>] [-Id <string>]
- [-ModifiedDateTime <datetime>] [-PolicyType <string>] [-RequirementsSatisfied <string>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-CreatedDateTime <datetime>] [-DeletedDateTime <datetime>] [-Description <string>]
+ [-DisplayName <string>] [-Id <string>] [-ModifiedDateTime <datetime>] [-PolicyType <string>]
+ [-RequirementsSatisfied <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### UpdateViaIdentity
@@ -81,18 +78,9 @@ Update the properties of an authenticationStrengthPolicy object.
 You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -103,10 +91,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationStrengthPolicy -AuthenticationStrengthPolicyId $authenticationStrengthPolicyId -BodyParameter $params
-
-```
-This example shows how to use the Update-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -317,6 +301,33 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -DeletedDateTime
+
+Shows the last date and time the policy was deleted.
+
+```yaml
+Type: System.DateTime
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Description
 
 The human-readable description of this policy.
@@ -437,8 +448,7 @@ HelpMessage: ''
 
 ### -Id
 
-The unique identifier for an entity.
-Read-only.
+.
 
 ```yaml
 Type: System.String
@@ -713,10 +723,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthPolicy>`: authenticationStrengthPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthPolicy>: authenticationStrengthPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [Id <String>]: The unique identifier for an entity.
-Read-only.
+  [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
   [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
     [Id <String>]: The unique identifier for an entity.
@@ -728,6 +737,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
   [Description <String>]: The human-readable description of this policy.
   [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+  [Id <String>]: 
   [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
   [PolicyType <String>]: authenticationStrengthPolicyType
   [RequirementsSatisfied <String>]: authenticationStrengthRequirements
@@ -739,7 +749,7 @@ Read-only.
 Must be an allowedCombinations object defined for the authenticationStrengthPolicy.
 For fido2combinationConfigurations use 'fido2', for x509certificatecombinationconfiguration use 'x509CertificateSingleFactor' or 'x509CertificateMultiFactor'.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   [ActivityBasedTimeoutPolicyId <String>]: The unique identifier of activityBasedTimeoutPolicy
   [AgentRiskDetectionId <String>]: The unique identifier of agentRiskDetection
   [AppManagementPolicyId <String>]: The unique identifier of appManagementPolicy
@@ -841,27 +851,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Update-MgBetaPolicyAuthenticationStrengthPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy)
+- [](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-beta)

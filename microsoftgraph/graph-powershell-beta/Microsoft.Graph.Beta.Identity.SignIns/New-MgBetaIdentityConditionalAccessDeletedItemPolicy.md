@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessdeleteditempolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaIdentityConditionalAccessDeletedItemPolicy
 ## SYNOPSIS
 
 Create new navigation property to policies for identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessDeletedItemPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessDeletedItemPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to policies for identity
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -559,19 +566,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy>`: conditionalAccessPolicy
+BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy>: conditionalAccessPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
   [Conditions <IMicrosoftGraphConditionalAccessConditionSet>]: conditionalAccessConditionSet
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
-    [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+    [AgentContext <IMicrosoftGraphConditionalAccessAgentContext>]: Represents the agent context condition for conditional access policies.
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
+      [ExcludeAgentContexts <String[]>]: 
+      [IncludeAgentContexts <String[]>]: 
+    [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
+    [Agents <IMicrosoftGraphConditionalAccessAgents>]: conditionalAccessAgents
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [AgentFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Mode <String>]: filterMode
         [Rule <String>]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
+      [ExcludeAgentUsers <String[]>]: 
+      [IncludeAgentUsers <String[]>]: 
+    [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
       [ExcludeApplications <String[]>]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
       [GlobalSecureAccess <IMicrosoftGraphConditionalAccessGlobalSecureAccess>]: conditionalAccessGlobalSecureAccess
@@ -658,8 +674,7 @@ Read-only.
     [(Any) <Object>]: This indicates any property can be added to this object.
     [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
       [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
+      [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
       [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
       [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
         [Id <String>]: The unique identifier for an entity.
@@ -671,6 +686,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
       [Description <String>]: The human-readable description of this policy.
       [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+      [Id <String>]: 
       [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
       [PolicyType <String>]: authenticationStrengthPolicyType
       [RequirementsSatisfied <String>]: authenticationStrengthRequirements
@@ -720,16 +736,25 @@ Read-only.
       [Value <Int32?>]: The number of days or hours.
   [State <String>]: conditionalAccessPolicyState
 
-CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessConditionSet
+CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet>: conditionalAccessConditionSet
   [(Any) <Object>]: This indicates any property can be added to this object.
-  [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
-  [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+  [AgentContext <IMicrosoftGraphConditionalAccessAgentContext>]: Represents the agent context condition for conditional access policies.
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
+    [ExcludeAgentContexts <String[]>]: 
+    [IncludeAgentContexts <String[]>]: 
+  [AgentIdRiskLevels <String>]: conditionalAccessAgentIdRiskLevels
+  [Agents <IMicrosoftGraphConditionalAccessAgents>]: conditionalAccessAgents
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [AgentFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Mode <String>]: filterMode
       [Rule <String>]: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
+    [ExcludeAgentUsers <String[]>]: 
+    [IncludeAgentUsers <String[]>]: 
+  [Applications <IMicrosoftGraphConditionalAccessApplications>]: conditionalAccessApplications
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [ApplicationFilter <IMicrosoftGraphConditionalAccessFilter>]: conditionalAccessFilter
     [ExcludeApplications <String[]>]: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
 Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
     [GlobalSecureAccess <IMicrosoftGraphConditionalAccessGlobalSecureAccess>]: conditionalAccessGlobalSecureAccess
@@ -808,12 +833,11 @@ Required.
     [IncludeRoles <String[]>]: Role IDs in scope of policy unless explicitly excluded.
     [IncludeUsers <String[]>]: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
 
-GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAccessGrantControls
+GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls>: conditionalAccessGrantControls
   [(Any) <Object>]: This indicates any property can be added to this object.
   [AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]: authenticationStrengthPolicy
     [(Any) <Object>]: This indicates any property can be added to this object.
-    [Id <String>]: The unique identifier for an entity.
-Read-only.
+    [DeletedDateTime <DateTime?>]: Shows the last date and time the policy was deleted.
     [AllowedCombinations <String[]>]: A collection of authentication method modes that are required be used to satify this authentication strength.
     [CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
       [Id <String>]: The unique identifier for an entity.
@@ -825,6 +849,7 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
     [Description <String>]: The human-readable description of this policy.
     [DisplayName <String>]: The human-readable display name of this policy.
 Supports $filter (eq, ne, not , and in).
+    [Id <String>]: 
     [ModifiedDateTime <DateTime?>]: The datetime when this policy was last modified.
     [PolicyType <String>]: authenticationStrengthPolicyType
     [RequirementsSatisfied <String>]: authenticationStrengthRequirements
@@ -837,7 +862,7 @@ For more information, see Custom controls.
 Possible values: AND, OR.
   [TermsOfUse <String[]>]: List of terms of use IDs required by the policy.
 
-SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditionalAccessSessionControls
+SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls>: conditionalAccessSessionControls
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]: applicationEnforcedRestrictionsSessionControl
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -872,27 +897,4 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 
 ## RELATED LINKS
 
-- [New-MgBetaIdentityConditionalAccessDeletedItemPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessdeleteditempolicy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessdeleteditempolicy)
