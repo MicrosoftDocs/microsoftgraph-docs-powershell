@@ -17,6 +17,9 @@ Get a list of Exchange mailboxes that belong to a user.
 Currently, the mailbox types supported are the user's primary mailbox and shared mailboxes.
 To learn how to get a list of users in a tenant, see List users.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingExchange](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingExchange?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

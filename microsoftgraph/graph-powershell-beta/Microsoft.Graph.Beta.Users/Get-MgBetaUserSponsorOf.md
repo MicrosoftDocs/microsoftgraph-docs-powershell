@@ -19,6 +19,9 @@ Read-only.
 Nullable.
 Supports $filter, $count, $select, $expand, $top, and $skip.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSponsorOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserSponsorOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

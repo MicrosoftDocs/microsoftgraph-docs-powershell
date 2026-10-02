@@ -15,6 +15,9 @@ title: Get-MgBetaUserTodoTaskChecklistItem
 
 A collection of smaller subtasks linked to the more complex parent task.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskChecklistItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
