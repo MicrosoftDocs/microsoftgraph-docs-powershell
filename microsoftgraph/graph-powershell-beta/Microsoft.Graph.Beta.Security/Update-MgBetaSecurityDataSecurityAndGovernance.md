@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatasecurityandgovernance
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityDataSecurityAndGovernance
 ---
@@ -15,20 +15,17 @@ title: Update-MgBetaSecurityDataSecurityAndGovernance
 
 Update the navigation property dataSecurityAndGovernance in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityDataSecurityAndGovernance](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityDataSecurityAndGovernance?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 
 ```
 Update-MgBetaSecurityDataSecurityAndGovernance [-ResponseHeadersVariable <string>]
- [-AdditionalProperties <hashtable>] [-Id <string>] [-PolicyFiles <IMicrosoftGraphPolicyFile[]>]
- [-ProtectionScopes <hashtable>] [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>] [-Break]
- [-Headers <IDictionary>] [-HttpPipelineAppend <SendAsyncStep[]>]
- [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>] [-ProxyCredential <pscredential>]
- [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+ [-Activities <hashtable>] [-AdditionalProperties <hashtable>] [-Id <string>]
+ [-PolicyFiles <IMicrosoftGraphPolicyFile[]>] [-ProtectionScopes <hashtable>]
+ [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ### Update
@@ -50,7 +47,38 @@ This cmdlet has the following aliases,
 
 Update the navigation property dataSecurityAndGovernance in security
 
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
 ## PARAMETERS
+
+### -Activities
+
+tenantActivitiesContainer
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -AdditionalProperties
 
@@ -225,7 +253,7 @@ HelpMessage: ''
 
 ### -PolicyFiles
 
-
+.
 To construct, see NOTES section for POLICYFILES properties and create a hash table.
 
 ```yaml
@@ -353,7 +381,7 @@ HelpMessage: ''
 
 ### -SensitivityLabels
 
-
+.
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
@@ -425,7 +453,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTenantDataSecurityAndGovernance>`: tenantDataSecurityAndGovernance
+BODYPARAMETER <IMicrosoftGraphTenantDataSecurityAndGovernance>: tenantDataSecurityAndGovernance
   [(Any) <Object>]: This indicates any property can be added to this object.
   [SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -455,6 +483,10 @@ Read-only.
     [Sublabels <IMicrosoftGraphSensitivityLabel[]>]: 
     [ToolTip <String>]: 
   [Id <String>]: The unique identifier for an entity.
+Read-only.
+  [Activities <IMicrosoftGraphTenantActivitiesContainer>]: tenantActivitiesContainer
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Id <String>]: The unique identifier for an entity.
 Read-only.
   [PolicyFiles <IMicrosoftGraphPolicyFile[]>]: 
     [Id <String>]: The unique identifier for an entity.
@@ -507,27 +539,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [Update-MgBetaSecurityDataSecurityAndGovernance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatasecurityandgovernance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatasecurityandgovernance)
