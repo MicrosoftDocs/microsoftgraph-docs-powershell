@@ -16,6 +16,9 @@ title: Get-MgBetaServiceAnnouncementHealthOverview
 Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverview?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
