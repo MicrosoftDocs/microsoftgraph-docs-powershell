@@ -15,6 +15,9 @@ title: Remove-MgBetaTeamPermissionGrant
 
 Delete navigation property permissionGrants for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

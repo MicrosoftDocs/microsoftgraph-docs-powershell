@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamChannelTab
 
 Update the navigation property tabs in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

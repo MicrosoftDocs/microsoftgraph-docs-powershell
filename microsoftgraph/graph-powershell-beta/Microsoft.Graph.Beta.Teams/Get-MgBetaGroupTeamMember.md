@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamMember
 
 Members and owners of the team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

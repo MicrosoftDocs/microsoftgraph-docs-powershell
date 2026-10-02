@@ -16,6 +16,9 @@ title: Remove-MgBetaTeamChannelAllMember
 Remove multiple members from a team in a single request.
 The response provides details about which memberships could and couldn't be removed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannelAllMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelAllMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

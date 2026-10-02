@@ -16,6 +16,9 @@ title: Get-MgBetaAllUserChatMessage
 A collection of all the messages in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllUserChatMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllUserChatMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

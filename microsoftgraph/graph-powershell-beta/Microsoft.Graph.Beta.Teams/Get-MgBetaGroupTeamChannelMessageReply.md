@@ -16,6 +16,9 @@ title: Get-MgBetaGroupTeamChannelMessageReply
 Replies for a specified message.
 Supports $expand for channel messages.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

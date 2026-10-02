@@ -15,6 +15,9 @@ title: Clear-MgBetaTeamPrimaryChannelMessageReaction
 
 Invoke action unsetReaction
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgTeamPrimaryChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamPrimaryChannelMessageReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)

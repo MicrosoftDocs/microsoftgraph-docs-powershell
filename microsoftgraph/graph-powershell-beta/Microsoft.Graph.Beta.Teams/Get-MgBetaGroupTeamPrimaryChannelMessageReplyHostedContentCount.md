@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContentCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelMessageReplyHostedContentCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelMessageReplyHostedContentCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

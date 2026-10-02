@@ -15,6 +15,9 @@ title: New-MgBetaTeamScheduleTimeOffRequest
 
 Create instance of a timeoffrequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

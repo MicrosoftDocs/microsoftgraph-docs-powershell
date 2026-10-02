@@ -15,6 +15,9 @@ title: Get-MgBetaTeamworkDeletedTeamChannelEnabledApp
 
 A collection of enabled apps in the channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelEnabledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelEnabledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
