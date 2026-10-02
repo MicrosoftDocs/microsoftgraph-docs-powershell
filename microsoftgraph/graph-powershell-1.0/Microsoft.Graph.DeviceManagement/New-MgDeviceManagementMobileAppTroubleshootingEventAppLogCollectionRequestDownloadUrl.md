@@ -58,12 +58,17 @@ Invoke action createDownloadUrl
 | Application | DeviceManagementManagedDevices.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl -MobileAppTroubleshootingEventId $mobileAppTroubleshootingEventId -AppLogCollectionRequestId $appLogCollectionRequestId
+
+```
+This example shows how to use the New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl Cmdlet.
+
 
 ## PARAMETERS
 

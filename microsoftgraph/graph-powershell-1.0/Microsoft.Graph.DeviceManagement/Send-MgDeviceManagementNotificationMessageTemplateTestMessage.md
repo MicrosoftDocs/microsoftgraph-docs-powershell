@@ -58,12 +58,17 @@ Sends test message using the specified notificationMessageTemplate in the defaul
 | Application | DeviceManagementServiceConfig.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement
 
 Send-MgDeviceManagementNotificationMessageTemplateTestMessage -NotificationMessageTemplateId $notificationMessageTemplateId
+
+```
+This example shows how to use the Send-MgDeviceManagementNotificationMessageTemplateTestMessage Cmdlet.
+
 
 ## PARAMETERS
 
