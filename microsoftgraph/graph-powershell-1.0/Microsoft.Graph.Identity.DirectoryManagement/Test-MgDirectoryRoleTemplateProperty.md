@@ -470,8 +470,8 @@ BODYPARAMETER `<IPaths1Binbx4DirectoryroletemplatesMicrosoftGraphValidatepropert
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+- [Test-MgDirectoryRoleTemplateProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectoryroletemplateproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

@@ -391,8 +391,8 @@ BODYPARAMETER `<IPaths1I5T24RDirectoryDeleteditemsMicrosoftGraphGetbyidsPostRequ
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditembyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+- [Get-MgDirectoryDeletedItemById](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditembyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
 
 
 

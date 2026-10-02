@@ -464,8 +464,8 @@ For backward compatibility.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilepropertysetting)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-1.0)
+- [New-MgAdminPeopleProfilePropertySetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilepropertysetting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilepropertysettings?view=graph-rest-1.0)
 
 
 

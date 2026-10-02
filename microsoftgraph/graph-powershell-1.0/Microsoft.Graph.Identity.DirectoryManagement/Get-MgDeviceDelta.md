@@ -473,8 +473,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta)
-- [](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-1.0)
+- [Get-MgDeviceDelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-1.0)
 
 
 

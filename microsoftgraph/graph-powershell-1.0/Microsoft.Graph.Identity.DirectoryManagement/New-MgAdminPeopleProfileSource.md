@@ -521,8 +521,8 @@ LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localize
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilesource)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilesources?view=graph-rest-1.0)
+- [New-MgAdminPeopleProfileSource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilesource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilesources?view=graph-rest-1.0)
 
 
 

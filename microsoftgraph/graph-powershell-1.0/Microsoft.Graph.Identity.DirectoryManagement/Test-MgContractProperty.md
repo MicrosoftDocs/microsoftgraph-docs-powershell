@@ -470,8 +470,8 @@ BODYPARAMETER `<IPathsZahmwmContractsMicrosoftGraphValidatepropertiesPostRequest
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontractproperty)
-- [](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+- [Test-MgContractProperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontractproperty)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

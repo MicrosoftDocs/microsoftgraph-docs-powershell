@@ -463,8 +463,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerbyref)
-- [](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0)
+- [Get-MgDeviceRegisteredOwnerByRef](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredownerbyref)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0)
 
 
 
