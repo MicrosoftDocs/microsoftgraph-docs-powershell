@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsite
 Locale: en-US
 Module Name: Microsoft.Graph.Sites
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgSite
 ---
@@ -5172,6 +5172,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
           [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+          [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+            [Categories <String[]>]: The categories associated with the item
+            [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+            [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+            [Id <String>]: The unique identifier for an entity.
+Read-only.
+            [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+            [Body <IMicrosoftGraphItemBody>]: itemBody
+            [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+            [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+            [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+            [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
           [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
             [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -10977,6 +11000,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
     [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+    [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+      [Categories <String[]>]: The categories associated with the item
+      [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+      [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+      [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+      [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
     [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -16810,6 +16856,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
   [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+  [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+    [Categories <String[]>]: The categories associated with the item
+    [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+    [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+    [Body <IMicrosoftGraphItemBody>]: itemBody
+    [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+    [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+    [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+    [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
   [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -22085,6 +22154,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
     [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+    [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+      [Categories <String[]>]: The categories associated with the item
+      [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+      [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+      [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+      [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
     [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -27412,6 +27504,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
     [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+    [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+      [Categories <String[]>]: The categories associated with the item
+      [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+      [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+      [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+      [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
     [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -33002,6 +33117,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
     [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+    [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+      [Categories <String[]>]: The categories associated with the item
+      [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+      [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+      [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+      [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
     [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -38356,6 +38494,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
   [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+  [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+    [Categories <String[]>]: The categories associated with the item
+    [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+    [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    [Id <String>]: The unique identifier for an entity.
+Read-only.
+    [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+    [Body <IMicrosoftGraphItemBody>]: itemBody
+    [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+    [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+    [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+    [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
   [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
     [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -43648,6 +43809,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
     [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+    [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+      [Categories <String[]>]: The categories associated with the item
+      [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+      [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+      [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+      [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
     [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -49196,6 +49380,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
     [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+    [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+      [Categories <String[]>]: The categories associated with the item
+      [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+      [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+      [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+      [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
     [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -54596,6 +54803,29 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) an
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
     [MySite <String>]: The URL for the user's site.
 Requires $select to retrieve.
+    [Notes <IMicrosoftGraphNote[]>]: The notes in the user's Notes folder.
+Read-only.
+Nullable.
+      [Categories <String[]>]: The categories associated with the item
+      [ChangeKey <String>]: Identifies the version of the item.
+Every time the item is changed, changeKey changes as well.
+This allows Exchange to apply changes to the correct version of the object.
+Read-only.
+      [CreatedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [LastModifiedDateTime <DateTime?>]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      [Id <String>]: The unique identifier for an entity.
+Read-only.
+      [Attachments <IMicrosoftGraphAttachment[]>]: The file attachments for the note.
+Only inline image attachments (image/png, image/jpeg, image/gif, or image/bmp) are supported, with a maximum size of 3 MB per attachment.
+Use $expand to retrieve attachments.
+      [Body <IMicrosoftGraphItemBody>]: itemBody
+      [Extensions <IMicrosoftGraphExtension[]>]: The collection of open extensions defined for the note.
+      [MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]: The collection of multi-value extended properties defined for the note.
+      [SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]: The collection of single-value extended properties defined for the note.
+      [Subject <String>]: The title of the note.
+Supports $filter (eq, ne, startsWith) and $orderby.
     [Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]: 
       [Id <String>]: The unique identifier for an entity.
 Read-only.
