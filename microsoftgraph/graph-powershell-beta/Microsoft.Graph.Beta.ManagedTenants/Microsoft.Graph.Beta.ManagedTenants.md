@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.ManagedTenants
-Module Guid: 36475d1a-d46f-4ba6-8ec7-6a752ea7ea1d
+Module Guid: e4b538b3-1479-403e-a92e-e2e15a81eaba
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.managedtenants/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,19 +13,11 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.ManagedTenants Cmdlets
 ### [Get-MgBetaTenantRelationshipManagedTenant](Get-MgBetaTenantRelationshipManagedTenant.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenant](Get-MgBetaTenantRelationshipManagedTenant.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance](Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance](Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyCompliance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyComplianceCount](Get-MgBetaTenantRelationshipManagedTenantAggregatedPolicyComplianceCount.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlert](Get-MgBetaTenantRelationshipManagedTenantAlert.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAlert](Get-MgBetaTenantRelationshipManagedTenantAlert.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification](Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification](Get-MgBetaTenantRelationshipManagedTenantAlertApiNotification.md)
 
@@ -35,11 +27,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification](Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification](Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotification.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotificationCount](Get-MgBetaTenantRelationshipManagedTenantAlertEmailNotificationCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAlertLog](Get-MgBetaTenantRelationshipManagedTenantAlertLog.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertLog](Get-MgBetaTenantRelationshipManagedTenantAlertLog.md)
 
@@ -49,10 +37,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRule.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRule.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert](Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert](Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlert.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlertCount](Get-MgBetaTenantRelationshipManagedTenantAlertRuleAlertCount.md)
@@ -60,10 +44,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleCount](Get-MgBetaTenantRelationshipManagedTenantAlertRuleCount.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule](Get-MgBetaTenantRelationshipManagedTenantAlertRuleDefinitionAlertRule.md)
 
@@ -73,13 +53,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantApiNotification](Get-MgBetaTenantRelationshipManagedTenantApiNotification.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantApiNotification](Get-MgBetaTenantRelationshipManagedTenantApiNotification.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantApiNotificationAlert](Get-MgBetaTenantRelationshipManagedTenantApiNotificationAlert.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantApiNotificationCount](Get-MgBetaTenantRelationshipManagedTenantApiNotificationCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantAppPerformance](Get-MgBetaTenantRelationshipManagedTenantAppPerformance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAppPerformance](Get-MgBetaTenantRelationshipManagedTenantAppPerformance.md)
 
@@ -87,11 +63,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantAuditEvent](Get-MgBetaTenantRelationshipManagedTenantAuditEvent.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantAuditEvent](Get-MgBetaTenantRelationshipManagedTenantAuditEvent.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantAuditEventCount](Get-MgBetaTenantRelationshipManagedTenantAuditEventCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection](Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection](Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection.md)
 
@@ -99,17 +71,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice](Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice](Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcDeviceCount](Get-MgBetaTenantRelationshipManagedTenantCloudPcDeviceCount.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview](Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview](Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantCloudPcOverviewCount](Get-MgBetaTenantRelationshipManagedTenantCloudPcOverviewCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage](Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage.md)
 
@@ -119,11 +85,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary](Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary](Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummaryCount](Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummaryCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation](Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation](Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation.md)
 
@@ -131,11 +93,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDetailedInformation](Get-MgBetaTenantRelationshipManagedTenantDetailedInformation.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantDetailedInformation](Get-MgBetaTenantRelationshipManagedTenantDetailedInformation.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantDetailedInformationCount](Get-MgBetaTenantRelationshipManagedTenantDetailedInformationCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance](Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance](Get-MgBetaTenantRelationshipManagedTenantDeviceAppPerformance.md)
 
@@ -143,17 +101,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary](Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummaryCount](Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummaryCount.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus](Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatus.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatusCount](Get-MgBetaTenantRelationshipManagedTenantDeviceHealthStatusCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantEmailNotification](Get-MgBetaTenantRelationshipManagedTenantEmailNotification.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantEmailNotification](Get-MgBetaTenantRelationshipManagedTenantEmailNotification.md)
 
@@ -163,11 +115,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantGroup](Get-MgBetaTenantRelationshipManagedTenantGroup.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantGroup](Get-MgBetaTenantRelationshipManagedTenantGroup.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantGroupCount](Get-MgBetaTenantRelationshipManagedTenantGroupCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance.md)
 
@@ -175,11 +123,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrendCount](Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrendCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagementAction](Get-MgBetaTenantRelationshipManagedTenantManagementAction.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementAction](Get-MgBetaTenantRelationshipManagedTenantManagementAction.md)
 
@@ -187,11 +131,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatusCount](Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatusCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagementIntent](Get-MgBetaTenantRelationshipManagedTenantManagementIntent.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementIntent](Get-MgBetaTenantRelationshipManagedTenantManagementIntent.md)
 
@@ -199,15 +139,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplate.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplate.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollection.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionManagementTemplate.md)
 
@@ -215,13 +149,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummaryCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummaryCount.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStep.md)
 
@@ -233,19 +163,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummaryCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummaryCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionAcceptedFor](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionAcceptedFor.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionCount](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment](Get-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment.md)
 
@@ -257,11 +181,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantMyRole](Get-MgBetaTenantRelationshipManagedTenantMyRole.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantMyRole](Get-MgBetaTenantRelationshipManagedTenantMyRole.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantMyRoleCount](Get-MgBetaTenantRelationshipManagedTenantMyRoleCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantTag](Get-MgBetaTenantRelationshipManagedTenantTag.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantTag](Get-MgBetaTenantRelationshipManagedTenantTag.md)
 
@@ -269,17 +189,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint](Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint](Get-MgBetaTenantRelationshipManagedTenantTicketingEndpoint.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantTicketingEndpointCount](Get-MgBetaTenantRelationshipManagedTenantTicketingEndpointCount.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
 
-### [Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState](Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareState.md)
-
 ### [Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareStateCount](Get-MgBetaTenantRelationshipManagedTenantWindowsDeviceMalwareStateCount.md)
-
-### [Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
 
 ### [Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState](Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState.md)
 
