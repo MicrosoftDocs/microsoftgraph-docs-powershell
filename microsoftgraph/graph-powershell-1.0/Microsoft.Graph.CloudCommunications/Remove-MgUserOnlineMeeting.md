@@ -56,13 +56,18 @@ Delete navigation property onlineMeetings for users
 | Application | OnlineMeetings.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Remove-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
+
+```
+This example shows how to use the Remove-MgUserOnlineMeeting Cmdlet.
+
 
 ## PARAMETERS
 

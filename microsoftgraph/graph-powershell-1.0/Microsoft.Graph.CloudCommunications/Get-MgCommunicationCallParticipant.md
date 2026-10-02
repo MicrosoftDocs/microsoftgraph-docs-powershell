@@ -69,12 +69,17 @@ Retrieve the properties and relationships of a participant object.
 | Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallasGuest.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallParticipant -CallId $callId
+
+```
+This example shows how to use the Get-MgCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 
