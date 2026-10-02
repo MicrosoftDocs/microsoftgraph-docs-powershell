@@ -901,7 +901,7 @@ Values are free-form.
   [ThreatFamilyName <String>]: Threat family associated with this alert.
   [Title <String>]: Brief identifying string value describing the alert.
 
-BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
+BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1003,3 +1003,25 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>: Li
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
