@@ -1211,7 +1211,7 @@ SPONSORS <IMicrosoftGraphRelatedPerson[]>: The Person or people who sponsored th
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject)
+- [Update-MgBetaUserProfileProject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject)
 
 
 
