@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-Module Guid: 73ec0f17-61ca-49e6-a371-f1e29b386427
+Module Guid: 67baf320-ff52-467a-ba07-d2117de51866
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.serviceannouncement/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,11 +13,7 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.Devices.ServiceAnnouncement Cmdlets
 ### [Get-MgBetaServiceAnnouncementHealthOverview](Get-MgBetaServiceAnnouncementHealthOverview.md)
 
-### [Get-MgBetaServiceAnnouncementHealthOverview](Get-MgBetaServiceAnnouncementHealthOverview.md)
-
 ### [Get-MgBetaServiceAnnouncementHealthOverviewCount](Get-MgBetaServiceAnnouncementHealthOverviewCount.md)
-
-### [Get-MgBetaServiceAnnouncementHealthOverviewIssue](Get-MgBetaServiceAnnouncementHealthOverviewIssue.md)
 
 ### [Get-MgBetaServiceAnnouncementHealthOverviewIssue](Get-MgBetaServiceAnnouncementHealthOverviewIssue.md)
 
@@ -25,15 +21,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaServiceAnnouncementIssue](Get-MgBetaServiceAnnouncementIssue.md)
 
-### [Get-MgBetaServiceAnnouncementIssue](Get-MgBetaServiceAnnouncementIssue.md)
-
 ### [Get-MgBetaServiceAnnouncementIssueCount](Get-MgBetaServiceAnnouncementIssueCount.md)
 
 ### [Get-MgBetaServiceAnnouncementMessage](Get-MgBetaServiceAnnouncementMessage.md)
-
-### [Get-MgBetaServiceAnnouncementMessage](Get-MgBetaServiceAnnouncementMessage.md)
-
-### [Get-MgBetaServiceAnnouncementMessageAttachment](Get-MgBetaServiceAnnouncementMessageAttachment.md)
 
 ### [Get-MgBetaServiceAnnouncementMessageAttachment](Get-MgBetaServiceAnnouncementMessageAttachment.md)
 
