@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattargetedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatTargetedMessage
 ---
@@ -17,6 +17,9 @@ A collection of targeted messages in the chat that are visible only to specific 
 Nullable.
 You can't expand this relationship using $expand.
 Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTargetedMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 

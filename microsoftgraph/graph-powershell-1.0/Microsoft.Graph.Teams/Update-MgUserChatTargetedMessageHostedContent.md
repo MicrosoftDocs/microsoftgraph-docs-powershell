@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchattargetedmessagehostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserChatTargetedMessageHostedContent
 ---
@@ -14,6 +14,9 @@ title: Update-MgUserChatTargetedMessageHostedContent
 ## SYNOPSIS
 
 Update the navigation property hostedContents in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserChatTargetedMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatTargetedMessageHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

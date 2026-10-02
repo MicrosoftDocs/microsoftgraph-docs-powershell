@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchattargetedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgUserChatTargetedMessage
 ---
@@ -14,6 +14,9 @@ title: Update-MgUserChatTargetedMessage
 ## SYNOPSIS
 
 Update the navigation property targetedMessages in users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserChatTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatTargetedMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 

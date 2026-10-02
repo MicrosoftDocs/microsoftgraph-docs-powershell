@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mggraphuserchattargetedmessagereply
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgGraphUserChatTargetedMessageReply
 ---
@@ -14,6 +14,9 @@ title: Invoke-MgGraphUserChatTargetedMessageReply
 ## SYNOPSIS
 
 Reply with quote to a single chat message or multiple chat messages in a chat.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserChatTargetedMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaGraphUserChatTargetedMessageReply?view=graph-powershell-beta)
 
 ## SYNTAX
 

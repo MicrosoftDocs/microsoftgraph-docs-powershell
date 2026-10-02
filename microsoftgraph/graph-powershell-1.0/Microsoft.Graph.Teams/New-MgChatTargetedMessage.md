@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchattargetedmessage
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgChatTargetedMessage
 ---
@@ -14,6 +14,9 @@ title: New-MgChatTargetedMessage
 ## SYNOPSIS
 
 Create new navigation property to targetedMessages for chats
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaChatTargetedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatTargetedMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 

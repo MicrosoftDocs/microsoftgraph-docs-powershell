@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgchattargetedmessagehostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Set-MgChatTargetedMessageHostedContent
 ---
@@ -15,6 +15,9 @@ title: Set-MgChatTargetedMessageHostedContent
 
 The unique identifier for an entity.
 Read-only.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaChatTargetedMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaChatTargetedMessageHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

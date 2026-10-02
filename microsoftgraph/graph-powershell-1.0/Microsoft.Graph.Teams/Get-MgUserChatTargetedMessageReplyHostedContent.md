@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattargetedmessagereplyhostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgUserChatTargetedMessageReplyHostedContent
 ---
@@ -14,6 +14,9 @@ title: Get-MgUserChatTargetedMessageReplyHostedContent
 ## SYNOPSIS
 
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatTargetedMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatTargetedMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattargetedmessagereplydelta
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatTargetedMessageReplyDelta
 ---
@@ -21,6 +21,9 @@ To proceed with a round of change tracking, copy and apply the @odata.nextLink o
 An @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
 You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after you acquire @odata.deltaLink).
 For more information, see the delta query documentation.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatTargetedMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTargetedMessageReplyDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 

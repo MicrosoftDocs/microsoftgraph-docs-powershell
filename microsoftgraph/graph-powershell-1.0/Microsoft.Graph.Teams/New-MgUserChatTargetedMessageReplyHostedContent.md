@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattargetedmessagereplyhostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgUserChatTargetedMessageReplyHostedContent
 ---
@@ -14,6 +14,9 @@ title: New-MgUserChatTargetedMessageReplyHostedContent
 ## SYNOPSIS
 
 Create new navigation property to hostedContents for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatTargetedMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTargetedMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattargetedmessagehostedcontentcount
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgChatTargetedMessageHostedContentCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgChatTargetedMessageHostedContentCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatTargetedMessageHostedContentCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTargetedMessageHostedContentCount?view=graph-powershell-beta)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchattargetedmessagereplyhostedcontent
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgUserChatTargetedMessageReplyHostedContent
 ---
@@ -14,6 +14,9 @@ title: Remove-MgUserChatTargetedMessageReplyHostedContent
 ## SYNOPSIS
 
 Delete navigation property hostedContents for users
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatTargetedMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatTargetedMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 

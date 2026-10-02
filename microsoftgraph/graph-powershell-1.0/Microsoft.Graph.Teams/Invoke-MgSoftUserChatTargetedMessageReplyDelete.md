@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Teams-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftuserchattargetedmessagereplydelete
 Locale: en-US
 Module Name: Microsoft.Graph.Teams
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgSoftUserChatTargetedMessageReplyDelete
 ---
@@ -14,6 +14,9 @@ title: Invoke-MgSoftUserChatTargetedMessageReplyDelete
 ## SYNOPSIS
 
 Delete a single chatMessage or a chat message reply in a channel or a chat.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftUserChatTargetedMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftUserChatTargetedMessageReplyDelete?view=graph-powershell-beta)
 
 ## SYNTAX
 
