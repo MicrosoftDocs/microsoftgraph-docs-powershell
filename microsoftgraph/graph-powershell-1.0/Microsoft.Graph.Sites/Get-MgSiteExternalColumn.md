@@ -593,7 +593,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteexternalcolumn)
+- [Get-MgSiteExternalColumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteexternalcolumn)
 
 
 

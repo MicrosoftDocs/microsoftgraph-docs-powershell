@@ -602,7 +602,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsettermchildrelationset)
+- [Get-MgGroupSiteTermStoreGroupSetTermChildRelationSet](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsettermchildrelationset)
 
 
 

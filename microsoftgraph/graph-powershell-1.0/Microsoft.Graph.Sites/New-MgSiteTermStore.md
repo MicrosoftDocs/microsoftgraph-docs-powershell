@@ -769,7 +769,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstore)
+- [New-MgSiteTermStore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstore)
 
 
 

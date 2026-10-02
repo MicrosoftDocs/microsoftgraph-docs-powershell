@@ -621,7 +621,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepage)
+- [Get-MgGroupSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepage)
 
 
 

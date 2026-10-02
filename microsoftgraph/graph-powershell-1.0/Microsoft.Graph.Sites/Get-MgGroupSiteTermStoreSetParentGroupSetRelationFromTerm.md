@@ -550,7 +550,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetrelationfromterm)
+- [Get-MgGroupSiteTermStoreSetParentGroupSetRelationFromTerm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupsetrelationfromterm)
 
 
 
