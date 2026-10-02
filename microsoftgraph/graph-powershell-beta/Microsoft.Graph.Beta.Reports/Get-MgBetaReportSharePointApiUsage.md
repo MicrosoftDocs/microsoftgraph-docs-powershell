@@ -564,8 +564,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointapiusage)
-- [](https://learn.microsoft.com/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta)
+- [Get-MgBetaReportSharePointApiUsage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointapiusage)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta)
 
 
 

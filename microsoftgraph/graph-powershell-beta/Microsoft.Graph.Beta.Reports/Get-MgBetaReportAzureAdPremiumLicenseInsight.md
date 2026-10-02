@@ -287,8 +287,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadpremiumlicenseinsight)
-- [](https://learn.microsoft.com/graph/api/azureadpremiumlicenseinsight-get?view=graph-rest-beta)
+- [Get-MgBetaReportAzureAdPremiumLicenseInsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadpremiumlicenseinsight)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/azureadpremiumlicenseinsight-get?view=graph-rest-beta)
 
 
 
