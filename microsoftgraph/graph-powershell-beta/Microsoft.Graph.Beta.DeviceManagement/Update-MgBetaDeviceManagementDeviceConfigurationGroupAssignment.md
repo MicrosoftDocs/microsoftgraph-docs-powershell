@@ -578,7 +578,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphDeviceConfigurationGroupAssignment>: Device configuration group assignment.
+BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationGroupAssignment>`: Device configuration group assignment.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -678,7 +678,7 @@ Read-only.
 Defaults that the group should be included
   [TargetGroupId <String>]: The Id of the AAD group we are targeting the device configuration to.
 
-DEVICECONFIGURATION <IMicrosoftGraphDeviceConfiguration>: Device Configuration.
+DEVICECONFIGURATION `<IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -777,7 +777,7 @@ Read-only.
     [UserPrincipalName <String>]: UserPrincipalName.
   [Version <Int32?>]: Version of the device configuration.
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   [AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   [AlertRecordId <String>]: The unique identifier of alertRecord
   [AlertRuleId <String>]: The unique identifier of alertRule
@@ -890,3 +890,25 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationgroupassignment)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

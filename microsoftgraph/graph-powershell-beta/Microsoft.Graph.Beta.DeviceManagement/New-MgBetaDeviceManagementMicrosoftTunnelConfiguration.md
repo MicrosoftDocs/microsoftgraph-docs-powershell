@@ -715,7 +715,7 @@ ADVANCEDSETTINGS <IMicrosoftGraphKeyValuePair[]>: Additional settings that may b
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelConfiguration>: Entity that represents a collection of Microsoft Tunnel settings
+BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelConfiguration>`: Entity that represents a collection of Microsoft Tunnel settings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -745,3 +745,25 @@ This property is going to be deprecated with the option of using the new propert
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
