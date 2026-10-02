@@ -57,12 +57,17 @@ Trigger an indexOperation to make a custodian and associated sources searchable.
 | Application | eDiscovery.Read.All, eDiscovery.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
 Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet.
+
 
 ## PARAMETERS
 

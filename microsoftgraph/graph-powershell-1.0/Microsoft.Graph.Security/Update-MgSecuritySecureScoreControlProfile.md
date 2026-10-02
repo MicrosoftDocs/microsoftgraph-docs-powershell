@@ -90,8 +90,32 @@ Update an editable secureScoreControlProfile object within any integrated soluti
 | Application | SecurityEvents.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	assignedTo = ""
+	comment = "control is reviewed"
+	state = "Reviewed"
+	vendorInformation = @{
+		provider = "SecureScore"
+		providerVersion = $null
+		subProvider = $null
+		vendor = "Microsoft"
+	}
+}
+
+Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+
+```
+This example will request without prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
 
 Import-Module Microsoft.Graph.Security
 
@@ -109,23 +133,9 @@ $params = @{
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will request with prefer header
 
-Import-Module Microsoft.Graph.Security
-
-$params = @{
-	assignedTo = ""
-	comment = "control is reviewed"
-	state = "Reviewed"
-	vendorInformation = @{
-		provider = "SecureScore"
-		providerVersion = $null
-		subProvider = $null
-		vendor = "Microsoft"
-	}
-}
-
-Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
 ## PARAMETERS
 

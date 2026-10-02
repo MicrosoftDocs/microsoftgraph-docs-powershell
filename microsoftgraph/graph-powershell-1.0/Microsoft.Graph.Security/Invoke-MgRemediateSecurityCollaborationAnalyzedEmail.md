@@ -61,16 +61,6 @@ This API enables scenarios and use cases such as SOAR integration, playbooks, an
 For more information read email remediation, trigger action and track actions.
 If there is false positives admins can take move to inbox action.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Action
@@ -787,6 +777,7 @@ This is full URL string, including query parameters.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.security/invoke-mgremediatesecuritycollaborationanalyzedemail)
 - [](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-1.0)
+
 
 
 
