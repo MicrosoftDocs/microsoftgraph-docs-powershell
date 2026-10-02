@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhallregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaVirtualEventTownhallRegistration
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaVirtualEventTownhallRegistration
 ## SYNOPSIS
 
 Update the navigation property registrations in solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventTownhallRegistration](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventTownhallRegistration?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallregistrationcount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaVirtualEventTownhallRegistrationCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaVirtualEventTownhallRegistrationCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventTownhallRegistrationCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventTownhallRegistrationCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 

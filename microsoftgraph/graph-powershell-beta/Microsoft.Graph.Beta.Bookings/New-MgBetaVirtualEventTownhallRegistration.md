@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventtownhallregistration
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaVirtualEventTownhallRegistration
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaVirtualEventTownhallRegistration
 ## SYNOPSIS
 
 Create new navigation property to registrations for solutions
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventTownhallRegistration](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventTownhallRegistration?view=graph-powershell-1.0)
 
 ## SYNTAX
 

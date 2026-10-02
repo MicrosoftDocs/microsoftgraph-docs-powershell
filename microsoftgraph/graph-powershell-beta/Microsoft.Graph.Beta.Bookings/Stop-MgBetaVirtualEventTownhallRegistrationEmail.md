@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Bookings-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualeventtownhallregistrationemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Bookings
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Stop-MgBetaVirtualEventTownhallRegistrationEmail
 ---
@@ -14,6 +14,9 @@ title: Stop-MgBetaVirtualEventTownhallRegistrationEmail
 ## SYNOPSIS
 
 Invoke action cancel
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgVirtualEventTownhallRegistrationEmail](/powershell/module/Microsoft.Graph.Bookings/Stop-MgVirtualEventTownhallRegistrationEmail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
