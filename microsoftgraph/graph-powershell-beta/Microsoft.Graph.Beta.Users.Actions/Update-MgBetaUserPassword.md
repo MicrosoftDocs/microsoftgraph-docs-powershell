@@ -17,6 +17,9 @@ Update the signed-in user's password.
 Any user can update their password without belonging to any administrator role.\rTo update another user's password in either delegated or app-only scenarios, update the passwordProfile property of the user instead.
 See Example 3: Update the passwordProfile of a user and reset their password.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserPassword?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ChangeExpanded (Default)
