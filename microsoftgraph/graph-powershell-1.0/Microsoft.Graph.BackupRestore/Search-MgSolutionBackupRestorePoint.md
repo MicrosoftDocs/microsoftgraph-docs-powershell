@@ -47,6 +47,14 @@ This cmdlet has the following aliases,
 
 Search for the restorePoint objects associated with a protectionUnit.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | BackupRestore-Search.Read.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | BackupRestore-Search.Read.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
