@@ -65,6 +65,14 @@ This cmdlet has the following aliases,
 
 Move a mail folder and its contents to another mail folder.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Mail.ReadWrite,  |
+| Delegated (personal Microsoft account) | Mail.ReadWrite,  |
+| Application | Mail.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
