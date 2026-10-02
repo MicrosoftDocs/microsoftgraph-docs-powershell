@@ -61,6 +61,14 @@ Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 The following derived types are currently supported.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.Read.All, EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.Read.All, EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

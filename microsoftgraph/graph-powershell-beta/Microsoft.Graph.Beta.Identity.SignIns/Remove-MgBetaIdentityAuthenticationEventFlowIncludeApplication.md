@@ -48,6 +48,14 @@ This cmdlet has the following aliases,
 Remove or unlink an application from an external identities self-service sign-up user flow that's represented by an externalUsersSelfServiceSignupEventsFlow object.
 This disables the authentication experience that's defined by the user flow for the application.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | EventListener.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | EventListener.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
