@@ -387,7 +387,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskprogresstaskboardformat)
+- [Remove-MgPlannerTaskProgressTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannertaskprogresstaskboardformat)
 
 
 

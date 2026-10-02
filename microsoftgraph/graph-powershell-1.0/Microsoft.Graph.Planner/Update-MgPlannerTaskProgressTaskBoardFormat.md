@@ -548,8 +548,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskprogresstaskboardformat)
-- [](https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-update?view=graph-rest-1.0)
+- [Update-MgPlannerTaskProgressTaskBoardFormat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertaskprogresstaskboardformat)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-update?view=graph-rest-1.0)
 
 
 

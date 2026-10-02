@@ -351,7 +351,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplancount)
+- [Get-MgGroupPlannerPlanCount](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplancount)
 
 
 
