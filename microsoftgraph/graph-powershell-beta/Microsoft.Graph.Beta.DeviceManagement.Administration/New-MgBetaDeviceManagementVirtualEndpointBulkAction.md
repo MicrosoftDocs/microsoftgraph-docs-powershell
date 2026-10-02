@@ -568,8 +568,8 @@ The default value is false.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction)
-- [](https://learn.microsoft.com/graph/api/virtualendpoint-post-bulkactions?view=graph-rest-beta)
+- [New-MgBetaDeviceManagementVirtualEndpointBulkAction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualendpoint-post-bulkactions?view=graph-rest-beta)
 
 
 
