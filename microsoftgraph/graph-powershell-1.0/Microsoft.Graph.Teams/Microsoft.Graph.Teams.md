@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: a76bb6b2-ea31-45ec-8c98-8be81878f358
+Module Guid: f7d83925-deaf-40d4-bfe1-3c519aeb6af9
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.teams/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -99,11 +99,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAllGroupTeamChannel](Get-MgAllGroupTeamChannel.md)
 
-### [Get-MgAllGroupTeamChannel](Get-MgAllGroupTeamChannel.md)
-
 ### [Get-MgAllGroupTeamChannelCount](Get-MgAllGroupTeamChannelCount.md)
-
-### [Get-MgAllTeamChannel](Get-MgAllTeamChannel.md)
 
 ### [Get-MgAllTeamChannel](Get-MgAllTeamChannel.md)
 
@@ -115,15 +111,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgAllUserChatMessage](Get-MgAllUserChatMessage.md)
 
-### [Get-MgAllUserChatMessage](Get-MgAllUserChatMessage.md)
-
-### [Get-MgAppCatalogTeamApp](Get-MgAppCatalogTeamApp.md)
-
 ### [Get-MgAppCatalogTeamApp](Get-MgAppCatalogTeamApp.md)
 
 ### [Get-MgAppCatalogTeamAppCount](Get-MgAppCatalogTeamAppCount.md)
-
-### [Get-MgAppCatalogTeamAppDefinition](Get-MgAppCatalogTeamAppDefinition.md)
 
 ### [Get-MgAppCatalogTeamAppDefinition](Get-MgAppCatalogTeamAppDefinition.md)
 
@@ -133,11 +123,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChat](Get-MgChat.md)
 
-### [Get-MgChat](Get-MgChat.md)
-
 ### [Get-MgChatCount](Get-MgChatCount.md)
-
-### [Get-MgChatInstalledApp](Get-MgChatInstalledApp.md)
 
 ### [Get-MgChatInstalledApp](Get-MgChatInstalledApp.md)
 
@@ -151,11 +137,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChatMember](Get-MgChatMember.md)
 
-### [Get-MgChatMember](Get-MgChatMember.md)
-
 ### [Get-MgChatMemberCount](Get-MgChatMemberCount.md)
-
-### [Get-MgChatMessage](Get-MgChatMessage.md)
 
 ### [Get-MgChatMessage](Get-MgChatMessage.md)
 
@@ -165,11 +147,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChatMessageHostedContent](Get-MgChatMessageHostedContent.md)
 
-### [Get-MgChatMessageHostedContent](Get-MgChatMessageHostedContent.md)
-
 ### [Get-MgChatMessageHostedContentCount](Get-MgChatMessageHostedContentCount.md)
-
-### [Get-MgChatMessageReply](Get-MgChatMessageReply.md)
 
 ### [Get-MgChatMessageReply](Get-MgChatMessageReply.md)
 
@@ -179,17 +157,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChatMessageReplyHostedContent](Get-MgChatMessageReplyHostedContent.md)
 
-### [Get-MgChatMessageReplyHostedContent](Get-MgChatMessageReplyHostedContent.md)
-
 ### [Get-MgChatMessageReplyHostedContentCount](Get-MgChatMessageReplyHostedContentCount.md)
 
 ### [Get-MgChatPermissionGrant](Get-MgChatPermissionGrant.md)
 
-### [Get-MgChatPermissionGrant](Get-MgChatPermissionGrant.md)
-
 ### [Get-MgChatPermissionGrantCount](Get-MgChatPermissionGrantCount.md)
-
-### [Get-MgChatPinnedMessage](Get-MgChatPinnedMessage.md)
 
 ### [Get-MgChatPinnedMessage](Get-MgChatPinnedMessage.md)
 
@@ -199,13 +171,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChatTab](Get-MgChatTab.md)
 
-### [Get-MgChatTab](Get-MgChatTab.md)
-
 ### [Get-MgChatTabCount](Get-MgChatTabCount.md)
 
 ### [Get-MgChatTabTeamApp](Get-MgChatTabTeamApp.md)
-
-### [Get-MgChatTargetedMessage](Get-MgChatTargetedMessage.md)
 
 ### [Get-MgChatTargetedMessage](Get-MgChatTargetedMessage.md)
 
@@ -213,11 +181,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChatTargetedMessageHostedContent](Get-MgChatTargetedMessageHostedContent.md)
 
-### [Get-MgChatTargetedMessageHostedContent](Get-MgChatTargetedMessageHostedContent.md)
-
 ### [Get-MgChatTargetedMessageHostedContentCount](Get-MgChatTargetedMessageHostedContentCount.md)
-
-### [Get-MgChatTargetedMessageReply](Get-MgChatTargetedMessageReply.md)
 
 ### [Get-MgChatTargetedMessageReply](Get-MgChatTargetedMessageReply.md)
 
@@ -227,21 +191,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgChatTargetedMessageReplyHostedContent](Get-MgChatTargetedMessageReplyHostedContent.md)
 
-### [Get-MgChatTargetedMessageReplyHostedContent](Get-MgChatTargetedMessageReplyHostedContent.md)
-
 ### [Get-MgChatTargetedMessageReplyHostedContentCount](Get-MgChatTargetedMessageReplyHostedContentCount.md)
 
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
 
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
 
-### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
-
 ### [Get-MgGroupTeamChannelAllMemberCount](Get-MgGroupTeamChannelAllMemberCount.md)
 
 ### [Get-MgGroupTeamChannelCount](Get-MgGroupTeamChannelCount.md)
-
-### [Get-MgGroupTeamChannelEnabledApp](Get-MgGroupTeamChannelEnabledApp.md)
 
 ### [Get-MgGroupTeamChannelEnabledApp](Get-MgGroupTeamChannelEnabledApp.md)
 
@@ -253,11 +211,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamChannelMember](Get-MgGroupTeamChannelMember.md)
 
-### [Get-MgGroupTeamChannelMember](Get-MgGroupTeamChannelMember.md)
-
 ### [Get-MgGroupTeamChannelMemberCount](Get-MgGroupTeamChannelMemberCount.md)
-
-### [Get-MgGroupTeamChannelMessage](Get-MgGroupTeamChannelMessage.md)
 
 ### [Get-MgGroupTeamChannelMessage](Get-MgGroupTeamChannelMessage.md)
 
@@ -267,11 +221,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamChannelMessageHostedContent](Get-MgGroupTeamChannelMessageHostedContent.md)
 
-### [Get-MgGroupTeamChannelMessageHostedContent](Get-MgGroupTeamChannelMessageHostedContent.md)
-
 ### [Get-MgGroupTeamChannelMessageHostedContentCount](Get-MgGroupTeamChannelMessageHostedContentCount.md)
-
-### [Get-MgGroupTeamChannelMessageReply](Get-MgGroupTeamChannelMessageReply.md)
 
 ### [Get-MgGroupTeamChannelMessageReply](Get-MgGroupTeamChannelMessageReply.md)
 
@@ -281,25 +231,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamChannelMessageReplyHostedContent](Get-MgGroupTeamChannelMessageReplyHostedContent.md)
 
-### [Get-MgGroupTeamChannelMessageReplyHostedContent](Get-MgGroupTeamChannelMessageReplyHostedContent.md)
-
 ### [Get-MgGroupTeamChannelMessageReplyHostedContentCount](Get-MgGroupTeamChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgGroupTeamChannelRetainedMessage](Get-MgGroupTeamChannelRetainedMessage.md)
 
 ### [Get-MgGroupTeamChannelSharedWithTeam](Get-MgGroupTeamChannelSharedWithTeam.md)
 
-### [Get-MgGroupTeamChannelSharedWithTeam](Get-MgGroupTeamChannelSharedWithTeam.md)
-
-### [Get-MgGroupTeamChannelSharedWithTeamAllowedMember](Get-MgGroupTeamChannelSharedWithTeamAllowedMember.md)
-
 ### [Get-MgGroupTeamChannelSharedWithTeamAllowedMember](Get-MgGroupTeamChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgGroupTeamChannelSharedWithTeamAllowedMemberCount](Get-MgGroupTeamChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgGroupTeamChannelSharedWithTeamCount](Get-MgGroupTeamChannelSharedWithTeamCount.md)
-
-### [Get-MgGroupTeamChannelTab](Get-MgGroupTeamChannelTab.md)
 
 ### [Get-MgGroupTeamChannelTab](Get-MgGroupTeamChannelTab.md)
 
@@ -315,11 +257,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamIncomingChannel](Get-MgGroupTeamIncomingChannel.md)
 
-### [Get-MgGroupTeamIncomingChannel](Get-MgGroupTeamIncomingChannel.md)
-
 ### [Get-MgGroupTeamIncomingChannelCount](Get-MgGroupTeamIncomingChannelCount.md)
-
-### [Get-MgGroupTeamInstalledApp](Get-MgGroupTeamInstalledApp.md)
 
 ### [Get-MgGroupTeamInstalledApp](Get-MgGroupTeamInstalledApp.md)
 
@@ -331,17 +269,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamMember](Get-MgGroupTeamMember.md)
 
-### [Get-MgGroupTeamMember](Get-MgGroupTeamMember.md)
-
 ### [Get-MgGroupTeamMemberCount](Get-MgGroupTeamMemberCount.md)
 
 ### [Get-MgGroupTeamOperation](Get-MgGroupTeamOperation.md)
 
-### [Get-MgGroupTeamOperation](Get-MgGroupTeamOperation.md)
-
 ### [Get-MgGroupTeamOperationCount](Get-MgGroupTeamOperationCount.md)
-
-### [Get-MgGroupTeamPermissionGrant](Get-MgGroupTeamPermissionGrant.md)
 
 ### [Get-MgGroupTeamPermissionGrant](Get-MgGroupTeamPermissionGrant.md)
 
@@ -357,8 +289,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamPrimaryChannelEnabledApp](Get-MgGroupTeamPrimaryChannelEnabledApp.md)
 
-### [Get-MgGroupTeamPrimaryChannelEnabledApp](Get-MgGroupTeamPrimaryChannelEnabledApp.md)
-
 ### [Get-MgGroupTeamPrimaryChannelEnabledAppCount](Get-MgGroupTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgGroupTeamPrimaryChannelFileFolder](Get-MgGroupTeamPrimaryChannelFileFolder.md)
@@ -367,11 +297,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamPrimaryChannelMember](Get-MgGroupTeamPrimaryChannelMember.md)
 
-### [Get-MgGroupTeamPrimaryChannelMember](Get-MgGroupTeamPrimaryChannelMember.md)
-
 ### [Get-MgGroupTeamPrimaryChannelMemberCount](Get-MgGroupTeamPrimaryChannelMemberCount.md)
-
-### [Get-MgGroupTeamPrimaryChannelMessage](Get-MgGroupTeamPrimaryChannelMessage.md)
 
 ### [Get-MgGroupTeamPrimaryChannelMessage](Get-MgGroupTeamPrimaryChannelMessage.md)
 
@@ -381,11 +307,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamPrimaryChannelMessageHostedContent](Get-MgGroupTeamPrimaryChannelMessageHostedContent.md)
 
-### [Get-MgGroupTeamPrimaryChannelMessageHostedContent](Get-MgGroupTeamPrimaryChannelMessageHostedContent.md)
-
 ### [Get-MgGroupTeamPrimaryChannelMessageHostedContentCount](Get-MgGroupTeamPrimaryChannelMessageHostedContentCount.md)
-
-### [Get-MgGroupTeamPrimaryChannelMessageReply](Get-MgGroupTeamPrimaryChannelMessageReply.md)
 
 ### [Get-MgGroupTeamPrimaryChannelMessageReply](Get-MgGroupTeamPrimaryChannelMessageReply.md)
 
@@ -395,23 +317,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent](Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
 
-### [Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent](Get-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
-
 ### [Get-MgGroupTeamPrimaryChannelMessageReplyHostedContentCount](Get-MgGroupTeamPrimaryChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgGroupTeamPrimaryChannelSharedWithTeam](Get-MgGroupTeamPrimaryChannelSharedWithTeam.md)
-
-### [Get-MgGroupTeamPrimaryChannelSharedWithTeam](Get-MgGroupTeamPrimaryChannelSharedWithTeam.md)
-
-### [Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMemberCount](Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgGroupTeamPrimaryChannelSharedWithTeamCount](Get-MgGroupTeamPrimaryChannelSharedWithTeamCount.md)
-
-### [Get-MgGroupTeamPrimaryChannelTab](Get-MgGroupTeamPrimaryChannelTab.md)
 
 ### [Get-MgGroupTeamPrimaryChannelTab](Get-MgGroupTeamPrimaryChannelTab.md)
 
@@ -423,21 +337,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamScheduleDayNote](Get-MgGroupTeamScheduleDayNote.md)
 
-### [Get-MgGroupTeamScheduleDayNote](Get-MgGroupTeamScheduleDayNote.md)
-
 ### [Get-MgGroupTeamScheduleDayNoteCount](Get-MgGroupTeamScheduleDayNoteCount.md)
-
-### [Get-MgGroupTeamScheduleOfferShiftRequest](Get-MgGroupTeamScheduleOfferShiftRequest.md)
 
 ### [Get-MgGroupTeamScheduleOfferShiftRequest](Get-MgGroupTeamScheduleOfferShiftRequest.md)
 
 ### [Get-MgGroupTeamScheduleOfferShiftRequestCount](Get-MgGroupTeamScheduleOfferShiftRequestCount.md)
 
 ### [Get-MgGroupTeamScheduleOpenShift](Get-MgGroupTeamScheduleOpenShift.md)
-
-### [Get-MgGroupTeamScheduleOpenShift](Get-MgGroupTeamScheduleOpenShift.md)
-
-### [Get-MgGroupTeamScheduleOpenShiftChangeRequest](Get-MgGroupTeamScheduleOpenShiftChangeRequest.md)
 
 ### [Get-MgGroupTeamScheduleOpenShiftChangeRequest](Get-MgGroupTeamScheduleOpenShiftChangeRequest.md)
 
@@ -447,11 +353,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamScheduleSchedulingGroup](Get-MgGroupTeamScheduleSchedulingGroup.md)
 
-### [Get-MgGroupTeamScheduleSchedulingGroup](Get-MgGroupTeamScheduleSchedulingGroup.md)
-
 ### [Get-MgGroupTeamScheduleSchedulingGroupCount](Get-MgGroupTeamScheduleSchedulingGroupCount.md)
-
-### [Get-MgGroupTeamScheduleShift](Get-MgGroupTeamScheduleShift.md)
 
 ### [Get-MgGroupTeamScheduleShift](Get-MgGroupTeamScheduleShift.md)
 
@@ -459,11 +361,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamScheduleSwapShiftChangeRequest](Get-MgGroupTeamScheduleSwapShiftChangeRequest.md)
 
-### [Get-MgGroupTeamScheduleSwapShiftChangeRequest](Get-MgGroupTeamScheduleSwapShiftChangeRequest.md)
-
 ### [Get-MgGroupTeamScheduleSwapShiftChangeRequestCount](Get-MgGroupTeamScheduleSwapShiftChangeRequestCount.md)
-
-### [Get-MgGroupTeamScheduleTimeCard](Get-MgGroupTeamScheduleTimeCard.md)
 
 ### [Get-MgGroupTeamScheduleTimeCard](Get-MgGroupTeamScheduleTimeCard.md)
 
@@ -471,11 +369,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamScheduleTimeOff](Get-MgGroupTeamScheduleTimeOff.md)
 
-### [Get-MgGroupTeamScheduleTimeOff](Get-MgGroupTeamScheduleTimeOff.md)
-
 ### [Get-MgGroupTeamScheduleTimeOffCount](Get-MgGroupTeamScheduleTimeOffCount.md)
-
-### [Get-MgGroupTeamScheduleTimeOffReason](Get-MgGroupTeamScheduleTimeOffReason.md)
 
 ### [Get-MgGroupTeamScheduleTimeOffReason](Get-MgGroupTeamScheduleTimeOffReason.md)
 
@@ -483,17 +377,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgGroupTeamScheduleTimeOffRequest](Get-MgGroupTeamScheduleTimeOffRequest.md)
 
-### [Get-MgGroupTeamScheduleTimeOffRequest](Get-MgGroupTeamScheduleTimeOffRequest.md)
-
 ### [Get-MgGroupTeamScheduleTimeOffRequestCount](Get-MgGroupTeamScheduleTimeOffRequestCount.md)
 
 ### [Get-MgGroupTeamTag](Get-MgGroupTeamTag.md)
 
-### [Get-MgGroupTeamTag](Get-MgGroupTeamTag.md)
-
 ### [Get-MgGroupTeamTagCount](Get-MgGroupTeamTagCount.md)
-
-### [Get-MgGroupTeamTagMember](Get-MgGroupTeamTagMember.md)
 
 ### [Get-MgGroupTeamTagMember](Get-MgGroupTeamTagMember.md)
 
@@ -503,17 +391,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeam](Get-MgTeam.md)
 
-### [Get-MgTeam](Get-MgTeam.md)
-
-### [Get-MgTeamChannel](Get-MgTeamChannel.md)
-
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
 
 ### [Get-MgTeamChannelAllMemberCount](Get-MgTeamChannelAllMemberCount.md)
 
 ### [Get-MgTeamChannelCount](Get-MgTeamChannelCount.md)
-
-### [Get-MgTeamChannelEnabledApp](Get-MgTeamChannelEnabledApp.md)
 
 ### [Get-MgTeamChannelEnabledApp](Get-MgTeamChannelEnabledApp.md)
 
@@ -525,11 +407,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
 
-### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
-
 ### [Get-MgTeamChannelMemberCount](Get-MgTeamChannelMemberCount.md)
-
-### [Get-MgTeamChannelMessage](Get-MgTeamChannelMessage.md)
 
 ### [Get-MgTeamChannelMessage](Get-MgTeamChannelMessage.md)
 
@@ -539,11 +417,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamChannelMessageHostedContent](Get-MgTeamChannelMessageHostedContent.md)
 
-### [Get-MgTeamChannelMessageHostedContent](Get-MgTeamChannelMessageHostedContent.md)
-
 ### [Get-MgTeamChannelMessageHostedContentCount](Get-MgTeamChannelMessageHostedContentCount.md)
-
-### [Get-MgTeamChannelMessageReply](Get-MgTeamChannelMessageReply.md)
 
 ### [Get-MgTeamChannelMessageReply](Get-MgTeamChannelMessageReply.md)
 
@@ -553,25 +427,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamChannelMessageReplyHostedContent](Get-MgTeamChannelMessageReplyHostedContent.md)
 
-### [Get-MgTeamChannelMessageReplyHostedContent](Get-MgTeamChannelMessageReplyHostedContent.md)
-
 ### [Get-MgTeamChannelMessageReplyHostedContentCount](Get-MgTeamChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgTeamChannelRetainedMessage](Get-MgTeamChannelRetainedMessage.md)
 
 ### [Get-MgTeamChannelSharedWithTeam](Get-MgTeamChannelSharedWithTeam.md)
 
-### [Get-MgTeamChannelSharedWithTeam](Get-MgTeamChannelSharedWithTeam.md)
-
-### [Get-MgTeamChannelSharedWithTeamAllowedMember](Get-MgTeamChannelSharedWithTeamAllowedMember.md)
-
 ### [Get-MgTeamChannelSharedWithTeamAllowedMember](Get-MgTeamChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgTeamChannelSharedWithTeamAllowedMemberCount](Get-MgTeamChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgTeamChannelSharedWithTeamCount](Get-MgTeamChannelSharedWithTeamCount.md)
-
-### [Get-MgTeamChannelTab](Get-MgTeamChannelTab.md)
 
 ### [Get-MgTeamChannelTab](Get-MgTeamChannelTab.md)
 
@@ -587,11 +453,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamIncomingChannel](Get-MgTeamIncomingChannel.md)
 
-### [Get-MgTeamIncomingChannel](Get-MgTeamIncomingChannel.md)
-
 ### [Get-MgTeamIncomingChannelCount](Get-MgTeamIncomingChannelCount.md)
-
-### [Get-MgTeamInstalledApp](Get-MgTeamInstalledApp.md)
 
 ### [Get-MgTeamInstalledApp](Get-MgTeamInstalledApp.md)
 
@@ -603,17 +465,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamMember](Get-MgTeamMember.md)
 
-### [Get-MgTeamMember](Get-MgTeamMember.md)
-
 ### [Get-MgTeamMemberCount](Get-MgTeamMemberCount.md)
 
 ### [Get-MgTeamOperation](Get-MgTeamOperation.md)
 
-### [Get-MgTeamOperation](Get-MgTeamOperation.md)
-
 ### [Get-MgTeamOperationCount](Get-MgTeamOperationCount.md)
-
-### [Get-MgTeamPermissionGrant](Get-MgTeamPermissionGrant.md)
 
 ### [Get-MgTeamPermissionGrant](Get-MgTeamPermissionGrant.md)
 
@@ -629,8 +485,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamPrimaryChannelEnabledApp](Get-MgTeamPrimaryChannelEnabledApp.md)
 
-### [Get-MgTeamPrimaryChannelEnabledApp](Get-MgTeamPrimaryChannelEnabledApp.md)
-
 ### [Get-MgTeamPrimaryChannelEnabledAppCount](Get-MgTeamPrimaryChannelEnabledAppCount.md)
 
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
@@ -639,11 +493,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
 
-### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
-
 ### [Get-MgTeamPrimaryChannelMemberCount](Get-MgTeamPrimaryChannelMemberCount.md)
-
-### [Get-MgTeamPrimaryChannelMessage](Get-MgTeamPrimaryChannelMessage.md)
 
 ### [Get-MgTeamPrimaryChannelMessage](Get-MgTeamPrimaryChannelMessage.md)
 
@@ -653,11 +503,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamPrimaryChannelMessageHostedContent](Get-MgTeamPrimaryChannelMessageHostedContent.md)
 
-### [Get-MgTeamPrimaryChannelMessageHostedContent](Get-MgTeamPrimaryChannelMessageHostedContent.md)
-
 ### [Get-MgTeamPrimaryChannelMessageHostedContentCount](Get-MgTeamPrimaryChannelMessageHostedContentCount.md)
-
-### [Get-MgTeamPrimaryChannelMessageReply](Get-MgTeamPrimaryChannelMessageReply.md)
 
 ### [Get-MgTeamPrimaryChannelMessageReply](Get-MgTeamPrimaryChannelMessageReply.md)
 
@@ -667,23 +513,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamPrimaryChannelMessageReplyHostedContent](Get-MgTeamPrimaryChannelMessageReplyHostedContent.md)
 
-### [Get-MgTeamPrimaryChannelMessageReplyHostedContent](Get-MgTeamPrimaryChannelMessageReplyHostedContent.md)
-
 ### [Get-MgTeamPrimaryChannelMessageReplyHostedContentCount](Get-MgTeamPrimaryChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgTeamPrimaryChannelSharedWithTeam](Get-MgTeamPrimaryChannelSharedWithTeam.md)
-
-### [Get-MgTeamPrimaryChannelSharedWithTeam](Get-MgTeamPrimaryChannelSharedWithTeam.md)
-
-### [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMemberCount](Get-MgTeamPrimaryChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgTeamPrimaryChannelSharedWithTeamCount](Get-MgTeamPrimaryChannelSharedWithTeamCount.md)
-
-### [Get-MgTeamPrimaryChannelTab](Get-MgTeamPrimaryChannelTab.md)
 
 ### [Get-MgTeamPrimaryChannelTab](Get-MgTeamPrimaryChannelTab.md)
 
@@ -695,21 +533,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamScheduleDayNote](Get-MgTeamScheduleDayNote.md)
 
-### [Get-MgTeamScheduleDayNote](Get-MgTeamScheduleDayNote.md)
-
 ### [Get-MgTeamScheduleDayNoteCount](Get-MgTeamScheduleDayNoteCount.md)
-
-### [Get-MgTeamScheduleOfferShiftRequest](Get-MgTeamScheduleOfferShiftRequest.md)
 
 ### [Get-MgTeamScheduleOfferShiftRequest](Get-MgTeamScheduleOfferShiftRequest.md)
 
 ### [Get-MgTeamScheduleOfferShiftRequestCount](Get-MgTeamScheduleOfferShiftRequestCount.md)
 
 ### [Get-MgTeamScheduleOpenShift](Get-MgTeamScheduleOpenShift.md)
-
-### [Get-MgTeamScheduleOpenShift](Get-MgTeamScheduleOpenShift.md)
-
-### [Get-MgTeamScheduleOpenShiftChangeRequest](Get-MgTeamScheduleOpenShiftChangeRequest.md)
 
 ### [Get-MgTeamScheduleOpenShiftChangeRequest](Get-MgTeamScheduleOpenShiftChangeRequest.md)
 
@@ -719,11 +549,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamScheduleSchedulingGroup](Get-MgTeamScheduleSchedulingGroup.md)
 
-### [Get-MgTeamScheduleSchedulingGroup](Get-MgTeamScheduleSchedulingGroup.md)
-
 ### [Get-MgTeamScheduleSchedulingGroupCount](Get-MgTeamScheduleSchedulingGroupCount.md)
-
-### [Get-MgTeamScheduleShift](Get-MgTeamScheduleShift.md)
 
 ### [Get-MgTeamScheduleShift](Get-MgTeamScheduleShift.md)
 
@@ -731,11 +557,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamScheduleSwapShiftChangeRequest](Get-MgTeamScheduleSwapShiftChangeRequest.md)
 
-### [Get-MgTeamScheduleSwapShiftChangeRequest](Get-MgTeamScheduleSwapShiftChangeRequest.md)
-
 ### [Get-MgTeamScheduleSwapShiftChangeRequestCount](Get-MgTeamScheduleSwapShiftChangeRequestCount.md)
-
-### [Get-MgTeamScheduleTimeCard](Get-MgTeamScheduleTimeCard.md)
 
 ### [Get-MgTeamScheduleTimeCard](Get-MgTeamScheduleTimeCard.md)
 
@@ -743,11 +565,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamScheduleTimeOff](Get-MgTeamScheduleTimeOff.md)
 
-### [Get-MgTeamScheduleTimeOff](Get-MgTeamScheduleTimeOff.md)
-
 ### [Get-MgTeamScheduleTimeOffCount](Get-MgTeamScheduleTimeOffCount.md)
-
-### [Get-MgTeamScheduleTimeOffReason](Get-MgTeamScheduleTimeOffReason.md)
 
 ### [Get-MgTeamScheduleTimeOffReason](Get-MgTeamScheduleTimeOffReason.md)
 
@@ -755,17 +573,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamScheduleTimeOffRequest](Get-MgTeamScheduleTimeOffRequest.md)
 
-### [Get-MgTeamScheduleTimeOffRequest](Get-MgTeamScheduleTimeOffRequest.md)
-
 ### [Get-MgTeamScheduleTimeOffRequestCount](Get-MgTeamScheduleTimeOffRequestCount.md)
 
 ### [Get-MgTeamTag](Get-MgTeamTag.md)
 
-### [Get-MgTeamTag](Get-MgTeamTag.md)
-
 ### [Get-MgTeamTagCount](Get-MgTeamTagCount.md)
-
-### [Get-MgTeamTagMember](Get-MgTeamTagMember.md)
 
 ### [Get-MgTeamTagMember](Get-MgTeamTagMember.md)
 
@@ -777,23 +589,15 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamworkDeletedChat](Get-MgTeamworkDeletedChat.md)
 
-### [Get-MgTeamworkDeletedChat](Get-MgTeamworkDeletedChat.md)
-
 ### [Get-MgTeamworkDeletedChatCount](Get-MgTeamworkDeletedChatCount.md)
 
 ### [Get-MgTeamworkDeletedTeam](Get-MgTeamworkDeletedTeam.md)
-
-### [Get-MgTeamworkDeletedTeam](Get-MgTeamworkDeletedTeam.md)
-
-### [Get-MgTeamworkDeletedTeamChannel](Get-MgTeamworkDeletedTeamChannel.md)
 
 ### [Get-MgTeamworkDeletedTeamChannel](Get-MgTeamworkDeletedTeamChannel.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelAllMemberCount](Get-MgTeamworkDeletedTeamChannelAllMemberCount.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelCount](Get-MgTeamworkDeletedTeamChannelCount.md)
-
-### [Get-MgTeamworkDeletedTeamChannelEnabledApp](Get-MgTeamworkDeletedTeamChannelEnabledApp.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelEnabledApp](Get-MgTeamworkDeletedTeamChannelEnabledApp.md)
 
@@ -805,11 +609,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamworkDeletedTeamChannelMember](Get-MgTeamworkDeletedTeamChannelMember.md)
 
-### [Get-MgTeamworkDeletedTeamChannelMember](Get-MgTeamworkDeletedTeamChannelMember.md)
-
 ### [Get-MgTeamworkDeletedTeamChannelMemberCount](Get-MgTeamworkDeletedTeamChannelMemberCount.md)
-
-### [Get-MgTeamworkDeletedTeamChannelMessage](Get-MgTeamworkDeletedTeamChannelMessage.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelMessage](Get-MgTeamworkDeletedTeamChannelMessage.md)
 
@@ -819,11 +619,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamworkDeletedTeamChannelMessageHostedContent](Get-MgTeamworkDeletedTeamChannelMessageHostedContent.md)
 
-### [Get-MgTeamworkDeletedTeamChannelMessageHostedContent](Get-MgTeamworkDeletedTeamChannelMessageHostedContent.md)
-
 ### [Get-MgTeamworkDeletedTeamChannelMessageHostedContentCount](Get-MgTeamworkDeletedTeamChannelMessageHostedContentCount.md)
-
-### [Get-MgTeamworkDeletedTeamChannelMessageReply](Get-MgTeamworkDeletedTeamChannelMessageReply.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelMessageReply](Get-MgTeamworkDeletedTeamChannelMessageReply.md)
 
@@ -833,25 +629,17 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContent.md)
 
-### [Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContent.md)
-
 ### [Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContentCount](Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContentCount.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelRetainedMessage](Get-MgTeamworkDeletedTeamChannelRetainedMessage.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelSharedWithTeam](Get-MgTeamworkDeletedTeamChannelSharedWithTeam.md)
 
-### [Get-MgTeamworkDeletedTeamChannelSharedWithTeam](Get-MgTeamworkDeletedTeamChannelSharedWithTeam.md)
-
-### [Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMember](Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMember.md)
-
 ### [Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMember](Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMember.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMemberCount](Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMemberCount.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelSharedWithTeamCount](Get-MgTeamworkDeletedTeamChannelSharedWithTeamCount.md)
-
-### [Get-MgTeamworkDeletedTeamChannelTab](Get-MgTeamworkDeletedTeamChannelTab.md)
 
 ### [Get-MgTeamworkDeletedTeamChannelTab](Get-MgTeamworkDeletedTeamChannelTab.md)
 
@@ -865,17 +653,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgTeamworkWorkforceIntegration](Get-MgTeamworkWorkforceIntegration.md)
 
-### [Get-MgTeamworkWorkforceIntegration](Get-MgTeamworkWorkforceIntegration.md)
-
 ### [Get-MgTeamworkWorkforceIntegrationCount](Get-MgTeamworkWorkforceIntegrationCount.md)
 
 ### [Get-MgUserChat](Get-MgUserChat.md)
 
-### [Get-MgUserChat](Get-MgUserChat.md)
-
 ### [Get-MgUserChatCount](Get-MgUserChatCount.md)
-
-### [Get-MgUserChatInstalledApp](Get-MgUserChatInstalledApp.md)
 
 ### [Get-MgUserChatInstalledApp](Get-MgUserChatInstalledApp.md)
 
@@ -889,8 +671,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserChatMember](Get-MgUserChatMember.md)
 
-### [Get-MgUserChatMember](Get-MgUserChatMember.md)
-
 ### [Get-MgUserChatMemberCount](Get-MgUserChatMemberCount.md)
 
 ### [Get-MgUserChatMessageCount](Get-MgUserChatMessageCount.md)
@@ -899,11 +679,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserChatMessageHostedContent](Get-MgUserChatMessageHostedContent.md)
 
-### [Get-MgUserChatMessageHostedContent](Get-MgUserChatMessageHostedContent.md)
-
 ### [Get-MgUserChatMessageHostedContentCount](Get-MgUserChatMessageHostedContentCount.md)
-
-### [Get-MgUserChatMessageReply](Get-MgUserChatMessageReply.md)
 
 ### [Get-MgUserChatMessageReply](Get-MgUserChatMessageReply.md)
 
@@ -913,17 +689,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserChatMessageReplyHostedContent](Get-MgUserChatMessageReplyHostedContent.md)
 
-### [Get-MgUserChatMessageReplyHostedContent](Get-MgUserChatMessageReplyHostedContent.md)
-
 ### [Get-MgUserChatMessageReplyHostedContentCount](Get-MgUserChatMessageReplyHostedContentCount.md)
 
 ### [Get-MgUserChatPermissionGrant](Get-MgUserChatPermissionGrant.md)
 
-### [Get-MgUserChatPermissionGrant](Get-MgUserChatPermissionGrant.md)
-
 ### [Get-MgUserChatPermissionGrantCount](Get-MgUserChatPermissionGrantCount.md)
-
-### [Get-MgUserChatPinnedMessage](Get-MgUserChatPinnedMessage.md)
 
 ### [Get-MgUserChatPinnedMessage](Get-MgUserChatPinnedMessage.md)
 
@@ -933,13 +703,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserChatTab](Get-MgUserChatTab.md)
 
-### [Get-MgUserChatTab](Get-MgUserChatTab.md)
-
 ### [Get-MgUserChatTabCount](Get-MgUserChatTabCount.md)
 
 ### [Get-MgUserChatTabTeamApp](Get-MgUserChatTabTeamApp.md)
-
-### [Get-MgUserChatTargetedMessage](Get-MgUserChatTargetedMessage.md)
 
 ### [Get-MgUserChatTargetedMessage](Get-MgUserChatTargetedMessage.md)
 
@@ -947,19 +713,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserChatTargetedMessageHostedContent](Get-MgUserChatTargetedMessageHostedContent.md)
 
-### [Get-MgUserChatTargetedMessageHostedContent](Get-MgUserChatTargetedMessageHostedContent.md)
-
 ### [Get-MgUserChatTargetedMessageHostedContentCount](Get-MgUserChatTargetedMessageHostedContentCount.md)
-
-### [Get-MgUserChatTargetedMessageReply](Get-MgUserChatTargetedMessageReply.md)
 
 ### [Get-MgUserChatTargetedMessageReply](Get-MgUserChatTargetedMessageReply.md)
 
 ### [Get-MgUserChatTargetedMessageReplyCount](Get-MgUserChatTargetedMessageReplyCount.md)
 
 ### [Get-MgUserChatTargetedMessageReplyDelta](Get-MgUserChatTargetedMessageReplyDelta.md)
-
-### [Get-MgUserChatTargetedMessageReplyHostedContent](Get-MgUserChatTargetedMessageReplyHostedContent.md)
 
 ### [Get-MgUserChatTargetedMessageReplyHostedContent](Get-MgUserChatTargetedMessageReplyHostedContent.md)
 
@@ -971,11 +731,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
 
-### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
-
 ### [Get-MgUserTeamworkAssociatedTeamCount](Get-MgUserTeamworkAssociatedTeamCount.md)
-
-### [Get-MgUserTeamworkInstalledApp](Get-MgUserTeamworkInstalledApp.md)
 
 ### [Get-MgUserTeamworkInstalledApp](Get-MgUserTeamworkInstalledApp.md)
 
@@ -1988,23 +1744,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
 
 ### [Update-MgUserTeamworkAssociatedTeam](Update-MgUserTeamworkAssociatedTeam.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
