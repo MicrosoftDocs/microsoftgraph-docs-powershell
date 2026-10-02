@@ -47,12 +47,17 @@ This cmdlet has the following aliases,
 Get a collection of enterprise application reports based on aggregated traffic logs for a specified time period in Global Secure Access.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
-Get-MgBetaNetworkAccessReportEnterpriseApplicationReport -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -UserId $userIdId
+Get-MgBetaNetworkAccessReportEnterpriseApplicationReport -StartDateTime $startDateTimeId -EndDateTime $endDateTimeId -UserId $userIdId 
+
+```
+This example shows how to use the Get-MgBetaNetworkAccessReportEnterpriseApplicationReport Cmdlet.
+
 
 ## PARAMETERS
 

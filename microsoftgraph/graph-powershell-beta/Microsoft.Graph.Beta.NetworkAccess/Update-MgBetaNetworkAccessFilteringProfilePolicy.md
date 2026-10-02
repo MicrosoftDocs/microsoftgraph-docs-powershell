@@ -79,8 +79,9 @@ Use this operation to update any derived type, including:\r- cloudFirewallPolicy
 | Application | NetworkAccess.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Update a filteringPolicyLink
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -91,7 +92,12 @@ $params = @{
 
 Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will update a filteringpolicylink
+
+### Example 2: Update a tlsInspectionPolicyLink
+
+```powershell
 
 Import-Module Microsoft.Graph.Beta.NetworkAccess
 
@@ -100,6 +106,10 @@ $params = @{
 }
 
 Update-MgBetaNetworkAccessFilteringProfilePolicy -FilteringProfileId $filteringProfileId -PolicyLinkId $policyLinkId -BodyParameter $params
+
+```
+This example will update a tlsinspectionpolicylink
+
 
 ## PARAMETERS
 
