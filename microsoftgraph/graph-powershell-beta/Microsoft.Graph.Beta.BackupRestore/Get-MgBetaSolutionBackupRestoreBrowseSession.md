@@ -60,16 +60,6 @@ This cmdlet has the following aliases,
 
 The list of browse sessions in the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -579,6 +569,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorebrowsesession)
 - [](https://learn.microsoft.com/graph/api/backuprestoreroot-list-browsesessions?view=graph-rest-beta)
+
 
 
 
