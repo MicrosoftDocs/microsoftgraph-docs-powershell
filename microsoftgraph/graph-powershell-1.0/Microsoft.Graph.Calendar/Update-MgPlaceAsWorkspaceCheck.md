@@ -15,6 +15,9 @@ title: Update-MgPlaceAsWorkspaceCheck
 
 Update the navigation property checkIns in places
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlaceAsWorkspaceCheck](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaPlaceAsWorkspaceCheck?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
