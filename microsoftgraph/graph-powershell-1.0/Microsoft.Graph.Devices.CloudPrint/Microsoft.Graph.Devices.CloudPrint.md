@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CloudPrint
-Module Guid: 493be36a-2f98-447a-89a2-f808f6075858
+Module Guid: a4251ea8-686b-44fe-a47e-8d1d06e20dd4
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,21 +15,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPrintConnector](Get-MgPrintConnector.md)
 
-### [Get-MgPrintConnector](Get-MgPrintConnector.md)
-
 ### [Get-MgPrintConnectorCount](Get-MgPrintConnectorCount.md)
-
-### [Get-MgPrintOperation](Get-MgPrintOperation.md)
 
 ### [Get-MgPrintOperation](Get-MgPrintOperation.md)
 
 ### [Get-MgPrintOperationCount](Get-MgPrintOperationCount.md)
 
 ### [Get-MgPrintPrinter](Get-MgPrintPrinter.md)
-
-### [Get-MgPrintPrinter](Get-MgPrintPrinter.md)
-
-### [Get-MgPrintPrinterConnector](Get-MgPrintPrinterConnector.md)
 
 ### [Get-MgPrintPrinterConnector](Get-MgPrintPrinterConnector.md)
 
@@ -39,19 +31,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPrintPrinterJob](Get-MgPrintPrinterJob.md)
 
-### [Get-MgPrintPrinterJob](Get-MgPrintPrinterJob.md)
-
 ### [Get-MgPrintPrinterJobCount](Get-MgPrintPrinterJobCount.md)
-
-### [Get-MgPrintPrinterJobDocument](Get-MgPrintPrinterJobDocument.md)
 
 ### [Get-MgPrintPrinterJobDocument](Get-MgPrintPrinterJobDocument.md)
 
 ### [Get-MgPrintPrinterJobDocumentContent](Get-MgPrintPrinterJobDocumentContent.md)
 
 ### [Get-MgPrintPrinterJobDocumentCount](Get-MgPrintPrinterJobDocumentCount.md)
-
-### [Get-MgPrintPrinterJobTask](Get-MgPrintPrinterJobTask.md)
 
 ### [Get-MgPrintPrinterJobTask](Get-MgPrintPrinterJobTask.md)
 
@@ -63,11 +49,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPrintPrinterShare](Get-MgPrintPrinterShare.md)
 
-### [Get-MgPrintPrinterShare](Get-MgPrintPrinterShare.md)
-
 ### [Get-MgPrintPrinterShareCount](Get-MgPrintPrinterShareCount.md)
-
-### [Get-MgPrintPrinterTaskTrigger](Get-MgPrintPrinterTaskTrigger.md)
 
 ### [Get-MgPrintPrinterTaskTrigger](Get-MgPrintPrinterTaskTrigger.md)
 
@@ -77,17 +59,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPrintService](Get-MgPrintService.md)
 
-### [Get-MgPrintService](Get-MgPrintService.md)
-
 ### [Get-MgPrintServiceCount](Get-MgPrintServiceCount.md)
 
 ### [Get-MgPrintServiceEndpoint](Get-MgPrintServiceEndpoint.md)
 
-### [Get-MgPrintServiceEndpoint](Get-MgPrintServiceEndpoint.md)
-
 ### [Get-MgPrintServiceEndpointCount](Get-MgPrintServiceEndpointCount.md)
-
-### [Get-MgPrintShare](Get-MgPrintShare.md)
 
 ### [Get-MgPrintShare](Get-MgPrintShare.md)
 
@@ -117,19 +93,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPrintShareJob](Get-MgPrintShareJob.md)
 
-### [Get-MgPrintShareJob](Get-MgPrintShareJob.md)
-
 ### [Get-MgPrintShareJobCount](Get-MgPrintShareJobCount.md)
-
-### [Get-MgPrintShareJobDocument](Get-MgPrintShareJobDocument.md)
 
 ### [Get-MgPrintShareJobDocument](Get-MgPrintShareJobDocument.md)
 
 ### [Get-MgPrintShareJobDocumentContent](Get-MgPrintShareJobDocumentContent.md)
 
 ### [Get-MgPrintShareJobDocumentCount](Get-MgPrintShareJobDocumentCount.md)
-
-### [Get-MgPrintShareJobTask](Get-MgPrintShareJobTask.md)
 
 ### [Get-MgPrintShareJobTask](Get-MgPrintShareJobTask.md)
 
@@ -143,11 +113,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgPrintTaskDefinition](Get-MgPrintTaskDefinition.md)
 
-### [Get-MgPrintTaskDefinition](Get-MgPrintTaskDefinition.md)
-
 ### [Get-MgPrintTaskDefinitionCount](Get-MgPrintTaskDefinitionCount.md)
-
-### [Get-MgPrintTaskDefinitionTask](Get-MgPrintTaskDefinitionTask.md)
 
 ### [Get-MgPrintTaskDefinitionTask](Get-MgPrintTaskDefinitionTask.md)
 
@@ -286,23 +252,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgPrintTaskDefinition](Update-MgPrintTaskDefinition.md)
 
 ### [Update-MgPrintTaskDefinitionTask](Update-MgPrintTaskDefinitionTask.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
