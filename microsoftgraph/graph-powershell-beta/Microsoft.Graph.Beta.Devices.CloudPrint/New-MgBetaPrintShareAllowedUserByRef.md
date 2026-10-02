@@ -15,6 +15,9 @@ title: New-MgBetaPrintShareAllowedUserByRef
 
 Grant the specified user access to submit print jobs to the associated printerShare.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareAllowedUserByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

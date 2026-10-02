@@ -16,6 +16,9 @@ title: Remove-MgBetaPrintPrinterJobDocumentContent
 The unique identifier for an entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterJobDocumentContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
