@@ -15,6 +15,9 @@ title: Clear-MgBetaUserManagedDevice
 
 Wipe a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Clear-MgUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### WipeExpanded (Default)
