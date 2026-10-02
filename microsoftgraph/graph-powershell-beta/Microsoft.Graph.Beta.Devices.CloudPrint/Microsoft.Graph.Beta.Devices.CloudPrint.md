@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
-Module Guid: 8ef18bd5-e6dc-46d8-9ecb-05b992e76dc7
+Module Guid: 38bcc16a-4cfa-43b7-904a-bc269069a8fc
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.devices.cloudprint/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,11 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintConnector](Get-MgBetaPrintConnector.md)
 
-### [Get-MgBetaPrintConnector](Get-MgBetaPrintConnector.md)
-
 ### [Get-MgBetaPrintConnectorCount](Get-MgBetaPrintConnectorCount.md)
-
-### [Get-MgBetaPrintOperation](Get-MgBetaPrintOperation.md)
 
 ### [Get-MgBetaPrintOperation](Get-MgBetaPrintOperation.md)
 
@@ -27,11 +23,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintPrinter](Get-MgBetaPrintPrinter.md)
 
-### [Get-MgBetaPrintPrinter](Get-MgBetaPrintPrinter.md)
-
 ### [Get-MgBetaPrintPrinterCapability](Get-MgBetaPrintPrinterCapability.md)
-
-### [Get-MgBetaPrintPrinterConnector](Get-MgBetaPrintPrinterConnector.md)
 
 ### [Get-MgBetaPrintPrinterConnector](Get-MgBetaPrintPrinterConnector.md)
 
@@ -41,11 +33,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintPrinterJob](Get-MgBetaPrintPrinterJob.md)
 
-### [Get-MgBetaPrintPrinterJob](Get-MgBetaPrintPrinterJob.md)
-
 ### [Get-MgBetaPrintPrinterJobCount](Get-MgBetaPrintPrinterJobCount.md)
-
-### [Get-MgBetaPrintPrinterJobDocument](Get-MgBetaPrintPrinterJobDocument.md)
 
 ### [Get-MgBetaPrintPrinterJobDocument](Get-MgBetaPrintPrinterJobDocument.md)
 
@@ -55,15 +43,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintPrinterJobTask](Get-MgBetaPrintPrinterJobTask.md)
 
-### [Get-MgBetaPrintPrinterJobTask](Get-MgBetaPrintPrinterJobTask.md)
-
 ### [Get-MgBetaPrintPrinterJobTaskCount](Get-MgBetaPrintPrinterJobTaskCount.md)
 
 ### [Get-MgBetaPrintPrinterJobTaskDefinition](Get-MgBetaPrintPrinterJobTaskDefinition.md)
 
 ### [Get-MgBetaPrintPrinterJobTaskTrigger](Get-MgBetaPrintPrinterJobTaskTrigger.md)
-
-### [Get-MgBetaPrintPrinterShare](Get-MgBetaPrintPrinterShare.md)
 
 ### [Get-MgBetaPrintPrinterShare](Get-MgBetaPrintPrinterShare.md)
 
@@ -93,19 +77,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintPrinterShareJob](Get-MgBetaPrintPrinterShareJob.md)
 
-### [Get-MgBetaPrintPrinterShareJob](Get-MgBetaPrintPrinterShareJob.md)
-
 ### [Get-MgBetaPrintPrinterShareJobCount](Get-MgBetaPrintPrinterShareJobCount.md)
-
-### [Get-MgBetaPrintPrinterShareJobDocument](Get-MgBetaPrintPrinterShareJobDocument.md)
 
 ### [Get-MgBetaPrintPrinterShareJobDocument](Get-MgBetaPrintPrinterShareJobDocument.md)
 
 ### [Get-MgBetaPrintPrinterShareJobDocumentContent](Get-MgBetaPrintPrinterShareJobDocumentContent.md)
 
 ### [Get-MgBetaPrintPrinterShareJobDocumentCount](Get-MgBetaPrintPrinterShareJobDocumentCount.md)
-
-### [Get-MgBetaPrintPrinterShareJobTask](Get-MgBetaPrintPrinterShareJobTask.md)
 
 ### [Get-MgBetaPrintPrinterShareJobTask](Get-MgBetaPrintPrinterShareJobTask.md)
 
@@ -119,13 +97,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintPrinterTaskTrigger](Get-MgBetaPrintPrinterTaskTrigger.md)
 
-### [Get-MgBetaPrintPrinterTaskTrigger](Get-MgBetaPrintPrinterTaskTrigger.md)
-
 ### [Get-MgBetaPrintPrinterTaskTriggerCount](Get-MgBetaPrintPrinterTaskTriggerCount.md)
 
 ### [Get-MgBetaPrintPrinterTaskTriggerDefinition](Get-MgBetaPrintPrinterTaskTriggerDefinition.md)
-
-### [Get-MgBetaPrintService](Get-MgBetaPrintService.md)
 
 ### [Get-MgBetaPrintService](Get-MgBetaPrintService.md)
 
@@ -133,11 +107,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintServiceEndpoint](Get-MgBetaPrintServiceEndpoint.md)
 
-### [Get-MgBetaPrintServiceEndpoint](Get-MgBetaPrintServiceEndpoint.md)
-
 ### [Get-MgBetaPrintServiceEndpointCount](Get-MgBetaPrintServiceEndpointCount.md)
-
-### [Get-MgBetaPrintShare](Get-MgBetaPrintShare.md)
 
 ### [Get-MgBetaPrintShare](Get-MgBetaPrintShare.md)
 
@@ -167,19 +137,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintShareJob](Get-MgBetaPrintShareJob.md)
 
-### [Get-MgBetaPrintShareJob](Get-MgBetaPrintShareJob.md)
-
 ### [Get-MgBetaPrintShareJobCount](Get-MgBetaPrintShareJobCount.md)
-
-### [Get-MgBetaPrintShareJobDocument](Get-MgBetaPrintShareJobDocument.md)
 
 ### [Get-MgBetaPrintShareJobDocument](Get-MgBetaPrintShareJobDocument.md)
 
 ### [Get-MgBetaPrintShareJobDocumentContent](Get-MgBetaPrintShareJobDocumentContent.md)
 
 ### [Get-MgBetaPrintShareJobDocumentCount](Get-MgBetaPrintShareJobDocumentCount.md)
-
-### [Get-MgBetaPrintShareJobTask](Get-MgBetaPrintShareJobTask.md)
 
 ### [Get-MgBetaPrintShareJobTask](Get-MgBetaPrintShareJobTask.md)
 
@@ -193,11 +157,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaPrintTaskDefinition](Get-MgBetaPrintTaskDefinition.md)
 
-### [Get-MgBetaPrintTaskDefinition](Get-MgBetaPrintTaskDefinition.md)
-
 ### [Get-MgBetaPrintTaskDefinitionCount](Get-MgBetaPrintTaskDefinitionCount.md)
-
-### [Get-MgBetaPrintTaskDefinitionTask](Get-MgBetaPrintTaskDefinitionTask.md)
 
 ### [Get-MgBetaPrintTaskDefinitionTask](Get-MgBetaPrintTaskDefinitionTask.md)
 
@@ -398,23 +358,4 @@ Microsoft Graph PowerShell Cmdlets
 ### [Update-MgBetaPrintTaskDefinition](Update-MgBetaPrintTaskDefinition.md)
 
 ### [Update-MgBetaPrintTaskDefinitionTask](Update-MgBetaPrintTaskDefinitionTask.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
