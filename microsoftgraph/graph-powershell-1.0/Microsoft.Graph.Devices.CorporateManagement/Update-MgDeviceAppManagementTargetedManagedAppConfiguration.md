@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 Update the navigation property targetedManagedAppConfigurations in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

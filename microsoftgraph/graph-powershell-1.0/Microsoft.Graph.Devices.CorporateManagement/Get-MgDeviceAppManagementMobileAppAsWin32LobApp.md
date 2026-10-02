@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsWin32LobApp
 
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.win32LobApp
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

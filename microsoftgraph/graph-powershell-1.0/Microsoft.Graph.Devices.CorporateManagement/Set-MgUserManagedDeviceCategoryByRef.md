@@ -15,6 +15,9 @@ title: Set-MgUserManagedDeviceCategoryByRef
 
 Update the ref of navigation property deviceCategory in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserManagedDeviceCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaUserManagedDeviceCategoryByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

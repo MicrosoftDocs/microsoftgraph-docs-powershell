@@ -15,6 +15,9 @@ title: Remove-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
 
 Delete navigation property deploymentSummary for deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

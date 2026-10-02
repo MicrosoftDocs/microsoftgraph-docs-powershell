@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion
 
 Update the navigation property contentVersions in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
