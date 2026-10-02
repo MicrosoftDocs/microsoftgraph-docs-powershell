@@ -583,8 +583,8 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwardgroupevent)
-- [](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta)
+- [Invoke-MgBetaForwardGroupEvent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/invoke-mgbetaforwardgroupevent)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-beta)
 
 
 

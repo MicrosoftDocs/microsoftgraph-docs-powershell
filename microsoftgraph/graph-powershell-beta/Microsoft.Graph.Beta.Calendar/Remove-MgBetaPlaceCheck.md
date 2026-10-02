@@ -423,7 +423,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacecheck)
+- [Remove-MgBetaPlaceCheck](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplacecheck)
 
 
 
