@@ -15,6 +15,9 @@ title: Remove-MgPlannerPlan
 
 Delete a plannerPlan object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
