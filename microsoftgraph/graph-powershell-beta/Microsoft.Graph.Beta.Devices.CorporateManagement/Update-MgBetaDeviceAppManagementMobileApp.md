@@ -1048,7 +1048,7 @@ Does not support $search, $filter, $orderBy.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileapp)
+- [Update-MgBetaDeviceAppManagementMobileApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileapp)
 
 
 
