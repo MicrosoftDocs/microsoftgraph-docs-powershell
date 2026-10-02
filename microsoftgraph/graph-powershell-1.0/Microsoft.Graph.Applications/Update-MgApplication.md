@@ -598,7 +598,7 @@ HelpMessage: ''
 
 ### -DefaultRedirectUri
 
-.
+
 
 ```yaml
 Type: System.String
@@ -848,7 +848,7 @@ HelpMessage: ''
 
 ### -HomeRealmDiscoveryPolicies
 
-.
+
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
@@ -1061,7 +1061,7 @@ HelpMessage: ''
 
 ### -IsDisabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1263,7 +1263,7 @@ HelpMessage: ''
 
 ### -Oauth2RequirePostResponse
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -1844,7 +1844,7 @@ HelpMessage: ''
 
 ### -TokenIssuancePolicies
 
-.
+
 To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
@@ -1872,7 +1872,7 @@ HelpMessage: ''
 
 ### -TokenLifetimePolicies
 
-.
+
 To construct, see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
