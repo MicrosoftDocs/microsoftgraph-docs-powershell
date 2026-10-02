@@ -463,7 +463,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IMicrosoftGraphCertificateBasedApplicationConfiguration>: certificateBasedApplicationConfiguration
+BODYPARAMETER `<IMicrosoftGraphCertificateBasedApplicationConfiguration>`: certificateBasedApplicationConfiguration
   [(Any) <Object>]: This indicates any property can be added to this object.
   [TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>]: Collection of trusted certificate authorities.
     [Id <String>]: The unique identifier for an entity.
@@ -494,3 +494,25 @@ In a certificateBasedApplicationConfiguration object, at least one object in the
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
 - [](https://learn.microsoft.com/graph/api/certificateauthoritypath-post-certificatebasedapplicationconfigurations?view=graph-rest-beta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
