@@ -1,32 +1,38 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlog
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatasecurityandgovernanceactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
 ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaSecurityAuditLog
+title: Update-MgBetaSecurityDataSecurityAndGovernanceActivity
 ---
 
-# Get-MgBetaSecurityAuditLog
+# Update-MgBetaSecurityDataSecurityAndGovernanceActivity
 
 ## SYNOPSIS
 
-The entry point for Microsoft Purview audit log queries and operations.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLog](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLog?view=graph-powershell-1.0)
+Update the navigation property activities in security
 
 ## SYNTAX
 
-### Get (Default)
+### UpdateExpanded (Default)
 
 ```
-Get-MgBetaSecurityAuditLog [-ExpandProperty <string[]>] [-Property <string[]>]
+Update-MgBetaSecurityDataSecurityAndGovernanceActivity [-ResponseHeadersVariable <string>]
+ [-AdditionalProperties <hashtable>] [-Id <string>] [-Break] [-Headers <IDictionary>]
+ [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
+```
+
+### Update
+
+```
+Update-MgBetaSecurityDataSecurityAndGovernanceActivity -BodyParameter <hashtable>
  [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
- [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
+ [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials] [-WhatIf] [-Confirm]
 ```
 
 ## ALIASES
@@ -36,9 +42,51 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-The entry point for Microsoft Purview audit log queries and operations.
+Update the navigation property activities in security
 
 ## PARAMETERS
+
+### -AdditionalProperties
+
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -BodyParameter
+
+tenantActivitiesContainer
+
+```yaml
+Type: System.Collections.Hashtable
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: Update
+  Position: Named
+  IsRequired: true
+  ValueFromPipeline: true
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -Break
 
@@ -61,16 +109,16 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -ExpandProperty
+### -Confirm
 
-Expand related entities
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.String[]
+Type: System.Management.Automation.SwitchParameter
 DefaultValue: ''
 SupportsWildcards: false
 Aliases:
-- Expand
+- cf
 ParameterSets:
 - Name: (All)
   Position: Named
@@ -146,18 +194,18 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
-### -Property
+### -Id
 
-Select properties to be returned
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
-Type: System.String[]
+Type: System.String
 DefaultValue: ''
 SupportsWildcards: false
-Aliases:
-- Select
+Aliases: []
 ParameterSets:
-- Name: (All)
+- Name: UpdateExpanded
   Position: Named
   IsRequired: false
   ValueFromPipeline: false
@@ -253,6 +301,28 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -WhatIf
+
+Runs the command in a mode that only reports what would happen without performing the actions.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+DefaultValue: ''
+SupportsWildcards: false
+Aliases:
+- wi
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
@@ -262,13 +332,17 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### System.Collections.Hashtable
+
+{{ Fill in the Description }}
+
 ### System.Collections.IDictionary
 
 {{ Fill in the Description }}
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditCoreRoot
+### System.String
 
 {{ Fill in the Description }}
 
@@ -276,7 +350,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityAuditLog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlog)
+- [Update-MgBetaSecurityDataSecurityAndGovernanceActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydatasecurityandgovernanceactivity)
 
 
 

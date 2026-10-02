@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycollaborationanalyzedemail
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSecurityCollaborationAnalyzedEmail
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaSecurityCollaborationAnalyzedEmail
 ## SYNOPSIS
 
 Create new navigation property to analyzedEmails for security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCollaborationAnalyzedEmail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCollaborationAnalyzedEmail?view=graph-powershell-1.0)
 
 ## SYNTAX
 

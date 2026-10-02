@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityauditlog
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaSecurityAuditLog
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaSecurityAuditLog
 ## SYNOPSIS
 
 Delete navigation property auditLog for security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityAuditLog](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAuditLog?view=graph-powershell-1.0)
 
 ## SYNTAX
 

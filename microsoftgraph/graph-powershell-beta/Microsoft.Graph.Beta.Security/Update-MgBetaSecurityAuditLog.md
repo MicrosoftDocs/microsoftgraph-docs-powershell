@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityauditlog
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaSecurityAuditLog
 ---
@@ -14,6 +14,9 @@ title: Update-MgBetaSecurityAuditLog
 ## SYNOPSIS
 
 Update the navigation property auditLog in security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAuditLog](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAuditLog?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogqueryrecord
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSecurityAuditLogQueryRecord
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaSecurityAuditLogQueryRecord
 ## SYNOPSIS
 
 An individual audit log record.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLogQueryRecord](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLogQueryRecord?view=graph-powershell-1.0)
 
 ## SYNTAX
 

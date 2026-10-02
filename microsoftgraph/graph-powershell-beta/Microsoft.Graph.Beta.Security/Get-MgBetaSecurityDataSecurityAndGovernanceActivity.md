@@ -1,30 +1,27 @@
 ---
 document type: cmdlet
 external help file: Microsoft.Graph.Beta.Security-Help.xml
-HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlog
+HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatasecurityandgovernanceactivity
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
 ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
-title: Get-MgBetaSecurityAuditLog
+title: Get-MgBetaSecurityDataSecurityAndGovernanceActivity
 ---
 
-# Get-MgBetaSecurityAuditLog
+# Get-MgBetaSecurityDataSecurityAndGovernanceActivity
 
 ## SYNOPSIS
 
-The entry point for Microsoft Purview audit log queries and operations.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAuditLog](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAuditLog?view=graph-powershell-1.0)
+Get activities from security
 
 ## SYNTAX
 
 ### Get (Default)
 
 ```
-Get-MgBetaSecurityAuditLog [-ExpandProperty <string[]>] [-Property <string[]>]
- [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+Get-MgBetaSecurityDataSecurityAndGovernanceActivity [-ExpandProperty <string[]>]
+ [-Property <string[]>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -36,7 +33,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-The entry point for Microsoft Purview audit log queries and operations.
+Get activities from security
 
 ## PARAMETERS
 
@@ -268,7 +265,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuditCoreRoot
+### System.String
 
 {{ Fill in the Description }}
 
@@ -276,7 +273,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Get-MgBetaSecurityAuditLog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlog)
+- [Get-MgBetaSecurityDataSecurityAndGovernanceActivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritydatasecurityandgovernanceactivity)
 
 
 

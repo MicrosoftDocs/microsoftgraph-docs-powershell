@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Security-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaprocesssecuritydatasecurityandgovernancecontentasync
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Security
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaProcessSecurityDataSecurityAndGovernanceContentAsync
 ---
@@ -376,6 +376,8 @@ BODY `<IPaths15Nzuf0SecurityDatasecurityandgovernanceMicrosoftGraphProcessconten
       [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Activity <String>]: userActivityType
+        [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+          [Value <String>]: 
       [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -424,7 +426,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
         [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
           [(Any) <Object>]: This indicates any property can be added to this object.
           [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-        [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
     [RequestId <String>]: A unique identifier provided by the client to correlate this specific request item within the batch.
     [UserId <String>]: The unique identifier (Object ID or UPN) of the user in whose context the content should be processed.
 
@@ -434,6 +435,8 @@ PROCESSCONTENTREQUESTS <IMicrosoftGraphProcessContentBatchRequest[]>: .
     [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Activity <String>]: userActivityType
+      [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+        [Value <String>]: 
     [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -482,7 +485,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
       [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-      [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
   [RequestId <String>]: A unique identifier provided by the client to correlate this specific request item within the batch.
   [UserId <String>]: The unique identifier (Object ID or UPN) of the user in whose context the content should be processed.
 
