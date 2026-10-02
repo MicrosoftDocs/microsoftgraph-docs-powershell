@@ -60,18 +60,28 @@ For information about retention labels from an administrator's perspective, see 
 | Application | Files.ReadWrite.All, Sites.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Remove the retention label from a driveItem
 
-### EXAMPLE 1
+```powershell
+
+Import-Module Microsoft.Graph.Files
+
+Remove-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example will remove the retention label from a driveitem
+
+### Example 2: Remove the retention label from a driveItem that fails due to insufficient permissions
+
+```powershell
 
 Import-Module Microsoft.Graph.Files
 
 Remove-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
 
-### EXAMPLE 2
+```
+This example will remove the retention label from a driveitem that fails due to insufficient permissions
 
-Import-Module Microsoft.Graph.Files
-
-Remove-MgDriveItemRetentionLabel -DriveId $driveId -DriveItemId $driveItemId
 
 ## PARAMETERS
 
