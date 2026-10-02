@@ -16,6 +16,9 @@ title: Update-MgBetaSolutionBackupRestoreOneDriveForBusinessProtectionPolicy
 Update the protection policy for the OneDrive service in Microsoft 365.
 This method adds a driveProtectionUnit to or removes it from a oneDriveForBusinessProtectionPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy](/powershell/module/Microsoft.Graph.BackupRestore/Update-MgSolutionBackupRestoreOneDriveForBusinessProtectionPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

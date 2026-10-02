@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUn
 
 Get a siteProtectionUnitsBulkAdditionJob object by the ID associated with a sharePointProtectionPolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitBulkAdditionJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

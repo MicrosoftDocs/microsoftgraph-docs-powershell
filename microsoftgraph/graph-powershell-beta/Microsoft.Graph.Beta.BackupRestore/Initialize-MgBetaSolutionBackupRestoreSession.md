@@ -16,6 +16,9 @@ title: Initialize-MgBetaSolutionBackupRestoreSession
 Activate a draft restoreSessionBase object to restore a protection unit.
 The following points apply to restoring a protection unit:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgSolutionBackupRestoreSession](/powershell/module/Microsoft.Graph.BackupRestore/Initialize-MgSolutionBackupRestoreSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Activate (Default)
