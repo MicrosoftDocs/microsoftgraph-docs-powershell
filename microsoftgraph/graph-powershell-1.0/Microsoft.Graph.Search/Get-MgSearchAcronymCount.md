@@ -15,6 +15,9 @@ title: Get-MgSearchAcronymCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchAcronymCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchAcronymCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

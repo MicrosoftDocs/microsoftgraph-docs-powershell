@@ -15,6 +15,9 @@ title: Get-MgExternalConnectionCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
