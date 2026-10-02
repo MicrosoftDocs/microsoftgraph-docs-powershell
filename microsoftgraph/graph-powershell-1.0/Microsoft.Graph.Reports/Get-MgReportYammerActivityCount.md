@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportYammerActivityCount -Period $periodId
+Get-MgReportYammerActivityCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportYammerActivityCount Cmdlet.
+
 
 ## PARAMETERS
 

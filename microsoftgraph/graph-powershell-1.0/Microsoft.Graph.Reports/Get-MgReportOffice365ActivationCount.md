@@ -47,12 +47,17 @@ Get the count of Microsoft 365 activations on desktops and devices.
 | Application | Reports.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportOffice365ActivationCount
+
+```
+This example shows how to use the Get-MgReportOffice365ActivationCount Cmdlet.
+
 
 ## PARAMETERS
 

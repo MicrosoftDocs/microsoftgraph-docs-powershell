@@ -50,12 +50,17 @@ Get usage trends on the number of unique users and type of peer-to-peer sessions
 Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period $periodId
+Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount Cmdlet.
+
 
 ## PARAMETERS
 
