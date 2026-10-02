@@ -674,7 +674,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPB2BSIGNINACTIVITYMETRICS <IMicrosoftGraphB2BSignInActivityMetrics>: b2BSignInActivityMetrics
+APPB2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -699,7 +699,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-B2BREGISTRATIONMETRICS <IMicrosoftGraphB2BRegistrationMetrics>: b2bRegistrationMetrics
+B2BREGISTRATIONMETRICS `<IMicrosoftGraphB2BRegistrationMetrics>`: b2bRegistrationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -720,7 +720,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-B2BSIGNINACTIVITYMETRICS <IMicrosoftGraphB2BSignInActivityMetrics>: b2BSignInActivityMetrics
+B2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -745,7 +745,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-BILLINGMETRICS <IMicrosoftGraphBillingMetrics>: billingMetrics
+BILLINGMETRICS `<IMicrosoftGraphBillingMetrics>`: billingMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -776,7 +776,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-BODYPARAMETER <IMicrosoftGraphRelatedTenant>: relatedTenant
+BODYPARAMETER `<IMicrosoftGraphRelatedTenant>`: relatedTenant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -877,7 +877,7 @@ Read-only.
 Read-only.
       [UpdateDateTime <DateTime?>]: 
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -922,7 +922,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-MULTITENANTAPPLICATIONMETRICS <IMicrosoftGraphMultiTenantApplicationMetrics>: multiTenantApplicationMetrics
+MULTITENANTAPPLICATIONMETRICS `<IMicrosoftGraphMultiTenantApplicationMetrics>`: multiTenantApplicationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -947,3 +947,25 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerelatedtenant)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
