@@ -22,6 +22,9 @@ After the POST clone returns, you need to GET the operation returned by the Loca
 You should continue to GET until the status isn't running.
 The recommended delay between GETs is 5 seconds.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaGroupTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CloneExpanded (Default)

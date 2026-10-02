@@ -15,6 +15,9 @@ title: Invoke-MgSoftUserChatTargetedMessageReplyDelete
 
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftUserChatTargetedMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftUserChatTargetedMessageReplyDelete?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Soft (Default)

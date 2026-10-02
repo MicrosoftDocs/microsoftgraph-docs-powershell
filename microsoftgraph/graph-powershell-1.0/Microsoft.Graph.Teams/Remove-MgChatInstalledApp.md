@@ -15,6 +15,9 @@ title: Remove-MgChatInstalledApp
 
 Uninstall an app installed within a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

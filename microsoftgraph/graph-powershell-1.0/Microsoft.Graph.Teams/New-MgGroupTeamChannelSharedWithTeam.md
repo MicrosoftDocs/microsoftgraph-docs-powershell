@@ -15,6 +15,9 @@ title: New-MgGroupTeamChannelSharedWithTeam
 
 Create new navigation property to sharedWithTeams for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

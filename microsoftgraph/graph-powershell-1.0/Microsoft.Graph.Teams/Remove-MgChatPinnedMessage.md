@@ -15,6 +15,9 @@ title: Remove-MgChatPinnedMessage
 
 Unpin a message from a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
