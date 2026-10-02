@@ -15,6 +15,9 @@ title: Get-MgBetaBookingBusinessServiceCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessServiceCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessServiceCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

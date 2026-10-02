@@ -15,6 +15,9 @@ title: Update-MgBetaVirtualEventWebinarSession
 
 Update the navigation property sessions in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

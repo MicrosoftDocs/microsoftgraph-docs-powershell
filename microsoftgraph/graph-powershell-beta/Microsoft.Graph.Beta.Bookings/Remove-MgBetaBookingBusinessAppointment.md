@@ -15,6 +15,9 @@ title: Remove-MgBetaBookingBusinessAppointment
 
 Delete navigation property appointments for bookingBusinesses
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessAppointment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
