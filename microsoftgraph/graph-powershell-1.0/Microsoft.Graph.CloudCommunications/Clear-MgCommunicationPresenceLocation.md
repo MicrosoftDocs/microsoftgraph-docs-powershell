@@ -380,8 +380,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresencelocation)
-- [](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-1.0)
+- [Clear-MgCommunicationPresenceLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresencelocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/presence-clearlocation?view=graph-rest-1.0)
 
 
 
