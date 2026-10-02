@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitempermissioncount
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaShareListItemPermissionCount
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaShareListItemPermissionCount
 ## SYNOPSIS
 
 Get the number of the resource
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListItemPermissionCount](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemPermissionCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 

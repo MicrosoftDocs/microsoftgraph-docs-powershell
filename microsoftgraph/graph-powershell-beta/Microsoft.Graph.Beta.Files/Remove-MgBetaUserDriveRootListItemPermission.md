@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootlistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaUserDriveRootListItemPermission
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaUserDriveRootListItemPermission
 ## SYNOPSIS
 
 Delete navigation property permissions for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootListItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootListItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 

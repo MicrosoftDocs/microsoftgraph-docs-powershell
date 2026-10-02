@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetagroupdriverootlistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Grant-MgBetaGroupDriveRootListItemPermission
 ---
@@ -14,6 +14,9 @@ title: Grant-MgBetaGroupDriveRootListItemPermission
 ## SYNOPSIS
 
 Grant users access to a link represented by a permission.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveRootListItemPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgGroupDriveRootListItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 

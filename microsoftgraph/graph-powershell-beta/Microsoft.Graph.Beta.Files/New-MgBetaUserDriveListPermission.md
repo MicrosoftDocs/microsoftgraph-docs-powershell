@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivelistpermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaUserDriveListPermission
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaUserDriveListPermission
 ## SYNOPSIS
 
 Create new navigation property to permissions for users
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveListPermission](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 

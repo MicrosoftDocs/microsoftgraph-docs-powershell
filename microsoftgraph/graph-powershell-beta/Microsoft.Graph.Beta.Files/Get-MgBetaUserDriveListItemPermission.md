@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Files-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Files
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaUserDriveListItemPermission
 ---
@@ -16,6 +16,9 @@ title: Get-MgBetaUserDriveListItemPermission
 The set of permissions for the item.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListItemPermission](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
