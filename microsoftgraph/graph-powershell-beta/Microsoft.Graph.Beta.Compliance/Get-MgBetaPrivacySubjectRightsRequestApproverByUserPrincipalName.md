@@ -15,6 +15,9 @@ title: Get-MgBetaPrivacySubjectRightsRequestApproverByUserPrincipalName
 
 Get approvers from privacy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestApproverByUserPrincipalName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
