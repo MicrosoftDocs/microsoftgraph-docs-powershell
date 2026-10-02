@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
-Module Guid: 17b5badb-8e6e-4bbb-b6c1-9d1b15abc867
+Module Guid: dab71767-0a06-4ea8-bfa3-25850037d4d8
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrollment/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,10 +15,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementDeviceEnrollmentConfiguration](Get-MgDeviceManagementDeviceEnrollmentConfiguration.md)
 
-### [Get-MgDeviceManagementDeviceEnrollmentConfiguration](Get-MgDeviceManagementDeviceEnrollmentConfiguration.md)
-
-### [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
-
 ### [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
 
 ### [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignmentCount](Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignmentCount.md)
@@ -27,11 +23,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
 
-### [Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity.md)
-
 ### [Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentityCount](Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentityCount.md)
-
-### [Get-MgDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgDeviceManagementWindowsAutopilotDeviceIdentity.md)
 
 ### [Get-MgDeviceManagementWindowsAutopilotDeviceIdentity](Get-MgDeviceManagementWindowsAutopilotDeviceIdentity.md)
 
