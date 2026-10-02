@@ -15,6 +15,9 @@ title: Update-MgBetaGroupSitePageAsSitePageWebPart
 
 Update the navigation property webParts in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageAsSitePageWebPart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

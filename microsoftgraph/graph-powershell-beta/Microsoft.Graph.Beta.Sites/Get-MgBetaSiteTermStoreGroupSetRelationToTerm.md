@@ -16,6 +16,9 @@ title: Get-MgBetaSiteTermStoreGroupSetRelationToTerm
 The to [term] of the relation.
 The term to which the relationship is defined.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetRelationToTerm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

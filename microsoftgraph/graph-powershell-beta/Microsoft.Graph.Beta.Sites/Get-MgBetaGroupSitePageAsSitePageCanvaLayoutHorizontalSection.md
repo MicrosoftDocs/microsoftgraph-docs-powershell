@@ -15,6 +15,9 @@ title: Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection
 
 Collection of horizontal sections on the SharePoint page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
