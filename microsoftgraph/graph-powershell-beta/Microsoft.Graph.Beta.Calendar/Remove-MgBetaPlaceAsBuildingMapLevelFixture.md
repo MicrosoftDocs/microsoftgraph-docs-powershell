@@ -15,6 +15,9 @@ title: Remove-MgBetaPlaceAsBuildingMapLevelFixture
 
 Delete a fixture on a specified floor.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPlaceAsBuildingMapLevelFixture](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlaceAsBuildingMapLevelFixture?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

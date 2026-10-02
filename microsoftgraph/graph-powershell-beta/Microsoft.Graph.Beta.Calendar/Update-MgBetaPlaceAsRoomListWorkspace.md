@@ -15,6 +15,9 @@ title: Update-MgBetaPlaceAsRoomListWorkspace
 
 Update the navigation property workspaces in places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlaceAsRoomListWorkspace](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsRoomListWorkspace?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
