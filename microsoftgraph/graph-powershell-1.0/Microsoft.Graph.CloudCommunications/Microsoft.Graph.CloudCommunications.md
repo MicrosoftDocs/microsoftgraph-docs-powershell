@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: 5014aec6-0b6c-42f4-8198-e4416625b252
+Module Guid: a081320f-b131-4cea-9bb7-7a0efb4e04e6
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/?view=graph-powershell-1.0
 Help Version: 1.0.0.0
 Locale: en-US
@@ -31,11 +31,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationAdhocCall](Get-MgCommunicationAdhocCall.md)
 
-### [Get-MgCommunicationAdhocCall](Get-MgCommunicationAdhocCall.md)
-
 ### [Get-MgCommunicationAdhocCallCount](Get-MgCommunicationAdhocCallCount.md)
-
-### [Get-MgCommunicationAdhocCallRecording](Get-MgCommunicationAdhocCallRecording.md)
 
 ### [Get-MgCommunicationAdhocCallRecording](Get-MgCommunicationAdhocCallRecording.md)
 
@@ -44,8 +40,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgCommunicationAdhocCallRecordingCount](Get-MgCommunicationAdhocCallRecordingCount.md)
 
 ### [Get-MgCommunicationAdhocCallRecordingDelta](Get-MgCommunicationAdhocCallRecordingDelta.md)
-
-### [Get-MgCommunicationAdhocCallTranscript](Get-MgCommunicationAdhocCallTranscript.md)
 
 ### [Get-MgCommunicationAdhocCallTranscript](Get-MgCommunicationAdhocCallTranscript.md)
 
@@ -61,11 +55,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
 
-### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
-
 ### [Get-MgCommunicationCallAudioRoutingGroupCount](Get-MgCommunicationCallAudioRoutingGroupCount.md)
-
-### [Get-MgCommunicationCallContentSharingSession](Get-MgCommunicationCallContentSharingSession.md)
 
 ### [Get-MgCommunicationCallContentSharingSession](Get-MgCommunicationCallContentSharingSession.md)
 
@@ -75,11 +65,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
 
-### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
-
 ### [Get-MgCommunicationCallOperationCount](Get-MgCommunicationCallOperationCount.md)
-
-### [Get-MgCommunicationCallParticipant](Get-MgCommunicationCallParticipant.md)
 
 ### [Get-MgCommunicationCallParticipant](Get-MgCommunicationCallParticipant.md)
 
@@ -95,10 +81,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationCallRecordParticipantV2](Get-MgCommunicationCallRecordParticipantV2.md)
 
-### [Get-MgCommunicationCallRecordParticipantV2](Get-MgCommunicationCallRecordParticipantV2.md)
-
-### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
-
 ### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
 
 ### [Get-MgCommunicationCallRecordSessionCount](Get-MgCommunicationCallRecordSessionCount.md)
@@ -107,13 +89,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
 
-### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
-
 ### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
-
-### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
-
-### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 
@@ -125,11 +101,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationOnlineMeetingConversation](Get-MgCommunicationOnlineMeetingConversation.md)
 
-### [Get-MgCommunicationOnlineMeetingConversation](Get-MgCommunicationOnlineMeetingConversation.md)
-
 ### [Get-MgCommunicationOnlineMeetingConversationCount](Get-MgCommunicationOnlineMeetingConversationCount.md)
-
-### [Get-MgCommunicationOnlineMeetingConversationMessage](Get-MgCommunicationOnlineMeetingConversationMessage.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationMessage](Get-MgCommunicationOnlineMeetingConversationMessage.md)
 
@@ -139,19 +111,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationOnlineMeetingConversationMessageReaction](Get-MgCommunicationOnlineMeetingConversationMessageReaction.md)
 
-### [Get-MgCommunicationOnlineMeetingConversationMessageReaction](Get-MgCommunicationOnlineMeetingConversationMessageReaction.md)
-
 ### [Get-MgCommunicationOnlineMeetingConversationMessageReactionCount](Get-MgCommunicationOnlineMeetingConversationMessageReactionCount.md)
-
-### [Get-MgCommunicationOnlineMeetingConversationMessageReply](Get-MgCommunicationOnlineMeetingConversationMessageReply.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationMessageReply](Get-MgCommunicationOnlineMeetingConversationMessageReply.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationMessageReplyConversation](Get-MgCommunicationOnlineMeetingConversationMessageReplyConversation.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationMessageReplyCount](Get-MgCommunicationOnlineMeetingConversationMessageReplyCount.md)
-
-### [Get-MgCommunicationOnlineMeetingConversationMessageReplyReaction](Get-MgCommunicationOnlineMeetingConversationMessageReplyReaction.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationMessageReplyReaction](Get-MgCommunicationOnlineMeetingConversationMessageReplyReaction.md)
 
@@ -169,19 +135,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationOnlineMeetingConversationStarterReaction](Get-MgCommunicationOnlineMeetingConversationStarterReaction.md)
 
-### [Get-MgCommunicationOnlineMeetingConversationStarterReaction](Get-MgCommunicationOnlineMeetingConversationStarterReaction.md)
-
 ### [Get-MgCommunicationOnlineMeetingConversationStarterReactionCount](Get-MgCommunicationOnlineMeetingConversationStarterReactionCount.md)
-
-### [Get-MgCommunicationOnlineMeetingConversationStarterReply](Get-MgCommunicationOnlineMeetingConversationStarterReply.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationStarterReply](Get-MgCommunicationOnlineMeetingConversationStarterReply.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationStarterReplyConversation](Get-MgCommunicationOnlineMeetingConversationStarterReplyConversation.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationStarterReplyCount](Get-MgCommunicationOnlineMeetingConversationStarterReplyCount.md)
-
-### [Get-MgCommunicationOnlineMeetingConversationStarterReplyReaction](Get-MgCommunicationOnlineMeetingConversationStarterReplyReaction.md)
 
 ### [Get-MgCommunicationOnlineMeetingConversationStarterReplyReaction](Get-MgCommunicationOnlineMeetingConversationStarterReplyReaction.md)
 
@@ -195,15 +155,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationOnlineMeetingRecording](Get-MgCommunicationOnlineMeetingRecording.md)
 
-### [Get-MgCommunicationOnlineMeetingRecording](Get-MgCommunicationOnlineMeetingRecording.md)
-
 ### [Get-MgCommunicationOnlineMeetingRecordingContent](Get-MgCommunicationOnlineMeetingRecordingContent.md)
 
 ### [Get-MgCommunicationOnlineMeetingRecordingCount](Get-MgCommunicationOnlineMeetingRecordingCount.md)
 
 ### [Get-MgCommunicationOnlineMeetingRecordingDelta](Get-MgCommunicationOnlineMeetingRecordingDelta.md)
-
-### [Get-MgCommunicationOnlineMeetingTranscript](Get-MgCommunicationOnlineMeetingTranscript.md)
 
 ### [Get-MgCommunicationOnlineMeetingTranscript](Get-MgCommunicationOnlineMeetingTranscript.md)
 
@@ -219,21 +175,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
 
-### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
-
 ### [Get-MgCommunicationPresenceByUserId](Get-MgCommunicationPresenceByUserId.md)
 
 ### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
 
 ### [Get-MgUserOnlineMeeting](Get-MgUserOnlineMeeting.md)
 
-### [Get-MgUserOnlineMeeting](Get-MgUserOnlineMeeting.md)
-
 ### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
-
-### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
-
-### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 
 ### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 
@@ -247,15 +195,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgUserOnlineMeetingRecording](Get-MgUserOnlineMeetingRecording.md)
 
-### [Get-MgUserOnlineMeetingRecording](Get-MgUserOnlineMeetingRecording.md)
-
 ### [Get-MgUserOnlineMeetingRecordingContent](Get-MgUserOnlineMeetingRecordingContent.md)
 
 ### [Get-MgUserOnlineMeetingRecordingCount](Get-MgUserOnlineMeetingRecordingCount.md)
 
 ### [Get-MgUserOnlineMeetingRecordingDelta](Get-MgUserOnlineMeetingRecordingDelta.md)
-
-### [Get-MgUserOnlineMeetingTranscript](Get-MgUserOnlineMeetingTranscript.md)
 
 ### [Get-MgUserOnlineMeetingTranscript](Get-MgUserOnlineMeetingTranscript.md)
 
