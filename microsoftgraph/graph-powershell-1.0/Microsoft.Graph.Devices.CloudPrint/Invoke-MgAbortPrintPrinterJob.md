@@ -518,11 +518,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPathsHsc7MjPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsHsc7MjPrintPrintersPrinterIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Reason <String>]: 
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   [GroupId <String>]: The unique identifier of group
   [PrintConnectorId <String>]: The unique identifier of printConnector
   [PrintDocumentId <String>]: The unique identifier of printDocument
@@ -542,3 +542,25 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintprinterjob)
 - [](https://learn.microsoft.com/graph/api/printjob-abort?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
