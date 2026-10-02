@@ -758,7 +758,7 @@ PENDINGRETENTIONPERIODCHANGE `<IMicrosoftGraphRetentionPeriodChange>`: retention
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoremailboxprotectionunit)
+- [New-MgBetaSolutionBackupRestoreMailboxProtectionUnit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/new-mgbetasolutionbackuprestoremailboxprotectionunit)
 
 
 
