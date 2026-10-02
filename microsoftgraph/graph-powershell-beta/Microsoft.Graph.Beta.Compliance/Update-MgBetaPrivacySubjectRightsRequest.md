@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Compliance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Compliance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaPrivacySubjectRightsRequest
 ---
@@ -1982,46 +1982,6 @@ Read-only.
       [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
-    [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Description <String>]: 
-        [GoverningPolicyReferenceId <String>]: 
-        [IssueCode <String>]: 
-        [RuleType <String>]: 
-      [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [CreatedDateTime <DateTime?>]: 
-        [Description <String>]: 
-        [DisplayName <String>]: 
-        [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [GracePeriodInDays <Int32?>]: 
-        [IsEnabled <Boolean?>]: 
-        [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [LastModifiedDateTime <DateTime?>]: 
-        [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [AdditionalRecipients <String[]>]: 
-          [IsEnabled <Boolean?>]: 
-          [OffsetsAfterNonComplianceInDays <Int32[]>]: 
-        [PolicySource <String>]: lifecyclePolicySource
-        [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [IsEnabled <Boolean?>]: 
-        [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [VersionNumber <Int32?>]: 
-        [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
-      [LastAttestationDateTime <DateTime?>]: 
     [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -3914,7 +3874,9 @@ Read-only.
       [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
     [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
-    [IsDisasterRecoveryActive <Boolean?>]: 
+    [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
     [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Time <DateTime?>]: The time of the Cloud PC sign in action.
@@ -4249,6 +4211,8 @@ Read-only.
           [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Activity <String>]: userActivityType
+            [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+              [Value <String>]: 
           [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -4297,7 +4261,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
             [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-            [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
         [ScopeIdentifier <String>]: The scope identified from computed protection scopes.
         [UserId <String>]: ID of the user.
     [ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]: userProtectionScopeContainer
@@ -11354,46 +11317,6 @@ Read-only.
         [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
-      [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [Description <String>]: 
-          [GoverningPolicyReferenceId <String>]: 
-          [IssueCode <String>]: 
-          [RuleType <String>]: 
-        [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-          [CreatedDateTime <DateTime?>]: 
-          [Description <String>]: 
-          [DisplayName <String>]: 
-          [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
-            [(Any) <Object>]: This indicates any property can be added to this object.
-          [GracePeriodInDays <Int32?>]: 
-          [IsEnabled <Boolean?>]: 
-          [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-          [LastModifiedDateTime <DateTime?>]: 
-          [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [AdditionalRecipients <String[]>]: 
-            [IsEnabled <Boolean?>]: 
-            [OffsetsAfterNonComplianceInDays <Int32[]>]: 
-          [PolicySource <String>]: lifecyclePolicySource
-          [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
-            [Id <String>]: The unique identifier for an entity.
-Read-only.
-            [IsEnabled <Boolean?>]: 
-          [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
-            [(Any) <Object>]: This indicates any property can be added to this object.
-          [VersionNumber <Int32?>]: 
-          [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
-        [LastAttestationDateTime <DateTime?>]: 
       [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -13286,7 +13209,9 @@ Read-only.
         [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
-      [IsDisasterRecoveryActive <Boolean?>]: 
+      [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Time <DateTime?>]: The time of the Cloud PC sign in action.
@@ -13621,6 +13546,8 @@ Read-only.
             [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Activity <String>]: userActivityType
+              [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+                [Value <String>]: 
             [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -13669,7 +13596,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
               [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-              [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
           [ScopeIdentifier <String>]: The scope identified from computed protection scopes.
           [UserId <String>]: ID of the user.
       [ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]: userProtectionScopeContainer
@@ -20789,46 +20715,6 @@ Read-only.
       [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
-    [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Description <String>]: 
-        [GoverningPolicyReferenceId <String>]: 
-        [IssueCode <String>]: 
-        [RuleType <String>]: 
-      [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [CreatedDateTime <DateTime?>]: 
-        [Description <String>]: 
-        [DisplayName <String>]: 
-        [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [GracePeriodInDays <Int32?>]: 
-        [IsEnabled <Boolean?>]: 
-        [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [LastModifiedDateTime <DateTime?>]: 
-        [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [AdditionalRecipients <String[]>]: 
-          [IsEnabled <Boolean?>]: 
-          [OffsetsAfterNonComplianceInDays <Int32[]>]: 
-        [PolicySource <String>]: lifecyclePolicySource
-        [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [IsEnabled <Boolean?>]: 
-        [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [VersionNumber <Int32?>]: 
-        [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
-      [LastAttestationDateTime <DateTime?>]: 
     [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -22721,7 +22607,9 @@ Read-only.
       [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
     [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
-    [IsDisasterRecoveryActive <Boolean?>]: 
+    [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
     [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Time <DateTime?>]: The time of the Cloud PC sign in action.
@@ -23056,6 +22944,8 @@ Read-only.
           [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Activity <String>]: userActivityType
+            [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+              [Value <String>]: 
           [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -23104,7 +22994,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
             [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-            [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
         [ScopeIdentifier <String>]: The scope identified from computed protection scopes.
         [UserId <String>]: ID of the user.
     [ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]: userProtectionScopeContainer
@@ -30366,46 +30255,6 @@ Read-only.
             [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
-          [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [Id <String>]: The unique identifier for an entity.
-Read-only.
-            [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
-              [Id <String>]: The unique identifier for an entity.
-Read-only.
-              [Description <String>]: 
-              [GoverningPolicyReferenceId <String>]: 
-              [IssueCode <String>]: 
-              [RuleType <String>]: 
-            [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
-              [(Any) <Object>]: This indicates any property can be added to this object.
-              [Id <String>]: The unique identifier for an entity.
-Read-only.
-              [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-              [CreatedDateTime <DateTime?>]: 
-              [Description <String>]: 
-              [DisplayName <String>]: 
-              [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
-                [(Any) <Object>]: This indicates any property can be added to this object.
-              [GracePeriodInDays <Int32?>]: 
-              [IsEnabled <Boolean?>]: 
-              [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-              [LastModifiedDateTime <DateTime?>]: 
-              [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
-                [(Any) <Object>]: This indicates any property can be added to this object.
-                [AdditionalRecipients <String[]>]: 
-                [IsEnabled <Boolean?>]: 
-                [OffsetsAfterNonComplianceInDays <Int32[]>]: 
-              [PolicySource <String>]: lifecyclePolicySource
-              [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
-                [Id <String>]: The unique identifier for an entity.
-Read-only.
-                [IsEnabled <Boolean?>]: 
-              [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
-                [(Any) <Object>]: This indicates any property can be added to this object.
-              [VersionNumber <Int32?>]: 
-              [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
-            [LastAttestationDateTime <DateTime?>]: 
           [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -32219,7 +32068,9 @@ Read-only.
             [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
           [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
-          [IsDisasterRecoveryActive <Boolean?>]: 
+          [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
           [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Time <DateTime?>]: The time of the Cloud PC sign in action.
@@ -32554,6 +32405,8 @@ Read-only.
                 [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
                   [(Any) <Object>]: This indicates any property can be added to this object.
                   [Activity <String>]: userActivityType
+                  [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+                    [Value <String>]: 
                 [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -32602,7 +32455,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
                   [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
                     [(Any) <Object>]: This indicates any property can be added to this object.
                     [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-                  [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
               [ScopeIdentifier <String>]: The scope identified from computed protection scopes.
               [UserId <String>]: ID of the user.
           [ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]: userProtectionScopeContainer
