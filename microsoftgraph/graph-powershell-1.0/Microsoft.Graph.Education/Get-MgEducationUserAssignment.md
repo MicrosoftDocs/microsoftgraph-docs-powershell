@@ -15,6 +15,9 @@ title: Get-MgEducationUserAssignment
 
 Assignments belonging to the user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
