@@ -11613,7 +11613,7 @@ Required.Supports $filter(eq, ne).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowversiontask)
+- [New-MgIdentityGovernanceLifecycleWorkflowVersionTask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowversiontask)
 
 
 
