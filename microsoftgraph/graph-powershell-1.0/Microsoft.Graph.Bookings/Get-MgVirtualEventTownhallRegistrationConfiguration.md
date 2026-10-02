@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 
 Read the properties and relationships of a virtualEventTownhallRegistrationConfiguration object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -373,6 +363,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventtownhallregistrationconfiguration)
 - [](https://learn.microsoft.com/graph/api/virtualeventtownhallregistrationconfiguration-get?view=graph-rest-1.0)
+
 
 
 
