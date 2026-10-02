@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSitePage
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSitePage
 ## SYNOPSIS
 
 Create a new newsLinkPage in the site pages list of a site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSitePage](/powershell/module/Microsoft.Graph.Sites/New-MgSitePage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -77,18 +74,9 @@ This cmdlet has the following aliases,
 
 Create a new newsLinkPage in the site pages list of a site.
 
-**Permissions**
-
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All,  |
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
 
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -99,10 +87,6 @@ $params = @{
 }
 
 New-MgBetaSitePage -SiteId $siteId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSitePage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -880,7 +864,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBaseSitePage>`: baseSitePage
+BODYPARAMETER <IMicrosoftGraphBaseSitePage>: baseSitePage
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CreatedBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1375,8 +1359,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
         [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -1586,46 +1570,6 @@ Read-only.
         [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
-      [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [Description <String>]: 
-          [GoverningPolicyReferenceId <String>]: 
-          [IssueCode <String>]: 
-          [RuleType <String>]: 
-        [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-          [CreatedDateTime <DateTime?>]: 
-          [Description <String>]: 
-          [DisplayName <String>]: 
-          [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
-            [(Any) <Object>]: This indicates any property can be added to this object.
-          [GracePeriodInDays <Int32?>]: 
-          [IsEnabled <Boolean?>]: 
-          [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-          [LastModifiedDateTime <DateTime?>]: 
-          [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
-            [(Any) <Object>]: This indicates any property can be added to this object.
-            [AdditionalRecipients <String[]>]: 
-            [IsEnabled <Boolean?>]: 
-            [OffsetsAfterNonComplianceInDays <Int32[]>]: 
-          [PolicySource <String>]: lifecyclePolicySource
-          [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
-            [Id <String>]: The unique identifier for an entity.
-Read-only.
-            [IsEnabled <Boolean?>]: 
-          [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
-            [(Any) <Object>]: This indicates any property can be added to this object.
-          [VersionNumber <Int32?>]: 
-          [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
-        [LastAttestationDateTime <DateTime?>]: 
       [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -1749,8 +1693,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
         [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
       [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -2511,7 +2455,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         [Id <String>]: The unique identifier for an entity.
 Read-only.
         [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
         [PhoneType <String>]: authenticationPhoneType
@@ -3164,7 +3108,7 @@ Always set to en-us.
         [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
           [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
           [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -3518,7 +3462,9 @@ Read-only.
         [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
       [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
-      [IsDisasterRecoveryActive <Boolean?>]: 
+      [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
       [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
         [(Any) <Object>]: This indicates any property can be added to this object.
         [Time <DateTime?>]: The time of the Cloud PC sign in action.
@@ -3853,6 +3799,8 @@ Read-only.
             [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Activity <String>]: userActivityType
+              [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+                [Value <String>]: 
             [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -3901,7 +3849,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
               [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
                 [(Any) <Object>]: This indicates any property can be added to this object.
                 [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-              [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
           [ScopeIdentifier <String>]: The scope identified from computed protection scopes.
           [UserId <String>]: ID of the user.
       [ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]: userProtectionScopeContainer
@@ -10052,8 +9999,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
@@ -10242,7 +10189,7 @@ Read-only.
   [PublishingState <IMicrosoftGraphPublicationFacet>]: publicationFacet
   [Title <String>]: Title of the sitePage.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -10254,7 +10201,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-CREATEDBYUSER `<IMicrosoftGraphUser>`: user
+CREATEDBYUSER <IMicrosoftGraphUser>: user
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -10746,8 +10693,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -10957,46 +10904,6 @@ Read-only.
       [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
-    [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Description <String>]: 
-        [GoverningPolicyReferenceId <String>]: 
-        [IssueCode <String>]: 
-        [RuleType <String>]: 
-      [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [CreatedDateTime <DateTime?>]: 
-        [Description <String>]: 
-        [DisplayName <String>]: 
-        [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [GracePeriodInDays <Int32?>]: 
-        [IsEnabled <Boolean?>]: 
-        [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [LastModifiedDateTime <DateTime?>]: 
-        [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [AdditionalRecipients <String[]>]: 
-          [IsEnabled <Boolean?>]: 
-          [OffsetsAfterNonComplianceInDays <Int32[]>]: 
-        [PolicySource <String>]: lifecyclePolicySource
-        [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [IsEnabled <Boolean?>]: 
-        [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [VersionNumber <Int32?>]: 
-        [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
-      [LastAttestationDateTime <DateTime?>]: 
     [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -11120,8 +11027,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -11882,7 +11789,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
       [PhoneType <String>]: authenticationPhoneType
@@ -12535,7 +12442,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -12889,7 +12796,9 @@ Read-only.
       [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
     [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
-    [IsDisasterRecoveryActive <Boolean?>]: 
+    [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
     [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Time <DateTime?>]: The time of the Cloud PC sign in action.
@@ -13224,6 +13133,8 @@ Read-only.
           [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Activity <String>]: userActivityType
+            [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+              [Value <String>]: 
           [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -13272,7 +13183,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
             [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-            [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
         [ScopeIdentifier <String>]: The scope identified from computed protection scopes.
         [UserId <String>]: ID of the user.
     [ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]: userProtectionScopeContainer
@@ -19444,8 +19354,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
@@ -19615,7 +19525,7 @@ Read-only.
     [LastCheckInDateTime <DateTime?>]: Last checkin time of the device.
     [UserId <String>]: UserId associated with this device registration record.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -19677,7 +19587,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -19689,7 +19599,7 @@ For example, in the access reviews decisions API, this property might record the
   [Device <IMicrosoftGraphIdentity>]: identity
   [User <IMicrosoftGraphIdentity>]: identity
 
-LASTMODIFIEDBYUSER `<IMicrosoftGraphUser>`: user
+LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: user
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DeletedDateTime <DateTime?>]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
@@ -20181,8 +20091,8 @@ Must not be included in any POST or PATCH requests.
 Read-only.
       [Value <String>]: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z, and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [ApplicationTemplateId <String>]: Unique identifier of the applicationTemplate.
@@ -20392,46 +20302,6 @@ Read-only.
       [SkuPartNumber <String>]: Unique SKU display name.
 Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
 Read-only.
-    [Lifecycle <IMicrosoftGraphIdentityGovernanceIdentityLifecycle>]: identityLifecycle
-      [(Any) <Object>]: This indicates any property can be added to this object.
-      [Id <String>]: The unique identifier for an entity.
-Read-only.
-      [ComplianceIssues <IMicrosoftGraphIdentityGovernanceComplianceIssue[]>]: 
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [Description <String>]: 
-        [GoverningPolicyReferenceId <String>]: 
-        [IssueCode <String>]: 
-        [RuleType <String>]: 
-      [EffectiveGoverningPolicy <IMicrosoftGraphIdentityGovernanceLifecyclePolicy>]: lifecyclePolicy
-        [(Any) <Object>]: This indicates any property can be added to this object.
-        [Id <String>]: The unique identifier for an entity.
-Read-only.
-        [CreatedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [CreatedDateTime <DateTime?>]: 
-        [Description <String>]: 
-        [DisplayName <String>]: 
-        [EnforcementAction <IMicrosoftGraphIdentityGovernanceLifecyclePolicyEnforcementAction>]: lifecyclePolicyEnforcementAction
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [GracePeriodInDays <Int32?>]: 
-        [IsEnabled <Boolean?>]: 
-        [LastModifiedBy <IMicrosoftGraphDirectoryObject>]: directoryObject
-        [LastModifiedDateTime <DateTime?>]: 
-        [NotificationSchedule <IMicrosoftGraphIdentityGovernanceLifecyclePolicyNotificationSettings>]: lifecyclePolicyNotificationSettings
-          [(Any) <Object>]: This indicates any property can be added to this object.
-          [AdditionalRecipients <String[]>]: 
-          [IsEnabled <Boolean?>]: 
-          [OffsetsAfterNonComplianceInDays <Int32[]>]: 
-        [PolicySource <String>]: lifecyclePolicySource
-        [Rules <IMicrosoftGraphIdentityGovernanceLifecyclePolicyRule[]>]: 
-          [Id <String>]: The unique identifier for an entity.
-Read-only.
-          [IsEnabled <Boolean?>]: 
-        [Scope <IMicrosoftGraphSubjectSet>]: subjectSet
-          [(Any) <Object>]: This indicates any property can be added to this object.
-        [VersionNumber <Int32?>]: 
-        [Versions <IMicrosoftGraphIdentityGovernanceLifecyclePolicy[]>]: 
-      [LastAttestationDateTime <DateTime?>]: 
     [LoginUrl <String>]: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -20555,8 +20425,8 @@ This text appears in consent experiences where the user is consenting only on be
 This text appears in consent experiences where the user is consenting only on behalf of themselves.
       [Value <String>]: Specifies the value to include in the scp (scope) claim in access tokens.
 Must not exceed 120 characters in length.
-Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  {  } ~, and characters in the ranges 
- @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
+Allowed characters are : ! # $ % & ' ( ) * + , - .
+/ : ;  =  ? @ [ ] ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
     [PublisherName <String>]: The name of the Microsoft Entra tenant that published the application.
@@ -21317,7 +21187,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       [Id <String>]: The unique identifier for an entity.
 Read-only.
       [PhoneNumber <String>]: The phone number to text or call for authentication.
-Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional.
+Phone numbers use the format '+<country code> <number>x<extension>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
 Numbers are rejected when creating/updating if they don't match the required format.
       [PhoneType <String>]: authenticationPhoneType
@@ -21970,7 +21840,7 @@ Always set to en-us.
       [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
         [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
         [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -22324,7 +22194,9 @@ Read-only.
       [GroupId <String>]: The unique identifier (GUID) of the Microsoft Entra ID group.
 Read-only.
     [ImageDisplayName <String>]: Name of the OS image that's on the Cloud PC.
-    [IsDisasterRecoveryActive <Boolean?>]: 
+    [IsDisasterRecoveryActive <Boolean?>]: Indicates whether the Cloud PC currently runs in its disaster recovery region after a failover event.
+true if the Cloud PC is currently running in its disaster recovery region; otherwise, false.
+Read-only.
     [LastLoginResult <IMicrosoftGraphCloudPcLoginResult>]: cloudPcLoginResult
       [(Any) <Object>]: This indicates any property can be added to this object.
       [Time <DateTime?>]: The time of the Cloud PC sign in action.
@@ -22659,6 +22531,8 @@ Read-only.
           [ActivityMetadata <IMicrosoftGraphActivityMetadata>]: activityMetadata
             [(Any) <Object>]: This indicates any property can be added to this object.
             [Activity <String>]: userActivityType
+            [Participants <IMicrosoftGraphInteractionParticipant[]>]: 
+              [Value <String>]: 
           [ContentEntries <IMicrosoftGraphProcessContentMetadataBase[]>]: A collection of content entries to be processed.
 Each entry contains the content itself and its metadata.
 Use conversation metadata for content like prompts and responses, file metadata for files, and content activity metadata for enforcement result status entries.
@@ -22707,7 +22581,6 @@ The general type of the device (for example, 'Managed', 'Unmanaged').
             [ApplicationLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
               [(Any) <Object>]: This indicates any property can be added to this object.
               [Value <String>]: The actual value representing the location (for example, 'contoso.com', 'https://partner.contoso.com/upload', '83ef198a-0396-4893-9d4f-d36efbffcaaa').
-            [SourceLocation <IMicrosoftGraphPolicyLocation>]: policyLocation
         [ScopeIdentifier <String>]: The scope identified from computed protection scopes.
         [UserId <String>]: ID of the user.
     [ProtectionScopes <IMicrosoftGraphUserProtectionScopeContainer>]: userProtectionScopeContainer
@@ -28879,8 +28752,8 @@ By convention, this should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's verified domain collection.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
 This property is subject to sensitive action restrictions; only specific privileged administrator roles can update it.
@@ -29050,7 +28923,7 @@ Read-only.
     [LastCheckInDateTime <DateTime?>]: Last checkin time of the device.
     [UserId <String>]: UserId associated with this device registration record.
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -29079,7 +28952,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-PUBLISHINGSTATE `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLISHINGSTATE <IMicrosoftGraphPublicationFacet>: publicationFacet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [CheckedOutBy <IMicrosoftGraphIdentitySet>]: identitySet
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -29101,27 +28974,5 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgBetaSitePage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/newslinkpage-create?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage)
+- [](https://learn.microsoft.com/graph/api/newslinkpage-create?view=graph-rest-beta)
