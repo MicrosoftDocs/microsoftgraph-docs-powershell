@@ -89,8 +89,9 @@ Update the properties of a trainingCampaign object.
 | Application | AttackSimulation.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -153,6 +154,10 @@ status = "Cancelled"
 }
 
 Update-MgBetaSecurityAttackSimulationTrainingCampaign -TrainingCampaignId $trainingCampaignId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSecurityAttackSimulationTrainingCampaign Cmdlet.
+
 
 ## PARAMETERS
 
