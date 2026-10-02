@@ -81,8 +81,9 @@ For more information about how to handle unmute operations, see unmuteParticipan
 | Application | Calls.Initiate.All, Calls.AccessMedia.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -91,6 +92,10 @@ $params = @{
 }
 
 Invoke-MgBetaUnmuteCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaUnmuteCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

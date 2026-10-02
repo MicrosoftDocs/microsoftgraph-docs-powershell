@@ -50,13 +50,18 @@ Clear the automatic work location signal for a user.
 After clearing, the user’s final aggregated work location is recomputed according to the precedence rules: Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Clear-MgBetaUserPresenceAutomaticLocation -UserId $userId
+
+```
+This example shows how to use the Clear-MgBetaUserPresenceAutomaticLocation Cmdlet.
+
 
 ## PARAMETERS
 
