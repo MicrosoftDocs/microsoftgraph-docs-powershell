@@ -728,8 +728,8 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant)
-- [](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta)
+- [Invoke-MgBetaInviteCommunicationCallParticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta)
 
 
 

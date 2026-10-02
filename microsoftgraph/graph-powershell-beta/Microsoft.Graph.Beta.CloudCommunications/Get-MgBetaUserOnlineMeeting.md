@@ -1012,8 +1012,8 @@ For example, in the access reviews decisions API, this property might record the
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting)
-- [](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta)
+- [Get-MgBetaUserOnlineMeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeeting)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-beta)
 
 
 
