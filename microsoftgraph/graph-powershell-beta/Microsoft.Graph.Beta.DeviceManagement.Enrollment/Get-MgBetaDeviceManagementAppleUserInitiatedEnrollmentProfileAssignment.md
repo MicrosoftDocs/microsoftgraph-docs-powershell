@@ -586,7 +586,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementappleuserinitiatedenrollmentprofileassignment)
+- [Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementappleuserinitiatedenrollmentprofileassignment)
 
 
 
