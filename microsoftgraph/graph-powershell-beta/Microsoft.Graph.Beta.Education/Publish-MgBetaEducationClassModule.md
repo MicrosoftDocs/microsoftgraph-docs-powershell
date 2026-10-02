@@ -62,12 +62,17 @@ When you call this API, the module appears in the student's class work list.
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Publish-MgBetaEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Publish-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

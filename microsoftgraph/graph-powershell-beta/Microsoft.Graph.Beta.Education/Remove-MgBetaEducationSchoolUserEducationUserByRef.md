@@ -49,12 +49,17 @@ This cmdlet has the following aliases,
 Delete a user from a school.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Remove-MgBetaEducationSchoolUserEducationUserByRef -EducationSchoolId $educationSchoolId -EducationUserId $educationUserId
+
+```
+This example shows how to use the Remove-MgBetaEducationSchoolUserEducationUserByRef Cmdlet.
+
 
 ## PARAMETERS
 

@@ -60,12 +60,17 @@ Only teachers, students, and applications with application permissions can perfo
 | Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Get-MgBetaEducationClassAssignmentRubric Cmdlet.
+
 
 ## PARAMETERS
 
