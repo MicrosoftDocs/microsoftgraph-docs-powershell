@@ -418,8 +418,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase)
-- [](https://learn.microsoft.com/graph/api/ediscovery-case-delete?view=graph-rest-beta)
+- [Remove-MgBetaComplianceEdiscoveryCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/ediscovery-case-delete?view=graph-rest-beta)
 
 
 

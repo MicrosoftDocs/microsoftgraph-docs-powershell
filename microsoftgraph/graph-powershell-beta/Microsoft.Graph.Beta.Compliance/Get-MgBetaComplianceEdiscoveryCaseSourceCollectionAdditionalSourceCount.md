@@ -384,7 +384,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionadditionalsourcecount)
+- [Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSourceCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionadditionalsourcecount)
 
 
 
