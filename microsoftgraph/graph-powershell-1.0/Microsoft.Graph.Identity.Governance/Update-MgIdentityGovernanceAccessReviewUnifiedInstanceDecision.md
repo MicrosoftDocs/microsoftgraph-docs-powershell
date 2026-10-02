@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewunifiedinstancedecision
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision
 ---
@@ -14,6 +14,9 @@ title: Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision
 ## SYNOPSIS
 
 Update the navigation property decisions in identityGovernance
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewUnifiedInstanceDecision?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,6 +29,7 @@ Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision
  [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>]
  [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>] [-Id <string>]
  [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Justification <string>]
+ [-Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]
  [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>] [-Recommendation <string>]
  [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>] [-ResourceLink <string>]
  [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>] [-Break]
@@ -54,6 +58,7 @@ Update-MgIdentityGovernanceAccessReviewUnifiedInstanceDecision
  [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <datetime>]
  [-ApplyDescription <string>] [-ApplyResult <string>] [-Decision <string>] [-Id <string>]
  [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Justification <string>]
+ [-Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]
  [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <string>] [-Recommendation <string>]
  [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>] [-ResourceLink <string>]
  [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <datetime>] [-Break]
@@ -586,6 +591,34 @@ AcceptedValues: []
 HelpMessage: ''
 ```
 
+### -Permission
+
+accessReviewInstanceDecisionItemPermission
+To construct, see NOTES section for PERMISSION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewInstanceDecisionItemPermission
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: UpdateViaIdentityExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+- Name: UpdateExpanded
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
 ### -Principal
 
 identity
@@ -974,6 +1007,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
     [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
   [Justification <String>]: Justification left by the reviewer when they made the decision.
+  [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+    [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: 
+    [DisplayName <String>]: 
+    [Id <String>]: 
+    [Type <String>]: 
   [Principal <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
     [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -990,6 +1029,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
   [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
     [(Any) <Object>]: This indicates any property can be added to this object.
+    [Description <String>]: 
     [DisplayName <String>]: Display name of the resource
     [Id <String>]: Identifier of the resource
     [Type <String>]: Type of resource.
@@ -1047,6 +1087,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
@@ -1088,6 +1129,13 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
   [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
 
+PERMISSION `<IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>`: accessReviewInstanceDecisionItemPermission
+  [(Any) <Object>]: This indicates any property can be added to this object.
+  [Description <String>]: 
+  [DisplayName <String>]: 
+  [Id <String>]: 
+  [Type <String>]: 
+
 PRINCIPAL `<IMicrosoftGraphIdentity>`: identity
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -1097,6 +1145,7 @@ For example, in the access reviews decisions API, this property might record the
 
 RESOURCE `<IMicrosoftGraphAccessReviewInstanceDecisionItemResource>`: accessReviewInstanceDecisionItemResource
   [(Any) <Object>]: This indicates any property can be added to this object.
+  [Description <String>]: 
   [DisplayName <String>]: Display name of the resource
   [Id <String>]: Identifier of the resource
   [Type <String>]: Type of resource.

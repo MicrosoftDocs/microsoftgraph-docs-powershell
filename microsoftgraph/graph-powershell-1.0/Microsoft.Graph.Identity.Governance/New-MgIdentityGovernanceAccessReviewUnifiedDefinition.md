@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewunifieddefinition
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgIdentityGovernanceAccessReviewUnifiedDefinition
 ---
@@ -16,6 +16,9 @@ title: New-MgIdentityGovernanceAccessReviewUnifiedDefinition
 Create a new user-centric (catalog-scope) accessReviewScheduleDefinition object through the unified route.
 With a user-centric review, a reviewer evaluates a principal's access to every group and application contained in an entitlement management catalog in a single review.
 The catalog is identified in the resourceScopes collection of the principalResourceMembershipsScope.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewUnifiedDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -823,6 +826,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
         [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
       [Justification <String>]: Justification left by the reviewer when they made the decision.
+      [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+        [(Any) <Object>]: This indicates any property can be added to this object.
+        [Description <String>]: 
+        [DisplayName <String>]: 
+        [Id <String>]: 
+        [Type <String>]: 
       [Principal <IMicrosoftGraphIdentity>]: identity
         [(Any) <Object>]: This indicates any property can be added to this object.
         [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -839,6 +848,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
       [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
         [(Any) <Object>]: This indicates any property can be added to this object.
+        [Description <String>]: 
         [DisplayName <String>]: Display name of the resource
         [Id <String>]: Identifier of the resource
         [Type <String>]: Type of resource.
@@ -1091,6 +1101,12 @@ There can be multiple insights associated with an accessReviewInstanceDecisionIt
 Read-only.
       [InsightCreatedDateTime <DateTime?>]: Indicates when the insight was created.
     [Justification <String>]: Justification left by the reviewer when they made the decision.
+    [Permission <IMicrosoftGraphAccessReviewInstanceDecisionItemPermission>]: accessReviewInstanceDecisionItemPermission
+      [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: 
+      [DisplayName <String>]: 
+      [Id <String>]: 
+      [Type <String>]: 
     [Principal <IMicrosoftGraphIdentity>]: identity
       [(Any) <Object>]: This indicates any property can be added to this object.
       [DisplayName <String>]: The display name of the identity.For drive items, the display name might not always be available or up to date.
@@ -1107,6 +1123,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
     [Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]: accessReviewInstanceDecisionItemResource
       [(Any) <Object>]: This indicates any property can be added to this object.
+      [Description <String>]: 
       [DisplayName <String>]: Display name of the resource
       [Id <String>]: Identifier of the resource
       [Type <String>]: Type of resource.

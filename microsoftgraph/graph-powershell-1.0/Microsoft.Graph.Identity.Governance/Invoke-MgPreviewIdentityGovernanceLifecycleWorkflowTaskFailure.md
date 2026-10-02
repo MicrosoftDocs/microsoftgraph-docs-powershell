@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgpreviewidentitygovernancelifecycleworkflowtaskfailure
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowTaskFailure
 ---
@@ -16,6 +16,9 @@ title: Invoke-MgPreviewIdentityGovernanceLifecycleWorkflowTaskFailure
 Validate the tasks configured in a workflow to check for configuration errors.
 This action identifies any tasks that would fail during execution, allowing you to fix issues before running the workflow.
 Returns an empty collection if no task failures are detected.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowTaskFailure](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaPreviewIdentityGovernanceLifecycleWorkflowTaskFailure?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -381,6 +384,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'

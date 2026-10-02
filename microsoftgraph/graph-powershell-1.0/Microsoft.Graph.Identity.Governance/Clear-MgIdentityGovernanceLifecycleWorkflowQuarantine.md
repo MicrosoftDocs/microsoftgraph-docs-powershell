@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/clear-mgidentitygovernancelifecycleworkflowquarantine
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.Governance
-ms.date: 09/22/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Clear-MgIdentityGovernanceLifecycleWorkflowQuarantine
 ---
@@ -16,6 +16,9 @@ title: Clear-MgIdentityGovernanceLifecycleWorkflowQuarantine
 Release a quarantined workflow so that it resumes processing.
 A workflow is automatically quarantined when a run exceeds the threshold conditions defined in its quarantineConfiguration.
 After an administrator reviews the cause of the quarantine, calling this action clears the quarantine state and allows the workflow to run again.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaIdentityGovernanceLifecycleWorkflowQuarantine](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Clear-MgBetaIdentityGovernanceLifecycleWorkflowQuarantine?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -380,6 +383,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   [EndDateTime <DateTime?>]: Usage: endDateTime={endDateTime}
   [ExternalOriginResourceConnectorId <String>]: The unique identifier of externalOriginResourceConnector
   [GovernanceInsightId <String>]: The unique identifier of governanceInsight
+  [GroupResourceId <String>]: The unique identifier of groupResource
   [IncompatibleAccessPackageId <String>]: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   [ObjectId <String>]: Alternate key of accessPackageSubject
   [On <String>]: Usage: on='{on}'
