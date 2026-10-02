@@ -596,7 +596,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementdefaultmanagedappprotectionapp)
+- [Get-MgDeviceAppManagementDefaultManagedAppProtectionApp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementdefaultmanagedappprotectionapp)
 
 
 
