@@ -59,16 +59,6 @@ This cmdlet has the following aliases,
 
 A subresource of a place object that indicates the check-in status of an Outlook calendar event booked at the place.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -582,6 +572,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlistcheck)
+
 
 
 
