@@ -15,6 +15,9 @@ title: Get-MgBetaContactDirectReportCountAsUser
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactDirectReportCountAsUser](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDirectReportCountAsUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

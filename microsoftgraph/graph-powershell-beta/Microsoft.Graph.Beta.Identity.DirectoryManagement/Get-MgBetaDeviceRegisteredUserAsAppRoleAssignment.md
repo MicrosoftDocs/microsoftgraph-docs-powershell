@@ -15,6 +15,9 @@ title: Get-MgBetaDeviceRegisteredUserAsAppRoleAssignment
 
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceRegisteredUserAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredUserAsAppRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaDirectoryOnPremiseSynchronizationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryOnPremiseSynchronizationCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOnPremiseSynchronizationCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType
 
 Get all identity providers supported in a directory.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Available (Default)
