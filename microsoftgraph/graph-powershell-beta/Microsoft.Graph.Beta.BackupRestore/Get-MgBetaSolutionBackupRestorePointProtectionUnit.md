@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorepointprotectionunit
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestorePointProtectionUnit
 ---
@@ -13,7 +13,8 @@ title: Get-MgBetaSolutionBackupRestorePointProtectionUnit
 
 ## SYNOPSIS
 
-The site, drive, or mailbox units that are protected under a protection policy.
+The site, drive, or mailbox unit protected under a protection policy.
+Supports $expand and $filter on protectionUnit/policyId using the eq operator.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestorePointProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestorePointProtectionUnit?view=graph-powershell-1.0)
@@ -47,7 +48,8 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-The site, drive, or mailbox units that are protected under a protection policy.
+The site, drive, or mailbox unit protected under a protection policy.
+Supports $expand and $filter on protectionUnit/policyId using the eq operator.
 
 ## PARAMETERS
 

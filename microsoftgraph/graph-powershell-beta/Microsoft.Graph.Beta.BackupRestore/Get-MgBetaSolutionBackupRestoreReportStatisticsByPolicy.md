@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.BackupRestore-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorereportstatisticsbypolicy
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.BackupRestore
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaSolutionBackupRestoreReportStatisticsByPolicy
 ---
@@ -13,7 +13,7 @@ title: Get-MgBetaSolutionBackupRestoreReportStatisticsByPolicy
 
 ## SYNOPSIS
 
-Invoke function getStatisticsByPolicy
+Get the statistics that correspond to the specified policy ID of a backupPolicyReport.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ This cmdlet has the following aliases,
 
 ## DESCRIPTION
 
-Invoke function getStatisticsByPolicy
+Get the statistics that correspond to the specified policy ID of a backupPolicyReport.
 
 ## PARAMETERS
 
@@ -336,6 +336,7 @@ INPUTOBJECT `<IBackupRestoreIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [Get-MgBetaSolutionBackupRestoreReportStatisticsByPolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.backuprestore/get-mgbetasolutionbackuprestorereportstatisticsbypolicy)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/backupreport-getstatisticsbypolicy?view=graph-rest-beta)
 
 
 
