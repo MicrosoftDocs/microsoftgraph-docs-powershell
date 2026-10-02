@@ -56,12 +56,17 @@ Delete a qna object.
 | Application | SearchConfiguration.Read.All, SearchConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Search
 
 Remove-MgSearchQna -QnaId $qnaId
+
+```
+This example shows how to use the Remove-MgSearchQna Cmdlet.
+
 
 ## PARAMETERS
 
