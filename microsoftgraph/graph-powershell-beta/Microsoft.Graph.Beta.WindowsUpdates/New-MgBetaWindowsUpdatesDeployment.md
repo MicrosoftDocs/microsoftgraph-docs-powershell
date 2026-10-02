@@ -56,8 +56,9 @@ Create a new deployment object.
 | Application | WindowsUpdates.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
@@ -92,6 +93,10 @@ $params = @{
 }
 
 New-MgBetaWindowsUpdatesDeployment -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaWindowsUpdatesDeployment Cmdlet.
+
 
 ## PARAMETERS
 

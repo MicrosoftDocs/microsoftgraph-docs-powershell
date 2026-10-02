@@ -58,12 +58,17 @@ This cmdlet has the following aliases,
 Represents content applicable for offering to the related collection of devices.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 Get-MgBetaWindowsUpdatesPolicyApplicableContent -PolicyId $policyId
+
+```
+This example shows how to use the Get-MgBetaWindowsUpdatesPolicyApplicableContent Cmdlet.
+
 
 ## PARAMETERS
 
