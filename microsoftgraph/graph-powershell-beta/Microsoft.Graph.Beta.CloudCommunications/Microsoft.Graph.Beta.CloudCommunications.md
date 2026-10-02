@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-Module Guid: 33095d72-cc53-48bd-82d2-4d1498243d62
+Module Guid: e8a9a051-9333-4e2f-80de-80599716bc03
 Download Help Link: https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.beta.cloudcommunications/?view=graph-powershell-beta
 Help Version: 1.0.0.0
 Locale: en-US
@@ -31,11 +31,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationAdhocCall](Get-MgBetaCommunicationAdhocCall.md)
 
-### [Get-MgBetaCommunicationAdhocCall](Get-MgBetaCommunicationAdhocCall.md)
-
 ### [Get-MgBetaCommunicationAdhocCallCount](Get-MgBetaCommunicationAdhocCallCount.md)
-
-### [Get-MgBetaCommunicationAdhocCallRecording](Get-MgBetaCommunicationAdhocCallRecording.md)
 
 ### [Get-MgBetaCommunicationAdhocCallRecording](Get-MgBetaCommunicationAdhocCallRecording.md)
 
@@ -44,8 +40,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaCommunicationAdhocCallRecordingCount](Get-MgBetaCommunicationAdhocCallRecordingCount.md)
 
 ### [Get-MgBetaCommunicationAdhocCallRecordingDelta](Get-MgBetaCommunicationAdhocCallRecordingDelta.md)
-
-### [Get-MgBetaCommunicationAdhocCallTranscript](Get-MgBetaCommunicationAdhocCallTranscript.md)
 
 ### [Get-MgBetaCommunicationAdhocCallTranscript](Get-MgBetaCommunicationAdhocCallTranscript.md)
 
@@ -61,11 +55,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationCallAudioRoutingGroup](Get-MgBetaCommunicationCallAudioRoutingGroup.md)
 
-### [Get-MgBetaCommunicationCallAudioRoutingGroup](Get-MgBetaCommunicationCallAudioRoutingGroup.md)
-
 ### [Get-MgBetaCommunicationCallAudioRoutingGroupCount](Get-MgBetaCommunicationCallAudioRoutingGroupCount.md)
-
-### [Get-MgBetaCommunicationCallContentSharingSession](Get-MgBetaCommunicationCallContentSharingSession.md)
 
 ### [Get-MgBetaCommunicationCallContentSharingSession](Get-MgBetaCommunicationCallContentSharingSession.md)
 
@@ -77,11 +67,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationCallOperation](Get-MgBetaCommunicationCallOperation.md)
 
-### [Get-MgBetaCommunicationCallOperation](Get-MgBetaCommunicationCallOperation.md)
-
 ### [Get-MgBetaCommunicationCallOperationCount](Get-MgBetaCommunicationCallOperationCount.md)
-
-### [Get-MgBetaCommunicationCallParticipant](Get-MgBetaCommunicationCallParticipant.md)
 
 ### [Get-MgBetaCommunicationCallParticipant](Get-MgBetaCommunicationCallParticipant.md)
 
@@ -97,13 +83,9 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationCallRecordParticipantV2](Get-MgBetaCommunicationCallRecordParticipantV2.md)
 
-### [Get-MgBetaCommunicationCallRecordParticipantV2](Get-MgBetaCommunicationCallRecordParticipantV2.md)
-
 ### [Get-MgBetaCommunicationCallRecordPstnBlockedUserLog](Get-MgBetaCommunicationCallRecordPstnBlockedUserLog.md)
 
 ### [Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport](Get-MgBetaCommunicationCallRecordPstnOnlineMeetingDialoutReport.md)
-
-### [Get-MgBetaCommunicationCallRecordSession](Get-MgBetaCommunicationCallRecordSession.md)
 
 ### [Get-MgBetaCommunicationCallRecordSession](Get-MgBetaCommunicationCallRecordSession.md)
 
@@ -115,10 +97,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationOnlineMeeting](Get-MgBetaCommunicationOnlineMeeting.md)
 
-### [Get-MgBetaCommunicationOnlineMeeting](Get-MgBetaCommunicationOnlineMeeting.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingAiInsight](Get-MgBetaCommunicationOnlineMeetingAiInsight.md)
-
 ### [Get-MgBetaCommunicationOnlineMeetingAiInsight](Get-MgBetaCommunicationOnlineMeetingAiInsight.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingAiInsightCount](Get-MgBetaCommunicationOnlineMeetingAiInsightCount.md)
@@ -126,10 +104,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaCommunicationOnlineMeetingAlternativeRecording](Get-MgBetaCommunicationOnlineMeetingAlternativeRecording.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingAttendanceReport](Get-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingAttendanceReport](Get-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 
@@ -145,11 +119,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversation](Get-MgBetaCommunicationOnlineMeetingConversation.md)
 
-### [Get-MgBetaCommunicationOnlineMeetingConversation](Get-MgBetaCommunicationOnlineMeetingConversation.md)
-
 ### [Get-MgBetaCommunicationOnlineMeetingConversationCount](Get-MgBetaCommunicationOnlineMeetingConversationCount.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingConversationMessage](Get-MgBetaCommunicationOnlineMeetingConversationMessage.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationMessage](Get-MgBetaCommunicationOnlineMeetingConversationMessage.md)
 
@@ -159,19 +129,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction](Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction.md)
 
-### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction](Get-MgBetaCommunicationOnlineMeetingConversationMessageReaction.md)
-
 ### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReactionCount](Get-MgBetaCommunicationOnlineMeetingConversationMessageReactionCount.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReply](Get-MgBetaCommunicationOnlineMeetingConversationMessageReply.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReply](Get-MgBetaCommunicationOnlineMeetingConversationMessageReply.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyConversation](Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyConversation.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyCount](Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyCount.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyReaction](Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyReaction.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyReaction](Get-MgBetaCommunicationOnlineMeetingConversationMessageReplyReaction.md)
 
@@ -195,19 +159,13 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReaction](Get-MgBetaCommunicationOnlineMeetingConversationStarterReaction.md)
 
-### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReaction](Get-MgBetaCommunicationOnlineMeetingConversationStarterReaction.md)
-
 ### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReactionCount](Get-MgBetaCommunicationOnlineMeetingConversationStarterReactionCount.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReply](Get-MgBetaCommunicationOnlineMeetingConversationStarterReply.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReply](Get-MgBetaCommunicationOnlineMeetingConversationStarterReply.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyConversation](Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyConversation.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyCount](Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyCount.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyReaction](Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyReaction.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyReaction](Get-MgBetaCommunicationOnlineMeetingConversationStarterReplyReaction.md)
 
@@ -223,8 +181,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationOnlineMeetingRecording](Get-MgBetaCommunicationOnlineMeetingRecording.md)
 
-### [Get-MgBetaCommunicationOnlineMeetingRecording](Get-MgBetaCommunicationOnlineMeetingRecording.md)
-
 ### [Get-MgBetaCommunicationOnlineMeetingRecordingContent](Get-MgBetaCommunicationOnlineMeetingRecordingContent.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingRecordingCount](Get-MgBetaCommunicationOnlineMeetingRecordingCount.md)
@@ -235,17 +191,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
 
-### [Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion](Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion.md)
-
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount](Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
 
-### [Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant](Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant.md)
-
 ### [Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrantCount](Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrantCount.md)
-
-### [Get-MgBetaCommunicationOnlineMeetingTranscript](Get-MgBetaCommunicationOnlineMeetingTranscript.md)
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscript](Get-MgBetaCommunicationOnlineMeetingTranscript.md)
 
@@ -261,17 +211,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaCommunicationPresence](Get-MgBetaCommunicationPresence.md)
 
-### [Get-MgBetaCommunicationPresence](Get-MgBetaCommunicationPresence.md)
-
 ### [Get-MgBetaCommunicationPresenceByUserId](Get-MgBetaCommunicationPresenceByUserId.md)
 
 ### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
 
 ### [Get-MgBetaUserOnlineMeeting](Get-MgBetaUserOnlineMeeting.md)
-
-### [Get-MgBetaUserOnlineMeeting](Get-MgBetaUserOnlineMeeting.md)
-
-### [Get-MgBetaUserOnlineMeetingAiInsight](Get-MgBetaUserOnlineMeetingAiInsight.md)
 
 ### [Get-MgBetaUserOnlineMeetingAiInsight](Get-MgBetaUserOnlineMeetingAiInsight.md)
 
@@ -280,10 +224,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
 
 ### [Get-MgBetaUserOnlineMeetingAttendanceReport](Get-MgBetaUserOnlineMeetingAttendanceReport.md)
-
-### [Get-MgBetaUserOnlineMeetingAttendanceReport](Get-MgBetaUserOnlineMeetingAttendanceReport.md)
-
-### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 
@@ -303,8 +243,6 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserOnlineMeetingRecording](Get-MgBetaUserOnlineMeetingRecording.md)
 
-### [Get-MgBetaUserOnlineMeetingRecording](Get-MgBetaUserOnlineMeetingRecording.md)
-
 ### [Get-MgBetaUserOnlineMeetingRecordingContent](Get-MgBetaUserOnlineMeetingRecordingContent.md)
 
 ### [Get-MgBetaUserOnlineMeetingRecordingCount](Get-MgBetaUserOnlineMeetingRecordingCount.md)
@@ -315,17 +253,11 @@ Microsoft Graph PowerShell Cmdlets
 
 ### [Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion](Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
 
-### [Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion](Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion.md)
-
 ### [Get-MgBetaUserOnlineMeetingRegistrationCustomQuestionCount](Get-MgBetaUserOnlineMeetingRegistrationCustomQuestionCount.md)
 
 ### [Get-MgBetaUserOnlineMeetingRegistrationRegistrant](Get-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
 
-### [Get-MgBetaUserOnlineMeetingRegistrationRegistrant](Get-MgBetaUserOnlineMeetingRegistrationRegistrant.md)
-
 ### [Get-MgBetaUserOnlineMeetingRegistrationRegistrantCount](Get-MgBetaUserOnlineMeetingRegistrationRegistrantCount.md)
-
-### [Get-MgBetaUserOnlineMeetingTranscript](Get-MgBetaUserOnlineMeetingTranscript.md)
 
 ### [Get-MgBetaUserOnlineMeetingTranscript](Get-MgBetaUserOnlineMeetingTranscript.md)
 
@@ -340,10 +272,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl.md)
 
 ### [Get-MgBetaUserPresence](Get-MgBetaUserPresence.md)
-
-### [Invoke-MgBetaAdmitAllCommunicationCallParticipantFromLobby](Invoke-MgBetaAdmitAllCommunicationCallParticipantFromLobby.md)
-
-### [Invoke-MgBetaAdmitCommunicationCallParticipantFromLobby](Invoke-MgBetaAdmitCommunicationCallParticipantFromLobby.md)
 
 ### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
 
@@ -472,8 +400,6 @@ Microsoft Graph PowerShell Cmdlets
 ### [Remove-MgBetaCommunicationCallOperation](Remove-MgBetaCommunicationCallOperation.md)
 
 ### [Remove-MgBetaCommunicationCallParticipant](Remove-MgBetaCommunicationCallParticipant.md)
-
-### [Remove-MgBetaCommunicationCallParticipantFromLobby](Remove-MgBetaCommunicationCallParticipantFromLobby.md)
 
 ### [Remove-MgBetaCommunicationCallRecordOrganizerV2](Remove-MgBetaCommunicationCallRecordOrganizerV2.md)
 
