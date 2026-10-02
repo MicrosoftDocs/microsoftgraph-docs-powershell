@@ -1958,8 +1958,8 @@ See below for possible values.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall)
-- [](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta)
+- [Update-MgBetaVirtualEventTownhall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventtownhall)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/virtualeventtownhall-update?view=graph-rest-beta)
 
 
 
