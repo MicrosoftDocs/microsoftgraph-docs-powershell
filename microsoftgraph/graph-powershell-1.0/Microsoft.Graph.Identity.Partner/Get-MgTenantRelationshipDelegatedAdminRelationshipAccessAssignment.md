@@ -15,6 +15,9 @@ title: Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 Read the properties of a delegatedAdminAccessAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
