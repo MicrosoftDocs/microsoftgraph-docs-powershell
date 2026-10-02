@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.NetworkAccess-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.networkaccess/invoke-mgbetareportnetworkaccessreportdestination
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.NetworkAccess
-ms.date: 08/07/2026
+ms.date: 10/02/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaReportNetworkAccessReportDestination
 ---
@@ -21,8 +21,9 @@ Invoke function destinationReport
 
 ```
 Invoke-MgBetaReportNetworkAccessReportDestination -EndDateTime <datetime> -StartDateTime <datetime>
- [-AiAgentId <string>] [-AiAgentName <string>] [-Count] [-Filter <string>] [-Search <string>]
- [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-AgentTypeId <string>] [-AgentVirtualId <string>] [-AiAgentId <string>] [-AiAgentName <string>]
+ [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -31,8 +32,9 @@ Invoke-MgBetaReportNetworkAccessReportDestination -EndDateTime <datetime> -Start
 
 ```
 Invoke-MgBetaReportNetworkAccessReportDestination -InputObject <INetworkAccessIdentity>
- [-AiAgentId <string>] [-AiAgentName <string>] [-Count] [-Filter <string>] [-Search <string>]
- [-Skip <int>] [-Top <int>] [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
+ [-AgentTypeId <string>] [-AgentVirtualId <string>] [-AiAgentId <string>] [-AiAgentName <string>]
+ [-Count] [-Filter <string>] [-Search <string>] [-Skip <int>] [-Top <int>]
+ [-ResponseHeadersVariable <string>] [-Break] [-Headers <IDictionary>]
  [-HttpPipelineAppend <SendAsyncStep[]>] [-HttpPipelinePrepend <SendAsyncStep[]>] [-Proxy <uri>]
  [-ProxyCredential <pscredential>] [-ProxyUseDefaultCredentials]
 ```
@@ -47,6 +49,48 @@ This cmdlet has the following aliases,
 Invoke function destinationReport
 
 ## PARAMETERS
+
+### -AgentTypeId
+
+Usage: agentTypeId='@agentTypeId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
+
+### -AgentVirtualId
+
+Usage: agentVirtualId='@agentVirtualId'
+
+```yaml
+Type: System.String
+DefaultValue: ''
+SupportsWildcards: false
+Aliases: []
+ParameterSets:
+- Name: (All)
+  Position: Named
+  IsRequired: false
+  ValueFromPipeline: false
+  ValueFromPipelineByPropertyName: false
+  ValueFromRemainingArguments: false
+DontShow: false
+AcceptedValues: []
+HelpMessage: ''
+```
 
 ### -AiAgentId
 
