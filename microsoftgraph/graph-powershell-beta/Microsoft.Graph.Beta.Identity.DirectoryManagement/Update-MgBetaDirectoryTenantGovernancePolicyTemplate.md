@@ -283,7 +283,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -310,7 +310,7 @@ HelpMessage: ''
 
 ### -DelegatedAdministrationRoleAssignments
 
-.
+
 To construct, see NOTES section for DELEGATEDADMINISTRATIONROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -338,7 +338,7 @@ HelpMessage: ''
 
 ### -Description
 
-.
+
 
 ```yaml
 Type: System.String
@@ -365,7 +365,7 @@ HelpMessage: ''
 
 ### -DisplayName
 
-.
+
 
 ```yaml
 Type: System.String
@@ -392,7 +392,7 @@ HelpMessage: ''
 
 ### -GovernedTenantCanTerminate
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -538,7 +538,7 @@ HelpMessage: ''
 
 ### -LastModifiedDateTime
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -565,7 +565,7 @@ HelpMessage: ''
 
 ### -MultiTenantApplicationsToProvision
 
-.
+
 To construct, see NOTES section for MULTITENANTAPPLICATIONSTOPROVISION properties and create a hash table.
 
 ```yaml
@@ -705,7 +705,7 @@ HelpMessage: ''
 
 ### -Version
 
-.
+
 
 ```yaml
 Type: System.String
