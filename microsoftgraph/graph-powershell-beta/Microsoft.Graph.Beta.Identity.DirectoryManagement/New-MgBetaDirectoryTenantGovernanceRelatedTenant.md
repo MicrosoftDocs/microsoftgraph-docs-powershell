@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancerelatedtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTenantGovernanceRelatedTenant
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaDirectoryTenantGovernanceRelatedTenant
 ## SYNOPSIS
 
 Create new navigation property to relatedTenants for directory
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-1.0)
 
 ## SYNTAX
 

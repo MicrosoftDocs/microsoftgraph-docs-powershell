@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorytenantgovernancerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Remove-MgBetaDirectoryTenantGovernanceRequest
 ---
@@ -14,6 +14,9 @@ title: Remove-MgBetaDirectoryTenantGovernanceRequest
 ## SYNOPSIS
 
 Delete navigation property governanceRequests for directory
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryTenantGovernanceRequest](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryTenantGovernanceRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 

@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceSetting
 ---
@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryTenantGovernanceSetting
 
 Update the canReceiveInvitations property of the tenantGovernanceSetting singleton.
 This property controls whether the tenant can receive governance invitations.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryTenantGovernanceSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryTenantGovernanceSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 

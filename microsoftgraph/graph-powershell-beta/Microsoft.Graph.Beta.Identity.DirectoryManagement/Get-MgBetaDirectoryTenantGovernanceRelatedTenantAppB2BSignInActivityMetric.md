@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytenantgovernancerelatedtenantappb2bsigninactivitymetric
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetri
 ## SYNOPSIS
 
 Get appB2BSignInActivityMetrics from directory
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernanceRelatedTenantAppB2BSignInActivityMetric?view=graph-powershell-1.0)
 
 ## SYNTAX
 

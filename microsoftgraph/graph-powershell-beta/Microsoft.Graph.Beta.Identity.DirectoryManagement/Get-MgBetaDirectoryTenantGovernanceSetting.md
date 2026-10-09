@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorytenantgovernancesetting
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Get-MgBetaDirectoryTenantGovernanceSetting
 ---
@@ -14,6 +14,9 @@ title: Get-MgBetaDirectoryTenantGovernanceSetting
 ## SYNOPSIS
 
 Read the properties of the tenantGovernanceSetting singleton, which controls related tenant discovery and invitation capabilities.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryTenantGovernanceSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryTenantGovernanceSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 

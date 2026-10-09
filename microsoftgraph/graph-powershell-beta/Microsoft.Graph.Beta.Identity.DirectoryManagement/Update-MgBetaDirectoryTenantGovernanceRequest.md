@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceRequest
 ---
@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryTenantGovernanceRequest
 
 Update the status property of a governanceRequest to accept or reject the governance request.
 Only the governed tenant can update the request status.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryTenantGovernanceRequest](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryTenantGovernanceRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 

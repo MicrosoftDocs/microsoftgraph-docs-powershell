@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorytenantgovernancerelatedtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 09/22/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgBetaDirectoryTenantGovernanceRelatedTenant
 ---
@@ -15,6 +15,9 @@ title: Update-MgBetaDirectoryTenantGovernanceRelatedTenant
 
 Manually refresh the list of related tenants.
 The list is also automatically refreshed daily.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-1.0)
 
 ## SYNTAX
 

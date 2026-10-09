@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorytenantgovernancepolicytemplate
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaDirectoryTenantGovernancePolicyTemplate
 ---
@@ -14,6 +14,9 @@ title: New-MgBetaDirectoryTenantGovernancePolicyTemplate
 ## SYNOPSIS
 
 Create a new governancePolicyTemplate that defines the configuration for establishing governance relationships, including role assignments and applications to provision.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryTenantGovernancePolicyTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryTenantGovernancePolicyTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
