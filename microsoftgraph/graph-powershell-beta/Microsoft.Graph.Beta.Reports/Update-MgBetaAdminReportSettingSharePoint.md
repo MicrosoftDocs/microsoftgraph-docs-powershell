@@ -393,7 +393,7 @@ APIUSAGEREPORTMETRICS <IMicrosoftGraphApiUsageReportEnablementStatus[]>: The col
 The supported values are: egressReport, throttlingReport.
   [OnboardingStatus <String>]: apiUsageReportOnboardingStatus
 
-BODYPARAMETER <IMicrosoftGraphSharePointReportSettings>: sharePointReportSettings
+BODYPARAMETER `<IMicrosoftGraphSharePointReportSettings>`: sharePointReportSettings
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -406,3 +406,25 @@ The supported values are: egressReport, throttlingReport.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsettingsharepoint)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
