@@ -70,6 +70,14 @@ Mute a specific participant in the call.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 For more information about how to handle mute operations, see muteParticipantOperation.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Not supported |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | Calls.JoinGroupCall.All, Calls.JoinGroupCallasGuest.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
