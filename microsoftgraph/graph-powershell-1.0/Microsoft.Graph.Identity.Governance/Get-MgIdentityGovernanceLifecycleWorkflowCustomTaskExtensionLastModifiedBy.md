@@ -15,6 +15,9 @@ title: Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedB
 
 The unique identifier of the Microsoft Entra user that modified the custom task extension last.Supports $filter(eq, ne) and $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

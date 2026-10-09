@@ -15,6 +15,9 @@ title: Get-MgAgreementFileLocalizationCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFileLocalizationCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalizationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

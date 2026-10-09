@@ -18,6 +18,9 @@ After the access review instance stops, the instance status is marked as Complet
 Stopping an instance will not stop future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Stop (Default)

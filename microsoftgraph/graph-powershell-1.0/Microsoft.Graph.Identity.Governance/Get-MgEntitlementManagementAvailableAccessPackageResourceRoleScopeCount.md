@@ -15,6 +15,9 @@ title: Get-MgEntitlementManagementAvailableAccessPackageResourceRoleScopeCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScopeCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAvailableAccessPackageResourceRoleScopeCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

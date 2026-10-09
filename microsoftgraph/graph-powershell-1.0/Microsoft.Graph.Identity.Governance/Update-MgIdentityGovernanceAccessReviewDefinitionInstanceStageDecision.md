@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 
 Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

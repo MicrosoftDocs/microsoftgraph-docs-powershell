@@ -15,6 +15,9 @@ title: Update-MgIdentityGovernanceCatalog
 
 Update the navigation property catalogs in identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceCatalog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

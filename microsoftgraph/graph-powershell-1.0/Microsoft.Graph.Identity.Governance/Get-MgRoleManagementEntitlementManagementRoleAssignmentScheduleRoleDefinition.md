@@ -15,6 +15,9 @@ title: Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefini
 
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

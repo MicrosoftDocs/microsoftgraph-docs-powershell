@@ -15,6 +15,9 @@ title: Remove-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDeci
 
 Delete navigation property decisions for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageDecision?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

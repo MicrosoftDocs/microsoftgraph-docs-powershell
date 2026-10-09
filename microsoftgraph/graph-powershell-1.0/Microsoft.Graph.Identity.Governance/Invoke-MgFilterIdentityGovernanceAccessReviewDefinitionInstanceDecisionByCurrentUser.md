@@ -16,6 +16,9 @@ title: Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionBy
 Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review for which the calling user is the reviewer.
 The decision items are presented as accessReviewInstanceDecisionItem objects on a given accessReviewInstance or accessReviewStage for which the calling user is the reviewer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceDecisionByCurrentUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

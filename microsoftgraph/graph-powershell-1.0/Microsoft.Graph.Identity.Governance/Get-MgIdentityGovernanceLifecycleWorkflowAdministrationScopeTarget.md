@@ -17,6 +17,9 @@ The administrative units in the scope of the workflow.
 Optional.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowAdministrationScopeTarget?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

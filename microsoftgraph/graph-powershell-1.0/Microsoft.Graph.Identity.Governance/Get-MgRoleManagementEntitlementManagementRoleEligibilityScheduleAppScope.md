@@ -16,6 +16,9 @@ title: Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope
 Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

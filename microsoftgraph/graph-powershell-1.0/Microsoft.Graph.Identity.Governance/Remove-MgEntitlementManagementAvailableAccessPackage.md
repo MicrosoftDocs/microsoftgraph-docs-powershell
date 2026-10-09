@@ -15,6 +15,9 @@ title: Remove-MgEntitlementManagementAvailableAccessPackage
 
 Delete navigation property availableAccessPackages for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAvailableAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAvailableAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

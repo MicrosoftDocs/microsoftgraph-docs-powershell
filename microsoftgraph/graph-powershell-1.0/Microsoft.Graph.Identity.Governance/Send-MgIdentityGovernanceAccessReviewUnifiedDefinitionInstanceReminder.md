@@ -15,6 +15,9 @@ title: Send-MgIdentityGovernanceAccessReviewUnifiedDefinitionInstanceReminder
 
 Send a reminder to the reviewers of an active accessReviewInstance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewUnifiedDefinitionInstanceReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Send (Default)

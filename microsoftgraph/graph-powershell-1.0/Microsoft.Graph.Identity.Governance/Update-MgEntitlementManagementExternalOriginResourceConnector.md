@@ -15,6 +15,9 @@ title: Update-MgEntitlementManagementExternalOriginResourceConnector
 
 Update the properties of an externalOriginResourceConnector object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementExternalOriginResourceConnector](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementExternalOriginResourceConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgEntitlementManagementAccessPackageSuggestion
 
 Delete navigation property accessPackageSuggestions for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageSuggestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageSuggestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -15,6 +15,9 @@ title: New-MgEntitlementManagementControlConfiguration
 
 Create new navigation property to controlConfigurations for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementControlConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementControlConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

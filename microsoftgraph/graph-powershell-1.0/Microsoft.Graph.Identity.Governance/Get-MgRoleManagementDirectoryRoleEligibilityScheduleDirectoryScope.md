@@ -16,6 +16,9 @@ title: Get-MgRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope
 The directory object that is the scope of the role eligibility or assignment.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

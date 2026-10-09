@@ -15,6 +15,9 @@ title: Update-MgAgreementFileLocalizationVersion
 
 Update the navigation property versions in agreements
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFileLocalizationVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -16,6 +16,9 @@ title: Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGr
 References the group that is the scope of the membership or ownership eligibility request through PIM for Groups.
 Supports $expand and $select nested in $expand for select properties like id, displayName, and mail.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
