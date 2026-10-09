@@ -900,7 +900,7 @@ SETTINGS <IMicrosoftGraphSecurityCopilotPluginSetting[]>: Settings for the plugi
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycopilotworkspaceplugin)
+- [Update-MgBetaSecurityCopilotWorkspacePlugin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycopilotworkspaceplugin)
 
 
 

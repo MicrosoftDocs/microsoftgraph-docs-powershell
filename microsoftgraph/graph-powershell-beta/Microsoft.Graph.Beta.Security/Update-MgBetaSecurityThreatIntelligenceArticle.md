@@ -880,7 +880,7 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)
+- [Update-MgBetaSecurityThreatIntelligenceArticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencearticle)
 
 
 

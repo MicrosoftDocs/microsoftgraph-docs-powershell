@@ -481,7 +481,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityzoneaggregation)
+- [Get-MgBetaSecurityZoneAggregation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityzoneaggregation)
 
 
 

@@ -409,7 +409,7 @@ DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType[]>: .
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecuritydatasecurityandgovernancesensitivitylabel)
+- [Test-MgBetaSecurityDataSecurityAndGovernanceSensitivityLabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecuritydatasecurityandgovernancesensitivitylabel)
 
 
 

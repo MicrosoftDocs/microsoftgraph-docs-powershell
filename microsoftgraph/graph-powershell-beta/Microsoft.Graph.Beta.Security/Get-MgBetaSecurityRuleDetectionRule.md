@@ -657,8 +657,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityruledetectionrule)
-- [](https://learn.microsoft.com/graph/api/security-rulesroot-list-detectionrules?view=graph-rest-beta)
+- [Get-MgBetaSecurityRuleDetectionRule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityruledetectionrule)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-rulesroot-list-detectionrules?view=graph-rest-beta)
 
 
 

@@ -1037,8 +1037,8 @@ Supports $filter.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcase)
-- [](https://learn.microsoft.com/graph/api/security-casemanagement-case-update?view=graph-rest-beta)
+- [Update-MgBetaSecurityCaseManagementCase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycasemanagementcase)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/security-casemanagement-case-update?view=graph-rest-beta)
 
 
 
