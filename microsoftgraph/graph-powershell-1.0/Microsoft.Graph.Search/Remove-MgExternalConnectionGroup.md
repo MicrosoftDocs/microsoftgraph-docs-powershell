@@ -433,8 +433,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroup)
-- [](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-delete?view=graph-rest-1.0)
+- [Remove-MgExternalConnectionGroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroup)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-delete?view=graph-rest-1.0)
 
 
 
