@@ -15,6 +15,9 @@ title: Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile
 
 Update the navigation property files in deviceAppManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary
 
 Navigation property to deployment summary of the configuration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

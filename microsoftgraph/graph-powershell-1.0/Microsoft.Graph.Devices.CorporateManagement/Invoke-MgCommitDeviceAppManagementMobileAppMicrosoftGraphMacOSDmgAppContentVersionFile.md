@@ -15,6 +15,9 @@ title: Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppConte
 
 Commits a file of a given app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CommitExpanded (Default)

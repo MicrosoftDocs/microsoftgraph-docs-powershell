@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile
 
 The list of files for this app content version.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

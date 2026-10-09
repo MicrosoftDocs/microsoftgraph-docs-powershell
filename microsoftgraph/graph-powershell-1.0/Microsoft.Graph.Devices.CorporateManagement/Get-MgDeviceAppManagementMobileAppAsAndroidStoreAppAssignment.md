@@ -15,6 +15,9 @@ title: Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment
 
 The list of group assignments for this mobile app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
