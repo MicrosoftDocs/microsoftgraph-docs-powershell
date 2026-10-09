@@ -150,12 +150,17 @@ This cmdlet has the following aliases,
 Children terms of set in term [store].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreSetChild -SiteId $siteId -SetId $setId
+
+```
+This example shows how to use the Get-MgSiteTermStoreSetChild Cmdlet.
+
 
 ## PARAMETERS
 

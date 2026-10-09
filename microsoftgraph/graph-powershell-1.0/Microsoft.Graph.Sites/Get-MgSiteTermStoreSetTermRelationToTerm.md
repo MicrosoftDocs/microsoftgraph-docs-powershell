@@ -69,16 +69,6 @@ This cmdlet has the following aliases,
 The to [term] of the relation.
 The term to which the relationship is defined.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -530,6 +520,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresettermrelationtoterm)
+
 
 
 

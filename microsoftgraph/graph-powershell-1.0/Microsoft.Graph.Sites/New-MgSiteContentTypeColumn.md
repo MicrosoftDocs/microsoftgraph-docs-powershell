@@ -102,8 +102,9 @@ Add a column to a content type in a site, or a list with a request that specifie
 | Application | Sites.Manage.All, Sites.FullControl.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Sites
 
@@ -112,6 +113,10 @@ $params = @{
 }
 
 New-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 
