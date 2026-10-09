@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob
 
 Delete navigation property siteProtectionUnitsBulkAdditionJobs for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreSiteProtectionUnitBulkAdditionJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

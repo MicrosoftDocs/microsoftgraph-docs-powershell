@@ -15,6 +15,9 @@ title: Remove-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArt
 
 Delete navigation property mailboxRestoreArtifacts for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/Remove-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

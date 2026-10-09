@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUn
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreSharePointProtectionPolicySiteProtectionUnitCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

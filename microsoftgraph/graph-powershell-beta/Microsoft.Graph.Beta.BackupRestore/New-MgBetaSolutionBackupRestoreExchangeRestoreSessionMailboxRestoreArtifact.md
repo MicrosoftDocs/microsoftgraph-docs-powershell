@@ -15,6 +15,9 @@ title: New-MgBetaSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifa
 
 Create new navigation property to mailboxRestoreArtifacts for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact](/powershell/module/Microsoft.Graph.BackupRestore/New-MgSolutionBackupRestoreExchangeRestoreSessionMailboxRestoreArtifact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

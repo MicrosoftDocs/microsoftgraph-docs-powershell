@@ -16,6 +16,9 @@ title: Get-MgBetaSolutionBackupRestorePointProtectionUnit
 The site, drive, or mailbox unit protected under a protection policy.
 Supports $expand and $filter on protectionUnit/policyId using the eq operator.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestorePointProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestorePointProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

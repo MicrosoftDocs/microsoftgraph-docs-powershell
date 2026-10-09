@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionU
 
 The protection units (mailboxes) that are  protected under the Exchange protection policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreExchangeProtectionPolicyMailboxProtectionUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

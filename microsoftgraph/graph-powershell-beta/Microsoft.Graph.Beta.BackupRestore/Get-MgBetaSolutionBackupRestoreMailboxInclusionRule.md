@@ -15,6 +15,9 @@ title: Get-MgBetaSolutionBackupRestoreMailboxInclusionRule
 
 The list of mailbox inclusion rules applied to the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSolutionBackupRestoreMailboxInclusionRule](/powershell/module/Microsoft.Graph.BackupRestore/Get-MgSolutionBackupRestoreMailboxInclusionRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
