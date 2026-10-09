@@ -15,6 +15,9 @@ title: Invoke-MgBetaHaveTeamworkDeletedTeamChannel
 
 Determine whether a user has access to a channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Have (Default)

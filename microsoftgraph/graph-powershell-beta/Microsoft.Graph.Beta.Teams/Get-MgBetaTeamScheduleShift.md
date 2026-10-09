@@ -15,6 +15,9 @@ title: Get-MgBetaTeamScheduleShift
 
 Retrieve the properties and relationships of a shift object by ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

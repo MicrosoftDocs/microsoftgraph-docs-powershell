@@ -15,6 +15,9 @@ title: Update-MgBetaGroupTeamScheduleTimeCard
 
 Update the navigation property timeCards in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeCard?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -15,6 +15,9 @@ title: Stop-MgBetaGroupTeamScheduleTimeCardBreak
 
 End the open break in a specific timeCard.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgGroupTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Stop-MgGroupTeamScheduleTimeCardBreak?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### EndExpanded (Default)

@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupTeamTag
 
 Delete navigation property tags for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTag?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -22,6 +22,9 @@ A team is archived once the async operation completes successfully, which can oc
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgArchiveGroupTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgArchiveGroupTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)

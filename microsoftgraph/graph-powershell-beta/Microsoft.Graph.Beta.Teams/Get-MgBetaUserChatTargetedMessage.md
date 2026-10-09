@@ -18,6 +18,9 @@ Nullable.
 You can't expand this relationship using $expand.
 Targeted messages can also be retrieved via the userTeamwork: getAllTargetedMessages API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatTargetedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatTargetedMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

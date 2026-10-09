@@ -15,6 +15,9 @@ title: Update-MgBetaTeamworkWorkforceIntegration
 
 Update the properties of a workforceintegration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

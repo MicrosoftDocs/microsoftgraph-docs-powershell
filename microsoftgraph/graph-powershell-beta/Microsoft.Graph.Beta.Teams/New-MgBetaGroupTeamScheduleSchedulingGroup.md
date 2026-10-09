@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamScheduleSchedulingGroup
 
 Create new navigation property to schedulingGroups for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

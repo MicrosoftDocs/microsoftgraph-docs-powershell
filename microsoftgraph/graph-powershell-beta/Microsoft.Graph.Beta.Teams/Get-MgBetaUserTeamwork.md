@@ -15,6 +15,9 @@ title: Get-MgBetaUserTeamwork
 
 Get the userTeamwork settings for a specified user, which includes the Microsoft Teams region and the locale chosen by the user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamwork?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

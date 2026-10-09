@@ -15,6 +15,9 @@ title: New-MgBetaGroupTeamTag
 
 Create new navigation property to tags for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTag?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

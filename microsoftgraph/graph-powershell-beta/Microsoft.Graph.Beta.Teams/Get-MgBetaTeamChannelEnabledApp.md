@@ -15,6 +15,9 @@ title: Get-MgBetaTeamChannelEnabledApp
 
 A collection of enabled apps in the channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelEnabledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelEnabledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

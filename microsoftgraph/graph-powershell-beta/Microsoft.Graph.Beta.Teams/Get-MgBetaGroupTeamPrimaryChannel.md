@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamPrimaryChannel
 
 The general channel for the team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

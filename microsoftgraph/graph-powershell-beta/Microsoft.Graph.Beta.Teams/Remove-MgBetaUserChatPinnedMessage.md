@@ -15,6 +15,9 @@ title: Remove-MgBetaUserChatPinnedMessage
 
 Delete navigation property pinnedMessages for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatPinnedMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

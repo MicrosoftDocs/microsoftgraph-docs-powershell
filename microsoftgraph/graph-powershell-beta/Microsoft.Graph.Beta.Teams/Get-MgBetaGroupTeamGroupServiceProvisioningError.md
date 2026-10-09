@@ -15,6 +15,9 @@ title: Get-MgBetaGroupTeamGroupServiceProvisioningError
 
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamGroupServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

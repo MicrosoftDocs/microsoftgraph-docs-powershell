@@ -15,6 +15,9 @@ title: Remove-MgBetaGroupTeamChannel
 
 Delete navigation property channels for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

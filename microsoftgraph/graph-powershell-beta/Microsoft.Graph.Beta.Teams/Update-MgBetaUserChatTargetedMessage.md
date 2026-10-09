@@ -15,6 +15,9 @@ title: Update-MgBetaUserChatTargetedMessage
 
 Update the navigation property targetedMessages in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatTargetedMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTargetedMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

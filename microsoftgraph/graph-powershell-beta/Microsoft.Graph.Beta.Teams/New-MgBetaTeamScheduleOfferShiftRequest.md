@@ -15,6 +15,9 @@ title: New-MgBetaTeamScheduleOfferShiftRequest
 
 Create an instance of an offerShiftRequest.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
