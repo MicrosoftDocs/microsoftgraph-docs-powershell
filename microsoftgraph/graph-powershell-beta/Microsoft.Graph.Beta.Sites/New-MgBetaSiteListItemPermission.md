@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Sites-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitempermission
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Sites
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaSiteListItemPermission
 ---
@@ -14,9 +14,6 @@ title: New-MgBetaSiteListItemPermission
 ## SYNOPSIS
 
 Create new navigation property to permissions for sites
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteListItemPermission](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -80,13 +77,15 @@ This cmdlet has the following aliases,
 
 Create new navigation property to permissions for sites
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | Sites.ReadWrite.All, Sites.FullControl.All, Sites.Manage.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -844,7 +843,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPermission>`: permission
+BODYPARAMETER <IMicrosoftGraphPermission>: permission
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -949,7 +948,7 @@ Read-only.
   [ShareId <String>]: A unique token that can be used to access this shared item via the shares API.
 Read-only.
 
-GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
+GRANTEDTO <IMicrosoftGraphIdentitySet>: identitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1006,7 +1005,7 @@ For example, in the access reviews decisions API, this property might record the
     [LoginName <String>]: The sign in name of the SharePoint identity.
   [SiteUser <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
 
-GRANTEDTOV2 `<IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
+GRANTEDTOV2 <IMicrosoftGraphSharePointIdentitySet>: sharePointIdentitySet
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1039,7 +1038,7 @@ For example, in the access reviews decisions API, this property might record the
     [LoginName <String>]: The sign in name of the SharePoint identity.
   [SiteUser <IMicrosoftGraphSharePointIdentity>]: sharePointIdentity
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+INHERITEDFROM <IMicrosoftGraphItemReference>: itemReference
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DriveId <String>]: Unique identifier of the drive instance that contains the driveItem.
 Only returned if the item is located in a drive.
@@ -1068,7 +1067,7 @@ The value is the same as the id property of that site resource.
 It's an opaque string that consists of three identifiers of the site.
 For OneDrive, this property isn't populated.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   [BaseItemId <String>]: The unique identifier of baseItem
   [BaseSitePageId <String>]: The unique identifier of baseSitePage
   [BitlockerRecoveryKeyId <String>]: The unique identifier of bitlockerRecoveryKey
@@ -1130,7 +1129,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   [UserId <String>]: The unique identifier of user
   [WebPartId <String>]: The unique identifier of webPart
 
-INVITATION `<IMicrosoftGraphSharingInvitation>`: sharingInvitation
+INVITATION <IMicrosoftGraphSharingInvitation>: sharingInvitation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Email <String>]: The email address provided for the recipient of the sharing invitation.
 Read-only.
@@ -1149,7 +1148,7 @@ For example, in the access reviews decisions API, this property might record the
   [SignInRequired <Boolean?>]: If true the recipient of the invitation needs to sign in in order to access the shared item.
 Read-only.
 
-LINK `<IMicrosoftGraphSharingLink>`: sharingLink
+LINK <IMicrosoftGraphSharingLink>: sharingLink
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Application <IMicrosoftGraphIdentity>]: identity
     [(Any) <Object>]: This indicates any property can be added to this object.
@@ -1170,27 +1169,4 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 
 ## RELATED LINKS
 
-- [New-MgBetaSiteListItemPermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitempermission)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitempermission)
