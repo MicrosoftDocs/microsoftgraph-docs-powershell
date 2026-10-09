@@ -467,7 +467,7 @@ HelpMessage: ''
 
 ### -Queries
 
-.
+
 To construct, see NOTES section for QUERIES properties and create a hash table.
 
 ```yaml
