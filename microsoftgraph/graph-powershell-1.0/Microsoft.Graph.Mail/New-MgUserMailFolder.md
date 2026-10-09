@@ -1330,7 +1330,7 @@ Read-only.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder)
+- [New-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder)
 
 
 

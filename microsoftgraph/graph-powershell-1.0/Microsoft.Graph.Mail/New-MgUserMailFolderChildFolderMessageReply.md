@@ -786,8 +786,8 @@ For example, an error is returned when a user with a mailbox in the EUR (Europe)
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply)
-- [](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
+- [New-MgUserMailFolderChildFolderMessageReply](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagereply)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
 
 
 

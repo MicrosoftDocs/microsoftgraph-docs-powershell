@@ -523,8 +523,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolder)
-- [](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0)
+- [Copy-MgUserMailFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/copy-mgusermailfolder)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/mailfolder-copy?view=graph-rest-1.0)
 
 
 
