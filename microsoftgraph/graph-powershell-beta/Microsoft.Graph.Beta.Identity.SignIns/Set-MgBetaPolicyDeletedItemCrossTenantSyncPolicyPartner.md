@@ -262,7 +262,7 @@ HelpMessage: ''
 
 ### -ExternalCloudAuthorizedApplicationId
 
-.
+
 
 ```yaml
 Type: System.String
