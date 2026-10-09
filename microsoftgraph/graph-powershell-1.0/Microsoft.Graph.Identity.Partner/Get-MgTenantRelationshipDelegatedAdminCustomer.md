@@ -15,6 +15,9 @@ title: Get-MgTenantRelationshipDelegatedAdminCustomer
 
 Read the properties of a delegatedAdminCustomer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
