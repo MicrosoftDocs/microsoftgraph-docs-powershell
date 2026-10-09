@@ -50,16 +50,6 @@ This cmdlet has the following aliases,
 
 Search the hierarchy of items for items matching a query.\rYou can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -550,6 +540,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetagroupdrive)
 - [](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
+
 
 
 

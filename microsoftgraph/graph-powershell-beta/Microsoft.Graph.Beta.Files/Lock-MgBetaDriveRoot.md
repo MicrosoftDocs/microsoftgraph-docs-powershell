@@ -76,16 +76,6 @@ The server determines which behavior applies based on the file's current lock st
 The caller doesn't need to track whether they previously locked the file, and doesn't need to manage a lock identifier.
 Only exclusive locks are currently supported.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -508,6 +498,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/lock-mgbetadriveroot)
 - [](https://learn.microsoft.com/graph/api/driveitem-lock?view=graph-rest-beta)
+
 
 
 

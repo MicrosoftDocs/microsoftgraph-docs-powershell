@@ -49,16 +49,6 @@ This cmdlet has the following aliases,
 Restore a previous version of a driveItem to be the current version.
 This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -442,6 +432,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetagroupdriverootversion)
 - [](https://learn.microsoft.com/graph/api/driveitemversion-restoreversion?view=graph-rest-beta)
+
 
 
 
