@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewunifieddefinitioninstancestagerecommendation
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation
 ---
@@ -17,9 +17,6 @@ Accept the recommendations on all accessReviewInstanceDecisionItem objects that 
 Recommendations are generated if recommendationsEnabled is true on the accessReviewScheduleDefinition object.
 If there's no recommendation on an accessReviewInstanceDecisionItem object, no decision is recorded.
 This action accepts recommendations for the decisions in a specific stage only, unlike accessReviewInstance: acceptRecommendations, which operates across the entire instance.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -55,13 +52,15 @@ Recommendations are generated if recommendationsEnabled is true on the accessRev
 If there's no recommendation on an accessReviewInstanceDecisionItem object, no decision is recorded.
 This action accepts recommendations for the decisions in a specific stage only, unlike accessReviewInstance: acceptRecommendations, which operates across the entire instance.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | AccessReview.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | AccessReview.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -414,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -530,28 +529,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewUnifiedDefinitionInstanceStageRecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewunifieddefinitioninstancestagerecommendation)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewunifieddefinitioninstancestagerecommendation)
+- [](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta)

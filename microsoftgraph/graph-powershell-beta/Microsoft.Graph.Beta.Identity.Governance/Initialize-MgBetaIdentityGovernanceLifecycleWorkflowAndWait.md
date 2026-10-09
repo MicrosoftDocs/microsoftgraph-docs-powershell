@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowandwait
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Initialize-MgBetaIdentityGovernanceLifecycleWorkflowAndWait
 ---
@@ -16,9 +16,6 @@ title: Initialize-MgBetaIdentityGovernanceLifecycleWorkflowAndWait
 Activate a lifecycle workflow for a specified subject and synchronously wait for execution to complete.
 This action returns an awaitedWorkflowProcessingResult with the execution outcome.
 Use this action when you need immediate confirmation of workflow completion, for example when provisioning a non-user subject.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Initialize-MgIdentityGovernanceLifecycleWorkflowAndWait](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflowAndWait?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -74,13 +71,15 @@ Activate a lifecycle workflow for a specified subject and synchronously wait for
 This action returns an awaitedWorkflowProcessingResult with the execution outcome.
 Use this action when you need immediate confirmation of workflow completion, for example when provisioning a non-user subject.
 
-**Permissions**
+## EXAMPLES
 
-| Permission type | Permissions (from least to most privileged) |
-| --------------- | ------------------------------------------  |
-| Delegated (work or school account) | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
-| Delegated (personal Microsoft account) | Not supported |
-| Application | LifecycleWorkflows-Workflow.Activate, LifecycleWorkflows-Workflow.ReadWrite.All, LifecycleWorkflows.ReadWrite.All,  |
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -113,7 +112,7 @@ HelpMessage: ''
 
 ### -BodyParameter
 
-
+.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -468,12 +467,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths8F12FfIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivateandwaitPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths8F12FfIdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdMicrosoftGraphIdentitygovernanceActivateandwaitPostRequestbodyContentApplicationJsonSchema>: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Subject <IMicrosoftGraphIdentityGovernanceWorkflowSubject>]: workflowSubject
     [(Any) <Object>]: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   [AccessPackageAssignmentId <String>]: The unique identifier of accessPackageAssignment
   [AccessPackageAssignmentPolicyId <String>]: The unique identifier of accessPackageAssignmentPolicy
   [AccessPackageAssignmentRequestId <String>]: The unique identifier of accessPackageAssignmentRequest
@@ -589,28 +588,5 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [Initialize-MgBetaIdentityGovernanceLifecycleWorkflowAndWait](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowandwait)
-- [Graph API Reference](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activateandwait?view=graph-rest-beta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflowandwait)
+- [](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activateandwait?view=graph-rest-beta)

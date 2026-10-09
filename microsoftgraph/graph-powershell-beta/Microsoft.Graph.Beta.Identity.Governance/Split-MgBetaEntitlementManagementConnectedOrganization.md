@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-Help.xml
 HelpUri: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/split-mgbetaentitlementmanagementconnectedorganization
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Split-MgBetaEntitlementManagementConnectedOrganization
 ---
@@ -32,6 +32,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Split elements of one or more Azure AD entitlement management connected organizations, returned by Get-MgBetaEntitlementManagementConnectedOrganization, to simplify reporting.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -133,26 +147,3 @@ Read-only.
 ## RELATED LINKS
 
 - [](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/split-mgbetaentitlementmanagementconnectedorganization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
