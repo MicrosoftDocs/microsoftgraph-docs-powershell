@@ -14,7 +14,7 @@ title: Send-MgTeamActivityNotification
 ## SYNOPSIS
 
 Send an activity feed notification in the scope of a team.
-For more information about sending notifications and the requirements for doing so, see\r\nsending Teams activity notifications.
+For more information about sending notifications and the requirements for doing so, see\rsending Teams activity notifications.
 
 ## SYNTAX
 
@@ -70,7 +70,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Send an activity feed notification in the scope of a team.
-For more information about sending notifications and the requirements for doing so, see\r\nsending Teams activity notifications.
+For more information about sending notifications and the requirements for doing so, see\rsending Teams activity notifications.
 
 ## EXAMPLES
 
@@ -876,7 +876,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
   [(Any) <Object>]: This indicates any property can be added to this object.
   [ActivityType <String>]: 
   [ChainId <Int64?>]: 
@@ -900,7 +900,7 @@ If the value is text, this must be a plain text value.
     [WebUrl <String>]: The link the user clicks when they select the notification.
 Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -938,7 +938,7 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   [UserScopeTeamsAppInstallationId <String>]: The unique identifier of userScopeTeamsAppInstallation
   [WorkforceIntegrationId <String>]: The unique identifier of workforceIntegration
 
-PREVIEWTEXT <IMicrosoftGraphItemBody>: itemBody
+PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Content <String>]: The content of the item.
   [ContentType <String>]: bodyType
@@ -947,7 +947,7 @@ TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>: .
   [Name <String>]: Name for this key-value pair
   [Value <String>]: Value for this key-value pair
 
-TOPIC <IMicrosoftGraphTeamworkActivityTopic>: teamworkActivityTopic
+TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Source <String>]: teamworkActivityTopicSource
   [Value <String>]: The topic value.
@@ -961,3 +961,25 @@ Optional when source is entityUrl; required when source is text.
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification)
 - [](https://learn.microsoft.com/graph/api/team-sendactivitynotification?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

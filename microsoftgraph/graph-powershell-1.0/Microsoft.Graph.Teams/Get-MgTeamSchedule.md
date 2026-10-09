@@ -14,7 +14,7 @@ title: Get-MgTeamSchedule
 ## SYNOPSIS
 
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -47,7 +47,7 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\r\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\rWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -348,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   [AssociatedTeamInfoId <String>]: The unique identifier of associatedTeamInfo
   [ChannelId <String>]: The unique identifier of channel
   [ChatId <String>]: The unique identifier of chat
@@ -391,3 +391,25 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamschedule)
 - [](https://learn.microsoft.com/graph/api/schedule-get?view=graph-rest-1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
