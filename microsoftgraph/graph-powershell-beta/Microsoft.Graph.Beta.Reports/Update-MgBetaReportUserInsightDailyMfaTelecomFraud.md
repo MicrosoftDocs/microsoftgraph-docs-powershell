@@ -150,7 +150,7 @@ HelpMessage: ''
 
 ### -CaptchaFailureCount
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -177,7 +177,7 @@ HelpMessage: ''
 
 ### -CaptchaNotTriggeredUserCount
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -204,7 +204,7 @@ HelpMessage: ''
 
 ### -CaptchaShownUserCount
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -231,7 +231,7 @@ HelpMessage: ''
 
 ### -CaptchaSuccessCount
 
-.
+
 
 ```yaml
 Type: System.Int64
@@ -280,7 +280,7 @@ HelpMessage: ''
 
 ### -FactDate
 
-.
+
 
 ```yaml
 Type: System.DateTime
@@ -538,7 +538,7 @@ HelpMessage: ''
 
 ### -TelecomBlockedUserCount
 
-.
+
 
 ```yaml
 Type: System.Int64
