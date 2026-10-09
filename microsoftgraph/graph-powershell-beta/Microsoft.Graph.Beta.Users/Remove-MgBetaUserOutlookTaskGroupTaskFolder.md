@@ -462,7 +462,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfolder)
+- [Remove-MgBetaUserOutlookTaskGroupTaskFolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskgrouptaskfolder)
 
 
 

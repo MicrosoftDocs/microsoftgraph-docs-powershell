@@ -612,8 +612,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausersettingworkhourandlocationoccurrencecurrentlocation)
-- [](https://learn.microsoft.com/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-beta)
+- [Set-MgBetaUserSettingWorkHourAndLocationOccurrenceCurrentLocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausersettingworkhourandlocationoccurrencecurrentlocation)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-beta)
 
 
 

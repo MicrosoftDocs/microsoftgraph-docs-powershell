@@ -378,7 +378,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrantcount)
+- [Get-MgBetaUserOauth2PermissionGrantCount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrantcount)
 
 
 
