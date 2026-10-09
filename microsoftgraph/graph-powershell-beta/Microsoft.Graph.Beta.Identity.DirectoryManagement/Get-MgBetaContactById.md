@@ -388,8 +388,8 @@ BODYPARAMETER `<IPaths12Azg33ContactsMicrosoftGraphGetbyidsPostRequestbodyConten
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactbyid)
-- [](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+- [Get-MgBetaContactById](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactbyid)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
 
 
 

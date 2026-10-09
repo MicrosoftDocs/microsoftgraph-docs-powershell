@@ -521,8 +521,8 @@ LOCALIZATIONS <IMicrosoftGraphProfileSourceLocalization[]>: Alternative localize
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilesource)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilesources?view=graph-rest-beta)
+- [New-MgBetaAdminPeopleProfileSource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilesource)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-post-profilesources?view=graph-rest-beta)
 
 
 

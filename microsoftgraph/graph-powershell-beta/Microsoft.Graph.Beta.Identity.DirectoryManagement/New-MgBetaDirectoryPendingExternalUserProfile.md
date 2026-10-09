@@ -659,8 +659,8 @@ It's a free-format string value, for example, 'United States'.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile)
-- [](https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta)
+- [New-MgBetaDirectoryPendingExternalUserProfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-beta)
 
 
 

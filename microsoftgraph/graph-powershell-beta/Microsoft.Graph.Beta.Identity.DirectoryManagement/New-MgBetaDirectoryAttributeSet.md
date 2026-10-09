@@ -447,8 +447,8 @@ Can be changed later.
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset)
-- [](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-beta)
+- [New-MgBetaDirectoryAttributeSet](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-beta)
 
 
 

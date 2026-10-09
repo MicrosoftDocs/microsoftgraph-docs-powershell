@@ -297,8 +297,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeople)
-- [](https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-beta)
+- [Get-MgBetaAdminPeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeople)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-beta)
 
 
 
