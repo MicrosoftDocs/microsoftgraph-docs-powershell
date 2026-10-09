@@ -782,7 +782,7 @@ HelpMessage: ''
 
 ### -DelegatedPermissionClassifications
 
-.
+
 To construct, see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
@@ -925,7 +925,7 @@ HelpMessage: ''
 
 ### -Endpoints
 
-.
+
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
@@ -1185,7 +1185,7 @@ HelpMessage: ''
 
 ### -IsDisabled
 
-.
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -2031,7 +2031,7 @@ HelpMessage: ''
 
 ### -TransitiveMemberOf
 
-.
+
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
