@@ -69,12 +69,17 @@ Read the properties and relationships of an accessReviewInstance object.
 | Application | AccessReview.Read.All, AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
+
+```
+This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+
 
 ## PARAMETERS
 

@@ -57,12 +57,17 @@ In Microsoft Entra Entitlement Management, retrieve a list of accessPackageAssig
 | Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
-Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser -On $onId
+Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser -On $onId 
+
+```
+This example shows how to use the Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser Cmdlet.
+
 
 ## PARAMETERS
 

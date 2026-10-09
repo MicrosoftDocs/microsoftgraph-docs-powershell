@@ -53,12 +53,17 @@ Delete an accessPackageCatalog.
 | Application | EntitlementManagement.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId
+
+```
+This example shows how to use the Remove-MgEntitlementManagementCatalog Cmdlet.
+
 
 ## PARAMETERS
 

@@ -73,12 +73,17 @@ If the definition is 30 days or older, a 404 Not Found error is returned.
 | Application | AccessReview.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewHistoryDefinition
+
+```
+This example shows how to use the Get-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+
 
 ## PARAMETERS
 

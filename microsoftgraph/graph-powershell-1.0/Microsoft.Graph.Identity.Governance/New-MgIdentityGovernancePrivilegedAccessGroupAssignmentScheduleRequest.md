@@ -66,8 +66,9 @@ Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 | Application | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup, PrivilegedAssignmentSchedule.Remove.AzureADGroup,  |
 
 ## EXAMPLES
+### Example 1: Create an assignment schedule request
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -88,7 +89,12 @@ $params = @{
 
 New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -BodyParameter $params
 
-### EXAMPLE 2
+```
+This example will create an assignment schedule request
+
+### Example 2: User activates their eligible assignment for PIM for Groups
+
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -108,6 +114,10 @@ $params = @{
 }
 
 New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest -BodyParameter $params
+
+```
+This example will user activates their eligible assignment for pim for groups
+
 
 ## PARAMETERS
 
