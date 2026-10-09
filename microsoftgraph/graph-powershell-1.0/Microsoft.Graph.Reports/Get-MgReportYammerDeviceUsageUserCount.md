@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the number of daily users by device type.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportYammerDeviceUsageUserCount -Period $periodId
+Get-MgReportYammerDeviceUsageUserCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportYammerDeviceUsageUserCount Cmdlet.
+
 
 ## PARAMETERS
 

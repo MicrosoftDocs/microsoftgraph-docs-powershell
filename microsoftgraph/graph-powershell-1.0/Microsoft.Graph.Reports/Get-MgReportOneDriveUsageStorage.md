@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the trend on the amount of storage you're using in OneDrive for Business.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOneDriveUsageStorage -Period $periodId
+Get-MgReportOneDriveUsageStorage -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOneDriveUsageStorage Cmdlet.
+
 
 ## PARAMETERS
 

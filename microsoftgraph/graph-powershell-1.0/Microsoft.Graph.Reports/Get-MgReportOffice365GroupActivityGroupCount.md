@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportOffice365GroupActivityGroupCount -Period $periodId
+Get-MgReportOffice365GroupActivityGroupCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportOffice365GroupActivityGroupCount Cmdlet.
+
 
 ## PARAMETERS
 

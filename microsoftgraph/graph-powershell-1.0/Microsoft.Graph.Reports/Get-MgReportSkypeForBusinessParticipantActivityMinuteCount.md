@@ -50,12 +50,17 @@ Get usage trends on the length in minutes and type of conference sessions that u
 Types of conference sessions include audio/video.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessParticipantActivityMinuteCount -Period $periodId
+Get-MgReportSkypeForBusinessParticipantActivityMinuteCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessParticipantActivityMinuteCount Cmdlet.
+
 
 ## PARAMETERS
 

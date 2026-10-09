@@ -67,12 +67,17 @@ Read the properties and relationships of a manifest object.
 | Application | PartnerBilling.Read.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportPartnerBillingManifest -ManifestId $manifestId
+
+```
+This example shows how to use the Get-MgReportPartnerBillingManifest Cmdlet.
+
 
 ## PARAMETERS
 

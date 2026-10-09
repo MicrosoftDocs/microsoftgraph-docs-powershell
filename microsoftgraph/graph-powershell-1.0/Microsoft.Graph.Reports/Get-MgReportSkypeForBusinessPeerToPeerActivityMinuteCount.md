@@ -50,12 +50,17 @@ Get usage trends on the length in minutes and type of peer-to-peer sessions held
 Types of sessions include audio and video.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId
+Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount -Period $periodId 
+
+```
+This example shows how to use the Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount Cmdlet.
+
 
 ## PARAMETERS
 
