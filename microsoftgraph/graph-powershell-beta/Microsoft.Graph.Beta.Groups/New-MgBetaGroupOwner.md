@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Beta.Groups-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupowner
 Locale: en-US
 Module Name: Microsoft.Graph.Beta.Groups
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgBetaGroupOwner
 ---
@@ -61,6 +61,20 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Add an owner to an Office 365 group or security group through the owners navigation property.
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+{{ Add output here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -421,11 +435,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<Hashtable>`: Entity reference body
-  OdataId `<String>`: The entity reference URL of the resource.
+BODYPARAMETER <Hashtable>: Entity reference body
+  OdataId <String>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   [AttachmentId <String>]: The unique identifier of attachment
   [ConversationId <String>]: The unique identifier of conversation
   [ConversationThreadId <String>]: The unique identifier of conversationThread
@@ -452,27 +466,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [New-MgBetaGroupOwner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupowner)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupowner)
