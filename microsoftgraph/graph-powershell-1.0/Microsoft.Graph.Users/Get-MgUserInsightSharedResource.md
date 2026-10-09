@@ -52,16 +52,6 @@ Used for navigating to the item that was shared.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -402,6 +392,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserinsightsharedresource)
+
 
 
 
