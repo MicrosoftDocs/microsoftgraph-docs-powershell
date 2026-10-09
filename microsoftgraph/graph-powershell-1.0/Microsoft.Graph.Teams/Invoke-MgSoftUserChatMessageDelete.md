@@ -48,12 +48,17 @@ This cmdlet has the following aliases,
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Soft-delete message in a chat
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgSoftUserChatMessageDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+
+```
+This example will soft-delete message in a chat
+
 
 ## PARAMETERS
 

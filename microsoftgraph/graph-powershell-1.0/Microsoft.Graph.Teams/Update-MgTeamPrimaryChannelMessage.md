@@ -90,16 +90,6 @@ This cmdlet has the following aliases,
 
 Update the navigation property messages in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1595,6 +1585,7 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage)
+
 
 
 

@@ -75,9 +75,9 @@ This cmdlet has the following aliases,
 Update the properties of an openShift object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-
+```powershell
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -103,6 +103,11 @@ $params = @{
 }
 
 Update-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
+```
+This example shows how to use the Update-MgTeamScheduleOpenShift Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -78,8 +78,9 @@ Update the role of a conversationMember in a team.
 | Application | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Teams
 
@@ -91,6 +92,10 @@ $params = @{
 }
 
 Update-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTeamMember Cmdlet.
+
 
 ## PARAMETERS
 
