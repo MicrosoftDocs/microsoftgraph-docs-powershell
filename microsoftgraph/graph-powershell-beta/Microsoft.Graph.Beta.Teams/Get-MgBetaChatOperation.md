@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get the specified Teams async operation that ran or is running on a specific resource.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | ChatSettings.Read.Chat, Chat.Manage.Chat, Chat.Read.All, Chat.ReadBasic.All, Chat.ReadWrite.All, ChatSettings.ReadWrite.Chat,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

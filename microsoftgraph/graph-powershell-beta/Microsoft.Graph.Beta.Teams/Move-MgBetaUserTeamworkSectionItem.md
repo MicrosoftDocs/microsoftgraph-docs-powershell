@@ -72,6 +72,14 @@ Each item can belong to only one section at a time.
 This action removes the item from its current section and adds it to the target section.
 Use this action instead of add when the item is already in a user-defined section.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamworkSection.ReadWrite,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamworkSection.ReadWrite.All, Teamwork.Migrate.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1

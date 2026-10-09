@@ -67,6 +67,14 @@ This cmdlet has the following aliases,
 
 Update the role of a conversationMember in a team.
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
+| Delegated (personal Microsoft account) | Not supported |
+| Application | TeamMember.ReadWriteNonOwnerRole.All, TeamMember.ReadWrite.All,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
