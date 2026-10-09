@@ -15,6 +15,9 @@ title: Get-MgAdminEdgeInternetExplorerModeSiteListSite
 
 Get a browserSite that resides on a browserSiteList.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

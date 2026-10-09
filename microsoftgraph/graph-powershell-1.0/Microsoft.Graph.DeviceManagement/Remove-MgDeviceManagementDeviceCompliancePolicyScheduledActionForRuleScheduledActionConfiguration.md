@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleSche
 
 Delete navigation property scheduledActionConfigurations for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

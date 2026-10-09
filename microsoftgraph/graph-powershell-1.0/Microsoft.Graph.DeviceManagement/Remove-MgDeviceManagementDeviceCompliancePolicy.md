@@ -15,6 +15,9 @@ title: Remove-MgDeviceManagementDeviceCompliancePolicy
 
 Delete navigation property deviceCompliancePolicies for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
