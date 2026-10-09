@@ -672,7 +672,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreportunsupportedgrouppolicyextension)
+- [Update-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreportunsupportedgrouppolicyextension)
 
 
 
