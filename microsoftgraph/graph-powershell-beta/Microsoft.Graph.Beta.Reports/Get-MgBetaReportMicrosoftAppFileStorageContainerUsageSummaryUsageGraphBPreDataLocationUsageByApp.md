@@ -61,16 +61,6 @@ This cmdlet has the following aliases,
 Storage usage data broken down by application within this geographic location.
 Expandable using $expand=usageByApp.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -626,6 +616,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmicrosoftappfilestoragecontainerusagesummaryusagegraphbpredatalocationusagebyapp)
+
 
 
 

@@ -58,16 +58,6 @@ This cmdlet has the following aliases,
 
 Create new navigation property to groups for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1223,6 +1213,7 @@ Supports $filter (eq, ne, gt, ge, lt, le) and $orderby.
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportidentityanalyticgroup)
+
 
 
 

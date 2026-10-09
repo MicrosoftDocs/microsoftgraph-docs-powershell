@@ -44,16 +44,6 @@ This cmdlet has the following aliases,
 
 Delete navigation property alertConfigurations for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -AlertConfigurationId
@@ -452,6 +442,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareporthealthmonitoringalertconfiguration)
+
 
 
 
