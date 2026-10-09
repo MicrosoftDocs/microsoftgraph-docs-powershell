@@ -69,12 +69,17 @@ Read the properties of a delegatedAdminRelationshipOperation object.
 | Application | DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Identity.Partner
 
 Get-MgTenantRelationshipDelegatedAdminRelationshipOperation -DelegatedAdminRelationshipId $delegatedAdminRelationshipId
+
+```
+This example shows how to use the Get-MgTenantRelationshipDelegatedAdminRelationshipOperation Cmdlet.
+
 
 ## PARAMETERS
 
