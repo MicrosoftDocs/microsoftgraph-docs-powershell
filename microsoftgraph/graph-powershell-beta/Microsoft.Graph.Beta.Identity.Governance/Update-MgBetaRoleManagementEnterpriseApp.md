@@ -2479,7 +2479,7 @@ Supports $filter (eq, in).
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapp)
+- [Update-MgBetaRoleManagementEnterpriseApp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapp)
 
 
 
