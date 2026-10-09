@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventTownhallByUserIdAndRole
 
 Get a list of virtualEventTownhall objects where the specified user is either the organizer or a coorganizer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventTownhallByUserIdAndRole](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventTownhallByUserIdAndRole?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount
 
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -15,6 +15,9 @@ title: New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord
 
 Create new navigation property to attendanceRecords for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

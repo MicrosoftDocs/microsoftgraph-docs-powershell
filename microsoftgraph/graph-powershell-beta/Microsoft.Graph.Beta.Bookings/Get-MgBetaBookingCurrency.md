@@ -15,6 +15,9 @@ title: Get-MgBetaBookingCurrency
 
 Get entity from bookingCurrencies by key
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingCurrency?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
