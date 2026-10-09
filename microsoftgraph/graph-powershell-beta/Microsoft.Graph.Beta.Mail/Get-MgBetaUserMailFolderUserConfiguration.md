@@ -56,6 +56,14 @@ This cmdlet has the following aliases,
 
 Get userConfigurations from users
 
+**Permissions**
+
+| Permission type | Permissions (from least to most privileged) |
+| --------------- | ------------------------------------------  |
+| Delegated (work or school account) | MailboxConfigItem.Read, MailboxConfigItem.ReadWrite,  |
+| Delegated (personal Microsoft account) | MailboxConfigItem.Read, MailboxConfigItem.ReadWrite,  |
+| Application | MailboxConfigItem.Read, MailboxConfigItem.ReadWrite,  |
+
 ## EXAMPLES
 
 ### EXAMPLE 1
