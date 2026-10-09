@@ -43,16 +43,6 @@ Get the number of the resource
 | Delegated (personal Microsoft account) | Not supported |
 | Application | DeviceManagementRBAC.Read.All, CloudPC.Read.All, CloudPC.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, RoleManagement.Read.All, RoleManagement.Read.CloudPC, RoleManagement.Read.Directory, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -290,6 +280,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroledefinitioncount)
+
 
 
 
