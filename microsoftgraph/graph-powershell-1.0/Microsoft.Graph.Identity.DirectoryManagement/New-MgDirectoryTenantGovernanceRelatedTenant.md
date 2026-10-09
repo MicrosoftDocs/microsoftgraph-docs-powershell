@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernancerelatedtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectoryTenantGovernanceRelatedTenant
 ---
@@ -14,9 +14,6 @@ title: New-MgDirectoryTenantGovernanceRelatedTenant
 ## SYNOPSIS
 
 Create new navigation property to relatedTenants for directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryTenantGovernanceRelatedTenant](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryTenantGovernanceRelatedTenant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +49,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to relatedTenants for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -231,7 +238,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -494,7 +501,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPB2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
+APPB2BSIGNINACTIVITYMETRICS <IMicrosoftGraphB2BSignInActivityMetrics>: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -519,7 +526,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-B2BREGISTRATIONMETRICS `<IMicrosoftGraphB2BRegistrationMetrics>`: b2bRegistrationMetrics
+B2BREGISTRATIONMETRICS <IMicrosoftGraphB2BRegistrationMetrics>: b2bRegistrationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -540,7 +547,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-B2BSIGNINACTIVITYMETRICS `<IMicrosoftGraphB2BSignInActivityMetrics>`: b2BSignInActivityMetrics
+B2BSIGNINACTIVITYMETRICS <IMicrosoftGraphB2BSignInActivityMetrics>: b2BSignInActivityMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -565,7 +572,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-BILLINGMETRICS `<IMicrosoftGraphBillingMetrics>`: billingMetrics
+BILLINGMETRICS <IMicrosoftGraphBillingMetrics>: billingMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -596,7 +603,7 @@ Read-only.
 Read-only.
     [UpdateDateTime <DateTime?>]: 
 
-BODYPARAMETER `<IMicrosoftGraphRelatedTenant>`: relatedTenant
+BODYPARAMETER <IMicrosoftGraphRelatedTenant>: relatedTenant
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -697,7 +704,7 @@ Read-only.
 Read-only.
       [UpdateDateTime <DateTime?>]: 
 
-MULTITENANTAPPLICATIONMETRICS `<IMicrosoftGraphMultiTenantApplicationMetrics>`: multiTenantApplicationMetrics
+MULTITENANTAPPLICATIONMETRICS <IMicrosoftGraphMultiTenantApplicationMetrics>: multiTenantApplicationMetrics
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -721,27 +728,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDirectoryTenantGovernanceRelatedTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernancerelatedtenant)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernancerelatedtenant)

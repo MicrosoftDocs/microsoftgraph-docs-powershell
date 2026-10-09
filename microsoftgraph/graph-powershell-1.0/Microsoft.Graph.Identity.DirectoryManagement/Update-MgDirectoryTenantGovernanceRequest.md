@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerequest
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Update-MgDirectoryTenantGovernanceRequest
 ---
@@ -14,9 +14,6 @@ title: Update-MgDirectoryTenantGovernanceRequest
 ## SYNOPSIS
 
 Update the navigation property governanceRequests in directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryTenantGovernanceRequest](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryTenantGovernanceRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -78,6 +75,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Update the navigation property governanceRequests in directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -181,7 +188,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -263,7 +270,7 @@ HelpMessage: ''
 
 ### -GovernedTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -290,7 +297,7 @@ HelpMessage: ''
 
 ### -GovernedTenantName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -317,7 +324,7 @@ HelpMessage: ''
 
 ### -GoverningTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -344,7 +351,7 @@ HelpMessage: ''
 
 ### -GoverningTenantName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -581,7 +588,7 @@ HelpMessage: ''
 
 ### -RequestDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -711,7 +718,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGovernanceRequest>`: governanceRequest
+BODYPARAMETER <IMicrosoftGraphGovernanceRequest>: governanceRequest
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -1756,7 +1763,7 @@ Always set to en-us.
                 [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                   [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                   [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                   [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -5764,8 +5771,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -6111,7 +6118,7 @@ Nullable.
   [RequestDateTime <DateTime?>]: 
   [Status <RequestStatus?>]: requestStatus
 
-GOVERNANCEPOLICYTEMPLATE `<IMicrosoftGraphTenantGovernancePolicyTemplate>`: tenantGovernancePolicyTemplate
+GOVERNANCEPOLICYTEMPLATE <IMicrosoftGraphTenantGovernancePolicyTemplate>: tenantGovernancePolicyTemplate
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -7151,7 +7158,7 @@ Always set to en-us.
               [Mentions <IMicrosoftGraphChatMessageMention[]>]: List of entities mentioned in the chat message.
 Supported entities are: user, bot, team, channel, chat, and tag.
                 [Id <Int32?>]: Index of an entity being mentioned in the specified chatMessage.
-Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 [MentionText <String>]: String used to represent the mention.
 For example, a user's display name, a team name.
                 [Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]: chatMessageMentionedIdentitySet
@@ -11159,8 +11166,8 @@ By convention, this value should map to the user's email name.
 The general format is alias@domain, where the domain must be present in the tenant's collection of verified domains.
 This property is required when a user is created.
 The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property can't contain accent characters.
-Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #, ^, ~,
- 
+Only the following characters are allowed A - Z, a - z, 0 - 9, ' .
+- _ ! # ^ ~.
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
@@ -11487,7 +11494,7 @@ Nullable.
       [ResourceAppId <String>]: 
   [Version <String>]: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   [AdministrativeUnitId <String>]: The unique identifier of administrativeUnit
   [AllowedValueId <String>]: The unique identifier of allowedValue
   [AttributeSetId <String>]: The unique identifier of attributeSet
@@ -11532,7 +11539,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   [TenantId <String>]: Usage: tenantId='{tenantId}'
   [UserId <String>]: The unique identifier of user
 
-POLICYSNAPSHOT `<IMicrosoftGraphRelationshipPolicy>`: relationshipPolicy
+POLICYSNAPSHOT <IMicrosoftGraphRelationshipPolicy>: relationshipPolicy
   [(Any) <Object>]: This indicates any property can be added to this object.
   [DelegatedAdministrationRoleAssignments <IMicrosoftGraphDelegatedAdministrationRoleAssignmentSnapshot[]>]: 
     [GroupDisplayName <String>]: 
@@ -11556,27 +11563,4 @@ POLICYSNAPSHOT `<IMicrosoftGraphRelationshipPolicy>`: relationshipPolicy
 
 ## RELATED LINKS
 
-- [Update-MgDirectoryTenantGovernanceRequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerequest)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorytenantgovernancerequest)

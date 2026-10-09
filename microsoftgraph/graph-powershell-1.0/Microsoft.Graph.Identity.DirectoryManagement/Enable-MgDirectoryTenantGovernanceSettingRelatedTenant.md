@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/enable-mgdirectorytenantgovernancesettingrelatedtenant
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: Enable-MgDirectoryTenantGovernanceSettingRelatedTenant
 ---
@@ -14,9 +14,6 @@ title: Enable-MgDirectoryTenantGovernanceSettingRelatedTenant
 ## SYNOPSIS
 
 Invoke action enableRelatedTenants
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Enable-MgBetaDirectoryTenantGovernanceSettingRelatedTenant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,6 +34,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Invoke action enableRelatedTenants
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -297,27 +304,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [Enable-MgDirectoryTenantGovernanceSettingRelatedTenant](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/enable-mgdirectorytenantgovernancesettingrelatedtenant)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/enable-mgdirectorytenantgovernancesettingrelatedtenant)

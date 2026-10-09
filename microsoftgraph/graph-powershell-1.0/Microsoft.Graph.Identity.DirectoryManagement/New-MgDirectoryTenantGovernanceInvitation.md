@@ -4,7 +4,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-Help.xml
 HelpUri: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernanceinvitation
 Locale: en-US
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-ms.date: 10/02/2026
+ms.date: 10/09/2026
 PlatyPS schema version: 2024-05-01
 title: New-MgDirectoryTenantGovernanceInvitation
 ---
@@ -14,9 +14,6 @@ title: New-MgDirectoryTenantGovernanceInvitation
 ## SYNOPSIS
 
 Create new navigation property to governanceInvitations for directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryTenantGovernanceInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryTenantGovernanceInvitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +45,16 @@ This cmdlet has the following aliases,
 ## DESCRIPTION
 
 Create new navigation property to governanceInvitations for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+
+{{ Add code here }}
+
+### EXAMPLE 2
+
+{{ Add code here }}
 
 ## PARAMETERS
 
@@ -139,7 +146,7 @@ HelpMessage: ''
 
 ### -CreatedDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -160,7 +167,7 @@ HelpMessage: ''
 
 ### -ExpirationDateTime
 
-
+.
 
 ```yaml
 Type: System.DateTime
@@ -181,7 +188,7 @@ HelpMessage: ''
 
 ### -GovernedTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -202,7 +209,7 @@ HelpMessage: ''
 
 ### -GovernedTenantName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -223,7 +230,7 @@ HelpMessage: ''
 
 ### -GoverningTenantId
 
-
+.
 
 ```yaml
 Type: System.String
@@ -244,7 +251,7 @@ HelpMessage: ''
 
 ### -GoverningTenantName
 
-
+.
 
 ```yaml
 Type: System.String
@@ -485,7 +492,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphGovernanceInvitation>`: governanceInvitation
+BODYPARAMETER <IMicrosoftGraphGovernanceInvitation>: governanceInvitation
   [(Any) <Object>]: This indicates any property can be added to this object.
   [Id <String>]: The unique identifier for an entity.
 Read-only.
@@ -499,27 +506,4 @@ Read-only.
 
 ## RELATED LINKS
 
-- [New-MgDirectoryTenantGovernanceInvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernanceinvitation)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorytenantgovernanceinvitation)
