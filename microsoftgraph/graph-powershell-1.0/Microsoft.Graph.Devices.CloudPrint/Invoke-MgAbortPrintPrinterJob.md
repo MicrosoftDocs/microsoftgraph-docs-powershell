@@ -556,8 +556,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintprinterjob)
-- [](https://learn.microsoft.com/graph/api/printjob-abort?view=graph-rest-1.0)
+- [Invoke-MgAbortPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgabortprintprinterjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-abort?view=graph-rest-1.0)
 
 
 

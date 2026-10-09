@@ -418,8 +418,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob)
-- [](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0)
+- [Stop-MgPrintPrinterJob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0)
 
 
 

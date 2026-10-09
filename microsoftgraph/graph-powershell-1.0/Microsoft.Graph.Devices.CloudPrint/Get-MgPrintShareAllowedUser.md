@@ -492,8 +492,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-- [](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduser)
-- [](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-1.0)
+- [Get-MgPrintShareAllowedUser](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintsharealloweduser)
+- [Graph API Reference](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-1.0)
 
 
 
