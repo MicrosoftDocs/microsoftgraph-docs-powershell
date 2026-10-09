@@ -58,12 +58,17 @@ Only teachers within a class can delete modules.
 | Application | EduCurricula.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
 Remove-MgBetaEducationClassModule -EducationClassId $educationClassId -EducationModuleId $educationModuleId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassModule Cmdlet.
+
 
 ## PARAMETERS
 

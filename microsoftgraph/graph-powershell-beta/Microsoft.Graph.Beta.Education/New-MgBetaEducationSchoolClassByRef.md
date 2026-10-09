@@ -69,8 +69,9 @@ This cmdlet has the following aliases,
 Add a class to a school.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -79,6 +80,10 @@ $params = @{
 }
 
 New-MgBetaEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationSchoolClassByRef Cmdlet.
+
 
 ## PARAMETERS
 

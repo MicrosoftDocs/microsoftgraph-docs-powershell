@@ -61,16 +61,6 @@ The status of the assignment goes back to draft if there is any backend failure 
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -386,6 +376,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationmeassignment)
 - [](https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-beta)
+
 
 
 

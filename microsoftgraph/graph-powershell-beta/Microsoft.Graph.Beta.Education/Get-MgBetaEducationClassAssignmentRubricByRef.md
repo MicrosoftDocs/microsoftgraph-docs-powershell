@@ -57,16 +57,6 @@ Only teachers, students, and applications with application permissions can perfo
 | Delegated (personal Microsoft account) | Not supported |
 | Application | EduAssignments.ReadBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All,  |
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -Break
@@ -359,6 +349,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentrubricbyref)
 - [](https://learn.microsoft.com/graph/api/educationassignment-get-rubric?view=graph-rest-beta)
+
 
 
 
