@@ -78,8 +78,9 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 | Application | CloudPC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
@@ -88,6 +89,10 @@ $params = @{
 }
 
 Restore-MgDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
+
+```
+This example shows how to use the Restore-MgDeviceManagementVirtualEndpointCloudPc Cmdlet.
+
 
 ## PARAMETERS
 

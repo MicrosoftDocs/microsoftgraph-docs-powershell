@@ -68,12 +68,17 @@ The Resource Operations.
 | Application | DeviceManagementRBAC.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Get-MgDeviceManagementResourceOperation
+
+```
+This example shows how to use the Get-MgDeviceManagementResourceOperation Cmdlet.
+
 
 ## PARAMETERS
 

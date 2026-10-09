@@ -56,12 +56,17 @@ Delete navigation property roleDefinitions for deviceManagement
 | Application | DeviceManagementRBAC.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All,  |
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
+```powershell
 
 Import-Module Microsoft.Graph.DeviceManagement.Administration
 
 Remove-MgDeviceManagementRoleDefinition -RoleDefinitionId $roleDefinitionId
+
+```
+This example shows how to use the Remove-MgDeviceManagementRoleDefinition Cmdlet.
+
 
 ## PARAMETERS
 

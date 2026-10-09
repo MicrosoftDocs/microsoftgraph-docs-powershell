@@ -60,16 +60,6 @@ This cmdlet has the following aliases,
 
 A collection of Cloud PC service plans.
 
-## EXAMPLES
-
-### EXAMPLE 1
-
-{{ Add code here }}
-
-### EXAMPLE 2
-
-{{ Add code here }}
-
 ## PARAMETERS
 
 ### -All
@@ -564,6 +554,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 
 - [](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointserviceplan)
 - [](https://learn.microsoft.com/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-1.0)
+
+
 
 
 
